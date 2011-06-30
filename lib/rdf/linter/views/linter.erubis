@@ -1,0 +1,91 @@
+<% require 'cgi' %>
+<h1><%= title %></h1>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<nav class="linter">
+  <ul>
+    <li><a class='url' href="#url">From URL</a></li>
+    <li><a class='upload' href="#upload">From File Upload</a></li>
+    <li><a class='input' href="#input">From Form Input</a></li>
+  </ul>
+</nav>
+<form action="/" method="post" enctype="multipart/form">
+  <fieldset class="url upload input">
+    <legend>Distill RDF Information</legend>
+    <fieldset class="url upload input">
+      <label for="uri">URI</label>
+      <input id="uri" name="uri" size="80" type="text" value="<%= params['uri'] %>"/>
+    </fieldset>
+    <fieldset class="url upload input">
+      <legend>Options</legend>
+      <p>
+        <label for="in_fmt">Input Format:</label>
+        <select id="in_fmt" name="in_fmt">
+          <option value="content" <%= 'selected="selected"' if params["in_fmt"].to_s == "content" %>>
+            Content Detect
+          </option>
+          <% formats(:reader).each do |sym| %>
+            <option value="<%=sym%>" <%= 'selected="selected"' if params["in_fmt"].to_s == sym.to_s %>><%=sym %></option>
+          <% end %>
+        </select>
+      </p>
+      <p>
+        <label for="debug">Show Parser debug information:</label>
+        <input id="debug" name="debug" type="checkbox" value="true" />
+        <label for="validate">Validate Input:</label>
+        <input id="validate" name="strict" type="checkbox" value="true" />
+        <label for="raw">Raw Output:</label>
+        <input id="raw" name="raw" type="checkbox" value="true" />
+      </p>
+    </fieldset>
+    <fieldset class="upload">
+      <legend>File Upload</legend>
+      <input type="file" name="datafile" size="40">
+    </fieldset>
+    <fieldset class="input">
+      <legend>Markup</legend>
+      <textarea class="input" cols="120" id="content" name="content" rows="15"><%= @content %></textarea>
+    </fieldset>
+    <input name="commit" type="submit" value="Submit" />
+  </fieldset>
+</form>
+
+<% if @error -%>
+<div class="errors">
+  <h2>Errors</h2>
+  <pre><%= CGI.escapeHTML(@error) %></pre>
+</div>
+<% end -%>
+
+<div class="results">
+<% if @output -%>
+  <h2>Result</h2>
+  <p>Note, to see result directly, choose the 'Raw Output' option above.</p>
+  <textarea class="rdfa" rows="20" cols="120"><%= CGI.escapeHTML(@output)%></textarea>
+  </div>
+<% end -%>
+
+<% if @debug %>
+<div class="debug">
+  <h2>Parser Debug Information:</h2>
+  <textarea rows="20" cols="120"><%= CGI.escapeHTML(@debug.join("\n")) %></textarea>
+</div>
+<% end %>
+
+<div>
+  <h2>Alternative access to the Distiller</h2>
+  <p>The linter URI may be used directly with an HTML GET by passing the source URI and other options as parameters:</p>
+  <pre class="alt_acess">
+    <%=
+      url = url('/')
+      base = params["uri"].to_s.empty? ? 'http://www.example.com/' : params["uri"]
+      url_params = ["raw=true"]
+      url_params << %(in_fmt=#{params["in_fmt"]}) unless params["in_fmt"].nil? || params["in_fmt"] == :content
+      url_params << %(uri=#{base})
+      url += "?#{url_params.join('&')}" unless url_params.empty?
+      %(<a target="_blank" href="#{url}">#{url}</a>)
+    %>
+  </pre>
+</div>
+

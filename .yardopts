@@ -1,0 +1,9 @@
+--title "RDF Linter"
+--output-dir doc/yard
+--protected
+--no-private
+--hide-void-return
+--markup markdown
+--readme README.md
+-
+VERSION

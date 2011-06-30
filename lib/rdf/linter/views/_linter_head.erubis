@@ -1,0 +1,48 @@
+<script type="text/javascript">
+// Navigation
+$(function () {
+  // Display field sets having class of
+  // Clicking on a tab hides fieldsets not having that hash element as a class
+  $('nav.linter a').click(function() {
+    var cls = this.hash.substr(1);
+    $('fieldset').hide();
+    $('fieldset.' + cls).show();
+    $('nav.linter a').removeClass('selected');
+    $(this).addClass('selected');
+    return(false); // No bubbling, leave history alone.
+  });
+
+  // Hid fieldsets
+  $('fieldset').hide();
+
+  // Select appropriate nav tab
+  var cls = window.location.hash.substr(1);
+  $('nav.linter a:first').each(function(){
+    $('fieldset.' + this.className).show();
+    $(this).addClass('selected');
+  });
+  
+  // If the output format is rdfa, re-write the result text area
+  // as an iFrame and add results
+  $('div.results textarea.rdfa').each(function() {
+    var content = $(this).val();
+    $(this).after($('<iframe width="100%"/>'));
+    setTimeout(function() {
+      var iframe = $('div.results iframe')[0];
+      var iframe_doc = iframe.contentWindow.document;
+      iframe_doc.open(); iframe_doc.close(); // must open and close document object to start using it!
+      iframe_doc.write(content);
+      setTimeout(function() {
+        var innerDoc = (iframe.contentDocument) ? iframe.contentDocument : iframe.contentWindow.document;
+        var height = innerDoc.body.offsetHeight;
+        if (height === null && iframe.Document && iframe.Document.body.scrollHeight) {
+          height = iframe.Document.body.scrollHeight;
+        }
+        $(iframe).attr('height', height);
+      }, 10);
+    }, 1);
+  }).hide();
+
+});
+
+</script>

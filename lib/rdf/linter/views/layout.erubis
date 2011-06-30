@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+    <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+      // Navigation
+      $(function () {
+        // Select appropriate nav tab
+        var href = window.location.pathname;
+        $('nav.main a').removeClass('selected');
+        $('nav.main a[href="' + href + '"]').addClass('selected');
+      });
+    </script>
+
+    <%= partial "#{head}_head".to_sym rescue nil %>
+  </head>
+  <body>
+    <%= partial :header %>
+    <%= yield %>
+    <%= partial :footer %>
+  </body>
+</html>
