@@ -62,7 +62,7 @@ GEM
     erubis (2.7.0)
     haml (3.1.2)
     json (1.5.3)
-    json-ld (0.0.4)
+    json-ld (0.0.6)
       json (>= 1.5.1)
       rdf (>= 0.3.3)
     json_pure (1.5.3)
@@ -100,7 +100,7 @@ DEPENDENCIES
   addressable (= 2.2.4)
   erubis (>= 2.6.6)
   haml (>= 3.0.0)
-  json-ld (>= 0.0.4)
+  json-ld (>= 0.0.5)
   linkeddata!
   rack-linkeddata!
   rdf!
