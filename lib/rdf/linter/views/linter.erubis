@@ -12,7 +12,7 @@
 </nav>
 <form action="/" method="post" enctype="multipart/form">
   <fieldset class="url upload input">
-    <legend>Distill RDF Information</legend>
+    <legend>Distill Structured Data</legend>
     <fieldset class="url upload input">
       <label for="uri">URI</label>
       <input id="uri" name="uri" size="80" type="text" value="<%= params['uri'] %>"/>
