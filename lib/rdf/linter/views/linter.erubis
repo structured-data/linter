@@ -1,43 +1,19 @@
 <% require 'cgi' %>
 <h1><%= title %></h1>
 <p>
-  Enter a URL below to see what structured data your page contains.
+  Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup.
 </p>
 <nav class="linter">
   <ul>
-    <li><a class='url' href="#url">From URL</a></li>
-    <li><a class='upload' href="#upload">From File Upload</a></li>
-    <li><a class='input' href="#input">From Form Input</a></li>
+    <li><a class="url" href="#url">Lint by URL</a></li>
+    <li><a class="upload" href="#upload">Lint by File Upload</a></li>
+    <li><a class="input" href="#input">Lint by Direct Input</a></li>
   </ul>
 </nav>
-<form action="/" method="get">
-  <fieldset class="url upload input">
-    <legend>Distill Structured Data</legend>
-    <fieldset class="url upload input">
-      <label for="uri">URI</label>
-      <input id="uri" name="uri" size="80" type="text" value="<%= params['uri'] %>"/>
-    </fieldset>
-    <fieldset class="url upload input">
-      <legend>Options</legend>
-      <p>
-        <label for="in_fmt">Input Format:</label>
-        <select id="in_fmt" name="in_fmt">
-          <option value="content" <%= 'selected="selected"' if params["in_fmt"].to_s == "content" %>>
-            Content Detect
-          </option>
-          <% formats(:reader).each do |sym| %>
-            <option value="<%=sym%>" <%= 'selected="selected"' if params["in_fmt"].to_s == sym.to_s %>><%=sym %></option>
-          <% end %>
-        </select>
-      </p>
-      <p>
-        <label for="debug">Show Parser debug information:</label>
-        <input id="debug" name="debug" type="checkbox" value="true" />
-        <label for="validate">Validate Input:</label>
-        <input id="validate" name="strict" type="checkbox" value="true" />
-        <label for="raw">Raw Output:</label>
-        <input id="raw" name="raw" type="checkbox" value="true" />
-      </p>
+<form action="/" method="post">
+    <fieldset class="url">
+      <legend>Page URL</legend>
+      <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
     </fieldset>
     <fieldset class="upload">
       <legend>File Upload</legend>

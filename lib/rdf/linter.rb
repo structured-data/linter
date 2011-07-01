@@ -92,7 +92,7 @@ module RDF
       def parse
         reader_opts = {
           :prefixes => {},
-          :base_uri => params["uri"],
+          :base_uri => params["url"],
           :validate => params["validate"]
         }
         reader_opts[:format] = params["in_fmt"].to_sym unless params["in_fmt"].nil? || params["in_fmt"] == 'content'
@@ -112,9 +112,9 @@ module RDF
           puts "Open form data with format #{format}"
           @content = params["content"]
           reader = RDF::Reader.for(format).new(@content, reader_opts) {|r| graph << r}
-        when !params["uri"].to_s.empty?
-          puts "Open uri <#{params["uri"]}> with format #{format}"
-          reader = RDF::Reader.open(params["uri"], reader_opts) {|r| graph << r}
+        when !params["url"].to_s.empty?
+          puts "Open uri <#{params["url"]}> with format #{format}"
+          reader = RDF::Reader.open(params["url"], reader_opts) {|r| graph << r}
           params["in_fmt"] = reader.class.to_sym if format.nil? || format == :content
         else
           return ["text/html", ""]
