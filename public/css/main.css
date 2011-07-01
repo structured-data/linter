@@ -2,7 +2,7 @@ body
 {
     font:       normal 90%/1.5em 'Trebuchet MS', Tahoma, sans-serif;
     color:      #555;
-    background: white;
+    background: #FFF;
     margin:     0;
     padding:    4em 6em;
 }
@@ -20,7 +20,7 @@ nav ul {
     list-style:     none;
     margin:         0;
     padding:        0;
-    padding-bottom: 1em;          
+    padding-bottom: 1em;
 }
 nav li {
     display: inline;
@@ -63,3 +63,51 @@ footer {
 
 a:link, a:visited { color: #C8009C; text-decoration:none; }
 a:hover {color: #65944A }
+
+div[about] {
+    background: #E6E6E6;
+    margin:     2px;
+    padding:    2px;
+    border:     5px solid white;
+    width:      100%;
+}
+
+div[about] h2 {
+    font-size:  100%;
+    text-align: right;
+    color:      #C8009C;
+}
+
+span.type {
+    display:        block;
+    padding-bottom: 2px;
+    margin-left:    3em;
+}
+span.type:before {
+    content:    "Type: ";
+    margin-left:    -3em;
+}
+
+table.properties {
+    border-collapse:    collapse;
+    width:              100%;
+}
+
+table.properties td {
+    vertical-align:     top;
+    padding-right:      5px;
+}
+
+table.properties td ul {
+    list-style:     none;
+    margin:         0;
+    padding-left:   0;
+}
+
+table.properties td ul li {
+    padding-bottom: 2px;
+}
+
+table.properties td ul li span.lang {
+    color:  green;
+}
