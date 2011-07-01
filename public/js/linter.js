@@ -2,10 +2,10 @@
 $(function () {
   // Insert explanatory header
   $('body').prepend(
-      $("<header><h1>RDF.rb Distiller Results</h1></header>")
+      $("<header><h1>Structured Data Linter Results</h1></header>")
   );
   $('body').append(
-      $('<footer>Distilled by <a href="http://linter.structured-data.org">Structured Data Linter</a> using <a href="http://rdf.rubyforge.org/rdfa">RDF::RDFa Reader</a></footer>')
+      $('<footer>Distilled by <a href="http://linter.structured-data.org">Structured Data Linter</a></footer>')
   );
   $('div[about]').each(function() {
       $(this).prepend($("<h2>").text('About: ' + $(this).attr('about')));
