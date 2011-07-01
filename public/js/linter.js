@@ -1,4 +1,4 @@
-// Programatic markup for RDFa linter
+// Programatic markup for Structured Data linter
 $(function () {
   // Insert explanatory header
   $('body').prepend(
