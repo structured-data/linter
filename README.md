@@ -40,6 +40,10 @@ Distills between formats supported in [Linked Data][linkeddata].
 
     bundle install --path vendor/bundler
 
+* Start the server with:
+
+    bundle exec shotgun -p 3000 config.ru
+
 ## FEEDBACK
 
 [JSON-LD]:        http://json-ld.org/spec/latest/

@@ -30,7 +30,7 @@ module RDF
 
       get '/about' do
         cache_control :public, :must_revalidate, :max_age => 60
-        erubis :about, :locals => {:title => "About the RDF Linter"}
+        erubis :about, :locals => {:title => "About the Structured Data Linter"}
       end
 
       private
@@ -45,10 +45,10 @@ module RDF
           body content
         else
           @output = content unless content == @error
-          erubis :linter, :locals => {:title => "RDF Linter", :head => :linter}
+          erubis :linter, :locals => {:title => "Structured Data Linter", :head => :linter}
         end
       end
-      
+
       # Return ordered accept mime-types
       def accepts
         types = []
@@ -67,7 +67,7 @@ module RDF
           fmt = RDF::Format.for(format.to_sym)
           return [format.to_sym, fmt.content_type.first] if fmt
         end
-        
+
         # Look for formats matching accept headers
         accepts.each do |t|
           writer = RDF::Writer.for(:content_type => t)
@@ -76,7 +76,7 @@ module RDF
 
         return [:ntriples, "text/plain"]
       end
-      
+
       # Format symbol for RDF formats
       # @param [Symbol] reader_or_writer
       # @return [Array<Symbol>] List of format symbols
@@ -97,7 +97,7 @@ module RDF
         }
         reader_opts[:format] = params["in_fmt"].to_sym unless params["in_fmt"].nil? || params["in_fmt"] == 'content'
         reader_opts[:debug] = @debug = [] if params["debug"]
-        
+
         graph = RDF::Graph.new
         format = params["in_fmt"].to_sym if params["in_fmt"]
 
@@ -105,7 +105,7 @@ module RDF
         when !params["datafile"].to_s.empty?
           raise RDF::ReaderError, "Specify input format" if format.nil? || format == :content
           puts "Open datafile with format #{format}"
-          tempfile = 
+          tempfile =
           reader = RDF::Reader.for(format).new(tempfile, reader_opts) {|r| graph << r}
         when !params["content"].to_s.empty?
           raise RDF::ReaderError, "Specify input format" if format.nil? || format == :content
@@ -169,7 +169,7 @@ module RDF
     # @return [IO] File stream
     # @yield [IO] File stream
     def self.open_file(filename_or_url, options = {}, &block)
-      Kernel.open(filename_or_url, {"User-Agent" => "Ruby RDF Linter #{VERSION} (http://linter.greggkellogg.net/)"}, &block)
+      Kernel.open(filename_or_url, {"User-Agent" => "Ruby Structured Data Linter #{VERSION} (http://linter.greggkellogg.net/)"}, &block)
     end
   end
 end
