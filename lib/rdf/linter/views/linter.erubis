@@ -71,20 +71,3 @@
   <textarea rows="20" cols="120"><%= CGI.escapeHTML(@debug.join("\n")) %></textarea>
 </div>
 <% end %>
-
-<div>
-  <h2>Alternative access to the Distiller</h2>
-  <p>The linter URI may be used directly with an HTML GET by passing the source URI and other options as parameters:</p>
-  <pre class="alt_acess">
-    <%=
-      url = url('/')
-      base = params["uri"].to_s.empty? ? 'http://www.example.com/' : params["uri"]
-      url_params = ["raw=true"]
-      url_params << %(in_fmt=#{params["in_fmt"]}) unless params["in_fmt"].nil? || params["in_fmt"] == :content
-      url_params << %(uri=#{base})
-      url += "?#{url_params.join('&')}" unless url_params.empty?
-      %(<a target="_blank" href="#{url}">#{url}</a>)
-    %>
-  </pre>
-</div>
-
