@@ -10,7 +10,7 @@
     <li><a class='input' href="#input">From Form Input</a></li>
   </ul>
 </nav>
-<form action="/" method="post" enctype="multipart/form">
+<form action="/" method="get">
   <fieldset class="url upload input">
     <legend>Distill Structured Data</legend>
     <fieldset class="url upload input">
@@ -60,15 +60,14 @@
 
 <div class="results">
 <% if @output -%>
-  <h2>Result</h2>
-  <p>Note, to see result directly, choose the 'Raw Output' option above.</p>
-  <textarea class="rdfa" rows="20" cols="120"><%= CGI.escapeHTML(@output)%></textarea>
+  <h2>Structured data</h2>
+  <%= @output %>
   </div>
 <% end -%>
 
 <% if @debug %>
 <div class="debug">
-  <h2>Parser Debug Information:</h2>
+  <h2>Debug Information</h2>
   <textarea rows="20" cols="120"><%= CGI.escapeHTML(@debug.join("\n")) %></textarea>
 </div>
 <% end %>

@@ -5,23 +5,11 @@ module RDF::Linter
     # Locals: language, title, profile, prefix, base, subjects
     # Yield: subjects.each
     :doc => %q(
-      !!! XML
-      !!! 5
-      %html{:xmlns => "http://www.w3.org/1999/xhtml", :lang => lang, :profile => profile, :prefix => prefix}
-        - if base || title
-          %head
-            - if base
-              %base{:href => base}
-            - if title
-              %title= title
-            %link{:rel => "stylesheet", :href => "--root--css/linter.css", :type => "text/css"}
-            %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js", :type => "text/javascript"}
-            %script{:src => "--root--js/linter.js", :type => "text/javascript"}
-        %body
-          - if base
-            %p= "RDFa serialization URI base: &lt;#{base}&gt;"
-          - subjects.each do |subject|
-            != yield(subject)
+      %div{:id => "results-content"}
+        - if base
+          %p= "RDFa serialization URI base: &lt;#{base}&gt;"
+        - subjects.each do |subject|
+          != yield(subject)
     ),
 
     # Output for non-leaf resources
