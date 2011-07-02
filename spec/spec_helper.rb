@@ -7,7 +7,6 @@ require 'rspec'
 require 'rdf/isomorphic'
 require 'rdf/linter'
 require 'sinatra'
-require 'rack/test'
 
 # set test environment
 set :environment, :test
