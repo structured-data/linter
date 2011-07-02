@@ -90,7 +90,7 @@ module RDF
         raise unless settings.environment == :production
         @error = "#{$!.class}: #{$!.message}"
         puts @error  # to log
-        ["text/html", @error] # XXX
+        ["text/html", @error]
       end
     end
   end
