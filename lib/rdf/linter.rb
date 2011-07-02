@@ -4,6 +4,8 @@ require 'sinatra/partials'
 require 'erubis'
 require 'rdf/microdata'
 require 'json/ld'
+require 'rdf/all'
+require 'rdf/parser'
 
 module RDF
   module Linter
@@ -35,12 +37,14 @@ module RDF
 
       private
 
+      include Parser
+      
       # Handle GET/POST /
       def linter
         params["in_fmt"] = "all" if params["in_fmt"].to_s.empty?
         reader_opts = {
           :prefixes => {},
-          :base_uri => params["uri"],
+          :base_uri => params["url"],
           :validate => params["validate"],
           :format   => params["in_fmt"].to_sym,
         }
@@ -48,49 +52,23 @@ module RDF
         reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
         reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
         
-        content_type, content = parse(reader_opts)
-        @output = content unless content == @error
-        erubis :linter, :locals => {:title => "Structured Data Linter", :head => :linter}
-      end
-
-      # Parse the an input file and re-serialize based on params and/or content-type/accept headers
-      def parse(reader_opts)
-        graph = RDF::Graph.new
-        format = reader_opts[:format]
+        root = RDF::URI(request.url).join("/").to_s
+        puts "requrest.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 
         case
         when reader_opts[:tempfile]
-          puts "Parse input file #{reader_opts[:tempfile].inspect} with format #{format}"
-          reader = RDF::Reader.for(format).new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
+          puts "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
         when  reader_opts[:content]
-          puts "Parse form data with format #{format}"
+          puts "Parse form data with format #{reader_opts[:format]}"
           @content = reader_opts[:content]
-          reader = RDF::Reader.for(format).new(@content, reader_opts) {|r| graph << r}
         when reader_opts[:base_uri]
-          puts "Open uri <#{reader_opts[:base_uri]}> with format #{format}"
-          reader = RDF::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
-          params["in_fmt"] = reader.class.to_sym if format.nil? || format == :content
-        else
-          return ["text/html", ""]
+          puts "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
         end
 
-        writer_opts = reader_opts
-        haml = LINTER_HAML.dup
-        root = RDF::URI(request.url).join("/").to_s
-        puts "requrest.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
-        haml[:doc] = haml[:doc].gsub(/--root--/, root)
-        writer_opts[:haml] = haml
-        writer_opts[:haml_options] = {:ugly => false}
-        ["text/html", graph.dump(:rdfa, writer_opts)]
-      rescue RDF::ReaderError => e
-        @error = "RDF::ReaderError: #{e.message}"
-        puts @error  # to log
-        [content_type, @error] # XXX
-      rescue
-        raise unless settings.environment == :production
-        @error = "#{$!.class}: #{$!.message}"
-        puts @error  # to log
-        ["text/html", @error]
+        content_type, content = parse(reader_opts)
+        content.gsub!(/--root--/, root)
+        @output = content unless content == @error
+        erubis :linter, :locals => {:title => "Structured Data Linter", :head => :linter}
       end
     end
   end
