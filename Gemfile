@@ -23,4 +23,5 @@ gem 'haml',               '>= 3.0.0'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'shotgun'
+  gem 'rspec'
 end

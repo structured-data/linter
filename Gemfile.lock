@@ -59,6 +59,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.4)
+    diff-lcs (1.1.2)
     erubis (2.7.0)
     haml (3.1.2)
     json (1.5.3)
@@ -86,6 +87,14 @@ GEM
     rdf-rdfxml (0.3.3.1)
       nokogiri (>= 1.4.4)
       rdf (>= 0.3.3)
+    rspec (2.6.0)
+      rspec-core (~> 2.6.0)
+      rspec-expectations (~> 2.6.0)
+      rspec-mocks (~> 2.6.0)
+    rspec-core (2.6.4)
+    rspec-expectations (2.6.0)
+      diff-lcs (~> 1.1.2)
+    rspec-mocks (2.6.0)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.2.6)
@@ -110,6 +119,7 @@ DEPENDENCIES
   rdf-rdfa (>= 0.3.3)
   rdf-rdfxml (>= 0.3.3)
   rdf-trix!
+  rspec
   shotgun
   sinatra (>= 1.2.1)
   sinatra-linkeddata!
