@@ -9,7 +9,8 @@ gem 'rdf-json',         :git => "git://github.com/gkellogg/rdf-json.git", :branc
 gem 'rdf-trix',         :git => "git://github.com/gkellogg/rdf-trix.git", :branch => "0.4.x", :require => 'rdf/trix'
 gem 'rdf-microdata',    '>= 0.1.0', :require => "rdf/microdata"
 gem 'rdf-n3',           '>= 0.3.3', :require => "rdf/n3"
-gem 'rdf-rdfa',         '>= 0.3.3', :require => "rdf/rdfa"
+#gem 'rdf-rdfa',         '>= 0.3.4', :require => "rdf/rdfa"
+gem 'rdf-rdfa',         :git => "git://github.com/gkellogg/rdf-rdfa.git"
 gem 'rdf-rdfxml',       '>= 0.3.3', :require => "rdf/rdfxml"
 gem 'json-ld',          '>= 0.0.5', :require => 'json/ld'
 

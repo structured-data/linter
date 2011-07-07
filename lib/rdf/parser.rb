@@ -8,12 +8,12 @@ module RDF::Linter
 
       case
       when reader_opts[:tempfile]
-        reader = RDF::Reader.for(format).new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
+        RDF::Reader.for(format).new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
       when  reader_opts[:content]
         @content = reader_opts[:content]
-        reader = RDF::Reader.for(format).new(@content, reader_opts) {|r| graph << r}
+        RDF::Reader.for(format).new(@content, reader_opts) {|r| graph << r}
       when reader_opts[:base_uri]
-        reader = RDF::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
+        RDF::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
         return ["text/html", ""]
       end
