@@ -1,4 +1,6 @@
 # Default HAML templates used for generating output from the writer
+require 'rdf/linter/vocab'
+
 module RDF::Linter
   LINTER_HAML = {
     # Document
@@ -95,5 +97,24 @@ module RDF::Linter
               - else
                 %li{:content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
     ),
+    
+    # Schema.org `Person` snippet:
+    Vocab::V.uri => {
+      :subject => %q(
+        %div#richsnippets-result
+          h3.r
+            a{:href => subject.to_s }
+              = yield(Vocab::V.name)
+              |
+              = yield(Vocab::V.affiliation)
+          div.s
+            table.ts
+              tr
+                td{:valign => "top"}
+                  div.left-image
+                    a{:href => subject.to_s }
+                      
+      ),
+    }
   }
 end

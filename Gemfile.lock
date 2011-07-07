@@ -31,6 +31,19 @@ GIT
       rdf (>= 0.3.3)
 
 GIT
+  remote: git://github.com/gkellogg/rdf-rdfa.git
+  revision: abeeb938e28fe438c4117165b87fc55ecfb76653
+  specs:
+    rdf-rdfa (0.3.4)
+      addressable (= 2.2.4)
+      haml (>= 3.0.0)
+      haml (>= 3.0.0)
+      nokogiri (>= 1.3.3)
+      nokogiri (>= 1.4.4)
+      rdf
+      rdf (>= 0.3.3)
+
+GIT
   remote: git://github.com/gkellogg/rdf-trix.git
   revision: 67f84af0657160dd8d1f0d974fd554d8f47ba65a
   branch: 0.4.x
@@ -76,14 +89,6 @@ GEM
       rdf (>= 0.3.3)
     rdf-n3 (0.3.3.1)
       rdf (>= 0.3.3)
-    rdf-rdfa (0.3.4)
-      addressable (= 2.2.4)
-      haml (>= 3.0.0)
-      haml (>= 3.0.0)
-      nokogiri (>= 1.3.3)
-      nokogiri (>= 1.4.4)
-      rdf
-      rdf (>= 0.3.3)
     rdf-rdfxml (0.3.3.1)
       nokogiri (>= 1.4.4)
       rdf (>= 0.3.3)
@@ -116,7 +121,7 @@ DEPENDENCIES
   rdf-json!
   rdf-microdata (>= 0.1.0)
   rdf-n3 (>= 0.3.3)
-  rdf-rdfa (>= 0.3.3)
+  rdf-rdfa!
   rdf-rdfxml (>= 0.3.3)
   rdf-trix!
   rspec
