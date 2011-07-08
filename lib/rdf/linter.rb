@@ -5,12 +5,11 @@ require 'erubis'
 require 'rdf/microdata'
 require 'json/ld'
 require 'rdf/all'
-require 'rdf/parser'
 
 module RDF
   module Linter
+    require 'rdf/linter/parser'
     autoload :VERSION,      'rdf/linter/version'
-    autoload :LINTER_HAML,  'rdf/linter/rdfa_template'
 
     class Application < Sinatra::Base
       #register Sinatra::LinkedData

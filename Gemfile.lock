@@ -32,7 +32,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: abeeb938e28fe438c4117165b87fc55ecfb76653
+  revision: d8ccd1aa9f869dd20b45332980e82e2bd32a4a57
   specs:
     rdf-rdfa (0.3.4)
       addressable (= 2.2.4)

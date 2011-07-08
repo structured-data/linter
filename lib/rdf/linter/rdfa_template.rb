@@ -7,9 +7,7 @@ module RDF::Linter
     # Locals: language, title, profile, prefix, base, subjects
     # Yield: subjects.each
     :doc => %q(
-      %div{:id => "results-content"}
-        - if base
-          %p= "RDFa serialization URI base: &lt;#{base}&gt;"
+      %div{:id => "results-content", :about => base, :profile => profile, :prefix => prefix}
         - subjects.each do |subject|
           != yield(subject)
     ),
@@ -97,24 +95,8 @@ module RDF::Linter
               - else
                 %li{:content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
     ),
-    
-    # Schema.org `Person` snippet:
-    Vocab::V.uri => {
-      :subject => %q(
-        %div#richsnippets-result
-          h3.r
-            a{:href => subject.to_s }
-              = yield(Vocab::V.name)
-              |
-              = yield(Vocab::V.affiliation)
-          div.s
-            table.ts
-              tr
-                td{:valign => "top"}
-                  div.left-image
-                    a{:href => subject.to_s }
-                      
-      ),
-    }
   }
 end
+
+Dir.glob(File.join(File.expand_path(File.dirname(__FILE__)), 'snippets/*.rb')).each { |s| require s }
+
