@@ -37,7 +37,7 @@
 <% if @snippet -%>
 <div class="snippet">
   <h2>Enhanced search result preview</h2>
-  <p><em class="small">Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</em></p>
+  <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
   <%= @snippet %>
 </div>
 <% end -%>

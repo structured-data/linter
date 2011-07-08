@@ -1,0 +1,13 @@
+#snippet-content h3 {
+    color: #2200C2;
+    text-decoration: underline;
+    margin: 0;
+}
+#snippet-content .s {
+    color: #9C9C9D;
+    font-size: small;
+}
+#snippet-content cite {
+    color: #0E774B;
+    font-style: normal;
+}
