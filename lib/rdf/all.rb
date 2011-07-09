@@ -129,27 +129,22 @@ module RDF
   
   class RDFa::Reader
     ##
-    # If the sample seems to be XML and contains an @about, @resource,
-    # @profile, or @typeof attributes, presume that it is RDFa
+    # If the sample seems to be HTML, presume that it is RDFa
     #
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<\w+/) &&
-      sample.match(/<[^>]*(about|resource|profile|typeof)\s*="[^>]*>/m) &&
-      !sample.match(/<(\w+:)?(RDF)/)
+      sample.match(/<html/i)
     end
   end
   
   class Microdata::Reader
-    # If the sample seems to be XML and contains an @itemprop, @itemtype,
-    # @itemscope, or @itemref attributes, presume that it is Mocridata
+    # If the sample seems to be HTML, presume that it is Mocridata
     #
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<\w+/) &&
-      sample.match(/<[^>]*(itemprop|itemtype|itemref)[^>]*>/m)
+      sample.match(/<html/i)
     end
   end
   

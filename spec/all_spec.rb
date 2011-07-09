@@ -10,7 +10,7 @@ describe RDF::All::Reader do
   # Check format detection
   describe ".detect" do
     {
-      "rdfa" => %q(
+      "rdfa:microdata" => %q(
         <html @profile="foo">
           <body>
             <div about="#me"/>
@@ -23,7 +23,7 @@ describe RDF::All::Reader do
         </rdf:Description>
       </rdf:RDF>
       ),
-      "microdata" => %q(
+      "rdfa:microdata" => %q(
         <dl itemscope
             itemtype="http://purl.org/vocab/frbr/core#Work"
             itemid="http://books.example.com/works/45U8QJGZSQKDH8N">
