@@ -134,7 +134,10 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<html/i)
+      sample.match(/<html/i) ||
+      (sample.match(/<[^>]*(about|resource|profile|typeof)\s*="[^>]*>/m) &&
+      !sample.match(/<(\w+:)?(RDF)/)
+      )
     end
   end
   
@@ -144,7 +147,8 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<html/i)
+      sample.match(/<html/i) ||
+      sample.match(/<[^>]*(itemprop|itemtype|itemref)[^>]*>/m)
     end
   end
   
