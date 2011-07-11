@@ -21,8 +21,10 @@ module RDF::Linter
       end
 
       writer_opts = reader_opts
-      writer_opts[:haml] = LINTER_HAML
-      writer_opts[:haml_options] = {:ugly => false}
+      writer_opts = reader_opts.merge(
+        :standard_prefixes => true,
+        :haml => LINTER_HAML
+      )
       ["text/html", graph.dump(:rdfa, writer_opts)]
     rescue RDF::ReaderError => e
       @error = "RDF::ReaderError: #{e.message}"
