@@ -47,20 +47,22 @@
 </div>
 <% end -%>
 
+<% if @parsed_statements -%>
 <div>
   <h2>Parser statistics</h2>
   <table.stats>
   <tbody>
-  <%- @parsed_statements.each do |reader, count| %>
+  <% @parsed_statements.each do |reader, count| -%>
     <tr><td><%= reader.to_s %>:</td><td><%= count.to_s %></dd></td>
-  <%- end%>
+  <% end -%>
   </tbody>
   </table>
 </div>
+<% end -%>
 
-<% if @debug %>
+<% if @debug -%>
 <div class="debug">
   <h2>Debug Information</h2>
   <textarea rows="20" cols="120"><%= CGI.escapeHTML(@debug.join("\n")) %></textarea>
 </div>
-<% end %>
+<% end -%>
