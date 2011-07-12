@@ -22,6 +22,12 @@ module RDF
     # Generic reader, detects appropriate readers and passes to each one
     class Reader < RDF::Reader
       ##
+      # Returns a hash of the number of statements parsed by each reader.
+      #
+      # @attr [Hash<Class, Integer>] statement_count
+      attr :statement_count
+
+      ##
       # Finds each appropriate reader and yields statements
       # from each reader found.
       #
@@ -46,12 +52,16 @@ module RDF
           sample = @input.read(1000)
           @input.rewind
 
+          @statement_count = {}
+          
           RDF::Reader.each do |reader_class|
             if reader_class.detect(sample)
               #puts "detected #{reader_class.name}"
               begin
                 reader_class.new(@input, @options) do |reader|
                   reader.each_statement do |statement|
+                    @statement_count[reader_class] ||= 0
+                    @statement_count[reader_class] += 1
                     block.call(statement)
                   end
                 end
