@@ -17,6 +17,7 @@ gem 'sinatra',            '>= 1.2.1'
 gem 'sinatra-linkeddata', :git => "git://github.com/gkellogg/sinatra-linkeddata.git", :branch => "0.4.x", :require => "sinatra/linkeddata"
 gem 'erubis',             '>= 2.6.6'
 gem 'haml',               '>= 3.0.0'
+gem 'facets',             '>= 2.9.1'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
