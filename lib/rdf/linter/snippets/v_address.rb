@@ -3,7 +3,7 @@ module RDF::Linter
   LINTER_HAML.merge!({
     Vocab::V.Address => {
       :subject => %q(
-        %span{:about => get_curie(subject), :typeof => typeof}
+        %span.snippet{:about => get_curie(subject), :typeof => typeof}
           - street = predicates.delete(RDF::Linter::Vocab::V.send("street-address"))
           - locality = predicates.delete(RDF::Linter::Vocab::V.send("locality"))
           - region = predicates.delete(RDF::Linter::Vocab::V.send("region"))

@@ -3,7 +3,7 @@ module RDF::Linter
   LINTER_HAML.merge!({
     Vocab::V.Person => {
       :subject => %q(
-        %div{:id => "snippet-content", :about => get_curie(subject), :typeof => typeof}
+        %div.snippet{:id => "snippet-content", :about => get_curie(subject), :typeof => typeof}
           %h3.r
             %a.fakelink
               = yield("http://rdf.data-vocabulary.org/#name")
