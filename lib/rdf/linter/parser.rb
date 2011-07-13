@@ -31,7 +31,7 @@ module RDF::Linter
       writer_opts = reader_opts.merge(
         :standard_prefixes => true,
         :haml => LINTER_HAML,
-        :base_uri => (reader.base_uri.to_s if reader.base_uri),
+        :base_uri => (reader.base_uri.to_s if reader.base_uri)
       )
       ["text/html", graph.dump(:rdfa, writer_opts)]
     rescue RDF::ReaderError => e
