@@ -31,7 +31,7 @@ describe RDF::Linter do
             end
 
             it "has path #{xpath.inspect} matching #{result.inspect}" do
-              subject.should have_xpath(xpath, result)
+              subject.should have_xpath(xpath.to_s, result)
             end
           end
         else
@@ -53,7 +53,7 @@ describe RDF::Linter do
         csv = File.join(TEST_DIR, File.basename(input.sub('.html', '.csv')))
         if File.exist?(csv)
           CSV.foreach(csv) do |(xpath,result)|
-            next if xpath =~ /^\s*#/
+            next if xpath.to_s =~ /^\s*#/
             result = case result
             when /^\s*true\s*$/i    then true
             when /^\s*false\s*$/i   then false
@@ -62,7 +62,7 @@ describe RDF::Linter do
             end
 
             it "has path #{xpath.inspect} matching #{result.inspect}" do
-              subject.should have_xpath(xpath, result)
+              subject.should have_xpath(xpath.to_s, result)
             end
           end
         else
