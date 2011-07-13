@@ -42,7 +42,7 @@ opts = GetoptLong.new(
 )
 opts.each do |opt, arg|
   case opt
-  when '--dbg'          then ::RDF::RDFa::debug = true
+  when '--dbg'          then ::RDF::All::debug = ::RDF::Microdata::debug = ::RDF::RDFa::debug = true
   when '--execute'      then input = arg
   when '--format'       then options[:output_format] = arg.to_sym
   when '--output'       then options[:output] = File.open(arg, "w")

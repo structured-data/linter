@@ -111,3 +111,5 @@ table.properties td ul li {
 table.properties td ul li span.lang {
     color:  green;
 }
+
+div.notype {display:none;}
