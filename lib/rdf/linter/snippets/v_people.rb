@@ -3,7 +3,7 @@ module RDF::Linter
   LINTER_HAML.merge!({
     Vocab::V.Person => {
       :subject => %q(
-        %div.snippet{:id => "snippet-content", :about => get_curie(subject), :typeof => typeof}
+        %div.snippet{:id => "snippet-content", :about => about, :typeof => typeof}
           %h3.r
             %a.fakelink
               = yield("http://rdf.data-vocabulary.org/#name")
@@ -20,25 +20,46 @@ module RDF::Linter
                     != [addr, title].compact.join("- ")
                   %br
                   %span.f
-                    %cite
-                      = subject.to_s
+                    %cite!= base.to_s
+                  %span.gl
+                    -
+                    %a.fakelink(Cached)
+                    -
+                    %a.fakelink(Similar)
+          %div.other
+            %p="Content not used in snippet generation:"
+            %table.properties
+              %tbody
+                - predicates.reject{|p| p.to_s.match('http://rdf.data-vocabulary.org/\#(address|title|affiliation|name)$')}.each do |predicate|
+                  != yield(predicate)
                   
       ),
       :property_value => %q(
-        - object = objects.first
         - if object.node? && res = yield(object)
           != res
-        - elsif property == "http://rdf.data-vocabulary.org/#photo"
-          %td{:valign => "top"}
-            %div.left-image{:rel => get_curie(property)}
-              %a.fakelink
-                %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
-        - elsif object.uri?
-          %span{:rel => get_curie(predicate)}= object.to_s
-        - elsif object.node?
-          %span{:resource => get_curie(object), :rel => get_curie(predicate)}= get_curie(object)
+        - elsif predicate.to_s.match('http://rdf.data-vocabulary.org/\#(address|title|affiliation|name)$')
+          - if predicate == "http://rdf.data-vocabulary.org/#photo"
+            %td{:valign => "top"}
+              %div.left-image{:rel => rel}
+                %a.fakelink
+                  %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
+          - elsif object.uri?
+            %span{:rel => rel}= object.to_s
+          - elsif object.node?
+            %span{:resource => get_curie(object), :rel => rel}= get_curie(object)
+          - else
+            %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
         - else
-          %span{:property => get_curie(predicate), :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+          %tr.property
+            %td.label
+              = get_predicate_name(predicate)
+            - if object.uri?
+              %td
+                %a{:href => object.to_s, :rel => rel}= object.to_s
+            - elsif object.node?
+              %td{:resource => get_curie(object), :rel => rel}= get_curie(object)
+            - else
+              %td{:property => property}= escape_entities(get_value(object))
       ),      
     }
   })

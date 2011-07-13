@@ -3,7 +3,7 @@ module RDF::Linter
   LINTER_HAML.merge!({
     Vocab::V.Address => {
       :subject => %q(
-        %span.snippet{:about => get_curie(subject), :typeof => typeof}
+        %span.snippet{:about => resource, :rel => rel, :typeof => typeof}
           - street = predicates.delete(RDF::Linter::Vocab::V.send("street-address"))
           - locality = predicates.delete(RDF::Linter::Vocab::V.send("locality"))
           - region = predicates.delete(RDF::Linter::Vocab::V.send("region"))
@@ -18,11 +18,11 @@ module RDF::Linter
         - if object.node? && res = yield(object)
           != res
         - elsif object.uri?
-          %span{:rel => get_curie(predicate)}= object.to_s
+          %span{:rel => rel}= object.to_s
         - elsif object.node?
-          %span{:resource => get_curie(object), :rel => get_curie(predicate)}= get_curie(object)
+          %span{:resource => get_curie(object), :rel => rel}= get_curie(object)
         - else
-          %span{:property => get_curie(predicate), :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+          %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
       )
     }
   })
