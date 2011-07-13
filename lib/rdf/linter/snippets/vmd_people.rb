@@ -1,39 +1,39 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   LINTER_HAML.merge!({
-    Vocab::V.Person => {
+    Vocab::VMD.Person => {
       :subject => %q(
-        %div.snippet{:id => "snippet-content", :about => about, :typeof => typeof}
+        %td.snippet{:id => "snippet-content", :about => about, :typeof => typeof}
           %h3.r
             %a.fakelink
-              = yield("http://rdf.data-vocabulary.org/#name")
+              = yield("http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:name")
           %div.s
             %table.ts
               %tr
-                = yield("http://rdf.data-vocabulary.org/#photo")
+                = yield("http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:photo")
                 %td{:valign => "top"}
                   %div.f
-                    - addr = yield("http://rdf.data-vocabulary.org/#address")
-                    - title = yield("http://rdf.data-vocabulary.org/#title")
-                    - affiliation = yield("http://rdf.data-vocabulary.org/#affiliation")
+                    - addr = yield("http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:address")
+                    - title = yield("http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:title")
+                    - affiliation = yield("http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:affiliation")
                     - title = [title, affiliation].compact.map(&:rstrip).join(", ")
                     != [addr, title].compact.join("- ")
                   %br
                   %span.f
-                    %cite!= yield("http://rdf.data-vocabulary.org/#url")
+                    %cite!= yield("http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:url")
           %div.other
             %p="Content not used in snippet generation:"
             %table.properties
               %tbody
-                - predicates.reject{|p| p.to_s.match('http://rdf.data-vocabulary.org/\#(address|title|affiliation|name|url)$')}.each do |predicate|
+                - predicates.reject{|p| p.to_s.match('http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:(address|title|affiliation|name|url)$')}.each do |predicate|
                   != yield(predicate)
                   
       ),
       :property_value => %q(
         - if object.node? && res = yield(object)
           != res
-        - elsif predicate.to_s.match('http://rdf.data-vocabulary.org/\#(address|title|affiliation|name|url)$')
-          - if predicate == "http://rdf.data-vocabulary.org/#photo"
+        - elsif predicate.to_s.match('http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:(address|title|affiliation|name|url)$')
+          - if predicate == "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Person%23:photo"
             %td{:valign => "top"}
               %div.left-image{:rel => rel}
                 %a.fakelink

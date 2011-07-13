@@ -11,3 +11,6 @@
     color: #0E774B;
     font-style: normal;
 }
+
+/* Hide information for items without a type */
+div.notype>h1, div.notype .base, div.notype td.label { display:none; }

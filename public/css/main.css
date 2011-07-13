@@ -68,7 +68,7 @@ div[about] {
     background: #E6E6E6;
     margin:     2px;
     padding:    2px;
-    border:     5px solid white;
+    border:     0;
     width:      100%;
 }
 
@@ -111,5 +111,3 @@ table.properties td ul li {
 table.properties td ul li span.lang {
     color:  green;
 }
-
-div.notype {display:none;}

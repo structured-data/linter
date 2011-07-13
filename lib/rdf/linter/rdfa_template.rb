@@ -64,35 +64,39 @@ module RDF::Linter
         %tr.property
           %td.label
             = get_predicate_name(predicate)
-          - if object.node?
-            %td{:resource => get_curie(object), :rel => rel}= get_curie(object)
+          - if res = yield(object)
+            != res
+          - elsif object.node?
+            %td.base{:resource => get_curie(object), :rel => rel}= get_curie(object)
           - elsif object.uri?
-            %td
+            %td.base
               %a{:href => object.to_s, :rel => rel}= object.to_s
           - elsif object.datatype == RDF.XMLLiteral
-            %td{:property => property, :lang => get_lang(object), :datatype => get_dt_curie(object)}<!= get_value(object)
+            %td.base{:property => property, :lang => get_lang(object), :datatype => get_dt_curie(object)}<!= get_value(object)
           - else
-            %td{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+            %td.base{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
     ),
 
     # Output for multi-valued properties
     # Locals: property, rel, :objects
     :property_values =>  %q(
-      %tr.property
+      %tr.property.base
         %td.label
           = get_predicate_name(predicate)
         %td{:rel => rel, :property => property}
           %ul
             - objects.each do |object|
-              - if object.node?
-                %li{:resource => get_curie(object)}= get_curie(object)
+              - if res = yield(object)
+                != res
+              - elsif object.node?
+                %li.base{:resource => get_curie(object)}= get_curie(object)
               - elsif object.uri?
-                %li
+                %li.base
                   %a{:href => object.to_s}= object.to_s
               - elsif object.datatype == RDF.XMLLiteral
-                %li{:lang => get_lang(object), :datatype => get_curie(object.datatype)}<!= get_value(object)
+                %li.base{:lang => get_lang(object), :datatype => get_curie(object.datatype)}<!= get_value(object)
               - else
-                %li{:content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+                %li.base{:content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
     ),
   }
 end
