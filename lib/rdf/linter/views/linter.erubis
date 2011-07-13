@@ -11,18 +11,28 @@
   </ul>
 </nav>
 <form action="/" method="post">
-    <fieldset class="url">
-      <legend>Page URL</legend>
-      <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
-    </fieldset>
-    <fieldset class="upload">
-      <legend>File Upload</legend>
-      <input type="file" name="datafile" size="40">
-    </fieldset>
-    <fieldset class="input">
-      <legend>Markup</legend>
-      <textarea class="input" cols="120" id="content" name="content" rows="15"><%= @content %></textarea>
-    </fieldset>
+  <fieldset class="url">
+    <legend>Page URL</legend>
+    <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
+    <input name="commit" type="submit" value="Submit" />
+    <br/>Examples:
+    <% %w(People).each do |ex| -%>
+      <%= ex %> (
+      <% %w(RDFa MD MF).each do |fmt| -%>
+        <a href="#"
+          onclick="$('#url').val(window.location.protocol + '//' + window.location.host + '/examples/google-rs-<%=ex.downcase%>.<%=fmt.downcase%>.html')"
+        ><%=fmt%></a>
+    <% end -%>)
+  <% end -%>
+  </fieldset>
+  <fieldset class="upload">
+    <legend>File Upload</legend>
+    <input type="file" name="datafile" size="40">
+    <input name="commit" type="submit" value="Submit" />
+  </fieldset>
+  <fieldset class="input">
+    <legend>Markup</legend>
+    <textarea class="input" cols="120" id="content" name="content" rows="15"><%= @content %></textarea>
     <input name="commit" type="submit" value="Submit" />
   </fieldset>
 </form>
@@ -50,10 +60,10 @@
 <% if @parsed_statements -%>
 <div>
   <h2>Parser statistics</h2>
-  <table.stats>
+  <table class="stats">
   <tbody>
   <% @parsed_statements.each do |reader, count| -%>
-    <tr><td><%= reader.to_s %>:</td><td><%= count.to_s %></dd></td>
+    <tr><td><%= reader.to_s %>:</td><td><%= count.to_s %> statements</td></td>
   <% end -%>
   </tbody>
   </table>
