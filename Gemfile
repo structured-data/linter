@@ -25,4 +25,6 @@ gem 'facets',             '>= 2.9.1'
 group :development, :test do
   gem 'shotgun'
   gem 'rspec'
+  gem 'wirble'
+  gem 'fastercsv', :platforms => :ruby_18
 end

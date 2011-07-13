@@ -1,6 +1,7 @@
 $:.unshift "."
 require File.join(File.dirname(__FILE__), 'spec_helper')
 require 'csv'
+require 'fastercsv' if CSV.const_defined?(:Reader)  # For Ruby 1.8
 
 describe RDF::Linter do
   include RDF::Linter::Parser
@@ -19,7 +20,8 @@ describe RDF::Linter do
         }
         csv = input.sub('.html', '.csv')
         if File.exist?(csv)
-          CSV.foreach(csv) do |(xpath,result)|
+          csv_class = CSV.const_defined?(:Reader) ? FasterCSV : CSV
+          csv_class.foreach(csv) do |(xpath,result)|
             next if xpath =~ /^\s*#/
             result = case result
             when /^\s*true\s*$/i    then true
