@@ -16,7 +16,7 @@
     <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
     <input name="commit" type="submit" value="Submit" />
     <br/>Examples:
-    <% %w(People).each do |ex| -%>
+    <% %w(People Aggregate-Reviews).each do |ex| -%>
       <%= ex %> (
       <% %w(RDFa MD MF).each do |fmt| -%>
         <a href="#"

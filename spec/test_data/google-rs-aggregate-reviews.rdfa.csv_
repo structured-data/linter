@@ -1,9 +1,0 @@
-"# First column is Xpath, second column is expected result. May be string, regexp, true, or false",
-/div/@id,results-content
-/div/@prefix,TRUE
-/div/div[@typeof]/@id,snippet-content
-/div/div/@typeof,v:Review-aggregate
-//h3[@class='r']/a[@class='fakelink']/span[@property='v:itemreviewed']/text(),L'Amourita Pizza
-//div[@class='s']/div[@class='f']/span[@property='v.count']/text(),"12"
-//div[@class='s']/div[@class='f']/span[@property='v.pricerange']/text(),Under $10 per entree
-//div[@class='s']/span[@class='f']/cite/text(),/http:\/\/example.org\//
