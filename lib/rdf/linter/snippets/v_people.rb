@@ -21,11 +21,6 @@ module RDF::Linter
                   %br
                   %span.f
                     %cite!= base.to_s
-                  %span.gl
-                    -
-                    %a.fakelink(Cached)
-                    -
-                    %a.fakelink(Similar)
           %div.other
             %p="Content not used in snippet generation:"
             %table.properties
