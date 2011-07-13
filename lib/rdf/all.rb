@@ -12,6 +12,9 @@ module RDF
   # @example Requiring the `RDF::All` module explicitly
   #   require 'rdf/all'
   module All
+    def self.debug?; @debug; end
+    def self.debug=(value); @debug = value; end
+
     ##
     # Only matched with :format => :all
     class Format < RDF::Format
@@ -21,6 +24,12 @@ module RDF
     ##
     # Generic reader, detects appropriate readers and passes to each one
     class Reader < RDF::Reader
+      ##
+      # Returns the base URI determined by this reader.
+      #
+      # @attr [RDF::URI]
+      attr_reader :base_uri
+
       ##
       # Returns a hash of the number of statements parsed by each reader.
       #
@@ -55,19 +64,23 @@ module RDF
           @statement_count = {}
           
           RDF::Reader.each do |reader_class|
+            puts "check #{reader_class.name}" if ::RDF::All.debug?
             if reader_class.detect(sample)
-              #puts "detected #{reader_class.name}"
+              puts "detected #{reader_class.name}" if ::RDF::All.debug?
               begin
+                @input.rewind if @input.respond_to?(:rewind)
                 reader_class.new(@input, @options) do |reader|
                   reader.each_statement do |statement|
                     @statement_count[reader_class] ||= 0
                     @statement_count[reader_class] += 1
                     block.call(statement)
                   end
+                  @base_uri ||= reader.base_uri unless reader.base_uri.to_s.empty?
                 end
               rescue RDF::ReaderError
                 # Ignore errors
               end
+              puts "parsed #{@statement_count[reader_class].to_i} triples from #{reader_class.name}" if ::RDF::All.debug?
             end
           end
         end
