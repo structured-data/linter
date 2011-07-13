@@ -3,7 +3,7 @@ module RDF::Linter
   LINTER_HAML.merge!({
     Vocab::VMD.Address => {
       :subject => %q(
-        %span.snippet{:about => resource, :rel => rel, :typeof => typeof}
+        %span{:about => resource, :rel => rel, :typeof => typeof}
           - street = predicates.delete('http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Address%23:street-address')
           - locality = predicates.delete('http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Address%23:locality')
           - region = predicates.delete('http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Address%23:region')

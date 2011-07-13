@@ -26,6 +26,6 @@ $(function () {
 
 </script>
 
-<% if @output.match(/class='snippet'/) -%>
+<% if @output.match(/snippet-content/) -%>
 <link rel="stylesheet" href="/css/snippet.css" type="text/css" media="screen, projection" />
 <% end -%>

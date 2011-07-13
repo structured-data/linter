@@ -46,6 +46,10 @@ module RDF::Linter
               != yield(predicate)
       - else
         %div{:about => about, :typeof => typeof, :class => (typeof.nil? && 'notype')}
+          - if typeof.nil?
+            %h3
+              Content from
+              = about
           - if typeof
             %span.type!= typeof
           %table.properties
@@ -58,29 +62,26 @@ module RDF::Linter
     # Render as a leaf
     # Otherwise, render result
     :property_value => %q(
-      - if heading_predicates.include?(predicate) && object.literal?
-        %h1{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
-      - else
-        %tr.property
-          %td.label
-            = get_predicate_name(predicate)
-          - if res = yield(object)
-            != res
-          - elsif object.node?
-            %td.base{:resource => get_curie(object), :rel => rel}= get_curie(object)
-          - elsif object.uri?
-            %td.base
-              %a{:href => object.to_s, :rel => rel}= object.to_s
-          - elsif object.datatype == RDF.XMLLiteral
-            %td.base{:property => property, :lang => get_lang(object), :datatype => get_dt_curie(object)}<!= get_value(object)
-          - else
-            %td.base{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+      %tr.property
+        %td.label
+          = get_predicate_name(predicate)
+        - if res = yield(object)
+          != res
+        - elsif object.node?
+          %td.base{:resource => get_curie(object), :rel => rel}= get_curie(object)
+        - elsif object.uri?
+          %td.base
+            %a{:href => object.to_s, :rel => rel}= object.to_s
+        - elsif object.datatype == RDF.XMLLiteral
+          %td.base{:property => property, :lang => get_lang(object), :datatype => get_dt_curie(object)}<!= get_value(object)
+        - else
+          %td.base{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
     ),
 
     # Output for multi-valued properties
     # Locals: property, rel, :objects
     :property_values =>  %q(
-      %tr.property.base
+      %tr.property
         %td.label
           = get_predicate_name(predicate)
         %td{:rel => rel, :property => property}

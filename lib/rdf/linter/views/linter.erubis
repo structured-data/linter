@@ -44,7 +44,7 @@
 </div>
 <% end -%>
 
-<% if @output.match(/class='snippet'/) -%>
+<% if @output.match(/snippet-content/) -%>
 <div class="snippet">
   <h2>Enhanced search result preview</h2>
   <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
