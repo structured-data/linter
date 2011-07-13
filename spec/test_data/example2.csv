@@ -3,22 +3,21 @@
 /div/@prefix,TRUE
 /div/div[@about=''],TRUE
 /div/div[@about='']/@typeof,FALSE
-/div/div[@about='']//td/a/@href,http://books.example.com/works/45U8QJGZSQKDH8N
-/div/div[@about='']//td/a/@rel,md:item
-/div/div[@about='']//td/a/text(),http://books.example.com/works/45U8QJGZSQKDH8N
-/div/div[@about='http://books.example.com/products/9780596007683.BOOK'],TRUE
-/div/div[@about='http://books.example.com/products/9780596007683.BOOK']/@typeof,http://purl.org/vocab/frbr/core#Expression
-/div/div[@about='http://books.example.com/products/9780596007683.BOOK']//a/@href,http://books.example.com/product-types/BOOK
-/div/div[@about='http://books.example.com/products/9780596007683.BOOK']//a/@rel,dc:type
-/div/div[@about='http://books.example.com/products/9780596007683.BOOK']//a/text(),http://books.example.com/product-types/BOOK
-/div/div[@about='http://books.example.com/products/9780596802189.EBOOK'],TRUE
-/div/div[@about='http://books.example.com/products/9780596802189.EBOOK']/@typeof,http://purl.org/vocab/frbr/core#Expression
-/div/div[@about='http://books.example.com/products/9780596802189.EBOOK']//a/@href,http://books.example.com/product-types/EBOOK
-/div/div[@about='http://books.example.com/products/9780596802189.EBOOK']//a/@rel,dc:type
-/div/div[@about='http://books.example.com/products/9780596802189.EBOOK']//a/text(),http://books.example.com/product-types/EBOOK
-/div/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N'],TRUE
-/div/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N']/@typeof,http://purl.org/vocab/frbr/core#Work
-/div/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@property='dc:creator']/text(),Wil Wheaton
-/div/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//h1[@property='dc:title']/text(),Just a Geek
-/div/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@rel='http://purl.org/vocab/frbr/core#realization']//a[@href='http://books.example.com/products/9780596007683.BOOK']/text(),http://books.example.com/products/9780596007683.BOOK
-/div/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@rel='http://purl.org/vocab/frbr/core#realization']//a[@href='http://books.example.com/products/9780596802189.EBOOK']/text(),http://books.example.com/products/9780596802189.EBOOK
+//*[@rel='md:item']/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N']/@about,TRUE
+//*[@about='http://books.example.com/works/45U8QJGZSQKDH8N'],TRUE
+//*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']/@typeof,http://purl.org/vocab/frbr/core#Work
+//*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@property='dc:creator']/text(),Wil Wheaton
+//*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@property='dc:title']/text(),Just a Geek
+//*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@rel='http://purl.org/vocab/frbr/core#realization'],TRUE
+//*[@rel='http://purl.org/vocab/frbr/core#realization']//*[@about='http://books.example.com/products/9780596007683.BOOK'],TRUE
+//*[@rel='http://purl.org/vocab/frbr/core#realization']//*[@about='http://books.example.com/products/9780596802189.EBOOK'],TRUE
+//*[@about='http://books.example.com/products/9780596007683.BOOK'],TRUE
+//*[@about='http://books.example.com/products/9780596007683.BOOK']/@typeof,http://purl.org/vocab/frbr/core#Expression
+//*[@about='http://books.example.com/products/9780596007683.BOOK']//a/@href,http://books.example.com/product-types/BOOK
+//*[@about='http://books.example.com/products/9780596007683.BOOK']//a/@rel,dc:type
+//*[@about='http://books.example.com/products/9780596007683.BOOK']//a/text(),http://books.example.com/product-types/BOOK
+//*[@about='http://books.example.com/products/9780596802189.EBOOK'],TRUE
+//*[@about='http://books.example.com/products/9780596802189.EBOOK']/@typeof,http://purl.org/vocab/frbr/core#Expression
+//*[@about='http://books.example.com/products/9780596802189.EBOOK']//a/@href,http://books.example.com/product-types/EBOOK
+//*[@about='http://books.example.com/products/9780596802189.EBOOK']//a/@rel,dc:type
+//*[@about='http://books.example.com/products/9780596802189.EBOOK']//a/text(),http://books.example.com/product-types/EBOOK
