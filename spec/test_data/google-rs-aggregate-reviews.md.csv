@@ -1,0 +1,7 @@
+"# First column is Xpath, second column is expected result. May be string, regexp, true, or false",
+/div/@id,results-content
+/div/@prefix,TRUE
+/div/div[@typeof]/@class,snippet-content
+/div/div/@typeof,vmd:Review-aggregate
+//h3[@class='r']/a[@class='fakelink']/span[@property='md:http://data-vocabulary.org/Review-aggregate%23:itemreviewed']/text(),/Amourita Pizza/
+//div[@class='s']/div[@class='f']/span[@property='md:http://data-vocabulary.org/Review-aggregate%23:count']/text(),5
