@@ -11,8 +11,6 @@ module RDF::Linter
               = [name, addr].compact.join("- ")
           %div.s
             %div.f
-              -# Use jQuery rating tool?
-              -# %div{:id => "raty"}
               = yield("http://rdf.data-vocabulary.org/#rating")
               = yield("http://rdf.data-vocabulary.org/#count")
               reviews
@@ -30,9 +28,11 @@ module RDF::Linter
                   
       ),
       :property_value => %q(
-        - if object.node? && res = yield(object)
+        - if predicate.to_s.match('http://rdf.data-vocabulary.org/\#rating')
+          != rating_helper(predicate, object)
+        - elsif object.node? && res = yield(object)
           != res
-        - elsif predicate.to_s.match('http://rdf.data-vocabulary.org/\#(itemreviewed|address|rating|count|summary)$')
+        - elsif predicate.to_s.match('http://rdf.data-vocabulary.org/\#(itemreviewed|address|count|summary)$')
           - if object.uri?
             %span{:rel => rel}= object.to_s
           - elsif object.node?
