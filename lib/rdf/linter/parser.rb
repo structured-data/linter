@@ -1,4 +1,4 @@
-require 'rdf/linter/rdfa_template'
+require 'rdf/linter/writer'
 require 'nokogiri'
 
 module RDF::Linter
@@ -29,20 +29,16 @@ module RDF::Linter
       end
       
       writer_opts = reader_opts
-      writer_opts = reader_opts.merge(
-        :standard_prefixes => true,
-        :haml => LINTER_HAML,
-        :base_uri => (reader.base_uri.to_s if reader.base_uri)
-      )
+      writer_opts[:base_uri] ||= reader.base_uri.to_s if reader.base_uri
       
       # Move elements with class `snippet` to the front of the root element
-      doc = Nokogiri::XML.parse(graph.dump(:rdfa, writer_opts))
+      html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
+      doc = Nokogiri::XML.parse(html)
       snippets = doc.root.css('.snippet-content').map {|el| el.remove; el }
       leftover = doc.root.children.map {|el| el.remove; el}
       (snippets + leftover).each {|el| doc.root.add_child(el)}
       
       ["text/html", doc.root.to_html]
-      #["text/html", graph.dump(:rdfa, writer_opts)]
     rescue RDF::ReaderError => e
       @error = "RDF::ReaderError: #{e.message}"
       puts @error  # to log
