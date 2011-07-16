@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACME Executive Anvil</title>
+  <base href="http://example.org/"/>
+</head>
+<body>
+<div vocab="http://rdf.data-vocabulary.org/#" typeof="Product">
+  <span property="brand">ACME</span> <span property="name">Executive
+    Anvil</span>
+  <span rel="image"><img src="anvil_executive.jpg" /></span>
+
+  <span property="description">Sleeker than ACME's Classic Anvil, the 
+    Executive Anvil is perfect for the business traveler
+    looking for something to drop from a height.
+  </span>
+  Category: <span property="category" content="Hardware > Tools > Anvils">Anvils</span>
+  Product #: <span property="identifier" content="mpn:925872">
+    925872</span>
+  <span rel="review">
+    <span typeof="Review-aggregate">
+      <span property="rating">4.4</span> stars, based on <span property="count">89
+        </span> reviews
+    </span>
+  </span>
+
+  <span rel="offerDetails">
+    <span typeof="Offer">
+      Regular price: $179.99
+      <meta property="currency" content="USD" />
+      $<span property="price">119.99</span>
+      (Sale ends <span property="priceValidUntil" content="2010-11-05" datatype="xsd:date">
+        5 November!</span>)
+      Available from: <span property="seller">Executive Objects</span>
+      Condition: <span property="condition" content="used">Previously owned, 
+        in excellent condition</span>
+      <span property="availability" content="in_stock">In stock! Order now!</span>
+    </span>
+  </span>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ACME Executive Anvil</title>
+  <base href="http://example.org/"/>
+</head>
+<body>
+<div vocab="http://rdf.data-vocabulary.org/#" typeof="Product">
+ <span property="brand">ACME</span> <span property="name">Executive Anvil</span>
+ <img property="image" src="anvil_executive.jpg" />
+
+ <span rel="review">
+   <span typeof="Review-aggregate">
+    Average rating: <span property="rating">4.4</span>, based on
+    <span property="count">89</span> reviews
+   </span>
+ </span>
+
+ <span rel="offerDetails">
+   <span typeof="Offer-aggregate">
+    from $<span property="lowPrice" content="119.99">119.99</span> to 
+    $<span property="highPrice" content="199.99">199.99</span>
+    <meta property="currency" content="USD" />
+   </span>
+  </span>
+</div>
+</body>
+</html>

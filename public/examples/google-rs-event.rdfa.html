@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spinal Tap</title>
+  <base href="http://example.org/"/>
+</head>
+<body>
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event"> 
+  <a href="http://www.example.com/events/spinaltap" rel="v:url" 
+     property="v:summary">Spinal Tap</a> 
+  <img src="spinal_tap.jpg" rel="v:photo" /> 
+  <span property="v:description">After their highly-publicized search for a new drummer, 
+  Spinal Tap kicks off their latest comeback tour with a San Francisco show. </span>
+
+  When: 
+  <span property="v:startDate" content="2015-10-15T19:00-08:00">Oct 15, 7:00PM</span>—
+  <span property="v:endDate" content="2015-10-15T21:00-08:00">9:00PM</span>
+
+  Where: 
+  <span rel="v:location">
+    <span typeof="v:Organization">
+      <span property="v:name">Warfield Theatre</span>,
+      <span rel="v:address">
+        <span typeof="v:Address">
+          <span property="v:street-address">982 Market St</span>, 
+          <span property="v:locality">San Francisco</span>, 
+          <span property="v:region">CA</span>
+        </span>
+      </span>
+
+      <span rel="v:geo">
+        <span typeof="v:Geo">
+          <span property="v:latitude" content="37.774929" ></span>
+          <span property="v:longitude" content="-122.419416" ></span>
+        </span>
+      </span>
+    </span>   
+  </span>
+
+  Category: <span property="v:eventType">Concert</span>
+
+   <span rel="v:ticket"> 
+     <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Offer"> 
+      <a href="http://www.example.com/events/spinaltap/presale" property="v:offerurl">>Presale tickets</a>  
+        <span property="v:price">$10 </span>  <span property="v:currency">USD </span> till 
+        <span property="v:pricevaliduntil" content="2025-10-15T19:00+08:00">10 November 2015 </span> 
+        (<span property="v:quantity">1000 </span> available)
+     </div>         
+     <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Offer"> 
+       <a href="http://www.example.com/events/spinaltap/tickets" property="v:offerurl">Full-price tickets</a>
+         <span property="v:price">$11 </span> <span property="v:currency">USD </span> 
+     </div>         
+      
+</div>
+</body>
+</html>
