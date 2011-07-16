@@ -14,10 +14,9 @@ describe RDF::Linter do
   context "Test Cases" do
     Dir.glob(File.join(TEST_DIR, "*.html")) do |input|
       context File.basename(input) do
-        subject {
-          type, content = parse(:content => File.open(input), :format => :all)
-          content
-        }
+        before(:all) do
+          @subject = parse(:content => File.open(input), :format => :all).last
+        end
         csv = input.sub('.html', '.csv')
         if File.exist?(csv)
           csv_class = CSV.const_defined?(:Reader) ? FasterCSV : CSV
@@ -31,7 +30,7 @@ describe RDF::Linter do
             end
 
             it "has path #{xpath.inspect} matching #{result.inspect}" do
-              subject.should have_xpath(xpath.to_s, result)
+              @subject.should have_xpath(xpath.to_s, result)
             end
           end
         else
@@ -46,10 +45,9 @@ describe RDF::Linter do
   context "Snippet Generation" do
     Dir.glob(File.join(EXAMPLE_DIR, "*.html")) do |input|
       context File.basename(input) do
-        subject {
-          type, content = parse(:content => File.open(input), :format => :all)
-          content
-        }
+        before(:all) do
+          @subject = parse(:content => File.open(input), :format => :all).last
+        end
         csv = File.join(TEST_DIR, File.basename(input.sub('.html', '.csv')))
         if File.exist?(csv)
           CSV.foreach(csv) do |(xpath,result)|
@@ -62,7 +60,7 @@ describe RDF::Linter do
             end
 
             it "has path #{xpath.inspect} matching #{result.inspect}" do
-              subject.should have_xpath(xpath.to_s, result)
+              @subject.should have_xpath(xpath.to_s, result)
             end
           end
         else

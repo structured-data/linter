@@ -31,7 +31,7 @@ module RDF::Linter
     # Override order_subjects to prefer subjects having an rdf:type
     # @return [Array<Resource>] Ordered list of subjects
     def order_subjects
-      subjects = graph.tsort
+      subjects = graph.tsort rescue super # TSort can fail
       typed_subjects = subjects.select {|s| graph.first_object(:subject => s, :predicate => RDF.type)}
       typed_subjects + (subjects - typed_subjects)
     end
