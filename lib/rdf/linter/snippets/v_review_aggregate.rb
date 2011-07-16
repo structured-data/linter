@@ -3,6 +3,8 @@ module RDF::Linter
   {
     Vocab::V.send("Review-aggregate") => Vocab::V.to_uri.to_s,
     Vocab::VMD.send("Review-aggregate") => RDF::MD.send(Vocab::VMD.send("Review-aggregate").to_s + "%23:").to_s,
+    Vocab::V.Review => Vocab::V.to_uri.to_s,
+    Vocab::VMD.Review => RDF::MD.send(Vocab::VMD.Review.to_s + "%23:").to_s,
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       type => {
@@ -21,6 +23,7 @@ module RDF::Linter
               - if summary = yield("#{prefix}summary")
                 %br
                 = summary
+              %br
               %span.f
                 %cite!= base
             %div.other
@@ -36,7 +39,7 @@ module RDF::Linter
             != rating_helper(predicate, object)
           - elsif object.node? && res = yield(object)
             != res
-          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(itemreviewed|address|count|summary)$')
+          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(itemreviewed|address|rating|count|summary)$')
             - if object.uri?
               %span{:rel => rel}= object.to_s
             - elsif object.node?

@@ -1,8 +1,8 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   {
-    Vocab::V.Person => Vocab::V.to_uri.to_s,
-    Vocab::VMD.Person => RDF::MD.send(Vocab::VMD.Person.to_s + "%23:").to_s,
+    Vocab::V.Organization => Vocab::V.to_uri.to_s,
+    Vocab::VMD.Organization => RDF::MD.send(Vocab::VMD.Organization.to_s + "%23:").to_s,
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       type => {
@@ -12,16 +12,14 @@ module RDF::Linter
               %a.fakelink
                 = yield("#{prefix}name")
             %div.s
-              %table.ts
-                %tr
-                  = yield("#{prefix}photo")
-                  %td{:valign => "top"}
-                    %div.f
-                      - addr = yield("#{prefix}address")
-                      - title = yield("#{prefix}title")
-                      - affiliation = yield("#{prefix}affiliation")
-                      - title = [title, affiliation].compact.map(&:rstrip).join(", ")
-                      != [addr, title].compact.join("- ")
+            %table.ts
+              %tr
+                = yield("#{prefix}photo")
+                %td{:valign => "top"}
+                  %div.f
+                    - addr = yield("#{prefix}address")
+                    - tel = yield("#{prefix}tel")
+                    != title = [addr, tel].compact.map(&:rstrip).join(" - ")
                     %br
                     %span.f
                       %cite!= base
@@ -29,7 +27,7 @@ module RDF::Linter
               %p="Content not used in snippet generation:"
               %table.properties
                 %tbody
-                  - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(address|title|affiliation|name|photo)$')}.each do |predicate|
+                  - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(photo|address|tel|name)$')}.each do |predicate|
                     != yield(predicate)
                   
         ),
@@ -41,7 +39,7 @@ module RDF::Linter
                   %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
           - elsif object.node? && res = yield(object)
             != res
-          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(address|title|affiliation|name|photo)$')
+          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(photo|address|tel|name)$')
             - if predicate == "#{prefix}photo"
               %td{:valign => "top"}
                 %div.left-image{:rel => rel}

@@ -1,8 +1,8 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   {
-    Vocab::V.Person => Vocab::V.to_uri.to_s,
-    Vocab::VMD.Person => RDF::MD.send(Vocab::VMD.Person.to_s + "%23:").to_s,
+    Vocab::V.Product => Vocab::V.to_uri.to_s,
+    Vocab::VMD.Product => RDF::MD.send(Vocab::VMD.Product.to_s + "%23:").to_s,
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       type => {
@@ -14,14 +14,17 @@ module RDF::Linter
             %div.s
               %table.ts
                 %tr
-                  = yield("#{prefix}photo")
+                  = yield("#{prefix}image")
                   %td{:valign => "top"}
                     %div.f
-                      - addr = yield("#{prefix}address")
-                      - title = yield("#{prefix}title")
-                      - affiliation = yield("#{prefix}affiliation")
-                      - title = [title, affiliation].compact.map(&:rstrip).join(", ")
-                      != [addr, title].compact.join("- ")
+                      = yield("#{prefix}review")
+                      - if category = yield("#{prefix}category")
+                        = category
+                    - if description = yield("#{prefix}description")
+                      %br
+                      = description
+                    - if offerDetails = yield("#{prefix}offerDetails")
+                      = offerDetails
                     %br
                     %span.f
                       %cite!= base
@@ -29,25 +32,22 @@ module RDF::Linter
               %p="Content not used in snippet generation:"
               %table.properties
                 %tbody
-                  - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(address|title|affiliation|name|photo)$')}.each do |predicate|
+                  - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|description|offerDetails)$')}.each do |predicate|
                     != yield(predicate)
                   
         ),
         :property_value => %(
-          - if predicate == "#{prefix}photo"
+          - if predicate == "#{prefix}image"
             %td{:valign => "top"}
               %div.left-image{:rel => rel}
                 %a.fakelink
                   %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
+          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}rating')
+            != rating_helper(predicate, object)
           - elsif object.node? && res = yield(object)
             != res
-          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(address|title|affiliation|name|photo)$')
-            - if predicate == "#{prefix}photo"
-              %td{:valign => "top"}
-                %div.left-image{:rel => rel}
-                  %a.fakelink
-                    %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
-            - elsif object.uri?
+          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|description|offerDetails)$')
+            - if object.uri?
               %span{:rel => rel}= object.to_s
             - elsif object.node?
               %span{:resource => get_curie(object), :rel => rel}= get_curie(object)

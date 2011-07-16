@@ -6,22 +6,22 @@
   <base href="http://example.org/"/>
 </head>
 <body>
-<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Organization">
-  <span class="fn org">Warfield Theatre</span>,
-  <span class="adr">
-    <span class="street-address">982 Market St</span>,
-    <span class="locality">San Francisco</span>,
-    <span class="region">CA</span>
-  </span>
-  <span class="geo">
-    <span class="latitude">
-      <span class="value-title" title="37.774929" ></span>
-    </span>
-    <span class="longitude">
-      <span class="value-title" title="-122.419416"></span>
+<div vocab="http://rdf.data-vocabulary.org/#" typeof="Organization">
+  <span property="name">Warfield Theatre</span>,
+  <span rel="address">
+    <span typeof="Address">
+      <span property="street-address">982 Market St</span>,
+      <span property="locality">San Francisco</span>,
+      <span property="region">CA</span>
     </span>
   </span>
-  <span class="photo"> http://www.example.com/images/image.jpeg</span>
+  <span rel="geo">
+    <span typeof="Geo">
+      <span property="latitude" content="37.774929" ></span>
+      <span property="longitude" content="-122.419416" ></span>
+    </span>
+  </span>
+  <span rel="photo"><img src="http://www.example.com/images/image.jpe" /></span>
 </div>
 
 <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event"> 
