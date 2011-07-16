@@ -11,3 +11,8 @@
     color: #0E774B;
     font-style: normal;
 }
+
+.snippet-content .other { display:none ;}
+#results-content .notype { display:none ;}
+#results-content [typeof~='v:Rating'] { display:none ;}
+#results-content [typeof~='vmd:Rating'] { display:none ;}

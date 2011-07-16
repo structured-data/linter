@@ -9,6 +9,7 @@ require 'rdf/all'
 module RDF
   module Linter
     require 'rdf/linter/parser'
+    require 'rdf/linter/extensions'
     autoload :VERSION,      'rdf/linter/version'
 
     class Application < Sinatra::Base

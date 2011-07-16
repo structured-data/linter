@@ -4,12 +4,17 @@ require 'rdf/linter/vocab'
 module RDF::Linter
   LINTER_HAML = {
     # Document
-    # Locals: language, title, profile, prefix, base, subjects
+    # Locals: language, title, profile, prefix, base, subjects, turtle
     # Yield: subjects.each
     :doc => %q(
       %div{:id => "results-content", :about => base, :profile => profile, :prefix => prefix}
         - subjects.each do |subject|
           != yield(subject)
+      %div{:id => "results-turtle"}
+        %h3
+          Results in Turtle:
+        %pre{:id => "results-turtle"}
+          != turtle
     ),
 
     # Output for non-leaf resources

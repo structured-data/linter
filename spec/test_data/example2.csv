@@ -3,14 +3,14 @@
 /div/@prefix,TRUE
 /div/div[@about=''],TRUE
 /div/div[@about='']/@typeof,FALSE
-//*[@rel='md:item']/div[@about='http://books.example.com/works/45U8QJGZSQKDH8N']/@about,TRUE
+//*[@about='']//a[@href='http://books.example.com/works/45U8QJGZSQKDH8N']/@rel,md:item
 //*[@about='http://books.example.com/works/45U8QJGZSQKDH8N'],TRUE
 //*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']/@typeof,http://purl.org/vocab/frbr/core#Work
 //*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@property='dc:creator']/text(),Wil Wheaton
 //*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@property='dc:title']/text(),Just a Geek
 //*[@about='http://books.example.com/works/45U8QJGZSQKDH8N']//td[@rel='http://purl.org/vocab/frbr/core#realization'],TRUE
-//*[@rel='http://purl.org/vocab/frbr/core#realization']//*[@about='http://books.example.com/products/9780596007683.BOOK'],TRUE
-//*[@rel='http://purl.org/vocab/frbr/core#realization']//*[@about='http://books.example.com/products/9780596802189.EBOOK'],TRUE
+//*[@rel='http://purl.org/vocab/frbr/core#realization']//*[@href='http://books.example.com/products/9780596007683.BOOK'],TRUE
+//*[@rel='http://purl.org/vocab/frbr/core#realization']//*[@href='http://books.example.com/products/9780596802189.EBOOK'],TRUE
 //*[@about='http://books.example.com/products/9780596007683.BOOK'],TRUE
 //*[@about='http://books.example.com/products/9780596007683.BOOK']/@typeof,http://purl.org/vocab/frbr/core#Expression
 //*[@about='http://books.example.com/products/9780596007683.BOOK']//a/@href,http://books.example.com/product-types/BOOK

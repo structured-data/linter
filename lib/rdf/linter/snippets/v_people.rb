@@ -24,7 +24,7 @@ module RDF::Linter
                       != [addr, title].compact.join("- ")
                     %br
                     %span.f
-                      %cite!= yield("#{prefix}url")
+                      %cite!= base
             %div.other
               %p="Content not used in snippet generation:"
               %table.properties

@@ -18,6 +18,25 @@ module RDF::Linter
     end
     
     ##
+    # Override render_document to pass `turtle` as a local
+    #
+    # `turtle` is entity-escaped Turtle serialization of graph
+    def render_document(subjects, options = {})
+      super(subjects, options.merge(:turtle => escape_entities(graph.dump(:ttl, @options)))) do |subject|
+        yield(subject) if block_given?
+      end
+    end
+
+    ##
+    # Override order_subjects to prefer subjects having an rdf:type
+    # @return [Array<Resource>] Ordered list of subjects
+    def order_subjects
+      subjects = graph.tsort
+      typed_subjects = subjects.select {|s| graph.first_object(:subject => s, :predicate => RDF.type)}
+      typed_subjects + (subjects - typed_subjects)
+    end
+
+    ##
     # Generate markup for a rating.
     #
     # Ratings use the [jQuery Raty](http://www.wbotelhos.com/raty/) as the visual representation, normalized to a
@@ -53,7 +72,7 @@ module RDF::Linter
       best = 5.0
       @rating_id ||= "rating-0"
       id = @rating_id.succ
-      html = %(<span class='rating-stars' id="#{id}"/>)
+      html = %(<span class='rating-stars' id="#{id}"></span>)
       if object.literal?
         # Value is simiple rating
         rating = object.value.to_f
@@ -73,6 +92,7 @@ module RDF::Linter
         end
       end
 
+      STDERR.puts "rating_helper(#{property}, #{object}): #{html}"
       html + %(
         <script type="text/javascript">
           $(function () {

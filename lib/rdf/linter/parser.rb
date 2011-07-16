@@ -33,12 +33,7 @@ module RDF::Linter
       
       # Move elements with class `snippet` to the front of the root element
       html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
-      doc = Nokogiri::XML.parse(html)
-      snippets = doc.root.css('.snippet-content').map {|el| el.remove; el }
-      leftover = doc.root.children.map {|el| el.remove; el}
-      (snippets + leftover).each {|el| doc.root.add_child(el)}
-      
-      ["text/html", doc.root.to_html]
+      ["text/html", html]
     rescue RDF::ReaderError => e
       @error = "RDF::ReaderError: #{e.message}"
       puts @error  # to log

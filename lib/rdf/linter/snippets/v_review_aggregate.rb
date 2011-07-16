@@ -32,7 +32,7 @@ module RDF::Linter
                   
         ),
         :property_value => %(
-          - if predicate.to_s.match('http://rdf.data-vocabulary.org/\#rating')
+          - if predicate.to_s.match('#{prefix.gsub('#', '\#')}rating')
             != rating_helper(predicate, object)
           - elsif object.node? && res = yield(object)
             != res
