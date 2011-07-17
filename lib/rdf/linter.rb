@@ -11,8 +11,10 @@ module RDF
     require 'rdf/linter/parser'
     require 'rdf/linter/extensions'
     autoload :VERSION,      'rdf/linter/version'
-
+    
     class Application < Sinatra::Base
+      PUB_DIR = File.expand_path("../../public", File.dirname(__FILE__))
+
       #register Sinatra::LinkedData
       helpers Sinatra::Partials
       #use Rack::LinkedData::ContentNegotiation, :default => "text/html"

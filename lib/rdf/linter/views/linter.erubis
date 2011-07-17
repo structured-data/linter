@@ -1,6 +1,5 @@
 <%
   require 'cgi'
-  pub_dir = File.expand_path("../../../../public", File.dirname(__FILE__))
 %>
 <h1><%= title %></h1>
 <p>
@@ -23,7 +22,7 @@
       <%= ex %> (
       <% %w(RDFa MD MF).each do |fmt|
         path = "/examples/google-rs-#{ex.downcase}.#{fmt.downcase}.html"
-        next unless File.exist?(File.join(pub_dir, path))
+        next unless File.exist?(File.join(PUB_DIR, path))
       -%>
         <a href="#"
           onclick="$('#url').val(window.location.protocol + '//' + window.location.host + '<%=path%>')"
@@ -33,7 +32,7 @@
   </fieldset>
   <fieldset class="upload">
     <legend>File Upload</legend>
-    <input type="file" name="datafile" size="40">
+    <input type="file" name="datafile"/>
     <input name="commit" type="submit" value="Submit" />
   </fieldset>
   <fieldset class="input">
@@ -69,7 +68,7 @@
   <table class="stats">
   <tbody>
   <% @parsed_statements.each do |reader, count| -%>
-    <tr><td><%= reader.to_s %>:</td><td><%= count.to_s %> statements</td></td>
+    <tr><td><%= reader.to_s %>:</td><td><%= count.to_s %> statements</td></tr>
   <% end -%>
   </tbody>
   </table>

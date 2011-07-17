@@ -15,7 +15,7 @@ module RDF::Linter
               %table.ts
                 %tr
                   = yield("#{prefix}photo")
-                  %td{:valign => "top"}
+                  %td.primary_content
                     %div.f
                       - addr = yield("#{prefix}address")
                       - title = yield("#{prefix}title")
@@ -35,10 +35,9 @@ module RDF::Linter
         ),
         :property_value => %(
           - if predicate == "#{prefix}photo"
-            %td{:valign => "top"}
-              %div.left-image{:rel => rel}
-                %a.fakelink
-                  %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
+            %td.left-image{:rel => rel}
+              %a.fakelink
+                %img{:src => object.to_s, :alt => ""}
           - elsif object.node? && res = yield(object)
             != res
           - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(address|title|affiliation|name|photo)$')
@@ -54,16 +53,10 @@ module RDF::Linter
             - else
               %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
-            %tr.property
-              %td.label
-                = get_predicate_name(predicate)
-              - if object.uri?
-                %td
-                  %a{:href => object.to_s, :rel => rel}= object.to_s
-              - elsif object.node?
-                %td{:resource => get_curie(object), :rel => rel}= get_curie(object)
-              - else
-                %td{:property => property}= escape_entities(get_value(object))
+            - if object.literal?
+              %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+            - else
+              %span{:rel => rel, :resource => get_curie(object)}
         ),      
       }
     })

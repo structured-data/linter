@@ -6,6 +6,17 @@ module RDF::Linter
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       type => {
+        # :rel is used only in Linter if :rel is true
+        :rel => %(
+          %span{:typeof => typeof}
+            %a.fakelink
+              = yield("#{prefix}name")
+            %span.other
+              -#
+                Content not used in snippet generation
+              - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(name)$')}.each do |predicate|
+                != yield(predicate)
+        ),
         :subject => %(
           %div{:class => "snippet-content", :about => about, :typeof => typeof}
             %h3.r
@@ -15,7 +26,7 @@ module RDF::Linter
             %table.ts
               %tr
                 = yield("#{prefix}photo")
-                %td{:valign => "top"}
+                %td.primary-content
                   %div.f
                     - addr = yield("#{prefix}address")
                     - tel = yield("#{prefix}tel")
@@ -29,22 +40,19 @@ module RDF::Linter
                 %tbody
                   - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(photo|address|tel|name)$')}.each do |predicate|
                     != yield(predicate)
-                  
         ),
         :property_value => %(
           - if predicate == "#{prefix}photo"
-            %td{:valign => "top"}
-              %div.left-image{:rel => rel}
-                %a.fakelink
-                  %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
+            %td.left-image{:rel => rel}
+              %a.fakelink
+                %img{:src => object.to_s, :alt => ""}
           - elsif object.node? && res = yield(object)
             != res
           - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(photo|address|tel|name)$')
             - if predicate == "#{prefix}photo"
-              %td{:valign => "top"}
-                %div.left-image{:rel => rel}
-                  %a.fakelink
-                    %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
+              %td.left-image{:rel => rel}
+                %a.fakelink
+                  %img{:src => object.to_s, :alt => ""}
             - elsif object.uri?
               %span{:rel => rel}= object.to_s
             - elsif object.node?
@@ -52,16 +60,10 @@ module RDF::Linter
             - else
               %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
-            %tr.property
-              %td.label
-                = get_predicate_name(predicate)
-              - if object.uri?
-                %td
-                  %a{:href => object.to_s, :rel => rel}= object.to_s
-              - elsif object.node?
-                %td{:resource => get_curie(object), :rel => rel}= get_curie(object)
-              - else
-                %td{:property => property}= escape_entities(get_value(object))
+            - if object.literal?
+              %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+            - else
+              %span{:rel => rel, :resource => get_curie(object)}
         ),      
       }
     })

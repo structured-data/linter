@@ -8,6 +8,18 @@ module RDF::Linter
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       type => {
+        # :rel is used only in Linter if :rel is true
+        :rel => %(
+          %span{:typeof => typeof}
+            = yield("#{prefix}rating")
+            = yield("#{prefix}count")
+            reviews
+          %span.other
+            -#
+              Content not used in snippet generation
+            - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(rating|count)$')}.each do |predicate|
+              != yield(predicate)
+        ),
         :subject => %(
           %div{:class => "snippet-content", :about => about, :typeof => typeof}
             %h3.r
@@ -47,16 +59,10 @@ module RDF::Linter
             - else
               %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
-            %tr.property
-              %td.label
-                = get_predicate_name(predicate)
-              - if object.uri?
-                %td
-                  %a{:href => object.to_s, :rel => rel}= object.to_s
-              - elsif object.node?
-                %td{:resource => get_curie(object), :rel => rel}= get_curie(object)
-              - else
-                %td{:property => property}= escape_entities(get_value(object))
+            - if object.literal?
+              %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+            - else
+              %span{:rel => rel, :resource => get_curie(object)}
         ),      
       }
     })

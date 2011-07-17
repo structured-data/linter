@@ -12,7 +12,18 @@
     font-style: normal;
 }
 
-.snippet-content .other { display:none ;}
+.left-image img {
+    align:middle;
+    border:1px;
+    height:60px;
+    width:80px;
+}
+
+table.ts td {
+    vertical-align: top;
+}
+
+#results-content .other { display:none ;}
 #results-content .notype { display:none ;}
 #results-content [typeof~='v:Rating'] { display:none ;}
 #results-content [typeof~='vmd:Rating'] { display:none ;}

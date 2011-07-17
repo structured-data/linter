@@ -17,7 +17,7 @@ module RDF::Linter
               %table.ts
                 %tr
                   = yield("#{prefix}photo")
-                  %td{:valign => "top"}
+                  %td.primary-content
                     %div.f
                       = yield("#{prefix}review")
                       - if cookTime = yield("#{prefix}cookTime")
@@ -48,16 +48,10 @@ module RDF::Linter
             - else
               %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
-            %tr.property
-              %td.label
-                = get_predicate_name(predicate)
-              - if object.uri?
-                %td
-                  %a{:href => object.to_s, :rel => rel}= object.to_s
-              - elsif object.node?
-                %td{:resource => get_curie(object), :rel => rel}= get_curie(object)
-              - else
-                %td{:property => property}= escape_entities(get_value(object))
+            - if object.literal?
+              %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+            - else
+              %span{:rel => rel, :resource => get_curie(object)}
         ),      
       }
     })

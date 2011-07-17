@@ -15,16 +15,16 @@ module RDF::Linter
               %table.ts
                 %tr
                   = yield("#{prefix}image")
-                  %td{:valign => "top"}
+                  %td.primary-content
                     %div.f
                       = yield("#{prefix}review")
                       - if category = yield("#{prefix}category")
                         = category
+                      - if offerDetails = yield("#{prefix}offerDetails")
+                        = offerDetails
                     - if description = yield("#{prefix}description")
                       %br
                       = description
-                    - if offerDetails = yield("#{prefix}offerDetails")
-                      = offerDetails
                     %br
                     %span.f
                       %cite!= base
@@ -32,21 +32,20 @@ module RDF::Linter
               %p="Content not used in snippet generation:"
               %table.properties
                 %tbody
-                  - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|description|offerDetails)$')}.each do |predicate|
+                  - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|offerDetails|description)$')}.each do |predicate|
                     != yield(predicate)
                   
         ),
         :property_value => %(
           - if predicate == "#{prefix}image"
-            %td{:valign => "top"}
-              %div.left-image{:rel => rel}
-                %a.fakelink
-                  %img{:src => object.to_s, :alt => "", :align => "middle", :border => "1", :height => "60", :width => "80"}
+            %td.left-image{:rel => rel}
+              %a.fakelink
+                %img{:src => object.to_s, :alt => ""}
           - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}rating')
             != rating_helper(predicate, object)
           - elsif object.node? && res = yield(object)
             != res
-          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|description|offerDetails)$')
+          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|offerDetails|description)$')
             - if object.uri?
               %span{:rel => rel}= object.to_s
             - elsif object.node?
@@ -54,17 +53,11 @@ module RDF::Linter
             - else
               %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
-            %tr.property
-              %td.label
-                = get_predicate_name(predicate)
-              - if object.uri?
-                %td
-                  %a{:href => object.to_s, :rel => rel}= object.to_s
-              - elsif object.node?
-                %td{:resource => get_curie(object), :rel => rel}= get_curie(object)
-              - else
-                %td{:property => property}= escape_entities(get_value(object))
-        ),      
+            - if object.literal?
+              %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+            - else
+              %span{:rel => rel, :resource => get_curie(object)}
+       ),      
       }
     })
   end

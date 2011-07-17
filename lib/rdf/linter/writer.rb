@@ -27,6 +27,15 @@ module RDF::Linter
       end
     end
 
+    # Override render_subject to look for a :rel template if this is a relation.
+    # In which case, we'll also pass the typeof the referencing resource
+    def render_subject(subject, predicates, options = {})
+      options = options.merge(:haml => haml_template[:rel]) if options[:rel] && haml_template[:rel]
+      super(subject, predicates, options) do |predicate|
+        yield(predicate) if block_given?
+      end
+    end
+
     ##
     # Override order_subjects to prefer subjects having an rdf:type
     # @return [Array<Resource>] Ordered list of subjects

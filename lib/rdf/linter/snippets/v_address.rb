@@ -18,7 +18,6 @@ module RDF::Linter
               != yield(predicate)
         ),
         :property_value => %(
-          - object = objects.first
           - if object.node? && res = yield(object)
             != res
           - elsif object.uri?

@@ -1,11 +1,11 @@
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
     <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
-    <script type="text/javascript" charset="utf-8">
+    <script type="text/javascript">
       // Navigation
       $(function () {
         // Select appropriate nav tab
