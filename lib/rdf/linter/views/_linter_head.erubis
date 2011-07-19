@@ -27,8 +27,6 @@ $(function () {
 </script>
 
 <% if @output.match(/snippet-content/) -%>
-  next unless File.exist?(File.join(PUB_DIR, path))
-%>
 <link rel="stylesheet" href="/css/snippet.css" type="text/css" media="screen, projection" />
 <% end -%>
 
