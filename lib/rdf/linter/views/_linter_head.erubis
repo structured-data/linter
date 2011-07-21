@@ -21,6 +21,8 @@ $(function () {
   // Trigger click on first tab to initiliaze js behaviors.
   $('nav.linter a:first').trigger('click');
 
+  // Set focus into the main URL form field on page load.
+  $('#linter_input #url').focus();
 });
 
 </script>
