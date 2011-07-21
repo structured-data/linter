@@ -12,6 +12,9 @@
         var href = window.location.pathname;
         $('nav.main a').removeClass('selected');
         $('nav.main a[href="' + href + '"]').addClass('selected');
+
+        // Set focus in the main URL form field.
+        $('#url').focus();
       });
     </script>
 
