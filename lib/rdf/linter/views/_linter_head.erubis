@@ -9,18 +9,17 @@ $(function () {
     $('fieldset.' + cls).show();
     $('nav.linter a').removeClass('selected');
     $(this).addClass('selected');
+    if (cls == 'url') {
+      $('#linter_input').attr('method', 'get');
+    }
+    else {
+      $('#linter_input').attr('method', 'post');
+    }
     return(false); // No bubbling, leave history alone.
   });
 
-  // Hid fieldsets
-  $('fieldset').hide();
-
-  // Select appropriate nav tab
-  var cls = window.location.hash.substr(1);
-  $('nav.linter a:first').each(function(){
-    $('fieldset.' + this.className).show();
-    $(this).addClass('selected');
-  });
+  // Trigger click on first tab to initiliaze js behaviors.
+  $('nav.linter a:first').trigger('click');
 
 });
 
