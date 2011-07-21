@@ -1,21 +1,24 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   {
-    Vocab::V.Address => Vocab::V.to_uri.to_s,
-    Vocab::VMD.Address => RDF::MD.send(Vocab::VMD.Address.to_s + "%23:").to_s,
+    "http://rdf.data-vocabulary.org/#Address" => "http://rdf.data-vocabulary.org/#",
+    "http://data-vocabulary.org/Address" => "http://data-vocabulary.org/Address%23:",
+    "http://schema.org/PostalAddress" => "http://schema.org",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       type => {
         :subject => %(
           %span{:about => resource, :rel => rel, :typeof => typeof}
             - street = predicates.delete(RDF::URI('#{prefix}street-address'))
+            - street += predicates.delete(RDF::URI('#{prefix}streetAddress'))
             - locality = predicates.delete(RDF::URI('#{prefix}locality'))
             - region = predicates.delete(RDF::URI('#{prefix}region'))
             - country = predicates.delete(RDF::URI('#{prefix}country-name'))
             - zip = predicates.delete(RDF::URI('#{prefix}postal-code'))
             = [street, locality, region, country, zip].compact.map{|p| yield(p).rstrip}.join(", ")
-            - predicates.each do |predicate|
-              != yield(predicate)
+            %span.other
+              - predicates.each do |predicate|
+                != yield(predicate)
         ),
         :property_value => %(
           - if object.node? && res = yield(object)
