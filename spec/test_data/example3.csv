@@ -2,10 +2,7 @@
 /div/@id,results-content
 /div/@prefix,TRUE
 //*[@resource='http://greggkellogg.net/foaf#me'],TRUE
-//*[@resource='http://greggkellogg.net/foaf#me']//a[@rel='rdfs:isDefinedBy']/text(),http://greggkellogg.net/foaf
-//*[@resource='http://greggkellogg.net/foaf#me']//a[@rel='rdfs:isDefinedBy']/@href,http://greggkellogg.net/foaf
-//*[@resource='http://greggkellogg.net/foaf#me']//a[@rel='foaf:made']/text(),http://rubygems.org/gems/json-ld
-//*[@resource='http://greggkellogg.net/foaf#me']//a[@rel='foaf:made']/@href,http://rubygems.org/gems/json-ld
-//*[@resource='http://greggkellogg.net/foaf#me']//a[@rel='foaf:mbox']/text(),mailto:gregg@greggkellogg.net
-//*[@resource='http://greggkellogg.net/foaf#me']//a[@rel='foaf:mbox']/@href,mailto:gregg@greggkellogg.net
-//*[@resource='http://greggkellogg.net/foaf#me']//td[@property='foaf:name']/text(),Gregg Kellogg
+//*[@resource='http://greggkellogg.net/foaf#me']//*[@rel='rdfs:isDefinedBy']/@resource,http://greggkellogg.net/foaf
+//*[@resource='http://greggkellogg.net/foaf#me']//*[@rel='foaf:made']/@resource,http://rubygems.org/gems/json-ld
+//*[@resource='http://greggkellogg.net/foaf#me']//*[@rel='foaf:mbox']/@resource,mailto:gregg@greggkellogg.net
+//*[@resource='http://greggkellogg.net/foaf#me']//*[@property='foaf:name']/text(),Gregg Kellogg

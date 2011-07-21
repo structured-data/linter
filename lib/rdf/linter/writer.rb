@@ -77,7 +77,6 @@ module RDF::Linter
     # @return [String]
     #   HTML+RDFa markup of review using Raty.
     def rating_helper(property, object)
-      STDERR.puts "rating_helper(#{property}, #{object})"
       worst = 1.0
       best = 5.0
       @rating_id ||= "rating-0"
@@ -102,7 +101,6 @@ module RDF::Linter
         end
       end
 
-      STDERR.puts "rating_helper(#{property}, #{object}): #{html}"
       html + %(
         <script type="text/javascript">
           $(function () {

@@ -24,4 +24,4 @@ set :logging, false
 end
 
 TEST_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "test_data")
-EXAMPLE_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "..", "public", "examples")
+EXAMPLE_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "..", "google-rs")

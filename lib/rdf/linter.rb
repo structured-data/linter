@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/linkeddata'   # Can't use this, as we may need to set by hand, and have to pass options to the serializer
 require 'sinatra/partials'
 require 'erubis'
+require 'find'
 require 'rdf/microdata'
 require 'json/ld'
 require 'rdf/all'
@@ -13,7 +14,8 @@ module RDF
     autoload :VERSION,      'rdf/linter/version'
     
     class Application < Sinatra::Base
-      PUB_DIR = File.expand_path("../../public", File.dirname(__FILE__))
+      APP_DIR = File.expand_path("../..", File.dirname(__FILE__))
+      PUB_DIR = File.join(APP_DIR, 'public')
 
       #register Sinatra::LinkedData
       helpers Sinatra::Partials
@@ -32,11 +34,58 @@ module RDF
         linter
       end
 
-      get '/about' do
+      get '/about/' do
         cache_control :public, :must_revalidate, :max_age => 60
         erubis :about, :locals => {:title => "About the Structured Data Linter"}
       end
 
+      get '/examples/' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        erubis :examples, :locals => {:title => "Markup Examples"}
+      end
+      
+      get '/examples/google-rs/:name/' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        erubis :rs_example, :locals => {
+          :title => "Google RS #{params[:name]}",
+          :name => params[:name],
+          :root => RDF::URI(request.url).join("/").to_s
+        }
+      end
+      
+      get '/examples/google-rs/:file' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        send_file File.join(APP_DIR, "google-rs/#{params[:file]}"), :type => :html
+      end
+      
+      get '/examples/schema.org/:name/' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        dir = Find.find(File.join(APP_DIR, "schema-org-rdf")).detect do |f|
+          File.directory?(f) && f.match(/#{params[:name]}$/)
+        end
+        raise "Could not find schema example #{params[:name]}" unless dir
+        erubis :schema_example, :locals => {
+          :title => "Schema.org #{params[:name]}",
+          :name => params[:name],
+          :dir => dir,
+          :root => RDF::URI(request.url).join("/").to_s
+        }
+      end
+      
+      get '/examples/schema.org/:file' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        file = Find.find(File.join(APP_DIR, "schema-org-rdf")).detect do |f|
+          File.file?(f) && f.match(/#{params[:file]}$/)
+        end
+        raise "Could not find schema example #{params[:file]}" unless file
+        case file
+        when /json$/
+          send_file file, :type => :json
+        else
+          erubis :schema_file, :locals => {:file => file}, :layout => false
+        end
+      end
+      
       private
 
       include Parser
