@@ -17,18 +17,6 @@
     <legend>Page URL</legend>
     <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
     <input name="commit" type="submit" value="Submit" />
-    <br/>Examples:
-    <% %w(Review Aggregate-Reviews People Organization Event Event-Multiple Recipe Product Offer-Aggregate).each do |ex| -%>
-      <%= ex %> (
-      <% %w(RDFa MD MF).each do |fmt|
-        path = "/examples/google-rs-#{ex.downcase}.#{fmt.downcase}.html"
-        next unless File.exist?(File.join(PUB_DIR, path))
-      -%>
-        <a href="#"
-          onclick="$('#url').val(window.location.protocol + '//' + window.location.host + '<%=path%>')"
-        ><%=fmt%></a>
-    <% end -%>)
-  <% end -%>
   </fieldset>
   <fieldset class="upload">
     <legend>File Upload</legend>

@@ -1,0 +1,50 @@
+<section>
+  <h1><%= title %></h1>
+  <p>
+    Markup examples that can be used to generate rich snippets come from a variety of different sources.
+    Find an example from below that matches your use case to see how it renders as a snippet. Try the
+    same example with the Google <a target="_blank" href="http://www.google.com/webmasters/tools/richsnippets">Rich Snippets Testing Tool</a>.
+  </p>
+  
+  <section>
+    <h2>Google Rich Snippets examples</h2>
+    <p>
+      The following examples are taken from the Google
+      <a target="_blank" href="http://www.google.com/support/webmasters/bin/topic.py?hl=en&topic=21997">
+        Webmaster Tools Help
+      </a>.
+    </p>
+    <% %w(Review Aggregate-Reviews People Organization Event Event-Multiple Recipe Product Offer-Aggregate).each do |ex| -%>
+    <div class="example d1">
+      <a href="/examples/google-rs/<%=ex %>/"><%= ex %></a>
+    </div>
+    <% end -%>
+  </section>
+  
+  <section>
+    <h2>Schema.org examples</h2>
+    <p>
+      The following examples are taken from Schema.org
+      <a target="_blank" href="http://www.schema.org/docs/full.html">documentation examples</a>.
+    </p>
+    <%
+      require 'find'
+      schema = {}
+      Find.find(File.join(APP_DIR, "schema-org-rdf", "examples", "Thing")) do |dir|
+        next unless File.directory?(dir)
+        
+        path = dir.sub(File.join(APP_DIR, "schema-org-rdf", "examples", ""), '').split('/')
+        depth = path.length - 1
+
+        rep = if Dir.entries(dir).any? {|f| f.match(/#{path.last}\.(rdfa|jsonld|md)$/)}
+          %(<a href="/examples/schema.org/#{path.last}/">#{path.last}</a>)
+        else
+          path.last
+        end
+    -%>
+      <div class="example d<%= depth %>">
+        <%= "&nbsp;&nbsp;|&nbsp;&nbsp;" * depth + rep %>
+      </div>
+    <% end -%>
+  </section>
+</section>

@@ -1,0 +1,36 @@
+<section class="example">
+  <h1><%= title %></h1>
+  <%
+    {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}.each do |fmt, fmt_name|
+      file = File.join(dir, "#{name}.#{fmt}")
+      next unless File.file?(file)
+      path = "#{root}examples/schema.org/#{name}.#{fmt}"
+      div = File.read(file)
+  -%>
+  <section>
+    <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
+    <pre class="example"><%= CGI.escape_html(div) %></pre>
+  </section>
+  <% end -%>
+
+  <%
+    Dir.entries(dir).map {|f| $1 if f.match(/(.*)\.(rdfa|md|jsonld)$/)}.compact.uniq.each do |ex|
+      next if ex == name
+  -%>
+  <section class="extended">
+    <h2><%= ex %></h2>
+    <%
+      {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}.each do |fmt, fmt_name|
+        file = File.join(dir, "#{ex}.#{fmt}")
+        next unless File.file?(file)
+        path = "#{root}examples/schema.org/#{ex}.#{fmt}"
+        div = File.read(file)
+    -%>
+    <section>
+      <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
+      <pre class="example"><%= CGI.escape_html(div) %></pre>
+    </section>
+    <% end -%>
+  </section>
+  <% end -%>
+</section>
