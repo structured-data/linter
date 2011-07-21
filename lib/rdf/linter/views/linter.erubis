@@ -12,7 +12,7 @@
     <li><a class="input" href="#input">Lint by Direct Input</a></li>
   </ul>
 </nav>
-<form action="/" method="post">
+<form id="linter_input" action="/" method="post">
   <fieldset class="url">
     <legend>Page URL</legend>
     <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
