@@ -60,8 +60,9 @@ module RDF
       
       get '/examples/schema.org/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
-        dir = Find.find(File.join(APP_DIR, "schema-org-rdf")).detect do |f|
-          File.directory?(f) && f.match(/#{params[:name]}$/)
+        dir = nil
+        Find.find(File.join(APP_DIR, "schema-org-rdf")) do |f|
+          dir ||= f if File.directory?(f) && f.match(/#{params[:name]}$/)
         end
         raise "Could not find schema example #{params[:name]}" unless dir
         erubis :schema_example, :locals => {
@@ -74,8 +75,9 @@ module RDF
       
       get '/examples/schema.org/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
-        file = Find.find(File.join(APP_DIR, "schema-org-rdf")).detect do |f|
-          File.file?(f) && f.match(/#{params[:file]}$/)
+        file = nil
+        Find.find(File.join(APP_DIR, "schema-org-rdf")) do |f|
+          file ||= f if File.file?(f) && f.match(/#{params[:file]}$/)
         end
         raise "Could not find schema example #{params[:file]}" unless file
         case file
@@ -119,7 +121,11 @@ module RDF
         content_type, content = parse(reader_opts)
         content.gsub!(/--root--/, root)
         @output = content unless content == @error
-        erubis :linter, :locals => {:title => "Structured Data Linter", :head => :linter}
+        erubis :linter, :locals => {
+          :title => "Structured Data Linter",
+          :head => :linter,
+          :root => RDF::URI(request.url).join("/").to_s,
+        }
       end
     end
   end
