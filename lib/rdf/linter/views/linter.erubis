@@ -21,11 +21,11 @@
     <% %w(Review People Event Recipe Product).each do |name| -%>
       <%= name %> (
       <% %w(RDFa MD).each do |fmt|
-        file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt}.html")
+        file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
         next unless File.file?(file)
-        path = "#{root}examples/google-rs/#{name.downcase}.#{fmt}.html"
+        path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
       -%>
-        <a href="/?url=<%= path %>"><%=fmt%></a>
+        <a href="/?url=<%= path %>"><%=fmt %></a>
       <% end -%>)
     <% end -%>
   </fieldset>
