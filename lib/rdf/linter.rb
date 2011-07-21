@@ -121,7 +121,11 @@ module RDF
         content_type, content = parse(reader_opts)
         content.gsub!(/--root--/, root)
         @output = content unless content == @error
-        erubis :linter, :locals => {:title => "Structured Data Linter", :head => :linter}
+        erubis :linter, :locals => {
+          :title => "Structured Data Linter",
+          :head => :linter,
+          :root => RDF::URI(request.url).join("/").to_s,
+        }
       end
     end
   end

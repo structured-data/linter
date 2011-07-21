@@ -17,6 +17,17 @@
     <legend>Page URL</legend>
     <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
     <input name="commit" type="submit" value="Submit" />
+    <br/>Examples:
+    <% %w(Review People Event Recipe Product).each do |name| -%>
+      <%= name %> (
+      <% %w(RDFa MD).each do |fmt|
+        file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt}.html")
+        next unless File.file?(file)
+        path = "#{root}examples/google-rs/#{name.downcase}.#{fmt}.html"
+      -%>
+        <a href="/?url=<%= path %>"><%=fmt%></a>
+      <% end -%>)
+    <% end -%>
   </fieldset>
   <fieldset class="upload">
     <legend>File Upload</legend>
