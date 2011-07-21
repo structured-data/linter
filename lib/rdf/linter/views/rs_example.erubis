@@ -10,7 +10,7 @@
   -%>
   <section>
     <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
-    <pre class="example"><%= CGI.escape_html(div.to_html) %></pre>
+    <pre class="example"><%= CGI.escapeHTML(div.to_html) %></pre>
   </section>
   <% end -%>
 </section>
