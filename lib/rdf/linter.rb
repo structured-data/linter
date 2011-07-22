@@ -12,7 +12,7 @@ module RDF
     require 'rdf/linter/parser'
     require 'rdf/linter/extensions'
     autoload :VERSION,      'rdf/linter/version'
-    
+
     class Application < Sinatra::Base
       APP_DIR = File.expand_path("../..", File.dirname(__FILE__))
       PUB_DIR = File.join(APP_DIR, 'public')
@@ -43,21 +43,22 @@ module RDF
         cache_control :public, :must_revalidate, :max_age => 60
         erubis :examples, :locals => {:title => "Markup Examples"}
       end
-      
+
       get '/examples/google-rs/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         erubis :rs_example, :locals => {
           :title => "Google RS #{params[:name]}",
+          :head => :examples,
           :name => params[:name],
           :root => RDF::URI(request.url).join("/").to_s
         }
       end
-      
+
       get '/examples/google-rs/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
         send_file File.join(APP_DIR, "google-rs/#{params[:file]}"), :type => :html
       end
-      
+
       get '/examples/schema.org/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         dir = nil
@@ -67,12 +68,13 @@ module RDF
         raise "Could not find schema example #{params[:name]}" unless dir
         erubis :schema_example, :locals => {
           :title => "Schema.org #{params[:name]}",
+          :head => :examples,
           :name => params[:name],
           :dir => dir,
           :root => RDF::URI(request.url).join("/").to_s
         }
       end
-      
+
       get '/examples/schema.org/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
         file = nil
@@ -87,11 +89,11 @@ module RDF
           erubis :schema_file, :locals => {:file => file}, :layout => false
         end
       end
-      
+
       private
 
       include Parser
-      
+
       # Handle GET/POST /
       def linter
         params["in_fmt"] = "all" if params["in_fmt"].to_s.empty?
@@ -104,7 +106,7 @@ module RDF
         reader_opts[:debug] = @debug = [] if params["debug"]
         reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
         reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
-        
+
         root = RDF::URI(request.url).join("/").to_s
         puts "requrest.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 

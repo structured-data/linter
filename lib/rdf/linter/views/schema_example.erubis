@@ -9,7 +9,7 @@
   -%>
   <section>
     <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
-    <pre class="example"><%= CGI.escapeHTML(div) %></pre>
+    <pre class="example"><code class="html"><%= CGI.escapeHTML(div) %></code></pre>
   </section>
   <% end -%>
 
@@ -28,7 +28,7 @@
     -%>
     <section>
       <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
-      <pre class="example"><%= CGI.escapeHTML(div) %></pre>
+      <pre class="example"><code class="html"><%= CGI.escapeHTML(div) %></code></pre>
     </section>
     <% end -%>
   </section>
