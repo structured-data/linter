@@ -29,10 +29,48 @@ module RDF::Linter
 
     # Override render_subject to look for a :rel template if this is a relation.
     # In which case, we'll also pass the typeof the referencing resource
-    def render_subject(subject, predicates, options = {})
+    def render_subject(subject, predicates, options = {}, &block)
       options = options.merge(:haml => haml_template[:rel]) if options[:rel] && haml_template[:rel]
       super(subject, predicates, options) do |predicate|
-        yield(predicate) if block_given?
+        if predicate.is_a?(Symbol)
+          # Special snippet processing
+          # Render associated properties with associated or default formatting
+          case predicate
+          when :title
+            props = haml_template[:title_props]
+            format = haml_template[:title_fmt]
+          when :nested
+            props = haml_template[:nested_props]
+            format = haml_template[:nested_fmt]
+          when :photo
+            props = haml_template[:photo_props]
+            format = haml_template[:photo_fmt]
+          when :body
+            props = haml_template[:body_props]
+            format = haml_template[:body_fmt]
+          when :description
+            props = haml_template[:description_props]
+            format = haml_template[:description_fmt]
+          when :other
+            props = predicates.map(&:to_s)
+            props -= haml_template[:title_props] || []
+            props -= haml_template[:body_props] || []
+            props -= haml_template[:description_props] || []
+            format = lambda {|list| list.map {|e| yield(e)}.join("")}
+          when :other_nested
+            props = predicates.map(&:to_s)
+            props -= haml_template[:nested_props] || []
+            format = lambda {|list| list.map {|e| yield(e)}.join("")}
+          else
+            raise "Unknown render_subject action: #{predicate.inspect}"
+          end
+          unless props.nil? || props.empty?
+            format ||= lambda {|list| list.map {|e| yield(e)}.join("")}
+            format.call(props, &block)
+          end
+        else
+          yield(predicate)
+        end
       end
     end
 
@@ -43,6 +81,24 @@ module RDF::Linter
       subjects = graph.tsort rescue super # TSort can fail
       typed_subjects = subjects.select {|s| graph.first_object(:subject => s, :predicate => RDF.type)}
       typed_subjects + (subjects - typed_subjects)
+    end
+
+    # Set the template to use within block
+    def with_template(templ)
+      if templ
+        new_template = @options[:haml].
+          reject {|k,v| ![:subject, :property_value, :property_values, :rel].include?(k)}.
+          merge(templ || {})
+        old_template, @haml_template = @haml_template, new_template
+      else
+        old_template = @haml_template
+      end
+
+      res = yield
+      # Restore template
+      @haml_template = old_template
+      
+      res
     end
 
     ##

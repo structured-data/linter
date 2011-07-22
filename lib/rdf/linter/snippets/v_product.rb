@@ -6,58 +6,42 @@ module RDF::Linter
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       RDF::URI(type) => {
-        :subject => %(
-          %div{:class => "snippet-content", :about => about, :typeof => typeof}
-            %h3.r
-              %a.fakelink
-                = yield("#{prefix}name")
-            %div.s
-              %table.ts
-                %tr
-                  = yield("#{prefix}image")
-                  %td.primary-content
-                    %div.f
-                      = yield("#{prefix}review")
-                      - if category = yield("#{prefix}category")
-                        = category
-                      - if offerDetails = yield("#{prefix}offerDetails")
-                        = offerDetails
-                    - if description = yield("#{prefix}description")
-                      %br
-                      = description
-                    %br
-                    %span.f
-                      %cite!= base
-            %div.other
-              %p="Content not used in snippet generation:"
-              %table.properties
-                %tbody
-                  - predicates.reject{|p| p.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|offerDetails|description)$')}.each do |predicate|
-                    != yield(predicate)
-                  
-        ),
+        # Properties to be used in snippet title
+        :title_props => ["#{prefix}name"],
+        # Properties to be used in snippet photo
+        :photo_props => ["#{prefix}image"],
+        # Properties to be used in snippet body
+        :body_props => [
+          "#{prefix}review",
+          "#{prefix}category",
+          "#{prefix}offerDetails",
+        ],
+        # Post-processing on nested markup
+        :body_fmt => lambda {|list, &block|
+          addr = block.call("#{prefix}address")
+          title = block.call("#{prefix}title")
+          affiliation = block.call("#{prefix}affiliation")
+          title = [title, affiliation].compact.map(&:rstrip).join(", ")
+          [addr, title].compact.join("- ")
+        },
+        :description_props => ["#{prefix}description"],
+        # Properties to be used when snippet is nested
+        :nested_props => [
+          "#{prefix}name",
+        ],
         :property_value => %(
-          - if predicate == "#{prefix}image"
-            %td.left-image{:rel => rel}
-              %a.fakelink
-                %img{:src => object.to_s, :alt => ""}
-          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}rating')
+          - if predicate.to_s.match('#{prefix.gsub('#', '\#')}rating')
             != rating_helper(predicate, object)
           - elsif object.node? && res = yield(object)
             != res
-          - elsif predicate.to_s.match('#{prefix.gsub('#', '\#')}(name|image|review|category|offerDetails|description)$')
-            - if object.uri?
-              %span{:rel => rel}= object.to_s
-            - elsif object.node?
-              %span{:resource => get_curie(object), :rel => rel}= get_curie(object)
-            - else
-              %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+          - elsif ["#{prefix}image", "#{prefix}photo"].include?(predicate) 
+            %span{:rel => rel}
+              %img{:src => object.to_s, :alt => ""}
+          - elsif object.literal?
+            %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
-            - if object.literal?
-              %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
-            - else
-              %span{:rel => rel, :resource => get_curie(object)}
-       ),      
+            %span{:rel => rel, :resource => get_curie(object)}
+        ),
       }
     })
   end

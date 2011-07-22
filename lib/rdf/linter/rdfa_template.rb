@@ -1,4 +1,5 @@
 # Default HAML templates used for generating output from the writer
+# This format is based on Google Rich Snippets output
 require 'rdf/linter/vocab'
 
 module RDF::Linter
@@ -17,33 +18,75 @@ module RDF::Linter
           != turtle
     ),
 
-    # Output for non-leaf resources
-    # Note that @about may be omitted for Nodes that are not referenced
-    #
-    # If _rel_ and _resource_ are not nil, the tag will be written relative
-    # to a previous subject. If _element_ is :li, the tag will be written
-    # with <li> instead of <div>.
-    #
-    # Note that @rel and @resource can be used together, or @about and @typeof, but
-    # not both.
+    # Output for top-level non-leaf resources
     #
     # Locals: subject, typeof, predicates, rel, element
     # Yield: predicates.each
     :subject => %q(
-      - if rel && typeof
-        %div{:rel => rel}
-          %div{:about => resource, :typeof => typeof}
-            %span.type!= typeof
-            - predicates.each do |predicate|
-              != yield(predicate)
-      - elsif rel
-        %div{:rel => rel, :resource => resource}
-          - predicates.each do |predicate|
-            != yield(predicate)
+      - if typeof
+        - # Use snippet format
+        - title = yield(:title)
+        - photo = yield(:photo)
+        - body = yield(:body)
+        - description = yield(:description)
+        - other = yield(:other)
+        %div{:class => "snippet-content", :about => about, :typeof => typeof}
+          - if title
+            %h3.r
+              %a.fakelink
+                != title
+          - if body || description
+            %div.s
+              - if !photo.to_s.empty?
+                %table.ts
+                  %tr
+                    %td.left-image
+                      %a.fakelink
+                        != photo
+                    %td.primary_content
+                      %div.f
+                        != body
+                      - if description
+                        %br
+                        != description
+                      %br
+                      %span.f
+                        %cite!= base
+              - else
+                %div.primary_content
+                  %div.f
+                    != body
+                  %br
+                  %span.f
+                    %cite!= base
+          - if other
+            %div.other
+              %p="Content not used in snippet generation:"
+              != other
       - else
-        %div{:about => about, :typeof => typeof, :class => (typeof.nil? && 'notype')}
+        %div.other.notype{:about => about, :typeof => typeof}
           - predicates.each do |predicate|
             != yield(predicate)
+    ),
+
+    # :rel Used to create a condenced version of this snippet, when it's included in another.
+    :rel => %(
+      - if typeof
+        %span{:rel => rel}
+          %span{:about => resource, :typeof => typeof}
+            != yield(:nested)
+          %span.other
+            -#
+              Content not used in snippet generation
+              != yield(:other_nested)
+      - else
+        %span.other
+          -#
+            Content not used in snippet generation
+          %div{:rel => rel}
+            %div{:about => resource, :typeof => typeof}
+              - predicates.each do |predicate|
+                != yield(predicate)
     ),
 
     # Output for single-valued properties
