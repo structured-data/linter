@@ -23,7 +23,7 @@ module RDF::Linter
           cookTime = block.call("#{prefix}cookTime")
           review.to_s + (cookTime ? "- Total cook time: #{cookTime}" : "")
         },
-        :description_props => ["#{prefix}description"],
+        :description_props => ["#{prefix}summary"],
         # Properties to be used when snippet summary nested
         :nested_props => [
           "#{prefix}name",

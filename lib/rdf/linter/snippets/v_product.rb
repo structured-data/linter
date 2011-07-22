@@ -16,14 +16,6 @@ module RDF::Linter
           "#{prefix}category",
           "#{prefix}offerDetails",
         ],
-        # Post-processing on nested markup
-        :body_fmt => lambda {|list, &block|
-          addr = block.call("#{prefix}address")
-          title = block.call("#{prefix}title")
-          affiliation = block.call("#{prefix}affiliation")
-          title = [title, affiliation].compact.map(&:rstrip).join(", ")
-          [addr, title].compact.join("- ")
-        },
         :description_props => ["#{prefix}description"],
         # Properties to be used when snippet is nested
         :nested_props => [

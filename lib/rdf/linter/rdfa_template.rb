@@ -56,6 +56,9 @@ module RDF::Linter
                 %div.primary_content
                   %div.f
                     != body
+                  - if description
+                    %br
+                    != description
                   %br
                   %span.f
                     %cite!= base
