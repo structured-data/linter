@@ -1,13 +1,13 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   {
-    Vocab::V.send("Review-aggregate") => Vocab::V.to_uri.to_s,
-    Vocab::VMD.send("Review-aggregate") => RDF::MD.send(Vocab::VMD.send("Review-aggregate").to_s + "%23:").to_s,
-    Vocab::V.Review => Vocab::V.to_uri.to_s,
-    Vocab::VMD.Review => RDF::MD.send(Vocab::VMD.Review.to_s + "%23:").to_s,
+    "http://rdf.data-vocabulary.org/#Review" => "http://rdf.data-vocabulary.org/#",
+    "http://data-vocabulary.org/Review" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Review%23:",
+    "http://rdf.data-vocabulary.org/#Review-aggregate" => "http://rdf.data-vocabulary.org/#",
+    "http://data-vocabulary.org/Review-aggregate" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Review-aggregate%23:",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
-      type => {
+      RDF::URI(type) => {
         # :rel is used only in Linter if :rel is true
         :rel => %(
           %span{:typeof => typeof}

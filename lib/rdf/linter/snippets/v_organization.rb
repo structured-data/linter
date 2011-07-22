@@ -1,11 +1,11 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   {
-    Vocab::V.Organization => Vocab::V.to_uri.to_s,
-    Vocab::VMD.Organization => RDF::MD.send(Vocab::VMD.Organization.to_s + "%23:").to_s,
+    "http://rdf.data-vocabulary.org/#Organization" => "http://rdf.data-vocabulary.org/#",
+    "http://data-vocabulary.org/Organization" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Organization%23:",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
-      type => {
+      RDF::URI(type) => {
         # :rel is used only in Linter if :rel is true
         :rel => %(
           %span{:typeof => typeof}

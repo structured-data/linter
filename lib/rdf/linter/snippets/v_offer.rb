@@ -1,13 +1,13 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   {
-    Vocab::V.Offer => Vocab::V.to_uri.to_s,
-    Vocab::VMD.Offer => RDF::MD.send(Vocab::VMD.Offer.to_s + "%23:").to_s,
-    Vocab::V.send('Offer-aggregate') => Vocab::V.to_uri.to_s,
-    Vocab::VMD.send('Offer-aggregate') => RDF::MD.send(Vocab::VMD.send('Offer-aggregate').to_s + "%23:").to_s,
+    "http://rdf.data-vocabulary.org/#Offer" => "http://rdf.data-vocabulary.org/#",
+    "http://data-vocabulary.org/Offer" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Offer%23:",
+    "http://rdf.data-vocabulary.org/#Offer-aggregate" => "http://rdf.data-vocabulary.org/#",
+    "http://data-vocabulary.org/Offer-aggregate" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Offer-aggregate%23:",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
-      type => {
+      RDF::URI(type) => {
         :rel => %(
           %span{:typeof => typeof}
             - price = yield("#{prefix}price")
