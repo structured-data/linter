@@ -130,6 +130,9 @@ module RDF
         }
       end
     end
+
+    def self.debug?; @debug; end
+    def self.debug=(value); @debug = value; end
   end
 
   module Util::File

@@ -36,21 +36,6 @@ module RDF::Linter
           # Special snippet processing
           # Render associated properties with associated or default formatting
           case predicate
-          when :title
-            props = haml_template[:title_props]
-            format = haml_template[:title_fmt]
-          when :nested
-            props = haml_template[:nested_props]
-            format = haml_template[:nested_fmt]
-          when :photo
-            props = haml_template[:photo_props]
-            format = haml_template[:photo_fmt]
-          when :body
-            props = haml_template[:body_props]
-            format = haml_template[:body_fmt]
-          when :description
-            props = haml_template[:description_props]
-            format = haml_template[:description_fmt]
           when :other
             props = predicates.map(&:to_s)
             props -= haml_template[:title_props] || []
@@ -62,7 +47,10 @@ module RDF::Linter
             props -= haml_template[:nested_props] || []
             format = lambda {|list| list.map {|e| yield(e)}.join("")}
           else
-            raise "Unknown render_subject action: #{predicate.inspect}"
+            # Find appropriate entires from template
+            props = haml_template["#{predicate}_props".to_sym]
+            STDERR.puts "render_subject(#{subject}, #{predicate}): #{props.inspect}"
+            format = haml_template["#{predicate}_fmt".to_sym]
           end
           unless props.nil? || props.empty?
             format ||= lambda {|list| list.map {|e| yield(e)}.join("")}
@@ -78,9 +66,13 @@ module RDF::Linter
     # Override order_subjects to prefer subjects having an rdf:type
     # @return [Array<Resource>] Ordered list of subjects
     def order_subjects
-      subjects = graph.tsort rescue super # TSort can fail
+      subjects = graph.tsort
       typed_subjects = subjects.select {|s| graph.first_object(:subject => s, :predicate => RDF.type)}
+      STDERR.puts "ordered_subjects: #{typed_subjects + (subjects - typed_subjects)}" if RDF::Linter.debug?
       typed_subjects + (subjects - typed_subjects)
+    rescue
+      STDERR.puts "order_subjects: tsort of #{subjects} failed: #{$!}"
+      super # TSort can fail
     end
 
     # Set the template to use within block
