@@ -1,23 +1,29 @@
 # data-vocabulary `Person` snippet:
 module RDF::Linter
   LINTER_HAML.merge!({
-    # Match on multiple types
     [
-      "http://rdfs.org/sioc/ns#Post",
-      "http://rdfs.org/sioc/types#Comment"
+      "http://types.ogp.me/ns#article",
+      "http://rdfs.org/sioc/ns#Item",
+      "http://xmlns.com/foaf/0.1/Document"
     ].sort.join("") => {
       # Properties to be used in snippet title
-      :title_props => ["http://purl.org/dc/terms/title"],
-      :nested_props => ["http://purl.org/dc/terms/title"],
-      :body_props => [
-        "http://rdfs.org/sioc/ns#has_creator",
-        "http://rdfs.org/sioc/ns#reply_of",
-        "http://purl.org/dc/terms/date"
+      :title_props => [
+        "http://ogp.me/ns#site_name",
+        "http://purl.org/dc/terms/title"
       ],
-      :description_props => ["http://purl.org/rss/1.0/modules/content/encoded"],
+      :nested_props => ["http://purl.org/dc/terms/title"],
+      :photo_props => ["http://ogp.me/ns#image"],
+      :body_props => [
+        "http://ogp.me/ns#url",
+        "http://ogp.me/ns#date",
+      ],
+      :description_props => ["http://purl.org/rss/1.0/modules/content/encoded", "http://ogp.me/ns#url"],
       :property_value => %q(
       - if res = yield(object)
         != res
+      - elsif ["http://ogp.me/ns#image"].include?(predicate) 
+        %span{:rel => rel}
+          %img{:src => object.to_s, :alt => ""}
       - elsif object.literal? && object.datatype == "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
         %div{:property => property, :lang => get_lang(object), :datatype => get_dt_curie(object)}
           != object
