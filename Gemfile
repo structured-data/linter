@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 # Include non-released gems first
 gem 'addressable',      '2.2.4'
-gem 'rdf',              :git => "git://github.com/gkellogg/rdf.git", :branch => "type-check-mixin"
+gem 'rdf',              :git => "git://github.com/gkellogg/rdf.git", :branch => "0.4.x"
 gem 'linkeddata',       :git => "git://github.com/gkellogg/linkeddata.git", :branch => "0.4.x"
 gem 'rack-linkeddata',  :git => "git://github.com/gkellogg/rack-linkeddata.git", :branch => "0.4.x", :require => "rack/linkeddata"
 gem 'rdf-json',         :git => "git://github.com/gkellogg/rdf-json.git", :branch => "0.4.x", :require => 'rdf/json'
