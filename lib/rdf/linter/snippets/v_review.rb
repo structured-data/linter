@@ -23,7 +23,6 @@ module RDF::Linter
         :body_fmt => lambda {|list, &block|
           rating = block.call("#{prefix}rating")
           count = block.call("#{prefix}count")
-          STDERR.puts "recipe count: #{count.inspect}"
           rating.to_s + (count ? "#{count} reviews" : "")
         },
         :description_props => ["#{prefix}summary"],

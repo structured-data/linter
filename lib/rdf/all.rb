@@ -157,10 +157,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<html/i) ||
-      (sample.match(/<[^>]*(about|resource|profile|typeof)\s*="[^>]*>/m) &&
-      !sample.match(/<(\w+:)?(RDF)/)
-      )
+      sample.match(/<[^>]*(about|resource|prefix|typeof)\s*="[^>]*>/m) && !sample.match(/<(\w+:)?(RDF)/)
     end
   end
   
@@ -170,8 +167,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<html/i) ||
-      sample.match(/<[^>]*(itemprop|itemtype|itemref)[^>]*>/m)
+      sample.match(/<[^>]*(itemprop|itemtype|itemref|itemscope|itemid)[^>]*>/m)
     end
   end
   
@@ -181,8 +177,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/@(base|prefix)/) &&
-      !::JSON::LD::Reader.detect(sample)
+      sample.match(/@(base|prefix)/) && !::JSON::LD::Reader.detect(sample)
     end
   end
   
@@ -192,7 +187,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/@(subject|context|type)/)
+      sample.match(/\{\s*"@(subject|context|type)"/m)
     end
   end
 end # RDF

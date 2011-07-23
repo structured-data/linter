@@ -1,8 +1,8 @@
 "# First column is Xpath, second column is expected result. May be string, regexp, true, or false",
 /div/@id,results-content
 /div/@prefix,TRUE
-//*[@resource='http://greggkellogg.net/foaf#me'],TRUE
-//*[@resource='http://greggkellogg.net/foaf#me']//*[@rel='rdfs:isDefinedBy']/@resource,http://greggkellogg.net/foaf
-//*[@resource='http://greggkellogg.net/foaf#me']//*[@rel='foaf:made']/@resource,http://rubygems.org/gems/json-ld
-//*[@resource='http://greggkellogg.net/foaf#me']//*[@rel='foaf:mbox']/@resource,mailto:gregg@greggkellogg.net
-//*[@resource='http://greggkellogg.net/foaf#me']//*[@property='foaf:name']/text(),Gregg Kellogg
+//*[@about='http://greggkellogg.net/foaf#me'],TRUE
+//*[@about='http://greggkellogg.net/foaf#me']//*[@rel='rdfs:isDefinedBy']/@resource,http://greggkellogg.net/foaf
+//*[@about='http://greggkellogg.net/foaf#me']//*[@rel='foaf:made']/@resource,http://rubygems.org/gems/json-ld
+//*[@about='http://greggkellogg.net/foaf#me']//*[@rel='foaf:mbox']/@resource,mailto:gregg@greggkellogg.net
+//*[@about='http://greggkellogg.net/foaf#me']//*[@property='foaf:name']/text(),Gregg Kellogg
