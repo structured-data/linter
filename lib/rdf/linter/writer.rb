@@ -49,7 +49,7 @@ module RDF::Linter
           else
             # Find appropriate entires from template
             props = haml_template["#{predicate}_props".to_sym]
-            STDERR.puts "render_subject(#{subject}, #{predicate}): #{props.inspect}"
+            STDERR.puts "render_subject(#{subject}, #{predicate}): #{props.inspect}" if RDF::Linter.debug?
             format = haml_template["#{predicate}_fmt".to_sym]
           end
           unless props.nil? || props.empty?
@@ -66,31 +66,31 @@ module RDF::Linter
     # Override order_subjects to prefer subjects having an rdf:type
     # @return [Array<Resource>] Ordered list of subjects
     def order_subjects
-      subjects = graph.tsort
-      typed_subjects = subjects.select {|s| graph.first_object(:subject => s, :predicate => RDF.type)}
-      STDERR.puts "ordered_subjects: #{typed_subjects + (subjects - typed_subjects)}" if RDF::Linter.debug?
-      typed_subjects + (subjects - typed_subjects)
-    rescue
-      STDERR.puts "order_subjects: tsort of #{subjects} failed: #{$!}"
-      super # TSort can fail
-    end
-
-    # Set the template to use within block
-    def with_template(templ)
-      if templ
-        new_template = @options[:haml].
-          reject {|k,v| ![:subject, :property_value, :property_values, :rel].include?(k)}.
-          merge(templ || {})
-        old_template, @haml_template = @haml_template, new_template
-      else
-        old_template = @haml_template
+      subjects = begin
+        graph.tsort
+      rescue
+        STDERR.puts "order_subjects: tsort of #{subjects} failed: #{$!}"
+        super # TSort can fail
       end
-
-      res = yield
-      # Restore template
-      @haml_template = old_template
       
-      res
+      # Prefer subjects with a type listed in the template, followed by subjects with a type, followed by everything else
+      templated_subjects = []
+      typed_subjects = []
+      other_subjects = []
+      subjects.each do |s|
+        graph.query(:subject => s, :predicate => RDF.type) do |statement|
+          type = statement.object.to_s
+          typed_subjects << s     if !typed_subjects.include?(s)
+          templated_subjects << s  if !templated_subjects.include?(s) || haml_template.has_key?(type)
+        end
+      end
+      
+      other_subjects = subjects - typed_subjects
+      typed_subjects = typed_subjects - templated_subjects
+      STDERR.puts "templated_subjects: #{templated_subjects.inspect}" if RDF::Linter.debug?
+      STDERR.puts "typed_subjects: #{typed_subjects.inspect}" if RDF::Linter.debug?
+      STDERR.puts "other_subjects: #{other_subjects.inspect}" if RDF::Linter.debug?
+      templated_subjects + typed_subjects + other_subjects
     end
 
     ##
