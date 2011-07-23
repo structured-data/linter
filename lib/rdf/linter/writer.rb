@@ -78,10 +78,15 @@ module RDF::Linter
       typed_subjects = []
       other_subjects = []
       subjects.each do |s|
-        graph.query(:subject => s, :predicate => RDF.type) do |statement|
-          type = statement.object.to_s
-          typed_subjects << s     if !typed_subjects.include?(s)
-          templated_subjects << s  if !templated_subjects.include?(s) || haml_template.has_key?(type)
+        properties = @graph.properties(s)
+        types = properties[RDF.type.to_s]
+        next unless types
+        typed_subjects << s
+
+        # Look for keys based on any type or all types in sorted order
+        all_types = types.map(&:to_s).sort.join("")
+        if haml_template.has_key?(all_types) || types.detect {|t| haml_template.has_key?(t)} ||
+          templated_subjects << s
         end
       end
       

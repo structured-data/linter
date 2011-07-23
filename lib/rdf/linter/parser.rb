@@ -8,6 +8,7 @@ module RDF::Linter
     def parse(reader_opts)
       graph = RDF::Graph.new
       format = reader_opts[:format]
+      reader_opts[:prefixes] ||= {}
 
       reader = case
       when reader_opts[:tempfile]
@@ -28,8 +29,16 @@ module RDF::Linter
         {reader.class => graph.size }
       end
       
+      # Special case for Facebook OGP. Facebook (apparently) doesn't believe in rdf:type,
+      # so we look for statements with predicate og:type with a literal object and create
+      # an rdf:type in a similar namespace
+      graph.query(:predicate => RDF::URI("http://ogp.me/ns#type")) do |statement|
+        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://types.ogp.me/ns##{statement.object}"))
+      end
+      
       writer_opts = reader_opts
       writer_opts[:base_uri] ||= reader.base_uri.to_s if reader.base_uri
+      writer_opts[:prefixes][:ogt] = "http://types.ogp.me/ns#"
       
       # Move elements with class `snippet` to the front of the root element
       html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}

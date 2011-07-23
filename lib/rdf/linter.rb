@@ -98,7 +98,6 @@ module RDF
       def linter
         params["in_fmt"] = "all" if params["in_fmt"].to_s.empty?
         reader_opts = {
-          :prefixes => {},
           :base_uri => params["url"],
           :validate => params["validate"],
           :format   => params["in_fmt"].to_sym,
