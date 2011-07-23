@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/gkellogg/json-ld.git
+  revision: 7b94dc1fbc85154cfa9d9574b3edc84f8f2773ef
+  specs:
+    json-ld (0.0.6)
+      json (>= 1.5.1)
+      rdf (>= 0.3.3)
+
+GIT
   remote: git://github.com/gkellogg/linkeddata.git
   revision: 79e2d7e36585594a2d3c13af1af1e4a9046e22ca
   branch: 0.4.x
@@ -31,6 +39,29 @@ GIT
       rdf (>= 0.3.3)
 
 GIT
+  remote: git://github.com/gkellogg/rdf-microdata.git
+  revision: e96fb83b16c2001f7ac9b525e76d8a167ba2b9ef
+  specs:
+    rdf-microdata (0.1.1)
+      nokogiri (>= 1.4.4)
+      rdf (>= 0.3.3)
+
+GIT
+  remote: git://github.com/gkellogg/rdf-n3.git
+  revision: 55dbfe3cb2d1b550c6c68fed97af125b71035d73
+  specs:
+    rdf-n3 (0.3.4.1)
+      rdf (>= 0.3.3)
+
+GIT
+  remote: git://github.com/gkellogg/rdf-rdfxml.git
+  revision: 1011f4c9dfb17828a8f5b50091c8ff55d835a721
+  specs:
+    rdf-rdfxml (0.3.3.1)
+      nokogiri (>= 1.4.4)
+      rdf (>= 0.3.3)
+
+GIT
   remote: git://github.com/gkellogg/rdf-trix.git
   revision: 67f84af0657160dd8d1f0d974fd554d8f47ba65a
   branch: 0.4.x
@@ -55,29 +86,9 @@ GIT
       rack-linkeddata (>= 0.3.1)
       sinatra (>= 1.0)
 
-GEM
-  remote: http://rubygems.org/
+PATH
+  remote: ../rdf-rdfa/
   specs:
-    addressable (2.2.4)
-    diff-lcs (1.1.2)
-    erubis (2.7.0)
-    facets (2.9.1)
-    fastercsv (1.5.4)
-    haml (3.1.2)
-    json (1.5.3)
-    json-ld (0.0.6)
-      json (>= 1.5.1)
-      rdf (>= 0.3.3)
-    json_pure (1.5.3)
-    nokogiri (1.5.0)
-    rack (1.3.0)
-    rdf-isomorphic (0.3.4)
-      rdf (>= 0.2.3)
-    rdf-microdata (0.1.1)
-      nokogiri (>= 1.4.4)
-      rdf (>= 0.3.3)
-    rdf-n3 (0.3.4.1)
-      rdf (>= 0.3.3)
     rdf-rdfa (0.3.4.2)
       addressable (= 2.2.4)
       facets (>= 2.9.1)
@@ -88,9 +99,22 @@ GEM
       nokogiri (>= 1.4.4)
       rdf
       rdf (>= 0.3.3)
-    rdf-rdfxml (0.3.3.1)
-      nokogiri (>= 1.4.4)
-      rdf (>= 0.3.3)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.4)
+    diff-lcs (1.1.2)
+    erubis (2.7.0)
+    facets (2.9.1)
+    fastercsv (1.5.4)
+    haml (3.1.2)
+    json (1.5.3)
+    json_pure (1.5.3)
+    nokogiri (1.5.0)
+    rack (1.3.0)
+    rdf-isomorphic (0.3.4)
+      rdf (>= 0.2.3)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)
       rspec-expectations (~> 2.6.0)
@@ -116,15 +140,15 @@ DEPENDENCIES
   facets (>= 2.9.1)
   fastercsv
   haml (>= 3.0.0)
-  json-ld (>= 0.0.5)
+  json-ld!
   linkeddata!
   rack-linkeddata!
   rdf!
   rdf-json!
-  rdf-microdata (>= 0.1.1)
-  rdf-n3 (>= 0.3.4)
-  rdf-rdfa (>= 0.3.4)
-  rdf-rdfxml (>= 0.3.3)
+  rdf-microdata!
+  rdf-n3!
+  rdf-rdfa!
+  rdf-rdfxml!
   rdf-trix!
   rspec
   shotgun
