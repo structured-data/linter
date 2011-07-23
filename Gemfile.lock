@@ -54,6 +54,21 @@ GIT
       rdf (>= 0.3.3)
 
 GIT
+  remote: git://github.com/gkellogg/rdf-rdfa.git
+  revision: f4567260e71b78d21d6f7e63f6112a695c1c8399
+  specs:
+    rdf-rdfa (0.3.4.2)
+      addressable (= 2.2.4)
+      facets (>= 2.9.1)
+      facets (>= 2.9.1)
+      haml (>= 3.0.0)
+      haml (>= 3.0.0)
+      nokogiri (>= 1.3.3)
+      nokogiri (>= 1.4.4)
+      rdf
+      rdf (>= 0.3.3)
+
+GIT
   remote: git://github.com/gkellogg/rdf-rdfxml.git
   revision: 1011f4c9dfb17828a8f5b50091c8ff55d835a721
   specs:
@@ -85,20 +100,6 @@ GIT
     sinatra-linkeddata (0.3.1)
       rack-linkeddata (>= 0.3.1)
       sinatra (>= 1.0)
-
-PATH
-  remote: ../rdf-rdfa/
-  specs:
-    rdf-rdfa (0.3.4.2)
-      addressable (= 2.2.4)
-      facets (>= 2.9.1)
-      facets (>= 2.9.1)
-      haml (>= 3.0.0)
-      haml (>= 3.0.0)
-      nokogiri (>= 1.3.3)
-      nokogiri (>= 1.4.4)
-      rdf
-      rdf (>= 0.3.3)
 
 GEM
   remote: http://rubygems.org/
