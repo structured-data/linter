@@ -7,6 +7,13 @@ module RDF::Linter
   #
   # Adds some special-purpose controls to the RDF::RDFa::Writer class
   class Writer < RDF::RDFa::Writer
+    ##
+    # Ordering of types so that those found earlier in the list are promoted over everything else.
+    TYPE_ORDER = [
+      RDF::SIOC.Post,
+      RDF::SIOC::Types.Comment,
+    ]
+    
     def initialize(output = $stdout, options = {}, &block)
       options = {
         :standard_prefixes => true,
@@ -64,6 +71,10 @@ module RDF::Linter
 
     ##
     # Override order_subjects to prefer subjects having an rdf:type
+    #
+    # Subjects are first sorted in topographical order, and then re-ordered by inclusion in
+    # TYPE_ORDER.
+    #
     # @return [Array<Resource>] Ordered list of subjects
     def order_subjects
       subjects = begin
@@ -74,6 +85,7 @@ module RDF::Linter
       end
       
       # Prefer subjects with a type listed in the template, followed by subjects with a type, followed by everything else
+      ordered_subjects = []
       templated_subjects = []
       typed_subjects = []
       other_subjects = []
@@ -83,6 +95,9 @@ module RDF::Linter
         next unless types
         typed_subjects << s
 
+        # See if it's a typed distinguished in TYPE_ORDER
+        ordered_subjects << s unless (TYPE_ORDER & types).empty?
+        
         # Look for keys based on any type or all types in sorted order
         all_types = types.map(&:to_s).sort.join("")
         if haml_template.has_key?(all_types) || types.detect {|t| haml_template.has_key?(t)} ||
@@ -92,10 +107,14 @@ module RDF::Linter
       
       other_subjects = subjects - typed_subjects
       typed_subjects = typed_subjects - templated_subjects
-      STDERR.puts "templated_subjects: #{templated_subjects.inspect}" if RDF::Linter.debug?
-      STDERR.puts "typed_subjects: #{typed_subjects.inspect}" if RDF::Linter.debug?
-      STDERR.puts "other_subjects: #{other_subjects.inspect}" if RDF::Linter.debug?
-      templated_subjects + typed_subjects + other_subjects
+      templated_subjects = templated_subjects - ordered_subjects
+      
+      STDERR.puts "ordered_subjects: #{ordered_subjects.inspect}\n" + 
+                  "templated_subjects: #{templated_subjects.inspect}" + 
+                  "typed_subjects: #{typed_subjects.inspect}" + 
+                  "other_subjects: #{other_subjects.inspect}" if RDF::Linter.debug?
+
+      ordered_subjects + templated_subjects + typed_subjects + other_subjects
     end
 
     ##
