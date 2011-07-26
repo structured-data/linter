@@ -9,6 +9,7 @@ module RDF::Linter
       graph = RDF::Graph.new
       format = reader_opts[:format]
       reader_opts[:prefixes] ||= {}
+      reader_opts[:rdf_terms] = true unless reader_opts.has_key?(:rdf_terms)
 
       reader = case
       when reader_opts[:tempfile]

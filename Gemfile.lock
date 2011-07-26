@@ -40,9 +40,9 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-microdata.git
-  revision: e96fb83b16c2001f7ac9b525e76d8a167ba2b9ef
+  revision: c5dbdd12a7b1f4ecbe57f771d689ac52ae3fe72b
   specs:
-    rdf-microdata (0.1.1)
+    rdf-microdata (0.1.2)
       nokogiri (>= 1.4.4)
       rdf (>= 0.3.3)
 
@@ -113,7 +113,7 @@ GEM
     json (1.5.3)
     json_pure (1.5.3)
     nokogiri (1.5.0)
-    rack (1.3.1)
+    rack (1.3.2)
     rdf-isomorphic (0.3.4)
       rdf (>= 0.2.3)
     rspec (2.6.0)
