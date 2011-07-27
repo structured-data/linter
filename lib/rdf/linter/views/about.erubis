@@ -1,5 +1,4 @@
 <section>
-  <h1><%= title %></h1>
   <p>
     The Structured Data Linter is a tool aiding webmasters and web developers to verify the structured data present in their HTML pages. Search engines use structured data to understand webpages more accurately and to present enhanced search results. The Linter understands the <a href="http://dev.w3.org/html5/md/">microdata</a> and <a href="http://dev.w3.org/html5/rdfa/">RDFa</a> formats according to their latest specifications. Note however that it does not guarranty that all consumers (e.g. search engines) will make use of all the structured data available in your page. The linter does not currently support <a href="http://microformats.org/">microformats</a> (contributions welcome).
   </p>

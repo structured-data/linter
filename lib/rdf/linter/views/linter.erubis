@@ -1,7 +1,7 @@
 <%
   require 'cgi'
 %>
-<h1><%= title %></h1>
+<div class="lighter">
 <p>
   Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup.
 </p>
@@ -40,7 +40,9 @@
     <input name="commit" type="submit" value="Submit" />
   </fieldset>
 </form>
+</div>
 
+<div class="content">
 <% if @error -%>
 <div class="errors">
   <h2>Errors</h2>
@@ -80,3 +82,4 @@
   <textarea rows="20" cols="120"><%= CGI.escapeHTML(@debug.join("\n")) %></textarea>
 </div>
 <% end -%>
+</div>

@@ -35,19 +35,21 @@ module RDF
       end
 
       get '/about/' do
+        @title = "About the Structured Data Linter"
         cache_control :public, :must_revalidate, :max_age => 60
-        erubis :about, :locals => {:title => "About the Structured Data Linter"}
+        erubis :about
       end
 
       get '/examples/' do
+        @title = "Markup Examples"
         cache_control :public, :must_revalidate, :max_age => 60
-        erubis :examples, :locals => {:title => "Markup Examples"}
+        erubis :examples
       end
 
       get '/examples/google-rs/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
+        @title = "Google RS #{params[:name]}"
         erubis :rs_example, :locals => {
-          :title => "Google RS #{params[:name]}",
           :head => :examples,
           :name => params[:name],
           :root => RDF::URI(request.url).join("/").to_s
@@ -66,8 +68,8 @@ module RDF
           dir ||= f if File.directory?(f) && f.match(/#{params[:name]}$/)
         end
         raise "Could not find schema example #{params[:name]}" unless dir
+        @title = "Schema.org #{params[:name]}"
         erubis :schema_example, :locals => {
-          :title => "Schema.org #{params[:name]}",
           :head => :examples,
           :name => params[:name],
           :dir => dir,
@@ -122,8 +124,8 @@ module RDF
         content_type, content = parse(reader_opts)
         content.gsub!(/--root--/, root)
         @output = content unless content == @error
+        @title = "Structured Data Linter"
         erubis :linter, :locals => {
-          :title => "Structured Data Linter",
           :head => :linter,
           :root => RDF::URI(request.url).join("/").to_s,
         }

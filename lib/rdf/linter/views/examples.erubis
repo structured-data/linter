@@ -1,12 +1,11 @@
 <section>
-  <h1><%= title %></h1>
-  <p>
+  <p class="lighter">
     Markup examples that can be used to generate rich snippets come from a variety of different sources.
     Find an example from below that matches your use case to see how it renders as a snippet. Try the
     same example with the Google <a target="_blank" href="http://www.google.com/webmasters/tools/richsnippets">Rich Snippets Testing Tool</a>.
   </p>
   
-  <section>
+  <section class="content">
     <h2>Google Rich Snippets examples</h2>
     <p>
       The following examples are taken from the Google
@@ -21,7 +20,7 @@
     <% end -%>
   </section>
   
-  <section>
+  <section class="content">
     <h2>Schema.org examples</h2>
     <p>
       The following examples are taken from Schema.org

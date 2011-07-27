@@ -1,3 +1,7 @@
-<footer>
-  Part of the <a href="http://structured-data.org" target="_blank">Structured Data</a> initiative.
+<footer id="footer">
+  <p class="content">
+     Website content released under a <a rel="cc:license license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+     Creative Commons Attribution Share-Alike license</a> except where an
+     alternate is specified.
+    </p>
 </footer>

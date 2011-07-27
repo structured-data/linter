@@ -1,5 +1,4 @@
 <section class="example">
-  <h1><%= title %></h1>
   <%
     {:rdfa => "RDFa", :md => "Microdata"}.each do |fmt, fmt_name|
       file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt}.html")
