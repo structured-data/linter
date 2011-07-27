@@ -35,6 +35,9 @@ module RDF::Linter
             %h3.r
               %a.fakelink
                 != title
+            %div.s
+              %div.f
+                %cite!= base
           - if body || description || photo
             - if !photo.to_s.empty?
               %div.s
@@ -49,9 +52,6 @@ module RDF::Linter
                       - if description
                         %br
                         != description
-                      %br
-                      %span.f
-                        %cite!= base
             - else
               %div.s.primary_content
                 %div.f
@@ -59,9 +59,6 @@ module RDF::Linter
                 - if description
                   %br
                   != description
-                %br
-                %span.f
-                  %cite!= base
           - if other
             %div.other
               %p="Content not used in snippet generation:"
