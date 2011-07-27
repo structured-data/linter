@@ -143,10 +143,18 @@ nav li a, nav li a:link, nav li a:visited {
     padding:            3px 12px;
     color:              white;
     text-decoration:    none;
+    border-bottom: solid 2px #55842c;
 }
 
-nav li a:hover, nav li a.selected {
+nav li a.selected, nav li a:hover {
     color:      #55842c;
+}
+
+nav li a.selected {
+    border: solid 2px #55842c;
+    border-bottom: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 #header nav li a:hover, #header nav li a.selected {
@@ -160,6 +168,12 @@ nav.linter div.tabs
     padding:        1em 3em;
     color:          black;
     background:     #98b786;
+}
+form#linter_input fieldset {
+  border: none;
+}
+form#linter_input fieldset legend {
+  display: none;
 }
 
 .content {
