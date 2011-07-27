@@ -4,7 +4,7 @@ module RDF::Linter
     "http://rdf.data-vocabulary.org/#Review" => "http://rdf.data-vocabulary.org/#",
     "http://data-vocabulary.org/Review" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Review%23:",
     "http://rdf.data-vocabulary.org/#Review-aggregate" => "http://rdf.data-vocabulary.org/#",
-    "http://data-vocabulary.org/Review-aggregate" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Review-aggregate%23:",
+    "http://data-vocabulary.org/Review-aggregate" => "http://data-vocabulary.org/",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       RDF::URI(type) => {

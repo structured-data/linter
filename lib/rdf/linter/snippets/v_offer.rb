@@ -2,9 +2,9 @@
 module RDF::Linter
   {
     "http://rdf.data-vocabulary.org/#Offer" => "http://rdf.data-vocabulary.org/#",
-    "http://data-vocabulary.org/Offer" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Offer%23:",
+    "http://data-vocabulary.org/Offer" => "http://data-vocabulary.org/",
     "http://rdf.data-vocabulary.org/#Offer-aggregate" => "http://rdf.data-vocabulary.org/#",
-    "http://data-vocabulary.org/Offer-aggregate" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Offer-aggregate%23:",
+    "http://data-vocabulary.org/Offer-aggregate" => "http://data-vocabulary.org/",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       RDF::URI(type) => {
@@ -28,7 +28,7 @@ module RDF::Linter
           lowPrice = block.call("#{prefix}lowPrice")
           highPrice = block.call("#{prefix}highPrice")
           price ||= [lowPrice, highPrice].compact.map(&:rstrip).join("-")
-          offerCount.to_s + price + block.call("#{prefix}currency")
+          offerCount.to_s + price.to_s + block.call("#{prefix}currency")
         },
         :description_props => ["#{prefix}description"],
         # Properties to be used when snippet is nested
@@ -44,7 +44,8 @@ module RDF::Linter
           lowPrice = block.call("#{prefix}lowPrice")
           highPrice = block.call("#{prefix}highPrice")
           price ||= [lowPrice, highPrice].compact.map(&:rstrip).join("-")
-          price + block.call("#{prefix}currency")
+          currency =  block.call("#{prefix}currency")
+          "#{price}#{currency}"
         },
         :property_value => %(
           - if predicate.to_s.match('#{prefix.gsub('#', '\#')}rating')

@@ -2,7 +2,7 @@
 module RDF::Linter
   {
     "http://rdf.data-vocabulary.org/#Product" => "http://rdf.data-vocabulary.org/#",
-    "http://data-vocabulary.org/Product" => "http://www.w3.org/1999/xhtml/microdata#http://data-vocabulary.org/Product%23:",
+    "http://data-vocabulary.org/Product" => "http://data-vocabulary.org/",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       RDF::URI(type) => {
