@@ -56,7 +56,7 @@ module RDF::Linter
           else
             # Find appropriate entires from template
             props = haml_template["#{predicate}_props".to_sym]
-            STDERR.puts "render_subject(#{subject}, #{predicate}): #{props.inspect}" if RDF::Linter.debug?
+            add_debug "render_subject(#{subject}, #{predicate}): #{props.inspect}"
             format = haml_template["#{predicate}_fmt".to_sym]
           end
           unless props.nil? || props.empty?
@@ -77,13 +77,10 @@ module RDF::Linter
     #
     # @return [Array<Resource>] Ordered list of subjects
     def order_subjects
-      subjects = begin
-        graph.tsort
-      rescue
-        STDERR.puts "order_subjects: tsort of #{subjects} failed: #{$!}"
-        super # TSort can fail
-      end
+      subjects = super
       
+      add_debug "order_subjects: #{subjects.inspect}"
+
       # Prefer subjects with a type listed in the template, followed by subjects with a type, followed by everything else
       ordered_subjects = []
       templated_subjects = []
@@ -100,7 +97,7 @@ module RDF::Linter
         
         # Look for keys based on any type or all types in sorted order
         all_types = types.map(&:to_s).sort.join("")
-        if haml_template.has_key?(all_types) || types.detect {|t| haml_template.has_key?(t)} ||
+        if haml_template.has_key?(all_types) || types.detect {|t| haml_template.has_key?(t)}
           templated_subjects << s
         end
       end
@@ -109,10 +106,10 @@ module RDF::Linter
       typed_subjects = typed_subjects - templated_subjects
       templated_subjects = templated_subjects - ordered_subjects
       
-      STDERR.puts "ordered_subjects: #{ordered_subjects.inspect}\n" + 
-                  "templated_subjects: #{templated_subjects.inspect}" + 
-                  "typed_subjects: #{typed_subjects.inspect}" + 
-                  "other_subjects: #{other_subjects.inspect}" if RDF::Linter.debug?
+      add_debug "ordered_subjects: #{ordered_subjects.inspect}\n" + 
+                  "templated_subjects: #{templated_subjects.inspect}\n" + 
+                  "typed_subjects: #{typed_subjects.inspect}\n" + 
+                  "other_subjects: #{other_subjects.inspect}"
 
       ordered_subjects + templated_subjects + typed_subjects + other_subjects
     end
@@ -152,25 +149,30 @@ module RDF::Linter
       worst = 1.0
       best = 5.0
       @rating_id ||= "rating-0"
-      id = @rating_id.succ
+      @rating_id = id = @rating_id.succ
       html = %(<span class='rating-stars' id="#{id}"></span>)
       if object.literal?
         # Value is simiple rating
         rating = object.value.to_f
         html += %(<span property="#{get_curie(property)}" content="#{rating}"/>)
       else
-        html += %(<span rel='#{get_curie(property)}' resource='#{object}'/>)
+        html += %(<span rel='#{get_curie(property)}' resource='#{object}'>)
+        subject_done(object)
         # It is marked up in a Review class
         graph.query(:subject => object) do |st|
+          html += %(<span property='#{get_curie(st.predicate)}' content='#{st.object}' />)
           case st.predicate.to_s
           when /best(?:Rating)/
             best = st.object.value.to_f
           when /worst(?:Rating)/
-            worst = st.object.value.to_f
+            html += %(<span property='#{get_curie(st.predicate)}' content='#{st.object.value.to_f}' />)
           when /(ratingValue|value|average)/
             rating = st.object.value.to_f
+          when /reviewCount/
+            html += "#{st.object.value.to_i} reviews"
           end
         end
+        html += %(</span>)
       end
 
       html + %(
