@@ -17,7 +17,8 @@
     <legend>Page URL</legend>
     <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
     <input name="commit" type="submit" value="Submit" />
-    <br/>Examples:
+    <br/>
+    <span class="form-examples">Examples:
     <% %w(Review People Event Recipe Product).each do |name| -%>
       <%= name %> (
       <% %w(RDFa MD).each do |fmt|
@@ -28,6 +29,7 @@
         <a href="/?url=<%= path %>"><%=fmt %></a>
       <% end -%>)
     <% end -%>
+    </span>
   </fieldset>
   <fieldset class="upload">
     <legend>File Upload</legend>

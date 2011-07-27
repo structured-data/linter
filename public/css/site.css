@@ -82,7 +82,16 @@ margin: 0 0 0 50px;
 padding: 0 0 0.5em 0;
 }
 
-form { clear:left; }
+form {
+    margin-top: 10px;
+    clear:left;
+}
+
+legend, span.form-examples, #results-turtle { font-size: 0.8em;}
+
+form span.form-examples {
+    font-size: 0.8em;
+}
 
 .hidden {
 display: none;
@@ -116,6 +125,7 @@ color: #fff;
 }
 
 #header > nav { float:right; }
+
 nav ul {
     font:           bolder 1em 'Trebuchet MS', sans-serif;
     color:          white;
@@ -132,17 +142,15 @@ nav li a, nav li a:link, nav li a:visited {
     display:            block;
     padding:            3px 12px;
     color:              white;
-    background-color:   #333;
     text-decoration:    none;
-    border-right:       1px solid #272727;
 }
-nav li a:hover {
-    background: #65944A;
-    color:      white;
+
+nav li a:hover, nav li a.selected {
+    color:      #55842c;
 }
-nav li a.selected {
-    background: #65944A;
-    color:      white;
+
+#header nav li a:hover, #header nav li a.selected {
+    color:      #c7e5ab;
 }
 
 nav.linter div.tabs
@@ -158,6 +166,10 @@ nav.linter div.tabs
 max-width: 960px;
 margin: 0 auto;
 padding: 10px 10px;
+}
+
+.snippet-content {
+    background-color: white;
 }
 
 #footer {
