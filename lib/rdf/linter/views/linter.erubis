@@ -4,7 +4,7 @@
 <div class="lighter">
 <div class="content">
 <p>
-  Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup.
+  Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup. Read more <a href="/about/">about the Structured Data linter</a>.
 </p>
 <nav class="linter">
   <ul>
