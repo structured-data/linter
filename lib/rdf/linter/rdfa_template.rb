@@ -37,7 +37,7 @@ module RDF::Linter
                 != title
             %div.s
               %div.f
-                %cite!= base
+                %cite!= base.to_s.gsub("https://", "").gsub("http://", "")
           - if body || description || photo
             - if !photo.to_s.empty?
               %div.s
