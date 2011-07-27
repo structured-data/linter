@@ -1,4 +1,4 @@
-<section class="example">
+<section class="example content">
   <%
     {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}.each do |fmt, fmt_name|
       file = File.join(dir, "#{name}.#{fmt}")

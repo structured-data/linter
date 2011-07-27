@@ -2,6 +2,7 @@
   require 'cgi'
 %>
 <div class="lighter">
+<div class="content">
 <p>
   Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup.
 </p>
@@ -42,6 +43,7 @@
     <input name="commit" type="submit" value="Submit" />
   </fieldset>
 </form>
+</div>
 </div>
 
 <div class="content">
