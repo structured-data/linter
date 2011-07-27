@@ -1,14 +1,16 @@
 <section class="example content">
   <%
-    {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}.each do |fmt, fmt_name|
+    %w(rdfa md jsonld).map(&:to_sym).each do |fmt|
+      fmt_name = {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}[fmt]
       file = File.join(dir, "#{name}.#{fmt}")
       next unless File.file?(file)
       path = "#{root}examples/schema.org/#{name}.#{fmt}"
       div = File.read(file)
+      ex_class = fmt == :jsonld ? "json" : "html"
   -%>
   <section>
     <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
-    <pre class="example"><code class="html"><%= CGI.escapeHTML(div) %></code></pre>
+    <pre class="example"><code class="<%=ex_class%>"><%= CGI.escapeHTML(div) %></code></pre>
   </section>
   <% end -%>
 
@@ -19,15 +21,17 @@
   <section class="extended">
     <h2><%= ex %></h2>
     <%
-      {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}.each do |fmt, fmt_name|
+      %w(rdfa md jsonld).map(&:to_sym).each do |fmt|
+        fmt_name = {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}[fmt]
         file = File.join(dir, "#{ex}.#{fmt}")
         next unless File.file?(file)
         path = "#{root}examples/schema.org/#{ex}.#{fmt}"
         div = File.read(file)
+        ex_class = fmt == :jsonld ? "json" : "html"
     -%>
     <section>
       <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
-      <pre class="example"><code class="html"><%= CGI.escapeHTML(div) %></code></pre>
+      <pre class="example"><code class="<%=ex_class%>"><%= CGI.escapeHTML(div) %></code></pre>
     </section>
     <% end -%>
   </section>
