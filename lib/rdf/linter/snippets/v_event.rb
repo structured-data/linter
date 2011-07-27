@@ -24,16 +24,13 @@ module RDF::Linter
         :description_props => ["#{prefix}description"],
         # Properties to be used when snippet is nested
         :nested_props => [
-          "#{prefix}street-address",
-          "#{prefix}locality",
-          "#{prefix}region",
-          "#{prefix}country-name",
-          "#{prefix}postal-code",
+          "#{prefix}summary",
+          "#{prefix}location",
         ],
         # Post-processing on nested markup
-        :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p).rstrip}.join(", ")},
+        :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p).to_s.rstrip}.join(", ")},
         :property_value => %(
-          - if object.node? && res = yield(object)
+          - if res = yield(object)
             != res
           - elsif ["#{prefix}image", "#{prefix}photo"].include?(predicate) 
             %span{:rel => rel}

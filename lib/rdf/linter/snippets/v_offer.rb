@@ -27,7 +27,7 @@ module RDF::Linter
           price = block.call("#{prefix}price")
           lowPrice = block.call("#{prefix}lowPrice")
           highPrice = block.call("#{prefix}highPrice")
-          price ||= [lowPrice, highPrice].compact.map(&:rstrip).join("-")
+          price ||= [lowPrice, highPrice].compact.map(&:to_s).map(&:rstrip).join("-")
           offerCount.to_s + price.to_s + block.call("#{prefix}currency")
         },
         :description_props => ["#{prefix}description"],
@@ -43,14 +43,14 @@ module RDF::Linter
           price = block.call("#{prefix}price")
           lowPrice = block.call("#{prefix}lowPrice")
           highPrice = block.call("#{prefix}highPrice")
-          price ||= [lowPrice, highPrice].compact.map(&:rstrip).join("-")
+          price ||= [lowPrice, highPrice].compact.map(&:to_s).map(&:rstrip).join("-")
           currency =  block.call("#{prefix}currency")
           "#{price}#{currency}"
         },
         :property_value => %(
           - if predicate.to_s.match('#{prefix.gsub('#', '\#')}rating')
             != rating_helper(predicate, object)
-          - elsif object.node? && res = yield(object)
+          - elsif res = yield(object)
             != res
           - elsif ["#{prefix}image", "#{prefix}photo"].include?(predicate) 
             %span{:rel => rel}

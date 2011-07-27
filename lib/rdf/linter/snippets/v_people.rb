@@ -21,7 +21,7 @@ module RDF::Linter
           addr = block.call("#{prefix}address")
           title = block.call("#{prefix}title")
           affiliation = block.call("#{prefix}affiliation")
-          title = [title, affiliation].compact.map(&:rstrip).join(", ")
+          title = [title, affiliation].compact.map(&:to_s).map(&:rstrip).join(", ")
           [addr, title].compact.join("- ")
         },
         # Properties to be used when snippet is nested
@@ -29,7 +29,7 @@ module RDF::Linter
           "#{prefix}name",
         ],
         :property_value => %(
-          - if object.node? && res = yield(object)
+          - if res = yield(object)
             != res
           - elsif ["#{prefix}image", "#{prefix}photo"].include?(predicate) 
             %span{:rel => rel}

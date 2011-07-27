@@ -55,7 +55,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: 7a966e48656b1365985ae29bb598b54db25c193f
+  revision: 620363ebb272128ab90628128fdad784ed738bd6
   specs:
     rdf-rdfa (0.3.4.2)
       addressable (= 2.2.4)

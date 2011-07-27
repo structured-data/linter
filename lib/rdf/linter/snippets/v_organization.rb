@@ -19,14 +19,14 @@ module RDF::Linter
         :body_fmt => lambda {|list, &block|
           addr = block.call("#{prefix}address")
           tel = block.call("#{prefix}tel")
-          [addr, tel].compact.map(&:rstrip).join(" - ")
+          [addr, tel].compact.map(&:to_s).map(&:rstrip).join(" - ")
         },
         # Properties to be used when snippet is nested
         :nested_props => [
           "#{prefix}name",
         ],
         :property_value => %(
-          - if object.node? && res = yield(object)
+          - if res = yield(object)
             != res
           - elsif ["#{prefix}image", "#{prefix}photo"].include?(predicate) 
             %span{:rel => rel}

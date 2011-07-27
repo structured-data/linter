@@ -29,7 +29,7 @@ module RDF::Linter
           "#{prefix}name",
         ],
         :property_value => %(
-          - if object.node? && res = yield(object)
+          - if res = yield(object)
             != res
           - elsif ["#{prefix}image", "#{prefix}photo"].include?(predicate) 
             %span{:rel => rel}

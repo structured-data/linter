@@ -28,7 +28,7 @@ module RDF::Linter
           "#{prefix}postal-code",
         ],
         # Post-processing on nested markup
-        :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p)}.compact.map(&:rstrip).join(", ")},
+        :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p)}.compact.map(&:to_s).map(&:rstrip).join(", ")},
       }
     })
   end
