@@ -43,7 +43,9 @@ module RDF
       get '/examples/' do
         @title = "Markup Examples"
         cache_control :public, :must_revalidate, :max_age => 60
-        erubis :examples
+        erubis :examples, :locals => {
+          :root => RDF::URI(request.url).join("/").to_s,
+        }
       end
 
       get '/examples/google-rs/:name/' do

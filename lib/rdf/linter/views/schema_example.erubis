@@ -1,6 +1,6 @@
 <section class="example content">
   <%
-    %w(rdfa md jsonld).map(&:to_sym).each do |fmt|
+    %w(rdfa microdata jsonld).map(&:to_sym).each do |fmt|
       next if fmt == :jsonld  # Until parsing works
       fmt_name = {:rdfa => "RDFa", :microdata => "Microdata", :jsonld => "JSON-LD"}[fmt]
       file = File.join(dir, "#{name}.#{fmt}")
@@ -22,7 +22,7 @@
   <section class="extended">
     <h2><%= ex %></h2>
     <%
-      %w(rdfa md jsonld).map(&:to_sym).each do |fmt|
+      %w(rdfa microdata jsonld).map(&:to_sym).each do |fmt|
         next if fmt == :jsonld  # Until parsing works
         fmt_name = {:rdfa => "RDFa", :microdata => "Microdata", :jsonld => "JSON-LD"}[fmt]
         file = File.join(dir, "#{ex}.#{fmt}")

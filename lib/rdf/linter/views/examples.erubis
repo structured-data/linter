@@ -15,9 +15,16 @@
         Webmaster Tools Help
       </a>.
     </p>
-    <% %w(Review Aggregate-Reviews People Organization Event Event-Multiple Recipe Product Offer-Aggregate).each do |ex| -%>
+    <% %w(Review Aggregate-Reviews People Organization Event Event-Multiple Recipe Product Offer-Aggregate).each do |name| -%>
     <div class="example d1">
-      <a href="/examples/google-rs/<%=ex %>/"><%= ex %></a>
+      <a href="/examples/google-rs/<%=name%>/"><%= name %></a>
+      (<% %w(RDFa MD).each do |fmt|
+        file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
+        next unless File.file?(file)
+        path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
+      -%>
+        <a href="/?url=<%= path %>"><%=fmt %></a>
+      <% end -%>)
     </div>
     <% end -%>
   </section>
@@ -36,9 +43,21 @@
 
         path = dir.sub(File.join(APP_DIR, "schema-org-rdf", "examples", ""), '').split('/')
         depth = path.length - 1
+        
+        type = RDF::URI("http://schema.org/" + path.last)
+        snippet = RDF::Linter::LINTER_HAML.has_key?(type)
 
-        rep = if Dir.entries(dir).any? {|f| f.match(/#{path.last}\.(rdfa|jsonld|md)$/)}
-          %(<a href="/examples/schema.org/#{path.last}/">#{path.last}</a>)
+        rep = if Dir.entries(dir).any? {|f| f.match(/#{path.last}\.(rdfa|microdata)$/)}
+          %(<a href="/examples/schema.org/#{path.last}/">#{path.last}</a>) + ' (' +
+          %w(rdfa microdata).map(&:to_sym).map do |fmt|
+            fmt_name = {:rdfa => "RDFa", :microdata => "MD", :jsonld => "JSON-LD"}[fmt]
+            file = File.join(dir, "#{path.last}.#{fmt}")
+            next unless File.file?(file)
+            sn_path = "#{root}examples/schema.org/#{path.last}.#{fmt}"
+             %(<a href="/?url=#{sn_path}">#{fmt_name}</a>)
+          end.compact.join(' ') +
+          ')' +
+          (snippet ? "" : "<a href='#no_snip'>*</a>")
         else
           path.last
         end
@@ -47,5 +66,6 @@
         <%= "&nbsp;&nbsp;|&nbsp;&nbsp;" * depth + rep %>
       </div>
     <% end -%>
+    <div><a id='no_snip'>*</a>Indicates snippets not currently generated for this type</a></div>
   </section>
 </section>
