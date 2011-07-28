@@ -8,7 +8,7 @@
       div = doc.at_css("div")
   -%>
   <section>
-    <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
+    <h2><%= fmt_name %> (<a href="<%= path %>" title="Load <%=fmt_name%> example">source</a> <a href="/?url=<%= path %>" title="Show snippet in <%=fmt_name%>">lint</a>)</h2>
     <pre class="example"><code class="html"><%= CGI.escapeHTML(div.to_html) %></code></pre>
   </section>
   <% end -%>

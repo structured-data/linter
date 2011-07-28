@@ -27,7 +27,7 @@
         next unless File.file?(file)
         path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
       -%>
-        <a href="/?url=<%= path %>"><%=fmt %></a>
+        <a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
       <% end -%>)
     <% end -%>
     </span>

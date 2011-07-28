@@ -17,13 +17,13 @@
     </p>
     <% %w(Review Aggregate-Reviews People Organization Event Event-Multiple Recipe Product Offer-Aggregate).each do |name| -%>
     <div class="example d1">
-      <a href="/examples/google-rs/<%=name%>/"><%= name %></a>
+      <a href="/examples/google-rs/<%=name%>/" title="Show <%=name%> markup example"><%= name %></a>
       (<% %w(RDFa MD).each do |fmt|
         file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
         next unless File.file?(file)
         path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
       -%>
-        <a href="/?url=<%= path %>"><%=fmt %></a>
+        <a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
       <% end -%>)
     </div>
     <% end -%>
@@ -48,16 +48,16 @@
         snippet = RDF::Linter::LINTER_HAML.has_key?(type)
 
         rep = if Dir.entries(dir).any? {|f| f.match(/#{path.last}\.(rdfa|microdata)$/)}
-          %(<a href="/examples/schema.org/#{path.last}/">#{path.last}</a>) + ' (' +
+          %(<a href="/examples/schema.org/#{path.last}/" title="Show #{path.last} markup example">#{path.last}</a>) + ' (' +
           %w(rdfa microdata).map(&:to_sym).map do |fmt|
             fmt_name = {:rdfa => "RDFa", :microdata => "MD", :jsonld => "JSON-LD"}[fmt]
             file = File.join(dir, "#{path.last}.#{fmt}")
             next unless File.file?(file)
             sn_path = "#{root}examples/schema.org/#{path.last}.#{fmt}"
-             %(<a href="/?url=#{sn_path}">#{fmt_name}</a>)
+             %(<a href="/?url=#{sn_path}" title="Show #{path.last} snippet in #{fmt_name}">#{fmt_name}</a>)
           end.compact.join(' ') +
           ')' +
-          (snippet ? "" : "<a href='#no_snip'>*</a>")
+          (snippet ? "" : %(<a href="#no_snip" title="snippets not currently generated for this type">*</a>))
         else
           path.last
         end
