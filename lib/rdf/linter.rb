@@ -109,6 +109,7 @@ module RDF
         reader_opts[:debug] = @debug = [] if params["debug"]
         reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
         reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
+        reader_opts[:matched_templates] = []
 
         root = RDF::URI(request.url).join("/").to_s
         puts "requrest.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
@@ -130,6 +131,7 @@ module RDF
         erubis :linter, :locals => {
           :head => :linter,
           :root => RDF::URI(request.url).join("/").to_s,
+          :matched_templates => reader_opts[:matched_templates].uniq
         }
       end
     end

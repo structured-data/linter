@@ -54,7 +54,7 @@
 </div>
 <% end -%>
 
-<% if @output.match(/snippet-content/) -%>
+<% if !matched_templates.empty? -%>
 <div class="snippet">
   <h2>Enhanced search result preview</h2>
   <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
@@ -74,6 +74,10 @@
   <tbody>
   <% @parsed_statements.each do |reader, count| -%>
     <tr><td><%= reader.to_s %>:</td><td><%= count.to_s %> statements</td></tr>
+  <% end -%>
+  <tr><td>Matched Templates:</td><td><%= (matched_templates.shift || 'none').to_s %></td></tr>
+  <% matched_templates.each do |key| %>
+    <tr><td></td><td><%= key.to_s %></td></tr>
   <% end -%>
   </tbody>
   </table>

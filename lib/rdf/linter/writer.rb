@@ -18,6 +18,7 @@ module RDF::Linter
       options = {
         :standard_prefixes => true,
         :haml => LINTER_HAML,
+        :matched_templates => [],
       }.merge(options)
       super do
         block.call(self) if block_given?
@@ -68,7 +69,7 @@ module RDF::Linter
         end
       end
     end
-
+    
     ##
     # Override order_subjects to prefer subjects having an rdf:type
     #
@@ -97,7 +98,7 @@ module RDF::Linter
         
         # Look for keys based on any type or all types in sorted order
         all_types = types.map(&:to_s).sort.join("")
-        if haml_template.has_key?(all_types) || types.detect {|t| haml_template.has_key?(t)}
+        if haml_template.has_key?(all_types) || types.detect {|t| template_match(t)}
           templated_subjects << s
         end
       end
@@ -114,6 +115,16 @@ module RDF::Linter
       ordered_subjects + templated_subjects + typed_subjects + other_subjects
     end
 
+    ##
+    # Keep track of matchted templates
+    def template_match(type)
+      v = super(type)
+      if v.is_a?(Array)
+        @options[:matched_templates] << v.first
+      end
+      v
+    end
+    
     ##
     # Generate markup for a rating.
     #
