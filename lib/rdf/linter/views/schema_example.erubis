@@ -7,7 +7,7 @@
       next unless File.file?(file)
       path = "#{root}examples/schema.org/#{name}.#{fmt}"
       div = File.read(file)
-      ex_class = fmt == :jsonld ? "json" : "html"
+      ex_class = fmt == :jsonld ? "js" : "html"
   -%>
   <section>
     <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
@@ -29,7 +29,7 @@
         next unless File.file?(file)
         path = "#{root}examples/schema.org/#{ex}.#{fmt}"
         div = File.read(file)
-        ex_class = fmt == :jsonld ? "json" : "html"
+        ex_class = fmt == :jsonld ? "js" : "html"
     -%>
     <section>
       <h2><%= fmt_name %> (<a href="<%= path %>">source</a> <a href="/?url=<%= path %>">lint</a>)</h2>
