@@ -158,7 +158,7 @@ module RDF
     # @return [Boolean]
     def self.detect(sample)
       (sample.match(/<[^>]*(about|resource|prefix|typeof)\s*="[^>]*>/m) ||
-       sample.match(/<[^>]*DOCTYPE\s+html[^>]*>.*xmlns:/m)
+       sample.match(/<[^>]*DOCTYPE\s+html[^>]*>.*xmlns:/im)
       ) && !sample.match(/<(\w+:)?(RDF)/)
     end
   end
