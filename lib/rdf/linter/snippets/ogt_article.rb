@@ -18,10 +18,10 @@ module RDF::Linter
           "#{prefix}date",
         ],
         :description_props => ["http://purl.org/rss/1.0/modules/content/encoded", "#{prefix}url"],
-        :property_value => %q(
+        :property_value => %(
         - if res = yield(object)
           != res
-        - elsif false && predicate == "#{prefix}image" # FIXME
+        - elsif predicate == "#{prefix}image"
           %span{:rel => rel}
             %img{:src => object.to_s, :alt => ""}
         - elsif object.literal? && object.datatype == "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
