@@ -1,7 +1,8 @@
 <section class="example content">
   <%
     %w(rdfa md jsonld).map(&:to_sym).each do |fmt|
-      fmt_name = {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}[fmt]
+      next if fmt == :jsonld  # Until parsing works
+      fmt_name = {:rdfa => "RDFa", :microdata => "Microdata", :jsonld => "JSON-LD"}[fmt]
       file = File.join(dir, "#{name}.#{fmt}")
       next unless File.file?(file)
       path = "#{root}examples/schema.org/#{name}.#{fmt}"
@@ -22,7 +23,8 @@
     <h2><%= ex %></h2>
     <%
       %w(rdfa md jsonld).map(&:to_sym).each do |fmt|
-        fmt_name = {:rdfa => "RDFa", :md => "Microdata", :jsonld => "JSON-LD"}[fmt]
+        next if fmt == :jsonld  # Until parsing works
+        fmt_name = {:rdfa => "RDFa", :microdata => "Microdata", :jsonld => "JSON-LD"}[fmt]
         file = File.join(dir, "#{ex}.#{fmt}")
         next unless File.file?(file)
         path = "#{root}examples/schema.org/#{ex}.#{fmt}"
