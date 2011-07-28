@@ -58,7 +58,7 @@ module RDF
       def each_statement(&block)
         if block_given?
           @input.rewind
-          sample = @input.read(1000)
+          sample = @input.read(10000)
           @input.rewind
 
           @statement_count = {}
