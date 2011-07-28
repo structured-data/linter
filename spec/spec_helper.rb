@@ -25,3 +25,4 @@ end
 
 TEST_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "test_data")
 EXAMPLE_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "..", "google-rs")
+SCHEMA_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "..", "schema-org-rdf", "examples", "Thing")

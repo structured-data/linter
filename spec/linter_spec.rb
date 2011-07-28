@@ -43,7 +43,10 @@ describe RDF::Linter do
   end
 
   context "Snippet Generation" do
-    Dir.glob(File.join(EXAMPLE_DIR, "*.html")) do |input|
+    (
+      Dir.glob(File.join(EXAMPLE_DIR, "*.{html,rdfa,md}")) +
+      Dir.glob(File.join(SCHEMA_DIR, "**/*.{html,rdfa,md}"))
+    ).each do |input|
       context File.basename(input) do
         before(:all) do
           @subject = parse(:content => File.open(input), :format => :all).last
