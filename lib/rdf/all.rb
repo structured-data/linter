@@ -1,3 +1,5 @@
+require 'nokogiri'
+
 module RDF
   ##
   # **`RDF::All`** Attempts to read and parse all formats.
@@ -58,8 +60,13 @@ module RDF
       def each_statement(&block)
         if block_given?
           @input.rewind
-          sample = @input.read(10000)
-          @input.rewind
+          sample = @input.read(1000)
+          if sample.match(%r(<html)i)
+            # If it's HTML, parse it to improve detection
+            sample = @input = Nokogiri::HTML.parse(@input)
+          else
+            @input.rewind
+          end
 
           @statement_count = {}
           
@@ -146,7 +153,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<(\w+:)?(RDF)/)
+      sample.match(/<(\w+:)?(RDF)/) if sample.is_a?(String)
     end
   end
   
@@ -157,9 +164,13 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      (sample.match(/<[^>]*(about|resource|prefix|typeof|property|vocab)\s*="[^>]*>/m) ||
-       sample.match(/<[^>]*DOCTYPE\s+html[^>]*>.*xmlns:/im)
-      ) && !sample.match(/<(\w+:)?(RDF)/)
+      if sample.is_a?(Nokogiri::HTML::Document)
+        %w(about resource prefix typeof property vocab).any? {|attr| sample.at_xpath("//@#{attr}")}
+      else
+        (sample.match(/<[^>]*(about|resource|prefix|typeof|property|vocab)\s*="[^>]*>/m) ||
+         sample.match(/<[^>]*DOCTYPE\s+html[^>]*>.*xmlns:/im)
+        ) && !sample.match(/<(\w+:)?(RDF)/)
+      end
     end
   end
   
@@ -169,7 +180,11 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/<[^>]*(itemprop|itemtype|itemref|itemscope|itemid)[^>]*>/m)
+      if sample.is_a?(Nokogiri::HTML::Document)
+        %w(itemprop itemtype itemref itemscope itemid).any? {|attr| sample.at_xpath("//@#{attr}")}
+      else
+        sample.match(/<[^>]*(itemprop|itemtype|itemref|itemscope|itemid)[^>]*>/m)
+      end
     end
   end
   
@@ -179,7 +194,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/@(base|prefix)/) && !::JSON::LD::Reader.detect(sample)
+      sample.match(/@(base|prefix)/) && !::JSON::LD::Reader.detect(sample) if sample.is_a?(String)
     end
   end
   
@@ -189,7 +204,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      sample.match(/\{\s*"@(subject|context|type)"/m)
+      sample.match(/\{\s*"@(subject|context|type)"/m) if sample.is_a?(String)
     end
   end
 end # RDF
