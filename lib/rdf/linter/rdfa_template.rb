@@ -5,7 +5,7 @@ require 'rdf/linter/vocab'
 module RDF::Linter
   LINTER_HAML = {
     # Document
-    # Locals: language, title, profile, prefix, base, subjects, turtle
+    # Locals: language, title, profile, prefix, base, subjects, extracted
     # Yield: subjects.each
     :doc => %q(
       %div{:id => "results-content", :about => base, :profile => profile, :prefix => prefix}
@@ -13,9 +13,9 @@ module RDF::Linter
           != yield(subject)
       %div{:id => "results-turtle"}
         %h3
-          Results in Turtle:
-        %pre{:id => "results-turtle"}
-          != turtle
+          Extracted rich snippet data from the page:
+        %pre{:id => "extracted-results"}
+          != extracted
     ),
 
     # Output for top-level non-leaf resources
@@ -94,14 +94,92 @@ module RDF::Linter
     # Render as a leaf
     # Otherwise, render result
     :property_value => %q(
-    - if res = yield(object)
-      != res
-    - elsif object.literal?
-      %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
-    - else
-      %span{:rel => rel, :resource => get_curie(object)}
+      - if res = yield(object)
+        != res
+      - elsif object.literal?
+        %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+      - else
+        %span{:rel => rel, :resource => get_curie(object)}
     ),
   }
+
+  TABULAR_HAML = {
+    # Document
+    # Locals: language, title, profile, prefix, base, subjects, extracted
+    # Yield: subjects.each
+    :doc => %q(
+      %div{:id => "extracted-content"}
+        - subjects.each do |subject|
+          != yield(subject)
+    ),
+
+    :subject => %q(
+      - if element == :li
+        %li
+          %table.properties
+            - if typeof
+              %tr
+                %td.label="rdf:type"
+                %td!=typeof
+            - predicates.each do |predicate|
+              != yield(predicate)
+      - else
+        %div
+          %table.properties
+            - if typeof
+              %tr
+                %td.label="rdf:type"
+                %td!=typeof
+            - predicates.each do |predicate|
+              != yield(predicate)
+    ),
+
+    # Output for single-valued properties
+    # Locals: property, rel, object
+    # Yields: object
+    # If nil is returned, render as a leaf
+    # Otherwise, render result
+    :property_value => %q(
+      %tr.property
+        %td.label
+          = get_predicate_name(predicate)
+        - if res = yield(object)
+          %td!= res
+        - elsif object.node?
+          %td= get_curie(object)
+        - elsif object.uri?
+          %td
+            %a{:href => object.to_s}= object.to_s
+        - elsif object.datatype == RDF.XMLLiteral
+          %td<!= get_value(object)
+        - else
+          %td{:lang => get_lang(object)}= escape_entities(get_value(object))
+   ),
+
+    # Output for multi-valued properties
+    # Locals: property, rel, :objects
+    # Yields: object for leaf resource rendering
+    :property_values =>  %q(
+      %tr.property
+        %td.label
+          = get_predicate_name(predicate)
+        %td
+          %ul
+            - objects.each do |object|
+              - if res = yield(object)
+                != res
+              - elsif object.node?
+                %li= get_curie(object)
+              - elsif object.uri?
+                %li
+                  %a{:href => object.to_s}= object.to_s
+              - elsif object.datatype == RDF.XMLLiteral
+                %li{:lang => get_lang(object)}<!= get_value(object)
+              - else
+                %li{:lang => get_lang(object)}= escape_entities(get_value(object))
+    ),
+  }
+
 end
 
 Dir.glob(File.join(File.expand_path(File.dirname(__FILE__)), 'snippets/*.rb')).each { |s| require s }

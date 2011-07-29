@@ -30,7 +30,7 @@ module RDF::Linter
     #
     # `turtle` is entity-escaped Turtle serialization of graph
     def render_document(subjects, options = {})
-      super(subjects, options.merge(:turtle => escape_entities(graph.dump(:ttl, @options)))) do |subject|
+      super(subjects, options.merge(:extracted => graph.dump(:rdfa, :haml => RDF::Linter::TABULAR_HAML))) do |subject|
         yield(subject) if block_given?
       end
     end
