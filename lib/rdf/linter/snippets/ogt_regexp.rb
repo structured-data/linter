@@ -17,7 +17,7 @@ module RDF::Linter
           "#{prefix}url",
           "#{prefix}date",
         ],
-        :description_props => ["http://purl.org/rss/1.0/modules/content/encoded", "#{prefix}url"],
+        :description_props => ["http://purl.org/rss/1.0/modules/content/encoded"],
         :property_value => %(
         - if res = yield(object)
           != res

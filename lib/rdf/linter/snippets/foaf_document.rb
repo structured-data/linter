@@ -12,6 +12,8 @@ module RDF::Linter
           "http://xmlns.com/foaf/0.1/topic",
           "http://xmlns.com/foaf/0.1/primaryTopic",
           "http://purl.org/dc/terms/subject",
+          "http://ogp.me/ns#url",
+          "http://rdfs.org/sioc/ns#has_creator",
         ],
       }
     })
