@@ -1,0 +1,48 @@
+@prefix gr: <http://purl.org/goodrelations/v1#>.
+@prefix default: <http://www.heppnetz.de/ontologies/examples/gr#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+# Company
+
+default:HotelUniBwLtd
+  a gr:BusinessEntity ;
+  gr:legalName "Hotel UniBw Ltd." ;
+  foaf:page <http://www.hotel-unibw.de> ;
+  gr:hasPOS default:HotelUniBw ;
+  gr:offers default:SpecialChristmasOffer.
+
+# Location
+
+default:HotelUniBw
+  a gr:LocationOfSalesOrServiceProvisioning ;
+  rdfs:label "Hotel Neubiberg".
+
+
+# Offering Zeitraum des Angebots
+
+default:SpecialChristmasOffer
+  a gr:Offering ;
+  gr:validFrom "2009-12-20T00:00:00"^^xsd:dateTime ;
+  gr:validThrough "2010-01-06T23:59:59"^^xsd:dateTime ;
+  gr:hasBusinessFunction gr:LeaseOut ;
+  gr:includes default:SomeDoubleDeluxeRooms ;
+  gr:hasPriceSpecification default:SuperRate ;
+  gr:acceptedPaymentMethods gr:Cash , gr:MasterCard.
+
+# Price
+
+default:SuperRate
+  a gr:UnitPriceSpecification ;
+  gr:hasCurrency "EUR"^^xsd:string ;
+  gr:hasCurrencyValue "99.00"^^xsd:float ;
+  gr:validFrom "2009-12-20T00:00:00"^^xsd:dateTime ;
+  gr:validThrough "2009-12-20T23:59:59"^^xsd:dateTime ;.
+
+
+# Room
+
+default:SomeDoubleDeluxeRooms
+  a gr:ProductOrServicesSomeInstancesPlaceholder ;
+  rdfs:label "Double Deluxe Room".

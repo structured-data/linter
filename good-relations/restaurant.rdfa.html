@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+ 
+  <title>Miller Sandwich Bar Ltd.</title>
+ 
+</head>
+ 
+<body>
+  Miller Sandwich Bar Ltd.
+  The best dinner in town: Various menus, vegetarian, beefy, tofu, you name it - Price range 1200-2500 JPY.
+  The best lunch sandwiches in town, price range 900-1500 JPY.
+ 
+<div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns="http://www.w3.org/1999/xhtml" xmlns:gr="http://purl.org/goodrelations/v1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:foo="http://www.example.com/xyz#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" class="rdf2rdfa">
+   <div class="description" about="http://www.example.com/xyz#company" typeof="gr:BusinessEntity">
+    <div rel="gr:hasPOS" resource="http://www.example.com/xyz#restaurant"></div>
+    <div property="gr:legalName" content="Miller Sandwich Bar Ltd." datatype="xsd:string"></div>
+    <div rel="gr:offers">
+     <div class="description" about="http://www.example.com/xyz#dinner_offer" typeof="gr:Offering">
+      <div rel="gr:availableAtOrFrom">
+         <div class="description" about="http://www.example.com/xyz#restaurant" typeof="gr:LocationOfSalesOrServiceProvisioning">
+          <div rel="gr:hasOpeningHoursSpecification">
+           <div class="description" about="http://www.example.com/xyz#saturdays" typeof="gr:OpeningHoursSpecification">
+            <div property="gr:closes" content="14:00:00" datatype="xsd:time"></div>
+            <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Saturday"></div>
+            <div property="gr:opens" content="08:30:00" datatype="xsd:time"></div>
+           </div>
+          </div>
+          <div rel="gr:hasOpeningHoursSpecification">
+           <div class="description" about="http://www.example.com/xyz#workdays" typeof="gr:OpeningHoursSpecification">
+            <div property="gr:closes" content="18:00:00" datatype="xsd:time"></div>
+            <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Friday"></div>
+            <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Thursday"></div>
+            <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Wednesday"></div>
+            <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Tuesday"></div>
+            <div rel="gr:hasOpeningHoursDayOfWeek" resource="http://purl.org/goodrelations/v1#Monday"></div>
+            <div property="gr:opens" content="08:00:00" datatype="xsd:time"></div>
+           </div>
+          </div>
+          <div rel="foaf:page" resource="http://www.example.com/xyz"></div>
+         </div>
+      </div>
+      <div property="rdfs:comment" content="The best dinner in town: Various menus, vegetarian, beefy, tofu, you name it - Price range 1200-2500 JPY" xml:lang="en"></div>
+      <div rel="gr:hasBusinessFunction" resource="http://purl.org/goodrelations/v1#Sell"></div>
+      <div rel="gr:hasPriceSpecification">
+         <div class="description" typeof="gr:UnitPriceSpecification">
+          <div property="gr:hasCurrency" content="JPY" datatype="xsd:string"></div>
+          <div property="gr:hasMaxCurrencyValue" content="2500" datatype="xsd:float"></div>
+          <div property="gr:hasMinCurrencyValue" content="1200" datatype="xsd:float"></div>
+          <div property="gr:hasUnitOfMeasurement" content="C62" datatype="xsd:string"></div>
+          <div property="gr:valueAddedTaxIncluded" content="true" datatype="xsd:boolean"></div>
+         </div>
+      </div>
+      <div rel="gr:includes">
+         <div class="description" about="http://www.example.com/xyz#dinner" typeof="gr:ProductOrServicesSomeInstancesPlaceholder">
+          <div property="rdfs:comment" content="Dinner - Various menus, vegetarian, beefy, tofu, you name it" xml:lang="en"></div>
+          <div rel="foaf:page" resource="http://www.example.com/xyz"></div>
+         </div>
+      </div>
+      <div rel="foaf:page" resource="http://www.example.com/xyz"></div>
+      <div property="gr:validFrom" content="2010-03-30T00:00:00+01:00" datatype="xsd:dateTime"></div>
+      <div property="gr:validThrough" content="2011-04-24T00:00:00+01:00" datatype="xsd:dateTime"></div>
+     </div>
+    </div>
+    <div rel="gr:offers">
+     <div class="description" about="http://www.example.com/xyz#lunch_offer" typeof="gr:Offering">
+      <div rel="gr:availableAtOrFrom" resource="http://www.example.com/xyz#restaurant"></div>
+      <div property="rdfs:comment" content="The best lunch sandwiches in town, price range 900-1500 JPY" xml:lang="en"></div>
+      <div rel="gr:hasBusinessFunction" resource="http://purl.org/goodrelations/v1#Sell"></div>
+      <div rel="gr:hasPriceSpecification">
+         <div class="description" typeof="gr:UnitPriceSpecification">
+          <div property="gr:hasCurrency" content="JPY" datatype="xsd:string"></div>
+          <div property="gr:hasMaxCurrencyValue" content="1500" datatype="xsd:float"></div>
+          <div property="gr:hasMinCurrencyValue" content="900" datatype="xsd:float"></div>
+          <div property="gr:hasUnitOfMeasurement" content="C62" datatype="xsd:string"></div>
+          <div property="gr:valueAddedTaxIncluded" content="true" datatype="xsd:boolean"></div>
+         </div>
+      </div>
+      <div rel="gr:includes">
+         <div class="description" about="http://www.example.com/xyz#lunch" typeof="gr:ProductOrServicesSomeInstancesPlaceholder">
+          <div property="rdfs:comment" content="lunch - Quick lunch menues - sandwiches, soups, or pasta" xml:lang="en"></div>
+          <div rel="foaf:page" resource="http://www.example.com/xyz"></div>
+         </div>
+      </div>
+      <div rel="foaf:page" resource="http://www.example.com/xyz"></div>
+      <div property="gr:validFrom" content="2010-03-30T00:00:00+01:00" datatype="xsd:dateTime"></div>
+      <div property="gr:validThrough" content="2011-04-24T00:00:00+01:00" datatype="xsd:dateTime"></div>
+     </div>
+    </div>
+    <div rel="foaf:page" resource="http://www.example.com/xyz"></div>
+   </div>
+</div>
+ 
+ 
+</body>
+</html>

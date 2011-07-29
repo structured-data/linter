@@ -30,7 +30,7 @@ module RDF::Linter
         - body = yield(:body)
         - description = yield(:description)
         - other = yield(:other)
-        %div{:class => "snippet-content", :about => about, :typeof => typeof}
+        %div{:class => ("snippet-content" if title), :about => about, :typeof => typeof}
           - if title
             %h3.r
               %a.fakelink

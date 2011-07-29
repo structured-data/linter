@@ -3,6 +3,7 @@ module RDF::Linter
   {
     "http://rdf.data-vocabulary.org/#Address" => "http://rdf.data-vocabulary.org/#",
     "http://data-vocabulary.org/Address" => "http://data-vocabulary.org/",
+    "http://www.w3.org/2006/vcard/ns#Address" => "http://www.w3.org/2006/vcard/ns#",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       RDF::URI(type) => {

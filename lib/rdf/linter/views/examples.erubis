@@ -68,4 +68,31 @@
     <% end -%>
     <div><a id='no_snip'>*</a>Indicates snippets not currently generated for this type</a></div>
   </section>
+
+  <section class="content">
+    <h2>Good Relations examples</h2>
+    <p>
+      The following examples are taken from Good Relations
+      <a target="_blank" href="http://www.ebusiness-unibw.org/wiki/GoodRelations#CookBook:_GoodRelations_Recipes_and_Examples">
+        Recipes
+      </a>.
+    </p>
+    <%
+      require 'find'
+      schema = {}
+      Dir.entries(File.join(APP_DIR, "good-relations")).each do |name|
+        file = File.join(APP_DIR, "good-relations", "#{name}")
+        next unless File.file?(file)
+        path = "#{root}examples/good-relations/#{name}"
+        fmt = name =~ /rdfa/ ? "RDFa" : "TTL"
+        name = name.split('.').first
+        STDERR.puts "gr: #{name}, #{fmt}"
+    -%>
+    <div class="example d1">
+      <a href="/examples/good-relations/<%=name%>/" title="Show <%=name%> markup example"><%= name %></a>
+      (<a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>)
+    </div>
+    <% end -%>
+  </section>
+
 </section>

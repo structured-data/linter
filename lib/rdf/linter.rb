@@ -63,6 +63,21 @@ module RDF
         send_file File.join(APP_DIR, "google-rs/#{params[:file]}"), :type => :html
       end
 
+      get '/examples/good-relations/:name/' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        @title = "Good Relations #{params[:name]}"
+        erubis :gr_example, :locals => {
+          :head => :examples,
+          :name => params[:name],
+          :root => RDF::URI(request.url).join("/").to_s
+        }
+      end
+
+      get '/examples/good-relations/:file' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        send_file File.join(APP_DIR, "good-relations/#{params[:file]}"), :type => :html
+      end
+
       get '/examples/schema.org/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         dir = nil

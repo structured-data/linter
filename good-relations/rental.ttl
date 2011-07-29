@@ -1,0 +1,41 @@
+@prefix gr: <http://purl.org/goodrelations/v1#>.
+@prefix foo: <http://www.heppnetz.de/ontologies/examples/gr#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+
+# Company
+foo:mybikecom
+	a gr:BusinessEntity ;
+	gr:hasPOS foo:mybikestore ;
+	gr:offers foo:myoffering.
+
+
+# Location
+foo:mybikestore
+	a gr:LocationOfSalesOrServiceProvisioning.
+
+
+# Offering
+foo:myoffering
+	a gr:Offering ;
+	gr:includes foo:somebikes ;
+	gr:hasBusinessFunction gr:LeaseOut ;
+	gr:validFrom "2008-05-30T09:30:10Z"^^xsd:dateTime ;
+	gr:validThrough "2008-05-30T09:30:10Z"^^xsd:dateTime ;
+	gr:hasPriceSpecification foo:specialprice.
+
+
+# Price
+foo:specialprice
+	a gr:UnitPriceSpecification ;
+	gr:hasCurrency "EUR"^^xsd:string ;
+	gr:hasCurrencyValue "25"^^xsd:float ;
+	gr:hasUnitOfMeasurement "DAY"^^xsd:string.
+
+
+# Some Bikes
+foo:somebikes
+	a gr:ProductOrServicesSomeInstancesPlaceholder ;
+	rdfs:label "Bike"@en ;
+	rdfs:label "Fahrrad"@de .
