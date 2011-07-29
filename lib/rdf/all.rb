@@ -63,7 +63,9 @@ module RDF
           sample = @input.read(1000)
           if sample.match(%r(<html)i)
             # If it's HTML, parse it to improve detection
+            @input.rewind
             sample = @input = Nokogiri::HTML.parse(@input)
+            puts "HTML sample =  #{sample.to_html}" if ::RDF::All::debug?
           else
             @input.rewind
           end

@@ -12,7 +12,12 @@ def run(input, options)
   start = Time.new
   num = 0
 
-  encoding, content = parse(options.merge(:content => input))
+  if options[:snippet]
+    encoding, content = parse(options.merge(:content => input))
+  else
+    g = RDF::Graph.new << RDF::All::Reader.new(input, options)
+    content = g.dump(:ttl, options)
+  end
   options[:output].puts content
   STDERR.puts
   secs = Time.new - start
@@ -41,6 +46,7 @@ opts = GetoptLong.new(
   ["--execute", "-e", GetoptLong::REQUIRED_ARGUMENT],
   ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
   ["--quiet", GetoptLong::NO_ARGUMENT],
+  ["--snippet", GetoptLong::NO_ARGUMENT],
   ["--uri", GetoptLong::REQUIRED_ARGUMENT],
   ["--verbose", GetoptLong::NO_ARGUMENT]
 )
@@ -50,6 +56,7 @@ opts.each do |opt, arg|
   when '--all-dbg'        then ::RDF::All::debug = true
   when '--rdfa-dbg'       then ::RDF::RDFa::debug = true
   when '--microdata-dbg'  then ::RDF::Microdata::debug = true
+  when '--snippet'        then options[:snippet] = true
   when '--execute'        then input = arg
   when '--format'         then options[:output_format] = arg.to_sym
   when '--output'         then options[:output] = File.open(arg, "w")
