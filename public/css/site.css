@@ -194,3 +194,12 @@ color: #ddd;
 font-size: 0.8em;
 }
 
+#extracted-content table {
+  border-collapse:collapse;
+  font-family: monospace;
+}
+#extracted-content table td {
+  vertical-align: baseline;
+  border: 1px solid black;
+  padding: 4px;
+}
