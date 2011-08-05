@@ -11,7 +11,9 @@ module RDF::Linter
     # Ordering of types so that those found earlier in the list are promoted over everything else.
     TYPE_ORDER = [
       RDF::SIOC.Post,
-      RDF::SIOC::Types.Comment,
+      RDF::SIOC.Item,
+      RDF::FOAF.Document,
+      [RDF::SIOC.Post, RDF::SIOC::Types.Comment].map(&:to_s).sort.join("")
     ]
     
     def initialize(output = $stdout, options = {}, &block)
@@ -82,7 +84,12 @@ module RDF::Linter
       
       add_debug "order_subjects: #{subjects.inspect}"
 
-      # Prefer subjects with a type listed in the template, followed by subjects with a type, followed by everything else
+      # Prefer subjects with
+      #   listed type,
+      #   followed by all types concatenated listed in the template,
+      #   followed by a type listed in the template,
+      #   followed by subjects with any type,
+      #   followed by everything else
       ordered_subjects = []
       templated_subjects = []
       typed_subjects = []
@@ -103,6 +110,21 @@ module RDF::Linter
         end
       end
       
+      # Order order_subjects based on order in TYPE_ORDER
+      ordered_subjects = ordered_subjects.sort_by do |s|
+        properties = @graph.properties(s)
+        types = properties[RDF.type.to_s]
+        concat_type = types.map(&:to_s).sort.join("")
+        ndx = if TYPE_ORDER.include?(concat_type)
+          TYPE_ORDER.find_index(concat_type)
+        else
+          # Otherwise, first type found
+          types.map {|t| TYPE_ORDER.find_index(t)}.compact.min
+        end
+        add_debug "type index for #{s} is #{ndx}"
+        ndx
+      end
+
       other_subjects = subjects - typed_subjects
       typed_subjects = typed_subjects - templated_subjects
       templated_subjects = templated_subjects - ordered_subjects
