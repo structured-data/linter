@@ -5,6 +5,7 @@ module RDF::Linter
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       RDF::URI(type) => {
+        :identifier => "foaf:Document",
         # Properties to be used in snippet title
         :title_props => ["http://purl.org/dc/terms/title", "http://ogp.me/ns#title"],
         :nested_props => ["http://purl.org/dc/terms/title", "http://ogp.me/ns#title"],
@@ -15,6 +16,9 @@ module RDF::Linter
           "http://ogp.me/ns#url",
           "http://rdfs.org/sioc/ns#has_creator",
         ],
+        # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
+        # When multiple snippets are matched by an object, the one with the highest priority wins.
+        :priority => 50,
       }
     })
   end

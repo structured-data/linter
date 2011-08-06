@@ -121,6 +121,7 @@ module RDF
           :validate => params["validate"],
           :format   => params["in_fmt"].to_sym,
         }
+        reader_opts[:base_uri] = params["url"].strip if params["url"]
         reader_opts[:debug] = @debug = [] if params["debug"]
         reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
         reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
@@ -142,6 +143,7 @@ module RDF
         content_type, content = parse(reader_opts)
         content.gsub!(/--root--/, root)
         @output = content unless content == @error
+        @output ||= ""
         @title = "Structured Data Linter"
         erubis :linter, :locals => {
           :head => :linter,

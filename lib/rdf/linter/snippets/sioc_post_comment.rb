@@ -3,9 +3,10 @@ module RDF::Linter
   LINTER_HAML.merge!({
     # Match on multiple types
     [
-      "http://rdfs.org/sioc/ns#Post",
-      "http://rdfs.org/sioc/types#Comment"
-    ].sort.join("") => {
+      RDF::URI("http://rdfs.org/sioc/ns#Post"),
+      RDF::URI("http://rdfs.org/sioc/types#Comment")
+    ] => {
+      :identifier => "sioc:Post+sioct:Comment",
       # Properties to be used in snippet title
       :title_props => ["http://purl.org/dc/terms/title"],
       :nested_props => ["http://purl.org/dc/terms/title"],
@@ -26,6 +27,9 @@ module RDF::Linter
       - else
         %span{:rel => rel, :resource => get_curie(object)}
       ),
+      # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
+      # When multiple snippets are matched by an object, the one with the highest priority wins.
+      :priority => 80,
     }
   })
 end

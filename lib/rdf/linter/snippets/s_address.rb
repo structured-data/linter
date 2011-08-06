@@ -2,6 +2,7 @@
 module RDF::Linter
   LINTER_HAML.merge!({
     RDF::URI("http://schema.org/PostalAddress") => {
+      :identifier => "schema:PostalAddress",
       # Properties to be used in snippet title
       :title_props => [
         "http://schema.org/streetAddress",
@@ -27,6 +28,9 @@ module RDF::Linter
       ],
       # Post-processing on nested markup
       :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p)}.compact.map(&:to_s).map(&:rstrip).join(", ")},
+      # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
+      # When multiple snippets are matched by an object, the one with the highest priority wins.
+      :priority => 20,
     }
   })
 end

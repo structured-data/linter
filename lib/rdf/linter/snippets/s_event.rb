@@ -2,6 +2,7 @@
 module RDF::Linter
   LINTER_HAML.merge!({
     RDF::URI("http://schema.org/Event") => {
+      :identifier => "schema:Event",
       # Properties to be used in snippet title
       :title_props => ["http://schema.org/name"],
       # Properties to be used in snippet photo
@@ -35,6 +36,9 @@ module RDF::Linter
         - else
           %span{:rel => rel, :resource => get_curie(object)}
       ),      
+      # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
+      # When multiple snippets are matched by an object, the one with the highest priority wins.
+      :priority => 10,
     }
   })
 end

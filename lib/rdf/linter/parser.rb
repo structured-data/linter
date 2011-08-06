@@ -53,6 +53,10 @@ module RDF::Linter
       @error = "RDF::ReaderError: #{e.message}"
       puts @error  # to log
       ["text/html", @error]
+    rescue OpenURI::HTTPError => e
+      @error = "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
+      puts @error  # to log
+      ["text/html", @error]
     rescue
       raise unless settings.environment == :production
       @error = "#{$!.class}: #{$!.message}"

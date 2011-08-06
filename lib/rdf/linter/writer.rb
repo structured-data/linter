@@ -7,15 +7,6 @@ module RDF::Linter
   #
   # Adds some special-purpose controls to the RDF::RDFa::Writer class
   class Writer < RDF::RDFa::Writer
-    ##
-    # Ordering of types so that those found earlier in the list are promoted over everything else.
-    TYPE_ORDER = [
-      RDF::SIOC.Post,
-      RDF::SIOC.Item,
-      RDF::FOAF.Document,
-      [RDF::SIOC.Post, RDF::SIOC::Types.Comment].map(&:to_s).sort.join("")
-    ]
-    
     def initialize(output = $stdout, options = {}, &block)
       options = {
         :standard_prefixes => true,
@@ -75,8 +66,7 @@ module RDF::Linter
     ##
     # Override order_subjects to prefer subjects having an rdf:type
     #
-    # Subjects are first sorted in topographical order, and then re-ordered by inclusion in
-    # TYPE_ORDER.
+    # Subjects are first sorted in topographical order, by highest (lowest numerical) snippet priority.
     #
     # @return [Array<Resource>] Ordered list of subjects
     def order_subjects
@@ -84,67 +74,85 @@ module RDF::Linter
       
       add_debug "order_subjects: #{subjects.inspect}"
 
-      # Prefer subjects with
-      #   listed type,
-      #   followed by all types concatenated listed in the template,
-      #   followed by a type listed in the template,
-      #   followed by subjects with any type,
-      #   followed by everything else
-      ordered_subjects = []
-      templated_subjects = []
-      typed_subjects = []
+      # Order subjects by finding those with templates, and then by the template priority order
+      prioritized_subjects = []
       other_subjects = []
       subjects.each do |s|
-        properties = @graph.properties(s)
-        types = properties[RDF.type.to_s]
-        next unless types
-        typed_subjects << s
-
-        # See if it's a typed distinguished in TYPE_ORDER
-        ordered_subjects << s unless (TYPE_ORDER & types).empty?
+        template = find_template(s)
+        next unless template
         
-        # Look for keys based on any type or all types in sorted order
-        all_types = types.map(&:to_s).sort.join("")
-        if haml_template.has_key?(all_types) || types.detect {|t| template_match(t)}
-          templated_subjects << s
-        end
-      end
-      
-      # Order order_subjects based on order in TYPE_ORDER
-      ordered_subjects = ordered_subjects.sort_by do |s|
-        properties = @graph.properties(s)
-        types = properties[RDF.type.to_s]
-        concat_type = types.map(&:to_s).sort.join("")
-        ndx = if TYPE_ORDER.include?(concat_type)
-          TYPE_ORDER.find_index(concat_type)
-        else
-          # Otherwise, first type found
-          types.map {|t| TYPE_ORDER.find_index(t)}.compact.min
-        end
-        add_debug "type index for #{s} is #{ndx}"
-        ndx
+        priority = template[:priority] || 99
+        prioritized_subjects[priority] ||= []
+        prioritized_subjects[priority] << s
       end
 
-      other_subjects = subjects - typed_subjects
-      typed_subjects = typed_subjects - templated_subjects
-      templated_subjects = templated_subjects - ordered_subjects
+      ordered_subjects = prioritized_subjects.flatten.compact
+      
+      other_subjects = subjects - ordered_subjects
       
       add_debug "ordered_subjects: #{ordered_subjects.inspect}\n" + 
-                  "templated_subjects: #{templated_subjects.inspect}\n" + 
-                  "typed_subjects: #{typed_subjects.inspect}\n" + 
-                  "other_subjects: #{other_subjects.inspect}"
+                "other_subjects: #{other_subjects.inspect}"
 
-      ordered_subjects + templated_subjects + typed_subjects + other_subjects
+      ordered_subjects + other_subjects
     end
 
     ##
-    # Keep track of matchted templates
-    def template_match(type)
-      v = super(type)
-      if v.is_a?(Array)
-        @options[:matched_templates] << v.first
+    # Find a template appropriate for the subject. 
+    # Use type information of subject to select among multiple templates
+    #
+    # In this implementation, find all templates matching on permutations of
+    # types of this subjects and choose the one with the lowest :priority
+    #
+    # Keep track of matched templates
+    #
+    # @param [RDF::URI] subject
+    # @return [Hash] # return matched matched template
+    def find_template(subject)
+      properties = @graph.properties(subject)
+      types = (properties[RDF.type.to_s] || [])
+      
+      matched_templates = []
+      
+      (1..types.length).each do |len|
+        types.combination(len) do |set|
+          templ = @options[:haml] && @options[:haml][set]
+          templ ||= haml_template[set]
+          templ ||= haml_template[set.first] if len == 1
+
+          add_debug "find_template: look for #{set.inspect}"
+          add_debug "find_template: look for #{set.first.inspect}" if len == 1
+
+          # Look for regular expression match
+          templ ||= if len == 1
+            key = haml_template.keys.detect {|k| k.is_a?(Regexp) && set.first.to_s.match(k)}
+            haml_template[key]
+          end
+
+          next unless templ
+        
+          matched_templates[len] ||= []
+          matched_templates[len] << templ
+        end
       end
-      v
+
+      if matched_templates.empty?
+        add_debug "find_template: no template found for any #{types.inspect}"
+        return nil
+      end
+      
+      list = matched_templates.last
+      
+      # Order the list of templates by priority
+      list = list.sort_by {|templ| templ[:priority] || 99}
+      
+      # Choose the lowest priority template found
+      templ = list.first
+
+      add_debug "find_template: found #{templ[:identifier] || templ.inspect}"
+
+      @options[:matched_templates] << templ[:identifier]
+      
+      templ
     end
     
     ##
