@@ -117,7 +117,10 @@ module RDF::Linter
         types.combination(len) do |set|
           templ = @options[:haml] && @options[:haml][set]
           templ ||= haml_template[set]
-          templ ||= haml_template[set.first] if len == 1
+          if len == 1
+            templ ||= @options[:haml] && @options[:haml][set.first]
+            templ ||= haml_template[set.first]
+          end
 
           add_debug "find_template: look for #{set.inspect}"
           add_debug "find_template: look for #{set.first.inspect}" if len == 1

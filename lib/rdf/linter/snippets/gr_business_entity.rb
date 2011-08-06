@@ -14,8 +14,12 @@ module RDF::Linter
         "http://purl.org/goodrelations/v1#owns",
         "http://www.w3.org/2006/vcard/ns#adr",
         "http://www.w3.org/2006/vcard/ns#tel",
+        "http://purl.org/goodrelations/v1#hasPOS",
       ],
-      :description => ["http://purl.org/goodrelations/v1#hasPOS"],
+      :description_props => [
+        "http://purl.org/goodrelations/v1#description",
+        "http://www.w3.org/2000/01/rdf-schema#comment",
+      ],
       # Properties to be used when snippet is nested
       :nested_props => [
         "http://purl.org/goodrelations/v1#legalName",
