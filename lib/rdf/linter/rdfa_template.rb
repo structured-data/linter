@@ -11,10 +11,10 @@ module RDF::Linter
       %div{:id => "results-content", :about => base, :profile => profile, :prefix => prefix}
         - subjects.each do |subject|
           != yield(subject)
-      %div{:id => "results-turtle"}
-        %h3
-          Extracted rich snippet data from the page:
-        %pre{:id => "extracted-results"}
+      %h2
+        Raw structured data extracted from the page:
+      %div{:id => "raw-results"}
+        %div{:id => "extracted-results"}
           != extracted
     ),
 
