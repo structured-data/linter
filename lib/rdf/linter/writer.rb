@@ -159,6 +159,33 @@ module RDF::Linter
     end
     
     ##
+    # Override #get_value to perform lexical matching over selected values, infer datatype
+    # and perform datatype-specific formatting
+    def get_value(literal)
+      if literal.typed?
+        literal.humanize
+      else
+        # Hack to fix incorrect dattime
+        case literal.to_s
+        when RDF::Literal::Duration::GRAMMAR
+          STDERR.puts("add_value duration(#{literal})")
+          get_value(RDF::Literal::Duration.new(literal))
+        when RDF::Literal::Date::GRAMMAR
+          get_value(RDF::Literal::Date.new(literal))
+        when RDF::Literal::Time::GRAMMAR
+          get_value(RDF::Literal::Time.new(literal))
+        when RDF::Literal::DateTime::GRAMMAR
+          get_value(RDF::Literal::DateTime.new(literal))
+        when %r(\A-?\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(\.\d+)?(([\+\-]\d{2}:\d{2})|UTC|Z)?\Z)
+          # Hack to fix incorrect DateTimes in examples:
+          get_value(RDF::Literal::DateTime.new(literal))
+        else
+          literal.to_s
+        end
+      end
+    end
+
+    ##
     # Generate markup for a rating.
     #
     # Ratings use the [jQuery Raty](http://www.wbotelhos.com/raty/) as the visual representation, normalized to a
