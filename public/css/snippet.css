@@ -40,3 +40,7 @@ table.ts td {
 #results-content .notype { display:none ;}
 #results-content [typeof~='v:Rating'] { display:none ;}
 #results-content [typeof~='vmd:Rating'] { display:none ;}
+
+/* Only display the first result for a title */
+#results-content h3 span {display:none;}
+#results-content h3 span:first-child {display:inline;}
