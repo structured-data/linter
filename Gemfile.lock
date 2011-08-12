@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: c1536d81d115a2a145e6a63ba093241e618b5cf4
+  revision: 3190ef9c43bd6bc9da825b94c10102964c2bd323
   specs:
     json-ld (0.0.7)
       json (>= 1.5.1)
@@ -40,9 +40,9 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-microdata.git
-  revision: 5a6351e05c637659e1efab3bc212b7946223b0b1
+  revision: f3a2bacfe48a1cef5e5231d02477769242581fcf
   specs:
-    rdf-microdata (0.1.3)
+    rdf-microdata (0.2.0)
       nokogiri (>= 1.4.4)
       rdf (>= 0.3.3)
 
@@ -70,9 +70,9 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfxml.git
-  revision: 1011f4c9dfb17828a8f5b50091c8ff55d835a721
+  revision: e5c6708c729c4d7428bf9994465d37107746e5eb
   specs:
-    rdf-rdfxml (0.3.3.1)
+    rdf-rdfxml (0.3.4)
       nokogiri (>= 1.4.4)
       rdf (>= 0.3.3)
 
