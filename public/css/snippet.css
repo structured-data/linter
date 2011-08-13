@@ -17,6 +17,9 @@
     font-weight: normal;
 }
 .snippet-content .s {
+    font-size: small;
+}
+.snippet-content .f {
     color: #9C9C9D;
     font-size: small;
 }
@@ -33,6 +36,7 @@
 }
 
 table.ts td {
+    font-size: small;
     vertical-align: top;
 }
 

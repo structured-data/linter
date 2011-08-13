@@ -50,8 +50,8 @@ module RDF::Linter
                     %td.primary_content
                       %div.f
                         != body
-                        %div
-                          != placeholder
+                      %div
+                        != placeholder
                       - if description
                         %br
                         != description
@@ -59,8 +59,8 @@ module RDF::Linter
               %div.s.primary_content
                 %div.f
                   != body
-                  %div
-                    != placeholder
+                %div
+                  != placeholder
                 - if description
                   %br
                   != description
