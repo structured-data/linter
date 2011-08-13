@@ -28,6 +28,7 @@ module RDF::Linter
         - title = yield(:title)
         - photo = yield(:photo)
         - body = yield(:body)
+        - placeholder = "an <strong>actual</strong> search result <strong>may</strong> display other content <strong>relating</strong> to your search terms here."
         - description = yield(:description)
         - other = yield(:other)
         %div{:class => ("snippet-content" if title), :about => about, :typeof => typeof}
@@ -49,6 +50,8 @@ module RDF::Linter
                     %td.primary_content
                       %div.f
                         != body
+                        %div
+                          != placeholder
                       - if description
                         %br
                         != description
@@ -56,6 +59,8 @@ module RDF::Linter
               %div.s.primary_content
                 %div.f
                   != body
+                  %div
+                    != placeholder
                 - if description
                   %br
                   != description
