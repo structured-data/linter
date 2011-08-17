@@ -1,0 +1,178 @@
+{
+  "Classes": {
+    "http://ogp.me/ns#Actor": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Actor"
+    },
+    "http://ogp.me/ns#Album": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Album"
+    },
+    "http://ogp.me/ns#Article": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Article"
+    },
+    "http://ogp.me/ns#Athlete": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Athlete"
+    },
+    "http://ogp.me/ns#Author": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Author"
+    },
+    "http://ogp.me/ns#Band": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Band"
+    },
+    "http://ogp.me/ns#Blog": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Blog"
+    },
+    "http://ogp.me/ns#Book": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Book"
+    },
+    "http://ogp.me/ns#City": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "City"
+    },
+    "http://ogp.me/ns#Country": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Country"
+    },
+    "http://ogp.me/ns#Director": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Director"
+    },
+    "http://ogp.me/ns#Drink": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Drink"
+    },
+    "http://ogp.me/ns#Food": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Food"
+    },
+    "http://ogp.me/ns#Game": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Game"
+    },
+    "http://ogp.me/ns#Governmental": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Governmental"
+    },
+    "http://ogp.me/ns#Landmark": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Landmark"
+    },
+    "http://ogp.me/ns#Movie": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Movie"
+    },
+    "http://ogp.me/ns#Musician": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Musician"
+    },
+    "http://ogp.me/ns#Non_profit": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Non_profit"
+    },
+    "http://ogp.me/ns#Politician": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Politician"
+    },
+    "http://ogp.me/ns#Public_figure": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Public_figure"
+    },
+    "http://ogp.me/ns#School": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "School"
+    },
+    "http://ogp.me/ns#State_province": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "State_province"
+    },
+    "http://ogp.me/ns#University": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "University"
+    },
+    "http://ogp.me/ns#Website": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "Website"
+    }
+  },
+  "Properties": {
+    "http://ogp.me/ns#country-name": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "country-name"
+    },
+    "http://ogp.me/ns#description": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "description"
+    },
+    "http://ogp.me/ns#email": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "email"
+    },
+    "http://ogp.me/ns#fax_number": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "fax_number"
+    },
+    "http://ogp.me/ns#image": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "image"
+    },
+    "http://ogp.me/ns#isbn": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "isbn"
+    },
+    "http://ogp.me/ns#latitude": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "latitude"
+    },
+    "http://ogp.me/ns#locality": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "locality"
+    },
+    "http://ogp.me/ns#longitude": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "longitude"
+    },
+    "http://ogp.me/ns#phone_number": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "phone_number"
+    },
+    "http://ogp.me/ns#postal-code": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "postal-code"
+    },
+    "http://ogp.me/ns#region": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "region"
+    },
+    "http://ogp.me/ns#site_name": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "site_name"
+    },
+    "http://ogp.me/ns#street-address": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "street-address"
+    },
+    "http://ogp.me/ns#title": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "title"
+    },
+    "http://ogp.me/ns#type": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "type"
+    },
+    "http://ogp.me/ns#upc": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "upc"
+    },
+    "http://ogp.me/ns#url": {
+      "vocab": "http://ogp.me/ns#",
+      "label": "url"
+    }
+  }
+}

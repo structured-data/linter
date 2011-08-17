@@ -1,0 +1,510 @@
+{
+  "Classes": {
+    "http://xmlns.com/foaf/0.1/Agent": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Agent"
+    },
+    "http://xmlns.com/foaf/0.1/Document": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Document"
+    },
+    "http://xmlns.com/foaf/0.1/Group": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Group"
+    },
+    "http://xmlns.com/foaf/0.1/Image": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Image"
+    },
+    "http://xmlns.com/foaf/0.1/LabelProperty": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "LabelProperty"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineAccount"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineChatAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineChatAccount"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineEcommerceAccount"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineGamingAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineGamingAccount"
+    },
+    "http://xmlns.com/foaf/0.1/Organization": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Organization"
+    },
+    "http://xmlns.com/foaf/0.1/Person": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Person"
+    },
+    "http://xmlns.com/foaf/0.1/PersonalProfileDocument": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "PersonalProfileDocument"
+    },
+    "http://xmlns.com/foaf/0.1/Project": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Project"
+    },
+    "http://www.w3.org/2000/01/rdf-schema#Class": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "http://www.w3.org/2000/10/swap/pim/contact#Person": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "http://www.w3.org/2000/10/swap/pim/contact#Person"
+    },
+    "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "http://xmlns.com/foaf/0.1/Agent": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Agent"
+    },
+    "http://xmlns.com/foaf/0.1/Agent": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Agent"
+    },
+    "http://xmlns.com/foaf/0.1/Document": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Document"
+    },
+    "http://xmlns.com/foaf/0.1/Document": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Document"
+    },
+    "http://xmlns.com/foaf/0.1/Group": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Group"
+    },
+    "http://xmlns.com/foaf/0.1/Image": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Image"
+    },
+    "http://xmlns.com/foaf/0.1/LabelProperty": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "LabelProperty"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineAccount"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineChatAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineChatAccount"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineEcommerceAccount"
+    },
+    "http://xmlns.com/foaf/0.1/OnlineGamingAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "OnlineGamingAccount"
+    },
+    "http://xmlns.com/foaf/0.1/Organization": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Organization"
+    },
+    "http://xmlns.com/foaf/0.1/Person": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Person"
+    },
+    "http://xmlns.com/foaf/0.1/PersonalProfileDocument": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "PersonalProfileDocument"
+    },
+    "http://xmlns.com/foaf/0.1/Project": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "Project"
+    }
+  },
+  "Properties": {
+    "http://xmlns.com/foaf/0.1/account": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "account"
+    },
+    "http://xmlns.com/foaf/0.1/accountName": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "accountName"
+    },
+    "http://xmlns.com/foaf/0.1/accountServiceHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "accountServiceHomepage"
+    },
+    "http://xmlns.com/foaf/0.1/age": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "age"
+    },
+    "http://xmlns.com/foaf/0.1/aimChatID": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "aimChatID"
+    },
+    "http://xmlns.com/foaf/0.1/based_near": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "based_near"
+    },
+    "http://xmlns.com/foaf/0.1/birthday": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "birthday"
+    },
+    "http://xmlns.com/foaf/0.1/currentProject": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "currentProject"
+    },
+    "http://xmlns.com/foaf/0.1/depiction": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "depiction"
+    },
+    "http://xmlns.com/foaf/0.1/depicts": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "depicts"
+    },
+    "http://xmlns.com/foaf/0.1/dnaChecksum": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "dnaChecksum"
+    },
+    "http://xmlns.com/foaf/0.1/familyName": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "familyName"
+    },
+    "http://xmlns.com/foaf/0.1/family_name": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "family_name"
+    },
+    "http://xmlns.com/foaf/0.1/firstName": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "firstName"
+    },
+    "http://xmlns.com/foaf/0.1/focus": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "focus"
+    },
+    "http://xmlns.com/foaf/0.1/fundedBy": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "fundedBy"
+    },
+    "http://xmlns.com/foaf/0.1/geekcode": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "geekcode"
+    },
+    "http://xmlns.com/foaf/0.1/gender": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "gender"
+    },
+    "http://xmlns.com/foaf/0.1/givenName": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "givenName"
+    },
+    "http://xmlns.com/foaf/0.1/givenname": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "givenname"
+    },
+    "http://xmlns.com/foaf/0.1/holdsAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "holdsAccount"
+    },
+    "http://xmlns.com/foaf/0.1/homepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "homepage"
+    },
+    "http://xmlns.com/foaf/0.1/icqChatID": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "icqChatID"
+    },
+    "http://xmlns.com/foaf/0.1/img": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "img"
+    },
+    "http://xmlns.com/foaf/0.1/interest": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "interest"
+    },
+    "http://xmlns.com/foaf/0.1/isPrimaryTopicOf": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "isPrimaryTopicOf"
+    },
+    "http://xmlns.com/foaf/0.1/jabberID": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "jabberID"
+    },
+    "http://xmlns.com/foaf/0.1/knows": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "knows"
+    },
+    "http://xmlns.com/foaf/0.1/lastName": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "lastName"
+    },
+    "http://xmlns.com/foaf/0.1/logo": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "logo"
+    },
+    "http://xmlns.com/foaf/0.1/made": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "made"
+    },
+    "http://xmlns.com/foaf/0.1/maker": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "maker"
+    },
+    "http://xmlns.com/foaf/0.1/mbox": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "mbox"
+    },
+    "http://xmlns.com/foaf/0.1/mbox_sha1sum": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "mbox_sha1sum"
+    },
+    "http://xmlns.com/foaf/0.1/member": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "member"
+    },
+    "http://xmlns.com/foaf/0.1/membershipClass": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "membershipClass"
+    },
+    "http://xmlns.com/foaf/0.1/msnChatID": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "msnChatID"
+    },
+    "http://xmlns.com/foaf/0.1/myersBriggs": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "myersBriggs"
+    },
+    "http://xmlns.com/foaf/0.1/name": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "name"
+    },
+    "http://xmlns.com/foaf/0.1/nick": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "nick"
+    },
+    "http://xmlns.com/foaf/0.1/openid": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "openid"
+    },
+    "http://xmlns.com/foaf/0.1/page": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "page"
+    },
+    "http://xmlns.com/foaf/0.1/pastProject": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "pastProject"
+    },
+    "http://xmlns.com/foaf/0.1/phone": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "phone"
+    },
+    "http://xmlns.com/foaf/0.1/plan": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "plan"
+    },
+    "http://xmlns.com/foaf/0.1/primaryTopic": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "primaryTopic"
+    },
+    "http://xmlns.com/foaf/0.1/publications": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "publications"
+    },
+    "http://xmlns.com/foaf/0.1/schoolHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "schoolHomepage"
+    },
+    "http://xmlns.com/foaf/0.1/sha1": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "sha1"
+    },
+    "http://xmlns.com/foaf/0.1/skypeID": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "skypeID"
+    },
+    "http://xmlns.com/foaf/0.1/status": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "status"
+    },
+    "http://xmlns.com/foaf/0.1/surname": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "surname"
+    },
+    "http://xmlns.com/foaf/0.1/theme": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "theme"
+    },
+    "http://xmlns.com/foaf/0.1/thumbnail": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "thumbnail"
+    },
+    "http://xmlns.com/foaf/0.1/tipjar": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "tipjar"
+    },
+    "http://xmlns.com/foaf/0.1/title": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "title"
+    },
+    "http://xmlns.com/foaf/0.1/topic": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "topic"
+    },
+    "http://xmlns.com/foaf/0.1/topic_interest": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "topic_interest"
+    },
+    "http://xmlns.com/foaf/0.1/weblog": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "weblog"
+    },
+    "http://xmlns.com/foaf/0.1/workInfoHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "workInfoHomepage"
+    },
+    "http://xmlns.com/foaf/0.1/workplaceHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "workplaceHomepage"
+    },
+    "http://xmlns.com/foaf/0.1/yahooChatID": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "yahooChatID"
+    },
+    "http://xmlns.com/foaf/0.1/account": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "account"
+    },
+    "http://xmlns.com/foaf/0.1/accountServiceHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "accountServiceHomepage"
+    },
+    "http://xmlns.com/foaf/0.1/based_near": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "based_near"
+    },
+    "http://xmlns.com/foaf/0.1/currentProject": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "currentProject"
+    },
+    "http://xmlns.com/foaf/0.1/depiction": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "depiction"
+    },
+    "http://xmlns.com/foaf/0.1/depicts": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "depicts"
+    },
+    "http://xmlns.com/foaf/0.1/focus": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "focus"
+    },
+    "http://xmlns.com/foaf/0.1/fundedBy": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "fundedBy"
+    },
+    "http://xmlns.com/foaf/0.1/holdsAccount": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "holdsAccount"
+    },
+    "http://xmlns.com/foaf/0.1/homepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "homepage"
+    },
+    "http://xmlns.com/foaf/0.1/img": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "img"
+    },
+    "http://xmlns.com/foaf/0.1/interest": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "interest"
+    },
+    "http://xmlns.com/foaf/0.1/knows": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "knows"
+    },
+    "http://xmlns.com/foaf/0.1/logo": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "logo"
+    },
+    "http://xmlns.com/foaf/0.1/made": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "made"
+    },
+    "http://xmlns.com/foaf/0.1/maker": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "maker"
+    },
+    "http://xmlns.com/foaf/0.1/mbox": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "mbox"
+    },
+    "http://xmlns.com/foaf/0.1/member": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "member"
+    },
+    "http://xmlns.com/foaf/0.1/openid": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "openid"
+    },
+    "http://xmlns.com/foaf/0.1/page": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "page"
+    },
+    "http://xmlns.com/foaf/0.1/pastProject": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "pastProject"
+    },
+    "http://xmlns.com/foaf/0.1/phone": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "phone"
+    },
+    "http://xmlns.com/foaf/0.1/primaryTopic": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "primaryTopic"
+    },
+    "http://xmlns.com/foaf/0.1/publications": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "publications"
+    },
+    "http://xmlns.com/foaf/0.1/schoolHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "schoolHomepage"
+    },
+    "http://xmlns.com/foaf/0.1/theme": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "theme"
+    },
+    "http://xmlns.com/foaf/0.1/thumbnail": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "thumbnail"
+    },
+    "http://xmlns.com/foaf/0.1/tipjar": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "tipjar"
+    },
+    "http://xmlns.com/foaf/0.1/topic": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "topic"
+    },
+    "http://xmlns.com/foaf/0.1/topic_interest": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "topic_interest"
+    },
+    "http://xmlns.com/foaf/0.1/weblog": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "weblog"
+    },
+    "http://xmlns.com/foaf/0.1/workInfoHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "workInfoHomepage"
+    },
+    "http://xmlns.com/foaf/0.1/workplaceHomepage": {
+      "vocab": "http://xmlns.com/foaf/0.1/",
+      "label": "workplaceHomepage"
+    }
+  }
+}
