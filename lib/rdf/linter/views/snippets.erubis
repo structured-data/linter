@@ -1,0 +1,35 @@
+<section>
+  <section class="lighter">
+    <p class="content">
+      The linter is implemented by matching against RDF types to identify a snippet definition which is used
+      to display the defined properties. (note, need a more explicit definition of snippet generation).
+    </p>
+  </section>
+  <%
+    sdefs = {
+      :foaf => "Friend of a Friend",
+      :gr   => "Good Relations",
+      :ogt  => "Open Graph Protocol",
+      :s    => "Schema.org",
+      :sioc => "Semantically-Interlinked Online Communities",
+      :skos => "Simple Knowledge Organization System",
+      :v    => "Data Vocabulary",
+    }
+    
+    sdefs.values.sort.each do |name|
+      pfx = sdefs.invert[name]
+  -%>
+  <section class="content">
+    <h2><%= name %> Snippet Definitions</h2>
+    <ul>
+    <% STDERR.puts "glob #{File.expand_path(File.dirname(__FILE__)) + "/../snippets/#{pfx}_*.rb"}"%>
+    <% Dir.glob(File.join(SNIPPET_DIR, "#{pfx}_*.rb")).each do |f|
+      name = File.basename(f)
+      path = "#{root}snippets/#{name}"
+    -%>
+      <li><a href="<%= name %>"><%= name %></a></li>
+    <% end -%>
+    </ul>
+  </section>
+  <% end -%>
+</section>

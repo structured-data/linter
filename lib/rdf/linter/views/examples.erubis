@@ -86,7 +86,6 @@
         path = "#{root}examples/good-relations/#{name}"
         fmt = name =~ /rdfa/ ? "RDFa" : "TTL"
         name = name.split('.').first
-        STDERR.puts "gr: #{name}, #{fmt}"
     -%>
     <div class="example d1">
       <a href="/examples/good-relations/<%=name%>/" title="Show <%=name%> markup example"><%= name %></a>

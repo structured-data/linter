@@ -16,6 +16,7 @@ module RDF
     class Application < Sinatra::Base
       APP_DIR = File.expand_path("../..", File.dirname(__FILE__))
       PUB_DIR = File.join(APP_DIR, 'public')
+      SNIPPET_DIR = File.join(APP_DIR, 'lib', 'rdf', 'linter', 'snippets')
 
       #register Sinatra::LinkedData
       helpers Sinatra::Partials
@@ -107,6 +108,24 @@ module RDF
         else
           erubis :schema_file, :locals => {:file => file}, :layout => false
         end
+      end
+
+      # Display list of snippets
+      get '/snippets/' do
+        @title = "Snippet definitions"
+        cache_control :public, :must_revalidate, :max_age => 60
+        erubis :snippets, :locals => {
+          :root => RDF::URI(request.url).join("/").to_s,
+        }
+      end
+
+      get '/snippets/:name' do
+        cache_control :public, :must_revalidate, :max_age => 60
+        @title = params[:name]
+        erubis :snippet, :locals => {
+          :name => params[:name],
+          :root => RDF::URI(request.url).join("/").to_s
+        }
       end
 
       private
