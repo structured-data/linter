@@ -1,0 +1,17 @@
+{
+  "Classes": {
+    "http://www.w3.org/2004/02/skos/core#Collection": {
+      "vocab":  "http://www.w3.org/2004/02/skos/core#",
+      "label":  "Collection"
+    }
+  },
+  "Properties": {
+    "http://www.w3.org/2004/02/skos/core#altLabel": {
+      "vocab":  "http://www.w3.org/2004/02/skos/core#",
+      "label":  "alernative label"
+    }
+  },
+  "Datatypes": {
+    
+  }
+}
