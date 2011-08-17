@@ -1,294 +1,269 @@
 {
+  "Vocabularies": {
+    "sioc": "http://rdfs.org/sioc/ns#"
+  },
   "Classes": {
     "http://rdfs.org/sioc/ns#Community": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Community"
     },
     "http://rdfs.org/sioc/ns#Container": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Container"
     },
     "http://rdfs.org/sioc/ns#Forum": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Forum"
     },
     "http://rdfs.org/sioc/ns#Item": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Item"
     },
     "http://rdfs.org/sioc/ns#Post": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Post"
     },
     "http://rdfs.org/sioc/ns#Role": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Role"
     },
     "http://rdfs.org/sioc/ns#Site": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Site"
     },
     "http://rdfs.org/sioc/ns#Space": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Space"
     },
     "http://rdfs.org/sioc/ns#Thread": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Thread"
     },
     "http://rdfs.org/sioc/ns#UserAccount": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "UserAccount"
     },
     "http://rdfs.org/sioc/ns#Usergroup": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "Usergroup"
-    },
-    "http://xmlns.com/foaf/0.1/Agent": {
-      "vocab": "http://rdfs.org/sioc/ns#",
-      "label": "http://xmlns.com/foaf/0.1/Agent"
-    },
-    "http://xmlns.com/foaf/0.1/Document": {
-      "vocab": "http://rdfs.org/sioc/ns#",
-      "label": "http://xmlns.com/foaf/0.1/Document"
-    },
-    "http://xmlns.com/foaf/0.1/OnlineAccount": {
-      "vocab": "http://rdfs.org/sioc/ns#",
-      "label": "http://xmlns.com/foaf/0.1/OnlineAccount"
     }
   },
   "Properties": {
-    "http://purl.org/dc/terms/references": {
-      "vocab": "http://rdfs.org/sioc/ns#",
-      "label": "http://purl.org/dc/terms/references"
-    },
-    "http://purl.org/dc/terms/subject": {
-      "vocab": "http://rdfs.org/sioc/ns#",
-      "label": "http://purl.org/dc/terms/subject"
-    },
     "http://rdfs.org/sioc/ns#about": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "about"
     },
     "http://rdfs.org/sioc/ns#account_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "account_of"
     },
     "http://rdfs.org/sioc/ns#addressed_to": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "addressed_to"
     },
     "http://rdfs.org/sioc/ns#administrator_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "administrator_of"
     },
     "http://rdfs.org/sioc/ns#attachment": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "attachment"
     },
     "http://rdfs.org/sioc/ns#avatar": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "avatar"
     },
     "http://rdfs.org/sioc/ns#container_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "container_of"
     },
     "http://rdfs.org/sioc/ns#creator_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "creator_of"
     },
     "http://rdfs.org/sioc/ns#email": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "email"
     },
     "http://rdfs.org/sioc/ns#embeds_knowledge": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "embeds_knowledge"
     },
     "http://rdfs.org/sioc/ns#feed": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "feed"
     },
     "http://rdfs.org/sioc/ns#follows": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "follows"
     },
     "http://rdfs.org/sioc/ns#function_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "function_of"
     },
     "http://rdfs.org/sioc/ns#group_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "group_of"
     },
     "http://rdfs.org/sioc/ns#has_administrator": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_administrator"
     },
     "http://rdfs.org/sioc/ns#has_container": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_container"
     },
     "http://rdfs.org/sioc/ns#has_creator": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_creator"
     },
     "http://rdfs.org/sioc/ns#has_discussion": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_discussion"
     },
     "http://rdfs.org/sioc/ns#has_function": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_function"
     },
     "http://rdfs.org/sioc/ns#has_group": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_group"
     },
     "http://rdfs.org/sioc/ns#has_host": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_host"
     },
     "http://rdfs.org/sioc/ns#has_member": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_member"
     },
     "http://rdfs.org/sioc/ns#has_moderator": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_moderator"
     },
     "http://rdfs.org/sioc/ns#has_modifier": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_modifier"
     },
     "http://rdfs.org/sioc/ns#has_owner": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_owner"
     },
     "http://rdfs.org/sioc/ns#has_parent": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_parent"
     },
     "http://rdfs.org/sioc/ns#has_part": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_part"
     },
     "http://rdfs.org/sioc/ns#has_reply": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_reply"
     },
     "http://rdfs.org/sioc/ns#has_scope": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_scope"
     },
     "http://rdfs.org/sioc/ns#has_space": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_space"
     },
     "http://rdfs.org/sioc/ns#has_subscriber": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_subscriber"
     },
     "http://rdfs.org/sioc/ns#has_usergroup": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "has_usergroup"
     },
     "http://rdfs.org/sioc/ns#host_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "host_of"
     },
     "http://rdfs.org/sioc/ns#latest_version": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "latest_version"
     },
     "http://rdfs.org/sioc/ns#link": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "link"
     },
     "http://rdfs.org/sioc/ns#links_to": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "links_to"
     },
     "http://rdfs.org/sioc/ns#member_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "member_of"
     },
     "http://rdfs.org/sioc/ns#moderator_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "moderator_of"
     },
     "http://rdfs.org/sioc/ns#modifier_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "modifier_of"
     },
     "http://rdfs.org/sioc/ns#next_by_date": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "next_by_date"
     },
     "http://rdfs.org/sioc/ns#next_version": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "next_version"
     },
     "http://rdfs.org/sioc/ns#owner_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "owner_of"
     },
     "http://rdfs.org/sioc/ns#parent_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "parent_of"
     },
     "http://rdfs.org/sioc/ns#part_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "part_of"
     },
     "http://rdfs.org/sioc/ns#previous_by_date": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "previous_by_date"
     },
     "http://rdfs.org/sioc/ns#previous_version": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "previous_version"
     },
     "http://rdfs.org/sioc/ns#reference": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "reference"
     },
     "http://rdfs.org/sioc/ns#related_to": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "related_to"
     },
     "http://rdfs.org/sioc/ns#reply_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "reply_of"
     },
     "http://rdfs.org/sioc/ns#scope_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "scope_of"
     },
     "http://rdfs.org/sioc/ns#space_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "space_of"
     },
     "http://rdfs.org/sioc/ns#subscriber_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "subscriber_of"
     },
     "http://rdfs.org/sioc/ns#topic": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "topic"
     },
     "http://rdfs.org/sioc/ns#usergroup_of": {
-      "vocab": "http://rdfs.org/sioc/ns#",
+      "vocab": "sioc",
       "label": "usergroup_of"
-    },
-    "http://xmlns.com/foaf/0.1/account": {
-      "vocab": "http://rdfs.org/sioc/ns#",
-      "label": "http://xmlns.com/foaf/0.1/account"
-    },
-    "http://xmlns.com/foaf/0.1/depiction": {
-      "vocab": "http://rdfs.org/sioc/ns#",
-      "label": "http://xmlns.com/foaf/0.1/depiction"
     }
   }
 }

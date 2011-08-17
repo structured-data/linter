@@ -1,7 +1,6 @@
 {
   "Vocabularies": {
-    "dc": "http://purl.org/dc/terms/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "dc": "http://purl.org/dc/terms/"
   },
   "Classes": {
     "http://purl.org/dc/terms/type": { "vocab": "dc" },
@@ -85,51 +84,5 @@
     "http://purl.org/dc/terms/accrualMethod": { "vocab": "dc" },
     "http://purl.org/dc/terms/accrualPeriodicity": { "vocab": "dc" },
     "http://purl.org/dc/terms/accrualPolicy": { "vocab": "dc" }
-  },
-  "Datatypes": {
-    "http://www.w3.org/2001/XMLSchema#NOTATION": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#QName": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#anyURI": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#base64Binary": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#boolean": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#date": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#dateTime": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#decimal": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#double": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#duration": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#float": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#gDay": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#gMonth": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#gMonthDay": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#gYear": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#gYearMonth": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#hexBinary": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#string": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#time": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#ENTITIES": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#ENTITY": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#ID": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#IDREF": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#IDREFS": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#NCName": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#NMTOKEN": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#NMTOKENS": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#Name": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#byte": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#int": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#integer": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#language": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#long": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#negativeInteger": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#nonPositiveInteger": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#normalizedString": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#positiveInteger": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#short": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#token": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#unsignedByte": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#unsignedInt": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#unsignedLong": { "vocab": "xsd" },
-    "http://www.w3.org/2001/XMLSchema#unsignedShort": { "vocab": "xsd" }
   }
 }

@@ -73,12 +73,10 @@ module RDF::Linter
       messages = {}
       graph.query(:predicate => RDF.type) do |st|
         cls = st.object.to_s
-        STDERR.puts "check class #{cls}"
         pfx, uri = nil, nil
         VOCAB_DEFS["Vocabularies"].each do |k, v|
           pfx, uri = k, v if st.object.starts_with?(v)
         end
-        STDERR.puts "pfx: #{pfx}"
         if pfx && !VOCAB_DEFS["Classes"].has_key?(cls)
           # No type definition found for vocabulary
           messages[:class] ||= {}
@@ -88,7 +86,6 @@ module RDF::Linter
 
       graph.statements.map(&:predicate).uniq do |pred|
         prop = pred.to_s
-        STDERR.puts "check property #{prop}"
         pfx, uri = nil, nil
         VOCAB_DEFS["Vocabularies"].each do |k, v|
           pfx, uri = k, v if prop.index(v) == 0
@@ -100,7 +97,6 @@ module RDF::Linter
         end
       end
       
-      STDERR.puts "messages: #{messages.inspect}"
       messages
     end
     
@@ -115,6 +111,7 @@ module RDF::Linter
       }
       Dir.glob(File.join(File.dirname(__FILE__), "*.json")).each do |file|
         File.open(file) do |f|
+          STDERR.puts "load #{file}"
           v = JSON.load(f)
           v.each do |sect, hash|
             raise "unknown section #{sect}" unless defs.has_key?(sect)

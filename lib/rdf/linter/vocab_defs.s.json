@@ -1,1881 +1,1884 @@
 {
+  "Vocabularies": {
+    "schema": "http://schema.org/"
+  },
   "Classes": {
     "http://schema.org/AboutPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AboutPage"
     },
     "http://schema.org/AccountingService": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AccountingService"
     },
     "http://schema.org/AdministrativeArea": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AdministrativeArea"
     },
     "http://schema.org/AdultEntertainment": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AdultEntertainment"
     },
     "http://schema.org/AggregateOffer": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AggregateOffer"
     },
     "http://schema.org/AggregateRating": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AggregateRating"
     },
     "http://schema.org/Airport": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Airport"
     },
     "http://schema.org/AmusementPark": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AmusementPark"
     },
     "http://schema.org/AnimalShelter": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AnimalShelter"
     },
     "http://schema.org/ApartmentComplex": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ApartmentComplex"
     },
     "http://schema.org/Aquarium": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Aquarium"
     },
     "http://schema.org/ArtGallery": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ArtGallery"
     },
     "http://schema.org/Article": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Article"
     },
     "http://schema.org/Attorney": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Attorney"
     },
     "http://schema.org/AudioObject": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AudioObject"
     },
     "http://schema.org/AutoBodyShop": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutoBodyShop"
     },
     "http://schema.org/AutoDealer": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutoDealer"
     },
     "http://schema.org/AutoPartsStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutoPartsStore"
     },
     "http://schema.org/AutoRental": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutoRental"
     },
     "http://schema.org/AutoRepair": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutoRepair"
     },
     "http://schema.org/AutoWash": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutoWash"
     },
     "http://schema.org/AutomatedTeller": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutomatedTeller"
     },
     "http://schema.org/AutomotiveBusiness": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "AutomotiveBusiness"
     },
     "http://schema.org/Bakery": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Bakery"
     },
     "http://schema.org/BankOrCreditUnion": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BankOrCreditUnion"
     },
     "http://schema.org/BarOrPub": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BarOrPub"
     },
     "http://schema.org/Beach": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Beach"
     },
     "http://schema.org/BeautySalon": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BeautySalon"
     },
     "http://schema.org/BedAndBreakfast": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BedAndBreakfast"
     },
     "http://schema.org/BikeStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BikeStore"
     },
     "http://schema.org/Blog": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Blog"
     },
     "http://schema.org/BlogPosting": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BlogPosting"
     },
     "http://schema.org/BodyOfWater": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BodyOfWater"
     },
     "http://schema.org/Book": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Book"
     },
     "http://schema.org/BookFormatType": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BookFormatType"
     },
     "http://schema.org/BookStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BookStore"
     },
     "http://schema.org/BowlingAlley": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BowlingAlley"
     },
     "http://schema.org/Brewery": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Brewery"
     },
     "http://schema.org/BuddhistTemple": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BuddhistTemple"
     },
     "http://schema.org/BusStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BusStation"
     },
     "http://schema.org/BusStop": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BusStop"
     },
     "http://schema.org/BusinessEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "BusinessEvent"
     },
     "http://schema.org/CafeOrCoffeeShop": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CafeOrCoffeeShop"
     },
     "http://schema.org/Campground": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Campground"
     },
     "http://schema.org/Canal": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Canal"
     },
     "http://schema.org/Casino": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Casino"
     },
     "http://schema.org/CatholicChurch": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CatholicChurch"
     },
     "http://schema.org/Cemetery": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Cemetery"
     },
     "http://schema.org/CheckoutPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CheckoutPage"
     },
     "http://schema.org/ChildCare": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ChildCare"
     },
     "http://schema.org/ChildrensEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ChildrensEvent"
     },
     "http://schema.org/Church": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Church"
     },
     "http://schema.org/City": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "City"
     },
     "http://schema.org/CityHall": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CityHall"
     },
     "http://schema.org/CivicStructure": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CivicStructure"
     },
     "http://schema.org/ClothingStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ClothingStore"
     },
     "http://schema.org/CollectionPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CollectionPage"
     },
     "http://schema.org/CollegeOrUniversity": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CollegeOrUniversity"
     },
     "http://schema.org/ComedyClub": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ComedyClub"
     },
     "http://schema.org/ComedyEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ComedyEvent"
     },
     "http://schema.org/ComputerStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ComputerStore"
     },
     "http://schema.org/ContactPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ContactPage"
     },
     "http://schema.org/ContactPoint": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ContactPoint"
     },
     "http://schema.org/Continent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Continent"
     },
     "http://schema.org/ConvenienceStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ConvenienceStore"
     },
     "http://schema.org/Corporation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Corporation"
     },
     "http://schema.org/Country": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Country"
     },
     "http://schema.org/Courthouse": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Courthouse"
     },
     "http://schema.org/CreativeWork": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "CreativeWork"
     },
     "http://schema.org/Crematorium": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Crematorium"
     },
     "http://schema.org/DanceEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "DanceEvent"
     },
     "http://schema.org/DanceGroup": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "DanceGroup"
     },
     "http://schema.org/DaySpa": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "DaySpa"
     },
     "http://schema.org/DefenceEstablishment": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "DefenceEstablishment"
     },
     "http://schema.org/Dentist": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Dentist"
     },
     "http://schema.org/DepartmentStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "DepartmentStore"
     },
     "http://schema.org/Distance": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Distance"
     },
     "http://schema.org/DryCleaningOrLaundry": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "DryCleaningOrLaundry"
     },
     "http://schema.org/Duration": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Duration"
     },
     "http://schema.org/EducationEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "EducationEvent"
     },
     "http://schema.org/EducationalOrganization": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "EducationalOrganization"
     },
     "http://schema.org/Electrician": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Electrician"
     },
     "http://schema.org/ElectronicsStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ElectronicsStore"
     },
     "http://schema.org/ElementarySchool": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ElementarySchool"
     },
     "http://schema.org/Embassy": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Embassy"
     },
     "http://schema.org/EmergencyService": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "EmergencyService"
     },
     "http://schema.org/EmploymentAgency": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "EmploymentAgency"
     },
     "http://schema.org/Energy": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Energy"
     },
     "http://schema.org/EntertainmentBusiness": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "EntertainmentBusiness"
     },
     "http://schema.org/Enumeration": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Enumeration"
     },
     "http://schema.org/Event": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Event"
     },
     "http://schema.org/EventVenue": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "EventVenue"
     },
     "http://schema.org/ExerciseGym": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ExerciseGym"
     },
     "http://schema.org/FastFoodRestaurant": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "FastFoodRestaurant"
     },
     "http://schema.org/Festival": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Festival"
     },
     "http://schema.org/FinancialService": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "FinancialService"
     },
     "http://schema.org/FireStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "FireStation"
     },
     "http://schema.org/Florist": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Florist"
     },
     "http://schema.org/FoodEstablishment": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "FoodEstablishment"
     },
     "http://schema.org/FoodEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "FoodEvent"
     },
     "http://schema.org/FurnitureStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "FurnitureStore"
     },
     "http://schema.org/GardenStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GardenStore"
     },
     "http://schema.org/GasStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GasStation"
     },
     "http://schema.org/GatedResidenceCommunity": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GatedResidenceCommunity"
     },
     "http://schema.org/GeneralContractor": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GeneralContractor"
     },
     "http://schema.org/GeoCoordinates": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GeoCoordinates"
     },
     "http://schema.org/GolfCourse": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GolfCourse"
     },
     "http://schema.org/GovernmentBuilding": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GovernmentBuilding"
     },
     "http://schema.org/GovernmentOffice": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GovernmentOffice"
     },
     "http://schema.org/GovernmentOrganization": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GovernmentOrganization"
     },
     "http://schema.org/GroceryStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "GroceryStore"
     },
     "http://schema.org/HVACBusiness": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HVACBusiness"
     },
     "http://schema.org/HairSalon": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HairSalon"
     },
     "http://schema.org/HardwareStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HardwareStore"
     },
     "http://schema.org/HealthAndBeautyBusiness": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HealthAndBeautyBusiness"
     },
     "http://schema.org/HealthClub": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HealthClub"
     },
     "http://schema.org/HighSchool": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HighSchool"
     },
     "http://schema.org/HinduTemple": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HinduTemple"
     },
     "http://schema.org/HobbyShop": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HobbyShop"
     },
     "http://schema.org/HomeAndConstructionBusiness": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HomeAndConstructionBusiness"
     },
     "http://schema.org/HomeGoodsStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HomeGoodsStore"
     },
     "http://schema.org/Hospital": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Hospital"
     },
     "http://schema.org/Hostel": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Hostel"
     },
     "http://schema.org/Hotel": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Hotel"
     },
     "http://schema.org/HousePainter": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "HousePainter"
     },
     "http://schema.org/IceCreamShop": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "IceCreamShop"
     },
     "http://schema.org/ImageGallery": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ImageGallery"
     },
     "http://schema.org/ImageObject": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ImageObject"
     },
     "http://schema.org/InsuranceAgency": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "InsuranceAgency"
     },
     "http://schema.org/Intangible": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Intangible"
     },
     "http://schema.org/InternetCafe": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "InternetCafe"
     },
     "http://schema.org/ItemAvailability": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ItemAvailability"
     },
     "http://schema.org/ItemList": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ItemList"
     },
     "http://schema.org/ItemPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ItemPage"
     },
     "http://schema.org/JewelryStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "JewelryStore"
     },
     "http://schema.org/LakeBodyOfWater": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "LakeBodyOfWater"
     },
     "http://schema.org/Landform": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Landform"
     },
     "http://schema.org/LandmarksOrHistoricalBuildings": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "LandmarksOrHistoricalBuildings"
     },
     "http://schema.org/Language": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Language"
     },
     "http://schema.org/LegislativeBuilding": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "LegislativeBuilding"
     },
     "http://schema.org/Library": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Library"
     },
     "http://schema.org/LiquorStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "LiquorStore"
     },
     "http://schema.org/LiteraryEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "LiteraryEvent"
     },
     "http://schema.org/LocalBusiness": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "LocalBusiness"
     },
     "http://schema.org/Locksmith": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Locksmith"
     },
     "http://schema.org/LodgingBusiness": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "LodgingBusiness"
     },
     "http://schema.org/Map": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Map"
     },
     "http://schema.org/Mass": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Mass"
     },
     "http://schema.org/MediaObject": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MediaObject"
     },
     "http://schema.org/MedicalClinic": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MedicalClinic"
     },
     "http://schema.org/MedicalOrganization": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MedicalOrganization"
     },
     "http://schema.org/MensClothingStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MensClothingStore"
     },
     "http://schema.org/MiddleSchool": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MiddleSchool"
     },
     "http://schema.org/MobilePhoneStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MobilePhoneStore"
     },
     "http://schema.org/Mosque": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Mosque"
     },
     "http://schema.org/Motel": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Motel"
     },
     "http://schema.org/MotorcycleDealer": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MotorcycleDealer"
     },
     "http://schema.org/MotorcycleRepair": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MotorcycleRepair"
     },
     "http://schema.org/Mountain": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Mountain"
     },
     "http://schema.org/Movie": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Movie"
     },
     "http://schema.org/MovieRentalStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MovieRentalStore"
     },
     "http://schema.org/MovieTheater": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MovieTheater"
     },
     "http://schema.org/MovingCompany": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MovingCompany"
     },
     "http://schema.org/Museum": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Museum"
     },
     "http://schema.org/MusicAlbum": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicAlbum"
     },
     "http://schema.org/MusicEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicEvent"
     },
     "http://schema.org/MusicGroup": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicGroup"
     },
     "http://schema.org/MusicPlaylist": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicPlaylist"
     },
     "http://schema.org/MusicRecording": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicRecording"
     },
     "http://schema.org/MusicStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicStore"
     },
     "http://schema.org/MusicVenue": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicVenue"
     },
     "http://schema.org/MusicVideoObject": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "MusicVideoObject"
     },
     "http://schema.org/NGO": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "NGO"
     },
     "http://schema.org/NailSalon": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "NailSalon"
     },
     "http://schema.org/NewsArticle": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "NewsArticle"
     },
     "http://schema.org/NightClub": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "NightClub"
     },
     "http://schema.org/Notary": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Notary"
     },
     "http://schema.org/NutritionInformation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "NutritionInformation"
     },
     "http://schema.org/OceanBodyOfWater": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "OceanBodyOfWater"
     },
     "http://schema.org/Offer": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Offer"
     },
     "http://schema.org/OfferItemCondition": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "OfferItemCondition"
     },
     "http://schema.org/OfficeEquipmentStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "OfficeEquipmentStore"
     },
     "http://schema.org/Optician": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Optician"
     },
     "http://schema.org/Organization": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Organization"
     },
     "http://schema.org/OutletStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "OutletStore"
     },
     "http://schema.org/Painting": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Painting"
     },
     "http://schema.org/Park": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Park"
     },
     "http://schema.org/ParkingFacility": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ParkingFacility"
     },
     "http://schema.org/PawnShop": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PawnShop"
     },
     "http://schema.org/PerformingArtsTheater": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PerformingArtsTheater"
     },
     "http://schema.org/PerformingGroup": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PerformingGroup"
     },
     "http://schema.org/Person": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Person"
     },
     "http://schema.org/PetStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PetStore"
     },
     "http://schema.org/Pharmacy": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Pharmacy"
     },
     "http://schema.org/Photograph": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Photograph"
     },
     "http://schema.org/Physician": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Physician"
     },
     "http://schema.org/Place": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Place"
     },
     "http://schema.org/PlaceOfWorship": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PlaceOfWorship"
     },
     "http://schema.org/Playground": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Playground"
     },
     "http://schema.org/Plumber": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Plumber"
     },
     "http://schema.org/PoliceStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PoliceStation"
     },
     "http://schema.org/Pond": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Pond"
     },
     "http://schema.org/PostOffice": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PostOffice"
     },
     "http://schema.org/PostalAddress": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PostalAddress"
     },
     "http://schema.org/Preschool": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Preschool"
     },
     "http://schema.org/Product": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Product"
     },
     "http://schema.org/ProfessionalService": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ProfessionalService"
     },
     "http://schema.org/ProfilePage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ProfilePage"
     },
     "http://schema.org/PublicSwimmingPool": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "PublicSwimmingPool"
     },
     "http://schema.org/Quantity": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Quantity"
     },
     "http://schema.org/RVPark": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "RVPark"
     },
     "http://schema.org/RadioStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "RadioStation"
     },
     "http://schema.org/Rating": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Rating"
     },
     "http://schema.org/RealEstateAgent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "RealEstateAgent"
     },
     "http://schema.org/Recipe": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Recipe"
     },
     "http://schema.org/RecyclingCenter": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "RecyclingCenter"
     },
     "http://schema.org/Reservoir": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Reservoir"
     },
     "http://schema.org/Residence": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Residence"
     },
     "http://schema.org/Restaurant": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Restaurant"
     },
     "http://schema.org/Review": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Review"
     },
     "http://schema.org/RiverBodyOfWater": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "RiverBodyOfWater"
     },
     "http://schema.org/RoofingContractor": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "RoofingContractor"
     },
     "http://schema.org/SaleEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SaleEvent"
     },
     "http://schema.org/ScholarlyArticle": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ScholarlyArticle"
     },
     "http://schema.org/School": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "School"
     },
     "http://schema.org/Sculpture": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Sculpture"
     },
     "http://schema.org/SeaBodyOfWater": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SeaBodyOfWater"
     },
     "http://schema.org/SearchResultsPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SearchResultsPage"
     },
     "http://schema.org/SelfStorage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SelfStorage"
     },
     "http://schema.org/ShoeStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ShoeStore"
     },
     "http://schema.org/ShoppingCenter": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ShoppingCenter"
     },
     "http://schema.org/SingleFamilyResidence": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SingleFamilyResidence"
     },
     "http://schema.org/SiteNavigationElement": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SiteNavigationElement"
     },
     "http://schema.org/SkiResort": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SkiResort"
     },
     "http://schema.org/SocialEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SocialEvent"
     },
     "http://schema.org/SportingGoodsStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SportingGoodsStore"
     },
     "http://schema.org/SportsActivityLocation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SportsActivityLocation"
     },
     "http://schema.org/SportsClub": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SportsClub"
     },
     "http://schema.org/SportsEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SportsEvent"
     },
     "http://schema.org/SportsTeam": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SportsTeam"
     },
     "http://schema.org/StadiumOrArena": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "StadiumOrArena"
     },
     "http://schema.org/State": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "State"
     },
     "http://schema.org/Store": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Store"
     },
     "http://schema.org/StructuredValue": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "StructuredValue"
     },
     "http://schema.org/SubwayStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "SubwayStation"
     },
     "http://schema.org/Synagogue": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Synagogue"
     },
     "http://schema.org/TVEpisode": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TVEpisode"
     },
     "http://schema.org/TVSeason": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TVSeason"
     },
     "http://schema.org/TVSeries": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TVSeries"
     },
     "http://schema.org/Table": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Table"
     },
     "http://schema.org/TattooParlor": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TattooParlor"
     },
     "http://schema.org/TaxiStand": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TaxiStand"
     },
     "http://schema.org/TelevisionStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TelevisionStation"
     },
     "http://schema.org/TennisComplex": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TennisComplex"
     },
     "http://schema.org/TheaterEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TheaterEvent"
     },
     "http://schema.org/TheaterGroup": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TheaterGroup"
     },
     "http://schema.org/Thing": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Thing"
     },
     "http://schema.org/TireShop": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TireShop"
     },
     "http://schema.org/TouristAttraction": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TouristAttraction"
     },
     "http://schema.org/TouristInformationCenter": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TouristInformationCenter"
     },
     "http://schema.org/ToyStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ToyStore"
     },
     "http://schema.org/TrainStation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TrainStation"
     },
     "http://schema.org/TravelAgency": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "TravelAgency"
     },
     "http://schema.org/UserBlocks": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserBlocks"
     },
     "http://schema.org/UserCheckins": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserCheckins"
     },
     "http://schema.org/UserComments": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserComments"
     },
     "http://schema.org/UserDownloads": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserDownloads"
     },
     "http://schema.org/UserInteraction": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserInteraction"
     },
     "http://schema.org/UserLikes": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserLikes"
     },
     "http://schema.org/UserPageVisits": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserPageVisits"
     },
     "http://schema.org/UserPlays": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserPlays"
     },
     "http://schema.org/UserPlusOnes": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserPlusOnes"
     },
     "http://schema.org/UserTweets": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "UserTweets"
     },
     "http://schema.org/VeterinaryCare": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "VeterinaryCare"
     },
     "http://schema.org/VideoGallery": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "VideoGallery"
     },
     "http://schema.org/VideoObject": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "VideoObject"
     },
     "http://schema.org/VisualArtsEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "VisualArtsEvent"
     },
     "http://schema.org/Volcano": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Volcano"
     },
     "http://schema.org/WPAdBlock": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "WPAdBlock"
     },
     "http://schema.org/WPFooter": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "WPFooter"
     },
     "http://schema.org/WPHeader": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "WPHeader"
     },
     "http://schema.org/WPSideBar": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "WPSideBar"
     },
     "http://schema.org/Waterfall": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Waterfall"
     },
     "http://schema.org/WebPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "WebPage"
     },
     "http://schema.org/WebPageElement": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "WebPageElement"
     },
     "http://schema.org/WholesaleStore": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "WholesaleStore"
     },
     "http://schema.org/Winery": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Winery"
     },
     "http://schema.org/Zoo": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "Zoo"
     }
   },
   "Properties": {
     "http://schema.org/about": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "about"
     },
     "http://schema.org/acceptsReservations": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "acceptsReservations"
     },
     "http://schema.org/actors": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "actors"
     },
     "http://schema.org/address": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "address"
     },
     "http://schema.org/addressCountry": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "addressCountry"
     },
     "http://schema.org/addressLocality": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "addressLocality"
     },
     "http://schema.org/addressRegion": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "addressRegion"
     },
     "http://schema.org/affiliation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "affiliation"
     },
     "http://schema.org/aggregateRating": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "aggregateRating"
     },
     "http://schema.org/albums": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "albums"
     },
     "http://schema.org/alumni": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "alumni"
     },
     "http://schema.org/alumniOf": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "alumniOf"
     },
     "http://schema.org/articleBody": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "articleBody"
     },
     "http://schema.org/articleSection": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "articleSection"
     },
     "http://schema.org/attendees": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "attendees"
     },
     "http://schema.org/audio": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "audio"
     },
     "http://schema.org/author": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "author"
     },
     "http://schema.org/availability": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "availability"
     },
     "http://schema.org/awards": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "awards"
     },
     "http://schema.org/bestRating": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "bestRating"
     },
     "http://schema.org/birthDate": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "birthDate"
     },
     "http://schema.org/bitrate": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "bitrate"
     },
     "http://schema.org/blogPosts": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "blogPosts"
     },
     "http://schema.org/bookEdition": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "bookEdition"
     },
     "http://schema.org/bookFormat": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "bookFormat"
     },
     "http://schema.org/branchOf": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "branchOf"
     },
     "http://schema.org/brand": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "brand"
     },
     "http://schema.org/breadcrumb": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "breadcrumb"
     },
     "http://schema.org/byArtist": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "byArtist"
     },
     "http://schema.org/calories": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "calories"
     },
     "http://schema.org/caption": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "caption"
     },
     "http://schema.org/carbohydrateContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "carbohydrateContent"
     },
     "http://schema.org/children": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "children"
     },
     "http://schema.org/cholesterolContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "cholesterolContent"
     },
     "http://schema.org/colleagues": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "colleagues"
     },
     "http://schema.org/contactPoints": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "contactPoints"
     },
     "http://schema.org/contactType": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "contactType"
     },
     "http://schema.org/containedIn": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "containedIn"
     },
     "http://schema.org/contentLocation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "contentLocation"
     },
     "http://schema.org/contentRating": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "contentRating"
     },
     "http://schema.org/contentSize": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "contentSize"
     },
     "http://schema.org/contentURL": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "contentURL"
     },
     "http://schema.org/cookTime": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "cookTime"
     },
     "http://schema.org/cookingMethod": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "cookingMethod"
     },
     "http://schema.org/currenciesAccepted": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "currenciesAccepted"
     },
     "http://schema.org/datePublished": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "datePublished"
     },
     "http://schema.org/deathDate": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "deathDate"
     },
     "http://schema.org/description": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "description"
     },
     "http://schema.org/director": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "director"
     },
     "http://schema.org/duration": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "duration"
     },
     "http://schema.org/editor": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "editor"
     },
     "http://schema.org/elevation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "elevation"
     },
     "http://schema.org/email": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "email"
     },
     "http://schema.org/embedURL": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "embedURL"
     },
     "http://schema.org/employees": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "employees"
     },
     "http://schema.org/encodesCreativeWork": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "encodesCreativeWork"
     },
     "http://schema.org/encodingFormat": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "encodingFormat"
     },
     "http://schema.org/encodings": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "encodings"
     },
     "http://schema.org/endDate": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "endDate"
     },
     "http://schema.org/episodeNumber": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "episodeNumber"
     },
     "http://schema.org/episodes": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "episodes"
     },
     "http://schema.org/events": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "events"
     },
     "http://schema.org/exifData": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "exifData"
     },
     "http://schema.org/expires": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "expires"
     },
     "http://schema.org/fatContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "fatContent"
     },
     "http://schema.org/faxNumber": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "faxNumber"
     },
     "http://schema.org/fiberContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "fiberContent"
     },
     "http://schema.org/follows": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "follows"
     },
     "http://schema.org/founders": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "founders"
     },
     "http://schema.org/foundingDate": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "foundingDate"
     },
     "http://schema.org/gender": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "gender"
     },
     "http://schema.org/genre": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "genre"
     },
     "http://schema.org/geo": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "geo"
     },
     "http://schema.org/headline": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "headline"
     },
     "http://schema.org/height": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "height"
     },
     "http://schema.org/highPrice": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "highPrice"
     },
     "http://schema.org/homeLocation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "homeLocation"
     },
     "http://schema.org/illustrator": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "illustrator"
     },
     "http://schema.org/image": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "image"
     },
     "http://schema.org/inAlbum": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "inAlbum"
     },
     "http://schema.org/inLanguage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "inLanguage"
     },
     "http://schema.org/inPlaylist": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "inPlaylist"
     },
     "http://schema.org/ingredients": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ingredients"
     },
     "http://schema.org/interactionCount": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "interactionCount"
     },
     "http://schema.org/isFamilyFriendly": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "isFamilyFriendly"
     },
     "http://schema.org/isPartOf": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "isPartOf"
     },
     "http://schema.org/isbn": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "isbn"
     },
     "http://schema.org/itemCondition": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "itemCondition"
     },
     "http://schema.org/itemListElement": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "itemListElement"
     },
     "http://schema.org/itemOffered": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "itemOffered"
     },
     "http://schema.org/itemReviewed": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "itemReviewed"
     },
     "http://schema.org/jobTitle": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "jobTitle"
     },
     "http://schema.org/keywords": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "keywords"
     },
     "http://schema.org/knows": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "knows"
     },
     "http://schema.org/latitude": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "latitude"
     },
     "http://schema.org/location": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "location"
     },
     "http://schema.org/longitude": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "longitude"
     },
     "http://schema.org/lowPrice": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "lowPrice"
     },
     "http://schema.org/mainContentOfPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "mainContentOfPage"
     },
     "http://schema.org/manufacturer": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "manufacturer"
     },
     "http://schema.org/maps": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "maps"
     },
     "http://schema.org/memberOf": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "memberOf"
     },
     "http://schema.org/members": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "members"
     },
     "http://schema.org/menu": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "menu"
     },
     "http://schema.org/model": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "model"
     },
     "http://schema.org/musicBy": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "musicBy"
     },
     "http://schema.org/name": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "name"
     },
     "http://schema.org/nationality": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "nationality"
     },
     "http://schema.org/numTracks": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "numTracks"
     },
     "http://schema.org/numberOfEpisodes": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "numberOfEpisodes"
     },
     "http://schema.org/numberOfPages": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "numberOfPages"
     },
     "http://schema.org/nutrition": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "nutrition"
     },
     "http://schema.org/offerCount": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "offerCount"
     },
     "http://schema.org/offers": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "offers"
     },
     "http://schema.org/openingHours": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "openingHours"
     },
     "http://schema.org/parents": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "parents"
     },
     "http://schema.org/partOfSeason": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "partOfSeason"
     },
     "http://schema.org/partOfTVSeries": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "partOfTVSeries"
     },
     "http://schema.org/paymentAccepted": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "paymentAccepted"
     },
     "http://schema.org/performerIn": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "performerIn"
     },
     "http://schema.org/performers": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "performers"
     },
     "http://schema.org/photos": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "photos"
     },
     "http://schema.org/playerType": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "playerType"
     },
     "http://schema.org/postOfficeBoxNumber": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "postOfficeBoxNumber"
     },
     "http://schema.org/postalCode": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "postalCode"
     },
     "http://schema.org/prepTime": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "prepTime"
     },
     "http://schema.org/price": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "price"
     },
     "http://schema.org/priceCurrency": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "priceCurrency"
     },
     "http://schema.org/priceRange": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "priceRange"
     },
     "http://schema.org/priceValidUntil": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "priceValidUntil"
     },
     "http://schema.org/primaryImageOfPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "primaryImageOfPage"
     },
     "http://schema.org/producer": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "producer"
     },
     "http://schema.org/productID": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "productID"
     },
     "http://schema.org/productionCompany": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "productionCompany"
     },
     "http://schema.org/proteinContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "proteinContent"
     },
     "http://schema.org/publisher": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "publisher"
     },
     "http://schema.org/ratingCount": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ratingCount"
     },
     "http://schema.org/ratingValue": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "ratingValue"
     },
     "http://schema.org/recipeCategory": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "recipeCategory"
     },
     "http://schema.org/recipeCuisine": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "recipeCuisine"
     },
     "http://schema.org/recipeInstructions": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "recipeInstructions"
     },
     "http://schema.org/recipeYield": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "recipeYield"
     },
     "http://schema.org/regionsAllowed": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "regionsAllowed"
     },
     "http://schema.org/relatedTo": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "relatedTo"
     },
     "http://schema.org/representativeOfPage": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "representativeOfPage"
     },
     "http://schema.org/requiresSubscription": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "requiresSubscription"
     },
     "http://schema.org/reviewBody": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "reviewBody"
     },
     "http://schema.org/reviewCount": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "reviewCount"
     },
     "http://schema.org/reviewRating": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "reviewRating"
     },
     "http://schema.org/reviews": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "reviews"
     },
     "http://schema.org/saturatedFatContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "saturatedFatContent"
     },
     "http://schema.org/seasonNumber": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "seasonNumber"
     },
     "http://schema.org/seasons": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "seasons"
     },
     "http://schema.org/seller": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "seller"
     },
     "http://schema.org/servesCuisine": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "servesCuisine"
     },
     "http://schema.org/servingSize": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "servingSize"
     },
     "http://schema.org/siblings": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "siblings"
     },
     "http://schema.org/significantLinks": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "significantLinks"
     },
     "http://schema.org/sodiumContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "sodiumContent"
     },
     "http://schema.org/spouse": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "spouse"
     },
     "http://schema.org/startDate": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "startDate"
     },
     "http://schema.org/streetAddress": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "streetAddress"
     },
     "http://schema.org/subEvents": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "subEvents"
     },
     "http://schema.org/sugarContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "sugarContent"
     },
     "http://schema.org/superEvent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "superEvent"
     },
     "http://schema.org/telephone": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "telephone"
     },
     "http://schema.org/thumbnail": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "thumbnail"
     },
     "http://schema.org/totalTime": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "totalTime"
     },
     "http://schema.org/tracks": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "tracks"
     },
     "http://schema.org/trailer": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "trailer"
     },
     "http://schema.org/transFatContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "transFatContent"
     },
     "http://schema.org/unsaturatedFatContent": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "unsaturatedFatContent"
     },
     "http://schema.org/uploadDate": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "uploadDate"
     },
     "http://schema.org/url": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "url"
     },
     "http://schema.org/video": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "video"
     },
     "http://schema.org/videoFrameSize": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "videoFrameSize"
     },
     "http://schema.org/videoQuality": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "videoQuality"
     },
     "http://schema.org/width": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "width"
     },
     "http://schema.org/workLocation": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "workLocation"
     },
     "http://schema.org/worksFor": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "worksFor"
     },
     "http://schema.org/worstRating": {
-      "vocab": "http://schema.org/",
+      "vocab": "schema",
       "label": "worstRating"
     }
   }

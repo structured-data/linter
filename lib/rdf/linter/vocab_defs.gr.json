@@ -1,329 +1,332 @@
 {
+  "Vocabularies": {
+    "gr": "http://purl.org/goodrelations/v1#"
+  },
   "Classes": {
     "http://purl.org/goodrelations/v1#ActualProductOrServiceInstance": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "ActualProductOrServiceInstance"
     },
     "http://purl.org/goodrelations/v1#Brand": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "Brand"
     },
     "http://purl.org/goodrelations/v1#BusinessEntity": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "BusinessEntity"
     },
     "http://purl.org/goodrelations/v1#BusinessEntityType": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "BusinessEntityType"
     },
     "http://purl.org/goodrelations/v1#BusinessFunction": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "BusinessFunction"
     },
     "http://purl.org/goodrelations/v1#DayOfWeek": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "DayOfWeek"
     },
     "http://purl.org/goodrelations/v1#DeliveryChargeSpecification": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "DeliveryChargeSpecification"
     },
     "http://purl.org/goodrelations/v1#DeliveryMethod": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "DeliveryMethod"
     },
     "http://purl.org/goodrelations/v1#DeliveryModeParcelService": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "DeliveryModeParcelService"
     },
     "http://purl.org/goodrelations/v1#Individual": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "Individual"
     },
     "http://purl.org/goodrelations/v1#Location": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "Location"
     },
     "http://purl.org/goodrelations/v1#LocationOfSalesOrServiceProvisioning": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "LocationOfSalesOrServiceProvisioning"
     },
     "http://purl.org/goodrelations/v1#N-Ary-Relations": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "N-Ary-Relations"
     },
     "http://purl.org/goodrelations/v1#Offering": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "Offering"
     },
     "http://purl.org/goodrelations/v1#OpeningHoursSpecification": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "OpeningHoursSpecification"
     },
     "http://purl.org/goodrelations/v1#PaymentChargeSpecification": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "PaymentChargeSpecification"
     },
     "http://purl.org/goodrelations/v1#PaymentMethod": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "PaymentMethod"
     },
     "http://purl.org/goodrelations/v1#PaymentMethodCreditCard": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "PaymentMethodCreditCard"
     },
     "http://purl.org/goodrelations/v1#PriceSpecification": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "PriceSpecification"
     },
     "http://purl.org/goodrelations/v1#ProductOrService": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "ProductOrService"
     },
     "http://purl.org/goodrelations/v1#ProductOrServiceModel": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "ProductOrServiceModel"
     },
     "http://purl.org/goodrelations/v1#ProductOrServicesSomeInstancesPlaceholder": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "ProductOrServicesSomeInstancesPlaceholder"
     },
     "http://purl.org/goodrelations/v1#QualitativeValue": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "QualitativeValue"
     },
     "http://purl.org/goodrelations/v1#QuantitativeValue": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "QuantitativeValue"
     },
     "http://purl.org/goodrelations/v1#QuantitativeValueFloat": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "QuantitativeValueFloat"
     },
     "http://purl.org/goodrelations/v1#QuantitativeValueInteger": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "QuantitativeValueInteger"
     },
     "http://purl.org/goodrelations/v1#SomeItems": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "SomeItems"
     },
     "http://purl.org/goodrelations/v1#TypeAndQuantityNode": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "TypeAndQuantityNode"
     },
     "http://purl.org/goodrelations/v1#UnitPriceSpecification": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "UnitPriceSpecification"
     },
     "http://purl.org/goodrelations/v1#WarrantyPromise": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "WarrantyPromise"
     },
     "http://purl.org/goodrelations/v1#WarrantyScope": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "WarrantyScope"
     }
   },
   "Properties": {
     "http://purl.org/goodrelations/v1#acceptedPaymentMethods": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "acceptedPaymentMethods"
     },
     "http://purl.org/goodrelations/v1#addOn": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "addOn"
     },
     "http://purl.org/goodrelations/v1#advanceBookingRequirement": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "advanceBookingRequirement"
     },
     "http://purl.org/goodrelations/v1#appliesToDeliveryMethod": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "appliesToDeliveryMethod"
     },
     "http://purl.org/goodrelations/v1#appliesToPaymentMethod": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "appliesToPaymentMethod"
     },
     "http://purl.org/goodrelations/v1#availableAtOrFrom": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "availableAtOrFrom"
     },
     "http://purl.org/goodrelations/v1#availableDeliveryMethods": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "availableDeliveryMethods"
     },
     "http://purl.org/goodrelations/v1#deliveryLeadTime": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "deliveryLeadTime"
     },
     "http://purl.org/goodrelations/v1#depth": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "depth"
     },
     "http://purl.org/goodrelations/v1#eligibleCustomerTypes": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "eligibleCustomerTypes"
     },
     "http://purl.org/goodrelations/v1#eligibleDuration": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "eligibleDuration"
     },
     "http://purl.org/goodrelations/v1#eligibleTransactionVolume": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "eligibleTransactionVolume"
     },
     "http://purl.org/goodrelations/v1#equal": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "equal"
     },
     "http://purl.org/goodrelations/v1#greater": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "greater"
     },
     "http://purl.org/goodrelations/v1#greaterOrEqual": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "greaterOrEqual"
     },
     "http://purl.org/goodrelations/v1#hasBrand": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasBrand"
     },
     "http://purl.org/goodrelations/v1#hasBusinessFunction": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasBusinessFunction"
     },
     "http://purl.org/goodrelations/v1#hasEligibleQuantity": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasEligibleQuantity"
     },
     "http://purl.org/goodrelations/v1#hasInventoryLevel": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasInventoryLevel"
     },
     "http://purl.org/goodrelations/v1#hasMakeAndModel": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasMakeAndModel"
     },
     "http://purl.org/goodrelations/v1#hasManufacturer": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasManufacturer"
     },
     "http://purl.org/goodrelations/v1#hasNext": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasNext"
     },
     "http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasOpeningHoursDayOfWeek"
     },
     "http://purl.org/goodrelations/v1#hasOpeningHoursSpecification": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasOpeningHoursSpecification"
     },
     "http://purl.org/goodrelations/v1#hasPOS": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasPOS"
     },
     "http://purl.org/goodrelations/v1#hasPrevious": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasPrevious"
     },
     "http://purl.org/goodrelations/v1#hasPriceSpecification": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasPriceSpecification"
     },
     "http://purl.org/goodrelations/v1#hasWarrantyPromise": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasWarrantyPromise"
     },
     "http://purl.org/goodrelations/v1#hasWarrantyScope": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "hasWarrantyScope"
     },
     "http://purl.org/goodrelations/v1#height": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "height"
     },
     "http://purl.org/goodrelations/v1#includes": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "includes"
     },
     "http://purl.org/goodrelations/v1#includesObject": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "includesObject"
     },
     "http://purl.org/goodrelations/v1#isAccessoryOrSparePartFor": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "isAccessoryOrSparePartFor"
     },
     "http://purl.org/goodrelations/v1#isConsumableFor": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "isConsumableFor"
     },
     "http://purl.org/goodrelations/v1#isSimilarTo": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "isSimilarTo"
     },
     "http://purl.org/goodrelations/v1#isVariantOf": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "isVariantOf"
     },
     "http://purl.org/goodrelations/v1#lesser": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "lesser"
     },
     "http://purl.org/goodrelations/v1#lesserOrEqual": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "lesserOrEqual"
     },
     "http://purl.org/goodrelations/v1#nonEqual": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "nonEqual"
     },
     "http://purl.org/goodrelations/v1#offers": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "offers"
     },
     "http://purl.org/goodrelations/v1#owns": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "owns"
     },
     "http://purl.org/goodrelations/v1#predecessorOf": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "predecessorOf"
     },
     "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "qualitativeProductOrServiceProperty"
     },
     "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "quantitativeProductOrServiceProperty"
     },
     "http://purl.org/goodrelations/v1#seeks": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "seeks"
     },
     "http://purl.org/goodrelations/v1#successorOf": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "successorOf"
     },
     "http://purl.org/goodrelations/v1#typeOfGood": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "typeOfGood"
     },
     "http://purl.org/goodrelations/v1#valueReference": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "valueReference"
     },
     "http://purl.org/goodrelations/v1#weight": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "weight"
     },
     "http://purl.org/goodrelations/v1#width": {
-      "vocab": "http://purl.org/goodrelations/v1#",
+      "vocab": "gr",
       "label": "width"
     }
   }
