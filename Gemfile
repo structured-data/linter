@@ -19,6 +19,7 @@ gem 'erubis',             '>= 2.6.6'
 gem 'haml',               '>= 3.0.0'
 gem 'facets',             '>= 2.9.1'
 gem 'nokogiri'
+gem 'json',               '>= 1.5.1'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators

@@ -9,15 +9,16 @@ require 'rdf/all'
 
 module RDF
   module Linter
+    APP_DIR = File.expand_path("../..", File.dirname(__FILE__))
+    PUB_DIR = File.join(APP_DIR, 'public')
+    LINTER_DIR = File.join(APP_DIR, 'lib', 'rdf', 'linter')
+    SNIPPET_DIR = File.join(LINTER_DIR, 'snippets')
+
     require 'rdf/linter/parser'
     require 'rdf/linter/extensions'
     autoload :VERSION,      'rdf/linter/version'
 
     class Application < Sinatra::Base
-      APP_DIR = File.expand_path("../..", File.dirname(__FILE__))
-      PUB_DIR = File.join(APP_DIR, 'public')
-      SNIPPET_DIR = File.join(APP_DIR, 'lib', 'rdf', 'linter', 'snippets')
-
       #register Sinatra::LinkedData
       helpers Sinatra::Partials
       #use Rack::LinkedData::ContentNegotiation, :default => "text/html"

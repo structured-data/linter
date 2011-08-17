@@ -141,6 +141,7 @@ DEPENDENCIES
   facets (>= 2.9.1)
   fastercsv
   haml (>= 3.0.0)
+  json (>= 1.5.1)
   json-ld!
   linkeddata!
   nokogiri

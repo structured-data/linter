@@ -27,7 +27,7 @@
     "http://purl.org/dc/terms/ProvenanceStatement": { "vocab": "dc" },
     "http://purl.org/dc/terms/RightsStatement": { "vocab": "dc" },
     "http://purl.org/dc/terms/SizeOrDuration": { "vocab": "dc" },
-    "http://purl.org/dc/terms/Standard": { "vocab": "dc" },
+    "http://purl.org/dc/terms/Standard": { "vocab": "dc" }
   },
   "Properties": {
     "http://purl.org/dc/terms/title": { "vocab": "dc" },
@@ -84,7 +84,7 @@
     "http://purl.org/dc/terms/instructionalMethod": { "vocab": "dc" },
     "http://purl.org/dc/terms/accrualMethod": { "vocab": "dc" },
     "http://purl.org/dc/terms/accrualPeriodicity": { "vocab": "dc" },
-    "http://purl.org/dc/terms/accrualPolicy": { "vocab": "dc" },
+    "http://purl.org/dc/terms/accrualPolicy": { "vocab": "dc" }
   },
   "Datatypes": {
     "http://www.w3.org/2001/XMLSchema#NOTATION": { "vocab": "xsd" },
