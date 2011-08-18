@@ -48,7 +48,7 @@ module RDF::Linter
         ),
         # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
         # When multiple snippets are matched by an object, the one with the highest priority wins.
-        :priority => 10,
+        :priority => 15,
       }
     })
   end

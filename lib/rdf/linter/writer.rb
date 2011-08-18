@@ -82,6 +82,7 @@ module RDF::Linter
         next unless template
         
         priority = template[:priority] || 99
+        add_debug "  priority(#{s}) = #{priority}"
         prioritized_subjects[priority] ||= []
         prioritized_subjects[priority] << s
       end
