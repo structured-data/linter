@@ -3,103 +3,103 @@
     "ogp": "http://ogp.me/ns#"
   },
   "Classes": {
-    "http://ogp.me/ns#Actor": {
+    "http://types.ogp.me/ns#Actor": {
       "vocab": "ogp",
       "label": "Actor"
     },
-    "http://ogp.me/ns#Album": {
+    "http://types.ogp.me/ns#Album": {
       "vocab": "ogp",
       "label": "Album"
     },
-    "http://ogp.me/ns#Article": {
+    "http://types.ogp.me/ns#Article": {
       "vocab": "ogp",
       "label": "Article"
     },
-    "http://ogp.me/ns#Athlete": {
+    "http://types.ogp.me/ns#Athlete": {
       "vocab": "ogp",
       "label": "Athlete"
     },
-    "http://ogp.me/ns#Author": {
+    "http://types.ogp.me/ns#Author": {
       "vocab": "ogp",
       "label": "Author"
     },
-    "http://ogp.me/ns#Band": {
+    "http://types.ogp.me/ns#Band": {
       "vocab": "ogp",
       "label": "Band"
     },
-    "http://ogp.me/ns#Blog": {
+    "http://types.ogp.me/ns#Blog": {
       "vocab": "ogp",
       "label": "Blog"
     },
-    "http://ogp.me/ns#Book": {
+    "http://types.ogp.me/ns#Book": {
       "vocab": "ogp",
       "label": "Book"
     },
-    "http://ogp.me/ns#City": {
+    "http://types.ogp.me/ns#City": {
       "vocab": "ogp",
       "label": "City"
     },
-    "http://ogp.me/ns#Country": {
+    "http://types.ogp.me/ns#Country": {
       "vocab": "ogp",
       "label": "Country"
     },
-    "http://ogp.me/ns#Director": {
+    "http://types.ogp.me/ns#Director": {
       "vocab": "ogp",
       "label": "Director"
     },
-    "http://ogp.me/ns#Drink": {
+    "http://types.ogp.me/ns#Drink": {
       "vocab": "ogp",
       "label": "Drink"
     },
-    "http://ogp.me/ns#Food": {
+    "http://types.ogp.me/ns#Food": {
       "vocab": "ogp",
       "label": "Food"
     },
-    "http://ogp.me/ns#Game": {
+    "http://types.ogp.me/ns#Game": {
       "vocab": "ogp",
       "label": "Game"
     },
-    "http://ogp.me/ns#Governmental": {
+    "http://types.ogp.me/ns#Governmental": {
       "vocab": "ogp",
       "label": "Governmental"
     },
-    "http://ogp.me/ns#Landmark": {
+    "http://types.ogp.me/ns#Landmark": {
       "vocab": "ogp",
       "label": "Landmark"
     },
-    "http://ogp.me/ns#Movie": {
+    "http://types.ogp.me/ns#Movie": {
       "vocab": "ogp",
       "label": "Movie"
     },
-    "http://ogp.me/ns#Musician": {
+    "http://types.ogp.me/ns#Musician": {
       "vocab": "ogp",
       "label": "Musician"
     },
-    "http://ogp.me/ns#Non_profit": {
+    "http://types.ogp.me/ns#Non_profit": {
       "vocab": "ogp",
       "label": "Non_profit"
     },
-    "http://ogp.me/ns#Politician": {
+    "http://types.ogp.me/ns#Politician": {
       "vocab": "ogp",
       "label": "Politician"
     },
-    "http://ogp.me/ns#Public_figure": {
+    "http://types.ogp.me/ns#Public_figure": {
       "vocab": "ogp",
       "label": "Public_figure"
     },
-    "http://ogp.me/ns#School": {
+    "http://types.ogp.me/ns#School": {
       "vocab": "ogp",
       "label": "School"
     },
-    "http://ogp.me/ns#State_province": {
+    "http://types.ogp.me/ns#State_province": {
       "vocab": "ogp",
       "label": "State_province"
     },
-    "http://ogp.me/ns#University": {
+    "http://types.ogp.me/ns#University": {
       "vocab": "ogp",
       "label": "University"
     },
-    "http://ogp.me/ns#Website": {
+    "http://types.ogp.me/ns#Website": {
       "vocab": "ogp",
       "label": "Website"
     }
