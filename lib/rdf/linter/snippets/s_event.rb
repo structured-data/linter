@@ -21,7 +21,7 @@ module RDF::Linter
       :description_props => ["http://schema.org/description"],
       # Properties to be used when snippet is nested
       :nested_props => [
-        "http://schema.org/name",
+        "http://schema.org/name", "http://schema.org/location"
       ],
       # Post-processing on nested markup
       :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p).to_s.rstrip}.join(", ")},
