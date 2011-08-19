@@ -6,6 +6,9 @@ The Structured Data Linter digests structured data, in the form of HTML marked-u
 with [RDFa][] or [Microdata][], or other RDF technologies supported in
 [Linked Data][linkeddata].
 
+The linter is part of the [structured-data.org](http://structured-data.org/),
+and runs at [linter.structured-data.org](http://linter.structured-data.org/)
+
 * Includes [N-Triples][] support using [RDF.rb][].
 * Includes [RDF/XML][] support using the [RDF::RDFXML][] gem.
 * Includes [Turtle][] and [Notation3][] support using the [RDF::N3][] gem.
@@ -22,11 +25,15 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 
     config.ru             -- [Rack][] configuration file, to start application
     lib
-      linter
-        rdfa_template.rb  -- RDFa output templates in [Haml][]
-        views             -- Templates for view generation in [Erubis][]
+      rdf
+        linter
+          parser.rb         -- Parse and transform input to RDFa.
+          rdfa_template.rb  -- RDFa output templates in [Haml][]
+          snippets          -- Snippet templates
+          views             -- Templates for view generation in [Erubis][]
+          vocab_defs.rb     -- Vocabulary definitions
+          writer.rb         -- Sub-class of [RDFa][] writer for generating snippet output.
         linter.rb         -- Controller defining HTTP endpoints
-        parser.rb         -- Parse and transform input to RDFa.
     public
     spec                  -- Tests
       test_data           -- Test Data
@@ -47,7 +54,7 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 * [RDF::TriX](http://rubygems.org/gems/rdf-trix) (>= 0.3.1)
 * [JSON::LD](http://rubygems.org/gems/json-ld) (>= 0.0.4)
 
-## AUTHOR
+## AUTHORS
 * [Gregg Kellogg](http://github.com/gkellogg) - <http://kellogg-assoc.com/>
 * Stéphane Corlosquet
 
@@ -62,7 +69,25 @@ This application is represented as a [Sinatra][] application implemented in [Rub
     bundle exec shotgun -p 3000 config.ru
 
 ## FEEDBACK
-* gregg@kellogg-assoc.com
+
+* https://github.com/structured-data/linter/issues
+
+## Contributing
+* Do your best to adhere to the existing coding conventions and idioms.
+* Don't use hard tabs, and don't leave trailing whitespace on any line.
+* Do document every method you add using [YARD][] annotations. Read the
+  [tutorial][YARD-GS] or just look at the existing code for examples.
+* Don't touch the `.gemspec`, `VERSION` or `AUTHORS` files. If you need to
+  change them, do so on your private branch only.
+* Do feel free to add yourself to the `CREDITS` file and the corresponding
+  list in the the `README`. Alphabetical order applies.
+* Do note that in order for us to merge any non-trivial changes (as a rule
+  of thumb, additions larger than about 15 lines of code), we need an
+  explicit [public domain dedication][PDD] on record from you.
+
+## License
+This is free and unencumbered public domain software. For more information,
+see <http://unlicense.org/> or the accompanying {file:UNLICENSE} file.
 
 [JSON-LD]:        http://json-ld.org/spec/latest/
 [Microdata]:      http://dev.w3.org/html5/md/
