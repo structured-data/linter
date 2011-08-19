@@ -20,11 +20,11 @@ module RDF::Linter
         albums = block.call("http://schema.org/albums")
         tracks = block.call("http://schema.org/tracks")
         [
-          ("reviews: #{reviews}" if reviews),
-          ("events: #{events}" if events),
-          ("albums: #{albums}" if albums),
-          ("tracks: #{tracks}" if tracks),
-        ].join("<br/>")
+          ("<div>reviews: #{reviews}</div>" if reviews),
+          ("<div>events: #{events}</div>" if events),
+          ("<div>albums: #{albums}</div>" if albums),
+          ("<div>tracks: #{tracks}</div>" if tracks),
+        ].join("")
       },
       :description_props => ["http://schema.org/description"],
       # Properties to be used when snippet is nested
@@ -50,7 +50,7 @@ module RDF::Linter
         - if predicate == "http://schema.org/aggregateRating"
           != rating_helper(predicate, objects.first)
         - elsif res = objects.map {|object| yield(object)}
-          != res.join(", ")
+          != res.map(&:rstrip).join(",")
         - elsif ["http://schema.org/image", "http://schema.org/photo"].include?(predicate)
           %span{:rel => rel}
             %img{:src => objects.first.to_s, :alt => ""}

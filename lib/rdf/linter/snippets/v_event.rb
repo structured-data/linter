@@ -29,7 +29,7 @@ module RDF::Linter
           "#{prefix}location",
         ],
         # Post-processing on nested markup
-        :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p).to_s.rstrip}.join(", ")},
+        :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p)}.compact.map(&:to_s).map(&:rstrip).join(", ")},
         :property_value => %(
           - if res = yield(object)
             != res
