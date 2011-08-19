@@ -40,9 +40,9 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-microdata.git
-  revision: f3a2bacfe48a1cef5e5231d02477769242581fcf
+  revision: d9f52124cee367bca99affb922380a1ac6cfd61b
   specs:
-    rdf-microdata (0.2.0)
+    rdf-microdata (0.2.1)
       nokogiri (>= 1.4.4)
       rdf (>= 0.3.3)
 
@@ -55,7 +55,7 @@ GIT
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: 7555f2387c200b5a1249c12a73ad0fcf802a2e86
+  revision: 69a70383b7f093d70bb2cee709a100adfa25ddd6
   specs:
     rdf-rdfa (0.3.4.2)
       addressable (= 2.2.4)

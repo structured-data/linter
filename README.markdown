@@ -70,6 +70,7 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 
 ## FEEDBACK
 
+* http://groups.google.com/group/structured-data-dev
 * https://github.com/structured-data/linter/issues
 
 ## Contributing
