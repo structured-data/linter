@@ -1,3 +1,7 @@
+<%
+  hash = File.open(File.join(PUB_DIR, "css", "snippet.css")).hash
+  css_path = "/css/snippet.css?#{hash}"
+-%>
 <script type="text/javascript">
 // Navigation
 $(function () {
@@ -27,8 +31,10 @@ $(function () {
 
 </script>
 
-<% if @output.match(/snippet-content/) -%>
-<link rel="stylesheet" href="/css/snippet.css" type="text/css" media="screen, projection" />
+<% if @output.match(/snippet-content/)
+  hash =
+-%>
+<link rel="stylesheet" href="<%=css_path%>" type="text/css" media="screen, projection" />
 <% end -%>
 
 <% if @output.match(/rating-stars/) -%>

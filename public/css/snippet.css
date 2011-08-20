@@ -40,6 +40,8 @@ table.ts td {
     vertical-align: top;
 }
 
+ol.tracks { margin-left: 2em;}
+
 #results-content .other { display:none ;}
 #results-content .notype { display:none ;}
 #results-content [typeof~='v:Rating'] { display:none ;}

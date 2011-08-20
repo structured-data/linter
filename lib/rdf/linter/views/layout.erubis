@@ -1,8 +1,12 @@
+<%
+  hash = File.open(File.join(PUB_DIR, "css", "site.css")).hash
+  css_path = "/css/site.css?#{hash}"
+-%>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title><%= @title %></title>
-    <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="<%=css_path%>" type="text/css" media="screen, projection" />
     <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
     <script type="text/javascript">
