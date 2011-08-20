@@ -20,10 +20,10 @@ module RDF::Linter
         albums = block.call("http://schema.org/albums")
         tracks = block.call("http://schema.org/tracks")
         [
-          ("<div>reviews: #{reviews}</div>" if reviews),
-          ("<div>events: #{events}</div>" if events),
-          ("<div>albums: #{albums}</div>" if albums),
-          ("<div>tracks: #{tracks}</div>" if tracks),
+          ("<div>Reviews: #{reviews}</div>" if reviews),
+          ("<div>Events: #{events}</div>" if events),
+          ("<div>Albums: #{albums}</div>" if albums),
+          ("<div>Tracks: #{tracks}</div>" if tracks),
         ].join("")
       },
       :description_props => ["http://schema.org/description"],
@@ -49,6 +49,11 @@ module RDF::Linter
       :property_values => %(
         - if predicate == "http://schema.org/aggregateRating"
           != rating_helper(predicate, objects.first)
+        - elsif predicate == "http://schema.org/tracks"
+          %ol.tracks
+            - objects.each do |object|
+              %li.track
+                = yield(object)
         - elsif res = objects.map {|object| yield(object)}
           != res.map(&:rstrip).join(",")
         - elsif ["http://schema.org/image", "http://schema.org/photo"].include?(predicate)
