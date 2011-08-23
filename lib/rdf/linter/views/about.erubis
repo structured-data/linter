@@ -6,5 +6,7 @@
   <p>
     The Structured Data Linter was initiated by <a href="http://openspring.net/">Stéphane Corlosquet</a> and <a href="http://kellogg-assoc.com/">Gregg Kellogg</a>, as part of the larger <a href="http://structured-data.org">Structured Data initiative</a>. Community input is welcome to improve this tool, suggest new features, etc. Anyone can contribute by filing <a href="https://github.com/structured-data/linter/issues">issues</a> on Github or forking the <a href="https://github.com/structured-data/linter">linter git repository</a>.
   </p>
+  <p>
+    Find out more about using rich formats at <a target="_blank" href="http://structured-data.org/">structured-data.org</a>.
 </section>
 </div>

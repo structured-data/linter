@@ -37,7 +37,7 @@ module RDF
       end
 
       get '/about/' do
-        @title = "About the Structured Data Linter"
+        @title = "About the Linter"
         cache_control :public, :must_revalidate, :max_age => 60
         erubis :about
       end
