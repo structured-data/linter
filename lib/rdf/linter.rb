@@ -148,7 +148,7 @@ module RDF
         reader_opts[:matched_templates] = []
 
         root = RDF::URI(request.url).join("/").to_s
-        puts "requrest.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
+        puts "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 
         case
         when reader_opts[:tempfile]
