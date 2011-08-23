@@ -13,9 +13,13 @@ module RDF::Linter
           != yield(subject)
       %h2
         Raw structured data extracted from the page:
-      %div{:id => "raw-results"}
-        %div{:id => "extracted-results"}
-          != extracted
+      - if subjects.empty?
+        %p
+          No structured data detected.
+      - else
+        %div{:id => "raw-results"}
+          %div{:id => "extracted-results"}
+            != extracted
     ),
 
     # Output for top-level non-leaf resources

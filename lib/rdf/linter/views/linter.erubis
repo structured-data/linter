@@ -63,6 +63,7 @@
 <% elsif !@output.empty?  -%>
 <div class="results">
   <h2>Structured data</h2>
+  <p>The data did not match any templates on file. Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a> to request support for additional templates.</p>
   <%= @output %>
 </div>
 <% end -%>

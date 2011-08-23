@@ -163,7 +163,7 @@ module RDF
         content_type, content = parse(reader_opts)
         content.gsub!(/--root--/, root)
         @output = content unless content == @error
-        @output ||= ""
+        @output ||= "<p>No formats detected.</p>"
         @title = "Structured Data Linter"
         erubis :linter, :locals => {
           :head => :linter,
