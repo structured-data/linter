@@ -64,7 +64,7 @@ module RDF
           if sample.match(%r(<html)i)
             # If it's HTML, parse it to improve detection
             @input.rewind
-            sample = @input = Nokogiri::HTML.parse(@input)
+            sample = @input = ::Nokogiri::HTML.parse(@input)
             puts "HTML sample =  #{sample.to_html}" if ::RDF::All::debug?
           else
             @input.rewind
@@ -166,7 +166,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      if sample.is_a?(Nokogiri::HTML::Document)
+      if sample.is_a?(::Nokogiri::HTML::Document)
         %w(about resource prefix typeof property vocab).any? {|attr| sample.at_xpath("//@#{attr}")}
       else
         (sample.match(/<[^>]*(about|resource|prefix|typeof|property|vocab)\s*="[^>]*>/m) ||
@@ -182,7 +182,7 @@ module RDF
     # @param [String] sample
     # @return [Boolean]
     def self.detect(sample)
-      if sample.is_a?(Nokogiri::HTML::Document)
+      if sample.is_a?(::Nokogiri::HTML::Document)
         %w(itemprop itemtype itemref itemscope itemid).any? {|attr| sample.at_xpath("//@#{attr}")}
       else
         sample.match(/<[^>]*(itemprop|itemtype|itemref|itemscope|itemid)[^>]*>/m)
