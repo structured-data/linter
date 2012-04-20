@@ -6,6 +6,8 @@ require 'find'
 require 'rdf/microdata'
 require 'json/ld'
 require 'rdf/all'
+require 'net/http'
+require 'uri'
 
 module RDF
   module Linter
@@ -39,13 +41,13 @@ module RDF
       get '/about/' do
         @title = "About the Linter"
         cache_control :public, :must_revalidate, :max_age => 60
-        erubis :about
+        erb :about
       end
 
       get '/examples/' do
         @title = "Markup Examples"
         cache_control :public, :must_revalidate, :max_age => 60
-        erubis :examples, :locals => {
+        erb :examples, :locals => {
           :root => RDF::URI(request.url).join("/").to_s,
         }
       end
@@ -53,7 +55,7 @@ module RDF
       get '/examples/google-rs/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         @title = "Google RS #{params[:name]}"
-        erubis :rs_example, :locals => {
+        erb :rs_example, :locals => {
           :head => :examples,
           :name => params[:name],
           :root => RDF::URI(request.url).join("/").to_s
@@ -68,7 +70,7 @@ module RDF
       get '/examples/good-relations/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         @title = "Good Relations #{params[:name]}"
-        erubis :gr_example, :locals => {
+        erb :gr_example, :locals => {
           :head => :examples,
           :name => params[:name],
           :root => RDF::URI(request.url).join("/").to_s
@@ -88,7 +90,7 @@ module RDF
         end
         raise "Could not find schema example #{params[:name]}" unless dir
         @title = "Schema.org #{params[:name]}"
-        erubis :schema_example, :locals => {
+        erb :schema_example, :locals => {
           :head => :examples,
           :name => params[:name],
           :dir => dir,
@@ -107,7 +109,7 @@ module RDF
         when /json$/
           send_file file, :type => :json
         else
-          erubis :schema_file, :locals => {:file => file}, :layout => false
+          erb :schema_file, :locals => {:file => file}, :layout => false
         end
       end
 
@@ -115,7 +117,7 @@ module RDF
       get '/snippets/' do
         @title = "Snippet definitions"
         cache_control :public, :must_revalidate, :max_age => 60
-        erubis :snippets, :locals => {
+        erb :snippets, :locals => {
           :root => RDF::URI(request.url).join("/").to_s,
         }
       end
@@ -123,7 +125,7 @@ module RDF
       get '/snippets/:name' do
         cache_control :public, :must_revalidate, :max_age => 60
         @title = params[:name]
-        erubis :snippet, :locals => {
+        erb :snippet, :locals => {
           :name => params[:name],
           :root => RDF::URI(request.url).join("/").to_s
         }
@@ -165,7 +167,7 @@ module RDF
         @output = content unless content == @error
         @output ||= "<p>No formats detected.</p>"
         @title = "Structured Data Linter"
-        erubis :linter, :locals => {
+        erb :linter, :locals => {
           :head => :linter,
           :root => RDF::URI(request.url).join("/").to_s,
           :matched_templates => reader_opts[:matched_templates].uniq
@@ -187,7 +189,52 @@ module RDF
     # @return [IO] File stream
     # @yield [IO] File stream
     def self.open_file(filename_or_url, options = {}, &block)
-      Kernel.open(filename_or_url, {"User-Agent" => "Ruby Structured Data Linter #{VERSION} (http://linter.greggkellogg.net/)"}, &block)
+      case filename_or_url.to_s
+      when /^file:/
+        path = filename_or_url[5..-1]
+        Kernel.open(path.to_s, &block)
+      when /^http/
+        headers = {
+          "Accept" => 'text/html;q=0.8, */*;q=0.1',
+          "User-Agent" => "Ruby Structured Data Linter/#{VERSION}"
+        }.merge(options[:headers] || {})
+        url = ::URI.parse(filename_or_url)
+        io_obj = nil
+        until io_obj do
+          Net::HTTP::start(url.host, url.port) do |http|
+            request = Net::HTTP::Get.new(url.request_uri, headers)
+            response = http.request(request)
+            case response
+            when Net::HTTPSuccess
+              # found object
+              io_obj = StringIO.new(response.body)
+              io_obj.instance_variable_set(:@resp, response)
+            when Net::HTTPRedirection
+              # Follow redirection
+              url = ::URI.parse(response["Location"])
+            else
+              raise IOError, "Failed to open #{filename_or_url}: #{response.msg}(#{response.value})"
+            end
+          end
+        end
+        def io_obj.content_type
+          @resp.content_type
+        end
+        def io_obj.status
+          @resp.value
+        end
+        if block_given?
+          begin
+            block.call(io_obj)
+          ensure
+            io_obj.close
+          end
+        else
+          io_obj
+        end
+      else
+        Kernel.open(filename_or_url.to_s, &block)
+      end
     end
   end
 end

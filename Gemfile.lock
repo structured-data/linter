@@ -1,160 +1,153 @@
 GIT
   remote: git://github.com/gkellogg/json-ld.git
-  revision: 3190ef9c43bd6bc9da825b94c10102964c2bd323
+  revision: ddcff813b26f17a29e2920c81489313da1eafb11
   specs:
-    json-ld (0.0.7)
-      json (>= 1.5.1)
-      rdf (>= 0.3.3)
+    json-ld (0.1.1)
+      json (>= 1.6.5)
+      rdf (>= 0.3.5)
 
 GIT
   remote: git://github.com/gkellogg/linkeddata.git
-  revision: 79e2d7e36585594a2d3c13af1af1e4a9046e22ca
-  branch: 0.4.x
+  revision: c984dc35b7effbaf97494c4b458efdd2694a1d1a
   specs:
-    linkeddata (0.3.2)
-      rdf (>= 0.3.3)
-      rdf-isomorphic (>= 0.3.1)
-      rdf-json (>= 0.3.1)
-      rdf-n3 (>= 0.3.3)
-      rdf-rdfa (>= 0.3.3)
-      rdf-rdfxml (>= 0.3.3)
-      rdf-trix (>= 0.3.1)
+    linkeddata (0.3.5)
+      json-ld (>= 0.1.0)
+      rdf (>= 0.3.5)
+      rdf-isomorphic (>= 0.3.4)
+      rdf-json (>= 0.3.0)
+      rdf-microdata (>= 0.2.3)
+      rdf-n3 (>= 0.3.6)
+      rdf-rdfa (>= 0.3.9)
+      rdf-rdfxml (>= 0.3.5)
+      rdf-trig (>= 0.1.1)
+      rdf-trix (>= 0.3.0)
+      rdf-turtle (>= 0.1.1)
 
 GIT
   remote: git://github.com/gkellogg/rack-linkeddata.git
-  revision: ca319da881c3bbb73d7dfdad0ec3af6aa08059f0
-  branch: 0.4.x
+  revision: eeeac7b3d8a315e1e46d8fd4ccaee8ef5861fe32
   specs:
-    rack-linkeddata (0.3.1)
-      linkeddata (~> 0.3.2)
+    rack-linkeddata (0.3.0)
+      linkeddata (~> 0.3.0)
       rack (>= 1.0)
 
 GIT
-  remote: git://github.com/gkellogg/rdf-json.git
-  revision: 0a4decbe783d601eff5de426a4a8cf218209a132
-  branch: 0.4.x
-  specs:
-    rdf-json (0.3.1)
-      json_pure (>= 1.5.1)
-      rdf (>= 0.3.3)
-
-GIT
   remote: git://github.com/gkellogg/rdf-microdata.git
-  revision: d9f52124cee367bca99affb922380a1ac6cfd61b
+  revision: 657be7cf737dbc706c6c48438dc9ccab47925689
   specs:
-    rdf-microdata (0.2.1)
-      nokogiri (>= 1.4.4)
-      rdf (>= 0.3.3)
-
-GIT
-  remote: git://github.com/gkellogg/rdf-n3.git
-  revision: b12809ce729490a0b1329297ed816a3240e6c19e
-  specs:
-    rdf-n3 (0.3.4.1)
-      rdf (>= 0.3.3)
+    rdf-microdata (0.2.3.1)
+      htmlentities (>= 4.3.0)
+      json (>= 1.6.1)
+      rdf (>= 0.3.4)
+      rdf-xsd (>= 0.3.4)
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: 69a70383b7f093d70bb2cee709a100adfa25ddd6
+  revision: 588d3e4478321995cc5fa19575e755e67bc623b3
   specs:
-    rdf-rdfa (0.3.4.2)
-      addressable (= 2.2.4)
-      facets (>= 2.9.1)
-      facets (>= 2.9.1)
+    rdf-rdfa (0.3.10.1)
+      backports
       haml (>= 3.0.0)
-      haml (>= 3.0.0)
-      nokogiri (>= 1.3.3)
-      nokogiri (>= 1.4.4)
-      rdf
+      htmlentities (>= 4.3.0)
       rdf (>= 0.3.3)
+      rdf-xsd (>= 0.3.5)
 
 GIT
   remote: git://github.com/gkellogg/rdf-rdfxml.git
-  revision: e5c6708c729c4d7428bf9994465d37107746e5eb
+  revision: b0850defb277f3e8d35232d807883f5f80251bc7
   specs:
-    rdf-rdfxml (0.3.4)
-      nokogiri (>= 1.4.4)
-      rdf (>= 0.3.3)
-
-GIT
-  remote: git://github.com/gkellogg/rdf-trix.git
-  revision: 67f84af0657160dd8d1f0d974fd554d8f47ba65a
-  branch: 0.4.x
-  specs:
-    rdf-trix (0.3.1)
-      rdf (>= 0.3.3)
+    rdf-rdfxml (0.3.6)
+      rdf (>= 0.3.4)
+      rdf-xsd (>= 0.3.5)
 
 GIT
   remote: git://github.com/gkellogg/rdf.git
-  revision: 0cb17ac9ac4c36834a7fe37e5adf90de3f7344d2
-  branch: 0.4.x
+  revision: 3180bdf0fa8e42c30dfb9bee5263503b0ed35731
   specs:
-    rdf (0.4.0)
-      addressable (>= 2.2)
+    rdf (0.3.5.2)
+      addressable (>= 2.2.6)
 
 GIT
   remote: git://github.com/gkellogg/sinatra-linkeddata.git
-  revision: a2d77588c12554b2ba4ee00d236cef72aad6bb88
-  branch: 0.4.x
+  revision: e68889b730705527bdb844311e79c76e6655ad1a
   specs:
-    sinatra-linkeddata (0.3.1)
-      rack-linkeddata (>= 0.3.1)
+    sinatra-linkeddata (0.3.0)
+      rack-linkeddata (~> 0.3.0)
       sinatra (>= 1.0)
 
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.2.4)
-    diff-lcs (1.1.2)
+    addressable (2.2.7)
+    backports (2.5.1)
+    diff-lcs (1.1.3)
+    equivalent-xml (0.2.9)
+      nokogiri (>= 1.4.3)
     erubis (2.7.0)
-    facets (2.9.1)
+    facets (2.9.3)
     fastercsv (1.5.4)
-    haml (3.1.2)
-    json (1.5.3)
-    json_pure (1.5.3)
-    nokogiri (1.5.0)
-    rack (1.3.2)
+    haml (3.1.4)
+    htmlentities (4.3.1)
+    json (1.6.6)
+    json_pure (1.6.6)
+    nokogiri (1.5.2)
+    rack (1.4.1)
+    rack-protection (1.2.0)
+      rack
     rdf-isomorphic (0.3.4)
       rdf (>= 0.2.3)
-    rspec (2.6.0)
-      rspec-core (~> 2.6.0)
-      rspec-expectations (~> 2.6.0)
-      rspec-mocks (~> 2.6.0)
-    rspec-core (2.6.4)
-    rspec-expectations (2.6.0)
-      diff-lcs (~> 1.1.2)
-    rspec-mocks (2.6.0)
+    rdf-json (0.3.0)
+      json_pure (>= 1.4.2)
+      rdf (~> 0.3.0)
+    rdf-n3 (0.3.6)
+      rdf (>= 0.3.4)
+    rdf-trig (0.1.1)
+      rdf (>= 0.3.4)
+      rdf-turtle (>= 0.1.1)
+    rdf-trix (0.3.0)
+      rdf (~> 0.3.0)
+    rdf-turtle (0.1.1)
+      rdf (>= 0.3.4)
+    rdf-xsd (0.3.5)
+      nokogiri (>= 1.5.0)
+      rdf (>= 0.3.4)
+    rspec (2.9.0)
+      rspec-core (~> 2.9.0)
+      rspec-expectations (~> 2.9.0)
+      rspec-mocks (~> 2.9.0)
+    rspec-core (2.9.0)
+    rspec-expectations (2.9.1)
+      diff-lcs (~> 1.1.3)
+    rspec-mocks (2.9.0)
     shotgun (0.9)
       rack (>= 1.0)
-    sinatra (1.2.6)
-      rack (~> 1.1)
-      tilt (>= 1.2.2, < 2.0)
-    tilt (1.3.2)
+    sinatra (1.3.2)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
+    tilt (1.3.3)
     wirble (0.1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  addressable (= 2.2.4)
-  erubis (>= 2.6.6)
+  equivalent-xml
+  erubis (>= 2.7.0)
   facets (>= 2.9.1)
   fastercsv
   haml (>= 3.0.0)
-  json (>= 1.5.1)
+  json (>= 1.6.5)
   json-ld!
   linkeddata!
   nokogiri
   rack-linkeddata!
   rdf!
-  rdf-json!
   rdf-microdata!
-  rdf-n3!
   rdf-rdfa!
   rdf-rdfxml!
-  rdf-trix!
   rspec
   shotgun
-  sinatra (>= 1.2.1)
+  sinatra (>= 1.3.2)
   sinatra-linkeddata!
   wirble

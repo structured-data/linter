@@ -5,10 +5,10 @@ require 'rdf/linter/vocab'
 module RDF::Linter
   LINTER_HAML = {
     # Document
-    # Locals: language, title, profile, prefix, base, subjects, extracted
+    # Locals: language, title, prefix, base, subjects, extracted
     # Yield: subjects.each
     :doc => %q(
-      %div{:id => "results-content", :about => base, :profile => profile, :prefix => prefix}
+      %div{:id => "results-content", :about => base, :prefix => prefix}
         - subjects.each do |subject|
           != yield(subject)
       %h2
@@ -24,7 +24,7 @@ module RDF::Linter
 
     # Output for top-level non-leaf resources
     #
-    # Locals: subject, typeof, predicates, rel, element
+    # Locals: subject, typeof, predicates, rel, element, inlist
     # Yield: predicates.each
     :subject => %q(
       - if typeof
@@ -81,21 +81,19 @@ module RDF::Linter
     # :rel Used to create a condenced version of this snippet, when it's included in another.
     :rel => %(
       - if typeof
-        %span{:rel => rel}
-          %span{:about => resource, :typeof => typeof}
-            != yield(:nested)
-          %span.other
-            -#
-              Content not used in snippet generation
-              != yield(:other_nested)
+        %span{:rel => rel, :resource => resource, :typeof => typeof}
+          != yield(:nested)
+        %span.other
+          -#
+            Content not used in snippet generation
+            != yield(:other_nested)
       - else
         %span.other
           -#
             Content not used in snippet generation
-          %div{:rel => rel}
-            %div{:about => resource, :typeof => typeof}
-              - predicates.each do |predicate|
-                != yield(predicate)
+          %div{:rel => rel, :resource => resource}
+            - predicates.each do |predicate|
+              != yield(predicate)
     ),
 
     # Output for single-valued properties
@@ -114,7 +112,7 @@ module RDF::Linter
 
   TABULAR_HAML = {
     # Document
-    # Locals: language, title, profile, prefix, base, subjects, extracted
+    # Locals: language, title, prefix, base, subjects, extracted
     # Yield: subjects.each
     :doc => %q(
       %div{:id => "extracted-content"}
