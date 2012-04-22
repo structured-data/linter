@@ -54,7 +54,7 @@ module RDF::Linter
               %li.track
                 = yield(object)
         - elsif res = objects.map {|object| yield(object)}
-          != res.map(&:rstrip).join(",")
+          != res.map(&:to_s).map(&:rstrip).join(",")
         - elsif ["http://schema.org/image", "http://schema.org/photo"].include?(predicate)
           %img{:property => rel, :src => objects.first.to_s, :alt => ""}
         - elsif object.literal?

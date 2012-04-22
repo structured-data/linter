@@ -43,14 +43,6 @@ describe RDF::All::Reader do
         bench:Proceedings rdfs:subClassOf foaf:Document.
         bench:Inproceedings rdfs:subClassOf foaf:Document.
       )],
-      ["ld", %q(
-        {
-          "@context": "http://example.org/Person",
-          "@subject": "http://greggkellogg.net/foaf#me",
-          "@type": ["Person", "Developer"],
-          "name": "Gregg Kellogg"
-        }
-      )],
       ["rdfa:microdata", %q(
       <html @profile="foo">
         <body>

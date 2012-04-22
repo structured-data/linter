@@ -18,8 +18,8 @@ describe RDF::Linter::Writer do
           v:rating [a v:Rating; v:value "7"; v:best "10"]] .
       ) => {
         %(//span[@class='rating-stars']) => true,
-        %(//*[@property='v:value']/text()) => "7",
-        %(//*[@property='v:best']/text()) => "10",
+        %(//*[@property='v:value']/@content) => "7",
+        %(//*[@property='v:best']/@content) => "10",
       },
       %q(@prefix v: <http://rdf.data-vocabulary.org/#> .
         [ a v:Review-aggregate;
@@ -28,8 +28,8 @@ describe RDF::Linter::Writer do
           v:count "35"] .
       ) => {
         %(//span[@class='rating-stars']) => true,
-        %(//*[@property='v:average']/text()) => "88",
-        %(//*[@property='v:best']/text()) => "100",
+        %(//*[@property='v:average']/@content) => "88",
+        %(//*[@property='v:best']/@content) => "100",
         %(//span[@property='v:count']/text()) => "35",
       },
     }.each do |input, tests|

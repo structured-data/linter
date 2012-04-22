@@ -36,7 +36,13 @@ describe RDF::Linter do
           end
         else
           it "parses, but has no matchers" do
-            pending("Implement matchers")
+            begin
+              pending("Implement matchers")
+            rescue Exception => e
+              fail("#{e.class}: #{e.message}\n" +
+                "#{@debug.join("\n")}\n" +
+                "Backtrace:\n#{e.backtrace.join("\n")}")
+            end
           end
         end
       end
@@ -51,7 +57,13 @@ describe RDF::Linter do
       context File.basename(input) do
         before(:all) do
           @debug = []
-          @subject = parse(:content => File.open(input), :format => :all, :debug => @debug).last
+          @subject = begin
+            parse(:content => File.open(input), :format => :all, :debug => @debug).last
+          rescue Exception => e
+            fail("#{e.class}: #{e.message}\n" +
+              "#{@debug.join("\n")}\n" +
+              "Backtrace:\n#{e.backtrace.join("\n")}")
+          end
         end
         csv = File.join(TEST_DIR, File.basename(input.sub('.html', '.csv')))
         if File.exist?(csv)
@@ -70,7 +82,7 @@ describe RDF::Linter do
           end
         else
           it "parses, but has no matchers" do
-            pending("Implement matchers")
+            @subject.should have_xpath("//div", true, @debug)
           end
         end
       end
