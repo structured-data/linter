@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.email              = 'structured-data-dev@googlegroups.com'
 
   gem.platform           = Gem::Platform::RUBY
-  gem.files              = %w(AUTHORS README.md VERSION) + Dir.glob('lib/**/*.rb')
+  gem.files              = %w(AUTHORS README.markdown VERSION) + Dir.glob('lib/**/*.rb')
   gem.require_paths      = %w(lib)
   gem.has_rdoc           = false
 

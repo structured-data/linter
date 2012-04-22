@@ -63,7 +63,7 @@ module RDF::Util
         io_obj = StringIO.new
         c = Curl::Easy.perform(filename_or_url) do |curl|
           curl.headers['Accept'] = 'text/turtle, application/rdf+xml;q=0.8, text/plain;q=0.4, */*;q=0.1'
-          curl.headers['User-Agent'] = "Ruby-RDF-Distiller/#{RDF::Distiller::VERSION}"
+          curl.headers['User-Agent'] = "Ruby Structured Data Linter/#{RDF::Linter::VERSION}"
           curl.on_body {|body| io_obj.write(body); body.length}
           curl.on_success {|easy, code| io_obj.instance_variable_set(:@status, code || 200)}
           curl.on_failure {|easy, code| io_obj.instance_variable_set(:@status, code || 500)}
