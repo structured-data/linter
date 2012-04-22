@@ -23,15 +23,14 @@ module RDF::Linter
         - if res = yield(object)
           != res
         - elsif predicate == "#{prefix}image"
-          %span{:rel => rel}
-            %img{:src => object.to_s, :alt => ""}
+          %img{:property => rel, :src => object.to_s, :alt => ""}
         - elsif object.literal? && object.datatype == "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
           %div{:property => property, :lang => get_lang(object), :datatype => get_dt_curie(object)}
             != object
         - elsif object.literal?
           %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
         - else
-          %span{:rel => rel, :resource => get_curie(object)}
+          %span{:property => rel, :resource => get_curie(object)}
         ),
         # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
         # When multiple snippets are matched by an object, the one with the highest priority wins.

@@ -7,12 +7,12 @@ Gem::Specification.new do |gem|
 
   gem.name               = 'linter'
   gem.homepage           = 'http://structured-data.org/'
-#  gem.license            = 'Public Domain' if gem.respond_to?(:license=)
+  gem.license            = 'Public Domain' if gem.respond_to?(:license=)
   gem.summary            = 'Extract Microdata and RDFa to provide Rich Snippet preview and analysis of structured data.'
   gem.description        = gem.summary
 
   gem.authors            = ['Gregg Kellogg', 'Stéphane Corlosquet']
-#  gem.email              = 'public-rdf-ruby@w3.org'
+  gem.email              = 'structured-data-dev@googlegroups.com'
 
   gem.platform           = Gem::Platform::RUBY
   gem.files              = %w(AUTHORS README.md VERSION) + Dir.glob('lib/**/*.rb')
@@ -26,6 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'sinatra',            '>= 1.3.2'
   gem.add_runtime_dependency      'erubis',             '>= 2.7.0'
   gem.add_runtime_dependency      'haml',               '>= 3.0.0'
+  gem.add_runtime_dependency      'curb',               '>= 0.8.0'
   gem.add_runtime_dependency      'facets',             '>= 2.9.1'
   gem.add_runtime_dependency      'nokogiri'
   gem.add_runtime_dependency      'json',               '>= 1.6.5'

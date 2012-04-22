@@ -35,12 +35,13 @@ describe RDF::Linter::Writer do
     }.each do |input, tests|
       context input do
         subject {
-          parse(:content => input, :format => :ttl).last
+          @debug = []
+          parse(:content => input, :format => :ttl, :debug => @debug).last
         }
         
         tests.each do |xpath, result|
           it "has path #{xpath.inspect} matching #{result.inspect}" do
-            subject.should have_xpath(xpath.to_s, result)
+            subject.should have_xpath(xpath.to_s, result, @debug)
           end
         end
       end

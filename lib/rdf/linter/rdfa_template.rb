@@ -81,7 +81,7 @@ module RDF::Linter
     # :rel Used to create a condenced version of this snippet, when it's included in another.
     :rel => %(
       - if typeof
-        %span{:rel => rel, :resource => resource, :typeof => typeof}
+        %span{:property => rel, :resource => resource, :typeof => typeof}
           != yield(:nested)
         %span.other
           -#
@@ -91,7 +91,7 @@ module RDF::Linter
         %span.other
           -#
             Content not used in snippet generation
-          %div{:rel => rel, :resource => resource}
+          %div{:property => rel, :resource => resource}
             - predicates.each do |predicate|
               != yield(predicate)
     ),
@@ -106,7 +106,7 @@ module RDF::Linter
       - elsif object.literal?
         %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
       - else
-        %span{:rel => rel, :resource => get_curie(object)}
+        %link{:property => rel, :href => get_curie(object)}
     ),
   }
 

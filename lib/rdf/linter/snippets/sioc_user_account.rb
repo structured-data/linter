@@ -30,15 +30,14 @@ module RDF::Linter
         - if res = yield(object)
           != res
         - elsif ["http://rdfs.org/sioc/ns#avatar", "http://rdfs.org/sioc/ns#thumbnail", "http://rdfs.org/sioc/ns#depiction", "http://rdfs.org/sioc/ns#img"].include?(predicate) 
-          %span{:rel => rel}
-            %img{:src => object.to_s, :alt => ""}
+          %img{:property => rel, :src => object.to_s, :alt => ""}
         - elsif object.literal? && object.datatype == "http://www.w3.org/1999/02/22-rdf-syntax-ns#XMLLiteral"
           %div{:property => property, :lang => get_lang(object), :datatype => get_dt_curie(object)}
             != object
         - elsif object.literal?
           %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
         - else
-          %span{:rel => rel, :resource => get_curie(object)}
+          %link{:property => rel, :href => get_curie(object)}
         ),
         :priority => 20,
       }

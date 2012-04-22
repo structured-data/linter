@@ -1,19 +1,16 @@
 "# First column is Xpath, second column is expected result. May be string, regexp, true, or false",
 /div/@id,results-content
 /div/@prefix,TRUE
-/div/div[@about=''],TRUE
-/div/div[@about='']/@typeof,FALSE
-//*[@about='']//span[@resource='http://books.example.com/works/45U8QJGZSQKDH8N']/@rel,md:item
-//*[@resource='http://books.example.com/works/45U8QJGZSQKDH8N'],TRUE
-//*[@resource='http://books.example.com/works/45U8QJGZSQKDH8N']/@typeof,http://purl.org/vocab/frbr/core#Work
-//*[@resource='http://books.example.com/works/45U8QJGZSQKDH8N']//*[@property='dc:creator']/text(),Wil Wheaton
-//*[@resource='http://books.example.com/works/45U8QJGZSQKDH8N']//*[@property='dc:title']/text(),Just a Geek
-//*[@resource='http://books.example.com/works/45U8QJGZSQKDH8N']//*[@rel='http://purl.org/vocab/frbr/core#realization'],TRUE
-//*[@about='http://books.example.com/products/9780596007683.BOOK'],TRUE
-//*[@about='http://books.example.com/products/9780596802189.EBOOK'],TRUE
-//*[@about='http://books.example.com/products/9780596007683.BOOK'],TRUE
-//*[@about='http://books.example.com/products/9780596007683.BOOK']/@typeof,http://purl.org/vocab/frbr/core#Expression
-//*[@about='http://books.example.com/products/9780596007683.BOOK']//span[@rel='dc:type']/@resource,http://books.example.com/product-types/BOOK
-//*[@about='http://books.example.com/products/9780596802189.EBOOK'],TRUE
-//*[@about='http://books.example.com/products/9780596802189.EBOOK']/@typeof,http://purl.org/vocab/frbr/core#Expression
-//*[@about='http://books.example.com/products/9780596802189.EBOOK']//span[@rel='dc:type']/@resource,http://books.example.com/product-types/EBOOK
+/div/div[@about],/_:/
+//*[@typeof='vmd:Geo']//span[@property='vmd:latitude'],TRUE
+//*[@typeof='vmd:Geo']//span[@property='vmd:longitude'],TRUE
+//*[@typeof='vmd:Address']/h3/a/span[@property='vmd:street-address']/text(),"982 Market St"
+//*[@typeof='vmd:Address']/h3/a/span[@property='vmd:locality']/text(),"San Francisco"
+//*[@typeof='vmd:Address']/h3/a/span[@property='vmd:region']/text(),"CA"
+//*[@typeof='vmd:Organization']/h3/a/span[@property='vmd:name']/text(),"Warfield Theatre"
+//*[@typeof='vmd:Organization']//link[@property='vmd:address'],TRUE
+//*[@typeof='vmd:Organization']/h3/a/span[@property='vmd:name']/text(),"Warfield Theatre"
+//*[@typeof='vmd:Event']/h3/a/span[@property='vmd:summary']/text(),"Spinal Tap"
+//*[@typeof='vmd:Event']//span[@property='vmd:startDate']/text(),TRUE
+//*[@typeof='vmd:Event']//link[@property='vmd:location'],TRUE
+//*[@typeof='vmd:Event']//span[@property='vmd:description']/text(),/After their/

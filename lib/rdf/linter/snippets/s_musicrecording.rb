@@ -23,14 +23,13 @@ module RDF::Linter
         - elsif res = yield(object)
           != res
         - elsif ["http://schema.org/image", "http://schema.org/photo"].include?(predicate)
-          %span{:rel => rel}
-            %img{:src => object.to_s, :alt => ""}
+          %img{:property => rel, :src => object.to_s, :alt => ""}
         - elsif predicate == "http://schema.org/playCount"
           %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= " - Played " + escape_entities(get_value(object)) + ' times'
         - elsif object.literal?
           %ss{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
         - else
-          %span{:rel => rel, :resource => get_curie(object)}
+          %link{:property => rel, :href => get_curie(object)}
       ),
       # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
       # When multiple snippets are matched by an object, the one with the highest priority wins.

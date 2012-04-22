@@ -35,14 +35,13 @@ module RDF::Linter
           - elsif res = yield(object)
             != res
           - elsif ["http://schema.org/image", "http://schema.org/photo"].include?(predicate)
-            %span{:rel => rel}
-              %img{:src => object.to_s, :alt => ""}
+            %img{:property => rel, :src => object.to_s, :alt => ""}
           - elsif predicate == "http://schema.org/playCount"
             %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= " - Played " + escape_entities(get_value(object)) + ' times'
           - elsif object.literal?
             %ss{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
-            %span{:rel => rel, :resource => get_curie(object)}
+            %span{:property => rel, :resource => get_curie(object)}
         ),
         :property_values => %(
           - if predicate == "http://schema.org/aggregateRating"
@@ -55,13 +54,12 @@ module RDF::Linter
           - elsif res = objects.map {|object| yield(object)}
             != res.join(", ")
           - elsif ["http://schema.org/image", "http://schema.org/photo"].include?(predicate)
-            %span{:rel => rel}
-              %img{:src => objects.first.to_s, :alt => ""}
+            %img{:property => rel, :src => objects.first.to_s, :alt => ""}
           - elsif object.literal?
             %span{:property => property}
               = objects.map{|object| escape_entities(get_value(object)) }.join(", ")
           - else
-            %span{:rel => rel}
+            %span{:property => rel}
               = objects.map {|object| escape_entities(object)}
         ),
         # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
