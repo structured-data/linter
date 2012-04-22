@@ -21,6 +21,7 @@ GIT
   revision: 588d3e4478321995cc5fa19575e755e67bc623b3
   specs:
     rdf-rdfa (0.3.10.1)
+      backports
       haml (>= 3.0.0)
       htmlentities (>= 4.3.0)
       rdf (>= 0.3.3)
@@ -52,11 +53,13 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.7)
+    backports (2.5.1)
     curb (0.8.0)
     equivalent-xml (0.2.9)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
     facets (2.9.3)
+    fastercsv (1.5.4)
     haml (3.1.4)
     htmlentities (4.3.1)
     json (1.6.6)
@@ -116,6 +119,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fastercsv
   linter!
   rack-linkeddata!
   rdf-microdata!
