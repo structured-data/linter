@@ -4,7 +4,6 @@ require 'rdf/rdfa'
 require 'rdf/rdfxml'
 require 'rdf/n3'
 require 'rdf/microdata'
-require 'json/ld'
 
 describe RDF::All::Reader do
   # Check format detection

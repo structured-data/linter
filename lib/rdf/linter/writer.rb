@@ -171,7 +171,6 @@ module RDF::Linter
         # Hack to fix incorrect dattime
         case literal.to_s
         when RDF::Literal::Duration::GRAMMAR
-          STDERR.puts("add_value duration(#{literal})")
           get_value(RDF::Literal::Duration.new(literal))
         when RDF::Literal::Date::GRAMMAR
           get_value(RDF::Literal::Date.new(literal))
