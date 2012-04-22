@@ -1,0 +1,3 @@
+[submodule "schema-org-rdf"]
+	path = schema-org-rdf
+	url = git://github.com/scor/schema-org-rdf.git
