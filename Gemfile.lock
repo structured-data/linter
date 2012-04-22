@@ -21,7 +21,6 @@ GIT
   revision: 588d3e4478321995cc5fa19575e755e67bc623b3
   specs:
     rdf-rdfa (0.3.10.1)
-      backports
       haml (>= 3.0.0)
       htmlentities (>= 4.3.0)
       rdf (>= 0.3.3)
@@ -38,7 +37,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (0.0.2)
+    linter (1.0.0)
       curb (>= 0.8.0)
       equivalent-xml
       erubis (>= 2.7.0)
@@ -53,14 +52,11 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.2.7)
-    backports (2.5.1)
     curb (0.8.0)
-    diff-lcs (1.1.3)
     equivalent-xml (0.2.9)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
     facets (2.9.3)
-    fastercsv (1.5.4)
     haml (3.1.4)
     htmlentities (4.3.1)
     json (1.6.6)
@@ -106,14 +102,6 @@ GEM
     rdf-xsd (0.3.5)
       nokogiri (>= 1.5.0)
       rdf (>= 0.3.4)
-    rspec (2.9.0)
-      rspec-core (~> 2.9.0)
-      rspec-expectations (~> 2.9.0)
-      rspec-mocks (~> 2.9.0)
-    rspec-core (2.9.0)
-    rspec-expectations (2.9.1)
-      diff-lcs (~> 1.1.3)
-    rspec-mocks (2.9.0)
     shotgun (0.9)
       rack (>= 1.0)
     sinatra (1.3.2)
@@ -128,13 +116,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fastercsv
   linter!
   rack-linkeddata!
   rdf-microdata!
   rdf-rdfa!
-  rspec
-  shotgun
+  shotgun (>= 0.9)
   sinatra-linkeddata!
   wirble
   yard (>= 0.6.7)

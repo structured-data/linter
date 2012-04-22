@@ -14,8 +14,5 @@ gem 'rack-linkeddata',    :git => "git://github.com/gkellogg/rack-linkeddata.git
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development, :test do
-  gem 'shotgun'
-  gem 'rspec'
   gem 'wirble'
-  gem 'fastercsv', :platforms => :ruby_18
 end
