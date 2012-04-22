@@ -69,8 +69,19 @@ module RDF::Util
           curl.on_failure {|easy, code| io_obj.instance_variable_set(:@status, code || 500)}
         end
         io_obj.rewind
+        content_type, ct_param = c.content_type.to_s.downcase.split(";")
+        io_obj.instance_variable_set(:@content_type, content_type) unless content_type.empty?
+        
+        # Set charset, if available
+        if ct_param.to_s =~ /charset=([^\s]*)$/i
+          io_obj.instance_variable_set(:@charset, $1)
+        end
+
         def io_obj.content_type
           @content_type
+        end
+        def io_obj.charset
+          @charset
         end
         def io_obj.status
           @status
