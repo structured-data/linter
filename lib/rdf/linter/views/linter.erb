@@ -39,7 +39,7 @@
   </fieldset>
   <fieldset class="input">
     <legend>Markup</legend>
-    <textarea class="input" cols="120" id="content" name="content" rows="15"><%= @content %></textarea>
+    <textarea class="input" cols="120" id="content" name="content" rows="15"><%= CGI.escapeHTML(@content.to_s) %></textarea>
     <input name="commit" type="submit" value="Submit" />
   </fieldset>
 </form>
