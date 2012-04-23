@@ -13,6 +13,7 @@ module RDF
     require 'rdf/linter/parser'
     require 'rdf/linter/extensions'
     autoload :VERSION,      'rdf/linter/version'
+    autoload :Schema,       'rdf/linter/schema'
 
     class Application < Sinatra::Base
       APP_DIR = File.expand_path("../..", File.dirname(__FILE__))
@@ -83,16 +84,38 @@ module RDF
 
       get '/examples/schema.org/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
-        dir = nil
-        Find.find(File.join(APP_DIR, "schema-org-rdf")) do |f|
-          dir ||= f if File.directory?(f) && f.match(/#{params[:name]}$/)
-        end
-        raise "Could not find schema example #{params[:name]}" unless dir
         @title = "Schema.org #{params[:name]}"
+        
+        # Find examples using this class
+        examples = {}
+        Dir.glob(File.expand_path("../../../schema-org-rdf/examples/*/*.html", __FILE__)) do |path|
+          ex_num = path.match('\d+')[0].to_i
+          fmt = path =~ /_md_/ ? :md : :rdfa
+          xp = if path =~ /_md_/
+            %(//*[@itemtype="http://schema.org/#{params[:name]}"])
+          else
+            %(//*[@typeof="#{params[:name]}"])
+          end
+
+          File.open(path) do |file|
+            doc = Nokogiri::HTML.parse(file.read)
+            puts "check xpath #{xp}"
+            if doc.at_xpath(xp)
+              puts "found #{path} for #{params[:name]}"
+              examples[ex_num] ||= {}
+              examples[ex_num][fmt] = {
+                :path => RDF::URI(request.url).join("../" + File.basename(path)),
+                :src => doc.at_xpath("/html/body/*").to_s
+              }
+            end
+          end
+        end
+
+        puts "examples for #{@title}: #{examples.inspect}"
         erb :schema_example, :locals => {
           :head => :examples,
           :name => params[:name],
-          :dir => dir,
+          :examples => examples,
           :root => RDF::URI(request.url).join("/").to_s
         }
       end
@@ -104,12 +127,7 @@ module RDF
           file ||= f if File.file?(f) && f.match(/#{params[:file]}$/)
         end
         raise "Could not find schema example #{params[:file]}" unless file
-        case file
-        when /json$/
-          send_file file, :type => :json
-        else
-          erb :schema_file, :locals => {:file => file}, :layout => false
-        end
+        send_file file, :type => :html
       end
 
       # Display list of snippets

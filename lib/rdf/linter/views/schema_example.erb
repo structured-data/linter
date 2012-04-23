@@ -1,41 +1,18 @@
 <section class="example content">
+<% examples.keys.sort.each do |ex_num| -%>
+  <section class="example num">
+  <h1>Example <%= ex_num %></h3>
   <%
-    %w(rdfa microdata jsonld).map(&:to_sym).each do |fmt|
-      next if fmt == :jsonld  # Until parsing works
-      fmt_name = {:rdfa => "RDFa", :microdata => "Microdata", :jsonld => "JSON-LD"}[fmt]
-      file = File.join(dir, "#{name}.#{fmt}")
-      next unless File.file?(file)
-      path = "#{root}examples/schema.org/#{name}.#{fmt}"
-      div = File.read(file)
-      ex_class = fmt == :jsonld ? "js" : "html"
+    [:rdfa, :md].each do |fmt|
+      fmt_name = {:rdfa => "RDFa", :md => "microdata"}[fmt]
+      path = examples[ex_num][fmt][:path]
+      source = examples[ex_num][fmt][:src]
   -%>
   <section>
     <h2><%= fmt_name %> (<a href="<%= path %>" title="Load <%=fmt_name%> example">source</a> <a href="/?url=<%= path %>" title="Show snippet in <%=fmt_name%>">lint</a>)</h2>
-    <pre class="example"><code class="<%=ex_class%>"><%= CGI.escapeHTML(div) %></code></pre>
+      <pre class="example"><code class="html"><%= CGI.escapeHTML(source) %></code></pre>
   </section>
   <% end -%>
-
-  <%
-    Dir.entries(dir).map {|f| $1 if f.match(/(.*)\.(rdfa|md|jsonld)$/)}.compact.uniq.each do |ex|
-      next if ex == name
-  -%>
-  <section class="extended">
-    <h2><%= ex %></h2>
-    <%
-      %w(rdfa microdata jsonld).map(&:to_sym).each do |fmt|
-        next if fmt == :jsonld  # Until parsing works
-        fmt_name = {:rdfa => "RDFa", :microdata => "Microdata", :jsonld => "JSON-LD"}[fmt]
-        file = File.join(dir, "#{ex}.#{fmt}")
-        next unless File.file?(file)
-        path = "#{root}examples/schema.org/#{ex}.#{fmt}"
-        div = File.read(file)
-        ex_class = fmt == :jsonld ? "js" : "html"
-    -%>
-    <section>
-      <h2><%= fmt_name %> (<a href="<%= path %>" title="Load <%=fmt_name%> example">source</a> <a href="/?url=<%= path %>" title="Show snippet in <%=fmt_name%>">lint</a>)</h2>
-      <pre class="example"><code class="<%=ex_class%>"><%= CGI.escapeHTML(div) %></code></pre>
-    </section>
-    <% end -%>
   </section>
-  <% end -%>
+<% end -%>
 </section>

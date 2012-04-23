@@ -35,37 +35,7 @@
       The following examples are taken from Schema.org
       <a target="_blank" href="http://www.schema.org/docs/full.html">documentation examples</a>.
     </p>
-    <%
-      require 'find'
-      schema = {}
-      Find.find(File.join(APP_DIR, "schema-org-rdf", "examples", "Thing")) do |dir|
-        next unless File.directory?(dir)
-
-        path = dir.sub(File.join(APP_DIR, "schema-org-rdf", "examples", ""), '').split('/')
-        depth = path.length - 1
-        
-        type = RDF::URI("http://schema.org/" + path.last)
-        snippet = RDF::Linter::LINTER_HAML.has_key?(type)
-
-        rep = if Dir.entries(dir).any? {|f| f.match(/#{path.last}\.(rdfa|microdata)$/)}
-          %(<a href="/examples/schema.org/#{path.last}/" title="Show #{path.last} markup example">#{path.last}</a>) + ' (' +
-          %w(rdfa microdata).map(&:to_sym).map do |fmt|
-            fmt_name = {:rdfa => "RDFa", :microdata => "MD", :jsonld => "JSON-LD"}[fmt]
-            file = File.join(dir, "#{path.last}.#{fmt}")
-            next unless File.file?(file)
-            sn_path = "#{root}examples/schema.org/#{path.last}.#{fmt}"
-             %(<a href="/?url=#{sn_path}" title="Show #{path.last} snippet in #{fmt_name}">#{fmt_name}</a>)
-          end.compact.join(' ') +
-          ')' +
-          (snippet ? "" : %(<a href="#no_snip" title="snippets not currently generated for this type">*</a>))
-        else
-          path.last
-        end
-    -%>
-      <div class="example d<%= depth %>">
-        <%= "&nbsp;&nbsp;|&nbsp;&nbsp;" * depth + rep %>
-      </div>
-    <% end -%>
+    <%= partial "schema_examples", :locals => {:root => root} %>
     <div><a id='no_snip'>*</a>Indicates snippets not currently generated for this type</a></div>
   </section>
 
