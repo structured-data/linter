@@ -5,6 +5,7 @@
   <%
     [:rdfa, :md].each do |fmt|
       fmt_name = {:rdfa => "RDFa", :md => "microdata"}[fmt]
+      next unless examples[ex_num].has_key?(fmt)
       path = examples[ex_num][fmt][:path]
       source = examples[ex_num][fmt][:src]
   -%>
