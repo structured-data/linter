@@ -126,8 +126,12 @@ module RDF
         Find.find(File.join(APP_DIR, "schema-org-rdf")) do |f|
           file ||= f if File.file?(f) && f.match(/#{params[:file]}$/)
         end
-        raise "Could not find schema example #{params[:file]}" unless file
-        send_file file, :type => :html
+        if file
+          send_file file, :type => :html
+        else
+          status 401
+          body "Could not find schema example #{params[:file]}"
+        end
       end
 
       # Display list of snippets
