@@ -55,7 +55,7 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 * [JSON::LD](http://rubygems.org/gems/json-ld) (>= 0.0.4)
 
 ## AUTHORS
-* [Gregg Kellogg](http://github.com/gkellogg) - <http://kellogg-assoc.com/>
+* [Gregg Kellogg](http://github.com/ruby-rdf) - <http://kellogg-assoc.com/>
 * Stéphane Corlosquet
 
 ## Setup notes

@@ -7,33 +7,33 @@ GIT
       rack (>= 1.0)
 
 GIT
-  remote: git://github.com/gkellogg/rdf-microdata.git
-  revision: 657be7cf737dbc706c6c48438dc9ccab47925689
-  specs:
-    rdf-microdata (0.2.3.1)
-      htmlentities (>= 4.3.0)
-      json (>= 1.6.1)
-      rdf (>= 0.3.4)
-      rdf-xsd (>= 0.3.4)
-
-GIT
-  remote: git://github.com/gkellogg/rdf-rdfa.git
-  revision: 588d3e4478321995cc5fa19575e755e67bc623b3
-  specs:
-    rdf-rdfa (0.3.10.1)
-      backports
-      haml (>= 3.0.0)
-      htmlentities (>= 4.3.0)
-      rdf (>= 0.3.3)
-      rdf-xsd (>= 0.3.5)
-
-GIT
   remote: git://github.com/gkellogg/sinatra-linkeddata.git
   revision: 8cb7de2119c1ed056f1632a874842cd65a31b6bf
   specs:
     sinatra-linkeddata (0.3.1)
       rack-linkeddata (>= 0.3.1)
       sinatra (>= 1.0)
+
+GIT
+  remote: git://github.com/ruby-rdf/rdf-microdata.git
+  revision: af095c544ef43aa27bf3e0c7b46bdbc7e497fd77
+  specs:
+    rdf-microdata (0.2.4)
+      htmlentities (>= 4.3.0)
+      json (>= 1.6.1)
+      rdf (>= 0.3.4)
+      rdf-xsd (>= 0.3.4)
+
+GIT
+  remote: git://github.com/ruby-rdf/rdf-rdfa.git
+  revision: 28e5441bb47add903c1a563da7a6391d299dd4da
+  specs:
+    rdf-rdfa (0.3.12)
+      backports
+      haml (>= 3.0.0)
+      htmlentities (>= 4.3.0)
+      rdf (>= 0.3.3)
+      rdf-xsd (>= 0.3.5)
 
 PATH
   remote: .
@@ -52,21 +52,21 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    addressable (2.2.7)
-    backports (2.5.1)
+    addressable (2.2.8)
+    backports (2.5.3)
     curb (0.8.0)
     equivalent-xml (0.2.9)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
     facets (2.9.3)
     fastercsv (1.5.4)
-    haml (3.1.4)
+    haml (3.1.5)
     htmlentities (4.3.1)
-    json (1.6.6)
+    json (1.7.3)
     json-ld (0.1.2)
       json (>= 1.6.5)
       rdf (>= 0.3.5)
-    json_pure (1.6.6)
+    json_pure (1.7.3)
     linkeddata (0.3.5)
       json-ld (>= 0.1.0)
       rdf (>= 0.3.5)
@@ -90,19 +90,19 @@ GEM
     rdf-json (0.3.0)
       json_pure (>= 1.4.2)
       rdf (~> 0.3.0)
-    rdf-n3 (0.3.6)
+    rdf-n3 (0.3.7)
       rdf (>= 0.3.4)
-    rdf-rdfxml (0.3.6)
+    rdf-rdfxml (0.3.7)
       rdf (>= 0.3.4)
       rdf-xsd (>= 0.3.5)
-    rdf-trig (0.1.1)
+    rdf-trig (0.1.3)
       rdf (>= 0.3.4)
       rdf-turtle (>= 0.1.1)
     rdf-trix (0.3.0)
       rdf (~> 0.3.0)
-    rdf-turtle (0.1.1)
+    rdf-turtle (0.1.2)
       rdf (>= 0.3.4)
-    rdf-xsd (0.3.5)
+    rdf-xsd (0.3.6)
       nokogiri (>= 1.5.0)
       rdf (>= 0.3.4)
     shotgun (0.9)
@@ -113,7 +113,7 @@ GEM
       tilt (~> 1.3, >= 1.3.3)
     tilt (1.3.3)
     wirble (0.1.3)
-    yard (0.7.5)
+    yard (0.8.1)
 
 PLATFORMS
   ruby

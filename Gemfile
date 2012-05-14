@@ -4,8 +4,8 @@ source 'http://rubygems.org'
 gemspec :name => ""
 
 # Include non-released gems first
-gem 'rdf-microdata',    :git => "git://github.com/gkellogg/rdf-microdata.git", :require => 'rdf/microdata'
-gem 'rdf-rdfa',         :git => "git://github.com/gkellogg/rdf-rdfa.git", :require => 'rdf/rdfa'
+gem 'rdf-microdata',    :git => "git://github.com/ruby-rdf/rdf-microdata.git", :require => 'rdf/microdata'
+gem 'rdf-rdfa',         :git => "git://github.com/ruby-rdf/rdf-rdfa.git", :require => 'rdf/rdfa'
 gem 'sinatra-linkeddata', :git => "git://github.com/gkellogg/sinatra-linkeddata.git", :require => "sinatra/linkeddata"
 gem 'rack-linkeddata',    :git => "git://github.com/gkellogg/rack-linkeddata.git", :require => "rack/linkeddata"
 
