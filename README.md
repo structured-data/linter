@@ -39,20 +39,20 @@ This application is represented as a [Sinatra][] application implemented in [Rub
       test_data           -- Test Data
 
 ## Dependencies
-* [Haml](http://rubygems.org/gems/haml) (>= 3.0.0)
-* [Erubis](http://rubygems.org/gems/erubis) (>= 2.6.6)
-* [RDF.rb](http://rubygems.org/gems/rdf) (>= 0.3.3)
-* [Linked Data](http://rubygems.org/gems/linkeddata) (>= 0.3.2)
-* [Linked Data for Rack](http://rubygems.org/gems/rack-linkeddata) (>= 0.3.1)
-* [Linked Data for Sinatra](http://rubygems.org/gems/sinatra-linkeddata) (>= 0.3.1)
-* [Nokogiri](http://rubygems.org/gems/nokogiri) (>= 1.4.4)
-* [RDF::JSON](http://rubygems.org/gems/rdf-json) (>= 0.3.1)
-* [RDF::Microdata](http://rubygems.org/gems/rdf-microdata) (>= 0.1.0)
-* [RDF::N3](http://rubygems.org/gems/rdf-n3) (>= 0.3.3)
-* [RDF::RDFa](http://rubygems.org/gems/rdf-rdfa) (>= 0.3.3)
-* [RDF::RDFXML](http://rubygems.org/gems/rdf-rdfxml) (>= 0.3.3)
-* [RDF::TriX](http://rubygems.org/gems/rdf-trix) (>= 0.3.1)
-* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 0.0.4)
+* [Haml](http://rubygems.org/gems/haml) (>= 4.0.0)
+* [Erubis](http://rubygems.org/gems/erubis) (>= 2.7)
+* [RDF.rb](http://rubygems.org/gems/rdf) (>= 1.0)
+* [Linked Data](http://rubygems.org/gems/linkeddata) (>= 1.0)
+* [Linked Data for Rack](http://rubygems.org/gems/rack-linkeddata) (>= 1.0)
+* [Linked Data for Sinatra](http://rubygems.org/gems/sinatra-linkeddata) (>= 1.0)
+* [Nokogiri](http://rubygems.org/gems/nokogiri) (>= 1.5.9)
+* [RDF::JSON](http://rubygems.org/gems/rdf-json) (>= 1.0)
+* [RDF::Microdata](http://rubygems.org/gems/rdf-microdata) (>= 1.0)
+* [RDF::N3](http://rubygems.org/gems/rdf-n3) (>= 1.0)
+* [RDF::RDFa](http://rubygems.org/gems/rdf-rdfa) (>= 1.0)
+* [RDF::RDFXML](http://rubygems.org/gems/rdf-rdfxml) (>= 1.0)
+* [RDF::TriX](http://rubygems.org/gems/rdf-trix) (>= 1.0)
+* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 0.9)
 
 ## AUTHORS
 * [Gregg Kellogg](http://github.com/ruby-rdf) - <http://kellogg-assoc.com/>

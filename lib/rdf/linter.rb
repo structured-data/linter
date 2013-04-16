@@ -24,7 +24,9 @@ module RDF
       #register Sinatra::LinkedData
       helpers Sinatra::Partials
       #use Rack::LinkedData::ContentNegotiation, :default => "text/html"
+      set :root, APP_DIR
       set :views, ::File.expand_path('../linter/views',  __FILE__)
+      set :app_name, "Structured Data Linter"
 
       before do
         puts "[#{request.path_info}], #{params.inspect}"
