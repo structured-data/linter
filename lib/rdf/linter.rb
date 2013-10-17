@@ -99,7 +99,7 @@ module RDF
             %(//*[@typeof="#{params[:name]}"])
           end
 
-          File.open(path) do |file|
+          File.open(path, "r", 0, :encoding => Encoding::UTF_8) do |file|
             doc = Nokogiri::HTML.parse(file.read)
             puts "check xpath #{xp}"
             if doc.at_xpath(xp)

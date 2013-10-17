@@ -1,4 +1,4 @@
 <section class="snippet-definition content">
   <h2>Snippet definition for <%= name %></h2>
-  <pre class="example"><code class="ruby"><%= CGI.escapeHTML(File.read(File.join(SNIPPET_DIR, name))) %></code></pre>
+  <pre class="example"><code class="ruby"><%= CGI.escapeHTML(File.read(File.join(SNIPPET_DIR, name)).force_encoding(Encoding::UTF_8)) %></code></pre>
 </section>

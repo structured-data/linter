@@ -5,9 +5,9 @@
       next unless File.file?(file)
       path = "#{root}examples/good-relations/#{name}.#{fmt}"
       div = if fmt == :ttl
-        File.read(file)
+        File.read(file).force_encoding(Encoding::UTF_8)
       else
-        doc = Nokogiri::HTML.parse(File.open(file))
+        doc = Nokogiri::HTML.parse(File.open(file, "r", 0, :encoding => Encoding::UTF_8))
         doc.at_css("div").to_html
       end
       ex_class = fmt == :ttl ? "n3" : "html"
