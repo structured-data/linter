@@ -62,7 +62,7 @@ module RDF::Linter
       puts @error  # to log
       ["text/html", @error]
     rescue
-      raise unless settings.environment == :production
+      raise unless self.respond_to?(:settings) && settings.environment == :production
       @error = "#{$!.class}: #{$!.message}"
       puts @error  # to log
       ["text/html", @error]
@@ -71,29 +71,28 @@ module RDF::Linter
     # Use vocabulary definitions to lint contents of the graph for known vocabularies
     def lint(graph)
       messages = {}
+
+      # Check for defined classes in known vocabularies
       graph.query(:predicate => RDF.type) do |st|
         cls = st.object.to_s
-        pfx, uri = nil, nil
-        VOCAB_DEFS["Vocabularies"].each do |k, v|
-          pfx, uri = k, v if st.object.starts_with?(v)
-        end
-        if pfx && !VOCAB_DEFS["Classes"].has_key?(cls)
-          # No type definition found for vocabulary
-          messages[:class] ||= {}
-          messages[:class][cls.sub(uri, "#{pfx}:")] = "No class definition found"
+        uri, defn = VOCAB_DEFS["Classes"].detect {|k,v| k == cls}
+        unless defn
+          # No type definition found for class
+          pfx, uri = VOCAB_DEFS["Vocabularies"].detect {|k, v| cls.start_with?(v)}
+          next unless pfx
+          (messages[:class] ||= {})[cls.sub(uri, "#{pfx}:")] = "No class definition found"
         end
       end
 
+      # Check for defined predicates in known vocabularies
       graph.statements.map(&:predicate).uniq do |pred|
         prop = pred.to_s
-        pfx, uri = nil, nil
-        VOCAB_DEFS["Vocabularies"].each do |k, v|
-          pfx, uri = k, v if prop.index(v) == 0
-        end
-        if pfx && !VOCAB_DEFS["Properties"].has_key?(prop)
-          # No type definition found for vocabulary
-          messages[:property] ||= {}
-          messages[:property][prop.sub(uri, "#{pfx}:")] = "No property definition found"
+        uri, defn = VOCAB_DEFS["Properties"].detect {|k,v| k == prop}
+        unless defn
+          # No type definition found for class
+          pfx, uri = VOCAB_DEFS["Vocabularies"].detect {|k, v| prop.start_with?(v)}
+          next unless pfx
+          (messages[:property] ||= {})[prop.sub(uri, "#{pfx}:")] = "No property definition found"
         end
       end
       
