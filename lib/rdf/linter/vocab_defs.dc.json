@@ -3,86 +3,365 @@
     "dc": "http://purl.org/dc/terms/"
   },
   "Classes": {
-    "http://purl.org/dc/terms/type": { "vocab": "dc" },
-    "http://purl.org/dc/terms/Agent": { "vocab": "dc" },
-    "http://purl.org/dc/terms/AgentClass": { "vocab": "dc" },
-    "http://purl.org/dc/terms/AgentClass": { "vocab": "dc" },
-    "http://purl.org/dc/terms/BibliographicResource": { "vocab": "dc" },
-    "http://purl.org/dc/terms/FileFormat": { "vocab": "dc" },
-    "http://purl.org/dc/terms/Frequency": { "vocab": "dc" },
-    "http://purl.org/dc/terms/Jurisdiction": { "vocab": "dc" },
-    "http://purl.org/dc/terms/LicenseDocument": { "vocab": "dc" },
-    "http://purl.org/dc/terms/LinguisticSystem": { "vocab": "dc" },
-    "http://purl.org/dc/terms/Location": { "vocab": "dc" },
-    "http://purl.org/dc/terms/LocationPeriodOrJurisdiction": { "vocab": "dc" },
-    "http://purl.org/dc/terms/MediaType": { "vocab": "dc" },
-    "http://purl.org/dc/terms/MediaTypeOrExtent": { "vocab": "dc" },
-    "http://purl.org/dc/terms/MethodOfInstruction": { "vocab": "dc" },
-    "http://purl.org/dc/terms/MethodOfAccrual": { "vocab": "dc" },
-    "http://purl.org/dc/terms/PeriodOfTime": { "vocab": "dc" },
-    "http://purl.org/dc/terms/PhysicalMedium": { "vocab": "dc" },
-    "http://purl.org/dc/terms/PhysicalResource": { "vocab": "dc" },
-    "http://purl.org/dc/terms/Policy": { "vocab": "dc" },
-    "http://purl.org/dc/terms/ProvenanceStatement": { "vocab": "dc" },
-    "http://purl.org/dc/terms/RightsStatement": { "vocab": "dc" },
-    "http://purl.org/dc/terms/SizeOrDuration": { "vocab": "dc" },
-    "http://purl.org/dc/terms/Standard": { "vocab": "dc" }
+    "http://purl.org/dc/terms/Agent": {
+      "vocab": "dc",
+      "label": "Agent"
+    },
+    "http://purl.org/dc/terms/AgentClass": {
+      "vocab": "dc",
+      "label": "Agent Class"
+    },
+    "http://purl.org/dc/terms/BibliographicResource": {
+      "vocab": "dc",
+      "label": "Bibliographic Resource"
+    },
+    "http://purl.org/dc/terms/FileFormat": {
+      "vocab": "dc",
+      "label": "File Format"
+    },
+    "http://purl.org/dc/terms/Frequency": {
+      "vocab": "dc",
+      "label": "Frequency"
+    },
+    "http://purl.org/dc/terms/Jurisdiction": {
+      "vocab": "dc",
+      "label": "Jurisdiction"
+    },
+    "http://purl.org/dc/terms/LicenseDocument": {
+      "vocab": "dc",
+      "label": "License Document"
+    },
+    "http://purl.org/dc/terms/LinguisticSystem": {
+      "vocab": "dc",
+      "label": "Linguistic System"
+    },
+    "http://purl.org/dc/terms/Location": {
+      "vocab": "dc",
+      "label": "Location"
+    },
+    "http://purl.org/dc/terms/LocationPeriodOrJurisdiction": {
+      "vocab": "dc",
+      "label": "Location, Period, or Jurisdiction"
+    },
+    "http://purl.org/dc/terms/MediaType": {
+      "vocab": "dc",
+      "label": "Media Type"
+    },
+    "http://purl.org/dc/terms/MediaTypeOrExtent": {
+      "vocab": "dc",
+      "label": "Media Type or Extent"
+    },
+    "http://purl.org/dc/terms/MethodOfAccrual": {
+      "vocab": "dc",
+      "label": "Method of Accrual"
+    },
+    "http://purl.org/dc/terms/MethodOfInstruction": {
+      "vocab": "dc",
+      "label": "Method of Instruction"
+    },
+    "http://purl.org/dc/terms/PeriodOfTime": {
+      "vocab": "dc",
+      "label": "Period of Time"
+    },
+    "http://purl.org/dc/terms/PhysicalMedium": {
+      "vocab": "dc",
+      "label": "Physical Medium"
+    },
+    "http://purl.org/dc/terms/PhysicalResource": {
+      "vocab": "dc",
+      "label": "Physical Resource"
+    },
+    "http://purl.org/dc/terms/Policy": {
+      "vocab": "dc",
+      "label": "Policy"
+    },
+    "http://purl.org/dc/terms/ProvenanceStatement": {
+      "vocab": "dc",
+      "label": "Provenance Statement"
+    },
+    "http://purl.org/dc/terms/RightsStatement": {
+      "vocab": "dc",
+      "label": "Rights Statement"
+    },
+    "http://purl.org/dc/terms/SizeOrDuration": {
+      "vocab": "dc",
+      "label": "Size or Duration"
+    },
+    "http://purl.org/dc/terms/Standard": {
+      "vocab": "dc",
+      "label": "Standard"
+    }
   },
   "Properties": {
-    "http://purl.org/dc/terms/title": { "vocab": "dc" },
-    "http://purl.org/dc/terms/creator": { "vocab": "dc" },
-    "http://purl.org/dc/terms/subject": { "vocab": "dc" },
-    "http://purl.org/dc/terms/description": { "vocab": "dc" },
-    "http://purl.org/dc/terms/publisher": { "vocab": "dc" },
-    "http://purl.org/dc/terms/contributor": { "vocab": "dc" },
-    "http://purl.org/dc/terms/date": { "vocab": "dc" },
-    "http://purl.org/dc/terms/type": { "vocab": "dc" },
-    "http://purl.org/dc/terms/format": { "vocab": "dc" },
-    "http://purl.org/dc/terms/identifier": { "vocab": "dc" },
-    "http://purl.org/dc/terms/source": { "vocab": "dc" },
-    "http://purl.org/dc/terms/language": { "vocab": "dc" },
-    "http://purl.org/dc/terms/relation": { "vocab": "dc" },
-    "http://purl.org/dc/terms/coverage": { "vocab": "dc" },
-    "http://purl.org/dc/terms/rights": { "vocab": "dc" },
-    "http://purl.org/dc/terms/audience": { "vocab": "dc" },
-    "http://purl.org/dc/terms/alternative": { "vocab": "dc" },
-    "http://purl.org/dc/terms/tableOfContents": { "vocab": "dc" },
-    "http://purl.org/dc/terms/abstract": { "vocab": "dc" },
-    "http://purl.org/dc/terms/created": { "vocab": "dc" },
-    "http://purl.org/dc/terms/valid": { "vocab": "dc" },
-    "http://purl.org/dc/terms/available": { "vocab": "dc" },
-    "http://purl.org/dc/terms/issued": { "vocab": "dc" },
-    "http://purl.org/dc/terms/modified": { "vocab": "dc" },
-    "http://purl.org/dc/terms/extent": { "vocab": "dc" },
-    "http://purl.org/dc/terms/medium": { "vocab": "dc" },
-    "http://purl.org/dc/terms/isVersionOf": { "vocab": "dc" },
-    "http://purl.org/dc/terms/hasVersion": { "vocab": "dc" },
-    "http://purl.org/dc/terms/isReplacedBy": { "vocab": "dc" },
-    "http://purl.org/dc/terms/replaces": { "vocab": "dc" },
-    "http://purl.org/dc/terms/isRequiredBy": { "vocab": "dc" },
-    "http://purl.org/dc/terms/requires": { "vocab": "dc" },
-    "http://purl.org/dc/terms/isPartOf": { "vocab": "dc" },
-    "http://purl.org/dc/terms/hasPart": { "vocab": "dc" },
-    "http://purl.org/dc/terms/isReferencedBy": { "vocab": "dc" },
-    "http://purl.org/dc/terms/references": { "vocab": "dc" },
-    "http://purl.org/dc/terms/isFormatOf": { "vocab": "dc" },
-    "http://purl.org/dc/terms/hasFormat": { "vocab": "dc" },
-    "http://purl.org/dc/terms/conformsTo": { "vocab": "dc" },
-    "http://purl.org/dc/terms/spatial": { "vocab": "dc" },
-    "http://purl.org/dc/terms/temporal": { "vocab": "dc" },
-    "http://purl.org/dc/terms/mediator": { "vocab": "dc" },
-    "http://purl.org/dc/terms/dateAccepted": { "vocab": "dc" },
-    "http://purl.org/dc/terms/dateCopyrighted": { "vocab": "dc" },
-    "http://purl.org/dc/terms/dateSubmitted": { "vocab": "dc" },
-    "http://purl.org/dc/terms/educationLevel": { "vocab": "dc" },
-    "http://purl.org/dc/terms/accessRights": { "vocab": "dc" },
-    "http://purl.org/dc/terms/bibliographicCitation": { "vocab": "dc" },
-    "http://purl.org/dc/terms/license": { "vocab": "dc" },
-    "http://purl.org/dc/terms/rightsHolder": { "vocab": "dc" },
-    "http://purl.org/dc/terms/provenance": { "vocab": "dc" },
-    "http://purl.org/dc/terms/instructionalMethod": { "vocab": "dc" },
-    "http://purl.org/dc/terms/accrualMethod": { "vocab": "dc" },
-    "http://purl.org/dc/terms/accrualPeriodicity": { "vocab": "dc" },
-    "http://purl.org/dc/terms/accrualPolicy": { "vocab": "dc" }
+    "http://purl.org/dc/terms/abstract": {
+      "vocab": "dc",
+      "label": "Abstract"
+    },
+    "http://purl.org/dc/terms/accessRights": {
+      "vocab": "dc",
+      "label": "Access Rights"
+    },
+    "http://purl.org/dc/terms/accrualMethod": {
+      "vocab": "dc",
+      "label": "Accrual Method"
+    },
+    "http://purl.org/dc/terms/accrualPeriodicity": {
+      "vocab": "dc",
+      "label": "Accrual Periodicity"
+    },
+    "http://purl.org/dc/terms/accrualPolicy": {
+      "vocab": "dc",
+      "label": "Accrual Policy"
+    },
+    "http://purl.org/dc/terms/alternative": {
+      "vocab": "dc",
+      "label": "Alternative Title"
+    },
+    "http://purl.org/dc/terms/audience": {
+      "vocab": "dc",
+      "label": "Audience"
+    },
+    "http://purl.org/dc/terms/available": {
+      "vocab": "dc",
+      "label": "Date Available"
+    },
+    "http://purl.org/dc/terms/bibliographicCitation": {
+      "vocab": "dc",
+      "label": "Bibliographic Citation"
+    },
+    "http://purl.org/dc/terms/conformsTo": {
+      "vocab": "dc",
+      "label": "Conforms To"
+    },
+    "http://purl.org/dc/terms/contributor": {
+      "vocab": "dc",
+      "label": "Contributor"
+    },
+    "http://purl.org/dc/terms/coverage": {
+      "vocab": "dc",
+      "label": "Coverage"
+    },
+    "http://purl.org/dc/terms/created": {
+      "vocab": "dc",
+      "label": "Date Created"
+    },
+    "http://purl.org/dc/terms/creator": {
+      "vocab": "dc",
+      "label": "Creator"
+    },
+    "http://purl.org/dc/terms/date": {
+      "vocab": "dc",
+      "label": "Date"
+    },
+    "http://purl.org/dc/terms/dateAccepted": {
+      "vocab": "dc",
+      "label": "Date Accepted"
+    },
+    "http://purl.org/dc/terms/dateCopyrighted": {
+      "vocab": "dc",
+      "label": "Date Copyrighted"
+    },
+    "http://purl.org/dc/terms/dateSubmitted": {
+      "vocab": "dc",
+      "label": "Date Submitted"
+    },
+    "http://purl.org/dc/terms/description": {
+      "vocab": "dc",
+      "label": "Description"
+    },
+    "http://purl.org/dc/terms/educationLevel": {
+      "vocab": "dc",
+      "label": "Audience Education Level"
+    },
+    "http://purl.org/dc/terms/extent": {
+      "vocab": "dc",
+      "label": "Extent"
+    },
+    "http://purl.org/dc/terms/format": {
+      "vocab": "dc",
+      "label": "Format"
+    },
+    "http://purl.org/dc/terms/hasFormat": {
+      "vocab": "dc",
+      "label": "Has Format"
+    },
+    "http://purl.org/dc/terms/hasPart": {
+      "vocab": "dc",
+      "label": "Has Part"
+    },
+    "http://purl.org/dc/terms/hasVersion": {
+      "vocab": "dc",
+      "label": "Has Version"
+    },
+    "http://purl.org/dc/terms/identifier": {
+      "vocab": "dc",
+      "label": "Identifier"
+    },
+    "http://purl.org/dc/terms/instructionalMethod": {
+      "vocab": "dc",
+      "label": "Instructional Method"
+    },
+    "http://purl.org/dc/terms/isFormatOf": {
+      "vocab": "dc",
+      "label": "Is Format Of"
+    },
+    "http://purl.org/dc/terms/isPartOf": {
+      "vocab": "dc",
+      "label": "Is Part Of"
+    },
+    "http://purl.org/dc/terms/isReferencedBy": {
+      "vocab": "dc",
+      "label": "Is Referenced By"
+    },
+    "http://purl.org/dc/terms/isReplacedBy": {
+      "vocab": "dc",
+      "label": "Is Replaced By"
+    },
+    "http://purl.org/dc/terms/isRequiredBy": {
+      "vocab": "dc",
+      "label": "Is Required By"
+    },
+    "http://purl.org/dc/terms/isVersionOf": {
+      "vocab": "dc",
+      "label": "Is Version Of"
+    },
+    "http://purl.org/dc/terms/issued": {
+      "vocab": "dc",
+      "label": "Date Issued"
+    },
+    "http://purl.org/dc/terms/language": {
+      "vocab": "dc",
+      "label": "Language"
+    },
+    "http://purl.org/dc/terms/license": {
+      "vocab": "dc",
+      "label": "License"
+    },
+    "http://purl.org/dc/terms/mediator": {
+      "vocab": "dc",
+      "label": "Mediator"
+    },
+    "http://purl.org/dc/terms/medium": {
+      "vocab": "dc",
+      "label": "Medium"
+    },
+    "http://purl.org/dc/terms/modified": {
+      "vocab": "dc",
+      "label": "Date Modified"
+    },
+    "http://purl.org/dc/terms/provenance": {
+      "vocab": "dc",
+      "label": "Provenance"
+    },
+    "http://purl.org/dc/terms/publisher": {
+      "vocab": "dc",
+      "label": "Publisher"
+    },
+    "http://purl.org/dc/terms/references": {
+      "vocab": "dc",
+      "label": "References"
+    },
+    "http://purl.org/dc/terms/relation": {
+      "vocab": "dc",
+      "label": "Relation"
+    },
+    "http://purl.org/dc/terms/replaces": {
+      "vocab": "dc",
+      "label": "Replaces"
+    },
+    "http://purl.org/dc/terms/requires": {
+      "vocab": "dc",
+      "label": "Requires"
+    },
+    "http://purl.org/dc/terms/rights": {
+      "vocab": "dc",
+      "label": "Rights"
+    },
+    "http://purl.org/dc/terms/rightsHolder": {
+      "vocab": "dc",
+      "label": "Rights Holder"
+    },
+    "http://purl.org/dc/terms/source": {
+      "vocab": "dc",
+      "label": "Source"
+    },
+    "http://purl.org/dc/terms/spatial": {
+      "vocab": "dc",
+      "label": "Spatial Coverage"
+    },
+    "http://purl.org/dc/terms/subject": {
+      "vocab": "dc",
+      "label": "Subject"
+    },
+    "http://purl.org/dc/terms/tableOfContents": {
+      "vocab": "dc",
+      "label": "Table Of Contents"
+    },
+    "http://purl.org/dc/terms/temporal": {
+      "vocab": "dc",
+      "label": "Temporal Coverage"
+    },
+    "http://purl.org/dc/terms/title": {
+      "vocab": "dc",
+      "label": "Title"
+    },
+    "http://purl.org/dc/terms/type": {
+      "vocab": "dc",
+      "label": "Type"
+    },
+    "http://purl.org/dc/terms/valid": {
+      "vocab": "dc",
+      "label": "Date Valid"
+    }
+  },
+  "Datatypes": {
+    "http://purl.org/dc/terms/Box": {
+      "vocab": "dc",
+      "label": "DCMI Box"
+    },
+    "http://purl.org/dc/terms/ISO3166": {
+      "vocab": "dc",
+      "label": "ISO 3166"
+    },
+    "http://purl.org/dc/terms/ISO639-2": {
+      "vocab": "dc",
+      "label": "ISO 639-2"
+    },
+    "http://purl.org/dc/terms/ISO639-3": {
+      "vocab": "dc",
+      "label": "ISO 639-3"
+    },
+    "http://purl.org/dc/terms/Period": {
+      "vocab": "dc",
+      "label": "DCMI Period"
+    },
+    "http://purl.org/dc/terms/Point": {
+      "vocab": "dc",
+      "label": "DCMI Point"
+    },
+    "http://purl.org/dc/terms/RFC1766": {
+      "vocab": "dc",
+      "label": "RFC 1766"
+    },
+    "http://purl.org/dc/terms/RFC3066": {
+      "vocab": "dc",
+      "label": "RFC 3066"
+    },
+    "http://purl.org/dc/terms/RFC4646": {
+      "vocab": "dc",
+      "label": "RFC 4646"
+    },
+    "http://purl.org/dc/terms/RFC5646": {
+      "vocab": "dc",
+      "label": "RFC 5646"
+    },
+    "http://purl.org/dc/terms/URI": {
+      "vocab": "dc",
+      "label": "URI"
+    },
+    "http://purl.org/dc/terms/W3CDTF": {
+      "vocab": "dc",
+      "label": "W3C-DTF"
+    }
   }
 }

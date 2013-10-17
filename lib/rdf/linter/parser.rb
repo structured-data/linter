@@ -100,6 +100,63 @@ module RDF::Linter
       messages
     end
     
+    # Create JSON representation of classes and properties in a vocabulary
+    # If the vocabulary definition is not located at `url` set it in `location`.
+    #
+    # Extracts class/property IRIs and labels for vocabulary terms from
+    # OWL/RDFS description of vocabulary
+    #
+    # @param [RDF::URL] url
+    # @param [String] prefix
+    # @param [Hash{Symbol => Object}] options
+    # @option options [RDF::URL] :location (nil)
+    # @option options [IO] :io (STDOUT)
+    # @option options [Symbol] :format
+    def self.vocab_def(url, prefix, options = {})
+      io = options[:io] || STDOUT
+      location = options[:location] || url
+      require 'json'
+      require 'sparql'
+      defs = {
+        "Vocabularies" => {prefix => url},
+        "Classes" => {},
+        "Properties" => {},
+        "Datatypes" => {},
+      }
+      repo = RDF::Repository.load(location, options)
+      # FIXME: problem with SPARQL FILTER command
+      vocab_query = %{
+        PREFIX rdf: <#{RDF.to_uri}>
+        PREFIX rdfs: <#{RDF::RDFS.to_uri}>
+        SELECT ?subject ?type ?label
+        WHERE {
+          ?subject a ?type
+          OPTIONAL {?subject rdfs:label ?label}
+          #FILTER (?type IN (rdf:Property, rdfs:Class, rdf:DataType))
+        }
+        ORDER BY ?subject
+      }
+      SPARQL.execute(vocab_query, repo).each do |soln|
+        section = case soln.type
+        when RDF.Property then "Properties"
+        when RDF::RDFS.Class then "Classes"
+        when RDF::RDFS.Datatype then "Datatypes"
+        else next
+        end
+        defs[section][soln.subject] = {:vocab => prefix, :label => (soln[:label] || soln.subject.to_s.split(/[\/#]/).last)}
+      end
+
+      defs.keys.each {|k| defs.delete(k) if defs[k].empty?}
+      # Serialize definitions
+      io.puts defs.to_json(
+        :indent       => "  ",
+        :space        => " ",
+        :space_before => "",
+        :object_nl    => "\n",
+        :array_nl     => "\n"
+      )
+    end
+    
     # Create native representation of vocabulary definitions from JSON files
     def self.cook_vocabularies(io = STDOUT)
       require 'json'

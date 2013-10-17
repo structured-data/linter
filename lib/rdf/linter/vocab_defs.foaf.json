@@ -21,95 +21,23 @@
     },
     "http://xmlns.com/foaf/0.1/LabelProperty": {
       "vocab": "foaf",
-      "label": "LabelProperty"
+      "label": "Label Property"
     },
     "http://xmlns.com/foaf/0.1/OnlineAccount": {
       "vocab": "foaf",
-      "label": "OnlineAccount"
+      "label": "Online Account"
     },
     "http://xmlns.com/foaf/0.1/OnlineChatAccount": {
       "vocab": "foaf",
-      "label": "OnlineChatAccount"
+      "label": "Online Chat Account"
     },
     "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount": {
       "vocab": "foaf",
-      "label": "OnlineEcommerceAccount"
+      "label": "Online E-commerce Account"
     },
     "http://xmlns.com/foaf/0.1/OnlineGamingAccount": {
       "vocab": "foaf",
-      "label": "OnlineGamingAccount"
-    },
-    "http://xmlns.com/foaf/0.1/Organization": {
-      "vocab": "foaf",
-      "label": "Organization"
-    },
-    "http://xmlns.com/foaf/0.1/Person": {
-      "vocab": "foaf",
-      "label": "Person"
-    },
-    "http://xmlns.com/foaf/0.1/PersonalProfileDocument": {
-      "vocab": "foaf",
-      "label": "PersonalProfileDocument"
-    },
-    "http://xmlns.com/foaf/0.1/Project": {
-      "vocab": "foaf",
-      "label": "Project"
-    },
-    "http://www.w3.org/2000/01/rdf-schema#Class": {
-      "vocab": "foaf",
-      "label": "http://www.w3.org/2000/01/rdf-schema#Class"
-    },
-    "http://www.w3.org/2000/10/swap/pim/contact#Person": {
-      "vocab": "foaf",
-      "label": "http://www.w3.org/2000/10/swap/pim/contact#Person"
-    },
-    "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing": {
-      "vocab": "foaf",
-      "label": "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
-    },
-    "http://xmlns.com/foaf/0.1/Agent": {
-      "vocab": "foaf",
-      "label": "Agent"
-    },
-    "http://xmlns.com/foaf/0.1/Agent": {
-      "vocab": "foaf",
-      "label": "Agent"
-    },
-    "http://xmlns.com/foaf/0.1/Document": {
-      "vocab": "foaf",
-      "label": "Document"
-    },
-    "http://xmlns.com/foaf/0.1/Document": {
-      "vocab": "foaf",
-      "label": "Document"
-    },
-    "http://xmlns.com/foaf/0.1/Group": {
-      "vocab": "foaf",
-      "label": "Group"
-    },
-    "http://xmlns.com/foaf/0.1/Image": {
-      "vocab": "foaf",
-      "label": "Image"
-    },
-    "http://xmlns.com/foaf/0.1/LabelProperty": {
-      "vocab": "foaf",
-      "label": "LabelProperty"
-    },
-    "http://xmlns.com/foaf/0.1/OnlineAccount": {
-      "vocab": "foaf",
-      "label": "OnlineAccount"
-    },
-    "http://xmlns.com/foaf/0.1/OnlineChatAccount": {
-      "vocab": "foaf",
-      "label": "OnlineChatAccount"
-    },
-    "http://xmlns.com/foaf/0.1/OnlineEcommerceAccount": {
-      "vocab": "foaf",
-      "label": "OnlineEcommerceAccount"
-    },
-    "http://xmlns.com/foaf/0.1/OnlineGamingAccount": {
-      "vocab": "foaf",
-      "label": "OnlineGamingAccount"
+      "label": "Online Gaming Account"
     },
     "http://xmlns.com/foaf/0.1/Organization": {
       "vocab": "foaf",
@@ -135,11 +63,11 @@
     },
     "http://xmlns.com/foaf/0.1/accountName": {
       "vocab": "foaf",
-      "label": "accountName"
+      "label": "account name"
     },
     "http://xmlns.com/foaf/0.1/accountServiceHomepage": {
       "vocab": "foaf",
-      "label": "accountServiceHomepage"
+      "label": "account service homepage"
     },
     "http://xmlns.com/foaf/0.1/age": {
       "vocab": "foaf",
@@ -147,11 +75,11 @@
     },
     "http://xmlns.com/foaf/0.1/aimChatID": {
       "vocab": "foaf",
-      "label": "aimChatID"
+      "label": "AIM chat ID"
     },
     "http://xmlns.com/foaf/0.1/based_near": {
       "vocab": "foaf",
-      "label": "based_near"
+      "label": "based near"
     },
     "http://xmlns.com/foaf/0.1/birthday": {
       "vocab": "foaf",
@@ -159,7 +87,7 @@
     },
     "http://xmlns.com/foaf/0.1/currentProject": {
       "vocab": "foaf",
-      "label": "currentProject"
+      "label": "current project"
     },
     "http://xmlns.com/foaf/0.1/depiction": {
       "vocab": "foaf",
@@ -171,7 +99,7 @@
     },
     "http://xmlns.com/foaf/0.1/dnaChecksum": {
       "vocab": "foaf",
-      "label": "dnaChecksum"
+      "label": "DNA checksum"
     },
     "http://xmlns.com/foaf/0.1/familyName": {
       "vocab": "foaf",
@@ -191,7 +119,7 @@
     },
     "http://xmlns.com/foaf/0.1/fundedBy": {
       "vocab": "foaf",
-      "label": "fundedBy"
+      "label": "funded by"
     },
     "http://xmlns.com/foaf/0.1/geekcode": {
       "vocab": "foaf",
@@ -203,15 +131,15 @@
     },
     "http://xmlns.com/foaf/0.1/givenName": {
       "vocab": "foaf",
-      "label": "givenName"
+      "label": "Given name"
     },
     "http://xmlns.com/foaf/0.1/givenname": {
       "vocab": "foaf",
-      "label": "givenname"
+      "label": "Given name"
     },
     "http://xmlns.com/foaf/0.1/holdsAccount": {
       "vocab": "foaf",
-      "label": "holdsAccount"
+      "label": "account"
     },
     "http://xmlns.com/foaf/0.1/homepage": {
       "vocab": "foaf",
@@ -219,11 +147,11 @@
     },
     "http://xmlns.com/foaf/0.1/icqChatID": {
       "vocab": "foaf",
-      "label": "icqChatID"
+      "label": "ICQ chat ID"
     },
     "http://xmlns.com/foaf/0.1/img": {
       "vocab": "foaf",
-      "label": "img"
+      "label": "image"
     },
     "http://xmlns.com/foaf/0.1/interest": {
       "vocab": "foaf",
@@ -231,11 +159,11 @@
     },
     "http://xmlns.com/foaf/0.1/isPrimaryTopicOf": {
       "vocab": "foaf",
-      "label": "isPrimaryTopicOf"
+      "label": "is primary topic of"
     },
     "http://xmlns.com/foaf/0.1/jabberID": {
       "vocab": "foaf",
-      "label": "jabberID"
+      "label": "jabber ID"
     },
     "http://xmlns.com/foaf/0.1/knows": {
       "vocab": "foaf",
@@ -259,11 +187,11 @@
     },
     "http://xmlns.com/foaf/0.1/mbox": {
       "vocab": "foaf",
-      "label": "mbox"
+      "label": "personal mailbox"
     },
     "http://xmlns.com/foaf/0.1/mbox_sha1sum": {
       "vocab": "foaf",
-      "label": "mbox_sha1sum"
+      "label": "sha1sum of a personal mailbox URI name"
     },
     "http://xmlns.com/foaf/0.1/member": {
       "vocab": "foaf",
@@ -275,7 +203,7 @@
     },
     "http://xmlns.com/foaf/0.1/msnChatID": {
       "vocab": "foaf",
-      "label": "msnChatID"
+      "label": "MSN chat ID"
     },
     "http://xmlns.com/foaf/0.1/myersBriggs": {
       "vocab": "foaf",
@@ -287,7 +215,7 @@
     },
     "http://xmlns.com/foaf/0.1/nick": {
       "vocab": "foaf",
-      "label": "nick"
+      "label": "nickname"
     },
     "http://xmlns.com/foaf/0.1/openid": {
       "vocab": "foaf",
@@ -299,7 +227,7 @@
     },
     "http://xmlns.com/foaf/0.1/pastProject": {
       "vocab": "foaf",
-      "label": "pastProject"
+      "label": "past project"
     },
     "http://xmlns.com/foaf/0.1/phone": {
       "vocab": "foaf",
@@ -311,7 +239,7 @@
     },
     "http://xmlns.com/foaf/0.1/primaryTopic": {
       "vocab": "foaf",
-      "label": "primaryTopic"
+      "label": "primary topic"
     },
     "http://xmlns.com/foaf/0.1/publications": {
       "vocab": "foaf",
@@ -323,11 +251,11 @@
     },
     "http://xmlns.com/foaf/0.1/sha1": {
       "vocab": "foaf",
-      "label": "sha1"
+      "label": "sha1sum (hex)"
     },
     "http://xmlns.com/foaf/0.1/skypeID": {
       "vocab": "foaf",
-      "label": "skypeID"
+      "label": "Skype ID"
     },
     "http://xmlns.com/foaf/0.1/status": {
       "vocab": "foaf",
@@ -335,7 +263,7 @@
     },
     "http://xmlns.com/foaf/0.1/surname": {
       "vocab": "foaf",
-      "label": "surname"
+      "label": "Surname"
     },
     "http://xmlns.com/foaf/0.1/theme": {
       "vocab": "foaf",
@@ -367,147 +295,17 @@
     },
     "http://xmlns.com/foaf/0.1/workInfoHomepage": {
       "vocab": "foaf",
-      "label": "workInfoHomepage"
+      "label": "work info homepage"
     },
     "http://xmlns.com/foaf/0.1/workplaceHomepage": {
       "vocab": "foaf",
-      "label": "workplaceHomepage"
+      "label": "workplace homepage"
     },
     "http://xmlns.com/foaf/0.1/yahooChatID": {
       "vocab": "foaf",
-      "label": "yahooChatID"
-    },
-    "http://xmlns.com/foaf/0.1/account": {
-      "vocab": "foaf",
-      "label": "account"
-    },
-    "http://xmlns.com/foaf/0.1/accountServiceHomepage": {
-      "vocab": "foaf",
-      "label": "accountServiceHomepage"
-    },
-    "http://xmlns.com/foaf/0.1/based_near": {
-      "vocab": "foaf",
-      "label": "based_near"
-    },
-    "http://xmlns.com/foaf/0.1/currentProject": {
-      "vocab": "foaf",
-      "label": "currentProject"
-    },
-    "http://xmlns.com/foaf/0.1/depiction": {
-      "vocab": "foaf",
-      "label": "depiction"
-    },
-    "http://xmlns.com/foaf/0.1/depicts": {
-      "vocab": "foaf",
-      "label": "depicts"
-    },
-    "http://xmlns.com/foaf/0.1/focus": {
-      "vocab": "foaf",
-      "label": "focus"
-    },
-    "http://xmlns.com/foaf/0.1/fundedBy": {
-      "vocab": "foaf",
-      "label": "fundedBy"
-    },
-    "http://xmlns.com/foaf/0.1/holdsAccount": {
-      "vocab": "foaf",
-      "label": "holdsAccount"
-    },
-    "http://xmlns.com/foaf/0.1/homepage": {
-      "vocab": "foaf",
-      "label": "homepage"
-    },
-    "http://xmlns.com/foaf/0.1/img": {
-      "vocab": "foaf",
-      "label": "img"
-    },
-    "http://xmlns.com/foaf/0.1/interest": {
-      "vocab": "foaf",
-      "label": "interest"
-    },
-    "http://xmlns.com/foaf/0.1/knows": {
-      "vocab": "foaf",
-      "label": "knows"
-    },
-    "http://xmlns.com/foaf/0.1/logo": {
-      "vocab": "foaf",
-      "label": "logo"
-    },
-    "http://xmlns.com/foaf/0.1/made": {
-      "vocab": "foaf",
-      "label": "made"
-    },
-    "http://xmlns.com/foaf/0.1/maker": {
-      "vocab": "foaf",
-      "label": "maker"
-    },
-    "http://xmlns.com/foaf/0.1/mbox": {
-      "vocab": "foaf",
-      "label": "mbox"
-    },
-    "http://xmlns.com/foaf/0.1/member": {
-      "vocab": "foaf",
-      "label": "member"
-    },
-    "http://xmlns.com/foaf/0.1/openid": {
-      "vocab": "foaf",
-      "label": "openid"
-    },
-    "http://xmlns.com/foaf/0.1/page": {
-      "vocab": "foaf",
-      "label": "page"
-    },
-    "http://xmlns.com/foaf/0.1/pastProject": {
-      "vocab": "foaf",
-      "label": "pastProject"
-    },
-    "http://xmlns.com/foaf/0.1/phone": {
-      "vocab": "foaf",
-      "label": "phone"
-    },
-    "http://xmlns.com/foaf/0.1/primaryTopic": {
-      "vocab": "foaf",
-      "label": "primaryTopic"
-    },
-    "http://xmlns.com/foaf/0.1/publications": {
-      "vocab": "foaf",
-      "label": "publications"
-    },
-    "http://xmlns.com/foaf/0.1/schoolHomepage": {
-      "vocab": "foaf",
-      "label": "schoolHomepage"
-    },
-    "http://xmlns.com/foaf/0.1/theme": {
-      "vocab": "foaf",
-      "label": "theme"
-    },
-    "http://xmlns.com/foaf/0.1/thumbnail": {
-      "vocab": "foaf",
-      "label": "thumbnail"
-    },
-    "http://xmlns.com/foaf/0.1/tipjar": {
-      "vocab": "foaf",
-      "label": "tipjar"
-    },
-    "http://xmlns.com/foaf/0.1/topic": {
-      "vocab": "foaf",
-      "label": "topic"
-    },
-    "http://xmlns.com/foaf/0.1/topic_interest": {
-      "vocab": "foaf",
-      "label": "topic_interest"
-    },
-    "http://xmlns.com/foaf/0.1/weblog": {
-      "vocab": "foaf",
-      "label": "weblog"
-    },
-    "http://xmlns.com/foaf/0.1/workInfoHomepage": {
-      "vocab": "foaf",
-      "label": "workInfoHomepage"
-    },
-    "http://xmlns.com/foaf/0.1/workplaceHomepage": {
-      "vocab": "foaf",
-      "label": "workplaceHomepage"
+      "label": "Yahoo chat ID"
     }
+  },
+  "Datatypes": {
   }
 }

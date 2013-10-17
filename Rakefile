@@ -36,3 +36,34 @@ desc "Run specs"
 RSpec::Core::RakeTask.new do |t|
   # Put spec opts in a file named .rspec in root
 end
+
+desc "Generate Vocabularies"
+task :gen_vocabs => %w(dc foaf gr ogp s sioc skos v xsd).map {|v| "lib/rdf/linter/vocab_defs.#{v}.json"} do
+  puts "Generate lib/rdf/linter/vocab_defs.rb"
+  $:.unshift(File.expand_path("../lib", __FILE__))
+  require 'rdf/linter'
+  File.open("lib/rdf/linter/vocab_defs.rb", "w") do |f|
+    RDF::Linter::Parser.cook_vocabularies(f)
+  end
+end
+
+{
+  :dc => {:uri => "http://purl.org/dc/terms/"},
+  :foaf => {:uri => "http://xmlns.com/foaf/0.1/"},
+  :gr => {:uri => "http://purl.org/goodrelations/v1#"},
+  :ogp => {:uri => "http://ogp.me/ns#"},
+  :s => {:prefix => "schema", :uri => "http://schema.org/", :location => "http://schema.org/docs/schema_org_rdfa.html"},
+  :sioc => {:uri => "http://rdfs.org/sioc/ns#"},
+  :skos => {:uri => "http://www.w3.org/2004/02/skos/core#"},
+  :v => {:uri => "http://rdf.data-vocabulary.org/#"},
+  :xsd => {:uri => "http://www.w3.org/2001/XMLSchema#", :location => "http://groups.csail.mit.edu/mac/projects/tami/amord/xsd.ttl"}
+}.each do |id, v|
+  file "lib/rdf/linter/vocab_defs.#{id}.json" do
+    puts "Generate lib/rdf/linter/vocab_defs.#{id}.json"
+    $:.unshift(File.expand_path("../lib", __FILE__))
+    require 'rdf/linter'
+    File.open("lib/rdf/linter/vocab_defs.#{id}.json", "w") do |f|
+      RDF::Linter::Parser.vocab_def(RDF::URI(v[:uri]), v.fetch(:prefix, id.to_s), v.merge(:io => f))
+    end
+  end
+end

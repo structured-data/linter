@@ -3,115 +3,43 @@
     "ogp": "http://ogp.me/ns#"
   },
   "Classes": {
-    "http://types.ogp.me/ns#Actor": {
-      "vocab": "ogp",
-      "label": "Actor"
-    },
-    "http://types.ogp.me/ns#Album": {
-      "vocab": "ogp",
-      "label": "Album"
-    },
-    "http://types.ogp.me/ns#Article": {
-      "vocab": "ogp",
-      "label": "Article"
-    },
-    "http://types.ogp.me/ns#Athlete": {
-      "vocab": "ogp",
-      "label": "Athlete"
-    },
-    "http://types.ogp.me/ns#Author": {
-      "vocab": "ogp",
-      "label": "Author"
-    },
-    "http://types.ogp.me/ns#Band": {
-      "vocab": "ogp",
-      "label": "Band"
-    },
-    "http://types.ogp.me/ns#Blog": {
-      "vocab": "ogp",
-      "label": "Blog"
-    },
-    "http://types.ogp.me/ns#Book": {
-      "vocab": "ogp",
-      "label": "Book"
-    },
-    "http://types.ogp.me/ns#City": {
-      "vocab": "ogp",
-      "label": "City"
-    },
-    "http://types.ogp.me/ns#Country": {
-      "vocab": "ogp",
-      "label": "Country"
-    },
-    "http://types.ogp.me/ns#Director": {
-      "vocab": "ogp",
-      "label": "Director"
-    },
-    "http://types.ogp.me/ns#Drink": {
-      "vocab": "ogp",
-      "label": "Drink"
-    },
-    "http://types.ogp.me/ns#Food": {
-      "vocab": "ogp",
-      "label": "Food"
-    },
-    "http://types.ogp.me/ns#Game": {
-      "vocab": "ogp",
-      "label": "Game"
-    },
-    "http://types.ogp.me/ns#Governmental": {
-      "vocab": "ogp",
-      "label": "Governmental"
-    },
-    "http://types.ogp.me/ns#Landmark": {
-      "vocab": "ogp",
-      "label": "Landmark"
-    },
-    "http://types.ogp.me/ns#Movie": {
-      "vocab": "ogp",
-      "label": "Movie"
-    },
-    "http://types.ogp.me/ns#Musician": {
-      "vocab": "ogp",
-      "label": "Musician"
-    },
-    "http://types.ogp.me/ns#Non_profit": {
-      "vocab": "ogp",
-      "label": "Non_profit"
-    },
-    "http://types.ogp.me/ns#Politician": {
-      "vocab": "ogp",
-      "label": "Politician"
-    },
-    "http://types.ogp.me/ns#Public_figure": {
-      "vocab": "ogp",
-      "label": "Public_figure"
-    },
-    "http://types.ogp.me/ns#School": {
-      "vocab": "ogp",
-      "label": "School"
-    },
-    "http://types.ogp.me/ns#State_province": {
-      "vocab": "ogp",
-      "label": "State_province"
-    },
-    "http://types.ogp.me/ns#University": {
-      "vocab": "ogp",
-      "label": "University"
-    },
-    "http://types.ogp.me/ns#Website": {
-      "vocab": "ogp",
-      "label": "Website"
-    }
   },
   "Properties": {
+    "http://ogp.me/ns#audio": {
+      "vocab": "ogp",
+      "label": "audio"
+    },
+    "http://ogp.me/ns#audio:album": {
+      "vocab": "ogp",
+      "label": "audio album"
+    },
+    "http://ogp.me/ns#audio:artist": {
+      "vocab": "ogp",
+      "label": "audio artist"
+    },
+    "http://ogp.me/ns#audio:secure_url": {
+      "vocab": "ogp",
+      "label": "audio secure URL"
+    },
+    "http://ogp.me/ns#audio:title": {
+      "vocab": "ogp",
+      "label": "audio title"
+    },
+    "http://ogp.me/ns#audio:type": {
+      "vocab": "ogp",
+      "label": "audio type"
+    },
     "http://ogp.me/ns#country-name": {
       "vocab": "ogp",
-      "label": "country-name"
+      "label": "country name"
     },
     "http://ogp.me/ns#description": {
       "vocab": "ogp",
       "label": "description"
+    },
+    "http://ogp.me/ns#determiner": {
+      "vocab": "ogp",
+      "label": "determiner"
     },
     "http://ogp.me/ns#email": {
       "vocab": "ogp",
@@ -119,11 +47,27 @@
     },
     "http://ogp.me/ns#fax_number": {
       "vocab": "ogp",
-      "label": "fax_number"
+      "label": "fax number"
     },
     "http://ogp.me/ns#image": {
       "vocab": "ogp",
       "label": "image"
+    },
+    "http://ogp.me/ns#image:height": {
+      "vocab": "ogp",
+      "label": "image height"
+    },
+    "http://ogp.me/ns#image:secure_url": {
+      "vocab": "ogp",
+      "label": "image secure url"
+    },
+    "http://ogp.me/ns#image:type": {
+      "vocab": "ogp",
+      "label": "image type"
+    },
+    "http://ogp.me/ns#image:width": {
+      "vocab": "ogp",
+      "label": "image width"
     },
     "http://ogp.me/ns#isbn": {
       "vocab": "ogp",
@@ -132,6 +76,10 @@
     "http://ogp.me/ns#latitude": {
       "vocab": "ogp",
       "label": "latitude"
+    },
+    "http://ogp.me/ns#locale": {
+      "vocab": "ogp",
+      "label": "locale"
     },
     "http://ogp.me/ns#locality": {
       "vocab": "ogp",
@@ -143,11 +91,11 @@
     },
     "http://ogp.me/ns#phone_number": {
       "vocab": "ogp",
-      "label": "phone_number"
+      "label": "phone number"
     },
     "http://ogp.me/ns#postal-code": {
       "vocab": "ogp",
-      "label": "postal-code"
+      "label": "postal code"
     },
     "http://ogp.me/ns#region": {
       "vocab": "ogp",
@@ -155,11 +103,11 @@
     },
     "http://ogp.me/ns#site_name": {
       "vocab": "ogp",
-      "label": "site_name"
+      "label": "site name"
     },
     "http://ogp.me/ns#street-address": {
       "vocab": "ogp",
-      "label": "street-address"
+      "label": "street address"
     },
     "http://ogp.me/ns#title": {
       "vocab": "ogp",
@@ -171,11 +119,65 @@
     },
     "http://ogp.me/ns#upc": {
       "vocab": "ogp",
-      "label": "upc"
+      "label": "universal product code"
     },
     "http://ogp.me/ns#url": {
       "vocab": "ogp",
       "label": "url"
+    },
+    "http://ogp.me/ns#video": {
+      "vocab": "ogp",
+      "label": "video"
+    },
+    "http://ogp.me/ns#video:height": {
+      "vocab": "ogp",
+      "label": "video height"
+    },
+    "http://ogp.me/ns#video:secure_url": {
+      "vocab": "ogp",
+      "label": "video secure URL"
+    },
+    "http://ogp.me/ns#video:type": {
+      "vocab": "ogp",
+      "label": "video type"
+    },
+    "http://ogp.me/ns#video:width": {
+      "vocab": "ogp",
+      "label": "video width"
+    }
+  },
+  "Datatypes": {
+    "http://ogp.me/ns/class#boolean_str": {
+      "vocab": "ogp",
+      "label": "boolean string"
+    },
+    "http://ogp.me/ns/class#date_time_str": {
+      "vocab": "ogp",
+      "label": "date/time string"
+    },
+    "http://ogp.me/ns/class#determiner_str": {
+      "vocab": "ogp",
+      "label": "determiner"
+    },
+    "http://ogp.me/ns/class#float_str": {
+      "vocab": "ogp",
+      "label": "float string"
+    },
+    "http://ogp.me/ns/class#integer_str": {
+      "vocab": "ogp",
+      "label": "integer string"
+    },
+    "http://ogp.me/ns/class#mime_type_str": {
+      "vocab": "ogp",
+      "label": "mime type string"
+    },
+    "http://ogp.me/ns/class#string": {
+      "vocab": "ogp",
+      "label": "Unicode string"
+    },
+    "http://ogp.me/ns/class#url": {
+      "vocab": "ogp",
+      "label": "URL"
     }
   }
 }

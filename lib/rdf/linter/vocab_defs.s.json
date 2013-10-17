@@ -3,13 +3,33 @@
     "schema": "http://schema.org/"
   },
   "Classes": {
+    "http://schema.org/APIReference": {
+      "vocab": "schema",
+      "label": "APIReference"
+    },
     "http://schema.org/AboutPage": {
       "vocab": "schema",
       "label": "AboutPage"
     },
+    "http://schema.org/AcceptAction": {
+      "vocab": "schema",
+      "label": "AcceptAction"
+    },
     "http://schema.org/AccountingService": {
       "vocab": "schema",
       "label": "AccountingService"
+    },
+    "http://schema.org/AchieveAction": {
+      "vocab": "schema",
+      "label": "AchieveAction"
+    },
+    "http://schema.org/Action": {
+      "vocab": "schema",
+      "label": "Action"
+    },
+    "http://schema.org/AddAction": {
+      "vocab": "schema",
+      "label": "AddAction"
     },
     "http://schema.org/AdministrativeArea": {
       "vocab": "schema",
@@ -27,13 +47,33 @@
       "vocab": "schema",
       "label": "AggregateRating"
     },
+    "http://schema.org/AgreeAction": {
+      "vocab": "schema",
+      "label": "AgreeAction"
+    },
     "http://schema.org/Airport": {
       "vocab": "schema",
       "label": "Airport"
     },
+    "http://schema.org/AlignmentObject": {
+      "vocab": "schema",
+      "label": "AlignmentObject"
+    },
+    "http://schema.org/AllocateAction": {
+      "vocab": "schema",
+      "label": "AllocateAction"
+    },
     "http://schema.org/AmusementPark": {
       "vocab": "schema",
       "label": "AmusementPark"
+    },
+    "http://schema.org/AnatomicalStructure": {
+      "vocab": "schema",
+      "label": "AnatomicalStructure"
+    },
+    "http://schema.org/AnatomicalSystem": {
+      "vocab": "schema",
+      "label": "AnatomicalSystem"
     },
     "http://schema.org/AnimalShelter": {
       "vocab": "schema",
@@ -43,25 +83,65 @@
       "vocab": "schema",
       "label": "ApartmentComplex"
     },
+    "http://schema.org/AppendAction": {
+      "vocab": "schema",
+      "label": "AppendAction"
+    },
+    "http://schema.org/ApplyAction": {
+      "vocab": "schema",
+      "label": "ApplyAction"
+    },
+    "http://schema.org/ApprovedIndication": {
+      "vocab": "schema",
+      "label": "ApprovedIndication"
+    },
     "http://schema.org/Aquarium": {
       "vocab": "schema",
       "label": "Aquarium"
+    },
+    "http://schema.org/ArriveAction": {
+      "vocab": "schema",
+      "label": "ArriveAction"
     },
     "http://schema.org/ArtGallery": {
       "vocab": "schema",
       "label": "ArtGallery"
     },
+    "http://schema.org/Artery": {
+      "vocab": "schema",
+      "label": "Artery"
+    },
     "http://schema.org/Article": {
       "vocab": "schema",
       "label": "Article"
+    },
+    "http://schema.org/AskAction": {
+      "vocab": "schema",
+      "label": "AskAction"
+    },
+    "http://schema.org/AssessAction": {
+      "vocab": "schema",
+      "label": "AssessAction"
+    },
+    "http://schema.org/AssignAction": {
+      "vocab": "schema",
+      "label": "AssignAction"
     },
     "http://schema.org/Attorney": {
       "vocab": "schema",
       "label": "Attorney"
     },
+    "http://schema.org/Audience": {
+      "vocab": "schema",
+      "label": "Audience"
+    },
     "http://schema.org/AudioObject": {
       "vocab": "schema",
       "label": "AudioObject"
+    },
+    "http://schema.org/AuthorizeAction": {
+      "vocab": "schema",
+      "label": "AuthorizeAction"
     },
     "http://schema.org/AutoBodyShop": {
       "vocab": "schema",
@@ -119,6 +199,10 @@
       "vocab": "schema",
       "label": "BedAndBreakfast"
     },
+    "http://schema.org/BefriendAction": {
+      "vocab": "schema",
+      "label": "BefriendAction"
+    },
     "http://schema.org/BikeStore": {
       "vocab": "schema",
       "label": "BikeStore"
@@ -131,9 +215,17 @@
       "vocab": "schema",
       "label": "BlogPosting"
     },
+    "http://schema.org/BloodTest": {
+      "vocab": "schema",
+      "label": "BloodTest"
+    },
     "http://schema.org/BodyOfWater": {
       "vocab": "schema",
       "label": "BodyOfWater"
+    },
+    "http://schema.org/Bone": {
+      "vocab": "schema",
+      "label": "Bone"
     },
     "http://schema.org/Book": {
       "vocab": "schema",
@@ -147,9 +239,29 @@
       "vocab": "schema",
       "label": "BookStore"
     },
+    "http://schema.org/BookmarkAction": {
+      "vocab": "schema",
+      "label": "BookmarkAction"
+    },
+    "http://schema.org/Boolean": {
+      "vocab": "schema",
+      "label": "Boolean"
+    },
+    "http://schema.org/BorrowAction": {
+      "vocab": "schema",
+      "label": "BorrowAction"
+    },
     "http://schema.org/BowlingAlley": {
       "vocab": "schema",
       "label": "BowlingAlley"
+    },
+    "http://schema.org/BrainStructure": {
+      "vocab": "schema",
+      "label": "BrainStructure"
+    },
+    "http://schema.org/Brand": {
+      "vocab": "schema",
+      "label": "Brand"
     },
     "http://schema.org/Brewery": {
       "vocab": "schema",
@@ -167,9 +279,21 @@
       "vocab": "schema",
       "label": "BusStop"
     },
+    "http://schema.org/BusinessEntityType": {
+      "vocab": "schema",
+      "label": "BusinessEntityType"
+    },
     "http://schema.org/BusinessEvent": {
       "vocab": "schema",
       "label": "BusinessEvent"
+    },
+    "http://schema.org/BusinessFunction": {
+      "vocab": "schema",
+      "label": "BusinessFunction"
+    },
+    "http://schema.org/BuyAction": {
+      "vocab": "schema",
+      "label": "BuyAction"
     },
     "http://schema.org/CafeOrCoffeeShop": {
       "vocab": "schema",
@@ -183,6 +307,10 @@
       "vocab": "schema",
       "label": "Canal"
     },
+    "http://schema.org/CancelAction": {
+      "vocab": "schema",
+      "label": "CancelAction"
+    },
     "http://schema.org/Casino": {
       "vocab": "schema",
       "label": "Casino"
@@ -195,6 +323,18 @@
       "vocab": "schema",
       "label": "Cemetery"
     },
+    "http://schema.org/CheckAction": {
+      "vocab": "schema",
+      "label": "CheckAction"
+    },
+    "http://schema.org/CheckInAction": {
+      "vocab": "schema",
+      "label": "CheckInAction"
+    },
+    "http://schema.org/CheckOutAction": {
+      "vocab": "schema",
+      "label": "CheckOutAction"
+    },
     "http://schema.org/CheckoutPage": {
       "vocab": "schema",
       "label": "CheckoutPage"
@@ -206,6 +346,10 @@
     "http://schema.org/ChildrensEvent": {
       "vocab": "schema",
       "label": "ChildrensEvent"
+    },
+    "http://schema.org/ChooseAction": {
+      "vocab": "schema",
+      "label": "ChooseAction"
     },
     "http://schema.org/Church": {
       "vocab": "schema",
@@ -223,9 +367,17 @@
       "vocab": "schema",
       "label": "CivicStructure"
     },
+    "http://schema.org/Class": {
+      "vocab": "schema",
+      "label": "Class"
+    },
     "http://schema.org/ClothingStore": {
       "vocab": "schema",
       "label": "ClothingStore"
+    },
+    "http://schema.org/Code": {
+      "vocab": "schema",
+      "label": "Code"
     },
     "http://schema.org/CollectionPage": {
       "vocab": "schema",
@@ -243,9 +395,29 @@
       "vocab": "schema",
       "label": "ComedyEvent"
     },
+    "http://schema.org/Comment": {
+      "vocab": "schema",
+      "label": "Comment"
+    },
+    "http://schema.org/CommentAction": {
+      "vocab": "schema",
+      "label": "CommentAction"
+    },
+    "http://schema.org/CommunicateAction": {
+      "vocab": "schema",
+      "label": "CommunicateAction"
+    },
     "http://schema.org/ComputerStore": {
       "vocab": "schema",
       "label": "ComputerStore"
+    },
+    "http://schema.org/ConfirmAction": {
+      "vocab": "schema",
+      "label": "ConfirmAction"
+    },
+    "http://schema.org/ConsumeAction": {
+      "vocab": "schema",
+      "label": "ConsumeAction"
     },
     "http://schema.org/ContactPage": {
       "vocab": "schema",
@@ -263,6 +435,10 @@
       "vocab": "schema",
       "label": "ConvenienceStore"
     },
+    "http://schema.org/CookAction": {
+      "vocab": "schema",
+      "label": "CookAction"
+    },
     "http://schema.org/Corporation": {
       "vocab": "schema",
       "label": "Corporation"
@@ -275,13 +451,25 @@
       "vocab": "schema",
       "label": "Courthouse"
     },
+    "http://schema.org/CreateAction": {
+      "vocab": "schema",
+      "label": "CreateAction"
+    },
     "http://schema.org/CreativeWork": {
       "vocab": "schema",
       "label": "CreativeWork"
     },
+    "http://schema.org/CreditCard": {
+      "vocab": "schema",
+      "label": "CreditCard"
+    },
     "http://schema.org/Crematorium": {
       "vocab": "schema",
       "label": "Crematorium"
+    },
+    "http://schema.org/DDxElement": {
+      "vocab": "schema",
+      "label": "DDxElement"
     },
     "http://schema.org/DanceEvent": {
       "vocab": "schema",
@@ -291,6 +479,34 @@
       "vocab": "schema",
       "label": "DanceGroup"
     },
+    "http://schema.org/DataCatalog": {
+      "vocab": "schema",
+      "label": "DataCatalog"
+    },
+    "http://schema.org/DataDownload": {
+      "vocab": "schema",
+      "label": "DataDownload"
+    },
+    "http://schema.org/DataType": {
+      "vocab": "schema",
+      "label": "DataType"
+    },
+    "http://schema.org/Dataset": {
+      "vocab": "schema",
+      "label": "Dataset"
+    },
+    "http://schema.org/Date": {
+      "vocab": "schema",
+      "label": "Date"
+    },
+    "http://schema.org/DateTime": {
+      "vocab": "schema",
+      "label": "DateTime"
+    },
+    "http://schema.org/DayOfWeek": {
+      "vocab": "schema",
+      "label": "DayOfWeek"
+    },
     "http://schema.org/DaySpa": {
       "vocab": "schema",
       "label": "DaySpa"
@@ -299,17 +515,117 @@
       "vocab": "schema",
       "label": "DefenceEstablishment"
     },
+    "http://schema.org/DeleteAction": {
+      "vocab": "schema",
+      "label": "DeleteAction"
+    },
+    "http://schema.org/DeliveryChargeSpecification": {
+      "vocab": "schema",
+      "label": "DeliveryChargeSpecification"
+    },
+    "http://schema.org/DeliveryMethod": {
+      "vocab": "schema",
+      "label": "DeliveryMethod"
+    },
+    "http://schema.org/Demand": {
+      "vocab": "schema",
+      "label": "Demand"
+    },
     "http://schema.org/Dentist": {
       "vocab": "schema",
       "label": "Dentist"
+    },
+    "http://schema.org/DepartAction": {
+      "vocab": "schema",
+      "label": "DepartAction"
     },
     "http://schema.org/DepartmentStore": {
       "vocab": "schema",
       "label": "DepartmentStore"
     },
+    "http://schema.org/DiagnosticLab": {
+      "vocab": "schema",
+      "label": "DiagnosticLab"
+    },
+    "http://schema.org/DiagnosticProcedure": {
+      "vocab": "schema",
+      "label": "DiagnosticProcedure"
+    },
+    "http://schema.org/Diet": {
+      "vocab": "schema",
+      "label": "Diet"
+    },
+    "http://schema.org/DietarySupplement": {
+      "vocab": "schema",
+      "label": "DietarySupplement"
+    },
+    "http://schema.org/DisagreeAction": {
+      "vocab": "schema",
+      "label": "DisagreeAction"
+    },
+    "http://schema.org/DiscoverAction": {
+      "vocab": "schema",
+      "label": "DiscoverAction"
+    },
+    "http://schema.org/DislikeAction": {
+      "vocab": "schema",
+      "label": "DislikeAction"
+    },
     "http://schema.org/Distance": {
       "vocab": "schema",
       "label": "Distance"
+    },
+    "http://schema.org/DonateAction": {
+      "vocab": "schema",
+      "label": "DonateAction"
+    },
+    "http://schema.org/DoseSchedule": {
+      "vocab": "schema",
+      "label": "DoseSchedule"
+    },
+    "http://schema.org/DownloadAction": {
+      "vocab": "schema",
+      "label": "DownloadAction"
+    },
+    "http://schema.org/DrawAction": {
+      "vocab": "schema",
+      "label": "DrawAction"
+    },
+    "http://schema.org/DrinkAction": {
+      "vocab": "schema",
+      "label": "DrinkAction"
+    },
+    "http://schema.org/Drug": {
+      "vocab": "schema",
+      "label": "Drug"
+    },
+    "http://schema.org/DrugClass": {
+      "vocab": "schema",
+      "label": "DrugClass"
+    },
+    "http://schema.org/DrugCost": {
+      "vocab": "schema",
+      "label": "DrugCost"
+    },
+    "http://schema.org/DrugCostCategory": {
+      "vocab": "schema",
+      "label": "DrugCostCategory"
+    },
+    "http://schema.org/DrugLegalStatus": {
+      "vocab": "schema",
+      "label": "DrugLegalStatus"
+    },
+    "http://schema.org/DrugPregnancyCategory": {
+      "vocab": "schema",
+      "label": "DrugPregnancyCategory"
+    },
+    "http://schema.org/DrugPrescriptionStatus": {
+      "vocab": "schema",
+      "label": "DrugPrescriptionStatus"
+    },
+    "http://schema.org/DrugStrength": {
+      "vocab": "schema",
+      "label": "DrugStrength"
     },
     "http://schema.org/DryCleaningOrLaundry": {
       "vocab": "schema",
@@ -319,9 +635,17 @@
       "vocab": "schema",
       "label": "Duration"
     },
+    "http://schema.org/EatAction": {
+      "vocab": "schema",
+      "label": "EatAction"
+    },
     "http://schema.org/EducationEvent": {
       "vocab": "schema",
       "label": "EducationEvent"
+    },
+    "http://schema.org/EducationalAudience": {
+      "vocab": "schema",
+      "label": "EducationalAudience"
     },
     "http://schema.org/EducationalOrganization": {
       "vocab": "schema",
@@ -351,6 +675,10 @@
       "vocab": "schema",
       "label": "EmploymentAgency"
     },
+    "http://schema.org/EndorseAction": {
+      "vocab": "schema",
+      "label": "EndorseAction"
+    },
     "http://schema.org/Energy": {
       "vocab": "schema",
       "label": "Energy"
@@ -371,9 +699,17 @@
       "vocab": "schema",
       "label": "EventVenue"
     },
+    "http://schema.org/ExerciseAction": {
+      "vocab": "schema",
+      "label": "ExerciseAction"
+    },
     "http://schema.org/ExerciseGym": {
       "vocab": "schema",
       "label": "ExerciseGym"
+    },
+    "http://schema.org/ExercisePlan": {
+      "vocab": "schema",
+      "label": "ExercisePlan"
     },
     "http://schema.org/FastFoodRestaurant": {
       "vocab": "schema",
@@ -383,17 +719,33 @@
       "vocab": "schema",
       "label": "Festival"
     },
+    "http://schema.org/FilmAction": {
+      "vocab": "schema",
+      "label": "FilmAction"
+    },
     "http://schema.org/FinancialService": {
       "vocab": "schema",
       "label": "FinancialService"
+    },
+    "http://schema.org/FindAction": {
+      "vocab": "schema",
+      "label": "FindAction"
     },
     "http://schema.org/FireStation": {
       "vocab": "schema",
       "label": "FireStation"
     },
+    "http://schema.org/Float": {
+      "vocab": "schema",
+      "label": "Float"
+    },
     "http://schema.org/Florist": {
       "vocab": "schema",
       "label": "Florist"
+    },
+    "http://schema.org/FollowAction": {
+      "vocab": "schema",
+      "label": "FollowAction"
     },
     "http://schema.org/FoodEstablishment": {
       "vocab": "schema",
@@ -426,6 +778,14 @@
     "http://schema.org/GeoCoordinates": {
       "vocab": "schema",
       "label": "GeoCoordinates"
+    },
+    "http://schema.org/GeoShape": {
+      "vocab": "schema",
+      "label": "GeoShape"
+    },
+    "http://schema.org/GiveAction": {
+      "vocab": "schema",
+      "label": "GiveAction"
     },
     "http://schema.org/GolfCourse": {
       "vocab": "schema",
@@ -507,6 +867,10 @@
       "vocab": "schema",
       "label": "IceCreamShop"
     },
+    "http://schema.org/IgnoreAction": {
+      "vocab": "schema",
+      "label": "IgnoreAction"
+    },
     "http://schema.org/ImageGallery": {
       "vocab": "schema",
       "label": "ImageGallery"
@@ -514,6 +878,34 @@
     "http://schema.org/ImageObject": {
       "vocab": "schema",
       "label": "ImageObject"
+    },
+    "http://schema.org/ImagingTest": {
+      "vocab": "schema",
+      "label": "ImagingTest"
+    },
+    "http://schema.org/IndividualProduct": {
+      "vocab": "schema",
+      "label": "IndividualProduct"
+    },
+    "http://schema.org/InfectiousAgentClass": {
+      "vocab": "schema",
+      "label": "InfectiousAgentClass"
+    },
+    "http://schema.org/InfectiousDisease": {
+      "vocab": "schema",
+      "label": "InfectiousDisease"
+    },
+    "http://schema.org/InformAction": {
+      "vocab": "schema",
+      "label": "InformAction"
+    },
+    "http://schema.org/InsertAction": {
+      "vocab": "schema",
+      "label": "InsertAction"
+    },
+    "http://schema.org/InstallAction": {
+      "vocab": "schema",
+      "label": "InstallAction"
     },
     "http://schema.org/InsuranceAgency": {
       "vocab": "schema",
@@ -523,9 +915,21 @@
       "vocab": "schema",
       "label": "Intangible"
     },
+    "http://schema.org/Integer": {
+      "vocab": "schema",
+      "label": "Integer"
+    },
+    "http://schema.org/InteractAction": {
+      "vocab": "schema",
+      "label": "InteractAction"
+    },
     "http://schema.org/InternetCafe": {
       "vocab": "schema",
       "label": "InternetCafe"
+    },
+    "http://schema.org/InviteAction": {
+      "vocab": "schema",
+      "label": "InviteAction"
     },
     "http://schema.org/ItemAvailability": {
       "vocab": "schema",
@@ -543,6 +947,18 @@
       "vocab": "schema",
       "label": "JewelryStore"
     },
+    "http://schema.org/JobPosting": {
+      "vocab": "schema",
+      "label": "JobPosting"
+    },
+    "http://schema.org/JoinAction": {
+      "vocab": "schema",
+      "label": "JoinAction"
+    },
+    "http://schema.org/Joint": {
+      "vocab": "schema",
+      "label": "Joint"
+    },
     "http://schema.org/LakeBodyOfWater": {
       "vocab": "schema",
       "label": "LakeBodyOfWater"
@@ -559,17 +975,41 @@
       "vocab": "schema",
       "label": "Language"
     },
+    "http://schema.org/LeaveAction": {
+      "vocab": "schema",
+      "label": "LeaveAction"
+    },
     "http://schema.org/LegislativeBuilding": {
       "vocab": "schema",
       "label": "LegislativeBuilding"
+    },
+    "http://schema.org/LendAction": {
+      "vocab": "schema",
+      "label": "LendAction"
     },
     "http://schema.org/Library": {
       "vocab": "schema",
       "label": "Library"
     },
+    "http://schema.org/LifestyleModification": {
+      "vocab": "schema",
+      "label": "LifestyleModification"
+    },
+    "http://schema.org/Ligament": {
+      "vocab": "schema",
+      "label": "Ligament"
+    },
+    "http://schema.org/LikeAction": {
+      "vocab": "schema",
+      "label": "LikeAction"
+    },
     "http://schema.org/LiquorStore": {
       "vocab": "schema",
       "label": "LiquorStore"
+    },
+    "http://schema.org/ListenAction": {
+      "vocab": "schema",
+      "label": "ListenAction"
     },
     "http://schema.org/LiteraryEvent": {
       "vocab": "schema",
@@ -587,25 +1027,197 @@
       "vocab": "schema",
       "label": "LodgingBusiness"
     },
+    "http://schema.org/LoseAction": {
+      "vocab": "schema",
+      "label": "LoseAction"
+    },
+    "http://schema.org/LymphaticVessel": {
+      "vocab": "schema",
+      "label": "LymphaticVessel"
+    },
     "http://schema.org/Map": {
       "vocab": "schema",
       "label": "Map"
+    },
+    "http://schema.org/MarryAction": {
+      "vocab": "schema",
+      "label": "MarryAction"
     },
     "http://schema.org/Mass": {
       "vocab": "schema",
       "label": "Mass"
     },
+    "http://schema.org/MaximumDoseSchedule": {
+      "vocab": "schema",
+      "label": "MaximumDoseSchedule"
+    },
     "http://schema.org/MediaObject": {
       "vocab": "schema",
       "label": "MediaObject"
+    },
+    "http://schema.org/MedicalAudience": {
+      "vocab": "schema",
+      "label": "MedicalAudience"
+    },
+    "http://schema.org/MedicalCause": {
+      "vocab": "schema",
+      "label": "MedicalCause"
     },
     "http://schema.org/MedicalClinic": {
       "vocab": "schema",
       "label": "MedicalClinic"
     },
+    "http://schema.org/MedicalCode": {
+      "vocab": "schema",
+      "label": "MedicalCode"
+    },
+    "http://schema.org/MedicalCondition": {
+      "vocab": "schema",
+      "label": "MedicalCondition"
+    },
+    "http://schema.org/MedicalConditionStage": {
+      "vocab": "schema",
+      "label": "MedicalConditionStage"
+    },
+    "http://schema.org/MedicalContraindication": {
+      "vocab": "schema",
+      "label": "MedicalContraindication"
+    },
+    "http://schema.org/MedicalDevice": {
+      "vocab": "schema",
+      "label": "MedicalDevice"
+    },
+    "http://schema.org/MedicalDevicePurpose": {
+      "vocab": "schema",
+      "label": "MedicalDevicePurpose"
+    },
+    "http://schema.org/MedicalEntity": {
+      "vocab": "schema",
+      "label": "MedicalEntity"
+    },
+    "http://schema.org/MedicalEnumeration": {
+      "vocab": "schema",
+      "label": "MedicalEnumeration"
+    },
+    "http://schema.org/MedicalEvidenceLevel": {
+      "vocab": "schema",
+      "label": "MedicalEvidenceLevel"
+    },
+    "http://schema.org/MedicalGuideline": {
+      "vocab": "schema",
+      "label": "MedicalGuideline"
+    },
+    "http://schema.org/MedicalGuidelineContraindication": {
+      "vocab": "schema",
+      "label": "MedicalGuidelineContraindication"
+    },
+    "http://schema.org/MedicalGuidelineRecommendation": {
+      "vocab": "schema",
+      "label": "MedicalGuidelineRecommendation"
+    },
+    "http://schema.org/MedicalImagingTechnique": {
+      "vocab": "schema",
+      "label": "MedicalImagingTechnique"
+    },
+    "http://schema.org/MedicalIndication": {
+      "vocab": "schema",
+      "label": "MedicalIndication"
+    },
+    "http://schema.org/MedicalIntangible": {
+      "vocab": "schema",
+      "label": "MedicalIntangible"
+    },
+    "http://schema.org/MedicalObservationalStudy": {
+      "vocab": "schema",
+      "label": "MedicalObservationalStudy"
+    },
+    "http://schema.org/MedicalObservationalStudyDesign": {
+      "vocab": "schema",
+      "label": "MedicalObservationalStudyDesign"
+    },
     "http://schema.org/MedicalOrganization": {
       "vocab": "schema",
       "label": "MedicalOrganization"
+    },
+    "http://schema.org/MedicalProcedure": {
+      "vocab": "schema",
+      "label": "MedicalProcedure"
+    },
+    "http://schema.org/MedicalProcedureType": {
+      "vocab": "schema",
+      "label": "MedicalProcedureType"
+    },
+    "http://schema.org/MedicalRiskCalculator": {
+      "vocab": "schema",
+      "label": "MedicalRiskCalculator"
+    },
+    "http://schema.org/MedicalRiskEstimator": {
+      "vocab": "schema",
+      "label": "MedicalRiskEstimator"
+    },
+    "http://schema.org/MedicalRiskFactor": {
+      "vocab": "schema",
+      "label": "MedicalRiskFactor"
+    },
+    "http://schema.org/MedicalRiskScore": {
+      "vocab": "schema",
+      "label": "MedicalRiskScore"
+    },
+    "http://schema.org/MedicalScholarlyArticle": {
+      "vocab": "schema",
+      "label": "MedicalScholarlyArticle"
+    },
+    "http://schema.org/MedicalSign": {
+      "vocab": "schema",
+      "label": "MedicalSign"
+    },
+    "http://schema.org/MedicalSignOrSymptom": {
+      "vocab": "schema",
+      "label": "MedicalSignOrSymptom"
+    },
+    "http://schema.org/MedicalSpecialty": {
+      "vocab": "schema",
+      "label": "MedicalSpecialty"
+    },
+    "http://schema.org/MedicalStudy": {
+      "vocab": "schema",
+      "label": "MedicalStudy"
+    },
+    "http://schema.org/MedicalStudyStatus": {
+      "vocab": "schema",
+      "label": "MedicalStudyStatus"
+    },
+    "http://schema.org/MedicalSymptom": {
+      "vocab": "schema",
+      "label": "MedicalSymptom"
+    },
+    "http://schema.org/MedicalTest": {
+      "vocab": "schema",
+      "label": "MedicalTest"
+    },
+    "http://schema.org/MedicalTestPanel": {
+      "vocab": "schema",
+      "label": "MedicalTestPanel"
+    },
+    "http://schema.org/MedicalTherapy": {
+      "vocab": "schema",
+      "label": "MedicalTherapy"
+    },
+    "http://schema.org/MedicalTrial": {
+      "vocab": "schema",
+      "label": "MedicalTrial"
+    },
+    "http://schema.org/MedicalTrialDesign": {
+      "vocab": "schema",
+      "label": "MedicalTrialDesign"
+    },
+    "http://schema.org/MedicalWebPage": {
+      "vocab": "schema",
+      "label": "MedicalWebPage"
+    },
+    "http://schema.org/MedicineSystem": {
+      "vocab": "schema",
+      "label": "MedicineSystem"
     },
     "http://schema.org/MensClothingStore": {
       "vocab": "schema",
@@ -614,6 +1226,10 @@
     "http://schema.org/MiddleSchool": {
       "vocab": "schema",
       "label": "MiddleSchool"
+    },
+    "http://schema.org/MobileApplication": {
+      "vocab": "schema",
+      "label": "MobileApplication"
     },
     "http://schema.org/MobilePhoneStore": {
       "vocab": "schema",
@@ -639,6 +1255,10 @@
       "vocab": "schema",
       "label": "Mountain"
     },
+    "http://schema.org/MoveAction": {
+      "vocab": "schema",
+      "label": "MoveAction"
+    },
     "http://schema.org/Movie": {
       "vocab": "schema",
       "label": "Movie"
@@ -654,6 +1274,10 @@
     "http://schema.org/MovingCompany": {
       "vocab": "schema",
       "label": "MovingCompany"
+    },
+    "http://schema.org/Muscle": {
+      "vocab": "schema",
+      "label": "Muscle"
     },
     "http://schema.org/Museum": {
       "vocab": "schema",
@@ -699,6 +1323,10 @@
       "vocab": "schema",
       "label": "NailSalon"
     },
+    "http://schema.org/Nerve": {
+      "vocab": "schema",
+      "label": "Nerve"
+    },
     "http://schema.org/NewsArticle": {
       "vocab": "schema",
       "label": "NewsArticle"
@@ -710,6 +1338,10 @@
     "http://schema.org/Notary": {
       "vocab": "schema",
       "label": "Notary"
+    },
+    "http://schema.org/Number": {
+      "vocab": "schema",
+      "label": "Number"
     },
     "http://schema.org/NutritionInformation": {
       "vocab": "schema",
@@ -731,21 +1363,53 @@
       "vocab": "schema",
       "label": "OfficeEquipmentStore"
     },
+    "http://schema.org/OpeningHoursSpecification": {
+      "vocab": "schema",
+      "label": "OpeningHoursSpecification"
+    },
     "http://schema.org/Optician": {
       "vocab": "schema",
       "label": "Optician"
+    },
+    "http://schema.org/OrderAction": {
+      "vocab": "schema",
+      "label": "OrderAction"
     },
     "http://schema.org/Organization": {
       "vocab": "schema",
       "label": "Organization"
     },
+    "http://schema.org/OrganizeAction": {
+      "vocab": "schema",
+      "label": "OrganizeAction"
+    },
     "http://schema.org/OutletStore": {
       "vocab": "schema",
       "label": "OutletStore"
     },
+    "http://schema.org/OwnershipInfo": {
+      "vocab": "schema",
+      "label": "OwnershipInfo"
+    },
+    "http://schema.org/PaintAction": {
+      "vocab": "schema",
+      "label": "PaintAction"
+    },
     "http://schema.org/Painting": {
       "vocab": "schema",
       "label": "Painting"
+    },
+    "http://schema.org/PalliativeProcedure": {
+      "vocab": "schema",
+      "label": "PalliativeProcedure"
+    },
+    "http://schema.org/ParcelService": {
+      "vocab": "schema",
+      "label": "ParcelService"
+    },
+    "http://schema.org/ParentAudience": {
+      "vocab": "schema",
+      "label": "ParentAudience"
     },
     "http://schema.org/Park": {
       "vocab": "schema",
@@ -755,9 +1419,33 @@
       "vocab": "schema",
       "label": "ParkingFacility"
     },
+    "http://schema.org/PathologyTest": {
+      "vocab": "schema",
+      "label": "PathologyTest"
+    },
     "http://schema.org/PawnShop": {
       "vocab": "schema",
       "label": "PawnShop"
+    },
+    "http://schema.org/PayAction": {
+      "vocab": "schema",
+      "label": "PayAction"
+    },
+    "http://schema.org/PaymentChargeSpecification": {
+      "vocab": "schema",
+      "label": "PaymentChargeSpecification"
+    },
+    "http://schema.org/PaymentMethod": {
+      "vocab": "schema",
+      "label": "PaymentMethod"
+    },
+    "http://schema.org/PeopleAudience": {
+      "vocab": "schema",
+      "label": "PeopleAudience"
+    },
+    "http://schema.org/PerformAction": {
+      "vocab": "schema",
+      "label": "PerformAction"
     },
     "http://schema.org/PerformingArtsTheater": {
       "vocab": "schema",
@@ -783,6 +1471,26 @@
       "vocab": "schema",
       "label": "Photograph"
     },
+    "http://schema.org/PhotographAction": {
+      "vocab": "schema",
+      "label": "PhotographAction"
+    },
+    "http://schema.org/PhysicalActivity": {
+      "vocab": "schema",
+      "label": "PhysicalActivity"
+    },
+    "http://schema.org/PhysicalActivityCategory": {
+      "vocab": "schema",
+      "label": "PhysicalActivityCategory"
+    },
+    "http://schema.org/PhysicalExam": {
+      "vocab": "schema",
+      "label": "PhysicalExam"
+    },
+    "http://schema.org/PhysicalTherapy": {
+      "vocab": "schema",
+      "label": "PhysicalTherapy"
+    },
     "http://schema.org/Physician": {
       "vocab": "schema",
       "label": "Physician"
@@ -794,6 +1502,14 @@
     "http://schema.org/PlaceOfWorship": {
       "vocab": "schema",
       "label": "PlaceOfWorship"
+    },
+    "http://schema.org/PlanAction": {
+      "vocab": "schema",
+      "label": "PlanAction"
+    },
+    "http://schema.org/PlayAction": {
+      "vocab": "schema",
+      "label": "PlayAction"
     },
     "http://schema.org/Playground": {
       "vocab": "schema",
@@ -819,13 +1535,29 @@
       "vocab": "schema",
       "label": "PostalAddress"
     },
+    "http://schema.org/PrependAction": {
+      "vocab": "schema",
+      "label": "PrependAction"
+    },
     "http://schema.org/Preschool": {
       "vocab": "schema",
       "label": "Preschool"
     },
+    "http://schema.org/PreventionIndication": {
+      "vocab": "schema",
+      "label": "PreventionIndication"
+    },
+    "http://schema.org/PriceSpecification": {
+      "vocab": "schema",
+      "label": "PriceSpecification"
+    },
     "http://schema.org/Product": {
       "vocab": "schema",
       "label": "Product"
+    },
+    "http://schema.org/ProductModel": {
+      "vocab": "schema",
+      "label": "ProductModel"
     },
     "http://schema.org/ProfessionalService": {
       "vocab": "schema",
@@ -835,17 +1567,41 @@
       "vocab": "schema",
       "label": "ProfilePage"
     },
+    "http://schema.org/Property": {
+      "vocab": "schema",
+      "label": "Property"
+    },
+    "http://schema.org/PsychologicalTreatment": {
+      "vocab": "schema",
+      "label": "PsychologicalTreatment"
+    },
     "http://schema.org/PublicSwimmingPool": {
       "vocab": "schema",
       "label": "PublicSwimmingPool"
+    },
+    "http://schema.org/QualitativeValue": {
+      "vocab": "schema",
+      "label": "QualitativeValue"
+    },
+    "http://schema.org/QuantitativeValue": {
+      "vocab": "schema",
+      "label": "QuantitativeValue"
     },
     "http://schema.org/Quantity": {
       "vocab": "schema",
       "label": "Quantity"
     },
+    "http://schema.org/QuoteAction": {
+      "vocab": "schema",
+      "label": "QuoteAction"
+    },
     "http://schema.org/RVPark": {
       "vocab": "schema",
       "label": "RVPark"
+    },
+    "http://schema.org/RadiationTherapy": {
+      "vocab": "schema",
+      "label": "RadiationTherapy"
     },
     "http://schema.org/RadioStation": {
       "vocab": "schema",
@@ -855,17 +1611,61 @@
       "vocab": "schema",
       "label": "Rating"
     },
+    "http://schema.org/ReactAction": {
+      "vocab": "schema",
+      "label": "ReactAction"
+    },
+    "http://schema.org/ReadAction": {
+      "vocab": "schema",
+      "label": "ReadAction"
+    },
     "http://schema.org/RealEstateAgent": {
       "vocab": "schema",
       "label": "RealEstateAgent"
+    },
+    "http://schema.org/ReceiveAction": {
+      "vocab": "schema",
+      "label": "ReceiveAction"
     },
     "http://schema.org/Recipe": {
       "vocab": "schema",
       "label": "Recipe"
     },
+    "http://schema.org/RecommendedDoseSchedule": {
+      "vocab": "schema",
+      "label": "RecommendedDoseSchedule"
+    },
     "http://schema.org/RecyclingCenter": {
       "vocab": "schema",
       "label": "RecyclingCenter"
+    },
+    "http://schema.org/RegisterAction": {
+      "vocab": "schema",
+      "label": "RegisterAction"
+    },
+    "http://schema.org/RejectAction": {
+      "vocab": "schema",
+      "label": "RejectAction"
+    },
+    "http://schema.org/RentAction": {
+      "vocab": "schema",
+      "label": "RentAction"
+    },
+    "http://schema.org/ReplaceAction": {
+      "vocab": "schema",
+      "label": "ReplaceAction"
+    },
+    "http://schema.org/ReplyAction": {
+      "vocab": "schema",
+      "label": "ReplyAction"
+    },
+    "http://schema.org/ReportedDoseSchedule": {
+      "vocab": "schema",
+      "label": "ReportedDoseSchedule"
+    },
+    "http://schema.org/ReserveAction": {
+      "vocab": "schema",
+      "label": "ReserveAction"
     },
     "http://schema.org/Reservoir": {
       "vocab": "schema",
@@ -879,9 +1679,17 @@
       "vocab": "schema",
       "label": "Restaurant"
     },
+    "http://schema.org/ReturnAction": {
+      "vocab": "schema",
+      "label": "ReturnAction"
+    },
     "http://schema.org/Review": {
       "vocab": "schema",
       "label": "Review"
+    },
+    "http://schema.org/ReviewAction": {
+      "vocab": "schema",
+      "label": "ReviewAction"
     },
     "http://schema.org/RiverBodyOfWater": {
       "vocab": "schema",
@@ -891,9 +1699,17 @@
       "vocab": "schema",
       "label": "RoofingContractor"
     },
+    "http://schema.org/RsvpAction": {
+      "vocab": "schema",
+      "label": "RsvpAction"
+    },
     "http://schema.org/SaleEvent": {
       "vocab": "schema",
       "label": "SaleEvent"
+    },
+    "http://schema.org/ScheduleAction": {
+      "vocab": "schema",
+      "label": "ScheduleAction"
     },
     "http://schema.org/ScholarlyArticle": {
       "vocab": "schema",
@@ -911,6 +1727,10 @@
       "vocab": "schema",
       "label": "SeaBodyOfWater"
     },
+    "http://schema.org/SearchAction": {
+      "vocab": "schema",
+      "label": "SearchAction"
+    },
     "http://schema.org/SearchResultsPage": {
       "vocab": "schema",
       "label": "SearchResultsPage"
@@ -918,6 +1738,18 @@
     "http://schema.org/SelfStorage": {
       "vocab": "schema",
       "label": "SelfStorage"
+    },
+    "http://schema.org/SellAction": {
+      "vocab": "schema",
+      "label": "SellAction"
+    },
+    "http://schema.org/SendAction": {
+      "vocab": "schema",
+      "label": "SendAction"
+    },
+    "http://schema.org/ShareAction": {
+      "vocab": "schema",
+      "label": "ShareAction"
     },
     "http://schema.org/ShoeStore": {
       "vocab": "schema",
@@ -942,6 +1774,18 @@
     "http://schema.org/SocialEvent": {
       "vocab": "schema",
       "label": "SocialEvent"
+    },
+    "http://schema.org/SoftwareApplication": {
+      "vocab": "schema",
+      "label": "SoftwareApplication"
+    },
+    "http://schema.org/SomeProducts": {
+      "vocab": "schema",
+      "label": "SomeProducts"
+    },
+    "http://schema.org/Specialty": {
+      "vocab": "schema",
+      "label": "Specialty"
     },
     "http://schema.org/SportingGoodsStore": {
       "vocab": "schema",
@@ -979,9 +1823,17 @@
       "vocab": "schema",
       "label": "StructuredValue"
     },
+    "http://schema.org/SubscribeAction": {
+      "vocab": "schema",
+      "label": "SubscribeAction"
+    },
     "http://schema.org/SubwayStation": {
       "vocab": "schema",
       "label": "SubwayStation"
+    },
+    "http://schema.org/SuperficialAnatomy": {
+      "vocab": "schema",
+      "label": "SuperficialAnatomy"
     },
     "http://schema.org/Synagogue": {
       "vocab": "schema",
@@ -1003,6 +1855,10 @@
       "vocab": "schema",
       "label": "Table"
     },
+    "http://schema.org/TakeAction": {
+      "vocab": "schema",
+      "label": "TakeAction"
+    },
     "http://schema.org/TattooParlor": {
       "vocab": "schema",
       "label": "TattooParlor"
@@ -1010,6 +1866,10 @@
     "http://schema.org/TaxiStand": {
       "vocab": "schema",
       "label": "TaxiStand"
+    },
+    "http://schema.org/TechArticle": {
+      "vocab": "schema",
+      "label": "TechArticle"
     },
     "http://schema.org/TelevisionStation": {
       "vocab": "schema",
@@ -1019,6 +1879,10 @@
       "vocab": "schema",
       "label": "TennisComplex"
     },
+    "http://schema.org/Text": {
+      "vocab": "schema",
+      "label": "Text"
+    },
     "http://schema.org/TheaterEvent": {
       "vocab": "schema",
       "label": "TheaterEvent"
@@ -1027,9 +1891,25 @@
       "vocab": "schema",
       "label": "TheaterGroup"
     },
+    "http://schema.org/TherapeuticProcedure": {
+      "vocab": "schema",
+      "label": "TherapeuticProcedure"
+    },
     "http://schema.org/Thing": {
       "vocab": "schema",
       "label": "Thing"
+    },
+    "http://schema.org/TieAction": {
+      "vocab": "schema",
+      "label": "TieAction"
+    },
+    "http://schema.org/Time": {
+      "vocab": "schema",
+      "label": "Time"
+    },
+    "http://schema.org/TipAction": {
+      "vocab": "schema",
+      "label": "TipAction"
     },
     "http://schema.org/TireShop": {
       "vocab": "schema",
@@ -1047,13 +1927,57 @@
       "vocab": "schema",
       "label": "ToyStore"
     },
+    "http://schema.org/TrackAction": {
+      "vocab": "schema",
+      "label": "TrackAction"
+    },
+    "http://schema.org/TradeAction": {
+      "vocab": "schema",
+      "label": "TradeAction"
+    },
     "http://schema.org/TrainStation": {
       "vocab": "schema",
       "label": "TrainStation"
     },
+    "http://schema.org/TransferAction": {
+      "vocab": "schema",
+      "label": "TransferAction"
+    },
+    "http://schema.org/TravelAction": {
+      "vocab": "schema",
+      "label": "TravelAction"
+    },
     "http://schema.org/TravelAgency": {
       "vocab": "schema",
       "label": "TravelAgency"
+    },
+    "http://schema.org/TreatmentIndication": {
+      "vocab": "schema",
+      "label": "TreatmentIndication"
+    },
+    "http://schema.org/TypeAndQuantityNode": {
+      "vocab": "schema",
+      "label": "TypeAndQuantityNode"
+    },
+    "http://schema.org/URL": {
+      "vocab": "schema",
+      "label": "URL"
+    },
+    "http://schema.org/UnRegisterAction": {
+      "vocab": "schema",
+      "label": "UnRegisterAction"
+    },
+    "http://schema.org/UnitPriceSpecification": {
+      "vocab": "schema",
+      "label": "UnitPriceSpecification"
+    },
+    "http://schema.org/UpdateAction": {
+      "vocab": "schema",
+      "label": "UpdateAction"
+    },
+    "http://schema.org/UseAction": {
+      "vocab": "schema",
+      "label": "UseAction"
     },
     "http://schema.org/UserBlocks": {
       "vocab": "schema",
@@ -1095,6 +2019,14 @@
       "vocab": "schema",
       "label": "UserTweets"
     },
+    "http://schema.org/Vein": {
+      "vocab": "schema",
+      "label": "Vein"
+    },
+    "http://schema.org/Vessel": {
+      "vocab": "schema",
+      "label": "Vessel"
+    },
     "http://schema.org/VeterinaryCare": {
       "vocab": "schema",
       "label": "VeterinaryCare"
@@ -1107,6 +2039,10 @@
       "vocab": "schema",
       "label": "VideoObject"
     },
+    "http://schema.org/ViewAction": {
+      "vocab": "schema",
+      "label": "ViewAction"
+    },
     "http://schema.org/VisualArtsEvent": {
       "vocab": "schema",
       "label": "VisualArtsEvent"
@@ -1114,6 +2050,10 @@
     "http://schema.org/Volcano": {
       "vocab": "schema",
       "label": "Volcano"
+    },
+    "http://schema.org/VoteAction": {
+      "vocab": "schema",
+      "label": "VoteAction"
     },
     "http://schema.org/WPAdBlock": {
       "vocab": "schema",
@@ -1131,9 +2071,33 @@
       "vocab": "schema",
       "label": "WPSideBar"
     },
+    "http://schema.org/WantAction": {
+      "vocab": "schema",
+      "label": "WantAction"
+    },
+    "http://schema.org/WarrantyPromise": {
+      "vocab": "schema",
+      "label": "WarrantyPromise"
+    },
+    "http://schema.org/WarrantyScope": {
+      "vocab": "schema",
+      "label": "WarrantyScope"
+    },
+    "http://schema.org/WatchAction": {
+      "vocab": "schema",
+      "label": "WatchAction"
+    },
     "http://schema.org/Waterfall": {
       "vocab": "schema",
       "label": "Waterfall"
+    },
+    "http://schema.org/WearAction": {
+      "vocab": "schema",
+      "label": "WearAction"
+    },
+    "http://schema.org/WebApplication": {
+      "vocab": "schema",
+      "label": "WebApplication"
     },
     "http://schema.org/WebPage": {
       "vocab": "schema",
@@ -1147,9 +2111,17 @@
       "vocab": "schema",
       "label": "WholesaleStore"
     },
+    "http://schema.org/WinAction": {
+      "vocab": "schema",
+      "label": "WinAction"
+    },
     "http://schema.org/Winery": {
       "vocab": "schema",
       "label": "Winery"
+    },
+    "http://schema.org/WriteAction": {
+      "vocab": "schema",
+      "label": "WriteAction"
     },
     "http://schema.org/Zoo": {
       "vocab": "schema",
@@ -1161,13 +2133,61 @@
       "vocab": "schema",
       "label": "about"
     },
+    "http://schema.org/acceptedPaymentMethod": {
+      "vocab": "schema",
+      "label": "acceptedPaymentMethod"
+    },
     "http://schema.org/acceptsReservations": {
       "vocab": "schema",
       "label": "acceptsReservations"
     },
+    "http://schema.org/accountablePerson": {
+      "vocab": "schema",
+      "label": "accountablePerson"
+    },
+    "http://schema.org/acquiredFrom": {
+      "vocab": "schema",
+      "label": "acquiredFrom"
+    },
+    "http://schema.org/action": {
+      "vocab": "schema",
+      "label": "action"
+    },
+    "http://schema.org/activeIngredient": {
+      "vocab": "schema",
+      "label": "activeIngredient"
+    },
+    "http://schema.org/activityDuration": {
+      "vocab": "schema",
+      "label": "activityDuration"
+    },
+    "http://schema.org/activityFrequency": {
+      "vocab": "schema",
+      "label": "activityFrequency"
+    },
+    "http://schema.org/actor": {
+      "vocab": "schema",
+      "label": "actor"
+    },
     "http://schema.org/actors": {
       "vocab": "schema",
       "label": "actors"
+    },
+    "http://schema.org/addOn": {
+      "vocab": "schema",
+      "label": "addOn"
+    },
+    "http://schema.org/additionalName": {
+      "vocab": "schema",
+      "label": "additionalName"
+    },
+    "http://schema.org/additionalType": {
+      "vocab": "schema",
+      "label": "additionalType"
+    },
+    "http://schema.org/additionalVariable": {
+      "vocab": "schema",
+      "label": "additionalVariable"
     },
     "http://schema.org/address": {
       "vocab": "schema",
@@ -1185,17 +2205,61 @@
       "vocab": "schema",
       "label": "addressRegion"
     },
+    "http://schema.org/administrationRoute": {
+      "vocab": "schema",
+      "label": "administrationRoute"
+    },
+    "http://schema.org/advanceBookingRequirement": {
+      "vocab": "schema",
+      "label": "advanceBookingRequirement"
+    },
+    "http://schema.org/adverseOutcome": {
+      "vocab": "schema",
+      "label": "adverseOutcome"
+    },
+    "http://schema.org/affectedBy": {
+      "vocab": "schema",
+      "label": "affectedBy"
+    },
     "http://schema.org/affiliation": {
       "vocab": "schema",
       "label": "affiliation"
+    },
+    "http://schema.org/agent": {
+      "vocab": "schema",
+      "label": "agent"
     },
     "http://schema.org/aggregateRating": {
       "vocab": "schema",
       "label": "aggregateRating"
     },
+    "http://schema.org/album": {
+      "vocab": "schema",
+      "label": "album"
+    },
     "http://schema.org/albums": {
       "vocab": "schema",
       "label": "albums"
+    },
+    "http://schema.org/alcoholWarning": {
+      "vocab": "schema",
+      "label": "alcoholWarning"
+    },
+    "http://schema.org/algorithm": {
+      "vocab": "schema",
+      "label": "algorithm"
+    },
+    "http://schema.org/alignmentType": {
+      "vocab": "schema",
+      "label": "alignmentType"
+    },
+    "http://schema.org/alternateName": {
+      "vocab": "schema",
+      "label": "alternateName"
+    },
+    "http://schema.org/alternativeHeadline": {
+      "vocab": "schema",
+      "label": "alternativeHeadline"
     },
     "http://schema.org/alumni": {
       "vocab": "schema",
@@ -1205,6 +2269,42 @@
       "vocab": "schema",
       "label": "alumniOf"
     },
+    "http://schema.org/amountOfThisGood": {
+      "vocab": "schema",
+      "label": "amountOfThisGood"
+    },
+    "http://schema.org/antagonist": {
+      "vocab": "schema",
+      "label": "antagonist"
+    },
+    "http://schema.org/applicableLocation": {
+      "vocab": "schema",
+      "label": "applicableLocation"
+    },
+    "http://schema.org/applicationCategory": {
+      "vocab": "schema",
+      "label": "applicationCategory"
+    },
+    "http://schema.org/applicationSubCategory": {
+      "vocab": "schema",
+      "label": "applicationSubCategory"
+    },
+    "http://schema.org/applicationSuite": {
+      "vocab": "schema",
+      "label": "applicationSuite"
+    },
+    "http://schema.org/appliesToDeliveryMethod": {
+      "vocab": "schema",
+      "label": "appliesToDeliveryMethod"
+    },
+    "http://schema.org/appliesToPaymentMethod": {
+      "vocab": "schema",
+      "label": "appliesToPaymentMethod"
+    },
+    "http://schema.org/arterialBranch": {
+      "vocab": "schema",
+      "label": "arterialBranch"
+    },
     "http://schema.org/articleBody": {
       "vocab": "schema",
       "label": "articleBody"
@@ -1213,9 +2313,45 @@
       "vocab": "schema",
       "label": "articleSection"
     },
+    "http://schema.org/aspect": {
+      "vocab": "schema",
+      "label": "aspect"
+    },
+    "http://schema.org/assembly": {
+      "vocab": "schema",
+      "label": "assembly"
+    },
+    "http://schema.org/assemblyVersion": {
+      "vocab": "schema",
+      "label": "assemblyVersion"
+    },
+    "http://schema.org/associatedAnatomy": {
+      "vocab": "schema",
+      "label": "associatedAnatomy"
+    },
+    "http://schema.org/associatedArticle": {
+      "vocab": "schema",
+      "label": "associatedArticle"
+    },
+    "http://schema.org/associatedMedia": {
+      "vocab": "schema",
+      "label": "associatedMedia"
+    },
+    "http://schema.org/associatedPathophysiology": {
+      "vocab": "schema",
+      "label": "associatedPathophysiology"
+    },
+    "http://schema.org/attendee": {
+      "vocab": "schema",
+      "label": "attendee"
+    },
     "http://schema.org/attendees": {
       "vocab": "schema",
       "label": "attendees"
+    },
+    "http://schema.org/audience": {
+      "vocab": "schema",
+      "label": "audience"
     },
     "http://schema.org/audio": {
       "vocab": "schema",
@@ -1229,13 +2365,69 @@
       "vocab": "schema",
       "label": "availability"
     },
+    "http://schema.org/availabilityEnds": {
+      "vocab": "schema",
+      "label": "availabilityEnds"
+    },
+    "http://schema.org/availabilityStarts": {
+      "vocab": "schema",
+      "label": "availabilityStarts"
+    },
+    "http://schema.org/availableAtOrFrom": {
+      "vocab": "schema",
+      "label": "availableAtOrFrom"
+    },
+    "http://schema.org/availableDeliveryMethod": {
+      "vocab": "schema",
+      "label": "availableDeliveryMethod"
+    },
+    "http://schema.org/availableIn": {
+      "vocab": "schema",
+      "label": "availableIn"
+    },
+    "http://schema.org/availableService": {
+      "vocab": "schema",
+      "label": "availableService"
+    },
+    "http://schema.org/availableStrength": {
+      "vocab": "schema",
+      "label": "availableStrength"
+    },
+    "http://schema.org/availableTest": {
+      "vocab": "schema",
+      "label": "availableTest"
+    },
+    "http://schema.org/award": {
+      "vocab": "schema",
+      "label": "award"
+    },
     "http://schema.org/awards": {
       "vocab": "schema",
       "label": "awards"
     },
+    "http://schema.org/background": {
+      "vocab": "schema",
+      "label": "background"
+    },
+    "http://schema.org/baseSalary": {
+      "vocab": "schema",
+      "label": "baseSalary"
+    },
+    "http://schema.org/benefits": {
+      "vocab": "schema",
+      "label": "benefits"
+    },
     "http://schema.org/bestRating": {
       "vocab": "schema",
       "label": "bestRating"
+    },
+    "http://schema.org/billingIncrement": {
+      "vocab": "schema",
+      "label": "billingIncrement"
+    },
+    "http://schema.org/biomechnicalClass": {
+      "vocab": "schema",
+      "label": "biomechnicalClass"
     },
     "http://schema.org/birthDate": {
       "vocab": "schema",
@@ -1245,9 +2437,21 @@
       "vocab": "schema",
       "label": "bitrate"
     },
+    "http://schema.org/blogPost": {
+      "vocab": "schema",
+      "label": "blogPost"
+    },
     "http://schema.org/blogPosts": {
       "vocab": "schema",
       "label": "blogPosts"
+    },
+    "http://schema.org/bloodSupply": {
+      "vocab": "schema",
+      "label": "bloodSupply"
+    },
+    "http://schema.org/bodyLocation": {
+      "vocab": "schema",
+      "label": "bodyLocation"
     },
     "http://schema.org/bookEdition": {
       "vocab": "schema",
@@ -1256,6 +2460,18 @@
     "http://schema.org/bookFormat": {
       "vocab": "schema",
       "label": "bookFormat"
+    },
+    "http://schema.org/borrower": {
+      "vocab": "schema",
+      "label": "borrower"
+    },
+    "http://schema.org/box": {
+      "vocab": "schema",
+      "label": "box"
+    },
+    "http://schema.org/branch": {
+      "vocab": "schema",
+      "label": "branch"
     },
     "http://schema.org/branchOf": {
       "vocab": "schema",
@@ -1269,6 +2485,22 @@
       "vocab": "schema",
       "label": "breadcrumb"
     },
+    "http://schema.org/breastfeedingWarning": {
+      "vocab": "schema",
+      "label": "breastfeedingWarning"
+    },
+    "http://schema.org/browserRequirements": {
+      "vocab": "schema",
+      "label": "browserRequirements"
+    },
+    "http://schema.org/businessFunction": {
+      "vocab": "schema",
+      "label": "businessFunction"
+    },
+    "http://schema.org/buyer": {
+      "vocab": "schema",
+      "label": "buyer"
+    },
     "http://schema.org/byArtist": {
       "vocab": "schema",
       "label": "byArtist"
@@ -1276,6 +2508,10 @@
     "http://schema.org/calories": {
       "vocab": "schema",
       "label": "calories"
+    },
+    "http://schema.org/candidate": {
+      "vocab": "schema",
+      "label": "candidate"
     },
     "http://schema.org/caption": {
       "vocab": "schema",
@@ -1285,6 +2521,34 @@
       "vocab": "schema",
       "label": "carbohydrateContent"
     },
+    "http://schema.org/carrierRequirements": {
+      "vocab": "schema",
+      "label": "carrierRequirements"
+    },
+    "http://schema.org/catalog": {
+      "vocab": "schema",
+      "label": "catalog"
+    },
+    "http://schema.org/category": {
+      "vocab": "schema",
+      "label": "category"
+    },
+    "http://schema.org/cause": {
+      "vocab": "schema",
+      "label": "cause"
+    },
+    "http://schema.org/causeOf": {
+      "vocab": "schema",
+      "label": "causeOf"
+    },
+    "http://schema.org/childMaxAge": {
+      "vocab": "schema",
+      "label": "childMaxAge"
+    },
+    "http://schema.org/childMinAge": {
+      "vocab": "schema",
+      "label": "childMinAge"
+    },
     "http://schema.org/children": {
       "vocab": "schema",
       "label": "children"
@@ -1293,9 +2557,77 @@
       "vocab": "schema",
       "label": "cholesterolContent"
     },
+    "http://schema.org/circle": {
+      "vocab": "schema",
+      "label": "circle"
+    },
+    "http://schema.org/citation": {
+      "vocab": "schema",
+      "label": "citation"
+    },
+    "http://schema.org/clincalPharmacology": {
+      "vocab": "schema",
+      "label": "clincalPharmacology"
+    },
+    "http://schema.org/closes": {
+      "vocab": "schema",
+      "label": "closes"
+    },
+    "http://schema.org/code": {
+      "vocab": "schema",
+      "label": "code"
+    },
+    "http://schema.org/codeRepository": {
+      "vocab": "schema",
+      "label": "codeRepository"
+    },
+    "http://schema.org/codeValue": {
+      "vocab": "schema",
+      "label": "codeValue"
+    },
+    "http://schema.org/codingSystem": {
+      "vocab": "schema",
+      "label": "codingSystem"
+    },
+    "http://schema.org/colleague": {
+      "vocab": "schema",
+      "label": "colleague"
+    },
     "http://schema.org/colleagues": {
       "vocab": "schema",
       "label": "colleagues"
+    },
+    "http://schema.org/collection": {
+      "vocab": "schema",
+      "label": "collection"
+    },
+    "http://schema.org/color": {
+      "vocab": "schema",
+      "label": "color"
+    },
+    "http://schema.org/comment": {
+      "vocab": "schema",
+      "label": "comment"
+    },
+    "http://schema.org/commentText": {
+      "vocab": "schema",
+      "label": "commentText"
+    },
+    "http://schema.org/commentTime": {
+      "vocab": "schema",
+      "label": "commentTime"
+    },
+    "http://schema.org/comprisedOf": {
+      "vocab": "schema",
+      "label": "comprisedOf"
+    },
+    "http://schema.org/connectedTo": {
+      "vocab": "schema",
+      "label": "connectedTo"
+    },
+    "http://schema.org/contactPoint": {
+      "vocab": "schema",
+      "label": "contactPoint"
     },
     "http://schema.org/contactPoints": {
       "vocab": "schema",
@@ -1321,9 +2653,17 @@
       "vocab": "schema",
       "label": "contentSize"
     },
-    "http://schema.org/contentURL": {
+    "http://schema.org/contentUrl": {
       "vocab": "schema",
-      "label": "contentURL"
+      "label": "contentUrl"
+    },
+    "http://schema.org/contraindication": {
+      "vocab": "schema",
+      "label": "contraindication"
+    },
+    "http://schema.org/contributor": {
+      "vocab": "schema",
+      "label": "contributor"
     },
     "http://schema.org/cookTime": {
       "vocab": "schema",
@@ -1333,53 +2673,285 @@
       "vocab": "schema",
       "label": "cookingMethod"
     },
+    "http://schema.org/copyrightHolder": {
+      "vocab": "schema",
+      "label": "copyrightHolder"
+    },
+    "http://schema.org/copyrightYear": {
+      "vocab": "schema",
+      "label": "copyrightYear"
+    },
+    "http://schema.org/cost": {
+      "vocab": "schema",
+      "label": "cost"
+    },
+    "http://schema.org/costCategory": {
+      "vocab": "schema",
+      "label": "costCategory"
+    },
+    "http://schema.org/costCurrency": {
+      "vocab": "schema",
+      "label": "costCurrency"
+    },
+    "http://schema.org/costOrigin": {
+      "vocab": "schema",
+      "label": "costOrigin"
+    },
+    "http://schema.org/costPerUnit": {
+      "vocab": "schema",
+      "label": "costPerUnit"
+    },
+    "http://schema.org/countriesNotSupported": {
+      "vocab": "schema",
+      "label": "countriesNotSupported"
+    },
+    "http://schema.org/countriesSupported": {
+      "vocab": "schema",
+      "label": "countriesSupported"
+    },
+    "http://schema.org/course": {
+      "vocab": "schema",
+      "label": "course"
+    },
+    "http://schema.org/creator": {
+      "vocab": "schema",
+      "label": "creator"
+    },
     "http://schema.org/currenciesAccepted": {
       "vocab": "schema",
       "label": "currenciesAccepted"
+    },
+    "http://schema.org/dataset": {
+      "vocab": "schema",
+      "label": "dataset"
+    },
+    "http://schema.org/dateCreated": {
+      "vocab": "schema",
+      "label": "dateCreated"
+    },
+    "http://schema.org/dateModified": {
+      "vocab": "schema",
+      "label": "dateModified"
+    },
+    "http://schema.org/datePosted": {
+      "vocab": "schema",
+      "label": "datePosted"
     },
     "http://schema.org/datePublished": {
       "vocab": "schema",
       "label": "datePublished"
     },
+    "http://schema.org/dateline": {
+      "vocab": "schema",
+      "label": "dateline"
+    },
+    "http://schema.org/dayOfWeek": {
+      "vocab": "schema",
+      "label": "dayOfWeek"
+    },
     "http://schema.org/deathDate": {
       "vocab": "schema",
       "label": "deathDate"
+    },
+    "http://schema.org/deliveryLeadTime": {
+      "vocab": "schema",
+      "label": "deliveryLeadTime"
+    },
+    "http://schema.org/deliveryMethod": {
+      "vocab": "schema",
+      "label": "deliveryMethod"
+    },
+    "http://schema.org/dependencies": {
+      "vocab": "schema",
+      "label": "dependencies"
+    },
+    "http://schema.org/depth": {
+      "vocab": "schema",
+      "label": "depth"
     },
     "http://schema.org/description": {
       "vocab": "schema",
       "label": "description"
     },
+    "http://schema.org/device": {
+      "vocab": "schema",
+      "label": "device"
+    },
+    "http://schema.org/diagnosis": {
+      "vocab": "schema",
+      "label": "diagnosis"
+    },
+    "http://schema.org/diagram": {
+      "vocab": "schema",
+      "label": "diagram"
+    },
+    "http://schema.org/diet": {
+      "vocab": "schema",
+      "label": "diet"
+    },
+    "http://schema.org/dietFeatures": {
+      "vocab": "schema",
+      "label": "dietFeatures"
+    },
+    "http://schema.org/differentialDiagnosis": {
+      "vocab": "schema",
+      "label": "differentialDiagnosis"
+    },
     "http://schema.org/director": {
       "vocab": "schema",
       "label": "director"
+    },
+    "http://schema.org/discusses": {
+      "vocab": "schema",
+      "label": "discusses"
+    },
+    "http://schema.org/discussionUrl": {
+      "vocab": "schema",
+      "label": "discussionUrl"
+    },
+    "http://schema.org/distance": {
+      "vocab": "schema",
+      "label": "distance"
+    },
+    "http://schema.org/distinguishingSign": {
+      "vocab": "schema",
+      "label": "distinguishingSign"
+    },
+    "http://schema.org/distribution": {
+      "vocab": "schema",
+      "label": "distribution"
+    },
+    "http://schema.org/domainIncludes": {
+      "vocab": "schema",
+      "label": "domainIncludes"
+    },
+    "http://schema.org/dosageForm": {
+      "vocab": "schema",
+      "label": "dosageForm"
+    },
+    "http://schema.org/doseSchedule": {
+      "vocab": "schema",
+      "label": "doseSchedule"
+    },
+    "http://schema.org/doseUnit": {
+      "vocab": "schema",
+      "label": "doseUnit"
+    },
+    "http://schema.org/doseValue": {
+      "vocab": "schema",
+      "label": "doseValue"
+    },
+    "http://schema.org/downloadUrl": {
+      "vocab": "schema",
+      "label": "downloadUrl"
+    },
+    "http://schema.org/drainsTo": {
+      "vocab": "schema",
+      "label": "drainsTo"
+    },
+    "http://schema.org/drug": {
+      "vocab": "schema",
+      "label": "drug"
+    },
+    "http://schema.org/drugClass": {
+      "vocab": "schema",
+      "label": "drugClass"
+    },
+    "http://schema.org/drugUnit": {
+      "vocab": "schema",
+      "label": "drugUnit"
+    },
+    "http://schema.org/duns": {
+      "vocab": "schema",
+      "label": "duns"
+    },
+    "http://schema.org/duplicateTherapy": {
+      "vocab": "schema",
+      "label": "duplicateTherapy"
     },
     "http://schema.org/duration": {
       "vocab": "schema",
       "label": "duration"
     },
+    "http://schema.org/durationOfWarranty": {
+      "vocab": "schema",
+      "label": "durationOfWarranty"
+    },
     "http://schema.org/editor": {
       "vocab": "schema",
       "label": "editor"
+    },
+    "http://schema.org/educationRequirements": {
+      "vocab": "schema",
+      "label": "educationRequirements"
+    },
+    "http://schema.org/educationalAlignment": {
+      "vocab": "schema",
+      "label": "educationalAlignment"
+    },
+    "http://schema.org/educationalFramework": {
+      "vocab": "schema",
+      "label": "educationalFramework"
+    },
+    "http://schema.org/educationalRole": {
+      "vocab": "schema",
+      "label": "educationalRole"
+    },
+    "http://schema.org/educationalUse": {
+      "vocab": "schema",
+      "label": "educationalUse"
     },
     "http://schema.org/elevation": {
       "vocab": "schema",
       "label": "elevation"
     },
+    "http://schema.org/eligibleCustomerType": {
+      "vocab": "schema",
+      "label": "eligibleCustomerType"
+    },
+    "http://schema.org/eligibleDuration": {
+      "vocab": "schema",
+      "label": "eligibleDuration"
+    },
+    "http://schema.org/eligibleQuantity": {
+      "vocab": "schema",
+      "label": "eligibleQuantity"
+    },
+    "http://schema.org/eligibleRegion": {
+      "vocab": "schema",
+      "label": "eligibleRegion"
+    },
+    "http://schema.org/eligibleTransactionVolume": {
+      "vocab": "schema",
+      "label": "eligibleTransactionVolume"
+    },
     "http://schema.org/email": {
       "vocab": "schema",
       "label": "email"
     },
-    "http://schema.org/embedURL": {
+    "http://schema.org/embedUrl": {
       "vocab": "schema",
-      "label": "embedURL"
+      "label": "embedUrl"
+    },
+    "http://schema.org/employee": {
+      "vocab": "schema",
+      "label": "employee"
     },
     "http://schema.org/employees": {
       "vocab": "schema",
       "label": "employees"
     },
+    "http://schema.org/employmentType": {
+      "vocab": "schema",
+      "label": "employmentType"
+    },
     "http://schema.org/encodesCreativeWork": {
       "vocab": "schema",
       "label": "encodesCreativeWork"
+    },
+    "http://schema.org/encoding": {
+      "vocab": "schema",
+      "label": "encoding"
     },
     "http://schema.org/encodingFormat": {
       "vocab": "schema",
@@ -1393,6 +2965,30 @@
       "vocab": "schema",
       "label": "endDate"
     },
+    "http://schema.org/endTime": {
+      "vocab": "schema",
+      "label": "endTime"
+    },
+    "http://schema.org/endorsee": {
+      "vocab": "schema",
+      "label": "endorsee"
+    },
+    "http://schema.org/endorsers": {
+      "vocab": "schema",
+      "label": "endorsers"
+    },
+    "http://schema.org/entertainmentBusiness": {
+      "vocab": "schema",
+      "label": "entertainmentBusiness"
+    },
+    "http://schema.org/epidemiology": {
+      "vocab": "schema",
+      "label": "epidemiology"
+    },
+    "http://schema.org/episode": {
+      "vocab": "schema",
+      "label": "episode"
+    },
     "http://schema.org/episodeNumber": {
       "vocab": "schema",
       "label": "episodeNumber"
@@ -1401,17 +2997,61 @@
       "vocab": "schema",
       "label": "episodes"
     },
+    "http://schema.org/equal": {
+      "vocab": "schema",
+      "label": "equal"
+    },
+    "http://schema.org/estimatesRiskOf": {
+      "vocab": "schema",
+      "label": "estimatesRiskOf"
+    },
+    "http://schema.org/event": {
+      "vocab": "schema",
+      "label": "event"
+    },
     "http://schema.org/events": {
       "vocab": "schema",
       "label": "events"
+    },
+    "http://schema.org/evidenceLevel": {
+      "vocab": "schema",
+      "label": "evidenceLevel"
+    },
+    "http://schema.org/evidenceOrigin": {
+      "vocab": "schema",
+      "label": "evidenceOrigin"
+    },
+    "http://schema.org/exercisePlan": {
+      "vocab": "schema",
+      "label": "exercisePlan"
+    },
+    "http://schema.org/exerciseType": {
+      "vocab": "schema",
+      "label": "exerciseType"
     },
     "http://schema.org/exifData": {
       "vocab": "schema",
       "label": "exifData"
     },
+    "http://schema.org/expectedPrognosis": {
+      "vocab": "schema",
+      "label": "expectedPrognosis"
+    },
+    "http://schema.org/experienceRequirements": {
+      "vocab": "schema",
+      "label": "experienceRequirements"
+    },
+    "http://schema.org/expertConsiderations": {
+      "vocab": "schema",
+      "label": "expertConsiderations"
+    },
     "http://schema.org/expires": {
       "vocab": "schema",
       "label": "expires"
+    },
+    "http://schema.org/familyName": {
+      "vocab": "schema",
+      "label": "familyName"
     },
     "http://schema.org/fatContent": {
       "vocab": "schema",
@@ -1421,13 +3061,49 @@
       "vocab": "schema",
       "label": "faxNumber"
     },
+    "http://schema.org/featureList": {
+      "vocab": "schema",
+      "label": "featureList"
+    },
     "http://schema.org/fiberContent": {
       "vocab": "schema",
       "label": "fiberContent"
     },
+    "http://schema.org/fileFormat": {
+      "vocab": "schema",
+      "label": "fileFormat"
+    },
+    "http://schema.org/fileSize": {
+      "vocab": "schema",
+      "label": "fileSize"
+    },
+    "http://schema.org/followee": {
+      "vocab": "schema",
+      "label": "followee"
+    },
     "http://schema.org/follows": {
       "vocab": "schema",
       "label": "follows"
+    },
+    "http://schema.org/followup": {
+      "vocab": "schema",
+      "label": "followup"
+    },
+    "http://schema.org/foodEstablishment": {
+      "vocab": "schema",
+      "label": "foodEstablishment"
+    },
+    "http://schema.org/foodEvent": {
+      "vocab": "schema",
+      "label": "foodEvent"
+    },
+    "http://schema.org/foodWarning": {
+      "vocab": "schema",
+      "label": "foodWarning"
+    },
+    "http://schema.org/founder": {
+      "vocab": "schema",
+      "label": "founder"
     },
     "http://schema.org/founders": {
       "vocab": "schema",
@@ -1436,6 +3112,22 @@
     "http://schema.org/foundingDate": {
       "vocab": "schema",
       "label": "foundingDate"
+    },
+    "http://schema.org/frequency": {
+      "vocab": "schema",
+      "label": "frequency"
+    },
+    "http://schema.org/fromLocation": {
+      "vocab": "schema",
+      "label": "fromLocation"
+    },
+    "http://schema.org/function": {
+      "vocab": "schema",
+      "label": "function"
+    },
+    "http://schema.org/functionalClass": {
+      "vocab": "schema",
+      "label": "functionalClass"
     },
     "http://schema.org/gender": {
       "vocab": "schema",
@@ -1449,9 +3141,57 @@
       "vocab": "schema",
       "label": "geo"
     },
+    "http://schema.org/givenName": {
+      "vocab": "schema",
+      "label": "givenName"
+    },
+    "http://schema.org/globalLocationNumber": {
+      "vocab": "schema",
+      "label": "globalLocationNumber"
+    },
+    "http://schema.org/greater": {
+      "vocab": "schema",
+      "label": "greater"
+    },
+    "http://schema.org/greaterOrEqual": {
+      "vocab": "schema",
+      "label": "greaterOrEqual"
+    },
+    "http://schema.org/gtin13": {
+      "vocab": "schema",
+      "label": "gtin13"
+    },
+    "http://schema.org/gtin14": {
+      "vocab": "schema",
+      "label": "gtin14"
+    },
+    "http://schema.org/gtin8": {
+      "vocab": "schema",
+      "label": "gtin8"
+    },
+    "http://schema.org/guideline": {
+      "vocab": "schema",
+      "label": "guideline"
+    },
+    "http://schema.org/guidelineDate": {
+      "vocab": "schema",
+      "label": "guidelineDate"
+    },
+    "http://schema.org/guidelineSubject": {
+      "vocab": "schema",
+      "label": "guidelineSubject"
+    },
+    "http://schema.org/hasPOS": {
+      "vocab": "schema",
+      "label": "hasPOS"
+    },
     "http://schema.org/headline": {
       "vocab": "schema",
       "label": "headline"
+    },
+    "http://schema.org/healthCondition": {
+      "vocab": "schema",
+      "label": "healthCondition"
     },
     "http://schema.org/height": {
       "vocab": "schema",
@@ -1461,9 +3201,37 @@
       "vocab": "schema",
       "label": "highPrice"
     },
+    "http://schema.org/hiringOrganization": {
+      "vocab": "schema",
+      "label": "hiringOrganization"
+    },
     "http://schema.org/homeLocation": {
       "vocab": "schema",
       "label": "homeLocation"
+    },
+    "http://schema.org/honorificPrefix": {
+      "vocab": "schema",
+      "label": "honorificPrefix"
+    },
+    "http://schema.org/honorificSuffix": {
+      "vocab": "schema",
+      "label": "honorificSuffix"
+    },
+    "http://schema.org/hospitalAffiliation": {
+      "vocab": "schema",
+      "label": "hospitalAffiliation"
+    },
+    "http://schema.org/howPerformed": {
+      "vocab": "schema",
+      "label": "howPerformed"
+    },
+    "http://schema.org/identifyingExam": {
+      "vocab": "schema",
+      "label": "identifyingExam"
+    },
+    "http://schema.org/identifyingTest": {
+      "vocab": "schema",
+      "label": "identifyingTest"
     },
     "http://schema.org/illustrator": {
       "vocab": "schema",
@@ -1472,6 +3240,10 @@
     "http://schema.org/image": {
       "vocab": "schema",
       "label": "image"
+    },
+    "http://schema.org/imagingTechnique": {
+      "vocab": "schema",
+      "label": "imagingTechnique"
     },
     "http://schema.org/inAlbum": {
       "vocab": "schema",
@@ -1485,13 +3257,89 @@
       "vocab": "schema",
       "label": "inPlaylist"
     },
+    "http://schema.org/incentives": {
+      "vocab": "schema",
+      "label": "incentives"
+    },
+    "http://schema.org/includedRiskFactor": {
+      "vocab": "schema",
+      "label": "includedRiskFactor"
+    },
+    "http://schema.org/includesObject": {
+      "vocab": "schema",
+      "label": "includesObject"
+    },
+    "http://schema.org/increasesRiskOf": {
+      "vocab": "schema",
+      "label": "increasesRiskOf"
+    },
+    "http://schema.org/indication": {
+      "vocab": "schema",
+      "label": "indication"
+    },
+    "http://schema.org/industry": {
+      "vocab": "schema",
+      "label": "industry"
+    },
+    "http://schema.org/infectiousAgent": {
+      "vocab": "schema",
+      "label": "infectiousAgent"
+    },
+    "http://schema.org/infectiousAgentClass": {
+      "vocab": "schema",
+      "label": "infectiousAgentClass"
+    },
     "http://schema.org/ingredients": {
       "vocab": "schema",
       "label": "ingredients"
     },
+    "http://schema.org/insertion": {
+      "vocab": "schema",
+      "label": "insertion"
+    },
+    "http://schema.org/installUrl": {
+      "vocab": "schema",
+      "label": "installUrl"
+    },
+    "http://schema.org/instrument": {
+      "vocab": "schema",
+      "label": "instrument"
+    },
+    "http://schema.org/intensity": {
+      "vocab": "schema",
+      "label": "intensity"
+    },
+    "http://schema.org/interactingDrug": {
+      "vocab": "schema",
+      "label": "interactingDrug"
+    },
     "http://schema.org/interactionCount": {
       "vocab": "schema",
       "label": "interactionCount"
+    },
+    "http://schema.org/interactivityType": {
+      "vocab": "schema",
+      "label": "interactivityType"
+    },
+    "http://schema.org/inventoryLevel": {
+      "vocab": "schema",
+      "label": "inventoryLevel"
+    },
+    "http://schema.org/isAccessoryOrSparePartFor": {
+      "vocab": "schema",
+      "label": "isAccessoryOrSparePartFor"
+    },
+    "http://schema.org/isAvailableGenerically": {
+      "vocab": "schema",
+      "label": "isAvailableGenerically"
+    },
+    "http://schema.org/isBasedOnUrl": {
+      "vocab": "schema",
+      "label": "isBasedOnUrl"
+    },
+    "http://schema.org/isConsumableFor": {
+      "vocab": "schema",
+      "label": "isConsumableFor"
     },
     "http://schema.org/isFamilyFriendly": {
       "vocab": "schema",
@@ -1501,9 +3349,29 @@
       "vocab": "schema",
       "label": "isPartOf"
     },
+    "http://schema.org/isProprietary": {
+      "vocab": "schema",
+      "label": "isProprietary"
+    },
+    "http://schema.org/isRelatedTo": {
+      "vocab": "schema",
+      "label": "isRelatedTo"
+    },
+    "http://schema.org/isSimilarTo": {
+      "vocab": "schema",
+      "label": "isSimilarTo"
+    },
+    "http://schema.org/isVariantOf": {
+      "vocab": "schema",
+      "label": "isVariantOf"
+    },
     "http://schema.org/isbn": {
       "vocab": "schema",
       "label": "isbn"
+    },
+    "http://schema.org/isicV4": {
+      "vocab": "schema",
+      "label": "isicV4"
     },
     "http://schema.org/itemCondition": {
       "vocab": "schema",
@@ -1513,6 +3381,10 @@
       "vocab": "schema",
       "label": "itemListElement"
     },
+    "http://schema.org/itemListOrder": {
+      "vocab": "schema",
+      "label": "itemListOrder"
+    },
     "http://schema.org/itemOffered": {
       "vocab": "schema",
       "label": "itemOffered"
@@ -1520,6 +3392,10 @@
     "http://schema.org/itemReviewed": {
       "vocab": "schema",
       "label": "itemReviewed"
+    },
+    "http://schema.org/jobLocation": {
+      "vocab": "schema",
+      "label": "jobLocation"
     },
     "http://schema.org/jobTitle": {
       "vocab": "schema",
@@ -1533,17 +3409,69 @@
       "vocab": "schema",
       "label": "knows"
     },
+    "http://schema.org/labelDetails": {
+      "vocab": "schema",
+      "label": "labelDetails"
+    },
+    "http://schema.org/landlord": {
+      "vocab": "schema",
+      "label": "landlord"
+    },
+    "http://schema.org/language": {
+      "vocab": "schema",
+      "label": "language"
+    },
+    "http://schema.org/lastReviewed": {
+      "vocab": "schema",
+      "label": "lastReviewed"
+    },
     "http://schema.org/latitude": {
       "vocab": "schema",
       "label": "latitude"
+    },
+    "http://schema.org/learningResourceType": {
+      "vocab": "schema",
+      "label": "learningResourceType"
+    },
+    "http://schema.org/legalName": {
+      "vocab": "schema",
+      "label": "legalName"
+    },
+    "http://schema.org/legalStatus": {
+      "vocab": "schema",
+      "label": "legalStatus"
+    },
+    "http://schema.org/lender": {
+      "vocab": "schema",
+      "label": "lender"
+    },
+    "http://schema.org/lesser": {
+      "vocab": "schema",
+      "label": "lesser"
+    },
+    "http://schema.org/lesserOrEqual": {
+      "vocab": "schema",
+      "label": "lesserOrEqual"
+    },
+    "http://schema.org/line": {
+      "vocab": "schema",
+      "label": "line"
     },
     "http://schema.org/location": {
       "vocab": "schema",
       "label": "location"
     },
+    "http://schema.org/logo": {
+      "vocab": "schema",
+      "label": "logo"
+    },
     "http://schema.org/longitude": {
       "vocab": "schema",
       "label": "longitude"
+    },
+    "http://schema.org/loser": {
+      "vocab": "schema",
+      "label": "loser"
     },
     "http://schema.org/lowPrice": {
       "vocab": "schema",
@@ -1553,13 +3481,49 @@
       "vocab": "schema",
       "label": "mainContentOfPage"
     },
+    "http://schema.org/makesOffer": {
+      "vocab": "schema",
+      "label": "makesOffer"
+    },
     "http://schema.org/manufacturer": {
       "vocab": "schema",
       "label": "manufacturer"
     },
+    "http://schema.org/map": {
+      "vocab": "schema",
+      "label": "map"
+    },
     "http://schema.org/maps": {
       "vocab": "schema",
       "label": "maps"
+    },
+    "http://schema.org/maxPrice": {
+      "vocab": "schema",
+      "label": "maxPrice"
+    },
+    "http://schema.org/maxValue": {
+      "vocab": "schema",
+      "label": "maxValue"
+    },
+    "http://schema.org/maximumIntake": {
+      "vocab": "schema",
+      "label": "maximumIntake"
+    },
+    "http://schema.org/mechanismOfAction": {
+      "vocab": "schema",
+      "label": "mechanismOfAction"
+    },
+    "http://schema.org/medicalSpecialty": {
+      "vocab": "schema",
+      "label": "medicalSpecialty"
+    },
+    "http://schema.org/medicineSystem": {
+      "vocab": "schema",
+      "label": "medicineSystem"
+    },
+    "http://schema.org/member": {
+      "vocab": "schema",
+      "label": "member"
     },
     "http://schema.org/memberOf": {
       "vocab": "schema",
@@ -1569,17 +3533,45 @@
       "vocab": "schema",
       "label": "members"
     },
+    "http://schema.org/memoryRequirements": {
+      "vocab": "schema",
+      "label": "memoryRequirements"
+    },
+    "http://schema.org/mentions": {
+      "vocab": "schema",
+      "label": "mentions"
+    },
     "http://schema.org/menu": {
       "vocab": "schema",
       "label": "menu"
+    },
+    "http://schema.org/minPrice": {
+      "vocab": "schema",
+      "label": "minPrice"
+    },
+    "http://schema.org/minValue": {
+      "vocab": "schema",
+      "label": "minValue"
     },
     "http://schema.org/model": {
       "vocab": "schema",
       "label": "model"
     },
+    "http://schema.org/mpn": {
+      "vocab": "schema",
+      "label": "mpn"
+    },
     "http://schema.org/musicBy": {
       "vocab": "schema",
       "label": "musicBy"
+    },
+    "http://schema.org/musicGroupMember": {
+      "vocab": "schema",
+      "label": "musicGroupMember"
+    },
+    "http://schema.org/naics": {
+      "vocab": "schema",
+      "label": "naics"
     },
     "http://schema.org/name": {
       "vocab": "schema",
@@ -1588,6 +3580,30 @@
     "http://schema.org/nationality": {
       "vocab": "schema",
       "label": "nationality"
+    },
+    "http://schema.org/naturalProgression": {
+      "vocab": "schema",
+      "label": "naturalProgression"
+    },
+    "http://schema.org/nerve": {
+      "vocab": "schema",
+      "label": "nerve"
+    },
+    "http://schema.org/nerveMotor": {
+      "vocab": "schema",
+      "label": "nerveMotor"
+    },
+    "http://schema.org/nonEqual": {
+      "vocab": "schema",
+      "label": "nonEqual"
+    },
+    "http://schema.org/nonProprietaryName": {
+      "vocab": "schema",
+      "label": "nonProprietaryName"
+    },
+    "http://schema.org/normalRange": {
+      "vocab": "schema",
+      "label": "normalRange"
     },
     "http://schema.org/numTracks": {
       "vocab": "schema",
@@ -1605,6 +3621,14 @@
       "vocab": "schema",
       "label": "nutrition"
     },
+    "http://schema.org/object": {
+      "vocab": "schema",
+      "label": "object"
+    },
+    "http://schema.org/occupationalCategory": {
+      "vocab": "schema",
+      "label": "occupationalCategory"
+    },
     "http://schema.org/offerCount": {
       "vocab": "schema",
       "label": "offerCount"
@@ -1617,6 +3641,62 @@
       "vocab": "schema",
       "label": "openingHours"
     },
+    "http://schema.org/openingHoursSpecification": {
+      "vocab": "schema",
+      "label": "openingHoursSpecification"
+    },
+    "http://schema.org/opens": {
+      "vocab": "schema",
+      "label": "opens"
+    },
+    "http://schema.org/operatingSystem": {
+      "vocab": "schema",
+      "label": "operatingSystem"
+    },
+    "http://schema.org/oponent": {
+      "vocab": "schema",
+      "label": "oponent"
+    },
+    "http://schema.org/option": {
+      "vocab": "schema",
+      "label": "option"
+    },
+    "http://schema.org/origin": {
+      "vocab": "schema",
+      "label": "origin"
+    },
+    "http://schema.org/originatesFrom": {
+      "vocab": "schema",
+      "label": "originatesFrom"
+    },
+    "http://schema.org/outcome": {
+      "vocab": "schema",
+      "label": "outcome"
+    },
+    "http://schema.org/overdosage": {
+      "vocab": "schema",
+      "label": "overdosage"
+    },
+    "http://schema.org/overview": {
+      "vocab": "schema",
+      "label": "overview"
+    },
+    "http://schema.org/ownedFrom": {
+      "vocab": "schema",
+      "label": "ownedFrom"
+    },
+    "http://schema.org/ownedThrough": {
+      "vocab": "schema",
+      "label": "ownedThrough"
+    },
+    "http://schema.org/owns": {
+      "vocab": "schema",
+      "label": "owns"
+    },
+    "http://schema.org/parent": {
+      "vocab": "schema",
+      "label": "parent"
+    },
     "http://schema.org/parents": {
       "vocab": "schema",
       "label": "parents"
@@ -1625,13 +3705,29 @@
       "vocab": "schema",
       "label": "partOfSeason"
     },
+    "http://schema.org/partOfSystem": {
+      "vocab": "schema",
+      "label": "partOfSystem"
+    },
     "http://schema.org/partOfTVSeries": {
       "vocab": "schema",
       "label": "partOfTVSeries"
     },
+    "http://schema.org/participant": {
+      "vocab": "schema",
+      "label": "participant"
+    },
+    "http://schema.org/pathophysiology": {
+      "vocab": "schema",
+      "label": "pathophysiology"
+    },
     "http://schema.org/paymentAccepted": {
       "vocab": "schema",
       "label": "paymentAccepted"
+    },
+    "http://schema.org/performer": {
+      "vocab": "schema",
+      "label": "performer"
     },
     "http://schema.org/performerIn": {
       "vocab": "schema",
@@ -1641,25 +3737,89 @@
       "vocab": "schema",
       "label": "performers"
     },
+    "http://schema.org/permissions": {
+      "vocab": "schema",
+      "label": "permissions"
+    },
+    "http://schema.org/phase": {
+      "vocab": "schema",
+      "label": "phase"
+    },
+    "http://schema.org/photo": {
+      "vocab": "schema",
+      "label": "photo"
+    },
     "http://schema.org/photos": {
       "vocab": "schema",
       "label": "photos"
+    },
+    "http://schema.org/physiologicalBenefits": {
+      "vocab": "schema",
+      "label": "physiologicalBenefits"
     },
     "http://schema.org/playerType": {
       "vocab": "schema",
       "label": "playerType"
     },
+    "http://schema.org/polygon": {
+      "vocab": "schema",
+      "label": "polygon"
+    },
+    "http://schema.org/population": {
+      "vocab": "schema",
+      "label": "population"
+    },
+    "http://schema.org/possibleComplication": {
+      "vocab": "schema",
+      "label": "possibleComplication"
+    },
+    "http://schema.org/possibleTreatment": {
+      "vocab": "schema",
+      "label": "possibleTreatment"
+    },
     "http://schema.org/postOfficeBoxNumber": {
       "vocab": "schema",
       "label": "postOfficeBoxNumber"
+    },
+    "http://schema.org/postOp": {
+      "vocab": "schema",
+      "label": "postOp"
     },
     "http://schema.org/postalCode": {
       "vocab": "schema",
       "label": "postalCode"
     },
+    "http://schema.org/preOp": {
+      "vocab": "schema",
+      "label": "preOp"
+    },
+    "http://schema.org/predecessorOf": {
+      "vocab": "schema",
+      "label": "predecessorOf"
+    },
+    "http://schema.org/pregnancyCategory": {
+      "vocab": "schema",
+      "label": "pregnancyCategory"
+    },
+    "http://schema.org/pregnancyWarning": {
+      "vocab": "schema",
+      "label": "pregnancyWarning"
+    },
     "http://schema.org/prepTime": {
       "vocab": "schema",
       "label": "prepTime"
+    },
+    "http://schema.org/preparation": {
+      "vocab": "schema",
+      "label": "preparation"
+    },
+    "http://schema.org/prescribingInfo": {
+      "vocab": "schema",
+      "label": "prescribingInfo"
+    },
+    "http://schema.org/prescriptionStatus": {
+      "vocab": "schema",
+      "label": "prescriptionStatus"
     },
     "http://schema.org/price": {
       "vocab": "schema",
@@ -1673,6 +3833,14 @@
       "vocab": "schema",
       "label": "priceRange"
     },
+    "http://schema.org/priceSpecification": {
+      "vocab": "schema",
+      "label": "priceSpecification"
+    },
+    "http://schema.org/priceType": {
+      "vocab": "schema",
+      "label": "priceType"
+    },
     "http://schema.org/priceValidUntil": {
       "vocab": "schema",
       "label": "priceValidUntil"
@@ -1680,6 +3848,38 @@
     "http://schema.org/primaryImageOfPage": {
       "vocab": "schema",
       "label": "primaryImageOfPage"
+    },
+    "http://schema.org/primaryPrevention": {
+      "vocab": "schema",
+      "label": "primaryPrevention"
+    },
+    "http://schema.org/printColumn": {
+      "vocab": "schema",
+      "label": "printColumn"
+    },
+    "http://schema.org/printEdition": {
+      "vocab": "schema",
+      "label": "printEdition"
+    },
+    "http://schema.org/printPage": {
+      "vocab": "schema",
+      "label": "printPage"
+    },
+    "http://schema.org/printSection": {
+      "vocab": "schema",
+      "label": "printSection"
+    },
+    "http://schema.org/procedure": {
+      "vocab": "schema",
+      "label": "procedure"
+    },
+    "http://schema.org/procedureType": {
+      "vocab": "schema",
+      "label": "procedureType"
+    },
+    "http://schema.org/processorRequirements": {
+      "vocab": "schema",
+      "label": "processorRequirements"
     },
     "http://schema.org/producer": {
       "vocab": "schema",
@@ -1693,13 +3893,61 @@
       "vocab": "schema",
       "label": "productionCompany"
     },
+    "http://schema.org/proficiencyLevel": {
+      "vocab": "schema",
+      "label": "proficiencyLevel"
+    },
+    "http://schema.org/programmingLanguage": {
+      "vocab": "schema",
+      "label": "programmingLanguage"
+    },
+    "http://schema.org/programmingModel": {
+      "vocab": "schema",
+      "label": "programmingModel"
+    },
+    "http://schema.org/proprietaryName": {
+      "vocab": "schema",
+      "label": "proprietaryName"
+    },
     "http://schema.org/proteinContent": {
       "vocab": "schema",
       "label": "proteinContent"
     },
+    "http://schema.org/provider": {
+      "vocab": "schema",
+      "label": "provider"
+    },
+    "http://schema.org/publicationType": {
+      "vocab": "schema",
+      "label": "publicationType"
+    },
     "http://schema.org/publisher": {
       "vocab": "schema",
       "label": "publisher"
+    },
+    "http://schema.org/publishingPrinciples": {
+      "vocab": "schema",
+      "label": "publishingPrinciples"
+    },
+    "http://schema.org/purpose": {
+      "vocab": "schema",
+      "label": "purpose"
+    },
+    "http://schema.org/qualifications": {
+      "vocab": "schema",
+      "label": "qualifications"
+    },
+    "http://schema.org/query": {
+      "vocab": "schema",
+      "label": "query"
+    },
+    "http://schema.org/question": {
+      "vocab": "schema",
+      "label": "question"
+    },
+    "http://schema.org/rangeIncludes": {
+      "vocab": "schema",
+      "label": "rangeIncludes"
     },
     "http://schema.org/ratingCount": {
       "vocab": "schema",
@@ -1708,6 +3956,14 @@
     "http://schema.org/ratingValue": {
       "vocab": "schema",
       "label": "ratingValue"
+    },
+    "http://schema.org/realEstateAgent": {
+      "vocab": "schema",
+      "label": "realEstateAgent"
+    },
+    "http://schema.org/recipe": {
+      "vocab": "schema",
+      "label": "recipe"
     },
     "http://schema.org/recipeCategory": {
       "vocab": "schema",
@@ -1725,21 +3981,117 @@
       "vocab": "schema",
       "label": "recipeYield"
     },
+    "http://schema.org/recipient": {
+      "vocab": "schema",
+      "label": "recipient"
+    },
+    "http://schema.org/recognizingAuthority": {
+      "vocab": "schema",
+      "label": "recognizingAuthority"
+    },
+    "http://schema.org/recommendationStrength": {
+      "vocab": "schema",
+      "label": "recommendationStrength"
+    },
+    "http://schema.org/recommendedIntake": {
+      "vocab": "schema",
+      "label": "recommendedIntake"
+    },
+    "http://schema.org/regionDrained": {
+      "vocab": "schema",
+      "label": "regionDrained"
+    },
     "http://schema.org/regionsAllowed": {
       "vocab": "schema",
       "label": "regionsAllowed"
+    },
+    "http://schema.org/relatedAnatomy": {
+      "vocab": "schema",
+      "label": "relatedAnatomy"
+    },
+    "http://schema.org/relatedCondition": {
+      "vocab": "schema",
+      "label": "relatedCondition"
+    },
+    "http://schema.org/relatedDrug": {
+      "vocab": "schema",
+      "label": "relatedDrug"
+    },
+    "http://schema.org/relatedLink": {
+      "vocab": "schema",
+      "label": "relatedLink"
+    },
+    "http://schema.org/relatedStructure": {
+      "vocab": "schema",
+      "label": "relatedStructure"
+    },
+    "http://schema.org/relatedTherapy": {
+      "vocab": "schema",
+      "label": "relatedTherapy"
     },
     "http://schema.org/relatedTo": {
       "vocab": "schema",
       "label": "relatedTo"
     },
+    "http://schema.org/releaseDate": {
+      "vocab": "schema",
+      "label": "releaseDate"
+    },
+    "http://schema.org/releaseNotes": {
+      "vocab": "schema",
+      "label": "releaseNotes"
+    },
+    "http://schema.org/relevantSpecialty": {
+      "vocab": "schema",
+      "label": "relevantSpecialty"
+    },
+    "http://schema.org/repetitions": {
+      "vocab": "schema",
+      "label": "repetitions"
+    },
+    "http://schema.org/replacee": {
+      "vocab": "schema",
+      "label": "replacee"
+    },
+    "http://schema.org/replacer": {
+      "vocab": "schema",
+      "label": "replacer"
+    },
+    "http://schema.org/replyToUrl": {
+      "vocab": "schema",
+      "label": "replyToUrl"
+    },
     "http://schema.org/representativeOfPage": {
       "vocab": "schema",
       "label": "representativeOfPage"
     },
+    "http://schema.org/requirements": {
+      "vocab": "schema",
+      "label": "requirements"
+    },
     "http://schema.org/requiresSubscription": {
       "vocab": "schema",
       "label": "requiresSubscription"
+    },
+    "http://schema.org/responsibilities": {
+      "vocab": "schema",
+      "label": "responsibilities"
+    },
+    "http://schema.org/restPeriods": {
+      "vocab": "schema",
+      "label": "restPeriods"
+    },
+    "http://schema.org/result": {
+      "vocab": "schema",
+      "label": "result"
+    },
+    "http://schema.org/resultReview": {
+      "vocab": "schema",
+      "label": "resultReview"
+    },
+    "http://schema.org/review": {
+      "vocab": "schema",
+      "label": "review"
     },
     "http://schema.org/reviewBody": {
       "vocab": "schema",
@@ -1753,13 +4105,61 @@
       "vocab": "schema",
       "label": "reviewRating"
     },
+    "http://schema.org/reviewedBy": {
+      "vocab": "schema",
+      "label": "reviewedBy"
+    },
     "http://schema.org/reviews": {
       "vocab": "schema",
       "label": "reviews"
     },
+    "http://schema.org/riskFactor": {
+      "vocab": "schema",
+      "label": "riskFactor"
+    },
+    "http://schema.org/risks": {
+      "vocab": "schema",
+      "label": "risks"
+    },
+    "http://schema.org/runsTo": {
+      "vocab": "schema",
+      "label": "runsTo"
+    },
+    "http://schema.org/runtime": {
+      "vocab": "schema",
+      "label": "runtime"
+    },
+    "http://schema.org/safetyConsideration": {
+      "vocab": "schema",
+      "label": "safetyConsideration"
+    },
+    "http://schema.org/salaryCurrency": {
+      "vocab": "schema",
+      "label": "salaryCurrency"
+    },
+    "http://schema.org/sameAs": {
+      "vocab": "schema",
+      "label": "sameAs"
+    },
+    "http://schema.org/sampleType": {
+      "vocab": "schema",
+      "label": "sampleType"
+    },
     "http://schema.org/saturatedFatContent": {
       "vocab": "schema",
       "label": "saturatedFatContent"
+    },
+    "http://schema.org/scheduledTime": {
+      "vocab": "schema",
+      "label": "scheduledTime"
+    },
+    "http://schema.org/screenshot": {
+      "vocab": "schema",
+      "label": "screenshot"
+    },
+    "http://schema.org/season": {
+      "vocab": "schema",
+      "label": "season"
     },
     "http://schema.org/seasonNumber": {
       "vocab": "schema",
@@ -1769,9 +4169,33 @@
       "vocab": "schema",
       "label": "seasons"
     },
+    "http://schema.org/secondaryPrevention": {
+      "vocab": "schema",
+      "label": "secondaryPrevention"
+    },
+    "http://schema.org/seeks": {
+      "vocab": "schema",
+      "label": "seeks"
+    },
     "http://schema.org/seller": {
       "vocab": "schema",
       "label": "seller"
+    },
+    "http://schema.org/sender": {
+      "vocab": "schema",
+      "label": "sender"
+    },
+    "http://schema.org/sensoryUnit": {
+      "vocab": "schema",
+      "label": "sensoryUnit"
+    },
+    "http://schema.org/serialNumber": {
+      "vocab": "schema",
+      "label": "serialNumber"
+    },
+    "http://schema.org/seriousAdverseOutcome": {
+      "vocab": "schema",
+      "label": "seriousAdverseOutcome"
     },
     "http://schema.org/servesCuisine": {
       "vocab": "schema",
@@ -1781,53 +4205,277 @@
       "vocab": "schema",
       "label": "servingSize"
     },
+    "http://schema.org/sibling": {
+      "vocab": "schema",
+      "label": "sibling"
+    },
     "http://schema.org/siblings": {
       "vocab": "schema",
       "label": "siblings"
+    },
+    "http://schema.org/signDetected": {
+      "vocab": "schema",
+      "label": "signDetected"
+    },
+    "http://schema.org/signOrSymptom": {
+      "vocab": "schema",
+      "label": "signOrSymptom"
+    },
+    "http://schema.org/significance": {
+      "vocab": "schema",
+      "label": "significance"
+    },
+    "http://schema.org/significantLink": {
+      "vocab": "schema",
+      "label": "significantLink"
     },
     "http://schema.org/significantLinks": {
       "vocab": "schema",
       "label": "significantLinks"
     },
+    "http://schema.org/skills": {
+      "vocab": "schema",
+      "label": "skills"
+    },
+    "http://schema.org/sku": {
+      "vocab": "schema",
+      "label": "sku"
+    },
     "http://schema.org/sodiumContent": {
       "vocab": "schema",
       "label": "sodiumContent"
+    },
+    "http://schema.org/softwareVersion": {
+      "vocab": "schema",
+      "label": "softwareVersion"
+    },
+    "http://schema.org/source": {
+      "vocab": "schema",
+      "label": "source"
+    },
+    "http://schema.org/sourceOrganization": {
+      "vocab": "schema",
+      "label": "sourceOrganization"
+    },
+    "http://schema.org/sourcedFrom": {
+      "vocab": "schema",
+      "label": "sourcedFrom"
+    },
+    "http://schema.org/spatial": {
+      "vocab": "schema",
+      "label": "spatial"
+    },
+    "http://schema.org/specialCommitments": {
+      "vocab": "schema",
+      "label": "specialCommitments"
+    },
+    "http://schema.org/specialty": {
+      "vocab": "schema",
+      "label": "specialty"
+    },
+    "http://schema.org/sponsor": {
+      "vocab": "schema",
+      "label": "sponsor"
+    },
+    "http://schema.org/sportsActivityLocation": {
+      "vocab": "schema",
+      "label": "sportsActivityLocation"
+    },
+    "http://schema.org/sportsEvent": {
+      "vocab": "schema",
+      "label": "sportsEvent"
+    },
+    "http://schema.org/sportsTeam": {
+      "vocab": "schema",
+      "label": "sportsTeam"
     },
     "http://schema.org/spouse": {
       "vocab": "schema",
       "label": "spouse"
     },
+    "http://schema.org/stage": {
+      "vocab": "schema",
+      "label": "stage"
+    },
+    "http://schema.org/stageAsNumber": {
+      "vocab": "schema",
+      "label": "stageAsNumber"
+    },
     "http://schema.org/startDate": {
       "vocab": "schema",
       "label": "startDate"
+    },
+    "http://schema.org/startTime": {
+      "vocab": "schema",
+      "label": "startTime"
+    },
+    "http://schema.org/status": {
+      "vocab": "schema",
+      "label": "status"
+    },
+    "http://schema.org/storageRequirements": {
+      "vocab": "schema",
+      "label": "storageRequirements"
     },
     "http://schema.org/streetAddress": {
       "vocab": "schema",
       "label": "streetAddress"
     },
+    "http://schema.org/strengthUnit": {
+      "vocab": "schema",
+      "label": "strengthUnit"
+    },
+    "http://schema.org/strengthValue": {
+      "vocab": "schema",
+      "label": "strengthValue"
+    },
+    "http://schema.org/structuralClass": {
+      "vocab": "schema",
+      "label": "structuralClass"
+    },
+    "http://schema.org/study": {
+      "vocab": "schema",
+      "label": "study"
+    },
+    "http://schema.org/studyDesign": {
+      "vocab": "schema",
+      "label": "studyDesign"
+    },
+    "http://schema.org/studyLocation": {
+      "vocab": "schema",
+      "label": "studyLocation"
+    },
+    "http://schema.org/studySubject": {
+      "vocab": "schema",
+      "label": "studySubject"
+    },
+    "http://schema.org/subEvent": {
+      "vocab": "schema",
+      "label": "subEvent"
+    },
     "http://schema.org/subEvents": {
       "vocab": "schema",
       "label": "subEvents"
+    },
+    "http://schema.org/subStageSuffix": {
+      "vocab": "schema",
+      "label": "subStageSuffix"
+    },
+    "http://schema.org/subStructure": {
+      "vocab": "schema",
+      "label": "subStructure"
+    },
+    "http://schema.org/subTest": {
+      "vocab": "schema",
+      "label": "subTest"
+    },
+    "http://schema.org/subtype": {
+      "vocab": "schema",
+      "label": "subtype"
+    },
+    "http://schema.org/successorOf": {
+      "vocab": "schema",
+      "label": "successorOf"
     },
     "http://schema.org/sugarContent": {
       "vocab": "schema",
       "label": "sugarContent"
     },
+    "http://schema.org/suggestedGender": {
+      "vocab": "schema",
+      "label": "suggestedGender"
+    },
+    "http://schema.org/suggestedMaxAge": {
+      "vocab": "schema",
+      "label": "suggestedMaxAge"
+    },
+    "http://schema.org/suggestedMinAge": {
+      "vocab": "schema",
+      "label": "suggestedMinAge"
+    },
     "http://schema.org/superEvent": {
       "vocab": "schema",
       "label": "superEvent"
+    },
+    "http://schema.org/supplyTo": {
+      "vocab": "schema",
+      "label": "supplyTo"
+    },
+    "http://schema.org/targetDescription": {
+      "vocab": "schema",
+      "label": "targetDescription"
+    },
+    "http://schema.org/targetName": {
+      "vocab": "schema",
+      "label": "targetName"
+    },
+    "http://schema.org/targetPlatform": {
+      "vocab": "schema",
+      "label": "targetPlatform"
+    },
+    "http://schema.org/targetPopulation": {
+      "vocab": "schema",
+      "label": "targetPopulation"
+    },
+    "http://schema.org/targetProduct": {
+      "vocab": "schema",
+      "label": "targetProduct"
+    },
+    "http://schema.org/targetUrl": {
+      "vocab": "schema",
+      "label": "targetUrl"
+    },
+    "http://schema.org/taxID": {
+      "vocab": "schema",
+      "label": "taxID"
     },
     "http://schema.org/telephone": {
       "vocab": "schema",
       "label": "telephone"
     },
+    "http://schema.org/temporal": {
+      "vocab": "schema",
+      "label": "temporal"
+    },
+    "http://schema.org/text": {
+      "vocab": "schema",
+      "label": "text"
+    },
     "http://schema.org/thumbnail": {
       "vocab": "schema",
       "label": "thumbnail"
     },
+    "http://schema.org/thumbnailUrl": {
+      "vocab": "schema",
+      "label": "thumbnailUrl"
+    },
+    "http://schema.org/tickerSymbol": {
+      "vocab": "schema",
+      "label": "tickerSymbol"
+    },
+    "http://schema.org/timeRequired": {
+      "vocab": "schema",
+      "label": "timeRequired"
+    },
+    "http://schema.org/tissueSample": {
+      "vocab": "schema",
+      "label": "tissueSample"
+    },
+    "http://schema.org/title": {
+      "vocab": "schema",
+      "label": "title"
+    },
+    "http://schema.org/toLocation": {
+      "vocab": "schema",
+      "label": "toLocation"
+    },
     "http://schema.org/totalTime": {
       "vocab": "schema",
       "label": "totalTime"
+    },
+    "http://schema.org/track": {
+      "vocab": "schema",
+      "label": "track"
     },
     "http://schema.org/tracks": {
       "vocab": "schema",
@@ -1841,6 +4489,38 @@
       "vocab": "schema",
       "label": "transFatContent"
     },
+    "http://schema.org/transcript": {
+      "vocab": "schema",
+      "label": "transcript"
+    },
+    "http://schema.org/transmissionMethod": {
+      "vocab": "schema",
+      "label": "transmissionMethod"
+    },
+    "http://schema.org/trialDesign": {
+      "vocab": "schema",
+      "label": "trialDesign"
+    },
+    "http://schema.org/tributary": {
+      "vocab": "schema",
+      "label": "tributary"
+    },
+    "http://schema.org/typeOfGood": {
+      "vocab": "schema",
+      "label": "typeOfGood"
+    },
+    "http://schema.org/typicalAgeRange": {
+      "vocab": "schema",
+      "label": "typicalAgeRange"
+    },
+    "http://schema.org/typicalTest": {
+      "vocab": "schema",
+      "label": "typicalTest"
+    },
+    "http://schema.org/unitCode": {
+      "vocab": "schema",
+      "label": "unitCode"
+    },
     "http://schema.org/unsaturatedFatContent": {
       "vocab": "schema",
       "label": "unsaturatedFatContent"
@@ -1852,6 +4532,46 @@
     "http://schema.org/url": {
       "vocab": "schema",
       "label": "url"
+    },
+    "http://schema.org/usedToDiagnose": {
+      "vocab": "schema",
+      "label": "usedToDiagnose"
+    },
+    "http://schema.org/usesDevice": {
+      "vocab": "schema",
+      "label": "usesDevice"
+    },
+    "http://schema.org/validFrom": {
+      "vocab": "schema",
+      "label": "validFrom"
+    },
+    "http://schema.org/validThrough": {
+      "vocab": "schema",
+      "label": "validThrough"
+    },
+    "http://schema.org/value": {
+      "vocab": "schema",
+      "label": "value"
+    },
+    "http://schema.org/valueAddedTaxIncluded": {
+      "vocab": "schema",
+      "label": "valueAddedTaxIncluded"
+    },
+    "http://schema.org/valueReference": {
+      "vocab": "schema",
+      "label": "valueReference"
+    },
+    "http://schema.org/vatID": {
+      "vocab": "schema",
+      "label": "vatID"
+    },
+    "http://schema.org/vendor": {
+      "vocab": "schema",
+      "label": "vendor"
+    },
+    "http://schema.org/version": {
+      "vocab": "schema",
+      "label": "version"
     },
     "http://schema.org/video": {
       "vocab": "schema",
@@ -1865,13 +4585,49 @@
       "vocab": "schema",
       "label": "videoQuality"
     },
+    "http://schema.org/warning": {
+      "vocab": "schema",
+      "label": "warning"
+    },
+    "http://schema.org/warranty": {
+      "vocab": "schema",
+      "label": "warranty"
+    },
+    "http://schema.org/warrantyPromise": {
+      "vocab": "schema",
+      "label": "warrantyPromise"
+    },
+    "http://schema.org/warrantyScope": {
+      "vocab": "schema",
+      "label": "warrantyScope"
+    },
+    "http://schema.org/weight": {
+      "vocab": "schema",
+      "label": "weight"
+    },
     "http://schema.org/width": {
       "vocab": "schema",
       "label": "width"
     },
+    "http://schema.org/winner": {
+      "vocab": "schema",
+      "label": "winner"
+    },
+    "http://schema.org/wordCount": {
+      "vocab": "schema",
+      "label": "wordCount"
+    },
+    "http://schema.org/workHours": {
+      "vocab": "schema",
+      "label": "workHours"
+    },
     "http://schema.org/workLocation": {
       "vocab": "schema",
       "label": "workLocation"
+    },
+    "http://schema.org/workload": {
+      "vocab": "schema",
+      "label": "workload"
     },
     "http://schema.org/worksFor": {
       "vocab": "schema",
@@ -1881,5 +4637,7 @@
       "vocab": "schema",
       "label": "worstRating"
     }
+  },
+  "Datatypes": {
   }
 }
