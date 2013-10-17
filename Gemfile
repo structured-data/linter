@@ -9,10 +9,12 @@ gem 'rdf-rdfa',         :git => "git://github.com/ruby-rdf/rdf-rdfa.git", :requi
 gem 'sinatra-linkeddata', :git => "git://github.com/ruby-rdf/sinatra-linkeddata.git", :require => "sinatra/linkeddata"
 gem 'rack-linkeddata',    :git => "git://github.com/ruby-rdf/rack-linkeddata.git", :require => "rack/linkeddata"
 
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
 group :development, :test do
+  gem 'sparql'
+  gem 'rake'
+end
+
+group :debug do
   gem 'wirble'
+  gem 'debugger'
 end
