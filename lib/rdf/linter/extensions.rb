@@ -58,22 +58,31 @@ module RDF::Util
       case filename_or_url.to_s
       when /^file:/
         path = filename_or_url[5..-1]
-        Kernel.open(path.to_s, &block)
+        Kernel.open(path.to_s, "r", 0, options, &block)
       when /^http/
         io_obj = StringIO.new
         c = Curl::Easy.perform(filename_or_url) do |curl|
-          curl.headers['Accept'] = 'text/turtle, application/rdf+xml;q=0.8, text/plain;q=0.4, */*;q=0.1'
+          curl.headers['Accept'] = 'text/turtle, application/rdf+xml;q=0.8, application/ld+json;q=0.8, text/plain;q=0.4, */*;q=0.1'
           curl.headers['User-Agent'] = "Ruby Structured Data Linter/#{RDF::Linter::VERSION}"
-          curl.on_body {|body| io_obj.write(body); body.length}
+          curl.follow_location = true
+          curl.on_body do |body|
+            body.force_encoding!(options[:encoding]) if options[:encoding]
+            io_obj.write(body)
+            body.length
+          end
+          #curl.on_debug {|type, data| STDERR.puts "type: #{type.inspect}, data: #{data.inspect}"}
           curl.on_success {|easy, code| io_obj.instance_variable_set(:@status, code || 200)}
           curl.on_failure {|easy, code| io_obj.instance_variable_set(:@status, code || 500)}
         end
         io_obj.rewind
+
         content_type, ct_param = c.content_type.to_s.downcase.split(";")
-        io_obj.instance_variable_set(:@content_type, content_type) unless content_type.empty?
+        io_obj.instance_variable_set(:@content_type, content_type) unless content_type.to_s.empty?
         
         # Set charset, if available
-        if ct_param.to_s =~ /charset=([^\s]*)$/i
+        if options[:encoding]
+          io_obj.instance_variable_set(:@charset, options[:encoding].to_s.downcase)
+        elsif ct_param.to_s =~ /charset=([^\s]*)$/i
           io_obj.instance_variable_set(:@charset, $1)
         end
 
@@ -96,7 +105,7 @@ module RDF::Util
           io_obj
         end
       else
-        Kernel.open(filename_or_url.to_s, &block)
+        Kernel.open(filename_or_url.to_s, "r", 0, options, &block)
       end
     end
   end
