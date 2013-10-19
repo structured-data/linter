@@ -41,7 +41,7 @@ describe RDF::Linter::Writer do
         
         tests.each do |xpath, result|
           it "has path #{xpath.inspect} matching #{result.inspect}" do
-            subject.should have_xpath(xpath.to_s, result, @debug)
+            expect(subject).to have_xpath(xpath.to_s, result, @debug)
           end
         end
       end

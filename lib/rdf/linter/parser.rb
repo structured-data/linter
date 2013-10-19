@@ -45,9 +45,9 @@ module RDF::Linter
       graph.query(:predicate => RDF::URI("http://opengraphprotocol.org/schema/type")) do |statement|
         graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://opengraphprotocol.org/types/#{statement.object}"))
       end
-      
+
       writer_opts = reader_opts
-      writer_opts[:base_uri] ||= reader.base_uri.to_s if reader.base_uri
+      writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
       writer_opts[:prefixes][:ogt] = "http://types.ogp.me/ns#"
       
       # Move elements with class `snippet` to the front of the root element
