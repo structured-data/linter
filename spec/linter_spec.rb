@@ -15,10 +15,8 @@ describe RDF::Linter do
       context File.basename(input) do
         before(:all) do
           @debug = []
+          @subject = parse(:content => File.open(input), :format => :all, :debug => @debug).last
         end
-        subject {
-          (@subjects ||= {})[input] ||= parse(:content => File.open(input), :format => :all, :debug => @debug).last
-        }
         csv = input.sub('.html', '.csv')
         if File.exist?(csv)
           CSV.foreach(csv) do |(xpath,result)|
@@ -31,7 +29,7 @@ describe RDF::Linter do
             end
 
             it "has path #{xpath.inspect} matching #{result.inspect}" do
-              expect(subject).to have_xpath(xpath.to_s, result, @debug)
+              expect(@subject).to have_xpath(xpath.to_s, result, @debug)
             end
           end
         else
@@ -77,12 +75,12 @@ describe RDF::Linter do
             end
 
             it "has path #{xpath.inspect} matching #{result.inspect}" do
-              @subject.should have_xpath(xpath.to_s, result, @debug)
+              @subject.should have_xpath(xpath.to_s, result)
             end
           end
         else
           it "parses, but has no matchers" do
-            @subject.should have_xpath("//div", true, @debug)
+            @subject.should have_xpath("//div", true)
           end
         end
       end

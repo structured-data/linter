@@ -82,7 +82,7 @@ module RDF::Linter
     :rel => %(
       - if typeof
         %span{:property => rel, :resource => resource, :typeof => typeof}
-          != yield(:nested)
+          != yield(:nested_props)
         %span.other
           -#
             Content not used in snippet generation

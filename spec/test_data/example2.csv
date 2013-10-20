@@ -9,7 +9,6 @@
 //*[@typeof='vmd:Address']/h3/a/span[@property='vmd:region']/text(),"CA"
 //*[@typeof='vmd:Organization']/h3/a/span[@property='vmd:name']/text(),"Warfield Theatre"
 //*[@typeof='vmd:Organization']//link[@property='vmd:address'],TRUE
-//*[@typeof='vmd:Organization']/h3/a/span[@property='vmd:name']/text(),"Warfield Theatre"
 //*[@typeof='vmd:Event']/h3/a/span[@property='vmd:summary']/text(),"Spinal Tap"
 //*[@typeof='vmd:Event']//span[@property='vmd:startDate']/text(),TRUE
 //*[@typeof='vmd:Event']//link[@property='vmd:location'],TRUE
