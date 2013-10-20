@@ -17,6 +17,11 @@ end
 desc 'Default: run specs.'
 task :default => :spec
 
+desc "refresh schema-org-rdf"
+task :schema_dir do
+  %x{git clone git@github.com:mhausenblas/schema-org-rdf.git && rm -r ./schema-org-rdf/.git}
+end
+
 desc "Create schema example index"
 task :schema_examples do
   $:.unshift(File.expand_path("../lib", __FILE__))

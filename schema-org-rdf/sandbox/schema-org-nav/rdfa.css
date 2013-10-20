@@ -1,0 +1,161 @@
+body {
+	padding: 5em 1em 1em 1em;
+}
+
+span.h {
+	padding-left: 0px;
+	font-weight: bold;
+}
+
+span {
+	display: block;
+	padding-left: 10px;
+}
+
+#nav {
+	font-family: Helvetica;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	display: none;
+}
+
+#close-explore, #close-ext {
+	position: fixed;
+	right: 15px;
+	top: 15px;
+	font-size: 90%;
+	font-weight: bold;
+	border: 1px solid #e0e0e0;
+	width: 10px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+	padding: 0px 3px 1px 4px;
+	color: #6f6f6f;
+}
+
+#nav-output {
+	font-family: Helvetica;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	border: 1px solid #e0e0e0;
+	background: #f0f0f0;
+	padding: 30px 10px 10px 10px;
+	display: none;
+}
+
+#top-level-concepts {
+	width: 200px;
+	float: left;
+}
+
+#ext-output {
+	font-family: Helvetica;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	border: 1px solid #e0e0e0;
+	background: #f0f0f0;
+	padding: 30px 10px 10px 10px;
+	width: 500px;
+	display: none;
+}
+
+
+#nav-output h3, #ext-output h3 {
+	font-size: 90%;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 5px;
+}
+
+#nav-output h4, #ext-output h4 {
+	font-size: 80%;
+	padding: 0px;
+}
+
+#nav-output div {
+	font-size: 85%;
+	padding: 2px;
+}
+
+#subconcepts {
+	float: left;
+}
+
+#ext-output div {
+	padding: 2px;
+	font-size: 90%;
+}
+
+#explore, #extensions {
+	color: #00e;
+	cursor: pointer;
+	font-size: 90%;
+	border: 1px solid #e0e0e0;
+	background: #f0f0f0;
+	text-align: center; 
+	padding: 2px 5px 2px 5px;
+	margin: 0 3px 0 3px;
+	float: left;
+}
+
+.dynanchor{
+	color: #f0f0f0;
+}
+
+.lnk {
+	margin: 10px;
+}
+
+.lnk span {
+}
+
+.lnk span.expand {
+	font-size: 100%;
+	border: 1px solid #e0e0e0;
+	width: 10px;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+	padding: 0 0 0 2px;
+}
+
+.concept-stats {
+	color: #909090;
+	font-size: 70%;
+	padding: 0 0 0 12px;
+}
+
+.ext-overview {
+	color: #909090;
+	font-size: 90%;
+	padding: 0 0 0 5px;
+}
+
+.ext-state {
+	color: #909090;
+	font-size: 95%;
+	padding: 0 0 0 13px;
+}
+
+.extension {
+	margin: 10px 0 5px 0;
+}
+
+.extension a.expand {
+	padding: 0 0 0 10px;
+}
+
+.extension p {
+	color: #909090;
+	font-size: 95%;
+	padding: 0 0 0 23px;
+}
+
+/* overwrite the jQuery UI stuff */
+
+.ui-widget-header {
+	font-size: 85%;
+}
