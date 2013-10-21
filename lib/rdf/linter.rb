@@ -90,26 +90,34 @@ module RDF
         
         # Find examples using this class
         examples = {}
-        Dir.glob(File.expand_path("../../../schema-org-rdf/examples/*/*.html", __FILE__)) do |path|
-          ex_num = path.match('\d+')[0].to_i
-          fmt = path =~ /_md_/ ? :md : :rdfa
-          xp = if path =~ /_md_/
-            %(//*[@itemtype="http://schema.org/#{params[:name]}"])
+        Dir.glob(File.expand_path("../../../schema-org-rdf/examples/*/*.{microdata,rdfa,jsonld}", __FILE__)) do |path|
+          ex_num = if md = path.split('/').last.match(/^\w+-(\w+)\.\w+$/)
+            md[1]
           else
-            %(//*[@typeof="#{params[:name]}"])
+            "Base"
           end
+          fmt = File.extname(path)[1..-1]
 
           File.open(path, "r", 0, :encoding => Encoding::UTF_8) do |file|
-            doc = Nokogiri::HTML.parse(file.read)
-            puts "check xpath #{xp}"
-            if doc.at_xpath(xp)
-              puts "found #{path} for #{params[:name]}"
-              examples[ex_num] ||= {}
-              examples[ex_num][fmt] = {
-                :path => RDF::URI(request.url).join("../" + File.basename(path)),
-                :src => doc.at_xpath("/html/body/*").to_s
-              }
+            src = if fmt == "jsonld"
+              file.read
+            else
+              xp = if fmt == "microdata"
+                %(//*[@itemtype="http://schema.org/#{params[:name]}"])
+              else
+                %(//*[@typeof="#{params[:name]}"])
+              end
+              doc = Nokogiri::HTML.parse(file.read)
+              p = doc.at_xpath(xp)
+              puts "check xpath #{xp}: #{p.inspect}"
+              next unless p
+              doc.at_xpath("/html/body/*").to_s
             end
+            examples[ex_num] ||= {}
+            examples[ex_num][fmt] = {
+              :path => RDF::URI(request.url).join("../" + File.basename(path)),
+              :src => src
+            }
           end
         end
 
@@ -129,7 +137,7 @@ module RDF
           file ||= f if File.file?(f) && f.match(/#{params[:file]}$/)
         end
         if file
-          send_file file, :type => :html
+          send_file file, :type => file =~ /jsonld/ ? :jsonld : :html
         else
           status 401
           body "Could not find schema example #{params[:file]}"
