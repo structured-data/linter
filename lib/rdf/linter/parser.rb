@@ -14,22 +14,17 @@ module RDF::Linter
 
       reader = case
       when reader_opts[:tempfile]
-        RDF::Reader.for(format).new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
+        RDF::Reader.for(reader_opts.merge(:sample => reader_opts[:tempfile])).new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
       when  reader_opts[:content]
         @content = reader_opts[:content]
-        RDF::Reader.for(format).new(@content, reader_opts) {|r| graph << r}
+        RDF::Reader.for(reader_opts.merge(:sample => reader_opts[:content])).new(@content, reader_opts) {|r| graph << r}
       when reader_opts[:base_uri]
         RDF::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
         return ["text/html", ""]
       end
 
-      @parsed_statements = case reader
-      when RDF::All::Reader
-        reader.statement_count
-      else
-        {reader.class => graph.size }
-      end
+      @parsed_statements = {reader.class => graph.size }
       
       # Perform some actual linting on the graph
       @lint_messages = lint(graph)

@@ -37,21 +37,19 @@ module RDF::Linter
     #
     # @param [String] path to example file
     def add_example(path)
-      markup_type = path =~ /_md_/ ? :md : :rdfa
-      example_number = path.match('\d+')[0].to_i
-      File.open(path) do |f|
-        doc = Nokogiri::HTML.parse(f)
-        types = if markup_type == :md
-          doc.xpath('//@itemtype').map {|t| t.value.sub("http://schema.org/", "")}
-        else
-          doc.xpath('//@typeof').map(&:value)
-        end
-        types.each do |t|
-          puts "add example #{example_number} to #{t}"
-          @classes[t][:examples] ||= {}
-          @classes[t][:examples][example_number] ||= {}
-          @classes[t][:examples][example_number][markup_type] = path
-        end
+      markup_type = File.extname(path)[1..-1].to_sym
+      example_number = if md = path.split('/').last.match(/^\w+-(\w+)\.\w+$/)
+        md[1]
+      else
+        "Base"
+      end
+      t = path.split('/')[-2]
+      t = "EducationalOrganization" if t == "EdducationalOrganization"
+      if @classes.has_key?(t)
+        puts "add example #{path} on class #{t}"
+        @classes[t][:examples] ||= {}
+        @classes[t][:examples][example_number] ||= {}
+        @classes[t][:examples][example_number][markup_type] = path
       end
     end
     
@@ -67,6 +65,7 @@ module RDF::Linter
           deletions += 1
           @classes.delete(cls)
           sc = value[:super_class]
+          next unless sc
           puts "trim class #{cls}, super-class #{sc}"
           @classes[sc][:sub_classes].delete(cls)
         end
@@ -91,12 +90,12 @@ module RDF::Linter
         @classes[cls][:examples].keys.sort.each do |num|
           example = @classes[cls][:examples][num]
           output += %(\n<div class="ex">) + "  &nbsp;&nbsp;|&nbsp;&nbsp;" * depth
-          output += %[&nbsp;&nbsp;Example #{num} (]
-          output += [:rdfa, :md].map do |fmt|
+          output += %[&nbsp;&nbsp;#{num} (]
+          output += [:rdfa, :jsonld, :microdata].map do |fmt|
             if example.has_key?(fmt)
-              fmt_name = {:rdfa => "RDFa", :md => "microdata"}[fmt]
+              fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
               sn_path = "<%=root%>/examples/schema.org/#{File.basename(example[fmt])}"
-               %(<a href="/?url=#{sn_path}" title="Show #{cls} snippet in #{fmt_name}">#{fmt_name}</a>)
+              %(<a href="/?url=#{sn_path}" title="Show #{cls} snippet in #{fmt_name}">#{fmt_name}</a>)
             end
           end.join(" ")
           output += ")"

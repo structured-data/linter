@@ -4,7 +4,7 @@ require 'sinatra/partials'
 require 'erubis'
 require 'find'
 require 'rdf/microdata'
-require 'rdf/all'
+#require 'rdf/all'
 require 'net/http'
 require 'uri'
 

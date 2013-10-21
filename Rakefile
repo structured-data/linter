@@ -27,7 +27,7 @@ task :schema_examples do
   $:.unshift(File.expand_path("../lib", __FILE__))
   require 'rdf/linter'
   schema = RDF::Linter::Schema.new
-  Dir.glob("schema-org-rdf/examples/*/*.html").each do |path|
+  Dir.glob("schema-org-rdf/examples/**/*.{microdata,rdfa,jsonld}").each do |path|
     schema.add_example(path)
   end
   schema.trim_classes

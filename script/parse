@@ -15,7 +15,9 @@ def run(input, options)
   if options[:snippet]
     encoding, content = parse(options.merge(:content => input))
   else
-    g = RDF::Graph.new << RDF::All::Reader.new(input, options)
+    reader = RDF::Reader.for(:sample => input.read)
+    input.rewind
+    g = RDF::Graph.new << reader.new(input, options)
     content = g.dump(:ttl, options)
   end
   options[:output].puts content
@@ -34,7 +36,6 @@ options = {
   :strict => true,
   :output => STDOUT,
   :format => :all,
-  :base_uri => "http://example.com",
 }
 input = nil
 
@@ -42,7 +43,7 @@ opts = GetoptLong.new(
   ["--dbg", GetoptLong::NO_ARGUMENT],
   ["--rdfa-dbg", GetoptLong::NO_ARGUMENT],
   ["--microdata-dbg", GetoptLong::NO_ARGUMENT],
-  ["--all-dbg", GetoptLong::NO_ARGUMENT],
+  ["--jsonld-dbg", GetoptLong::NO_ARGUMENT],
   ["--execute", "-e", GetoptLong::REQUIRED_ARGUMENT],
   ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
   ["--quiet", GetoptLong::NO_ARGUMENT],
@@ -53,7 +54,7 @@ opts = GetoptLong.new(
 opts.each do |opt, arg|
   case opt
   when '--dbg'            then ::RDF::Linter::debug = true
-  when '--all-dbg'        then ::RDF::All::debug = true
+  when '--jsonld-dbg'       then ::JSON::LD::debug = true
   when '--rdfa-dbg'       then ::RDF::RDFa::debug = true
   when '--microdata-dbg'  then ::RDF::Microdata::debug = true
   when '--snippet'        then options[:snippet] = true
@@ -67,7 +68,7 @@ end
 
 if ARGV.empty?
   s = input ? input : $stdin.read
-  run(StringIO.new(s), options)
+  run(StringIO.new(s), {:base_uri => "http://example/"}.merge(options))
 else
   ARGV.each do |test_file|
     run(Kernel.open(test_file), options)
