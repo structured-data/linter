@@ -3,8 +3,6 @@ require 'sinatra/linkeddata'   # Can't use this, as we may need to set by hand, 
 require 'sinatra/partials'
 require 'erubis'
 require 'find'
-require 'rdf/microdata'
-#require 'rdf/all'
 require 'net/http'
 require 'uri'
 
