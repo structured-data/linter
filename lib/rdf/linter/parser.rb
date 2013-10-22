@@ -12,19 +12,24 @@ module RDF::Linter
       reader_opts[:prefixes] ||= {}
       reader_opts[:rdf_terms] = true unless reader_opts.has_key?(:rdf_terms)
 
+      reader_class = RDF::Reader.for(format) || RDF::All::Reader
       reader = case
       when reader_opts[:tempfile]
-        RDF::Reader.for(reader_opts.merge(:sample => reader_opts[:tempfile])).new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
-      when  reader_opts[:content]
-        @content = reader_opts[:content]
-        RDF::Reader.for(reader_opts.merge(:sample => reader_opts[:content])).new(@content, reader_opts) {|r| graph << r}
+        reader_class.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
+      when reader_opts[:content]
+        reader_class.new(reader_opts[:content], reader_opts) {|r| graph << r}
       when reader_opts[:base_uri]
-        RDF::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
+        reader_class.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
         return ["text/html", ""]
       end
 
-      @parsed_statements = {reader.class => graph.size }
+      @parsed_statements = case reader
+      when RDF::All::Reader
+        reader.statement_count
+      else
+        {reader.class => graph.size }
+      end
       
       # Perform some actual linting on the graph
       @lint_messages = lint(graph)
@@ -44,7 +49,9 @@ module RDF::Linter
       writer_opts = reader_opts
       writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
       writer_opts[:prefixes][:ogt] = "http://types.ogp.me/ns#"
-      
+
+      #breakpoint
+
       # Move elements with class `snippet` to the front of the root element
       html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
       ["text/html", html]
@@ -62,6 +69,7 @@ module RDF::Linter
       puts @error  # to log
       ["text/html", @error]
     end
+    module_function :parse
 
     # Use vocabulary definitions to lint contents of the graph for known vocabularies
     def lint(graph)
@@ -93,6 +101,7 @@ module RDF::Linter
       
       messages
     end
+    module_function :lint
     
     # Create JSON representation of classes and properties in a vocabulary
     # If the vocabulary definition is not located at `url` set it in `location`.

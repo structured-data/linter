@@ -34,6 +34,7 @@ module RDF::Linter
     # In which case, we'll also pass the typeof the referencing resource
     def render_subject(subject, predicates, options = {}, &block)
       options = options.merge(:haml => haml_template[:rel]) if options[:rel] && haml_template[:rel]
+      #breakpoint if predicates.to_s =~ /street-address/
       super(subject, predicates, options) do |predicate|
         if predicate.is_a?(Symbol)
           # Special snippet processing
@@ -73,26 +74,32 @@ module RDF::Linter
     # @return [Array<Resource>] Ordered list of subjects
     def order_subjects
       subjects = super
-      
+      other_subjects = []
+      templates = {}
+
       add_debug "order_subjects: #{subjects.inspect}"
 
-      # Order subjects by finding those with templates, and then by the template priority order
-      prioritized_subjects = []
-      other_subjects = []
+      # Order subjects by finding those with templates, and then by the template priority order and name
+
+      # Get template priorities for each subject
       subjects.each do |s|
-        template = find_template(s)
-        next unless template
-        
-        priority = template[:priority] || 99
-        add_debug "  priority(#{s}) = #{priority}"
-        prioritized_subjects[priority] ||= []
-        prioritized_subjects[priority] << s
+        if t = find_template(s)
+          t[:priority] ||= 99
+          templates[s] = t
+        else
+          other_subjects << s
+        end
       end
 
-      ordered_subjects = prioritized_subjects.flatten.compact
-      
-      other_subjects = subjects - ordered_subjects
-      
+      # Order subjects by priority or identifier
+      ordered_subjects = templates.keys.sort do |s1, s2|
+        if templates[s1][:priority] == templates[s2][:priority]
+          templates[s1][:identifier] <=> templates[s2][:identifier]
+        else
+          templates[s1][:priority] <=> templates[s2][:priority]
+        end
+      end
+
       add_debug "ordered_subjects: #{ordered_subjects.inspect}\n" + 
                 "other_subjects: #{other_subjects.inspect}"
 
