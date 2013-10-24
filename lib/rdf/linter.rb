@@ -6,6 +6,7 @@ require 'erubis'
 require 'find'
 require 'net/http'
 require 'uri'
+require 'logger'
 
 module RDF
   module Linter
@@ -28,23 +29,42 @@ module RDF
       set :app_name, "Structured Data Linter"
 
       before do
-        puts "[#{request.path_info}], #{params.inspect}"
+        $logger.info "[#{request.path_info}], " +
+          "#{request.accept}, " +
+          "#{params.inspect}, " +
+          "#{request.accept.inspect}" if $logger
       end
 
+      # Get "/" either returns the main linter page or linted markup
+      #
+      # @method get_linter
+      # @overload get "/", params
+      # @see {#linter}
       get '/' do
-        linter
+        linter params
       end
 
+      # Get "/" returns linted markup
+      #
+      # @method post_linter
+      # @overload post "/", params
+      # @see {#linter}
       post '/' do
-        linter
+        linter params
       end
 
+      # Return about page
+      # @method get_about
+      # @overload get "/about/"
       get '/about/' do
         @title = "About the Linter"
         cache_control :public, :must_revalidate, :max_age => 60
         erb :about
       end
 
+      # Return markup examples
+      # @method get_examples
+      # @overload get "/examples/"
       get '/examples/' do
         @title = "Markup Examples"
         cache_control :public, :must_revalidate, :max_age => 60
@@ -53,6 +73,10 @@ module RDF
         }
       end
 
+      # Return a specific Google Rich Snippet example
+      # @method get_rs_example
+      # @overload get "/examples/google-rs/:name/"
+      # @param [String] name Name of the example to return
       get '/examples/google-rs/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         @title = "Google RS #{params[:name]}"
@@ -63,11 +87,19 @@ module RDF
         }
       end
 
+      # Return source of a specific Google Rich Snippet example
+      # @method get_rs_example
+      # @overload get "/examples/google-rs/:file"
+      # @param [String] file Name of the example to return
       get '/examples/google-rs/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
-        send_file File.join(APP_DIR, "google-rs/#{params[:file]}"), :type => :html
+        send_file File.join(APP_DIR, "google-rs/#{params[:file]}"), :type => (params[:file].end_with?(".jsonld") ? :jsonld : :html)
       end
 
+      # Return a specific Good Relations example
+      # @method get_gr_example
+      # @overload get "/examples/good-relations/:name/"
+      # @param [String] name Name of the example to return
       get '/examples/good-relations/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         @title = "Good Relations #{params[:name]}"
@@ -78,38 +110,36 @@ module RDF
         }
       end
 
+      # Return source of a specific Good Relations example
+      # @method get_gr_example
+      # @overload get "/examples/good-relations/:file"
+      # @param [String] file Name of the example to return
       get '/examples/good-relations/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
-        send_file File.join(APP_DIR, "good-relations/#{params[:file]}"), :type => :html
+        send_file File.join(APP_DIR, "good-relations/#{params[:file]}"), :type => (params[:file].end_with?(".jsonld") ? :jsonld : :html)
       end
 
+      # Return a specific schema.org example
+      # @method get_sc_example
+      # @overload get "/examples/schema.org/:name/"
+      # @param [String] name Name of the example to return
       get '/examples/schema.org/:name/' do
         cache_control :public, :must_revalidate, :max_age => 60
         @title = "Schema.org #{params[:name]}"
         
         # Find examples using this class
         examples = {}
-        Dir.glob(File.expand_path("../../../schema-org-rdf/examples/*/*.{microdata,rdfa,jsonld}", __FILE__)) do |path|
-          ex_num = if md = path.split('/').last.match(/^\w+-(\w+)\.\w+$/)
-            md[1]
-          else
-            "Base"
-          end
-          fmt = File.extname(path)[1..-1]
+        Dir.glob(File.expand_path("../../../schema-org-rdf/examples/**/#{params[:name]}*.{microdata,rdfa,jsonld}", __FILE__)) do |path|
+          md = path.split('/').last.match(/^\w+(?:-(\w+))?\.\w+$/)
+          ex_num = md[1]
+          ex_num ||= "Basic"
+          fmt = File.extname(path)[1..-1].to_sym
 
-          File.open(path, "r", 0, :encoding => Encoding::UTF_8) do |file|
-            src = if fmt == "jsonld"
+          File.open(path, "r", :encoding => Encoding::UTF_8) do |file|
+            src = if fmt == :jsonld
               file.read
             else
-              xp = if fmt == "microdata"
-                %(//*[@itemtype="http://schema.org/#{params[:name]}"])
-              else
-                %(//*[@typeof="#{params[:name]}"])
-              end
               doc = Nokogiri::HTML.parse(file.read)
-              p = doc.at_xpath(xp)
-              puts "check xpath #{xp}: #{p.inspect}"
-              next unless p
               doc.at_xpath("/html/body/*").to_s
             end
             examples[ex_num] ||= {}
@@ -120,7 +150,7 @@ module RDF
           end
         end
 
-        puts "examples for #{@title}: #{examples.inspect}"
+        $logger.info "examples for #{@title}: #{examples.keys.inspect}"
         erb :schema_example, :locals => {
           :head => :examples,
           :name => params[:name],
@@ -129,6 +159,10 @@ module RDF
         }
       end
 
+      # Return source of a specific schema.org example
+      # @method get_sc_example
+      # @overload get "/examples/good-relations/:file"
+      # @param [String] file Name of the example to return
       get '/examples/schema.org/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
         file = nil
@@ -144,6 +178,8 @@ module RDF
       end
 
       # Display list of snippets
+      # @method get_snipptes
+      # @overload get "/snippets/"
       get '/snippets/' do
         @title = "Snippet definitions"
         cache_control :public, :must_revalidate, :max_age => 60
@@ -166,12 +202,28 @@ module RDF
       include Parser
 
       # Handle GET/POST /
-      def linter
-        params["in_fmt"] = "all" if params["in_fmt"].to_s.empty?
+      # @param {Hash} params
+      # @option params [String] :base_uri
+      #   Base URI for decoding markup, defaluts to `:url` if present
+      # @option params [String] :content
+      #   Markup specified inline
+      # @option params [String] :datafile
+      #   Location of uploaded file containing markup
+      # @option params [Boolean] :debug
+      #   Return verbose debug output
+      # @option params [String] :format ("all")
+      #   Format to use when parsing file, defaults to parsing with all
+      #   appropriate readers
+      # @option params [String] :url
+      #   Location of resource containing markup
+      # @option params [Boolean] :validate
+      #   Perform strict validation of markup
+      def linter(params)
+        params["format"] = "all" if params["format"].to_s.empty?
         reader_opts = {
           :base_uri => params["url"],
           :validate => params["validate"],
-          :format   => params["in_fmt"].to_sym,
+          :format   => params["format"].to_sym,
         }
         reader_opts[:base_uri] = params["url"].strip if params["url"]
         reader_opts[:debug] = @debug = [] if params["debug"]
@@ -180,16 +232,16 @@ module RDF
         reader_opts[:matched_templates] = []
 
         root = RDF::URI(request.url).join("/").to_s
-        puts "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
+        $logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 
         case
         when reader_opts[:tempfile]
-          puts "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
+          $logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
         when  reader_opts[:content]
-          puts "Parse form data with format #{reader_opts[:format]}"
+          $logger.info "Parse form data with format #{reader_opts[:format]}"
           @content = reader_opts[:content]
         when reader_opts[:base_uri]
-          puts "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
+          $logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
         end
 
         content_type, content = parse(reader_opts)

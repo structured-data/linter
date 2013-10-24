@@ -38,18 +38,16 @@ module RDF::Linter
     # @param [String] path to example file
     def add_example(path)
       markup_type = File.extname(path)[1..-1].to_sym
-      example_number = if md = path.split('/').last.match(/^\w+-(\w+)\.\w+$/)
-        md[1]
-      else
-        "Base"
-      end
+      md = path.split('/').last.match(/^\w+(?:-(\w+))?\.\w+$/)
+      ex_num = md[1]
+      ex_num ||= "Basic"
       t = path.split('/')[-2]
       t = "EducationalOrganization" if t == "EdducationalOrganization"
       if @classes.has_key?(t)
         puts "add example #{path} on class #{t}"
         @classes[t][:examples] ||= {}
-        @classes[t][:examples][example_number] ||= {}
-        @classes[t][:examples][example_number][markup_type] = path
+        @classes[t][:examples][ex_num] ||= {}
+        @classes[t][:examples][ex_num][markup_type] = path
       end
     end
     
@@ -94,7 +92,7 @@ module RDF::Linter
           output += [:rdfa, :jsonld, :microdata].map do |fmt|
             if example.has_key?(fmt)
               fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
-              sn_path = "<%=root%>/examples/schema.org/#{File.basename(example[fmt])}"
+              sn_path = "<%=root%>examples/schema.org/#{File.basename(example[fmt])}"
               %(<a href="/?url=#{sn_path}" title="Show #{cls} snippet in #{fmt_name}">#{fmt_name}</a>)
             end
           end.join(" ")

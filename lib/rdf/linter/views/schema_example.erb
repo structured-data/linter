@@ -3,15 +3,15 @@
   <section class="example num">
   <h1>Example <%= ex_num %></h3>
   <%
-    [:rdfa, :md].each do |fmt|
-      fmt_name = {:rdfa => "RDFa", :md => "microdata"}[fmt]
+    [:rdfa, :microdata, :jsonld].each do |fmt|
+      fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
       next unless examples[ex_num].has_key?(fmt)
       path = examples[ex_num][fmt][:path]
       source = examples[ex_num][fmt][:src]
   -%>
   <section>
     <h2><%= fmt_name %> (<a href="<%= path %>" title="Load <%=fmt_name%> example">source</a> <a href="/?url=<%= path %>" title="Show snippet in <%=fmt_name%>">lint</a>)</h2>
-      <pre class="example"><code class="html"><%= CGI.escapeHTML(source) %></code></pre>
+      <pre class="example"><code class="<%= fmt == :jsonld ? 'js' : 'html'%>"><%= CGI.escapeHTML(source) %></code></pre>
   </section>
   <% end -%>
   </section>

@@ -7,6 +7,7 @@ module RDF::Linter
 
     # Parse the an input file and re-serialize based on params and/or content-type/accept headers
     def parse(reader_opts)
+      $logger ||= Logger.new(STDOUT)  # In case we're not invoked from rack
       graph = RDF::Graph.new
       format = reader_opts[:format]
       reader_opts[:prefixes] ||= {}
@@ -57,16 +58,16 @@ module RDF::Linter
       ["text/html", html]
     rescue RDF::ReaderError => e
       @error = "RDF::ReaderError: #{e.message}"
-      puts @error  # to log
+      $logger.error @error
       ["text/html", @error]
     rescue OpenURI::HTTPError => e
       @error = "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
-      puts @error  # to log
+      $logger.error @error  # to log
       ["text/html", @error]
     rescue
       raise unless self.respond_to?(:settings) && settings.environment == :production
       @error = "#{$!.class}: #{$!.message}"
-      puts @error  # to log
+      $logger.error @error  # to log
       ["text/html", @error]
     end
     module_function :parse

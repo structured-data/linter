@@ -21,18 +21,22 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version       = '>= 1.9.3'
   gem.requirements                = []
-  gem.add_runtime_dependency      'linkeddata',         '>= 1.0'
+  gem.add_runtime_dependency      'linkeddata',         '>= 1.0.9'
   gem.add_runtime_dependency      'sinatra-linkeddata', '>= 1.0'
   gem.add_runtime_dependency      'equivalent-xml'
   gem.add_runtime_dependency      'sinatra',            '>= 1.4.2'
   gem.add_runtime_dependency      'erubis',             '>= 2.7.0'
   gem.add_runtime_dependency      'haml',               '>= 4.0.0'
-  gem.add_runtime_dependency      'curb',               '>= 0.8.3'
+  gem.add_runtime_dependency      'curb',               '>= 0.8.5'
   gem.add_runtime_dependency      'facets',             '>= 2.9.3'
-  gem.add_runtime_dependency      'nokogiri'
-  gem.add_runtime_dependency      'json',               '>= 1.7'
-  gem.add_development_dependency  'yard' ,              '>= 0.8.6'
+  gem.add_runtime_dependency      'nokogiri',           '>= 1.6.0'
+  gem.add_runtime_dependency      'json',               '>= 1.8'
+  gem.add_runtime_dependency      'rack',               '>= 1.5.2'
+  gem.add_runtime_dependency      'rack-cache',         '>= 1.2'
+
+  gem.add_development_dependency  'yard' ,              '>= 0.8.7'
   gem.add_development_dependency  'shotgun',            '>= 0.9'
-  gem.add_development_dependency  'rspec',              '>= 2.13.0'
+  gem.add_development_dependency  'rspec',              '>= 2.14.0'
+  gem.add_development_dependency  'rack-test',          '>= 0.6.2'
   gem.post_install_message        = nil
 end

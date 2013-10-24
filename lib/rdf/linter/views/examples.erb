@@ -30,16 +30,6 @@
   </section>
 
   <section class="content">
-    <h2>Schema.org examples</h2>
-    <p>
-      The following examples are taken from Schema.org
-      <a target="_blank" href="http://www.schema.org/docs/full.html">documentation examples</a>.
-    </p>
-    <%= partial "schema_examples", :locals => {:root => root} %>
-    <div><a id='no_snip'>*</a>Indicates snippets not currently generated for this type</a></div>
-  </section>
-
-  <section class="content">
     <h2>Good Relations examples</h2>
     <p>
       The following examples are taken from Good Relations
@@ -62,6 +52,16 @@
       (<a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>)
     </div>
     <% end -%>
+  </section>
+
+  <section class="content">
+    <h2>Schema.org examples</h2>
+    <p>
+      The following examples are taken from Schema.org
+      <a target="_blank" href="http://www.schema.org/docs/full.html">documentation examples</a>.
+    </p>
+    <%= partial "schema_examples", :locals => {:root => root} %>
+    <div><a id='no_snip'>*</a>Indicates snippets not currently generated for this type</a></div>
   </section>
 
 </section>
