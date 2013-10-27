@@ -3,7 +3,7 @@ Extract and validate embedded RDF markup in HTML and other formats.
 
 ## DESCRIPTION
 The Structured Data Linter digests structured data, in the form of HTML marked-up
-with [RDFa][] or [Microdata][], or other RDF technologies supported in
+with [RDFa][], [JSON-LD][], or [Microdata][], or other RDF technologies supported in
 [Linked Data][linkeddata].
 
 The linter is part of the [structured-data.org](http://structured-data.org/),
@@ -52,7 +52,7 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 * [RDF::RDFa](http://rubygems.org/gems/rdf-rdfa) (>= 1.0)
 * [RDF::RDFXML](http://rubygems.org/gems/rdf-rdfxml) (>= 1.0)
 * [RDF::TriX](http://rubygems.org/gems/rdf-trix) (>= 1.0)
-* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 0.9)
+* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 1.0)
 
 ## AUTHORS
 * [Gregg Kellogg](http://github.com/ruby-rdf) - <http://kellogg-assoc.com/>
@@ -90,8 +90,8 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 This is free and unencumbered public domain software. For more information,
 see <http://unlicense.org/> or the accompanying {file:UNLICENSE} file.
 
-[JSON-LD]:        http://json-ld.org/spec/latest/
-[Microdata]:      http://dev.w3.org/html5/md/
+[JSON-LD]:        http://www.w3.org/TR/2013/CR-json-ld-20130910/
+[Microdata]:      http://www.w3.org/TR/microdata-rdf/
 [N-Triples]:      http://en.wikipedia.org/wiki/N-Triples
 [Notation3]:      http://en.wikipedia.org/wiki/Notation3
 [RDF/JSON]:       http://n2.talis.com/wiki/RDF_JSON_Specification
