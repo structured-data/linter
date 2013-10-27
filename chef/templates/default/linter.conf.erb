@@ -1,0 +1,26 @@
+# Managed by Chef for <%= node[:fqdn] %>
+
+<VirtualHost *:80>
+  ServerAdmin <%= node['apache']['contact'] %>
+  ServerAlias <% @params[:server_aliases].each do |a| %><%= a %> <% end %>
+  DocumentRoot <%= "#{node[:linter][:document_root]}/current/public" %>
+  SetEnv PATH <%= "#{node[:rbenv][:root]}/shims:/usr/local/bin:/usr/bin:/bin" %>
+
+  RailsBaseURI /
+  RailsEnv <%= node[:rails_env] %>
+
+  <Directory <%= "#{node[:linter][:document_root]}/current/public" %>>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  # Possible values include: debug, info, notice, warn, error, crit,
+  # alert, emerg.
+  LogLevel info
+  ErrorLog <%= node['apache']['log_dir'] %>/<%= @params[:name] %>-error.log
+  CustomLog <%= node['apache']['log_dir'] %>/<%= @params[:name] %>-access.log combined
+
+  ServerSignature On
+</VirtualHost>
