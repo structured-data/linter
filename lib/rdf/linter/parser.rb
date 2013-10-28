@@ -7,7 +7,11 @@ module RDF::Linter
 
     # Parse the an input file and re-serialize based on params and/or content-type/accept headers
     def parse(reader_opts)
-      $logger ||= Logger.new(STDOUT)  # In case we're not invoked from rack
+      $logger ||= begin
+        logger = Logger.new(STDOUT)  # In case we're not invoked from rack
+        logger.level ::RDF::Linter.debug? ? Logger::DEBUG : Logger::INFO
+        logger
+      end
       graph = RDF::Graph.new
       format = reader_opts[:format]
       reader_opts[:prefixes] ||= {}

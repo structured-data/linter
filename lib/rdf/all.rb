@@ -61,14 +61,19 @@ module RDF
       # @see    RDF::Enumerable#each_statement
       def each_statement(&block)
         if block_given?
+          $logger ||= begin
+            logger = Logger.new(STDOUT)  # In case we're not invoked from rack
+            logger.level ::RDF::All.debug? ? Logger::DEBUG : Logger::INFO
+            logger
+          end
           @input.rewind
-          sample = @input.read(1000)
+          sample = @input.read(1000).force_encoding(Encoding::UTF_8)
           if sample.match(%r(<html)i)
             # If it's HTML, parse it to improve detection
             @input.rewind
             @input = ::Nokogiri::HTML.parse(@input)
             sample = @input.to_html
-            puts "HTML sample =  #{sample}" if ::RDF::All::debug?
+            $logger.debug "HTML sample =  #{sample}"
           else
             @input.rewind
           end
@@ -76,9 +81,9 @@ module RDF
           @statement_count = {}
           
           RDF::Reader.each do |reader_class|
-            puts "check #{reader_class.name}" if ::RDF::All.debug?
+            $logger.debug "check #{reader_class.name}"
             if reader_class.format.detect(sample)
-              puts "detected #{reader_class.name}" if ::RDF::All.debug?
+              $logger.debug "detected #{reader_class.name}"
               begin
                 @input.rewind if @input.respond_to?(:rewind)
                 reader_class.new(@input, @options) do |reader|
@@ -92,7 +97,7 @@ module RDF
               rescue RDF::ReaderError
                 # Ignore errors
               end
-              puts "parsed #{@statement_count[reader_class].to_i} triples from #{reader_class.name}" if ::RDF::All.debug?
+              $logger.info "parsed #{@statement_count[reader_class].to_i} triples from #{reader_class.name}"
             end
           end
         end

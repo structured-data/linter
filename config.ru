@@ -16,9 +16,10 @@ set :environment, (ENV['RACK_ENV'] || 'production').to_sym
 case settings.environment
 when :production
   puts "Mode set to production, logging to sinatra.log"
-  $logger = Logger.new('sinatra.log', 10, 3600*24*7)
+  $logger = Logger.new(File.expand_path('../sinatra.log', __FILE__), 10, 3600*24*7)
 else
   $logger = Logger.new(STDOUT)
+  $logger.level = Logger::DEBUG
   $logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
 end
 
