@@ -63,7 +63,7 @@ module RDF
         if block_given?
           $logger ||= begin
             logger = Logger.new(STDOUT)  # In case we're not invoked from rack
-            logger.level ::RDF::All.debug? ? Logger::DEBUG : Logger::INFO
+            logger.level = ::RDF::All.debug? ? Logger::DEBUG : Logger::INFO
             logger
           end
           @input.rewind

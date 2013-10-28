@@ -9,7 +9,7 @@ module RDF::Linter
     def parse(reader_opts)
       $logger ||= begin
         logger = Logger.new(STDOUT)  # In case we're not invoked from rack
-        logger.level ::RDF::Linter.debug? ? Logger::DEBUG : Logger::INFO
+        logger.level = ::RDF::Linter.debug? ? Logger::DEBUG : Logger::INFO
         logger
       end
       graph = RDF::Graph.new
@@ -26,7 +26,7 @@ module RDF::Linter
       when reader_opts[:base_uri]
         reader_class.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
-        return ["text/html", ""]
+        return ["text/html", 200, ""]
       end
 
       @parsed_statements = case reader
@@ -54,8 +54,6 @@ module RDF::Linter
       writer_opts = reader_opts
       writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
       writer_opts[:prefixes][:ogt] = "http://types.ogp.me/ns#"
-
-      #breakpoint
 
       # Move elements with class `snippet` to the front of the root element
       html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}

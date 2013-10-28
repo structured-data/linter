@@ -5,6 +5,12 @@ require 'csv'
 describe RDF::Linter do
   include RDF::Linter::Parser
 
+  before(:each) do
+    $debug_output = StringIO.new()
+    $logger = Logger.new($debug_output)
+    $logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
+  end
+
   shared_examples "Test Case" do |input, csv|
     context File.basename(input) do
       before(:all) {
@@ -21,7 +27,7 @@ describe RDF::Linter do
           end
 
           it "has path #{xpath.inspect} matching #{result.inspect}" do
-            expect(@subject).to have_xpath(xpath.to_s, result, @debug)
+            expect(@subject).to have_xpath(xpath.to_s, result, @debug << $debug_output)
           end
         end
       else
@@ -55,8 +61,8 @@ describe RDF::Linter do
   end
 
   def parse(input)
-    @@results ||= {}
-    @@results[input] ||= begin
+    $parser_spec_results ||= {}
+    $parser_spec_results[input] ||= begin
       debug = []
       [RDF::Linter::Parser.parse(:content => File.open(input), :format => :all, :debug => debug).last, debug]
     end
