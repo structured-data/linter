@@ -93,8 +93,9 @@ module RDF
       # @param [String] file Name of the example to return
       get '/examples/google-rs/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
-        send_file File.join(APP_DIR, "google-rs/#{params[:file]}")
-        content_type (params[:file].end_with?(".jsonld") ? :jsonld : :html), :charset => "utf-8"
+        send_file File.join(APP_DIR, "google-rs/#{params[:file]}"),
+          :type => (params[:file].end_with?(".jsonld") ? :jsonld : :html),
+          :charset => "utf-8"
       end
 
       # Return a specific Good Relations example
@@ -117,8 +118,9 @@ module RDF
       # @param [String] file Name of the example to return
       get '/examples/good-relations/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
-        send_file File.join(APP_DIR, "good-relations/#{params[:file]}")
-        content_type (params[:file].end_with?(".jsonld") ? :jsonld : :html), :charset => "utf-8"
+        send_file File.join(APP_DIR, "good-relations/#{params[:file]}"),
+          :type => (params[:file].end_with?(".jsonld") ? :jsonld : :html),
+          :charset => "utf-8"
       end
 
       # Return a specific schema.org example
@@ -172,8 +174,9 @@ module RDF
           file ||= f if File.file?(f) && f.match(/#{params[:file]}$/)
         end
         if file
-          send_file file
-          content_type (file.end_with?(".jsonld") ? :jsonld : :html), :charset => "utf-8"
+          send_file file,
+            :type => (file.end_with?(".jsonld") ? :jsonld : :html),
+            :charset => "utf-8"
         else
           status 401
           body "Could not find schema example #{params[:file]}"
@@ -254,6 +257,7 @@ module RDF
         @output ||= "<p>No formats detected.</p>"
         @title = "Structured Data Linter"
         status status
+        content_type content_type
         erb :linter, :locals => {
           :head => :linter,
           :root => RDF::URI(request.url).join("/").to_s,
