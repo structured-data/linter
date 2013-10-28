@@ -49,7 +49,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   config.vm.provision :chef_solo do |chef|
     chef.node_name = "linter"
-    chef.log_level = :debug
+    #chef.log_level = :debug
     chef.json = {
       :passenger => {:version => "4.0.21"}
     }
