@@ -66,7 +66,7 @@ module RDF::Util
           curl.headers['User-Agent'] = "Ruby Structured Data Linter/#{RDF::Linter::VERSION}"
           curl.follow_location = true
           curl.on_body do |body|
-            body.force_encoding!(options[:encoding]) if options[:encoding]
+            bode = body.encode(options[:encoding]) if options[:encoding]
             io_obj.write(body)
             body.length
           end

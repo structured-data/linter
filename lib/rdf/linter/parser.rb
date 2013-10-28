@@ -59,23 +59,23 @@ module RDF::Linter
 
       # Move elements with class `snippet` to the front of the root element
       html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
-      ["text/html", html]
+      ["text/html", 200, html]
     rescue RDF::ReaderError => e
       @error = "RDF::ReaderError: #{e.message}"
       $logger.error @error
       $logger.debug e.backtrace.join("\n")
-      ["text/html", @error]
+      ["text/html", 400, @error]
     rescue OpenURI::HTTPError => e
       @error = "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
       $logger.error @error  # to log
       $logger.debug e.backtrace.join("\n")
-      ["text/html", @error]
+      ["text/html", 502, @error]
     rescue
       raise unless self.respond_to?(:settings) && settings.environment == :production
       @error = "#{$!.class}: #{$!.message}"
       $logger.error @error  # to log
-      $logger.debug e.backtrace.join("\n")
-      ["text/html", @error]
+      $logger.debug $!.backtrace.join("\n")
+      ["text/html", 400, @error]
     end
     module_function :parse
 

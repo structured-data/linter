@@ -229,6 +229,7 @@ module RDF
         reader_opts[:debug] = @debug = [] if params["debug"]
         reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
         reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
+        reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
         reader_opts[:matched_templates] = []
 
         root = RDF::URI(request.url).join("/").to_s
@@ -244,11 +245,12 @@ module RDF
           $logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
         end
 
-        content_type, content = parse(reader_opts)
+        content_type, status, content = parse(reader_opts)
         content.gsub!(/--root--/, root)
         @output = content unless content == @error
         @output ||= "<p>No formats detected.</p>"
         @title = "Structured Data Linter"
+        status status
         erb :linter, :locals => {
           :head => :linter,
           :root => RDF::URI(request.url).join("/").to_s,
