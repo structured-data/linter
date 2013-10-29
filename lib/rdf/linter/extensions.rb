@@ -94,8 +94,8 @@ module RDF::Util
           curl.headers['User-Agent'] = "Ruby Structured Data Linter/#{RDF::Linter::VERSION}"
           curl.follow_location = true
           curl.on_body do |body|
-            bode = body.encode(options[:encoding]) if options[:encoding]
             io_obj.write(body)
+            io_obj.set_encoding(options[:encoding]) if options[:encoding]
             body.length
           end
           #curl.on_debug {|type, data| STDERR.puts "type: #{type.inspect}, data: #{data.inspect}"}
