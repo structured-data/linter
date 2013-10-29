@@ -1,11 +1,3 @@
-GIT
-  remote: git://github.com/ruby-rdf/rdf.git
-  revision: 9475715f6cd9646eaf5e01de3ad641d1fe3eb829
-  branch: develop
-  specs:
-    rdf (1.0.9)
-      addressable (>= 2.3)
-
 PATH
   remote: .
   specs:
@@ -79,6 +71,8 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.1.0)
+    rdf (1.0.10)
+      addressable (>= 2.3)
     rdf-aggregate-repo (0.1.2)
       rdf (>= 1.0)
     rdf-isomorphic (1.0.2)
@@ -157,7 +151,6 @@ DEPENDENCIES
   linter!
   rack-test (>= 0.6.2)
   rake
-  rdf!
   rspec (>= 2.14.0)
   shotgun (>= 0.9)
   sparql
