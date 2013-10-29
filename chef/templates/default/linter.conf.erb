@@ -4,6 +4,7 @@
   ServerAdmin <%= node['apache']['contact'] %>
   ServerAlias <% @params[:server_aliases].each do |a| %><%= a %> <% end %>
   DocumentRoot <%= "#{node[:linter][:document_root]}/current/public" %>
+  SetEnv LANG en_US.UTF-8
   SetEnv PATH <%= "#{node[:rbenv][:root]}/shims:/usr/local/bin:/usr/bin:/bin" %>
 
   RailsBaseURI /
