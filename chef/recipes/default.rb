@@ -21,7 +21,7 @@ end
 
 # FIXME: On first run, passenger is not setup with rbenv version of passenger
 # FIXME: This is from passenger_apache2, but apache fails before this is run
-node.set['passenger']['version'] = "4.0.21"
+node.set['passenger']['version'] = "4.0.29"
 
 rbenv_gem "passenger" do
   version node['passenger']['version']
