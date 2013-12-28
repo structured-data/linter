@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'fileutils'
-require 'rspec/core/rake_task'
 require 'yard'
 
 YARD::Rake::YardocTask.new do |y|
@@ -13,9 +12,6 @@ YARD::Rake::YardocTask.new do |y|
             ["-"] +
             Dir.glob("*-README")
 end
-
-desc 'Default: run specs.'
-task :default => :spec
 
 desc "refresh schema-org-rdf"
 task :schema_dir do
@@ -35,11 +31,6 @@ task :schema_examples do
     f.puts("<!-- This file is created automaticaly by rake schema_examples -->")
     f.write(schema.create_partial("Thing", 0))
   end
-end
-
-desc "Run specs"
-RSpec::Core::RakeTask.new do |t|
-  # Put spec opts in a file named .rspec in root
 end
 
 desc "Generate Vocabularies"
