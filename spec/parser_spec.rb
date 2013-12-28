@@ -55,6 +55,7 @@ describe RDF::Linter do
       Dir.glob(File.join(EXAMPLE_DIR, "*.{html,rdfa,md}")) +
       Dir.glob(File.join(SCHEMA_DIR, "**/*.{html,rdfa,md}"))
     ).each do |input|
+      next if input.end_with?("README.md")
       csv = File.join(TEST_DIR, File.basename(input.sub('.html', '.csv')))
       it_behaves_like "Test Case", input, csv
     end
