@@ -76,7 +76,7 @@ describe RDF::Linter::Application do
         %(//section[@class="content"]/h2[contains(text(), "Schema.org examples")]/) +
           %(../div/a[contains(text(), "CreativeWork")]),
         %(//section[@class="content"]/div/a[@href="/examples/schema.org/CreativeWork/"]),
-        %(//a[@href="/?url=http://example.org/examples/schema.org/CreativeWork.rdfa"]),
+        %(//a[@href="/?url=http://example.org/examples/schema.org/CreativeWork.rdfa.html"]),
 
         %(//section[@class="content"]/h2[contains(text(), "Good Relations examples")]),
         %(//section[@class="content"]/h2[contains(text(), "Good Relations examples")]) +

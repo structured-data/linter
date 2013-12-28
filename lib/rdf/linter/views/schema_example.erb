@@ -7,6 +7,7 @@
       fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
       next unless examples[ex_num].has_key?(fmt)
       path = examples[ex_num][fmt][:path]
+      path += ".html" unless path.end_with?(".jsonld")
       source = examples[ex_num][fmt][:src]
   -%>
   <section>

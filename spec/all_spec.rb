@@ -28,7 +28,7 @@ describe RDF::All::Reader do
             itemid="http://books.example.com/works/45U8QJGZSQKDH8N">
         </dl>
       )],
-      ["n3:turtle", %q(
+      ["turtle:ttl", %q(
         @prefix dc: <http://purl.org/dc/elements/1.1/> .
         @prefix dcterms: <http://purl.org/dc/terms/> .
         @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

@@ -93,7 +93,8 @@ module RDF
       # @param [String] file Name of the example to return
       get '/examples/google-rs/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
-        send_file File.join(APP_DIR, "google-rs/#{params[:file]}"),
+        file_loc = params[:file]
+        send_file File.join(APP_DIR, "google-rs/#{file_loc}"),
           :type => (params[:file].end_with?(".jsonld") ? :jsonld : :html),
           :charset => "utf-8"
       end
@@ -169,9 +170,10 @@ module RDF
       # @param [String] file Name of the example to return
       get '/examples/schema.org/:file' do
         cache_control :public, :must_revalidate, :max_age => 60
+        file_loc = params[:file].end_with?(".html") ? params[:file][0..-6] : params[:file]
         file = nil
         Find.find(File.join(APP_DIR, "schema-org-rdf")) do |f|
-          file ||= f if File.file?(f) && f.match(/#{params[:file]}$/)
+          file ||= f if File.file?(f) && f.match(/#{file_loc}$/)
         end
         if file
           send_file file,

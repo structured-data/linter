@@ -93,6 +93,7 @@ module RDF::Linter
             if example.has_key?(fmt)
               fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
               sn_path = "<%=root%>examples/schema.org/#{File.basename(example[fmt])}"
+              sn_path += ".html" unless sn_path.end_with?(".jsonld")
               %(<a href="/?url=#{sn_path}" title="Show #{cls} snippet in #{fmt_name}">#{fmt_name}</a>)
             end
           end.join(" ")
