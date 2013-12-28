@@ -8,7 +8,7 @@ group :development, :test do
   gem 'rake'
 end
 
-group :debug do
+group :development do
   gem 'wirble'
-  gem 'debugger'
+  gem 'byebug', :platform => :mri_20
 end

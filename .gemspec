@@ -21,16 +21,15 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version       = '>= 1.9.3'
   gem.requirements                = []
-  gem.add_runtime_dependency      'linkeddata',         '>= 1.0.9'
-  gem.add_runtime_dependency      'sinatra-linkeddata', '>= 1.0'
+  gem.add_runtime_dependency      'linkeddata',         '>= 1.1'
+  gem.add_runtime_dependency      'sinatra-linkeddata', '>= 1.1'
   gem.add_runtime_dependency      'equivalent-xml'
-  gem.add_runtime_dependency      'sinatra',            '>= 1.4.2'
+  gem.add_runtime_dependency      'sinatra',            '>= 1.4.4'
   gem.add_runtime_dependency      'erubis',             '>= 2.7.0'
   gem.add_runtime_dependency      'haml',               '>= 4.0.0'
   gem.add_runtime_dependency      'curb',               '>= 0.8.5'
   gem.add_runtime_dependency      'facets',             '>= 2.9.3'
   gem.add_runtime_dependency      'nokogiri',           '>= 1.6.0'
-  gem.add_runtime_dependency      'json',               '>= 1.8'
   gem.add_runtime_dependency      'rack',               '>= 1.5.2'
   gem.add_runtime_dependency      'rack-cache',         '>= 1.2'
 
