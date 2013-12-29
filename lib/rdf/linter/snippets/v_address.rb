@@ -33,7 +33,7 @@ module RDF::Linter
         :nested_fmt => lambda {|list, &block| list.map{|p| block.call(p)}.compact.map(&:to_s).map(&:rstrip).join(", ")},
         # Priority of this snippet when multiple are matched. If it's missing, it's assumed to be 99
         # When multiple snippets are matched by an object, the one with the highest priority wins.
-        :priority => 10,
+        :priority => 30,
       }
     })
   end

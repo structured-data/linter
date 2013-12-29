@@ -2,88 +2,45 @@
   "Vocabularies": {
     "skos": "http://www.w3.org/2004/02/skos/core#"
   },
-  "Classes": {
-  },
   "Properties": {
+    "http://www.w3.org/2004/02/skos/core#inScheme": {
+      "vocab": "skos",
+      "label": "is in scheme",
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      ]
+    },
+    "http://www.w3.org/2004/02/skos/core#hasTopConcept": {
+      "vocab": "skos",
+      "label": "has top concept",
+      "domain": [
+        "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ]
+    },
+    "http://www.w3.org/2004/02/skos/core#topConceptOf": {
+      "vocab": "skos",
+      "label": "is top concept in scheme",
+      "domain": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+      ]
+    },
+    "http://www.w3.org/2004/02/skos/core#prefLabel": {
+      "vocab": "skos",
+      "label": "preferred label"
+    },
     "http://www.w3.org/2004/02/skos/core#altLabel": {
       "vocab": "skos",
       "label": "alternative label"
     },
-    "http://www.w3.org/2004/02/skos/core#broadMatch": {
-      "vocab": "skos",
-      "label": "has broader match"
-    },
-    "http://www.w3.org/2004/02/skos/core#broader": {
-      "vocab": "skos",
-      "label": "has broader"
-    },
-    "http://www.w3.org/2004/02/skos/core#broaderTransitive": {
-      "vocab": "skos",
-      "label": "has broader transitive"
-    },
-    "http://www.w3.org/2004/02/skos/core#changeNote": {
-      "vocab": "skos",
-      "label": "change note"
-    },
-    "http://www.w3.org/2004/02/skos/core#closeMatch": {
-      "vocab": "skos",
-      "label": "has close match"
-    },
-    "http://www.w3.org/2004/02/skos/core#definition": {
-      "vocab": "skos",
-      "label": "definition"
-    },
-    "http://www.w3.org/2004/02/skos/core#editorialNote": {
-      "vocab": "skos",
-      "label": "editorial note"
-    },
-    "http://www.w3.org/2004/02/skos/core#exactMatch": {
-      "vocab": "skos",
-      "label": "has exact match"
-    },
-    "http://www.w3.org/2004/02/skos/core#example": {
-      "vocab": "skos",
-      "label": "example"
-    },
-    "http://www.w3.org/2004/02/skos/core#hasTopConcept": {
-      "vocab": "skos",
-      "label": "has top concept"
-    },
     "http://www.w3.org/2004/02/skos/core#hiddenLabel": {
       "vocab": "skos",
       "label": "hidden label"
-    },
-    "http://www.w3.org/2004/02/skos/core#historyNote": {
-      "vocab": "skos",
-      "label": "history note"
-    },
-    "http://www.w3.org/2004/02/skos/core#inScheme": {
-      "vocab": "skos",
-      "label": "is in scheme"
-    },
-    "http://www.w3.org/2004/02/skos/core#mappingRelation": {
-      "vocab": "skos",
-      "label": "is in mapping relation with"
-    },
-    "http://www.w3.org/2004/02/skos/core#member": {
-      "vocab": "skos",
-      "label": "has member"
-    },
-    "http://www.w3.org/2004/02/skos/core#memberList": {
-      "vocab": "skos",
-      "label": "has member list"
-    },
-    "http://www.w3.org/2004/02/skos/core#narrowMatch": {
-      "vocab": "skos",
-      "label": "has narrower match"
-    },
-    "http://www.w3.org/2004/02/skos/core#narrower": {
-      "vocab": "skos",
-      "label": "has narrower"
-    },
-    "http://www.w3.org/2004/02/skos/core#narrowerTransitive": {
-      "vocab": "skos",
-      "label": "has narrower transitive"
     },
     "http://www.w3.org/2004/02/skos/core#notation": {
       "vocab": "skos",
@@ -93,17 +50,25 @@
       "vocab": "skos",
       "label": "note"
     },
-    "http://www.w3.org/2004/02/skos/core#prefLabel": {
+    "http://www.w3.org/2004/02/skos/core#changeNote": {
       "vocab": "skos",
-      "label": "preferred label"
+      "label": "change note"
     },
-    "http://www.w3.org/2004/02/skos/core#related": {
+    "http://www.w3.org/2004/02/skos/core#definition": {
       "vocab": "skos",
-      "label": "has related"
+      "label": "definition"
     },
-    "http://www.w3.org/2004/02/skos/core#relatedMatch": {
+    "http://www.w3.org/2004/02/skos/core#editorialNote": {
       "vocab": "skos",
-      "label": "has related match"
+      "label": "editorial note"
+    },
+    "http://www.w3.org/2004/02/skos/core#example": {
+      "vocab": "skos",
+      "label": "example"
+    },
+    "http://www.w3.org/2004/02/skos/core#historyNote": {
+      "vocab": "skos",
+      "label": "history note"
     },
     "http://www.w3.org/2004/02/skos/core#scopeNote": {
       "vocab": "skos",
@@ -111,13 +76,77 @@
     },
     "http://www.w3.org/2004/02/skos/core#semanticRelation": {
       "vocab": "skos",
-      "label": "is in semantic relation with"
+      "label": "is in semantic relation with",
+      "domain": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ]
     },
-    "http://www.w3.org/2004/02/skos/core#topConceptOf": {
+    "http://www.w3.org/2004/02/skos/core#broader": {
       "vocab": "skos",
-      "label": "is top concept in scheme"
+      "label": "has broader"
+    },
+    "http://www.w3.org/2004/02/skos/core#narrower": {
+      "vocab": "skos",
+      "label": "has narrower"
+    },
+    "http://www.w3.org/2004/02/skos/core#related": {
+      "vocab": "skos",
+      "label": "has related"
+    },
+    "http://www.w3.org/2004/02/skos/core#broaderTransitive": {
+      "vocab": "skos",
+      "label": "has broader transitive"
+    },
+    "http://www.w3.org/2004/02/skos/core#narrowerTransitive": {
+      "vocab": "skos",
+      "label": "has narrower transitive"
+    },
+    "http://www.w3.org/2004/02/skos/core#member": {
+      "vocab": "skos",
+      "label": "has member",
+      "domain": [
+        "http://www.w3.org/2004/02/skos/core#Collection"
+      ],
+      "range": [
+        "_:g70228881941900"
+      ]
+    },
+    "http://www.w3.org/2004/02/skos/core#memberList": {
+      "vocab": "skos",
+      "label": "has member list",
+      "domain": [
+        "http://www.w3.org/2004/02/skos/core#OrderedCollection"
+      ],
+      "range": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#List"
+      ]
+    },
+    "http://www.w3.org/2004/02/skos/core#mappingRelation": {
+      "vocab": "skos",
+      "label": "is in mapping relation with"
+    },
+    "http://www.w3.org/2004/02/skos/core#broadMatch": {
+      "vocab": "skos",
+      "label": "has broader match"
+    },
+    "http://www.w3.org/2004/02/skos/core#narrowMatch": {
+      "vocab": "skos",
+      "label": "has narrower match"
+    },
+    "http://www.w3.org/2004/02/skos/core#relatedMatch": {
+      "vocab": "skos",
+      "label": "has related match"
+    },
+    "http://www.w3.org/2004/02/skos/core#exactMatch": {
+      "vocab": "skos",
+      "label": "has exact match"
+    },
+    "http://www.w3.org/2004/02/skos/core#closeMatch": {
+      "vocab": "skos",
+      "label": "has close match"
     }
-  },
-  "Datatypes": {
   }
 }

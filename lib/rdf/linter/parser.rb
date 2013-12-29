@@ -51,6 +51,15 @@ module RDF::Linter
         graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://opengraphprotocol.org/types/#{statement.object}"))
       end
 
+      # Expand types using vocabulary entailment
+      graph.query(:predicate => RDF.type) do |statement|
+        s = statement.dup
+        entailed_types(statement.object) do |t|
+          s.object = t
+          graph << s
+        end
+      end
+
       writer_opts = reader_opts
       writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
       writer_opts[:prefixes][:ogt] = "http://types.ogp.me/ns#"
@@ -76,6 +85,14 @@ module RDF::Linter
       ["text/html", 400, @error]
     end
     module_function :parse
+
+    # Return entailed super-classes of a given type
+    # @param [RDF::URI] type
+    # @return [Array<RDF::URI>]
+    def entailed_types(type)
+      VOCAB_DEFS["Classes"].fetch(type.to_s, {}).fetch("superClass", []).map {|v| RDF::URI(v)}
+    end
+    module_function :entailed_types
 
     # Use vocabulary definitions to lint contents of the graph for known vocabularies
     def lint(graph)
@@ -133,26 +150,28 @@ module RDF::Linter
         "Datatypes" => {},
       }
       repo = RDF::Repository.load(location, options)
-      # FIXME: problem with SPARQL FILTER command
-      vocab_query = %{
-        PREFIX rdf: <#{RDF.to_uri}>
-        PREFIX rdfs: <#{RDF::RDFS.to_uri}>
-        SELECT ?subject ?type ?label
-        WHERE {
-          ?subject a ?type
-          OPTIONAL {?subject rdfs:label ?label}
-          #FILTER (?type IN (rdf:Property, rdfs:Class, rdf:DataType))
-        }
-        ORDER BY ?subject
-      }
-      SPARQL.execute(vocab_query, repo).each do |soln|
+
+      # Query to get relevant vocabulary information
+      vocab_query = RDF::Query.new do
+        pattern [:subject, RDF.type, :type]
+        pattern [:subject, RDF::RDFS.label, :label], optional: true
+        pattern [:subject, RDF::RDFS.subClassOf, :superClass], optional: true
+        pattern [:subject, RDF::RDFS.domain, :domain], optional: true
+        pattern [:subject, RDF::RDFS.range, :range], optional: true
+        pattern [:subject, RDF::SCHEMA.domainIncludes, :domainIncludes], optional: true
+        pattern [:subject, RDF::SCHEMA.rangeIncludes, :rangeIncludes], optional: true
+      end
+      repo.query(vocab_query) do |soln|
         section = case soln.type
         when RDF.Property then "Properties"
         when RDF::RDFS.Class then "Classes"
         when RDF::RDFS.Datatype then "Datatypes"
         else next
         end
-        defs[section][soln.subject] = {:vocab => prefix, :label => (soln[:label] || soln.subject.to_s.split(/[\/#]/).last)}
+        d = (defs[section][soln.subject] ||= {:vocab => prefix, :label => (soln[:label] || soln.subject.to_s.split(/[\/#]/).last)})
+        soln.each do |name, value|
+          (d[name] ||= []) << value unless [:subject, :type, :label].include?(name)
+        end
       end
 
       defs.keys.each {|k| defs.delete(k) if defs[k].empty?}

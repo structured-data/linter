@@ -1,11 +1,5 @@
 {
   "Vocabularies": {
     "sioc": "http://rdfs.org/sioc/ns#"
-  },
-  "Classes": {
-  },
-  "Properties": {
-  },
-  "Datatypes": {
   }
 }

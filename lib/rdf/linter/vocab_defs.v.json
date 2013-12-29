@@ -3,353 +3,650 @@
     "v": "http://rdf.data-vocabulary.org/#"
   },
   "Classes": {
-    "http://rdf.data-vocabulary.org/#Address": {
+    "http://rdf.data-vocabulary.org/#Person": {
       "vocab": "v",
-      "label": "Address"
-    },
-    "http://rdf.data-vocabulary.org/#Breadcrumb": {
-      "vocab": "v",
-      "label": "Breadcrumb"
-    },
-    "http://rdf.data-vocabulary.org/#Offer": {
-      "vocab": "v",
-      "label": "Offer"
-    },
-    "http://rdf.data-vocabulary.org/#OfferAggregate": {
-      "vocab": "v",
-      "label": "OfferAggregate"
+      "label": "Person",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
     "http://rdf.data-vocabulary.org/#Organization": {
       "vocab": "v",
-      "label": "Organization"
-    },
-    "http://rdf.data-vocabulary.org/#Person": {
-      "vocab": "v",
-      "label": "Person"
+      "label": "Organization",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
     "http://rdf.data-vocabulary.org/#Product": {
       "vocab": "v",
-      "label": "Product"
+      "label": "Product",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#Rating": {
+    "http://rdf.data-vocabulary.org/#Offer": {
       "vocab": "v",
-      "label": "Rating"
+      "label": "Offer",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#Recipe": {
+    "http://rdf.data-vocabulary.org/#OfferAggregate": {
       "vocab": "v",
-      "label": "Recipe"
+      "label": "OfferAggregate",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
     "http://rdf.data-vocabulary.org/#Review": {
       "vocab": "v",
-      "label": "Review"
+      "label": "Review",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
     "http://rdf.data-vocabulary.org/#Review-aggregate": {
       "vocab": "v",
-      "label": "Review-aggregate"
+      "label": "Review-aggregate",
+      "superClass": [
+        "http://rdf.data-vocabulary.org/#Review"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#ingredient": {
+    "http://rdf.data-vocabulary.org/#Recipe": {
       "vocab": "v",
-      "label": "ingredient"
+      "label": "Recipe",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#instructions": {
+    "http://rdf.data-vocabulary.org/#Breadcrumb": {
       "vocab": "v",
-      "label": "instructions"
+      "label": "Breadcrumb",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#nutrition": {
+    "http://rdf.data-vocabulary.org/#Address": {
       "vocab": "v",
-      "label": "nutrition"
+      "label": "Address",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#Rating": {
+      "vocab": "v",
+      "label": "Rating",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
     "http://rdf.data-vocabulary.org/#timeRange": {
       "vocab": "v",
-      "label": "timeRange"
+      "label": "timeRange",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ],
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#nutrition": {
+      "vocab": "v",
+      "label": "nutrition",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ],
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#instructions": {
+      "vocab": "v",
+      "label": "instructions",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ],
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#ingredient": {
+      "vocab": "v",
+      "label": "ingredient",
+      "superClass": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ],
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
     }
   },
   "Properties": {
-    "http://rdf.data-vocabulary.org/#acquaintance": {
-      "vocab": "v",
-      "label": "acquaintance"
-    },
     "http://rdf.data-vocabulary.org/#address": {
       "vocab": "v",
-      "label": "address"
+      "label": "address",
+      "domain": [
+        "_:g70228866238420"
+      ],
+      "range": [
+        "http://rdf.data-vocabulary.org/#Address"
+      ]
     },
     "http://rdf.data-vocabulary.org/#affiliation": {
       "vocab": "v",
-      "label": "affiliation"
-    },
-    "http://rdf.data-vocabulary.org/#amount": {
-      "vocab": "v",
-      "label": "amount"
-    },
-    "http://rdf.data-vocabulary.org/#author": {
-      "vocab": "v",
-      "label": "author"
-    },
-    "http://rdf.data-vocabulary.org/#availability": {
-      "vocab": "v",
-      "label": "availability"
-    },
-    "http://rdf.data-vocabulary.org/#average": {
-      "vocab": "v",
-      "label": "average"
-    },
-    "http://rdf.data-vocabulary.org/#best": {
-      "vocab": "v",
-      "label": "best"
+      "label": "affiliation",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Person"
+      ],
+      "range": [
+        "_:g70228866752920"
+      ]
     },
     "http://rdf.data-vocabulary.org/#brand": {
       "vocab": "v",
-      "label": "brand"
-    },
-    "http://rdf.data-vocabulary.org/#calories": {
-      "vocab": "v",
-      "label": "calories"
-    },
-    "http://rdf.data-vocabulary.org/#carbohydrates": {
-      "vocab": "v",
-      "label": "carbohydrates"
+      "label": "brand",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Product"
+      ]
     },
     "http://rdf.data-vocabulary.org/#category": {
       "vocab": "v",
-      "label": "category"
-    },
-    "http://rdf.data-vocabulary.org/#child": {
-      "vocab": "v",
-      "label": "child"
-    },
-    "http://rdf.data-vocabulary.org/#cholesterol": {
-      "vocab": "v",
-      "label": "cholesterol"
-    },
-    "http://rdf.data-vocabulary.org/#colleague": {
-      "vocab": "v",
-      "label": "colleague"
-    },
-    "http://rdf.data-vocabulary.org/#condition": {
-      "vocab": "v",
-      "label": "condition"
-    },
-    "http://rdf.data-vocabulary.org/#contact": {
-      "vocab": "v",
-      "label": "contact"
-    },
-    "http://rdf.data-vocabulary.org/#cookTime": {
-      "vocab": "v",
-      "label": "cookTime"
+      "label": "category",
+      "domain": [
+        "_:g70228866290700"
+      ]
     },
     "http://rdf.data-vocabulary.org/#count": {
       "vocab": "v",
-      "label": "count"
-    },
-    "http://rdf.data-vocabulary.org/#country-name": {
-      "vocab": "v",
-      "label": "country-name"
-    },
-    "http://rdf.data-vocabulary.org/#currency": {
-      "vocab": "v",
-      "label": "currency"
+      "label": "count",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Review-aggregate"
+      ]
     },
     "http://rdf.data-vocabulary.org/#description": {
       "vocab": "v",
-      "label": "description"
+      "label": "description",
+      "domain": [
+        "_:g70228866931320"
+      ]
     },
     "http://rdf.data-vocabulary.org/#dtreviewed": {
       "vocab": "v",
-      "label": "dtreviewed"
-    },
-    "http://rdf.data-vocabulary.org/#duration": {
-      "vocab": "v",
-      "label": "duration"
-    },
-    "http://rdf.data-vocabulary.org/#fat": {
-      "vocab": "v",
-      "label": "fat"
-    },
-    "http://rdf.data-vocabulary.org/#fiber": {
-      "vocab": "v",
-      "label": "fiber"
-    },
-    "http://rdf.data-vocabulary.org/#friend": {
-      "vocab": "v",
-      "label": "friend"
-    },
-    "http://rdf.data-vocabulary.org/#highprice": {
-      "vocab": "v",
-      "label": "highprice"
-    },
-    "http://rdf.data-vocabulary.org/#identifier": {
-      "vocab": "v",
-      "label": "identifier"
-    },
-    "http://rdf.data-vocabulary.org/#image": {
-      "vocab": "v",
-      "label": "image"
-    },
-    "http://rdf.data-vocabulary.org/#instruction": {
-      "vocab": "v",
-      "label": "instruction"
-    },
-    "http://rdf.data-vocabulary.org/#itemoffered": {
-      "vocab": "v",
-      "label": "itemoffered"
+      "label": "dtreviewed",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Review"
+      ]
     },
     "http://rdf.data-vocabulary.org/#itemreviewed": {
       "vocab": "v",
-      "label": "itemreviewed"
-    },
-    "http://rdf.data-vocabulary.org/#locality": {
-      "vocab": "v",
-      "label": "locality"
-    },
-    "http://rdf.data-vocabulary.org/#lowprice": {
-      "vocab": "v",
-      "label": "lowprice"
-    },
-    "http://rdf.data-vocabulary.org/#max": {
-      "vocab": "v",
-      "label": "max"
-    },
-    "http://rdf.data-vocabulary.org/#min": {
-      "vocab": "v",
-      "label": "min"
+      "label": "itemreviewed",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Review"
+      ]
     },
     "http://rdf.data-vocabulary.org/#name": {
       "vocab": "v",
-      "label": "name"
+      "label": "name",
+      "domain": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
     "http://rdf.data-vocabulary.org/#nickname": {
       "vocab": "v",
-      "label": "nickname"
-    },
-    "http://rdf.data-vocabulary.org/#offercount": {
-      "vocab": "v",
-      "label": "offercount"
-    },
-    "http://rdf.data-vocabulary.org/#offerdetails": {
-      "vocab": "v",
-      "label": "offerdetails"
-    },
-    "http://rdf.data-vocabulary.org/#offerurl": {
-      "vocab": "v",
-      "label": "offerurl"
+      "label": "nickname",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Person"
+      ]
     },
     "http://rdf.data-vocabulary.org/#photo": {
       "vocab": "v",
-      "label": "photo"
+      "label": "photo",
+      "domain": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#postal-code": {
+    "http://rdf.data-vocabulary.org/#image": {
       "vocab": "v",
-      "label": "postal-code"
-    },
-    "http://rdf.data-vocabulary.org/#prepTime": {
-      "vocab": "v",
-      "label": "prepTime"
+      "label": "image",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Product"
+      ]
     },
     "http://rdf.data-vocabulary.org/#price": {
       "vocab": "v",
-      "label": "price"
+      "label": "price",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Offer"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#pricerange": {
+    "http://rdf.data-vocabulary.org/#offerdetails": {
       "vocab": "v",
-      "label": "pricerange"
+      "label": "offerdetails",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Product"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#currency": {
+      "vocab": "v",
+      "label": "currency",
+      "domain": [
+        "_:g70228857475520"
+      ]
     },
     "http://rdf.data-vocabulary.org/#pricevaliduntil": {
       "vocab": "v",
-      "label": "pricevaliduntil"
-    },
-    "http://rdf.data-vocabulary.org/#protein": {
-      "vocab": "v",
-      "label": "protein"
-    },
-    "http://rdf.data-vocabulary.org/#published": {
-      "vocab": "v",
-      "label": "published"
-    },
-    "http://rdf.data-vocabulary.org/#quantity": {
-      "vocab": "v",
-      "label": "quantity"
-    },
-    "http://rdf.data-vocabulary.org/#rating": {
-      "vocab": "v",
-      "label": "rating"
-    },
-    "http://rdf.data-vocabulary.org/#recipeType": {
-      "vocab": "v",
-      "label": "recipeType"
-    },
-    "http://rdf.data-vocabulary.org/#region": {
-      "vocab": "v",
-      "label": "region"
-    },
-    "http://rdf.data-vocabulary.org/#reviewer": {
-      "vocab": "v",
-      "label": "reviewer"
-    },
-    "http://rdf.data-vocabulary.org/#role": {
-      "vocab": "v",
-      "label": "role"
-    },
-    "http://rdf.data-vocabulary.org/#saturatedFat": {
-      "vocab": "v",
-      "label": "saturatedFat"
+      "label": "pricevaliduntil",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Offer"
+      ]
     },
     "http://rdf.data-vocabulary.org/#seller": {
       "vocab": "v",
-      "label": "seller"
+      "label": "seller",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Offer"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#servingSize": {
+    "http://rdf.data-vocabulary.org/#condition": {
       "vocab": "v",
-      "label": "servingSize"
+      "label": "condition",
+      "domain": [
+        "_:g70228874297040"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#street-address": {
+    "http://rdf.data-vocabulary.org/#availability": {
       "vocab": "v",
-      "label": "street-address"
+      "label": "availability",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Offer"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#sugar": {
+    "http://rdf.data-vocabulary.org/#offerurl": {
       "vocab": "v",
-      "label": "sugar"
+      "label": "offerurl",
+      "domain": [
+        "_:g70228874361500"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#identifier": {
+      "vocab": "v",
+      "label": "identifier",
+      "domain": [
+        "_:g70228874477200"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#quantity": {
+      "vocab": "v",
+      "label": "quantity",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Offer"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#itemoffered": {
+      "vocab": "v",
+      "label": "itemoffered",
+      "domain": [
+        "_:g70228874591060"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#lowprice": {
+      "vocab": "v",
+      "label": "lowprice",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#OfferAggregate"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#highprice": {
+      "vocab": "v",
+      "label": "highprice",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#OfferAggregate"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#offercount": {
+      "vocab": "v",
+      "label": "offercount",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#OfferAggregate"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#pricerange": {
+      "vocab": "v",
+      "label": "pricerange",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Organization"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#rating": {
+      "vocab": "v",
+      "label": "rating",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Review"
+      ],
+      "range": [
+        "_:g70228874863060"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#reviewer": {
+      "vocab": "v",
+      "label": "reviewer",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Review"
+      ],
+      "range": [
+        "_:g70228874979220"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#role": {
+      "vocab": "v",
+      "label": "role",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Person"
+      ]
     },
     "http://rdf.data-vocabulary.org/#summary": {
       "vocab": "v",
-      "label": "summary"
-    },
-    "http://rdf.data-vocabulary.org/#tag": {
-      "vocab": "v",
-      "label": "tag"
+      "label": "summary",
+      "domain": [
+        "_:g70228875111340"
+      ]
     },
     "http://rdf.data-vocabulary.org/#tel": {
       "vocab": "v",
-      "label": "tel"
+      "label": "tel",
+      "domain": [
+        "_:g70228875194520"
+      ]
     },
     "http://rdf.data-vocabulary.org/#title": {
       "vocab": "v",
-      "label": "title"
-    },
-    "http://rdf.data-vocabulary.org/#totalTime": {
-      "vocab": "v",
-      "label": "totalTime"
-    },
-    "http://rdf.data-vocabulary.org/#unsaturatedFat": {
-      "vocab": "v",
-      "label": "unsaturatedFat"
+      "label": "title",
+      "domain": [
+        "_:g70228875278320"
+      ]
     },
     "http://rdf.data-vocabulary.org/#url": {
       "vocab": "v",
-      "label": "url"
+      "label": "url",
+      "domain": [
+        "_:g70228875362120"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#value": {
+    "http://rdf.data-vocabulary.org/#child": {
       "vocab": "v",
-      "label": "value"
+      "label": "child",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Breadcrumb"
+      ]
     },
-    "http://rdf.data-vocabulary.org/#worst": {
+    "http://rdf.data-vocabulary.org/#friend": {
       "vocab": "v",
-      "label": "worst"
+      "label": "friend",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Person"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#colleague": {
+      "vocab": "v",
+      "label": "colleague",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Person"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#contact": {
+      "vocab": "v",
+      "label": "contact",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Person"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#acquaintance": {
+      "vocab": "v",
+      "label": "acquaintance",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Person"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#recipeType": {
+      "vocab": "v",
+      "label": "recipeType",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#tag": {
+      "vocab": "v",
+      "label": "tag",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#published": {
+      "vocab": "v",
+      "label": "published",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#prepTime": {
+      "vocab": "v",
+      "label": "prepTime",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ],
+      "range": [
+        "_:g70228875816700"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#cookTime": {
+      "vocab": "v",
+      "label": "cookTime",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ],
+      "range": [
+        "_:g70228875916080"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#totalTime": {
+      "vocab": "v",
+      "label": "totalTime",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ],
+      "range": [
+        "_:g70228876012840"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#duration": {
+      "vocab": "v",
+      "label": "duration",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ],
+      "range": [
+        "_:g70228867047340"
+      ]
     },
     "http://rdf.data-vocabulary.org/#yield": {
       "vocab": "v",
-      "label": "yield"
+      "label": "yield",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#author": {
+      "vocab": "v",
+      "label": "author",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Recipe"
+      ],
+      "range": [
+        "_:g70228867210460"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#average": {
+      "vocab": "v",
+      "label": "average",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Rating"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#value": {
+      "vocab": "v",
+      "label": "value",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Rating"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#min": {
+      "vocab": "v",
+      "label": "min",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Rating",
+        "http://rdf.data-vocabulary.org/#timeRange"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#max": {
+      "vocab": "v",
+      "label": "max",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Rating",
+        "http://rdf.data-vocabulary.org/#timeRange"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#best": {
+      "vocab": "v",
+      "label": "best",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Rating"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#worst": {
+      "vocab": "v",
+      "label": "worst",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Rating"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#postal-code": {
+      "vocab": "v",
+      "label": "postal-code",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Address"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#street-address": {
+      "vocab": "v",
+      "label": "street-address",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Address"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#locality": {
+      "vocab": "v",
+      "label": "locality",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Address"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#region": {
+      "vocab": "v",
+      "label": "region",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Address"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#country-name": {
+      "vocab": "v",
+      "label": "country-name",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#Address"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#servingSize": {
+      "vocab": "v",
+      "label": "servingSize",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#calories": {
+      "vocab": "v",
+      "label": "calories",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#fat": {
+      "vocab": "v",
+      "label": "fat",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#saturatedFat": {
+      "vocab": "v",
+      "label": "saturatedFat",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#unsaturatedFat": {
+      "vocab": "v",
+      "label": "unsaturatedFat",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#carbohydrates": {
+      "vocab": "v",
+      "label": "carbohydrates",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#sugar": {
+      "vocab": "v",
+      "label": "sugar",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#fiber": {
+      "vocab": "v",
+      "label": "fiber",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#protein": {
+      "vocab": "v",
+      "label": "protein",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#cholesterol": {
+      "vocab": "v",
+      "label": "cholesterol",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#nutrition"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#instruction": {
+      "vocab": "v",
+      "label": "instruction",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#instructions"
+      ]
+    },
+    "http://rdf.data-vocabulary.org/#amount": {
+      "vocab": "v",
+      "label": "amount",
+      "domain": [
+        "http://rdf.data-vocabulary.org/#ingredient"
+      ]
     }
-  },
-  "Datatypes": {
   }
 }

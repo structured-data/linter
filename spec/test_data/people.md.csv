@@ -1,0 +1,9 @@
+"# First column is Xpath, second column is expected result. May be string, regexp, true, or false",
+/div/@id,results-content
+/div/@prefix,TRUE
+/div/div[@typeof]/@class,snippet-content
+/div/div/@typeof,vmd:Person
+//h3[@class='r']/a[@class='fakelink']/span[@property='vmd:name']/text(),Bob Smith
+//div[@class='s primary_content']//div[@class='f']/span[@typeof='vmd:Address']/span[@property='vmd:locality']/text(),Albuquerque
+//div[@class='s primary_content']//div[@class='f']/span[@typeof='vmd:Address']/span[@property='vmd:region']/text(),NM
+//div[@class='s']//div[@class='f']/cite,TRUE

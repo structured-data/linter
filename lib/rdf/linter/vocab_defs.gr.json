@@ -1,11 +1,5 @@
 {
   "Vocabularies": {
     "gr": "http://purl.org/goodrelations/v1#"
-  },
-  "Classes": {
-  },
-  "Properties": {
-  },
-  "Datatypes": {
   }
 }

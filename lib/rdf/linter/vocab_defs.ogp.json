@@ -2,182 +2,264 @@
   "Vocabularies": {
     "ogp": "http://ogp.me/ns#"
   },
-  "Classes": {
-  },
   "Properties": {
+    "http://ogp.me/ns#url": {
+      "vocab": "ogp",
+      "label": "url",
+      "range": [
+        "http://ogp.me/ns/class#url"
+      ]
+    },
+    "http://ogp.me/ns#type": {
+      "vocab": "ogp",
+      "label": "type",
+      "range": [
+        "http://ogp.me/ns/class#string"
+      ]
+    },
+    "http://ogp.me/ns#title": {
+      "vocab": "ogp",
+      "label": "title",
+      "range": [
+        "http://ogp.me/ns/class#string"
+      ]
+    },
+    "http://ogp.me/ns#locale": {
+      "vocab": "ogp",
+      "label": "locale",
+      "range": [
+        "http://ogp.me/ns/class#string"
+      ]
+    },
+    "http://ogp.me/ns#image": {
+      "vocab": "ogp",
+      "label": "image",
+      "range": [
+        "http://ogp.me/ns/class#url"
+      ]
+    },
+    "http://ogp.me/ns#image:secure_url": {
+      "vocab": "ogp",
+      "label": "image secure url",
+      "range": [
+        "http://ogp.me/ns/class#url"
+      ]
+    },
+    "http://ogp.me/ns#image:type": {
+      "vocab": "ogp",
+      "label": "image type",
+      "range": [
+        "http://ogp.me/ns/class#mime_type_str"
+      ]
+    },
+    "http://ogp.me/ns#image:width": {
+      "vocab": "ogp",
+      "label": "image width",
+      "range": [
+        "http://ogp.me/ns/class#integer_str"
+      ]
+    },
+    "http://ogp.me/ns#image:height": {
+      "vocab": "ogp",
+      "label": "image height",
+      "range": [
+        "http://ogp.me/ns/class#integer_str"
+      ]
+    },
+    "http://ogp.me/ns#video": {
+      "vocab": "ogp",
+      "label": "video",
+      "range": [
+        "http://ogp.me/ns/class#url"
+      ]
+    },
+    "http://ogp.me/ns#video:secure_url": {
+      "vocab": "ogp",
+      "label": "video secure URL",
+      "range": [
+        "http://ogp.me/ns/class#url"
+      ]
+    },
+    "http://ogp.me/ns#video:type": {
+      "vocab": "ogp",
+      "label": "video type",
+      "range": [
+        "http://ogp.me/ns/class#mime_type_str"
+      ]
+    },
+    "http://ogp.me/ns#video:width": {
+      "vocab": "ogp",
+      "label": "video width",
+      "range": [
+        "http://ogp.me/ns/class#integer_str"
+      ]
+    },
+    "http://ogp.me/ns#video:height": {
+      "vocab": "ogp",
+      "label": "video height",
+      "range": [
+        "http://ogp.me/ns/class#integer_str"
+      ]
+    },
     "http://ogp.me/ns#audio": {
       "vocab": "ogp",
-      "label": "audio"
-    },
-    "http://ogp.me/ns#audio:album": {
-      "vocab": "ogp",
-      "label": "audio album"
-    },
-    "http://ogp.me/ns#audio:artist": {
-      "vocab": "ogp",
-      "label": "audio artist"
+      "label": "audio",
+      "range": [
+        "http://ogp.me/ns/class#url"
+      ]
     },
     "http://ogp.me/ns#audio:secure_url": {
       "vocab": "ogp",
-      "label": "audio secure URL"
+      "label": "audio secure URL",
+      "range": [
+        "http://ogp.me/ns/class#url"
+      ]
+    },
+    "http://ogp.me/ns#audio:type": {
+      "vocab": "ogp",
+      "label": "audio type",
+      "range": [
+        "http://ogp.me/ns/class#mime_type_str"
+      ]
+    },
+    "http://ogp.me/ns#description": {
+      "vocab": "ogp",
+      "label": "description",
+      "range": [
+        "http://ogp.me/ns/class#string"
+      ]
+    },
+    "http://ogp.me/ns#site_name": {
+      "vocab": "ogp",
+      "label": "site name",
+      "range": [
+        "http://ogp.me/ns/class#string"
+      ]
+    },
+    "http://ogp.me/ns#determiner": {
+      "vocab": "ogp",
+      "label": "determiner",
+      "range": [
+        "http://ogp.me/ns/class#determiner_str"
+      ]
     },
     "http://ogp.me/ns#audio:title": {
       "vocab": "ogp",
       "label": "audio title"
     },
-    "http://ogp.me/ns#audio:type": {
+    "http://ogp.me/ns#audio:artist": {
       "vocab": "ogp",
-      "label": "audio type"
+      "label": "audio artist"
     },
-    "http://ogp.me/ns#country-name": {
+    "http://ogp.me/ns#audio:album": {
       "vocab": "ogp",
-      "label": "country name"
-    },
-    "http://ogp.me/ns#description": {
-      "vocab": "ogp",
-      "label": "description"
-    },
-    "http://ogp.me/ns#determiner": {
-      "vocab": "ogp",
-      "label": "determiner"
-    },
-    "http://ogp.me/ns#email": {
-      "vocab": "ogp",
-      "label": "email"
-    },
-    "http://ogp.me/ns#fax_number": {
-      "vocab": "ogp",
-      "label": "fax number"
-    },
-    "http://ogp.me/ns#image": {
-      "vocab": "ogp",
-      "label": "image"
-    },
-    "http://ogp.me/ns#image:height": {
-      "vocab": "ogp",
-      "label": "image height"
-    },
-    "http://ogp.me/ns#image:secure_url": {
-      "vocab": "ogp",
-      "label": "image secure url"
-    },
-    "http://ogp.me/ns#image:type": {
-      "vocab": "ogp",
-      "label": "image type"
-    },
-    "http://ogp.me/ns#image:width": {
-      "vocab": "ogp",
-      "label": "image width"
-    },
-    "http://ogp.me/ns#isbn": {
-      "vocab": "ogp",
-      "label": "isbn"
+      "label": "audio album"
     },
     "http://ogp.me/ns#latitude": {
       "vocab": "ogp",
       "label": "latitude"
     },
-    "http://ogp.me/ns#locale": {
-      "vocab": "ogp",
-      "label": "locale"
-    },
-    "http://ogp.me/ns#locality": {
-      "vocab": "ogp",
-      "label": "locality"
-    },
     "http://ogp.me/ns#longitude": {
       "vocab": "ogp",
       "label": "longitude"
-    },
-    "http://ogp.me/ns#phone_number": {
-      "vocab": "ogp",
-      "label": "phone number"
-    },
-    "http://ogp.me/ns#postal-code": {
-      "vocab": "ogp",
-      "label": "postal code"
-    },
-    "http://ogp.me/ns#region": {
-      "vocab": "ogp",
-      "label": "region"
-    },
-    "http://ogp.me/ns#site_name": {
-      "vocab": "ogp",
-      "label": "site name"
     },
     "http://ogp.me/ns#street-address": {
       "vocab": "ogp",
       "label": "street address"
     },
-    "http://ogp.me/ns#title": {
+    "http://ogp.me/ns#locality": {
       "vocab": "ogp",
-      "label": "title"
+      "label": "locality"
     },
-    "http://ogp.me/ns#type": {
+    "http://ogp.me/ns#region": {
       "vocab": "ogp",
-      "label": "type"
+      "label": "region"
+    },
+    "http://ogp.me/ns#postal-code": {
+      "vocab": "ogp",
+      "label": "postal code"
+    },
+    "http://ogp.me/ns#country-name": {
+      "vocab": "ogp",
+      "label": "country name"
+    },
+    "http://ogp.me/ns#email": {
+      "vocab": "ogp",
+      "label": "email"
+    },
+    "http://ogp.me/ns#phone_number": {
+      "vocab": "ogp",
+      "label": "phone number"
+    },
+    "http://ogp.me/ns#fax_number": {
+      "vocab": "ogp",
+      "label": "fax number"
+    },
+    "http://ogp.me/ns#isbn": {
+      "vocab": "ogp",
+      "label": "isbn"
     },
     "http://ogp.me/ns#upc": {
       "vocab": "ogp",
-      "label": "universal product code"
-    },
-    "http://ogp.me/ns#url": {
-      "vocab": "ogp",
-      "label": "url"
-    },
-    "http://ogp.me/ns#video": {
-      "vocab": "ogp",
-      "label": "video"
-    },
-    "http://ogp.me/ns#video:height": {
-      "vocab": "ogp",
-      "label": "video height"
-    },
-    "http://ogp.me/ns#video:secure_url": {
-      "vocab": "ogp",
-      "label": "video secure URL"
-    },
-    "http://ogp.me/ns#video:type": {
-      "vocab": "ogp",
-      "label": "video type"
-    },
-    "http://ogp.me/ns#video:width": {
-      "vocab": "ogp",
-      "label": "video width"
+      "label": "upc"
     }
   },
   "Datatypes": {
+    "http://ogp.me/ns/class#mime_type_str": {
+      "vocab": "ogp",
+      "label": "mime type string",
+      "superClass": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
     "http://ogp.me/ns/class#boolean_str": {
       "vocab": "ogp",
-      "label": "boolean string"
+      "label": "boolean string",
+      "superClass": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
     },
     "http://ogp.me/ns/class#date_time_str": {
       "vocab": "ogp",
-      "label": "date/time string"
-    },
-    "http://ogp.me/ns/class#determiner_str": {
-      "vocab": "ogp",
-      "label": "determiner"
+      "label": "date/time string",
+      "superClass": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
     },
     "http://ogp.me/ns/class#float_str": {
       "vocab": "ogp",
-      "label": "float string"
+      "label": "float string",
+      "superClass": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
     },
     "http://ogp.me/ns/class#integer_str": {
       "vocab": "ogp",
-      "label": "integer string"
-    },
-    "http://ogp.me/ns/class#mime_type_str": {
-      "vocab": "ogp",
-      "label": "mime type string"
+      "label": "integer string",
+      "superClass": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
     },
     "http://ogp.me/ns/class#string": {
       "vocab": "ogp",
-      "label": "Unicode string"
+      "label": "Unicode string",
+      "superClass": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
     },
     "http://ogp.me/ns/class#url": {
       "vocab": "ogp",
-      "label": "URL"
+      "label": "URL",
+      "superClass": [
+        "http://ogp.me/ns/class#string"
+      ]
+    },
+    "http://ogp.me/ns/class#determiner_str": {
+      "vocab": "ogp",
+      "label": "determiner",
+      "superClass": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
     }
   }
 }

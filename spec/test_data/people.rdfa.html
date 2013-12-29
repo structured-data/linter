@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bob Smith</title>
+  <base href="http://example.org/"/>
+</head>
+<body>
+<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
+   My name is <span property="v:name">Bob Smith</span>,
+   but people call me <span property="v:nickname">Smithy</span>.
+   Here is my homepage:
+   <a href="http://www.example.com" rel="v:url">www.example.com</a>.
+   I live in
+   <span rel="v:address">
+      <span typeof="v:Address">
+         <span property="v:locality">Albuquerque</span>,
+         <span property="v:region">NM</span>
+      </span>
+   </span>
+   and work as an <span property="v:title">engineer</span>
+   at <span property="v:affiliation">ACME Corp</span>.
+   My friends:
+   <a href="http://darryl-blog.example.com" rel="v:friend">Darryl</a>,
+   <a href="http://edna-blog.example.com" rel="v:friend">Edna</a>
+</div>
+</body>
+</html>

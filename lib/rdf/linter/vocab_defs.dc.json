@@ -9,7 +9,10 @@
     },
     "http://purl.org/dc/terms/AgentClass": {
       "vocab": "dc",
-      "label": "Agent Class"
+      "label": "Agent Class",
+      "superClass": [
+        "http://www.w3.org/2000/01/rdf-schema#Class"
+      ]
     },
     "http://purl.org/dc/terms/BibliographicResource": {
       "vocab": "dc",
@@ -17,7 +20,10 @@
     },
     "http://purl.org/dc/terms/FileFormat": {
       "vocab": "dc",
-      "label": "File Format"
+      "label": "File Format",
+      "superClass": [
+        "http://purl.org/dc/terms/MediaType"
+      ]
     },
     "http://purl.org/dc/terms/Frequency": {
       "vocab": "dc",
@@ -25,11 +31,17 @@
     },
     "http://purl.org/dc/terms/Jurisdiction": {
       "vocab": "dc",
-      "label": "Jurisdiction"
+      "label": "Jurisdiction",
+      "superClass": [
+        "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+      ]
     },
     "http://purl.org/dc/terms/LicenseDocument": {
       "vocab": "dc",
-      "label": "License Document"
+      "label": "License Document",
+      "superClass": [
+        "http://purl.org/dc/terms/RightsStatement"
+      ]
     },
     "http://purl.org/dc/terms/LinguisticSystem": {
       "vocab": "dc",
@@ -37,7 +49,10 @@
     },
     "http://purl.org/dc/terms/Location": {
       "vocab": "dc",
-      "label": "Location"
+      "label": "Location",
+      "superClass": [
+        "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+      ]
     },
     "http://purl.org/dc/terms/LocationPeriodOrJurisdiction": {
       "vocab": "dc",
@@ -45,7 +60,10 @@
     },
     "http://purl.org/dc/terms/MediaType": {
       "vocab": "dc",
-      "label": "Media Type"
+      "label": "Media Type",
+      "superClass": [
+        "http://purl.org/dc/terms/MediaTypeOrExtent"
+      ]
     },
     "http://purl.org/dc/terms/MediaTypeOrExtent": {
       "vocab": "dc",
@@ -61,11 +79,17 @@
     },
     "http://purl.org/dc/terms/PeriodOfTime": {
       "vocab": "dc",
-      "label": "Period of Time"
+      "label": "Period of Time",
+      "superClass": [
+        "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+      ]
     },
     "http://purl.org/dc/terms/PhysicalMedium": {
       "vocab": "dc",
-      "label": "Physical Medium"
+      "label": "Physical Medium",
+      "superClass": [
+        "http://purl.org/dc/terms/MediaType"
+      ]
     },
     "http://purl.org/dc/terms/PhysicalResource": {
       "vocab": "dc",
@@ -85,7 +109,10 @@
     },
     "http://purl.org/dc/terms/SizeOrDuration": {
       "vocab": "dc",
-      "label": "Size or Duration"
+      "label": "Size or Duration",
+      "superClass": [
+        "http://purl.org/dc/terms/MediaTypeOrExtent"
+      ]
     },
     "http://purl.org/dc/terms/Standard": {
       "vocab": "dc",
@@ -99,71 +126,134 @@
     },
     "http://purl.org/dc/terms/accessRights": {
       "vocab": "dc",
-      "label": "Access Rights"
+      "label": "Access Rights",
+      "range": [
+        "http://purl.org/dc/terms/RightsStatement"
+      ]
     },
     "http://purl.org/dc/terms/accrualMethod": {
       "vocab": "dc",
-      "label": "Accrual Method"
+      "label": "Accrual Method",
+      "domain": [
+        "http://purl.org/dc/dcmitype/Collection"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/MethodOfAccrual"
+      ]
     },
     "http://purl.org/dc/terms/accrualPeriodicity": {
       "vocab": "dc",
-      "label": "Accrual Periodicity"
+      "label": "Accrual Periodicity",
+      "domain": [
+        "http://purl.org/dc/dcmitype/Collection"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/Frequency"
+      ]
     },
     "http://purl.org/dc/terms/accrualPolicy": {
       "vocab": "dc",
-      "label": "Accrual Policy"
+      "label": "Accrual Policy",
+      "domain": [
+        "http://purl.org/dc/dcmitype/Collection"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/Policy"
+      ]
     },
     "http://purl.org/dc/terms/alternative": {
       "vocab": "dc",
-      "label": "Alternative Title"
+      "label": "Alternative Title",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/audience": {
       "vocab": "dc",
-      "label": "Audience"
+      "label": "Audience",
+      "range": [
+        "http://purl.org/dc/terms/AgentClass"
+      ]
     },
     "http://purl.org/dc/terms/available": {
       "vocab": "dc",
-      "label": "Date Available"
+      "label": "Date Available",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/bibliographicCitation": {
       "vocab": "dc",
-      "label": "Bibliographic Citation"
+      "label": "Bibliographic Citation",
+      "domain": [
+        "http://purl.org/dc/terms/BibliographicResource"
+      ],
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/conformsTo": {
       "vocab": "dc",
-      "label": "Conforms To"
+      "label": "Conforms To",
+      "range": [
+        "http://purl.org/dc/terms/Standard"
+      ]
     },
     "http://purl.org/dc/terms/contributor": {
       "vocab": "dc",
-      "label": "Contributor"
+      "label": "Contributor",
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ]
     },
     "http://purl.org/dc/terms/coverage": {
       "vocab": "dc",
-      "label": "Coverage"
+      "label": "Coverage",
+      "range": [
+        "http://purl.org/dc/terms/LocationPeriodOrJurisdiction"
+      ]
     },
     "http://purl.org/dc/terms/created": {
       "vocab": "dc",
-      "label": "Date Created"
+      "label": "Date Created",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/creator": {
       "vocab": "dc",
-      "label": "Creator"
+      "label": "Creator",
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ]
     },
     "http://purl.org/dc/terms/date": {
       "vocab": "dc",
-      "label": "Date"
+      "label": "Date",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/dateAccepted": {
       "vocab": "dc",
-      "label": "Date Accepted"
+      "label": "Date Accepted",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/dateCopyrighted": {
       "vocab": "dc",
-      "label": "Date Copyrighted"
+      "label": "Date Copyrighted",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/dateSubmitted": {
       "vocab": "dc",
-      "label": "Date Submitted"
+      "label": "Date Submitted",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/description": {
       "vocab": "dc",
@@ -171,15 +261,24 @@
     },
     "http://purl.org/dc/terms/educationLevel": {
       "vocab": "dc",
-      "label": "Audience Education Level"
+      "label": "Audience Education Level",
+      "range": [
+        "http://purl.org/dc/terms/AgentClass"
+      ]
     },
     "http://purl.org/dc/terms/extent": {
       "vocab": "dc",
-      "label": "Extent"
+      "label": "Extent",
+      "range": [
+        "http://purl.org/dc/terms/SizeOrDuration"
+      ]
     },
     "http://purl.org/dc/terms/format": {
       "vocab": "dc",
-      "label": "Format"
+      "label": "Format",
+      "range": [
+        "http://purl.org/dc/terms/MediaTypeOrExtent"
+      ]
     },
     "http://purl.org/dc/terms/hasFormat": {
       "vocab": "dc",
@@ -195,11 +294,17 @@
     },
     "http://purl.org/dc/terms/identifier": {
       "vocab": "dc",
-      "label": "Identifier"
+      "label": "Identifier",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/instructionalMethod": {
       "vocab": "dc",
-      "label": "Instructional Method"
+      "label": "Instructional Method",
+      "range": [
+        "http://purl.org/dc/terms/MethodOfInstruction"
+      ]
     },
     "http://purl.org/dc/terms/isFormatOf": {
       "vocab": "dc",
@@ -227,35 +332,62 @@
     },
     "http://purl.org/dc/terms/issued": {
       "vocab": "dc",
-      "label": "Date Issued"
+      "label": "Date Issued",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/language": {
       "vocab": "dc",
-      "label": "Language"
+      "label": "Language",
+      "range": [
+        "http://purl.org/dc/terms/LinguisticSystem"
+      ]
     },
     "http://purl.org/dc/terms/license": {
       "vocab": "dc",
-      "label": "License"
+      "label": "License",
+      "range": [
+        "http://purl.org/dc/terms/LicenseDocument"
+      ]
     },
     "http://purl.org/dc/terms/mediator": {
       "vocab": "dc",
-      "label": "Mediator"
+      "label": "Mediator",
+      "range": [
+        "http://purl.org/dc/terms/AgentClass"
+      ]
     },
     "http://purl.org/dc/terms/medium": {
       "vocab": "dc",
-      "label": "Medium"
+      "label": "Medium",
+      "domain": [
+        "http://purl.org/dc/terms/PhysicalResource"
+      ],
+      "range": [
+        "http://purl.org/dc/terms/PhysicalMedium"
+      ]
     },
     "http://purl.org/dc/terms/modified": {
       "vocab": "dc",
-      "label": "Date Modified"
+      "label": "Date Modified",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/provenance": {
       "vocab": "dc",
-      "label": "Provenance"
+      "label": "Provenance",
+      "range": [
+        "http://purl.org/dc/terms/ProvenanceStatement"
+      ]
     },
     "http://purl.org/dc/terms/publisher": {
       "vocab": "dc",
-      "label": "Publisher"
+      "label": "Publisher",
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ]
     },
     "http://purl.org/dc/terms/references": {
       "vocab": "dc",
@@ -275,11 +407,17 @@
     },
     "http://purl.org/dc/terms/rights": {
       "vocab": "dc",
-      "label": "Rights"
+      "label": "Rights",
+      "range": [
+        "http://purl.org/dc/terms/RightsStatement"
+      ]
     },
     "http://purl.org/dc/terms/rightsHolder": {
       "vocab": "dc",
-      "label": "Rights Holder"
+      "label": "Rights Holder",
+      "range": [
+        "http://purl.org/dc/terms/Agent"
+      ]
     },
     "http://purl.org/dc/terms/source": {
       "vocab": "dc",
@@ -287,7 +425,10 @@
     },
     "http://purl.org/dc/terms/spatial": {
       "vocab": "dc",
-      "label": "Spatial Coverage"
+      "label": "Spatial Coverage",
+      "range": [
+        "http://purl.org/dc/terms/Location"
+      ]
     },
     "http://purl.org/dc/terms/subject": {
       "vocab": "dc",
@@ -299,19 +440,31 @@
     },
     "http://purl.org/dc/terms/temporal": {
       "vocab": "dc",
-      "label": "Temporal Coverage"
+      "label": "Temporal Coverage",
+      "range": [
+        "http://purl.org/dc/terms/PeriodOfTime"
+      ]
     },
     "http://purl.org/dc/terms/title": {
       "vocab": "dc",
-      "label": "Title"
+      "label": "Title",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     },
     "http://purl.org/dc/terms/type": {
       "vocab": "dc",
-      "label": "Type"
+      "label": "Type",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Class"
+      ]
     },
     "http://purl.org/dc/terms/valid": {
       "vocab": "dc",
-      "label": "Date Valid"
+      "label": "Date Valid",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
     }
   },
   "Datatypes": {
