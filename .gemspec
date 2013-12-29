@@ -27,7 +27,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'sinatra',            '>= 1.4.4'
   gem.add_runtime_dependency      'erubis',             '>= 2.7.0'
   gem.add_runtime_dependency      'haml',               '>= 4.0.0'
-  gem.add_runtime_dependency      'curb',               '>= 0.8.5'
   gem.add_runtime_dependency      'facets',             '>= 2.9.3'
   gem.add_runtime_dependency      'nokogiri',           '>= 1.6.0'
   gem.add_runtime_dependency      'rack',               '>= 1.5.2'
