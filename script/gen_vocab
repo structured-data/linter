@@ -22,4 +22,4 @@ opts.each do |opt, arg|
   end
 end
 
-RDF::Linter::Parser.vocab_def(RDF::URI(ARGV[0]), ARGV[1], options)
+RDF::Linter::Generate.new.vocab_def(RDF::URI(ARGV[0]), ARGV[1], options)

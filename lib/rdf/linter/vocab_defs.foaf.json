@@ -13,6 +13,9 @@
       "superClass": [
         "http://xmlns.com/foaf/0.1/Agent",
         "http://www.w3.org/2000/10/swap/pim/contact#Person",
+        "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+        "http://xmlns.com/foaf/0.1/Agent",
+        "http://www.w3.org/2000/10/swap/pim/contact#Person",
         "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
       ]
     },
@@ -28,6 +31,7 @@
       "vocab": "foaf",
       "label": "Organization",
       "superClass": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ]
     },
@@ -35,6 +39,7 @@
       "vocab": "foaf",
       "label": "Group",
       "superClass": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ]
     },
@@ -46,6 +51,7 @@
       "vocab": "foaf",
       "label": "Image",
       "superClass": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -53,6 +59,7 @@
       "vocab": "foaf",
       "label": "PersonalProfileDocument",
       "superClass": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -60,6 +67,7 @@
       "vocab": "foaf",
       "label": "Online Account",
       "superClass": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -67,6 +75,7 @@
       "vocab": "foaf",
       "label": "Online Gaming Account",
       "superClass": [
+        "http://xmlns.com/foaf/0.1/OnlineAccount",
         "http://xmlns.com/foaf/0.1/OnlineAccount"
       ]
     },
@@ -74,6 +83,7 @@
       "vocab": "foaf",
       "label": "Online E-commerce Account",
       "superClass": [
+        "http://xmlns.com/foaf/0.1/OnlineAccount",
         "http://xmlns.com/foaf/0.1/OnlineAccount"
       ]
     },
@@ -81,6 +91,7 @@
       "vocab": "foaf",
       "label": "Online Chat Account",
       "superClass": [
+        "http://xmlns.com/foaf/0.1/OnlineAccount",
         "http://xmlns.com/foaf/0.1/OnlineAccount"
       ]
     }
@@ -90,9 +101,11 @@
       "vocab": "foaf",
       "label": "personal mailbox",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -100,9 +113,11 @@
       "vocab": "foaf",
       "label": "sha1sum of a personal mailbox URI name",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -110,9 +125,11 @@
       "vocab": "foaf",
       "label": "gender",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -120,9 +137,11 @@
       "vocab": "foaf",
       "label": "geekcode",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -130,6 +149,7 @@
       "vocab": "foaf",
       "label": "DNA checksum",
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -137,6 +157,7 @@
       "vocab": "foaf",
       "label": "sha1sum (hex)",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -144,9 +165,11 @@
       "vocab": "foaf",
       "label": "based near",
       "domain": [
+        "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
         "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
       ],
       "range": [
+        "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
         "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
       ]
     },
@@ -162,9 +185,11 @@
       "vocab": "foaf",
       "label": "jabber ID",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -172,9 +197,11 @@
       "vocab": "foaf",
       "label": "AIM chat ID",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -182,9 +209,11 @@
       "vocab": "foaf",
       "label": "Skype ID",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -192,9 +221,11 @@
       "vocab": "foaf",
       "label": "ICQ chat ID",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -202,9 +233,11 @@
       "vocab": "foaf",
       "label": "Yahoo chat ID",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -212,9 +245,11 @@
       "vocab": "foaf",
       "label": "MSN chat ID",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -222,9 +257,11 @@
       "vocab": "foaf",
       "label": "name",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -232,9 +269,11 @@
       "vocab": "foaf",
       "label": "firstName",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -242,9 +281,11 @@
       "vocab": "foaf",
       "label": "lastName",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -260,9 +301,11 @@
       "vocab": "foaf",
       "label": "Surname",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -270,9 +313,11 @@
       "vocab": "foaf",
       "label": "family_name",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -280,9 +325,11 @@
       "vocab": "foaf",
       "label": "familyName",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -294,9 +341,11 @@
       "vocab": "foaf",
       "label": "homepage",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -304,9 +353,11 @@
       "vocab": "foaf",
       "label": "weblog",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -314,9 +365,11 @@
       "vocab": "foaf",
       "label": "openid",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -324,9 +377,11 @@
       "vocab": "foaf",
       "label": "tipjar",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -334,9 +389,11 @@
       "vocab": "foaf",
       "label": "plan",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -344,9 +401,11 @@
       "vocab": "foaf",
       "label": "made",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -354,9 +413,11 @@
       "vocab": "foaf",
       "label": "maker",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ]
     },
@@ -364,9 +425,11 @@
       "vocab": "foaf",
       "label": "image",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Image",
         "http://xmlns.com/foaf/0.1/Image"
       ]
     },
@@ -374,9 +437,11 @@
       "vocab": "foaf",
       "label": "depiction",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Image",
         "http://xmlns.com/foaf/0.1/Image"
       ]
     },
@@ -384,9 +449,11 @@
       "vocab": "foaf",
       "label": "depicts",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Image",
         "http://xmlns.com/foaf/0.1/Image"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -394,9 +461,11 @@
       "vocab": "foaf",
       "label": "thumbnail",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Image",
         "http://xmlns.com/foaf/0.1/Image"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Image",
         "http://xmlns.com/foaf/0.1/Image"
       ]
     },
@@ -404,9 +473,11 @@
       "vocab": "foaf",
       "label": "myersBriggs",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -414,9 +485,11 @@
       "vocab": "foaf",
       "label": "workplace homepage",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -424,9 +497,11 @@
       "vocab": "foaf",
       "label": "work info homepage",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -434,9 +509,11 @@
       "vocab": "foaf",
       "label": "schoolHomepage",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -444,9 +521,11 @@
       "vocab": "foaf",
       "label": "knows",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ]
     },
@@ -454,9 +533,11 @@
       "vocab": "foaf",
       "label": "interest",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -464,9 +545,11 @@
       "vocab": "foaf",
       "label": "topic_interest",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -474,9 +557,11 @@
       "vocab": "foaf",
       "label": "publications",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -484,9 +569,11 @@
       "vocab": "foaf",
       "label": "current project",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -494,9 +581,11 @@
       "vocab": "foaf",
       "label": "past project",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Person",
         "http://xmlns.com/foaf/0.1/Person"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -504,9 +593,11 @@
       "vocab": "foaf",
       "label": "funded by",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -514,9 +605,11 @@
       "vocab": "foaf",
       "label": "logo",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -524,9 +617,11 @@
       "vocab": "foaf",
       "label": "topic",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -534,9 +629,11 @@
       "vocab": "foaf",
       "label": "primary topic",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -544,9 +641,11 @@
       "vocab": "foaf",
       "label": "focus",
       "domain": [
+        "http://www.w3.org/2004/02/skos/core#Concept",
         "http://www.w3.org/2004/02/skos/core#Concept"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -564,9 +663,11 @@
       "vocab": "foaf",
       "label": "page",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -574,9 +675,11 @@
       "vocab": "foaf",
       "label": "theme",
       "domain": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ],
       "range": [
+        "http://www.w3.org/2002/07/owl#Thing",
         "http://www.w3.org/2002/07/owl#Thing"
       ]
     },
@@ -584,9 +687,11 @@
       "vocab": "foaf",
       "label": "account",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/OnlineAccount",
         "http://xmlns.com/foaf/0.1/OnlineAccount"
       ]
     },
@@ -594,9 +699,11 @@
       "vocab": "foaf",
       "label": "account",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/OnlineAccount",
         "http://xmlns.com/foaf/0.1/OnlineAccount"
       ]
     },
@@ -604,9 +711,11 @@
       "vocab": "foaf",
       "label": "account service homepage",
       "domain": [
+        "http://xmlns.com/foaf/0.1/OnlineAccount",
         "http://xmlns.com/foaf/0.1/OnlineAccount"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Document",
         "http://xmlns.com/foaf/0.1/Document"
       ]
     },
@@ -614,9 +723,11 @@
       "vocab": "foaf",
       "label": "account name",
       "domain": [
+        "http://xmlns.com/foaf/0.1/OnlineAccount",
         "http://xmlns.com/foaf/0.1/OnlineAccount"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -624,9 +735,11 @@
       "vocab": "foaf",
       "label": "member",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Group",
         "http://xmlns.com/foaf/0.1/Group"
       ],
       "range": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ]
     },
@@ -638,9 +751,11 @@
       "vocab": "foaf",
       "label": "birthday",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -648,9 +763,11 @@
       "vocab": "foaf",
       "label": "age",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     },
@@ -658,9 +775,11 @@
       "vocab": "foaf",
       "label": "status",
       "domain": [
+        "http://xmlns.com/foaf/0.1/Agent",
         "http://xmlns.com/foaf/0.1/Agent"
       ],
       "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal",
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ]
     }

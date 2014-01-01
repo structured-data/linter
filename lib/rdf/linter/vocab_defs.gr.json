@@ -1,5 +1,1139 @@
 {
   "Vocabularies": {
     "gr": "http://purl.org/goodrelations/v1#"
+  },
+  "Classes": {
+    "http://purl.org/goodrelations/v1#N-Ary-Relations": {
+      "vocab": "gr",
+      "label": "N-ary relations (DEPRECATED)"
+    },
+    "http://purl.org/goodrelations/v1#License": {
+      "vocab": "gr",
+      "label": "License",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#BusinessFunction"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#BusinessEntityType": {
+      "vocab": "gr",
+      "label": "Business entity type"
+    },
+    "http://purl.org/goodrelations/v1#Location": {
+      "vocab": "gr",
+      "label": "Location"
+    },
+    "http://purl.org/goodrelations/v1#LocationOfSalesOrServiceProvisioning": {
+      "vocab": "gr",
+      "label": "Location of sales or service provisioning (DEPRECATED)"
+    },
+    "http://purl.org/goodrelations/v1#PaymentMethod": {
+      "vocab": "gr",
+      "label": "Payment method"
+    },
+    "http://purl.org/goodrelations/v1#DeliveryMethod": {
+      "vocab": "gr",
+      "label": "Delivery method"
+    },
+    "http://purl.org/goodrelations/v1#DeliveryModeParcelService": {
+      "vocab": "gr",
+      "label": "Delivery mode parcel service",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#DeliveryMethod"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#DeliveryChargeSpecification": {
+      "vocab": "gr",
+      "label": "Delivery charge specification",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#BusinessEntity": {
+      "vocab": "gr",
+      "label": "Business entity"
+    },
+    "http://purl.org/goodrelations/v1#QuantitativeValueInteger": {
+      "vocab": "gr",
+      "label": "Quantitative value integer",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#OpeningHoursSpecification": {
+      "vocab": "gr",
+      "label": "Opening hours specification"
+    },
+    "http://purl.org/goodrelations/v1#ProductOrServicesSomeInstancesPlaceholder": {
+      "vocab": "gr",
+      "label": "Product or services some instances placeholder (DEPRECATED)",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#ProductOrService"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#PriceSpecification": {
+      "vocab": "gr",
+      "label": "Price specification"
+    },
+    "http://purl.org/goodrelations/v1#ProductOrServiceModel": {
+      "vocab": "gr",
+      "label": "Product or service model",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#PaymentChargeSpecification": {
+      "vocab": "gr",
+      "label": "Payment charge specification",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#UnitPriceSpecification": {
+      "vocab": "gr",
+      "label": "Unit price specification",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#WarrantyScope": {
+      "vocab": "gr",
+      "label": "Warranty scope"
+    },
+    "http://purl.org/goodrelations/v1#WarrantyPromise": {
+      "vocab": "gr",
+      "label": "Warranty promise"
+    },
+    "http://purl.org/goodrelations/v1#PaymentMethodCreditCard": {
+      "vocab": "gr",
+      "label": "Payment method credit card",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#PaymentMethod"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#Individual": {
+      "vocab": "gr",
+      "label": "Individual",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#DayOfWeek": {
+      "vocab": "gr",
+      "label": "Day of week"
+    },
+    "http://purl.org/goodrelations/v1#ActualProductOrServiceInstance": {
+      "vocab": "gr",
+      "label": "Actual product or service instance (DEPRECATED)",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#ProductOrService"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#QuantitativeValueFloat": {
+      "vocab": "gr",
+      "label": "Quantitative value float",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#Brand": {
+      "vocab": "gr",
+      "label": "Brand"
+    },
+    "http://purl.org/goodrelations/v1#QualitativeValue": {
+      "vocab": "gr",
+      "label": "Qualitative value"
+    },
+    "http://purl.org/goodrelations/v1#BusinessFunction": {
+      "vocab": "gr",
+      "label": "Business function"
+    },
+    "http://purl.org/goodrelations/v1#TypeAndQuantityNode": {
+      "vocab": "gr",
+      "label": "Type and quantity node"
+    },
+    "http://purl.org/goodrelations/v1#QuantitativeValue": {
+      "vocab": "gr",
+      "label": "Quantitative value"
+    },
+    "http://purl.org/goodrelations/v1#ProductOrService": {
+      "vocab": "gr",
+      "label": "Product or service"
+    },
+    "http://purl.org/goodrelations/v1#Offering": {
+      "vocab": "gr",
+      "label": "Offering"
+    },
+    "http://purl.org/goodrelations/v1#SomeItems": {
+      "vocab": "gr",
+      "label": "Some items",
+      "superClass": [
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
+      ]
+    }
+  },
+  "Properties": {
+    "http://purl.org/goodrelations/v1#availabilityStarts": {
+      "vocab": "gr",
+      "label": "availability starts (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#dateTime"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#availableAtOrFrom": {
+      "vocab": "gr",
+      "label": "available at or from (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#Location"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#taxID": {
+      "vocab": "gr",
+      "label": "Tax ID (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#seeks": {
+      "vocab": "gr",
+      "label": "seeks (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#Offering"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#amountOfThisGood": {
+      "vocab": "gr",
+      "label": "amount of this good (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#serialNumber": {
+      "vocab": "gr",
+      "label": "serial number (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasISICv4": {
+      "vocab": "gr",
+      "label": "has ISIC v4 (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#int"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#Location\", \"http://schema.org/Organization\", \"http://schema.org/Place\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#opens": {
+      "vocab": "gr",
+      "label": "opens (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#time"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasNAICS": {
+      "vocab": "gr",
+      "label": "has NAICS (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#int"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#legalName": {
+      "vocab": "gr",
+      "label": "legal name (0..1)",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMPN": {
+      "vocab": "gr",
+      "label": "has MPN (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#vatID": {
+      "vocab": "gr",
+      "label": "VAT ID (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#category": {
+      "vocab": "gr",
+      "label": "category (0..*)",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#Location\", \"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Offer\", \"http://schema.org/Product\", \"http://schema.org/Place\", \"http://schema.org/Organization\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasPOS": {
+      "vocab": "gr",
+      "label": "has POS (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#Location"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#availabilityEnds": {
+      "vocab": "gr",
+      "label": "availability ends (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#dateTime"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#eligibleCustomerTypes": {
+      "vocab": "gr",
+      "label": "eligible customer types (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#BusinessEntityType"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasInventoryLevel": {
+      "vocab": "gr",
+      "label": "has inventory level (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueFloat"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#isSimilarTo": {
+      "vocab": "gr",
+      "label": "is similar to (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrService"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasOpeningHoursSpecification": {
+      "vocab": "gr",
+      "label": "has opening hours specification (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Location\", \"http://schema.org/Place\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#validThrough": {
+      "vocab": "gr",
+      "label": "valid through (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#dateTime"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#appliesToPaymentMethod": {
+      "vocab": "gr",
+      "label": "applies to payment method (1..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#PaymentChargeSpecification"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#PaymentMethod"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#isConsumableFor": {
+      "vocab": "gr",
+      "label": "is consumable for (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrService"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasValueFloat": {
+      "vocab": "gr",
+      "label": "has value float (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueFloat"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMaxValueFloat": {
+      "vocab": "gr",
+      "label": "has max value float (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueFloat"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMinValueFloat": {
+      "vocab": "gr",
+      "label": "has min value float (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueFloat"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#closes": {
+      "vocab": "gr",
+      "label": "closes (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#time"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#advanceBookingRequirement": {
+      "vocab": "gr",
+      "label": "advance booking requirement (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#eligibleTransactionVolume": {
+      "vocab": "gr",
+      "label": "eligible transaction volume (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#durationOfWarrantyInMonths": {
+      "vocab": "gr",
+      "label": "duration of warranty in months (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#WarrantyPromise"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#int"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasGlobalLocationNumber": {
+      "vocab": "gr",
+      "label": "has Global Location Number (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#Location\", \"http://schema.org/Place\", \"http://schema.org/Organization\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#isVariantOf": {
+      "vocab": "gr",
+      "label": "is variant of (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasGTIN-8": {
+      "vocab": "gr",
+      "label": "has GTIN-8 (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasPriceSpecification": {
+      "vocab": "gr",
+      "label": "has price specification (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#depth": {
+      "vocab": "gr",
+      "label": "depth (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty": {
+      "vocab": "gr",
+      "label": "quantitative product or service property (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasValueInteger": {
+      "vocab": "gr",
+      "label": "has value integer (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#int"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMinValueInteger": {
+      "vocab": "gr",
+      "label": "has min value integer (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#int"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMaxValueInteger": {
+      "vocab": "gr",
+      "label": "has max value integer (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#int"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasManufacturer": {
+      "vocab": "gr",
+      "label": "has manufacturer (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#BusinessEntity"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#description": {
+      "vocab": "gr",
+      "label": "description (0..1)",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ],
+      "domainIncludes": [
+        "[\"http://www.w3.org/2002/07/owl#Thing\", \"http://purl.org/goodrelations/v1#Brand\", \"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#BusinessEntityType\", \"http://purl.org/goodrelations/v1#BusinessFunction\", \"http://purl.org/goodrelations/v1#DayOfWeek\", \"http://purl.org/goodrelations/v1#DeliveryChargeSpecification\", \"http://purl.org/goodrelations/v1#DeliveryMethod\", \"http://purl.org/goodrelations/v1#DeliveryModeParcelService\", \"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#Location\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PaymentChargeSpecification\", \"http://purl.org/goodrelations/v1#PaymentMethod\", \"http://purl.org/goodrelations/v1#PaymentMethodCreditCard\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://purl.org/goodrelations/v1#ProductOrServiceModel\", \"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValueFloat\", \"http://purl.org/goodrelations/v1#QuantitativeValueInteger\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://purl.org/goodrelations/v1#UnitPriceSpecification\", \"http://purl.org/goodrelations/v1#WarrantyPromise\", \"http://purl.org/goodrelations/v1#WarrantyScope\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#billingIncrement": {
+      "vocab": "gr",
+      "label": "billing increment (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#UnitPriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#isListPrice": {
+      "vocab": "gr",
+      "label": "is list price (DEPRECATED)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#UnitPriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#boolean"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#color": {
+      "vocab": "gr",
+      "label": "color (0..1)",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#datatypeProductOrServiceProperty": {
+      "vocab": "gr",
+      "label": "datatype product or service property (0..*)",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#isAccessoryOrSparePartFor": {
+      "vocab": "gr",
+      "label": "is accessory or spare part for (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrService"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasDUNS": {
+      "vocab": "gr",
+      "label": "has DUNS (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#typeOfGood": {
+      "vocab": "gr",
+      "label": "type of good (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
+      ],
+      "rangeIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#SomeItems\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#deliveryLeadTime": {
+      "vocab": "gr",
+      "label": "delivery lead time (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasStockKeepingUnit": {
+      "vocab": "gr",
+      "label": "has Stock Keeping Unit (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Offer\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty": {
+      "vocab": "gr",
+      "label": "qualitative product or service property (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#availableDeliveryMethods": {
+      "vocab": "gr",
+      "label": "available delivery methods (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#DeliveryMethod"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#includes": {
+      "vocab": "gr",
+      "label": "includes (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#Offering"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrService"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasValue": {
+      "vocab": "gr",
+      "label": "has value (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMaxValue": {
+      "vocab": "gr",
+      "label": "has max value (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMinValue": {
+      "vocab": "gr",
+      "label": "has min value (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasBrand": {
+      "vocab": "gr",
+      "label": "has brand (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#Brand"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Organization\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek": {
+      "vocab": "gr",
+      "label": "has opening hours day of week (1..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#DayOfWeek"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#priceType": {
+      "vocab": "gr",
+      "label": "price type (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#UnitPriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#eligibleRegions": {
+      "vocab": "gr",
+      "label": "eligible regions (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#DeliveryChargeSpecification\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#valueReference": {
+      "vocab": "gr",
+      "label": "value reference (0..*)",
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\"]"
+      ],
+      "rangeIncludes": [
+        "[\"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#validFrom": {
+      "vocab": "gr",
+      "label": "valid from (0..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#dateTime"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#name": {
+      "vocab": "gr",
+      "label": "name (0..1)",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ],
+      "domainIncludes": [
+        "[\"http://www.w3.org/2002/07/owl#Thing\", \"http://purl.org/goodrelations/v1#Brand\", \"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#BusinessEntityType\", \"http://purl.org/goodrelations/v1#BusinessFunction\", \"http://purl.org/goodrelations/v1#DayOfWeek\", \"http://purl.org/goodrelations/v1#DeliveryChargeSpecification\", \"http://purl.org/goodrelations/v1#DeliveryMethod\", \"http://purl.org/goodrelations/v1#DeliveryModeParcelService\", \"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#Location\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PaymentChargeSpecification\", \"http://purl.org/goodrelations/v1#PaymentMethod\", \"http://purl.org/goodrelations/v1#PaymentMethodCreditCard\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://purl.org/goodrelations/v1#ProductOrServiceModel\", \"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValueFloat\", \"http://purl.org/goodrelations/v1#QuantitativeValueInteger\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://purl.org/goodrelations/v1#UnitPriceSpecification\", \"http://purl.org/goodrelations/v1#WarrantyPromise\", \"http://purl.org/goodrelations/v1#WarrantyScope\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasWarrantyPromise": {
+      "vocab": "gr",
+      "label": "has warranty promise (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#WarrantyPromise"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasGTIN-14": {
+      "vocab": "gr",
+      "label": "has GTIN-14 (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasCurrencyValue": {
+      "vocab": "gr",
+      "label": "has currency value (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMinCurrencyValue": {
+      "vocab": "gr",
+      "label": "has min currency value (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMaxCurrencyValue": {
+      "vocab": "gr",
+      "label": "has max currency value (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#float"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasCurrency": {
+      "vocab": "gr",
+      "label": "has currency (1..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasMakeAndModel": {
+      "vocab": "gr",
+      "label": "has make and model (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#valueAddedTaxIncluded": {
+      "vocab": "gr",
+      "label": "value added tax included (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#PriceSpecification"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#boolean"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#acceptedPaymentMethods": {
+      "vocab": "gr",
+      "label": "accepted payment methods (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#PaymentMethod"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasBusinessFunction": {
+      "vocab": "gr",
+      "label": "has business function (1..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#BusinessFunction"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasWarrantyScope": {
+      "vocab": "gr",
+      "label": "has warranty scope (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#WarrantyPromise"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#WarrantyScope"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#weight": {
+      "vocab": "gr",
+      "label": "weight (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#includesObject": {
+      "vocab": "gr",
+      "label": "includes object (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasEAN_UCC-13": {
+      "vocab": "gr",
+      "label": "has EAN/UCC-13 (0..*)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#equal": {
+      "vocab": "gr",
+      "label": "equal (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#height": {
+      "vocab": "gr",
+      "label": "height (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#width": {
+      "vocab": "gr",
+      "label": "width (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasEligibleQuantity": {
+      "vocab": "gr",
+      "label": "has eligible quantity (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#eligibleDuration": {
+      "vocab": "gr",
+      "label": "eligible duration (0..1)",
+      "range": [
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#nonEqual": {
+      "vocab": "gr",
+      "label": "non equal (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#condition": {
+      "vocab": "gr",
+      "label": "condition (0..1)",
+      "range": [
+        "http://www.w3.org/2000/01/rdf-schema#Literal"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#appliesToDeliveryMethod": {
+      "vocab": "gr",
+      "label": "applies to delivery method (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#DeliveryChargeSpecification"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#DeliveryMethod"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#owns": {
+      "vocab": "gr",
+      "label": "owns (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#Individual"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasUnitOfMeasurement": {
+      "vocab": "gr",
+      "label": "has unit of measurement (1..1)",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#QuantitativeValue\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://purl.org/goodrelations/v1#UnitPriceSpecification\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#offers": {
+      "vocab": "gr",
+      "label": "offers (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#Offering"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#addOn": {
+      "vocab": "gr",
+      "label": "add-on (0..*)",
+      "range": [
+        "http://purl.org/goodrelations/v1#Offering"
+      ],
+      "domainIncludes": [
+        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#lesser": {
+      "vocab": "gr",
+      "label": "lesser (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#greater": {
+      "vocab": "gr",
+      "label": "greater (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#predecessorOf": {
+      "vocab": "gr",
+      "label": "predecessor of (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#successorOf": {
+      "vocab": "gr",
+      "label": "successor of (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasNext": {
+      "vocab": "gr",
+      "label": "has next (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#DayOfWeek"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#DayOfWeek"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#hasPrevious": {
+      "vocab": "gr",
+      "label": "has previous (0..1)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#DayOfWeek"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#DayOfWeek"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#greaterOrEqual": {
+      "vocab": "gr",
+      "label": "greater or equal (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ]
+    },
+    "http://purl.org/goodrelations/v1#lesserOrEqual": {
+      "vocab": "gr",
+      "label": "lesser or equal (0..*)",
+      "domain": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ],
+      "range": [
+        "http://purl.org/goodrelations/v1#QualitativeValue"
+      ]
+    }
   }
 }

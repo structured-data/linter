@@ -2,6 +2,27 @@
   "Vocabularies": {
     "skos": "http://www.w3.org/2004/02/skos/core#"
   },
+  "Classes": {
+    "http://www.w3.org/2004/02/skos/core#Concept": {
+      "vocab": "skos",
+      "label": "Concept"
+    },
+    "http://www.w3.org/2004/02/skos/core#ConceptScheme": {
+      "vocab": "skos",
+      "label": "Concept Scheme"
+    },
+    "http://www.w3.org/2004/02/skos/core#Collection": {
+      "vocab": "skos",
+      "label": "Collection"
+    },
+    "http://www.w3.org/2004/02/skos/core#OrderedCollection": {
+      "vocab": "skos",
+      "label": "Ordered Collection",
+      "superClass": [
+        "http://www.w3.org/2004/02/skos/core#Collection"
+      ]
+    }
+  },
   "Properties": {
     "http://www.w3.org/2004/02/skos/core#inScheme": {
       "vocab": "skos",
@@ -110,8 +131,8 @@
       "domain": [
         "http://www.w3.org/2004/02/skos/core#Collection"
       ],
-      "range": [
-        "_:g70228881941900"
+      "rangeIncludes": [
+        "[\"http://www.w3.org/2004/02/skos/core#Concept\", \"http://www.w3.org/2004/02/skos/core#Collection\"]"
       ]
     },
     "http://www.w3.org/2004/02/skos/core#memberList": {
