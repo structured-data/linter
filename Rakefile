@@ -46,27 +46,28 @@ namespace :vocab do
     xsd: {uri: "http://www.w3.org/2001/XMLSchema#", location: "http://groups.csail.mit.edu/mac/projects/tami/amord/xsd.ttl"}
   }
 
+  $:.unshift(File.expand_path("../lib", __FILE__))
+  require 'rdf/linter'
+  generator = RDF::Linter::Generate.new
+
   desc "Clean Vocabularies"
   task :clean do
     FileUtils.rm VOCABS.keys.map {|v| "lib/rdf/linter/vocab_defs.#{v}.json"}
   end
+
   desc "Generate Vocabularies"
   task :generate => VOCABS.keys.map {|v| "lib/rdf/linter/vocab_defs.#{v}.json"} do
     puts "Generate lib/rdf/linter/vocab_defs.rb"
-    $:.unshift(File.expand_path("../lib", __FILE__))
-    require 'rdf/linter'
     File.open("lib/rdf/linter/vocab_defs.rb", "w") do |f|
-      RDF::Linter::Parser.cook_vocabularies(f)
+      generator.cook_vocabularies(f)
     end
   end
 
   VOCABS.each do |id, v|
     file "lib/rdf/linter/vocab_defs.#{id}.json" do
       puts "Generate lib/rdf/linter/vocab_defs.#{id}.json"
-      $:.unshift(File.expand_path("../lib", __FILE__))
-      require 'rdf/linter'
       File.open("lib/rdf/linter/vocab_defs.#{id}.json", "w") do |f|
-        RDF::Linter::Parser.vocab_def(RDF::URI(v[:uri]), v.fetch(:prefix, id.to_s), v.merge(:io => f))
+        generator.vocab_def(RDF::URI(v[:uri]), v.fetch(:prefix, id.to_s), v.merge(:io => f))
       end
     end
   end
