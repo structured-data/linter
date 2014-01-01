@@ -1,16 +1,19 @@
 require 'rubygems'
 require 'fileutils'
-require 'yard'
+begin
+  require 'yard'
 
-YARD::Rake::YardocTask.new do |y|
-  y.files = Dir.glob("lib/**/*.rb") +
-            Dir.glob("vendor/bundler/**/rdf*/lib/**/*.rb") +
-            Dir.glob("vendor/bundler/**/json-ld/lib/**/*.rb") +
-            Dir.glob("vendor/bundler/**/sparql*/lib/**/*.rb") +
-            Dir.glob("vendor/bundler/**/spira*/lib/**/*.rb") +
-            Dir.glob("vendor/bundler/**/sxp*/lib/**/*.rb") +
-            ["-"] +
-            Dir.glob("*-README")
+  YARD::Rake::YardocTask.new do |y|
+    y.files = Dir.glob("lib/**/*.rb") +
+              Dir.glob("vendor/bundler/**/rdf*/lib/**/*.rb") +
+              Dir.glob("vendor/bundler/**/json-ld/lib/**/*.rb") +
+              Dir.glob("vendor/bundler/**/sparql*/lib/**/*.rb") +
+              Dir.glob("vendor/bundler/**/spira*/lib/**/*.rb") +
+              Dir.glob("vendor/bundler/**/sxp*/lib/**/*.rb") +
+              ["-"] +
+              Dir.glob("*-README")
+  end
+rescue LoadError
 end
 
 desc "refresh schema-org-rdf"
