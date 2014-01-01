@@ -39,7 +39,7 @@ module RDF::Linter
           - elsif predicate == "http://schema.org/playCount"
             %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= " - Played " + escape_entities(get_value(object)) + ' times'
           - elsif object.literal?
-            %ss{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
+            %span{:property => property, :content => get_content(object), :lang => get_lang(object), :datatype => get_dt_curie(object)}= escape_entities(get_value(object))
           - else
             %span{:property => rel, :resource => get_curie(object)}
         ),

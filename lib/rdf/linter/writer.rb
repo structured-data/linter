@@ -33,8 +33,8 @@ module RDF::Linter
     # Override render_subject to look for a :rel template if this is a relation.
     # In which case, we'll also pass the typeof the referencing resource
     def render_subject(subject, predicates, options = {}, &block)
-      options = options.merge(:haml => haml_template[:rel]) if options[:rel] && haml_template[:rel]
-      #breakpoint if predicates.to_s =~ /street-address/
+      options = options.merge(:haml => @prev_templ[:rel]) if options[:rel] && @prev_templ[:rel]
+      @prev_templ = haml_template
       super(subject, predicates, options) do |predicate|
         if predicate.is_a?(Symbol)
           # Special snippet processing
@@ -83,7 +83,7 @@ module RDF::Linter
 
       # Get template priorities for each subject
       subjects.each do |s|
-        if t = find_template(s)
+        if (t = find_template(s)) && !t[:skip]
           t[:priority] ||= 99
           templates[s] = t
         else
@@ -132,8 +132,7 @@ module RDF::Linter
             templ ||= haml_template[set.first]
           end
 
-          add_debug "find_template: look for #{set.inspect}"
-          add_debug "find_template: look for #{set.first.inspect}" if len == 1
+          #add_debug "find_template: look for #{set.inspect}"
 
           # Look for regular expression match
           templ ||= if len == 1

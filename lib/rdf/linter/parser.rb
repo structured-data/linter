@@ -54,18 +54,20 @@ module RDF::Linter
       # Expand types using vocabulary entailment
       graph.query(:predicate => RDF.type) do |statement|
         s = statement.dup
-        entailed_types(statement.object) do |t|
+        entailed_types(statement.object).each do |t|
           s.object = t
           graph << s
         end
       end
 
-      writer_opts = reader_opts
+      writer_opts = reader_opts.dup
       writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
       writer_opts[:prefixes][:ogt] = "http://types.ogp.me/ns#"
+      writer_opts[:debug] ||= [] if $logger.level <= Logger::DEBUG
 
       # Move elements with class `snippet` to the front of the root element
       html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
+      writer_opts.fetch(:debug, []).each {|m| $logger.debug m}
       ["text/html", 200, html]
     rescue RDF::ReaderError => e
       @error = "RDF::ReaderError: #{e.message}"
