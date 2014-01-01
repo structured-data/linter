@@ -1,4 +1,5 @@
 require 'rdf/turtle'
+require 'rdf/linter/rdfa_template'
 
 ##
 # Generate the schema.org example output template by reading
@@ -100,8 +101,8 @@ module RDF::Linter
           output += ")"
 
           type = RDF::URI("http://schema.org/" + cls)
-          unless RDF::Linter::LINTER_HAML.has_key?(type)
-            output += %(<a href="#no_snip" title="snippets not currently generated for this type">*</a>)
+          unless RDF::Linter::LINTER_HAML.has_key?(RDF::URI(type))
+            output += %(<a href="#no_snip" title="snippets not optimized for this type">*</a>)
           end
           output += "</div>\n"
         end
