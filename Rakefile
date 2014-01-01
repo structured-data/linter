@@ -15,7 +15,12 @@ end
 
 desc "refresh schema-org-rdf"
 task :schema_dir do
-  %x{git clone git@github.com:mhausenblas/schema-org-rdf.git && rm -r ./schema-org-rdf/.git}
+  %x{git clone git@github.com:mhausenblas/schema-org-rdf.git && rm -rf ./schema-org-rdf/.git}
+  Dir.glob("./schema-org-rdf/**/*.jsonld").each do |path|
+    d = File.read(path)
+    d.sub!("http://schema.org/jsonld-profile", "http://schema.org/")
+    File.open(path, "w") {|f| f.write(d)}
+  end
 end
 
 desc "Create schema example index"
