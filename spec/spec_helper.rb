@@ -3,6 +3,8 @@ $:.unshift File.dirname(__FILE__)
 
 require "bundler/setup"
 require 'rubygems'
+require 'simplecov'
+SimpleCov.start
 require 'rspec'
 require 'rdf/isomorphic'
 require 'rdf/linter'

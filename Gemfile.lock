@@ -23,6 +23,7 @@ GEM
     columnize (0.3.6)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
+    docile (1.1.1)
     ebnf (0.3.5)
       rdf
       sxp
@@ -52,6 +53,7 @@ GEM
       sparql (>= 1.1.2)
       sparql-client (>= 1.1.0)
     mini_portile (0.5.2)
+    multi_json (1.8.2)
     net-http-persistent (2.9)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -109,6 +111,11 @@ GEM
     rspec-mocks (2.14.4)
     shotgun (0.9)
       rack (>= 1.0)
+    simplecov (0.8.2)
+      docile (~> 1.1.0)
+      multi_json
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -149,6 +156,7 @@ DEPENDENCIES
   rake
   rspec (>= 2.14.0)
   shotgun (>= 0.9)
+  simplecov
   sparql
   unicorn
   wirble

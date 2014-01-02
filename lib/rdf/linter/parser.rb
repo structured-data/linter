@@ -1,5 +1,6 @@
 require 'rdf/linter/writer'
 require 'rdf/linter/vocab_defs'
+require 'rdf/xsd'
 require 'nokogiri'
 
 module RDF::Linter
@@ -103,29 +104,109 @@ module RDF::Linter
       # Check for defined classes in known vocabularies
       graph.query(:predicate => RDF.type) do |st|
         cls = st.object.to_s
-        uri, defn = VOCAB_DEFS["Classes"].detect {|k,v| k == cls}
-        unless defn
-          # No type definition found for class
-          pfx, uri = VOCAB_DEFS["Vocabularies"].detect {|k, v| cls.start_with?(v)}
-          next unless pfx
-          (messages[:class] ||= {})[cls.sub(uri, "#{pfx}:")] = "No class definition found"
+        curie = get_curie(cls)
+        unless VOCAB_DEFS["Classes"][cls]
+          next unless curie
+          (messages[:class] ||= {})[curie] = ["No class definition found"]
         end
       end
 
-      # Check for defined predicates in known vocabularies
-      graph.statements.map(&:predicate).uniq do |pred|
-        prop = pred.to_s
-        uri, defn = VOCAB_DEFS["Properties"].detect {|k,v| k == prop}
-        unless defn
-          # No type definition found for class
-          pfx, uri = VOCAB_DEFS["Vocabularies"].detect {|k, v| prop.start_with?(v)}
-          next unless pfx
-          (messages[:property] ||= {})[prop.sub(uri, "#{pfx}:")] = "No property definition found"
+      # Check for defined predicates in known vocabularies and domain/range
+      graph.each_statement do |stmt|
+        prop = stmt.predicate.to_s
+        curie = get_curie(prop)
+        unless (defn = VOCAB_DEFS["Properties"][prop])
+          ((messages[:property] ||= {})[curie] ||= []) << "No property definition found" if curie
+          next
+        end
+
+        # Make sure that if domains are defined, the subject has an appropriate type
+        if (domains = Array(defn["domainIncludes"] || defn["domain"])).length >= 1
+          types = graph.query(:subject => stmt.subject, :predicate => RDF.type).map(&:object)
+          unless domains.any? {|d| types.include?(d)}
+            ((messages[:property] ||= {})[curie] ||= []) <<
+              "Subject must have some type defined as domain (#{domains.map {|d| get_curie(d) || d}.join(',')})"
+          end
+        end
+
+        # Make sure that if ranges are defined, the object has an appropriate type
+        if (ranges = Array(defn["rangeIncludes"] || defn["range"])).length >= 1
+          any_okay = if stmt.object.literal?
+            ranges.any? do |range|
+              case RDF::URI(range)
+              when RDF::RDFS.Literal then true
+              when RDF::SCHEMA.Text then stmt.object.plain? || stmt.object.datatype == RDF::SCHEMA.Text
+              when RDF::SCHEMA.Boolean
+                stmt.object.datatype == RDF::SCHEMA.Boolean ||
+                stmt.object.datatype == RDF::XSD.boolean ||
+                stmt.object.simple? && RDF::Literal::Boolean.new(stmt.object.value).valid?
+              when RDF::SCHEMA.Date
+                stmt.object.datatype == RDF::SCHEMA.Date ||
+                stmt.object.is_a?(RDF::Literal::Date) ||
+                stmt.object.simple? && RDF::Literal::Date.new(stmt.object.value).valid?
+              when RDF::SCHEMA.DateTime
+                stmt.object.datatype == RDF::SCHEMA.DateTime ||
+                stmt.object.is_a?(RDF::Literal::DateTime) ||
+                stmt.object.simple? && RDF::Literal::DateTime.new(stmt.object.value).valid?
+              when RDF::SCHEMA.Time
+                stmt.object.datatype == RDF::SCHEMA.Time ||
+                stmt.object.is_a?(RDF::Literal::Time) ||
+                stmt.object.simple? && RDF::Literal::Time.new(stmt.object.value).valid?
+              when RDF::SCHEMA.Number
+                stmt.object.is_a?(RDF::Literal::Numeric) ||
+                [RDF::SCHEMA.Number, RDF::SCHEMA.Float, RDF::SCHEMA.Integer].include?(stmt.object.datatype) ||
+                stmt.object.simple? && RDF::Literal::Integer.new(stmt.object.value).valid? ||
+                stmt.object.simple? && RDF::Literal::Double.new(stmt.object.value).valid?
+              when RDF::SCHEMA.Float
+                stmt.object.is_a?(RDF::Literal::Double) ||
+                [RDF::SCHEMA.Number, RDF::SCHEMA.Float].include?(stmt.object.datatype) ||
+                stmt.object.simple? && RDF::Literal::Double.new(stmt.object.value).valid?
+              when RDF::SCHEMA.Integer
+                stmt.object.is_a?(RDF::Literal::Integer) ||
+                [RDF::SCHEMA.Number, RDF::SCHEMA.Integer].include?(stmt.object.datatype) ||
+                stmt.object.simple? && RDF::Literal::Integer.new(stmt.object.value).valid?
+              when RDF::SCHEMA.URL
+                stmt.object.datatype == RDF::SCHEMA.URL ||
+                stmt.object.datatype == RDF::XSD.anyURI ||
+                stmt.object.simple? && RDF::Literal::AnyURI.new(stmt.object.value).valid?
+              else
+                # If this is an XSD range, look for appropriate literal
+                if range.start_with?(RDF::XSD.to_s)
+                  if stmt.object.datatype == RDF::URI(range)
+                    true
+                  else
+                    # Valid if cast as datatype
+                    stmt.object.simple? && RDF::Literal(stmt.object.value, :datatype => RDF::URI(range)).valid?
+                  end
+                else
+                  # Otherwise, presume that the range refers to a typed resource
+                  false
+                end
+              end
+            end # any?
+          elsif %w(True False).map {|v| RDF::SCHEMA.to_uri + v}.include?(stmt.object) && ranges.include?(RDF::SCHEMA.Boolean)
+            true # Special case for schema boolean resources
+          else # Object is a resource
+            types = graph.query(:subject => stmt.object, :predicate => RDF.type).map(&:object)
+            ranges.any? {|d| types.include?(d)}
+          end
+          unless any_okay
+            ((messages[:property] ||= {})[curie] ||= []) <<
+              "Object must have some type defined as range (#{ranges.map {|d| get_curie(d) || d}.join(',')})"
+          end
         end
       end
-      
+
       messages
     end
     module_function :lint
+
+    private
+    def get_curie(uri)
+      pfx, v_uri = VOCAB_DEFS["Vocabularies"].detect {|k, v| uri.to_s.start_with?(v)}
+      return nil unless pfx
+      uri.to_s.sub(v_uri, "#{pfx}:")
+    end
+    module_function :get_curie
   end
 end

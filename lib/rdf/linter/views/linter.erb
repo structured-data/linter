@@ -89,8 +89,10 @@
 <div>
   <h2>Linter Messages</h2>
   <% @lint_messages.each do |k, v| -%>
-    <% @lint_messages[k].each do |o, m| -%>
-    <p><%= k %> <%= o %>: <%= m %></p>
+    <% @lint_messages[k].each do |o, mm| -%>
+      <% Array(mm).each do |m| -%>
+        <p><%= k %> <%= o %>: <%= m %></p>
+      <% end -%>
     <% end -%>
   <% end -%>
 <% end -%>

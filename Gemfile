@@ -10,6 +10,7 @@ gem 'unicorn'
 group :development, :test do
   gem 'sparql'
   gem 'rake'
+  gem 'simplecov', :require => false
 end
 
 group :development do

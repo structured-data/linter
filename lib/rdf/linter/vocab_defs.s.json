@@ -3940,7 +3940,6 @@
         "http://schema.org/CommunicateAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Thing",
         "http://schema.org/Thing"
       ]
     },
@@ -3962,7 +3961,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/PaymentMethod",
         "http://schema.org/PaymentMethod"
       ]
     },
@@ -3970,7 +3968,6 @@
       "vocab": "schema",
       "label": "acceptsReservations",
       "domainIncludes": [
-        "http://schema.org/FoodEstablishment",
         "http://schema.org/FoodEstablishment"
       ],
       "rangeIncludes": [
@@ -4042,7 +4039,6 @@
       "vocab": "schema",
       "label": "acquiredFrom",
       "domainIncludes": [
-        "http://schema.org/OwnershipInfo",
         "http://schema.org/OwnershipInfo"
       ],
       "rangeIncludes": [
@@ -4069,8 +4065,6 @@
         "http://schema.org/DrugStrength"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -4107,12 +4101,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ]
     },
@@ -4129,12 +4117,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ]
     },
@@ -4187,8 +4169,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/PostalAddress",
-        "http://schema.org/PostalAddress",
         "http://schema.org/PostalAddress"
       ]
     },
@@ -4240,7 +4220,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/QuantitativeValue"
       ]
     },
@@ -4252,7 +4231,6 @@
         "http://schema.org/MedicalDevice"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalEntity",
         "http://schema.org/MedicalEntity"
       ]
     },
@@ -4280,7 +4258,6 @@
       "vocab": "schema",
       "label": "agent",
       "domainIncludes": [
-        "http://schema.org/Action",
         "http://schema.org/Action"
       ],
       "rangeIncludes": [
@@ -4299,10 +4276,6 @@
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/AggregateRating",
-        "http://schema.org/AggregateRating",
-        "http://schema.org/AggregateRating",
-        "http://schema.org/AggregateRating",
         "http://schema.org/AggregateRating"
       ]
     },
@@ -4364,7 +4337,6 @@
         "http://schema.org/MedicalEntity"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -4426,7 +4398,6 @@
         "http://schema.org/DrugLegalStatus"
       ],
       "rangeIncludes": [
-        "http://schema.org/AdministrativeArea",
         "http://schema.org/AdministrativeArea"
       ]
     },
@@ -4434,7 +4405,6 @@
       "vocab": "schema",
       "label": "applicationCategory",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -4446,7 +4416,6 @@
       "vocab": "schema",
       "label": "applicationSubCategory",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -4472,7 +4441,6 @@
         "http://schema.org/PaymentChargeSpecification"
       ],
       "rangeIncludes": [
-        "http://schema.org/DeliveryMethod",
         "http://schema.org/DeliveryMethod"
       ]
     },
@@ -4571,16 +4539,9 @@
       "label": "associatedAnatomy",
       "domainIncludes": [
         "http://schema.org/PhysicalActivity",
-        "http://schema.org/PhysicalActivity",
-        "http://schema.org/PhysicalActivity",
-        "http://schema.org/MedicalCondition",
-        "http://schema.org/MedicalCondition",
         "http://schema.org/MedicalCondition"
       ],
       "rangeIncludes": [
-        "http://schema.org/AnatomicalStructure",
-        "http://schema.org/AnatomicalSystem",
-        "http://schema.org/SuperficialAnatomy",
         "http://schema.org/AnatomicalStructure",
         "http://schema.org/AnatomicalSystem",
         "http://schema.org/SuperficialAnatomy"
@@ -4615,8 +4576,6 @@
         "http://schema.org/SuperficialAnatomy"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -4624,7 +4583,6 @@
       "vocab": "schema",
       "label": "attendee",
       "domainIncludes": [
-        "http://schema.org/Event",
         "http://schema.org/Event"
       ],
       "rangeIncludes": [
@@ -4636,7 +4594,6 @@
       "vocab": "schema",
       "label": "attendees",
       "domainIncludes": [
-        "http://schema.org/Event",
         "http://schema.org/Event"
       ],
       "rangeIncludes": [
@@ -4653,8 +4610,6 @@
         "http://schema.org/PlayAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Audience",
-        "http://schema.org/Audience",
         "http://schema.org/Audience"
       ]
     },
@@ -4682,7 +4637,6 @@
       "vocab": "schema",
       "label": "author",
       "domainIncludes": [
-        "http://schema.org/CreativeWork",
         "http://schema.org/CreativeWork"
       ],
       "rangeIncludes": [
@@ -4698,7 +4652,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/ItemAvailability",
         "http://schema.org/ItemAvailability"
       ]
     },
@@ -4710,7 +4663,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/DateTime",
         "http://schema.org/DateTime"
       ]
     },
@@ -4722,7 +4674,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/DateTime",
         "http://schema.org/DateTime"
       ]
     },
@@ -4734,7 +4685,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Place",
         "http://schema.org/Place"
       ]
     },
@@ -4756,7 +4706,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/DeliveryMethod",
         "http://schema.org/DeliveryMethod"
       ]
     },
@@ -4788,7 +4737,6 @@
         "http://schema.org/ServiceChannel"
       ],
       "rangeIncludes": [
-        "http://schema.org/Language",
         "http://schema.org/Language"
       ]
     },
@@ -4797,22 +4745,10 @@
       "label": "availableService",
       "domainIncludes": [
         "http://schema.org/Hospital",
-        "http://schema.org/Hospital",
-        "http://schema.org/Hospital",
         "http://schema.org/MedicalClinic",
-        "http://schema.org/MedicalClinic",
-        "http://schema.org/MedicalClinic",
-        "http://schema.org/Physician",
-        "http://schema.org/Physician",
         "http://schema.org/Physician"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalProcedure",
-        "http://schema.org/MedicalTest",
-        "http://schema.org/MedicalTherapy",
-        "http://schema.org/MedicalProcedure",
-        "http://schema.org/MedicalTest",
-        "http://schema.org/MedicalTherapy",
         "http://schema.org/MedicalProcedure",
         "http://schema.org/MedicalTest",
         "http://schema.org/MedicalTherapy"
@@ -4856,7 +4792,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -4868,7 +4803,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -4906,7 +4840,6 @@
       "vocab": "schema",
       "label": "bestRating",
       "domainIncludes": [
-        "http://schema.org/Rating",
         "http://schema.org/Rating"
       ],
       "rangeIncludes": [
@@ -5048,7 +4981,6 @@
       "vocab": "schema",
       "label": "branch",
       "domainIncludes": [
-        "http://schema.org/Nerve",
         "http://schema.org/Nerve"
       ],
       "rangeIncludes": [
@@ -5071,17 +5003,10 @@
       "label": "brand",
       "domainIncludes": [
         "http://schema.org/Organization",
-        "http://schema.org/Organization",
         "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Product",
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/Brand",
-        "http://schema.org/Organization",
-        "http://schema.org/Brand",
-        "http://schema.org/Organization",
         "http://schema.org/Brand",
         "http://schema.org/Organization"
       ]
@@ -5135,8 +5060,6 @@
         "http://schema.org/TypeAndQuantityNode"
       ],
       "rangeIncludes": [
-        "http://schema.org/BusinessFunction",
-        "http://schema.org/BusinessFunction",
         "http://schema.org/BusinessFunction"
       ]
     },
@@ -5158,7 +5081,6 @@
         "http://schema.org/MusicRecording"
       ],
       "rangeIncludes": [
-        "http://schema.org/MusicGroup",
         "http://schema.org/MusicGroup"
       ]
     },
@@ -5190,7 +5112,6 @@
         "http://schema.org/VideoObject"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -5239,16 +5160,9 @@
       "label": "category",
       "domainIncludes": [
         "http://schema.org/Offer",
-        "http://schema.org/Offer",
-        "http://schema.org/Offer",
-        "http://schema.org/PhysicalActivity",
-        "http://schema.org/PhysicalActivity",
         "http://schema.org/PhysicalActivity"
       ],
       "rangeIncludes": [
-        "http://schema.org/PhysicalActivityCategory",
-        "http://schema.org/Text",
-        "http://schema.org/Thing",
         "http://schema.org/PhysicalActivityCategory",
         "http://schema.org/Text",
         "http://schema.org/Thing"
@@ -5262,7 +5176,6 @@
         "http://schema.org/MedicalSignOrSymptom"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalCause",
         "http://schema.org/MedicalCause"
       ]
     },
@@ -5330,7 +5243,6 @@
       "vocab": "schema",
       "label": "citation",
       "domainIncludes": [
-        "http://schema.org/CreativeWork",
         "http://schema.org/CreativeWork"
       ],
       "rangeIncludes": [
@@ -5482,7 +5394,6 @@
       "vocab": "schema",
       "label": "comprisedOf",
       "domainIncludes": [
-        "http://schema.org/AnatomicalSystem",
         "http://schema.org/AnatomicalSystem"
       ],
       "rangeIncludes": [
@@ -5528,7 +5439,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/ContactPoint",
         "http://schema.org/ContactPoint"
       ]
     },
@@ -5540,7 +5450,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/ContactPoint",
         "http://schema.org/ContactPoint"
       ]
     },
@@ -5612,7 +5521,6 @@
         "http://schema.org/MedicalDevice"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalContraindication",
         "http://schema.org/MedicalContraindication"
       ]
     },
@@ -5620,7 +5528,6 @@
       "vocab": "schema",
       "label": "contributor",
       "domainIncludes": [
-        "http://schema.org/CreativeWork",
         "http://schema.org/CreativeWork"
       ],
       "rangeIncludes": [
@@ -5652,7 +5559,6 @@
       "vocab": "schema",
       "label": "copyrightHolder",
       "domainIncludes": [
-        "http://schema.org/CreativeWork",
         "http://schema.org/CreativeWork"
       ],
       "rangeIncludes": [
@@ -5714,7 +5620,6 @@
       "vocab": "schema",
       "label": "costPerUnit",
       "domainIncludes": [
-        "http://schema.org/DrugCost",
         "http://schema.org/DrugCost"
       ],
       "rangeIncludes": [
@@ -5757,13 +5662,9 @@
       "label": "creator",
       "domainIncludes": [
         "http://schema.org/CreativeWork",
-        "http://schema.org/CreativeWork",
-        "http://schema.org/UserComments",
         "http://schema.org/UserComments"
       ],
       "rangeIncludes": [
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
         "http://schema.org/Organization",
         "http://schema.org/Person"
       ]
@@ -5782,7 +5683,6 @@
       "vocab": "schema",
       "label": "customer",
       "domainIncludes": [
-        "http://schema.org/Order",
         "http://schema.org/Order"
       ],
       "rangeIncludes": [
@@ -5888,7 +5788,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/QuantitativeValue"
       ]
     },
@@ -5901,8 +5800,6 @@
         "http://schema.org/TrackAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/DeliveryMethod",
-        "http://schema.org/DeliveryMethod",
         "http://schema.org/DeliveryMethod"
       ]
     },
@@ -5940,7 +5837,6 @@
       "vocab": "schema",
       "label": "depth",
       "domainIncludes": [
-        "http://schema.org/Product",
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
@@ -6031,12 +5927,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ]
     },
@@ -6053,12 +5943,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ]
     },
@@ -6066,7 +5950,6 @@
       "vocab": "schema",
       "label": "discount",
       "domainIncludes": [
-        "http://schema.org/Order",
         "http://schema.org/Order"
       ],
       "rangeIncludes": [
@@ -6122,7 +6005,6 @@
         "http://schema.org/TravelAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Distance",
         "http://schema.org/Distance"
       ]
     },
@@ -6174,7 +6056,6 @@
         "http://schema.org/Drug"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -6266,7 +6147,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -6290,9 +6170,6 @@
         "http://schema.org/MusicRecording"
       ],
       "rangeIncludes": [
-        "http://schema.org/Duration",
-        "http://schema.org/Duration",
-        "http://schema.org/Duration",
         "http://schema.org/Duration"
       ]
     },
@@ -6371,13 +6248,9 @@
       "label": "elevation",
       "domainIncludes": [
         "http://schema.org/GeoCoordinates",
-        "http://schema.org/GeoCoordinates",
-        "http://schema.org/GeoShape",
         "http://schema.org/GeoShape"
       ],
       "rangeIncludes": [
-        "http://schema.org/Number",
-        "http://schema.org/Text",
         "http://schema.org/Number",
         "http://schema.org/Text"
       ]
@@ -6390,7 +6263,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/BusinessEntityType",
         "http://schema.org/BusinessEntityType"
       ]
     },
@@ -6402,7 +6274,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/QuantitativeValue"
       ]
     },
@@ -6415,8 +6286,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/QuantitativeValue",
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/QuantitativeValue"
       ]
     },
@@ -6425,17 +6294,10 @@
       "label": "eligibleRegion",
       "domainIncludes": [
         "http://schema.org/Offer",
-        "http://schema.org/Offer",
         "http://schema.org/DeliveryChargeSpecification",
-        "http://schema.org/DeliveryChargeSpecification",
-        "http://schema.org/Demand",
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/GeoShape",
-        "http://schema.org/Text",
-        "http://schema.org/GeoShape",
-        "http://schema.org/Text",
         "http://schema.org/GeoShape",
         "http://schema.org/Text"
       ]
@@ -6449,8 +6311,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/PriceSpecification",
-        "http://schema.org/PriceSpecification",
         "http://schema.org/PriceSpecification"
       ]
     },
@@ -6463,8 +6323,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -6559,10 +6417,6 @@
         "http://schema.org/TVSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Date",
-        "http://schema.org/Date",
-        "http://schema.org/Date",
-        "http://schema.org/Date",
         "http://schema.org/Date"
       ]
     },
@@ -6570,7 +6424,6 @@
       "vocab": "schema",
       "label": "endorsee",
       "domainIncludes": [
-        "http://schema.org/EndorseAction",
         "http://schema.org/EndorseAction"
       ],
       "rangeIncludes": [
@@ -6582,7 +6435,6 @@
       "vocab": "schema",
       "label": "endorsers",
       "domainIncludes": [
-        "http://schema.org/Diet",
         "http://schema.org/Diet"
       ],
       "rangeIncludes": [
@@ -6618,7 +6470,6 @@
         "http://schema.org/MedicalCondition"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -6634,11 +6485,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
         "http://schema.org/Episode"
       ]
     },
@@ -6664,11 +6510,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
-        "http://schema.org/Episode",
         "http://schema.org/Episode"
       ]
     },
@@ -6705,12 +6546,6 @@
         "http://schema.org/LeaveAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Event",
-        "http://schema.org/Event",
-        "http://schema.org/Event",
-        "http://schema.org/Event",
-        "http://schema.org/Event",
-        "http://schema.org/Event",
         "http://schema.org/Event"
       ]
     },
@@ -6722,7 +6557,6 @@
         "http://schema.org/Place"
       ],
       "rangeIncludes": [
-        "http://schema.org/Event",
         "http://schema.org/Event"
       ]
     },
@@ -6774,7 +6608,6 @@
         "http://schema.org/ExerciseAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -6878,9 +6711,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -6888,7 +6718,6 @@
       "vocab": "schema",
       "label": "featureList",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -6930,7 +6759,6 @@
       "vocab": "schema",
       "label": "followee",
       "domainIncludes": [
-        "http://schema.org/FollowAction",
         "http://schema.org/FollowAction"
       ],
       "rangeIncludes": [
@@ -6962,7 +6790,6 @@
       "vocab": "schema",
       "label": "foodEstablishment",
       "domainIncludes": [
-        "http://schema.org/CookAction",
         "http://schema.org/CookAction"
       ],
       "rangeIncludes": [
@@ -7045,17 +6872,10 @@
       "label": "fromLocation",
       "domainIncludes": [
         "http://schema.org/MoveAction",
-        "http://schema.org/MoveAction",
         "http://schema.org/TransferAction",
-        "http://schema.org/TransferAction",
-        "http://schema.org/ExerciseAction",
         "http://schema.org/ExerciseAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Number",
-        "http://schema.org/Place",
-        "http://schema.org/Number",
-        "http://schema.org/Place",
         "http://schema.org/Number",
         "http://schema.org/Place"
       ]
@@ -7104,7 +6924,6 @@
       "vocab": "schema",
       "label": "geo",
       "domainIncludes": [
-        "http://schema.org/Place",
         "http://schema.org/Place"
       ],
       "rangeIncludes": [
@@ -7141,8 +6960,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -7175,8 +6992,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -7189,8 +7004,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -7203,8 +7016,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -7246,7 +7057,6 @@
         "http://schema.org/ParcelDelivery"
       ],
       "rangeIncludes": [
-        "http://schema.org/DeliveryMethod",
         "http://schema.org/DeliveryMethod"
       ]
     },
@@ -7258,7 +7068,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Place",
         "http://schema.org/Place"
       ]
     },
@@ -7287,13 +7096,9 @@
       "label": "height",
       "domainIncludes": [
         "http://schema.org/MediaObject",
-        "http://schema.org/MediaObject",
-        "http://schema.org/Product",
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/Distance",
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/Distance",
         "http://schema.org/QuantitativeValue"
       ]
@@ -7302,7 +7107,6 @@
       "vocab": "schema",
       "label": "highPrice",
       "domainIncludes": [
-        "http://schema.org/AggregateOffer",
         "http://schema.org/AggregateOffer"
       ],
       "rangeIncludes": [
@@ -7324,7 +7128,6 @@
       "vocab": "schema",
       "label": "homeLocation",
       "domainIncludes": [
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
@@ -7470,7 +7273,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/TypeAndQuantityNode",
         "http://schema.org/TypeAndQuantityNode"
       ]
     },
@@ -7492,7 +7294,6 @@
         "http://schema.org/MedicalDevice"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalIndication",
         "http://schema.org/MedicalIndication"
       ]
     },
@@ -7617,10 +7418,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -7643,8 +7440,6 @@
         "http://schema.org/SomeProducts"
       ],
       "rangeIncludes": [
-        "http://schema.org/QuantitativeValue",
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/QuantitativeValue"
       ]
     },
@@ -7727,8 +7522,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -7750,7 +7543,6 @@
         "http://schema.org/Drug"
       ],
       "rangeIncludes": [
-        "http://schema.org/Boolean",
         "http://schema.org/Boolean"
       ]
     },
@@ -7813,8 +7605,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/OfferItemCondition",
-        "http://schema.org/OfferItemCondition",
         "http://schema.org/OfferItemCondition"
       ]
     },
@@ -7846,7 +7636,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Product",
         "http://schema.org/Product"
       ]
     },
@@ -7858,7 +7647,6 @@
         "http://schema.org/Review"
       ],
       "rangeIncludes": [
-        "http://schema.org/Thing",
         "http://schema.org/Thing"
       ]
     },
@@ -7926,7 +7714,6 @@
       "vocab": "schema",
       "label": "landlord",
       "domainIncludes": [
-        "http://schema.org/RentAction",
         "http://schema.org/RentAction"
       ],
       "rangeIncludes": [
@@ -7942,7 +7729,6 @@
         "http://schema.org/WriteAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Language",
         "http://schema.org/Language"
       ]
     },
@@ -7960,7 +7746,6 @@
       "vocab": "schema",
       "label": "latitude",
       "domainIncludes": [
-        "http://schema.org/GeoCoordinates",
         "http://schema.org/GeoCoordinates"
       ],
       "rangeIncludes": [
@@ -7996,7 +7781,6 @@
         "http://schema.org/Drug"
       ],
       "rangeIncludes": [
-        "http://schema.org/DrugLegalStatus",
         "http://schema.org/DrugLegalStatus"
       ]
     },
@@ -8045,17 +7829,10 @@
       "label": "location",
       "domainIncludes": [
         "http://schema.org/Organization",
-        "http://schema.org/Organization",
         "http://schema.org/Event",
-        "http://schema.org/Event",
-        "http://schema.org/Action",
         "http://schema.org/Action"
       ],
       "rangeIncludes": [
-        "http://schema.org/Place",
-        "http://schema.org/PostalAddress",
-        "http://schema.org/Place",
-        "http://schema.org/PostalAddress",
         "http://schema.org/Place",
         "http://schema.org/PostalAddress"
       ]
@@ -8065,21 +7842,11 @@
       "label": "logo",
       "domainIncludes": [
         "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Place",
         "http://schema.org/Place",
         "http://schema.org/Product",
-        "http://schema.org/Product",
-        "http://schema.org/Brand",
         "http://schema.org/Brand"
       ],
       "rangeIncludes": [
-        "http://schema.org/ImageObject",
-        "http://schema.org/URL",
-        "http://schema.org/ImageObject",
-        "http://schema.org/URL",
-        "http://schema.org/ImageObject",
-        "http://schema.org/URL",
         "http://schema.org/ImageObject",
         "http://schema.org/URL"
       ]
@@ -8088,7 +7855,6 @@
       "vocab": "schema",
       "label": "longitude",
       "domainIncludes": [
-        "http://schema.org/GeoCoordinates",
         "http://schema.org/GeoCoordinates"
       ],
       "rangeIncludes": [
@@ -8110,7 +7876,6 @@
       "vocab": "schema",
       "label": "lowPrice",
       "domainIncludes": [
-        "http://schema.org/AggregateOffer",
         "http://schema.org/AggregateOffer"
       ],
       "rangeIncludes": [
@@ -8136,7 +7901,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Offer",
         "http://schema.org/Offer"
       ]
     },
@@ -8149,8 +7913,6 @@
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
         "http://schema.org/Organization"
       ]
     },
@@ -8212,7 +7974,6 @@
         "http://schema.org/Drug"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -8225,8 +7986,6 @@
         "http://schema.org/Physician"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalSpecialty",
-        "http://schema.org/MedicalSpecialty",
         "http://schema.org/MedicalSpecialty"
       ]
     },
@@ -8244,7 +8003,6 @@
       "vocab": "schema",
       "label": "member",
       "domainIncludes": [
-        "http://schema.org/Organization",
         "http://schema.org/Organization"
       ],
       "rangeIncludes": [
@@ -8266,7 +8024,6 @@
       "vocab": "schema",
       "label": "members",
       "domainIncludes": [
-        "http://schema.org/Organization",
         "http://schema.org/Organization"
       ],
       "rangeIncludes": [
@@ -8278,7 +8035,6 @@
       "vocab": "schema",
       "label": "memoryRequirements",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -8300,7 +8056,6 @@
       "vocab": "schema",
       "label": "menu",
       "domainIncludes": [
-        "http://schema.org/FoodEstablishment",
         "http://schema.org/FoodEstablishment"
       ],
       "rangeIncludes": [
@@ -8312,7 +8067,6 @@
       "vocab": "schema",
       "label": "merchant",
       "domainIncludes": [
-        "http://schema.org/Order",
         "http://schema.org/Order"
       ],
       "rangeIncludes": [
@@ -8344,7 +8098,6 @@
       "vocab": "schema",
       "label": "model",
       "domainIncludes": [
-        "http://schema.org/Product",
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
@@ -8361,8 +8114,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -8371,33 +8122,14 @@
       "label": "musicBy",
       "domainIncludes": [
         "http://schema.org/Movie",
-        "http://schema.org/Movie",
-        "http://schema.org/Episode",
         "http://schema.org/Episode",
         "http://schema.org/TVEpisode",
-        "http://schema.org/TVEpisode",
-        "http://schema.org/Series",
         "http://schema.org/Series",
         "http://schema.org/TVSeries",
-        "http://schema.org/TVSeries",
         "http://schema.org/RadioEpisode",
-        "http://schema.org/RadioEpisode",
-        "http://schema.org/RadioSeries",
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/MusicGroup",
-        "http://schema.org/Person",
-        "http://schema.org/MusicGroup",
-        "http://schema.org/Person",
-        "http://schema.org/MusicGroup",
-        "http://schema.org/Person",
-        "http://schema.org/MusicGroup",
-        "http://schema.org/Person",
-        "http://schema.org/MusicGroup",
-        "http://schema.org/Person",
-        "http://schema.org/MusicGroup",
-        "http://schema.org/Person",
         "http://schema.org/MusicGroup",
         "http://schema.org/Person"
       ]
@@ -8420,7 +8152,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -8492,7 +8223,6 @@
         "http://schema.org/Drug"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -8528,11 +8258,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Number",
-        "http://schema.org/Number",
-        "http://schema.org/Number",
-        "http://schema.org/Number",
-        "http://schema.org/Number",
         "http://schema.org/Number"
       ]
     },
@@ -8616,9 +8341,6 @@
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/Offer",
-        "http://schema.org/Offer",
-        "http://schema.org/Offer",
         "http://schema.org/Offer"
       ]
     },
@@ -8630,7 +8352,6 @@
         "http://schema.org/CivicStructure"
       ],
       "rangeIncludes": [
-        "http://schema.org/Duration",
         "http://schema.org/Duration"
       ]
     },
@@ -8678,7 +8399,6 @@
       "vocab": "schema",
       "label": "option",
       "domainIncludes": [
-        "http://schema.org/ChooseAction",
         "http://schema.org/ChooseAction"
       ],
       "rangeIncludes": [
@@ -8811,13 +8531,9 @@
       "label": "owns",
       "domainIncludes": [
         "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/OwnershipInfo",
-        "http://schema.org/Product",
         "http://schema.org/OwnershipInfo",
         "http://schema.org/Product"
       ]
@@ -8856,7 +8572,6 @@
       "vocab": "schema",
       "label": "participant",
       "domainIncludes": [
-        "http://schema.org/Action",
         "http://schema.org/Action"
       ],
       "rangeIncludes": [
@@ -8896,11 +8611,6 @@
         "http://schema.org/TVClip"
       ],
       "rangeIncludes": [
-        "http://schema.org/Season",
-        "http://schema.org/Season",
-        "http://schema.org/Season",
-        "http://schema.org/Season",
-        "http://schema.org/Season",
         "http://schema.org/Season"
       ]
     },
@@ -8919,14 +8629,6 @@
         "http://schema.org/TVClip"
       ],
       "rangeIncludes": [
-        "http://schema.org/Series",
-        "http://schema.org/Series",
-        "http://schema.org/Series",
-        "http://schema.org/Series",
-        "http://schema.org/Series",
-        "http://schema.org/Series",
-        "http://schema.org/Series",
-        "http://schema.org/Series",
         "http://schema.org/Series"
       ]
     },
@@ -8949,8 +8651,6 @@
         "http://schema.org/TVClip"
       ],
       "rangeIncludes": [
-        "http://schema.org/TVSeries",
-        "http://schema.org/TVSeries",
         "http://schema.org/TVSeries"
       ]
     },
@@ -8962,7 +8662,6 @@
         "http://schema.org/MedicalCondition"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -9020,7 +8719,6 @@
       "vocab": "schema",
       "label": "performer",
       "domainIncludes": [
-        "http://schema.org/Event",
         "http://schema.org/Event"
       ],
       "rangeIncludes": [
@@ -9042,7 +8740,6 @@
       "vocab": "schema",
       "label": "performers",
       "domainIncludes": [
-        "http://schema.org/Event",
         "http://schema.org/Event"
       ],
       "rangeIncludes": [
@@ -9084,7 +8781,6 @@
       "vocab": "schema",
       "label": "photo",
       "domainIncludes": [
-        "http://schema.org/Place",
         "http://schema.org/Place"
       ],
       "rangeIncludes": [
@@ -9096,7 +8792,6 @@
       "vocab": "schema",
       "label": "photos",
       "domainIncludes": [
-        "http://schema.org/Place",
         "http://schema.org/Place"
       ],
       "rangeIncludes": [
@@ -9153,8 +8848,6 @@
         "http://schema.org/Clip"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -9176,7 +8869,6 @@
         "http://schema.org/MedicalSignOrSymptom"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalTherapy",
         "http://schema.org/MedicalTherapy"
       ]
     },
@@ -9305,17 +8997,10 @@
       "label": "price",
       "domainIncludes": [
         "http://schema.org/Offer",
-        "http://schema.org/Offer",
         "http://schema.org/PriceSpecification",
-        "http://schema.org/PriceSpecification",
-        "http://schema.org/TradeAction",
         "http://schema.org/TradeAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Number",
-        "http://schema.org/Text",
-        "http://schema.org/Number",
-        "http://schema.org/Text",
         "http://schema.org/Number",
         "http://schema.org/Text"
       ]
@@ -9328,7 +9013,6 @@
         "http://schema.org/PriceSpecification"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -9350,7 +9034,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/PriceSpecification",
         "http://schema.org/PriceSpecification"
       ]
     },
@@ -9488,13 +9171,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ]
     },
@@ -9534,15 +9210,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
-        "http://schema.org/Organization",
         "http://schema.org/Organization"
       ]
     },
@@ -9550,7 +9217,6 @@
       "vocab": "schema",
       "label": "productSupported",
       "domainIncludes": [
-        "http://schema.org/ContactPoint",
         "http://schema.org/ContactPoint"
       ],
       "rangeIncludes": [
@@ -9613,13 +9279,9 @@
       "label": "provider",
       "domainIncludes": [
         "http://schema.org/CreativeWork",
-        "http://schema.org/CreativeWork",
-        "http://schema.org/Service",
         "http://schema.org/Service"
       ],
       "rangeIncludes": [
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
         "http://schema.org/Organization",
         "http://schema.org/Person"
       ]
@@ -9643,8 +9305,6 @@
         "http://schema.org/Clip"
       ],
       "rangeIncludes": [
-        "http://schema.org/PublicationEvent",
-        "http://schema.org/PublicationEvent",
         "http://schema.org/PublicationEvent"
       ]
     },
@@ -9693,17 +9353,10 @@
       "label": "purpose",
       "domainIncludes": [
         "http://schema.org/MedicalDevice",
-        "http://schema.org/MedicalDevice",
         "http://schema.org/AllocateAction",
-        "http://schema.org/AllocateAction",
-        "http://schema.org/PayAction",
         "http://schema.org/PayAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalDevicePurpose",
-        "http://schema.org/Thing",
-        "http://schema.org/MedicalDevicePurpose",
-        "http://schema.org/Thing",
         "http://schema.org/MedicalDevicePurpose",
         "http://schema.org/Thing"
       ]
@@ -9722,7 +9375,6 @@
       "vocab": "schema",
       "label": "query",
       "domainIncludes": [
-        "http://schema.org/SearchAction",
         "http://schema.org/SearchAction"
       ],
       "rangeIncludes": [
@@ -9835,52 +9487,15 @@
       "label": "recipient",
       "domainIncludes": [
         "http://schema.org/CommunicateAction",
-        "http://schema.org/CommunicateAction",
-        "http://schema.org/CommunicateAction",
-        "http://schema.org/AuthorizeAction",
-        "http://schema.org/AuthorizeAction",
         "http://schema.org/AuthorizeAction",
         "http://schema.org/DonateAction",
-        "http://schema.org/DonateAction",
-        "http://schema.org/DonateAction",
-        "http://schema.org/GiveAction",
-        "http://schema.org/GiveAction",
         "http://schema.org/GiveAction",
         "http://schema.org/PayAction",
-        "http://schema.org/PayAction",
-        "http://schema.org/PayAction",
-        "http://schema.org/ReturnAction",
-        "http://schema.org/ReturnAction",
         "http://schema.org/ReturnAction",
         "http://schema.org/SendAction",
-        "http://schema.org/SendAction",
-        "http://schema.org/SendAction",
-        "http://schema.org/TipAction",
-        "http://schema.org/TipAction",
         "http://schema.org/TipAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Audience",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
-        "http://schema.org/Audience",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
-        "http://schema.org/Audience",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
-        "http://schema.org/Audience",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
-        "http://schema.org/Audience",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
-        "http://schema.org/Audience",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
-        "http://schema.org/Audience",
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
         "http://schema.org/Audience",
         "http://schema.org/Organization",
         "http://schema.org/Person"
@@ -9921,13 +9536,9 @@
       "label": "regionDrained",
       "domainIncludes": [
         "http://schema.org/LymphaticVessel",
-        "http://schema.org/LymphaticVessel",
-        "http://schema.org/Vein",
         "http://schema.org/Vein"
       ],
       "rangeIncludes": [
-        "http://schema.org/AnatomicalStructure",
-        "http://schema.org/AnatomicalSystem",
         "http://schema.org/AnatomicalStructure",
         "http://schema.org/AnatomicalSystem"
       ]
@@ -9946,7 +9557,6 @@
       "vocab": "schema",
       "label": "relatedAnatomy",
       "domainIncludes": [
-        "http://schema.org/SuperficialAnatomy",
         "http://schema.org/SuperficialAnatomy"
       ],
       "rangeIncludes": [
@@ -9963,8 +9573,6 @@
         "http://schema.org/SuperficialAnatomy"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalCondition",
-        "http://schema.org/MedicalCondition",
         "http://schema.org/MedicalCondition"
       ]
     },
@@ -10007,8 +9615,6 @@
         "http://schema.org/SuperficialAnatomy"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalTherapy",
-        "http://schema.org/MedicalTherapy",
         "http://schema.org/MedicalTherapy"
       ]
     },
@@ -10036,7 +9642,6 @@
       "vocab": "schema",
       "label": "releaseNotes",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -10138,7 +9743,6 @@
       "vocab": "schema",
       "label": "requirements",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -10207,10 +9811,6 @@
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/Review",
-        "http://schema.org/Review",
-        "http://schema.org/Review",
-        "http://schema.org/Review",
         "http://schema.org/Review"
       ]
     },
@@ -10238,7 +9838,6 @@
       "vocab": "schema",
       "label": "reviewedBy",
       "domainIncludes": [
-        "http://schema.org/WebPage",
         "http://schema.org/WebPage"
       ],
       "rangeIncludes": [
@@ -10267,10 +9866,6 @@
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/Review",
-        "http://schema.org/Review",
-        "http://schema.org/Review",
-        "http://schema.org/Review",
         "http://schema.org/Review"
       ]
     },
@@ -10372,7 +9967,6 @@
         "http://schema.org/ReserveAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/DateTime",
         "http://schema.org/DateTime"
       ]
     },
@@ -10380,7 +9974,6 @@
       "vocab": "schema",
       "label": "screenshot",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -10397,8 +9990,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Season",
-        "http://schema.org/Season",
         "http://schema.org/Season"
       ]
     },
@@ -10410,7 +10001,6 @@
         "http://schema.org/TVSeason"
       ],
       "rangeIncludes": [
-        "http://schema.org/Integer",
         "http://schema.org/Integer"
       ]
     },
@@ -10423,8 +10013,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Season",
-        "http://schema.org/Season",
         "http://schema.org/Season"
       ]
     },
@@ -10446,7 +10034,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Demand",
         "http://schema.org/Demand"
       ]
     },
@@ -10455,13 +10042,9 @@
       "label": "seller",
       "domainIncludes": [
         "http://schema.org/Offer",
-        "http://schema.org/Offer",
-        "http://schema.org/Demand",
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Organization",
-        "http://schema.org/Person",
         "http://schema.org/Organization",
         "http://schema.org/Person"
       ]
@@ -10470,8 +10053,6 @@
       "vocab": "schema",
       "label": "sender",
       "domainIncludes": [
-        "http://schema.org/ReceiveAction",
-        "http://schema.org/ReceiveAction",
         "http://schema.org/ReceiveAction"
       ],
       "rangeIncludes": [
@@ -10484,7 +10065,6 @@
       "vocab": "schema",
       "label": "sensoryUnit",
       "domainIncludes": [
-        "http://schema.org/Nerve",
         "http://schema.org/Nerve"
       ],
       "rangeIncludes": [
@@ -10501,8 +10081,6 @@
         "http://schema.org/IndividualProduct"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -10514,7 +10092,6 @@
         "http://schema.org/MedicalDevice"
       ],
       "rangeIncludes": [
-        "http://schema.org/MedicalEntity",
         "http://schema.org/MedicalEntity"
       ]
     },
@@ -10717,8 +10294,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -10883,10 +10458,6 @@
         "http://schema.org/TVSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/Date",
-        "http://schema.org/Date",
-        "http://schema.org/Date",
-        "http://schema.org/Date",
         "http://schema.org/Date"
       ]
     },
@@ -10914,7 +10485,6 @@
       "vocab": "schema",
       "label": "storageRequirements",
       "domainIncludes": [
-        "http://schema.org/SoftwareApplication",
         "http://schema.org/SoftwareApplication"
       ],
       "rangeIncludes": [
@@ -11180,7 +10750,6 @@
         "http://schema.org/DoseSchedule"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -11212,7 +10781,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -11226,9 +10794,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -11260,7 +10825,6 @@
         "http://schema.org/VideoObject"
       ],
       "rangeIncludes": [
-        "http://schema.org/ImageObject",
         "http://schema.org/ImageObject"
       ]
     },
@@ -11319,21 +10883,11 @@
       "label": "toLocation",
       "domainIncludes": [
         "http://schema.org/InsertAction",
-        "http://schema.org/InsertAction",
-        "http://schema.org/MoveAction",
         "http://schema.org/MoveAction",
         "http://schema.org/TransferAction",
-        "http://schema.org/TransferAction",
-        "http://schema.org/ExerciseAction",
         "http://schema.org/ExerciseAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/Number",
-        "http://schema.org/Place",
-        "http://schema.org/Number",
-        "http://schema.org/Place",
-        "http://schema.org/Number",
-        "http://schema.org/Place",
         "http://schema.org/Number",
         "http://schema.org/Place"
       ]
@@ -11356,7 +10910,6 @@
         "http://schema.org/MusicGroup"
       ],
       "rangeIncludes": [
-        "http://schema.org/MusicRecording",
         "http://schema.org/MusicRecording"
       ]
     },
@@ -11388,7 +10941,6 @@
         "http://schema.org/MusicGroup"
       ],
       "rangeIncludes": [
-        "http://schema.org/MusicRecording",
         "http://schema.org/MusicRecording"
       ]
     },
@@ -11408,15 +10960,6 @@
         "http://schema.org/RadioSeries"
       ],
       "rangeIncludes": [
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
-        "http://schema.org/VideoObject",
         "http://schema.org/VideoObject"
       ]
     },
@@ -11428,7 +10971,6 @@
         "http://schema.org/VideoObject"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -11480,7 +11022,6 @@
         "http://schema.org/TypeAndQuantityNode"
       ],
       "rangeIncludes": [
-        "http://schema.org/Product",
         "http://schema.org/Product"
       ]
     },
@@ -11492,7 +11033,6 @@
         "http://schema.org/Event"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -11515,8 +11055,6 @@
         "http://schema.org/UnitPriceSpecification"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -11591,10 +11129,6 @@
         "http://schema.org/Permit"
       ],
       "rangeIncludes": [
-        "http://schema.org/DateTime",
-        "http://schema.org/DateTime",
-        "http://schema.org/DateTime",
-        "http://schema.org/DateTime",
         "http://schema.org/DateTime"
       ]
     },
@@ -11618,9 +11152,6 @@
         "http://schema.org/OpeningHoursSpecification"
       ],
       "rangeIncludes": [
-        "http://schema.org/DateTime",
-        "http://schema.org/DateTime",
-        "http://schema.org/DateTime",
         "http://schema.org/DateTime"
       ]
     },
@@ -11659,13 +11190,9 @@
       "label": "valueReference",
       "domainIncludes": [
         "http://schema.org/QualitativeValue",
-        "http://schema.org/QualitativeValue",
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/QuantitativeValue"
       ],
       "rangeIncludes": [
-        "http://schema.org/Enumeration",
-        "http://schema.org/StructuredValue",
         "http://schema.org/Enumeration",
         "http://schema.org/StructuredValue"
       ]
@@ -11678,7 +11205,6 @@
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
-        "http://schema.org/Text",
         "http://schema.org/Text"
       ]
     },
@@ -11686,7 +11212,6 @@
       "vocab": "schema",
       "label": "vendor",
       "domainIncludes": [
-        "http://schema.org/BuyAction",
         "http://schema.org/BuyAction"
       ],
       "rangeIncludes": [
@@ -11738,7 +11263,6 @@
       "vocab": "schema",
       "label": "warning",
       "domainIncludes": [
-        "http://schema.org/Drug",
         "http://schema.org/Drug"
       ],
       "rangeIncludes": [
@@ -11754,7 +11278,6 @@
         "http://schema.org/Demand"
       ],
       "rangeIncludes": [
-        "http://schema.org/WarrantyPromise",
         "http://schema.org/WarrantyPromise"
       ]
     },
@@ -11766,7 +11289,6 @@
         "http://schema.org/SellAction"
       ],
       "rangeIncludes": [
-        "http://schema.org/WarrantyPromise",
         "http://schema.org/WarrantyPromise"
       ]
     },
@@ -11795,13 +11317,9 @@
       "label": "width",
       "domainIncludes": [
         "http://schema.org/MediaObject",
-        "http://schema.org/MediaObject",
-        "http://schema.org/Product",
         "http://schema.org/Product"
       ],
       "rangeIncludes": [
-        "http://schema.org/Distance",
-        "http://schema.org/QuantitativeValue",
         "http://schema.org/Distance",
         "http://schema.org/QuantitativeValue"
       ]
@@ -11850,7 +11368,6 @@
       "vocab": "schema",
       "label": "workLocation",
       "domainIncludes": [
-        "http://schema.org/Person",
         "http://schema.org/Person"
       ],
       "rangeIncludes": [
@@ -11872,7 +11389,6 @@
       "vocab": "schema",
       "label": "worstRating",
       "domainIncludes": [
-        "http://schema.org/Rating",
         "http://schema.org/Rating"
       ],
       "rangeIncludes": [
