@@ -129,7 +129,8 @@
         "http://rdf.data-vocabulary.org/#Address"
       ],
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Person\", \"http://rdf.data-vocabulary.org/#Organization\"]"
+        "http://rdf.data-vocabulary.org/#Person",
+        "http://rdf.data-vocabulary.org/#Organization"
       ]
     },
     "http://rdf.data-vocabulary.org/#affiliation": {
@@ -139,7 +140,8 @@
         "http://rdf.data-vocabulary.org/#Person"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Organization\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#Organization",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#brand": {
@@ -153,7 +155,8 @@
       "vocab": "v",
       "label": "category",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Organization\", \"http://rdf.data-vocabulary.org/#Product\"]"
+        "http://rdf.data-vocabulary.org/#Organization",
+        "http://rdf.data-vocabulary.org/#Product"
       ]
     },
     "http://rdf.data-vocabulary.org/#count": {
@@ -167,7 +170,8 @@
       "vocab": "v",
       "label": "description",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Review\", \"http://rdf.data-vocabulary.org/#Product\"]"
+        "http://rdf.data-vocabulary.org/#Review",
+        "http://rdf.data-vocabulary.org/#Product"
       ]
     },
     "http://rdf.data-vocabulary.org/#dtreviewed": {
@@ -230,7 +234,8 @@
       "vocab": "v",
       "label": "currency",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Offer\", \"http://rdf.data-vocabulary.org/#OfferAggregate\"]"
+        "http://rdf.data-vocabulary.org/#Offer",
+        "http://rdf.data-vocabulary.org/#OfferAggregate"
       ]
     },
     "http://rdf.data-vocabulary.org/#pricevaliduntil": {
@@ -251,7 +256,8 @@
       "vocab": "v",
       "label": "condition",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Offer\", \"http://rdf.data-vocabulary.org/#OfferAggregate\"]"
+        "http://rdf.data-vocabulary.org/#Offer",
+        "http://rdf.data-vocabulary.org/#OfferAggregate"
       ]
     },
     "http://rdf.data-vocabulary.org/#availability": {
@@ -265,14 +271,16 @@
       "vocab": "v",
       "label": "offerurl",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Offer\", \"http://rdf.data-vocabulary.org/#OfferAggregate\"]"
+        "http://rdf.data-vocabulary.org/#Offer",
+        "http://rdf.data-vocabulary.org/#OfferAggregate"
       ]
     },
     "http://rdf.data-vocabulary.org/#identifier": {
       "vocab": "v",
       "label": "identifier",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Product\", \"http://rdf.data-vocabulary.org/#Offer\"]"
+        "http://rdf.data-vocabulary.org/#Product",
+        "http://rdf.data-vocabulary.org/#Offer"
       ]
     },
     "http://rdf.data-vocabulary.org/#quantity": {
@@ -286,7 +294,8 @@
       "vocab": "v",
       "label": "itemoffered",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Offer\", \"http://rdf.data-vocabulary.org/#OfferAggregate\"]"
+        "http://rdf.data-vocabulary.org/#Offer",
+        "http://rdf.data-vocabulary.org/#OfferAggregate"
       ]
     },
     "http://rdf.data-vocabulary.org/#lowprice": {
@@ -324,7 +333,8 @@
         "http://rdf.data-vocabulary.org/#Review"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Rating\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#Rating",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#reviewer": {
@@ -334,7 +344,8 @@
         "http://rdf.data-vocabulary.org/#Review"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Person\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#Person",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#role": {
@@ -348,28 +359,34 @@
       "vocab": "v",
       "label": "summary",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Review\", \"http://rdf.data-vocabulary.org/#Recipe\"]"
+        "http://rdf.data-vocabulary.org/#Review",
+        "http://rdf.data-vocabulary.org/#Recipe"
       ]
     },
     "http://rdf.data-vocabulary.org/#tel": {
       "vocab": "v",
       "label": "tel",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Person\", \"http://rdf.data-vocabulary.org/#Organization\"]"
+        "http://rdf.data-vocabulary.org/#Person",
+        "http://rdf.data-vocabulary.org/#Organization"
       ]
     },
     "http://rdf.data-vocabulary.org/#title": {
       "vocab": "v",
       "label": "title",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Person\", \"http://rdf.data-vocabulary.org/#Breadcrumb\"]"
+        "http://rdf.data-vocabulary.org/#Person",
+        "http://rdf.data-vocabulary.org/#Breadcrumb"
       ]
     },
     "http://rdf.data-vocabulary.org/#url": {
       "vocab": "v",
       "label": "url",
       "domainIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Person\", \"http://rdf.data-vocabulary.org/#Organization\", \"http://rdf.data-vocabulary.org/#Product\", \"http://rdf.data-vocabulary.org/#Breadcrumb\"]"
+        "http://rdf.data-vocabulary.org/#Person",
+        "http://rdf.data-vocabulary.org/#Organization",
+        "http://rdf.data-vocabulary.org/#Product",
+        "http://rdf.data-vocabulary.org/#Breadcrumb"
       ]
     },
     "http://rdf.data-vocabulary.org/#child": {
@@ -435,7 +452,8 @@
         "http://rdf.data-vocabulary.org/#Recipe"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#timeRange\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#timeRange",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#cookTime": {
@@ -445,7 +463,8 @@
         "http://rdf.data-vocabulary.org/#Recipe"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#timeRange\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#timeRange",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#totalTime": {
@@ -455,7 +474,8 @@
         "http://rdf.data-vocabulary.org/#Recipe"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#timeRange\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#timeRange",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#duration": {
@@ -465,7 +485,8 @@
         "http://rdf.data-vocabulary.org/#Recipe"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#timeRange\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#timeRange",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#yield": {
@@ -482,7 +503,8 @@
         "http://rdf.data-vocabulary.org/#Recipe"
       ],
       "rangeIncludes": [
-        "[\"http://rdf.data-vocabulary.org/#Person\", \"xsd:string\"]"
+        "http://rdf.data-vocabulary.org/#Person",
+        "http://www.w3.org/2001/XMLSchema#string"
       ]
     },
     "http://rdf.data-vocabulary.org/#average": {

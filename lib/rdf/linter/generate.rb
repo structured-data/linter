@@ -46,15 +46,15 @@ module RDF::Linter
         else next
         end
         # Special-case for owl:unionOf
-        if soln[:domain].is_a?(RDF::Node)
-          soln[:domainIncludes] = expand_unionOf(soln[:domain], repo).map(&:to_s)
-        end
-        if soln[:range].is_a?(RDF::Node)
-          soln[:rangeIncludes] = expand_unionOf(soln[:range], repo).map(&:to_s)
-        end
         d = (defs[section][soln.subject] ||= {:vocab => prefix, :label => (soln[:label] || soln.subject.to_s.split(/[\/#]/).last)})
         soln.each do |name, value|
           (d[name] ||= []) << value unless value.node? || [:subject, :type, :label].include?(name)
+        end
+        if soln[:domain].is_a?(RDF::Node)
+          d[:domainIncludes] = expand_unionOf(soln[:domain], repo)
+        end
+        if soln[:range].is_a?(RDF::Node)
+          d[:rangeIncludes] = expand_unionOf(soln[:range], repo)
         end
       end
 

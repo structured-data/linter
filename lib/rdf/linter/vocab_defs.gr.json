@@ -182,7 +182,8 @@
         "http://www.w3.org/2001/XMLSchema#dateTime"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#availableAtOrFrom": {
@@ -192,7 +193,8 @@
         "http://purl.org/goodrelations/v1#Location"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#taxID": {
@@ -202,7 +204,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization",
+        "http://schema.org/Person"
       ]
     },
     "http://purl.org/goodrelations/v1#seeks": {
@@ -212,7 +216,9 @@
         "http://purl.org/goodrelations/v1#Offering"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization",
+        "http://schema.org/Person"
       ]
     },
     "http://purl.org/goodrelations/v1#amountOfThisGood": {
@@ -232,7 +238,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Individual",
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasISICv4": {
@@ -242,7 +250,10 @@
         "http://www.w3.org/2001/XMLSchema#int"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#Location\", \"http://schema.org/Organization\", \"http://schema.org/Place\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://purl.org/goodrelations/v1#Location",
+        "http://schema.org/Organization",
+        "http://schema.org/Place"
       ]
     },
     "http://purl.org/goodrelations/v1#opens": {
@@ -262,7 +273,8 @@
         "http://www.w3.org/2001/XMLSchema#int"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization"
       ]
     },
     "http://purl.org/goodrelations/v1#legalName": {
@@ -272,7 +284,8 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization"
       ]
     },
     "http://purl.org/goodrelations/v1#hasMPN": {
@@ -282,7 +295,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#vatID": {
@@ -292,7 +307,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization",
+        "http://schema.org/Person"
       ]
     },
     "http://purl.org/goodrelations/v1#category": {
@@ -302,7 +319,14 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#Location\", \"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Offer\", \"http://schema.org/Product\", \"http://schema.org/Place\", \"http://schema.org/Organization\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#Location",
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Offer",
+        "http://schema.org/Product",
+        "http://schema.org/Place",
+        "http://schema.org/Organization"
       ]
     },
     "http://purl.org/goodrelations/v1#hasPOS": {
@@ -312,7 +336,8 @@
         "http://purl.org/goodrelations/v1#Location"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization"
       ]
     },
     "http://purl.org/goodrelations/v1#availabilityEnds": {
@@ -322,7 +347,8 @@
         "http://www.w3.org/2001/XMLSchema#dateTime"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#eligibleCustomerTypes": {
@@ -332,7 +358,8 @@
         "http://purl.org/goodrelations/v1#BusinessEntityType"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#hasInventoryLevel": {
@@ -342,7 +369,9 @@
         "http://purl.org/goodrelations/v1#QuantitativeValueFloat"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#SomeItems",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#isSimilarTo": {
@@ -352,7 +381,8 @@
         "http://purl.org/goodrelations/v1#ProductOrService"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasOpeningHoursSpecification": {
@@ -362,7 +392,8 @@
         "http://purl.org/goodrelations/v1#OpeningHoursSpecification"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Location\", \"http://schema.org/Place\"]"
+        "http://purl.org/goodrelations/v1#Location",
+        "http://schema.org/Place"
       ]
     },
     "http://purl.org/goodrelations/v1#validThrough": {
@@ -372,7 +403,11 @@
         "http://www.w3.org/2001/XMLSchema#dateTime"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification",
+        "http://purl.org/goodrelations/v1#PriceSpecification",
+        "http://purl.org/goodrelations/v1#License",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#appliesToPaymentMethod": {
@@ -392,7 +427,8 @@
         "http://purl.org/goodrelations/v1#ProductOrService"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasValueFloat": {
@@ -442,7 +478,8 @@
         "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#eligibleTransactionVolume": {
@@ -452,7 +489,9 @@
         "http://purl.org/goodrelations/v1#PriceSpecification"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#PriceSpecification",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#durationOfWarrantyInMonths": {
@@ -472,7 +511,10 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#Location\", \"http://schema.org/Place\", \"http://schema.org/Organization\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://purl.org/goodrelations/v1#Location",
+        "http://schema.org/Place",
+        "http://schema.org/Organization"
       ]
     },
     "http://purl.org/goodrelations/v1#isVariantOf": {
@@ -492,7 +534,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasPriceSpecification": {
@@ -502,7 +546,8 @@
         "http://purl.org/goodrelations/v1#PriceSpecification"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#depth": {
@@ -512,7 +557,8 @@
         "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#quantitativeProductOrServiceProperty": {
@@ -522,7 +568,8 @@
         "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasValueInteger": {
@@ -562,7 +609,8 @@
         "http://purl.org/goodrelations/v1#BusinessEntity"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#description": {
@@ -572,7 +620,34 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "domainIncludes": [
-        "[\"http://www.w3.org/2002/07/owl#Thing\", \"http://purl.org/goodrelations/v1#Brand\", \"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#BusinessEntityType\", \"http://purl.org/goodrelations/v1#BusinessFunction\", \"http://purl.org/goodrelations/v1#DayOfWeek\", \"http://purl.org/goodrelations/v1#DeliveryChargeSpecification\", \"http://purl.org/goodrelations/v1#DeliveryMethod\", \"http://purl.org/goodrelations/v1#DeliveryModeParcelService\", \"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#Location\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PaymentChargeSpecification\", \"http://purl.org/goodrelations/v1#PaymentMethod\", \"http://purl.org/goodrelations/v1#PaymentMethodCreditCard\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://purl.org/goodrelations/v1#ProductOrServiceModel\", \"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValueFloat\", \"http://purl.org/goodrelations/v1#QuantitativeValueInteger\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://purl.org/goodrelations/v1#UnitPriceSpecification\", \"http://purl.org/goodrelations/v1#WarrantyPromise\", \"http://purl.org/goodrelations/v1#WarrantyScope\"]"
+        "http://www.w3.org/2002/07/owl#Thing",
+        "http://purl.org/goodrelations/v1#Brand",
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://purl.org/goodrelations/v1#BusinessEntityType",
+        "http://purl.org/goodrelations/v1#BusinessFunction",
+        "http://purl.org/goodrelations/v1#DayOfWeek",
+        "http://purl.org/goodrelations/v1#DeliveryChargeSpecification",
+        "http://purl.org/goodrelations/v1#DeliveryMethod",
+        "http://purl.org/goodrelations/v1#DeliveryModeParcelService",
+        "http://purl.org/goodrelations/v1#Individual",
+        "http://purl.org/goodrelations/v1#Location",
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification",
+        "http://purl.org/goodrelations/v1#PaymentChargeSpecification",
+        "http://purl.org/goodrelations/v1#PaymentMethod",
+        "http://purl.org/goodrelations/v1#PaymentMethodCreditCard",
+        "http://purl.org/goodrelations/v1#PriceSpecification",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel",
+        "http://purl.org/goodrelations/v1#QualitativeValue",
+        "http://purl.org/goodrelations/v1#QuantitativeValue",
+        "http://purl.org/goodrelations/v1#QuantitativeValueFloat",
+        "http://purl.org/goodrelations/v1#QuantitativeValueInteger",
+        "http://purl.org/goodrelations/v1#SomeItems",
+        "http://purl.org/goodrelations/v1#TypeAndQuantityNode",
+        "http://purl.org/goodrelations/v1#UnitPriceSpecification",
+        "http://purl.org/goodrelations/v1#WarrantyPromise",
+        "http://purl.org/goodrelations/v1#WarrantyScope"
       ]
     },
     "http://purl.org/goodrelations/v1#billingIncrement": {
@@ -602,7 +677,8 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#datatypeProductOrServiceProperty": {
@@ -612,7 +688,8 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#isAccessoryOrSparePartFor": {
@@ -622,7 +699,8 @@
         "http://purl.org/goodrelations/v1#ProductOrService"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasDUNS": {
@@ -632,7 +710,8 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization"
       ]
     },
     "http://purl.org/goodrelations/v1#typeOfGood": {
@@ -642,7 +721,8 @@
         "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
       ],
       "rangeIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#SomeItems\"]"
+        "http://purl.org/goodrelations/v1#Individual",
+        "http://purl.org/goodrelations/v1#SomeItems"
       ]
     },
     "http://purl.org/goodrelations/v1#deliveryLeadTime": {
@@ -652,7 +732,8 @@
         "http://purl.org/goodrelations/v1#QuantitativeValueInteger"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#hasStockKeepingUnit": {
@@ -662,7 +743,10 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Offer\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Offer",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#qualitativeProductOrServiceProperty": {
@@ -672,7 +756,8 @@
         "http://purl.org/goodrelations/v1#QualitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#availableDeliveryMethods": {
@@ -682,7 +767,8 @@
         "http://purl.org/goodrelations/v1#DeliveryMethod"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#includes": {
@@ -732,7 +818,10 @@
         "http://purl.org/goodrelations/v1#Brand"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Organization\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Organization",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek": {
@@ -762,17 +851,22 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#DeliveryChargeSpecification\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#DeliveryChargeSpecification",
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#License",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#valueReference": {
       "vocab": "gr",
       "label": "value reference (0..*)",
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\"]"
+        "http://purl.org/goodrelations/v1#QualitativeValue",
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "rangeIncludes": [
-        "[\"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\"]"
+        "http://purl.org/goodrelations/v1#QualitativeValue",
+        "http://purl.org/goodrelations/v1#QuantitativeValue"
       ]
     },
     "http://purl.org/goodrelations/v1#validFrom": {
@@ -782,7 +876,11 @@
         "http://www.w3.org/2001/XMLSchema#dateTime"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification",
+        "http://purl.org/goodrelations/v1#PriceSpecification",
+        "http://purl.org/goodrelations/v1#License",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#name": {
@@ -792,7 +890,34 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "domainIncludes": [
-        "[\"http://www.w3.org/2002/07/owl#Thing\", \"http://purl.org/goodrelations/v1#Brand\", \"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://purl.org/goodrelations/v1#BusinessEntityType\", \"http://purl.org/goodrelations/v1#BusinessFunction\", \"http://purl.org/goodrelations/v1#DayOfWeek\", \"http://purl.org/goodrelations/v1#DeliveryChargeSpecification\", \"http://purl.org/goodrelations/v1#DeliveryMethod\", \"http://purl.org/goodrelations/v1#DeliveryModeParcelService\", \"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#Location\", \"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#OpeningHoursSpecification\", \"http://purl.org/goodrelations/v1#PaymentChargeSpecification\", \"http://purl.org/goodrelations/v1#PaymentMethod\", \"http://purl.org/goodrelations/v1#PaymentMethodCreditCard\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://purl.org/goodrelations/v1#ProductOrServiceModel\", \"http://purl.org/goodrelations/v1#QualitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValue\", \"http://purl.org/goodrelations/v1#QuantitativeValueFloat\", \"http://purl.org/goodrelations/v1#QuantitativeValueInteger\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://purl.org/goodrelations/v1#UnitPriceSpecification\", \"http://purl.org/goodrelations/v1#WarrantyPromise\", \"http://purl.org/goodrelations/v1#WarrantyScope\"]"
+        "http://www.w3.org/2002/07/owl#Thing",
+        "http://purl.org/goodrelations/v1#Brand",
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://purl.org/goodrelations/v1#BusinessEntityType",
+        "http://purl.org/goodrelations/v1#BusinessFunction",
+        "http://purl.org/goodrelations/v1#DayOfWeek",
+        "http://purl.org/goodrelations/v1#DeliveryChargeSpecification",
+        "http://purl.org/goodrelations/v1#DeliveryMethod",
+        "http://purl.org/goodrelations/v1#DeliveryModeParcelService",
+        "http://purl.org/goodrelations/v1#Individual",
+        "http://purl.org/goodrelations/v1#Location",
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#OpeningHoursSpecification",
+        "http://purl.org/goodrelations/v1#PaymentChargeSpecification",
+        "http://purl.org/goodrelations/v1#PaymentMethod",
+        "http://purl.org/goodrelations/v1#PaymentMethodCreditCard",
+        "http://purl.org/goodrelations/v1#PriceSpecification",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://purl.org/goodrelations/v1#ProductOrServiceModel",
+        "http://purl.org/goodrelations/v1#QualitativeValue",
+        "http://purl.org/goodrelations/v1#QuantitativeValue",
+        "http://purl.org/goodrelations/v1#QuantitativeValueFloat",
+        "http://purl.org/goodrelations/v1#QuantitativeValueInteger",
+        "http://purl.org/goodrelations/v1#SomeItems",
+        "http://purl.org/goodrelations/v1#TypeAndQuantityNode",
+        "http://purl.org/goodrelations/v1#UnitPriceSpecification",
+        "http://purl.org/goodrelations/v1#WarrantyPromise",
+        "http://purl.org/goodrelations/v1#WarrantyScope"
       ]
     },
     "http://purl.org/goodrelations/v1#hasWarrantyPromise": {
@@ -802,7 +927,8 @@
         "http://purl.org/goodrelations/v1#WarrantyPromise"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#hasGTIN-14": {
@@ -812,7 +938,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasCurrencyValue": {
@@ -862,7 +990,9 @@
         "http://purl.org/goodrelations/v1#ProductOrServiceModel"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Individual\", \"http://purl.org/goodrelations/v1#SomeItems\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Individual",
+        "http://purl.org/goodrelations/v1#SomeItems",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#valueAddedTaxIncluded": {
@@ -882,7 +1012,8 @@
         "http://purl.org/goodrelations/v1#PaymentMethod"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#hasBusinessFunction": {
@@ -892,7 +1023,9 @@
         "http://purl.org/goodrelations/v1#BusinessFunction"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#TypeAndQuantityNode",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#hasWarrantyScope": {
@@ -912,7 +1045,8 @@
         "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#includesObject": {
@@ -922,7 +1056,8 @@
         "http://purl.org/goodrelations/v1#TypeAndQuantityNode"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#hasEAN_UCC-13": {
@@ -932,7 +1067,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#equal": {
@@ -952,7 +1089,8 @@
         "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#width": {
@@ -962,7 +1100,8 @@
         "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#hasEligibleQuantity": {
@@ -972,7 +1111,9 @@
         "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#PriceSpecification\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#PriceSpecification",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#eligibleDuration": {
@@ -982,7 +1123,9 @@
         "http://purl.org/goodrelations/v1#QuantitativeValue"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#License\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#License",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#nonEqual": {
@@ -1002,7 +1145,9 @@
         "http://www.w3.org/2000/01/rdf-schema#Literal"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://purl.org/goodrelations/v1#ProductOrService\", \"http://schema.org/Product\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://purl.org/goodrelations/v1#ProductOrService",
+        "http://schema.org/Product"
       ]
     },
     "http://purl.org/goodrelations/v1#appliesToDeliveryMethod": {
@@ -1022,7 +1167,9 @@
         "http://purl.org/goodrelations/v1#Individual"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\", \"http://schema.org/Person\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization",
+        "http://schema.org/Person"
       ]
     },
     "http://purl.org/goodrelations/v1#hasUnitOfMeasurement": {
@@ -1032,7 +1179,9 @@
         "http://www.w3.org/2001/XMLSchema#string"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#QuantitativeValue\", \"http://purl.org/goodrelations/v1#TypeAndQuantityNode\", \"http://purl.org/goodrelations/v1#UnitPriceSpecification\"]"
+        "http://purl.org/goodrelations/v1#QuantitativeValue",
+        "http://purl.org/goodrelations/v1#TypeAndQuantityNode",
+        "http://purl.org/goodrelations/v1#UnitPriceSpecification"
       ]
     },
     "http://purl.org/goodrelations/v1#offers": {
@@ -1042,7 +1191,8 @@
         "http://purl.org/goodrelations/v1#Offering"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#BusinessEntity\", \"http://schema.org/Organization\"]"
+        "http://purl.org/goodrelations/v1#BusinessEntity",
+        "http://schema.org/Organization"
       ]
     },
     "http://purl.org/goodrelations/v1#addOn": {
@@ -1052,7 +1202,8 @@
         "http://purl.org/goodrelations/v1#Offering"
       ],
       "domainIncludes": [
-        "[\"http://purl.org/goodrelations/v1#Offering\", \"http://schema.org/Offer\"]"
+        "http://purl.org/goodrelations/v1#Offering",
+        "http://schema.org/Offer"
       ]
     },
     "http://purl.org/goodrelations/v1#lesser": {
