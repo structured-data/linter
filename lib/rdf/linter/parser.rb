@@ -36,9 +36,6 @@ module RDF::Linter
       else
         {reader.class => graph.size }
       end
-      
-      # Perform some actual linting on the graph
-      @lint_messages = lint(graph)
 
       # Special case for Facebook OGP. Facebook (apparently) doesn't believe in rdf:type,
       # so we look for statements with predicate og:type with a literal object and create
@@ -60,6 +57,9 @@ module RDF::Linter
           graph << s
         end
       end
+
+      # Perform some actual linting on the graph
+      @lint_messages = lint(graph)
 
       writer_opts = reader_opts.dup
       writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
@@ -106,7 +106,7 @@ module RDF::Linter
         cls = st.object.to_s
         curie = get_curie(cls)
         unless VOCAB_DEFS["Classes"][cls]
-          next unless curie
+          next unless curie && %w(rdf: rdfs:).none?{|p| curie.start_with?(p)}
           (messages[:class] ||= {})[curie] = ["No class definition found"]
         end
       end
@@ -116,12 +116,13 @@ module RDF::Linter
         prop = stmt.predicate.to_s
         curie = get_curie(prop)
         unless (defn = VOCAB_DEFS["Properties"][prop])
-          ((messages[:property] ||= {})[curie] ||= []) << "No property definition found" if curie
+          ((messages[:property] ||= {})[curie] ||= []) << "No property definition found" if curie && %w(rdf: rdfs:).none?{|p| curie.start_with?(p)}
           next
         end
 
         # Make sure that if domains are defined, the subject has an appropriate type
-        if (domains = Array(defn["domainIncludes"] || defn["domain"])).length >= 1
+        domains = Array(defn["domainIncludes"] || defn["domain"]) - [RDF::OWL.Thing.to_s]
+        if domains.length >= 1
           types = graph.query(:subject => stmt.subject, :predicate => RDF.type).map(&:object)
           unless domains.any? {|d| types.include?(d)}
             ((messages[:property] ||= {})[curie] ||= []) <<
@@ -130,7 +131,8 @@ module RDF::Linter
         end
 
         # Make sure that if ranges are defined, the object has an appropriate type
-        if (ranges = Array(defn["rangeIncludes"] || defn["range"])).length >= 1
+        ranges = Array(defn["rangeIncludes"] || defn["range"]) - [RDF::OWL.Thing.to_s]
+        if ranges.length >= 1
           any_okay = if stmt.object.literal?
             ranges.any? do |range|
               case RDF::URI(range)
@@ -148,6 +150,12 @@ module RDF::Linter
                 stmt.object.datatype == RDF::SCHEMA.DateTime ||
                 stmt.object.is_a?(RDF::Literal::DateTime) ||
                 stmt.object.simple? && RDF::Literal::DateTime.new(stmt.object.value).valid?
+              when RDF::SCHEMA.Duration
+                value = stmt.object.value
+                value = "P#{value}" unless value.start_with?("P")
+                stmt.object.datatype == RDF::SCHEMA.Duration ||
+                stmt.object.is_a?(RDF::Literal::Duration) ||
+                stmt.object.simple? && RDF::Literal::Duration.new(value).valid?
               when RDF::SCHEMA.Time
                 stmt.object.datatype == RDF::SCHEMA.Time ||
                 stmt.object.is_a?(RDF::Literal::Time) ||
@@ -187,8 +195,10 @@ module RDF::Linter
           elsif %w(True False).map {|v| RDF::SCHEMA.to_uri + v}.include?(stmt.object) && ranges.include?(RDF::SCHEMA.Boolean)
             true # Special case for schema boolean resources
           else # Object is a resource
-            types = graph.query(:subject => stmt.object, :predicate => RDF.type).map(&:object)
-            ranges.any? {|d| types.include?(d)}
+            # If object is also a subject, it must have appropriate types defined
+            statements = graph.query(:subject => stmt.object).to_a
+            types = statements.select {|s| s.predicate == RDF.type}.map(&:object)
+            statements.empty? || ranges.any? {|d| types.include?(d)}
           end
           unless any_okay
             ((messages[:property] ||= {})[curie] ||= []) <<
@@ -197,13 +207,16 @@ module RDF::Linter
         end
       end
 
+      messages[:class].each {|k, v| messages[:class][k] = v.uniq} if messages[:class]
+      messages[:property].each {|k, v| messages[:property][k] = v.uniq} if messages[:property]
       messages
     end
     module_function :lint
 
     private
+    EXPANDED_DEFS = VOCAB_DEFS["Vocabularies"].merge("rdf" => RDF.to_uri.to_s, "rdfs" => RDF::RDFS.to_uri.to_s)
     def get_curie(uri)
-      pfx, v_uri = VOCAB_DEFS["Vocabularies"].detect {|k, v| uri.to_s.start_with?(v)}
+      pfx, v_uri = EXPANDED_DEFS.detect {|k, v| uri.to_s.start_with?(v)}
       return nil unless pfx
       uri.to_s.sub(v_uri, "#{pfx}:")
     end

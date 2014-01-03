@@ -213,4 +213,115 @@ describe RDF::Linter, "#lint" do
       end
     end
   end
+
+  shared_examples "Test Case" do |input, expected_errors|
+    context File.basename(input) do
+      it "has no linter errors" do
+        graph = RDF::Graph.load(input)
+        graph.query(:predicate => RDF.type) do |statement|
+          s = statement.dup
+          RDF::Linter::Parser.entailed_types(statement.object).each do |t|
+            s.object = t
+            graph << s
+          end
+        end
+        expect(RDF::Linter::Parser.lint(graph)).to eq expected_errors
+      end
+    end
+  end
+
+  context "Rich Snippets examples" do
+    Dir.glob(File.join(EXAMPLE_DIR, "*.html")) do |input|
+      file = input.split('/').last
+      expected_errors = {
+        "aggregate-reviews.rdfa.html" => {
+          :property => {
+            "v:votes"=>["No property definition found"]
+          }
+        },
+        "event-multiple.rdfa.html" => {
+          :class => {
+            "v:Geo"=>["No class definition found"],
+            "v:Event"=>["No class definition found"]
+          },
+          :property => {
+            "v:geo"=>["No property definition found"],
+            "v:latitude"=>["No property definition found"],
+            "v:longitude"=>["No property definition found"],
+            "v:url"=>["Subject must have some type defined as domain (v:Person,v:Organization,v:Product,v:Breadcrumb)"],
+            "v:summary"=>["Subject must have some type defined as domain (v:Review,v:Recipe)"],
+            "v:photo"=>["Subject must have some type defined as domain (rdf:Resource)"],
+            "v:startDate"=>["No property definition found"]
+          }
+        },
+        "event.rdfa.html" => {
+          :class=>{
+            "v:Event"=>["No class definition found"],
+            "v:Geo"=>["No class definition found"]
+          },
+          :property=>{
+            "v:url"=>["Subject must have some type defined as domain (v:Person,v:Organization,v:Product,v:Breadcrumb)"],
+            "v:summary"=>["Subject must have some type defined as domain (v:Review,v:Recipe)"],
+            "v:photo"=>["Subject must have some type defined as domain (rdf:Resource)"],
+            "v:description"=>["Subject must have some type defined as domain (v:Review,v:Product)"],
+            "v:startDate"=>["No property definition found"],
+            "v:endDate"=>["No property definition found"],
+            "v:location"=>["No property definition found"],
+            "v:eventType"=>["No property definition found"],
+            "v:ticket"=>["No property definition found"],
+            "v:geo"=>["No property definition found"],
+            "v:latitude"=>["No property definition found"],
+            "v:longitude"=>["No property definition found"]
+          }
+        },
+        "offer-aggregate.rdfa.html" => {
+          :class=>{
+            "v:Offer-aggregate"=>["No class definition found"]
+          },
+          :property=>{
+            "v:review"=>["No property definition found"],
+            "v:offerDetails"=>["No property definition found"],
+            "v:lowPrice"=>["No property definition found"],
+            "v:highPrice"=>["No property definition found"],
+            "v:currency"=>["Subject must have some type defined as domain (v:Offer,v:OfferAggregate)"]
+          }
+        },
+        "organization.rdfa.html" => {
+          :class=>{
+            "v:Geo"=>["No class definition found"]
+          },
+          :property=>{
+            "v:geo"=>["No property definition found"],
+            "v:latitude"=>["No property definition found"],
+            "v:longitude"=>["No property definition found"]
+          }
+        },
+        "product.rdfa.html" => {
+          :property=>{
+            "v:review"=>["No property definition found"],
+            "v:offerDetails"=>["No property definition found"],
+            "v:priceValidUntil"=>["No property definition found"]
+          }
+        },
+        "recipe.rdfa.html" => {
+          :class=>{
+            "v:Nutrition"=>["No class definition found"],
+            "v:Ingredient"=>["No class definition found"]
+          },
+          :property=>{
+            "v:review"=>["No property definition found"],
+            "v:nutrition"=>["No property definition found"],
+            "v:ingredient"=>["No property definition found"],
+            "v:instructions"=>["No property definition found"],
+            "v:servingSize"=>["Subject must have some type defined as domain (v:nutrition)"],
+            "v:calories"=>["Subject must have some type defined as domain (v:nutrition)"],
+            "v:fat"=>["Subject must have some type defined as domain (v:nutrition)"],
+            "v:name"=>["Subject must have some type defined as domain (rdf:Resource)"],
+            "v:amount"=>["Subject must have some type defined as domain (v:ingredient)"]
+          }
+        }
+      }[file]
+      it_behaves_like "Test Case", input, expected_errors || {}
+    end
+  end
 end
