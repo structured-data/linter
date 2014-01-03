@@ -9,6 +9,12 @@ module RDF::Linter
       :photo_props => ["http://schema.org/image"],
       # Properties to be used in snippet body
       :body_props => [
+        "http://schema.org/byArtist",
+        "http://schema.org/inAlbum",
+        "http://schema.org/inPlaylist",
+        "http://schema.org/aggregateRating",
+        "http://schema.org/review",
+        "http://schema.org/reviews",
         "http://schema.org/duration",
         "http://schema.org/playCount",
       ],
