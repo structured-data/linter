@@ -63,7 +63,6 @@ module RDF::Linter
 
       writer_opts = reader_opts.dup
       writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
-      writer_opts[:prefixes][:ogt] = "http://types.ogp.me/ns#"
       writer_opts[:debug] ||= [] if $logger.level <= Logger::DEBUG
 
       # Move elements with class `snippet` to the front of the root element

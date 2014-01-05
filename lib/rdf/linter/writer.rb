@@ -12,7 +12,7 @@ module RDF::Linter
         :standard_prefixes => true,
         :haml => LINTER_HAML,
         :matched_templates => [],
-        :prefixes => {},
+        :prefixes => RDF::Linter::Parser::VOCAB_DEFS["Vocabularies"],
       }.merge(options)
       options[:prefixes].delete(:dcterms) if options[:prefixes].has_key?(:dc)
       super do
@@ -25,7 +25,11 @@ module RDF::Linter
     #
     # `turtle` is entity-escaped Turtle serialization of graph
     def render_document(subjects, options = {})
-      super(subjects, options.merge(:extracted => graph.dump(:rdfa, :haml => RDF::Linter::TABULAR_HAML))) do |subject|
+      require 'byebug'; byebug
+      super(subjects, options.merge(:extracted => graph.dump(:rdfa,
+                      :haml => RDF::Linter::TABULAR_HAML,
+                      :prefixes => RDF::Linter::Parser::VOCAB_DEFS["Vocabularies"],
+                      :standard_prefixes => true))) do |subject|
         yield(subject) if block_given?
       end
     end
