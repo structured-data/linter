@@ -25,7 +25,6 @@ module RDF::Linter
     #
     # `turtle` is entity-escaped Turtle serialization of graph
     def render_document(subjects, options = {})
-      require 'byebug'; byebug
       super(subjects, options.merge(:extracted => graph.dump(:rdfa,
                       :haml => RDF::Linter::TABULAR_HAML,
                       :prefixes => RDF::Linter::Parser::VOCAB_DEFS["Vocabularies"],
