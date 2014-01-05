@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:xsd ="http://www.w3.org/2001/XMLSchema#"
+   xml:base="http://rdf.data-vocabulary.org/">
+
+<!-- see http://rdf.data-vocabulary.org/ChangeLog for a record of
+     high-level changes to this file.  Please send further comments to
+     othar<AT>google.com: thanks! -->
+
+<!-- main classes -->
+
+<rdfs:Class rdf:ID="Person">
+  <rdfs:comment>Represents a Person, living/dead/fictional.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Organization">
+  <rdfs:comment>An Organization is a business, agency, school, etc.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Product">
+  <rdfs:comment>Represents a product or service in a Review or Review-aggregate.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Offer">
+  <rdfs:comment>Represents an offer to sell a product.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="OfferAggregate">
+  <rdfs:comment>
+    Represents a collection of offers to sell a product.
+  </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Review">
+  <rdfs:comment>A single instance of a Review.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Review-aggregate">
+  <rdfs:comment>Represents data from a collection of reviews.
+    Can be used whether or not there is instance-level Review data on the page.
+  </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="#Review"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Recipe">
+  <rdfs:comment>A single instance of a Recipe.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Breadcrumb">
+  <rdfs:comment>Represents a single Breadcrumb in a Breadcrumb trail.
+  </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<!-- subsidiary classes for nested data -->
+
+<rdfs:Class rdf:ID="Address">
+  <rdfs:comment>Postal address for a Person or Organization.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="Rating">
+  <rdfs:comment>Represents a rating in a Review or Review-aggregate.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="timeRange">
+  <rdfs:comment>Represents the length of time it takes to prepare a recipe.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+  <rdfs:domain rdf:resource="#Recipe"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="nutrition">
+  <rdfs:comment>Represents the nutrition information about a recipe.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+  <rdfs:domain rdf:resource="#Recipe"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="instructions">
+  <rdfs:comment>Represents the steps to make a dish.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+  <rdfs:domain rdf:resource="#Recipe"/>
+</rdfs:Class>
+
+<rdfs:Class rdf:ID="ingredient">
+  <rdfs:comment>Represents ingredients used in a recipe.</rdfs:comment>
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+  <rdfs:domain rdf:resource="#Recipe"/>
+</rdfs:Class>
+
+<!-- Properties of the main classes.
+     Each has a single-class domain (i.e., the class it is a property
+     of) or an owl:unionOf to express that the same property applies
+     to multiple classes. -->
+
+<rdf:Property rdf:ID="address"> 
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Person"/>
+	<owl:Class rdf:about="#Organization"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="#Address"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="affiliation">
+  <rdfs:comment>An affiliation can be specified by a string literal or an Organization instance.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Person"/>
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Organization"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<rdf:Property rdf:ID="brand">
+  <rdfs:domain rdf:resource="#Product"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="category">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Organization"/>
+	<owl:Class rdf:about="#Product"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="count">
+  <rdfs:comment>The total number of items used in an aggregate (e.g., number of reviews).</rdfs:comment>
+  <rdfs:domain rdf:resource="#Review-aggregate"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="description">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Review"/>
+	<owl:Class rdf:about="#Product"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="dtreviewed">
+  <rdfs:comment>The date of the review.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Review"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="itemreviewed">
+  <rdfs:domain rdf:resource="#Review"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="name">
+  <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="nickname">
+  <rdfs:domain rdf:resource="#Person"/>
+</rdf:Property>
+ 
+<rdf:Property rdf:ID="photo"> 
+  <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Resource"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="image">
+  <rdfs:domain rdf:resource="#Product"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="price">
+  <rdfs:domain rdf:resource="#Offer"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="offerdetails">
+  <rdfs:domain rdf:resource="#Product"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="currency">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Offer"/>
+	<owl:Class rdf:about="#OfferAggregate"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="pricevaliduntil">
+  <rdfs:domain rdf:resource="#Offer"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="seller">
+  <rdfs:domain rdf:resource="#Offer"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="condition">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Offer"/>
+	<owl:Class rdf:about="#OfferAggregate"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="availability">
+  <rdfs:domain rdf:resource="#Offer"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="offerurl">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Offer"/>
+	<owl:Class rdf:about="#OfferAggregate"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="identifier">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Product"/>
+	<owl:Class rdf:about="#Offer"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="quantity">
+  <rdfs:domain rdf:resource="#Offer"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="itemoffered">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Offer"/>
+	<owl:Class rdf:about="#OfferAggregate"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="lowprice">
+  <rdfs:domain rdf:resource="#OfferAggregate"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="highprice">
+  <rdfs:domain rdf:resource="#OfferAggregate"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="offercount">
+  <rdfs:domain rdf:resource="#OfferAggregate"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="pricerange">
+  <rdfs:comment>The price range of products and services offered
+    by a restaurant, business or other organization.
+  </rdfs:comment>
+  <rdfs:domain rdf:resource="#Organization"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="rating">
+  <rdfs:comment>A rating can be specified by a string literal or a Rating instance.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Review"/> 
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Rating"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<rdf:Property rdf:ID="reviewer">
+  <rdfs:comment>A reviewer can be specified by a string literal or a Person instance.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Review"/> 
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Person"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<rdf:Property rdf:ID="role">
+  <rdfs:domain rdf:resource="#Person"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="summary">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Review"/>
+	<owl:Class rdf:about="#Recipe"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="tel">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Person"/>
+	<owl:Class rdf:about="#Organization"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="title">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="#Person"/>
+      <owl:Class rdf:about="#Breadcrumb"/>
+    </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+
+<rdf:Property rdf:ID="url">
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Person"/>
+	<owl:Class rdf:about="#Organization"/>
+	<owl:Class rdf:about="#Product"/>
+        <owl:Class rdf:about="#Breadcrumb"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+</rdf:Property>
+ 
+<rdf:Property rdf:ID="child">
+  <rdfs:domain rdf:resource="#Breadcrumb"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="friend">
+  <rdfs:domain rdf:resource="#Person"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="colleague">
+  <rdfs:domain rdf:resource="#Person"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="contact">
+  <rdfs:domain rdf:resource="#Person"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="acquaintance">
+  <rdfs:domain rdf:resource="#Person"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="recipeType">
+  <rdfs:domain rdf:resource="#Recipe"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="tag">
+  <rdfs:domain rdf:resource="#Recipe"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="published">
+  <rdfs:domain rdf:resource="#Recipe"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="prepTime">
+  <rdfs:domain rdf:resource="#Recipe"/> 
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#timeRange"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<rdf:Property rdf:ID="cookTime">
+  <rdfs:domain rdf:resource="#Recipe"/> 
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#timeRange"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<rdf:Property rdf:ID="totalTime">
+  <rdfs:domain rdf:resource="#Recipe"/> 
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#timeRange"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<rdf:Property rdf:ID="duration">
+  <rdfs:domain rdf:resource="#Recipe"/> 
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#timeRange"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<rdf:Property rdf:ID="yield">
+  <rdfs:domain rdf:resource="#Recipe"/> 
+</rdf:Property>
+
+<rdf:Property rdf:ID="author">
+  <rdfs:comment>An author of the recipe can be specified by a string literal or a Person instance.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Recipe"/> 
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+	<owl:Class rdf:about="#Person"/>
+	<owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</rdf:Property>
+
+<!-- Properties of the subsidiary classes
+     (Rating, Address, duration, nutrition, instructions, and ingredient).
+-->
+
+<rdf:Property rdf:ID="average">
+  <rdfs:comment>The average of an aggregate value.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rating"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="value">
+  <rdfs:comment>The value of a single Rating.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rating"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="min">
+  <rdfs:comment>The minimum value of an aggregated Rating.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rating"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="max">
+  <rdfs:comment>The maximum value of an aggregated Rating.</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rating"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="best">
+  <rdfs:comment>The best value of a rating scale (default 5).</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rating"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="worst">
+  <rdfs:comment>The poorest value of a rating scale (default 1).</rdfs:comment>
+  <rdfs:domain rdf:resource="#Rating"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="postal-code"> 
+  <rdfs:domain rdf:resource="#Address"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="street-address"> 
+  <rdfs:domain rdf:resource="#Address"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="locality"> 
+  <rdfs:domain rdf:resource="#Address"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="region"> 
+  <rdfs:domain rdf:resource="#Address"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="country-name"> 
+  <rdfs:domain rdf:resource="#Address"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="min"> 
+  <rdfs:domain rdf:resource="#timeRange"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="max"> 
+  <rdfs:domain rdf:resource="#timeRange"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="servingSize"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="calories"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="fat"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="saturatedFat"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="unsaturatedFat"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="carbohydrates"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="sugar"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="fiber"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="protein"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="cholesterol"> 
+  <rdfs:domain rdf:resource="#nutrition"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="instruction"> 
+  <rdfs:domain rdf:resource="#instructions"/>
+</rdf:Property>
+
+<rdf:Property rdf:ID="amount"> 
+  <rdfs:domain rdf:resource="#ingredient"/>
+</rdf:Property>
+
+</rdf:RDF>
