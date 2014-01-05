@@ -51,7 +51,8 @@ namespace :vocab do
     s: {prefix: "schema", uri: "http://schema.org/", location: "http://schema.org/docs/schema_org_rdfa.html"},
     sioc: {uri: "http://rdfs.org/sioc/ns#"},
     skos: {uri: "http://www.w3.org/2004/02/skos/core#"},
-    v: {uri: "http://rdf.data-vocabulary.org/#", location: "tmp/v.rdf"},
+    v: {uri: "http://rdf.data-vocabulary.org/#", location: "local_vocabs/v.rdf"},
+    vcard: {uri: "http://www.w3.org/2006/vcard/ns#"},
     xsd: {uri: "http://www.w3.org/2001/XMLSchema#", location: "http://groups.csail.mit.edu/mac/projects/tami/amord/xsd.ttl"}
   }
 

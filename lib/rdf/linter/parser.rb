@@ -69,8 +69,6 @@ module RDF::Linter
             defn = VOCAB_DEFS["Properties"].fetch(prop, {})
             ranges = Array(defn["range"] || defn["rangeIncludes"]) - [RDF::OWL.Thing.to_s]
             next if ranges.length != 1 || VOCAB_DEFS["Classes"].has_key?(ranges.first)
-            # Exclude known datatypes which are represented as classes
-            next if %w(Boolean Date DateTime Time Text Integer Float Number URL).any? {|t| ranges.first.end_with?(t)}
             types << RDF::URI(ranges.first) 
           end
         end

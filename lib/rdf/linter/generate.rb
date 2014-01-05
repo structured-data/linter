@@ -45,6 +45,20 @@ module RDF::Linter
         when RDF::RDFS.Datatype then "Datatypes"
         else next
         end
+        # Special-case schema.org datatypes, which are defined as classes
+        case soln.subject
+        when RDF::SCHEMA.Boolean,
+             RDF::SCHEMA.Date,
+             RDF::SCHEMA.DateTime,
+             RDF::SCHEMA.Duration,
+             RDF::SCHEMA.Float,
+             RDF::SCHEMA.Integer,
+             RDF::SCHEMA.Number,
+             RDF::SCHEMA.Text,
+             RDF::SCHEMA.Time,
+             RDF::SCHEMA.URL
+          section = "Datatypes"
+        end
         # Special-case for owl:unionOf
         d = (defs[section][soln.subject] ||= {:vocab => prefix, :label => (soln[:label] || soln.subject.to_s.split(/[\/#]/).last)})
         soln.each do |name, value|

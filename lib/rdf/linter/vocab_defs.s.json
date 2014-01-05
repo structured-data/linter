@@ -483,13 +483,6 @@
       "vocab": "schema",
       "label": "DataType"
     },
-    "http://schema.org/Boolean": {
-      "vocab": "schema",
-      "label": "Boolean",
-      "superClass": [
-        "http://schema.org/DataType"
-      ]
-    },
     "http://schema.org/SportsActivityLocation": {
       "vocab": "schema",
       "label": "SportsActivityLocation",
@@ -805,20 +798,6 @@
         "http://schema.org/PerformingGroup"
       ]
     },
-    "http://schema.org/Date": {
-      "vocab": "schema",
-      "label": "Date",
-      "superClass": [
-        "http://schema.org/DataType"
-      ]
-    },
-    "http://schema.org/DateTime": {
-      "vocab": "schema",
-      "label": "DateTime",
-      "superClass": [
-        "http://schema.org/DataType"
-      ]
-    },
     "http://schema.org/DaySpa": {
       "vocab": "schema",
       "label": "DaySpa",
@@ -997,13 +976,6 @@
         "http://schema.org/LocalBusiness"
       ]
     },
-    "http://schema.org/Duration": {
-      "vocab": "schema",
-      "label": "Duration",
-      "superClass": [
-        "http://schema.org/Quantity"
-      ]
-    },
     "http://schema.org/EducationEvent": {
       "vocab": "schema",
       "label": "EducationEvent",
@@ -1117,20 +1089,6 @@
       "superClass": [
         "http://schema.org/CivicStructure",
         "http://schema.org/EmergencyService"
-      ]
-    },
-    "http://schema.org/Number": {
-      "vocab": "schema",
-      "label": "Number",
-      "superClass": [
-        "http://schema.org/DataType"
-      ]
-    },
-    "http://schema.org/Float": {
-      "vocab": "schema",
-      "label": "Float",
-      "superClass": [
-        "http://schema.org/Number"
       ]
     },
     "http://schema.org/Florist": {
@@ -1367,13 +1325,6 @@
       "label": "InsuranceAgency",
       "superClass": [
         "http://schema.org/FinancialService"
-      ]
-    },
-    "http://schema.org/Integer": {
-      "vocab": "schema",
-      "label": "Integer",
-      "superClass": [
-        "http://schema.org/Number"
       ]
     },
     "http://schema.org/InternetCafe": {
@@ -2536,13 +2487,6 @@
         "http://schema.org/SportsActivityLocation"
       ]
     },
-    "http://schema.org/Text": {
-      "vocab": "schema",
-      "label": "Text",
-      "superClass": [
-        "http://schema.org/DataType"
-      ]
-    },
     "http://schema.org/TheaterEvent": {
       "vocab": "schema",
       "label": "TheaterEvent",
@@ -2563,13 +2507,6 @@
       "superClass": [
         "http://schema.org/MedicalProcedure",
         "http://schema.org/MedicalTherapy"
-      ]
-    },
-    "http://schema.org/Time": {
-      "vocab": "schema",
-      "label": "Time",
-      "superClass": [
-        "http://schema.org/DataType"
       ]
     },
     "http://schema.org/TireShop": {
@@ -2619,13 +2556,6 @@
       "label": "TreatmentIndication",
       "superClass": [
         "http://schema.org/MedicalIndication"
-      ]
-    },
-    "http://schema.org/URL": {
-      "vocab": "schema",
-      "label": "URL",
-      "superClass": [
-        "http://schema.org/Text"
       ]
     },
     "http://schema.org/UserInteraction": {
@@ -11414,6 +11344,78 @@
       ],
       "rangeIncludes": [
         "http://schema.org/QuantitativeValue"
+      ]
+    }
+  },
+  "Datatypes": {
+    "http://schema.org/Boolean": {
+      "vocab": "schema",
+      "label": "Boolean",
+      "superClass": [
+        "http://schema.org/DataType"
+      ]
+    },
+    "http://schema.org/Date": {
+      "vocab": "schema",
+      "label": "Date",
+      "superClass": [
+        "http://schema.org/DataType"
+      ]
+    },
+    "http://schema.org/DateTime": {
+      "vocab": "schema",
+      "label": "DateTime",
+      "superClass": [
+        "http://schema.org/DataType"
+      ]
+    },
+    "http://schema.org/Duration": {
+      "vocab": "schema",
+      "label": "Duration",
+      "superClass": [
+        "http://schema.org/Quantity"
+      ]
+    },
+    "http://schema.org/Number": {
+      "vocab": "schema",
+      "label": "Number",
+      "superClass": [
+        "http://schema.org/DataType"
+      ]
+    },
+    "http://schema.org/Float": {
+      "vocab": "schema",
+      "label": "Float",
+      "superClass": [
+        "http://schema.org/Number"
+      ]
+    },
+    "http://schema.org/Integer": {
+      "vocab": "schema",
+      "label": "Integer",
+      "superClass": [
+        "http://schema.org/Number"
+      ]
+    },
+    "http://schema.org/Text": {
+      "vocab": "schema",
+      "label": "Text",
+      "superClass": [
+        "http://schema.org/DataType"
+      ]
+    },
+    "http://schema.org/Time": {
+      "vocab": "schema",
+      "label": "Time",
+      "superClass": [
+        "http://schema.org/DataType"
+      ]
+    },
+    "http://schema.org/URL": {
+      "vocab": "schema",
+      "label": "URL",
+      "superClass": [
+        "http://schema.org/Text"
       ]
     }
   }
