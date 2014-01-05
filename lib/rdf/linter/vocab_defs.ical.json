@@ -1,0 +1,600 @@
+{
+  "Vocabularies": {
+    "ical": "http://www.w3.org/2002/12/cal/ical#"
+  },
+  "Classes": {
+    "http://www.w3.org/2002/12/cal/ical#Vevent": {
+      "vocab": "ical",
+      "label": "VEVENT"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Vtodo": {
+      "vocab": "ical",
+      "label": "VTODO"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Vjournal": {
+      "vocab": "ical",
+      "label": "VJOURNAL"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Vfreebusy": {
+      "vocab": "ical",
+      "label": "VFREEBUSY"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Vtimezone": {
+      "vocab": "ical",
+      "label": "VTIMEZONE"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Valarm": {
+      "vocab": "ical",
+      "label": "VALARM"
+    },
+    "http://www.w3.org/2002/12/cal/ical#List_of_Float": {
+      "vocab": "ical",
+      "label": "List_of_Float"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME": {
+      "vocab": "ical",
+      "label": "Value_DATE-TIME"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Value_DATE": {
+      "vocab": "ical",
+      "label": "Value_DATE"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Value_DURATION": {
+      "vocab": "ical",
+      "label": "Value_DURATION"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Value_PERIOD": {
+      "vocab": "ical",
+      "label": "Value_PERIOD"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS": {
+      "vocab": "ical",
+      "label": "Value_CAL-ADDRESS"
+    },
+    "http://www.w3.org/2002/12/cal/ical#DomainOf_rrule": {
+      "vocab": "ical",
+      "label": "DomainOf_rrule"
+    },
+    "http://www.w3.org/2002/12/cal/ical#Value_RECUR": {
+      "vocab": "ical",
+      "label": "Value_RECUR"
+    }
+  },
+  "Properties": {
+    "http://www.w3.org/2002/12/cal/ical#calscale": {
+      "vocab": "ical",
+      "label": "CALSCALE",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#method": {
+      "vocab": "ical",
+      "label": "METHOD",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#prodid": {
+      "vocab": "ical",
+      "label": "PRODID",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#version": {
+      "vocab": "ical",
+      "label": "VERSION",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#attach": {
+      "vocab": "ical",
+      "label": "ATTACH",
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Valarm"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#categories": {
+      "vocab": "ical",
+      "label": "CATEGORIES",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#class": {
+      "vocab": "ical",
+      "label": "CLASS",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#comment": {
+      "vocab": "ical",
+      "label": "COMMENT",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#description": {
+      "vocab": "ical",
+      "label": "DESCRIPTION",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Valarm"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#geo": {
+      "vocab": "ical",
+      "label": "GEO",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#List_of_Float"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#location": {
+      "vocab": "ical",
+      "label": "LOCATION",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#percentComplete": {
+      "vocab": "ical",
+      "label": "PERCENT-COMPLETE",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#priority": {
+      "vocab": "ical",
+      "label": "PRIORITY",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#resources": {
+      "vocab": "ical",
+      "label": "RESOURCES",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#status": {
+      "vocab": "ical",
+      "label": "STATUS",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#summary": {
+      "vocab": "ical",
+      "label": "SUMMARY",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Valarm"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#completed": {
+      "vocab": "ical",
+      "label": "COMPLETED",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ],
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#dtend": {
+      "vocab": "ical",
+      "label": "DTEND",
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ],
+      "rangeIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME",
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#due": {
+      "vocab": "ical",
+      "label": "DUE",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ],
+      "rangeIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME",
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#dtstart": {
+      "vocab": "ical",
+      "label": "DTSTART",
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy",
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ],
+      "rangeIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME",
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#duration": {
+      "vocab": "ical",
+      "label": "DURATION",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DURATION"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy",
+        "http://www.w3.org/2002/12/cal/ical#Valarm"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#freebusy": {
+      "vocab": "ical",
+      "label": "FREEBUSY",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_PERIOD"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#transp": {
+      "vocab": "ical",
+      "label": "TRANSP",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#tzid": {
+      "vocab": "ical",
+      "label": "TZID",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#tzname": {
+      "vocab": "ical",
+      "label": "TZNAME",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#tzoffsetfrom": {
+      "vocab": "ical",
+      "label": "TZOFFSETFROM",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#tzoffsetto": {
+      "vocab": "ical",
+      "label": "TZOFFSETTO",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#tzurl": {
+      "vocab": "ical",
+      "label": "TZURL",
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#attendee": {
+      "vocab": "ical",
+      "label": "ATTENDEE",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Valarm",
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#contact": {
+      "vocab": "ical",
+      "label": "CONTACT",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#organizer": {
+      "vocab": "ical",
+      "label": "ORGANIZER",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#recurrenceId": {
+      "vocab": "ical",
+      "label": "RECURRENCE-ID",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#DomainOf_rrule"
+      ],
+      "rangeIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME",
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#relatedTo": {
+      "vocab": "ical",
+      "label": "RELATED-TO",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#url": {
+      "vocab": "ical",
+      "label": "URL",
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#uid": {
+      "vocab": "ical",
+      "label": "UID",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#exdate": {
+      "vocab": "ical",
+      "label": "EXDATE",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#DomainOf_rrule"
+      ],
+      "rangeIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME",
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#exrule": {
+      "vocab": "ical",
+      "label": "EXRULE",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_RECUR"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#rdate": {
+      "vocab": "ical",
+      "label": "RDATE",
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ],
+      "rangeIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME",
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE",
+        "http://www.w3.org/2002/12/cal/ical#Value_PERIOD"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#rrule": {
+      "vocab": "ical",
+      "label": "RRULE",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_RECUR"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#action": {
+      "vocab": "ical",
+      "label": "ACTION",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Valarm"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#repeat": {
+      "vocab": "ical",
+      "label": "REPEAT",
+      "domain": [
+        "http://www.w3.org/2002/12/cal/ical#Valarm"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#trigger": {
+      "vocab": "ical",
+      "label": "TRIGGER",
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Valarm",
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo"
+      ],
+      "rangeIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DURATION",
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#created": {
+      "vocab": "ical",
+      "label": "CREATED",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#dtstamp": {
+      "vocab": "ical",
+      "label": "DTSTAMP",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#lastModified": {
+      "vocab": "ical",
+      "label": "LAST-MODIFIED",
+      "range": [
+        "http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vtimezone"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#sequence": {
+      "vocab": "ical",
+      "label": "SEQUENCE",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#X-": {
+      "vocab": "ical",
+      "label": "Any property name with a \"X-\" prefix",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/2002/12/cal/ical#requestStatus": {
+      "vocab": "ical",
+      "label": "REQUEST-STATUS",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ],
+      "domainIncludes": [
+        "http://www.w3.org/2002/12/cal/ical#Vevent",
+        "http://www.w3.org/2002/12/cal/ical#Vtodo",
+        "http://www.w3.org/2002/12/cal/ical#Vjournal",
+        "http://www.w3.org/2002/12/cal/ical#Vfreebusy"
+      ]
+    }
+  }
+}

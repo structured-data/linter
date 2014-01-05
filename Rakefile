@@ -46,6 +46,7 @@ namespace :vocab do
     dc: {uri: "http://purl.org/dc/terms/"},
     foaf: {uri: "http://xmlns.com/foaf/0.1/"},
     gr: {uri: "http://purl.org/goodrelations/v1#", location: "http://www.heppnetz.de/ontologies/goodrelations/v1.owl"},
+    ical: {uri: "http://www.w3.org/2002/12/cal/ical#"},
     ogp: {uri: "http://ogp.me/ns#"},
     s: {prefix: "schema", uri: "http://schema.org/", location: "http://schema.org/docs/schema_org_rdfa.html"},
     sioc: {uri: "http://rdfs.org/sioc/ns#"},
