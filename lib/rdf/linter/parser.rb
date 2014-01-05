@@ -5,6 +5,7 @@ require 'nokogiri'
 
 module RDF::Linter
   module Parser
+    CTX = RDF::URI("http://linter.structured-data.org/#tbox")
 
     # Parse the an input file and re-serialize based on params and/or content-type/accept headers
     def parse(reader_opts)
@@ -13,7 +14,7 @@ module RDF::Linter
         logger.level = ::RDF::Linter.debug? ? Logger::DEBUG : Logger::INFO
         logger
       end
-      graph = RDF::Graph.new
+      graph = RDF::Repository.new
       format = reader_opts[:format]
       reader_opts[:prefixes] ||= {}
       reader_opts[:rdf_terms] = true unless reader_opts.has_key?(:rdf_terms)
@@ -41,20 +42,44 @@ module RDF::Linter
       # so we look for statements with predicate og:type with a literal object and create
       # an rdf:type in a similar namespace
       graph.query(:predicate => RDF::URI("http://ogp.me/ns#type")) do |statement|
-        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://types.ogp.me/ns##{statement.object}"))
+        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://types.ogp.me/ns##{statement.object}"), :context => CTX)
       end
       
       # Similar, but using old namespace
       graph.query(:predicate => RDF::URI("http://opengraphprotocol.org/schema/type")) do |statement|
-        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://opengraphprotocol.org/types/#{statement.object}"))
+        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://opengraphprotocol.org/types/#{statement.object}"), :context => CTX)
       end
 
-      # Expand types using vocabulary entailment
-      graph.query(:predicate => RDF.type) do |statement|
-        s = statement.dup
-        entailed_types(statement.object).each do |t|
-          s.object = t
-          graph << s
+      # For subjects with no type, add types based on domain and range expressions, where this is feasible
+      graph.each_subject do |subj|
+        types = graph.query(:subject => subj, :predicate => RDF.type).map(&:object)
+        # If there are no defined types, infer them from vocabulary definitionso on predicates of the subject or refering to the subject
+        if types.empty?
+          graph.query(:subject => subj) do |stmt|
+            prop = stmt.predicate.to_s
+            defn = VOCAB_DEFS["Properties"].fetch(prop, {})
+            domains = Array(defn["domain"] || defn["domainIncludes"]) - [RDF::OWL.Thing.to_s]
+            next unless domains.length == 1
+            # Add domain as a type for this if subject if it's uniq
+            types << RDF::URI(domains.first)
+          end
+
+          graph.query(:object => subj) do |stmt|
+            prop = stmt.predicate.to_s
+            defn = VOCAB_DEFS["Properties"].fetch(prop, {})
+            ranges = Array(defn["range"] || defn["rangeIncludes"]) - [RDF::OWL.Thing.to_s]
+            next if ranges.length != 1 || VOCAB_DEFS["Classes"].has_key?(ranges.first)
+            # Exclude known datatypes which are represented as classes
+            next if %w(Boolean Date DateTime Time Text Integer Float Number URL).any? {|t| ranges.first.end_with?(t)}
+            types << RDF::URI(ranges.first) 
+          end
+        end
+
+        # Expand types using vocabulary entailment
+        types.each do |type|
+          entailed_types(type).each do |t|
+            graph << RDF::Statement.new(subj, RDF.type, RDF::URI(t), :context => CTX)
+          end
         end
       end
 
