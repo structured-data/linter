@@ -5,3 +5,4 @@ env:
   - CI=true
 rvm:
   - 2.0.0
+cache: bundler

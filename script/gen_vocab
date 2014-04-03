@@ -18,7 +18,7 @@ options = {}
 opts.each do |opt, arg|
   case opt
   when '--location'       then options[:location] = RDF::URI(arg)
-  when '--output'         then options[:output] = File.open(arg, "w")
+  when '--output'         then options[:io] = File.open(arg, "w")
   end
 end
 
