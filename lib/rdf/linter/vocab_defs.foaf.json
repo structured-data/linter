@@ -12,7 +12,6 @@
       "label": "Person",
       "superClass": [
         "http://xmlns.com/foaf/0.1/Agent",
-        "http://www.w3.org/2000/10/swap/pim/contact#Person",
         "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
       ]
     },

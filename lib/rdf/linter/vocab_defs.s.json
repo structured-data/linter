@@ -3111,13 +3111,6 @@
         "http://schema.org/DeliveryMethod"
       ]
     },
-    "http://schema.org/OnSitePickup": {
-      "vocab": "schema",
-      "label": "OnSitePickup",
-      "superClass": [
-        "http://schema.org/DeliveryMethod"
-      ]
-    },
     "http://schema.org/Order": {
       "vocab": "schema",
       "label": "Order",
@@ -3859,6 +3852,181 @@
       "superClass": [
         "http://schema.org/CreateAction"
       ]
+    },
+    "http://schema.org/Reservation": {
+      "vocab": "schema",
+      "label": "Reservation",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/BusReservation": {
+      "vocab": "schema",
+      "label": "BusReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/EventReservation": {
+      "vocab": "schema",
+      "label": "EventReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/FlightReservation": {
+      "vocab": "schema",
+      "label": "FlightReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/FoodEstablishmentReservation": {
+      "vocab": "schema",
+      "label": "FoodEstablishmentReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/LodgingReservation": {
+      "vocab": "schema",
+      "label": "LodgingReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/RentalCarReservation": {
+      "vocab": "schema",
+      "label": "RentalCarReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/TaxiReservation": {
+      "vocab": "schema",
+      "label": " TaxiReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/TrainReservation": {
+      "vocab": "schema",
+      "label": " TrainReservation",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/ReservationPackage": {
+      "vocab": "schema",
+      "label": "ReservationPackage",
+      "superClass": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/ReservationStatusType": {
+      "vocab": "schema",
+      "label": "ReservationStatusType",
+      "superClass": [
+        "http://schema.org/Enumeration"
+      ]
+    },
+    "http://schema.org/BusTrip": {
+      "vocab": "schema",
+      "label": "Bus Trip",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/TrainTrip": {
+      "vocab": "schema",
+      "label": "Train Trip",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/Flight": {
+      "vocab": "schema",
+      "label": "Flight",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/Airline": {
+      "vocab": "schema",
+      "label": "Airline",
+      "superClass": [
+        "http://schema.org/Organization"
+      ]
+    },
+    "http://schema.org/ProgramMembership": {
+      "vocab": "schema",
+      "label": "Program Membership",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/Ticket": {
+      "vocab": "schema",
+      "label": "Ticket",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/Seat": {
+      "vocab": "schema",
+      "label": "Seat",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/Taxi": {
+      "vocab": "schema",
+      "label": "Taxi",
+      "superClass": [
+        "http://schema.org/Service"
+      ]
+    },
+    "http://schema.org/Vehicle": {
+      "vocab": "schema",
+      "label": "Vehicle",
+      "superClass": [
+        "http://schema.org/Product"
+      ]
+    },
+    "http://schema.org/Car": {
+      "vocab": "schema",
+      "label": "Car",
+      "superClass": [
+        "http://schema.org/Vehicle"
+      ]
+    },
+    "http://schema.org/QAPage": {
+      "vocab": "schema",
+      "label": "QAPage",
+      "superClass": [
+        "http://schema.org/WebPage"
+      ]
+    },
+    "http://schema.org/Question": {
+      "vocab": "schema",
+      "label": "Question",
+      "superClass": [
+        "http://schema.org/CreativeWork"
+      ]
+    },
+    "http://schema.org/Answer": {
+      "vocab": "schema",
+      "label": "Answer",
+      "superClass": [
+        "http://schema.org/CreativeWork"
+      ]
+    },
+    "http://schema.org/EmailMessage": {
+      "vocab": "schema",
+      "label": "EmailMessage",
+      "superClass": [
+        "http://schema.org/CreativeWork"
+      ]
     }
   },
   "Properties": {
@@ -3902,7 +4070,8 @@
       ],
       "rangeIncludes": [
         "http://schema.org/Text",
-        "http://schema.org/URL"
+        "http://schema.org/URL",
+        "http://schema.org/Boolean"
       ]
     },
     "http://schema.org/accessCode": {
@@ -5059,10 +5228,12 @@
       "vocab": "schema",
       "label": "carrier",
       "domainIncludes": [
-        "http://schema.org/ParcelDelivery"
+        "http://schema.org/ParcelDelivery",
+        "http://schema.org/Flight"
       ],
       "rangeIncludes": [
-        "http://schema.org/Organization"
+        "http://schema.org/Organization",
+        "http://schema.org/Airline"
       ]
     },
     "http://schema.org/carrierRequirements": {
@@ -5297,7 +5468,8 @@
         "http://schema.org/CreativeWork"
       ],
       "rangeIncludes": [
-        "http://schema.org/UserComments"
+        "http://schema.org/UserComments",
+        "http://schema.org/Comment"
       ]
     },
     "http://schema.org/commentText": {
@@ -7500,7 +7672,8 @@
       "vocab": "schema",
       "label": "issuedBy",
       "domainIncludes": [
-        "http://schema.org/Permit"
+        "http://schema.org/Permit",
+        "http://schema.org/Ticket"
       ],
       "rangeIncludes": [
         "http://schema.org/Organization"
@@ -7933,7 +8106,8 @@
       "vocab": "schema",
       "label": "member",
       "domainIncludes": [
-        "http://schema.org/Organization"
+        "http://schema.org/Organization",
+        "http://schema.org/ProgramMembership"
       ],
       "rangeIncludes": [
         "http://schema.org/Organization",
@@ -8940,7 +9114,9 @@
       "label": "priceCurrency",
       "domainIncludes": [
         "http://schema.org/Offer",
-        "http://schema.org/PriceSpecification"
+        "http://schema.org/PriceSpecification",
+        "http://schema.org/Reservation",
+        "http://schema.org/Ticket"
       ],
       "rangeIncludes": [
         "http://schema.org/Text"
@@ -9209,7 +9385,11 @@
       "label": "provider",
       "domainIncludes": [
         "http://schema.org/CreativeWork",
-        "http://schema.org/Service"
+        "http://schema.org/Service",
+        "http://schema.org/Reservation",
+        "http://schema.org/Flight",
+        "http://schema.org/TrainTrip",
+        "http://schema.org/BusTrip"
       ],
       "rangeIncludes": [
         "http://schema.org/Organization",
@@ -10395,7 +10575,8 @@
       "vocab": "schema",
       "label": "startTime",
       "domainIncludes": [
-        "http://schema.org/Action"
+        "http://schema.org/Action",
+        "http://schema.org/FoodEstablishmentReservation"
       ],
       "rangeIncludes": [
         "http://schema.org/DateTime"
@@ -11344,6 +11525,696 @@
       ],
       "rangeIncludes": [
         "http://schema.org/QuantitativeValue"
+      ]
+    },
+    "http://schema.org/reservationId": {
+      "vocab": "schema",
+      "label": "reservationId",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/reservationStatus": {
+      "vocab": "schema",
+      "label": "reservationStatus",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/ReservationStatusType"
+      ]
+    },
+    "http://schema.org/reservationFor": {
+      "vocab": "schema",
+      "label": "reservationFor",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Thing"
+      ]
+    },
+    "http://schema.org/underName": {
+      "vocab": "schema",
+      "label": "underName",
+      "domainIncludes": [
+        "http://schema.org/Reservation",
+        "http://schema.org/Ticket"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Person",
+        "http://schema.org/Organization"
+      ]
+    },
+    "http://schema.org/bookingAgent": {
+      "vocab": "schema",
+      "label": "bookingAgent",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Person",
+        "http://schema.org/Organization"
+      ]
+    },
+    "http://schema.org/bookingTime": {
+      "vocab": "schema",
+      "label": "bookingTime",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/modifiedTime": {
+      "vocab": "schema",
+      "label": "modifiedTime",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/programMembershipUsed": {
+      "vocab": "schema",
+      "label": "programMembershipUsed",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/ProgramMembership"
+      ]
+    },
+    "http://schema.org/reservedTicket": {
+      "vocab": "schema",
+      "label": "reservedTicket",
+      "domainIncludes": [
+        "http://schema.org/Reservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Ticket"
+      ]
+    },
+    "http://schema.org/totalPrice": {
+      "vocab": "schema",
+      "label": "totalPrice",
+      "domainIncludes": [
+        "http://schema.org/Reservation",
+        "http://schema.org/Ticket"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number",
+        "http://schema.org/Text",
+        "http://schema.org/PriceSpecification"
+      ]
+    },
+    "http://schema.org/membershipNumber": {
+      "vocab": "schema",
+      "label": "membershipNumber",
+      "domainIncludes": [
+        "http://schema.org/ProgramMembership"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/programName": {
+      "vocab": "schema",
+      "label": "programName",
+      "domainIncludes": [
+        "http://schema.org/ProgramMembership"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/hostingOrganization": {
+      "vocab": "schema",
+      "label": "hostingOrganization",
+      "domainIncludes": [
+        "http://schema.org/ProgramMembership"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Organization"
+      ]
+    },
+    "http://schema.org/dateIssued": {
+      "vocab": "schema",
+      "label": "dateIssued",
+      "domainIncludes": [
+        "http://schema.org/Ticket"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/ticketedSeat": {
+      "vocab": "schema",
+      "label": "ticketedSeat",
+      "domainIncludes": [
+        "http://schema.org/Ticket"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Seat"
+      ]
+    },
+    "http://schema.org/ticketNumber": {
+      "vocab": "schema",
+      "label": "ticketNumber",
+      "domainIncludes": [
+        "http://schema.org/Ticket"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/ticketToken": {
+      "vocab": "schema",
+      "label": "ticketToken",
+      "domainIncludes": [
+        "http://schema.org/Ticket"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text",
+        "http://schema.org/URL"
+      ]
+    },
+    "http://schema.org/seatNumber": {
+      "vocab": "schema",
+      "label": "seatNumber",
+      "domainIncludes": [
+        "http://schema.org/Seat"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/seatRow": {
+      "vocab": "schema",
+      "label": "seatRow",
+      "domainIncludes": [
+        "http://schema.org/Seat"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/seatSection": {
+      "vocab": "schema",
+      "label": "seatSection",
+      "domainIncludes": [
+        "http://schema.org/Seat"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/seatingType": {
+      "vocab": "schema",
+      "label": "seatingType",
+      "domainIncludes": [
+        "http://schema.org/Seat"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text",
+        "http://schema.org/QualitativeValue"
+      ]
+    },
+    "http://schema.org/subReservation": {
+      "vocab": "schema",
+      "label": "subReservation",
+      "domainIncludes": [
+        "http://schema.org/ReservationPackage"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Reservation"
+      ]
+    },
+    "http://schema.org/boardingGroup": {
+      "vocab": "schema",
+      "label": "boardingGroup",
+      "domainIncludes": [
+        "http://schema.org/FlightReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/flightNumber": {
+      "vocab": "schema",
+      "label": "flightNumber",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/departureTime": {
+      "vocab": "schema",
+      "label": "departureTime",
+      "domainIncludes": [
+        "http://schema.org/BusTrip",
+        "http://schema.org/Flight",
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/arrivalTime": {
+      "vocab": "schema",
+      "label": "arrivalTime",
+      "domainIncludes": [
+        "http://schema.org/BusTrip",
+        "http://schema.org/Flight",
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/departureAirport": {
+      "vocab": "schema",
+      "label": "departureAirport",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Airport"
+      ]
+    },
+    "http://schema.org/arrivalAirport": {
+      "vocab": "schema",
+      "label": "departureAirport",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Airport"
+      ]
+    },
+    "http://schema.org/departureGate": {
+      "vocab": "schema",
+      "label": "departureGate",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/arrivalGate": {
+      "vocab": "schema",
+      "label": "arrivalGate",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/departureTerminal": {
+      "vocab": "schema",
+      "label": "departureTerminal",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/arrivalTerminal": {
+      "vocab": "schema",
+      "label": "arrivalTerminal",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/aircraft": {
+      "vocab": "schema",
+      "label": "aircraft",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text",
+        "http://schema.org/Vehicle"
+      ]
+    },
+    "http://schema.org/mealService": {
+      "vocab": "schema",
+      "label": "mealService",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/estimatedFlightDuration": {
+      "vocab": "schema",
+      "label": "estimatedFlightDuration",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text",
+        "http://schema.org/Duration"
+      ]
+    },
+    "http://schema.org/flightDistance": {
+      "vocab": "schema",
+      "label": "flightDistance",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text",
+        "http://schema.org/Distance"
+      ]
+    },
+    "http://schema.org/webCheckinTime": {
+      "vocab": "schema",
+      "label": "webCheckinTime",
+      "domainIncludes": [
+        "http://schema.org/Flight"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/iataCode": {
+      "vocab": "schema",
+      "label": "iataCode",
+      "domainIncludes": [
+        "http://schema.org/Airline",
+        "http://schema.org/Airport"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/partySize": {
+      "vocab": "schema",
+      "label": "partySize",
+      "domainIncludes": [
+        "http://schema.org/FoodEstablishmentReservation",
+        "http://schema.org/TaxiReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number",
+        "http://schema.org/QuantitativeValue"
+      ]
+    },
+    "http://schema.org/trainNumber": {
+      "vocab": "schema",
+      "label": "trainNumber",
+      "domainIncludes": [
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/trainName": {
+      "vocab": "schema",
+      "label": "trainName",
+      "domainIncludes": [
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/departureStation": {
+      "vocab": "schema",
+      "label": "departureStation",
+      "domainIncludes": [
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/TrainStation"
+      ]
+    },
+    "http://schema.org/arrivalStation": {
+      "vocab": "schema",
+      "label": "arrivalStation",
+      "domainIncludes": [
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/TrainStation"
+      ]
+    },
+    "http://schema.org/departurePlatform": {
+      "vocab": "schema",
+      "label": "departurePlatform",
+      "domainIncludes": [
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/arrivalPlatform": {
+      "vocab": "schema",
+      "label": "arrivalPlatform",
+      "domainIncludes": [
+        "http://schema.org/TrainTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/busNumber": {
+      "vocab": "schema",
+      "label": "busNumber",
+      "domainIncludes": [
+        "http://schema.org/BusTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/busName": {
+      "vocab": "schema",
+      "label": "busName",
+      "domainIncludes": [
+        "http://schema.org/BusTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/departureBusStop": {
+      "vocab": "schema",
+      "label": "departureBusStop",
+      "domainIncludes": [
+        "http://schema.org/BusTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/BusStation",
+        "http://schema.org/BusStop"
+      ]
+    },
+    "http://schema.org/arrivalBusStop": {
+      "vocab": "schema",
+      "label": "arrivalBusStop",
+      "domainIncludes": [
+        "http://schema.org/BusTrip"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/BusStation",
+        "http://schema.org/BusStop"
+      ]
+    },
+    "http://schema.org/pickupLocation": {
+      "vocab": "schema",
+      "label": "pickupLocation",
+      "domainIncludes": [
+        "http://schema.org/RentalCarReservation",
+        "http://schema.org/TaxiReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Place"
+      ]
+    },
+    "http://schema.org/dropoffLocation": {
+      "vocab": "schema",
+      "label": "dropoffLocation",
+      "domainIncludes": [
+        "http://schema.org/RentalCarReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Place"
+      ]
+    },
+    "http://schema.org/pickupTime": {
+      "vocab": "schema",
+      "label": "pickupTime",
+      "domainIncludes": [
+        "http://schema.org/RentalCarReservation",
+        "http://schema.org/TaxiReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/dropoffTime": {
+      "vocab": "schema",
+      "label": "dropoffTime",
+      "domainIncludes": [
+        "http://schema.org/RentalCarReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/checkinTime": {
+      "vocab": "schema",
+      "label": "checkinTime",
+      "domainIncludes": [
+        "http://schema.org/LodgingReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/checkoutTime": {
+      "vocab": "schema",
+      "label": "checkoutTime",
+      "domainIncludes": [
+        "http://schema.org/LodgingReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/DateTime"
+      ]
+    },
+    "http://schema.org/lodgingUnitType": {
+      "vocab": "schema",
+      "label": "lodgingUnitType",
+      "domainIncludes": [
+        "http://schema.org/LodgingReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text",
+        "http://schema.org/QualitativeValue"
+      ]
+    },
+    "http://schema.org/lodgingUnitDescription": {
+      "vocab": "schema",
+      "label": "lodgingUnitDescription",
+      "domainIncludes": [
+        "http://schema.org/LodgingReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/numAdults": {
+      "vocab": "schema",
+      "label": "numAdults",
+      "domainIncludes": [
+        "http://schema.org/LodgingReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number",
+        "http://schema.org/QuantitativeValue"
+      ]
+    },
+    "http://schema.org/numChildren": {
+      "vocab": "schema",
+      "label": "numChildren",
+      "domainIncludes": [
+        "http://schema.org/LodgingReservation"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number",
+        "http://schema.org/QuantitativeValue"
+      ]
+    },
+    "http://schema.org/upvoteCount": {
+      "vocab": "schema",
+      "label": "upvoteCount",
+      "domainIncludes": [
+        "http://schema.org/Question",
+        "http://schema.org/Answer",
+        "http://schema.org/Comment"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Integer"
+      ]
+    },
+    "http://schema.org/downvoteCount": {
+      "vocab": "schema",
+      "label": "downvoteCount",
+      "domainIncludes": [
+        "http://schema.org/Question",
+        "http://schema.org/Answer",
+        "http://schema.org/Comment"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Integer"
+      ]
+    },
+    "http://schema.org/answerCount": {
+      "vocab": "schema",
+      "label": "answerCount",
+      "domainIncludes": [
+        "http://schema.org/Question"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Integer"
+      ]
+    },
+    "http://schema.org/commentCount": {
+      "vocab": "schema",
+      "label": "commentCount",
+      "domainIncludes": [
+        "http://schema.org/CreativeWork"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Integer"
+      ]
+    },
+    "http://schema.org/acceptedAnswer": {
+      "vocab": "schema",
+      "label": "acceptedAnswer",
+      "domainIncludes": [
+        "http://schema.org/Question"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Answer"
+      ]
+    },
+    "http://schema.org/parentItem": {
+      "vocab": "schema",
+      "label": "parentItem",
+      "domainIncludes": [
+        "http://schema.org/Answer",
+        "http://schema.org/Comment"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Question"
+      ]
+    },
+    "http://schema.org/suggestedAnswer": {
+      "vocab": "schema",
+      "label": "suggestedAnswer",
+      "domainIncludes": [
+        "http://schema.org/Question"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Answer"
       ]
     }
   },
