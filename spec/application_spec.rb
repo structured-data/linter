@@ -76,7 +76,7 @@ describe RDF::Linter::Application do
         %(//section[@class="content"]/h2[contains(text(), "Schema.org examples")]/) +
           %(../div/a[contains(text(), "CreativeWork")]),
         %(//section[@class="content"]/div/a[@href="/examples/schema.org/CreativeWork/"]),
-        %(//a[@href="/?url=http://example.org/examples/schema.org/CreativeWork.rdfa.html"]),
+        %(//a[@href="/?url=http://example.org/examples/schema.org/11-rdfa.html"]),
 
         %(//section[@class="content"]/h2[contains(text(), "Good Relations examples")]),
         %(//section[@class="content"]/h2[contains(text(), "Good Relations examples")]) +
@@ -195,12 +195,9 @@ describe RDF::Linter::Application do
 
   describe "get /examples/schema.org/:file" do
     {
-      "CreativeWork-Advanced.rdfa" => "text/html",
-      "CreativeWork-Advanced.microdata" => "text/html",
-      "CreativeWork-Advanced.jsonld" => "application/ld+json",
-      "Article.rdfa" => "text/html",
-      "Event-Example2.microdata" => "text/html",
-      "PostalAddress-Example2.jsonld" => "application/ld+json"
+      "11-rdfa.html" => "text/html",
+      "11-microdata.html" => "text/html",
+      "11-jsonld.html" => "text/html",
     }.each do |file, content_type|
       context file do
         subject {

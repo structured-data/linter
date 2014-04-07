@@ -15,5 +15,8 @@ end
 
 group :development do
   gem 'wirble'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem "syntax"
   gem 'byebug', :platform => :mri_20
 end

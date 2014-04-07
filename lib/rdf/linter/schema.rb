@@ -1,5 +1,6 @@
 require 'rdf/turtle'
 require 'rdf/linter/rdfa_template'
+require 'strscan'
 
 ##
 # Generate the schema.org example output template by reading
@@ -10,15 +11,18 @@ require 'rdf/linter/rdfa_template'
 # relationships.
 module RDF::Linter
   class Schema
+    APP_DIR = File.expand_path("../../..", File.dirname(__FILE__))
     attr_reader :classes
     attr_reader :thing
 
     def initialize
-      graph = RDF::Graph.load("http://schema.rdfs.org/all.ttl")
       @classes = {'Thing' => {}}
-      graph.query([:class, RDF::RDFS.subClassOf, :sub_class]) do |solution|
-        s, p, o = solution.to_a.map {|r| r.to_s.sub("http://schema.org/", "")}
-        @classes[s] = {:super_class => o}
+      @examples = {}
+
+      RDF::Linter::Parser::VOCAB_DEFS["Classes"].each do |cls_name, defn|
+        next unless cls_name.start_with?("http://schema.org/")
+        term = cls_name[18..-1]
+        @classes[term] = {super_class: defn["superClass"].map {|c| c[18..-1]}.first}
       end
       
       # Create hierarchical order of classes
@@ -32,24 +36,84 @@ module RDF::Linter
       # Remember Thing
       @thing = @classes['Thing']
     end
-    
+
+    ##
+    # Load examples from a text file, generate partials and type mapping.
+    #
+    # @param [String] file
+    def load_examples(file)
+      s = StringScanner.new File.read(file)
+      types = nil
+      body = nil
+      format = nil
+      number = 0
+      while !s.eos?
+        # Scan each format until TYPES is found again, or EOF
+        body = s.scan_until(/^(TYPES|PRE-MARKUP|MICRODATA|RDFA|JSON|JSONLD):/)
+        if body.nil?
+          body = s.rest
+          s.terminate
+        end
+
+        # Trim body
+        body = body[0..-(s.matched.to_s.length+1)].gsub("\r", '').strip + "\n"
+        case format
+        when :microdata, :rdfa, :jsonld
+          add_example(types, body, number, format)
+        end
+
+        case s.matched
+        when "TYPES:"
+          types = s.scan_until(/$/).strip
+          number += 1
+          format = :types
+        when "PRE-MARKUP:"  then format = :pre
+        when "MICRODATA:"   then format = :microdata
+        when "RDFA:"        then format = :rdfa
+        when "JSON:"        then format = :jsonld
+        when "JSONLD:"      then format = :jsonld
+        end
+      end
+
+      trim_classes
+
+      # Create example index
+      File.open(APP_DIR + "/schema.org/examples.json", "w") do |f|
+        examples = @classes.keys.inject({}) {|memo, k|
+          memo[k] = @classes[k][:examples] if @classes[k].has_key?(:examples); memo
+        }
+        f.write(examples.to_json(JSON::LD::JSON_STATE))
+      end
+
+      # Create partial for example index
+      File.open(APP_DIR + "/lib/rdf/linter/views/_schema_examples.erb", "w") do |f|
+        f.puts("<!-- This file is created automaticaly by rake schema_examples -->")
+        f.write(create_partial("Thing", 0))
+      end
+    end
+
     ##
     # Add an example to the class list
     #
-    # @param [String] path to example file
-    def add_example(path)
-      markup_type = File.extname(path)[1..-1].to_sym
-      md = path.split('/').last.match(/^\w+(?:-(\w+))?\.\w+$/)
-      ex_num = md[1]
-      ex_num ||= "Basic"
-      t = path.split('/')[-2]
-      t = "EducationalOrganization" if t == "EdducationalOrganization"
-      if @classes.has_key?(t)
-        puts "add example #{path} on class #{t}"
+    # @param [String] types
+    #   schema type of example, may be multiple separated by commas
+    # @param [String] example the body of the example
+    # @param [Integer] number
+    #   This example number, used to create appropriate grouping
+    # @param [Symbol] format :microdata, :rdfa, or :jsonld
+    def add_example(types, example, ex_num, format)
+      # Write example out for reading later
+      path = "schema.org/#{ex_num}-#{format}.html"
+      File.open(File.expand_path("../../../../#{path}", __FILE__), "w") {|f| f.write(example)}
+
+      types.split(',').each do |t|
+        next unless @classes.has_key?(t)
+        
         @classes[t][:examples] ||= {}
         @classes[t][:examples][ex_num] ||= {}
-        @classes[t][:examples][ex_num][markup_type] = path
+        @classes[t][:examples][ex_num][format] = path
       end
+
     end
     
     ##
@@ -89,12 +153,11 @@ module RDF::Linter
         @classes[cls][:examples].keys.sort.each do |num|
           example = @classes[cls][:examples][num]
           output += %(\n<div class="ex">) + "  &nbsp;&nbsp;|&nbsp;&nbsp;" * depth
-          output += %[&nbsp;&nbsp;#{num} (]
+          output += %[&nbsp;&nbsp;Example-#{num} (]
           output += [:rdfa, :jsonld, :microdata].map do |fmt|
             if example.has_key?(fmt)
               fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
               sn_path = "<%=root%>examples/schema.org/#{File.basename(example[fmt])}"
-              sn_path += ".html" unless sn_path.end_with?(".jsonld")
               %(<a href="/?url=#{sn_path}" title="Show #{cls} snippet in #{fmt_name}">#{fmt_name}</a>)
             end
           end.join(" ")

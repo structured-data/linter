@@ -1,0 +1,20 @@
+A ProductModel gives a datasheet or vendor specification of a
+product (in the sense of a prototypical description).  Use this type
+when you are describing a product datasheet rather than an actual
+product, e.g. if you are the manufacturer of the product and want to
+mark up your product specification pages. For example: The ACME
+Colorvision 123 specifiation on the ACME Corp. site for that model.
+
+<div itemscope itemtype="http://schema.org/ProductModel" itemid="#model">
+ <link itemprop="additionalType"
+       href="http://www.productontology.org/id/Television_set" />
+ <span itemprop="name">ACME Colorvision 123</span>
+ <span itemprop="description">The ACME Colorvision 123 is
+  the leading-edge color TV from our company.</span>
+ EAN/UPC: <span itemprop="gtin13">1234567890123</span>
+</div>
+
+Recommendation: Try to provide identifiers (gtin13, gtin14, gtin8, mpn
+properties) and link to you as the manufacturer (manufacturer
+property) so that search engines can use your data to enrich offers of
+your products found elsewhere.

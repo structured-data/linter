@@ -86,6 +86,7 @@ module RDF
               $logger.debug "detected #{reader_class.name}"
               begin
                 @input.rewind if @input.respond_to?(:rewind)
+                # Remove <script> and comments from around input
                 reader_class.new(@input, @options) do |reader|
                   reader.each_statement do |statement|
                     @statement_count[reader_class] ||= 0

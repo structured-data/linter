@@ -17,6 +17,13 @@ module RDF::Linter
     set :views, ::File.expand_path('../views',  __FILE__)
     set :app_name, "Structured Data Linter"
 
+    configure :development do
+      require "better_errors"
+      use BetterErrors::Middleware
+      BetterErrors.application_root = APP_DIR
+    end
+
+
     before do
       $logger.info "[#{request.path_info}], " +
         "#{request.accept}, " +
@@ -120,26 +127,17 @@ module RDF::Linter
     get '/examples/schema.org/:name/' do
       cache_control :public, :must_revalidate, :max_age => 60
       @title = "Schema.org #{params[:name]}"
+      @examples ||= JSON.parse(File.read(File.join(APP_DIR, "schema.org/examples.json")))
       
       # Find examples using this class
       examples = {}
-      Dir.glob(File.join(APP_DIR, "schema-org-rdf/examples/**/#{params[:name]}*.{microdata,rdfa,jsonld}")) do |path|
-        md = path.split('/').last.match(/^\w+(?:-(\w+))?\.\w+$/)
-        ex_num = md[1]
-        ex_num ||= "Basic"
-        fmt = File.extname(path)[1..-1].to_sym
-
-        File.open(path, "r", :encoding => Encoding::UTF_8) do |file|
-          src = if fmt == :jsonld
-            file.read
-          else
-            doc = Nokogiri::HTML.parse(file.read)
-            doc.at_xpath("/html/body/*").to_s
-          end
-          examples[ex_num] ||= {}
-          examples[ex_num][fmt] = {
-            :path => RDF::URI(request.url).join("../" + File.basename(path)),
-            :src => src
+      @examples.fetch(params[:name], {}).each do |ex_num, formats|
+        examples[ex_num] = {}
+        formats.each do |format, path|
+          src = File.read(File.join(APP_DIR, path))
+          examples[ex_num][format.to_sym] = {
+            path: RDF::URI(request.url).join("../" + File.basename(path)),
+            src: src
           }
         end
       end
@@ -159,14 +157,10 @@ module RDF::Linter
     # @param [String] file Name of the example to return
     get '/examples/schema.org/:file' do
       cache_control :public, :must_revalidate, :max_age => 60
-      file_loc = params[:file].end_with?(".html") ? params[:file][0..-6] : params[:file]
-      file = nil
-      Find.find(File.join(APP_DIR, "schema-org-rdf")) do |f|
-        file ||= f if File.file?(f) && f.match(/#{file_loc}$/)
-      end
-      if file
+      file = File.join(APP_DIR, "schema.org", params[:file])
+      if File.exist?(file)
         send_file file,
-          :type => (file.end_with?(".jsonld") ? :jsonld : :html),
+          :type => :html,
           :charset => "utf-8"
       else
         status 401

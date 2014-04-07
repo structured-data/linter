@@ -16,29 +16,14 @@ begin
 rescue LoadError
 end
 
-desc "refresh schema-org-rdf"
-task :schema_dir do
-  %x{git clone git@github.com:mhausenblas/schema-org-rdf.git && rm -rf ./schema-org-rdf/.git}
-  Dir.glob("./schema-org-rdf/**/*.jsonld").each do |path|
-    d = File.read(path)
-    d.sub!("http://schema.org/jsonld-profile", "http://schema.org/")
-    File.open(path, "w") {|f| f.write(d)}
-  end
-end
-
 desc "Create schema example index"
 task :schema_examples do
+  #%x{rm -rf ./schema.org && mkdir ./schema.org}
+  #%x{curl https://raw.githubusercontent.com/rvguha/schemaorg/master/data/examples.txt -o ./schema.org/examples.txt}
   $:.unshift(File.expand_path("../lib", __FILE__))
   require 'rdf/linter'
   schema = RDF::Linter::Schema.new
-  Dir.glob("schema-org-rdf/examples/**/*.{microdata,rdfa,jsonld}").each do |path|
-    schema.add_example(path)
-  end
-  schema.trim_classes
-  File.open(File.expand_path("../lib/rdf/linter/views/_schema_examples.erb", __FILE__), "w") do |f|
-    f.puts("<!-- This file is created automaticaly by rake schema_examples -->")
-    f.write(schema.create_partial("Thing", 0))
-  end
+  schema.load_examples(File.expand_path("../schema.org/examples.txt", __FILE__))
 end
 
 namespace :vocab do
