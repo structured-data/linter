@@ -1,0 +1,142 @@
+{
+  "Vocabularies": {
+    "hydra": "http://www.w3.org/ns/hydra/core#"
+  },
+  "Classes": {
+    "http://www.w3.org/ns/hydra/core#Class": {
+      "vocab": "hydra",
+      "label": "Hydra Class",
+      "superClass": [
+        "http://www.w3.org/ns/hydra/core#Resource",
+        "http://www.w3.org/2000/01/rdf-schema#Class"
+      ]
+    }
+  },
+  "Properties": {
+    "http://www.w3.org/ns/hydra/core#property": {
+      "vocab": "hydra",
+      "label": "property",
+      "range": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#required": {
+      "vocab": "hydra",
+      "label": "required",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#boolean"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#readonly": {
+      "vocab": "hydra",
+      "label": "ready-only",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#SupportedProperty"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#boolean"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#writeonly": {
+      "vocab": "hydra",
+      "label": "write-only",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#SupportedProperty"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#boolean"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#method": {
+      "vocab": "hydra",
+      "label": "method",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#Operation"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#statusCode": {
+      "vocab": "hydra",
+      "label": "status code",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#StatusCodeDescription"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#title": {
+      "vocab": "hydra",
+      "label": "title",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#description": {
+      "vocab": "hydra",
+      "label": "description",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#totalItems": {
+      "vocab": "hydra",
+      "label": "total items",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#Collection"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#itemsPerPage": {
+      "vocab": "hydra",
+      "label": "items per page",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#PagedCollection"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#freetextQuery": {
+      "vocab": "hydra",
+      "label": "freetext query",
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#template": {
+      "vocab": "hydra",
+      "label": "template",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#IriTemplate"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#mapping": {
+      "vocab": "hydra",
+      "label": "mapping",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#IriTemplate"
+      ],
+      "range": [
+        "http://www.w3.org/ns/hydra/core#IriTemplateMapping"
+      ]
+    },
+    "http://www.w3.org/ns/hydra/core#variable": {
+      "vocab": "hydra",
+      "label": "variable",
+      "domain": [
+        "http://www.w3.org/ns/hydra/core#IriTemplateMapping"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
+      ]
+    }
+  }
+}
