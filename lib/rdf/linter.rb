@@ -12,6 +12,7 @@ module RDF
     autoload :Generate,     'rdf/linter/generate'
     autoload :Parser,       'rdf/linter/parser'
     autoload :VERSION,      'rdf/linter/version'
+    autoload :Vocab,        'rdf/linter/vocab'
     autoload :Schema,       'rdf/linter/schema'
 
     def self.debug?; @debug; end

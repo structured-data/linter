@@ -40,8 +40,9 @@ module RDF::Linter
         next unless soln.subject.uri? && soln.subject.to_s.start_with?(url)
         section = case soln.type
         when RDF.Property, RDF::OWL.ObjectProperty, RDF::OWL.DatatypeProperty,
-             RDF::OWL.TransitiveProperty then "Properties"
-        when RDF::RDFS.Class, RDF::OWL.Class then "Classes"
+             RDF::OWL.TransitiveProperty,
+             RDF::Linter::Vocab::Hydra.Link, RDF::Linter::Vocab::Hydra.TemplatedLink then "Properties"
+        when RDF::RDFS.Class, RDF::OWL.Class, RDF::Linter::Vocab::Hydra.Class then "Classes"
         when RDF::RDFS.Datatype then "Datatypes"
         else next
         end
