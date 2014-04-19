@@ -4027,6 +4027,27 @@
       "superClass": [
         "http://schema.org/CreativeWork"
       ]
+    },
+    "http://schema.org/ActionStatusType": {
+      "vocab": "schema",
+      "label": "ActionStatusType",
+      "superClass": [
+        "http://schema.org/Enumeration"
+      ]
+    },
+    "http://schema.org/EntryPoint": {
+      "vocab": "schema",
+      "label": "EntryPoint",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
+    },
+    "http://schema.org/PropertyValueSpecification": {
+      "vocab": "schema",
+      "label": "PropertyValueSpecification",
+      "superClass": [
+        "http://schema.org/Intangible"
+      ]
     }
   },
   "Properties": {
@@ -4148,6 +4169,16 @@
     "http://schema.org/action": {
       "vocab": "schema",
       "label": "action",
+      "domainIncludes": [
+        "http://schema.org/Muscle"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/muscleAction": {
+      "vocab": "schema",
+      "label": "muscleAction",
       "domainIncludes": [
         "http://schema.org/Muscle"
       ],
@@ -8063,7 +8094,8 @@
       "vocab": "schema",
       "label": "maxValue",
       "domainIncludes": [
-        "http://schema.org/QuantitativeValue"
+        "http://schema.org/QuantitativeValue",
+        "http://schema.org/PropertyValueSpecification"
       ],
       "rangeIncludes": [
         "http://schema.org/Number"
@@ -8192,7 +8224,8 @@
       "vocab": "schema",
       "label": "minValue",
       "domainIncludes": [
-        "http://schema.org/QuantitativeValue"
+        "http://schema.org/QuantitativeValue",
+        "http://schema.org/PropertyValueSpecification"
       ],
       "rangeIncludes": [
         "http://schema.org/Number"
@@ -12215,6 +12248,157 @@
       ],
       "rangeIncludes": [
         "http://schema.org/Answer"
+      ]
+    },
+    "http://schema.org/actionStatus": {
+      "vocab": "schema",
+      "label": "actionStatus",
+      "domainIncludes": [
+        "http://schema.org/Action"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/ActionStatusType"
+      ]
+    },
+    "http://schema.org/potentialAction": {
+      "vocab": "schema",
+      "label": "potentialAction",
+      "domainIncludes": [
+        "http://schema.org/Thing"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Action"
+      ]
+    },
+    "http://schema.org/target": {
+      "vocab": "schema",
+      "label": "target",
+      "domainIncludes": [
+        "http://schema.org/Action"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/EntryPoint"
+      ]
+    },
+    "http://schema.org/httpMethod": {
+      "vocab": "schema",
+      "label": "httpMethod",
+      "domainIncludes": [
+        "http://schema.org/EntryPoint"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/encodingType": {
+      "vocab": "schema",
+      "label": "encodingType",
+      "domainIncludes": [
+        "http://schema.org/EntryPoint"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/contentType": {
+      "vocab": "schema",
+      "label": "contentType",
+      "domainIncludes": [
+        "http://schema.org/EntryPoint"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Text"
+      ]
+    },
+    "http://schema.org/application": {
+      "vocab": "schema",
+      "label": "application",
+      "domainIncludes": [
+        "http://schema.org/EntryPoint"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/SoftwareApplication"
+      ]
+    },
+    "http://schema.org/valueRequired": {
+      "vocab": "schema",
+      "label": "valueRequired",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Boolean"
+      ]
+    },
+    "http://schema.org/defaultValue": {
+      "vocab": "schema",
+      "label": "defaultValue",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Thing",
+        "http://schema.org/Literal"
+      ]
+    },
+    "http://schema.org/readonlyValue": {
+      "vocab": "schema",
+      "label": "readonlyValue",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Boolean"
+      ]
+    },
+    "http://schema.org/multipleValues": {
+      "vocab": "schema",
+      "label": "multipleValues",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Boolean"
+      ]
+    },
+    "http://schema.org/valueMinLength": {
+      "vocab": "schema",
+      "label": "valueMinLength",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number"
+      ]
+    },
+    "http://schema.org/valueMaxLength": {
+      "vocab": "schema",
+      "label": "valueMaxLength",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number"
+      ]
+    },
+    "http://schema.org/valuePattern": {
+      "vocab": "schema",
+      "label": "valuePattern",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number"
+      ]
+    },
+    "http://schema.org/stepValue": {
+      "vocab": "schema",
+      "label": "stepValue",
+      "domainIncludes": [
+        "http://schema.org/PropertyValueSpecification"
+      ],
+      "rangeIncludes": [
+        "http://schema.org/Number"
       ]
     }
   },

@@ -90,7 +90,7 @@ JSON:
     "addressLocality": "Seattle", 
     "addressRegion": "WA", 
     "postalCode": "98052", 
-    "streetAddress": "20341 Whitworth Institute\n405 N. Whitworth"
+    "streetAddress": "20341 Whitworth Institute 405 N. Whitworth"
   }, 
   "colleague": [
     "http://www.xyz.edu/students/alicejones.html", 
@@ -155,7 +155,7 @@ JSON:
     "addressRegion": "FL", 
     "streetAddress": "3102 Highway 98"
   }, 
-  "description": "A superb collection of fine gifts and clothing\nto accent your stay in Mexico Beach.", 
+  "description": "A superb collection of fine gifts and clothing to accent your stay in Mexico Beach.", 
   "name": "Beachwalk Beachwear & Giftware", 
   "telephone": "850-648-4200"
 }
@@ -849,7 +849,7 @@ JSON:
     "ratingValue": "3.5", 
     "reviewCount": "11"
   }, 
-  "description": "0.7 cubic feet countertop microwave.\nHas six preset cooking categories and convenience features like\nAdd-A-Minute and Child Lock.", 
+  "description": "0.7 cubic feet countertop microwave. Has six preset cooking categories and convenience features like Add-A-Minute and Child Lock.", 
   "name": "Kenmore White 17\" Microwave", 
   "offers": {
     "@type": "Offer", 
@@ -861,7 +861,7 @@ JSON:
       "@type": "Review", 
       "author": "Ellie", 
       "datePublished": "2011-04-01", 
-      "description": "The lamp burned out and now I have to replace\nit.", 
+      "description": "The lamp burned out and now I have to replace it.", 
       "name": "Not a happy camper", 
       "reviewRating": {
         "@type": "Rating", 
@@ -874,7 +874,7 @@ JSON:
       "@type": "Review", 
       "author": "Lucas", 
       "datePublished": "2011-03-25", 
-      "description": "Great microwave for the price. It is small and\nfits in my apartment.", 
+      "description": "Great microwave for the price. It is small and fits in my apartment.", 
       "name": "Value purchase", 
       "reviewRating": {
         "@type": "Rating", 
@@ -1160,7 +1160,7 @@ JSON:
   }, 
   "author": "/author/jd_salinger.html", 
   "bookFormat": "http://schema.org/Paperback", 
-  "breadcrumb": "Books >\nLiterature & Fiction >\nClassics", 
+  "breadcrumb": "Books > Literature & Fiction > Classics", 
   "datePublished": "1991-05-01", 
   "image": "catcher-in-the-rye-book-cover.jpg", 
   "inLanguage": "English", 
@@ -1180,7 +1180,7 @@ JSON:
       "author": "John Doe", 
       "datePublished": "2006-05-04", 
       "name": "A masterpiece of literature", 
-      "reviewBody": "I really enjoyed this book. It captures the essential\nchallenge people face as they try make sense of their lives and grow to adulthood.", 
+      "reviewBody": "I really enjoyed this book. It captures the essential challenge people face as they try make sense of their lives and grow to adulthood.", 
       "reviewRating": "5"
     }, 
     {
@@ -1318,7 +1318,7 @@ JSON:
   "author": "John Smith", 
   "cookTime": "PT1H", 
   "datePublished": "2009-05-08", 
-  "description": "This classic banana bread recipe comes\nfrom my mom -- the walnuts add a nice texture and flavor to the banana\nbread.", 
+  "description": "This classic banana bread recipe comes from my mom -- the walnuts add a nice texture and flavor to the banana bread.", 
   "image": "bananabread.jpg", 
   "ingredients": [
     "3 or 4 ripe bananas, smashed", 
@@ -1333,7 +1333,7 @@ JSON:
     "fatContent": "9 grams fat"
   }, 
   "prepTime": "PT15M", 
-  "recipeInstructions": "Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\nthe flour last. Pour the mixture into a loaf pan and bake for one hour.", 
+  "recipeInstructions": "Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the flour last. Pour the mixture into a loaf pan and bake for one hour.", 
   "recipeYield": "1 loaf"
 }
 </script> 
@@ -1604,7 +1604,7 @@ JSON:
   ], 
   "video": {
     "@type": "VideoObject", 
-    "description": "Catch this exclusive interview with\nDave Grohl and the Food Fighters about their new album, Rope.", 
+    "description": "Catch this exclusive interview with Dave Grohl and the Food Fighters about their new album, Rope.", 
     "duration": "T1M33S", 
     "name": "Interview with the Foo Fighters", 
     "thumbnail": "foo-fighters-interview-thumb.jpg"
@@ -1787,7 +1787,7 @@ JSON:
       "name": "Terry Rossio"
     }
   ], 
-  "description": "Jack Sparrow and Barbossa embark on a quest to\nfind the elusive fountain of youth, only to discover that Blackbeard and\nhis daughter are after it too.", 
+  "description": "Jack Sparrow and Barbossa embark on a quest to find the elusive fountain of youth, only to discover that Blackbeard and his daughter are after it too.", 
   "director": {
     "@type": "Person", 
     "name": "Rob Marshall"
@@ -2735,7 +2735,7 @@ JSON:
   "baseSalary": "100000", 
   "benefits": "Medical, Life, Dental", 
   "datePosted": "2011-10-31", 
-  "description": "Description: ABC Company Inc.\nseeks a full-time mid-level software engineer to develop in-house tools.", 
+  "description": "Description: ABC Company Inc. seeks a full-time mid-level software engineer to develop in-house tools.", 
   "educationRequirements": "Bachelor's Degree in Computer Science, Information Systems or related fields of study.", 
   "employmentType": "Full-time", 
   "experienceRequirements": "Minumum 3 years experience as a software engineer", 
@@ -2750,10 +2750,10 @@ JSON:
     }
   }, 
   "occupationalCategory": "15-1132.00 Software Developers, Application", 
-  "qualifications": "Ability to work in a team environment with members of varying skill levels.\nHighly motivated.\nLearns quickly.", 
-  "responsibilities": "Design and write specifications for tools for in-house costumers\nBuild tools according to specifications", 
+  "qualifications": "Ability to work in a team environment with members of varying skill levels. Highly motivated. Learns quickly.", 
+  "responsibilities": "Design and write specifications for tools for in-house costumers Build tools according to specifications", 
   "salaryCurrency": "USD", 
-  "skills": "Web application development using Java/J2EE\nWeb application development using Python or familiarity with dynamic programming languages", 
+  "skills": "Web application development using Java/J2EE Web application development using Python or familiarity with dynamic programming languages", 
   "specialCommitments": "VeteranCommit", 
   "title": "Software Engineer", 
   "workHours": "40 hours per week"
@@ -3038,7 +3038,7 @@ JSON:
   }, 
   "datePublished": "2012-03-24", 
   "evidenceLevel": "http://schema.org/EvidenceLevelA", 
-  "name": "New guidelines for metformin and\ndiabetes mellitus", 
+  "name": "New guidelines for metformin and diabetes mellitus", 
   "publicationType": "Meta-Analysis", 
   "recommendationStrength": "strong recommendation", 
   "subject": [
@@ -3438,11 +3438,11 @@ JSON:
       }, 
       {
         "@type": "MedicalSymptom", 
-        "name": "repeated episodes of chest pain at rest\nlasting 5 or more minutes"
+        "name": "repeated episodes of chest pain at rest lasting 5 or more minutes"
       }, 
       {
         "@type": "MedicalSymptom", 
-        "name": "an accelerating pattern of\nchest discomfort (episodes that are more frequent, severe,\nlonger in duration, and precipitated by minimal exertion)"
+        "name": "an accelerating pattern of chest discomfort (episodes that are more frequent, severe, longer in duration, and precipitated by minimal exertion)"
       }
     ]
   }, 
@@ -3512,7 +3512,7 @@ JSON:
     }, 
     {
       "@type": "MedicalSymptom", 
-      "name": "feeling of tightness, heaviness,\nor pain in the chest"
+      "name": "feeling of tightness, heaviness, or pain in the chest"
     }
   ]
 }
@@ -3899,7 +3899,7 @@ JSON:
   "@id": "#product", 
   "@type": "IndividualProduct", 
   "additionalType": "http://www.productontology.org/id/Racing_bicycle", 
-  "description": "ACME Racing Bike, bought 8/2008, almost new, with a signature of\nEddy Merckx on the frame.", 
+  "description": "ACME Racing Bike, bought 8/2008, almost new, with a signature of Eddy Merckx on the frame.", 
   "name": "ACME Racing Bike in black (2008)"
 }
 </script> 
@@ -3952,7 +3952,7 @@ JSON:
   "@id": "#product", 
   "@type": "SomeProducts", 
   "additionalType": "http://www.productontology.org/id/Printer_(computing)", 
-  "description": "A fast, great-looking, compact laser\nprinter for your desk.", 
+  "description": "A fast, great-looking, compact laser printer for your desk.", 
   "gtin13": "0012502627104", 
   "name": "Brother HL-2230 Compact Laser Printer"
 }
@@ -4021,7 +4021,7 @@ JSON:
   "@id": "#model", 
   "@type": "ProductModel", 
   "additionalType": "http://www.productontology.org/id/Television_set", 
-  "description": "The ACME Colorvision 123 is\nthe leading-edge color TV from our company.", 
+  "description": "The ACME Colorvision 123 is the leading-edge color TV from our company.", 
   "gtin13": "1234567890123", 
   "name": "ACME Colorvision 123"
 }
@@ -4031,13 +4031,21 @@ TYPES:  Action
 
 PRE-MARKUP: 
 
-John listened to Pink with Steve at Anna's appartment on his iPod. 
+John listened to Pink with Steve at Anna's apartment on his iPod. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John listened to Pink with Steve at Anna's apartment on his iPod. -->
 <script type="application/ld+json">
-  // John listened to Pink with Steve at Anna's appartment on his iPod.
-{
+
   "@context": "http://schema.org",
   "@type": "ListenAction",
   "agent": {
@@ -4054,7 +4062,7 @@ JSONLD:
   },
   "location": {
     "@type": "Residence",
-    "name": "Ann's appartment"
+    "name": "Ann's apartment"
   },
   "instrument": {
     "@type": "Product",
@@ -4069,11 +4077,19 @@ PRE-MARKUP:
 
 John created an exercise plan with Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John created an exercise plan with Steve. -->
 <script type="application/ld+json">
-  // John created an exercise plan with Steve.
-{
+
   "@context": "http://schema.org",
   "@type": "CreateAction",
   "agent": {
@@ -4097,11 +4113,19 @@ PRE-MARKUP:
 
 John achieved his exercise plan. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John achieved his exercise plan. -->
 <script type="application/ld+json">
-  // John achieved his exercise plan.
-{
+
   "@context": "http://schema.org",
   "@type": "AchieveAction",
   "agent": {
@@ -4121,11 +4145,19 @@ PRE-MARKUP:
 
 John lost a match of angry birds to Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John lost a match of angry birds to Steve. -->
 <script type="application/ld+json">
-  // John lost a match of angry birds to Steve.
-{
+
   "@context": "http://schema.org",
   "@type": "WinAction",
   "agent": {
@@ -4149,11 +4181,19 @@ PRE-MARKUP:
 
 John tied on a match of chess with Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John tied on a match of chess with Steve. -->
 <script type="application/ld+json">
-  // John tied on a match of chess with Steve.
-{
+
   "@context": "http://schema.org",
   "@type": "WinAction",
   "agent": {
@@ -4177,11 +4217,19 @@ PRE-MARKUP:
 
 John won a Nobel prize. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John won a Nobel prize. -->
 <script type="application/ld+json">
-  // John won a Nobel prize.
-{
+
   "@context": "http://schema.org",
   "@type": "WinAction",
   "agent": {
@@ -4201,11 +4249,19 @@ PRE-MARKUP:
 
 John assessed a scholar paper. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John assessed a scholar paper. -->
 <script type="application/ld+json">
-  // John assessed a scholar paper.
-{
+
   "@context": "http://schema.org",
   "@type": "AssessAction",
   "agent": {
@@ -4225,11 +4281,19 @@ PRE-MARKUP:
 
 John chose Dogfish Head between that and Russian River. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John chose Dogfish Head between that and Russian River. -->
 <script type="application/ld+json">
-  // John chose Dogfish Head between that and Russian River.
-{
+
   "@context": "http://schema.org",
   "@type": "ChooseAction",
   "agent": {
@@ -4259,11 +4323,19 @@ PRE-MARKUP:
 
 John chose Dogfish Head from all breweries. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John chose Dogfish Head from all breweries. -->
 <script type="application/ld+json">
-  // John chose Dogfish Head from all breweries.
-{
+
   "@context": "http://schema.org",
   "@type": "ChooseAction",
   "agent": {
@@ -4284,11 +4356,19 @@ PRE-MARKUP:
 
 John voted on Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John voted on Steve. -->
 <script type="application/ld+json">
-  // John voted on Steve.
-{
+
   "@context": "http://schema.org",
   "@type": "VoteAction",
   "agent": {
@@ -4308,11 +4388,19 @@ PRE-MARKUP:
 
 John ignored Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John ignored Steve. -->
 <script type="application/ld+json">
-  // John ignored Steve.
-{
+
   "@context": "http://schema.org",
   "@type": "IgnoreAction",
   "agent": {
@@ -4332,11 +4420,19 @@ PRE-MARKUP:
 
 John and Steve ignored an article. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John and Steve ignored an article. -->
 <script type="application/ld+json">
-  // John and Steve ignored an article.
-{
+
   "@context": "http://schema.org",
   "@type": "IgnoreAction",
   "agent": {
@@ -4360,11 +4456,19 @@ PRE-MARKUP:
 
 John ignores a friend request from Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John ignores a friend request from Steve. -->
 <script type="application/ld+json">
-  // John ignores a friend request from Steve.
-{
+
   "@context": "http://schema.org",
   "@type": "IgnoreAction",
   "agent": {
@@ -4391,11 +4495,19 @@ PRE-MARKUP:
 
 John reacted to a scholar paper claiming that P = NP!. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John reacted to a scholar paper claiming that P = NP!. -->
 <script type="application/ld+json">
-  // John reacted to a scholar paper claiming that P = NP!.
-{
+
   "@context": "http://schema.org",
   "@type": "ReactAction",
   "agent": {
@@ -4415,11 +4527,19 @@ PRE-MARKUP:
 
 John and Steve agreed with a scholar paper claiming that P = NP!. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John and Steve agreed with a scholar paper claiming that P = NP!. -->
 <script type="application/ld+json">
-  // John and Steve agreed with a scholar paper claiming that P = NP!.
-{
+
   "@context": "http://schema.org",
   "@type": "AgreeAction",
   "agent": {
@@ -4443,11 +4563,19 @@ PRE-MARKUP:
 
 John and Steve disagreed with a scholar paper claiming that P = NP!,  resulting in another scholar paper claiming that P is in fact != NP!. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John and Steve disagreed with a scholar paper claiming that P = NP!,  resulting in another scholar paper claiming that P is in fact != NP!. -->
 <script type="application/ld+json">
-  // John and Steve disagreed with a scholar paper claiming that P = NP!,  resulting in another scholar paper claiming that P is in fact != NP!.
-{
+
   "@context": "http://schema.org",
   "@type": "DisagreeAction",
   "agent": {
@@ -4475,11 +4603,19 @@ PRE-MARKUP:
 
 John and Steve dislike an article. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John and Steve dislike an article. -->
 <script type="application/ld+json">
-  // John and Steve dislike an article.
-{
+
   "@context": "http://schema.org",
   "@type": "DislikeAction",
   "agent": {
@@ -4503,11 +4639,19 @@ PRE-MARKUP:
 
 John endorsed Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John endorsed Steve. -->
 <script type="application/ld+json">
-  // John endorsed Steve.
-{
+
   "@context": "http://schema.org",
   "@type": "EndorseAction",
   "agent": {
@@ -4527,11 +4671,19 @@ PRE-MARKUP:
 
 John and Steve like an article. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John and Steve like an article. -->
 <script type="application/ld+json">
-  // John and Steve like an article.
-{
+
   "@context": "http://schema.org",
   "@type": "LikeAction",
   "agent": {
@@ -4555,11 +4707,19 @@ PRE-MARKUP:
 
 John and Steve want an ipod. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John and Steve want an ipod. -->
 <script type="application/ld+json">
-  // John and Steve want an ipod.
-{
+
   "@context": "http://schema.org",
   "@type": "WantAction",
   "agent": {
@@ -4583,11 +4743,19 @@ PRE-MARKUP:
 
 John and Steve reviewed an article. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John and Steve reviewed an article. -->
 <script type="application/ld+json">
-  // John and Steve reviewed an article.
-{
+
   "@context": "http://schema.org",
   "@type": "ReviewAction",
   "agent": {
@@ -4615,11 +4783,19 @@ PRE-MARKUP:
 
 The biceps consumed 100 calories. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  The biceps consumed 100 calories. -->
 <script type="application/ld+json">
-  // The biceps consumed 100 calories.
-{
+
   "@context": "http://schema.org",
   "@type": "ConsumeAction",
   "agent": {
@@ -4639,11 +4815,19 @@ PRE-MARKUP:
 
 John drank a coke. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John drank a coke. -->
 <script type="application/ld+json">
-  // John drank a coke.
-{
+
   "@context": "http://schema.org",
   "@type": "DrinkAction",
   "agent": {
@@ -4663,11 +4847,19 @@ PRE-MARKUP:
 
 John eat a cake. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John eat a cake. -->
 <script type="application/ld+json">
-  // John eat a cake.
-{
+
   "@context": "http://schema.org",
   "@type": "EatAction",
   "agent": {
@@ -4687,11 +4879,19 @@ PRE-MARKUP:
 
 John installed fitbit. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John installed fitbit. -->
 <script type="application/ld+json">
-  // John installed fitbit.
-{
+
   "@context": "http://schema.org",
   "@type": "InstallAction",
   "agent": {
@@ -4711,11 +4911,19 @@ PRE-MARKUP:
 
 John listened to Pink. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John listened to Pink. -->
 <script type="application/ld+json">
-  // John listened to Pink.
-{
+
   "@context": "http://schema.org",
   "@type": "ListenAction",
   "agent": {
@@ -4735,11 +4943,19 @@ PRE-MARKUP:
 
 John listened to star 101.3. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John listened to star 101.3. -->
 <script type="application/ld+json">
-  // John listened to star 101.3.
-{
+
   "@context": "http://schema.org",
   "@type": "ListenAction",
   "agent": {
@@ -4759,11 +4975,19 @@ PRE-MARKUP:
 
 John listened to an Elvis playlist. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John listened to an Elvis playlist. -->
 <script type="application/ld+json">
-  // John listened to an Elvis playlist.
-{
+
   "@context": "http://schema.org",
   "@type": "ListenAction",
   "agent": {
@@ -4783,11 +5007,19 @@ PRE-MARKUP:
 
 John read an article. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John read an article. -->
 <script type="application/ld+json">
-  // John read an article.
-{
+
   "@context": "http://schema.org",
   "@type": "ReadAction",
   "agent": {
@@ -4807,11 +5039,19 @@ PRE-MARKUP:
 
 John read a book. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John read a book. -->
 <script type="application/ld+json">
-  // John read a book.
-{
+
   "@context": "http://schema.org",
   "@type": "ReadAction",
   "agent": {
@@ -4831,11 +5071,19 @@ PRE-MARKUP:
 
 John read a code. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John read a code. -->
 <script type="application/ld+json">
-  // John read a code.
-{
+
   "@context": "http://schema.org",
   "@type": "ReadAction",
   "agent": {
@@ -4855,11 +5103,19 @@ PRE-MARKUP:
 
 John read a web page. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!--  John read a web page. -->
 <script type="application/ld+json">
-  // John read a web page.
-{
+
   "@context": "http://schema.org",
   "@type": "ReadAction",
   "agent": {
@@ -4879,10 +5135,18 @@ PRE-MARKUP:
 
 John used an exercise plan. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John used an exercise plan. -->
 <script type="application/ld+json">
-  // John used an exercise plan.
 {
   "@context": "http://schema.org",
   "@type": "UseAction",
@@ -4903,10 +5167,18 @@ PRE-MARKUP:
 
 John wore Calvin Klein. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John wore Calvin Klein. -->
 <script type="application/ld+json">
-  // John wore Calvin Klein.
 {
   "@context": "http://schema.org",
   "@type": "WearAction",
@@ -4927,10 +5199,18 @@ PRE-MARKUP:
 
 John viewed Les demoiselles d'avignon. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John viewed Les demoiselles d'avignon. -->
 <script type="application/ld+json">
-  // John viewed Les demoiselles d'avignon.
 {
   "@context": "http://schema.org",
   "@type": "ViewAction",
@@ -4951,10 +5231,18 @@ PRE-MARKUP:
 
 John viewed a photo of Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John viewed a photo of Steve. -->
 <script type="application/ld+json">
-  // John viewed a photo of Steve.
 {
   "@context": "http://schema.org",
   "@type": "ViewAction",
@@ -4975,10 +5263,18 @@ PRE-MARKUP:
 
 John viewed The Thinker. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John viewed The Thinker. -->
 <script type="application/ld+json">
-  // John viewed The Thinker.
 {
   "@context": "http://schema.org",
   "@type": "ViewAction",
@@ -4999,10 +5295,18 @@ PRE-MARKUP:
 
 John watched Friends. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John watched Friends. -->
 <script type="application/ld+json">
-  // John watched Friends.
 {
   "@context": "http://schema.org",
   "@type": "WatchAction",
@@ -5023,10 +5327,18 @@ PRE-MARKUP:
 
 John watched The Big Bang Theory 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John watched The Big Bang Theory -->
 <script type="application/ld+json">
-  // John watched The Big Bang Theory
 {
   "@context": "http://schema.org",
   "@type": "WatchAction",
@@ -5047,10 +5359,18 @@ PRE-MARKUP:
 
 John watched The Internship 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John watched The Internship -->
 <script type="application/ld+json">
-  // John watched The Internship
 {
   "@context": "http://schema.org",
   "@type": "WatchAction",
@@ -5071,10 +5391,18 @@ PRE-MARKUP:
 
 John watched The Bolshoi Ballet group in Russia. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John watched The Bolshoi Ballet group in Russia.-->
 <script type="application/ld+json">
-  // John watched The Bolshoi Ballet group in Russia.
 {
   "@context": "http://schema.org",
   "@type": "WatchAction",
@@ -5099,10 +5427,18 @@ PRE-MARKUP:
 
 John created a website. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John created a web page. -->
 <script type="application/ld+json">
-  // John created a website.
 {
   "@context": "http://schema.org",
   "@type": "CreateAction",
@@ -5123,10 +5459,18 @@ PRE-MARKUP:
 
 John cooked a dinner. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John cooked a dinner.-->
 <script type="application/ld+json">
-  // John cooked a dinner.
 {
   "@context": "http://schema.org",
   "@type": "CookAction",
@@ -5147,10 +5491,18 @@ PRE-MARKUP:
 
 John drew a painting. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John drew a painting.-->
 <script type="application/ld+json">
-  // John drew a painting.
 {
   "@context": "http://schema.org",
   "@type": "DrawAction",
@@ -5171,10 +5523,18 @@ PRE-MARKUP:
 
 John filmed The Internship. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John filmed The Internship.-->
 <script type="application/ld+json">
-  // John filmed The Internship.
 {
   "@context": "http://schema.org",
   "@type": "FilmAction",
@@ -5195,10 +5555,18 @@ PRE-MARKUP:
 
 John painted Les Demoiselles d'Avignon. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John painted Les Demoiselles d'Avignon.-->
 <script type="application/ld+json">
-  // John painted Les Demoiselles d'Avignon.
 {
   "@context": "http://schema.org",
   "@type": "PaintAction",
@@ -5219,10 +5587,18 @@ PRE-MARKUP:
 
 John took a photo of Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John took a photo of Steve.-->
 <script type="application/ld+json">
-  // John took a photo of Steve.
 {
   "@context": "http://schema.org",
   "@type": "PhotographAction",
@@ -5243,10 +5619,18 @@ PRE-MARKUP:
 
 John wrote an article on algorithms. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John wrote an article on algorithms. -->
 <script type="application/ld+json">
-  // John wrote an article on algorithms.
 {
   "@context": "http://schema.org",
   "@type": "WriteAction",
@@ -5267,10 +5651,18 @@ PRE-MARKUP:
 
 John found the answer to life. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John found the answer to life. -->
 <script type="application/ld+json">
-  // John found the answer to life.
 {
   "@context": "http://schema.org",
   "@type": "FindAction",
@@ -5291,10 +5683,18 @@ PRE-MARKUP:
 
 John checked his flight status. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John checked his flight status.-->
 <script type="application/ld+json">
-  // John checked his flight status.
 {
   "@context": "http://schema.org",
   "@type": "CheckAction",
@@ -5319,10 +5719,18 @@ PRE-MARKUP:
 
 John checked his blood test. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John checked his blood test. -->
 <script type="application/ld+json">
-  // John checked his blood test.
 {
   "@context": "http://schema.org",
   "@type": "CheckAction",
@@ -5343,10 +5751,18 @@ PRE-MARKUP:
 
 John discovered a Pink! 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John discovered a Pink! -->
 <script type="application/ld+json">
-  // John discovered a Pink!
 {
   "@context": "http://schema.org",
   "@type": "DiscoverAction",
@@ -5367,10 +5783,18 @@ PRE-MARKUP:
 
 John tracked his fitbit via UPS. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John tracked his fitbit via UPS. -->
 <script type="application/ld+json">
-  // John tracked his fitbit via UPS.
 {
   "@context": "http://schema.org",
   "@type": "TrackAction",
@@ -5394,10 +5818,18 @@ PRE-MARKUP:
 
 John interacted with Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John interacted with Steve.-->
 <script type="application/ld+json">
-  // John interacted with Steve.
 {
   "@context": "http://schema.org",
   "@type": "InteractAction",
@@ -5418,10 +5850,18 @@ PRE-MARKUP:
 
 John interacted with the IEEE. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John interacted with the IEEE. -->
 <script type="application/ld+json">
-  // John interacted with the IEEE.
 {
   "@context": "http://schema.org",
   "@type": "InteractAction",
@@ -5442,10 +5882,18 @@ PRE-MARKUP:
 
 John befriended Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John befriended Steve. -->
 <script type="application/ld+json">
-  // John befriended Steve.
 {
   "@context": "http://schema.org",
   "@type": "BefriendAction",
@@ -5466,10 +5914,18 @@ PRE-MARKUP:
 
 John communicated with Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John communicated with Steve. -->
 <script type="application/ld+json">
-  // John communicated with Steve.
 {
   "@context": "http://schema.org",
   "@type": "CommunicateAction",
@@ -5490,10 +5946,18 @@ PRE-MARKUP:
 
 John communicated to the medical community his retirement. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John communicated to the medical community his retirement. -->
 <script type="application/ld+json">
-  // John communicated to the medical community his retirement.
 {
   "@context": "http://schema.org",
   "@type": "CommunicateAction",
@@ -5515,10 +5979,18 @@ PRE-MARKUP:
 
 John asked Steve 'What is 2 + 2?'. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John asked Steve 'What is 2 + 2?'. -->
 <script type="application/ld+json">
-  // John asked Steve 'What is 2 + 2?'.
 {
   "@context": "http://schema.org",
   "@type": "AskAction",
@@ -5540,10 +6012,18 @@ PRE-MARKUP:
 
 John checked in at Yandex. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John checked in at Yandex. -->
 <script type="application/ld+json">
-  // John checked in at Yandex.
 {
   "@context": "http://schema.org",
   "@type": "CheckInAction",
@@ -5571,10 +6051,18 @@ PRE-MARKUP:
 
 John checked into a flight at the airport. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John checked into a flight at the airport. -->
 <script type="application/ld+json">
-  // John checked into a flight at the airport.
 {
   "@context": "http://schema.org",
   "@type": "CheckInAction",
@@ -5611,10 +6099,18 @@ PRE-MARKUP:
 
 John checked into a flight online. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John checked into a flight online. -->
 <script type="application/ld+json">
-  // John checked into a flight online.
 {
   "@context": "http://schema.org",
   "@type": "CheckInAction",
@@ -5639,10 +6135,18 @@ PRE-MARKUP:
 
 John checked out of a flight online. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John checked out of a flight online. -->
 <script type="application/ld+json">
-  // John checked out of a flight online.
 {
   "@context": "http://schema.org",
   "@type": "CheckOutAction",
@@ -5667,10 +6171,18 @@ PRE-MARKUP:
 
 John commented on a blog post. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John commented on a blog post. -->
 <script type="application/ld+json">
-  // John commented on a blog post.
 {
   "@context": "http://schema.org",
   "@type": "CommentAction",
@@ -5695,10 +6207,18 @@ PRE-MARKUP:
 
 John informed Steve of a work party. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John informed Steve of a work party. -->
 <script type="application/ld+json">
-  // John informed Steve of a work party.
 {
   "@context": "http://schema.org",
   "@type": "InformAction",
@@ -5723,10 +6243,18 @@ PRE-MARKUP:
 
 John confirmed the game was still on. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John confirmed the game was still on. -->
 <script type="application/ld+json">
-  // John confirmed the game was still on.
 {
   "@context": "http://schema.org",
   "@type": "ConfirmAction",
@@ -5747,10 +6275,18 @@ PRE-MARKUP:
 
 John confirmed his presence on the event. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John confirmed his presence on the event. -->
 <script type="application/ld+json">
-  // John confirmed his presence on the event.
 {
   "@context": "http://schema.org",
   "@type": "RsvpAction",
@@ -5771,10 +6307,18 @@ PRE-MARKUP:
 
 John invited Steve to his party. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John invited Steve to his party. -->
 <script type="application/ld+json">
-  // John invited Steve to his party.
 {
   "@context": "http://schema.org",
   "@type": "InviteAction",
@@ -5799,10 +6343,18 @@ PRE-MARKUP:
 
 John replied '4' to Steve's question 'What's 2 + 2?'. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John replied '4' to Steve's question 'What's 2 + 2?'. -->
 <script type="application/ld+json">
-  // John replied '4' to Steve's question 'What's 2 + 2?'.
 {
   "@context": "http://schema.org",
   "@type": "AskAction",
@@ -5825,10 +6377,18 @@ PRE-MARKUP:
 
 John shared a post with Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John shared a post with Steve. -->
 <script type="application/ld+json">
-  // John shared a post with Steve.
 {
   "@context": "http://schema.org",
   "@type": "ShareAction",
@@ -5853,10 +6413,18 @@ PRE-MARKUP:
 
 John shared an image with Steve. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John shared an image with Steve. -->
 <script type="application/ld+json">
-  // John shared an image with Steve.
 {
   "@context": "http://schema.org",
   "@type": "ShareAction",
@@ -5882,10 +6450,18 @@ PRE-MARKUP:
 
 John followed Steve on Twitter. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John followed Steve on Twitter. -->
 <script type="application/ld+json">
-  // John followed Steve on Twitter.
 {
   "@context": "http://schema.org",
   "@type": "FollowAction",
@@ -5910,10 +6486,18 @@ PRE-MARKUP:
 
 John joined the basketball team. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John joined the basketball team. -->
 <script type="application/ld+json">
-  // John joined the basketball team.
 {
   "@context": "http://schema.org",
   "@type": "JoinAction",
@@ -5934,10 +6518,18 @@ PRE-MARKUP:
 
 John joined the Beatles. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John joined the Beatles. -->
 <script type="application/ld+json">
-  // John joined the Beatles.
 {
   "@context": "http://schema.org",
   "@type": "JoinAction",
@@ -5958,10 +6550,18 @@ PRE-MARKUP:
 
 John joined the Cats cast. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John joined the Cats cast. -->
 <script type="application/ld+json">
-  // John joined the Cats cast.
 {
   "@context": "http://schema.org",
   "@type": "JoinAction",
@@ -5982,10 +6582,18 @@ PRE-MARKUP:
 
 John joined the festival. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
-  // John joined the festival.
+<!-- John joined the festival. -->
 {
   "@context": "http://schema.org",
   "@type": "JoinAction",
@@ -6006,10 +6614,18 @@ PRE-MARKUP:
 
 John left the Chicago Bulls. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John left the Chicago Bulls. -->
 <script type="application/ld+json">
-  // John left the Chicago Bulls.
 {
   "@context": "http://schema.org",
   "@type": "LeaveAction",
@@ -6030,10 +6646,18 @@ PRE-MARKUP:
 
 John married Ann. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John married Ann. -->
 <script type="application/ld+json">
-  // John married Ann.
 {
   "@context": "http://schema.org",
   "@type": "MarryAction",
@@ -6054,10 +6678,18 @@ PRE-MARKUP:
 
 John registered for the IEEE. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John registered for the IEEE. -->
 <script type="application/ld+json">
-  // John registered for the IEEE.
 {
   "@context": "http://schema.org",
   "@type": "RegisterAction",
@@ -6078,10 +6710,18 @@ PRE-MARKUP:
 
 John registered to Twitter. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John registered to Twitter. -->
 <script type="application/ld+json">
-  // John registered to Twitter.
 {
   "@context": "http://schema.org",
   "@type": "RegisterAction",
@@ -6102,10 +6742,18 @@ PRE-MARKUP:
 
 John registered to Comcast. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John registered to Comcast. -->
 <script type="application/ld+json">
-  // John registered to Comcast.
 {
   "@context": "http://schema.org",
   "@type": "RegisterAction",
@@ -6126,10 +6774,18 @@ PRE-MARKUP:
 
 John subscribed to mailing list. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John subscribed to mailing list. -->
 <script type="application/ld+json">
-  // John subscribed to mailing list.
 {
   "@context": "http://schema.org",
   "@type": "SubscribeAction",
@@ -6150,10 +6806,18 @@ PRE-MARKUP:
 
 John unregistered from Comcast. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John unregistered from Comcast. -->
 <script type="application/ld+json">
-  // John unregistered from Comcast.
 {
   "@context": "http://schema.org",
   "@type": "UnRegisterAction",
@@ -6174,10 +6838,18 @@ PRE-MARKUP:
 
 John moved a sculpture from one museum to another. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John moved a sculpture from one museum to another. -->
 <script type="application/ld+json">
-  // John moved a sculpture from one museum to another.
 {
   "@context": "http://schema.org",
   "@type": "MoveAction",
@@ -6206,10 +6878,18 @@ PRE-MARKUP:
 
 John arrived at the hotel. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John arrived at the hotel. -->
 <script type="application/ld+json">
-  // John arrived at the hotel.
 {
   "@context": "http://schema.org",
   "@type": "ArriveAction",
@@ -6230,10 +6910,18 @@ PRE-MARKUP:
 
 John departed from the hotel. 
 
-JSONLD: 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
+
+<!-- John departed from the hotel. -->
 <script type="application/ld+json">
-  // John departed from the hotel.
 {
   "@context": "http://schema.org",
   "@type": "DepartAction",
@@ -6254,7 +6942,15 @@ PRE-MARKUP:
 
 John travel to Brazil. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John travel to Brazil.
@@ -6278,7 +6974,15 @@ PRE-MARKUP:
 
 John travel from the US to Brazil with Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John travel from the US to Brazil with Steve.
@@ -6310,7 +7014,15 @@ PRE-MARKUP:
 
 John organized his webpage. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John organized his webpage.
@@ -6334,7 +7046,15 @@ PRE-MARKUP:
 
 John organized his business. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John organized his business.
@@ -6358,7 +7078,15 @@ PRE-MARKUP:
 
 John allocated 5 hours to exercise. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John allocated 5 hours to exercise.
@@ -6386,7 +7114,15 @@ PRE-MARKUP:
 
 John accepted a plan to exercise to help with his obesity. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John accepted a plan to exercise to help with his obesity.
@@ -6414,7 +7150,15 @@ PRE-MARKUP:
 
 Dr. John assigned an exercise plan to Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // Dr. John assigned an exercise plan to Steve.
@@ -6446,7 +7190,15 @@ PRE-MARKUP:
 
 Dr. John authorized Steve's diet. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // Dr. John authorized Steve's diet.
@@ -6478,7 +7230,15 @@ PRE-MARKUP:
 
 John rejected a plan to exercise that helps him with his obesity. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John rejected a plan to exercise that helps him with his obesity.
@@ -6506,7 +7266,15 @@ PRE-MARKUP:
 
 John applied to Harvard. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John applied to Harvard.
@@ -6530,7 +7298,15 @@ PRE-MARKUP:
 
 John bookmarked a photo using instagram. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John bookmarked a photo using instagram.
@@ -6559,7 +7335,15 @@ PRE-MARKUP:
 
 John planned a trip with a travel agency. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John planned a trip with a travel agency.
@@ -6587,7 +7371,15 @@ PRE-MARKUP:
 
 John planned an exercise plan with Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John planned an exercise plan with Steve.
@@ -6615,7 +7407,15 @@ PRE-MARKUP:
 
 John cancelled a trip with a travel agency. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John cancelled a trip with a travel agency.
@@ -6643,7 +7443,15 @@ PRE-MARKUP:
 
 John enrolled for SXSW. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John enrolled for SXSW.
@@ -6667,7 +7475,15 @@ PRE-MARKUP:
 
 John reserved a table for May. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John reserved a table for May.
@@ -6692,7 +7508,15 @@ PRE-MARKUP:
 
 John scheduled an event to occur in May. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John scheduled an event to occur in May.
@@ -6717,7 +7541,15 @@ PRE-MARKUP:
 
 John selected The Internship and The Wedding Crashers from his movie queue. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John selected The Internship and The Wedding Crashers from his movie queue.
@@ -6752,7 +7584,15 @@ PRE-MARKUP:
 
 John played angry birds with Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John played angry birds with Steve.
@@ -6780,7 +7620,15 @@ PRE-MARKUP:
 
 John ran 100 miles with Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John ran 100 miles with Steve.
@@ -6806,7 +7654,15 @@ PRE-MARKUP:
 
 John played tennis against Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John played tennis against Steve.
@@ -6831,7 +7687,15 @@ PRE-MARKUP:
 
 John performed as a DJ playing Daft Punk on his turntable at Woodstock. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John performed as a DJ playing Daft Punk on his turntable at Woodstock.
@@ -6863,7 +7727,15 @@ PRE-MARKUP:
 
 John searched for 'What is the answer to life the universe and everything?'. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John searched for 'What is the answer to life the universe and everything?'.
@@ -6884,7 +7756,15 @@ PRE-MARKUP:
 
 John searched for hotels. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John searched for hotels.
@@ -6908,7 +7788,15 @@ PRE-MARKUP:
 
 John traded a Book for US$ 50. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John traded a Book for US$ 50.
@@ -6933,7 +7821,15 @@ PRE-MARKUP:
 
 John bought a Book on amazon.com. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John bought a Book on amazon.com.
@@ -6961,7 +7857,15 @@ PRE-MARKUP:
 
 John donated $10 to Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John donated $10 to Steve.
@@ -6986,7 +7890,15 @@ PRE-MARKUP:
 
 John ordered a Book on amazon.com. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John ordered a Book on amazon.com.
@@ -7014,7 +7926,15 @@ PRE-MARKUP:
 
 John paid US$ 1,500 for a flight. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John paid US$ 1,500 for a flight.
@@ -7039,7 +7959,15 @@ PRE-MARKUP:
 
 John quoted a flight for US$ 1,500. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John quoted a flight for US$ 1,500.
@@ -7064,7 +7992,15 @@ PRE-MARKUP:
 
 John rented a house from Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John rented a house from Steve.
@@ -7092,7 +8028,15 @@ PRE-MARKUP:
 
 John sold a Book on amazon.com. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John sold a Book on amazon.com.
@@ -7120,7 +8064,15 @@ PRE-MARKUP:
 
 John tipped $10 to Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John tipped $10 to Steve.
@@ -7145,7 +8097,15 @@ PRE-MARKUP:
 
 John transfered his store from Brazil to the USA. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John transfered his store from Brazil to the USA.
@@ -7177,7 +8137,15 @@ PRE-MARKUP:
 
 John borrowed Steve's book. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John borrowed Steve's book.
@@ -7205,7 +8173,15 @@ PRE-MARKUP:
 
 John downloaded the java updates. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John downloaded the java updates.
@@ -7229,7 +8205,15 @@ PRE-MARKUP:
 
 John gave a book to Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John gave a book to Steve.
@@ -7257,7 +8241,15 @@ PRE-MARKUP:
 
 John lent $10 to Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John lent $10 to Steve.
@@ -7282,7 +8274,15 @@ PRE-MARKUP:
 
 John received a book from Steve via UPS from Brazil to the USA. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John received a book from Steve via UPS from Brazil to the USA.
@@ -7322,7 +8322,15 @@ PRE-MARKUP:
 
 John returned the book to Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John returned the book to Steve.
@@ -7350,7 +8358,15 @@ PRE-MARKUP:
 
 John sent a book to Steve via UPS from Brazil to the USA. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John sent a book to Steve via UPS from Brazil to the USA.
@@ -7390,7 +8406,15 @@ PRE-MARKUP:
 
 John took a book from Steve. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John took a book from Steve.
@@ -7418,7 +8442,15 @@ PRE-MARKUP:
 
 John updated his movie collection. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John updated his movie collection.
@@ -7443,7 +8475,15 @@ PRE-MARKUP:
 
 John add a movie to his movie queue. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John add a movie to his movie queue.
@@ -7472,7 +8512,15 @@ PRE-MARKUP:
 
 John added SAAS to his skillset. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John added SAAS to his skillset.
@@ -7501,7 +8549,15 @@ PRE-MARKUP:
 
 John inserted a movie to his movie queue at the third slot. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John inserted a movie to his movie queue at the third slot.
@@ -7531,7 +8587,15 @@ PRE-MARKUP:
 
 John appended a movie to his movie queue. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John appended a movie to his movie queue.
@@ -7560,7 +8624,15 @@ PRE-MARKUP:
 
 John prepended a movie to his movie queue. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John prepended a movie to his movie queue.
@@ -7589,7 +8661,15 @@ PRE-MARKUP:
 
 John deleted The Internship from his movie queue. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John deleted The Internship from his movie queue.
@@ -7618,7 +8698,15 @@ PRE-MARKUP:
 
 John replaced The Internship with The Wedding Crashers from his movie queue. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
   // John replaced The Internship with The Wedding Crashers from his movie queue.
@@ -7920,7 +9008,15 @@ human-oriented HTML description. It describes a GovernmentService named "Veteran
 its operator, service area and service details, such as its Veterans Crisis Line (including  phone contact line
 hours of operation, language and other details). 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type='application/ld+json'>
 {
@@ -8373,7 +9469,15 @@ PRE-MARKUP:
 
 JSON-LD description of a scheduled Event with limited ticket availability and performer details indicated using sameAs. 
 
-JSONLD: 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON: 
 
 <script type="application/ld+json">
 {
@@ -8677,6 +9781,14 @@ We recommend that you arrive at the station at least 30 minutes prior to your sc
 
 MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON:
+
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -8723,6 +9835,14 @@ Passenger: John Smith
 
 
 MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON:
 
 <script type="application/ld+json">
 {
@@ -8772,6 +9892,14 @@ Ticket #abc123
 Section: 101
 Row: A
 Seat: 12
+
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
 
 JSON:
 
@@ -8828,6 +9956,14 @@ Flight: United Airlines flight 110
 Departing: San Francisco Airport (SFO) 2017-03-04T20:15:00-08:00
 Arriving: John F. Kennedy International Airport (JFK) 2017-03-05T06:30:00-05:00
 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
 JSON:
 
 <script type="application/ld+json">
@@ -8879,6 +10015,14 @@ London
 WC2E 7PG
 
 
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
 JSON:
 
 <script type="application/ld+json">
@@ -8922,6 +10066,14 @@ San Francisco, CA 94102
 check in: 2017-04-11T16:00:00-08:00
 check out: 2017-04-13T11:00:00-08:00
 
+
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
 
 JSON:
 
@@ -8972,6 +10124,14 @@ Los Angeles, CA 94043
 
 Drop off time: 2017-08-06T20:00:00-07:00
 
+
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
 
 JSON:
 
@@ -9040,7 +10200,13 @@ Cambridge, MA 02142
 Pickup time: 2017-08-05T16:00:00-07:00
 
 
+MICRODATA:
 
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
 
 JSON:
 
@@ -9136,4 +10302,151 @@ MICRODATA:
     <div>
   </div>
 </body>
+
+RDFA:
+
+<body vocab="http://schema.org/" itemtype="QAPage">
+  <div  typeof="Question">
+    <h1 property="name">What is attr_accessor in Ruby?</h1>
+    <div property="upvoteCount">196</div>
+    <div property="text">I am having difficulty understanding Ruby attr_accessors, can someone explain them?</div>
+    <div>asked <time property="dateCreated" datetime="2010-11-04T20:07Z">Nov 11 '10 at 20:07</time></div>
+    <div property="author"  typeof="Person"><span property="name">someuser</span></div>
+    <div><span property="answerCount">4</span> answers</div>
+    <div property="suggestedAnswer acceptedAnswer"  typeof="Answer">
+      <div property="voteCount">1337</div>
+      <div property="text">
+      (The text of the accepted answer goes here...).  
+      </div>
+      <div>answered <time property="dateCreated" datetime="2010-12-01T22:01Z">Dec 1 '10 at 22:01</time></div>
+      <div property="author"  typeof="Person"><span property="name">anotheruser</span></div>
+    <div>
+    <div property="suggestedAnswer"  typeof="Answer">
+      <div property="voteCount">39</div>
+      <div property="text">
+        (Another explanation would go here).
+      </div>
+      <div>answered <time property="dateCreated" datetime="2010-12-06T21:11Z">Dec 6 '10 at 21:11</time></div>
+      <div property="author"  typeof="Person"><span property="name">lonelyuser1234</span></div>
+    <div>
+  </div>
+</body>
+
+JSON:
+
+Coming soon
+
+TYPES: WatchAction, Movie
+
+PRE-MARKUP:
+
+A Movie named "Footloose" with a WatchAction as a
+potentialAction, with a target of http://example.com/player?id=123.
+
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON:
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Movie",
+  "name": "Footloose",
+  "potentialAction" : {
+    "@type": "WatchAction",
+    "target" : "http://example.com/player?id=123"
+  }
+}
+</script>
+
+TYPES: Restaurant, ViewAction, EntryPoint, SoftwareApplication
+
+PRE-MARKUP:
+
+A Restaurant named "Tartine Bakery" with a ViewAction as a
+potentialAction, with several target endpoints including 
+the simple url http://example.com/player?id=123 and 
+full EntryPoint descriptions for Windows and iOS SoftwareApplication
+apps.
+
+MICRODATA:
+
+This example is JSON only.
+
+RDFA:
+
+This example is JSON only.
+
+JSON:
+
+<script type="application/ld+json">
+
+{
+  "@context": "http://schema.org",
+  "@type": "Restaurant",
+  "name": "Tartine Bakery",
+  "potentialAction": {
+    "@type": "ViewAction",
+    "target": [
+      "http://www.urbanspoon.com/r/6/92204",
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "http://api.urbanspoon.com/r/6/92204",
+        "contentType": "application/json+ld"
+      },
+      "android-app://com.urbanspoon/http/www.urbanspoon.com/r/6/92204",
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "urbanspoon://r/6/92204",
+        "application": {
+          "@type": "SoftwareApplication",
+          "@id": "284708449",
+          "name": "Urbanspoon iPhone & iPad App",
+          "operatingSystem": "iOS"
+        }
+      },
+      {
+        "@type": "EntryPoint",
+        "urlTemplate": "urbanspoon://r/6/92204",
+        "application": {
+          "@type": "SoftwareApplication",
+          "@id": "5b23b738-bb64-4829-9296-5bcb59bb0d2d",
+          "name": "Windows Phone App",
+          "operatingSystem": "Windows Phone 8"
+        }
+      }
+    ]
+  }
+}
+</script>
+
+TYPES:  FakeEntryNeeded, FixMeSomeDay
+
+PRE-MARKUP: 
+
+...
+
+MICRODATA: 
+
+...
+
+RDFA: 
+
+...
+
+JSON:
+
+...
+
+
+
+
+
+
 

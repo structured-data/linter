@@ -77,6 +77,8 @@
       "jsonld": "schema.org/178-jsonld.html"
     },
     "179": {
+      "microdata": "schema.org/179-microdata.html",
+      "rdfa": "schema.org/179-rdfa.html",
       "jsonld": "schema.org/179-jsonld.html"
     }
   },
@@ -99,6 +101,8 @@
       "jsonld": "schema.org/173-jsonld.html"
     },
     "174": {
+      "microdata": "schema.org/174-microdata.html",
+      "rdfa": "schema.org/174-rdfa.html",
       "jsonld": "schema.org/174-jsonld.html"
     }
   },
@@ -139,6 +143,8 @@
       "jsonld": "schema.org/178-jsonld.html"
     },
     "179": {
+      "microdata": "schema.org/179-microdata.html",
+      "rdfa": "schema.org/179-rdfa.html",
       "jsonld": "schema.org/179-jsonld.html"
     }
   },
@@ -262,6 +268,8 @@
       "jsonld": "schema.org/178-jsonld.html"
     },
     "179": {
+      "microdata": "schema.org/179-microdata.html",
+      "rdfa": "schema.org/179-rdfa.html",
       "jsonld": "schema.org/179-jsonld.html"
     }
   },
@@ -274,6 +282,8 @@
   },
   "ContactPoint": {
     "174": {
+      "microdata": "schema.org/174-microdata.html",
+      "rdfa": "schema.org/174-rdfa.html",
       "jsonld": "schema.org/174-jsonld.html"
     }
   },
@@ -312,11 +322,15 @@
       "jsonld": "schema.org/173-jsonld.html"
     },
     "174": {
+      "microdata": "schema.org/174-microdata.html",
+      "rdfa": "schema.org/174-rdfa.html",
       "jsonld": "schema.org/174-jsonld.html"
     }
   },
   "Hospital": {
     "174": {
+      "microdata": "schema.org/174-microdata.html",
+      "rdfa": "schema.org/174-rdfa.html",
       "jsonld": "schema.org/174-jsonld.html"
     }
   },
@@ -350,6 +364,8 @@
   },
   "Language": {
     "174": {
+      "microdata": "schema.org/174-microdata.html",
+      "rdfa": "schema.org/174-rdfa.html",
       "jsonld": "schema.org/174-jsonld.html"
     }
   },
@@ -461,6 +477,8 @@
       "jsonld": "schema.org/13-jsonld.html"
     },
     "179": {
+      "microdata": "schema.org/179-microdata.html",
+      "rdfa": "schema.org/179-rdfa.html",
       "jsonld": "schema.org/179-jsonld.html"
     }
   },
@@ -524,6 +542,8 @@
       "jsonld": "schema.org/178-jsonld.html"
     },
     "179": {
+      "microdata": "schema.org/179-microdata.html",
+      "rdfa": "schema.org/179-rdfa.html",
       "jsonld": "schema.org/179-jsonld.html"
     }
   },
@@ -551,6 +571,11 @@
       "microdata": "schema.org/3-microdata.html",
       "rdfa": "schema.org/3-rdfa.html",
       "jsonld": "schema.org/3-jsonld.html"
+    },
+    "191": {
+      "microdata": "schema.org/191-microdata.html",
+      "rdfa": "schema.org/191-rdfa.html",
+      "jsonld": "schema.org/191-jsonld.html"
     }
   },
   "Review": {
@@ -721,660 +746,953 @@
       "jsonld": "schema.org/173-jsonld.html"
     },
     "174": {
+      "microdata": "schema.org/174-microdata.html",
+      "rdfa": "schema.org/174-rdfa.html",
       "jsonld": "schema.org/174-jsonld.html"
     }
   },
   "Action": {
     "35": {
+      "microdata": "schema.org/35-microdata.html",
+      "rdfa": "schema.org/35-rdfa.html",
       "jsonld": "schema.org/35-jsonld.html"
     },
     "36": {
+      "microdata": "schema.org/36-microdata.html",
+      "rdfa": "schema.org/36-rdfa.html",
       "jsonld": "schema.org/36-jsonld.html"
     }
   },
   "OrganizeAction": {
     "123": {
+      "microdata": "schema.org/123-microdata.html",
+      "rdfa": "schema.org/123-rdfa.html",
       "jsonld": "schema.org/123-jsonld.html"
     },
     "124": {
+      "microdata": "schema.org/124-microdata.html",
+      "rdfa": "schema.org/124-rdfa.html",
       "jsonld": "schema.org/124-jsonld.html"
     }
   },
   "AllocateAction": {
     "125": {
+      "microdata": "schema.org/125-microdata.html",
+      "rdfa": "schema.org/125-rdfa.html",
       "jsonld": "schema.org/125-jsonld.html"
     }
   },
   "AcceptAction": {
     "126": {
+      "microdata": "schema.org/126-microdata.html",
+      "rdfa": "schema.org/126-rdfa.html",
       "jsonld": "schema.org/126-jsonld.html"
     }
   },
   "AchieveAction": {
     "37": {
+      "microdata": "schema.org/37-microdata.html",
+      "rdfa": "schema.org/37-rdfa.html",
       "jsonld": "schema.org/37-jsonld.html"
     }
   },
   "UpdateAction": {
     "163": {
+      "microdata": "schema.org/163-microdata.html",
+      "rdfa": "schema.org/163-rdfa.html",
       "jsonld": "schema.org/163-jsonld.html"
     }
   },
   "AddAction": {
     "164": {
+      "microdata": "schema.org/164-microdata.html",
+      "rdfa": "schema.org/164-rdfa.html",
       "jsonld": "schema.org/164-jsonld.html"
     },
     "165": {
+      "microdata": "schema.org/165-microdata.html",
+      "rdfa": "schema.org/165-rdfa.html",
       "jsonld": "schema.org/165-jsonld.html"
     }
   },
   "AssessAction": {
     "41": {
+      "microdata": "schema.org/41-microdata.html",
+      "rdfa": "schema.org/41-rdfa.html",
       "jsonld": "schema.org/41-jsonld.html"
     }
   },
   "ReactAction": {
     "48": {
+      "microdata": "schema.org/48-microdata.html",
+      "rdfa": "schema.org/48-rdfa.html",
       "jsonld": "schema.org/48-jsonld.html"
     }
   },
   "AgreeAction": {
     "49": {
+      "microdata": "schema.org/49-microdata.html",
+      "rdfa": "schema.org/49-rdfa.html",
       "jsonld": "schema.org/49-jsonld.html"
     }
   },
   "InsertAction": {
     "166": {
+      "microdata": "schema.org/166-microdata.html",
+      "rdfa": "schema.org/166-rdfa.html",
       "jsonld": "schema.org/166-jsonld.html"
     }
   },
   "AppendAction": {
     "167": {
+      "microdata": "schema.org/167-microdata.html",
+      "rdfa": "schema.org/167-rdfa.html",
       "jsonld": "schema.org/167-jsonld.html"
     }
   },
   "ApplyAction": {
     "130": {
+      "microdata": "schema.org/130-microdata.html",
+      "rdfa": "schema.org/130-rdfa.html",
       "jsonld": "schema.org/130-jsonld.html"
     }
   },
   "MoveAction": {
     "118": {
+      "microdata": "schema.org/118-microdata.html",
+      "rdfa": "schema.org/118-rdfa.html",
       "jsonld": "schema.org/118-jsonld.html"
     }
   },
   "ArriveAction": {
     "119": {
+      "microdata": "schema.org/119-microdata.html",
+      "rdfa": "schema.org/119-rdfa.html",
       "jsonld": "schema.org/119-jsonld.html"
     }
   },
   "InteractAction": {
     "88": {
+      "microdata": "schema.org/88-microdata.html",
+      "rdfa": "schema.org/88-rdfa.html",
       "jsonld": "schema.org/88-jsonld.html"
     },
     "89": {
+      "microdata": "schema.org/89-microdata.html",
+      "rdfa": "schema.org/89-rdfa.html",
       "jsonld": "schema.org/89-jsonld.html"
     }
   },
   "CommunicateAction": {
     "91": {
+      "microdata": "schema.org/91-microdata.html",
+      "rdfa": "schema.org/91-rdfa.html",
       "jsonld": "schema.org/91-jsonld.html"
     },
     "92": {
+      "microdata": "schema.org/92-microdata.html",
+      "rdfa": "schema.org/92-rdfa.html",
       "jsonld": "schema.org/92-jsonld.html"
     }
   },
   "AskAction": {
     "93": {
+      "microdata": "schema.org/93-microdata.html",
+      "rdfa": "schema.org/93-rdfa.html",
       "jsonld": "schema.org/93-jsonld.html"
     }
   },
   "AssignAction": {
     "127": {
+      "microdata": "schema.org/127-microdata.html",
+      "rdfa": "schema.org/127-rdfa.html",
       "jsonld": "schema.org/127-jsonld.html"
     }
   },
   "AuthorizeAction": {
     "128": {
+      "microdata": "schema.org/128-microdata.html",
+      "rdfa": "schema.org/128-rdfa.html",
       "jsonld": "schema.org/128-jsonld.html"
     }
   },
   "BefriendAction": {
     "90": {
+      "microdata": "schema.org/90-microdata.html",
+      "rdfa": "schema.org/90-rdfa.html",
       "jsonld": "schema.org/90-jsonld.html"
     }
   },
   "BookmarkAction": {
     "131": {
+      "microdata": "schema.org/131-microdata.html",
+      "rdfa": "schema.org/131-rdfa.html",
       "jsonld": "schema.org/131-jsonld.html"
     }
   },
   "TransferAction": {
     "154": {
+      "microdata": "schema.org/154-microdata.html",
+      "rdfa": "schema.org/154-rdfa.html",
       "jsonld": "schema.org/154-jsonld.html"
     }
   },
   "BorrowAction": {
     "155": {
+      "microdata": "schema.org/155-microdata.html",
+      "rdfa": "schema.org/155-rdfa.html",
       "jsonld": "schema.org/155-jsonld.html"
     }
   },
   "TradeAction": {
     "145": {
+      "microdata": "schema.org/145-microdata.html",
+      "rdfa": "schema.org/145-rdfa.html",
       "jsonld": "schema.org/145-jsonld.html"
     }
   },
   "BuyAction": {
     "146": {
+      "microdata": "schema.org/146-microdata.html",
+      "rdfa": "schema.org/146-rdfa.html",
       "jsonld": "schema.org/146-jsonld.html"
     }
   },
   "PlanAction": {
     "132": {
+      "microdata": "schema.org/132-microdata.html",
+      "rdfa": "schema.org/132-rdfa.html",
       "jsonld": "schema.org/132-jsonld.html"
     },
     "133": {
+      "microdata": "schema.org/133-microdata.html",
+      "rdfa": "schema.org/133-rdfa.html",
       "jsonld": "schema.org/133-jsonld.html"
     }
   },
   "CancelAction": {
     "134": {
+      "microdata": "schema.org/134-microdata.html",
+      "rdfa": "schema.org/134-rdfa.html",
       "jsonld": "schema.org/134-jsonld.html"
     }
   },
   "FindAction": {
     "83": {
+      "microdata": "schema.org/83-microdata.html",
+      "rdfa": "schema.org/83-rdfa.html",
       "jsonld": "schema.org/83-jsonld.html"
     }
   },
   "CheckAction": {
     "84": {
+      "microdata": "schema.org/84-microdata.html",
+      "rdfa": "schema.org/84-rdfa.html",
       "jsonld": "schema.org/84-jsonld.html"
     },
     "85": {
+      "microdata": "schema.org/85-microdata.html",
+      "rdfa": "schema.org/85-rdfa.html",
       "jsonld": "schema.org/85-jsonld.html"
     }
   },
   "CheckInAction": {
     "94": {
+      "microdata": "schema.org/94-microdata.html",
+      "rdfa": "schema.org/94-rdfa.html",
       "jsonld": "schema.org/94-jsonld.html"
     },
     "95": {
+      "microdata": "schema.org/95-microdata.html",
+      "rdfa": "schema.org/95-rdfa.html",
       "jsonld": "schema.org/95-jsonld.html"
     },
     "96": {
+      "microdata": "schema.org/96-microdata.html",
+      "rdfa": "schema.org/96-rdfa.html",
       "jsonld": "schema.org/96-jsonld.html"
     }
   },
   "CheckOutAction": {
     "97": {
+      "microdata": "schema.org/97-microdata.html",
+      "rdfa": "schema.org/97-rdfa.html",
       "jsonld": "schema.org/97-jsonld.html"
     }
   },
   "ChooseAction": {
     "42": {
+      "microdata": "schema.org/42-microdata.html",
+      "rdfa": "schema.org/42-rdfa.html",
       "jsonld": "schema.org/42-jsonld.html"
     },
     "43": {
+      "microdata": "schema.org/43-microdata.html",
+      "rdfa": "schema.org/43-rdfa.html",
       "jsonld": "schema.org/43-jsonld.html"
     }
   },
   "CommentAction": {
     "98": {
+      "microdata": "schema.org/98-microdata.html",
+      "rdfa": "schema.org/98-rdfa.html",
       "jsonld": "schema.org/98-jsonld.html"
     }
   },
   "InformAction": {
     "99": {
+      "microdata": "schema.org/99-microdata.html",
+      "rdfa": "schema.org/99-rdfa.html",
       "jsonld": "schema.org/99-jsonld.html"
     }
   },
   "ConfirmAction": {
     "100": {
+      "microdata": "schema.org/100-microdata.html",
+      "rdfa": "schema.org/100-rdfa.html",
       "jsonld": "schema.org/100-jsonld.html"
     }
   },
   "ConsumeAction": {
     "56": {
+      "microdata": "schema.org/56-microdata.html",
+      "rdfa": "schema.org/56-rdfa.html",
       "jsonld": "schema.org/56-jsonld.html"
     }
   },
   "CreateAction": {
     "76": {
+      "microdata": "schema.org/76-microdata.html",
+      "rdfa": "schema.org/76-rdfa.html",
       "jsonld": "schema.org/76-jsonld.html"
     }
   },
   "CookAction": {
     "77": {
+      "microdata": "schema.org/77-microdata.html",
+      "rdfa": "schema.org/77-rdfa.html",
       "jsonld": "schema.org/77-jsonld.html"
     }
   },
   "DeleteAction": {
     "169": {
+      "microdata": "schema.org/169-microdata.html",
+      "rdfa": "schema.org/169-rdfa.html",
       "jsonld": "schema.org/169-jsonld.html"
     }
   },
   "DepartAction": {
     "120": {
+      "microdata": "schema.org/120-microdata.html",
+      "rdfa": "schema.org/120-rdfa.html",
       "jsonld": "schema.org/120-jsonld.html"
     }
   },
   "DisagreeAction": {
     "50": {
+      "microdata": "schema.org/50-microdata.html",
+      "rdfa": "schema.org/50-rdfa.html",
       "jsonld": "schema.org/50-jsonld.html"
     }
   },
   "DiscoverAction": {
     "86": {
+      "microdata": "schema.org/86-microdata.html",
+      "rdfa": "schema.org/86-rdfa.html",
       "jsonld": "schema.org/86-jsonld.html"
     }
   },
   "DislikeAction": {
     "51": {
+      "microdata": "schema.org/51-microdata.html",
+      "rdfa": "schema.org/51-rdfa.html",
       "jsonld": "schema.org/51-jsonld.html"
     }
   },
   "DonateAction": {
     "147": {
+      "microdata": "schema.org/147-microdata.html",
+      "rdfa": "schema.org/147-rdfa.html",
       "jsonld": "schema.org/147-jsonld.html"
     }
   },
   "DownloadAction": {
     "156": {
+      "microdata": "schema.org/156-microdata.html",
+      "rdfa": "schema.org/156-rdfa.html",
       "jsonld": "schema.org/156-jsonld.html"
     }
   },
   "DrawAction": {
     "78": {
+      "microdata": "schema.org/78-microdata.html",
+      "rdfa": "schema.org/78-rdfa.html",
       "jsonld": "schema.org/78-jsonld.html"
     }
   },
   "DrinkAction": {
     "57": {
+      "microdata": "schema.org/57-microdata.html",
+      "rdfa": "schema.org/57-rdfa.html",
       "jsonld": "schema.org/57-jsonld.html"
     }
   },
   "EatAction": {
     "58": {
+      "microdata": "schema.org/58-microdata.html",
+      "rdfa": "schema.org/58-rdfa.html",
       "jsonld": "schema.org/58-jsonld.html"
     }
   },
   "EndorseAction": {
     "52": {
+      "microdata": "schema.org/52-microdata.html",
+      "rdfa": "schema.org/52-rdfa.html",
       "jsonld": "schema.org/52-jsonld.html"
     }
   },
   "PlayAction": {
     "139": {
+      "microdata": "schema.org/139-microdata.html",
+      "rdfa": "schema.org/139-rdfa.html",
       "jsonld": "schema.org/139-jsonld.html"
     }
   },
   "ExerciseAction": {
     "140": {
+      "microdata": "schema.org/140-microdata.html",
+      "rdfa": "schema.org/140-rdfa.html",
       "jsonld": "schema.org/140-jsonld.html"
     },
     "141": {
+      "microdata": "schema.org/141-microdata.html",
+      "rdfa": "schema.org/141-rdfa.html",
       "jsonld": "schema.org/141-jsonld.html"
     }
   },
   "FilmAction": {
     "79": {
+      "microdata": "schema.org/79-microdata.html",
+      "rdfa": "schema.org/79-rdfa.html",
       "jsonld": "schema.org/79-jsonld.html"
     }
   },
   "FollowAction": {
     "106": {
+      "microdata": "schema.org/106-microdata.html",
+      "rdfa": "schema.org/106-rdfa.html",
       "jsonld": "schema.org/106-jsonld.html"
     }
   },
   "GiveAction": {
     "157": {
+      "microdata": "schema.org/157-microdata.html",
+      "rdfa": "schema.org/157-rdfa.html",
       "jsonld": "schema.org/157-jsonld.html"
     }
   },
   "IgnoreAction": {
     "45": {
+      "microdata": "schema.org/45-microdata.html",
+      "rdfa": "schema.org/45-rdfa.html",
       "jsonld": "schema.org/45-jsonld.html"
     },
     "46": {
+      "microdata": "schema.org/46-microdata.html",
+      "rdfa": "schema.org/46-rdfa.html",
       "jsonld": "schema.org/46-jsonld.html"
     },
     "47": {
+      "microdata": "schema.org/47-microdata.html",
+      "rdfa": "schema.org/47-rdfa.html",
       "jsonld": "schema.org/47-jsonld.html"
     }
   },
   "InstallAction": {
     "59": {
+      "microdata": "schema.org/59-microdata.html",
+      "rdfa": "schema.org/59-rdfa.html",
       "jsonld": "schema.org/59-jsonld.html"
     }
   },
   "InviteAction": {
     "102": {
+      "microdata": "schema.org/102-microdata.html",
+      "rdfa": "schema.org/102-rdfa.html",
       "jsonld": "schema.org/102-jsonld.html"
     }
   },
   "JoinAction": {
     "107": {
+      "microdata": "schema.org/107-microdata.html",
+      "rdfa": "schema.org/107-rdfa.html",
       "jsonld": "schema.org/107-jsonld.html"
     },
     "108": {
+      "microdata": "schema.org/108-microdata.html",
+      "rdfa": "schema.org/108-rdfa.html",
       "jsonld": "schema.org/108-jsonld.html"
     },
     "109": {
+      "microdata": "schema.org/109-microdata.html",
+      "rdfa": "schema.org/109-rdfa.html",
       "jsonld": "schema.org/109-jsonld.html"
     },
     "110": {
+      "microdata": "schema.org/110-microdata.html",
+      "rdfa": "schema.org/110-rdfa.html",
       "jsonld": "schema.org/110-jsonld.html"
     }
   },
   "LeaveAction": {
     "111": {
+      "microdata": "schema.org/111-microdata.html",
+      "rdfa": "schema.org/111-rdfa.html",
       "jsonld": "schema.org/111-jsonld.html"
     }
   },
   "LendAction": {
     "158": {
+      "microdata": "schema.org/158-microdata.html",
+      "rdfa": "schema.org/158-rdfa.html",
       "jsonld": "schema.org/158-jsonld.html"
     }
   },
   "LikeAction": {
     "53": {
+      "microdata": "schema.org/53-microdata.html",
+      "rdfa": "schema.org/53-rdfa.html",
       "jsonld": "schema.org/53-jsonld.html"
     }
   },
   "ListenAction": {
     "60": {
+      "microdata": "schema.org/60-microdata.html",
+      "rdfa": "schema.org/60-rdfa.html",
       "jsonld": "schema.org/60-jsonld.html"
     },
     "61": {
+      "microdata": "schema.org/61-microdata.html",
+      "rdfa": "schema.org/61-rdfa.html",
       "jsonld": "schema.org/61-jsonld.html"
     },
     "62": {
+      "microdata": "schema.org/62-microdata.html",
+      "rdfa": "schema.org/62-rdfa.html",
       "jsonld": "schema.org/62-jsonld.html"
     }
   },
   "LoseAction": {
     "38": {
+      "microdata": "schema.org/38-microdata.html",
+      "rdfa": "schema.org/38-rdfa.html",
       "jsonld": "schema.org/38-jsonld.html"
     }
   },
   "MarryAction": {
     "112": {
+      "microdata": "schema.org/112-microdata.html",
+      "rdfa": "schema.org/112-rdfa.html",
       "jsonld": "schema.org/112-jsonld.html"
     }
   },
   "OrderAction": {
     "148": {
+      "microdata": "schema.org/148-microdata.html",
+      "rdfa": "schema.org/148-rdfa.html",
       "jsonld": "schema.org/148-jsonld.html"
     }
   },
   "PaintAction": {
     "80": {
+      "microdata": "schema.org/80-microdata.html",
+      "rdfa": "schema.org/80-rdfa.html",
       "jsonld": "schema.org/80-jsonld.html"
     }
   },
   "PayAction": {
     "149": {
+      "microdata": "schema.org/149-microdata.html",
+      "rdfa": "schema.org/149-rdfa.html",
       "jsonld": "schema.org/149-jsonld.html"
     }
   },
   "PerformAction": {
     "142": {
+      "microdata": "schema.org/142-microdata.html",
+      "rdfa": "schema.org/142-rdfa.html",
       "jsonld": "schema.org/142-jsonld.html"
     }
   },
   "PhotographAction": {
     "81": {
+      "microdata": "schema.org/81-microdata.html",
+      "rdfa": "schema.org/81-rdfa.html",
       "jsonld": "schema.org/81-jsonld.html"
     }
   },
   "PrependAction": {
     "168": {
+      "microdata": "schema.org/168-microdata.html",
+      "rdfa": "schema.org/168-rdfa.html",
       "jsonld": "schema.org/168-jsonld.html"
     }
   },
   "QuoteAction": {
     "150": {
+      "microdata": "schema.org/150-microdata.html",
+      "rdfa": "schema.org/150-rdfa.html",
       "jsonld": "schema.org/150-jsonld.html"
     }
   },
   "ReadAction": {
     "63": {
+      "microdata": "schema.org/63-microdata.html",
+      "rdfa": "schema.org/63-rdfa.html",
       "jsonld": "schema.org/63-jsonld.html"
     },
     "64": {
+      "microdata": "schema.org/64-microdata.html",
+      "rdfa": "schema.org/64-rdfa.html",
       "jsonld": "schema.org/64-jsonld.html"
     },
     "65": {
+      "microdata": "schema.org/65-microdata.html",
+      "rdfa": "schema.org/65-rdfa.html",
       "jsonld": "schema.org/65-jsonld.html"
     },
     "66": {
+      "microdata": "schema.org/66-microdata.html",
+      "rdfa": "schema.org/66-rdfa.html",
       "jsonld": "schema.org/66-jsonld.html"
     }
   },
   "ReceiveAction": {
     "159": {
+      "microdata": "schema.org/159-microdata.html",
+      "rdfa": "schema.org/159-rdfa.html",
       "jsonld": "schema.org/159-jsonld.html"
     }
   },
   "RegisterAction": {
     "113": {
+      "microdata": "schema.org/113-microdata.html",
+      "rdfa": "schema.org/113-rdfa.html",
       "jsonld": "schema.org/113-jsonld.html"
     },
     "114": {
+      "microdata": "schema.org/114-microdata.html",
+      "rdfa": "schema.org/114-rdfa.html",
       "jsonld": "schema.org/114-jsonld.html"
     },
     "115": {
+      "microdata": "schema.org/115-microdata.html",
+      "rdfa": "schema.org/115-rdfa.html",
       "jsonld": "schema.org/115-jsonld.html"
     }
   },
   "RejectAction": {
     "129": {
+      "microdata": "schema.org/129-microdata.html",
+      "rdfa": "schema.org/129-rdfa.html",
       "jsonld": "schema.org/129-jsonld.html"
     }
   },
   "RentAction": {
     "151": {
+      "microdata": "schema.org/151-microdata.html",
+      "rdfa": "schema.org/151-rdfa.html",
       "jsonld": "schema.org/151-jsonld.html"
     }
   },
   "ReplaceAction": {
     "170": {
+      "microdata": "schema.org/170-microdata.html",
+      "rdfa": "schema.org/170-rdfa.html",
       "jsonld": "schema.org/170-jsonld.html"
     }
   },
   "ReplyAction": {
     "103": {
+      "microdata": "schema.org/103-microdata.html",
+      "rdfa": "schema.org/103-rdfa.html",
       "jsonld": "schema.org/103-jsonld.html"
     }
   },
   "ReserveAction": {
     "136": {
+      "microdata": "schema.org/136-microdata.html",
+      "rdfa": "schema.org/136-rdfa.html",
       "jsonld": "schema.org/136-jsonld.html"
     }
   },
   "ReturnAction": {
     "160": {
+      "microdata": "schema.org/160-microdata.html",
+      "rdfa": "schema.org/160-rdfa.html",
       "jsonld": "schema.org/160-jsonld.html"
     }
   },
   "ReviewAction": {
     "55": {
+      "microdata": "schema.org/55-microdata.html",
+      "rdfa": "schema.org/55-rdfa.html",
       "jsonld": "schema.org/55-jsonld.html"
     }
   },
   "RsvpAction": {
     "101": {
+      "microdata": "schema.org/101-microdata.html",
+      "rdfa": "schema.org/101-rdfa.html",
       "jsonld": "schema.org/101-jsonld.html"
     }
   },
   "ScheduleAction": {
     "137": {
+      "microdata": "schema.org/137-microdata.html",
+      "rdfa": "schema.org/137-rdfa.html",
       "jsonld": "schema.org/137-jsonld.html"
     }
   },
   "SearchAction": {
     "143": {
+      "microdata": "schema.org/143-microdata.html",
+      "rdfa": "schema.org/143-rdfa.html",
       "jsonld": "schema.org/143-jsonld.html"
     },
     "144": {
+      "microdata": "schema.org/144-microdata.html",
+      "rdfa": "schema.org/144-rdfa.html",
       "jsonld": "schema.org/144-jsonld.html"
     }
   },
   "SellAction": {
     "152": {
+      "microdata": "schema.org/152-microdata.html",
+      "rdfa": "schema.org/152-rdfa.html",
       "jsonld": "schema.org/152-jsonld.html"
     }
   },
   "SendAction": {
     "161": {
+      "microdata": "schema.org/161-microdata.html",
+      "rdfa": "schema.org/161-rdfa.html",
       "jsonld": "schema.org/161-jsonld.html"
     }
   },
   "ShareAction": {
     "104": {
+      "microdata": "schema.org/104-microdata.html",
+      "rdfa": "schema.org/104-rdfa.html",
       "jsonld": "schema.org/104-jsonld.html"
     },
     "105": {
+      "microdata": "schema.org/105-microdata.html",
+      "rdfa": "schema.org/105-rdfa.html",
       "jsonld": "schema.org/105-jsonld.html"
     }
   },
   "SubscribeAction": {
     "116": {
+      "microdata": "schema.org/116-microdata.html",
+      "rdfa": "schema.org/116-rdfa.html",
       "jsonld": "schema.org/116-jsonld.html"
     }
   },
   "TakeAction": {
     "162": {
+      "microdata": "schema.org/162-microdata.html",
+      "rdfa": "schema.org/162-rdfa.html",
       "jsonld": "schema.org/162-jsonld.html"
     }
   },
   "TieAction": {
     "39": {
+      "microdata": "schema.org/39-microdata.html",
+      "rdfa": "schema.org/39-rdfa.html",
       "jsonld": "schema.org/39-jsonld.html"
     }
   },
   "TipAction": {
     "153": {
+      "microdata": "schema.org/153-microdata.html",
+      "rdfa": "schema.org/153-rdfa.html",
       "jsonld": "schema.org/153-jsonld.html"
     }
   },
   "TrackAction": {
     "87": {
+      "microdata": "schema.org/87-microdata.html",
+      "rdfa": "schema.org/87-rdfa.html",
       "jsonld": "schema.org/87-jsonld.html"
     }
   },
   "TravelAction": {
     "121": {
+      "microdata": "schema.org/121-microdata.html",
+      "rdfa": "schema.org/121-rdfa.html",
       "jsonld": "schema.org/121-jsonld.html"
     },
     "122": {
+      "microdata": "schema.org/122-microdata.html",
+      "rdfa": "schema.org/122-rdfa.html",
       "jsonld": "schema.org/122-jsonld.html"
     }
   },
   "UnRegisterAction": {
     "117": {
+      "microdata": "schema.org/117-microdata.html",
+      "rdfa": "schema.org/117-rdfa.html",
       "jsonld": "schema.org/117-jsonld.html"
     }
   },
   "UseAction": {
     "67": {
+      "microdata": "schema.org/67-microdata.html",
+      "rdfa": "schema.org/67-rdfa.html",
       "jsonld": "schema.org/67-jsonld.html"
     }
   },
   "ViewAction": {
     "69": {
+      "microdata": "schema.org/69-microdata.html",
+      "rdfa": "schema.org/69-rdfa.html",
       "jsonld": "schema.org/69-jsonld.html"
     },
     "70": {
+      "microdata": "schema.org/70-microdata.html",
+      "rdfa": "schema.org/70-rdfa.html",
       "jsonld": "schema.org/70-jsonld.html"
     },
     "71": {
+      "microdata": "schema.org/71-microdata.html",
+      "rdfa": "schema.org/71-rdfa.html",
       "jsonld": "schema.org/71-jsonld.html"
     }
   },
   "VoteAction": {
     "44": {
+      "microdata": "schema.org/44-microdata.html",
+      "rdfa": "schema.org/44-rdfa.html",
       "jsonld": "schema.org/44-jsonld.html"
     }
   },
   "WantAction": {
     "54": {
+      "microdata": "schema.org/54-microdata.html",
+      "rdfa": "schema.org/54-rdfa.html",
       "jsonld": "schema.org/54-jsonld.html"
     }
   },
   "WatchAction": {
     "72": {
+      "microdata": "schema.org/72-microdata.html",
+      "rdfa": "schema.org/72-rdfa.html",
       "jsonld": "schema.org/72-jsonld.html"
     },
     "73": {
+      "microdata": "schema.org/73-microdata.html",
+      "rdfa": "schema.org/73-rdfa.html",
       "jsonld": "schema.org/73-jsonld.html"
     },
     "74": {
+      "microdata": "schema.org/74-microdata.html",
+      "rdfa": "schema.org/74-rdfa.html",
       "jsonld": "schema.org/74-jsonld.html"
     },
     "75": {
+      "microdata": "schema.org/75-microdata.html",
+      "rdfa": "schema.org/75-rdfa.html",
       "jsonld": "schema.org/75-jsonld.html"
+    },
+    "190": {
+      "microdata": "schema.org/190-microdata.html",
+      "rdfa": "schema.org/190-rdfa.html",
+      "jsonld": "schema.org/190-jsonld.html"
     }
   },
   "WearAction": {
     "68": {
+      "microdata": "schema.org/68-microdata.html",
+      "rdfa": "schema.org/68-rdfa.html",
       "jsonld": "schema.org/68-jsonld.html"
     }
   },
   "WinAction": {
     "40": {
+      "microdata": "schema.org/40-microdata.html",
+      "rdfa": "schema.org/40-rdfa.html",
       "jsonld": "schema.org/40-jsonld.html"
     }
   },
   "WriteAction": {
     "82": {
+      "microdata": "schema.org/82-microdata.html",
+      "rdfa": "schema.org/82-rdfa.html",
       "jsonld": "schema.org/82-jsonld.html"
     }
   },
   "BusReservation": {
     "182": {
-      "microdata": "schema.org/182-microdata.html"
+      "microdata": "schema.org/182-microdata.html",
+      "rdfa": "schema.org/182-rdfa.html",
+      "jsonld": "schema.org/182-jsonld.html"
     }
   },
   "EventReservation": {
     "183": {
+      "microdata": "schema.org/183-microdata.html",
+      "rdfa": "schema.org/183-rdfa.html",
       "jsonld": "schema.org/183-jsonld.html"
     }
   },
   "FlightReservation": {
     "184": {
+      "microdata": "schema.org/184-microdata.html",
+      "rdfa": "schema.org/184-rdfa.html",
       "jsonld": "schema.org/184-jsonld.html"
     }
   },
   "FoodEstablishmentReservation": {
     "185": {
+      "microdata": "schema.org/185-microdata.html",
+      "rdfa": "schema.org/185-rdfa.html",
       "jsonld": "schema.org/185-jsonld.html"
     }
   },
   "LodgingReservation": {
     "186": {
+      "microdata": "schema.org/186-microdata.html",
+      "rdfa": "schema.org/186-rdfa.html",
       "jsonld": "schema.org/186-jsonld.html"
     }
   },
   "RentalCarReservation": {
     "187": {
+      "microdata": "schema.org/187-microdata.html",
+      "rdfa": "schema.org/187-rdfa.html",
       "jsonld": "schema.org/187-jsonld.html"
     }
   },
   "TaxiReservation": {
     "188": {
+      "microdata": "schema.org/188-microdata.html",
+      "rdfa": "schema.org/188-rdfa.html",
       "jsonld": "schema.org/188-jsonld.html"
     }
   },
   "TrainReservation": {
     "181": {
-      "microdata": "schema.org/181-microdata.html"
+      "microdata": "schema.org/181-microdata.html",
+      "rdfa": "schema.org/181-rdfa.html",
+      "jsonld": "schema.org/181-jsonld.html"
     }
   },
   "Question": {
     "189": {
-      "microdata": "schema.org/189-microdata.html"
+      "microdata": "schema.org/189-microdata.html",
+      "rdfa": "schema.org/189-rdfa.html",
+      "jsonld": "schema.org/189-jsonld.html"
     }
   }
 }
