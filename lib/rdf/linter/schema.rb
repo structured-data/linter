@@ -19,10 +19,9 @@ module RDF::Linter
       @classes = {'Thing' => {}}
       @examples = {}
 
-      RDF::Linter::Parser::VOCAB_DEFS["Classes"].each do |cls_name, defn|
-        next unless cls_name.start_with?("http://schema.org/")
-        term = cls_name[18..-1]
-        @classes[term] = {super_class: defn["superClass"].map {|c| c[18..-1]}.first}
+      RDF::SCHEMA.each do |vocab_term|
+        term = vocab_term.to_s[18..-1]
+        @classes[term] = {super_class: vocab_term.subClassOf.map {|c| c.to_s[18..-1]}.first}
       end
       
       # Create hierarchical order of classes

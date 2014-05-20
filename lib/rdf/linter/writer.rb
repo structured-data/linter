@@ -12,7 +12,6 @@ module RDF::Linter
         :standard_prefixes => true,
         :haml => LINTER_HAML,
         :matched_templates => [],
-        :prefixes => RDF::Linter::Parser::VOCAB_DEFS["Vocabularies"],
       }.merge(options)
       options[:prefixes].delete(:dcterms) if options[:prefixes].has_key?(:dc)
       super do
@@ -27,7 +26,6 @@ module RDF::Linter
     def render_document(subjects, options = {})
       super(subjects, options.merge(:extracted => graph.dump(:rdfa,
                       :haml => RDF::Linter::TABULAR_HAML,
-                      :prefixes => RDF::Linter::Parser::VOCAB_DEFS["Vocabularies"],
                       :standard_prefixes => true))) do |subject|
         yield(subject) if block_given?
       end

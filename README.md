@@ -31,7 +31,6 @@ This application is represented as a [Sinatra][] application implemented in [Rub
           rdfa_template.rb  -- RDFa output templates in [Haml][]
           snippets          -- Snippet templates
           views             -- Templates for view generation in [Erubis][]
-          vocab_defs.rb     -- Vocabulary definitions
           writer.rb         -- Sub-class of [RDFa][] writer for generating snippet output.
         linter.rb         -- Controller defining HTTP endpoints
     public
