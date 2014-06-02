@@ -105,7 +105,7 @@ describe RDF::All::Reader do
           map(&:to_sym).
           map(&:to_s).
           join(":")
-        detected.should == format
+        expect(detected).to eql format
       end
     end
   end

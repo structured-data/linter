@@ -6,6 +6,7 @@ require 'rubygems'
 require 'simplecov'
 SimpleCov.start
 require 'rspec'
+require 'rspec/its'
 require 'rdf/isomorphic'
 require 'rdf/linter'
 require 'sinatra'
