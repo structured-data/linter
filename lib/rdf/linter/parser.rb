@@ -13,6 +13,7 @@ module RDF::Linter
         logger.level = ::RDF::Linter.debug? ? Logger::DEBUG : Logger::INFO
         logger
       end
+      RDF::Reasoner.apply(:rdfs, :schema)
       graph = RDF::Repository.new
       format = reader_opts[:format]
       reader_opts[:prefixes] ||= {}
@@ -170,7 +171,7 @@ module RDF::Linter
           flatten.
           uniq.
           compact if stmt.object.resource?
-        
+
         unless term.range_compatible?(stmt.object, graph, :types => resource_types[stmt.object])
          ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:range)
            "Object not compatable with range (#{Array(term.range).map {|d| d.pname|| d}.join(',')})"
