@@ -101,6 +101,9 @@ module RDF::Linter
     #   This example number, used to create appropriate grouping
     # @param [Symbol] format :microdata, :rdfa, or :jsonld
     def add_example(types, example, ex_num, format)
+      # Skip example if it is JSON only
+      return if example =~ /This example is JSON only/m
+
       # Write example out for reading later
       path = "schema.org/#{ex_num}-#{format}.html"
       File.open(File.expand_path("../../../../#{path}", __FILE__), "w") {|f| f.write(example)}

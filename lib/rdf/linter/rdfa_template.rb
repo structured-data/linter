@@ -1,6 +1,5 @@
 # Default HAML templates used for generating output from the writer
 # This format is based on Google Rich Snippets output
-require 'rdf/linter/vocab'
 
 module RDF::Linter
   LINTER_HAML = {
