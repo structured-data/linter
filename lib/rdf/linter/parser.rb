@@ -67,7 +67,7 @@ module RDF::Linter
           graph.query(:object => subj) do |stmt|
             vocab = RDF::Vocabulary.find_term(stmt.predicate) rescue nil
             next unless vocab && vocab.property?
-            ranges = Array(vocab.ranges || vocab.rangesIncludes) - [RDF::OWL.Thing]
+            ranges = Array(vocab.range || vocab.rangeIncludes) - [RDF::OWL.Thing]
             next if ranges.length != 1
             types << RDF::URI(ranges.first) 
           end
@@ -151,14 +151,14 @@ module RDF::Linter
         end
 
         # See if type of the subject is in the domain of this predicate
-        resource_types[stmt.subject] ||= graph.objects(:subject => stmt.subject, :predicate => RDF.type).
-          map {|o| (t = (RDF::Vocabulary.find_term(o) rescue nil)) && t.entail(:subClassOf)}.
+        resource_types[stmt.subject] ||= graph.query(subject: stmt.subject, predicate: RDF.type).
+        map {|s| (t = (RDF::Vocabulary.find_term(s.object) rescue nil)) && t.entail(:subClassOf)}.
           flatten.
           uniq.
           compact
 
         unless term.domain_compatible?(stmt.subject, graph, :types => resource_types[stmt.subject])
-         ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:domain)
+          ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:domain)
            "Subject not compatable with domain (#{Array(term.domain).map {|d| d.pname|| d}.join(',')})"
           else
             "Subject not compatable with domainIncludes (#{term.domainIncludes.map {|d| d.pname|| d}.join(',')})"
@@ -166,14 +166,14 @@ module RDF::Linter
         end
 
         # Make sure that if ranges are defined, the object has an appropriate type
-        resource_types[stmt.object] ||= graph.objects(:subject => stmt.object, :predicate => RDF.type).
-          map {|o| (t = (RDF::Vocabulary.find_term(o) rescue nil)) && t.entail(:subClassOf)}.
+        resource_types[stmt.object] ||= graph.query(subject: stmt.object, predicate: RDF.type).
+          map {|s| (t = (RDF::Vocabulary.find_term(s.object) rescue nil)) && t.entail(:subClassOf)}.
           flatten.
           uniq.
           compact if stmt.object.resource?
 
         unless term.range_compatible?(stmt.object, graph, :types => resource_types[stmt.object])
-         ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:range)
+          ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:range)
            "Object not compatable with range (#{Array(term.range).map {|d| d.pname|| d}.join(',')})"
           else
             "Object not compatable with rangeIncludes (#{term.rangeIncludes.map {|d| d.pname|| d}.join(',')})"

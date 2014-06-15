@@ -1,12 +1,19 @@
 GIT
-  remote: git://github.com/gkellogg/rdf-reasoner.git
-  revision: 3ccbd1d2b69e12929ad82bce020014d76823192b
+  remote: git://github.com/ruby-rdf/rdf-reasoner.git
+  revision: aca71402318bf6428a4d8ee8c879add59f920574
   branch: develop
   specs:
     rdf-reasoner (0.0.1)
       rdf (~> 1.1, >= 1.1.4)
       rdf-turtle (~> 1.1)
       rdf-xsd (~> 1.1)
+
+GIT
+  remote: git://github.com/ruby-rdf/rdf.git
+  revision: c52516d94feafc5d595d3287d69c1b14f33f42d8
+  branch: develop
+  specs:
+    rdf (1.1.4)
 
 PATH
   remote: .
@@ -23,11 +30,6 @@ PATH
       rdf-reasoner (~> 0.0)
       sinatra (~> 1.4)
       sinatra-linkeddata (~> 1.1)
-
-PATH
-  remote: ../rdf
-  specs:
-    rdf (1.1.4)
 
 GEM
   remote: https://rubygems.org/
@@ -102,14 +104,14 @@ GEM
       rdf (>= 1.1)
     rdf-json (1.1.0)
       rdf (>= 1.1.0)
-    rdf-microdata (1.1.1.1)
+    rdf-microdata (1.1.1.2)
       htmlentities (~> 4.3)
       nokogiri (~> 1.6)
       rdf (~> 1.1)
       rdf-xsd (~> 1.1)
     rdf-n3 (1.1.1)
       rdf (~> 1.1, >= 1.1.4)
-    rdf-rdfa (1.1.3.1)
+    rdf-rdfa (1.1.3.2)
       haml (~> 4.0)
       htmlentities (~> 4.3)
       rdf (~> 1.1)

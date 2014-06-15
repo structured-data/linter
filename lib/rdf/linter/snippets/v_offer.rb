@@ -3,8 +3,8 @@ module RDF::Linter
   {
     "http://rdf.data-vocabulary.org/#Offer" => "http://rdf.data-vocabulary.org/#",
     "http://data-vocabulary.org/Offer" => "http://data-vocabulary.org/",
-    "http://rdf.data-vocabulary.org/#Offer-aggregate" => "http://rdf.data-vocabulary.org/#",
-    "http://data-vocabulary.org/Offer-aggregate" => "http://data-vocabulary.org/",
+    "http://rdf.data-vocabulary.org/#OfferAggregate" => "http://rdf.data-vocabulary.org/#",
+    "http://data-vocabulary.org/OfferAggregate" => "http://data-vocabulary.org/",
   }.each do |type, prefix|
     LINTER_HAML.merge!({
       RDF::URI(type) => {

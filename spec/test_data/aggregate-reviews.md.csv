@@ -2,6 +2,6 @@
 /div/@id,results-content
 /div/@prefix,TRUE
 /div/div[@typeof]/@class,snippet-content
-/div/div[@typeof='vmd:Review-aggregate'],TRUE
+/div/div[@typeof='vmd:Review-aggregate vmd:Review'],TRUE
 //h3[@class='r']/a[@class='fakelink']/span[@property='vmd:itemreviewed']/text(),/Amourita Pizza/
 //div[@class='s primary_content']/div[@class='f']/span[@property='vmd:count']/text(),5

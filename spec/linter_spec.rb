@@ -220,6 +220,7 @@ describe RDF::Linter, "#lint" do
         graph = RDF::Graph.load(input)
         graph.query(:predicate => RDF.type) do |statement|
           s = statement.dup
+          RDF::Reasoner.apply(:rdfs, :schema)
           RDF::Linter::Parser.entailed_types(statement.object).each do |t|
             s.object = t
             graph << s
@@ -230,13 +231,30 @@ describe RDF::Linter, "#lint" do
     end
   end
 
-  context "Rich Snippets examples", skip: true do
+  context "Rich Snippets examples", focus: true do
     Dir.glob(File.join(EXAMPLE_DIR, "*.html")) do |input|
       file = input.split('/').last
       expected_errors = {
+        "aggregate-reviews.md.html" => {
+          :property => {
+            "vmd:votes"=>["No property definition found"]
+          }
+        },
         "aggregate-reviews.rdfa.html" => {
           :property => {
             "v:votes"=>["No property definition found"]
+          }
+        },
+        "event-multiple.md.html" => {
+          :class => {
+            "vmd:Geo"=>["No class definition found"],
+            "vmd:Event"=>["No class definition found"]
+          },
+          :property => {
+            "vmd:geo"=>["No property definition found"],
+            "vmd:latitude"=>["No property definition found"],
+            "vmd:longitude"=>["No property definition found"],
+            "vmd:startDate"=>["No property definition found"]
           }
         },
         "event-multiple.rdfa.html" => {
@@ -248,10 +266,24 @@ describe RDF::Linter, "#lint" do
             "v:geo"=>["No property definition found"],
             "v:latitude"=>["No property definition found"],
             "v:longitude"=>["No property definition found"],
-            "v:url"=>["Subject must have some type defined as domain (v:Person,v:Organization,v:Product,v:Breadcrumb)"],
-            "v:summary"=>["Subject must have some type defined as domain (v:Review,v:Recipe)"],
-            "v:photo"=>["Subject must have some type defined as domain (rdf:Resource)"],
             "v:startDate"=>["No property definition found"]
+          }
+        },
+        "event.md.html" => {
+          :class=>{
+            "vmd:Event"=>["No class definition found"],
+            "vmd:Geo"=>["No class definition found"]
+          },
+          :property=>{
+            "vmd:startDate"=>["No property definition found"],
+            "vmd:endDate"=>["No property definition found"],
+            "vmd:location"=>["No property definition found"],
+            "vmd:eventType"=>["No property definition found"],
+            "vmd:ticket"=>["No property definition found"],
+            "vmd:geo"=>["No property definition found"],
+            "vmd:latitude"=>["No property definition found"],
+            "vmd:longitude"=>["No property definition found"],
+            "vmd:priceValidUntil"=>["No property definition found"]
           }
         },
         "event.rdfa.html" => {
@@ -260,10 +292,6 @@ describe RDF::Linter, "#lint" do
             "v:Geo"=>["No class definition found"]
           },
           :property=>{
-            "v:url"=>["Subject must have some type defined as domain (v:Person,v:Organization,v:Product,v:Breadcrumb)"],
-            "v:summary"=>["Subject must have some type defined as domain (v:Review,v:Recipe)"],
-            "v:photo"=>["Subject must have some type defined as domain (rdf:Resource)"],
-            "v:description"=>["Subject must have some type defined as domain (v:Review,v:Product)"],
             "v:startDate"=>["No property definition found"],
             "v:endDate"=>["No property definition found"],
             "v:location"=>["No property definition found"],
@@ -272,6 +300,17 @@ describe RDF::Linter, "#lint" do
             "v:geo"=>["No property definition found"],
             "v:latitude"=>["No property definition found"],
             "v:longitude"=>["No property definition found"]
+          }
+        },
+        "offer-aggregate.md.html" => {
+          :class=>{
+            "vmd:Offer-aggregate"=>["No class definition found"]
+          },
+          :property=>{
+            "vmd:review"=>["No property definition found"],
+            "vmd:offerDetails"=>["No property definition found"],
+            "vmd:lowPrice"=>["No property definition found"],
+            "vmd:highPrice"=>["No property definition found"],
           }
         },
         "offer-aggregate.rdfa.html" => {
@@ -283,7 +322,6 @@ describe RDF::Linter, "#lint" do
             "v:offerDetails"=>["No property definition found"],
             "v:lowPrice"=>["No property definition found"],
             "v:highPrice"=>["No property definition found"],
-            "v:currency"=>["Subject must have some type defined as domain (v:Offer,v:OfferAggregate)"]
           }
         },
         "organization.rdfa.html" => {
@@ -296,6 +334,13 @@ describe RDF::Linter, "#lint" do
             "v:longitude"=>["No property definition found"]
           }
         },
+        "product.md.html" => {
+          :property=>{
+            "vmd:review"=>["No property definition found"],
+            "vmd:offerDetails"=>["No property definition found"],
+            "vmd:priceValidUntil"=>["No property definition found"]
+          }
+        },
         "product.rdfa.html" => {
           :property=>{
             "v:review"=>["No property definition found"],
@@ -303,21 +348,16 @@ describe RDF::Linter, "#lint" do
             "v:priceValidUntil"=>["No property definition found"]
           }
         },
+        "recipe.md.html" => {
+          :property=>{
+            "vmd:review"=>["No property definition found"],
+            "vmd:instructions"=>["Object not compatable with range (vmd:Instructions)"],
+          }
+        },
         "recipe.rdfa.html" => {
-          :class=>{
-            "v:Nutrition"=>["No class definition found"],
-            "v:Ingredient"=>["No class definition found"]
-          },
           :property=>{
             "v:review"=>["No property definition found"],
-            "v:nutrition"=>["No property definition found"],
-            "v:ingredient"=>["No property definition found"],
-            "v:instructions"=>["No property definition found"],
-            "v:servingSize"=>["Subject must have some type defined as domain (v:nutrition)"],
-            "v:calories"=>["Subject must have some type defined as domain (v:nutrition)"],
-            "v:fat"=>["Subject must have some type defined as domain (v:nutrition)"],
-            "v:name"=>["Subject must have some type defined as domain (rdf:Resource)"],
-            "v:amount"=>["Subject must have some type defined as domain (v:ingredient)"]
+            "v:instructions"=>["Object not compatable with range (v:Instructions)"],
           }
         }
       }[file]

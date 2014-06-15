@@ -2,15 +2,12 @@ source 'https://rubygems.org'
 
 ruby "2.1.2"
 
-# Specify your gem's dependencies in github-lod.gemspec
+# Specify your gem's dependencies in linter.gemspec
 gemspec
 
 gem 'unicorn'
-gem 'rdf-reasoner', git: "git://github.com/gkellogg/rdf-reasoner.git", :branch => "develop"
-
-group :development do
-  gem 'rdf', path: "../rdf"
-end
+gem 'rdf', git: "git://github.com/ruby-rdf/rdf.git", branch: "develop"
+gem 'rdf-reasoner', git: "git://github.com/ruby-rdf/rdf-reasoner.git", branch: "develop"
 
 group :development, :test do
   gem 'rake'
