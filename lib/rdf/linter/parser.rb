@@ -7,6 +7,16 @@ module RDF::Linter
     CTX = RDF::URI("http://linter.structured-data.org/#tbox")
 
     # Parse the an input file and re-serialize based on params and/or content-type/accept headers
+    # @param [Hash{Symbol => Object}] reader_opts
+    #   options also passed to reader
+    # @option options [Symbol] :format RDF Reader format symbol for reading content
+    # @option options [Hash{Symbol => RDF::URI}] :prefixes passed to reader and writer
+    # @option options [Tempfile] :tempfile location of content
+    # @option options [String] :content literal content
+    # @option options [RDF::URI] :base_uri location of file, or where to treat content as having been located.
+    # @option options [Boolean] :output_format (:linter)
+    #   Output format of graph, defaults to linter-based RDFa.
+    # @return [Array(String, Integer, String)] Rack filter results
     def parse(reader_opts)
       $logger ||= begin
         logger = Logger.new(STDOUT)  # In case we're not invoked from rack
@@ -15,18 +25,16 @@ module RDF::Linter
       end
       RDF::Reasoner.apply(:rdfs, :schema)
       graph = RDF::Repository.new
-      format = reader_opts[:format]
       reader_opts[:prefixes] ||= {}
       reader_opts[:rdf_terms] = true unless reader_opts.has_key?(:rdf_terms)
 
-      reader_class = RDF::Reader.for(format) || RDF::All::Reader
       reader = case
       when reader_opts[:tempfile]
-        reader_class.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
+        RDF::All::Reader.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
       when reader_opts[:content]
-        reader_class.new(reader_opts[:content], reader_opts) {|r| graph << r}
+        RDF::All::Reader.new(reader_opts[:content], reader_opts) {|r| graph << r}
       when reader_opts[:base_uri]
-        reader_class.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
+        RDF::All::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
         return ["text/html", 200, ""]
       end
@@ -84,14 +92,17 @@ module RDF::Linter
       # Perform some actual linting on the graph
       @lint_messages = lint(graph)
 
+      writer = RDF::Writer.for(reader_opts[:output_format]) || RDF::Linter::Writer
+      content_type = writer.format.content_type.first rescue 'text/html'
+
       writer_opts = reader_opts.dup
       writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
       writer_opts[:debug] ||= [] if $logger.level <= Logger::DEBUG
 
       # Move elements with class `snippet` to the front of the root element
-      html = RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
+      result = writer.buffer(writer_opts) {|w| w << graph}
       writer_opts.fetch(:debug, []).each {|m| $logger.debug m}
-      ["text/html", 200, html]
+      [content_type, 200, result]
     rescue RDF::ReaderError => e
       @error = "RDF::ReaderError: #{e.message}"
       $logger.error @error

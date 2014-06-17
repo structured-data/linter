@@ -10,15 +10,15 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: c52516d94feafc5d595d3287d69c1b14f33f42d8
+  revision: dab6ad5167668af8bf157be968dc31aa8156b200
   branch: develop
   specs:
-    rdf (1.1.4)
+    rdf (1.1.4.1)
 
 PATH
   remote: .
   specs:
-    linter (1.0.2)
+    linter (1.1.0)
       equivalent-xml
       erubis (~> 2.7)
       facets (~> 2.9)
@@ -45,10 +45,11 @@ GEM
       debugger-linecache (~> 1.2)
     coderay (1.1.0)
     columnize (0.8.9)
+    curb (0.8.5)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
-    docile (1.1.4)
+    docile (1.1.5)
     ebnf (0.3.6)
       haml (~> 4.0)
       rdf (~> 1.1)
@@ -104,7 +105,7 @@ GEM
       rdf (>= 1.1)
     rdf-json (1.1.0)
       rdf (>= 1.1.0)
-    rdf-microdata (1.1.1.2)
+    rdf-microdata (1.1.1.3)
       htmlentities (~> 4.3)
       nokogiri (~> 1.6)
       rdf (~> 1.1)
@@ -189,6 +190,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   byebug
+  curb (~> 0.8)
   linter!
   rack-test (~> 0.6)
   rake

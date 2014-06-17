@@ -6,6 +6,7 @@ ruby "2.1.2"
 gemspec
 
 gem 'unicorn'
+gem 'curb',  '~> 0.8'
 gem 'rdf', git: "git://github.com/ruby-rdf/rdf.git", branch: "develop"
 gem 'rdf-reasoner', git: "git://github.com/ruby-rdf/rdf-reasoner.git", branch: "develop"
 

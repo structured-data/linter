@@ -66,41 +66,21 @@ module RDF
             logger.level = ::RDF::All.debug? ? Logger::DEBUG : Logger::INFO
             logger
           end
-          @input.rewind
-          sample = @input.read(1000).force_encoding(Encoding::UTF_8)
-          if sample.match(%r(<html)i)
-            # If it's HTML, parse it to improve detection
-            @input.rewind
-            @input = ::Nokogiri::HTML.parse(@input)
-            sample = @input.to_html
-            $logger.debug "HTML sample =  #{sample}"
-          else
-            @input.rewind
-          end
 
-          @statement_count = {}
-          
-          RDF::Reader.each do |reader_class|
-            $logger.debug "check #{reader_class.name}"
-            if reader_class.format.detect(sample)
-              $logger.debug "detected #{reader_class.name}"
-              begin
-                @input.rewind if @input.respond_to?(:rewind)
-                # Remove <script> and comments from around input
-                reader_class.new(@input, @options) do |reader|
-                  reader.each_statement do |statement|
-                    @statement_count[reader_class] ||= 0
-                    @statement_count[reader_class] += 1
-                    block.call(statement)
-                  end
-                  @base_uri ||= reader.base_uri unless reader.base_uri.to_s.empty?
-                end
-              rescue RDF::ReaderError
-                # Ignore errors
-              end
-              $logger.info "parsed #{@statement_count[reader_class].to_i} triples from #{reader_class.name}"
+          options = @options.dup
+          options[:content_type] ||= @input.content_type if @input.respond_to?(:content_type)
+          reader_class = RDF::Reader.for(options) || RDF::RDFa::Reader
+          $logger.debug "detected #{reader_class.name}"
+
+          statement_count = 0
+          reader_class.new(@input, @options) do |reader|
+            reader.each_statement do |statement|
+              statement_count += 1
+              block.call(statement)
             end
+            @base_uri ||= reader.base_uri unless reader.base_uri.to_s.empty?
           end
+          $logger.info "parsed #{statement_count.to_i} triples from #{reader_class.name}"
         end
         enum_for(:each_statement)
       end

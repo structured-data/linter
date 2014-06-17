@@ -8,25 +8,17 @@ require 'open-uri'
 
 include RDF::Linter::Parser
 
-def run(input, options)
+def run(options)
   start = Time.new
   num = 0
 
-  if options[:snippet]
-    encoding, content = parse(options.merge(:content => input))
-  else
-    reader = RDF::Reader.for(:sample => input.read)
-    input.rewind
-    g = RDF::Graph.new << reader.new(input, options)
-    content = g.dump(:ttl, options)
-  end
+  content = parse(options).last
   options[:output].puts content
   STDERR.puts
   secs = Time.new - start
   STDERR.puts "Parsed #{num} statements in #{secs} seconds @ #{num/secs} statements/second."
 rescue
-  fname = input.respond_to?(:path) ? input.path : "-stdin-"
-  STDERR.puts("Error in #{fname}")
+  STDERR.puts("Error in #{options.inspect}")
   raise
 end
 
@@ -45,9 +37,9 @@ opts = GetoptLong.new(
   ["--microdata-dbg", GetoptLong::NO_ARGUMENT],
   ["--jsonld-dbg", GetoptLong::NO_ARGUMENT],
   ["--execute", "-e", GetoptLong::REQUIRED_ARGUMENT],
+  ["--format", GetoptLong::REQUIRED_ARGUMENT],
   ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
   ["--quiet", GetoptLong::NO_ARGUMENT],
-  ["--snippet", GetoptLong::NO_ARGUMENT],
   ["--uri", GetoptLong::REQUIRED_ARGUMENT],
   ["--verbose", GetoptLong::NO_ARGUMENT]
 )
@@ -57,7 +49,6 @@ opts.each do |opt, arg|
   when '--jsonld-dbg'       then ::JSON::LD::debug = true
   when '--rdfa-dbg'       then ::RDF::RDFa::debug = true
   when '--microdata-dbg'  then ::RDF::Microdata::debug = true
-  when '--snippet'        then options[:snippet] = true
   when '--execute'        then input = arg
   when '--format'         then options[:output_format] = arg.to_sym
   when '--output'         then options[:output] = File.open(arg, "w")
@@ -67,10 +58,9 @@ opts.each do |opt, arg|
 end
 
 if ARGV.empty?
-  s = input ? input : $stdin.read
-  run(StringIO.new(s), {:base_uri => "http://example/"}.merge(options))
+  run({content: input || $stdin, base_uri: "http://example/"}.merge(options))
 else
   ARGV.each do |test_file|
-    run(Kernel.open(test_file), options)
+    run({base_uri: test_file}.merge(options))
   end
 end
