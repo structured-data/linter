@@ -69,7 +69,8 @@ module RDF
 
           options = @options.dup
           options[:content_type] ||= @input.content_type if @input.respond_to?(:content_type)
-          reader_class = RDF::Reader.for(options) || RDF::RDFa::Reader
+          options.delete(:format) if options[:format] == :all
+          reader_class = RDF::Reader.for(options[:format] || options) || RDF::RDFa::Reader
           $logger.debug "detected #{reader_class.name}"
 
           statement_count = 0
