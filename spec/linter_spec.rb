@@ -37,7 +37,7 @@ describe RDF::Linter, "#lint" do
       "type not defined" => [
         %(
           @prefix schema: <http://schema.org/> .
-          <foo> schema:acceptedOffer [a schema:Offer] .
+          <foo> a schema:Person; schema:acceptedOffer [a schema:Offer] .
         ),
         {
           property: {"schema:acceptedOffer" => ["Subject not compatable with domainIncludes (schema:Order)"]},
@@ -231,7 +231,7 @@ describe RDF::Linter, "#lint" do
     end
   end
 
-  context "Rich Snippets examples", focus: true do
+  context "Rich Snippets examples" do
     Dir.glob(File.join(EXAMPLE_DIR, "*.html")) do |input|
       file = input.split('/').last
       expected_errors = {
@@ -362,6 +362,61 @@ describe RDF::Linter, "#lint" do
         }
       }[file]
       it_behaves_like "Test Case", input, expected_errors || {}
+    end
+  end
+
+  context "Role intermediaries" do
+    {
+      "Cryptography Users" => {
+        input: %(
+          @prefix schema: <http://schema.org/> .
+          <foo> a schema:Organization;
+            schema:name "Cryptography Users";
+            schema:member [
+              a schema:OrganizationRole;
+              schema:member [
+                a schema:Person;
+                schema:name "Alice"
+              ];
+              schema:startDate "1977"
+            ] .
+        ),
+        expected_errors: {}
+      },
+      "Inconsistent properties" => {
+        input: %(
+          @prefix schema: <http://schema.org/> .
+          <foo> a schema:Organization;
+            schema:name "Cryptography Users";
+            schema:member [
+              a schema:OrganizationRole;
+              schema:alumni [
+                a schema:Person;
+                schema:name "Alice"
+              ];
+              schema:startDate "1977"
+            ] .
+        ),
+        expected_errors: {
+          property: {
+            "schema:member" => ["Object not compatable with rangeIncludes (schema:Organization,schema:Person)"],
+            "schema:alumni"=> ["Subject not compatable with domainIncludes (schema:EducationalOrganization)"]
+          }
+        }
+      },
+    }.each do |name, params|
+      it name do
+        graph = RDF::Graph.new << RDF::Turtle::Reader.new(params[:input])
+        graph.query(:predicate => RDF.type) do |statement|
+          s = statement.dup
+          RDF::Reasoner.apply(:rdfs, :schema)
+          RDF::Linter::Parser.entailed_types(statement.object).each do |t|
+            s.object = t
+            graph << s
+          end
+        end
+        expect(RDF::Linter::Parser.lint(graph)).to eq params[:expected_errors]
+      end
     end
   end
 end
