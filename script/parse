@@ -8,18 +8,25 @@ require 'open-uri'
 
 include RDF::Linter::Parser
 
+$logger = Logger.new(STDOUT)
+$logger.level = Logger::FATAL
+
 def run(options)
   start = Time.new
-  num = 0
 
   content = parse(options).last
-  options[:output].puts content
-  STDERR.puts
+  options[:output].puts options[:lint] ? (@lint_messages.empty? ? 'ok' : @lint_messages.to_json(JSON::LD::JSON_STATE)) : content
+  STDERR.puts unless options[:quiet]
   secs = Time.new - start
-  STDERR.puts "Parsed #{num} statements in #{secs} seconds @ #{num/secs} statements/second."
-rescue
-  STDERR.puts("Error in #{options.inspect}")
-  raise
+rescue SignalException => e
+    raise e
+rescue Exception => e
+  if options[:quiet]
+    options[:output].puts("Error: #{e.message}")
+  else
+    STDERR.puts("Error in #{options.inspect}")
+    raise
+  end
 end
 
 options = {
@@ -39,19 +46,22 @@ opts = GetoptLong.new(
   ["--execute", "-e", GetoptLong::REQUIRED_ARGUMENT],
   ["--format", GetoptLong::REQUIRED_ARGUMENT],
   ["--output", "-o", GetoptLong::REQUIRED_ARGUMENT],
+  ["--lint", GetoptLong::NO_ARGUMENT],
   ["--quiet", GetoptLong::NO_ARGUMENT],
   ["--uri", GetoptLong::REQUIRED_ARGUMENT],
   ["--verbose", GetoptLong::NO_ARGUMENT]
 )
 opts.each do |opt, arg|
   case opt
-  when '--dbg'            then ::RDF::Linter::debug = true
-  when '--jsonld-dbg'       then ::JSON::LD::debug = true
+  when '--dbg'            then ::RDF::Linter::debug = true; $logger.level = Logger::DEBUG
+  when '--jsonld-dbg'     then ::JSON::LD::debug = true
   when '--rdfa-dbg'       then ::RDF::RDFa::debug = true
   when '--microdata-dbg'  then ::RDF::Microdata::debug = true
   when '--execute'        then input = arg
   when '--format'         then options[:output_format] = arg.to_sym
+  when '--lint'           then options[:lint] = true
   when '--output'         then options[:output] = File.open(arg, "w")
+  when '--quiet'          then options[:quiet] = true
   when '--uri'            then options[:base_uri] = arg
   when '--verbose'        then options[:verbose] = true
   end
@@ -61,6 +71,7 @@ if ARGV.empty?
   run({content: input || $stdin, base_uri: "http://example/"}.merge(options))
 else
   ARGV.each do |test_file|
-    run({base_uri: test_file}.merge(options))
+    options[:output].write "#{test_file}#{options[:quiet] ? ': ' : "\n"}"
+    run({base_uri: RDF::URI("file://#{File.expand_path("../..", __FILE__)}/").join(test_file)}.merge(options))
   end
 end

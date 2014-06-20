@@ -143,8 +143,8 @@ module RDF::Linter
         pname = term ? term.pname : stmt.object.pname
         
         # Must be a defined term, not in RDF or RDFS vocabularies
-        unless term && term.class? && ![RDF::RDFV, RDF::RDFS].include?(vocab)
-          (messages[:class] ||= {})[pname] = ["No class definition found"]
+        unless term && term.class?
+          (messages[:class] ||= {})[pname] = ["No class definition found"] unless [RDF::RDFV, RDF::RDFS].include?(vocab)
         end
       end
 
@@ -170,9 +170,9 @@ module RDF::Linter
 
         unless term.domain_compatible?(stmt.subject, graph, :types => resource_types[stmt.subject])
           ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:domain)
-           "Subject not compatable with domain (#{Array(term.domain).map {|d| d.pname|| d}.join(',')})"
+           "Subject #{stmt.subject.to_ntriples} not compatable with domain (#{Array(term.domain).map {|d| d.pname|| d}.join(',')})"
           else
-            "Subject not compatable with domainIncludes (#{term.domainIncludes.map {|d| d.pname|| d}.join(',')})"
+            "Subject #{stmt.subject.to_ntriples} not compatable with domainIncludes (#{term.domainIncludes.map {|d| d.pname|| d}.join(',')})"
           end
         end
 
@@ -185,9 +185,9 @@ module RDF::Linter
 
         unless term.range_compatible?(stmt.object, graph, :types => resource_types[stmt.object])
           ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:range)
-           "Object not compatable with range (#{Array(term.range).map {|d| d.pname|| d}.join(',')})"
+           "Object #{stmt.object.to_ntriples} not compatable with range (#{Array(term.range).map {|d| d.pname|| d}.join(',')})"
           else
-            "Object not compatable with rangeIncludes (#{term.rangeIncludes.map {|d| d.pname|| d}.join(',')})"
+            "Object #{stmt.object.to_ntriples} not compatable with rangeIncludes (#{term.rangeIncludes.map {|d| d.pname|| d}.join(',')})"
           end
         end
       end
