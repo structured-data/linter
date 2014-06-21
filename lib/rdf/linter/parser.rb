@@ -170,9 +170,9 @@ module RDF::Linter
 
         unless term.domain_compatible?(stmt.subject, graph, :types => resource_types[stmt.subject])
           ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:domain)
-           "Subject #{show_resource(stmt.subject, graph)} not compatable with domain (#{Array(term.domain).map {|d| d.pname|| d}.join(',')})"
+           "Subject #{show_resource(stmt.subject, graph)} not compatible with domain (#{Array(term.domain).map {|d| d.pname|| d}.join(',')})"
           else
-            "Subject #{show_resource(stmt.subject, graph)} not compatable with domainIncludes (#{term.domainIncludes.map {|d| d.pname|| d}.join(',')})"
+            "Subject #{show_resource(stmt.subject, graph)} not compatible with domainIncludes (#{term.domainIncludes.map {|d| d.pname|| d}.join(',')})"
           end
         end
 
@@ -185,9 +185,9 @@ module RDF::Linter
 
         unless term.range_compatible?(stmt.object, graph, :types => resource_types[stmt.object])
           ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:range)
-           "Object #{show_resource(stmt.object, graph)} not compatable with range (#{Array(term.range).map {|d| d.pname|| d}.join(',')})"
+           "Object #{show_resource(stmt.object, graph)} not compatible with range (#{Array(term.range).map {|d| d.pname|| d}.join(',')})"
           else
-            "Object #{show_resource(stmt.object, graph)} not compatable with rangeIncludes (#{term.rangeIncludes.map {|d| d.pname|| d}.join(',')})"
+            "Object #{show_resource(stmt.object, graph)} not compatible with rangeIncludes (#{term.rangeIncludes.map {|d| d.pname|| d}.join(',')})"
           end
         end
       end
