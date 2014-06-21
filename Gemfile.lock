@@ -1,9 +1,9 @@
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 4be433e781e5c5826e513ca3f7e84ace62922679
+  revision: 04a0b96bc7a5cfd245ba44088658470d85c53f00
   branch: develop
   specs:
-    rdf-reasoner (0.0.1)
+    rdf-reasoner (0.0.3)
       rdf (~> 1.1, >= 1.1.4.1)
       rdf-turtle (~> 1.1)
       rdf-xsd (~> 1.1)
@@ -146,7 +146,7 @@ GEM
       rspec-expectations (>= 2.99.0.beta1)
     rspec-mocks (3.0.2)
       rspec-support (~> 3.0.0)
-    rspec-support (3.0.1)
+    rspec-support (3.0.2)
     shotgun (0.9)
       rack (>= 1.0)
     simplecov (0.8.2)

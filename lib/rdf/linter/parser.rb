@@ -136,19 +136,6 @@ module RDF::Linter
       RDF::Reasoner.apply(:rdfs, :schema)
       messages = {}
 
-      # Show resource in diagnostic output
-      def show_resource(resource, graph)
-        if resource.node?
-          resource.to_ntriples + '(' +
-            graph.query(subject: resource, predicate: RDF.type).
-              map {|s| s.object.uri? ? s.object.pname : s.object.to_ntriples}
-              .join(',') +
-            ')'
-        else
-          resource.to_ntriples
-        end
-      end
-
       # Check for defined classes in known vocabularies
       graph.query(:predicate => RDF.type) do |stmt|
         vocab = RDF::Vocabulary.find(stmt.object)
@@ -197,9 +184,6 @@ module RDF::Linter
           compact if stmt.object.resource?
 
         unless term.range_compatible?(stmt.object, graph, :types => resource_types[stmt.object])
-          # For schema.org, if the term has an object range, and object is a plain literal, this is allowed based on their content model.
-          next if term.vocab == RDF::SCHEMA && stmt.object.literal? && stmt.object.plain?
-
           ((messages[:property] ||= {})[pname] ||= []) << if term.respond_to?(:range)
            "Object #{show_resource(stmt.object, graph)} not compatable with range (#{Array(term.range).map {|d| d.pname|| d}.join(',')})"
           else
@@ -213,5 +197,21 @@ module RDF::Linter
       messages
     end
     module_function :lint
+
+  private
+
+    # Show resource in diagnostic output
+    def show_resource(resource, graph)
+      if resource.node?
+        resource.to_ntriples + '(' +
+          graph.query(subject: resource, predicate: RDF.type).
+            map {|s| s.object.uri? ? s.object.pname : s.object.to_ntriples}
+            .join(',') +
+          ')'
+      else
+        resource.to_ntriples
+      end
+    end
+    module_function :show_resource
   end
 end
