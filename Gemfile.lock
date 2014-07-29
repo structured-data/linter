@@ -18,7 +18,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (1.1.0)
+    linter (1.1.1)
       equivalent-xml
       erubis (~> 2.7)
       facets (~> 2.9)
