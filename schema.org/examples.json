@@ -634,6 +634,13 @@
       "jsonld": "schema.org/38-jsonld.html"
     }
   },
+  "Map": {
+    "214": {
+      "microdata": "schema.org/214-microdata.html",
+      "rdfa": "schema.org/214-rdfa.html",
+      "jsonld": "schema.org/214-jsonld.html"
+    }
+  },
   "MarryAction": {
     "112": {
       "jsonld": "schema.org/112-jsonld.html"
@@ -1189,6 +1196,33 @@
       "jsonld": "schema.org/55-jsonld.html"
     }
   },
+  "Role": {
+    "208": {
+      "microdata": "schema.org/208-microdata.html",
+      "rdfa": "schema.org/208-rdfa.html",
+      "jsonld": "schema.org/208-jsonld.html"
+    },
+    "209": {
+      "microdata": "schema.org/209-microdata.html",
+      "rdfa": "schema.org/209-rdfa.html",
+      "jsonld": "schema.org/209-jsonld.html"
+    },
+    "210": {
+      "microdata": "schema.org/210-microdata.html",
+      "rdfa": "schema.org/210-rdfa.html",
+      "jsonld": "schema.org/210-jsonld.html"
+    },
+    "211": {
+      "microdata": "schema.org/211-microdata.html",
+      "rdfa": "schema.org/211-rdfa.html",
+      "jsonld": "schema.org/211-jsonld.html"
+    },
+    "212": {
+      "microdata": "schema.org/212-microdata.html",
+      "rdfa": "schema.org/212-rdfa.html",
+      "jsonld": "schema.org/212-jsonld.html"
+    }
+  },
   "RsvpAction": {
     "101": {
       "jsonld": "schema.org/101-jsonld.html"
@@ -1205,6 +1239,11 @@
     },
     "144": {
       "jsonld": "schema.org/144-jsonld.html"
+    },
+    "215": {
+      "microdata": "schema.org/215-microdata.html",
+      "rdfa": "schema.org/215-rdfa.html",
+      "jsonld": "schema.org/215-jsonld.html"
     }
   },
   "SellAction": {
