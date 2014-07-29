@@ -448,24 +448,6 @@ schema.org/180-microdata.html: {
   "property": {
     "schema:numberOfPages": [
       "Object \"598 Pages\" not compatible with rangeIncludes (schema:Integer)"
-    ],
-    "http://schema.org/ratingValue%3E0%3C/span%3E": [
-      "No property definition found"
-    ],
-    "schema:-": [
-      "No property definition found"
-    ],
-    "schema:No": [
-      "No property definition found"
-    ],
-    "schema:Rating": [
-      "No property definition found"
-    ],
-    "http://schema.org/Yet%3C/span%3E": [
-      "No property definition found"
-    ],
-    "http://schema.org/%3C/div%3E": [
-      "No property definition found"
     ]
   }
 }
@@ -505,27 +487,9 @@ schema.org/189-rdfa.html: {
     ]
   }
 }
-schema.org/19-jsonld.html: {
-  "property": {
-    "schema:contentURL": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/19-microdata.html: {
-  "property": {
-    "schema:contentURL": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/19-rdfa.html: {
-  "property": {
-    "schema:contentURL": [
-      "No property definition found"
-    ]
-  }
-}
+schema.org/19-jsonld.html: ok
+schema.org/19-microdata.html: ok
+schema.org/19-rdfa.html: ok
 schema.org/190-jsonld.html: ok
 schema.org/191-jsonld.html: ok
 schema.org/192-jsonld.html: ok
@@ -868,24 +832,8 @@ schema.org/21-jsonld.html: ok
 schema.org/21-microdata.html: ok
 schema.org/21-rdfa.html: ok
 schema.org/210-jsonld.html: ok
-schema.org/210-microdata.html: {
-  "property": {
-    "schema:alumni": [
-      "Subject _:g2242714880(schema:Person,schema:Thing,schema:Person) not compatible with domainIncludes (schema:EducationalOrganization)",
-      "Object _:g2242677200(schema:OrganizationRole,schema:Thing,schema:Intangible,schema:Role,schema:OrganizationRole) not compatible with rangeIncludes (schema:Person)",
-      "Object _:g2242664920(schema:CollegeOrUniversity,schema:Thing,schema:Organization,schema:EducationalOrganization,schema:CollegeOrUniversity) not compatible with rangeIncludes (schema:Person)"
-    ]
-  }
-}
-schema.org/210-rdfa.html: {
-  "property": {
-    "schema:alumni": [
-      "Subject _:g2237127920(schema:Person,schema:Thing,schema:Person) not compatible with domainIncludes (schema:EducationalOrganization)",
-      "Object _:g2236352120(schema:OrganizationRole,schema:Thing,schema:Intangible,schema:Role,schema:OrganizationRole) not compatible with rangeIncludes (schema:Person)",
-      "Object _:g2236176400(schema:CollegeOrUniversity,schema:Thing,schema:Organization,schema:EducationalOrganization,schema:CollegeOrUniversity) not compatible with rangeIncludes (schema:Person)"
-    ]
-  }
-}
+schema.org/210-microdata.html: ok
+schema.org/210-rdfa.html: ok
 schema.org/211-jsonld.html: ok
 schema.org/211-microdata.html: {
   "property": {
@@ -906,6 +854,27 @@ schema.org/213-rdfa.html: ok
 schema.org/214-jsonld.html: ok
 schema.org/214-microdata.html: ok
 schema.org/214-rdfa.html: ok
+schema.org/215-jsonld.html: {
+  "property": {
+    "schema:query-input": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/215-microdata.html: {
+  "property": {
+    "schema:query-input": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/215-rdfa.html: {
+  "property": {
+    "schema:query-input": [
+      "No property definition found"
+    ]
+  }
+}
 schema.org/22-jsonld.html: {
   "property": {
     "schema:openingHours": [
@@ -1009,9 +978,6 @@ schema.org/28-jsonld.html: {
 }
 schema.org/28-microdata.html: {
   "property": {
-    "schema:code": [
-      "Subject _:g2238356560(schema:MedicalScholarlyArticle,schema:Thing,schema:CreativeWork,schema:Article,schema:ScholarlyArticle,schema:MedicalScholarlyArticle) not compatible with domainIncludes (schema:MedicalEntity)"
-    ],
     "schema:subject": [
       "No property definition found"
     ]
@@ -1019,9 +985,6 @@ schema.org/28-microdata.html: {
 }
 schema.org/28-rdfa.html: {
   "property": {
-    "schema:code": [
-      "Subject _:g2241596880(schema:MedicalScholarlyArticle,schema:Thing,schema:CreativeWork,schema:Article,schema:ScholarlyArticle,schema:MedicalScholarlyArticle) not compatible with domainIncludes (schema:MedicalEntity)"
-    ],
     "schema:subject": [
       "No property definition found"
     ]
@@ -1141,27 +1104,9 @@ schema.org/46-jsonld.html: ok
 schema.org/47-jsonld.html: ok
 schema.org/48-jsonld.html: ok
 schema.org/49-jsonld.html: ok
-schema.org/5-jsonld.html: {
-  "property": {
-    "schema:contentURL": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/5-microdata.html: {
-  "property": {
-    "schema:contentURL": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/5-rdfa.html: {
-  "property": {
-    "schema:contentURL": [
-      "No property definition found"
-    ]
-  }
-}
+schema.org/5-jsonld.html: ok
+schema.org/5-microdata.html: ok
+schema.org/5-rdfa.html: ok
 schema.org/50-jsonld.html: ok
 schema.org/51-jsonld.html: ok
 schema.org/52-jsonld.html: ok
@@ -1283,5 +1228,3 @@ schema.org/98-jsonld.html: {
   }
 }
 schema.org/99-jsonld.html: ok
-schema.org/examples.json: ok
-schema.org/examples.txt: Error: recursive context inclusion: file:/Users/gregg/Projects/linter/schema.org/schema.org

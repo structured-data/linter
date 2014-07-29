@@ -39,9 +39,9 @@ module RDF::Linter
     ##
     # Load examples from a text file, generate partials and type mapping.
     #
-    # @param [String] file
+    # @param [String, #read] file
     def load_examples(file)
-      s = StringScanner.new File.read(file)
+      s = StringScanner.new(file.respond_to?(:read) ? file.read : File.read(file))
       types = nil
       body = nil
       format = nil
@@ -58,13 +58,13 @@ module RDF::Linter
         body = body[0..-(s.matched.to_s.length+1)].gsub("\r", '').strip + "\n"
         case format
         when :microdata, :rdfa, :jsonld
-          add_example(types, body, number, format)
+          add_example(types, body, number, format) unless types.include?("FakeEntryNeeded")
         end
 
         case s.matched
         when "TYPES:"
           types = s.scan_until(/$/).strip
-          number += 1
+          number += 1 unless types.include?("FakeEntryNeeded")
           format = :types
         when "PRE-MARKUP:"  then format = :pre
         when "MICRODATA:"   then format = :microdata

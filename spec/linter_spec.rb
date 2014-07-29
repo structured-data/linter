@@ -40,7 +40,7 @@ describe RDF::Linter, "#lint" do
           <foo> a schema:Person; schema:acceptedOffer [a schema:Offer] .
         ),
         {
-          property: {"schema:acceptedOffer" => [/Subject .* not compatable with domainIncludes \(schema:Order\)/]},
+          property: {"schema:acceptedOffer" => [/Subject .* not compatible with domainIncludes \(schema:Order\)/]},
         }
       ],
     }.each do |name, (input, errors)|
@@ -59,7 +59,7 @@ describe RDF::Linter, "#lint" do
           <foo> a schema:Order; schema:acceptedOffer [a schema:Thing] .
         ),
         {
-          property: {"schema:acceptedOffer" => [/Object .* not compatable with rangeIncludes \(schema:Offer\)/]},
+          property: {"schema:acceptedOffer" => [/Object .* not compatible with rangeIncludes \(schema:Offer\)/]},
         }
       ],
       #"object range with literal" => [
@@ -68,7 +68,7 @@ describe RDF::Linter, "#lint" do
       #    <foo> a schema:Order; schema:acceptedOffer "foo" .
       #  ),
       #  {
-      #    property: {"schema:acceptedOffer" => [/Object .* not compatable with rangeIncludes \(schema:Offer\)/]},
+      #    property: {"schema:acceptedOffer" => [/Object .* not compatible with rangeIncludes \(schema:Offer\)/]},
       #  }
       #],
       "xsd:nonNegativeInteger expected with conforming plain literal" => [
@@ -77,7 +77,7 @@ describe RDF::Linter, "#lint" do
           <foo> sioc:num_authors "bar" .
         ),
         {
-          property: {"sioc:num_authors" => [/Object .* not compatable with range \(xsd:nonNegativeInteger\)/]},
+          property: {"sioc:num_authors" => [/Object .* not compatible with range \(xsd:nonNegativeInteger\)/]},
         }
       ],
       "xsd:nonNegativeInteger expected with non-equivalent datatyped literal" => [
@@ -86,7 +86,7 @@ describe RDF::Linter, "#lint" do
           <foo> sioc:num_authors 1 .
         ),
         {
-          property: {"sioc:num_authors" => [/Object .* not compatable with range \(xsd:nonNegativeInteger\)/]},
+          property: {"sioc:num_authors" => [/Object .* not compatible with range \(xsd:nonNegativeInteger\)/]},
         }
       ],
       "schema:Text with datatyped literal" => [
@@ -96,7 +96,7 @@ describe RDF::Linter, "#lint" do
           <foo> a schema:Thing; schema:name "foo"^^xsd:token .
         ),
         {
-          property: {"schema:name" => [/Object .* not compatable with rangeIncludes \(schema:Text\)/]},
+          property: {"schema:name" => [/Object .* not compatible with rangeIncludes \(schema:Text\)/]},
         }
       ],
       "schema:URL with language-tagged literal" => [
@@ -105,7 +105,7 @@ describe RDF::Linter, "#lint" do
           <foo> a schema:Thing; schema:url "http://example/"@en .
         ),
         {
-          property: {"schema:url" => [/Object .* not compatable with rangeIncludes \(schema:URL\)/]},
+          property: {"schema:url" => [/Object .* not compatible with rangeIncludes \(schema:URL\)/]},
         }
       ],
       "schema:URL with non-conforming plain literal" => [
@@ -114,7 +114,7 @@ describe RDF::Linter, "#lint" do
           <foo> a schema:Thing; schema:url "foo" .
         ),
         {
-          property: {"schema:url" => [/Object .* not compatable with rangeIncludes \(schema:URL\)/]},
+          property: {"schema:url" => [/Object .* not compatible with rangeIncludes \(schema:URL\)/]},
         }
       ],
       "schema:Boolean with non-conforming plain literal" => [
@@ -123,7 +123,7 @@ describe RDF::Linter, "#lint" do
           <foo> a schema:CreativeWork; schema:isFamilyFriendly "bar" .
         ),
         {
-          property: {"schema:isFamilyFriendly" => [/Object .* not compatable with rangeIncludes \(schema:Boolean\)/]},
+          property: {"schema:isFamilyFriendly" => [/Object .* not compatible with rangeIncludes \(schema:Boolean\)/]},
         }
       ],
     }.each do |name, (input, errors)|
@@ -351,13 +351,13 @@ describe RDF::Linter, "#lint" do
         "recipe.md.html" => {
           :property=>{
             "vmd:review"=>["No property definition found"],
-            "vmd:instructions"=>[/Object .* not compatable with range \(vmd:Instructions\)/],
+            "vmd:instructions"=>[/Object .* not compatible with range \(vmd:Instructions\)/],
           }
         },
         "recipe.rdfa.html" => {
           :property=>{
             "v:review"=>["No property definition found"],
-            "v:instructions"=>[/Object .* not compatable with range \(v:Instructions\)/],
+            "v:instructions"=>[/Object .* not compatible with range \(v:Instructions\)/],
           }
         }
       }[file]
@@ -399,8 +399,8 @@ describe RDF::Linter, "#lint" do
         ),
         expected_errors: {
           property: {
-            "schema:member" => [/Object .* not compatable with rangeIncludes \(schema:Organization,schema:Person\)/],
-            "schema:alumni"=> [/Subject .* not compatable with domainIncludes \(schema:EducationalOrganization\)/]
+            "schema:member" => [/Object .* not compatible with rangeIncludes \(schema:Organization,schema:Person\)/],
+            "schema:alumni"=> [/Subject .* not compatible with domainIncludes \(schema:EducationalOrganization\)/]
           }
         }
       },

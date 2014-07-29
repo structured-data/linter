@@ -12,9 +12,14 @@ end
 desc "Create schema example index"
 task :schema_examples do
   %x{rm -rf ./schema.org && mkdir ./schema.org}
-  %x{curl https://raw.githubusercontent.com/rvguha/schemaorg/master/data/examples.txt -o ./schema.org/examples.txt}
+  %w(examples sdo-map-examples sdo-website-examples).each do |e|
+    %x{curl https://raw.githubusercontent.com/rvguha/schemaorg/master/data/#{e}.txt -o ./schema.org/#{e}.txt}
+  end
   $:.unshift(File.expand_path("../lib", __FILE__))
   require 'rdf/linter'
   schema = RDF::Linter::Schema.new
-  schema.load_examples(File.expand_path("../schema.org/examples.txt", __FILE__))
+  catted = StringIO.new
+  Dir.glob(File.expand_path("../schema.org/*examples.txt", __FILE__)).each {|f| catted.write(File.read(f))}
+  catted.rewind
+  schema.load_examples(catted)
 end
