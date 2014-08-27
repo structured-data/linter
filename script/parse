@@ -11,6 +11,7 @@ include RDF::Linter::Parser
 def run(options)
   start = Time.new
 
+  options[:logger] = ::Logger.new(StringIO.new) if options[:quiet]
   content = parse(options).last
   options[:output].puts options[:lint] ? (@lint_messages.empty? ? 'ok' : @lint_messages.to_json(JSON::LD::JSON_STATE)) : content
   STDERR.puts unless options[:quiet]

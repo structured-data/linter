@@ -103,17 +103,19 @@ module RDF::Linter
     def add_example(types, example, ex_num, format)
       # Skip example if it is JSON only
       return if example =~ /This example is JSON only/m
+      types = types.split(/,\s*/)
+      name = "#{types.join('-')}-#{ex_num}"
 
       # Write example out for reading later
-      path = "schema.org/#{ex_num}-#{format}.html"
+      path = "schema.org/#{name}-#{format}.html"
       File.open(File.expand_path("../../../../#{path}", __FILE__), "w") {|f| f.write(example)}
 
-      types.split(',').each do |t|
+      types.each do |t|
         next unless @classes.has_key?(t)
         
         @classes[t][:examples] ||= {}
-        @classes[t][:examples][ex_num] ||= {}
-        @classes[t][:examples][ex_num][format] = path
+        @classes[t][:examples][name] ||= {}
+        @classes[t][:examples][name][format] = path
       end
 
     end
@@ -152,10 +154,10 @@ module RDF::Linter
         # Create link to class-specific page
         output += %(<a href="/examples/schema.org/#{cls}/" title="Show #{cls} markup examples">#{cls}</a>\n)
         # Output examples
-        @classes[cls][:examples].keys.sort.each do |num|
-          example = @classes[cls][:examples][num]
+        @classes[cls][:examples].keys.sort.each do |name|
+          example = @classes[cls][:examples][name]
           output += %(\n<div class="ex">) + "  &nbsp;&nbsp;|&nbsp;&nbsp;" * depth
-          output += %[&nbsp;&nbsp;Example-#{num} (]
+          output += %[&nbsp;&nbsp;#{name} (]
           output += [:rdfa, :jsonld, :microdata].map do |fmt|
             if example.has_key?(fmt)
               fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
