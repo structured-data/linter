@@ -1,0 +1,29 @@
+          @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+          @prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+          @prefix schema: <http://schema.org/> .
+          @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+          <AllCareCorp> a schema:Corporation;
+             schema:review [
+               a schema:Review;
+               schema:creator ([
+                   a schema:Person;
+                   schema:name "John Doe";
+                   schema:worksFor [
+                     a schema:Organization;
+                     schema:name "A Company"
+                   ]
+                 ]);
+               schema:reviewBody "We get everything on time."
+             ],  [
+               a schema:Review;
+               schema:creator ([
+                   a schema:Person;
+                   schema:name "Jane Doe";
+                   schema:worksFor [
+                     a schema:Organization;
+                     schema:name "Another Company"
+                   ]
+                 ]);
+               schema:reviewBody "Amazing Team."
+             ] .

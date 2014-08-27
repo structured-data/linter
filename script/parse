@@ -72,6 +72,8 @@ if ARGV.empty?
 else
   ARGV.each do |test_file|
     options[:output].write "#{test_file}#{options[:quiet] ? ': ' : "\n"}"
-    run({base_uri: RDF::URI("file://#{File.expand_path("../..", __FILE__)}/").join(test_file)}.merge(options))
+    options[:base_uri] = RDF::URI("file://#{File.expand_path("../..", __FILE__)}/").join(test_file)
+    options[:file_name] = test_file
+    run(options)
   end
 end

@@ -46,6 +46,47 @@ module RDF::Linter
         {reader.class => graph.size }
       end
 
+      # Expand graph with entailed types
+      expand_graph(graph)
+
+      # Perform some actual linting on the graph
+      @lint_messages = lint(graph)
+
+      writer = RDF::Writer.for(reader_opts[:output_format]) || RDF::Linter::Writer
+      content_type = writer.format.content_type.first rescue 'text/html'
+
+      writer_opts = reader_opts.dup
+      writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
+      writer_opts[:debug] ||= [] if $logger.level <= Logger::DEBUG
+
+      # Move elements with class `snippet` to the front of the root element
+      result = writer.buffer(writer_opts) {|w| w << graph}
+      writer_opts.fetch(:debug, []).each {|m| $logger.debug m}
+      [content_type, 200, result]
+    rescue RDF::ReaderError => e
+      @error = "RDF::ReaderError: #{e.message}"
+      $logger.error @error
+      $logger.debug e.backtrace.join("\n")
+      ["text/html", 400, @error]
+    rescue IOError => e
+      @error = "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
+      $logger.error @error  # to log
+      $logger.debug e.backtrace.join("\n")
+      ["text/html", 502, @error]
+    rescue
+      raise unless self.respond_to?(:settings) && settings.environment == :production
+      @error = "#{$!.class}: #{$!.message}"
+      $logger.error @error  # to log
+      $logger.debug $!.backtrace.join("\n")
+      ["text/html", 400, @error]
+    end
+    module_function :parse
+
+    ##
+    # Expand a graph with entailed types based on range/domain and subClassOf
+    # @param [RDF::Graph] graph
+    def expand_graph(graph)
+      RDF::Reasoner.apply(:rdfs, :schema)
       # Special case for Facebook OGP. Facebook (apparently) doesn't believe in rdf:type,
       # so we look for statements with predicate og:type with a literal object and create
       # an rdf:type in a similar namespace
@@ -83,53 +124,14 @@ module RDF::Linter
 
         # Expand types using vocabulary entailment
         types.each do |type|
-          entailed_types(type).each do |t|
+          vtype = RDF::Vocabulary.find_term(type) rescue nil
+          (vtype ? vtype.entail(:subClassOf) : []).each do |t|
             graph << RDF::Statement.new(subj, RDF.type, RDF::URI(t), :context => CTX)
           end
         end
       end
-
-      # Perform some actual linting on the graph
-      @lint_messages = lint(graph)
-
-      writer = RDF::Writer.for(reader_opts[:output_format]) || RDF::Linter::Writer
-      content_type = writer.format.content_type.first rescue 'text/html'
-
-      writer_opts = reader_opts.dup
-      writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
-      writer_opts[:debug] ||= [] if $logger.level <= Logger::DEBUG
-
-      # Move elements with class `snippet` to the front of the root element
-      result = writer.buffer(writer_opts) {|w| w << graph}
-      writer_opts.fetch(:debug, []).each {|m| $logger.debug m}
-      [content_type, 200, result]
-    rescue RDF::ReaderError => e
-      @error = "RDF::ReaderError: #{e.message}"
-      $logger.error @error
-      $logger.debug e.backtrace.join("\n")
-      ["text/html", 400, @error]
-    rescue IOError => e
-      @error = "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
-      $logger.error @error  # to log
-      $logger.debug e.backtrace.join("\n")
-      ["text/html", 502, @error]
-    rescue
-      raise unless self.respond_to?(:settings) && settings.environment == :production
-      @error = "#{$!.class}: #{$!.message}"
-      $logger.error @error  # to log
-      $logger.debug $!.backtrace.join("\n")
-      ["text/html", 400, @error]
     end
-    module_function :parse
-
-    # Return entailed super-classes of a given type
-    # @param [RDF::URI] type
-    # @return [Array<RDF::URI>]
-    def entailed_types(type)
-      vtype = RDF::Vocabulary.find_term(type) rescue nil
-      vtype ? vtype.entail(:subClassOf) : []
-    end
-    module_function :entailed_types
+    module_function :expand_graph
 
     # Use vocabulary definitions to lint contents of the graph for known vocabularies
     def lint(graph)
