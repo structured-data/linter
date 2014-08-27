@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 1c759042f637e08b78624f829158d223a062db70
+  revision: f746a79c8542b16d4c0e107b2842088af92235cf
   branch: develop
   specs:
     rdf-reasoner (0.0.4)
@@ -10,10 +10,10 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: a84d0b0395d28cc49da41d0b1678b6f04a934be7
+  revision: d5d5353b8520a4b2ca7362f5e4ffe47782e64039
   branch: develop
   specs:
-    rdf (1.1.4.3)
+    rdf (1.1.5.1)
 
 PATH
   remote: .
@@ -34,13 +34,14 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    better_errors (1.1.0)
+    better_errors (2.0.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (3.1.2)
+    byebug (3.2.0)
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
     coderay (1.1.0)
@@ -104,19 +105,19 @@ GEM
       rdf (>= 1.1)
     rdf-json (1.1.0)
       rdf (>= 1.1.0)
-    rdf-microdata (1.1.1.3)
+    rdf-microdata (1.1.2)
       htmlentities (~> 4.3)
       nokogiri (~> 1.6)
       rdf (~> 1.1)
       rdf-xsd (~> 1.1)
-    rdf-n3 (1.1.1)
-      rdf (~> 1.1, >= 1.1.4)
+    rdf-n3 (1.1.2)
+      rdf (~> 1.1, >= 1.1.5)
     rdf-rdfa (1.1.3.2)
       haml (~> 4.0)
       htmlentities (~> 4.3)
       rdf (~> 1.1)
       rdf-xsd (~> 1.1)
-    rdf-rdfxml (1.1.0.1)
+    rdf-rdfxml (1.1.1)
       rdf (~> 1.1)
       rdf-rdfa (~> 1.1)
       rdf-xsd (~> 1.1)
@@ -135,17 +136,17 @@ GEM
       rspec-core (~> 3.0.0)
       rspec-expectations (~> 3.0.0)
       rspec-mocks (~> 3.0.0)
-    rspec-core (3.0.3)
+    rspec-core (3.0.4)
       rspec-support (~> 3.0.0)
-    rspec-expectations (3.0.3)
+    rspec-expectations (3.0.4)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.0.0)
     rspec-its (1.0.1)
       rspec-core (>= 2.99.0.beta1)
       rspec-expectations (>= 2.99.0.beta1)
-    rspec-mocks (3.0.3)
+    rspec-mocks (3.0.4)
       rspec-support (~> 3.0.0)
-    rspec-support (3.0.3)
+    rspec-support (3.0.4)
     shotgun (0.9)
       rack (>= 1.0)
     simplecov (0.9.0)
@@ -168,7 +169,7 @@ GEM
       rdf-xsd (~> 1.1)
       sparql-client (~> 1.1)
       sxp (~> 0.1)
-    sparql-client (1.1.2)
+    sparql-client (1.1.3)
       net-http-persistent (~> 1.4)
       rdf (~> 1.1)
     sxp (0.1.5)
