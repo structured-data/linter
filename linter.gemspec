@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
   gem.requirements                = []
   gem.add_runtime_dependency      'linkeddata',         '~> 1.1'
   gem.add_runtime_dependency      'sinatra-linkeddata', '~> 1.1'
-  gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.0'
+  gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.1'
   gem.add_runtime_dependency      'equivalent-xml'
   gem.add_runtime_dependency      'sinatra',            '~> 1.4'
   gem.add_runtime_dependency      'erubis',             '~> 2.7'
