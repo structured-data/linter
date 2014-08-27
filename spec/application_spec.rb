@@ -9,10 +9,13 @@ describe RDF::Linter::Application do
     RDF::Linter::Application.new
   end
 
-  before(:each) do
-    $debug_output = StringIO.new()
-    $logger = Logger.new($debug_output)
-    $logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
+  after(:each) do |example|
+    if example.exception
+      logdev = last_request.logger.instance_variable_get(:@logdev)
+      dev = logdev.instance_variable_get(:@dev)
+      dev.rewind
+      puts dev.read
+    end
   end
 
   describe "get /" do

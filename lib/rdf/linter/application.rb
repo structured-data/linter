@@ -16,8 +16,11 @@ module RDF::Linter
     set :root, APP_DIR
     set :views, ::File.expand_path('../views',  __FILE__)
     set :app_name, "Structured Data Linter"
+    enable :logging
+    disable :raise_errors, :show_exceptions if settings.environment == "production"
 
     configure :development do
+      set :logging, ::Logger.new($stdout)
       require "better_errors"
       use BetterErrors::Middleware
       BetterErrors.application_root = APP_DIR
@@ -25,10 +28,11 @@ module RDF::Linter
 
 
     before do
-      $logger.info "[#{request.path_info}], " +
+      request.logger.level = Logger::DEBUG unless settings.environment == 'production'
+      request.logger.info "[#{request.path_info}], " +
         "#{request.accept}, " +
         "#{params.inspect}, " +
-        "#{request.accept.inspect}" if $logger
+        "#{request.accept.inspect}"
     end
 
     # Get "/" either returns the main linter page or linted markup
@@ -142,7 +146,7 @@ module RDF::Linter
         end
       end
 
-      $logger.info "examples for #{@title}: #{examples.keys.inspect}"
+      request.logger.info "examples for #{@title}: #{examples.keys.inspect}"
       erb :schema_example, locals: {
         head: :examples,
         name: params[:name],
@@ -223,18 +227,19 @@ module RDF::Linter
       reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
       reader_opts[:matched_templates] = []
+      reader_opts[:logger] = request.logger
 
       root = RDF::URI(request.url).join("/").to_s
-      $logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
+      request.logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 
       case
       when reader_opts[:tempfile]
-        $logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
+        request.logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
       when  reader_opts[:content]
-        $logger.info "Parse form data with format #{reader_opts[:format]}"
+        request.logger.info "Parse form data with format #{reader_opts[:format]}"
         @content = reader_opts[:content]
       when reader_opts[:base_uri]
-        $logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
+        request.logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
       end
 
       content_type, status, content = parse(reader_opts)
