@@ -12,12 +12,15 @@ module RDF::Linter
 
     #register Sinatra::LinkedData
     helpers Sinatra::Partials
-    #use Rack::LinkedData::ContentNegotiation, :default => "text/html"
+    #use Rack::LinkedData::ContentNegotiation, default: "text/html"
     set :root, APP_DIR
     set :views, ::File.expand_path('../views',  __FILE__)
     set :app_name, "Structured Data Linter"
+    enable :logging
+    disable :raise_errors, :show_exceptions if settings.environment == "production"
 
     configure :development do
+      set :logging, ::Logger.new($stdout)
       require "better_errors"
       use BetterErrors::Middleware
       BetterErrors.application_root = APP_DIR
@@ -25,10 +28,11 @@ module RDF::Linter
 
 
     before do
-      $logger.info "[#{request.path_info}], " +
+      request.logger.level = Logger::DEBUG unless settings.environment == 'production'
+      request.logger.info "[#{request.path_info}], " +
         "#{request.accept}, " +
         "#{params.inspect}, " +
-        "#{request.accept.inspect}" if $logger
+        "#{request.accept.inspect}"
     end
 
     # Get "/" either returns the main linter page or linted markup
@@ -54,7 +58,7 @@ module RDF::Linter
     # @overload get "/about/"
     get '/about/' do
       @title = "About the Linter"
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate, max_age: 60
       erb :about
     end
 
@@ -63,9 +67,9 @@ module RDF::Linter
     # @overload get "/examples/"
     get '/examples/' do
       @title = "Markup Examples"
-      cache_control :public, :must_revalidate, :max_age => 60
-      erb :examples, :locals => {
-        :root => RDF::URI(request.url).join("/").to_s,
+      cache_control :public, :must_revalidate,  max_age: 60
+      erb :examples, locals: {
+        root: RDF::URI(request.url).join("/").to_s,
       }
     end
 
@@ -74,12 +78,12 @@ module RDF::Linter
     # @overload get "/examples/google-rs/:name/"
     # @param [String] name Name of the example to return
     get '/examples/google-rs/:name/' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate,  max_age: 60
       @title = "Google RS #{params[:name]}"
-      erb :rs_example, :locals => {
-        :head => :examples,
-        :name => params[:name],
-        :root => RDF::URI(request.url).join("/").to_s
+      erb :rs_example, locals: {
+        head: :examples,
+        name: params[:name],
+        root: RDF::URI(request.url).join("/").to_s
       }
     end
 
@@ -88,11 +92,11 @@ module RDF::Linter
     # @overload get "/examples/google-rs/:file"
     # @param [String] file Name of the example to return
     get '/examples/google-rs/:file' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate,  max_age: 60
       file_loc = params[:file]
       send_file File.join(APP_DIR, "google-rs/#{file_loc}"),
-        :type => (params[:file].end_with?(".jsonld") ? :jsonld : :html),
-        :charset => "utf-8"
+        type: (params[:file].end_with?(".jsonld") ? :jsonld : :html),
+        charset: "utf-8"
     end
 
     # Return a specific Good Relations example
@@ -100,12 +104,12 @@ module RDF::Linter
     # @overload get "/examples/good-relations/:name/"
     # @param [String] name Name of the example to return
     get '/examples/good-relations/:name/' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate,  max_age: 60
       @title = "Good Relations #{params[:name]}"
-      erb :gr_example, :locals => {
-        :head => :examples,
-        :name => params[:name],
-        :root => RDF::URI(request.url).join("/").to_s
+      erb :gr_example, locals: {
+        head: :examples,
+        name: params[:name],
+        root: RDF::URI(request.url).join("/").to_s
       }
     end
 
@@ -114,10 +118,10 @@ module RDF::Linter
     # @overload get "/examples/good-relations/:file"
     # @param [String] file Name of the example to return
     get '/examples/good-relations/:file' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate,  max_age: 60
       send_file File.join(APP_DIR, "good-relations/#{params[:file]}"),
-        :type => (params[:file].end_with?(".jsonld") ? :jsonld : :html),
-        :charset => "utf-8"
+        type: (params[:file].end_with?(".jsonld") ? :jsonld : :html),
+        charset: "utf-8"
     end
 
     # Return a specific schema.org example
@@ -125,7 +129,7 @@ module RDF::Linter
     # @overload get "/examples/schema.org/:name/"
     # @param [String] name Name of the example to return
     get '/examples/schema.org/:name/' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate,  max_age: 60
       @title = "Schema.org #{params[:name]}"
       @examples ||= JSON.parse(File.read(File.join(APP_DIR, "schema.org/examples.json")))
       
@@ -142,12 +146,12 @@ module RDF::Linter
         end
       end
 
-      $logger.info "examples for #{@title}: #{examples.keys.inspect}"
-      erb :schema_example, :locals => {
-        :head => :examples,
-        :name => params[:name],
-        :examples => examples,
-        :root => RDF::URI(request.url).join("/").to_s
+      request.logger.info "examples for #{@title}: #{examples.keys.inspect}"
+      erb :schema_example, locals: {
+        head: :examples,
+        name: params[:name],
+        examples: examples,
+        root: RDF::URI(request.url).join("/").to_s
       }
     end
 
@@ -156,12 +160,12 @@ module RDF::Linter
     # @overload get "/examples/good-relations/:file"
     # @param [String] file Name of the example to return
     get '/examples/schema.org/:file' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate,  max_age: 60
       file = File.join(APP_DIR, "schema.org", params[:file])
       if File.exist?(file)
         send_file file,
-          :type => :html,
-          :charset => "utf-8"
+          type: :html,
+          charset: "utf-8"
       else
         status 401
         body "Could not find schema example #{params[:file]}"
@@ -173,18 +177,18 @@ module RDF::Linter
     # @overload get "/snippets/"
     get '/snippets/' do
       @title = "Snippet definitions"
-      cache_control :public, :must_revalidate, :max_age => 60
-      erb :snippets, :locals => {
-        :root => RDF::URI(request.url).join("/").to_s,
+      cache_control :public, :must_revalidate,  max_age: 60
+      erb :snippets, locals: {
+        root: RDF::URI(request.url).join("/").to_s,
       }
     end
 
     get '/snippets/:name' do
-      cache_control :public, :must_revalidate, :max_age => 60
+      cache_control :public, :must_revalidate,  max_age: 60
       @title = params[:name]
-      erb :snippet, :locals => {
-        :name => params[:name],
-        :root => RDF::URI(request.url).join("/").to_s
+      erb :snippet, locals: {
+        name: params[:name],
+        root: RDF::URI(request.url).join("/").to_s
       }
     end
 
@@ -212,9 +216,10 @@ module RDF::Linter
     def linter(params)
       params["format"] = "all" if params["format"].to_s.empty?
       reader_opts = {
-        :base_uri => params["url"],
-        :validate => params["validate"],
-        :format   => params["format"].to_sym,
+        base_uri: params["url"],
+        validate: params["validate"],
+        format:   params["format"].to_sym,
+        headers:  {"User-Agent" => "Structured-Data-Linter/#{RDF::Linter::VERSION}"}
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]
       reader_opts[:debug] = @debug = [] if params["debug"]
@@ -222,18 +227,19 @@ module RDF::Linter
       reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
       reader_opts[:matched_templates] = []
+      reader_opts[:logger] = request.logger
 
       root = RDF::URI(request.url).join("/").to_s
-      $logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
+      request.logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 
       case
       when reader_opts[:tempfile]
-        $logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
+        request.logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
       when  reader_opts[:content]
-        $logger.info "Parse form data with format #{reader_opts[:format]}"
+        request.logger.info "Parse form data with format #{reader_opts[:format]}"
         @content = reader_opts[:content]
       when reader_opts[:base_uri]
-        $logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
+        request.logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
       end
 
       content_type, status, content = parse(reader_opts)
@@ -243,10 +249,10 @@ module RDF::Linter
       @title = "Structured Data Linter"
       status status
       content_type content_type
-      erb :linter, :locals => {
-        :head => :linter,
-        :root => RDF::URI(request.url).join("/").to_s,
-        :matched_templates => reader_opts[:matched_templates].uniq
+      erb :linter, locals: {
+        head: :linter,
+        root: RDF::URI(request.url).join("/").to_s,
+        matched_templates: reader_opts[:matched_templates].uniq
       }
     end
   end

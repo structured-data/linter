@@ -8,12 +8,10 @@ require 'open-uri'
 
 include RDF::Linter::Parser
 
-$logger = Logger.new(STDOUT)
-$logger.level = Logger::FATAL
-
 def run(options)
   start = Time.new
 
+  options[:logger] = ::Logger.new(StringIO.new) if options[:quiet]
   content = parse(options).last
   options[:output].puts options[:lint] ? (@lint_messages.empty? ? 'ok' : @lint_messages.to_json(JSON::LD::JSON_STATE)) : content
   STDERR.puts unless options[:quiet]
@@ -53,7 +51,7 @@ opts = GetoptLong.new(
 )
 opts.each do |opt, arg|
   case opt
-  when '--dbg'            then ::RDF::Linter::debug = true; $logger.level = Logger::DEBUG
+  when '--dbg'            then ::RDF::Linter::debug = true
   when '--jsonld-dbg'     then ::JSON::LD::debug = true
   when '--rdfa-dbg'       then ::RDF::RDFa::debug = true
   when '--microdata-dbg'  then ::RDF::Microdata::debug = true
@@ -72,6 +70,8 @@ if ARGV.empty?
 else
   ARGV.each do |test_file|
     options[:output].write "#{test_file}#{options[:quiet] ? ': ' : "\n"}"
-    run({base_uri: RDF::URI("file://#{File.expand_path("../..", __FILE__)}/").join(test_file)}.merge(options))
+    options[:base_uri] = RDF::URI("file://#{File.expand_path("../..", __FILE__)}/").join(test_file)
+    options[:file_name] = test_file
+    run(options)
   end
 end

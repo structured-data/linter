@@ -218,14 +218,7 @@ describe RDF::Linter, "#lint" do
     context File.basename(input) do
       it "has no linter errors" do
         graph = RDF::Graph.load(input)
-        graph.query(:predicate => RDF.type) do |statement|
-          s = statement.dup
-          RDF::Reasoner.apply(:rdfs, :schema)
-          RDF::Linter::Parser.entailed_types(statement.object).each do |t|
-            s.object = t
-            graph << s
-          end
-        end
+        RDF::Linter::Parser.expand_graph(graph)
         expect(RDF::Linter::Parser.lint(graph)).to have_errors expected_errors
       end
     end
@@ -407,14 +400,27 @@ describe RDF::Linter, "#lint" do
     }.each do |name, params|
       it name do
         graph = RDF::Graph.new << RDF::Turtle::Reader.new(params[:input])
-        graph.query(:predicate => RDF.type) do |statement|
-          s = statement.dup
-          RDF::Reasoner.apply(:rdfs, :schema)
-          RDF::Linter::Parser.entailed_types(statement.object).each do |t|
-            s.object = t
-            graph << s
-          end
-        end
+        RDF::Linter::Parser.expand_graph(graph)
+        expect(RDF::Linter::Parser.lint(graph)).to have_errors params[:expected_errors]
+      end
+    end
+  end
+
+  context "List intermediaries" do
+    {
+      "creators" => {
+        input: %(
+          @prefix schema: <http://schema.org/> .
+
+          <Review> a schema:Review;
+             schema:creator ([a schema:Person; schema:name "John Doe"]) .
+        ),
+        expected_errors: {}
+      },
+    }.each do |name, params|
+      it name do
+        graph = RDF::Graph.new << RDF::Turtle::Reader.new(params[:input])
+        RDF::Linter::Parser.expand_graph(graph)
         expect(RDF::Linter::Parser.lint(graph)).to have_errors params[:expected_errors]
       end
     end

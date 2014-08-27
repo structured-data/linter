@@ -5,16 +5,13 @@ require 'csv'
 describe RDF::Linter do
   include RDF::Linter::Parser
 
-  before(:each) do
-    $debug_output = StringIO.new()
-    $logger = Logger.new($debug_output)
-    $logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
-  end
-
   shared_examples "Test Case" do |input, csv|
     context File.basename(input) do
       before(:all) {
-        @subject, @debug = parse(input)
+        @debug_out = StringIO.new
+        logger = Logger.new(@debug_out)
+        logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
+        @subject, @debug = parse(input, logger: logger)
       }
       if File.exist?(csv)
         CSV.foreach(csv) do |(xpath, result)|
@@ -27,7 +24,7 @@ describe RDF::Linter do
           end
 
           it "has path #{xpath.inspect} matching #{result.inspect}" do
-            expect(@subject).to have_xpath(xpath.to_s, result, @debug << $debug_output)
+            expect(@subject).to have_xpath(xpath.to_s, result, [@debug_output])
           end
         end
       else
@@ -61,11 +58,11 @@ describe RDF::Linter do
     end
   end
 
-  def parse(input)
+  def parse(input, options = {})
     $parser_spec_results ||= {}
     $parser_spec_results[input] ||= begin
       debug = []
-      [RDF::Linter::Parser.parse(:content => File.open(input), :format => :all, :debug => debug).last, debug]
+      [RDF::Linter::Parser.parse(options.merge(:content => File.open(input), format: :all)).last, debug]
     end
   end
 end

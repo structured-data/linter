@@ -13,17 +13,6 @@ require 'logger'
 
 set :environment, (ENV['RACK_ENV'] || 'production').to_sym
 
-case settings.environment
-when :production
-  puts "Mode set to production, logging to sinatra.log"
-  $logger = Logger.new(File.expand_path('../sinatra.log', __FILE__), 10, 3600*24*7)
-  $logger.level = Logger::INFO
-else
-  $logger = Logger.new(STDOUT)
-  $logger.level = Logger::DEBUG
-  $logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
-end
-
 #use Rack::Cache,
 #  :verbose     => true,
 #  :metastore   => "file:" + File.expand_path("../cache/meta", __FILE__),

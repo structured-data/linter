@@ -9,10 +9,13 @@ describe RDF::Linter::Application do
     RDF::Linter::Application.new
   end
 
-  before(:each) do
-    $debug_output = StringIO.new()
-    $logger = Logger.new($debug_output)
-    $logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
+  after(:each) do |example|
+    if example.exception
+      logdev = last_request.logger.instance_variable_get(:@logdev)
+      dev = logdev.instance_variable_get(:@dev)
+      dev.rewind
+      puts dev.read
+    end
   end
 
   describe "get /" do
@@ -76,7 +79,7 @@ describe RDF::Linter::Application do
         %(//section[@class="content"]/h2[contains(text(), "Schema.org examples")]/) +
           %(../div/a[contains(text(), "CreativeWork")]),
         %(//section[@class="content"]/div/a[@href="/examples/schema.org/CreativeWork/"]),
-        %(//a[@href="/?url=http://example.org/examples/schema.org/11-rdfa.html"]),
+        %(//a[@href="/?url=http://example.org/examples/schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html"]),
 
         %(//section[@class="content"]/h2[contains(text(), "Good Relations examples")]),
         %(//section[@class="content"]/h2[contains(text(), "Good Relations examples")]) +
@@ -195,9 +198,9 @@ describe RDF::Linter::Application do
 
   describe "get /examples/schema.org/:file" do
     {
-      "11-rdfa.html" => "text/html",
-      "11-microdata.html" => "text/html",
-      "11-jsonld.html" => "text/html",
+      "WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html" => "text/html",
+      "WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html" => "text/html",
+      "WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-jsonld.html" => "text/html",
     }.each do |file, content_type|
       context file do
         subject {

@@ -61,7 +61,7 @@ module RDF
       # @see    RDF::Enumerable#each_statement
       def each_statement(&block)
         if block_given?
-          $logger ||= begin
+          logger = @options[:logger] ||= begin
             logger = Logger.new(STDOUT)  # In case we're not invoked from rack
             logger.level = ::RDF::All.debug? ? Logger::DEBUG : Logger::INFO
             logger
@@ -71,7 +71,7 @@ module RDF
           options[:content_type] ||= @input.content_type if @input.respond_to?(:content_type)
           options.delete(:format) if options[:format] == :all
           reader_class = RDF::Reader.for(options[:format] || options) || RDF::RDFa::Reader
-          $logger.debug "detected #{reader_class.name}"
+          logger.debug "detected #{reader_class.name}"
 
           statement_count = 0
           reader_class.new(@input, @options) do |reader|
@@ -81,7 +81,7 @@ module RDF
             end
             @base_uri ||= reader.base_uri unless reader.base_uri.to_s.empty?
           end
-          $logger.info "parsed #{statement_count.to_i} triples from #{reader_class.name}"
+          logger.info "parsed #{statement_count.to_i} triples from #{reader_class.name}"
         end
         enum_for(:each_statement)
       end

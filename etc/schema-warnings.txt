@@ -1,0 +1,1215 @@
+schema.org/AcceptAction-126-jsonld.html: ok
+schema.org/AchieveAction-37-jsonld.html: ok
+schema.org/Action-35-jsonld.html: ok
+schema.org/Action-36-jsonld.html: ok
+schema.org/AddAction-164-jsonld.html: ok
+schema.org/AddAction-165-jsonld.html: ok
+schema.org/AgreeAction-49-jsonld.html: ok
+schema.org/AllocateAction-125-jsonld.html: ok
+schema.org/AppendAction-167-jsonld.html: ok
+schema.org/ApplyAction-130-jsonld.html: ok
+schema.org/ArriveAction-119-jsonld.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-jsonld.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-microdata.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-rdfa.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-jsonld.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-microdata.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-rdfa.html: ok
+schema.org/AskAction-93-jsonld.html: ok
+schema.org/AssessAction-41-jsonld.html: ok
+schema.org/AssignAction-127-jsonld.html: {
+  "property": {
+    "schema:recipient": [
+      "Subject _:b0(schema:AssignAction,schema:Thing,schema:Action,schema:OrganizeAction,schema:AllocateAction,schema:AssignAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
+    ]
+  }
+}
+schema.org/AuthorizeAction-128-jsonld.html: ok
+schema.org/BefriendAction-90-jsonld.html: ok
+schema.org/Book-CreativeWork-180-jsonld.html: {
+  "property": {
+    "schema:numberOfPages": [
+      "Object \"598 Pages\" not compatible with rangeIncludes (schema:Integer)"
+    ]
+  }
+}
+schema.org/Book-CreativeWork-180-microdata.html: {
+  "property": {
+    "schema:numberOfPages": [
+      "Object \"598 Pages\" not compatible with rangeIncludes (schema:Integer)"
+    ]
+  }
+}
+schema.org/Book-CreativeWork-180-rdfa.html: ok
+schema.org/Book-PublicationVolume-217-jsonld.html: ok
+schema.org/Book-PublicationVolume-217-microdata.html: {
+  "property": {
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#sameAs": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#name": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#birthDate": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#deathDate": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#about": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#inLanguage": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#genre": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#author": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#hasPart": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#volumeNumber": [
+      "No property definition found"
+    ],
+    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#isPartOf": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/Book-PublicationVolume-217-rdfa.html: ok
+schema.org/BookmarkAction-131-jsonld.html: ok
+schema.org/BorrowAction-155-jsonld.html: ok
+schema.org/BusReservation-BusTrip-182-jsonld.html: {
+  "property": {
+    "schema:operatingCompany": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/BuyAction-146-jsonld.html: {
+  "property": {
+    "schema:location": [
+      "Object _:b2(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Place,schema:PostalAddress)"
+    ]
+  }
+}
+schema.org/CancelAction-134-jsonld.html: ok
+schema.org/CheckAction-84-jsonld.html: {
+  "class": {
+    "schema:FlightStatus": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/CheckAction-85-jsonld.html: ok
+schema.org/CheckInAction-94-jsonld.html: ok
+schema.org/CheckInAction-95-jsonld.html: {
+  "property": {
+    "schema:airline": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/CheckInAction-96-jsonld.html: ok
+schema.org/CheckOutAction-97-jsonld.html: ok
+schema.org/ChooseAction-42-jsonld.html: ok
+schema.org/ChooseAction-43-jsonld.html: ok
+schema.org/CivicStructure-Place-22-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 09:00-17:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Sa 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/CivicStructure-Place-22-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 09:00-17:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Sa 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/CivicStructure-Place-22-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 09:00-17:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Sa 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/CommentAction-98-jsonld.html: {
+  "class": {
+    "schema:UserComment": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/CommunicateAction-91-jsonld.html: ok
+schema.org/CommunicateAction-92-jsonld.html: ok
+schema.org/ConfirmAction-100-jsonld.html: ok
+schema.org/ConsumeAction-56-jsonld.html: {
+  "property": {
+    "schema:agent": [
+      "Object _:b1(schema:Muscle,schema:Thing,schema:MedicalEntity,schema:AnatomicalStructure,schema:Muscle) not compatible with rangeIncludes (schema:Organization,schema:Person)"
+    ]
+  }
+}
+schema.org/CookAction-77-jsonld.html: ok
+schema.org/CreateAction-76-jsonld.html: ok
+schema.org/CreativeWork-ContentRating-18-jsonld.html: ok
+schema.org/CreativeWork-ContentRating-18-microdata.html: ok
+schema.org/CreativeWork-ContentRating-18-rdfa.html: ok
+schema.org/DeleteAction-169-jsonld.html: ok
+schema.org/DepartAction-120-jsonld.html: ok
+schema.org/DisagreeAction-50-jsonld.html: ok
+schema.org/DiscoverAction-86-jsonld.html: ok
+schema.org/DislikeAction-51-jsonld.html: ok
+schema.org/DonateAction-147-jsonld.html: ok
+schema.org/DownloadAction-156-jsonld.html: ok
+schema.org/DrawAction-78-jsonld.html: {
+  "class": {
+    "schema:Paining": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/DrinkAction-57-jsonld.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-31-jsonld.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-31-microdata.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-31-rdfa.html: ok
+schema.org/EatAction-58-jsonld.html: ok
+schema.org/EducationalOrganization-23-jsonld.html: ok
+schema.org/EducationalOrganization-23-microdata.html: ok
+schema.org/EducationalOrganization-23-rdfa.html: ok
+schema.org/EndorseAction-52-jsonld.html: ok
+schema.org/EnrollAction-135-jsonld.html: {
+  "class": {
+    "schema:EnrollAction": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/Event-Place-Address-AggregateOffer-8-jsonld.html: ok
+schema.org/Event-Place-Address-AggregateOffer-8-microdata.html: ok
+schema.org/Event-Place-Address-AggregateOffer-8-rdfa.html: ok
+schema.org/Event-Place-PostalAddress-MusicGroup-Offer-LimitedAvailability-179-jsonld.html: ok
+schema.org/Event-Place-PostalAddress-Offer-175-jsonld.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"Sat Sep 14\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/Event-Place-PostalAddress-Offer-175-microdata.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"Sat Sep 14\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/Event-Place-PostalAddress-Offer-175-rdfa.html: ok
+schema.org/Event-Place-PostalAddress-Offer-177-jsonld.html: ok
+schema.org/Event-Place-PostalAddress-Offer-177-microdata.html: ok
+schema.org/Event-Place-PostalAddress-Offer-177-rdfa.html: ok
+schema.org/Event-Place-PostalAddress-Offer-EventCancelled-176-jsonld.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"Sat Sep 14\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/Event-Place-PostalAddress-Offer-EventCancelled-176-microdata.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"Sat Sep 14\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/Event-Place-PostalAddress-Offer-EventCancelled-176-rdfa.html: ok
+schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-jsonld.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"Sat Sep 14\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-microdata.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"Sat Sep 14\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-rdfa.html: ok
+schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-jsonld.html: ok
+schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-microdata.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"Wed 01 October 2014 19:30\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-rdfa.html: ok
+schema.org/EventReservation-Ticket-Seat-183-jsonld.html: ok
+schema.org/ExerciseAction-140-jsonld.html: ok
+schema.org/ExerciseAction-141-jsonld.html: ok
+schema.org/FilmAction-79-jsonld.html: ok
+schema.org/FindAction-83-jsonld.html: ok
+schema.org/Flight-FlightReservation-184-jsonld.html: ok
+schema.org/FollowAction-106-jsonld.html: {
+  "property": {
+    "schema:location": [
+      "Object _:b3(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Place,schema:PostalAddress)"
+    ]
+  }
+}
+schema.org/FoodEstablishmentReservation-185-jsonld.html: ok
+schema.org/GiveAction-157-jsonld.html: ok
+schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-jsonld.html: ok
+schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-microdata.html: {
+  "property": {
+    "schema:validFor": [
+      "Object \"1 year\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-rdfa.html: ok
+schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-174-jsonld.html: {
+  "class": {
+    "schema:CivicAudience": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:operator": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-205-jsonld.html: ok
+schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-205-microdata.html: ok
+schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-205-rdfa.html: ok
+schema.org/IgnoreAction-45-jsonld.html: ok
+schema.org/IgnoreAction-46-jsonld.html: ok
+schema.org/IgnoreAction-47-jsonld.html: ok
+schema.org/ImageObject-19-jsonld.html: ok
+schema.org/ImageObject-19-microdata.html: ok
+schema.org/ImageObject-19-rdfa.html: ok
+schema.org/IndividualProduct-32-jsonld.html: ok
+schema.org/IndividualProduct-32-microdata.html: {
+  "class": {
+    "http://www.productontology.org/id/Racing_bicycle": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/IndividualProduct-32-rdfa.html: ok
+schema.org/InformAction-99-jsonld.html: ok
+schema.org/InsertAction-166-jsonld.html: {
+  "class": {
+    "schema:InsertedAction": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:objectLocation": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/InstallAction-59-jsonld.html: ok
+schema.org/InteractAction-88-jsonld.html: ok
+schema.org/InteractAction-89-jsonld.html: ok
+schema.org/InviteAction-102-jsonld.html: ok
+schema.org/ItemList-14-jsonld.html: {
+  "property": {
+    "schema:mainContentOfPage": [
+      "Subject _:b0(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with domainIncludes (schema:WebPage)"
+    ]
+  }
+}
+schema.org/ItemList-14-microdata.html: {
+  "property": {
+    "schema:mainContentOfPage": [
+      "Subject _:g2239830360(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with domainIncludes (schema:WebPage)"
+    ]
+  }
+}
+schema.org/ItemList-14-rdfa.html: {
+  "property": {
+    "schema:mainContentOfPage": [
+      "Subject _:g2183102300(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with domainIncludes (schema:WebPage)"
+    ]
+  }
+}
+schema.org/JobPosting-26-jsonld.html: ok
+schema.org/JobPosting-26-microdata.html: ok
+schema.org/JobPosting-26-rdfa.html: ok
+schema.org/JoinAction-107-jsonld.html: ok
+schema.org/JoinAction-108-jsonld.html: ok
+schema.org/JoinAction-109-jsonld.html: ok
+schema.org/JoinAction-110-jsonld.html: ok
+schema.org/LeaveAction-111-jsonld.html: ok
+schema.org/LendAction-158-jsonld.html: {
+  "property": {
+    "schema:price": [
+      "Subject _:b0(schema:LendAction,schema:Thing,schema:Action,schema:TransferAction,schema:LendAction) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:TradeAction)"
+    ],
+    "schema:recipient": [
+      "Subject _:b0(schema:LendAction,schema:Thing,schema:Action,schema:TransferAction,schema:LendAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
+    ]
+  }
+}
+schema.org/LikeAction-53-jsonld.html: ok
+schema.org/ListenAction-60-jsonld.html: ok
+schema.org/ListenAction-61-jsonld.html: ok
+schema.org/ListenAction-62-jsonld.html: ok
+schema.org/LodgingReservation-186-jsonld.html: ok
+schema.org/LoseAction-38-jsonld.html: {
+  "property": {
+    "schema:winner": [
+      "Subject _:b0(schema:WinAction,schema:Thing,schema:Action,schema:AchieveAction,schema:WinAction) not compatible with domainIncludes (schema:LoseAction)"
+    ]
+  }
+}
+schema.org/Map-VenueMap-214-jsonld.html: ok
+schema.org/Map-VenueMap-214-microdata.html: ok
+schema.org/Map-VenueMap-214-rdfa.html: ok
+schema.org/MarryAction-112-jsonld.html: ok
+schema.org/MediaObject-AudioObject-5-jsonld.html: ok
+schema.org/MediaObject-AudioObject-5-microdata.html: ok
+schema.org/MediaObject-AudioObject-5-rdfa.html: ok
+schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-30-jsonld.html: ok
+schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-30-microdata.html: ok
+schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-30-rdfa.html: ok
+schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-jsonld.html: {
+  "property": {
+    "schema:subject": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-microdata.html: {
+  "property": {
+    "schema:subject": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-rdfa.html: ok
+schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-28-jsonld.html: {
+  "property": {
+    "schema:code": [
+      "Subject _:b0(schema:MedicalScholarlyArticle,schema:Thing,schema:CreativeWork,schema:Article,schema:ScholarlyArticle,schema:MedicalScholarlyArticle) not compatible with domainIncludes (schema:MedicalEntity)"
+    ],
+    "schema:evidenceLevel": [
+      "Subject _:b0(schema:MedicalScholarlyArticle,schema:Thing,schema:CreativeWork,schema:Article,schema:ScholarlyArticle,schema:MedicalScholarlyArticle) not compatible with domainIncludes (schema:MedicalGuideline)"
+    ],
+    "schema:recommendationStrength": [
+      "Subject _:b0(schema:MedicalScholarlyArticle,schema:Thing,schema:CreativeWork,schema:Article,schema:ScholarlyArticle,schema:MedicalScholarlyArticle) not compatible with domainIncludes (schema:MedicalGuidelineRecommendation)"
+    ],
+    "schema:subject": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-28-microdata.html: {
+  "property": {
+    "schema:subject": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-28-rdfa.html: {
+  "property": {
+    "schema:subject": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MedicalWebPage-DrugClass-29-jsonld.html: {
+  "property": {
+    "schema:drug": [
+      "Subject _:b0(schema:MedicalWebPage,schema:Thing,schema:CreativeWork,schema:WebPage,schema:MedicalWebPage) not compatible with domainIncludes (schema:DrugClass)"
+    ],
+    "schema:otherName": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MedicalWebPage-DrugClass-29-microdata.html: {
+  "property": {
+    "schema:otherName": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MedicalWebPage-DrugClass-29-rdfa.html: {
+  "property": {
+    "schema:otherName": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/MoveAction-118-jsonld.html: ok
+schema.org/Movie-15-jsonld.html: ok
+schema.org/Movie-15-microdata.html: ok
+schema.org/Movie-15-rdfa.html: ok
+schema.org/MusicAlbum-25-jsonld.html: ok
+schema.org/MusicAlbum-25-microdata.html: {
+  "property": {
+    "schema:url": [
+      "Object \"/artist/radiohead/album/the-king-of-limbs\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"/artist/radiohead/album/the-king-of-limbs/track/bloom\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"/artist/radiohead/album/the-king-of-limbs/track/morning-mr-magpie\" not compatible with rangeIncludes (schema:URL)"
+    ]
+  }
+}
+schema.org/MusicAlbum-25-rdfa.html: {
+  "property": {
+    "schema:url": [
+      "Object \"/artist/radiohead/album/the-king-of-limbs\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"/artist/radiohead/album/the-king-of-limbs/track/bloom\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"/artist/radiohead/album/the-king-of-limbs/track/morning-mr-magpie\" not compatible with rangeIncludes (schema:URL)"
+    ]
+  }
+}
+schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-192-jsonld.html: ok
+schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-192-microdata.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"May23\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-192-rdfa.html: ok
+schema.org/MusicEvent-Place-Offer-206-jsonld.html: ok
+schema.org/MusicEvent-Place-Offer-206-microdata.html: ok
+schema.org/MusicEvent-Place-Offer-206-rdfa.html: ok
+schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-jsonld.html: ok
+schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-microdata.html: ok
+schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-rdfa.html: ok
+schema.org/MusicPlaylist-20-jsonld.html: ok
+schema.org/MusicPlaylist-20-microdata.html: {
+  "property": {
+    "schema:url": [
+      "Object \"sweet-home-alabama\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"shook-you-all-night-long\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"sharp-dressed-man\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"old-time-rock-and-roll\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"hurt-so-good\" not compatible with rangeIncludes (schema:URL)"
+    ]
+  }
+}
+schema.org/MusicPlaylist-20-rdfa.html: {
+  "property": {
+    "schema:url": [
+      "Object \"sweet-home-alabama\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"shook-you-all-night-long\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"sharp-dressed-man\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"old-time-rock-and-roll\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"hurt-so-good\" not compatible with rangeIncludes (schema:URL)"
+    ]
+  }
+}
+schema.org/NGO-7-jsonld.html: ok
+schema.org/NGO-7-microdata.html: ok
+schema.org/NGO-7-rdfa.html: ok
+schema.org/OrderAction-148-jsonld.html: {
+  "class": {
+    "schema:OrderedAction": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:location": [
+      "Object _:b2(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Place,schema:PostalAddress)"
+    ]
+  }
+}
+schema.org/OrderedEvent-195-jsonld.html: {
+  "class": {
+    "schema:OrderedEvent": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:eventOrderPosition": [
+      "No property definition found"
+    ],
+    "schema:nextEvent": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/OrderedEvent-195-microdata.html: ok
+schema.org/OrderedEvent-195-rdfa.html: ok
+schema.org/OrderedEvent-196-jsonld.html: {
+  "class": {
+    "schema:OrderedEvent": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:eventOrderPosition": [
+      "No property definition found"
+    ],
+    "schema:nextEvent": [
+      "No property definition found"
+    ],
+    "schema:previousEvent": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/OrderedEvent-196-microdata.html: ok
+schema.org/OrderedEvent-196-rdfa.html: ok
+schema.org/Organization-Address-6-jsonld.html: ok
+schema.org/Organization-Address-6-microdata.html: ok
+schema.org/Organization-Address-6-rdfa.html: ok
+schema.org/Organization-ContactPoint-204-jsonld.html: ok
+schema.org/Organization-ContactPoint-204-microdata.html: ok
+schema.org/Organization-ContactPoint-204-rdfa.html: ok
+schema.org/OrganizeAction-123-jsonld.html: ok
+schema.org/OrganizeAction-124-jsonld.html: ok
+schema.org/PaintAction-80-jsonld.html: {
+  "class": {
+    "schema:Paining": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/PayAction-149-jsonld.html: ok
+schema.org/PerformAction-142-jsonld.html: {
+  "class": {
+    "schema:PeformAction": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-jsonld.html: ok
+schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-microdata.html: ok
+schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-rdfa.html: ok
+schema.org/Pharmacy-199-jsonld.html: ok
+schema.org/Pharmacy-199-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Pharmacy-199-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/PhotographAction-81-jsonld.html: ok
+schema.org/Place-GeoCoordinates-4-jsonld.html: ok
+schema.org/Place-GeoCoordinates-4-microdata.html: ok
+schema.org/Place-GeoCoordinates-4-rdfa.html: ok
+schema.org/Place-LocalBusiness-2-jsonld.html: ok
+schema.org/Place-LocalBusiness-2-microdata.html: ok
+schema.org/Place-LocalBusiness-2-rdfa.html: ok
+schema.org/PlanAction-132-jsonld.html: ok
+schema.org/PlanAction-133-jsonld.html: ok
+schema.org/PlayAction-139-jsonld.html: ok
+schema.org/PostalAddress-17-jsonld.html: ok
+schema.org/PostalAddress-17-microdata.html: ok
+schema.org/PostalAddress-17-rdfa.html: ok
+schema.org/PostalAddress-Pharmacy-Store-203-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/PostalAddress-Pharmacy-Store-203-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/PostalAddress-Pharmacy-Store-203-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/PrependAction-168-jsonld.html: ok
+schema.org/Product-AggregateRating-AggregateOffer-Offer-10-jsonld.html: {
+  "property": {
+    "schema:offers": [
+      "Subject _:b2(schema:AggregateOffer,schema:Thing,schema:Intangible,schema:Offer,schema:AggregateOffer) not compatible with domainIncludes (schema:CreativeWork,schema:MediaObject,schema:Event,schema:Product)"
+    ]
+  }
+}
+schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html: {
+  "property": {
+    "schema:offers": [
+      "Subject _:g2238153260(schema:AggregateOffer,schema:Thing,schema:Intangible,schema:Offer,schema:AggregateOffer) not compatible with domainIncludes (schema:CreativeWork,schema:MediaObject,schema:Event,schema:Product)"
+    ]
+  }
+}
+schema.org/Product-AggregateRating-AggregateOffer-Offer-10-rdfa.html: {
+  "property": {
+    "schema:offers": [
+      "Subject _:g2232912800(schema:AggregateOffer,schema:Thing,schema:Intangible,schema:Offer,schema:AggregateOffer) not compatible with domainIncludes (schema:CreativeWork,schema:MediaObject,schema:Event,schema:Product)"
+    ]
+  }
+}
+schema.org/Product-AggregateRating-Offer-Review-Rating-9-jsonld.html: ok
+schema.org/Product-AggregateRating-Offer-Review-Rating-9-microdata.html: ok
+schema.org/Product-AggregateRating-Offer-Review-Rating-9-rdfa.html: ok
+schema.org/ProductModel-34-jsonld.html: ok
+schema.org/ProductModel-34-microdata.html: {
+  "class": {
+    "http://www.productontology.org/id/Television_set": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/ProductModel-34-rdfa.html: ok
+schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-jsonld.html: ok
+schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-microdata.html: ok
+schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-rdfa.html: ok
+schema.org/Question-Answer-QAPage-189-jsonld.html: ok
+schema.org/Question-Answer-QAPage-189-microdata.html: {
+  "property": {
+    "schema:suggestedAnswer": [
+      "Subject _:g2236977020(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
+    ]
+  }
+}
+schema.org/Question-Answer-QAPage-189-rdfa.html: {
+  "property": {
+    "schema:suggestedAnswer": [
+      "Subject _:g2236667080(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
+    ]
+  }
+}
+schema.org/QuoteAction-150-jsonld.html: ok
+schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-jsonld.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"09:00, 7th of November 2013\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)",
+      "Object \"09:45 on the same day\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-microdata.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"09:00, 7th of November 2013\" not compatible with rangeIncludes (schema:Date)",
+      "Object \"09:45 on the same day\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-rdfa.html: ok
+schema.org/ReactAction-48-jsonld.html: ok
+schema.org/ReadAction-63-jsonld.html: ok
+schema.org/ReadAction-64-jsonld.html: ok
+schema.org/ReadAction-65-jsonld.html: ok
+schema.org/ReadAction-66-jsonld.html: ok
+schema.org/ReceiveAction-159-jsonld.html: ok
+schema.org/Recipe-NutritionInformation-12-jsonld.html: ok
+schema.org/Recipe-NutritionInformation-12-microdata.html: ok
+schema.org/Recipe-NutritionInformation-12-rdfa.html: ok
+schema.org/RegisterAction-113-jsonld.html: ok
+schema.org/RegisterAction-114-jsonld.html: ok
+schema.org/RegisterAction-115-jsonld.html: ok
+schema.org/RejectAction-129-jsonld.html: ok
+schema.org/RentAction-151-jsonld.html: ok
+schema.org/RentalCarReservation-187-jsonld.html: {
+  "property": {
+    "schema:operatingCompany": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ReplaceAction-170-jsonld.html: ok
+schema.org/ReplyAction-103-jsonld.html: {
+  "property": {
+    "schema:answer": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ReserveAction-136-jsonld.html: ok
+schema.org/Restaurant-197-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Restaurant-197-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Restaurant-197-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Sa 11:00-14:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 17:00-21:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Fr-Sa 17:00-22:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Sa 11:00-14:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 17:00-21:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Fr-Sa 17:00-22:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Sa 11:00-14:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 17:00-21:30\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Fr-Sa 17:00-22:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Restaurant-ViewAction-EntryPoint-SoftwareApplication-191-jsonld.html: ok
+schema.org/ReturnAction-160-jsonld.html: ok
+schema.org/ReviewAction-55-jsonld.html: ok
+schema.org/Role-OrganizationRole-208-jsonld.html: ok
+schema.org/Role-OrganizationRole-208-microdata.html: ok
+schema.org/Role-OrganizationRole-208-rdfa.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-209-jsonld.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-209-microdata.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-209-rdfa.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-210-jsonld.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-210-microdata.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-210-rdfa.html: ok
+schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-jsonld.html: ok
+schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-microdata.html: ok
+schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-rdfa.html: ok
+schema.org/Role-PerformanceRole-211-jsonld.html: ok
+schema.org/Role-PerformanceRole-211-microdata.html: {
+  "property": {
+    "schema:actor": [
+      "Subject _:g2223881820(schema:PerformanceRole,schema:Thing,schema:Intangible,schema:Role,schema:PerformanceRole) not compatible with domainIncludes (schema:Movie,schema:Episode,schema:TVEpisode,schema:Series,schema:TVSeries,schema:RadioEpisode,schema:RadioSeries)"
+    ]
+  }
+}
+schema.org/Role-PerformanceRole-211-rdfa.html: ok
+schema.org/RsvpAction-101-jsonld.html: ok
+schema.org/ScheduleAction-137-jsonld.html: ok
+schema.org/SearchAction-143-jsonld.html: ok
+schema.org/SearchAction-144-jsonld.html: ok
+schema.org/SearchAction-WebSite-219-jsonld.html: {
+  "property": {
+    "schema:query-input": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/SearchAction-WebSite-219-microdata.html: {
+  "property": {
+    "schema:query-input": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/SearchAction-WebSite-219-rdfa.html: {
+  "property": {
+    "schema:query-input": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/SelectAction-138-jsonld.html: {
+  "class": {
+    "schema:SelectAction": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/SellAction-152-jsonld.html: {
+  "property": {
+    "schema:location": [
+      "Object _:b2(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Place,schema:PostalAddress)"
+    ]
+  }
+}
+schema.org/SendAction-161-jsonld.html: ok
+schema.org/ShareAction-104-jsonld.html: {
+  "property": {
+    "schema:object": [
+      "Object _:b2(schema:Blog,schema:Blog) not compatible with rangeIncludes (schema:Thing)"
+    ],
+    "schema:name": [
+      "Subject _:b2(schema:Blog,schema:Blog) not compatible with domainIncludes (schema:Thing)"
+    ]
+  }
+}
+schema.org/ShareAction-105-jsonld.html: ok
+schema.org/SomeProducts-33-jsonld.html: ok
+schema.org/SomeProducts-33-microdata.html: {
+  "class": {
+    "http://www.productontology.org/id/Printer_(computing)": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/SomeProducts-33-rdfa.html: ok
+schema.org/SportsEvent-OrderedEvent-194-jsonld.html: {
+  "class": {
+    "schema:OrderedEvent": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:eventOrderPosition": [
+      "No property definition found"
+    ],
+    "schema:nextEvent": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/SportsEvent-OrderedEvent-194-microdata.html: ok
+schema.org/SportsEvent-OrderedEvent-194-rdfa.html: ok
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Fr 13:00-17:30\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Fr 13:00-17:30\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Fr 13:00-17:30\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-OpeningHoursSpecification-198-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 09:00-14:00\" not compatible with rangeIncludes (schema:Duration)"
+    ],
+    "schema:closes": [
+      "Object \"14:00\" not compatible with rangeIncludes (schema:Time)"
+    ],
+    "schema:opens": [
+      "Object \"12:00\" not compatible with rangeIncludes (schema:Time)"
+    ]
+  }
+}
+schema.org/Store-OpeningHoursSpecification-198-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 09:00-14:00\" not compatible with rangeIncludes (schema:Duration)"
+    ],
+    "schema:validFrom": [
+      "Object \"24 December 2013\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"1st January 2014\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:validThrough": [
+      "Object \"25 December 2013\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:opens": [
+      "Object \"9am\" not compatible with rangeIncludes (schema:Time)",
+      "Object \"Noon\" not compatible with rangeIncludes (schema:Time)"
+    ],
+    "schema:closes": [
+      "Object \"11am\" not compatible with rangeIncludes (schema:Time)",
+      "Object \"2pm\" not compatible with rangeIncludes (schema:Time)"
+    ]
+  }
+}
+schema.org/Store-OpeningHoursSpecification-198-rdfa.html: {
+  "class": {
+    "http://schema.orgStore": [
+      "No class definition found"
+    ],
+    "http://schema.orgOpeningHoursSpecification": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "http://schema.orgname": [
+      "No property definition found"
+    ],
+    "http://schema.orgopeningHours": [
+      "No property definition found"
+    ],
+    "http://schema.orgopeningHoursSpecification": [
+      "No property definition found"
+    ],
+    "http://schema.orgvalidFrom": [
+      "No property definition found"
+    ],
+    "http://schema.orgvalidThrough": [
+      "No property definition found"
+    ],
+    "http://schema.orgopens": [
+      "No property definition found"
+    ],
+    "http://schema.orgcloses": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/Store-Pharmacy-200-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-Pharmacy-200-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-Pharmacy-200-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-PostalAddress-Pharmacy-202-jsonld.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-PostalAddress-Pharmacy-202-microdata.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/Store-PostalAddress-Pharmacy-202-rdfa.html: {
+  "property": {
+    "schema:openingHours": [
+      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
+      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/SubscribeAction-116-jsonld.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-24-jsonld.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-24-microdata.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-24-rdfa.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-jsonld.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"18:15, 22nd of May 2010\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)",
+      "Object \"19:45 on the 2nd of June\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
+    ],
+    "schema:endDate": [
+      "Object \"9th\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-microdata.html: {
+  "property": {
+    "schema:startDate": [
+      "Object \"18:15, 22nd of May 2010\" not compatible with rangeIncludes (schema:Date)",
+      "Object \"19:45 on the 2nd of June\" not compatible with rangeIncludes (schema:Date)"
+    ],
+    "schema:endDate": [
+      "Object \"9th\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-rdfa.html: ok
+schema.org/Table-16-jsonld.html: {
+  "property": {
+    "schema:mainContentOfPage": [
+      "Subject _:b0(schema:Table,schema:Thing,schema:CreativeWork,schema:WebPageElement,schema:Table) not compatible with domainIncludes (schema:WebPage)"
+    ]
+  }
+}
+schema.org/Table-16-microdata.html: {
+  "property": {
+    "schema:mainContentOfPage": [
+      "Subject _:g2239942020(schema:Table,schema:Thing,schema:CreativeWork,schema:WebPageElement,schema:Table) not compatible with domainIncludes (schema:WebPage)"
+    ]
+  }
+}
+schema.org/Table-16-rdfa.html: {
+  "property": {
+    "schema:mainContentOfPage": [
+      "Subject _:g2224815240(schema:Table,schema:Thing,schema:CreativeWork,schema:WebPageElement,schema:Table) not compatible with domainIncludes (schema:WebPage)"
+    ]
+  }
+}
+schema.org/TakeAction-162-jsonld.html: {
+  "property": {
+    "schema:recipient": [
+      "Subject _:b0(schema:TakeAction,schema:Thing,schema:Action,schema:TransferAction,schema:TakeAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
+    ]
+  }
+}
+schema.org/TaxiReservation-188-jsonld.html: ok
+schema.org/TieAction-39-jsonld.html: ok
+schema.org/TipAction-153-jsonld.html: {
+  "property": {
+    "schema:recipient": [
+      "Subject _:b0(schema:RentAction,schema:Thing,schema:Action,schema:TradeAction,schema:RentAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
+    ]
+  }
+}
+schema.org/TrackAction-87-jsonld.html: {
+  "class": {
+    "gr:UPS": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:deliveryMethod": [
+      "Object _:b2(gr:UPS,gr:UPS) not compatible with rangeIncludes (schema:DeliveryMethod)"
+    ]
+  }
+}
+schema.org/TradeAction-145-jsonld.html: ok
+schema.org/TrainReservation-TrainTrip-181-jsonld.html: ok
+schema.org/TransferAction-154-jsonld.html: ok
+schema.org/TravelAction-121-jsonld.html: ok
+schema.org/TravelAction-122-jsonld.html: ok
+schema.org/UnRegisterAction-117-jsonld.html: ok
+schema.org/UpdateAction-163-jsonld.html: ok
+schema.org/UseAction-67-jsonld.html: ok
+schema.org/UserInteraction-WebPage-Article-21-jsonld.html: ok
+schema.org/UserInteraction-WebPage-Article-21-microdata.html: ok
+schema.org/UserInteraction-WebPage-Article-21-rdfa.html: ok
+schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-jsonld.html: {
+  "property": {
+    "schema:video": [
+      "Subject _:b0(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+    ],
+    "schema:playCount": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
+  "property": {
+    "schema:video": [
+      "Subject _:g2236335800(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+    ],
+    "schema:url": [
+      "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"foo-fighters-everlong.html\" not compatible with rangeIncludes (schema:URL)"
+    ],
+    "schema:playCount": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
+  "property": {
+    "schema:video": [
+      "Subject _:g2169087740(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+    ],
+    "schema:url": [
+      "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"foo-fighters-everlong.html\" not compatible with rangeIncludes (schema:URL)"
+    ],
+    "schema:playCount": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ViewAction-69-jsonld.html: ok
+schema.org/ViewAction-70-jsonld.html: ok
+schema.org/ViewAction-71-jsonld.html: ok
+schema.org/VoteAction-44-jsonld.html: ok
+schema.org/WantAction-54-jsonld.html: ok
+schema.org/WatchAction-72-jsonld.html: {
+  "class": {
+    "schema:TvEpisode": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/WatchAction-73-jsonld.html: {
+  "class": {
+    "schema:TvSeries": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/WatchAction-74-jsonld.html: ok
+schema.org/WatchAction-75-jsonld.html: ok
+schema.org/WatchAction-Movie-190-jsonld.html: ok
+schema.org/WearAction-68-jsonld.html: ok
+schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-jsonld.html: {
+  "property": {
+    "schema:bookFormat": [
+      "Subject _:b0(schema:WebPage,schema:Thing,schema:CreativeWork,schema:WebPage) not compatible with domainIncludes (schema:Book)"
+    ],
+    "schema:isbn": [
+      "Subject _:b0(schema:WebPage,schema:Thing,schema:CreativeWork,schema:WebPage) not compatible with domainIncludes (schema:Book)"
+    ],
+    "schema:numberOfPages": [
+      "Subject _:b0(schema:WebPage,schema:Thing,schema:CreativeWork,schema:WebPage) not compatible with domainIncludes (schema:Book)"
+    ]
+  }
+}
+schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html: ok
+schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html: ok
+schema.org/WebPage-CollegeOrUniversity-213-jsonld.html: ok
+schema.org/WebPage-CollegeOrUniversity-213-microdata.html: ok
+schema.org/WebPage-CollegeOrUniversity-213-rdfa.html: ok
+schema.org/WinAction-40-jsonld.html: {
+  "class": {
+    "schema:Award": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/WriteAction-82-jsonld.html: ok
