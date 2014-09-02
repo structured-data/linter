@@ -1,5 +1,6 @@
 require 'rdf'
 require 'tsort'
+require 'active_support/values/time_zone'
 
 # Allow graph to be topologically sorted
 class RDF::Graph
@@ -17,27 +18,46 @@ class RDF::Graph
 end
 
 class RDF::Literal
-  ##
-  # Returns a human-readable value for the interval
-  def humanize(lang = :en)
-    to_s
-  end
-
   class Date
     def humanize(lang = :en)
-      @object.strftime("%A, %d %B %Y %Z")
+      d = object.strftime("%A, %d %B %Y")
+      if has_timezone?
+        d += if self.tz == 'Z'
+          " UTC"
+        else
+          " #{ActiveSupport::TimeZone[self.tz.to_s.to_i].tzinfo.strftime("%Z")}"
+        end
+      end
+      d
     end
   end
   
   class Time
     def humanize(lang = :en)
-      @object.strftime("%r %Z").sub(/\+00:00/, "UTC")
+      t = object.strftime("%r")
+      if has_timezone?
+        t += if self.tz == 'Z'
+          " UTC"
+        else
+          " #{ActiveSupport::TimeZone[self.tz.to_s.to_i].tzinfo.strftime("%Z")}"
+        end
+      end
+      t
     end
   end
   
   class DateTime
     def humanize(lang = :en)
-      @object.strftime("%r %Z on %A, %d %B %Y").sub(/\+00:00/, "UTC")
+      d = object.strftime("%r on %A, %d %B %Y")
+      if has_timezone?
+        zone = if self.tz == 'Z'
+          "UTC"
+        else
+          ActiveSupport::TimeZone[self.tz.to_s.to_i].tzinfo.strftime("%Z")
+        end
+        d.sub!(" on ", " #{zone} on ")
+      end
+      d
     end
   end
 end

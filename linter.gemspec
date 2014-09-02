@@ -22,6 +22,7 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version       = '>= 2.1'
   gem.requirements                = []
   gem.add_runtime_dependency      'linkeddata',         '~> 1.1'
+  gem.add_runtime_dependency      'activesupport',      '~> 4.0'
   gem.add_runtime_dependency      'sinatra-linkeddata', '~> 1.1'
   gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.1'
   gem.add_runtime_dependency      'equivalent-xml'
