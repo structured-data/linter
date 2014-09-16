@@ -189,7 +189,7 @@ module RDF::Linter
           # Hack to fix incorrect DateTimes in examples:
           get_value(RDF::Literal::DateTime.new(literal))
         else
-          literal.to_s
+          literal.humanize
         end
       end
     end
