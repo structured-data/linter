@@ -53,10 +53,10 @@
       "rdfa": "schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-rdfa.html",
       "jsonld": "schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-jsonld.html"
     },
-    "Product-AggregateRating-Offer-Review-Rating-9": {
-      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-microdata.html",
-      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-rdfa.html",
-      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-jsonld.html"
+    "Product-AggregateRating-Offer-Review-Rating-price-9": {
+      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html",
+      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html",
+      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html"
     },
     "Product-AggregateRating-AggregateOffer-Offer-10": {
       "microdata": "schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html",
@@ -107,15 +107,15 @@
       "rdfa": "schema.org/UserInteraction-WebPage-Article-21-rdfa.html",
       "jsonld": "schema.org/UserInteraction-WebPage-Article-21-jsonld.html"
     },
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-jsonld.html"
     },
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-jsonld.html"
     }
   },
   "AskAction": {
@@ -161,10 +161,10 @@
       "rdfa": "schema.org/Book-CreativeWork-180-rdfa.html",
       "jsonld": "schema.org/Book-CreativeWork-180-jsonld.html"
     },
-    "Book-PublicationVolume-217": {
-      "microdata": "schema.org/Book-PublicationVolume-217-microdata.html",
-      "rdfa": "schema.org/Book-PublicationVolume-217-rdfa.html",
-      "jsonld": "schema.org/Book-PublicationVolume-217-jsonld.html"
+    "Book-PublicationVolume-224": {
+      "microdata": "schema.org/Book-PublicationVolume-224-microdata.html",
+      "rdfa": "schema.org/Book-PublicationVolume-224-rdfa.html",
+      "jsonld": "schema.org/Book-PublicationVolume-224-jsonld.html"
     }
   },
   "BookmarkAction": {
@@ -357,6 +357,11 @@
       "microdata": "schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-microdata.html",
       "rdfa": "schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-rdfa.html",
       "jsonld": "schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-jsonld.html"
+    },
+    "ItemList-CreativeWork-Place-215": {
+      "microdata": "schema.org/ItemList-CreativeWork-Place-215-microdata.html",
+      "rdfa": "schema.org/ItemList-CreativeWork-Place-215-rdfa.html",
+      "jsonld": "schema.org/ItemList-CreativeWork-Place-215-jsonld.html"
     }
   },
   "DDxElement": {
@@ -661,6 +666,41 @@
       "microdata": "schema.org/ItemList-14-microdata.html",
       "rdfa": "schema.org/ItemList-14-rdfa.html",
       "jsonld": "schema.org/ItemList-14-jsonld.html"
+    },
+    "ItemList-Product-Offer-214": {
+      "microdata": "schema.org/ItemList-Product-Offer-214-microdata.html",
+      "rdfa": "schema.org/ItemList-Product-Offer-214-rdfa.html",
+      "jsonld": "schema.org/ItemList-Product-Offer-214-jsonld.html"
+    },
+    "ItemList-CreativeWork-Place-215": {
+      "microdata": "schema.org/ItemList-CreativeWork-Place-215-microdata.html",
+      "rdfa": "schema.org/ItemList-CreativeWork-Place-215-rdfa.html",
+      "jsonld": "schema.org/ItemList-CreativeWork-Place-215-jsonld.html"
+    },
+    "ItemList-216": {
+      "microdata": "schema.org/ItemList-216-microdata.html",
+      "rdfa": "schema.org/ItemList-216-rdfa.html",
+      "jsonld": "schema.org/ItemList-216-jsonld.html"
+    },
+    "ItemList-MusicAlbum-217": {
+      "microdata": "schema.org/ItemList-MusicAlbum-217-microdata.html",
+      "rdfa": "schema.org/ItemList-MusicAlbum-217-rdfa.html",
+      "jsonld": "schema.org/ItemList-MusicAlbum-217-jsonld.html"
+    },
+    "ItemList-Product-Offer-218": {
+      "microdata": "schema.org/ItemList-Product-Offer-218-microdata.html",
+      "rdfa": "schema.org/ItemList-Product-Offer-218-rdfa.html",
+      "jsonld": "schema.org/ItemList-Product-Offer-218-jsonld.html"
+    },
+    "ItemList-219": {
+      "microdata": "schema.org/ItemList-219-microdata.html",
+      "rdfa": "schema.org/ItemList-219-rdfa.html",
+      "jsonld": "schema.org/ItemList-219-jsonld.html"
+    },
+    "ItemList-MusicAlbum-220": {
+      "microdata": "schema.org/ItemList-MusicAlbum-220-microdata.html",
+      "rdfa": "schema.org/ItemList-MusicAlbum-220-rdfa.html",
+      "jsonld": "schema.org/ItemList-MusicAlbum-220-jsonld.html"
     }
   },
   "JobPosting": {
@@ -738,10 +778,10 @@
     }
   },
   "Map": {
-    "Map-VenueMap-214": {
-      "microdata": "schema.org/Map-VenueMap-214-microdata.html",
-      "rdfa": "schema.org/Map-VenueMap-214-rdfa.html",
-      "jsonld": "schema.org/Map-VenueMap-214-jsonld.html"
+    "Map-VenueMap-221": {
+      "microdata": "schema.org/Map-VenueMap-221-microdata.html",
+      "rdfa": "schema.org/Map-VenueMap-221-rdfa.html",
+      "jsonld": "schema.org/Map-VenueMap-221-jsonld.html"
     }
   },
   "MarryAction": {
@@ -863,6 +903,16 @@
       "microdata": "schema.org/MusicAlbum-25-microdata.html",
       "rdfa": "schema.org/MusicAlbum-25-rdfa.html",
       "jsonld": "schema.org/MusicAlbum-25-jsonld.html"
+    },
+    "ItemList-MusicAlbum-217": {
+      "microdata": "schema.org/ItemList-MusicAlbum-217-microdata.html",
+      "rdfa": "schema.org/ItemList-MusicAlbum-217-rdfa.html",
+      "jsonld": "schema.org/ItemList-MusicAlbum-217-jsonld.html"
+    },
+    "ItemList-MusicAlbum-220": {
+      "microdata": "schema.org/ItemList-MusicAlbum-220-microdata.html",
+      "rdfa": "schema.org/ItemList-MusicAlbum-220-rdfa.html",
+      "jsonld": "schema.org/ItemList-MusicAlbum-220-jsonld.html"
     }
   },
   "MusicEvent": {
@@ -931,10 +981,10 @@
     }
   },
   "Offer": {
-    "Product-AggregateRating-Offer-Review-Rating-9": {
-      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-microdata.html",
-      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-rdfa.html",
-      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-jsonld.html"
+    "Product-AggregateRating-Offer-Review-Rating-price-9": {
+      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html",
+      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html",
+      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html"
     },
     "Product-AggregateRating-AggregateOffer-Offer-10": {
       "microdata": "schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html",
@@ -978,6 +1028,16 @@
       "microdata": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-microdata.html",
       "rdfa": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-rdfa.html",
       "jsonld": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-jsonld.html"
+    },
+    "ItemList-Product-Offer-214": {
+      "microdata": "schema.org/ItemList-Product-Offer-214-microdata.html",
+      "rdfa": "schema.org/ItemList-Product-Offer-214-rdfa.html",
+      "jsonld": "schema.org/ItemList-Product-Offer-214-jsonld.html"
+    },
+    "ItemList-Product-Offer-218": {
+      "microdata": "schema.org/ItemList-Product-Offer-218-microdata.html",
+      "rdfa": "schema.org/ItemList-Product-Offer-218-rdfa.html",
+      "jsonld": "schema.org/ItemList-Product-Offer-218-jsonld.html"
     }
   },
   "OnDemandEvent": {
@@ -1086,15 +1146,15 @@
     }
   },
   "Periodical": {
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-jsonld.html"
     },
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-jsonld.html"
     }
   },
   "Person": {
@@ -1199,6 +1259,11 @@
       "microdata": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-microdata.html",
       "rdfa": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-rdfa.html",
       "jsonld": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-jsonld.html"
+    },
+    "ItemList-CreativeWork-Place-215": {
+      "microdata": "schema.org/ItemList-CreativeWork-Place-215-microdata.html",
+      "rdfa": "schema.org/ItemList-CreativeWork-Place-215-rdfa.html",
+      "jsonld": "schema.org/ItemList-CreativeWork-Place-215-jsonld.html"
     }
   },
   "PlanAction": {
@@ -1270,15 +1335,25 @@
     }
   },
   "Product": {
-    "Product-AggregateRating-Offer-Review-Rating-9": {
-      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-microdata.html",
-      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-rdfa.html",
-      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-jsonld.html"
+    "Product-AggregateRating-Offer-Review-Rating-price-9": {
+      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html",
+      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html",
+      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html"
     },
     "Product-AggregateRating-AggregateOffer-Offer-10": {
       "microdata": "schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html",
       "rdfa": "schema.org/Product-AggregateRating-AggregateOffer-Offer-10-rdfa.html",
       "jsonld": "schema.org/Product-AggregateRating-AggregateOffer-Offer-10-jsonld.html"
+    },
+    "ItemList-Product-Offer-214": {
+      "microdata": "schema.org/ItemList-Product-Offer-214-microdata.html",
+      "rdfa": "schema.org/ItemList-Product-Offer-214-rdfa.html",
+      "jsonld": "schema.org/ItemList-Product-Offer-214-jsonld.html"
+    },
+    "ItemList-Product-Offer-218": {
+      "microdata": "schema.org/ItemList-Product-Offer-218-microdata.html",
+      "rdfa": "schema.org/ItemList-Product-Offer-218-rdfa.html",
+      "jsonld": "schema.org/ItemList-Product-Offer-218-jsonld.html"
     }
   },
   "ProductModel": {
@@ -1289,42 +1364,42 @@
     }
   },
   "PublicationIssue": {
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-jsonld.html"
     },
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-jsonld.html"
     },
-    "PublicationIssue-PublicationVolume-ScholarlyArticle-218": {
-      "microdata": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-microdata.html",
-      "rdfa": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-rdfa.html",
-      "jsonld": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-jsonld.html"
+    "PublicationIssue-PublicationVolume-ScholarlyArticle-225": {
+      "microdata": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-microdata.html",
+      "rdfa": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-rdfa.html",
+      "jsonld": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-jsonld.html"
     }
   },
   "PublicationVolume": {
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-jsonld.html"
     },
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-jsonld.html"
     },
-    "Book-PublicationVolume-217": {
-      "microdata": "schema.org/Book-PublicationVolume-217-microdata.html",
-      "rdfa": "schema.org/Book-PublicationVolume-217-rdfa.html",
-      "jsonld": "schema.org/Book-PublicationVolume-217-jsonld.html"
+    "Book-PublicationVolume-224": {
+      "microdata": "schema.org/Book-PublicationVolume-224-microdata.html",
+      "rdfa": "schema.org/Book-PublicationVolume-224-rdfa.html",
+      "jsonld": "schema.org/Book-PublicationVolume-224-jsonld.html"
     },
-    "PublicationIssue-PublicationVolume-ScholarlyArticle-218": {
-      "microdata": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-microdata.html",
-      "rdfa": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-rdfa.html",
-      "jsonld": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-jsonld.html"
+    "PublicationIssue-PublicationVolume-ScholarlyArticle-225": {
+      "microdata": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-microdata.html",
+      "rdfa": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-rdfa.html",
+      "jsonld": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-jsonld.html"
     }
   },
   "QAPage": {
@@ -1368,10 +1443,10 @@
     }
   },
   "Rating": {
-    "Product-AggregateRating-Offer-Review-Rating-9": {
-      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-microdata.html",
-      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-rdfa.html",
-      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-jsonld.html"
+    "Product-AggregateRating-Offer-Review-Rating-price-9": {
+      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html",
+      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html",
+      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html"
     }
   },
   "ReactAction": {
@@ -1467,10 +1542,10 @@
     }
   },
   "Review": {
-    "Product-AggregateRating-Offer-Review-Rating-9": {
-      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-microdata.html",
-      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-rdfa.html",
-      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-9-jsonld.html"
+    "Product-AggregateRating-Offer-Review-Rating-price-9": {
+      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html",
+      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html",
+      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html"
     },
     "WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11": {
       "microdata": "schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html",
@@ -1521,20 +1596,20 @@
     }
   },
   "ScholarlyArticle": {
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-jsonld.html"
     },
-    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216": {
-      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-microdata.html",
-      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-rdfa.html",
-      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-jsonld.html"
+    "Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223": {
+      "microdata": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-microdata.html",
+      "rdfa": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-rdfa.html",
+      "jsonld": "schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-jsonld.html"
     },
-    "PublicationIssue-PublicationVolume-ScholarlyArticle-218": {
-      "microdata": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-microdata.html",
-      "rdfa": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-rdfa.html",
-      "jsonld": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-jsonld.html"
+    "PublicationIssue-PublicationVolume-ScholarlyArticle-225": {
+      "microdata": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-microdata.html",
+      "rdfa": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-rdfa.html",
+      "jsonld": "schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-jsonld.html"
     }
   },
   "SearchAction": {
@@ -1544,10 +1619,10 @@
     "SearchAction-144": {
       "jsonld": "schema.org/SearchAction-144-jsonld.html"
     },
-    "SearchAction-WebSite-219": {
-      "microdata": "schema.org/SearchAction-WebSite-219-microdata.html",
-      "rdfa": "schema.org/SearchAction-WebSite-219-rdfa.html",
-      "jsonld": "schema.org/SearchAction-WebSite-219-jsonld.html"
+    "SearchAction-WebSite-227": {
+      "microdata": "schema.org/SearchAction-WebSite-227-microdata.html",
+      "rdfa": "schema.org/SearchAction-WebSite-227-rdfa.html",
+      "jsonld": "schema.org/SearchAction-WebSite-227-jsonld.html"
     }
   },
   "Seat": {
@@ -1839,10 +1914,10 @@
     }
   },
   "WebSite": {
-    "SearchAction-WebSite-219": {
-      "microdata": "schema.org/SearchAction-WebSite-219-microdata.html",
-      "rdfa": "schema.org/SearchAction-WebSite-219-rdfa.html",
-      "jsonld": "schema.org/SearchAction-WebSite-219-jsonld.html"
+    "SearchAction-WebSite-227": {
+      "microdata": "schema.org/SearchAction-WebSite-227-microdata.html",
+      "rdfa": "schema.org/SearchAction-WebSite-227-rdfa.html",
+      "jsonld": "schema.org/SearchAction-WebSite-227-jsonld.html"
     }
   },
   "WinAction": {
@@ -1883,11 +1958,25 @@
       "jsonld": "schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-jsonld.html"
     }
   },
+  "exampleOfWork": {
+    "exampleOfWork-workExample-226": {
+      "microdata": "schema.org/exampleOfWork-workExample-226-microdata.html",
+      "rdfa": "schema.org/exampleOfWork-workExample-226-rdfa.html",
+      "jsonld": "schema.org/exampleOfWork-workExample-226-jsonld.html"
+    }
+  },
   "postalCode": {
     "Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1": {
       "microdata": "schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-microdata.html",
       "rdfa": "schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-rdfa.html",
       "jsonld": "schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-jsonld.html"
+    }
+  },
+  "price": {
+    "Product-AggregateRating-Offer-Review-Rating-price-9": {
+      "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html",
+      "rdfa": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html",
+      "jsonld": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html"
     }
   },
   "streetAddress": {
@@ -1909,6 +1998,13 @@
       "microdata": "schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-microdata.html",
       "rdfa": "schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-rdfa.html",
       "jsonld": "schema.org/Person-PostalAddress-addressRegion-postalCode-address-streetAddress-telephone-email-url-addressLocality-1-jsonld.html"
+    }
+  },
+  "workExample": {
+    "exampleOfWork-workExample-226": {
+      "microdata": "schema.org/exampleOfWork-workExample-226-microdata.html",
+      "rdfa": "schema.org/exampleOfWork-workExample-226-rdfa.html",
+      "jsonld": "schema.org/exampleOfWork-workExample-226-jsonld.html"
     }
   },
   "EventCancelled": {
@@ -1952,10 +2048,10 @@
     }
   },
   "VenueMap": {
-    "Map-VenueMap-214": {
-      "microdata": "schema.org/Map-VenueMap-214-microdata.html",
-      "rdfa": "schema.org/Map-VenueMap-214-rdfa.html",
-      "jsonld": "schema.org/Map-VenueMap-214-jsonld.html"
+    "Map-VenueMap-221": {
+      "microdata": "schema.org/Map-VenueMap-221-microdata.html",
+      "rdfa": "schema.org/Map-VenueMap-221-rdfa.html",
+      "jsonld": "schema.org/Map-VenueMap-221-jsonld.html"
     }
   }
 }

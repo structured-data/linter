@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/ruby-rdf/rdf-rdfa.git
+  revision: c1619f2db2421460b0be172d26a73c89a5b8e4b1
+  branch: develop
+  specs:
+    rdf-rdfa (1.1.4)
+      haml (~> 4.0)
+      htmlentities (~> 4.3)
+      rdf (~> 1.1, >= 1.1.6)
+      rdf-xsd (~> 1.1)
+
+GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
   revision: fde047e69c72d076ab188098d35a770bd0371744
   branch: develop
@@ -10,15 +21,16 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: d5d5353b8520a4b2ca7362f5e4ffe47782e64039
+  revision: 96b40d11993644f5e8d0bf09b65d10b5230cec3a
   branch: develop
   specs:
-    rdf (1.1.5.1)
+    rdf (1.1.6)
 
 PATH
   remote: .
   specs:
-    linter (1.1.2)
+    linter (1.91)
+      activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
       facets (~> 2.9)
@@ -34,6 +46,12 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (4.1.6)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
     better_errors (2.0.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -41,9 +59,10 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (3.2.0)
+    byebug (3.4.0)
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
+      slop (~> 3.6)
     coderay (1.1.0)
     columnize (0.8.9)
     curb (0.8.6)
@@ -62,6 +81,8 @@ GEM
     haml (4.0.5)
       tilt
     htmlentities (4.3.2)
+    i18n (0.6.11)
+    json (1.8.1)
     json-ld (1.1.6)
       rdf (~> 1.1, >= 1.1.4)
     kgio (2.9.2)
@@ -83,6 +104,7 @@ GEM
       sparql (>= 1.1.2)
       sparql-client (>= 1.1.1)
     mini_portile (0.6.0)
+    minitest (5.4.1)
     multi_json (1.10.1)
     net-http-persistent (1.9)
     nokogiri (1.6.3.1)
@@ -112,11 +134,6 @@ GEM
       rdf-xsd (~> 1.1)
     rdf-n3 (1.1.2)
       rdf (~> 1.1, >= 1.1.5)
-    rdf-rdfa (1.1.3.2)
-      haml (~> 4.0)
-      htmlentities (~> 4.3)
-      rdf (~> 1.1)
-      rdf-xsd (~> 1.1)
     rdf-rdfxml (1.1.1)
       rdf (~> 1.1)
       rdf-rdfa (~> 1.1)
@@ -132,21 +149,21 @@ GEM
       rdf (~> 1.1, >= 1.1.4)
     rdf-xsd (1.1.1)
       rdf (~> 1.1)
-    rspec (3.0.0)
-      rspec-core (~> 3.0.0)
-      rspec-expectations (~> 3.0.0)
-      rspec-mocks (~> 3.0.0)
-    rspec-core (3.0.4)
-      rspec-support (~> 3.0.0)
-    rspec-expectations (3.0.4)
+    rspec (3.1.0)
+      rspec-core (~> 3.1.0)
+      rspec-expectations (~> 3.1.0)
+      rspec-mocks (~> 3.1.0)
+    rspec-core (3.1.4)
+      rspec-support (~> 3.1.0)
+    rspec-expectations (3.1.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.0.0)
+      rspec-support (~> 3.1.0)
     rspec-its (1.0.1)
       rspec-core (>= 2.99.0.beta1)
       rspec-expectations (>= 2.99.0.beta1)
-    rspec-mocks (3.0.4)
-      rspec-support (~> 3.0.0)
-    rspec-support (3.0.4)
+    rspec-mocks (3.1.1)
+      rspec-support (~> 3.1.0)
+    rspec-support (3.1.0)
     shotgun (0.9)
       rack (>= 1.0)
     simplecov (0.9.0)
@@ -161,6 +178,7 @@ GEM
     sinatra-linkeddata (1.1.0)
       rack-linkeddata (>= 1.1.0)
       sinatra (>= 1.4.4)
+    slop (3.6.0)
     sparql (1.1.4)
       builder (~> 3.0)
       ebnf (~> 0.3, >= 0.3.5)
@@ -174,7 +192,10 @@ GEM
       rdf (~> 1.1)
     sxp (0.1.5)
     syntax (1.2.0)
+    thread_safe (0.3.4)
     tilt (1.4.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     unicorn (4.8.3)
       kgio (~> 2.6)
       rack
@@ -194,6 +215,7 @@ DEPENDENCIES
   rack-test (~> 0.6)
   rake
   rdf!
+  rdf-rdfa!
   rdf-reasoner!
   rspec (~> 3.0)
   rspec-its (~> 1.0)

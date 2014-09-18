@@ -9,9 +9,9 @@ module RDF::Linter
   class Writer < RDF::RDFa::Writer
     def initialize(output = $stdout, options = {}, &block)
       options = {
-        :standard_prefixes => true,
-        :haml => LINTER_HAML,
-        :matched_templates => [],
+        standard_prefixes: true,
+        haml: LINTER_HAML,
+        matched_templates: [],
       }.merge(options)
       options[:prefixes].delete(:dcterms) if options[:prefixes].has_key?(:dc)
       super do
@@ -24,9 +24,9 @@ module RDF::Linter
     #
     # `turtle` is entity-escaped Turtle serialization of graph
     def render_document(subjects, options = {})
-      super(subjects, options.merge(:extracted => graph.dump(:rdfa,
-                      :haml => RDF::Linter::TABULAR_HAML,
-                      :standard_prefixes => true))) do |subject|
+      super(subjects, options.merge(extracted: graph.dump(:rdfa,
+                      haml: RDF::Linter::TABULAR_HAML,
+                      standard_prefixes: true))) do |subject|
         yield(subject) if block_given?
       end
     end
@@ -34,7 +34,7 @@ module RDF::Linter
     # Override render_subject to look for a :rel template if this is a relation.
     # In which case, we'll also pass the typeof the referencing resource
     def render_subject(subject, predicates, options = {}, &block)
-      options = options.merge(:haml => @prev_templ[:rel]) if options[:rel] && @prev_templ[:rel]
+      options = options.merge(haml: @prev_templ[:rel]) if options[:rel] && @prev_templ[:rel]
       @prev_templ = haml_template
       super(subject, predicates, options) do |predicate|
         if predicate.is_a?(Symbol)
@@ -189,7 +189,7 @@ module RDF::Linter
           # Hack to fix incorrect DateTimes in examples:
           get_value(RDF::Literal::DateTime.new(literal))
         else
-          literal.to_s
+          literal.humanize
         end
       end
     end
@@ -239,7 +239,7 @@ module RDF::Linter
         html += %(<span rel='#{get_curie(property)}' resource='#{object}'>)
         subject_done(object)
         # It is marked up in a Review class
-        graph.query(:subject => object) do |st|
+        graph.query(subject: object) do |st|
           html += %(<span property='#{get_curie(st.predicate)}' content='#{st.object}' />)
           case st.predicate.to_s
           when /best(?:Rating)/

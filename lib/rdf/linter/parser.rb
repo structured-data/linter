@@ -145,8 +145,12 @@ module RDF::Linter
         pname = term ? term.pname : stmt.object.pname
         
         # Must be a defined term, not in RDF or RDFS vocabularies
-        unless term && term.class?
-          (messages[:class] ||= {})[pname] = ["No class definition found"] unless [RDF::RDFV, RDF::RDFS].include?(vocab)
+        if term && term.class?
+          # Warn against using a deprecated term
+          superseded = term.attributes['schema:supersededBy']
+          (messages[:class] ||= {})[pname] = ["Term is superseded by #{superseded}"] if superseded
+        else
+          (messages[:class] ||= {})[pname] = ["No class definition found"] unless vocab.nil? || [RDF::RDFV, RDF::RDFS].include?(vocab)
         end
       end
 
@@ -158,8 +162,12 @@ module RDF::Linter
         pname = term ? term.pname : stmt.predicate.pname
 
         # Must be a defined property
-        unless term && term.property?
-          ((messages[:property] ||= {})[pname] ||= []) << "No property definition found"
+        if term && term.property?
+          # Warn against using a deprecated term
+          superseded = term.attributes['schema:supersededBy']
+          (messages[:property] ||= {})[pname] = ["Term is superseded by #{superseded}"] if superseded
+        else
+          ((messages[:property] ||= {})[pname] ||= []) << "No property definition found" unless vocab.nil?
           next
         end
 

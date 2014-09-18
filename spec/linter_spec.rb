@@ -24,6 +24,20 @@ describe RDF::Linter, "#lint" do
           property: {"schema:noSuchProperty" => ["No property definition found"]},
         }
       ],
+      "undefined class from undefined vocabulary" => [
+        %(
+          @prefix ex: <http://example.com/vocab#> .
+          <foo> a ex:Foo .
+        ),
+        {}
+      ],
+      "undefined property from undefined vocabulary" => [
+        %(
+          @prefix ex: <http://example.com/vocab#> .
+          <foo> ex:shortTitle "bar" .
+        ),
+        {}
+      ],
     }.each do |name, (input, errors)|
       it name do
         graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
@@ -124,6 +138,25 @@ describe RDF::Linter, "#lint" do
         ),
         {
           property: {"schema:isFamilyFriendly" => [/Object .* not compatible with rangeIncludes \(schema:Boolean\)/]},
+        }
+      ],
+    }.each do |name, (input, errors)|
+      it name do
+        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
+        expect(RDF::Linter::Parser.lint(graph)).to have_errors errors
+      end
+    end
+  end
+
+  context "detects superseded terms" do
+    {
+      "members superseded by member" => [
+        %(
+          @prefix schema: <http://schema.org/> .
+          <foo> a schema:Organization; schema:members "Manny" .
+        ),
+        {
+          property: {"schema:members" => ["Term is superseded by schema:member"]},
         }
       ],
     }.each do |name, (input, errors)|

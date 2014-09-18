@@ -132,6 +132,10 @@ module RDF::Linter
       - else
         %div
           %table.properties
+            -if subject.uri? || ref_count(subject) > 1
+              %tr
+                %td.label="@id"
+                %td!="#{subject}(#{ref_count(subject)})"
             - if typeof
               %tr
                 %td.label="rdf:type"
