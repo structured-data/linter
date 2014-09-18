@@ -24,6 +24,20 @@ describe RDF::Linter, "#lint" do
           property: {"schema:noSuchProperty" => ["No property definition found"]},
         }
       ],
+      "undefined class from undefined vocabulary" => [
+        %(
+          @prefix ex: <http://example.com/vocab#> .
+          <foo> a ex:Foo .
+        ),
+        {}
+      ],
+      "undefined property from undefined vocabulary" => [
+        %(
+          @prefix ex: <http://example.com/vocab#> .
+          <foo> ex:shortTitle "bar" .
+        ),
+        {}
+      ],
     }.each do |name, (input, errors)|
       it name do
         graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)

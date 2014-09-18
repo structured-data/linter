@@ -150,7 +150,7 @@ module RDF::Linter
           superseded = term.attributes['schema:supersededBy']
           (messages[:class] ||= {})[pname] = ["Term is superseded by #{superseded}"] if superseded
         else
-          (messages[:class] ||= {})[pname] = ["No class definition found"] unless [RDF::RDFV, RDF::RDFS].include?(vocab)
+          (messages[:class] ||= {})[pname] = ["No class definition found"] unless vocab.nil? || [RDF::RDFV, RDF::RDFS].include?(vocab)
         end
       end
 
@@ -167,7 +167,7 @@ module RDF::Linter
           superseded = term.attributes['schema:supersededBy']
           (messages[:property] ||= {})[pname] = ["Term is superseded by #{superseded}"] if superseded
         else
-          ((messages[:property] ||= {})[pname] ||= []) << "No property definition found"
+          ((messages[:property] ||= {})[pname] ||= []) << "No property definition found" unless vocab.nil?
           next
         end
 
