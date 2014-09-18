@@ -9,12 +9,12 @@ schema.org/AllocateAction-125-jsonld.html: ok
 schema.org/AppendAction-167-jsonld.html: ok
 schema.org/ApplyAction-130-jsonld.html: ok
 schema.org/ArriveAction-119-jsonld.html: ok
-schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-jsonld.html: ok
-schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-microdata.html: ok
-schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-215-rdfa.html: ok
-schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-jsonld.html: ok
-schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-microdata.html: ok
-schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-216-rdfa.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-jsonld.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-microdata.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-222-rdfa.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-jsonld.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-microdata.html: ok
+schema.org/Article-Periodical-PublicationIssue-PublicationVolume-ScholarlyArticle-223-rdfa.html: ok
 schema.org/AskAction-93-jsonld.html: ok
 schema.org/AssessAction-41-jsonld.html: ok
 schema.org/AssignAction-127-jsonld.html: {
@@ -41,45 +41,9 @@ schema.org/Book-CreativeWork-180-microdata.html: {
   }
 }
 schema.org/Book-CreativeWork-180-rdfa.html: ok
-schema.org/Book-PublicationVolume-217-jsonld.html: ok
-schema.org/Book-PublicationVolume-217-microdata.html: {
-  "property": {
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#sameAs": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#name": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#birthDate": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#deathDate": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#about": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#inLanguage": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#genre": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#author": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#hasPart": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#volumeNumber": [
-      "No property definition found"
-    ],
-    "file:/Users/gregg/Projects/linter/schema.org/Book-PublicationVolume-217-microdata.html#isPartOf": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/Book-PublicationVolume-217-rdfa.html: ok
+schema.org/Book-PublicationVolume-224-jsonld.html: ok
+schema.org/Book-PublicationVolume-224-microdata.html: ok
+schema.org/Book-PublicationVolume-224-rdfa.html: ok
 schema.org/BookmarkAction-131-jsonld.html: ok
 schema.org/BorrowAction-155-jsonld.html: ok
 schema.org/BusReservation-BusTrip-182-jsonld.html: {
@@ -300,13 +264,7 @@ schema.org/ImageObject-19-jsonld.html: ok
 schema.org/ImageObject-19-microdata.html: ok
 schema.org/ImageObject-19-rdfa.html: ok
 schema.org/IndividualProduct-32-jsonld.html: ok
-schema.org/IndividualProduct-32-microdata.html: {
-  "class": {
-    "http://www.productontology.org/id/Racing_bicycle": [
-      "No class definition found"
-    ]
-  }
-}
+schema.org/IndividualProduct-32-microdata.html: ok
 schema.org/IndividualProduct-32-rdfa.html: ok
 schema.org/InformAction-99-jsonld.html: ok
 schema.org/InsertAction-166-jsonld.html: {
@@ -335,14 +293,195 @@ schema.org/ItemList-14-jsonld.html: {
 schema.org/ItemList-14-microdata.html: {
   "property": {
     "schema:mainContentOfPage": [
-      "Subject _:g2239830360(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with domainIncludes (schema:WebPage)"
+      "Subject _:g2198896840(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with domainIncludes (schema:WebPage)"
     ]
   }
 }
 schema.org/ItemList-14-rdfa.html: {
   "property": {
     "schema:mainContentOfPage": [
-      "Subject _:g2183102300(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with domainIncludes (schema:WebPage)"
+      "Subject _:g2162393800(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with domainIncludes (schema:WebPage)"
+    ]
+  }
+}
+schema.org/ItemList-216-jsonld.html: {
+  "class": {
+    "schema:ListItem": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:@url": [
+      "No property definition found"
+    ],
+    "schema:item": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-216-microdata.html: ok
+schema.org/ItemList-216-rdfa.html: {
+  "class": {
+    "schema:ListItem": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:item": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-219-jsonld.html: {
+  "class": {
+    "schema:ListItem": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:@url": [
+      "No property definition found"
+    ],
+    "schema:item": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-219-microdata.html: ok
+schema.org/ItemList-219-rdfa.html: ok
+schema.org/ItemList-CreativeWork-Place-215-jsonld.html: ok
+schema.org/ItemList-CreativeWork-Place-215-microdata.html: ok
+schema.org/ItemList-CreativeWork-Place-215-rdfa.html: {
+  "class": {
+    "schema:CreativeWOrk": [
+      "No class definition found"
+    ],
+    "schema:ListItem": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:numberOfItems": [
+      "No property definition found"
+    ],
+    "schema:byArtist": [
+      "Object _:g2238449120(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g2238127760(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g2237618020(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g2237239740(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g2237170360(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g2236709000(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g2236305100(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
+    ],
+    "schema:item": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-MusicAlbum-217-jsonld.html: ok
+schema.org/ItemList-MusicAlbum-217-microdata.html: {
+  "property": {
+    "schema:track": [
+      "Object _:g2162464180(rdfs:Resource,rdf:List) not compatible with rangeIncludes (schema:MusicRecording)"
+    ],
+    "schema:numberOfItems": [
+      "No property definition found"
+    ],
+    "schema:itemscope": [
+      "No property definition found"
+    ],
+    "schema:itemtype=": [
+      "No property definition found"
+    ],
+    "schema:item": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-MusicAlbum-217-rdfa.html: {
+  "class": {
+    "schema:ListItem": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schema:track": [
+      "Object _:g2182397520(schema:ItemList,schema:Thing,schema:CreativeWork,schema:ItemList) not compatible with rangeIncludes (schema:MusicRecording)"
+    ],
+    "schema:numberOfItems": [
+      "No property definition found"
+    ],
+    "schema:item": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-MusicAlbum-220-jsonld.html: ok
+schema.org/ItemList-MusicAlbum-220-microdata.html: {
+  "property": {
+    "schema:track": [
+      "Object _:g2233114580(rdfs:Resource,rdf:List) not compatible with rangeIncludes (schema:MusicRecording)"
+    ],
+    "schema:numberOfItems": [
+      "No property definition found"
+    ],
+    "schema:itemscope": [
+      "No property definition found"
+    ],
+    "schema:itemtype=": [
+      "No property definition found"
+    ],
+    "schema:item": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-MusicAlbum-220-rdfa.html: ok
+schema.org/ItemList-Product-Offer-214-jsonld.html: {
+  "property": {
+    "schema:itemListElement": [
+      "Object _:b1(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)",
+      "Object _:b2(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)"
+    ],
+    "schema:numberOfItems": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-Product-Offer-214-microdata.html: ok
+schema.org/ItemList-Product-Offer-214-rdfa.html: {
+  "property": {
+    "schema:numberOfItems": [
+      "No property definition found"
+    ],
+    "schema:itemListElement": [
+      "Object _:g2200097520(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)",
+      "Subject _:g2200097520(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)",
+      "Object _:g2199801200(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)"
+    ]
+  }
+}
+schema.org/ItemList-Product-Offer-218-jsonld.html: {
+  "property": {
+    "schema:itemListElement": [
+      "Object _:b1(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)",
+      "Object _:b2(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)"
+    ],
+    "schema:numberOfItems": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/ItemList-Product-Offer-218-microdata.html: ok
+schema.org/ItemList-Product-Offer-218-rdfa.html: {
+  "property": {
+    "schema:numberOfItems": [
+      "No property definition found"
+    ],
+    "schema:itemListElement": [
+      "Object _:g2237646680(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)",
+      "Subject _:g2237646680(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)",
+      "Object _:g2236012740(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Text)"
     ]
   }
 }
@@ -354,16 +493,7 @@ schema.org/JoinAction-108-jsonld.html: ok
 schema.org/JoinAction-109-jsonld.html: ok
 schema.org/JoinAction-110-jsonld.html: ok
 schema.org/LeaveAction-111-jsonld.html: ok
-schema.org/LendAction-158-jsonld.html: {
-  "property": {
-    "schema:price": [
-      "Subject _:b0(schema:LendAction,schema:Thing,schema:Action,schema:TransferAction,schema:LendAction) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:TradeAction)"
-    ],
-    "schema:recipient": [
-      "Subject _:b0(schema:LendAction,schema:Thing,schema:Action,schema:TransferAction,schema:LendAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
-    ]
-  }
-}
+schema.org/LendAction-158-jsonld.html: ok
 schema.org/LikeAction-53-jsonld.html: ok
 schema.org/ListenAction-60-jsonld.html: ok
 schema.org/ListenAction-61-jsonld.html: ok
@@ -376,9 +506,9 @@ schema.org/LoseAction-38-jsonld.html: {
     ]
   }
 }
-schema.org/Map-VenueMap-214-jsonld.html: ok
-schema.org/Map-VenueMap-214-microdata.html: ok
-schema.org/Map-VenueMap-214-rdfa.html: ok
+schema.org/Map-VenueMap-221-jsonld.html: ok
+schema.org/Map-VenueMap-221-microdata.html: ok
+schema.org/Map-VenueMap-221-rdfa.html: ok
 schema.org/MarryAction-112-jsonld.html: ok
 schema.org/MediaObject-AudioObject-5-jsonld.html: ok
 schema.org/MediaObject-AudioObject-5-microdata.html: ok
@@ -583,7 +713,13 @@ schema.org/PaintAction-80-jsonld.html: {
     ]
   }
 }
-schema.org/PayAction-149-jsonld.html: ok
+schema.org/PayAction-149-jsonld.html: {
+  "property": {
+    "schema:priceCurrency": [
+      "Subject _:b0(schema:PayAction,schema:Thing,schema:Action,schema:TradeAction,schema:PayAction) not compatible with domainIncludes (schema:Reservation,schema:Ticket,schema:Offer,schema:PriceSpecification)"
+    ]
+  }
+}
 schema.org/PerformAction-142-jsonld.html: {
   "class": {
     "schema:PeformAction": [
@@ -657,48 +793,48 @@ schema.org/Product-AggregateRating-AggregateOffer-Offer-10-jsonld.html: {
 schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html: {
   "property": {
     "schema:offers": [
-      "Subject _:g2238153260(schema:AggregateOffer,schema:Thing,schema:Intangible,schema:Offer,schema:AggregateOffer) not compatible with domainIncludes (schema:CreativeWork,schema:MediaObject,schema:Event,schema:Product)"
+      "Subject _:g2238599540(schema:AggregateOffer,schema:Thing,schema:Intangible,schema:Offer,schema:AggregateOffer) not compatible with domainIncludes (schema:CreativeWork,schema:MediaObject,schema:Event,schema:Product)"
     ]
   }
 }
 schema.org/Product-AggregateRating-AggregateOffer-Offer-10-rdfa.html: {
   "property": {
     "schema:offers": [
-      "Subject _:g2232912800(schema:AggregateOffer,schema:Thing,schema:Intangible,schema:Offer,schema:AggregateOffer) not compatible with domainIncludes (schema:CreativeWork,schema:MediaObject,schema:Event,schema:Product)"
+      "Subject _:g2234010480(schema:AggregateOffer,schema:Thing,schema:Intangible,schema:Offer,schema:AggregateOffer) not compatible with domainIncludes (schema:CreativeWork,schema:MediaObject,schema:Event,schema:Product)"
     ]
   }
 }
-schema.org/Product-AggregateRating-Offer-Review-Rating-9-jsonld.html: ok
-schema.org/Product-AggregateRating-Offer-Review-Rating-9-microdata.html: ok
-schema.org/Product-AggregateRating-Offer-Review-Rating-9-rdfa.html: ok
+schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html: ok
+schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html: ok
+schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html: ok
 schema.org/ProductModel-34-jsonld.html: ok
-schema.org/ProductModel-34-microdata.html: {
-  "class": {
-    "http://www.productontology.org/id/Television_set": [
-      "No class definition found"
-    ]
-  }
-}
+schema.org/ProductModel-34-microdata.html: ok
 schema.org/ProductModel-34-rdfa.html: ok
-schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-jsonld.html: ok
-schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-microdata.html: ok
-schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-218-rdfa.html: ok
+schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-jsonld.html: ok
+schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-microdata.html: ok
+schema.org/PublicationIssue-PublicationVolume-ScholarlyArticle-225-rdfa.html: ok
 schema.org/Question-Answer-QAPage-189-jsonld.html: ok
 schema.org/Question-Answer-QAPage-189-microdata.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g2236977020(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g2197946820(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
 schema.org/Question-Answer-QAPage-189-rdfa.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g2236667080(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g2200390340(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
-schema.org/QuoteAction-150-jsonld.html: ok
+schema.org/QuoteAction-150-jsonld.html: {
+  "property": {
+    "schema:priceCurrency": [
+      "Subject _:b0(schema:QuoteAction,schema:Thing,schema:Action,schema:TradeAction,schema:QuoteAction) not compatible with domainIncludes (schema:Reservation,schema:Ticket,schema:Offer,schema:PriceSpecification)"
+    ]
+  }
+}
 schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-jsonld.html: {
   "property": {
     "schema:startDate": [
@@ -813,7 +949,7 @@ schema.org/Role-PerformanceRole-211-jsonld.html: ok
 schema.org/Role-PerformanceRole-211-microdata.html: {
   "property": {
     "schema:actor": [
-      "Subject _:g2223881820(schema:PerformanceRole,schema:Thing,schema:Intangible,schema:Role,schema:PerformanceRole) not compatible with domainIncludes (schema:Movie,schema:Episode,schema:TVEpisode,schema:Series,schema:TVSeries,schema:RadioEpisode,schema:RadioSeries)"
+      "Subject _:g2237995340(schema:PerformanceRole,schema:Thing,schema:Intangible,schema:Role,schema:PerformanceRole) not compatible with domainIncludes (schema:Movie,schema:Episode,schema:TVEpisode,schema:Series,schema:TVSeries,schema:RadioEpisode,schema:RadioSeries)"
     ]
   }
 }
@@ -822,21 +958,21 @@ schema.org/RsvpAction-101-jsonld.html: ok
 schema.org/ScheduleAction-137-jsonld.html: ok
 schema.org/SearchAction-143-jsonld.html: ok
 schema.org/SearchAction-144-jsonld.html: ok
-schema.org/SearchAction-WebSite-219-jsonld.html: {
+schema.org/SearchAction-WebSite-227-jsonld.html: {
   "property": {
     "schema:query-input": [
       "No property definition found"
     ]
   }
 }
-schema.org/SearchAction-WebSite-219-microdata.html: {
+schema.org/SearchAction-WebSite-227-microdata.html: {
   "property": {
     "schema:query-input": [
       "No property definition found"
     ]
   }
 }
-schema.org/SearchAction-WebSite-219-rdfa.html: {
+schema.org/SearchAction-WebSite-227-rdfa.html: {
   "property": {
     "schema:query-input": [
       "No property definition found"
@@ -858,25 +994,10 @@ schema.org/SellAction-152-jsonld.html: {
   }
 }
 schema.org/SendAction-161-jsonld.html: ok
-schema.org/ShareAction-104-jsonld.html: {
-  "property": {
-    "schema:object": [
-      "Object _:b2(schema:Blog,schema:Blog) not compatible with rangeIncludes (schema:Thing)"
-    ],
-    "schema:name": [
-      "Subject _:b2(schema:Blog,schema:Blog) not compatible with domainIncludes (schema:Thing)"
-    ]
-  }
-}
+schema.org/ShareAction-104-jsonld.html: ok
 schema.org/ShareAction-105-jsonld.html: ok
 schema.org/SomeProducts-33-jsonld.html: ok
-schema.org/SomeProducts-33-microdata.html: {
-  "class": {
-    "http://www.productontology.org/id/Printer_(computing)": [
-      "No class definition found"
-    ]
-  }
-}
+schema.org/SomeProducts-33-microdata.html: ok
 schema.org/SomeProducts-33-rdfa.html: ok
 schema.org/SportsEvent-OrderedEvent-194-jsonld.html: {
   "class": {
@@ -959,35 +1080,25 @@ schema.org/Store-OpeningHoursSpecification-198-microdata.html: {
   }
 }
 schema.org/Store-OpeningHoursSpecification-198-rdfa.html: {
-  "class": {
-    "http://schema.orgStore": [
-      "No class definition found"
-    ],
-    "http://schema.orgOpeningHoursSpecification": [
-      "No class definition found"
-    ]
-  },
   "property": {
-    "http://schema.orgname": [
-      "No property definition found"
+    "schema:openingHours": [
+      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 09:00-14:00\" not compatible with rangeIncludes (schema:Duration)"
     ],
-    "http://schema.orgopeningHours": [
-      "No property definition found"
+    "schema:validFrom": [
+      "Object \"2013-12-24\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"2014-01-01\" not compatible with rangeIncludes (schema:DateTime)"
     ],
-    "http://schema.orgopeningHoursSpecification": [
-      "No property definition found"
+    "schema:validThrough": [
+      "Object \"2013-12-25\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"2014-01-01\" not compatible with rangeIncludes (schema:DateTime)"
     ],
-    "http://schema.orgvalidFrom": [
-      "No property definition found"
+    "schema:opens": [
+      "Object \"09:00\" not compatible with rangeIncludes (schema:Time)",
+      "Object \"12:00\" not compatible with rangeIncludes (schema:Time)"
     ],
-    "http://schema.orgvalidThrough": [
-      "No property definition found"
-    ],
-    "http://schema.orgopens": [
-      "No property definition found"
-    ],
-    "http://schema.orgcloses": [
-      "No property definition found"
+    "schema:closes": [
+      "Object \"11:00\" not compatible with rangeIncludes (schema:Time)",
+      "Object \"14:00\" not compatible with rangeIncludes (schema:Time)"
     ]
   }
 }
@@ -1076,14 +1187,14 @@ schema.org/Table-16-jsonld.html: {
 schema.org/Table-16-microdata.html: {
   "property": {
     "schema:mainContentOfPage": [
-      "Subject _:g2239942020(schema:Table,schema:Thing,schema:CreativeWork,schema:WebPageElement,schema:Table) not compatible with domainIncludes (schema:WebPage)"
+      "Subject _:g2233324940(schema:Table,schema:Thing,schema:CreativeWork,schema:WebPageElement,schema:Table) not compatible with domainIncludes (schema:WebPage)"
     ]
   }
 }
 schema.org/Table-16-rdfa.html: {
   "property": {
     "schema:mainContentOfPage": [
-      "Subject _:g2224815240(schema:Table,schema:Thing,schema:CreativeWork,schema:WebPageElement,schema:Table) not compatible with domainIncludes (schema:WebPage)"
+      "Subject _:g2200065380(schema:Table,schema:Thing,schema:CreativeWork,schema:WebPageElement,schema:Table) not compatible with domainIncludes (schema:WebPage)"
     ]
   }
 }
@@ -1096,13 +1207,7 @@ schema.org/TakeAction-162-jsonld.html: {
 }
 schema.org/TaxiReservation-188-jsonld.html: ok
 schema.org/TieAction-39-jsonld.html: ok
-schema.org/TipAction-153-jsonld.html: {
-  "property": {
-    "schema:recipient": [
-      "Subject _:b0(schema:RentAction,schema:Thing,schema:Action,schema:TradeAction,schema:RentAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
-    ]
-  }
-}
+schema.org/TipAction-153-jsonld.html: ok
 schema.org/TrackAction-87-jsonld.html: {
   "class": {
     "gr:UPS": [
@@ -1115,7 +1220,13 @@ schema.org/TrackAction-87-jsonld.html: {
     ]
   }
 }
-schema.org/TradeAction-145-jsonld.html: ok
+schema.org/TradeAction-145-jsonld.html: {
+  "property": {
+    "schema:priceCurrency": [
+      "Subject _:b0(schema:TradeAction,schema:Thing,schema:Action,schema:TradeAction) not compatible with domainIncludes (schema:Reservation,schema:Ticket,schema:Offer,schema:PriceSpecification)"
+    ]
+  }
+}
 schema.org/TrainReservation-TrainTrip-181-jsonld.html: ok
 schema.org/TransferAction-154-jsonld.html: ok
 schema.org/TravelAction-121-jsonld.html: ok
@@ -1139,7 +1250,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-jsonld.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
   "property": {
     "schema:video": [
-      "Subject _:g2236335800(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g2181625020(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
@@ -1153,7 +1264,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
   "property": {
     "schema:video": [
-      "Subject _:g2169087740(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g2181637480(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
@@ -1213,3 +1324,12 @@ schema.org/WinAction-40-jsonld.html: {
   }
 }
 schema.org/WriteAction-82-jsonld.html: ok
+schema.org/exampleOfWork-workExample-226-jsonld.html: ok
+schema.org/exampleOfWork-workExample-226-microdata.html: {
+  "property": {
+    "schema:duration": [
+      "Object \"178\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/exampleOfWork-workExample-226-rdfa.html: ok
