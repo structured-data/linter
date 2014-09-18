@@ -134,6 +134,25 @@ describe RDF::Linter, "#lint" do
     end
   end
 
+  context "detects superseded terms" do
+    {
+      "members superseded by member" => [
+        %(
+          @prefix schema: <http://schema.org/> .
+          <foo> a schema:Organization; schema:members "Manny" .
+        ),
+        {
+          property: {"schema:members" => ["Term is superseded by schema:member"]},
+        }
+      ],
+    }.each do |name, (input, errors)|
+      it name do
+        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
+        expect(RDF::Linter::Parser.lint(graph)).to have_errors errors
+      end
+    end
+  end
+
   context "accepts XSD equivalents for schema.org datatypes" do
     {
       "schema:Text with plain literal" => %(
