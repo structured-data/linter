@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 526e61e47fed8ced2bbbcccb314b697079d5abf3
+  revision: c1619f2db2421460b0be172d26a73c89a5b8e4b1
   branch: develop
   specs:
     rdf-rdfa (1.1.4)
