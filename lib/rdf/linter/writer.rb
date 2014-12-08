@@ -262,7 +262,12 @@ module RDF::Linter
               readOnly:   true,
               half:       true,
               start:      #{rating},
-              number:     #{best.to_i}
+              number:     #{best.to_i},
+              cancelOff:  'img/cancel-off.png',
+              cancelOn:   'img/cancel-on.png',
+              starOff:    'img/star-off.png',
+              starOn:     'img/star-on.png',
+              starHalf:   'img/star-half.png',
             })
           })
         </script>
