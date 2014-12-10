@@ -20,7 +20,7 @@ body.linter {
   color: #333;
   background-color: #a7cb87;
   font-family: "calluna", Georgia, serif;
-  font-size: 1.5em;
+  font-size: 1.5vw;
 }
 
 body.linter a {
@@ -43,7 +43,7 @@ body.linter p {
 .tagline {
    font-style: italic;
    font-family: Georgia, serif;
-   font-size: 1.5em;
+   font-size: 1.5vw;
 }
 
 .breadcrumbs {
@@ -106,7 +106,7 @@ nav.navbar a.navbar-brand {
   margin-top: 15px;
   margin-left: 25px;
   white-space:nowrap;
-  font-size: 3em;
+  font-size: 4vw;
   font-family: "sketch-rockwell", Helvetica, Arial, serif;
   text-shadow: none;
   color: #fff;
@@ -115,11 +115,42 @@ nav.navbar a.navbar-brand:hover {
   color:      #c7e5ab;
 }
 
-nav.navbar .navbar-collapse {
+nav.navbar ul.navbar-nav {
   margin-top: 20px;
 }
 
-ul.nav {
+nav.navbar ul.navbar-nav:last-child {
+  margin-right: 25px;
+}
+
+nav.navbar .dropdown-menu {
+  background-color: transparent;
+}
+
+nav.navbar .dropdown-menu>li>a {
+  color: white;
+}
+
+nav.navbar .dropdown-menu>li>a:hover {
+  color:            black;
+}
+nav.navbar .dropdown-menu>li>a.active {
+  font-weight:      bold;
+}
+
+nav.navbar li>a, nav.navbar li>a:link, nav.navbar li>a:visited {
+  padding:            3px 12px;
+  color:              white;
+  text-decoration:    none;
+  font-size:          2vw;
+}
+
+nav.navbar li>a.active, nav.navbar li>a:hover, nav.navbar li>a:focus {
+  color:            #c7e5ab;
+  background-color: transparent !important;
+}
+
+ul.linter {
   font:           bolder 1em 'Trebuchet MS', sans-serif;
   color:          white;
   list-style:     none;
@@ -127,23 +158,29 @@ ul.nav {
   padding:        0;
   padding-bottom: 1em;
 }
-ul.nav li {
+
+ul.linter li {
   display: inline;
 }
-.nav>li>a, .nav>li>a:link, .nav>li>a:visited {
-  padding:            3px 12px;
-  color:              white;
-  text-decoration:    none;
-  font-size:          1.5em;
+
+ul.linter>li>a, ul.linter>li>a:link {
+  color: white;
+  border-bottom: solid 2px #55842c;
+  margin-right: 0;
+}
+ul.linter>li>a, ul.linter li>a:link, ul.linter>li>a:visited {
+  padding: 3px 12px;
 }
 
-.nav>li>a.active, .nav>li>a:hover, .nav>li>a:focus {
-  color:            #c7e5ab;
-  background-color: #55842c !important;
+ul.linter>li>a.active, ul.linter>li>a:hover {
+  color:  #55842c;
 }
 
-nav.navbar li a:hover, nav.navbar li a.active {
-  color:      #c7e5ab;
+ul.linter>li>a.active {
+  border: solid 2px #55842c;
+  border-bottom: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 form#linter_input fieldset {
@@ -155,20 +192,21 @@ form#linter_input fieldset legend {
 
 .content {
   max-width: 960px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding: 10px 10px;
 }
 
 footer {
   background-color: #55842c;
   color: #333;
+  text-align: center;
 }
 
-footer a {
+body.linter footer a {
   color: #ddd;
 }
 
-footer p {
+body.linter footer p {
   font-size: 0.8em;
 }
 

@@ -3,15 +3,15 @@
     <p>
       Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup. Read more <a href="/about/">about the Structured Data linter</a>.
     </p>
-    <ul class="nav linter">
-      <li><a class="url" ng-click="fieldset = 'url'">Lint by URL</a></li>
-      <li><a class="upload" ng-click="fieldset = 'upload'">Lint by File Upload</a></li>
-      <li><a class="input" ng-click="fieldset = 'input'">Lint by Direct Input</a></li>
+    <ul class="nav nav-tabs linter">
+      <li><a class="url" ng-class="getClass('url')" ng-click="fieldset = 'url'">Lint by URL</a></li>
+      <li><a class="upload" ng-class="getClass('upload')" ng-click="fieldset = 'upload'">Lint by File Upload</a></li>
+      <li><a class="input" ng-class="getClass('input')" ng-click="fieldset = 'input'">Lint by Direct Input</a></li>
     </ul>
     <form id="linter_input" action="/" method="post">
-      <fieldset ng-show="fieldset === 'url'">
+      <fieldset class="input-group" ng-show="fieldset === 'url'">
         <legend>Page URL</legend>
-        <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
+        <input id="url" class="form-control" name="url" size="80" type="text" value="<%= params['url'] %>"/>
         <input name="commit" type="submit" value="Submit" />
         <br/>
         <span class="form-examples">Examples:
@@ -27,14 +27,14 @@
         <% end -%>
         </span>
       </fieldset>
-      <fieldset ng-show="fieldset === 'upload'">
+      <fieldset class="input-group" ng-show="fieldset === 'upload'">
         <legend>File Upload</legend>
         <input type="file" name="datafile"/>
         <input name="commit" type="submit" value="Submit" />
       </fieldset>
-      <fieldset ng-show="fieldset === 'input'">
+      <fieldset class="input-group" ng-show="fieldset === 'input'">
         <legend>Markup</legend>
-        <textarea class="input" cols="120" id="content" name="content" rows="15"><%= CGI.escapeHTML(@content.to_s) %></textarea>
+        <textarea class="input form-control" cols="120" id="content" name="content" rows="15"><%= CGI.escapeHTML(@content.to_s) %></textarea>
         <input name="commit" type="submit" value="Submit" />
       </fieldset>
     </form>

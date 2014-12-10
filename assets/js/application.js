@@ -23,5 +23,11 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize'])
     function ($scope) {
       // Which fieldset to display
       $scope.fieldset = 'url';
-    }
+      $scope.getClass = function(fieldset) {
+          if ($scope.fieldset === fieldset) {
+            return "active"
+          } else {
+            return ""
+          }
+      }    }
   ]);
