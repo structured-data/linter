@@ -11,7 +11,6 @@ require 'strscan'
 # relationships.
 module RDF::Linter
   class Schema
-    APP_DIR = File.expand_path("../../..", File.dirname(__FILE__))
     attr_reader :classes
     attr_reader :thing
 

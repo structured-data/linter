@@ -18,18 +18,6 @@ module RDF::Linter
         block.call(self) if block_given?
       end
     end
-    
-    ##
-    # Override render_document to pass `turtle` as a local
-    #
-    # `turtle` is entity-escaped Turtle serialization of graph
-    def render_document(subjects, options = {})
-      super(subjects, options.merge(extracted: graph.dump(:rdfa,
-                      haml: RDF::Linter::TABULAR_HAML,
-                      standard_prefixes: true))) do |subject|
-        yield(subject) if block_given?
-      end
-    end
 
     # Override render_subject to look for a :rel template if this is a relation.
     # In which case, we'll also pass the typeof the referencing resource

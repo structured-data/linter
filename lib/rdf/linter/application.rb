@@ -1,23 +1,50 @@
 require 'sinatra'
 require 'sinatra/linkeddata'
-require 'sinatra/partials'
+require 'sinatra/assetpack'
 require 'erubis'
 
 module RDF::Linter
   class Application < Sinatra::Base
-    APP_DIR = File.expand_path("../../..", File.dirname(__FILE__))
-    PUB_DIR = File.join(APP_DIR, 'public')
-    LINTER_DIR = File.join(APP_DIR, 'lib', 'rdf', 'linter')
-    SNIPPET_DIR = File.join(LINTER_DIR, 'snippets')
 
-    #register Sinatra::LinkedData
-    helpers Sinatra::Partials
-    #use Rack::LinkedData::ContentNegotiation, default: "text/html"
-    set :root, APP_DIR
-    set :views, ::File.expand_path('../views',  __FILE__)
-    set :app_name, "Structured Data Linter"
-    enable :logging
-    disable :raise_errors, :show_exceptions if settings.environment == "production"
+    configure do
+      set :root, APP_DIR
+      set :public_folder, PUB_DIR
+      set :views, ::File.expand_path('../views',  __FILE__)
+      set :snippets, ::File.expand_path('../snippets',  __FILE__)
+      set :app_name, "Structured Data Linter"
+      enable :logging
+      disable :raise_errors, :show_exceptions if settings.environment == :production
+
+      # Cache client requests
+      RestClient.enable Rack::Cache,
+        verbose:     true,
+        metastore:   "file:" + ::File.join(APP_DIR, "cache/meta"),
+        entitystore: "file:" + ::File.join(APP_DIR, "cache/body")
+
+      # Asset pipeline
+      register Sinatra::AssetPack
+      assets do
+        serve '/js', from: 'assets/js'
+        serve '/css', from: 'assets/css'
+        serve '/images', from: 'assets/images'
+
+        css :app, %w(
+          /css/application.css
+          /css/snippet.css
+        )
+        js :app, %w(
+          /js/application.js
+          /js/jquery.raty.js
+          /js/chili/html.js
+          /js/chili/jquery.chili-2.2.js
+          /js/chili/js.js
+          /js/chili/recipes.js
+        )
+
+        js_compression  :jsmin
+        css_compression :simple
+      end
+    end
 
     configure :development do
       set :logging, ::Logger.new($stdout)
@@ -26,13 +53,23 @@ module RDF::Linter
       BetterErrors.application_root = APP_DIR
     end
 
+    configure :test do
+      set :logging, ::Logger.new(StringIO.new)
+    end
+
+    helpers do
+      # Set cache control
+      def set_cache_header(options = {})
+        options = {:max_age => ENV.fetch('max_age', 60*5)}.merge(options)
+        cache_control(:public, :must_revalidate, options)
+      end
+    end
 
     before do
       request.logger.level = Logger::DEBUG unless settings.environment == 'production'
-      request.logger.info "[#{request.path_info}], " +
-        "#{request.accept}, " +
-        "#{params.inspect}, " +
-        "#{request.accept.inspect}"
+      request.logger.info "#{request.request_method} [#{request.path_info}], " +
+        params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ") +
+        "#{params.inspect}"
     end
 
     # Get "/" either returns the main linter page or linted markup
@@ -41,10 +78,13 @@ module RDF::Linter
     # @overload get "/", params
     # @see {#linter}
     get '/' do
-      linter params
+      respond_to do |wants|
+        wants.html { erb :linter, locals: {head: :linter, root: url("/")} }
+        wants.json { linter params }
+      end
     end
 
-    # Get "/" returns linted markup
+    # POST "/" returns linted markup as JSON
     #
     # @method post_linter
     # @overload post "/", params
@@ -58,7 +98,7 @@ module RDF::Linter
     # @overload get "/about/"
     get '/about/' do
       @title = "About the Linter"
-      cache_control :public, :must_revalidate, max_age: 60
+      set_cache_header
       erb :about
     end
 
@@ -67,10 +107,8 @@ module RDF::Linter
     # @overload get "/examples/"
     get '/examples/' do
       @title = "Markup Examples"
-      cache_control :public, :must_revalidate,  max_age: 60
-      erb :examples, locals: {
-        root: RDF::URI(request.url).join("/").to_s,
-      }
+      set_cache_header
+      erb :examples, locals: {root: url("/")}
     end
 
     # Return a specific Google Rich Snippet example
@@ -78,12 +116,12 @@ module RDF::Linter
     # @overload get "/examples/google-rs/:name/"
     # @param [String] name Name of the example to return
     get '/examples/google-rs/:name/' do
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       @title = "Google RS #{params[:name]}"
       erb :rs_example, locals: {
         head: :examples,
         name: params[:name],
-        root: RDF::URI(request.url).join("/").to_s
+        root: url("/")
       }
     end
 
@@ -92,7 +130,7 @@ module RDF::Linter
     # @overload get "/examples/google-rs/:file"
     # @param [String] file Name of the example to return
     get '/examples/google-rs/:file' do
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       file_loc = params[:file]
       send_file File.join(APP_DIR, "google-rs/#{file_loc}"),
         type: (params[:file].end_with?(".jsonld") ? :jsonld : :html),
@@ -104,12 +142,12 @@ module RDF::Linter
     # @overload get "/examples/good-relations/:name/"
     # @param [String] name Name of the example to return
     get '/examples/good-relations/:name/' do
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       @title = "Good Relations #{params[:name]}"
       erb :gr_example, locals: {
         head: :examples,
         name: params[:name],
-        root: RDF::URI(request.url).join("/").to_s
+        root: url("/")
       }
     end
 
@@ -118,7 +156,7 @@ module RDF::Linter
     # @overload get "/examples/good-relations/:file"
     # @param [String] file Name of the example to return
     get '/examples/good-relations/:file' do
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       send_file File.join(APP_DIR, "good-relations/#{params[:file]}"),
         type: (params[:file].end_with?(".jsonld") ? :jsonld : :html),
         charset: "utf-8"
@@ -129,7 +167,7 @@ module RDF::Linter
     # @overload get "/examples/schema.org/:name/"
     # @param [String] name Name of the example to return
     get '/examples/schema.org/:name/' do
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       @title = "Schema.org #{params[:name]}"
       @examples ||= JSON.parse(File.read(File.join(APP_DIR, "schema.org/examples.json")))
       
@@ -151,7 +189,7 @@ module RDF::Linter
         head: :examples,
         name: params[:name],
         examples: examples,
-        root: RDF::URI(request.url).join("/").to_s
+        root: url("/")
       }
     end
 
@@ -160,7 +198,7 @@ module RDF::Linter
     # @overload get "/examples/good-relations/:file"
     # @param [String] file Name of the example to return
     get '/examples/schema.org/:file' do
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       file = File.join(APP_DIR, "schema.org", params[:file])
       if File.exist?(file)
         send_file file,
@@ -177,18 +215,18 @@ module RDF::Linter
     # @overload get "/snippets/"
     get '/snippets/' do
       @title = "Snippet definitions"
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       erb :snippets, locals: {
-        root: RDF::URI(request.url).join("/").to_s,
+        root: url("/"),
       }
     end
 
     get '/snippets/:name' do
-      cache_control :public, :must_revalidate,  max_age: 60
+      set_cache_header
       @title = params[:name]
       erb :snippet, locals: {
         name: params[:name],
-        root: RDF::URI(request.url).join("/").to_s
+        root: url("/")
       }
     end
 
@@ -196,7 +234,7 @@ module RDF::Linter
 
     include Parser
 
-    # Handle GET/POST /
+    # Handle GET/POST / returning JSON
     # @param {Hash} params
     # @option params [String] :base_uri
     #   Base URI for decoding markup, defaluts to `:url` if present
@@ -219,7 +257,8 @@ module RDF::Linter
         base_uri: params["url"],
         validate: params["validate"],
         format:   params["format"].to_sym,
-        headers:  {"User-Agent" => "Structured-Data-Linter/#{RDF::Linter::VERSION}"}
+        headers:  {"User-Agent" => "Structured-Data-Linter/#{RDF::Linter::VERSION}"},
+        validate_none: params["validate_ssl"],
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]
       reader_opts[:debug] = @debug = [] if params["debug"]
@@ -229,31 +268,79 @@ module RDF::Linter
       reader_opts[:matched_templates] = []
       reader_opts[:logger] = request.logger
 
-      root = RDF::URI(request.url).join("/").to_s
+      root = url("/")
       request.logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 
-      case
-      when reader_opts[:tempfile]
-        request.logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
-      when  reader_opts[:content]
-        request.logger.info "Parse form data with format #{reader_opts[:format]}"
-        @content = reader_opts[:content]
-      when reader_opts[:base_uri]
-        request.logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
+      # Parset and lint input yielding a graph
+      graph, messages = parse(reader_opts)
+
+      # Write in requested format
+      writer = RDF::Writer.for(reader_opts.fetch(:output_format, :rdfa))
+
+      writer_opts = reader_opts.merge(haml: RDF::Linter::TABULAR_HAML, standard_prefixes: true)
+      writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
+      writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
+
+      # Move elements with class `snippet` to the front of the root element
+      result = writer.buffer(writer_opts) {|w| w << graph}
+      result.gsub!(/--root--/, root)
+
+      # Generate snippet
+      snippet = RDF::All::Write.buffer(writer_opts.merge(haml: LINTER_HAML)) {|w| w << graph}
+      snippet.gsub!(/--root--/, root)
+
+      # Return snippet, serialized graph, lint messages, and debug information
+      content_type :json
+      {
+        snippet: snippet,
+        html: result,
+        messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
+        debug: (writer_opts[:debug] if params[:debug])
+      }.to_json
+    rescue RDF::ReaderError => e
+      content_type :json
+      status 400
+      {
+        messages: "RDF::ReaderError: #{e.message}",
+        debug: writer_opts[:debug]
+      }.to_json
+    rescue IOError => e
+      content_type :json
+      status 502
+      {
+        messages: "Failed to open #{reader_opts[:base_uri]}: #{e.message}",
+        debug: writer_opts[:debug]
+      }.to_json
+    rescue
+      raise unless settings.environment == :production
+      content_type :json
+      status 400
+      {
+        messages: "#{$!.class}: #{$!.message}",
+        debug: writer_opts[:debug]
+      }.to_json
+    end
+
+    # Should use Rack::Conneg, but helpers not loading properly
+    #
+    # @param [Symbol] ext (type)
+    #   optional extension to override accept matching
+    def respond_to(type = nil)
+      wants = { '*/*' => Proc.new { raise TypeError, "No handler for #{request.accept.join(',')}" } }
+      def wants.method_missing(ext, *args, &handler)
+        type = ext == :other ? '*/*' : Rack::Mime::MIME_TYPES[".#{ext.to_s}"]
+        self[type] = handler
       end
 
-      content_type, status, content = parse(reader_opts)
-      content.gsub!(/--root--/, root)
-      @output = content unless content == @error
-      @output ||= "<p>No formats detected.</p>"
-      @title = "Structured Data Linter"
-      status status
-      content_type content_type
-      erb :linter, locals: {
-        head: :linter,
-        root: RDF::URI(request.url).join("/").to_s,
-        matched_templates: reader_opts[:matched_templates].uniq
-      }
+      yield wants
+
+      pref = if type
+        Rack::Mime::MIME_TYPES[".#{type.to_s}"]
+      else
+        supported_types = wants.keys.map {|ext| Rack::Mime::MIME_TYPES[".#{ext.to_s}"]}.compact
+        request.preferred_type(*supported_types)
+      end
+      (wants[pref.to_s] || wants['*/*']).call
     end
   end
 end

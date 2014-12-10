@@ -16,7 +16,7 @@ module RDF::Linter
     # @option options [RDF::URI] :base_uri location of file, or where to treat content as having been located.
     # @option options [Boolean] :output_format (:linter)
     #   Output format of graph, defaults to linter-based RDFa.
-    # @return [Array(String, Integer, String)] Rack filter results
+    # @return [Array(String, String, String)] Snippet, Schematic, Lint Messages
     def parse(reader_opts)
       logger = reader_opts[:logger] ||= begin
         l = Logger.new(STDOUT)  # In case we're not invoked from rack
@@ -30,56 +30,25 @@ module RDF::Linter
 
       reader = case
       when reader_opts[:tempfile]
+        request.logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
         RDF::All::Reader.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
       when reader_opts[:content]
+        request.logger.info "Parse form data with format #{reader_opts[:format]}"
         RDF::All::Reader.new(reader_opts[:content], reader_opts) {|r| graph << r}
       when reader_opts[:base_uri]
+        request.logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
         RDF::All::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
-        return ["text/html", 200, ""]
-      end
-
-      @parsed_statements = case reader
-      when RDF::All::Reader
-        reader.statement_count
-      else
-        {reader.class => graph.size }
+        # Not parsing anything
+        return [nil, nil, nil]
       end
 
       # Expand graph with entailed types
       expand_graph(graph)
 
       # Perform some actual linting on the graph
-      @lint_messages = lint(graph)
-
-      writer = RDF::Writer.for(reader_opts[:output_format]) || RDF::Linter::Writer
-      content_type = writer.format.content_type.first rescue 'text/html'
-
-      writer_opts = reader_opts.dup
-      writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
-      writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
-
-      # Move elements with class `snippet` to the front of the root element
-      result = writer.buffer(writer_opts) {|w| w << graph}
-      writer_opts.fetch(:debug, []).each {|m| logger.debug m}
-      [content_type, 200, result]
-    rescue RDF::ReaderError => e
-      @error = "RDF::ReaderError: #{e.message}"
-      logger.error @error
-      logger.debug e.backtrace.join("\n")
-      ["text/html", 400, @error]
-    rescue IOError => e
-      @error = "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
-      logger.error @error  # to log
-      logger.debug e.backtrace.join("\n")
-      ["text/html", 502, @error]
-    rescue
-      raise unless self.respond_to?(:settings) && settings.environment == :production
-      @error = "#{$!.class}: #{$!.message}"
-      logger.error @error  # to log
-      logger.debug $!.backtrace.join("\n")
-      ["text/html", 400, @error]
-    end
+      lint_messages = lint(graph)
+   end
     module_function :parse
 
     ##

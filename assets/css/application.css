@@ -1,0 +1,183 @@
+/* JSON-LD CSS */
+
+@font-face {
+  font-family: "sketch-rockwell";
+  src: url("SketchRockwell-Bold.ttf");
+}
+
+@font-face {
+  font-family: "calluna";
+  src: url("Calluna-Regular.ttf");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body.linter {
+  color: #333;
+  background-color: #a7cb87;
+  font-family: "calluna", Georgia, serif;
+  font-size: 1.5em;
+}
+
+body.linter a {
+  color: #926394;
+  text-decoration: none;
+  outline-style: none;
+  font-weight: bold;
+}
+
+body.linter h1 {
+  font-size: 2.0em;
+  font-family: "sketch-rockwell", Helvetica, Arial, serif;
+}
+
+body.linter p {
+  margin: 10px 0;
+  /*font-family: "Georgia", Times, serif;*/
+}
+
+.tagline {
+   font-style: italic;
+   font-family: Georgia, serif;
+   font-size: 1.5em;
+}
+
+.breadcrumbs {
+   margin: 12px 12px;
+}
+
+.lighter {
+  background: #c7e5ab;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0 2em;
+}
+
+dl {
+  padding: 0.5em;
+}
+
+dt {
+  clear: left;
+  text-align: left;
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 0 50px;
+  padding: 0 0 0.5em 0;
+}
+
+form {
+  margin-top: 10px;
+  clear:left;
+}
+
+legend, span.form-examples, #results-turtle {
+  font-size: 0.8em;
+}
+
+form span.form-examples {
+  font-size: 0.8em;
+}
+
+.hidden {
+  display: none;
+}
+
+.banner {
+  float: left;
+}
+
+nav.navbar {
+  position: relative;
+  height: 80px;
+  color: #fff;
+  background-color: #55842c;
+}
+
+nav.navbar a.navbar-brand {
+  margin-top: 15px;
+  margin-left: 25px;
+  white-space:nowrap;
+  font-size: 3em;
+  font-family: "sketch-rockwell", Helvetica, Arial, serif;
+  text-shadow: none;
+  color: #fff;
+}
+nav.navbar a.navbar-brand:hover {
+  color:      #c7e5ab;
+}
+
+nav.navbar .navbar-collapse {
+  margin-top: 20px;
+}
+
+ul.nav {
+  font:           bolder 1em 'Trebuchet MS', sans-serif;
+  color:          white;
+  list-style:     none;
+  margin:         0;
+  padding:        0;
+  padding-bottom: 1em;
+}
+ul.nav li {
+  display: inline;
+}
+.nav>li>a, .nav>li>a:link, .nav>li>a:visited {
+  padding:            3px 12px;
+  color:              white;
+  text-decoration:    none;
+  font-size:          1.5em;
+}
+
+.nav>li>a.active, .nav>li>a:hover, .nav>li>a:focus {
+  color:            #c7e5ab;
+  background-color: #55842c !important;
+}
+
+nav.navbar li a:hover, nav.navbar li a.active {
+  color:      #c7e5ab;
+}
+
+form#linter_input fieldset {
+  border: none;
+}
+form#linter_input fieldset legend {
+  display: none;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+footer {
+  background-color: #55842c;
+  color: #333;
+}
+
+footer a {
+  color: #ddd;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+#extracted-content table {
+  border-collapse:collapse;
+  font-family: monospace;
+}
+#extracted-content table td {
+  vertical-align: baseline;
+  border: 1px solid black;
+  padding: 4px;
+}

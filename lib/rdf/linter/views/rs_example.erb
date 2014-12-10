@@ -1,7 +1,7 @@
 <section class="example content">
   <%
     {:rdfa => "RDFa", :md => "Microdata"}.each do |fmt, fmt_name|
-      file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt}.html")
+      file = File.join(settings.root, "google-rs", "#{name.downcase}.#{fmt}.html")
       next unless File.file?(file)
       path = "#{root}examples/google-rs/#{name.downcase}.#{fmt}.html"
       doc = Nokogiri::HTML.parse(File.open(file))

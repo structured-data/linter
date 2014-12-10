@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: ebaf2ba54a1a3ba846d5eeaa10e40da3f89de9a1
+  revision: 89d1b7bac84f601c40bc5bae94f863528e753e48
   branch: develop
   specs:
     rdf (1.1.6)
@@ -35,14 +35,16 @@ PATH
       activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
-      facets (~> 2.9)
       haml (~> 4.0)
       linkeddata (~> 1.1)
       nokogiri (~> 1.6)
       rack (~> 1.5)
       rack-cache (~> 1.2)
       rdf-reasoner (~> 0.1)
+      rest-client
+      rest-client-components
       sinatra (~> 1.4)
+      sinatra-assetpack (~> 0.3.3)
       sinatra-linkeddata (~> 1.1)
 
 GEM
@@ -79,11 +81,11 @@ GEM
     equivalent-xml (0.5.1)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
-    facets (2.9.3)
     haml (4.0.6)
       tilt
     htmlentities (4.3.2)
     i18n (0.6.11)
+    jsmin (1.0.1)
     json (1.8.1)
     json-ld (1.1.7)
       rdf (~> 1.1, >= 1.1.4)
@@ -106,10 +108,12 @@ GEM
       rdf-turtle (>= 1.1.2)
       sparql (>= 1.1.2)
       sparql-client (>= 1.1.1)
+    mime-types (2.4.3)
     mini_portile (0.6.1)
     minitest (5.4.3)
     multi_json (1.10.1)
     net-http-persistent (2.9.4)
+    netrc (0.9.0)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     rack (1.5.2)
@@ -153,6 +157,12 @@ GEM
       rdf (~> 1.1, >= 1.1.4)
     rdf-xsd (1.1.2)
       rdf (~> 1.1)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    rest-client-components (1.3.0)
+      rack (>= 1.0.1)
+      rest-client (>= 1.6.0)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
       rspec-expectations (~> 3.1.0)
@@ -179,6 +189,11 @@ GEM
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
+    sinatra-assetpack (0.3.3)
+      jsmin
+      rack-test
+      sinatra
+      tilt (>= 1.3.0, < 2.0)
     sinatra-linkeddata (1.1.0)
       rack-linkeddata (>= 1.1.0)
       sinatra (>= 1.4.4)

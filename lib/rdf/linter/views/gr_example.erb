@@ -1,7 +1,7 @@
 <section class="example content">
   <%
     {:"rdfa.html" => "RDFa", :ttl => "TTL"}.each do |fmt, fmt_name|
-      file = File.join(APP_DIR, "good-relations", "#{name}.#{fmt}")
+      file = File.join(settings.root, "good-relations", "#{name}.#{fmt}")
       next unless File.file?(file)
       path = "#{root}examples/good-relations/#{name}.#{fmt}"
       div = if fmt == :ttl
