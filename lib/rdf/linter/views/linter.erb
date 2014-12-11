@@ -48,6 +48,10 @@
     </form>
   </div>
 
+  <div ng-show="loading">
+    Loading results...
+  </div>
+
   <div class="snippet" ng-show="result">
     <h2>Enhanced search result preview</h2>
     <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
@@ -65,11 +69,13 @@
   </div>
 
   <div ng-show="result.statistics">
-    <table class="stats">
+    <h2>Parser statistics</h2>
+    <table class="stats table table-condensed">
       <tbody>
-        <tr><td>Statements:</td><td>{{result.statistics.count}}</td></tr>
-        <tr ng-repeat="template in result.statistics.templates">
-          <td>Template:</td><td>{{template}}</td>
+        <tr><td>Statements</td><td>{{result.statistics.count}}</td></tr>
+          <td>Templates</td><td>
+            <div ng-repeat="template in result.statistics.templates">{{template}}</div>
+          </td>
         </tr>
       </tbody>
     </table>

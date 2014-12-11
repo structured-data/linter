@@ -315,6 +315,10 @@ module RDF::Linter
         snippet: snippet,
         html: result,
         messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
+        statistics: {
+          count: graph.size,
+          templates: reader_opts[:matched_templates].uniq
+        },
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue RDF::ReaderError => e

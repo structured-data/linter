@@ -25,8 +25,8 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
       $scope.upload = null;       // upload parameter FIXME
       $scope.input = null;        // input parameter
       $scope.validateSSL = true;  // validateSSL parameter
-      // Which fieldset to display
-      $scope.fieldset = 'url';
+      $scope.loading = null;      // show page loading symbol
+      $scope.fieldset = 'url';    // Which fieldset to display
 
       // Which form field to show
       $scope.getClass = function(fieldset) {
@@ -34,31 +34,37 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
       };
 
       $scope.lintUrl = function(path) {
+        $scope.loading = true;
+        $scope.result = null;
         $scope.url = path;
         $location.url($location.path()); // Clear parameters
         $location.search('url', path);  // Add url parameter
         if (!$scope.validateSSL) {
           $location.search('validate_ssl', 'false'); // Add only if false
         }
-        $scope.result = {messages: ["Loading..."]};
         $http.get("/", {params: {url: path, validate_ssl: $scope.validateSSL}})
           .success(function(data) {
             $scope.result = data;
+            $scope.loading = false;
           })
           .error(function(data) {
             $scope.result = {messages: [data]};
+            $scope.loading = false;
           });
       };
 
       $scope.lintInput = function(input) {
-        $scope.result = {messages: ["Loading..."]};
+        $scope.loading = true;
+        $scope.result = null;
         $location.url($location.path()); // Clear parameters
         $http.post("/", {content: input, validate_ssl: $scope.validateSSL})
           .success(function(data) {
             $scope.result = data;
+            $scope.loading = false;
           })
           .error(function(data) {
             $scope.result = {messages: [data]};
+            $scope.loading = false;
           });
       };
 
