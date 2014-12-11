@@ -267,7 +267,7 @@ module RDF::Linter
         validate: params["validate"],
         format:   params["format"].to_sym,
         headers:  {"User-Agent" => "Structured-Data-Linter/#{RDF::Linter::VERSION}"},
-        validate_none: params["validate_ssl"],
+        verify_none: params["verify_ssl"] == "false",
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]
       reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :development

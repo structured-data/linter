@@ -24,7 +24,7 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
       $scope.url = null;          // URL parameter
       $scope.upload = null;       // upload parameter FIXME
       $scope.input = null;        // input parameter
-      $scope.validateSSL = true;  // validateSSL parameter
+      $scope.verifySSL = true;  // verifySSL parameter
       $scope.loading = null;      // show page loading symbol
       $scope.fieldset = 'url';    // Which fieldset to display
 
@@ -39,10 +39,10 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
         $scope.url = path;
         $location.url($location.path()); // Clear parameters
         $location.search('url', path);  // Add url parameter
-        if (!$scope.validateSSL) {
-          $location.search('validate_ssl', 'false'); // Add only if false
+        if (!$scope.verifySSL) {
+          $location.search('verify_ssl', 'false'); // Add only if false
         }
-        $http.get("/", {params: {url: path, validate_ssl: $scope.validateSSL}})
+        $http.get("/", {params: {url: path, verify_ssl: $scope.verifySSL}})
           .success(function(data) {
             $scope.result = data;
             $scope.loading = false;
@@ -57,7 +57,7 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
         $scope.loading = true;
         $scope.result = null;
         $location.url($location.path()); // Clear parameters
-        $http.post("/", {content: input, validate_ssl: $scope.validateSSL})
+        $http.post("/", {content: input, verify_ssl: $scope.verifySSL})
           .success(function(data) {
             $scope.result = data;
             $scope.loading = false;
