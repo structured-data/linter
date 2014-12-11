@@ -35,6 +35,11 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
 
       $scope.lintUrl = function(path) {
         $scope.url = path;
+        $location.url($location.path()); // Clear parameters
+        $location.search('url', path);  // Add url parameter
+        if (!$scope.validateSSL) {
+          $location.search('validate_ssl', 'false'); // Add only if false
+        }
         $scope.result = {messages: ["Loading..."]};
         $http.get("/", {params: {url: path, validate_ssl: $scope.validateSSL}})
           .success(function(data) {
@@ -47,6 +52,7 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
 
       $scope.lintInput = function(input) {
         $scope.result = {messages: ["Loading..."]};
+        $location.url($location.path()); // Clear parameters
         $http.post("/", {content: input, validate_ssl: $scope.validateSSL})
           .success(function(data) {
             $scope.result = data;

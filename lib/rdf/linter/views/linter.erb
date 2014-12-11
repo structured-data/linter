@@ -48,23 +48,20 @@
     </form>
   </div>
 
-  <div class="snippet" ng-show="result.snippet">
+  <div class="snippet" ng-show="result">
     <h2>Enhanced search result preview</h2>
     <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
+    <p ng-show="!result.snippet">The data did not match any templates on file.
+      Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a>
+      to request support for additional templates.</p>
     <div ng-bind-html="result.snippet">
-      <p>The data did not match any templates on file.
-        Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a>
-        to request support for additional templates.</p>
     </div>
   </div>
 
-  <div class="results" ng-show="result.html">
-    <h2>Raw structured data extracted from the page:/h2>
-    <div ng-bind-html="result.html">
-      <p>The data did not match any templates on file.
-        Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a>
-        to request support for additional templates.</p>
-    </div>
+  <div class="results" ng-show="result">
+    <h2>Raw structured data extracted from the page:</h2>
+    <p ng-show="!result.html">No structured data detected.</p>
+    <div ng-bind-html="result.html"></div>
   </div>
 
   <div ng-show="result.statistics">

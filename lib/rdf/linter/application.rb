@@ -292,19 +292,22 @@ module RDF::Linter
       writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
       request.logger.debug graph.dump(:ttl, writer_opts)
 
-      # Move elements with class `snippet` to the front of the root element
-      result = writer.buffer(writer_opts.merge(haml: RDF::Linter::TABULAR_HAML)) {|w| w << graph}
-      result.gsub!(/--root--/, root)
+      result = snippet = nil
+      if graph.size > 0
+        # Move elements with class `snippet` to the front of the root element
+        result = writer.buffer(writer_opts.merge(haml: RDF::Linter::TABULAR_HAML)) {|w| w << graph}
+        result.gsub!(/--root--/, root)
 
-      # Generate snippet
-      snippet = begin
-        RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
-      rescue
-        request.logger.error "Snippet Writer returned error: #{$!.inspect}"
-        raise $!.message
+        # Generate snippet
+        snippet = begin
+          RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
+        rescue
+          request.logger.error "Snippet Writer returned error: #{$!.inspect}"
+          raise $!.message
+        end
+
+        snippet.gsub!(/--root--/, root)
       end
-
-      snippet.gsub!(/--root--/, root)
 
       # Return snippet, serialized graph, lint messages, and debug information
       content_type :json
