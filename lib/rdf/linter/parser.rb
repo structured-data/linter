@@ -39,8 +39,7 @@ module RDF::Linter
         request.logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
         RDF::All::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
-        # Not parsing anything
-        return [nil, nil, nil]
+        raise RDF::ReaderError, "Expected one of tempfile, content or base_uri"
       end
 
       # Expand graph with entailed types

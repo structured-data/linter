@@ -210,11 +210,16 @@ body.linter footer p {
   font-size: 0.8em;
 }
 
-#extracted-content table {
+.extracted-content .label {
+  font-size: 100%;
+  color: black;
+  text-align: left;
+}
+.extracted-content table {
   border-collapse:collapse;
   font-family: monospace;
 }
-#extracted-content table td {
+.extracted-content table td {
   vertical-align: baseline;
   border: 1px solid black;
   padding: 4px;

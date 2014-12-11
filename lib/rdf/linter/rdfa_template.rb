@@ -7,7 +7,7 @@ module RDF::Linter
     # Locals: language, title, prefix, base, subjects, extracted
     # Yield: subjects.each
     :doc => %q(
-      %div{:id => "results-content", :about => base, :prefix => prefix}
+      %div.results-content{:about => base, :prefix => prefix}
         - subjects.each do |subject|
           != yield(subject)
     ),
@@ -105,7 +105,7 @@ module RDF::Linter
     # Locals: language, title, prefix, base, subjects, extracted
     # Yield: subjects.each
     :doc => %q(
-      %div{:id => "extracted-content"}
+      %div.extracted-content
         - subjects.each do |subject|
           != yield(subject)
     ),

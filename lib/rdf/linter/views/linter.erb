@@ -8,11 +8,11 @@
       <li><a class="upload" ng-class="getClass('upload')" ng-click="fieldset = 'upload'">Lint by File Upload</a></li>
       <li><a class="input" ng-class="getClass('input')" ng-click="fieldset = 'input'">Lint by Direct Input</a></li>
     </ul>
-    <form id="linter_input" action="/" method="post">
+    <form id="linter_input">
       <fieldset class="input-group" ng-show="fieldset === 'url'">
         <legend>Page URL</legend>
         <input class="form-control" size="80" type="text" size="80" ng-model="url"/>
-        <input type="submit" ng-click="lintUrl(url)" value="Submit" />
+        <input type="submit" ng-click="lintUrl(url)" value="Submit" ng-disabled="fieldset !== 'url'"/>
         <br/>
         <span class="form-examples">Examples:
         <% %w(Review People Event Recipe Product).each do |name| -%>
@@ -22,7 +22,7 @@
             next unless File.file?(file)
             path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
           -%>
-            <a href="#" ng-click="lintUrl('<%= path %>')" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
+            <a href="" ng-click="lintUrl('<%= path %>')" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
           <% end -%>)
         <% end -%>
         </span>
@@ -31,13 +31,13 @@
       <fieldset class="input-group" ng-show="fieldset === 'upload'">
         <legend>File Upload</legend>
         <input type="file" name="datafile"/>
-        <input name="commit" type="submit" value="Submit" />
+        <input name="commit" type="submit" value="Submit" ng-disabled="fieldset !== 'upload'" />
       </fieldset>
 
       <fieldset class="input-group" ng-show="fieldset === 'input'">
         <legend>Markup</legend>
-        <textarea class="input form-control" cols="120" id="content" name="content" rows="15"><%= CGI.escapeHTML(@content.to_s) %></textarea>
-        <input name="commit" type="submit" value="Submit" />
+        <textarea class="input form-control" cols="120" rows="15" ng-model="input"></textarea>
+        <input type="submit" ng-click="lintInput(input)" value="Submit" ng-disabled="fieldset !== 'input'" />
       </fieldset class="input-group">
 
       <fieldset>
@@ -51,13 +51,20 @@
   <div class="snippet" ng-show="result.snippet">
     <h2>Enhanced search result preview</h2>
     <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
-    <div ng-bind-html="result.snippet"></div>
+    <div ng-bind-html="result.snippet">
+      <p>The data did not match any templates on file.
+        Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a>
+        to request support for additional templates.</p>
+    </div>
   </div>
 
   <div class="results" ng-show="result.html">
-    <h2>Structured data</h2>
-    <p>The data did not match any templates on file. Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a> to request support for additional templates.</p>
-    <div ng-bind-html="result.html"></div>
+    <h2>Raw structured data extracted from the page:/h2>
+    <div ng-bind-html="result.html">
+      <p>The data did not match any templates on file.
+        Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a>
+        to request support for additional templates.</p>
+    </div>
   </div>
 
   <div ng-show="result.statistics">
@@ -73,8 +80,8 @@
 
   <div ng-show="result.messages">
     <h2>Linter Messages</h2>
-    <p ng-repeat="message in messages">
-      {{result.message}}
+    <p ng-repeat="message in result.messages">
+      {{message}}
     </p>
   </div>
 

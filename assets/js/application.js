@@ -19,8 +19,8 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
         });
     }
   ])
-  .controller('LinterController', ['$scope', '$http',
-    function ($scope, $http) {
+  .controller('LinterController', ['$scope', '$http', '$location',
+    function ($scope, $http, $location) {
       $scope.url = null;          // URL parameter
       $scope.upload = null;       // upload parameter FIXME
       $scope.input = null;        // input parameter
@@ -35,13 +35,28 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
 
       $scope.lintUrl = function(path) {
         $scope.url = path;
+        $scope.result = {messages: ["Loading..."]};
         $http.get("/", {params: {url: path, validate_ssl: $scope.validateSSL}})
-          .success(function(data, status, headers, config) {
+          .success(function(data) {
             $scope.result = data;
           })
-          .error(function(data, status, headers, config) {
-            $scope.result = {messages: data};
+          .error(function(data) {
+            $scope.result = {messages: [data]};
           });
       };
+
+      $scope.lintInput = function(input) {
+        $scope.result = {messages: ["Loading..."]};
+        $http.post("/", {content: input, validate_ssl: $scope.validateSSL})
+          .success(function(data) {
+            $scope.result = data;
+          })
+          .error(function(data) {
+            $scope.result = {messages: [data]};
+          });
+      };
+
+      // If there are routeParams, use them to initialize the controller
+      if ($location.search().url) {$scope.lintUrl($location.search().url);}
     }
   ]);

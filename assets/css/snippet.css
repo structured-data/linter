@@ -42,14 +42,14 @@ table.ts td {
 
 ol.tracks { margin-left: 2em;}
 
-#results-content .other { display:none ;}
-#results-content .notype { display:none ;}
-#results-content [typeof~='v:Rating'] { display:none ;}
-#results-content [typeof~='vmd:Rating'] { display:none ;}
+.results-content .other { display:none ;}
+.results-content .notype { display:none ;}
+.results-content [typeof~='v:Rating'] { display:none ;}
+.results-content [typeof~='vmd:Rating'] { display:none ;}
 
 /* Only display the first result for a title */
-#results-content h3 span {display:none;}
-#results-content h3 span:first-child {display:inline;}
+.results-content h3 span {display:none;}
+.results-content h3 span:first-child {display:inline;}
 
 .star-rating {
   background-size: contain;

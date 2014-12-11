@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/linkeddata'
 require 'sinatra/assetpack'
 require 'erubis'
+require 'rack/contrib'
 
 module RDF::Linter
   class Application < Sinatra::Base
@@ -20,6 +21,9 @@ module RDF::Linter
         verbose:     true,
         metastore:   "file:" + ::File.join(APP_DIR, "cache/meta"),
         entitystore: "file:" + ::File.join(APP_DIR, "cache/body")
+
+      # Parse JSON post content
+      use Rack::PostBodyContentTypeParser
 
       # Asset pipeline
       register Sinatra::AssetPack
@@ -266,7 +270,7 @@ module RDF::Linter
         validate_none: params["validate_ssl"],
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]
-      reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :production
+      reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :development
       reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
       reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
@@ -274,10 +278,11 @@ module RDF::Linter
       reader_opts[:logger] = request.logger
 
       root = url("/")
-      request.logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
+      request.logger.debug "params: #{params.inspect}"
 
       # Parset and lint input yielding a graph
       graph, messages, base_uri = parse(reader_opts)
+      raise "Graph not read" unless graph
 
       # Write in requested format
       writer = RDF::Writer.for(reader_opts.fetch(:output_format, :rdfa))
@@ -285,13 +290,13 @@ module RDF::Linter
       writer_opts = reader_opts.merge(standard_prefixes: true)
       writer_opts[:base_uri] ||= base_uri if base_uri
       writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
+      request.logger.debug graph.dump(:ttl, writer_opts)
 
       # Move elements with class `snippet` to the front of the root element
       result = writer.buffer(writer_opts.merge(haml: RDF::Linter::TABULAR_HAML)) {|w| w << graph}
       result.gsub!(/--root--/, root)
 
       # Generate snippet
-      request.logger.debug graph.dump(:ttl, writer_opts)
       snippet = begin
         RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
       rescue
@@ -307,7 +312,7 @@ module RDF::Linter
         snippet: snippet,
         html: result,
         messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
-        debug: (writer_opts[:debug] if params[:debug])
+        debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue RDF::ReaderError => e
       request.logger.error "RDF::ReaderError: #{e.message}"
@@ -316,7 +321,7 @@ module RDF::Linter
       status 400
       {
         messages: "RDF::ReaderError: #{e.message}",
-        debug: writer_opts[:debug]
+        debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue IOError => e
       request.logger.error "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
@@ -325,7 +330,7 @@ module RDF::Linter
       status 502
       {
         messages: "Failed to open #{reader_opts[:base_uri]}: #{e.message}",
-        debug: writer_opts[:debug]
+        debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue
       raise unless settings.environment == :production
@@ -334,7 +339,7 @@ module RDF::Linter
       status 400
       {
         messages: "#{$!.class}: #{$!.message}",
-        debug: writer_opts[:debug]
+        debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     end
 
