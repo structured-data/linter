@@ -1,6 +1,6 @@
 /*global $, _, angular*/
 
-var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize'])
+var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
   .config(['$routeProvider', '$locationProvider', '$logProvider',
     function($routeProvider, $locationProvider, $logProvider) {
 
@@ -8,7 +8,7 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize'])
       $logProvider.debugEnabled(true);
       $routeProvider.
         when('/', {
-          controller: 'LinterCtrl'
+          controller: 'LinterController'
         }).
         otherwise({
           controller: function() {
@@ -19,15 +19,29 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize'])
         });
     }
   ])
-  .controller('LinterCtrl', ['$scope',
-    function ($scope) {
+  .controller('LinterController', ['$scope', '$http',
+    function ($scope, $http) {
+      $scope.url = null;          // URL parameter
+      $scope.upload = null;       // upload parameter FIXME
+      $scope.input = null;        // input parameter
+      $scope.validateSSL = true;  // validateSSL parameter
       // Which fieldset to display
       $scope.fieldset = 'url';
+
+      // Which form field to show
       $scope.getClass = function(fieldset) {
-          if ($scope.fieldset === fieldset) {
-            return "active"
-          } else {
-            return ""
-          }
-      }    }
+        return $scope.fieldset === fieldset ? "active" : "";
+      };
+
+      $scope.lintUrl = function(path) {
+        $scope.url = path;
+        $http.get("/", {params: {url: path, validate_ssl: $scope.validateSSL}})
+          .success(function(data, status, headers, config) {
+            $scope.result = data;
+          })
+          .error(function(data, status, headers, config) {
+            $scope.result = {messages: data};
+          });
+      };
+    }
   ]);

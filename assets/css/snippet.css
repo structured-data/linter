@@ -50,3 +50,16 @@ ol.tracks { margin-left: 2em;}
 /* Only display the first result for a title */
 #results-content h3 span {display:none;}
 #results-content h3 span:first-child {display:inline;}
+
+.star-rating {
+  background-size: contain;
+}
+.star-rating>i {
+  background-size: contain;
+  color: lightgray;
+}
+.star-rating>i.star {
+  background-size: contain;
+  color: orange;
+}
+

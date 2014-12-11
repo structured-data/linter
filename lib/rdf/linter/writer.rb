@@ -185,10 +185,7 @@ module RDF::Linter
     ##
     # Generate markup for a rating.
     #
-    # Ratings use the [jQuery Raty](http://www.wbotelhos.com/raty/) as the visual representation, normalized to a
-    # five-star scale.
-    #
-    # This plugin is required, as rich-snipets will handle multiple markups for ratings
+    # Ratings use Unicode star as the visual representation, normalized to a five-star scale.
     #
     # Ratings are expressed differently in RDFa, Microdata and Microformats (different URI prefixes).
     # They may include
@@ -214,52 +211,41 @@ module RDF::Linter
     # @return [String]
     #   HTML+RDFa markup of review using Raty.
     def rating_helper(property, object)
-      worst = 1.0
-      best = 5.0
-      @rating_id ||= "rating-0"
-      @rating_id = id = @rating_id.succ
-      html = %(<span class='rating-stars' id="#{id}"></span>)
+      worst = 0
+      best = 5
+      rating = nil
+      html = %(<span class='rating-stars'>)
+      postscript = ""
+
       if object.literal?
         # Value is simiple rating
         rating = object.value.to_f
-        html += %(<span property="#{get_curie(property)}" content="#{rating}"/>)
       else
-        html += %(<span rel='#{get_curie(property)}' resource='#{object}'>)
         subject_done(object)
         # It is marked up in a Review class
         graph.query(subject: object) do |st|
           html += %(<span property='#{get_curie(st.predicate)}' content='#{st.object}' />)
           case st.predicate.to_s
           when /best(?:Rating)/
-            best = st.object.value.to_f
+            best = st.object.value.to_i
           when /worst(?:Rating)/
-            html += %(<span property='#{get_curie(st.predicate)}' content='#{st.object.value.to_f}' />)
+            worst = st.object.value.to_i
           when /(ratingValue|value|average)/
-            rating = st.object.value.to_f
+            rating = st.object.value.to_i
           when /reviewCount/
-            html += "#{st.object.value.to_i} reviews"
+            postscript = "#{st.object.value.to_i} reviews"
           end
         end
-        html += %(</span>)
       end
 
-      html + %(
-        <script type="text/javascript">
-          $(function () {
-            $('##{id}').raty({
-              readOnly:   true,
-              half:       true,
-              start:      #{rating},
-              number:     #{best.to_i},
-              cancelOff:  'img/cancel-off.png',
-              cancelOn:   'img/cancel-on.png',
-              starOff:    'img/star-off.png',
-              starOn:     'img/star-on.png',
-              starHalf:   'img/star-half.png',
-            })
-          })
-        </script>
-      )
+      # FIXME: Normalize rating as 0..5
+      %(<span class='star-rating'>
+        <i #{'class="star"' if rating > 0}>\u2605</i>
+        <i #{'class="star"' if rating > 1}>\u2605</i>
+        <i #{'class="star"' if rating > 2}>\u2605</i>
+        <i #{'class="star"' if rating > 3}>\u2605</i>
+        <i #{'class="star"' if rating > 4}>\u2605</i>
+      </span>)
     end
   end
 end

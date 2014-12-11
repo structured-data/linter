@@ -34,12 +34,11 @@ module RDF::Linter
         )
         js :app, %w(
           /js/application.js
-          /js/jquery.raty.js
-          /js/chili/html.js
           /js/chili/jquery.chili-2.2.js
-          /js/chili/js.js
           /js/chili/recipes.js
         )
+        # /js/chili/html.js
+        # /js/chili/js.js
 
         js_compression  :jsmin
         css_compression :simple
@@ -66,10 +65,16 @@ module RDF::Linter
     end
 
     before do
-      request.logger.level = Logger::DEBUG unless settings.environment == 'production'
+      request.logger.level = Logger::DEBUG unless settings.environment == :production
       request.logger.info "#{request.request_method} [#{request.path_info}], " +
         params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ") +
         "#{params.inspect}"
+    end
+
+    after do
+      msg = "Status: #{response.status} (#{request.request_method} #{request.path_info}), Content-Type: #{response.content_type}"
+      msg += ", Location: #{response.location}" if response.location
+      request.logger.info msg
     end
 
     # Get "/" either returns the main linter page or linted markup
@@ -261,7 +266,7 @@ module RDF::Linter
         validate_none: params["validate_ssl"],
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]
-      reader_opts[:debug] = @debug = [] if params["debug"]
+      reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :production
       reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
       reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
@@ -272,21 +277,28 @@ module RDF::Linter
       request.logger.debug "request.url: #{request.url}, request.path: #{request.path}, root URI: #{root}"
 
       # Parset and lint input yielding a graph
-      graph, messages = parse(reader_opts)
+      graph, messages, base_uri = parse(reader_opts)
 
       # Write in requested format
       writer = RDF::Writer.for(reader_opts.fetch(:output_format, :rdfa))
 
-      writer_opts = reader_opts.merge(haml: RDF::Linter::TABULAR_HAML, standard_prefixes: true)
-      writer_opts[:base_uri] ||= reader.base_uri.to_s unless reader.base_uri.to_s.empty?
+      writer_opts = reader_opts.merge(standard_prefixes: true)
+      writer_opts[:base_uri] ||= base_uri if base_uri
       writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
 
       # Move elements with class `snippet` to the front of the root element
-      result = writer.buffer(writer_opts) {|w| w << graph}
+      result = writer.buffer(writer_opts.merge(haml: RDF::Linter::TABULAR_HAML)) {|w| w << graph}
       result.gsub!(/--root--/, root)
 
       # Generate snippet
-      snippet = RDF::All::Write.buffer(writer_opts.merge(haml: LINTER_HAML)) {|w| w << graph}
+      request.logger.debug graph.dump(:ttl, writer_opts)
+      snippet = begin
+        RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
+      rescue
+        request.logger.error "Snippet Writer returned error: #{$!.inspect}"
+        raise $!.message
+      end
+
       snippet.gsub!(/--root--/, root)
 
       # Return snippet, serialized graph, lint messages, and debug information
@@ -298,6 +310,8 @@ module RDF::Linter
         debug: (writer_opts[:debug] if params[:debug])
       }.to_json
     rescue RDF::ReaderError => e
+      request.logger.error "RDF::ReaderError: #{e.message}"
+      request.logger.debug e.backtrace.join("\n")
       content_type :json
       status 400
       {
@@ -305,6 +319,8 @@ module RDF::Linter
         debug: writer_opts[:debug]
       }.to_json
     rescue IOError => e
+      request.logger.error "Failed to open #{reader_opts[:base_uri]}: #{e.message}"
+      request.logger.debug e.backtrace.join("\n")
       content_type :json
       status 502
       {
@@ -313,6 +329,7 @@ module RDF::Linter
       }.to_json
     rescue
       raise unless settings.environment == :production
+      request.logger.error "#{$!.class}: #{$!.message}"
       content_type :json
       status 400
       {

@@ -1,4 +1,4 @@
-<div ng-controller="LinterCtrl">
+<div ng-controller="LinterController">
   <div class="lighter">
     <p>
       Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup. Read more <a href="/about/">about the Structured Data linter</a>.
@@ -11,8 +11,8 @@
     <form id="linter_input" action="/" method="post">
       <fieldset class="input-group" ng-show="fieldset === 'url'">
         <legend>Page URL</legend>
-        <input id="url" class="form-control" name="url" size="80" type="text" value="<%= params['url'] %>"/>
-        <input name="commit" type="submit" value="Submit" />
+        <input class="form-control" size="80" type="text" size="80" ng-model="url"/>
+        <input type="submit" ng-click="lintUrl(url)" value="Submit" />
         <br/>
         <span class="form-examples">Examples:
         <% %w(Review People Event Recipe Product).each do |name| -%>
@@ -22,58 +22,66 @@
             next unless File.file?(file)
             path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
           -%>
-            <a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
+            <a href="#" ng-click="lintUrl('<%= path %>')" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
           <% end -%>)
         <% end -%>
         </span>
       </fieldset>
+
       <fieldset class="input-group" ng-show="fieldset === 'upload'">
         <legend>File Upload</legend>
         <input type="file" name="datafile"/>
         <input name="commit" type="submit" value="Submit" />
       </fieldset>
+
       <fieldset class="input-group" ng-show="fieldset === 'input'">
         <legend>Markup</legend>
         <textarea class="input form-control" cols="120" id="content" name="content" rows="15"><%= CGI.escapeHTML(@content.to_s) %></textarea>
         <input name="commit" type="submit" value="Submit" />
+      </fieldset class="input-group">
+
+      <fieldset>
+        <legend>Options</legend>
+        <label for="validate-ssl">Validate SSL</label>
+        <input name="validate-ssl" type="checkbox"  ng-model="validateSSL" />
       </fieldset>
     </form>
   </div>
 
-  <div class="snippet" ng-show="snippet">
+  <div class="snippet" ng-show="result.snippet">
     <h2>Enhanced search result preview</h2>
     <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
-    <div ng-bind-html="snippet"></div>
+    <div ng-bind-html="result.snippet"></div>
   </div>
 
-  <div class="results" ng-show="html">
+  <div class="results" ng-show="result.html">
     <h2>Structured data</h2>
     <p>The data did not match any templates on file. Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a> to request support for additional templates.</p>
-    <div ng-bind-html="html"></div>
+    <div ng-bind-html="result.html"></div>
   </div>
 
-  <div ng-show="statistics">
+  <div ng-show="result.statistics">
     <table class="stats">
       <tbody>
-        <tr><td>Statements:</td><td>{{statistics.count}}</td></tr>
-        <tr ng-repeat="template in statistics.templates">
+        <tr><td>Statements:</td><td>{{result.statistics.count}}</td></tr>
+        <tr ng-repeat="template in result.statistics.templates">
           <td>Template:</td><td>{{template}}</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <div ng-show="messages">
+  <div ng-show="result.messages">
     <h2>Linter Messages</h2>
     <p ng-repeat="message in messages">
-      {{message}}
+      {{result.message}}
     </p>
   </div>
 
-  <div ng-show="debug">
+  <div ng-show="result.debug">
     <h2>Debug Information</h2>
   <textarea rows="20" cols="120">
-    {{debug}}
+    {{result.debug}}
   </textarea>
   </div>
 </div>

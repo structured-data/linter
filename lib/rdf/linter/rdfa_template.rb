@@ -10,15 +10,6 @@ module RDF::Linter
       %div{:id => "results-content", :about => base, :prefix => prefix}
         - subjects.each do |subject|
           != yield(subject)
-      %h2
-        Raw structured data extracted from the page:
-      - if subjects.empty?
-        %p
-          No structured data detected.
-      - else
-        %div{:id => "raw-results"}
-          %div{:id => "extracted-results"}
-            != extracted
     ),
 
     # Output for top-level non-leaf resources

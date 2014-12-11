@@ -16,7 +16,7 @@ module RDF::Linter
     # @option options [RDF::URI] :base_uri location of file, or where to treat content as having been located.
     # @option options [Boolean] :output_format (:linter)
     #   Output format of graph, defaults to linter-based RDFa.
-    # @return [Array(String, String, String)] Snippet, Schematic, Lint Messages
+    # @return [Array(RDF::Graph, String, RDF::URI)] graph, messages, base_uri
     def parse(reader_opts)
       logger = reader_opts[:logger] ||= begin
         l = Logger.new(STDOUT)  # In case we're not invoked from rack
@@ -48,7 +48,8 @@ module RDF::Linter
 
       # Perform some actual linting on the graph
       lint_messages = lint(graph)
-   end
+      [graph, lint_messages, reader.base_uri]
+    end
     module_function :parse
 
     ##
