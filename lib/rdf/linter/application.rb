@@ -87,7 +87,7 @@ module RDF::Linter
     # @see {#linter}
     get '/' do
       respond_to do |wants|
-        wants.html { erb :linter, locals: {head: :linter, root: url("/")} }
+        wants.other { erb :linter, locals: {head: :linter, root: url("/")} }
         wants.json { linter params }
       end
     end

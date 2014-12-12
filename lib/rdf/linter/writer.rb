@@ -12,6 +12,7 @@ module RDF::Linter
         standard_prefixes: true,
         haml: LINTER_HAML,
         matched_templates: [],
+        prefixes: {},
       }.merge(options)
       options[:prefixes].delete(:dcterms) if options[:prefixes].has_key?(:dc)
       super do

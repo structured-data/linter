@@ -9,28 +9,12 @@ describe RDF::Linter::Writer do
   describe "#rating_helper" do
     {
       %q(@prefix v: <http://rdf.data-vocabulary.org/#> . [ a v:Review-aggregate; v:rating "4"] .) => {
-        %(//span[@class='rating-stars']) => true,
-        %(//span[@property='v:rating']/@content) => "4.0",
-      },
-      %q(@prefix v: <http://rdf.data-vocabulary.org/#> .
-        [ a v:Review-aggregate;
-          v:itemreviewed "Blast 'Em Up";
-          v:rating [a v:Rating; v:value "7"; v:best "10"]] .
-      ) => {
-        %(//span[@class='rating-stars']) => true,
-        %(//*[@property='v:value']/@content) => "7",
-        %(//*[@property='v:best']/@content) => "10",
-      },
-      %q(@prefix v: <http://rdf.data-vocabulary.org/#> .
-        [ a v:Review-aggregate;
-          v:itemreviewed "Blast 'Em Up";
-          v:rating [a v:Rating; v:average "88"; v:best "100"];
-          v:count "35"] .
-      ) => {
-        %(//span[@class='rating-stars']) => true,
-        %(//*[@property='v:average']/@content) => "88",
-        %(//*[@property='v:best']/@content) => "100",
-        %(//span[@property='v:count']/text()) => "35",
+        %(//span[@class='star-rating']) => true,
+        %(//span[@class='star-rating']/i[1]/@class) => "star",
+        %(//span[@class='star-rating']/i[2]/@class) => "star",
+        %(//span[@class='star-rating']/i[3]/@class) => "star",
+        %(//span[@class='star-rating']/i[4]/@class) => "star",
+        %(//span[@class='star-rating']/i[5]/@class) => false,
       },
     }.each do |input, tests|
       context input do
@@ -38,7 +22,8 @@ describe RDF::Linter::Writer do
           @debug_out = StringIO.new
           logger = Logger.new(@debug_out)
           logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
-          parse(:content => input, :format => :ttl, logger: logger).last
+          graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
+          RDF::Linter::Writer.buffer {|w| w << graph}
         }
         
         tests.each do |xpath, result|
@@ -53,36 +38,36 @@ describe RDF::Linter::Writer do
   context "dates and times" do
     {
       # Date
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "2014-09-01"^^<http://www.w3.org/2001/XMLSchema#date>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "Monday, 01 September 2014",
+      %q([ a schema:Person; schema:birthDate "2014-09-01"^^<http://www.w3.org/2001/XMLSchema#date>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => "Monday, 01 September 2014",
       },
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "2014-09-02Z"^^<http://www.w3.org/2001/XMLSchema#date>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "Tuesday, 02 September 2014 UTC",
+      %q([ a schema:Person; schema:birthDate "2014-09-02Z"^^<http://www.w3.org/2001/XMLSchema#date>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => "Tuesday, 02 September 2014 UTC",
       },
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "2014-09-03-08:00"^^<http://www.w3.org/2001/XMLSchema#date>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "Wednesday, 03 September 2014 PDT",
+      %q([ a schema:Person; schema:birthDate "2014-09-03-08:00"^^<http://www.w3.org/2001/XMLSchema#date>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => %r(Wednesday, 03 September 2014 P[SD]T),
       },
 
       # Time
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "12:13:14.567"^^<http://www.w3.org/2001/XMLSchema#time>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "12:13:14 PM",
+      %q([ a schema:Person; schema:birthDate "12:13:14.567"^^<http://www.w3.org/2001/XMLSchema#time>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => "12:13:14 PM",
       },
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "12:13:14Z"^^<http://www.w3.org/2001/XMLSchema#time>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "12:13:14 PM UTC",
+      %q([ a schema:Person; schema:birthDate "12:13:14Z"^^<http://www.w3.org/2001/XMLSchema#time>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => "12:13:14 PM UTC",
       },
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "12:13:14-08:00"^^<http://www.w3.org/2001/XMLSchema#time>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "12:13:14 PM PDT",
+      %q([ a schema:Person; schema:birthDate "12:13:14-08:00"^^<http://www.w3.org/2001/XMLSchema#time>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => %r(12:13:14 PM P[SD]T),
       },
 
       # DateTime
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "2014-09-01T12:13:14.567"^^<http://www.w3.org/2001/XMLSchema#dateTime>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "12:13:14 PM on Monday, 01 September 2014",
+      %q([ a schema:Person; schema:birthDate "2014-09-01T12:13:14.567"^^<http://www.w3.org/2001/XMLSchema#dateTime>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => "12:13:14 PM on Monday, 01 September 2014",
       },
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "2014-09-01T12:13:14.567Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "12:13:14 PM UTC on Monday, 01 September 2014",
+      %q([ a schema:Person; schema:birthDate "2014-09-01T12:13:14.567Z"^^<http://www.w3.org/2001/XMLSchema#dateTime>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => "12:13:14 PM UTC on Monday, 01 September 2014",
       },
-      %q(@prefix s: <http://schema.org/> . [ a s:Person; s:birthDate "2014-09-01T12:13:14.567-08:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>] .) => {
-        %(//span[@property='s:birthDate']/text()) => "12:13:14 PM PDT on Monday, 01 September 2014",
+      %q([ a schema:Person; schema:birthDate "2014-09-01T12:13:14.567-08:00"^^<http://www.w3.org/2001/XMLSchema#dateTime>] .) => {
+        %(//span[@property='schema:birthDate']/text()) => %r(12:13:14 PM P[SD]T on Monday, 01 September 2014),
       },
     }.each do |input, tests|
       context input do
@@ -90,7 +75,8 @@ describe RDF::Linter::Writer do
           @debug_out = StringIO.new
           logger = Logger.new(@debug_out)
           logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
-          parse(:content => input, :format => :ttl, logger: logger).last
+          graph = RDF::Graph.new << RDF::Turtle::Reader.new("@prefix schema: <http://schema.org/> . #{input}")
+          RDF::Linter::Writer.buffer {|w| w << graph}
         }
         
         tests.each do |xpath, result|

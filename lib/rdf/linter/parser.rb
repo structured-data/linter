@@ -30,13 +30,13 @@ module RDF::Linter
 
       reader = case
       when reader_opts[:tempfile]
-        request.logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
+        logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
         RDF::All::Reader.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
       when reader_opts[:content]
-        request.logger.info "Parse form data with format #{reader_opts[:format]}"
+        logger.info "Parse form data with format #{reader_opts[:format]}"
         RDF::All::Reader.new(reader_opts[:content], reader_opts) {|r| graph << r}
       when reader_opts[:base_uri]
-        request.logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
+        logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
         RDF::All::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
       else
         raise RDF::ReaderError, "Expected one of tempfile, content or base_uri"
