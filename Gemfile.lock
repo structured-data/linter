@@ -22,10 +22,10 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: 89d1b7bac84f601c40bc5bae94f863528e753e48
+  revision: 0abc857e274ab2a608f4951025ddfcd72989a943
   branch: develop
   specs:
-    rdf (1.1.6)
+    rdf (1.1.7)
       link_header (~> 0.0, >= 0.0.8)
 
 PATH

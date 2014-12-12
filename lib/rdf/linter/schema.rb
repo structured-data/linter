@@ -102,8 +102,14 @@ module RDF::Linter
     def add_example(types, example, ex_num, format)
       # Skip example if it is JSON only
       return if example =~ /This example is JSON only/m
+      name = nil
+      if types.start_with?('#')
+        # In some cases, a more specific name is used.
+        name, types = types.split(/\s+/, 2)
+        name = name[1..-1]  # Remove initial '#'
+      end
       types = types.split(/,\s*/)
-      name = "#{types.join('-')}-#{ex_num}"
+      name ||= "#{types.join('-')}-#{ex_num}"
 
       # Write example out for reading later
       path = "schema.org/#{name}-#{format}.html"
