@@ -9,6 +9,8 @@ require 'rspec'
 require 'rspec/its'
 require 'rdf/isomorphic'
 require 'rdf/linter'
+require 'restclient/components'
+require 'rack/cache'
 require 'sinatra'
 require 'matchers'
 

@@ -19,7 +19,7 @@ describe RDF::Linter::Application do
   end
 
   describe "get /" do
-    context "with no parameters" do
+    context "HTML" do
       subject {
         get "/"
         last_response
@@ -38,22 +38,24 @@ describe RDF::Linter::Application do
       end
     end
 
-    {
-      "url" => {"url" => "http://example/"},
-      "url and base_uri" => {"url" => "http://example/", "base_uri" => "http://foo/"},
-      "format" => {"format" => "all"},
-      "content" => {"content" => "foo"},
-    }.each do |param, opts|
-      context "with #{param}" do
-        subject {
-          expect_any_instance_of(RDF::Linter::Application).to receive(:linter).
-            with(opts).
-            and_return("<div/>")
-          get "/", opts
-          last_response
-        }
-        it {should be_ok}
-        its(:content_type) {should include("text/html")}
+    context "JSON" do
+      {
+        "url" => {"url" => "http://example/"},
+        "url and base_uri" => {"url" => "http://example/", "base_uri" => "http://foo/"},
+        "format" => {"format" => "all"},
+        "content" => {"content" => "foo"},
+      }.each do |param, opts|
+        context "with #{param}" do
+          subject {
+            expect_any_instance_of(RDF::Linter::Application).to receive(:linter).
+              with(opts).
+              and_return("<div/>")
+            get "/", opts, "HTTP_ACCEPT" => "application/json"
+            last_response
+          }
+          it {should be_ok}
+          its(:content_type) {should include("text/html")}
+        end
       end
     end
   end

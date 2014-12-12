@@ -1,106 +1,136 @@
-<%
-  require 'cgi'
-%>
-<div class="lighter">
-<div class="content">
-<p>
-  Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup. Read more <a href="/about/">about the Structured Data linter</a>.
-</p>
-<nav class="linter">
-  <ul>
-    <li><a class="url" href="#url">Lint by URL</a></li>
-    <li><a class="upload" href="#upload">Lint by File Upload</a></li>
-    <li><a class="input" href="#input">Lint by Direct Input</a></li>
-  </ul>
-</nav>
-<form id="linter_input" action="/" method="post">
-  <fieldset class="url">
-    <legend>Page URL</legend>
-    <input id="url" name="url" size="80" type="text" value="<%= params['url'] %>"/>
-    <input name="commit" type="submit" value="Submit" />
-    <br/>
-    <span class="form-examples">Examples:
-    <% %w(Review People Event Recipe Product).each do |name| -%>
-      <%= name %> (
-      <% %w(RDFa MD).each do |fmt|
-        file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
-        next unless File.file?(file)
-        path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
-      -%>
-        <a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
-      <% end -%>)
-    <% end -%>
-    </span>
-  </fieldset>
-  <fieldset class="upload">
-    <legend>File Upload</legend>
-    <input type="file" name="datafile"/>
-    <input name="commit" type="submit" value="Submit" />
-  </fieldset>
-  <fieldset class="input">
-    <legend>Markup</legend>
-    <textarea class="input" cols="120" id="content" name="content" rows="15"><%= CGI.escapeHTML(@content.to_s) %></textarea>
-    <input name="commit" type="submit" value="Submit" />
-  </fieldset>
-</form>
-</div>
-</div>
+<div ng-controller="LinterController">
+  <div class="lighter">
+    <p>
+      Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup. Read more <a href="/about/">about the Structured Data linter</a>.
+    </p>
+    <ul class="nav nav-tabs linter">
+      <li><a href="" class="url" ng-class="getClass('url')" ng-click="fieldset = 'url'">Lint by URL</a></li>
+      <li><a href="" class="upload" ng-class="getClass('upload')" ng-click="fieldset = 'upload'">Lint by File Upload</a></li>
+      <li><a href="" class="input" ng-class="getClass('input')" ng-click="fieldset = 'input'">Lint by Direct Input</a></li>
+    </ul>
+    <form id="linter_input">
+      <fieldset class="input-group" ng-show="fieldset === 'url'">
+        <legend>Page URL</legend>
+        <input class="form-control" size="80" type="text" size="80" ng-model="url"/>
+        <input type="submit" ng-click="lintUrl(url)" value="Submit" ng-disabled="fieldset !== 'url'"/>
+        <fieldset>
+          <legend>Options</legend>
+          <label for="verify-ssl">Verify SSL</label>
+          <input name="verify-ssl" type="checkbox"  ng-model="verifySSL" />
+        </fieldset>
+        <br/>
+        <span class="form-examples">Examples:
+        <% %w(Review People Event Recipe Product).each do |name| -%>
+          <%= name %> (
+          <% %w(RDFa MD).each do |fmt|
+            file = File.join(settings.root, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
+            next unless File.file?(file)
+            path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
+          -%>
+            <a href="" ng-click="lintUrl('<%= path %>')" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
+          <% end -%>)
+        <% end -%>
+        </span>
+      </fieldset>
 
-<div class="content">
-<% if @error -%>
-<div class="errors">
-  <h2>Errors</h2>
-  <pre><%= CGI.escapeHTML(@error) %></pre>
-</div>
-<% end -%>
+      <fieldset class="input-group" ng-show="fieldset === 'upload'">
+        <legend>File Upload</legend>
+        <!--div class="well my-drop-zone" uploader="uploader">
+          Drag-drop file to upload
+        </div -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="50%">Name</th>
+              <th>Size</th>
+              <th>Progress</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+           <tr ng-repeat="item in uploader.queue">
+              <td><strong>{{ item.file.name }}</strong></td>
+              <td nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+              <td>
+                <div class="progress" style="margin-bottom: 0;">
+                  <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+                </div>
+              </td>
+              <td class="text-center">
+                <span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
+                <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
+              </td>
+              <td nowrap>
+                <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                  <span class="glyphicon glyphicon-upload"></span> Upload
+                </button>
+                <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                  <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                  <span class="glyphicon glyphicon-trash"></span> Remove
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="file" nv-file-select="" uploader="uploader" />
+      </fieldset>
 
-<% if !matched_templates.empty? -%>
-<div class="snippet">
-  <h2>Enhanced search result preview</h2>
-  <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
-  <%= @output %>
-</div>
-<% elsif !@output.empty?  -%>
-<div class="results">
-  <h2>Structured data</h2>
-  <p>The data did not match any templates on file. Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a> to request support for additional templates.</p>
-  <%= @output %>
-</div>
-<% end -%>
+      <fieldset class="input-group" ng-show="fieldset === 'input'">
+        <legend>Markup</legend>
+        <textarea class="input form-control" cols="120" rows="15" ng-model="input"></textarea>
+        <input type="submit" ng-click="lintInput(input)" value="Submit" ng-disabled="fieldset !== 'input'" />
+      </fieldset class="input-group">
+    </form>
+  </div>
 
-<% if @parsed_statements -%>
-<div>
-  <h2>Parser statistics</h2>
-  <table class="stats">
-  <tbody>
-  <% @parsed_statements.each do |reader, count| -%>
-    <tr><td><%= reader.to_s %>:</td><td><%= count.to_s %> statements</td></tr>
-  <% end -%>
-  <tr><td>Matched Templates:</td><td><%= (matched_templates.shift || 'none').to_s %></td></tr>
-  <% matched_templates.each do |key| %>
-    <tr><td></td><td><%= key.to_s %></td></tr>
-  <% end -%>
-  </tbody>
-  </table>
-</div>
-<% end -%>
+  <div ng-show="loading">
+    Loading results...
+  </div>
 
-<% if @lint_messages && !@lint_messages.empty? -%>
-<div>
-  <h2>Linter Messages</h2>
-  <% @lint_messages.each do |k, v| -%>
-    <% @lint_messages[k].each do |o, mm| -%>
-      <% Array(mm).each do |m| -%>
-        <p><%= k %> <%= o %>: <%= m %></p>
-      <% end -%>
-    <% end -%>
-  <% end -%>
-<% end -%>
+  <div class="snippet" ng-show="result">
+    <h2>Enhanced search result preview</h2>
+    <p><em><small>Disclaimer: this preview is only shown as a example of what a search engine <strong>might</strong> display. It is to the discretion of each search engine provider to decide whether your page will be displayed as an enhanced search result or not in their search results pages.</small></em></p>
+    <p ng-show="!result.snippet">The data did not match any templates on file.
+      Submit a request to the <a href="http://groups.google.com/group/structured-data-dev">mailing list</a>
+      to request support for additional templates.</p>
+    <div ng-bind-html="result.snippet">
+    </div>
+  </div>
 
-<% if @debug -%>
-<div class="debug">
-  <h2>Debug Information</h2>
-  <textarea rows="20" cols="120"><%= CGI.escapeHTML(@debug.join("\n")) %></textarea>
-</div>
-<% end -%>
+  <div class="results" ng-show="result">
+    <h2>Raw structured data extracted from the page:</h2>
+    <p ng-show="!result.html">No structured data detected.</p>
+    <div ng-bind-html="result.html"></div>
+  </div>
+
+  <div ng-show="result.statistics">
+    <h2>Parser statistics</h2>
+    <table class="stats table table-condensed">
+      <tbody>
+        <tr><td>Statements</td><td>{{result.statistics.count}}</td></tr>
+          <td>Templates</td><td>
+            <div ng-repeat="template in result.statistics.templates">{{template}}</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div ng-show="result.messages">
+    <h2>Linter Messages</h2>
+    <p ng-repeat="message in result.messages">
+      {{message}}
+    </p>
+  </div>
+
+  <div ng-show="result.debug">
+    <h2>Debug Information</h2>
+  <textarea rows="20" cols="120">
+    {{result.debug}}
+  </textarea>
+  </div>
 </div>

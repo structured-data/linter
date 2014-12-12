@@ -22,10 +22,10 @@
   <section class="content">
     <h2><%= name %> Snippet Definitions</h2>
     <ul>
-    <% STDERR.puts "glob #{File.expand_path(File.dirname(__FILE__)) + "/../snippets/#{pfx}_*.rb"}"%>
-    <% Dir.glob(File.join(SNIPPET_DIR, "#{pfx}_*.rb")).each do |f|
+    <% STDERR.puts "glob #{File.join(settings.snippets, "#{pfx}_*.rb")}"%>
+    <% Dir.glob(File.join(settings.snippets, "#{pfx}_*.rb")).each do |f|
       name = File.basename(f)
-      path = "#{root}snippets/#{name}"
+      path = "#{settings.snippets}/#{name}"
     -%>
       <li><a href="<%= name %>"><%= name %></a></li>
     <% end -%>

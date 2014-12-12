@@ -13,7 +13,16 @@ namespace :schema do
   desc "Create schema example index"
   task :examples do
     %x{rm -rf ./schema.org && mkdir ./schema.org}
-    %w(examples sdo-itemlist-examples sdo-map-examples sdo-periodical-examples sdo-website-examples).each do |e|
+    %w(
+      examples
+      sdo-itemlist-examples
+      sdo-map-examples
+      sdo-music-examples
+      sdo-periodical-examples
+      sdo-sports-examples
+      sdo-videogame-examples
+      sdo-website-examples
+    ).each do |e|
       %x{curl https://raw.githubusercontent.com/rvguha/schemaorg/master/data/#{e}.txt -o ./schema.org/#{e}.txt}
     end
     $:.unshift(File.expand_path("../lib", __FILE__))

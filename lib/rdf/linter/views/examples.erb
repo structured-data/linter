@@ -19,7 +19,7 @@
     <div class="example d1">
       <a href="/examples/google-rs/<%=name%>/" title="Show <%=name%> markup example"><%= name %></a>
       (<% %w(RDFa MD).each do |fmt|
-        file = File.join(APP_DIR, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
+        file = File.join(settings.root, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
         next unless File.file?(file)
         path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
       -%>
@@ -40,8 +40,8 @@
     <%
       require 'find'
       schema = {}
-      Dir.entries(File.join(APP_DIR, "good-relations")).each do |name|
-        file = File.join(APP_DIR, "good-relations", "#{name}")
+      Dir.entries(File.join(settings.root, "good-relations")).each do |name|
+        file = File.join(settings.root, "good-relations", "#{name}")
         next unless File.file?(file)
         path = "#{root}examples/good-relations/#{name}"
         fmt = name =~ /rdfa/ ? "RDFa" : "TTL"
@@ -60,7 +60,7 @@
       The following examples are taken from Schema.org
       <a target="_blank" href="http://www.schema.org/docs/full.html">documentation examples</a>.
     </p>
-    <%= partial "schema_examples", :locals => {:root => root} %>
+    <%= erb :schema_examples, locals: {root: root}, layout: false %>
     <div><a id='no_snip'>*</a>Indicates snippets not optimized for this type</a></div>
   </section>
 

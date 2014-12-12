@@ -1,5 +1,6 @@
 <div class="lighter">
 <section class="content">
+  <h1>About the Structured Data Linter</h1>
   <p>
     The Structured Data Linter is a tool aiding webmasters and web developers
     to verify the structured data present in their HTML pages. Search engines
@@ -49,5 +50,43 @@
     and runs curtosey of <a href="https://heroku.com">Heroku</a>. The linter
     and many of the gems used to implement it are open-source and public domain.
   </p>
+  <section>
+    <h2>Programatic Access to the Linter</h2>
+    <p>The Linter is implemented as an HTML Web Application, with most of the work
+      performed via Ajax requests using a JSON content type. This allows applications
+      to interact with the Linter directly through using JSON requests.
+      To do this, construct an HTTP GET request using the <code>Accept: application/json</code>
+      HTTP header with a <code>url</code> query parameter referencing the page to be processed.
+      For example:
+    </p>
+    <pre>curl -H 'Accept: application/json' <%= url('/') %>?url=<%= url('/') %></pre>
+    <p>This will return a JSON object containing the following keys:</p>
+    <dl class="dl-horizontal">
+      <dt>snippet</dt><dd>Generated Snippets in HTML</dd>
+      <dt>html</dt><dd>Generated Tabular structured representation in HTML.</dd>
+      <dt>messages</dt><dd>Linter warnings; ideally, this should be empty.</dd>
+      <dt>statistics</dt><dd>Statistics about parsed triples and snippet templates used.</dd>
+      <dt>debug</dt><dd>Extensive debugging output, if the <code>debug</code> query parameter is passed.</dd>
+    </dl>
+    <p>Looking something like the following:</p>
+    <pre>{
+  "snippet": "...",
+  "html": "...",
+  "messages": [],
+  "statistics": {"count": 9, "templates": []}
+}</pre>
+  </section>
+  <section>
+    <h2>Contributions</h2>
+    <p>The Structured Data Linter is a free service, with limited hosting resources. To help
+      offset costs in hosting, maintaining and enhancing this service, consider contributing any amount.
+    </p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="KKUPSDNKDBDCG">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </section>
 </section>
 </div>

@@ -23,6 +23,7 @@ Output is expressed as HTML+RDFa in a _Snippet_ format.
 ### Code layout
 This application is represented as a [Sinatra][] application implemented in [Ruby][].
 
+    assets                -- Assets for web application
     config.ru             -- [Rack][] configuration file, to start application
     lib
       rdf
@@ -33,7 +34,6 @@ This application is represented as a [Sinatra][] application implemented in [Rub
           views             -- Templates for view generation in [Erubis][]
           writer.rb         -- Sub-class of [RDFa][] writer for generating snippet output.
         linter.rb         -- Controller defining HTTP endpoints
-    public
     spec                  -- Tests
       test_data           -- Test Data
 

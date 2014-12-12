@@ -1,0 +1,65 @@
+.snippet-content {
+    background-color: white;
+    font-family: arial,sans-serif;
+    margin: 10px;
+    padding: 10px;
+    width: 600px;
+}
+.snippet-content h3 {
+    color: #2200C2;
+    text-decoration: underline;
+    margin: 0;
+    font-size: 16px;
+}
+.snippet-content a {
+    color: #2200C1;
+    text-decoration: underline;
+    font-weight: normal;
+}
+.snippet-content .s {
+    font-size: small;
+}
+.snippet-content .f {
+    color: #9C9C9D;
+    font-size: small;
+}
+.snippet-content cite {
+    color: #0E774B;
+    font-style: normal;
+}
+
+.left-image img {
+    align:middle;
+    border:1px;
+    height:60px;
+    width:80px;
+}
+
+table.ts td {
+    font-size: small;
+    vertical-align: top;
+}
+
+ol.tracks { margin-left: 2em;}
+
+.results-content .other { display:none ;}
+.results-content .notype { display:none ;}
+.results-content [typeof~='v:Rating'] { display:none ;}
+.results-content [typeof~='vmd:Rating'] { display:none ;}
+
+/* Only display the first result for a title */
+.results-content h3 span {display:none;}
+.results-content h3 span:first-child {display:inline;}
+
+.star-rating {
+  background-size: contain;
+}
+.star-rating>i {
+  background-size: contain;
+  color: lightgray;
+}
+.star-rating>i.star {
+  background-size: contain;
+  color: orange;
+}
+

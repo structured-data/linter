@@ -1,29 +1,71 @@
-<%
-  hash = File.open(File.join(PUB_DIR, "css", "site.css")).hash
-  css_path = "/css/site.css?#{hash}"
--%>
-<html>
+<html lang="en" ng-app="linterApp">
   <head>
+    <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title><%= @title %></title>
-    <link rel="stylesheet" href="<%=css_path%>" type="text/css" media="screen, projection" />
-    <script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Structured Data Linter</title>
+    <%= css :app %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <%= erb "#{head}_head".to_sym, layout: false if locals[:head] %>
 
     <script type="text/javascript">
       // Navigation
       $(function () {
         // Select appropriate nav tab
         var href = window.location.pathname;
-        $('nav.main a').removeClass('selected');
-        $('nav.main a[href="' + href + '"]').addClass('selected');
+        $('nav ul.nav ul.dropdown-menu a').removeClass('active');
+        $('nav ul.nav ul.dropdown-menu a[href="' + href + '"]').addClass('active');
       });
     </script>
-
-    <%= partial "#{head}_head".to_sym rescue nil %>
   </head>
-  <body class="container">
-    <%= partial :header %>
-    <%= yield %>
-    <%= partial :footer %>
+  <body class="linter" role="document">
+    <nav class="navbar" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href= <%= url("/") %>><%= settings.app_name %></a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/examples/" target="_self">Examples</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="/snippets/" target="_self">Snippet Definitions</a></li>
+              <li><a href="/about/" target="_self">About</a></li>
+            </ul>
+          </li>
+          <li><span class="vers"><%= RDF::Linter::VERSION.to_s %></span></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid" role="main">
+      <%= yield %>
+    </div>
+    <footer id="footer">
+      <p class="content">
+       Website content released under a <a rel="cc:license license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+       Creative Commons Attribution Share-Alike license</a> except where an
+       alternate is specified.
+       </p>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-57473808-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </body>
 </html>

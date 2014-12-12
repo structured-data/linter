@@ -7,18 +7,9 @@ module RDF::Linter
     # Locals: language, title, prefix, base, subjects, extracted
     # Yield: subjects.each
     :doc => %q(
-      %div{:id => "results-content", :about => base, :prefix => prefix}
+      %div.results-content{:about => base, :prefix => prefix}
         - subjects.each do |subject|
           != yield(subject)
-      %h2
-        Raw structured data extracted from the page:
-      - if subjects.empty?
-        %p
-          No structured data detected.
-      - else
-        %div{:id => "raw-results"}
-          %div{:id => "extracted-results"}
-            != extracted
     ),
 
     # Output for top-level non-leaf resources
@@ -114,7 +105,7 @@ module RDF::Linter
     # Locals: language, title, prefix, base, subjects, extracted
     # Yield: subjects.each
     :doc => %q(
-      %div{:id => "extracted-content"}
+      %div.extracted-content
         - subjects.each do |subject|
           != yield(subject)
     ),

@@ -16,6 +16,12 @@ module RDF
     autoload :Vocab,        'rdf/linter/vocab'
     autoload :Schema,       'rdf/linter/schema'
 
+    APP_DIR = File.expand_path("../../..", __FILE__)
+    CACHE_DIR = File.join(APP_DIR, 'cache')
+    PUB_DIR = File.join(APP_DIR, 'public')
+    LINTER_DIR = File.join(APP_DIR, 'lib/rdf/linter')
+    SNIPPET_DIR = File.join(LINTER_DIR, 'snippets')
+
     def self.debug?; @debug; end
     def self.debug=(value); @debug = value; end
   end
