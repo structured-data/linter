@@ -38,11 +38,10 @@ module RDF::Linter
         )
         js :app, %w(
           /js/application.js
+          /js/angular-file-upload.js
           /js/chili/jquery.chili-2.2.js
           /js/chili/recipes.js
         )
-        # /js/chili/html.js
-        # /js/chili/js.js
 
         js_compression  :jsmin
         css_compression :simple
@@ -270,10 +269,10 @@ module RDF::Linter
         verify_none: params["verify_ssl"] == "false",
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]
-      reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :development
-      reader_opts[:tempfile] = params["datafile"] unless params["datafile"].to_s.empty?
+      reader_opts[:tempfile] = params["file"][:tempfile] if params["file"]
       reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
+      reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :development
       reader_opts[:matched_templates] = []
       reader_opts[:logger] = request.logger
 
@@ -303,7 +302,7 @@ module RDF::Linter
           RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
         rescue
           request.logger.error "Snippet Writer returned error: #{$!.inspect}"
-          raise $!.message
+          raise
         end
 
         snippet.gsub!(/--root--/, root)

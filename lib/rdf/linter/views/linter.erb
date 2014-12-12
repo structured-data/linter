@@ -4,15 +4,20 @@
       Enter a URL below to see what structured data your page contains. You can alternatively upload a local file or paste some markup. Read more <a href="/about/">about the Structured Data linter</a>.
     </p>
     <ul class="nav nav-tabs linter">
-      <li><a class="url" ng-class="getClass('url')" ng-click="fieldset = 'url'">Lint by URL</a></li>
-      <li><a class="upload" ng-class="getClass('upload')" ng-click="fieldset = 'upload'">Lint by File Upload</a></li>
-      <li><a class="input" ng-class="getClass('input')" ng-click="fieldset = 'input'">Lint by Direct Input</a></li>
+      <li><a href="" class="url" ng-class="getClass('url')" ng-click="fieldset = 'url'">Lint by URL</a></li>
+      <li><a href="" class="upload" ng-class="getClass('upload')" ng-click="fieldset = 'upload'">Lint by File Upload</a></li>
+      <li><a href="" class="input" ng-class="getClass('input')" ng-click="fieldset = 'input'">Lint by Direct Input</a></li>
     </ul>
     <form id="linter_input">
       <fieldset class="input-group" ng-show="fieldset === 'url'">
         <legend>Page URL</legend>
         <input class="form-control" size="80" type="text" size="80" ng-model="url"/>
         <input type="submit" ng-click="lintUrl(url)" value="Submit" ng-disabled="fieldset !== 'url'"/>
+        <fieldset>
+          <legend>Options</legend>
+          <label for="verify-ssl">Verify SSL</label>
+          <input name="verify-ssl" type="checkbox"  ng-model="verifySSL" />
+        </fieldset>
         <br/>
         <span class="form-examples">Examples:
         <% %w(Review People Event Recipe Product).each do |name| -%>
@@ -30,8 +35,48 @@
 
       <fieldset class="input-group" ng-show="fieldset === 'upload'">
         <legend>File Upload</legend>
-        <input type="file" name="datafile"/>
-        <input name="commit" type="submit" value="Submit" ng-disabled="fieldset !== 'upload'" />
+        <!--div class="well my-drop-zone" uploader="uploader">
+          Drag-drop file to upload
+        </div -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="50%">Name</th>
+              <th>Size</th>
+              <th>Progress</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+           <tr ng-repeat="item in uploader.queue">
+              <td><strong>{{ item.file.name }}</strong></td>
+              <td nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+              <td>
+                <div class="progress" style="margin-bottom: 0;">
+                  <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+                </div>
+              </td>
+              <td class="text-center">
+                <span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
+                <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+                <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
+              </td>
+              <td nowrap>
+                <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                  <span class="glyphicon glyphicon-upload"></span> Upload
+                </button>
+                <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                  <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                </button>
+                <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                  <span class="glyphicon glyphicon-trash"></span> Remove
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <input type="file" nv-file-select="" uploader="uploader" />
       </fieldset>
 
       <fieldset class="input-group" ng-show="fieldset === 'input'">
@@ -39,12 +84,6 @@
         <textarea class="input form-control" cols="120" rows="15" ng-model="input"></textarea>
         <input type="submit" ng-click="lintInput(input)" value="Submit" ng-disabled="fieldset !== 'input'" />
       </fieldset class="input-group">
-
-      <fieldset>
-        <legend>Options</legend>
-        <label for="verify-ssl">Verify SSL</label>
-        <input name="verify-ssl" type="checkbox"  ng-model="verifySSL" />
-      </fieldset>
     </form>
   </div>
 

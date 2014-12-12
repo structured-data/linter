@@ -1,6 +1,6 @@
 /*global $, _, angular*/
 
-var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
+var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize', 'angularFileUpload'])
   .config(['$routeProvider', '$locationProvider', '$logProvider',
     function($routeProvider, $locationProvider, $logProvider) {
 
@@ -19,12 +19,13 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
         });
     }
   ])
-  .controller('LinterController', ['$scope', '$http', '$location',
-    function ($scope, $http, $location) {
+  .controller('LinterController', ['$scope', '$http', '$location', 'FileUploader',
+    function ($scope, $http, $location, FileUploader) {
+      var uploader = $scope.uploader = new FileUploader({url: "/"});
       $scope.url = null;          // URL parameter
       $scope.upload = null;       // upload parameter FIXME
       $scope.input = null;        // input parameter
-      $scope.verifySSL = true;  // verifySSL parameter
+      $scope.verifySSL = true;    // verifySSL parameter
       $scope.loading = null;      // show page loading symbol
       $scope.fieldset = 'url';    // Which fieldset to display
 
@@ -66,6 +67,20 @@ var testApp = angular.module('LinterApp', ['ngRoute', 'ngSanitize'])
             $scope.result = {messages: [data]};
             $scope.loading = false;
           });
+      };
+
+      uploader.onAfterAddingFile = function() {
+        $scope.result = null;
+        $location.url($location.path()); // Clear parameters
+      };
+      uploader.onBeforeUploadItem = function() {
+        $scope.loading = true;
+        $scope.result = null;
+        $location.url($location.path()); // Clear parameters
+      };
+      uploader.onCompleteItem = function(fileItem, data) {
+        $scope.result = data;
+        $scope.loading = false;
       };
 
       // If there are routeParams, use them to initialize the controller

@@ -213,7 +213,7 @@ module RDF::Linter
     def rating_helper(property, object)
       worst = 0
       best = 5
-      rating = nil
+      rating = 0.0
       html = %(<span class='rating-stars'>)
       postscript = ""
 
@@ -231,7 +231,7 @@ module RDF::Linter
           when /worst(?:Rating)/
             worst = st.object.value.to_i
           when /(ratingValue|value|average)/
-            rating = st.object.value.to_i
+            rating = st.object.value.to_f
           when /reviewCount/
             postscript = "#{st.object.value.to_i} reviews"
           end
