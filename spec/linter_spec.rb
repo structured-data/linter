@@ -113,15 +113,6 @@ describe RDF::Linter, "#lint" do
           property: {"schema:name" => [/Object .* not compatible with rangeIncludes \(schema:Text\)/]},
         }
       ],
-      "schema:URL with language-tagged literal" => [
-        %(
-          @prefix schema: <http://schema.org/> .
-          <foo> a schema:Thing; schema:url "http://example/"@en .
-        ),
-        {
-          property: {"schema:url" => [/Object .* not compatible with rangeIncludes \(schema:URL\)/]},
-        }
-      ],
       "schema:URL with non-conforming plain literal" => [
         %(
           @prefix schema: <http://schema.org/> .
@@ -239,6 +230,15 @@ describe RDF::Linter, "#lint" do
         @prefix sioc: <http://rdfs.org/sioc/ns#> .
         <foo> sioc:num_authors "1" .
       ),
+      "schema:URL with language-tagged literal" => [
+        %(
+          @prefix schema: <http://schema.org/> .
+          <foo> a schema:Thing; schema:url "http://example/"@en .
+        ),
+        {
+          property: {"schema:url" => [/Object .* not compatible with rangeIncludes \(schema:URL\)/]},
+        }
+      ],
     }.each do |name, input|
       it name do
         graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
