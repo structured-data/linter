@@ -1,6 +1,17 @@
 GIT
+  remote: git://github.com/ruby-rdf/rdf-microdata.git
+  revision: 44d4b809d8a265d8ab0a9d0e60a11167485aa330
+  branch: develop
+  specs:
+    rdf-microdata (1.1.2)
+      htmlentities (~> 4.3)
+      nokogiri (~> 1.6)
+      rdf (~> 1.1)
+      rdf-xsd (~> 1.1)
+
+GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 4f28508ce0e63cc1657b1e1d98b608f51e7e41df
+  revision: ac1baeea7b7922293f01c70ece6f9b35c6d670ea
   branch: develop
   specs:
     rdf-rdfa (1.1.5)
@@ -12,17 +23,17 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 62550a852896652cdc186e5e929d02490d584860
+  revision: 95e973acc5ef2e8eb06a9834002f96ab68fe7711
   branch: develop
   specs:
-    rdf-reasoner (0.2.0)
+    rdf-reasoner (0.2.1)
       rdf (~> 1.1, >= 1.1.4.2)
       rdf-turtle (~> 1.1)
       rdf-xsd (~> 1.1)
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: 0abc857e274ab2a608f4951025ddfcd72989a943
+  revision: dc6874a9068f144f9e6c756c595f7e7cc1d9447c
   branch: develop
   specs:
     rdf (1.1.7)
@@ -31,7 +42,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.0)
+    linter (2.1)
       activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -41,7 +52,7 @@ PATH
       rack (~> 1.5)
       rack-cache (~> 1.2)
       rack-contrib (~> 1.2)
-      rdf-reasoner (~> 0.1)
+      rdf-reasoner (~> 0.2)
       rest-client
       rest-client-components
       sinatra (~> 1.4)
@@ -111,7 +122,7 @@ GEM
       sparql-client (>= 1.1.1)
     mime-types (2.4.3)
     mini_portile (0.6.1)
-    minitest (5.4.3)
+    minitest (5.5.0)
     multi_json (1.10.1)
     net-http-persistent (2.9.4)
     netrc (0.10.0)
@@ -137,11 +148,6 @@ GEM
       rdf (>= 1.1)
     rdf-json (1.1.0)
       rdf (>= 1.1.0)
-    rdf-microdata (1.1.2)
-      htmlentities (~> 4.3)
-      nokogiri (~> 1.6)
-      rdf (~> 1.1)
-      rdf-xsd (~> 1.1)
     rdf-n3 (1.1.2)
       rdf (~> 1.1, >= 1.1.5)
     rdf-rdfxml (1.1.3)
@@ -237,6 +243,7 @@ DEPENDENCIES
   rack-test (~> 0.6)
   rake
   rdf!
+  rdf-microdata!
   rdf-rdfa!
   rdf-reasoner!
   rspec (~> 3.0)
