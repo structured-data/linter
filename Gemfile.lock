@@ -23,10 +23,10 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 9d0b2a3bf774ce54791599e2a69660b349457599
+  revision: 95e973acc5ef2e8eb06a9834002f96ab68fe7711
   branch: develop
   specs:
-    rdf-reasoner (0.2.0)
+    rdf-reasoner (0.2.1)
       rdf (~> 1.1, >= 1.1.4.2)
       rdf-turtle (~> 1.1)
       rdf-xsd (~> 1.1)
@@ -52,7 +52,7 @@ PATH
       rack (~> 1.5)
       rack-cache (~> 1.2)
       rack-contrib (~> 1.2)
-      rdf-reasoner (~> 0.1)
+      rdf-reasoner (~> 0.2)
       rest-client
       rest-client-components
       sinatra (~> 1.4)
