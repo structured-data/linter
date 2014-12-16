@@ -84,6 +84,10 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize', 'angularFile
       };
 
       // If there are routeParams, use them to initialize the controller
-      if ($location.search().url) {$scope.lintUrl($location.search().url);}
+      if ($location.search().url) {
+        // Set verify_ssl, if it's in the params
+        if ($location.search().verify_ssl === "false") $scope.verifySSL = false;
+        $scope.lintUrl($location.search().url);
+      }
     }
   ]);
