@@ -265,7 +265,10 @@ module RDF::Linter
         base_uri: params["url"],
         validate: params["validate"],
         format:   params["format"].to_sym,
-        headers:  {"User-Agent" => "Structured-Data-Linter/#{RDF::Linter::VERSION}"},
+        headers:  {
+          "User-Agent"    => "Structured-Data-Linter/#{RDF::Linter::VERSION}",
+          "Cache-Control" => "no-cache"
+        },
         verify_none: params["verify_ssl"] == "false",
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]

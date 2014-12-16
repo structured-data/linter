@@ -124,7 +124,7 @@ nav.navbar ul.navbar-nav:last-child {
 }
 
 nav.navbar .dropdown-menu {
-  background-color: transparent;
+  background-color: rgb(85, 132, 44);
 }
 
 nav.navbar .dropdown-menu>li>a {
