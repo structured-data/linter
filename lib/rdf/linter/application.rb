@@ -109,6 +109,9 @@ module RDF::Linter
       set_cache_header
       erb :about
     end
+    get '/about' do
+      redirect '/about/'
+    end
 
     # Return markup examples
     # @method get_examples
@@ -117,6 +120,9 @@ module RDF::Linter
       @title = "Markup Examples"
       set_cache_header
       erb :examples, locals: {root: url("/")}
+    end
+    get '/examples' do
+      redirect '/examples/'
     end
 
     # Return a specific Google Rich Snippet example
@@ -227,6 +233,9 @@ module RDF::Linter
       erb :snippets, locals: {
         root: url("/"),
       }
+    end
+    get '/snippets' do
+      redirect '/snippets/'
     end
 
     get '/snippets/:name' do
