@@ -23,7 +23,7 @@ namespace :schema do
       sdo-videogame-examples
       sdo-website-examples
     ).each do |e|
-      %x{curl https://raw.githubusercontent.com/rvguha/schemaorg/master/data/#{e}.txt -o ./schema.org/#{e}.txt}
+      %x{curl https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/#{e}.txt -o ./schema.org/#{e}.txt}
     end
     $:.unshift(File.expand_path("../lib", __FILE__))
     require 'rdf/linter'

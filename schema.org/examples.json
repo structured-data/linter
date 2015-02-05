@@ -36,10 +36,10 @@
     }
   },
   "AggregateOffer": {
-    "Event-Place-Address-AggregateOffer-8": {
-      "microdata": "schema.org/Event-Place-Address-AggregateOffer-8-microdata.html",
-      "rdfa": "schema.org/Event-Place-Address-AggregateOffer-8-rdfa.html",
-      "jsonld": "schema.org/Event-Place-Address-AggregateOffer-8-jsonld.html"
+    "Event-Place-PostalAddress-AggregateOffer-8": {
+      "microdata": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-microdata.html",
+      "rdfa": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-rdfa.html",
+      "jsonld": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-jsonld.html"
     },
     "Product-AggregateRating-AggregateOffer-Offer-10": {
       "microdata": "schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html",
@@ -484,10 +484,10 @@
     }
   },
   "Event": {
-    "Event-Place-Address-AggregateOffer-8": {
-      "microdata": "schema.org/Event-Place-Address-AggregateOffer-8-microdata.html",
-      "rdfa": "schema.org/Event-Place-Address-AggregateOffer-8-rdfa.html",
-      "jsonld": "schema.org/Event-Place-Address-AggregateOffer-8-jsonld.html"
+    "Event-Place-PostalAddress-AggregateOffer-8": {
+      "microdata": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-microdata.html",
+      "rdfa": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-rdfa.html",
+      "jsonld": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-jsonld.html"
     },
     "VideoObject-MusicGroup-MusicRecording-Event-13": {
       "microdata": "schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html",
@@ -1132,10 +1132,10 @@
     }
   },
   "Organization": {
-    "Organization-Address-6": {
-      "microdata": "schema.org/Organization-Address-6-microdata.html",
-      "rdfa": "schema.org/Organization-Address-6-rdfa.html",
-      "jsonld": "schema.org/Organization-Address-6-jsonld.html"
+    "Organization-PostalAddress-6": {
+      "microdata": "schema.org/Organization-PostalAddress-6-microdata.html",
+      "rdfa": "schema.org/Organization-PostalAddress-6-rdfa.html",
+      "jsonld": "schema.org/Organization-PostalAddress-6-jsonld.html"
     },
     "Organization-ContactPoint-204": {
       "microdata": "schema.org/Organization-ContactPoint-204-microdata.html",
@@ -1294,10 +1294,10 @@
       "rdfa": "schema.org/Place-GeoCoordinates-4-rdfa.html",
       "jsonld": "schema.org/Place-GeoCoordinates-4-jsonld.html"
     },
-    "Event-Place-Address-AggregateOffer-8": {
-      "microdata": "schema.org/Event-Place-Address-AggregateOffer-8-microdata.html",
-      "rdfa": "schema.org/Event-Place-Address-AggregateOffer-8-rdfa.html",
-      "jsonld": "schema.org/Event-Place-Address-AggregateOffer-8-jsonld.html"
+    "Event-Place-PostalAddress-AggregateOffer-8": {
+      "microdata": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-microdata.html",
+      "rdfa": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-rdfa.html",
+      "jsonld": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-jsonld.html"
     },
     "CivicStructure-Place-22": {
       "microdata": "schema.org/CivicStructure-Place-22-microdata.html",
@@ -1361,6 +1361,16 @@
       "microdata": "schema.org/eg-1-microdata.html",
       "rdfa": "schema.org/eg-1-rdfa.html",
       "jsonld": "schema.org/eg-1-jsonld.html"
+    },
+    "Organization-PostalAddress-6": {
+      "microdata": "schema.org/Organization-PostalAddress-6-microdata.html",
+      "rdfa": "schema.org/Organization-PostalAddress-6-rdfa.html",
+      "jsonld": "schema.org/Organization-PostalAddress-6-jsonld.html"
+    },
+    "Event-Place-PostalAddress-AggregateOffer-8": {
+      "microdata": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-microdata.html",
+      "rdfa": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-rdfa.html",
+      "jsonld": "schema.org/Event-Place-PostalAddress-AggregateOffer-8-jsonld.html"
     },
     "PostalAddress-17": {
       "microdata": "schema.org/PostalAddress-17-microdata.html",

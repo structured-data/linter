@@ -20,6 +20,18 @@ and runs at [linter.structured-data.org](http://linter.structured-data.org/)
 
 Output is expressed as HTML+RDFa in a _Snippet_ format.
 
+### Running locally
+To run locally, do a `bundle install` to load required dependencies. Then run with `foreman` or `rackup`:
+
+    foreman start
+
+or
+
+    rackup
+
+### Schema.org examples
+To update the examples from schema.org, run `rake schema:examples`. Warnings for these examples can be generated into {file:etc/schema-warnings.txt} by running `rake schema:warnings`; remember to run `bundle install` first.
+
 ### Code layout
 This application is represented as a [Sinatra][] application implemented in [Ruby][].
 
