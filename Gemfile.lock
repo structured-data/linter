@@ -1,17 +1,17 @@
 GIT
   remote: git://github.com/ruby-rdf/json-ld.git
-  revision: 8454c62adce646a4c44bad4ddf91c145e9852965
+  revision: 277cec13ad9b2939c1bb725016003fdb758776bc
   branch: develop
   specs:
-    json-ld (1.1.7)
+    json-ld (1.1.8)
       rdf (~> 1.1, >= 1.1.7)
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-microdata.git
-  revision: 6dc4c155cfd312cf8ca5881fba2410dff53e526b
+  revision: b80c08885fec1ab0fcefb635d3a24c9b68d151a1
   branch: develop
   specs:
-    rdf-microdata (2.0)
+    rdf-microdata (2.0.1)
       htmlentities (~> 4.3)
       nokogiri (~> 1.6)
       rdf (~> 1.1)
@@ -19,38 +19,39 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 3d27228d99f2618e75607ddfe9673ba7dd158564
+  revision: 8e250273f05acf60b6d2be34980e4fce4b22c2f5
   branch: develop
   specs:
-    rdf-rdfa (1.1.5)
+    rdf-rdfa (1.1.6)
       haml (~> 4.0)
       htmlentities (~> 4.3)
       rdf (~> 1.1, >= 1.1.6)
-      rdf-aggregate-repo
+      rdf-aggregate-repo (~> 1.1)
       rdf-xsd (~> 1.1)
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 95e973acc5ef2e8eb06a9834002f96ab68fe7711
+  revision: 410ee9b5a10888241c82fd7390733e2927e2803b
   branch: develop
   specs:
     rdf-reasoner (0.2.1)
       rdf (~> 1.1, >= 1.1.4.2)
       rdf-turtle (~> 1.1)
+      rdf-vocab (~> 0.8)
       rdf-xsd (~> 1.1)
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: 31f07e73af514b78a01f9498d8913e870a446762
+  revision: 1bf777b3f35ce9ded65ade8404f299d740c0e0fe
   branch: develop
   specs:
-    rdf (1.1.8)
+    rdf (1.1.11)
       link_header (~> 0.0, >= 0.0.8)
 
 PATH
   remote: .
   specs:
-    linter (2.2.2)
+    linter (2.2.3)
       activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -70,12 +71,15 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.0)
+    activesupport (4.2.1)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    addressable (2.3.8)
+    bcp47 (0.3.3)
+      i18n
     better_errors (2.1.1)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -83,18 +87,17 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (3.5.1)
-      columnize (~> 0.8)
-      debugger-linecache (~> 1.2)
-      slop (~> 3.6)
+    byebug (4.0.5)
+      columnize (= 0.9.0)
     coderay (1.1.0)
     columnize (0.9.0)
-    curb (0.8.6)
+    curb (0.8.8)
     debug_inspector (0.0.2)
-    debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    ebnf (0.3.6)
+    domain_name (0.5.23)
+      unf (>= 0.0.5, < 1.0.0)
+    ebnf (0.3.7)
       haml (~> 4.0)
       rdf (~> 1.1)
       sxp (~> 0.1, >= 0.1.3)
@@ -104,35 +107,40 @@ GEM
     haml (4.0.6)
       tilt
     htmlentities (4.3.3)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
     i18n (0.7.0)
     jsmin (1.0.1)
     json (1.8.2)
     kgio (2.9.3)
     link_header (0.0.8)
-    linkeddata (1.1.2)
-      equivalent-xml (~> 0.4)
-      json-ld (~> 1.1, >= 1.1.7)
+    linkeddata (1.1.11)
+      equivalent-xml (~> 0.5)
+      json-ld (~> 1.1, >= 1.1.8)
       nokogiri (~> 1.6)
-      rdf (~> 1.1, >= 1.1.7)
+      rdf (~> 1.1, >= 1.1.11)
       rdf-aggregate-repo (~> 1.1)
       rdf-isomorphic (~> 1.1)
-      rdf-json (~> 1.1)
-      rdf-microdata (~> 2.0)
-      rdf-n3 (~> 1.1)
-      rdf-rdfa (~> 1.1, >= 1.1.5)
-      rdf-rdfxml (~> 1.1, >= 1.1.3)
+      rdf-json (~> 1.1, >= 1.1.2)
+      rdf-microdata (~> 2.0, >= 2.0.1)
+      rdf-n3 (~> 1.1, >= 1.1.3)
+      rdf-rdfa (~> 1.1, >= 1.1.6)
+      rdf-rdfxml (~> 1.1, >= 1.1.4)
       rdf-reasoner (~> 0.2, >= 0.2.1)
-      rdf-trig (~> 1.1, >= 1.1.3)
+      rdf-tabular (~> 0.1, >= 0.1.2)
+      rdf-trig (~> 1.1, >= 1.1.4)
       rdf-trix (~> 1.1)
-      rdf-turtle (~> 1.1, >= 1.1.5)
-      sparql (~> 1.1, >= 1.1.4)
+      rdf-turtle (~> 1.1, >= 1.1.6)
+      rdf-vocab (~> 0.8)
+      rdf-xsd (~> 1.1, >= 1.1.3)
+      sparql (~> 1.1, >= 1.1.5)
       sparql-client (~> 1.1, >= 1.1.3)
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     net-http-persistent (2.9.4)
-    netrc (0.10.2)
+    netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     rack (1.6.0)
@@ -153,59 +161,68 @@ GEM
       rdf (>= 1.1)
     rdf-isomorphic (1.1.0)
       rdf (>= 1.1)
-    rdf-json (1.1.1)
+    rdf-json (1.1.2)
       rdf (~> 1.1)
-    rdf-n3 (1.1.2)
+    rdf-n3 (1.1.3)
       rdf (~> 1.1, >= 1.1.5)
-    rdf-rdfxml (1.1.3)
+    rdf-rdfxml (1.1.4)
       htmlentities (~> 4.3)
       rdf (~> 1.1, >= 1.1.6)
       rdf-rdfa (~> 1.1, >= 1.1.4.1)
       rdf-xsd (~> 1.1)
-    rdf-trig (1.1.3.1)
-      ebnf (~> 0.3, >= 0.3.5)
-      rdf (~> 1.1, >= 1.1.2.1)
-      rdf-turtle (~> 1.1, >= 1.1.3)
+    rdf-tabular (0.1.2)
+      addressable (~> 2.3)
+      bcp47 (~> 0.3, >= 0.3.3)
+      json-ld (~> 1.1)
+      rdf (~> 1.1, >= 1.1.7)
+      rdf-xsd (~> 1.1)
+    rdf-trig (1.1.4)
+      ebnf (~> 0.3, >= 0.3.7)
+      rdf (~> 1.1, >= 1.1.11)
+      rdf-turtle (~> 1.1, >= 1.1.6)
     rdf-trix (1.1.0)
       rdf (>= 1.1)
-    rdf-turtle (1.1.5)
+    rdf-turtle (1.1.6)
       ebnf (~> 0.3, >= 0.3.6)
-      rdf (~> 1.1, >= 1.1.4)
-    rdf-xsd (1.1.2)
-      rdf (~> 1.1)
-    rest-client (1.7.2)
+      rdf (~> 1.1, >= 1.1.10)
+    rdf-vocab (0.8.0)
+      rdf (~> 1.1, >= 1.1.10)
+    rdf-xsd (1.1.3)
+      rdf (~> 1.1, >= 1.1.9)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rest-client-components (1.3.0)
+    rest-client-components (1.4.0)
       rack (>= 1.0.1)
       rest-client (>= 1.6.0)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
       rspec-mocks (~> 3.2.0)
-    rspec-core (3.2.0)
+    rspec-core (3.2.3)
       rspec-support (~> 3.2.0)
-    rspec-expectations (3.2.0)
+    rspec-expectations (3.2.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
-    rspec-its (1.1.0)
+    rspec-its (1.2.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.2.0)
+    rspec-mocks (3.2.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
-    rspec-support (3.2.1)
-    shotgun (0.9)
+    rspec-support (3.2.2)
+    shotgun (0.9.1)
       rack (>= 1.0)
     simplecov (0.9.2)
       docile (~> 1.1.0)
       multi_json (~> 1.0)
       simplecov-html (~> 0.9.0)
     simplecov-html (0.9.0)
-    sinatra (1.4.5)
+    sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
+      tilt (>= 1.3, < 3)
     sinatra-assetpack (0.3.3)
       jsmin
       rack-test
@@ -214,8 +231,7 @@ GEM
     sinatra-linkeddata (1.1.0)
       rack-linkeddata (>= 1.1.0)
       sinatra (>= 1.4.4)
-    slop (3.6.0)
-    sparql (1.1.4)
+    sparql (1.1.5)
       builder (~> 3.0)
       ebnf (~> 0.3, >= 0.3.5)
       rdf (~> 1.1, >= 1.1.4)
@@ -223,15 +239,18 @@ GEM
       rdf-xsd (~> 1.1)
       sparql-client (~> 1.1)
       sxp (~> 0.1)
-    sparql-client (1.1.3.1)
+    sparql-client (1.1.4)
       net-http-persistent (~> 2.9)
       rdf (~> 1.1)
     sxp (0.1.5)
     syntax (1.2.0)
-    thread_safe (0.3.4)
+    thread_safe (0.3.5)
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.6)
     unicorn (4.8.3)
       kgio (~> 2.6)
       rack
