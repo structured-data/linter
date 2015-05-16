@@ -80,6 +80,9 @@
     }
   },
   "Answer": {
+    "ReplyAction-Question-Answer-103": {
+      "jsonld": "schema.org/ReplyAction-Question-Answer-103-jsonld.html"
+    },
     "Question-Answer-QAPage-189": {
       "microdata": "schema.org/Question-Answer-QAPage-189-microdata.html",
       "rdfa": "schema.org/Question-Answer-QAPage-189-rdfa.html",
@@ -119,8 +122,8 @@
     }
   },
   "AskAction": {
-    "AskAction-93": {
-      "jsonld": "schema.org/AskAction-93-jsonld.html"
+    "AskAction-Question-93": {
+      "jsonld": "schema.org/AskAction-Question-93-jsonld.html"
     }
   },
   "AssessAction": {
@@ -143,6 +146,13 @@
   "AuthorizeAction": {
     "AuthorizeAction-128": {
       "jsonld": "schema.org/AuthorizeAction-128-jsonld.html"
+    }
+  },
+  "BankOrCreditUnion": {
+    "invoice-1": {
+      "microdata": "schema.org/invoice-1-microdata.html",
+      "rdfa": "schema.org/invoice-1-rdfa.html",
+      "jsonld": "schema.org/invoice-1-jsonld.html"
     }
   },
   "BefriendAction": {
@@ -194,6 +204,11 @@
       "microdata": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-microdata.html",
       "rdfa": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-rdfa.html",
       "jsonld": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-jsonld.html"
+    },
+    "BroadcastEvent-BroadcastService-TVEpisode-240": {
+      "microdata": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html",
+      "rdfa": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-rdfa.html",
+      "jsonld": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html"
     }
   },
   "BroadcastService": {
@@ -206,6 +221,21 @@
       "microdata": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-microdata.html",
       "rdfa": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-rdfa.html",
       "jsonld": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-jsonld.html"
+    },
+    "Organization-BroadcastService-238": {
+      "microdata": "schema.org/Organization-BroadcastService-238-microdata.html",
+      "rdfa": "schema.org/Organization-BroadcastService-238-rdfa.html",
+      "jsonld": "schema.org/Organization-BroadcastService-238-jsonld.html"
+    },
+    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239": {
+      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-microdata.html",
+      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-rdfa.html",
+      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html"
+    },
+    "BroadcastEvent-BroadcastService-TVEpisode-240": {
+      "microdata": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html",
+      "rdfa": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-rdfa.html",
+      "jsonld": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html"
     }
   },
   "BusReservation": {
@@ -223,9 +253,23 @@
       "jsonld": "schema.org/BuyAction-146-jsonld.html"
     }
   },
+  "CableOrSatelliteService": {
+    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239": {
+      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-microdata.html",
+      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-rdfa.html",
+      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html"
+    }
+  },
   "CancelAction": {
     "CancelAction-134": {
       "jsonld": "schema.org/CancelAction-134-jsonld.html"
+    }
+  },
+  "Car": {
+    "Car-218": {
+      "microdata": "schema.org/Car-218-microdata.html",
+      "rdfa": "schema.org/Car-218-rdfa.html",
+      "jsonld": "schema.org/Car-218-jsonld.html"
     }
   },
   "CheckAction": {
@@ -682,6 +726,18 @@
       "jsonld": "schema.org/InviteAction-102-jsonld.html"
     }
   },
+  "Invoice": {
+    "invoice-1": {
+      "microdata": "schema.org/invoice-1-microdata.html",
+      "rdfa": "schema.org/invoice-1-rdfa.html",
+      "jsonld": "schema.org/invoice-1-jsonld.html"
+    },
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html"
+    }
+  },
   "ItemList": {
     "ItemList-14": {
       "microdata": "schema.org/ItemList-14-microdata.html",
@@ -783,6 +839,11 @@
       "microdata": "schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-microdata.html",
       "rdfa": "schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-rdfa.html",
       "jsonld": "schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-jsonld.html"
+    },
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html"
     }
   },
   "LodgingReservation": {
@@ -1126,9 +1187,28 @@
       "jsonld": "schema.org/Store-OpeningHoursSpecification-198-jsonld.html"
     }
   },
+  "Order": {
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html"
+    },
+    "Order-OrderItem-Organization-Person-222": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-222-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-222-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-222-jsonld.html"
+    }
+  },
   "OrderAction": {
     "OrderAction-148": {
       "jsonld": "schema.org/OrderAction-148-jsonld.html"
+    }
+  },
+  "OrderItem": {
+    "Order-OrderItem-Organization-Person-222": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-222-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-222-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-222-jsonld.html"
     }
   },
   "Organization": {
@@ -1152,10 +1232,25 @@
       "rdfa": "schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-rdfa.html",
       "jsonld": "schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-jsonld.html"
     },
+    "Order-OrderItem-Organization-Person-222": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-222-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-222-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-222-jsonld.html"
+    },
     "music-2": {
       "microdata": "schema.org/music-2-microdata.html",
       "rdfa": "schema.org/music-2-rdfa.html",
       "jsonld": "schema.org/music-2-jsonld.html"
+    },
+    "Organization-BroadcastService-238": {
+      "microdata": "schema.org/Organization-BroadcastService-238-microdata.html",
+      "rdfa": "schema.org/Organization-BroadcastService-238-rdfa.html",
+      "jsonld": "schema.org/Organization-BroadcastService-238-jsonld.html"
+    },
+    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239": {
+      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-microdata.html",
+      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-rdfa.html",
+      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html"
     }
   },
   "OrganizationRole": {
@@ -1245,10 +1340,30 @@
       "rdfa": "schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-rdfa.html",
       "jsonld": "schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-jsonld.html"
     },
+    "invoice-1": {
+      "microdata": "schema.org/invoice-1-microdata.html",
+      "rdfa": "schema.org/invoice-1-rdfa.html",
+      "jsonld": "schema.org/invoice-1-jsonld.html"
+    },
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html"
+    },
+    "Order-OrderItem-Organization-Person-222": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-222-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-222-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-222-jsonld.html"
+    },
     "music-2": {
       "microdata": "schema.org/music-2-microdata.html",
       "rdfa": "schema.org/music-2-rdfa.html",
       "jsonld": "schema.org/music-2-jsonld.html"
+    },
+    "VisualArtwork-Person-248": {
+      "microdata": "schema.org/VisualArtwork-Person-248-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-248-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-248-jsonld.html"
     }
   },
   "Pharmacy": {
@@ -1421,6 +1536,18 @@
       "jsonld": "schema.org/PrependAction-168-jsonld.html"
     }
   },
+  "PriceSpecification": {
+    "invoice-1": {
+      "microdata": "schema.org/invoice-1-microdata.html",
+      "rdfa": "schema.org/invoice-1-rdfa.html",
+      "jsonld": "schema.org/invoice-1-jsonld.html"
+    },
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html"
+    }
+  },
   "Product": {
     "Product-AggregateRating-Offer-Review-Rating-price-9": {
       "microdata": "schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html",
@@ -1499,6 +1626,12 @@
     }
   },
   "Question": {
+    "AskAction-Question-93": {
+      "jsonld": "schema.org/AskAction-Question-93-jsonld.html"
+    },
+    "ReplyAction-Question-Answer-103": {
+      "jsonld": "schema.org/ReplyAction-Question-Answer-103-jsonld.html"
+    },
     "Question-Answer-QAPage-189": {
       "microdata": "schema.org/Question-Answer-QAPage-189-microdata.html",
       "rdfa": "schema.org/Question-Answer-QAPage-189-rdfa.html",
@@ -1601,8 +1734,8 @@
     }
   },
   "ReplyAction": {
-    "ReplyAction-103": {
-      "jsonld": "schema.org/ReplyAction-103-jsonld.html"
+    "ReplyAction-Question-Answer-103": {
+      "jsonld": "schema.org/ReplyAction-Question-Answer-103-jsonld.html"
     }
   },
   "ReserveAction": {
@@ -1729,6 +1862,13 @@
       "jsonld": "schema.org/SendAction-161-jsonld.html"
     }
   },
+  "Service": {
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html"
+    }
+  },
   "ShareAction": {
     "ShareAction-104": {
       "jsonld": "schema.org/ShareAction-104-jsonld.html"
@@ -1813,6 +1953,11 @@
       "microdata": "schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-microdata.html",
       "rdfa": "schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-rdfa.html",
       "jsonld": "schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-jsonld.html"
+    },
+    "BroadcastEvent-BroadcastService-TVEpisode-240": {
+      "microdata": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html",
+      "rdfa": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-rdfa.html",
+      "jsonld": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html"
     }
   },
   "TVSeason": {
@@ -1854,6 +1999,13 @@
   "TaxiReservation": {
     "TaxiReservation-188": {
       "jsonld": "schema.org/TaxiReservation-188-jsonld.html"
+    }
+  },
+  "TelevisionChannel": {
+    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239": {
+      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-microdata.html",
+      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-rdfa.html",
+      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html"
     }
   },
   "TheaterEvent": {
@@ -1989,6 +2141,23 @@
       "jsonld": "schema.org/Restaurant-ViewAction-EntryPoint-SoftwareApplication-191-jsonld.html"
     }
   },
+  "VisualArtwork": {
+    "VisualArtwork-Person-248": {
+      "microdata": "schema.org/VisualArtwork-Person-248-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-248-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-248-jsonld.html"
+    },
+    "VisualArtwork-249": {
+      "microdata": "schema.org/VisualArtwork-249-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-249-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-249-jsonld.html"
+    },
+    "VisualArtwork-250": {
+      "microdata": "schema.org/VisualArtwork-250-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-250-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-250-jsonld.html"
+    }
+  },
   "VoteAction": {
     "VoteAction-44": {
       "jsonld": "schema.org/VoteAction-44-jsonld.html"
@@ -2107,6 +2276,20 @@
       "microdata": "schema.org/itemlist-1-microdata.html",
       "rdfa": "schema.org/itemlist-1-rdfa.html",
       "jsonld": "schema.org/itemlist-1-jsonld.html"
+    }
+  },
+  "mainEntity": {
+    "mainEntity-1": {
+      "microdata": "schema.org/mainEntity-1-microdata.html",
+      "rdfa": "schema.org/mainEntity-1-rdfa.html",
+      "jsonld": "schema.org/mainEntity-1-jsonld.html"
+    }
+  },
+  "mainEntityOfPage": {
+    "mainEntity-2": {
+      "microdata": "schema.org/mainEntity-2-microdata.html",
+      "rdfa": "schema.org/mainEntity-2-rdfa.html",
+      "jsonld": "schema.org/mainEntity-2-jsonld.html"
     }
   },
   "postalCode": {

@@ -1,0 +1,31 @@
+<div itemscope itemtype="http://schema.org/Order">
+  <div itemprop="seller" itemscope itemtype="http://schema.org/Organization">
+    <b itemprop="name">ACME Supplies</b>
+  </div>
+  <div itemprop="customer" itemscope itemtype="http://schema.org/Person">
+    <b itemprop="name">Jane Doe</b>
+  </div>
+  <div itemprop="orderedItem" itemscope itemtype="http://schema.org/OrderItem">
+    Item number: <span itemprop="orderItemNumber">abc123</span>
+    <span itemprop="orderQuantity">1</span>
+    <div itemprop="orderedItem" itemscope itemtype="http://schema.org/Product">
+      <span itemprop="name">Widget</span>
+    </div>
+    <span itemprop="orderItemStatus" content="http://schema.org/OrderDelivered">Delivered</span>
+    <div itemprop="orderDelivery" itemscope itemtype="http://schema.org/ParcelDelivery">
+      <span itemprop="expectedArrivalFrom">2015-03-10</span>
+    </div>
+  </div>
+  <div itemprop="orderedItem" itemscope itemtype="http://schema.org/OrderItem">
+    Item number: <span itemprop="orderItemNumber">def456</span>
+    <span itemprop="orderQuantity">4</span>
+    <div itemprop="orderedItem" itemscope itemtype="http://schema.org/Product">
+      <span itemprop="name">Widget accessories</span>
+    </div>
+    <span itemprop="orderItemStatus" content="http://schema.org/OrderInTransit">Shipped</span>
+    <div itemprop="orderDelivery" itemscope itemtype="http://schema.org/ParcelDelivery">
+      <span itemprop="expectedArrivalFrom">2015-03-15</span>
+      <span itemprop="expectedArrivalUntil">2015-03-18</span>
+    </div>
+  </div>
+</div>
