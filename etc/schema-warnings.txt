@@ -9,7 +9,7 @@ schema.org/AllocateAction-125-jsonld.html: ok
 schema.org/AppendAction-167-jsonld.html: ok
 schema.org/ApplyAction-130-jsonld.html: ok
 schema.org/ArriveAction-119-jsonld.html: ok
-schema.org/AskAction-93-jsonld.html: ok
+schema.org/AskAction-Question-93-jsonld.html: ok
 schema.org/AssessAction-41-jsonld.html: ok
 schema.org/AssignAction-127-jsonld.html: {
   "property": {
@@ -25,9 +25,45 @@ schema.org/Book-CreativeWork-180-microdata.html: ok
 schema.org/Book-CreativeWork-180-rdfa.html: ok
 schema.org/BookmarkAction-131-jsonld.html: ok
 schema.org/BorrowAction-155-jsonld.html: ok
+schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html: ok
+schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html: {
+  "property": {
+    "schema:IsLiveBroadcast": [
+      "No property definition found"
+    ],
+    "schema:videoFormat": [
+      "Subject _:g70093699634780(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
+    ],
+    "schema:subtitleLanguage": [
+      "Subject _:g70093699634780(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:Movie,schema:ScreeningEvent,schema:TVEpisode)"
+    ],
+    "schema:startDate": [
+      "Object \"starts 10/12/2014 9:00PM\" not compatible with rangeIncludes (schema:Date)"
+    ],
+    "schema:endDate": [
+      "Object \"ends 10/12/2014 9:30PM\" not compatible with rangeIncludes (schema:Date)"
+    ]
+  }
+}
+schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-rdfa.html: ok
 schema.org/BusReservation-BusTrip-182-jsonld.html: ok
 schema.org/BuyAction-146-jsonld.html: ok
 schema.org/CancelAction-134-jsonld.html: ok
+schema.org/Car-218-jsonld.html: ok
+schema.org/Car-218-microdata.html: {
+  "property": {
+    "schema:airbags": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/Car-218-rdfa.html: {
+  "property": {
+    "schema:airbags": [
+      "No property definition found"
+    ]
+  }
+}
 schema.org/CheckAction-84-jsonld.html: {
   "class": {
     "schema:FlightStatus": [
@@ -46,39 +82,24 @@ schema.org/CheckInAction-95-jsonld.html: {
 }
 schema.org/CheckInAction-96-jsonld.html: ok
 schema.org/CheckOutAction-97-jsonld.html: ok
-schema.org/ChooseAction-42-jsonld.html: ok
-schema.org/ChooseAction-43-jsonld.html: ok
-schema.org/CivicStructure-Place-22-jsonld.html: {
+schema.org/ChooseAction-42-jsonld.html: {
   "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 09:00-17:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Sa 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    "schema:option": [
+      "Term is superseded by schema:actionOption"
     ]
   }
 }
-schema.org/CivicStructure-Place-22-microdata.html: {
+schema.org/ChooseAction-43-jsonld.html: {
   "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 09:00-17:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Sa 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
+    "schema:option": [
+      "Term is superseded by schema:actionOption"
     ]
   }
 }
-schema.org/CivicStructure-Place-22-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 09:00-17:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Sa 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/CommentAction-98-jsonld.html: {
-  "class": {
-    "schema:UserComment": [
-      "No class definition found"
-    ]
-  }
-}
+schema.org/CivicStructure-Place-22-jsonld.html: ok
+schema.org/CivicStructure-Place-22-microdata.html: ok
+schema.org/CivicStructure-Place-22-rdfa.html: ok
+schema.org/CommentAction-98-jsonld.html: ok
 schema.org/CommunicateAction-91-jsonld.html: ok
 schema.org/CommunicateAction-92-jsonld.html: ok
 schema.org/ConfirmAction-100-jsonld.html: ok
@@ -188,6 +209,21 @@ schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-rdfa.html: 
 schema.org/EventReservation-Ticket-Seat-183-jsonld.html: ok
 schema.org/ExerciseAction-140-jsonld.html: ok
 schema.org/ExerciseAction-141-jsonld.html: ok
+schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-jsonld.html: ok
+schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-microdata.html: {
+  "property": {
+    "schema:airbags": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-rdfa.html: {
+  "property": {
+    "schema:airbags": [
+      "No property definition found"
+    ]
+  }
+}
 schema.org/FilmAction-79-jsonld.html: ok
 schema.org/FindAction-83-jsonld.html: ok
 schema.org/Flight-FlightReservation-184-jsonld.html: ok
@@ -200,7 +236,13 @@ schema.org/FollowAction-106-jsonld.html: {
 }
 schema.org/FoodEstablishmentReservation-185-jsonld.html: ok
 schema.org/GiveAction-157-jsonld.html: ok
-schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-jsonld.html: ok
+schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-jsonld.html: {
+  "property": {
+    "schema:validFor": [
+      "Object \"\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
 schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-microdata.html: {
   "property": {
     "schema:validFor": [
@@ -216,6 +258,9 @@ schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudi
     ]
   },
   "property": {
+    "schema:audience": [
+      "Subject _:b0(schema:GovernmentService,schema:Thing,schema:Intangible,schema:Service,schema:GovernmentService) not compatible with domainIncludes (schema:CreativeWork,schema:Product,schema:PlayAction)"
+    ],
     "schema:operator": [
       "No property definition found"
     ]
@@ -250,6 +295,44 @@ schema.org/InstallAction-59-jsonld.html: ok
 schema.org/InteractAction-88-jsonld.html: ok
 schema.org/InteractAction-89-jsonld.html: ok
 schema.org/InviteAction-102-jsonld.html: ok
+schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html: ok
+schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html: {
+  "property": {
+    "schema:paymentDue": [
+      "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:orderDate": [
+      "Object \"2014-12-01\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"2014-12-02\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:productId": [
+      "No property definition found"
+    ],
+    "schema:orderedItem": [
+      "Object _:g70093703973260(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+    ]
+  }
+}
+schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html: {
+  "property": {
+    "schema:paymentDue": [
+      "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:billingPeriod": [
+      "Object \"2014-12-21/P30D\" not compatible with rangeIncludes (schema:Duration)"
+    ],
+    "schema:orderDate": [
+      "Object \"2014-12-01\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"2014-12-02\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:productId": [
+      "No property definition found"
+    ],
+    "schema:orderedItem": [
+      "Object _:g70093696472440(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+    ]
+  }
+}
 schema.org/ItemList-14-jsonld.html: ok
 schema.org/ItemList-14-microdata.html: ok
 schema.org/ItemList-14-rdfa.html: ok
@@ -272,19 +355,19 @@ schema.org/ItemList-CreativeWork-Place-215-rdfa.html: {
   },
   "property": {
     "schema:author": [
-      "Subject _:g70114697509160(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70093699564620(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:about": [
-      "Subject _:g70114697509160(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
+      "Subject _:g70093699564620(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
     ],
     "schema:byArtist": [
-      "Object _:g70114697280440(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70114696527720(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70114696258460(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70114693314060(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70114693196200(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70114692886000(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70114695714460(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
+      "Object _:g70093695164160(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70093720251120(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70093720152980(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70093698977640(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70093694773640(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70093721807820(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70093705814200(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
     ]
   }
 }
@@ -292,7 +375,7 @@ schema.org/ItemList-MusicAlbum-217-jsonld.html: ok
 schema.org/ItemList-MusicAlbum-217-microdata.html: {
   "property": {
     "schema:numberOfItems": [
-      "Object \"\" not compatible with rangeIncludes (schema:Number)"
+      "Object \"\" not compatible with rangeIncludes (schema:Integer)"
     ],
     "schema:itemscope": [
       "No property definition found"
@@ -301,20 +384,20 @@ schema.org/ItemList-MusicAlbum-217-microdata.html: {
       "No property definition found"
     ],
     "schema:position": [
-      "Subject _:g70114699258260(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70093700161180(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70114699258260(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70093700161180(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
 schema.org/ItemList-MusicAlbum-217-rdfa.html: {
   "property": {
     "schema:position": [
-      "Subject _:g70114723644600(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70093721402100(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70114723644600(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70093721402100(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
@@ -329,7 +412,7 @@ schema.org/ItemList-Product-Offer-214-microdata.html: ok
 schema.org/ItemList-Product-Offer-214-rdfa.html: {
   "property": {
     "schema:itemListElement": [
-      "Subject _:g70114723189800(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
+      "Subject _:g70093704004760(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
     ]
   }
 }
@@ -494,6 +577,29 @@ schema.org/MusicPlaylist-20-rdfa.html: {
 schema.org/NGO-7-jsonld.html: ok
 schema.org/NGO-7-microdata.html: ok
 schema.org/NGO-7-rdfa.html: ok
+schema.org/Order-OrderItem-Organization-Person-222-jsonld.html: ok
+schema.org/Order-OrderItem-Organization-Person-222-microdata.html: {
+  "property": {
+    "schema:expectedArrivalFrom": [
+      "Object \"2015-03-10\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"2015-03-15\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:expectedArrivalUntil": [
+      "Object \"2015-03-18\" not compatible with rangeIncludes (schema:DateTime)"
+    ]
+  }
+}
+schema.org/Order-OrderItem-Organization-Person-222-rdfa.html: {
+  "property": {
+    "schema:expectedArrivalFrom": [
+      "Object \"2015-03-10\" not compatible with rangeIncludes (schema:DateTime)",
+      "Object \"2015-03-15\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:expectedArrivalUntil": [
+      "Object \"2015-03-18\" not compatible with rangeIncludes (schema:DateTime)"
+    ]
+  }
+}
 schema.org/OrderAction-148-jsonld.html: {
   "class": {
     "schema:OrderedAction": [
@@ -543,6 +649,30 @@ schema.org/OrderedEvent-196-jsonld.html: {
 }
 schema.org/OrderedEvent-196-microdata.html: ok
 schema.org/OrderedEvent-196-rdfa.html: ok
+schema.org/Organization-BroadcastService-238-jsonld.html: {
+  "property": {
+    "schema:videoFormat": [
+      "Subject _:b0(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
+    ]
+  }
+}
+schema.org/Organization-BroadcastService-238-microdata.html: {
+  "property": {
+    "schema:videoFormat": [
+      "Subject _:g70093754431500(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
+    ]
+  }
+}
+schema.org/Organization-BroadcastService-238-rdfa.html: ok
+schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html: ok
+schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-microdata.html: {
+  "class": {
+    "schema:CableOrSatelliteProvider": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-rdfa.html: ok
 schema.org/Organization-ContactPoint-204-jsonld.html: ok
 schema.org/Organization-ContactPoint-204-microdata.html: ok
 schema.org/Organization-ContactPoint-204-rdfa.html: ok
@@ -573,20 +703,8 @@ schema.org/PerformAction-142-jsonld.html: {
   }
 }
 schema.org/Pharmacy-199-jsonld.html: ok
-schema.org/Pharmacy-199-microdata.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Pharmacy-199-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
+schema.org/Pharmacy-199-microdata.html: ok
+schema.org/Pharmacy-199-rdfa.html: ok
 schema.org/PhotographAction-81-jsonld.html: ok
 schema.org/Place-GeoCoordinates-4-jsonld.html: ok
 schema.org/Place-GeoCoordinates-4-microdata.html: ok
@@ -600,30 +718,9 @@ schema.org/PlayAction-139-jsonld.html: ok
 schema.org/PostalAddress-17-jsonld.html: ok
 schema.org/PostalAddress-17-microdata.html: ok
 schema.org/PostalAddress-17-rdfa.html: ok
-schema.org/PostalAddress-Pharmacy-Store-203-jsonld.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/PostalAddress-Pharmacy-Store-203-microdata.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/PostalAddress-Pharmacy-Store-203-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
+schema.org/PostalAddress-Pharmacy-Store-203-jsonld.html: ok
+schema.org/PostalAddress-Pharmacy-Store-203-microdata.html: ok
+schema.org/PostalAddress-Pharmacy-Store-203-rdfa.html: ok
 schema.org/PrependAction-168-jsonld.html: ok
 schema.org/Product-AggregateRating-AggregateOffer-Offer-10-jsonld.html: ok
 schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html: ok
@@ -638,14 +735,14 @@ schema.org/Question-Answer-QAPage-189-jsonld.html: ok
 schema.org/Question-Answer-QAPage-189-microdata.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g70114694057360(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g70093753808300(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
 schema.org/Question-Answer-QAPage-189-rdfa.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g70114697208880(schema:Answer,schema:Thing,schema:CreativeWork,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g70093759534540(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
@@ -676,7 +773,13 @@ schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-Bro
 schema.org/ReactAction-48-jsonld.html: ok
 schema.org/ReadAction-63-jsonld.html: ok
 schema.org/ReadAction-64-jsonld.html: ok
-schema.org/ReadAction-65-jsonld.html: ok
+schema.org/ReadAction-65-jsonld.html: {
+  "class": {
+    "schema:Code": [
+      "Term is superseded by schema:SoftwareSourceCode"
+    ]
+  }
+}
 schema.org/ReadAction-66-jsonld.html: ok
 schema.org/ReceiveAction-159-jsonld.html: ok
 schema.org/Recipe-NutritionInformation-12-jsonld.html: ok
@@ -695,62 +798,14 @@ schema.org/RentalCarReservation-187-jsonld.html: {
   }
 }
 schema.org/ReplaceAction-170-jsonld.html: ok
-schema.org/ReplyAction-103-jsonld.html: {
-  "property": {
-    "schema:answer": [
-      "No property definition found"
-    ]
-  }
-}
+schema.org/ReplyAction-Question-Answer-103-jsonld.html: ok
 schema.org/ReserveAction-136-jsonld.html: ok
-schema.org/Restaurant-197-jsonld.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Restaurant-197-microdata.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Restaurant-197-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 11:30-23:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-jsonld.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Sa 11:00-14:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 17:00-21:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Fr-Sa 17:00-22:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-microdata.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Sa 11:00-14:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 17:00-21:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Fr-Sa 17:00-22:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Sa 11:00-14:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 17:00-21:30\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Fr-Sa 17:00-22:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
+schema.org/Restaurant-197-jsonld.html: ok
+schema.org/Restaurant-197-microdata.html: ok
+schema.org/Restaurant-197-rdfa.html: ok
+schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-jsonld.html: ok
+schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-microdata.html: ok
+schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-rdfa.html: ok
 schema.org/Restaurant-ViewAction-EntryPoint-SoftwareApplication-191-jsonld.html: ok
 schema.org/ReturnAction-160-jsonld.html: ok
 schema.org/ReviewAction-55-jsonld.html: ok
@@ -772,7 +827,13 @@ schema.org/Role-PerformanceRole-211-rdfa.html: ok
 schema.org/RsvpAction-101-jsonld.html: ok
 schema.org/ScheduleAction-137-jsonld.html: ok
 schema.org/SearchAction-143-jsonld.html: ok
-schema.org/SearchAction-144-jsonld.html: ok
+schema.org/SearchAction-144-jsonld.html: {
+  "property": {
+    "schema:query": [
+      "Object _:b2(schema:Class,schema:Thing,schema:Intangible,schema:Class) not compatible with rangeIncludes (schema:Text)"
+    ]
+  }
+}
 schema.org/SelectAction-138-jsonld.html: {
   "class": {
     "schema:SelectAction": [
@@ -810,38 +871,11 @@ schema.org/SportsEvent-OrderedEvent-194-jsonld.html: {
 }
 schema.org/SportsEvent-OrderedEvent-194-microdata.html: ok
 schema.org/SportsEvent-OrderedEvent-194-rdfa.html: ok
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-jsonld.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Fr 13:00-17:30\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-microdata.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Fr 13:00-17:30\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Fr 13:00-17:30\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-jsonld.html: ok
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-microdata.html: ok
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-rdfa.html: ok
 schema.org/Store-OpeningHoursSpecification-198-jsonld.html: {
   "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 09:00-14:00\" not compatible with rangeIncludes (schema:Duration)"
-    ],
     "schema:closes": [
       "Object \"14:00\" not compatible with rangeIncludes (schema:Time)"
     ],
@@ -852,9 +886,6 @@ schema.org/Store-OpeningHoursSpecification-198-jsonld.html: {
 }
 schema.org/Store-OpeningHoursSpecification-198-microdata.html: {
   "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 09:00-14:00\" not compatible with rangeIncludes (schema:Duration)"
-    ],
     "schema:validFrom": [
       "Object \"24 December 2013\" not compatible with rangeIncludes (schema:DateTime)",
       "Object \"1st January 2014\" not compatible with rangeIncludes (schema:DateTime)"
@@ -875,9 +906,6 @@ schema.org/Store-OpeningHoursSpecification-198-microdata.html: {
 }
 schema.org/Store-OpeningHoursSpecification-198-rdfa.html: {
   "property": {
-    "schema:openingHours": [
-      "Object \"Mo,Tu,We,Th,Fr,Sa,Su 09:00-14:00\" not compatible with rangeIncludes (schema:Duration)"
-    ],
     "schema:validFrom": [
       "Object \"2013-12-24\" not compatible with rangeIncludes (schema:DateTime)",
       "Object \"2014-01-01\" not compatible with rangeIncludes (schema:DateTime)"
@@ -896,54 +924,12 @@ schema.org/Store-OpeningHoursSpecification-198-rdfa.html: {
     ]
   }
 }
-schema.org/Store-Pharmacy-200-jsonld.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Store-Pharmacy-200-microdata.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Store-Pharmacy-200-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Store-PostalAddress-Pharmacy-202-jsonld.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Store-PostalAddress-Pharmacy-202-microdata.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/Store-PostalAddress-Pharmacy-202-rdfa.html: {
-  "property": {
-    "schema:openingHours": [
-      "Object \"Mo-Fr 07:00-23:00\" not compatible with rangeIncludes (schema:Duration)",
-      "Object \"Mo-Th 09:00-12:00\" not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
+schema.org/Store-Pharmacy-200-jsonld.html: ok
+schema.org/Store-Pharmacy-200-microdata.html: ok
+schema.org/Store-Pharmacy-200-rdfa.html: ok
+schema.org/Store-PostalAddress-Pharmacy-202-jsonld.html: ok
+schema.org/Store-PostalAddress-Pharmacy-202-microdata.html: ok
+schema.org/Store-PostalAddress-Pharmacy-202-rdfa.html: ok
 schema.org/SubscribeAction-116-jsonld.html: ok
 schema.org/TVSeries-TVSeason-TVEpisode-24-jsonld.html: ok
 schema.org/TVSeries-TVSeason-TVEpisode-24-microdata.html: ok
@@ -1026,7 +1012,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-jsonld.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
   "property": {
     "schema:video": [
-      "Subject _:g70114723485040(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70093753199480(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
@@ -1040,7 +1026,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
   "property": {
     "schema:video": [
-      "Subject _:g70114721726700(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70093706681300(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
@@ -1054,6 +1040,15 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
 schema.org/ViewAction-69-jsonld.html: ok
 schema.org/ViewAction-70-jsonld.html: ok
 schema.org/ViewAction-71-jsonld.html: ok
+schema.org/VisualArtwork-249-jsonld.html: ok
+schema.org/VisualArtwork-249-microdata.html: ok
+schema.org/VisualArtwork-249-rdfa.html: ok
+schema.org/VisualArtwork-250-jsonld.html: ok
+schema.org/VisualArtwork-250-microdata.html: ok
+schema.org/VisualArtwork-250-rdfa.html: ok
+schema.org/VisualArtwork-Person-248-jsonld.html: ok
+schema.org/VisualArtwork-Person-248-microdata.html: ok
+schema.org/VisualArtwork-Person-248-rdfa.html: ok
 schema.org/VoteAction-44-jsonld.html: ok
 schema.org/WantAction-54-jsonld.html: ok
 schema.org/WatchAction-72-jsonld.html: {
@@ -1092,13 +1087,7 @@ schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html: 
 schema.org/WebPage-CollegeOrUniversity-213-jsonld.html: ok
 schema.org/WebPage-CollegeOrUniversity-213-microdata.html: ok
 schema.org/WebPage-CollegeOrUniversity-213-rdfa.html: ok
-schema.org/WinAction-40-jsonld.html: {
-  "class": {
-    "schema:Award": [
-      "No class definition found"
-    ]
-  }
-}
+schema.org/WinAction-40-jsonld.html: ok
 schema.org/WriteAction-82-jsonld.html: ok
 schema.org/bib-1-jsonld.html: ok
 schema.org/bib-1-microdata.html: ok
@@ -1134,16 +1123,37 @@ schema.org/games-5-jsonld.html: ok
 schema.org/games-6-jsonld.html: ok
 schema.org/games-6-microdata.html: ok
 schema.org/games-6-rdfa.html: ok
-schema.org/games-7-jsonld.html: {
+schema.org/games-7-jsonld.html: ok
+schema.org/invoice-1-jsonld.html: ok
+schema.org/invoice-1-microdata.html: {
   "property": {
-    "schema:gameLocation": [
-      "Subject _:b0(schema:VideoGameSeries,schema:Thing,schema:CreativeWork,schema:Series,schema:VideoGameSeries) not compatible with domainIncludes (schema:Game)"
+    "schema:paymentDue": [
+      "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:billingPeriod": [
+      "Object \"2014-12-21/P30D\" not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/invoice-1-rdfa.html: {
+  "property": {
+    "schema:paymentDue": [
+      "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
+    ],
+    "schema:billingPeriod": [
+      "Object \"2014-12-21/P30D\" not compatible with rangeIncludes (schema:Duration)"
     ]
   }
 }
 schema.org/itemlist-1-jsonld.html: ok
 schema.org/itemlist-1-microdata.html: ok
 schema.org/itemlist-1-rdfa.html: ok
+schema.org/mainEntity-1-jsonld.html: ok
+schema.org/mainEntity-1-microdata.html: ok
+schema.org/mainEntity-1-rdfa.html: ok
+schema.org/mainEntity-2-jsonld.html: ok
+schema.org/mainEntity-2-microdata.html: ok
+schema.org/mainEntity-2-rdfa.html: ok
 schema.org/map-1-jsonld.html: ok
 schema.org/map-1-microdata.html: ok
 schema.org/map-1-rdfa.html: ok

@@ -1,0 +1,45 @@
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/"
+  "@type": "Order",
+  "seller": {
+    "@type": "Organization",
+    "name": "ACME Supplies"
+  },
+  "customer": {
+    "@type": "Person",
+    "name": "Jane Doe"
+  },
+  "orderedItem": [
+    {
+      "@type": "OrderItem"
+      "orderItemNumber": "abc123",
+      "orderQuantity": 1,
+      "orderedItem": {
+        "@type": "Product",
+        "name": "Widget"
+      },
+      "orderItemStatus": "http://schema.org/OrderDelivered",
+      "orderDelivery": {
+        "@type": "ParcelDelivery",
+        "expectedArrivalFrom": "2015-03-10"
+      }
+    },
+    {
+      "@type": "OrderItem"
+      "orderItemNumber": "def456",
+      "orderQuantity": 3,
+      "orderedItem": {
+        "@type": "Product",
+        "name": "Widget accessories"
+      },
+      "orderItemStatus": "http://schema.org/OrderInTransit",
+      "orderDelivery": {
+        "@type": "ParcelDelivery",
+        "expectedArrivalFrom": "2015-03-15",
+        "expectedArrivalUntil": "2015-03-18"
+      }
+    }
+  ]
+}
+</script>

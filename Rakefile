@@ -15,12 +15,19 @@ namespace :schema do
     %x{rm -rf ./schema.org && mkdir ./schema.org}
     %w(
       examples
+      sdo-automobile-examples
+      sdo-invoice-examples
       sdo-itemlist-examples
+      sdo-mainEntity-examples
       sdo-map-examples
       sdo-music-examples
       sdo-periodical-examples
+      sdo-property-examples
+      sdo-screeningevent-examples
       sdo-sports-examples
+      sdo-tv-listing-examples
       sdo-videogame-examples
+      sdo-visualartwork-examples
       sdo-website-examples
     ).each do |e|
       %x{curl https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/#{e}.txt -o ./schema.org/#{e}.txt}

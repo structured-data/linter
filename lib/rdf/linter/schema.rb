@@ -139,7 +139,7 @@ module RDF::Linter
           sc = value[:super_class]
           next unless sc
           puts "trim class #{cls}, super-class #{sc}"
-          @classes[sc][:sub_classes].delete(cls)
+          @classes[sc][:sub_classes].delete(cls) if @classes.fetch(sc, {})[:sub_classes]
         end
       end
     end

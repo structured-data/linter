@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ruby-rdf/json-ld.git
-  revision: 277cec13ad9b2939c1bb725016003fdb758776bc
+  revision: d5d8f4be100a010c1e47a8ff9e946f0bbe00433f
   branch: develop
   specs:
     json-ld (1.1.8)
@@ -42,10 +42,10 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: 1bf777b3f35ce9ded65ade8404f299d740c0e0fe
+  revision: c54cf29034d4cb06549f16b548ec0252dc08f634
   branch: develop
   specs:
-    rdf (1.1.11)
+    rdf (1.1.13)
       link_header (~> 0.0, >= 0.0.8)
 
 PATH
@@ -95,13 +95,12 @@ GEM
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    domain_name (0.5.23)
+    domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
-    ebnf (0.3.7)
-      haml (~> 4.0)
+    ebnf (0.3.9)
       rdf (~> 1.1)
       sxp (~> 0.1, >= 0.1.3)
-    equivalent-xml (0.5.1)
+    equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
     haml (4.0.6)
@@ -135,15 +134,14 @@ GEM
       rdf-xsd (~> 1.1, >= 1.1.3)
       sparql (~> 1.1, >= 1.1.5)
       sparql-client (~> 1.1, >= 1.1.3)
-    mime-types (2.4.3)
+    mime-types (2.5)
     mini_portile (0.6.2)
-    minitest (5.5.1)
-    multi_json (1.11.0)
+    minitest (5.6.1)
     net-http-persistent (2.9.4)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    rack (1.6.0)
+    rack (1.6.1)
     rack-cache (1.2)
       rack (>= 0.4)
     rack-contrib (1.2.0)
@@ -170,7 +168,7 @@ GEM
       rdf (~> 1.1, >= 1.1.6)
       rdf-rdfa (~> 1.1, >= 1.1.4.1)
       rdf-xsd (~> 1.1)
-    rdf-tabular (0.1.2)
+    rdf-tabular (0.1.3.1)
       addressable (~> 2.3)
       bcp47 (~> 0.3, >= 0.3.3)
       json-ld (~> 1.1)
@@ -185,7 +183,7 @@ GEM
     rdf-turtle (1.1.6)
       ebnf (~> 0.3, >= 0.3.6)
       rdf (~> 1.1, >= 1.1.10)
-    rdf-vocab (0.8.0)
+    rdf-vocab (0.8.2)
       rdf (~> 1.1, >= 1.1.10)
     rdf-xsd (1.1.3)
       rdf (~> 1.1, >= 1.1.9)
@@ -214,11 +212,11 @@ GEM
     rspec-support (3.2.2)
     shotgun (0.9.1)
       rack (>= 1.0)
-    simplecov (0.9.2)
+    simplecov (0.10.0)
       docile (~> 1.1.0)
-      multi_json (~> 1.0)
-      simplecov-html (~> 0.9.0)
-    simplecov-html (0.9.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -231,15 +229,15 @@ GEM
     sinatra-linkeddata (1.1.0)
       rack-linkeddata (>= 1.1.0)
       sinatra (>= 1.4.4)
-    sparql (1.1.5)
-      builder (~> 3.0)
-      ebnf (~> 0.3, >= 0.3.5)
-      rdf (~> 1.1, >= 1.1.4)
+    sparql (1.1.7)
+      builder (~> 3.2)
+      ebnf (~> 0.3, >= 0.3.9)
+      rdf (~> 1.1, >= 1.1.13)
       rdf-aggregate-repo (~> 1.1, >= 1.1.0)
       rdf-xsd (~> 1.1)
       sparql-client (~> 1.1)
       sxp (~> 0.1)
-    sparql-client (1.1.4)
+    sparql-client (1.1.5)
       net-http-persistent (~> 2.9)
       rdf (~> 1.1)
     sxp (0.1.5)
@@ -250,8 +248,8 @@ GEM
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.6)
-    unicorn (4.8.3)
+    unf_ext (0.0.7.1)
+    unicorn (4.9.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
