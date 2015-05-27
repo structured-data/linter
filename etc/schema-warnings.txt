@@ -32,10 +32,10 @@ schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html: {
       "No property definition found"
     ],
     "schema:videoFormat": [
-      "Subject _:g70093699634780(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
+      "Subject _:g70306224100920(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
     ],
     "schema:subtitleLanguage": [
-      "Subject _:g70093699634780(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:Movie,schema:ScreeningEvent,schema:TVEpisode)"
+      "Subject _:g70306224100920(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:Movie,schema:ScreeningEvent,schema:TVEpisode)"
     ],
     "schema:startDate": [
       "Object \"starts 10/12/2014 9:00PM\" not compatible with rangeIncludes (schema:Date)"
@@ -309,7 +309,7 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-mic
       "No property definition found"
     ],
     "schema:orderedItem": [
-      "Object _:g70093703973260(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+      "Object _:g70306175912680(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
     ]
   }
 }
@@ -329,7 +329,7 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdf
       "No property definition found"
     ],
     "schema:orderedItem": [
-      "Object _:g70093696472440(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+      "Object _:g70306156265940(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
     ]
   }
 }
@@ -355,19 +355,19 @@ schema.org/ItemList-CreativeWork-Place-215-rdfa.html: {
   },
   "property": {
     "schema:author": [
-      "Subject _:g70093699564620(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70306199582580(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:about": [
-      "Subject _:g70093699564620(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
+      "Subject _:g70306199582580(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
     ],
     "schema:byArtist": [
-      "Object _:g70093695164160(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70093720251120(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70093720152980(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70093698977640(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70093694773640(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70093721807820(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70093705814200(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
+      "Object _:g70306199338940(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70306199023100(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70306198788820(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70306173456700(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70306173332600(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70306173156740(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70306176587160(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
     ]
   }
 }
@@ -384,20 +384,20 @@ schema.org/ItemList-MusicAlbum-217-microdata.html: {
       "No property definition found"
     ],
     "schema:position": [
-      "Subject _:g70093700161180(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70306220003160(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70093700161180(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70306220003160(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
 schema.org/ItemList-MusicAlbum-217-rdfa.html: {
   "property": {
     "schema:position": [
-      "Subject _:g70093721402100(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70306222376460(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70093721402100(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70306222376460(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
@@ -412,7 +412,7 @@ schema.org/ItemList-Product-Offer-214-microdata.html: ok
 schema.org/ItemList-Product-Offer-214-rdfa.html: {
   "property": {
     "schema:itemListElement": [
-      "Subject _:g70093704004760(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
+      "Subject _:g70306220117700(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
     ]
   }
 }
@@ -659,7 +659,7 @@ schema.org/Organization-BroadcastService-238-jsonld.html: {
 schema.org/Organization-BroadcastService-238-microdata.html: {
   "property": {
     "schema:videoFormat": [
-      "Subject _:g70093754431500(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
+      "Subject _:g70306198754120(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
     ]
   }
 }
@@ -735,14 +735,14 @@ schema.org/Question-Answer-QAPage-189-jsonld.html: ok
 schema.org/Question-Answer-QAPage-189-microdata.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g70093753808300(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g70306215778660(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
 schema.org/Question-Answer-QAPage-189-rdfa.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g70093759534540(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g70306219923740(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
@@ -1012,7 +1012,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-jsonld.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
   "property": {
     "schema:video": [
-      "Subject _:g70093753199480(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70306200468580(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
@@ -1026,7 +1026,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
   "property": {
     "schema:video": [
-      "Subject _:g70093706681300(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70306223069720(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",

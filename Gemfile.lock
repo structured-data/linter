@@ -31,10 +31,10 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 410ee9b5a10888241c82fd7390733e2927e2803b
+  revision: aaecd6f0a36993a553c33c21596489469b94ddbc
   branch: develop
   specs:
-    rdf-reasoner (0.2.1)
+    rdf-reasoner (0.2.2)
       rdf (~> 1.1, >= 1.1.4.2)
       rdf-turtle (~> 1.1)
       rdf-vocab (~> 0.8)
@@ -51,7 +51,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.2.4)
+    linter (2.2.5)
       activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -87,7 +87,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (4.0.5)
+    byebug (5.0.0)
       columnize (= 0.9.0)
     coderay (1.1.0)
     columnize (0.9.0)
@@ -134,7 +134,7 @@ GEM
       rdf-xsd (~> 1.1, >= 1.1.3)
       sparql (~> 1.1, >= 1.1.5)
       sparql-client (~> 1.1, >= 1.1.3)
-    mime-types (2.5)
+    mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.6.1)
     net-http-persistent (2.9.4)
@@ -180,10 +180,10 @@ GEM
       rdf-turtle (~> 1.1, >= 1.1.6)
     rdf-trix (1.1.0)
       rdf (>= 1.1)
-    rdf-turtle (1.1.6)
+    rdf-turtle (1.1.7)
       ebnf (~> 0.3, >= 0.3.6)
       rdf (~> 1.1, >= 1.1.10)
-    rdf-vocab (0.8.2)
+    rdf-vocab (0.8.3)
       rdf (~> 1.1, >= 1.1.10)
     rdf-xsd (1.1.3)
       rdf (~> 1.1, >= 1.1.9)
