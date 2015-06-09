@@ -3,16 +3,20 @@ $:.unshift File.dirname(__FILE__)
 
 require "bundler/setup"
 require 'rubygems'
-require 'simplecov'
-SimpleCov.start
 require 'rspec'
 require 'rspec/its'
 require 'rdf/isomorphic'
-require 'rdf/linter'
 require 'restclient/components'
 require 'rack/cache'
 require 'sinatra'
 require 'matchers'
+require 'simplecov'
+SimpleCov.start do
+  add_filter "/spec/"
+  add_filter "/snippets/"
+end
+
+require 'rdf/linter'
 
 # set test environment
 set :environment, :test

@@ -4,6 +4,22 @@ require File.join(File.dirname(__FILE__), 'spec_helper')
 describe RDF::Linter, "#lint" do
   include RDF::Linter::Parser
 
+  let(:logger) {
+    logger = Logger.new(StringIO.new)
+    logger.level = Logger::DEBUG
+    logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
+    logger
+  }
+
+  after(:each) do |example|
+    if example.exception
+      logdev = logger.instance_variable_get(:@logdev)
+      dev = logdev.instance_variable_get(:@dev)
+      dev.rewind
+      puts dev.read
+    end
+  end
+
   context "detects undefined vocabulary items" do
     {
       "undefined class" => [
@@ -40,8 +56,7 @@ describe RDF::Linter, "#lint" do
       ],
     }.each do |name, (input, errors)|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
-        expect(RDF::Linter::Parser.lint(graph)).to have_errors errors
+        expect(RDF::Linter::Parser.parse(content: input, format: :ttl, logger: logger)).to have_errors errors
       end
     end
   end
@@ -59,8 +74,7 @@ describe RDF::Linter, "#lint" do
       ],
     }.each do |name, (input, errors)|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
-        expect(RDF::Linter::Parser.lint(graph)).to have_errors errors
+        expect(RDF::Linter::Parser.parse(content: input, format: :ttl, logger: logger)).to have_errors errors
       end
     end
   end
@@ -133,8 +147,7 @@ describe RDF::Linter, "#lint" do
       ],
     }.each do |name, (input, errors)|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
-        expect(RDF::Linter::Parser.lint(graph)).to have_errors errors
+        expect(RDF::Linter::Parser.parse(content: input, format: :ttl, logger: logger)).to have_errors errors
       end
     end
   end
@@ -152,8 +165,7 @@ describe RDF::Linter, "#lint" do
       ],
     }.each do |name, (input, errors)|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
-        expect(RDF::Linter::Parser.lint(graph)).to have_errors errors
+        expect(RDF::Linter::Parser.parse(content: input, format: :ttl, logger: logger)).to have_errors errors
       end
     end
   end
@@ -195,8 +207,7 @@ describe RDF::Linter, "#lint" do
       ),
     }.each do |name, input|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
-        expect(RDF::Linter::Parser.lint(graph)).to eq Hash.new
+        expect(RDF::Linter::Parser.parse(content: input, format: :ttl, logger: logger)).to have_errors Hash.new
       end
     end
   end
@@ -209,8 +220,7 @@ describe RDF::Linter, "#lint" do
       )
     }.each do |name, input|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
-        expect(RDF::Linter::Parser.lint(graph)).to eq Hash.new
+        expect(RDF::Linter::Parser.parse(content: input, format: :ttl, logger: logger)).to have_errors Hash.new
       end
     end
   end
@@ -236,18 +246,15 @@ describe RDF::Linter, "#lint" do
       )
     }.each do |name, input|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
-        expect(RDF::Linter::Parser.lint(graph)).to eq Hash.new
+        expect(RDF::Linter::Parser.parse(content: input, format: :ttl, logger: logger)).to have_errors Hash.new
       end
     end
   end
 
   shared_examples "Test Case" do |input, expected_errors|
     context File.basename(input) do
-      it "has no linter errors" do
-        graph = RDF::Graph.load(input)
-        RDF::Linter::Parser.expand_graph(graph)
-        expect(RDF::Linter::Parser.lint(graph)).to have_errors expected_errors
+      it "has expected linter errors" do
+        expect(RDF::Linter::Parser.parse(base_uri: input, logger: logger)).to have_errors expected_errors
       end
     end
   end
@@ -427,9 +434,48 @@ describe RDF::Linter, "#lint" do
       },
     }.each do |name, params|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(params[:input])
-        RDF::Linter::Parser.expand_graph(graph)
-        expect(RDF::Linter::Parser.lint(graph)).to have_errors params[:expected_errors]
+        expect(RDF::Linter::Parser.parse(content: params[:input], format: :ttl, logger: logger)).to have_errors params[:expected_errors]
+      end
+    end
+  end
+
+  context "Validation errors" do
+    {
+      "JSON duplicate key" => {
+        input: %({
+          "a": "b",
+          "a": "c"
+        }),
+        format: :jsonld,
+        expected_errors: {
+          validation: {"http://example.org/" => [/The same key is defined more than once/]}
+        }
+      },
+      "JSON duplicate key (in HTML)" => {
+        input: %(
+          <script type="application/ld+json">
+          {
+            "a": "b",
+            "a": "c"
+          }
+          </script>
+        ),
+        expected_errors: {
+          validation: {"http://example.org/" => [/The same key is defined more than once/]}
+        }
+      },
+      "Blatantly invalid HTML" => {
+        input: %(
+          <!DOCTYPE html>
+          <div Invalid markup
+        ),
+        expected_errors: {
+          validation: {"http://example.org/" => [/find end of Start Tag div/]}
+        }
+      }
+    }.each do |name, params|
+      it name do
+        expect(RDF::Linter::Parser.parse(content: params[:input], format: params[:format], logger: logger)).to have_errors params[:expected_errors]
       end
     end
   end
@@ -447,9 +493,7 @@ describe RDF::Linter, "#lint" do
       },
     }.each do |name, params|
       it name do
-        graph = RDF::Graph.new << RDF::Turtle::Reader.new(params[:input])
-        RDF::Linter::Parser.expand_graph(graph)
-        expect(RDF::Linter::Parser.lint(graph)).to have_errors params[:expected_errors]
+        expect(RDF::Linter::Parser.parse(content: params[:input], format: :ttl, logger: logger)).to have_errors params[:expected_errors]
       end
     end
   end

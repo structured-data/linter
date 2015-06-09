@@ -6,12 +6,13 @@ ruby "2.1.5"
 gemspec
 
 gem 'unicorn'
-gem 'curb',  '~> 0.8'
-gem 'rdf', git: "git://github.com/ruby-rdf/rdf.git", branch: "develop"
-gem 'rdf-rdfa', git: "git://github.com/ruby-rdf/rdf-rdfa.git", branch: "develop"
-gem 'rdf-microdata', git: "git://github.com/ruby-rdf/rdf-microdata.git", branch: "develop"
-gem 'rdf-reasoner', git: "git://github.com/ruby-rdf/rdf-reasoner.git", branch: "develop"
-gem 'json-ld', git: "git://github.com/ruby-rdf/json-ld.git", branch: "develop"
+gem 'curb',           '~> 0.8'
+gem 'rdf',            git: "git://github.com/ruby-rdf/rdf.git", branch: "develop"
+gem 'rdf-rdfa',       git: "git://github.com/ruby-rdf/rdf-rdfa.git", branch: "develop"
+gem 'rdf-microdata',  git: "git://github.com/ruby-rdf/rdf-microdata.git", branch: "develop"
+gem 'rdf-reasoner',   git: "git://github.com/ruby-rdf/rdf-reasoner.git", branch: "develop"
+gem 'json-ld',        git: "git://github.com/ruby-rdf/json-ld.git", branch: "develop"
+gem 'jsonlint',       git: "git://github.com/dougbarth/jsonlint.git"
 
 group :development, :test do
   gem 'rake'

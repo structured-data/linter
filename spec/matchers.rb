@@ -39,6 +39,7 @@ end
 
 RSpec::Matchers.define :have_errors do |errors|
   match do |actual|
+    actual = actual[1] if actual.is_a?(Array) # Messages in second element of array
     return false unless actual.keys == errors.keys
     actual.each do |area_key, area_values|
       return false unless area_values.length == errors[area_key].length

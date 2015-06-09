@@ -25,17 +25,36 @@ schema.org/Book-CreativeWork-180-microdata.html: ok
 schema.org/Book-CreativeWork-180-rdfa.html: ok
 schema.org/BookmarkAction-131-jsonld.html: ok
 schema.org/BorrowAction-155-jsonld.html: ok
-schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html: ok
+schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html: Error: 757: unexpected token at '{
+  "@context":"http://schema.org",
+  "@type":"BroadcastEvent",
+  "startDate":"2014-10-12T21:00",
+  "endDate":"2014-10-12T21:30",
+  "publishedOn":{
+    "@type":"BroadcastService",
+    "name: "WAAY-TV"
+  },
+  "workPerformed":{
+    "@type":"CreativeWork",
+    "name": "Modern Family: Three Turkeys"
+  },
+  "inLanguage":"en",
+  "subtitleLanguage":"es",
+  "videoFormat":"HD",
+  "isLiveBroadcast":"False",
+  "name":"Modern Family - S6E8 - Three Turkeys",
+  "description":"Phil and Luke take over Thanksgiving duties."
+}'
 schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html: {
   "property": {
     "schema:IsLiveBroadcast": [
       "No property definition found"
     ],
     "schema:videoFormat": [
-      "Subject _:g70306224100920(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
+      "Subject _:g70289709733400(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
     ],
     "schema:subtitleLanguage": [
-      "Subject _:g70306224100920(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:Movie,schema:ScreeningEvent,schema:TVEpisode)"
+      "Subject _:g70289709733400(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:Movie,schema:ScreeningEvent,schema:TVEpisode)"
     ],
     "schema:startDate": [
       "Object \"starts 10/12/2014 9:00PM\" not compatible with rangeIncludes (schema:Date)"
@@ -120,7 +139,20 @@ schema.org/DepartAction-120-jsonld.html: ok
 schema.org/DisagreeAction-50-jsonld.html: ok
 schema.org/DiscoverAction-86-jsonld.html: ok
 schema.org/DislikeAction-51-jsonld.html: ok
-schema.org/DonateAction-147-jsonld.html: ok
+schema.org/DonateAction-147-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "DonateAction",
+  "agent": {
+    "@type": "Person",
+    "name": "John"
+  },
+  "price": "10",
+  "priceCurrency": "USD"
+  "recipient": {
+    "@type": "Person",
+    "name": "Steve"
+  }
+}'
 schema.org/DownloadAction-156-jsonld.html: ok
 schema.org/DrawAction-78-jsonld.html: {
   "class": {
@@ -197,7 +229,13 @@ schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-microdata.html: {
   }
 }
 schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-rdfa.html: ok
-schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-jsonld.html: ok
+schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-jsonld.html": [
+      "loading document failed: The same key is defined more than once: workPerformed.sameAs"
+    ]
+  }
+}
 schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-microdata.html: {
   "property": {
     "schema:startDate": [
@@ -209,7 +247,31 @@ schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-rdfa.html: 
 schema.org/EventReservation-Ticket-Seat-183-jsonld.html: ok
 schema.org/ExerciseAction-140-jsonld.html: ok
 schema.org/ExerciseAction-141-jsonld.html: ok
-schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-jsonld.html: ok
+schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name" : "Brent",
+  "makesOffer" : {
+        "@type" :"Offer",
+        "priceSpecification" : {
+            "@type" : "UnitPriceSpecification",
+            "priceCurrency" : "USD",
+            "price" : "18000" },
+        "itemOffered" : {
+            "@type" : "Car",
+            "name" : "2009 Volkswagen Golf V GTI MY09 Direct-Shift Gearbox",
+            "description" : "2009 Volkswagen Golf V GTI MY09 Direct-Shift Gearbox in perfect mechanical condition and low kilometres. It's impressive 2.0 litre turbo engine makes every drive a fun experience. Well looked after by one owner with full service history. It drives like new and has only done 50,000kms. (...)",
+        "image" : "2009_Volkswagen_Golf_V_GTI_MY09.png",
+        "color" : "Black",
+        "numberOfForwardGears" : "6",
+        "vehicleEngine" : {
+            "@type": "EngineSpecification",
+            "name" : "4 cylinder Petrol Turbo Intercooled 2.0 L (1984 cc)"
+            },
+        "airbags" : "6",
+        }
+    }
+}'
 schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-microdata.html: {
   "property": {
     "schema:airbags": [
@@ -295,7 +357,55 @@ schema.org/InstallAction-59-jsonld.html: ok
 schema.org/InteractAction-88-jsonld.html: ok
 schema.org/InteractAction-89-jsonld.html: ok
 schema.org/InviteAction-102-jsonld.html: ok
-schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html: ok
+schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html: Error: 757: unexpected token at '{
+    "@context": "http://schema.org/",
+    "@type": "Invoice",
+    "broker": {
+      "@type": "LocalBusiness",
+      "name": "ACME Home Heating",
+    },
+    "accountId": "xxxx-xxxx-xxxx-1234",
+    "customer": {
+      "@type": "Person",
+      "name": "Jane Doe"
+    },
+    "paymentDue": "2015-01-30",
+    "minimumPaymentDue": {
+      "@type": "PriceSpecification",
+      "price": 0.00,
+      "priceCurrency": "USD"
+    },
+    "totalPaymentDue": {
+      "@type": "PriceSpecification",
+      "price": 0.00,
+      "priceCurrency": "USD"
+    },
+    "paymentStatus": "paid",
+    "referencesOrder": [
+      {
+        "@type": "Order",
+        "description": "furnace",
+        "orderDate": "2014-12-01",
+        "orderNumber": "123ABC",
+        "paymentMethod": "http://purl.org/goodrelations/v1#ByInvoice",
+        "orderedItem": {
+          "@type": "Product",
+          "name": "ACME Furnace 3000",
+          "productId": "ABC123"
+        }
+      },
+      {
+        "@type": "Order",
+        "description": "furnace installation",
+        "orderDate": "2014-12-02",
+        "paymentMethod": "http://purl.org/goodrelations/v1#ByInvoice",
+        "orderedItem": {
+          "@type": "Service",
+          "description": "furnace installation"
+        }
+      },
+    ]
+}'
 schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html: {
   "property": {
     "schema:paymentDue": [
@@ -309,7 +419,7 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-mic
       "No property definition found"
     ],
     "schema:orderedItem": [
-      "Object _:g70306175912680(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+      "Object _:g70289723577980(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
     ]
   }
 }
@@ -329,7 +439,7 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdf
       "No property definition found"
     ],
     "schema:orderedItem": [
-      "Object _:g70306156265940(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+      "Object _:g70289674021360(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
     ]
   }
 }
@@ -345,7 +455,89 @@ schema.org/ItemList-216-jsonld.html: {
 }
 schema.org/ItemList-216-microdata.html: ok
 schema.org/ItemList-216-rdfa.html: ok
-schema.org/ItemList-CreativeWork-Place-215-jsonld.html: ok
+schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": ["ItemList", "CreativeWork"],
+  "name": "Top 5 covers of Bob Dylan Songs",
+  "author": "John Doe",
+  "about: {
+    "@type": "MusicRecording",
+    "byArtist": {
+      "@type": "Person",
+      "name": "Bob Dylan"
+    }
+  },
+  "itemListOrder": "http://schema.org/ItemListOrderAscending",
+  "numberOfItems: 5,
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "If Not For You",
+        "byArtist": {
+          "@type": "Person",
+          "name": "George Harrison"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "The Times They Are A-Changin'",
+        "byArtist": {
+          "@type": "Person",
+          "name": "Tracy Chapman"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "It Ain't Me Babe",
+        "byArtist": [
+          {
+            "@type": "Person",
+            "name": "Johnny Cash"
+          },
+          {
+            "@type": "Person",
+            "name": "June Carter Cash"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "Don't Think Twice It's Alright",
+        "byArtist": {
+          "@type": "Person",
+          "name": "Waylon Jennings"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "MusicRecording",
+        "name": "All Along the Watchtower",
+        "byArtist": {
+          "@type": "Person",
+          "name": "Jimi Hendrix"
+        }
+      }
+    }
+  ]
+}'
 schema.org/ItemList-CreativeWork-Place-215-microdata.html: ok
 schema.org/ItemList-CreativeWork-Place-215-rdfa.html: {
   "class": {
@@ -355,24 +547,37 @@ schema.org/ItemList-CreativeWork-Place-215-rdfa.html: {
   },
   "property": {
     "schema:author": [
-      "Subject _:g70306199582580(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70289724050320(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:about": [
-      "Subject _:g70306199582580(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
+      "Subject _:g70289724050320(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
     ],
     "schema:byArtist": [
-      "Object _:g70306199338940(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70306199023100(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70306198788820(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70306173456700(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70306173332600(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70306173156740(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70306176587160(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
+      "Object _:g70289708306060(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70289694142380(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70289724886640(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70289694456260(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70289677003360(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70289674222300(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
+      "Object _:g70289673500740(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
     ]
   }
 }
-schema.org/ItemList-MusicAlbum-217-jsonld.html: ok
+schema.org/ItemList-MusicAlbum-217-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-217-jsonld.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: Invalid char in CDATA 0x0>]"
+    ]
+  }
+}
 schema.org/ItemList-MusicAlbum-217-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-217-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>]"
+    ]
+  },
   "property": {
     "schema:numberOfItems": [
       "Object \"\" not compatible with rangeIncludes (schema:Integer)"
@@ -384,20 +589,26 @@ schema.org/ItemList-MusicAlbum-217-microdata.html: {
       "No property definition found"
     ],
     "schema:position": [
-      "Subject _:g70306220003160(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70289675297600(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70306220003160(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70289675297600(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
 schema.org/ItemList-MusicAlbum-217-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-217-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>]"
+    ]
+  },
   "property": {
     "schema:position": [
-      "Subject _:g70306222376460(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70289725279640(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70306222376460(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70289725279640(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
@@ -412,7 +623,7 @@ schema.org/ItemList-Product-Offer-214-microdata.html: ok
 schema.org/ItemList-Product-Offer-214-rdfa.html: {
   "property": {
     "schema:itemListElement": [
-      "Subject _:g70306220117700(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
+      "Subject _:g70289676891080(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
     ]
   }
 }
@@ -424,7 +635,20 @@ schema.org/JoinAction-108-jsonld.html: ok
 schema.org/JoinAction-109-jsonld.html: ok
 schema.org/JoinAction-110-jsonld.html: ok
 schema.org/LeaveAction-111-jsonld.html: ok
-schema.org/LendAction-158-jsonld.html: ok
+schema.org/LendAction-158-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "LendAction",
+  "agent": {
+    "@type": "Person",
+    "name": "John"
+  },
+  "price": "10",
+  "priceCurrency": "USD"
+  "recipient": {
+    "@type": "Person",
+    "name": "Steve"
+  }
+}'
 schema.org/LikeAction-53-jsonld.html: ok
 schema.org/ListenAction-60-jsonld.html: ok
 schema.org/ListenAction-61-jsonld.html: ok
@@ -452,13 +676,26 @@ schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContr
   }
 }
 schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : a>]"
+    ]
+  },
   "property": {
     "schema:subject": [
       "No property definition found"
     ]
   }
 }
-schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-rdfa.html: ok
+schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : a>]"
+    ]
+  }
+}
 schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-28-jsonld.html: {
   "property": {
     "schema:code": [
@@ -577,7 +814,49 @@ schema.org/MusicPlaylist-20-rdfa.html: {
 schema.org/NGO-7-jsonld.html: ok
 schema.org/NGO-7-microdata.html: ok
 schema.org/NGO-7-rdfa.html: ok
-schema.org/Order-OrderItem-Organization-Person-222-jsonld.html: ok
+schema.org/Order-OrderItem-Organization-Person-222-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org/"
+  "@type": "Order",
+  "seller": {
+    "@type": "Organization",
+    "name": "ACME Supplies"
+  },
+  "customer": {
+    "@type": "Person",
+    "name": "Jane Doe"
+  },
+  "orderedItem": [
+    {
+      "@type": "OrderItem"
+      "orderItemNumber": "abc123",
+      "orderQuantity": 1,
+      "orderedItem": {
+        "@type": "Product",
+        "name": "Widget"
+      },
+      "orderItemStatus": "http://schema.org/OrderDelivered",
+      "orderDelivery": {
+        "@type": "ParcelDelivery",
+        "expectedArrivalFrom": "2015-03-10"
+      }
+    },
+    {
+      "@type": "OrderItem"
+      "orderItemNumber": "def456",
+      "orderQuantity": 3,
+      "orderedItem": {
+        "@type": "Product",
+        "name": "Widget accessories"
+      },
+      "orderItemStatus": "http://schema.org/OrderInTransit",
+      "orderDelivery": {
+        "@type": "ParcelDelivery",
+        "expectedArrivalFrom": "2015-03-15",
+        "expectedArrivalUntil": "2015-03-18"
+      }
+    }
+  ]
+}'
 schema.org/Order-OrderItem-Organization-Person-222-microdata.html: {
   "property": {
     "schema:expectedArrivalFrom": [
@@ -659,12 +938,38 @@ schema.org/Organization-BroadcastService-238-jsonld.html: {
 schema.org/Organization-BroadcastService-238-microdata.html: {
   "property": {
     "schema:videoFormat": [
-      "Subject _:g70306198754120(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
+      "Subject _:g70289661638840(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
     ]
   }
 }
-schema.org/Organization-BroadcastService-238-rdfa.html: ok
-schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html: ok
+schema.org/Organization-BroadcastService-238-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/Organization-BroadcastService-238-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>]"
+    ]
+  }
+}
+schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html: Error: 757: unexpected token at '{
+  "@context":"http://schema.org",
+  "@type":"TelevisionChannel",
+  "name": "WAAY 7",
+  "broadcastChannelId":"7",
+  "broadcastServiceTier":"Premium",
+  "inBroadcastLineup":{
+    "@type":"CableOrSatelliteService",
+    "name": "Comcast",
+  },
+  "providesBroadcastService":{
+    "@type":"BroadcastService",
+    "name": "WAAY-TV",
+    "broadcastDisplayName": "ABC",
+    "broadcastAffiliateOf":{
+      "@type":"Organization",
+      "name":"ABC"
+    }
+  }
+}'
 schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-microdata.html: {
   "class": {
     "schema:CableOrSatelliteProvider": [
@@ -702,7 +1007,15 @@ schema.org/PerformAction-142-jsonld.html: {
     ]
   }
 }
-schema.org/Pharmacy-199-jsonld.html: ok
+schema.org/Pharmacy-199-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "Pharmacy",
+  "name": "Philippa's Pharmacy",
+  "description": "A superb collection of fine pharmaceuticals for your beauty and healthcare
+    convenience, a department of Delia's Drugstore.",
+  "openingHours": "Mo,Tu,We,Th 09:00-12:00",
+  "telephone": "+18005551234"
+}'
 schema.org/Pharmacy-199-microdata.html: ok
 schema.org/Pharmacy-199-rdfa.html: ok
 schema.org/PhotographAction-81-jsonld.html: ok
@@ -710,8 +1023,22 @@ schema.org/Place-GeoCoordinates-4-jsonld.html: ok
 schema.org/Place-GeoCoordinates-4-microdata.html: ok
 schema.org/Place-GeoCoordinates-4-rdfa.html: ok
 schema.org/Place-LocalBusiness-2-jsonld.html: ok
-schema.org/Place-LocalBusiness-2-microdata.html: ok
-schema.org/Place-LocalBusiness-2-rdfa.html: ok
+schema.org/Place-LocalBusiness-2-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/Place-LocalBusiness-2-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
+schema.org/Place-LocalBusiness-2-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/Place-LocalBusiness-2-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
 schema.org/PlanAction-132-jsonld.html: ok
 schema.org/PlanAction-133-jsonld.html: ok
 schema.org/PlayAction-139-jsonld.html: ok
@@ -731,18 +1058,24 @@ schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html: ok
 schema.org/ProductModel-34-jsonld.html: ok
 schema.org/ProductModel-34-microdata.html: ok
 schema.org/ProductModel-34-rdfa.html: ok
-schema.org/Question-Answer-QAPage-189-jsonld.html: ok
+schema.org/Question-Answer-QAPage-189-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/Question-Answer-QAPage-189-jsonld.html": [
+      "loading document failed: The same key is defined more than once: text"
+    ]
+  }
+}
 schema.org/Question-Answer-QAPage-189-microdata.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g70306215778660(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g70289661166980(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
 schema.org/Question-Answer-QAPage-189-rdfa.html: {
   "property": {
     "schema:suggestedAnswer": [
-      "Subject _:g70306219923740(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
+      "Subject _:g70289724577100(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
     ]
   }
 }
@@ -798,7 +1131,26 @@ schema.org/RentalCarReservation-187-jsonld.html: {
   }
 }
 schema.org/ReplaceAction-170-jsonld.html: ok
-schema.org/ReplyAction-Question-Answer-103-jsonld.html: ok
+schema.org/ReplyAction-Question-Answer-103-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "AskAction",
+  "agent": {
+    "@type": "Person",
+    "name": "John"
+  },
+  "recipient": {
+    "@type": "Person",
+    "name": "Steve"
+  },
+  "resultComment": {
+    "@type": "Answer",
+    "parentItem": {
+      "@type": "Question",
+      "text":  "What's 2 + 2?"
+    }
+    "text": "4."
+  }
+}'
 schema.org/ReserveAction-136-jsonld.html: ok
 schema.org/Restaurant-197-jsonld.html: ok
 schema.org/Restaurant-197-microdata.html: ok
@@ -957,7 +1309,11 @@ schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastSer
   }
 }
 schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-rdfa.html: ok
-schema.org/Table-16-jsonld.html: ok
+schema.org/Table-16-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "Table",
+  "about": "list of presidents",
+}'
 schema.org/Table-16-microdata.html: ok
 schema.org/Table-16-rdfa.html: ok
 schema.org/TakeAction-162-jsonld.html: {
@@ -967,9 +1323,51 @@ schema.org/TakeAction-162-jsonld.html: {
     ]
   }
 }
-schema.org/TaxiReservation-188-jsonld.html: ok
+schema.org/TaxiReservation-188-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "TaxiReservation",
+  "reservationId": "546323",
+  "reservationStatus": "http://schema.org/ReservationConfirmed",
+
+  "underName": {
+    "@type": "Person",
+    "name": "John Smith"
+  },
+  "reservationFor": {
+    "@type": "Taxi",
+    "provider": {
+      "@type": "Organization"
+      "name": "Checker Cab"
+  },
+  "pickupLocation": {
+    "@type": "Place",
+    "name": "Boston Marriott Cambridge",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "50 Broadway",
+      "addressLocality": "Cambridge",
+      "addressRegion": "MA",
+      "postalCode": "02142",
+      "addressCountry": "US"
+    }
+  },
+  "pickupTime": "2017-08-05T16:00:00-07:00"
+}'
 schema.org/TieAction-39-jsonld.html: ok
-schema.org/TipAction-153-jsonld.html: ok
+schema.org/TipAction-153-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "RentAction",
+  "agent": {
+    "@type": "Person",
+    "name": "John"
+  },
+  "price": "10",
+  "priceCurrency": "USD"
+  "recipient": {
+    "@type": "Person",
+    "name": "Steve"
+  }
+}'
 schema.org/TrackAction-87-jsonld.html: {
   "class": {
     "gr:UPS": [
@@ -1012,7 +1410,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-jsonld.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
   "property": {
     "schema:video": [
-      "Subject _:g70306200468580(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70289675629200(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
@@ -1026,7 +1424,7 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
 schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
   "property": {
     "schema:video": [
-      "Subject _:g70306223069720(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70289674578000(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:url": [
       "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
@@ -1040,7 +1438,13 @@ schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
 schema.org/ViewAction-69-jsonld.html: ok
 schema.org/ViewAction-70-jsonld.html: ok
 schema.org/ViewAction-71-jsonld.html: ok
-schema.org/VisualArtwork-249-jsonld.html: ok
+schema.org/VisualArtwork-249-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/VisualArtwork-249-jsonld.html": [
+      "loading document failed: The same key is defined more than once: artMedium"
+    ]
+  }
+}
 schema.org/VisualArtwork-249-microdata.html: ok
 schema.org/VisualArtwork-249-rdfa.html: ok
 schema.org/VisualArtwork-250-jsonld.html: ok
@@ -1082,8 +1486,22 @@ schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-jsonld.html
     ]
   }
 }
-schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html: ok
-schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html: ok
+schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
+schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
 schema.org/WebPage-CollegeOrUniversity-213-jsonld.html: ok
 schema.org/WebPage-CollegeOrUniversity-213-microdata.html: ok
 schema.org/WebPage-CollegeOrUniversity-213-rdfa.html: ok
@@ -1102,29 +1520,164 @@ schema.org/bib-4-jsonld.html: ok
 schema.org/bib-4-microdata.html: ok
 schema.org/bib-4-rdfa.html: ok
 schema.org/bib-5-jsonld.html: ok
-schema.org/bib-5-microdata.html: ok
-schema.org/bib-5-rdfa.html: ok
+schema.org/bib-5-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/bib-5-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
+schema.org/bib-5-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/bib-5-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
 schema.org/eg-1-jsonld.html: ok
 schema.org/eg-1-microdata.html: ok
 schema.org/eg-1-rdfa.html: ok
 schema.org/games-1-jsonld.html: ok
-schema.org/games-1-microdata.html: ok
-schema.org/games-1-rdfa.html: ok
+schema.org/games-1-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-1-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
+schema.org/games-1-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-1-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
 schema.org/games-2-jsonld.html: ok
-schema.org/games-2-microdata.html: ok
-schema.org/games-2-rdfa.html: ok
-schema.org/games-3-jsonld.html: ok
-schema.org/games-3-microdata.html: ok
-schema.org/games-3-rdfa.html: ok
+schema.org/games-2-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-2-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+    ]
+  }
+}
+schema.org/games-2-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-2-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+    ]
+  }
+}
+schema.org/games-3-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-3-jsonld.html": [
+      "loading document failed: The same key is defined more than once: author.employee"
+    ]
+  }
+}
+schema.org/games-3-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-3-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+    ]
+  }
+}
+schema.org/games-3-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-3-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+    ]
+  }
+}
 schema.org/games-4-jsonld.html: ok
-schema.org/games-4-microdata.html: ok
-schema.org/games-4-rdfa.html: ok
-schema.org/games-5-jsonld.html: ok
+schema.org/games-4-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-4-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
+schema.org/games-4-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-4-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
+schema.org/games-5-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "VideoGame",
+  "name": "Minecraft",
+  "url": "http://www.mineplex.com/",
+  "playMode": "MultiPlayer",
+  "gamePlatform": " Online_gaming_services",
+  "gameServer": {
+    "name": "mineplex",
+    "url":"123.45.678.90:2342",
+    "playersOnline": "5361",
+    "serverStatus": "Online"
+  },
+"video": {
+"@type" : "http://schema.org/VideoObject",
+"caption" : "CHALLENGE ACCEPTED! #6 [Hot Pepper Challenge!]",
+"description" : "How many Jalapeno can I eat without crying? ZERO. Today's challenge is for every chest I open, I have to eat a Jalapeno and... I HAVE TO WIN. This video was painful",
+"url" : "http://www.youtube.com/watch?v=0q6a9aFk3XY"
+}'
 schema.org/games-6-jsonld.html: ok
-schema.org/games-6-microdata.html: ok
-schema.org/games-6-rdfa.html: ok
+schema.org/games-6-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-6-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
+schema.org/games-6-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/games-6-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    ]
+  }
+}
 schema.org/games-7-jsonld.html: ok
-schema.org/invoice-1-jsonld.html: ok
+schema.org/invoice-1-jsonld.html: Error: 757: unexpected token at '{
+    "@context": "http://schema.org/",
+    "@type": "Invoice",
+    "description": "January 2015 Visa bill.",
+    "url": "http://acmebank.com/invoice.pdf",
+    "broker": {
+      "@type": "BankOrCreditUnion",
+      "name": "ACME Bank",
+    },
+    "accountId": "xxxx-xxxx-xxxx-1234",
+    "customer": {
+      "@type": "Person",
+      "name": "Jane Doe"
+    },
+    "paymentDue": "2015-01-30",
+    "minimumPaymentDue": {
+      "@type": "PriceSpecification",
+      "price": 15.00,
+      "priceCurrency": "USD"
+    },
+    "totalPaymentDue": {
+      "@type": "PriceSpecification",
+      "price": 200.00,
+      "priceCurrency": "USD"
+    },
+    "billingPeriod": "2014-12-21/P30D",
+    "paymentStatus": "payment due"
+}'
 schema.org/invoice-1-microdata.html: {
   "property": {
     "schema:paymentDue": [
@@ -1151,13 +1704,91 @@ schema.org/itemlist-1-rdfa.html: ok
 schema.org/mainEntity-1-jsonld.html: ok
 schema.org/mainEntity-1-microdata.html: ok
 schema.org/mainEntity-1-rdfa.html: ok
-schema.org/mainEntity-2-jsonld.html: ok
+schema.org/mainEntity-2-jsonld.html: Error: 757: unexpected token at '{
+    "@context": "http://schema.org",
+      "@type": "Restaurant",
+      "mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "http://cathscafe.example.com/",
+      },
+      "name": "Cath's Cafe",
+      "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 11:00-20:00",
+      "telephone": "+155501003344",
+      "menu": "/menu"
+}'
 schema.org/mainEntity-2-microdata.html: ok
 schema.org/mainEntity-2-rdfa.html: ok
 schema.org/map-1-jsonld.html: ok
-schema.org/map-1-microdata.html: ok
-schema.org/map-1-rdfa.html: ok
-schema.org/music-1-jsonld.html: ok
+schema.org/map-1-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/map-1-microdata.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : name>]"
+    ]
+  }
+}
+schema.org/map-1-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/map-1-rdfa.html": [
+      "Syntax errors:",
+      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : name>]"
+    ]
+  }
+}
+schema.org/music-1-jsonld.html: Error: 757: unexpected token at '{
+    "@context": "http://schema.org",
+    "@type": "MusicAlbum",
+    "@id": "http://musicbrainz.org/release-group/bff544a7-56e0-3ed6-9e0f-3b676cca9111",
+    "name": "Let It Be",
+    "sameAs": [
+        "http://en.wikipedia.org/wiki/Let_It_Be",
+        "http://www.wikidata.org/wiki/Q199585"
+    ],
+    "image": "http://coverartarchive.org/release-group/bff544a7-56e0-3ed6-9e0f-3b676cca9111/front.jpg",
+    "albumProductionType": "http://schema.org/StudioAlbum",
+    "albumReleaseType": "http://schema.org/AlbumRelease",
+    "genre": "rock",
+    "byArtist": {
+        "@type": "MusicGroup",
+        "name": "The Beatles",
+        "@id": "http://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d"
+    },
+    "albumRelease": {
+        "@type": "MusicRelease",
+        "name": "Let It Be",
+        "@id": "http://musicbrainz.org/release/8d5347a5-9ecb-44be-a213-860aaaf5d0b8"
+    },
+    track: {
+	    "@type": "ItemList",
+	    "numberOfItems": 12,
+	    "itemListElement": [
+		    {
+		      "@type": "ListItem",
+		      "position": 1,
+		      "item": {
+			      "@type": "MusicRecording",
+			      "name": "Two Of Us"
+		      }
+		    },
+		    {
+		      "@type": "ListItem",
+		      "position": 2,
+		      "item": {
+			      "@type": "MusicRecording",
+			      "name": "Dig a Pony"
+		      }
+		    },
+		    {
+		      "@type": "ListItem",
+		      "position": 3,
+		      "item": {
+			      "@type": "MusicRecording",
+			      "name": "Across the Universe"
+		      }
+		    }
+	    ]
+    }
+}'
 schema.org/music-1-microdata.html: ok
 schema.org/music-1-rdfa.html: ok
 schema.org/music-2-jsonld.html: ok

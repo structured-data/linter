@@ -272,7 +272,6 @@ module RDF::Linter
       params["format"] = "all" if params["format"].to_s.empty?
       reader_opts = {
         base_uri: params["url"],
-        validate: params["validate"],
         format:   params["format"].to_sym,
         headers:  {
           "User-Agent"    => "Structured-Data-Linter/#{RDF::Linter::VERSION}",
