@@ -1,6 +1,14 @@
 GIT
+  remote: git://github.com/dougbarth/jsonlint.git
+  revision: 82cfd44c6e49ce42d7bfa411e1a84466cd02e37b
+  specs:
+    jsonlint (0.1.0)
+      oj (~> 2)
+      trollop (~> 2)
+
+GIT
   remote: git://github.com/ruby-rdf/json-ld.git
-  revision: d5d8f4be100a010c1e47a8ff9e946f0bbe00433f
+  revision: cb69b3c0ff6cba6413b686137c36550a1eb2c66c
   branch: develop
   specs:
     json-ld (1.1.8)
@@ -19,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 8e250273f05acf60b6d2be34980e4fce4b22c2f5
+  revision: f15a657d23d7d165c3406d8afa0c3405be9fd24a
   branch: develop
   specs:
     rdf-rdfa (1.1.6)
@@ -42,10 +50,10 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: c54cf29034d4cb06549f16b548ec0252dc08f634
+  revision: 5e7d794c3ffa4128fb5c033207bf0c7f046ba770
   branch: develop
   specs:
-    rdf (1.1.13)
+    rdf (1.1.14)
       link_header (~> 0.0, >= 0.0.8)
 
 PATH
@@ -110,7 +118,7 @@ GEM
       domain_name (~> 0.5)
     i18n (0.7.0)
     jsmin (1.0.1)
-    json (1.8.2)
+    json (1.8.3)
     kgio (2.9.3)
     link_header (0.0.8)
     linkeddata (1.1.11)
@@ -136,11 +144,12 @@ GEM
       sparql-client (~> 1.1, >= 1.1.3)
     mime-types (2.6.1)
     mini_portile (0.6.2)
-    minitest (5.6.1)
+    minitest (5.7.0)
     net-http-persistent (2.9.4)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    oj (2.12.9)
     rack (1.6.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -244,6 +253,7 @@ GEM
     syntax (1.2.0)
     thread_safe (0.3.5)
     tilt (1.4.1)
+    trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     unf (0.1.4)
@@ -265,6 +275,7 @@ DEPENDENCIES
   byebug
   curb (~> 0.8)
   json-ld!
+  jsonlint!
   linter!
   rack-test (~> 0.6)
   rake

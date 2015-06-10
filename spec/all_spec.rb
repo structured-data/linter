@@ -6,6 +6,7 @@ require 'rdf/n3'
 require 'rdf/microdata'
 
 describe RDF::All::Reader do
+
   # Check format detection
   describe ".detect" do
     [

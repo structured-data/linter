@@ -28,11 +28,10 @@ rescue Exception => e
 end
 
 options = {
-  :verbose => false,
-  :validate => false,
-  :strict => true,
-  :output => STDOUT,
-  :format => :all,
+  verbose: false,
+  strict: true,
+  output: STDOUT,
+  format: :all,
 }
 input = nil
 

@@ -16,7 +16,7 @@ module RDF::Linter
     # @option options [RDF::URI] :base_uri location of file, or where to treat content as having been located.
     # @option options [Boolean] :output_format (:linter)
     #   Output format of graph, defaults to linter-based RDFa.
-    # @return [Array(RDF::Graph, String, RDF::URI)] graph, messages, base_uri
+    # @return [Array(RDF::Graph, Hash{Symbol => Array(String)}, RDF::URI)] graph, messages, base_uri
     def parse(reader_opts)
       logger = reader_opts[:logger] ||= begin
         l = Logger.new(STDOUT)  # In case we're not invoked from rack
@@ -26,27 +26,42 @@ module RDF::Linter
       RDF::Reasoner.apply(:rdfs, :schema)
       graph = RDF::Repository.new
       reader_opts[:prefixes] ||= {}
+      reader_opts[:validate] = true
       reader_opts[:rdf_terms] = true unless reader_opts.has_key?(:rdf_terms)
+      lint_messages = {}
 
-      reader = case
-      when reader_opts[:tempfile]
-        logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
-        RDF::All::Reader.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
-      when reader_opts[:content]
-        logger.info "Parse form data with format #{reader_opts[:format]}"
-        RDF::All::Reader.new(reader_opts[:content], reader_opts) {|r| graph << r}
-      when reader_opts[:base_uri]
-        logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
-        RDF::All::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
-      else
-        raise RDF::ReaderError, "Expected one of tempfile, content or base_uri"
+      # Try parsing first with validation mode, and if an error is raised, collect messages and re-parse without validation mode
+      begin
+        reader = case
+        when reader_opts[:tempfile]
+          logger.info "Parse input file #{reader_opts[:tempfile].inspect} with forma/t #{reader_opts[:format]}"
+          reader_opts[:base_uri] ||= "http://example.org/"  # Allow relative URIs
+          RDF::All::Reader.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
+        when reader_opts[:content]
+          logger.info "Parse form data with format #{reader_opts[:format]}"
+          reader_opts[:base_uri] ||= "http://example.org/"  # Allow relative URIs
+          RDF::All::Reader.new(reader_opts[:content], reader_opts) {|r| graph << r}
+        when reader_opts[:base_uri]
+          logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
+          RDF::All::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
+        else
+          raise RDF::ReaderError, "Expected one of tempfile, content or base_uri"
+        end
+      rescue RDF::ReaderError => e
+        if reader_opts[:validate]
+          reader_opts.delete(:validate)
+          lint_messages[:validation] = {reader_opts[:base_uri] =>  e.message.split("\n")}
+          retry
+        else
+          return [nil, lint_messages, reader.base_uri]
+        end
       end
 
       # Expand graph with entailed types
       expand_graph(graph)
 
       # Perform some actual linting on the graph
-      lint_messages = lint(graph)
+      lint_messages.merge!(lint(graph))
       [graph, lint_messages, reader.base_uri]
     end
     module_function :parse
