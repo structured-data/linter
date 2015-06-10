@@ -13,6 +13,8 @@ gem 'rdf-microdata',  git: "git://github.com/ruby-rdf/rdf-microdata.git", branch
 gem 'rdf-reasoner',   git: "git://github.com/ruby-rdf/rdf-reasoner.git", branch: "develop"
 gem 'json-ld',        git: "git://github.com/ruby-rdf/json-ld.git", branch: "develop"
 gem 'jsonlint',       git: "git://github.com/dougbarth/jsonlint.git"
+gem 'rest-client',            '~> 1.8'
+gem 'rest-client-components', '~> 1.4'
 
 group :development, :test do
   gem 'rake'
