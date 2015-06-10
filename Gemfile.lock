@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: f15a657d23d7d165c3406d8afa0c3405be9fd24a
+  revision: 6b818eec404ac31555e9323ed1dfa0160239a502
   branch: develop
   specs:
     rdf-rdfa (1.1.6)
@@ -59,7 +59,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.2.5)
+    linter (2.2.6)
       activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -283,6 +283,8 @@ DEPENDENCIES
   rdf-microdata!
   rdf-rdfa!
   rdf-reasoner!
+  rest-client (~> 1.8)
+  rest-client-components (~> 1.4)
   rspec (~> 3.0)
   rspec-its (~> 1.0)
   shotgun (~> 0.9)
