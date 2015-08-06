@@ -281,7 +281,11 @@ module RDF::Linter
       }
       reader_opts[:base_uri] = params["url"].strip if params["url"]
       reader_opts[:tempfile] = params["file"][:tempfile] if params["file"]
-      reader_opts[:content] = params["content"] unless params["content"].to_s.empty?
+      unless params["content"].to_s.empty?
+        content = params["content"]
+        content = content.encode(Encoding::UTF_8) unless content.encoding.to_s.include?("UTF")
+        reader_opts[:content] = content
+      end
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
       reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :development
       reader_opts[:matched_templates] = []
