@@ -200,9 +200,9 @@ describe RDF::Linter::Application do
 
   describe "get /examples/schema.org/:file" do
     {
-      "WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html" => "text/html",
-      "WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html" => "text/html",
-      "WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-jsonld.html" => "text/html",
+      "Car-221-rdfa.html" => "text/html",
+      "Car-221-microdata.html" => "text/html",
+      "Car-221-jsonld.html" => "text/html",
     }.each do |file, content_type|
       context file do
         subject {

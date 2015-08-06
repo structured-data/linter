@@ -1,31 +1,90 @@
-schema.org/AcceptAction-126-jsonld.html: ok
-schema.org/AchieveAction-37-jsonld.html: ok
-schema.org/Action-35-jsonld.html: ok
+schema.org/AcceptAction-127-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/AcceptAction-127-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/AchieveAction-38-jsonld.html: ok
 schema.org/Action-36-jsonld.html: ok
-schema.org/AddAction-164-jsonld.html: ok
-schema.org/AddAction-165-jsonld.html: ok
-schema.org/AgreeAction-49-jsonld.html: ok
-schema.org/AllocateAction-125-jsonld.html: ok
-schema.org/AppendAction-167-jsonld.html: ok
-schema.org/ApplyAction-130-jsonld.html: ok
-schema.org/ArriveAction-119-jsonld.html: ok
-schema.org/AskAction-Question-93-jsonld.html: ok
-schema.org/AssessAction-41-jsonld.html: ok
-schema.org/AssignAction-127-jsonld.html: {
+schema.org/Action-37-jsonld.html: ok
+schema.org/AddAction-165-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/AddAction-165-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/AddAction-166-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/AddAction-166-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/AgreeAction-50-jsonld.html: ok
+schema.org/AllocateAction-126-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/AllocateAction-126-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/AppendAction-168-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/AppendAction-168-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/ApplyAction-131-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ApplyAction-131-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/ArriveAction-120-jsonld.html: ok
+schema.org/AskAction-Question-94-jsonld.html: ok
+schema.org/AssessAction-42-jsonld.html: ok
+schema.org/AssignAction-128-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/AssignAction-128-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "property": {
     "schema:recipient": [
       "Subject _:b0(schema:AssignAction,schema:Thing,schema:Action,schema:OrganizeAction,schema:AllocateAction,schema:AssignAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
     ]
   }
 }
-schema.org/AuthorizeAction-128-jsonld.html: ok
-schema.org/BefriendAction-90-jsonld.html: ok
-schema.org/Book-CreativeWork-180-jsonld.html: ok
-schema.org/Book-CreativeWork-180-microdata.html: ok
-schema.org/Book-CreativeWork-180-rdfa.html: ok
-schema.org/BookmarkAction-131-jsonld.html: ok
-schema.org/BorrowAction-155-jsonld.html: ok
-schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html: Error: 757: unexpected token at '{
+schema.org/AuthorizeAction-129-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/AuthorizeAction-129-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/BefriendAction-91-jsonld.html: ok
+schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-181-jsonld.html: ok
+schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-181-microdata.html: ok
+schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-181-rdfa.html: ok
+schema.org/BookmarkAction-132-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/BookmarkAction-132-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/BorrowAction-156-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/BorrowAction-156-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-jsonld.html: Error: 757: unexpected token at '{
   "@context":"http://schema.org",
   "@type":"BroadcastEvent",
   "startDate":"2014-10-12T21:00",
@@ -44,17 +103,15 @@ schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-jsonld.html: Error: 757
   "isLiveBroadcast":"False",
   "name":"Modern Family - S6E8 - Three Turkeys",
   "description":"Phil and Luke take over Thanksgiving duties."
-}'
-schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html: {
+}
+'
+schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-microdata.html: {
   "property": {
     "schema:IsLiveBroadcast": [
       "No property definition found"
     ],
-    "schema:videoFormat": [
-      "Subject _:g70289709733400(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
-    ],
     "schema:subtitleLanguage": [
-      "Subject _:g70289709733400(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:Movie,schema:ScreeningEvent,schema:TVEpisode)"
+      "Subject _:g70149234595800(schema:BroadcastEvent,schema:Thing,schema:Event,schema:PublicationEvent,schema:BroadcastEvent) not compatible with domainIncludes (schema:Movie,schema:ScreeningEvent,schema:TVEpisode)"
     ],
     "schema:startDate": [
       "Object \"starts 10/12/2014 9:00PM\" not compatible with rangeIncludes (schema:Date)"
@@ -64,50 +121,55 @@ schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-microdata.html: {
     ]
   }
 }
-schema.org/BroadcastEvent-BroadcastService-TVEpisode-240-rdfa.html: ok
-schema.org/BusReservation-BusTrip-182-jsonld.html: ok
-schema.org/BuyAction-146-jsonld.html: ok
-schema.org/CancelAction-134-jsonld.html: ok
-schema.org/Car-218-jsonld.html: ok
-schema.org/Car-218-microdata.html: {
+schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-rdfa.html: ok
+schema.org/BusReservation-BusTrip-185-jsonld.html: ok
+schema.org/BuyAction-147-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/BuyAction-147-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/CancelAction-135-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/CancelAction-135-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/Car-221-jsonld.html: ok
+schema.org/Car-221-microdata.html: {
   "property": {
     "schema:airbags": [
       "No property definition found"
     ]
   }
 }
-schema.org/Car-218-rdfa.html: {
+schema.org/Car-221-rdfa.html: {
   "property": {
     "schema:airbags": [
       "No property definition found"
     ]
   }
 }
-schema.org/CheckAction-84-jsonld.html: {
+schema.org/CheckAction-85-jsonld.html: {
   "class": {
     "schema:FlightStatus": [
       "No class definition found"
     ]
   }
 }
-schema.org/CheckAction-85-jsonld.html: ok
-schema.org/CheckInAction-94-jsonld.html: ok
-schema.org/CheckInAction-95-jsonld.html: {
+schema.org/CheckAction-86-jsonld.html: ok
+schema.org/CheckInAction-95-jsonld.html: ok
+schema.org/CheckInAction-96-jsonld.html: {
   "property": {
     "schema:airline": [
       "No property definition found"
     ]
   }
 }
-schema.org/CheckInAction-96-jsonld.html: ok
-schema.org/CheckOutAction-97-jsonld.html: ok
-schema.org/ChooseAction-42-jsonld.html: {
-  "property": {
-    "schema:option": [
-      "Term is superseded by schema:actionOption"
-    ]
-  }
-}
+schema.org/CheckInAction-97-jsonld.html: ok
+schema.org/CheckOutAction-98-jsonld.html: ok
 schema.org/ChooseAction-43-jsonld.html: {
   "property": {
     "schema:option": [
@@ -115,31 +177,44 @@ schema.org/ChooseAction-43-jsonld.html: {
     ]
   }
 }
-schema.org/CivicStructure-Place-22-jsonld.html: ok
-schema.org/CivicStructure-Place-22-microdata.html: ok
-schema.org/CivicStructure-Place-22-rdfa.html: ok
-schema.org/CommentAction-98-jsonld.html: ok
-schema.org/CommunicateAction-91-jsonld.html: ok
+schema.org/ChooseAction-44-jsonld.html: {
+  "property": {
+    "schema:option": [
+      "Term is superseded by schema:actionOption"
+    ]
+  }
+}
+schema.org/CivicStructure-Place-23-jsonld.html: ok
+schema.org/CivicStructure-Place-23-microdata.html: ok
+schema.org/CivicStructure-Place-23-rdfa.html: ok
+schema.org/CommentAction-99-jsonld.html: ok
 schema.org/CommunicateAction-92-jsonld.html: ok
-schema.org/ConfirmAction-100-jsonld.html: ok
-schema.org/ConsumeAction-56-jsonld.html: {
+schema.org/CommunicateAction-93-jsonld.html: ok
+schema.org/ConfirmAction-101-jsonld.html: ok
+schema.org/ConsumeAction-57-jsonld.html: {
   "property": {
     "schema:agent": [
       "Object _:b1(schema:Muscle,schema:Thing,schema:MedicalEntity,schema:AnatomicalStructure,schema:Muscle) not compatible with rangeIncludes (schema:Organization,schema:Person)"
     ]
   }
 }
-schema.org/CookAction-77-jsonld.html: ok
-schema.org/CreateAction-76-jsonld.html: ok
-schema.org/CreativeWork-ContentRating-18-jsonld.html: ok
-schema.org/CreativeWork-ContentRating-18-microdata.html: ok
-schema.org/CreativeWork-ContentRating-18-rdfa.html: ok
-schema.org/DeleteAction-169-jsonld.html: ok
-schema.org/DepartAction-120-jsonld.html: ok
-schema.org/DisagreeAction-50-jsonld.html: ok
-schema.org/DiscoverAction-86-jsonld.html: ok
-schema.org/DislikeAction-51-jsonld.html: ok
-schema.org/DonateAction-147-jsonld.html: Error: 757: unexpected token at '{
+schema.org/CookAction-78-jsonld.html: ok
+schema.org/CreateAction-77-jsonld.html: ok
+schema.org/CreativeWork-ContentRating-19-jsonld.html: ok
+schema.org/CreativeWork-ContentRating-19-microdata.html: ok
+schema.org/CreativeWork-ContentRating-19-rdfa.html: ok
+schema.org/DeleteAction-170-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/DeleteAction-170-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/DepartAction-121-jsonld.html: ok
+schema.org/DisagreeAction-51-jsonld.html: ok
+schema.org/DiscoverAction-87-jsonld.html: ok
+schema.org/DislikeAction-52-jsonld.html: ok
+schema.org/DonateAction-148-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "DonateAction",
   "agent": {
@@ -152,102 +227,123 @@ schema.org/DonateAction-147-jsonld.html: Error: 757: unexpected token at '{
     "@type": "Person",
     "name": "Steve"
   }
-}'
-schema.org/DownloadAction-156-jsonld.html: ok
-schema.org/DrawAction-78-jsonld.html: {
+}
+'
+schema.org/DownloadAction-157-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/DownloadAction-157-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/DrawAction-79-jsonld.html: {
   "class": {
     "schema:Paining": [
       "No class definition found"
     ]
   }
 }
-schema.org/DrinkAction-57-jsonld.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-31-jsonld.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-31-microdata.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-31-rdfa.html: ok
-schema.org/EatAction-58-jsonld.html: ok
-schema.org/EducationalOrganization-23-jsonld.html: ok
-schema.org/EducationalOrganization-23-microdata.html: ok
-schema.org/EducationalOrganization-23-rdfa.html: ok
-schema.org/EndorseAction-52-jsonld.html: ok
-schema.org/EnrollAction-135-jsonld.html: {
+schema.org/DrinkAction-58-jsonld.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-32-jsonld.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-32-microdata.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-32-rdfa.html: ok
+schema.org/EatAction-59-jsonld.html: ok
+schema.org/EducationalOrganization-24-jsonld.html: ok
+schema.org/EducationalOrganization-24-microdata.html: ok
+schema.org/EducationalOrganization-24-rdfa.html: ok
+schema.org/EndorseAction-53-jsonld.html: ok
+schema.org/EnrollAction-136-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/EnrollAction-136-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "class": {
     "schema:EnrollAction": [
       "No class definition found"
     ]
   }
 }
-schema.org/Event-Place-PostalAddress-AggregateOffer-8-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-AggregateOffer-8-microdata.html: ok
-schema.org/Event-Place-PostalAddress-AggregateOffer-8-rdfa.html: ok
-schema.org/Event-Place-PostalAddress-MusicGroup-Offer-LimitedAvailability-179-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-Offer-175-jsonld.html: {
+schema.org/Event-Place-PostalAddress-MusicGroup-Offer-LimitedAvailability-180-jsonld.html: ok
+schema.org/Event-Place-PostalAddress-Offer-176-jsonld.html: {
   "property": {
     "schema:startDate": [
       "Object \"Sat Sep 14\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/Event-Place-PostalAddress-Offer-175-microdata.html: {
+schema.org/Event-Place-PostalAddress-Offer-176-microdata.html: {
   "property": {
     "schema:startDate": [
       "Object \"Sat Sep 14\" not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/Event-Place-PostalAddress-Offer-175-rdfa.html: ok
-schema.org/Event-Place-PostalAddress-Offer-177-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-Offer-177-microdata.html: ok
-schema.org/Event-Place-PostalAddress-Offer-177-rdfa.html: ok
-schema.org/Event-Place-PostalAddress-Offer-EventCancelled-176-jsonld.html: {
+schema.org/Event-Place-PostalAddress-Offer-176-rdfa.html: ok
+schema.org/Event-Place-PostalAddress-Offer-178-jsonld.html: ok
+schema.org/Event-Place-PostalAddress-Offer-178-microdata.html: ok
+schema.org/Event-Place-PostalAddress-Offer-178-rdfa.html: ok
+schema.org/Event-Place-PostalAddress-Offer-EventCancelled-177-jsonld.html: {
   "property": {
     "schema:startDate": [
       "Object \"Sat Sep 14\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/Event-Place-PostalAddress-Offer-EventCancelled-176-microdata.html: {
+schema.org/Event-Place-PostalAddress-Offer-EventCancelled-177-microdata.html: {
   "property": {
     "schema:startDate": [
       "Object \"Sat Sep 14\" not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/Event-Place-PostalAddress-Offer-EventCancelled-176-rdfa.html: ok
-schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-jsonld.html: {
+schema.org/Event-Place-PostalAddress-Offer-EventCancelled-177-rdfa.html: ok
+schema.org/Event-Place-PostalAddress-Offer-SoldOut-179-jsonld.html: {
   "property": {
     "schema:startDate": [
       "Object \"Sat Sep 14\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-microdata.html: {
+schema.org/Event-Place-PostalAddress-Offer-SoldOut-179-microdata.html: {
   "property": {
     "schema:startDate": [
       "Object \"Sat Sep 14\" not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/Event-Place-PostalAddress-Offer-SoldOut-178-rdfa.html: ok
-schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-jsonld.html: {
+schema.org/Event-Place-PostalAddress-Offer-SoldOut-179-rdfa.html: ok
+schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-196-jsonld.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-jsonld.html": [
+    "file:/Users/gregg/Projects/linter/schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-196-jsonld.html": [
       "loading document failed: The same key is defined more than once: workPerformed.sameAs"
     ]
   }
 }
-schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-microdata.html: {
+schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-196-microdata.html: {
   "property": {
     "schema:startDate": [
       "Object \"Wed 01 October 2014 19:30\" not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-193-rdfa.html: ok
-schema.org/EventReservation-Ticket-Seat-183-jsonld.html: ok
-schema.org/ExerciseAction-140-jsonld.html: ok
-schema.org/ExerciseAction-141-jsonld.html: ok
-schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-jsonld.html: Error: 757: unexpected token at '{
+schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-196-rdfa.html: ok
+schema.org/EventReservation-Ticket-Seat-186-jsonld.html: ok
+schema.org/ExerciseAction-141-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ExerciseAction-141-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/ExerciseAction-142-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ExerciseAction-142-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-222-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "Person",
   "name" : "Brent",
@@ -271,49 +367,56 @@ schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-jsonld.html: Error: 757: unexpecte
         "airbags" : "6",
         }
     }
-}'
-schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-microdata.html: {
+}
+'
+schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-222-microdata.html: {
   "property": {
     "schema:airbags": [
       "No property definition found"
     ]
   }
 }
-schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-219-rdfa.html: {
+schema.org/FULLEXAMPLEFORAUTOEXTENSIONCar-222-rdfa.html: {
   "property": {
     "schema:airbags": [
       "No property definition found"
     ]
   }
 }
-schema.org/FilmAction-79-jsonld.html: ok
-schema.org/FindAction-83-jsonld.html: ok
-schema.org/Flight-FlightReservation-184-jsonld.html: ok
-schema.org/FollowAction-106-jsonld.html: {
+schema.org/FilmAction-80-jsonld.html: ok
+schema.org/FindAction-84-jsonld.html: ok
+schema.org/Flight-FlightReservation-187-jsonld.html: ok
+schema.org/FollowAction-107-jsonld.html: {
   "property": {
     "schema:location": [
       "Object _:b3(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Place,schema:PostalAddress)"
     ]
   }
 }
-schema.org/FoodEstablishmentReservation-185-jsonld.html: ok
-schema.org/GiveAction-157-jsonld.html: ok
-schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-jsonld.html: {
+schema.org/FoodEstablishmentReservation-188-jsonld.html: ok
+schema.org/GiveAction-158-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/GiveAction-158-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-174-jsonld.html: {
   "property": {
     "schema:validFor": [
       "Object \"\" not compatible with rangeIncludes (schema:Duration)"
     ]
   }
 }
-schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-microdata.html: {
+schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-174-microdata.html: {
   "property": {
     "schema:validFor": [
       "Object \"1 year\" not compatible with rangeIncludes (schema:Duration)"
     ]
   }
 }
-schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-173-rdfa.html: ok
-schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-174-jsonld.html: {
+schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-174-rdfa.html: ok
+schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-175-jsonld.html: {
   "class": {
     "schema:CivicAudience": [
       "No class definition found"
@@ -328,20 +431,25 @@ schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudi
     ]
   }
 }
-schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-205-jsonld.html: ok
-schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-205-microdata.html: ok
-schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-205-rdfa.html: ok
-schema.org/IgnoreAction-45-jsonld.html: ok
+schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-208-jsonld.html: ok
+schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-208-microdata.html: ok
+schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-208-rdfa.html: ok
 schema.org/IgnoreAction-46-jsonld.html: ok
 schema.org/IgnoreAction-47-jsonld.html: ok
-schema.org/ImageObject-19-jsonld.html: ok
-schema.org/ImageObject-19-microdata.html: ok
-schema.org/ImageObject-19-rdfa.html: ok
-schema.org/IndividualProduct-32-jsonld.html: ok
-schema.org/IndividualProduct-32-microdata.html: ok
-schema.org/IndividualProduct-32-rdfa.html: ok
-schema.org/InformAction-99-jsonld.html: ok
-schema.org/InsertAction-166-jsonld.html: {
+schema.org/IgnoreAction-48-jsonld.html: ok
+schema.org/ImageObject-20-jsonld.html: ok
+schema.org/ImageObject-20-microdata.html: ok
+schema.org/ImageObject-20-rdfa.html: ok
+schema.org/IndividualProduct-33-jsonld.html: ok
+schema.org/IndividualProduct-33-microdata.html: ok
+schema.org/IndividualProduct-33-rdfa.html: ok
+schema.org/InformAction-100-jsonld.html: ok
+schema.org/InsertAction-167-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/InsertAction-167-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "class": {
     "schema:InsertedAction": [
       "No class definition found"
@@ -353,11 +461,29 @@ schema.org/InsertAction-166-jsonld.html: {
     ]
   }
 }
-schema.org/InstallAction-59-jsonld.html: ok
-schema.org/InteractAction-88-jsonld.html: ok
+schema.org/InstallAction-60-jsonld.html: ok
 schema.org/InteractAction-89-jsonld.html: ok
-schema.org/InviteAction-102-jsonld.html: ok
-schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jsonld.html: Error: 757: unexpected token at '{
+schema.org/InteractAction-90-jsonld.html: ok
+schema.org/InteractionCounter-Article-22-jsonld.html: Error: 399: unexpected token at '],
+  "name": "How to Tie a Reef Knot"
+}
+'
+schema.org/InteractionCounter-Article-22-microdata.html: {
+  "class": {
+    "schema:Website": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/InteractionCounter-Article-22-rdfa.html: {
+  "class": {
+    "schema:Website": [
+      "No class definition found"
+    ]
+  }
+}
+schema.org/InviteAction-103-jsonld.html: ok
+schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-224-jsonld.html: Error: 757: unexpected token at '{
     "@context": "http://schema.org/",
     "@type": "Invoice",
     "broker": {
@@ -369,7 +495,7 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jso
       "@type": "Person",
       "name": "Jane Doe"
     },
-    "paymentDue": "2015-01-30",
+    "paymentDueDate": "2015-01-30",
     "minimumPaymentDue": {
       "@type": "PriceSpecification",
       "price": 0.00,
@@ -380,7 +506,7 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jso
       "price": 0.00,
       "priceCurrency": "USD"
     },
-    "paymentStatus": "paid",
+    "paymentStatus": "http://schema.org/PaymentComplete",
     "referencesOrder": [
       {
         "@type": "Order",
@@ -405,10 +531,11 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-jso
         }
       },
     ]
-}'
-schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-microdata.html: {
+}
+'
+schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-224-microdata.html: {
   "property": {
-    "schema:paymentDue": [
+    "schema:paymentDueDate": [
       "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
     ],
     "schema:orderDate": [
@@ -419,13 +546,13 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-mic
       "No property definition found"
     ],
     "schema:orderedItem": [
-      "Object _:g70289723577980(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+      "Object _:g70149216086800(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
     ]
   }
 }
-schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdfa.html: {
+schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-224-rdfa.html: {
   "property": {
-    "schema:paymentDue": [
+    "schema:paymentDueDate": [
       "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
     ],
     "schema:billingPeriod": [
@@ -439,23 +566,23 @@ schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-221-rdf
       "No property definition found"
     ],
     "schema:orderedItem": [
-      "Object _:g70289674021360(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
+      "Object _:g70149208498200(schema:Service,schema:Thing,schema:Intangible,schema:Service) not compatible with rangeIncludes (schema:Product,schema:OrderItem)"
     ]
   }
 }
-schema.org/ItemList-14-jsonld.html: ok
-schema.org/ItemList-14-microdata.html: ok
-schema.org/ItemList-14-rdfa.html: ok
-schema.org/ItemList-216-jsonld.html: {
+schema.org/ItemList-15-jsonld.html: ok
+schema.org/ItemList-15-microdata.html: ok
+schema.org/ItemList-15-rdfa.html: ok
+schema.org/ItemList-219-jsonld.html: {
   "property": {
     "schema:@url": [
       "No property definition found"
     ]
   }
 }
-schema.org/ItemList-216-microdata.html: ok
-schema.org/ItemList-216-rdfa.html: ok
-schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected token at '{
+schema.org/ItemList-219-microdata.html: ok
+schema.org/ItemList-219-rdfa.html: ok
+schema.org/ItemList-CreativeWork-218-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": ["ItemList", "CreativeWork"],
   "name": "Top 5 covers of Bob Dylan Songs",
@@ -463,7 +590,7 @@ schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected t
   "about: {
     "@type": "MusicRecording",
     "byArtist": {
-      "@type": "Person",
+      "@type": "MusicGroup",
       "name": "Bob Dylan"
     }
   },
@@ -477,7 +604,7 @@ schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected t
         "@type": "MusicRecording",
         "name": "If Not For You",
         "byArtist": {
-          "@type": "Person",
+          "@type": "MusicGroup",
           "name": "George Harrison"
         }
       }
@@ -489,7 +616,7 @@ schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected t
         "@type": "MusicRecording",
         "name": "The Times They Are A-Changin'",
         "byArtist": {
-          "@type": "Person",
+          "@type": "MusicGroup",
           "name": "Tracy Chapman"
         }
       }
@@ -502,11 +629,11 @@ schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected t
         "name": "It Ain't Me Babe",
         "byArtist": [
           {
-            "@type": "Person",
+            "@type": "MusicGroup",
             "name": "Johnny Cash"
           },
           {
-            "@type": "Person",
+            "@type": "MusicGroup",
             "name": "June Carter Cash"
           }
         ]
@@ -519,7 +646,7 @@ schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected t
         "@type": "MusicRecording",
         "name": "Don't Think Twice It's Alright",
         "byArtist": {
-          "@type": "Person",
+          "@type": "MusicGroup",
           "name": "Waylon Jennings"
         }
       }
@@ -531,15 +658,16 @@ schema.org/ItemList-CreativeWork-Place-215-jsonld.html: Error: 757: unexpected t
         "@type": "MusicRecording",
         "name": "All Along the Watchtower",
         "byArtist": {
-          "@type": "Person",
+          "@type": "MusicGroup",
           "name": "Jimi Hendrix"
         }
       }
     }
   ]
-}'
-schema.org/ItemList-CreativeWork-Place-215-microdata.html: ok
-schema.org/ItemList-CreativeWork-Place-215-rdfa.html: {
+}
+'
+schema.org/ItemList-CreativeWork-218-microdata.html: ok
+schema.org/ItemList-CreativeWork-218-rdfa.html: {
   "class": {
     "schema:CreativeWOrk": [
       "No class definition found"
@@ -547,35 +675,57 @@ schema.org/ItemList-CreativeWork-Place-215-rdfa.html: {
   },
   "property": {
     "schema:author": [
-      "Subject _:g70289724050320(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g70149226341540(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork)"
     ],
     "schema:about": [
-      "Subject _:g70289724050320(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
-    ],
-    "schema:byArtist": [
-      "Object _:g70289708306060(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70289694142380(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70289724886640(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70289694456260(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70289677003360(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70289674222300(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)",
-      "Object _:g70289673500740(schema:Person,schema:Thing,schema:Person) not compatible with rangeIncludes (schema:MusicGroup)"
+      "Subject _:g70149226341540(schema:ItemList,schema:CreativeWOrk,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:CommunicateAction)"
     ]
   }
 }
-schema.org/ItemList-MusicAlbum-217-jsonld.html: {
-  "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-217-jsonld.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: Invalid char in CDATA 0x0>]"
+schema.org/ItemList-MusicAlbum-220-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "MusicAlbum",
+  "name": "King of Limbs",
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "Radiohead",
+  },
+  track: {
+    "@type": "ItemList",
+    "numberOfItems": 8,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "MusicRecording",
+          "name": "Bloom"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "MusicRecording",
+          "name": "Morning Mr. Magpie"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "MusicRecording",
+          "name": "Little by Little"
+        }
+      }
     ]
   }
 }
-schema.org/ItemList-MusicAlbum-217-microdata.html: {
+'
+schema.org/ItemList-MusicAlbum-220-microdata.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-217-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>]"
+    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-220-microdata.html": [
+      "error parsing attribute name"
     ]
   },
   "property": {
@@ -589,53 +739,65 @@ schema.org/ItemList-MusicAlbum-217-microdata.html: {
       "No property definition found"
     ],
     "schema:position": [
-      "Subject _:g70289675297600(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70149226853360(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70289675297600(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70149226853360(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
-schema.org/ItemList-MusicAlbum-217-rdfa.html: {
+schema.org/ItemList-MusicAlbum-220-rdfa.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-217-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>, #<Nokogiri::XML::SyntaxError: error parsing attribute name>]"
+    "file:/Users/gregg/Projects/linter/schema.org/ItemList-MusicAlbum-220-rdfa.html": [
+      "error parsing attribute name"
     ]
   },
   "property": {
     "schema:position": [
-      "Subject _:g70289725279640(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
+      "Subject _:g70149234384220(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:ListItem)"
     ],
     "schema:item": [
-      "Subject _:g70289725279640(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
+      "Subject _:g70149234384220(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:ListItem)"
     ]
   }
 }
-schema.org/ItemList-Product-Offer-214-jsonld.html: {
+schema.org/ItemList-Product-Offer-217-jsonld.html: {
   "property": {
     "schema:offers": [
       "Subject _:b0(schema:ItemList,schema:Thing,schema:Intangible,schema:ItemList) not compatible with domainIncludes (schema:CreativeWork,schema:Event,schema:Product,schema:AggregateOffer)"
     ]
   }
 }
-schema.org/ItemList-Product-Offer-214-microdata.html: ok
-schema.org/ItemList-Product-Offer-214-rdfa.html: {
+schema.org/ItemList-Product-Offer-217-microdata.html: ok
+schema.org/ItemList-Product-Offer-217-rdfa.html: {
   "property": {
     "schema:itemListElement": [
-      "Subject _:g70289676891080(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
+      "Subject _:g70149208436140(schema:Product,schema:Thing,schema:Product) not compatible with domainIncludes (schema:ItemList)"
     ]
   }
 }
-schema.org/JobPosting-26-jsonld.html: ok
-schema.org/JobPosting-26-microdata.html: ok
-schema.org/JobPosting-26-rdfa.html: ok
-schema.org/JoinAction-107-jsonld.html: ok
+schema.org/JobPosting-27-jsonld.html: ok
+schema.org/JobPosting-27-microdata.html: ok
+schema.org/JobPosting-27-rdfa.html: ok
 schema.org/JoinAction-108-jsonld.html: ok
 schema.org/JoinAction-109-jsonld.html: ok
 schema.org/JoinAction-110-jsonld.html: ok
-schema.org/LeaveAction-111-jsonld.html: ok
-schema.org/LendAction-158-jsonld.html: Error: 757: unexpected token at '{
+schema.org/JoinAction-111-jsonld.html: Error: 757: unexpected token at '<!-- John joined the festival. -->
+{
+  "@context": "http://schema.org",
+  "@type": "JoinAction",
+  "agent": {
+    "@type": "Person",
+    "name": "John"
+  },
+  "event": {
+    "@type": "Festival",
+    "name": "Woodstock"
+  }
+}
+'
+schema.org/LeaveAction-112-jsonld.html: ok
+schema.org/LendAction-159-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "LendAction",
   "agent": {
@@ -648,38 +810,35 @@ schema.org/LendAction-158-jsonld.html: Error: 757: unexpected token at '{
     "@type": "Person",
     "name": "Steve"
   }
-}'
-schema.org/LikeAction-53-jsonld.html: ok
-schema.org/ListenAction-60-jsonld.html: ok
+}
+'
+schema.org/LikeAction-54-jsonld.html: ok
 schema.org/ListenAction-61-jsonld.html: ok
 schema.org/ListenAction-62-jsonld.html: ok
-schema.org/LodgingReservation-186-jsonld.html: ok
-schema.org/LoseAction-38-jsonld.html: {
+schema.org/ListenAction-63-jsonld.html: ok
+schema.org/LodgingReservation-189-jsonld.html: ok
+schema.org/LoseAction-39-jsonld.html: {
   "property": {
     "schema:winner": [
       "Subject _:b0(schema:WinAction,schema:Thing,schema:Action,schema:AchieveAction,schema:WinAction) not compatible with domainIncludes (schema:LoseAction)"
     ]
   }
 }
-schema.org/MarryAction-112-jsonld.html: ok
-schema.org/MediaObject-AudioObject-5-jsonld.html: ok
-schema.org/MediaObject-AudioObject-5-microdata.html: ok
-schema.org/MediaObject-AudioObject-5-rdfa.html: ok
-schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-30-jsonld.html: ok
-schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-30-microdata.html: ok
-schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-30-rdfa.html: ok
-schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-jsonld.html: {
+schema.org/MarryAction-113-jsonld.html: ok
+schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-31-jsonld.html: ok
+schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-31-microdata.html: ok
+schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-31-rdfa.html: ok
+schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-28-jsonld.html: {
   "property": {
     "schema:subject": [
       "No property definition found"
     ]
   }
 }
-schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-microdata.html: {
+schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-28-microdata.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : a>]"
+    "file:/Users/gregg/Projects/linter/schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-28-microdata.html": [
+      "Unexpected end tag : a"
     ]
   },
   "property": {
@@ -688,15 +847,14 @@ schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContr
     ]
   }
 }
-schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-rdfa.html: {
+schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-28-rdfa.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-27-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : a>]"
+    "file:/Users/gregg/Projects/linter/schema.org/MedicalGuideline-MedicalGuidelineRecommendation-MedicalGuidelineContraindication-28-rdfa.html": [
+      "Unexpected end tag : a"
     ]
   }
 }
-schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-28-jsonld.html: {
+schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-29-jsonld.html: {
   "property": {
     "schema:code": [
       "Subject _:b0(schema:MedicalScholarlyArticle,schema:Thing,schema:CreativeWork,schema:Article,schema:ScholarlyArticle,schema:MedicalScholarlyArticle) not compatible with domainIncludes (schema:MedicalEntity)"
@@ -712,21 +870,21 @@ schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendati
     ]
   }
 }
-schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-28-microdata.html: {
+schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-29-microdata.html: {
   "property": {
     "schema:subject": [
       "No property definition found"
     ]
   }
 }
-schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-28-rdfa.html: {
+schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-29-rdfa.html: {
   "property": {
     "schema:subject": [
       "No property definition found"
     ]
   }
 }
-schema.org/MedicalWebPage-DrugClass-29-jsonld.html: {
+schema.org/MedicalWebPage-DrugClass-30-jsonld.html: {
   "property": {
     "schema:drug": [
       "Subject _:b0(schema:MedicalWebPage,schema:Thing,schema:CreativeWork,schema:WebPage,schema:MedicalWebPage) not compatible with domainIncludes (schema:DrugClass)"
@@ -736,26 +894,26 @@ schema.org/MedicalWebPage-DrugClass-29-jsonld.html: {
     ]
   }
 }
-schema.org/MedicalWebPage-DrugClass-29-microdata.html: {
+schema.org/MedicalWebPage-DrugClass-30-microdata.html: {
   "property": {
     "schema:otherName": [
       "No property definition found"
     ]
   }
 }
-schema.org/MedicalWebPage-DrugClass-29-rdfa.html: {
+schema.org/MedicalWebPage-DrugClass-30-rdfa.html: {
   "property": {
     "schema:otherName": [
       "No property definition found"
     ]
   }
 }
-schema.org/MoveAction-118-jsonld.html: ok
-schema.org/Movie-15-jsonld.html: ok
-schema.org/Movie-15-microdata.html: ok
-schema.org/Movie-15-rdfa.html: ok
-schema.org/MusicAlbum-25-jsonld.html: ok
-schema.org/MusicAlbum-25-microdata.html: {
+schema.org/MoveAction-119-jsonld.html: ok
+schema.org/Movie-16-jsonld.html: ok
+schema.org/Movie-16-microdata.html: ok
+schema.org/Movie-16-rdfa.html: ok
+schema.org/MusicAlbum-26-jsonld.html: ok
+schema.org/MusicAlbum-26-microdata.html: {
   "property": {
     "schema:url": [
       "Object \"/artist/radiohead/album/the-king-of-limbs\" not compatible with rangeIncludes (schema:URL)",
@@ -764,7 +922,7 @@ schema.org/MusicAlbum-25-microdata.html: {
     ]
   }
 }
-schema.org/MusicAlbum-25-rdfa.html: {
+schema.org/MusicAlbum-26-rdfa.html: {
   "property": {
     "schema:url": [
       "Object \"/artist/radiohead/album/the-king-of-limbs\" not compatible with rangeIncludes (schema:URL)",
@@ -773,23 +931,23 @@ schema.org/MusicAlbum-25-rdfa.html: {
     ]
   }
 }
-schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-192-jsonld.html: ok
-schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-192-microdata.html: {
+schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-195-jsonld.html: ok
+schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-195-microdata.html: {
   "property": {
     "schema:startDate": [
       "Object \"May23\" not compatible with rangeIncludes (schema:Date)"
     ]
   }
 }
-schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-192-rdfa.html: ok
-schema.org/MusicEvent-Place-Offer-206-jsonld.html: ok
-schema.org/MusicEvent-Place-Offer-206-microdata.html: ok
-schema.org/MusicEvent-Place-Offer-206-rdfa.html: ok
-schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-jsonld.html: ok
-schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-microdata.html: ok
-schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-207-rdfa.html: ok
-schema.org/MusicPlaylist-20-jsonld.html: ok
-schema.org/MusicPlaylist-20-microdata.html: {
+schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-195-rdfa.html: ok
+schema.org/MusicEvent-Place-Offer-209-jsonld.html: ok
+schema.org/MusicEvent-Place-Offer-209-microdata.html: ok
+schema.org/MusicEvent-Place-Offer-209-rdfa.html: ok
+schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-210-jsonld.html: ok
+schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-210-microdata.html: ok
+schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-210-rdfa.html: ok
+schema.org/MusicPlaylist-21-jsonld.html: ok
+schema.org/MusicPlaylist-21-microdata.html: {
   "property": {
     "schema:url": [
       "Object \"sweet-home-alabama\" not compatible with rangeIncludes (schema:URL)",
@@ -800,7 +958,7 @@ schema.org/MusicPlaylist-20-microdata.html: {
     ]
   }
 }
-schema.org/MusicPlaylist-20-rdfa.html: {
+schema.org/MusicPlaylist-21-rdfa.html: {
   "property": {
     "schema:url": [
       "Object \"sweet-home-alabama\" not compatible with rangeIncludes (schema:URL)",
@@ -811,10 +969,7 @@ schema.org/MusicPlaylist-20-rdfa.html: {
     ]
   }
 }
-schema.org/NGO-7-jsonld.html: ok
-schema.org/NGO-7-microdata.html: ok
-schema.org/NGO-7-rdfa.html: ok
-schema.org/Order-OrderItem-Organization-Person-222-jsonld.html: Error: 757: unexpected token at '{
+schema.org/Order-OrderItem-Organization-Person-225-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org/"
   "@type": "Order",
   "seller": {
@@ -856,8 +1011,9 @@ schema.org/Order-OrderItem-Organization-Person-222-jsonld.html: Error: 757: unex
       }
     }
   ]
-}'
-schema.org/Order-OrderItem-Organization-Person-222-microdata.html: {
+}
+'
+schema.org/Order-OrderItem-Organization-Person-225-microdata.html: {
   "property": {
     "schema:expectedArrivalFrom": [
       "Object \"2015-03-10\" not compatible with rangeIncludes (schema:DateTime)",
@@ -868,7 +1024,7 @@ schema.org/Order-OrderItem-Organization-Person-222-microdata.html: {
     ]
   }
 }
-schema.org/Order-OrderItem-Organization-Person-222-rdfa.html: {
+schema.org/Order-OrderItem-Organization-Person-225-rdfa.html: {
   "property": {
     "schema:expectedArrivalFrom": [
       "Object \"2015-03-10\" not compatible with rangeIncludes (schema:DateTime)",
@@ -879,7 +1035,12 @@ schema.org/Order-OrderItem-Organization-Person-222-rdfa.html: {
     ]
   }
 }
-schema.org/OrderAction-148-jsonld.html: {
+schema.org/OrderAction-149-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/OrderAction-149-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "class": {
     "schema:OrderedAction": [
       "No class definition found"
@@ -891,7 +1052,7 @@ schema.org/OrderAction-148-jsonld.html: {
     ]
   }
 }
-schema.org/OrderedEvent-195-jsonld.html: {
+schema.org/OrderedEvent-198-jsonld.html: {
   "class": {
     "schema:OrderedEvent": [
       "No class definition found"
@@ -906,9 +1067,9 @@ schema.org/OrderedEvent-195-jsonld.html: {
     ]
   }
 }
-schema.org/OrderedEvent-195-microdata.html: ok
-schema.org/OrderedEvent-195-rdfa.html: ok
-schema.org/OrderedEvent-196-jsonld.html: {
+schema.org/OrderedEvent-198-microdata.html: ok
+schema.org/OrderedEvent-198-rdfa.html: ok
+schema.org/OrderedEvent-199-jsonld.html: {
   "class": {
     "schema:OrderedEvent": [
       "No class definition found"
@@ -926,31 +1087,18 @@ schema.org/OrderedEvent-196-jsonld.html: {
     ]
   }
 }
-schema.org/OrderedEvent-196-microdata.html: ok
-schema.org/OrderedEvent-196-rdfa.html: ok
-schema.org/Organization-BroadcastService-238-jsonld.html: {
-  "property": {
-    "schema:videoFormat": [
-      "Subject _:b0(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
-    ]
-  }
-}
-schema.org/Organization-BroadcastService-238-microdata.html: {
-  "property": {
-    "schema:videoFormat": [
-      "Subject _:g70289661638840(schema:BroadcastService,schema:Thing,schema:BroadcastService) not compatible with domainIncludes (schema:ScreeningEvent,schema:TelevisionStation)"
-    ]
-  }
-}
-schema.org/Organization-BroadcastService-238-rdfa.html: {
+schema.org/OrderedEvent-199-microdata.html: ok
+schema.org/OrderedEvent-199-rdfa.html: ok
+schema.org/Organization-BroadcastService-241-jsonld.html: ok
+schema.org/Organization-BroadcastService-241-microdata.html: ok
+schema.org/Organization-BroadcastService-241-rdfa.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/Organization-BroadcastService-238-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: error parsing attribute name>]"
+    "file:/Users/gregg/Projects/linter/schema.org/Organization-BroadcastService-241-rdfa.html": [
+      "error parsing attribute name"
     ]
   }
 }
-schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-jsonld.html: Error: 757: unexpected token at '{
+schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-jsonld.html: Error: 757: unexpected token at '{
   "@context":"http://schema.org",
   "@type":"TelevisionChannel",
   "name": "WAAY 7",
@@ -969,45 +1117,65 @@ schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteServi
       "name":"ABC"
     }
   }
-}'
-schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-microdata.html: {
+}
+'
+schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-microdata.html: {
   "class": {
     "schema:CableOrSatelliteProvider": [
       "No class definition found"
     ]
   }
 }
-schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-239-rdfa.html: ok
-schema.org/Organization-ContactPoint-204-jsonld.html: ok
-schema.org/Organization-ContactPoint-204-microdata.html: ok
-schema.org/Organization-ContactPoint-204-rdfa.html: ok
-schema.org/Organization-PostalAddress-6-jsonld.html: ok
-schema.org/Organization-PostalAddress-6-microdata.html: ok
-schema.org/Organization-PostalAddress-6-rdfa.html: ok
-schema.org/OrganizeAction-123-jsonld.html: ok
-schema.org/OrganizeAction-124-jsonld.html: ok
-schema.org/PaintAction-80-jsonld.html: {
+schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-rdfa.html: ok
+schema.org/Organization-ContactPoint-207-jsonld.html: ok
+schema.org/Organization-ContactPoint-207-microdata.html: ok
+schema.org/Organization-ContactPoint-207-rdfa.html: ok
+schema.org/OrganizeAction-124-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/OrganizeAction-124-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/OrganizeAction-125-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/OrganizeAction-125-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/PaintAction-81-jsonld.html: {
   "class": {
     "schema:Paining": [
       "No class definition found"
     ]
   }
 }
-schema.org/PayAction-149-jsonld.html: {
+schema.org/PayAction-150-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/PayAction-150-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "property": {
     "schema:priceCurrency": [
       "Subject _:b0(schema:PayAction,schema:Thing,schema:Action,schema:TradeAction,schema:PayAction) not compatible with domainIncludes (schema:Reservation,schema:Ticket,schema:Offer,schema:PriceSpecification)"
     ]
   }
 }
-schema.org/PerformAction-142-jsonld.html: {
+schema.org/PerformAction-143-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/PerformAction-143-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "class": {
     "schema:PeformAction": [
       "No class definition found"
     ]
   }
 }
-schema.org/Pharmacy-199-jsonld.html: Error: 757: unexpected token at '{
+schema.org/Pharmacy-202-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "Pharmacy",
   "name": "Philippa's Pharmacy",
@@ -1015,78 +1183,70 @@ schema.org/Pharmacy-199-jsonld.html: Error: 757: unexpected token at '{
     convenience, a department of Delia's Drugstore.",
   "openingHours": "Mo,Tu,We,Th 09:00-12:00",
   "telephone": "+18005551234"
-}'
-schema.org/Pharmacy-199-microdata.html: ok
-schema.org/Pharmacy-199-rdfa.html: ok
-schema.org/PhotographAction-81-jsonld.html: ok
-schema.org/Place-GeoCoordinates-4-jsonld.html: ok
-schema.org/Place-GeoCoordinates-4-microdata.html: ok
-schema.org/Place-GeoCoordinates-4-rdfa.html: ok
-schema.org/Place-LocalBusiness-2-jsonld.html: ok
-schema.org/Place-LocalBusiness-2-microdata.html: {
+}
+'
+schema.org/Pharmacy-202-microdata.html: ok
+schema.org/Pharmacy-202-rdfa.html: ok
+schema.org/PhotographAction-82-jsonld.html: ok
+schema.org/PlanAction-133-jsonld.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/Place-LocalBusiness-2-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    "file:/Users/gregg/Projects/linter/schema.org/PlanAction-133-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
     ]
   }
 }
-schema.org/Place-LocalBusiness-2-rdfa.html: {
+schema.org/PlanAction-134-jsonld.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/Place-LocalBusiness-2-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    "file:/Users/gregg/Projects/linter/schema.org/PlanAction-134-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
     ]
   }
 }
-schema.org/PlanAction-132-jsonld.html: ok
-schema.org/PlanAction-133-jsonld.html: ok
-schema.org/PlayAction-139-jsonld.html: ok
-schema.org/PostalAddress-17-jsonld.html: ok
-schema.org/PostalAddress-17-microdata.html: ok
-schema.org/PostalAddress-17-rdfa.html: ok
-schema.org/PostalAddress-Pharmacy-Store-203-jsonld.html: ok
-schema.org/PostalAddress-Pharmacy-Store-203-microdata.html: ok
-schema.org/PostalAddress-Pharmacy-Store-203-rdfa.html: ok
-schema.org/PrependAction-168-jsonld.html: ok
-schema.org/Product-AggregateRating-AggregateOffer-Offer-10-jsonld.html: ok
-schema.org/Product-AggregateRating-AggregateOffer-Offer-10-microdata.html: ok
-schema.org/Product-AggregateRating-AggregateOffer-Offer-10-rdfa.html: ok
-schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-jsonld.html: ok
-schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-microdata.html: ok
-schema.org/Product-AggregateRating-Offer-Review-Rating-price-9-rdfa.html: ok
-schema.org/ProductModel-34-jsonld.html: ok
-schema.org/ProductModel-34-microdata.html: ok
-schema.org/ProductModel-34-rdfa.html: ok
-schema.org/Question-Answer-QAPage-189-jsonld.html: {
+schema.org/PlayAction-140-jsonld.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/Question-Answer-QAPage-189-jsonld.html": [
+    "file:/Users/gregg/Projects/linter/schema.org/PlayAction-140-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/PostalAddress-18-jsonld.html: ok
+schema.org/PostalAddress-18-microdata.html: ok
+schema.org/PostalAddress-18-rdfa.html: ok
+schema.org/PostalAddress-Pharmacy-Store-206-jsonld.html: ok
+schema.org/PostalAddress-Pharmacy-Store-206-microdata.html: ok
+schema.org/PostalAddress-Pharmacy-Store-206-rdfa.html: ok
+schema.org/PrependAction-169-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/PrependAction-169-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/ProductModel-35-jsonld.html: ok
+schema.org/ProductModel-35-microdata.html: ok
+schema.org/ProductModel-35-rdfa.html: ok
+schema.org/Question-Answer-QAPage-192-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/Question-Answer-QAPage-192-jsonld.html": [
       "loading document failed: The same key is defined more than once: text"
     ]
   }
 }
-schema.org/Question-Answer-QAPage-189-microdata.html: {
-  "property": {
-    "schema:suggestedAnswer": [
-      "Subject _:g70289661166980(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
+schema.org/Question-Answer-QAPage-192-microdata.html: ok
+schema.org/Question-Answer-QAPage-192-rdfa.html: ok
+schema.org/QuoteAction-151-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/QuoteAction-151-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
     ]
-  }
-}
-schema.org/Question-Answer-QAPage-189-rdfa.html: {
-  "property": {
-    "schema:suggestedAnswer": [
-      "Subject _:g70289724577100(schema:Answer,schema:Thing,schema:CreativeWork,schema:Comment,schema:Answer) not compatible with domainIncludes (schema:Question)"
-    ]
-  }
-}
-schema.org/QuoteAction-150-jsonld.html: {
+  },
   "property": {
     "schema:priceCurrency": [
       "Subject _:b0(schema:QuoteAction,schema:Thing,schema:Action,schema:TradeAction,schema:QuoteAction) not compatible with domainIncludes (schema:Reservation,schema:Ticket,schema:Offer,schema:PriceSpecification)"
     ]
   }
 }
-schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-jsonld.html: {
+schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-173-jsonld.html: {
   "property": {
     "schema:startDate": [
       "Object \"09:00, 7th of November 2013\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)",
@@ -1094,7 +1254,7 @@ schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-Bro
     ]
   }
 }
-schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-microdata.html: {
+schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-173-microdata.html: {
   "property": {
     "schema:startDate": [
       "Object \"09:00, 7th of November 2013\" not compatible with rangeIncludes (schema:Date)",
@@ -1102,36 +1262,57 @@ schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-Bro
     ]
   }
 }
-schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-rdfa.html: ok
-schema.org/ReactAction-48-jsonld.html: ok
-schema.org/ReadAction-63-jsonld.html: ok
+schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-173-rdfa.html: ok
+schema.org/ReactAction-49-jsonld.html: ok
 schema.org/ReadAction-64-jsonld.html: ok
-schema.org/ReadAction-65-jsonld.html: {
+schema.org/ReadAction-65-jsonld.html: ok
+schema.org/ReadAction-66-jsonld.html: {
   "class": {
     "schema:Code": [
       "Term is superseded by schema:SoftwareSourceCode"
     ]
   }
 }
-schema.org/ReadAction-66-jsonld.html: ok
-schema.org/ReceiveAction-159-jsonld.html: ok
-schema.org/Recipe-NutritionInformation-12-jsonld.html: ok
-schema.org/Recipe-NutritionInformation-12-microdata.html: ok
-schema.org/Recipe-NutritionInformation-12-rdfa.html: ok
-schema.org/RegisterAction-113-jsonld.html: ok
+schema.org/ReadAction-67-jsonld.html: ok
+schema.org/ReceiveAction-160-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ReceiveAction-160-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
 schema.org/RegisterAction-114-jsonld.html: ok
 schema.org/RegisterAction-115-jsonld.html: ok
-schema.org/RejectAction-129-jsonld.html: ok
-schema.org/RentAction-151-jsonld.html: ok
-schema.org/RentalCarReservation-187-jsonld.html: {
+schema.org/RegisterAction-116-jsonld.html: ok
+schema.org/RejectAction-130-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/RejectAction-130-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/RentAction-152-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/RentAction-152-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/RentalCarReservation-190-jsonld.html: {
   "property": {
     "schema:operatingCompany": [
       "No property definition found"
     ]
   }
 }
-schema.org/ReplaceAction-170-jsonld.html: ok
-schema.org/ReplyAction-Question-Answer-103-jsonld.html: Error: 757: unexpected token at '{
+schema.org/ReplaceAction-171-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ReplaceAction-171-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/ReplyAction-Question-Answer-104-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "AskAction",
   "agent": {
@@ -1150,63 +1331,106 @@ schema.org/ReplyAction-Question-Answer-103-jsonld.html: Error: 757: unexpected t
     }
     "text": "4."
   }
-}'
-schema.org/ReserveAction-136-jsonld.html: ok
-schema.org/Restaurant-197-jsonld.html: ok
-schema.org/Restaurant-197-microdata.html: ok
-schema.org/Restaurant-197-rdfa.html: ok
-schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-jsonld.html: ok
-schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-microdata.html: ok
-schema.org/Restaurant-AggregateRating-FoodEstablishment-LocalBusiness-3-rdfa.html: ok
-schema.org/Restaurant-ViewAction-EntryPoint-SoftwareApplication-191-jsonld.html: ok
-schema.org/ReturnAction-160-jsonld.html: ok
-schema.org/ReviewAction-55-jsonld.html: ok
-schema.org/Role-OrganizationRole-208-jsonld.html: ok
-schema.org/Role-OrganizationRole-208-microdata.html: ok
-schema.org/Role-OrganizationRole-208-rdfa.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-209-jsonld.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-209-microdata.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-209-rdfa.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-210-jsonld.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-210-microdata.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-210-rdfa.html: ok
-schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-jsonld.html: ok
-schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-microdata.html: ok
-schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-212-rdfa.html: ok
-schema.org/Role-PerformanceRole-211-jsonld.html: ok
-schema.org/Role-PerformanceRole-211-microdata.html: ok
-schema.org/Role-PerformanceRole-211-rdfa.html: ok
-schema.org/RsvpAction-101-jsonld.html: ok
-schema.org/ScheduleAction-137-jsonld.html: ok
-schema.org/SearchAction-143-jsonld.html: ok
+}
+'
+schema.org/ReserveAction-137-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ReserveAction-137-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/Restaurant-200-jsonld.html: ok
+schema.org/Restaurant-200-microdata.html: ok
+schema.org/Restaurant-200-rdfa.html: ok
+schema.org/Restaurant-ViewAction-EntryPoint-SoftwareApplication-194-jsonld.html: ok
+schema.org/ReturnAction-161-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ReturnAction-161-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/ReviewAction-56-jsonld.html: ok
+schema.org/Role-OrganizationRole-211-jsonld.html: ok
+schema.org/Role-OrganizationRole-211-microdata.html: ok
+schema.org/Role-OrganizationRole-211-rdfa.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-212-jsonld.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-212-microdata.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-212-rdfa.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-213-jsonld.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-213-microdata.html: ok
+schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-213-rdfa.html: ok
+schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-215-jsonld.html: ok
+schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-215-microdata.html: ok
+schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-215-rdfa.html: ok
+schema.org/Role-PerformanceRole-214-jsonld.html: ok
+schema.org/Role-PerformanceRole-214-microdata.html: ok
+schema.org/Role-PerformanceRole-214-rdfa.html: ok
+schema.org/RsvpAction-102-jsonld.html: ok
+schema.org/ScheduleAction-138-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/ScheduleAction-138-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
 schema.org/SearchAction-144-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/SearchAction-144-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/SearchAction-145-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/SearchAction-145-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "property": {
     "schema:query": [
       "Object _:b2(schema:Class,schema:Thing,schema:Intangible,schema:Class) not compatible with rangeIncludes (schema:Text)"
     ]
   }
 }
-schema.org/SelectAction-138-jsonld.html: {
+schema.org/SelectAction-139-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/SelectAction-139-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "class": {
     "schema:SelectAction": [
       "No class definition found"
     ]
   }
 }
-schema.org/SellAction-152-jsonld.html: {
+schema.org/SellAction-153-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/SellAction-153-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "property": {
     "schema:location": [
       "Object _:b2(schema:Product,schema:Thing,schema:Product) not compatible with rangeIncludes (schema:Place,schema:PostalAddress)"
     ]
   }
 }
-schema.org/SendAction-161-jsonld.html: ok
-schema.org/ShareAction-104-jsonld.html: ok
+schema.org/SendAction-162-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/SendAction-162-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
 schema.org/ShareAction-105-jsonld.html: ok
-schema.org/SomeProducts-33-jsonld.html: ok
-schema.org/SomeProducts-33-microdata.html: ok
-schema.org/SomeProducts-33-rdfa.html: ok
-schema.org/SportsEvent-OrderedEvent-194-jsonld.html: {
+schema.org/ShareAction-106-jsonld.html: ok
+schema.org/SomeProducts-34-jsonld.html: ok
+schema.org/SomeProducts-34-microdata.html: ok
+schema.org/SomeProducts-34-rdfa.html: ok
+schema.org/SportsEvent-OrderedEvent-197-jsonld.html: {
   "class": {
     "schema:OrderedEvent": [
       "No class definition found"
@@ -1221,12 +1445,12 @@ schema.org/SportsEvent-OrderedEvent-194-jsonld.html: {
     ]
   }
 }
-schema.org/SportsEvent-OrderedEvent-194-microdata.html: ok
-schema.org/SportsEvent-OrderedEvent-194-rdfa.html: ok
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-jsonld.html: ok
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-microdata.html: ok
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-201-rdfa.html: ok
-schema.org/Store-OpeningHoursSpecification-198-jsonld.html: {
+schema.org/SportsEvent-OrderedEvent-197-microdata.html: ok
+schema.org/SportsEvent-OrderedEvent-197-rdfa.html: ok
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-204-jsonld.html: ok
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-204-microdata.html: ok
+schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-204-rdfa.html: ok
+schema.org/Store-OpeningHoursSpecification-201-jsonld.html: {
   "property": {
     "schema:closes": [
       "Object \"14:00\" not compatible with rangeIncludes (schema:Time)"
@@ -1236,7 +1460,7 @@ schema.org/Store-OpeningHoursSpecification-198-jsonld.html: {
     ]
   }
 }
-schema.org/Store-OpeningHoursSpecification-198-microdata.html: {
+schema.org/Store-OpeningHoursSpecification-201-microdata.html: {
   "property": {
     "schema:validFrom": [
       "Object \"24 December 2013\" not compatible with rangeIncludes (schema:DateTime)",
@@ -1256,7 +1480,7 @@ schema.org/Store-OpeningHoursSpecification-198-microdata.html: {
     ]
   }
 }
-schema.org/Store-OpeningHoursSpecification-198-rdfa.html: {
+schema.org/Store-OpeningHoursSpecification-201-rdfa.html: {
   "property": {
     "schema:validFrom": [
       "Object \"2013-12-24\" not compatible with rangeIncludes (schema:DateTime)",
@@ -1276,17 +1500,17 @@ schema.org/Store-OpeningHoursSpecification-198-rdfa.html: {
     ]
   }
 }
-schema.org/Store-Pharmacy-200-jsonld.html: ok
-schema.org/Store-Pharmacy-200-microdata.html: ok
-schema.org/Store-Pharmacy-200-rdfa.html: ok
-schema.org/Store-PostalAddress-Pharmacy-202-jsonld.html: ok
-schema.org/Store-PostalAddress-Pharmacy-202-microdata.html: ok
-schema.org/Store-PostalAddress-Pharmacy-202-rdfa.html: ok
-schema.org/SubscribeAction-116-jsonld.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-24-jsonld.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-24-microdata.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-24-rdfa.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-jsonld.html: {
+schema.org/Store-Pharmacy-203-jsonld.html: ok
+schema.org/Store-Pharmacy-203-microdata.html: ok
+schema.org/Store-Pharmacy-203-rdfa.html: ok
+schema.org/Store-PostalAddress-Pharmacy-205-jsonld.html: ok
+schema.org/Store-PostalAddress-Pharmacy-205-microdata.html: ok
+schema.org/Store-PostalAddress-Pharmacy-205-rdfa.html: ok
+schema.org/SubscribeAction-117-jsonld.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-25-jsonld.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-25-microdata.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-25-rdfa.html: ok
+schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-jsonld.html: {
   "property": {
     "schema:startDate": [
       "Object \"18:15, 22nd of May 2010\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date)",
@@ -1297,7 +1521,7 @@ schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastSer
     ]
   }
 }
-schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-microdata.html: {
+schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-microdata.html: {
   "property": {
     "schema:startDate": [
       "Object \"18:15, 22nd of May 2010\" not compatible with rangeIncludes (schema:Date)",
@@ -1308,22 +1532,28 @@ schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastSer
     ]
   }
 }
-schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-171-rdfa.html: ok
-schema.org/Table-16-jsonld.html: Error: 757: unexpected token at '{
+schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-rdfa.html: ok
+schema.org/Table-17-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "Table",
   "about": "list of presidents",
-}'
-schema.org/Table-16-microdata.html: ok
-schema.org/Table-16-rdfa.html: ok
-schema.org/TakeAction-162-jsonld.html: {
+}
+'
+schema.org/Table-17-microdata.html: ok
+schema.org/Table-17-rdfa.html: ok
+schema.org/TakeAction-163-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/TakeAction-163-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "property": {
     "schema:recipient": [
       "Subject _:b0(schema:TakeAction,schema:Thing,schema:Action,schema:TransferAction,schema:TakeAction) not compatible with domainIncludes (schema:CommunicateAction,schema:AuthorizeAction,schema:DonateAction,schema:GiveAction,schema:PayAction,schema:ReturnAction,schema:SendAction,schema:TipAction)"
     ]
   }
 }
-schema.org/TaxiReservation-188-jsonld.html: Error: 757: unexpected token at '{
+schema.org/TaxiReservation-191-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "TaxiReservation",
   "reservationId": "546323",
@@ -1352,9 +1582,10 @@ schema.org/TaxiReservation-188-jsonld.html: Error: 757: unexpected token at '{
     }
   },
   "pickupTime": "2017-08-05T16:00:00-07:00"
-}'
-schema.org/TieAction-39-jsonld.html: ok
-schema.org/TipAction-153-jsonld.html: Error: 757: unexpected token at '{
+}
+'
+schema.org/TieAction-40-jsonld.html: ok
+schema.org/TipAction-154-jsonld.html: Error: 757: unexpected token at '{
   "@context": "http://schema.org",
   "@type": "RentAction",
   "agent": {
@@ -1367,8 +1598,9 @@ schema.org/TipAction-153-jsonld.html: Error: 757: unexpected token at '{
     "@type": "Person",
     "name": "Steve"
   }
-}'
-schema.org/TrackAction-87-jsonld.html: {
+}
+'
+schema.org/TrackAction-88-jsonld.html: {
   "class": {
     "gr:UPS": [
       "No class definition found"
@@ -1380,133 +1612,119 @@ schema.org/TrackAction-87-jsonld.html: {
     ]
   }
 }
-schema.org/TradeAction-145-jsonld.html: {
+schema.org/TradeAction-146-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/TradeAction-146-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  },
   "property": {
     "schema:priceCurrency": [
       "Subject _:b0(schema:TradeAction,schema:Thing,schema:Action,schema:TradeAction) not compatible with domainIncludes (schema:Reservation,schema:Ticket,schema:Offer,schema:PriceSpecification)"
     ]
   }
 }
-schema.org/TrainReservation-TrainTrip-181-jsonld.html: ok
-schema.org/TransferAction-154-jsonld.html: ok
-schema.org/TravelAction-121-jsonld.html: ok
-schema.org/TravelAction-122-jsonld.html: ok
-schema.org/UnRegisterAction-117-jsonld.html: ok
-schema.org/UpdateAction-163-jsonld.html: ok
-schema.org/UseAction-67-jsonld.html: ok
-schema.org/UserInteraction-WebPage-Article-21-jsonld.html: ok
-schema.org/UserInteraction-WebPage-Article-21-microdata.html: ok
-schema.org/UserInteraction-WebPage-Article-21-rdfa.html: ok
-schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-jsonld.html: {
-  "property": {
-    "schema:video": [
-      "Subject _:b0(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
-    ],
-    "schema:playCount": [
-      "No property definition found"
+schema.org/TrainReservation-TrainTrip-184-jsonld.html: ok
+schema.org/TransferAction-155-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/TransferAction-155-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
     ]
   }
 }
-schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-microdata.html: {
-  "property": {
-    "schema:video": [
-      "Subject _:g70289675629200(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
-    ],
-    "schema:url": [
-      "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
-      "Object \"foo-fighters-everlong.html\" not compatible with rangeIncludes (schema:URL)"
-    ],
-    "schema:playCount": [
-      "No property definition found"
+schema.org/TravelAction-122-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/TravelAction-122-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
     ]
   }
 }
-schema.org/VideoObject-MusicGroup-MusicRecording-Event-13-rdfa.html: {
-  "property": {
-    "schema:video": [
-      "Subject _:g70289674578000(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
-    ],
-    "schema:url": [
-      "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
-      "Object \"foo-fighters-everlong.html\" not compatible with rangeIncludes (schema:URL)"
-    ],
-    "schema:playCount": [
-      "No property definition found"
+schema.org/TravelAction-123-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/TravelAction-123-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
     ]
   }
 }
-schema.org/ViewAction-69-jsonld.html: ok
+schema.org/UnRegisterAction-118-jsonld.html: ok
+schema.org/UpdateAction-164-jsonld.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/UpdateAction-164-jsonld.html": [
+      "loading document failed: unexpected characters after the JSON document at line 2, column 1 [parse.c:597]"
+    ]
+  }
+}
+schema.org/UseAction-68-jsonld.html: ok
 schema.org/ViewAction-70-jsonld.html: ok
 schema.org/ViewAction-71-jsonld.html: ok
-schema.org/VisualArtwork-249-jsonld.html: {
+schema.org/ViewAction-72-jsonld.html: ok
+schema.org/VisualArtwork-252-jsonld.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/VisualArtwork-249-jsonld.html": [
+    "file:/Users/gregg/Projects/linter/schema.org/VisualArtwork-252-jsonld.html": [
       "loading document failed: The same key is defined more than once: artMedium"
     ]
   }
 }
-schema.org/VisualArtwork-249-microdata.html: ok
-schema.org/VisualArtwork-249-rdfa.html: ok
-schema.org/VisualArtwork-250-jsonld.html: ok
-schema.org/VisualArtwork-250-microdata.html: ok
-schema.org/VisualArtwork-250-rdfa.html: ok
-schema.org/VisualArtwork-Person-248-jsonld.html: ok
-schema.org/VisualArtwork-Person-248-microdata.html: ok
-schema.org/VisualArtwork-Person-248-rdfa.html: ok
-schema.org/VoteAction-44-jsonld.html: ok
-schema.org/WantAction-54-jsonld.html: ok
-schema.org/WatchAction-72-jsonld.html: {
+schema.org/VisualArtwork-252-microdata.html: ok
+schema.org/VisualArtwork-252-rdfa.html: ok
+schema.org/VisualArtwork-253-jsonld.html: ok
+schema.org/VisualArtwork-253-microdata.html: ok
+schema.org/VisualArtwork-253-rdfa.html: ok
+schema.org/VisualArtwork-Person-251-jsonld.html: ok
+schema.org/VisualArtwork-Person-251-microdata.html: ok
+schema.org/VisualArtwork-Person-251-rdfa.html: ok
+schema.org/VoteAction-45-jsonld.html: ok
+schema.org/WantAction-55-jsonld.html: ok
+schema.org/WatchAction-73-jsonld.html: {
   "class": {
     "schema:TvEpisode": [
       "No class definition found"
     ]
   }
 }
-schema.org/WatchAction-73-jsonld.html: {
+schema.org/WatchAction-74-jsonld.html: {
   "class": {
     "schema:TvSeries": [
       "No class definition found"
     ]
   }
 }
-schema.org/WatchAction-74-jsonld.html: ok
 schema.org/WatchAction-75-jsonld.html: ok
-schema.org/WatchAction-Movie-190-jsonld.html: ok
-schema.org/WearAction-68-jsonld.html: ok
-schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-jsonld.html: {
+schema.org/WatchAction-76-jsonld.html: ok
+schema.org/WatchAction-Movie-193-jsonld.html: ok
+schema.org/WatchAction-Movie-193-microdata.html: ok
+schema.org/WatchAction-Movie-193-rdfa.html: ok
+schema.org/WearAction-69-jsonld.html: ok
+schema.org/WebPage-CollegeOrUniversity-216-jsonld.html: ok
+schema.org/WebPage-CollegeOrUniversity-216-microdata.html: ok
+schema.org/WebPage-CollegeOrUniversity-216-rdfa.html: ok
+schema.org/WinAction-41-jsonld.html: ok
+schema.org/WriteAction-83-jsonld.html: ok
+schema.org/accessibilityFeature-accessibilityHazard-fileFormat-182-jsonld.html: ok
+schema.org/accessibilityFeature-accessibilityHazard-fileFormat-182-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/accessibilityFeature-accessibilityHazard-fileFormat-182-microdata.html": [
+      "Tag figure invalid"
+    ]
+  },
   "property": {
-    "schema:bookFormat": [
-      "Subject _:b0(schema:WebPage,schema:Thing,schema:CreativeWork,schema:WebPage) not compatible with domainIncludes (schema:Book)"
-    ],
-    "schema:isbn": [
-      "Subject _:b0(schema:WebPage,schema:Thing,schema:CreativeWork,schema:WebPage) not compatible with domainIncludes (schema:Book)"
-    ],
-    "schema:numberOfPages": [
-      "Subject _:b0(schema:WebPage,schema:Thing,schema:CreativeWork,schema:WebPage) not compatible with domainIncludes (schema:Book)"
+    "schema:fileFormat": [
+      "Subject _:g70149208898880(schema:CreativeWork,schema:Thing,schema:CreativeWork) not compatible with domainIncludes (schema:SoftwareApplication)"
     ]
   }
 }
-schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html: {
+schema.org/accessibilityFeature-accessibilityHazard-fileFormat-182-rdfa.html: {
   "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+    "file:/Users/gregg/Projects/linter/schema.org/accessibilityFeature-accessibilityHazard-fileFormat-182-rdfa.html": [
+      "Tag figure invalid"
+    ]
+  },
+  "property": {
+    "schema:fileFormat": [
+      "Subject _:g70149232952820(schema:CreativeWork,schema:Thing,schema:CreativeWork) not compatible with domainIncludes (schema:SoftwareApplication)"
     ]
   }
 }
-schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html: {
-  "validation": {
-    "file:/Users/gregg/Projects/linter/schema.org/WebPage-Book-AggregateRating-Offer-Review-CreativeWork-11-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
-    ]
-  }
-}
-schema.org/WebPage-CollegeOrUniversity-213-jsonld.html: ok
-schema.org/WebPage-CollegeOrUniversity-213-microdata.html: ok
-schema.org/WebPage-CollegeOrUniversity-213-rdfa.html: ok
-schema.org/WinAction-40-jsonld.html: ok
-schema.org/WriteAction-82-jsonld.html: ok
 schema.org/bib-1-jsonld.html: ok
 schema.org/bib-1-microdata.html: ok
 schema.org/bib-1-rdfa.html: ok
@@ -1514,7 +1732,13 @@ schema.org/bib-2-jsonld.html: ok
 schema.org/bib-2-microdata.html: ok
 schema.org/bib-2-rdfa.html: ok
 schema.org/bib-3-jsonld.html: ok
-schema.org/bib-3-microdata.html: ok
+schema.org/bib-3-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/bib-3-microdata.html": [
+      "Unexpected end tag : meta"
+    ]
+  }
+}
 schema.org/bib-3-rdfa.html: ok
 schema.org/bib-4-jsonld.html: ok
 schema.org/bib-4-microdata.html: ok
@@ -1523,36 +1747,226 @@ schema.org/bib-5-jsonld.html: ok
 schema.org/bib-5-microdata.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/bib-5-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "htmlParseEntityRef: no name"
     ]
   }
 }
 schema.org/bib-5-rdfa.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/bib-5-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "htmlParseEntityRef: no name"
     ]
   }
 }
 schema.org/eg-1-jsonld.html: ok
 schema.org/eg-1-microdata.html: ok
 schema.org/eg-1-rdfa.html: ok
+schema.org/eg-10-jsonld.html: ok
+schema.org/eg-10-microdata.html: ok
+schema.org/eg-10-rdfa.html: ok
+schema.org/eg-11-jsonld.html: ok
+schema.org/eg-11-microdata.html: ok
+schema.org/eg-11-rdfa.html: ok
+schema.org/eg-12-jsonld.html: ok
+schema.org/eg-12-microdata.html: ok
+schema.org/eg-12-rdfa.html: ok
+schema.org/eg-13-jsonld.html: ok
+schema.org/eg-13-microdata.html: ok
+schema.org/eg-13-rdfa.html: ok
+schema.org/eg-14-jsonld.html: Error: 757: unexpected token at '{
+  "@context": "http://schema.org",
+  "@type": "MusicGroup",
+  "event": [
+    {
+      "@type": "Event",
+      "location": "Memphis, TN, US",
+      "offers": "ticketmaster.com/foofighters/may20-2011",
+      "startDate": "2011-05-20",
+      "url": "foo-fighters-may20-fedexforum"
+    },
+    {
+      "@type": "Event",
+      "location": "Council Bluffs, IA, US",
+      "offers": "ticketmaster.com/foofighters/may23-2011",
+      "startDate": "2011-05-23",
+      "url": "foo-fighters-may23-midamericacenter"
+    }
+  ],
+  "image": [
+    "foofighters-1.jpg",
+    "foofighters-2.jpg",
+    "foofighters-3.jpg"
+  ],
+  "interactionStatistic: {
+    "@type": "InteractionCounter",
+    "interactionType": "http://schema.org/CommentAction",
+    "userInteractionCount": "18",
+  },
+  "name": "Foo Fighters",
+  "track": [
+    {
+      "@type": "MusicRecording",
+      "audio": "foo-fighters-rope-play.html",
+      "duration": "PT4M5S",
+      "inAlbum": "foo-fighters-wasting-light.html",
+      "interactionStatistic: {
+        "@type": "InteractionCounter",
+        "interactionType": "http://schema.org/ListenAction",
+        "userInteractionCount": "14300",
+      }
+    },
+      "name": "Rope",
+      "offers": "foo-fighters-rope-buy.html",
+      "url": "foo-fighters-rope.html"
+    },
+    {
+      "@type": "MusicRecording",
+      "audio": "foo-fighters-everlong-play.html",
+      "duration": "PT6M33S",
+      "inAlbum": "foo-fighters-color-and-shape.html",
+      "name": "Everlong",
+      "interactionStatistic: {
+        "@type": "InteractionCounter",
+        "interactionType": "http://schema.org/ListenAction",
+        "userInteractionCount": "11700",
+      },
+      "offers": "foo-fighters-everlong-buy.html",
+      "url": "foo-fighters-everlong.html"
+    }
+  ],
+  "video": {
+    "@type": "VideoObject",
+    "description": "Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.",
+    "duration": "T1M33S",
+    "name": "Interview with the Foo Fighters",
+    "thumbnail": "foo-fighters-interview-thumb.jpg"
+  }
+}
+'
+schema.org/eg-14-microdata.html: {
+  "property": {
+    "schema:video": [
+      "Subject _:g70149233204700(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+    ],
+    "schema:interactionStatistic": [
+      "Subject _:g70149233204700(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+    ],
+    "schema:url": [
+      "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"foo-fighters-everlong.html\" not compatible with rangeIncludes (schema:URL)"
+    ],
+    "schema:interactionCount": [
+      "Term is superseded by schema:interactionStatistic"
+    ]
+  }
+}
+schema.org/eg-14-rdfa.html: {
+  "property": {
+    "schema:video": [
+      "Subject _:g70149208862360(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+    ],
+    "schema:interactionStatistic": [
+      "Subject _:g70149208862360(schema:MusicGroup,schema:Thing,schema:Organization,schema:PerformingGroup,schema:MusicGroup) not compatible with domainIncludes (schema:CreativeWork)"
+    ],
+    "schema:url": [
+      "Object \"foo-fighters-rope.html\" not compatible with rangeIncludes (schema:URL)",
+      "Object \"foo-fighters-everlong.html\" not compatible with rangeIncludes (schema:URL)"
+    ]
+  }
+}
+schema.org/eg-3-jsonld.html: ok
+schema.org/eg-3-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/eg-3-microdata.html": [
+      "Unexpected end tag : meta"
+    ]
+  }
+}
+schema.org/eg-3-rdfa.html: ok
+schema.org/eg-4-jsonld.html: ok
+schema.org/eg-4-microdata.html: ok
+schema.org/eg-4-rdfa.html: ok
+schema.org/eg-5-jsonld.html: ok
+schema.org/eg-5-microdata.html: ok
+schema.org/eg-5-rdfa.html: ok
+schema.org/eg-6-jsonld.html: ok
+schema.org/eg-6-microdata.html: ok
+schema.org/eg-6-rdfa.html: ok
+schema.org/eg-7-jsonld.html: ok
+schema.org/eg-7-microdata.html: ok
+schema.org/eg-7-rdfa.html: ok
+schema.org/eg-8-jsonld.html: ok
+schema.org/eg-8-microdata.html: ok
+schema.org/eg-8-rdfa.html: ok
+schema.org/eg-9-jsonld.html: ok
+schema.org/eg-9-microdata.html: ok
+schema.org/eg-9-rdfa.html: ok
+schema.org/eg2-jsonld.html: ok
+schema.org/eg2-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/eg2-microdata.html": [
+      "htmlParseEntityRef: no name"
+    ]
+  }
+}
+schema.org/eg2-rdfa.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/eg2-rdfa.html": [
+      "htmlParseEntityRef: no name"
+    ]
+  }
+}
+schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-183-jsonld.html: Error: 757: unexpected token at '{
+ "@context" :  "http://schema.org/" ,
+ "@type" : "CreativeWork" ,
+ "accessibilityHazard" :  [
+        "FlashingHazard" , "noSoundHazard" ,
+        "noMotionSimulationHazard" ] ,
+
+ "accessibilityFeature" : [
+        "alternativeText" , "longDescription" ] ,
+
+ "fileFormat" : [
+        "text/html" , "image/png" ,
+        "text/javascript" , "text/css" ] ,
+
+ "accessibilityAPI" : [
+        "ARIA" , "UIA" ]
+ "accessibilityControl" : [
+        "fullKeyboardControl" , "fullTouchControl" ,
+        "fullVoiceControl" , "fullMouseControl" ]
+} '
+schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-183-microdata.html: {
+  "validation": {
+    "file:/Users/gregg/Projects/linter/schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-183-microdata.html": [
+      "Tag main invalid"
+    ]
+  },
+  "property": {
+    "schema:fileFormat": [
+      "Subject _:g70149207567460(schema:CreativeWork,schema:Thing,schema:CreativeWork) not compatible with domainIncludes (schema:SoftwareApplication)"
+    ]
+  }
+}
+schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-183-rdfa.html: {
+  "property": {
+    "schema:fileFormat": [
+      "Subject _:g70149214778820(schema:CreativeWork,schema:Thing,schema:CreativeWork) not compatible with domainIncludes (schema:SoftwareApplication)"
+    ]
+  }
+}
 schema.org/games-1-jsonld.html: ok
 schema.org/games-1-microdata.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-1-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "htmlParseEntityRef: no name"
     ]
   }
 }
 schema.org/games-1-rdfa.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-1-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "htmlParseEntityRef: no name"
     ]
   }
 }
@@ -1560,16 +1974,14 @@ schema.org/games-2-jsonld.html: ok
 schema.org/games-2-microdata.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-2-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+      "htmlParseEntityRef: expecting ';'"
     ]
   }
 }
 schema.org/games-2-rdfa.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-2-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+      "htmlParseEntityRef: expecting ';'"
     ]
   }
 }
@@ -1583,16 +1995,14 @@ schema.org/games-3-jsonld.html: {
 schema.org/games-3-microdata.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-3-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+      "htmlParseEntityRef: expecting ';'"
     ]
   }
 }
 schema.org/games-3-rdfa.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-3-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>]"
+      "htmlParseEntityRef: expecting ';'"
     ]
   }
 }
@@ -1600,16 +2010,14 @@ schema.org/games-4-jsonld.html: ok
 schema.org/games-4-microdata.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-4-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "htmlParseEntityRef: no name"
     ]
   }
 }
 schema.org/games-4-rdfa.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-4-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "htmlParseEntityRef: no name"
     ]
   }
 }
@@ -1631,21 +2039,24 @@ schema.org/games-5-jsonld.html: Error: 757: unexpected token at '{
 "caption" : "CHALLENGE ACCEPTED! #6 [Hot Pepper Challenge!]",
 "description" : "How many Jalapeno can I eat without crying? ZERO. Today's challenge is for every chest I open, I have to eat a Jalapeno and... I HAVE TO WIN. This video was painful",
 "url" : "http://www.youtube.com/watch?v=0q6a9aFk3XY"
-}'
+}
+'
 schema.org/games-6-jsonld.html: ok
 schema.org/games-6-microdata.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-6-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "Tag section invalid",
+      "htmlParseEntityRef: expecting ';'",
+      "htmlParseEntityRef: no name"
     ]
   }
 }
 schema.org/games-6-rdfa.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/games-6-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: Tag section invalid>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: expecting ';'>, #<Nokogiri::XML::SyntaxError: htmlParseEntityRef: no name>]"
+      "Tag section invalid",
+      "htmlParseEntityRef: expecting ';'",
+      "htmlParseEntityRef: no name"
     ]
   }
 }
@@ -1664,7 +2075,7 @@ schema.org/invoice-1-jsonld.html: Error: 757: unexpected token at '{
       "@type": "Person",
       "name": "Jane Doe"
     },
-    "paymentDue": "2015-01-30",
+    "paymentDueDate": "2015-01-30",
     "minimumPaymentDue": {
       "@type": "PriceSpecification",
       "price": 15.00,
@@ -1676,11 +2087,12 @@ schema.org/invoice-1-jsonld.html: Error: 757: unexpected token at '{
       "priceCurrency": "USD"
     },
     "billingPeriod": "2014-12-21/P30D",
-    "paymentStatus": "payment due"
-}'
+    "paymentStatus": "http://schema.org/PaymentDue"
+}
+'
 schema.org/invoice-1-microdata.html: {
   "property": {
-    "schema:paymentDue": [
+    "schema:paymentDueDate": [
       "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
     ],
     "schema:billingPeriod": [
@@ -1690,7 +2102,7 @@ schema.org/invoice-1-microdata.html: {
 }
 schema.org/invoice-1-rdfa.html: {
   "property": {
-    "schema:paymentDue": [
+    "schema:paymentDueDate": [
       "Object \"2015-01-30\" not compatible with rangeIncludes (schema:DateTime)"
     ],
     "schema:billingPeriod": [
@@ -1715,23 +2127,22 @@ schema.org/mainEntity-2-jsonld.html: Error: 757: unexpected token at '{
       "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 11:00-20:00",
       "telephone": "+155501003344",
       "menu": "/menu"
-}'
+}
+'
 schema.org/mainEntity-2-microdata.html: ok
 schema.org/mainEntity-2-rdfa.html: ok
 schema.org/map-1-jsonld.html: ok
 schema.org/map-1-microdata.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/map-1-microdata.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : name>]"
+      "Unexpected end tag : name"
     ]
   }
 }
 schema.org/map-1-rdfa.html: {
   "validation": {
     "file:/Users/gregg/Projects/linter/schema.org/map-1-rdfa.html": [
-      "Syntax errors:",
-      "[#<Nokogiri::XML::SyntaxError: Unexpected end tag : name>]"
+      "Unexpected end tag : name"
     ]
   }
 }
@@ -1788,7 +2199,8 @@ schema.org/music-1-jsonld.html: Error: 757: unexpected token at '{
 		    }
 	    ]
     }
-}'
+}
+'
 schema.org/music-1-microdata.html: ok
 schema.org/music-1-rdfa.html: ok
 schema.org/music-2-jsonld.html: ok

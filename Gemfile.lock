@@ -8,15 +8,15 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/json-ld.git
-  revision: cb69b3c0ff6cba6413b686137c36550a1eb2c66c
+  revision: 8e3ac6a22206c3b7c19186a81162e0507b3a2abe
   branch: develop
   specs:
-    json-ld (1.1.8)
+    json-ld (1.1.9)
       rdf (~> 1.1, >= 1.1.7)
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-microdata.git
-  revision: b80c08885fec1ab0fcefb635d3a24c9b68d151a1
+  revision: 6fbc63f994be4bd790c905fa4ce3733b78c6c52b
   branch: develop
   specs:
     rdf-microdata (2.0.1)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: 6b818eec404ac31555e9323ed1dfa0160239a502
+  revision: b92cd12fcba0a492595418e58bdbe65da7f479c4
   branch: develop
   specs:
     rdf-rdfa (1.1.6)
@@ -50,7 +50,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: 5e7d794c3ffa4128fb5c033207bf0c7f046ba770
+  revision: 19229640daf5a9dabd99f89b51f111621891b36a
   branch: develop
   specs:
     rdf (1.1.14)
@@ -79,7 +79,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.1)
+    activesupport (4.2.3)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -111,9 +111,10 @@ GEM
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
+    git-version-bump (0.15.1)
     haml (4.0.6)
       tilt
-    htmlentities (4.3.3)
+    htmlentities (4.3.4)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     i18n (0.7.0)
@@ -149,12 +150,13 @@ GEM
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    oj (2.12.9)
-    rack (1.6.1)
+    oj (2.12.11)
+    rack (1.6.4)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-contrib (1.2.0)
-      rack (>= 0.9.1)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-linkeddata (1.1.0)
       linkeddata (>= 1.1.0)
       rack (>= 1.4)
@@ -162,7 +164,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    raindrops (0.13.0)
+    raindrops (0.15.0)
     rake (10.4.2)
     rdf-aggregate-repo (1.1.0)
       rdf (>= 1.1)
@@ -177,7 +179,7 @@ GEM
       rdf (~> 1.1, >= 1.1.6)
       rdf-rdfa (~> 1.1, >= 1.1.4.1)
       rdf-xsd (~> 1.1)
-    rdf-tabular (0.1.3.1)
+    rdf-tabular (0.2.0)
       addressable (~> 2.3)
       bcp47 (~> 0.3, >= 0.3.3)
       json-ld (~> 1.1)
@@ -192,9 +194,9 @@ GEM
     rdf-turtle (1.1.7)
       ebnf (~> 0.3, >= 0.3.6)
       rdf (~> 1.1, >= 1.1.10)
-    rdf-vocab (0.8.3)
+    rdf-vocab (0.8.4)
       rdf (~> 1.1, >= 1.1.10)
-    rdf-xsd (1.1.3)
+    rdf-xsd (1.1.4)
       rdf (~> 1.1, >= 1.1.9)
     rest-client (1.8.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -203,22 +205,22 @@ GEM
     rest-client-components (1.4.0)
       rack (>= 1.0.1)
       rest-client (>= 1.6.0)
-    rspec (3.2.0)
-      rspec-core (~> 3.2.0)
-      rspec-expectations (~> 3.2.0)
-      rspec-mocks (~> 3.2.0)
-    rspec-core (3.2.3)
-      rspec-support (~> 3.2.0)
-    rspec-expectations (3.2.1)
+    rspec (3.3.0)
+      rspec-core (~> 3.3.0)
+      rspec-expectations (~> 3.3.0)
+      rspec-mocks (~> 3.3.0)
+    rspec-core (3.3.2)
+      rspec-support (~> 3.3.0)
+    rspec-expectations (3.3.1)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.2.0)
+      rspec-support (~> 3.3.0)
     rspec-its (1.2.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.2.1)
+    rspec-mocks (3.3.2)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.2.0)
-    rspec-support (3.2.2)
+      rspec-support (~> 3.3.0)
+    rspec-support (3.3.0)
     shotgun (0.9.1)
       rack (>= 1.0)
     simplecov (0.10.0)
