@@ -5,4 +5,5 @@ env:
   - CI=true
 rvm:
   - 2.1.5
+sudo: false
 cache: bundler

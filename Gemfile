@@ -30,9 +30,11 @@ gem 'rack-contrib',           '~> 1.2'
 group :development, :test do
   gem 'rake'
   gem 'simplecov', require: false
-end
-
-group :debug do
+  gem 'yard' ,     '~> 0.8'
+  gem 'shotgun',   '~> 0.9'
+  gem 'rspec',     '~> 3.0'
+  gem 'rspec-its', '~> 1.0'
+  gem 'rack-test', '~> 0.6'
   gem 'wirble'
   gem 'better_errors'
   gem 'binding_of_caller'
