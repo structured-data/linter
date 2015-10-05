@@ -8,10 +8,11 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/json-ld.git
-  revision: 8e3ac6a22206c3b7c19186a81162e0507b3a2abe
+  revision: b649383eb88f4251d49563ed399fd6c1893c42b8
   branch: develop
   specs:
-    json-ld (1.1.9)
+    json-ld (1.1.10)
+      multi_json (~> 1.11)
       rdf (~> 1.1, >= 1.1.7)
 
 GIT
@@ -27,7 +28,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-rdfa.git
-  revision: b92cd12fcba0a492595418e58bdbe65da7f479c4
+  revision: cd2b46162a9154688f1359be18d26234a37669ac
   branch: develop
   specs:
     rdf-rdfa (1.1.6)
@@ -39,7 +40,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: aaecd6f0a36993a553c33c21596489469b94ddbc
+  revision: 420061c4376d6d3b1129d5f572f7441cad26e6c6
   branch: develop
   specs:
     rdf-reasoner (0.2.2)
@@ -50,16 +51,16 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: 19229640daf5a9dabd99f89b51f111621891b36a
+  revision: a3c55917e2db713a130143a9703c07159fecf137
   branch: develop
   specs:
-    rdf (1.1.14)
+    rdf (1.1.16.1)
       link_header (~> 0.0, >= 0.0.8)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.3)
+    activesupport (4.2.4)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -75,10 +76,8 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (5.0.0)
-      columnize (= 0.9.0)
+    byebug (6.0.2)
     coderay (1.1.0)
-    columnize (0.9.0)
     curb (0.8.8)
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
@@ -92,7 +91,7 @@ GEM
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
     git-version-bump (0.15.1)
-    haml (4.0.6)
+    haml (4.0.7)
       tilt
     htmlentities (4.3.4)
     http-cookie (1.0.2)
@@ -100,7 +99,7 @@ GEM
     i18n (0.7.0)
     jsmin (1.0.1)
     json (1.8.3)
-    kgio (2.9.3)
+    kgio (2.10.0)
     link_header (0.0.8)
     linkeddata (1.1.11)
       equivalent-xml (~> 0.5)
@@ -123,14 +122,15 @@ GEM
       rdf-xsd (~> 1.1, >= 1.1.3)
       sparql (~> 1.1, >= 1.1.5)
       sparql-client (~> 1.1, >= 1.1.3)
-    mime-types (2.6.1)
+    mime-types (2.6.2)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.8.1)
+    multi_json (1.11.2)
     net-http-persistent (2.9.4)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
-    oj (2.12.11)
+    oj (2.12.14)
     rack (1.6.4)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -148,8 +148,8 @@ GEM
     rake (10.4.2)
     rdf-aggregate-repo (1.1.0)
       rdf (>= 1.1)
-    rdf-isomorphic (1.1.0)
-      rdf (>= 1.1)
+    rdf-isomorphic (1.1.0.1)
+      rdf (~> 1.1, >= 1.1.16.1)
     rdf-json (1.1.2)
       rdf (~> 1.1)
     rdf-n3 (1.1.3)
@@ -159,22 +159,22 @@ GEM
       rdf (~> 1.1, >= 1.1.6)
       rdf-rdfa (~> 1.1, >= 1.1.4.1)
       rdf-xsd (~> 1.1)
-    rdf-tabular (0.2.0)
+    rdf-tabular (0.2.1)
       addressable (~> 2.3)
       bcp47 (~> 0.3, >= 0.3.3)
       json-ld (~> 1.1)
       rdf (~> 1.1, >= 1.1.7)
       rdf-xsd (~> 1.1)
-    rdf-trig (1.1.4)
+    rdf-trig (1.1.5)
       ebnf (~> 0.3, >= 0.3.7)
       rdf (~> 1.1, >= 1.1.11)
-      rdf-turtle (~> 1.1, >= 1.1.6)
+      rdf-turtle (~> 1.1, >= 1.1.7)
     rdf-trix (1.1.0)
       rdf (>= 1.1)
-    rdf-turtle (1.1.7)
+    rdf-turtle (1.1.8)
       ebnf (~> 0.3, >= 0.3.6)
       rdf (~> 1.1, >= 1.1.10)
-    rdf-vocab (0.8.4)
+    rdf-vocab (0.8.5)
       rdf (~> 1.1, >= 1.1.10)
     rdf-xsd (1.1.4)
       rdf (~> 1.1, >= 1.1.9)
@@ -220,7 +220,7 @@ GEM
     sinatra-linkeddata (1.1.0)
       rack-linkeddata (>= 1.1.0)
       sinatra (>= 1.4.4)
-    sparql (1.1.7)
+    sparql (1.1.9)
       builder (~> 3.2)
       ebnf (~> 0.3, >= 0.3.9)
       rdf (~> 1.1, >= 1.1.13)
@@ -228,7 +228,7 @@ GEM
       rdf-xsd (~> 1.1)
       sparql-client (~> 1.1)
       sxp (~> 0.1)
-    sparql-client (1.1.5)
+    sparql-client (1.1.6)
       net-http-persistent (~> 2.9)
       rdf (~> 1.1)
     sxp (0.1.5)
@@ -286,3 +286,6 @@ DEPENDENCIES
   unicorn
   wirble
   yard (~> 0.8)
+
+BUNDLED WITH
+   1.10.6
