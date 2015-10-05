@@ -1,6 +1,0 @@
-"# First column is Xpath, second column is expected result. May be string, regexp, true, or false",
-/div/@id,results-content
-/div/@prefix,TRUE
-/div/div[@typeof]/@about,/#this/
-/div/div/@typeof,dc:Agent
-/div/div//*[@property='foaf:name']/text(),A particular agent
