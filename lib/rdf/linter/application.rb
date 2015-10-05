@@ -290,6 +290,8 @@ module RDF::Linter
       reader_opts[:matched_templates] = []
       reader_opts[:logger] = request.logger
 
+      writer_opts = reader_opts.merge(standard_prefixes: true)
+
       root = url("/")
       request.logger.debug "params: #{params.inspect}"
 
@@ -300,7 +302,6 @@ module RDF::Linter
       # Write in requested format
       writer = RDF::Writer.for(reader_opts.fetch(:output_format, :rdfa))
 
-      writer_opts = reader_opts.merge(standard_prefixes: true)
       writer_opts[:base_uri] ||= base_uri if base_uri
       writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
       request.logger.debug graph.dump(:ttl, writer_opts)
@@ -339,8 +340,11 @@ module RDF::Linter
       request.logger.debug e.backtrace.join("\n")
       content_type :json
       status 400
+      messages ||= {}
+      messages[:error] ||= {}
+      messages[:error]["RDF::ReaderError"] = [e.message]
       {
-        messages: "RDF::ReaderError: #{e.message}",
+        messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue IOError => e
@@ -348,8 +352,11 @@ module RDF::Linter
       request.logger.debug e.backtrace.join("\n")
       content_type :json
       status 502
+      messages ||= {}
+      messages[:error] ||= {}
+      messages[:error]["IOError"] = ["Failed to open #{reader_opts[:base_uri]}: #{e.message}"]
       {
-        messages: "Failed to open #{reader_opts[:base_uri]}: #{e.message}",
+        messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue
@@ -357,8 +364,11 @@ module RDF::Linter
       request.logger.error "#{$!.class}: #{$!.message}"
       content_type :json
       status 400
+      messages ||= {}
+      messages[:error] ||= {}
+      messages[:error][$!.class] = [$!.message]
       {
-        messages: "#{$!.class}: #{$!.message}",
+        messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     end
