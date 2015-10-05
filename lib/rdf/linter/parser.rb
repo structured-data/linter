@@ -34,7 +34,7 @@ module RDF::Linter
       begin
         reader = case
         when reader_opts[:tempfile]
-          logger.info "Parse input file #{reader_opts[:tempfile].inspect} with forma/t #{reader_opts[:format]}"
+          logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
           reader_opts[:base_uri] ||= "http://example.org/"  # Allow relative URIs
           RDF::All::Reader.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
         when reader_opts[:content]

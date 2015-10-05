@@ -70,8 +70,7 @@ module RDF::Linter
     before do
       request.logger.level = Logger::DEBUG unless settings.environment == :production
       request.logger.info "#{request.request_method} [#{request.path_info}], " +
-        params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ") +
-        "#{params.inspect}"
+        params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ")
     end
 
     after do
@@ -198,7 +197,7 @@ module RDF::Linter
         end
       end
 
-      request.logger.info "examples for #{@title}: #{examples.keys.inspect}"
+      request.logger.debug "examples for #{@title}: #{examples.keys.inspect}"
       erb :schema_example, locals: {
         head: :examples,
         name: params[:name],
