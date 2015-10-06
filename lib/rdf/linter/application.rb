@@ -260,24 +260,22 @@ module RDF::Linter
     #   Location of uploaded file containing markup
     # @option params [Boolean] :debug
     #   Return verbose debug output
-    # @option params [String] :format ("all")
-    #   Format to use when parsing file, defaults to parsing with all
-    #   appropriate readers
+    # @option params [String] :format
+    #   Format to use when parsing file
     # @option params [String] :url
     #   Location of resource containing markup
     # @option params [Boolean] :validate
     #   Perform strict validation of markup
     def linter(params)
-      params["format"] = "all" if params["format"].to_s.empty?
       reader_opts = {
         base_uri: params["url"],
-        format:   params["format"].to_sym,
         headers:  {
           "User-Agent"    => "Structured-Data-Linter/#{RDF::Linter::VERSION}",
           "Cache-Control" => "no-cache"
         },
         verify_none: params["verify_ssl"] == "false",
       }
+      reader_opts[:format] = params["format"].to_sym if params["format"]
       reader_opts[:base_uri] = params["url"].strip if params["url"]
       reader_opts[:tempfile] = params["file"][:tempfile] if params["file"]
       unless params["content"].to_s.empty?
@@ -296,13 +294,13 @@ module RDF::Linter
       request.logger.debug "params: #{params.inspect}"
 
       # Parset and lint input yielding a graph
-      graph, messages, base_uri = parse(reader_opts)
+      graph, messages, reader = parse(reader_opts)
       raise "Graph not read" unless graph
 
       # Write in requested format
       writer = RDF::Writer.for(reader_opts.fetch(:output_format, :rdfa))
 
-      writer_opts[:base_uri] ||= base_uri if base_uri
+      writer_opts[:base_uri] ||= reader.base_uri if reader && reader.base_uri
       writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
       request.logger.debug graph.dump(:ttl, writer_opts)
 
@@ -331,6 +329,7 @@ module RDF::Linter
         messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         statistics: {
           count: graph.size,
+          reader: reader.class.name,
           templates: reader_opts[:matched_templates].uniq
         },
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])

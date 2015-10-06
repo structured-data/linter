@@ -1,7 +1,7 @@
 $:.unshift "."
 require File.join(File.dirname(__FILE__), 'spec_helper')
 
-describe RDF::Linter, "#lint" do
+describe RDF::Linter::Parser do
   include RDF::Linter::Parser
 
   let(:logger) {

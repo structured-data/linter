@@ -111,10 +111,11 @@
     <h2>Parser statistics</h2>
     <table class="stats table table-condensed">
       <tbody>
+        <tr><td>Reader</td><td>{{result.statistics.reader}}</td></tr>
         <tr><td>Statements</td><td>{{result.statistics.count}}</td></tr>
-          <td>Templates</td><td>
-            <div ng-repeat="template in result.statistics.templates">{{template}}</div>
-          </td>
+        <tr>
+          <td>Templates</td>
+          <td><div ng-repeat="template in result.statistics.templates">{{template}}</div></td>
         </tr>
       </tbody>
     </table>

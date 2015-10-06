@@ -36,14 +36,16 @@ module RDF::Linter
         when reader_opts[:tempfile]
           logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
           reader_opts[:base_uri] ||= "http://example.org/"  # Allow relative URIs
-          RDF::All::Reader.new(reader_opts[:tempfile], reader_opts) {|r| graph << r}
+          reader_class = RDF::Reader.for(reader_opts[:format] || reader_opts) || RDF::RDFa::Reader
+          reader_class.new(reader_opts[:tempfile], reader_opts) { |r| graph << r}
         when reader_opts[:content]
           logger.info "Parse form data with format #{reader_opts[:format]}"
           reader_opts[:base_uri] ||= "http://example.org/"  # Allow relative URIs
-          RDF::All::Reader.new(reader_opts[:content], reader_opts) {|r| graph << r}
+          reader_class = RDF::Reader.for(reader_opts[:format] || reader_opts) || RDF::RDFa::Reader
+          reader_class.new(reader_opts[:content], reader_opts) { |r| graph << r}
         when reader_opts[:base_uri]
           logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
-          RDF::All::Reader.open(reader_opts[:base_uri], reader_opts) {|r| graph << r}
+          RDF::Reader.open(reader_opts[:base_uri], reader_opts) { |r| graph << r}
         else
           raise RDF::ReaderError, "Expected one of tempfile, content or base_uri"
         end
@@ -53,7 +55,7 @@ module RDF::Linter
           lint_messages[:validation] = {reader_opts[:base_uri] =>  e.message.split("\n")}
           retry
         else
-          return [nil, lint_messages, reader.base_uri]
+          return [nil, lint_messages, (reader.base_uri if reader && reader.base_uri)]
         end
       end
 
@@ -62,7 +64,7 @@ module RDF::Linter
 
       # Perform some actual linting on the graph
       lint_messages.merge!(graph.lint)
-      [graph, lint_messages, reader.base_uri]
+      [graph, lint_messages, reader]
     end
     module_function :parse
 
