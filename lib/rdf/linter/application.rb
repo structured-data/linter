@@ -70,8 +70,7 @@ module RDF::Linter
     before do
       request.logger.level = Logger::DEBUG unless settings.environment == :production
       request.logger.info "#{request.request_method} [#{request.path_info}], " +
-        params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ") +
-        "#{params.inspect}"
+        params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ")
     end
 
     after do
@@ -198,7 +197,7 @@ module RDF::Linter
         end
       end
 
-      request.logger.info "examples for #{@title}: #{examples.keys.inspect}"
+      request.logger.debug "examples for #{@title}: #{examples.keys.inspect}"
       erb :schema_example, locals: {
         head: :examples,
         name: params[:name],
@@ -261,24 +260,22 @@ module RDF::Linter
     #   Location of uploaded file containing markup
     # @option params [Boolean] :debug
     #   Return verbose debug output
-    # @option params [String] :format ("all")
-    #   Format to use when parsing file, defaults to parsing with all
-    #   appropriate readers
+    # @option params [String] :format
+    #   Format to use when parsing file
     # @option params [String] :url
     #   Location of resource containing markup
     # @option params [Boolean] :validate
     #   Perform strict validation of markup
     def linter(params)
-      params["format"] = "all" if params["format"].to_s.empty?
       reader_opts = {
         base_uri: params["url"],
-        format:   params["format"].to_sym,
         headers:  {
           "User-Agent"    => "Structured-Data-Linter/#{RDF::Linter::VERSION}",
           "Cache-Control" => "no-cache"
         },
         verify_none: params["verify_ssl"] == "false",
       }
+      reader_opts[:format] = params["format"].to_sym if params["format"]
       reader_opts[:base_uri] = params["url"].strip if params["url"]
       reader_opts[:tempfile] = params["file"][:tempfile] if params["file"]
       unless params["content"].to_s.empty?
@@ -291,18 +288,19 @@ module RDF::Linter
       reader_opts[:matched_templates] = []
       reader_opts[:logger] = request.logger
 
+      writer_opts = reader_opts.merge(standard_prefixes: true)
+
       root = url("/")
       request.logger.debug "params: #{params.inspect}"
 
       # Parset and lint input yielding a graph
-      graph, messages, base_uri = parse(reader_opts)
+      graph, messages, reader = parse(reader_opts)
       raise "Graph not read" unless graph
 
       # Write in requested format
       writer = RDF::Writer.for(reader_opts.fetch(:output_format, :rdfa))
 
-      writer_opts = reader_opts.merge(standard_prefixes: true)
-      writer_opts[:base_uri] ||= base_uri if base_uri
+      writer_opts[:base_uri] ||= reader.base_uri if reader && reader.base_uri
       writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
       request.logger.debug graph.dump(:ttl, writer_opts)
 
@@ -331,6 +329,7 @@ module RDF::Linter
         messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         statistics: {
           count: graph.size,
+          reader: reader.class.name,
           templates: reader_opts[:matched_templates].uniq
         },
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
@@ -340,8 +339,11 @@ module RDF::Linter
       request.logger.debug e.backtrace.join("\n")
       content_type :json
       status 400
+      messages ||= {}
+      messages[:error] ||= {}
+      messages[:error]["RDF::ReaderError"] = [e.message]
       {
-        messages: "RDF::ReaderError: #{e.message}",
+        messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue IOError => e
@@ -349,8 +351,11 @@ module RDF::Linter
       request.logger.debug e.backtrace.join("\n")
       content_type :json
       status 502
+      messages ||= {}
+      messages[:error] ||= {}
+      messages[:error]["IOError"] = ["Failed to open #{reader_opts[:base_uri]}: #{e.message}"]
       {
-        messages: "Failed to open #{reader_opts[:base_uri]}: #{e.message}",
+        messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue
@@ -358,8 +363,11 @@ module RDF::Linter
       request.logger.error "#{$!.class}: #{$!.message}"
       content_type :json
       status 400
+      messages ||= {}
+      messages[:error] ||= {}
+      messages[:error][$!.class] = [$!.message]
       {
-        messages: "#{$!.class}: #{$!.message}",
+        messages: messages.map {|k, v| v.map {|o, mm| Array(mm).map {|m| "#{k} #{o}: #{m}"}}}.flatten,
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     end

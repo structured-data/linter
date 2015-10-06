@@ -47,7 +47,6 @@ This application is represented as a [Sinatra][] application implemented in [Rub
           writer.rb         -- Sub-class of [RDFa][] writer for generating snippet output.
         linter.rb         -- Controller defining HTTP endpoints
     spec                  -- Tests
-      test_data           -- Test Data
 
 ## Dependencies
 * [Haml](http://rubygems.org/gems/haml) (>= 4.0.0)

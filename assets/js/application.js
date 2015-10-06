@@ -49,7 +49,7 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize', 'angularFile
             $scope.loading = false;
           })
           .error(function(data) {
-            $scope.result = {messages: [data]};
+            $scope.result = data;
             $scope.loading = false;
           });
       };
@@ -64,7 +64,7 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize', 'angularFile
             $scope.loading = false;
           })
           .error(function(data) {
-            $scope.result = {messages: [data]};
+            $scope.result = data;
             $scope.loading = false;
           });
       };
