@@ -3,5 +3,7 @@ bundler_args: --without debug
 script: "bundle exec rspec spec"
 env:
   - CI=true
+rvm:
+  - 2.2.3
 sudo: false
 cache: bundler
