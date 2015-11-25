@@ -1,6 +1,7 @@
 require 'sinatra/linkeddata'
 require 'rdf/reasoner'
 require 'rdf/linter/extensions'
+require 'rdf/vocab'
 require 'find'
 require 'net/http'
 require 'uri'

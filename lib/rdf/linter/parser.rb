@@ -23,6 +23,9 @@ module RDF::Linter
         l.level = ::RDF::Linter.debug? ? Logger::DEBUG : Logger::INFO
         l
       end
+
+      # Readers now use :logger for debug output, which may be an array
+      reader_opts = reader_opts.merge(logger: reader_opts.fetch(:debug, []))
       RDF::Reasoner.apply(:rdfs, :schema)
       graph = RDF::Repository.new
       reader_opts[:prefixes] ||= {}
@@ -52,7 +55,7 @@ module RDF::Linter
       rescue RDF::ReaderError => e
         if reader_opts[:validate]
           reader_opts.delete(:validate)
-          lint_messages[:validation] = {reader_opts[:base_uri] =>  e.message.split("\n")}
+          lint_messages[:validation] = {reader_opts[:base_uri] =>  [e.message] + reader_opts[:logger]}
           retry
         else
           return [nil, lint_messages, (reader.base_uri if reader && reader.base_uri)]
