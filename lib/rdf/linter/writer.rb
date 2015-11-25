@@ -14,6 +14,7 @@ module RDF::Linter
         matched_templates: [],
         prefixes: {},
       }.merge(options)
+      options[:logger] = options.fetch(:debug, false)
       options[:prefixes].delete(:dcterms) if options[:prefixes].has_key?(:dc)
       super do
         block.call(self) if block_given?
@@ -43,7 +44,7 @@ module RDF::Linter
           else
             # Find appropriate entires from template
             props = haml_template["#{predicate}_props".to_sym]
-            add_debug "render_subject(#{subject}, #{predicate}): #{props.inspect}"
+            log_debug "render_subject(#{subject}, #{predicate}): #{props.inspect}"
             format = haml_template["#{predicate}_fmt".to_sym]
           end
           unless props.nil? || props.empty?
@@ -67,7 +68,7 @@ module RDF::Linter
       other_subjects = []
       templates = {}
 
-      add_debug "order_subjects: #{subjects.inspect}"
+      log_debug "order_subjects: #{subjects.inspect}"
 
       # Order subjects by finding those with templates, and then by the template priority order and name
 
@@ -90,7 +91,7 @@ module RDF::Linter
         end
       end
 
-      add_debug "ordered_subjects: #{ordered_subjects.inspect}\n" + 
+      log_debug "ordered_subjects: #{ordered_subjects.inspect}\n" + 
                 "other_subjects: #{other_subjects.inspect}"
 
       ordered_subjects + other_subjects
@@ -122,7 +123,7 @@ module RDF::Linter
             templ ||= haml_template[set.first]
           end
 
-          #add_debug "find_template: look for #{set.inspect}"
+          #log_debug "find_template: look for #{set.inspect}"
 
           # Look for regular expression match
           templ ||= if len == 1
@@ -138,7 +139,7 @@ module RDF::Linter
       end
 
       if matched_templates.empty?
-        add_debug "find_template: no template found for any #{types.inspect}"
+        log_debug "find_template: no template found for any #{types.inspect}"
         return nil
       end
       
@@ -150,7 +151,7 @@ module RDF::Linter
       # Choose the lowest priority template found
       templ = list.first
 
-      add_debug "find_template: found #{templ[:identifier] || templ.inspect}"
+      log_debug "find_template: found #{templ[:identifier] || templ.inspect}"
 
       @options[:matched_templates] << templ[:identifier]
       

@@ -42,13 +42,14 @@ RSpec::Matchers.define :have_errors do |errors|
     actual = actual[1] if actual.is_a?(Array) # Messages in second element of array
     return false unless actual.keys == errors.keys
     actual.each do |area_key, area_values|
+      return false unless errors.has_key?(area_key)
       return false unless area_values.length == errors[area_key].length
-      area_values.each do |term, values|
-        return false unless values.length == errors[area_key][term].length
-        values.each_with_index do |v, i|
-          return false unless case m = errors[area_key][term][i]
-          when Regexp then m.match v
-          else  m == v
+      errors[area_key].each do |term, values|
+        return false unless area_values.has_key?(term)
+        values.each do |v|
+          case v
+          when Regexp then v.match(Array(area_values[term]).join("\n"))
+          else Array(area_values[term]).any? {|vv| v == vv}
           end
         end
       end

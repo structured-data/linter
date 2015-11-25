@@ -1,13 +1,13 @@
 source 'https://rubygems.org'
 
-ruby "2.1.5"
+ruby "2.2.3"
 
 gem 'unicorn'
-gem 'curb',           '~> 0.8'
 gem 'rdf',            git: "git://github.com/ruby-rdf/rdf.git", branch: "develop"
 gem 'rdf-rdfa',       git: "git://github.com/ruby-rdf/rdf-rdfa.git", branch: "develop"
 gem 'rdf-microdata',  git: "git://github.com/ruby-rdf/rdf-microdata.git", branch: "develop"
 gem 'rdf-reasoner',   git: "git://github.com/ruby-rdf/rdf-reasoner.git", branch: "develop"
+gem 'rdf-vocab',   git: "git://github.com/ruby-rdf/rdf-vocab.git", branch: "develop"
 gem 'json-ld',        git: "git://github.com/ruby-rdf/json-ld.git", branch: "develop"
 gem 'jsonlint',       git: "git://github.com/dougbarth/jsonlint.git"
 
@@ -35,9 +35,12 @@ group :development, :test do
   gem 'rspec',     '~> 3.0'
   gem 'rspec-its', '~> 1.0'
   gem 'rack-test', '~> 0.6'
+end
+
+group :debug do
+  gem 'byebug'
   gem 'wirble'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem "syntax"
-  gem 'byebug'
 end

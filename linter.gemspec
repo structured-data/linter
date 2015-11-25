@@ -28,6 +28,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'rest-client'
   gem.add_runtime_dependency      'rest-client-components'
   gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.2', '>= 0.2.2'
+  gem.add_runtime_dependency      'rdf-vocab',          '~> 0.8'
   gem.add_runtime_dependency      'equivalent-xml'
   gem.add_runtime_dependency      'sinatra',            '~> 1.4'
   gem.add_runtime_dependency      'erubis',             '~> 2.7'
