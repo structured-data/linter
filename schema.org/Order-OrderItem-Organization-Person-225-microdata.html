@@ -11,9 +11,9 @@
     <div itemprop="orderedItem" itemscope itemtype="http://schema.org/Product">
       <span itemprop="name">Widget</span>
     </div>
-    <span itemprop="orderItemStatus" content="http://schema.org/OrderDelivered">Delivered</span>
+    <link itemprop="orderItemStatus" href="http://schema.org/OrderDelivered" />Delivered
     <div itemprop="orderDelivery" itemscope itemtype="http://schema.org/ParcelDelivery">
-      <span itemprop="expectedArrivalFrom">2015-03-10</span>
+      <time="expectedArrivalFrom">2015-03-10</time>
     </div>
   </div>
   <div itemprop="orderedItem" itemscope itemtype="http://schema.org/OrderItem">
@@ -22,10 +22,10 @@
     <div itemprop="orderedItem" itemscope itemtype="http://schema.org/Product">
       <span itemprop="name">Widget accessories</span>
     </div>
-    <span itemprop="orderItemStatus" content="http://schema.org/OrderInTransit">Shipped</span>
+    <link itemprop="orderItemStatus" href="http://schema.org/OrderInTransit" />Shipped
     <div itemprop="orderDelivery" itemscope itemtype="http://schema.org/ParcelDelivery">
-      <span itemprop="expectedArrivalFrom">2015-03-15</span>
-      <span itemprop="expectedArrivalUntil">2015-03-18</span>
+      <time itemprop="expectedArrivalFrom">2015-03-15</time>
+      <time itemprop="expectedArrivalUntil">2015-03-18</time>
     </div>
   </div>
 </div>

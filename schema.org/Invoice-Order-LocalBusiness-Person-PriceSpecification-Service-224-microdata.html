@@ -6,7 +6,7 @@
   <div itemprop="customer" itemscope itemtype="http://schema.org/Person">
     <b itemprop="name">Jane Doe</b>
   </div>
-  <span itemprop="paymentDueDate">2015-01-30</span>
+  <time itemprop="paymentDueDate">2015-01-30</time>
   <div itemprop="minimumPaymentDue" itemscope itemtype="http://schema.org/PriceSpecification">
     <span itemprop="price">0.00</span>
     <span itemprop="priceCurrency">USD</span>
@@ -15,10 +15,10 @@
     <span itemprop="price">0.00</span>
     <span itemprop="priceCurrency">USD</span>
   </div>
-  <meta itemprop="paymentStatus" content="http://schema.org/PaymentComplete" />
+  <link itemprop="paymentStatus" href="http://schema.org/PaymentComplete" />
   <div itemprop="referencesOrder" itemscope itemtype="http://schema.org/Order">
     <span itemprop="description">furnace</span>
-    <span itemprop="orderDate">2014-12-01</span>
+    <time itemprop="orderDate">2014-12-01</time>
     <span itemprop="orderNumber">123ABC</span>
     <div itemprop="orderedItem" itemscope itemtype="http://schema.org/Product">
       <span itemprop="name">ACME Furnace 3000</span>
@@ -27,7 +27,7 @@
   </div>
   <div itemprop="referencesOrder" itemscope itemtype="http://schema.org/Order">
     <span itemprop="description">furnace installation</span>
-    <span itemprop="orderDate">2014-12-02</span>
+    <time itemprop="orderDate">2014-12-02</time>
     <div itemprop="orderedItem" itemscope itemtype="http://schema.org/Service">
       <span itemprop="description">furnace installation</span>
     </div>
