@@ -18,7 +18,7 @@ module RDF::Linter
       @classes = {'Thing' => {}}
       @examples = {}
 
-      RDF::SCHEMA.each do |vocab_term|
+      RDF::Vocab::SCHEMA.each do |vocab_term|
         term = vocab_term.to_s[18..-1]
         @classes[term] = {super_class: vocab_term.subClassOf.map {|c| c.to_s[18..-1]}.first}
       end
