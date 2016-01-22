@@ -4,6 +4,6 @@ script: "bundle exec rspec spec"
 env:
   - CI=true
 rvm:
-  - 2.2.3
+  - 2.3.0
 sudo: false
 cache: bundler

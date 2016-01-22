@@ -205,10 +205,15 @@
       "rdfa": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-173-rdfa.html",
       "jsonld": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-173-jsonld.html"
     },
-    "BroadcastEvent-BroadcastService-TVEpisode-243": {
-      "microdata": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-microdata.html",
-      "rdfa": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-rdfa.html",
-      "jsonld": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-jsonld.html"
+    "tv-listing3": {
+      "microdata": "schema.org/tv-listing3-microdata.html",
+      "rdfa": "schema.org/tv-listing3-rdfa.html",
+      "jsonld": "schema.org/tv-listing3-jsonld.html"
+    },
+    "tv-listing4": {
+      "microdata": "schema.org/tv-listing4-microdata.html",
+      "rdfa": "schema.org/tv-listing4-rdfa.html",
+      "jsonld": "schema.org/tv-listing4-jsonld.html"
     }
   },
   "BroadcastService": {
@@ -222,20 +227,20 @@
       "rdfa": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-173-rdfa.html",
       "jsonld": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-173-jsonld.html"
     },
-    "Organization-BroadcastService-241": {
-      "microdata": "schema.org/Organization-BroadcastService-241-microdata.html",
-      "rdfa": "schema.org/Organization-BroadcastService-241-rdfa.html",
-      "jsonld": "schema.org/Organization-BroadcastService-241-jsonld.html"
+    "tv-listing1": {
+      "microdata": "schema.org/tv-listing1-microdata.html",
+      "rdfa": "schema.org/tv-listing1-rdfa.html",
+      "jsonld": "schema.org/tv-listing1-jsonld.html"
     },
-    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242": {
-      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-microdata.html",
-      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-rdfa.html",
-      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-jsonld.html"
+    "tv-listing2": {
+      "microdata": "schema.org/tv-listing2-microdata.html",
+      "rdfa": "schema.org/tv-listing2-rdfa.html",
+      "jsonld": "schema.org/tv-listing2-jsonld.html"
     },
-    "BroadcastEvent-BroadcastService-TVEpisode-243": {
-      "microdata": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-microdata.html",
-      "rdfa": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-rdfa.html",
-      "jsonld": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-jsonld.html"
+    "tv-listing3": {
+      "microdata": "schema.org/tv-listing3-microdata.html",
+      "rdfa": "schema.org/tv-listing3-rdfa.html",
+      "jsonld": "schema.org/tv-listing3-jsonld.html"
     }
   },
   "BusReservation": {
@@ -254,10 +259,10 @@
     }
   },
   "CableOrSatelliteService": {
-    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242": {
-      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-microdata.html",
-      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-rdfa.html",
-      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-jsonld.html"
+    "tv-listing2": {
+      "microdata": "schema.org/tv-listing2-microdata.html",
+      "rdfa": "schema.org/tv-listing2-rdfa.html",
+      "jsonld": "schema.org/tv-listing2-jsonld.html"
     }
   },
   "CancelAction": {
@@ -989,6 +994,11 @@
       "microdata": "schema.org/WatchAction-Movie-193-microdata.html",
       "rdfa": "schema.org/WatchAction-Movie-193-rdfa.html",
       "jsonld": "schema.org/WatchAction-Movie-193-jsonld.html"
+    },
+    "screening-2": {
+      "microdata": "schema.org/screening-2-microdata.html",
+      "rdfa": "schema.org/screening-2-rdfa.html",
+      "jsonld": "schema.org/screening-2-jsonld.html"
     }
   },
   "MusicAlbum": {
@@ -1256,15 +1266,15 @@
       "rdfa": "schema.org/music-2-rdfa.html",
       "jsonld": "schema.org/music-2-jsonld.html"
     },
-    "Organization-BroadcastService-241": {
-      "microdata": "schema.org/Organization-BroadcastService-241-microdata.html",
-      "rdfa": "schema.org/Organization-BroadcastService-241-rdfa.html",
-      "jsonld": "schema.org/Organization-BroadcastService-241-jsonld.html"
+    "tv-listing1": {
+      "microdata": "schema.org/tv-listing1-microdata.html",
+      "rdfa": "schema.org/tv-listing1-rdfa.html",
+      "jsonld": "schema.org/tv-listing1-jsonld.html"
     },
-    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242": {
-      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-microdata.html",
-      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-rdfa.html",
-      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-jsonld.html"
+    "tv-listing2": {
+      "microdata": "schema.org/tv-listing2-microdata.html",
+      "rdfa": "schema.org/tv-listing2-rdfa.html",
+      "jsonld": "schema.org/tv-listing2-jsonld.html"
     }
   },
   "OrganizationRole": {
@@ -1381,10 +1391,10 @@
       "rdfa": "schema.org/music-2-rdfa.html",
       "jsonld": "schema.org/music-2-jsonld.html"
     },
-    "VisualArtwork-Person-251": {
-      "microdata": "schema.org/VisualArtwork-Person-251-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-251-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-251-jsonld.html"
+    "VisualArtwork-Person-253": {
+      "microdata": "schema.org/VisualArtwork-Person-253-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-253-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-253-jsonld.html"
     }
   },
   "Pharmacy": {
@@ -1915,6 +1925,11 @@
       "microdata": "schema.org/SportsEvent-OrderedEvent-197-microdata.html",
       "rdfa": "schema.org/SportsEvent-OrderedEvent-197-rdfa.html",
       "jsonld": "schema.org/SportsEvent-OrderedEvent-197-jsonld.html"
+    },
+    "tv-listing4": {
+      "microdata": "schema.org/tv-listing4-microdata.html",
+      "rdfa": "schema.org/tv-listing4-rdfa.html",
+      "jsonld": "schema.org/tv-listing4-jsonld.html"
     }
   },
   "SportsOrganization": {
@@ -1975,10 +1990,10 @@
       "rdfa": "schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-rdfa.html",
       "jsonld": "schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-172-jsonld.html"
     },
-    "BroadcastEvent-BroadcastService-TVEpisode-243": {
-      "microdata": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-microdata.html",
-      "rdfa": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-rdfa.html",
-      "jsonld": "schema.org/BroadcastEvent-BroadcastService-TVEpisode-243-jsonld.html"
+    "tv-listing3": {
+      "microdata": "schema.org/tv-listing3-microdata.html",
+      "rdfa": "schema.org/tv-listing3-rdfa.html",
+      "jsonld": "schema.org/tv-listing3-jsonld.html"
     }
   },
   "TVSeason": {
@@ -2023,10 +2038,10 @@
     }
   },
   "TelevisionChannel": {
-    "Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242": {
-      "microdata": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-microdata.html",
-      "rdfa": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-rdfa.html",
-      "jsonld": "schema.org/Organization-BroadcastService-TelevisionChannel-CableOrSatelliteService-242-jsonld.html"
+    "tv-listing2": {
+      "microdata": "schema.org/tv-listing2-microdata.html",
+      "rdfa": "schema.org/tv-listing2-rdfa.html",
+      "jsonld": "schema.org/tv-listing2-jsonld.html"
     }
   },
   "TheaterEvent": {
@@ -2156,20 +2171,20 @@
     }
   },
   "VisualArtwork": {
-    "VisualArtwork-Person-251": {
-      "microdata": "schema.org/VisualArtwork-Person-251-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-251-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-251-jsonld.html"
+    "VisualArtwork-Person-253": {
+      "microdata": "schema.org/VisualArtwork-Person-253-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-253-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-253-jsonld.html"
     },
-    "VisualArtwork-252": {
-      "microdata": "schema.org/VisualArtwork-252-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-252-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-252-jsonld.html"
+    "VisualArtwork-254": {
+      "microdata": "schema.org/VisualArtwork-254-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-254-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-254-jsonld.html"
     },
-    "VisualArtwork-253": {
-      "microdata": "schema.org/VisualArtwork-253-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-253-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-253-jsonld.html"
+    "VisualArtwork-255": {
+      "microdata": "schema.org/VisualArtwork-255-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-255-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-255-jsonld.html"
     }
   },
   "VoteAction": {
@@ -2363,11 +2378,25 @@
       "jsonld": "schema.org/eg-10-jsonld.html"
     }
   },
+  "broadcastOfEvent": {
+    "tv-listing4": {
+      "microdata": "schema.org/tv-listing4-microdata.html",
+      "rdfa": "schema.org/tv-listing4-rdfa.html",
+      "jsonld": "schema.org/tv-listing4-jsonld.html"
+    }
+  },
   "calories": {
     "eg-13": {
       "microdata": "schema.org/eg-13-microdata.html",
       "rdfa": "schema.org/eg-13-rdfa.html",
       "jsonld": "schema.org/eg-13-jsonld.html"
+    }
+  },
+  "competitor": {
+    "tv-listing4": {
+      "microdata": "schema.org/tv-listing4-microdata.html",
+      "rdfa": "schema.org/tv-listing4-rdfa.html",
+      "jsonld": "schema.org/tv-listing4-jsonld.html"
     }
   },
   "contentUrl": {
@@ -2382,6 +2411,13 @@
       "microdata": "schema.org/eg-13-microdata.html",
       "rdfa": "schema.org/eg-13-rdfa.html",
       "jsonld": "schema.org/eg-13-jsonld.html"
+    }
+  },
+  "countryOfOrigin": {
+    "screening-2": {
+      "microdata": "schema.org/screening-2-microdata.html",
+      "rdfa": "schema.org/screening-2-rdfa.html",
+      "jsonld": "schema.org/screening-2-jsonld.html"
     }
   },
   "datePublished": {
@@ -2502,6 +2538,13 @@
       "microdata": "schema.org/eg-14-microdata.html",
       "rdfa": "schema.org/eg-14-rdfa.html",
       "jsonld": "schema.org/eg-14-jsonld.html"
+    }
+  },
+  "isLiveBroadcast": {
+    "tv-listing4": {
+      "microdata": "schema.org/tv-listing4-microdata.html",
+      "rdfa": "schema.org/tv-listing4-rdfa.html",
+      "jsonld": "schema.org/tv-listing4-jsonld.html"
     }
   },
   "item": {
@@ -2694,6 +2737,13 @@
       "microdata": "schema.org/eg-14-microdata.html",
       "rdfa": "schema.org/eg-14-rdfa.html",
       "jsonld": "schema.org/eg-14-jsonld.html"
+    }
+  },
+  "videoFormat": {
+    "tv-listing4": {
+      "microdata": "schema.org/tv-listing4-microdata.html",
+      "rdfa": "schema.org/tv-listing4-rdfa.html",
+      "jsonld": "schema.org/tv-listing4-jsonld.html"
     }
   },
   "workExample": {
