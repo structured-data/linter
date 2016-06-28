@@ -1,0 +1,34 @@
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "FoodEstablishment",
+    "name": "Joe's Pizza",
+    "location": {
+      "@type": "PostalAddress",
+      "@id": "http://example.com/address",
+      "streetAddress": "123 Main Street",
+      "addressLocality": "Cambridge",
+      "addressRegion": "MA",
+      "postalCode": "02142"
+    },
+    "makesOffer": {
+      "@type": "Offer",
+      "priceSpecification": {
+        "@type": "DeliveryChargeSpecification",
+        "appliesToDeliveryMethod": "http://purl.org/goodrelations/v1#DeliveryModeOwnFleet",
+        "eligibleTransactionVolume": {
+          "@type": "PriceSpecification",
+          "price": "20.00",
+          "priceCurrency": "USD"
+        },
+        "eligibleRegion": {
+          "@type": "GeoCircle",
+          "address": {
+            "@id": "http://www.example.com/address"
+          },
+          "geoRadius": "5000"
+        }
+      }
+    }
+  }
+</script>

@@ -1,0 +1,31 @@
+<div vocab="http://schema.org/" typeof="Order">
+  <div property="seller" typeof="Organization">
+    <b property="name">ACME Supplies</b>
+  </div>
+  <div property="customer" typeof="Person">
+    <b property="name">Jane Doe</b>
+  </div>
+  <div property="orderedItem" typeof="OrderItem">
+    Item number: <span property="orderItemNumber">abc123</span>
+    <span property="orderQuantity">1</span>
+    <div property="orderedItem" typeof="Product">
+      <span property="name">Widget</span>
+    </div>
+    <link property="orderItemStatus" href="http://schema.org/OrderDelivered" />Delivered
+    <div property="orderDelivery" typeof="ParcelDelivery">
+      <time property="expectedArrivalFrom">2015-03-10</time>
+    </div>
+  </div>
+  <div property="orderedItem" typeof="OrderItem">
+    Item number: <span property="orderItemNumber">def456</span>
+    <span property="orderQuantity">4</span>
+    <div property="orderedItem" typeof="Product">
+      <span property="name">Widget accessories</span>
+    </div>
+    <link property="orderItemStatus" href="http://schema.org/OrderInTransit" />Shipped
+    <div property="orderDelivery" typeof="ParcelDelivery">
+      <time property="expectedArrivalFrom">2015-03-15</time>
+      <time property="expectedArrivalUntil">2015-03-18</time>
+    </div>
+  </div>
+</div>

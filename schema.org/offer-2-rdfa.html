@@ -1,0 +1,37 @@
+<body vocab="http://schema.org/" resource="http://example.com/explosive-tennis-balls" typeof="ItemPage">
+  <link property="copyrightHolder publisher" href="#Organization" />
+  <main>
+    <article resource="#Product" property="mainEntity" typeof="Product">
+      <h1 property="name">
+         <a property="url" href="http://example.com/explosive-tennis-balls">Explosive tennis balls</a>
+      </h1>
+      <img property="image" alt="Explosive tennis balls" title src="http://example.com/explosive-tennis-balls.jpg" />
+      <p resource="#Offer" property="offers" typeof="Offer">
+        <meta property="priceCurrency" content="USD" />
+        <meta property="price" content="1000.00" />
+        <link property="availability" href="InStock" />
+        <link property="itemOffered" href="#Product" />
+        <link property="businessFunction" href="http://purl.org/goodrelations/v1#Sell" />
+        <link rev="makesOffer" href="#Organization" />
+        $29.99 - In stock
+      </p>
+      <p property="description">
+        Tickle your friends!<br />
+        Surprise your opponent!
+      <p>
+    </article>
+  </main>
+  <footer>
+    <p resource="#Organization" typeof="Organization">
+      © <span resource="#CopyrightYear" typeof="rdfa:Pattern">2015</span> - <span property="name">Acme Inc</span>
+      <link property="logo" href="http://example.com/acme-inc-logo.jpg" />
+      <link property="url" href="http://example.com" />
+      <link property="rdfa:copy" href="#SameAsResource"/>
+    </p>
+    <ul resource="#SameAsResource" typeof="rdfa:Pattern">
+      <li><a property="sameAs" href="https://twitter.com/AcmeInc">Twitter</a></li>
+      <li><a property="sameAs" href="https://www.facebook.com/AcmeInc">Facebook</a></li>
+      <li><a property="sameAs" href="https://plus.google.com/u/0/+AcmeInc/">Google+</a></li>
+    </ul>
+  </footer>
+</body>

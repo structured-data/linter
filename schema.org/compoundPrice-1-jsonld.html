@@ -1,0 +1,30 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Offer",
+    "description": "Our Private Bank Account Package: Low monthly fees and fair per-use charges.",
+    "name" : "Private Bank Account Package",
+    "itemOffered" : { 
+        "@type" : "BankAccount",
+        "name" : "ACME Private Bank Account",
+        "annualPercentageRate" : 0.0314 },
+    "priceSpecification" : {
+        "@type" : "CompoundPriceSpecification",
+        "priceComponent" : 
+        [
+        {
+            "@type" : "UnitPriceSpecification",
+            "price" : 5,
+            "priceCurrency" : "USD",
+            "unitCode" : "MON"
+        },
+        {
+            "@type" : "UnitPriceSpecification",
+            "price" : 0.10,
+            "priceCurrency" : "USD",
+            "unitText" : "per transaction"
+        }
+        ]
+    }
+}
+</script>

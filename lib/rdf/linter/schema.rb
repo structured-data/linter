@@ -86,6 +86,7 @@ module RDF::Linter
       # Create partial for example index
       File.open(APP_DIR + "/lib/rdf/linter/views/_schema_examples.erb", "w") do |f|
         f.puts("<!-- This file is created automaticaly by rake schema_examples -->")
+        require 'byebug'; byebug
         f.write(create_partial("Thing", 0))
       end
     end

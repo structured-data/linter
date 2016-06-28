@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Offer",
+    "description": "Our standard rental car is 50 USD per day and and $ 0.10 per mile.",
+    "name" : "Rental Car Package",
+    "itemOffered" : { 
+        "@type" : "Car",
+        "name" : "Volkswagen Golf Class Car"
+        },
+    "priceSpecification" : {
+        "@type" : "CompoundPriceSpecification",
+        "priceComponent" : [
+        {
+            "@type" : "UnitPriceSpecification",
+            "price" : 50,
+            "priceCurrency" : "USD",
+            "unitCode" : "DAY"
+        },
+        {
+            "@type" : "UnitPriceSpecification",
+            "price" : 0.10,
+            "priceCurrency" : "USD",
+            "unitCode" : "SMI"
+        }
+        ]
+    }
+}
+</script>

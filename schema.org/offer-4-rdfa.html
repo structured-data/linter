@@ -1,0 +1,28 @@
+<div vocab="http://schema.org/" typeof="FoodEstablishment">
+  <span property="name">Joe's Pizza</span>
+  <div property="location" typeof="PostalAddress">
+    <span property="streetAddress">123 Main Street</span>
+    <span property="addressLocality">Cambridge</span>
+    <span property="addressRegion">MA</span>
+    <span property="postalCode">02142</span>
+  </div>
+  delivers within 5 km of its store with a minium order of $20.
+  <div property="makesOffer" typeof="Offer">
+    <div property="priceSpecification" typeof="DeliveryChargeSpecification">
+      <meta property="appliesToDeliveryMethod" link="http://purl.org/goodrelations/v1#DeliveryModeOwnFleet">
+      <div property="eligibleTransactionVolume" typeof="PriceSpecification">
+        <meta property="price" content="20.00" />
+        <meta property="priceCurrency" content="USD" />
+      </div>
+      <div property="eligibleRegion" typeof="GeoCircle">
+        <div property="address" typeof="PostalAddress">
+          <meta property="streetAddress" content="123 Main Street" />
+          <meta property="addressLocality" content="Cambridge" />
+          <meta property="addressRegion" content="MA" />
+          <meta property="postalCode" content="02142" />
+        </div>
+        <meta property="geoRadius" content="5000" />
+      </div>
+    </div>
+  </div>
+</div>

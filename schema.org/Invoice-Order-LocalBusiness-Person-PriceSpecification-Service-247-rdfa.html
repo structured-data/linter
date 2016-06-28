@@ -1,0 +1,35 @@
+<div vocab="http://schema.org/" typeof="Invoice">
+  <h1 property="description">New furnace and installation</h1>
+  <div property="broker" typeof="/LocalBusiness">
+    <b property="name">ACME Home Heating</b>
+  </div>
+  <div property="customer" typeof="Person">
+    <b property="name">Jane Doe</b>
+  </div>
+  <time property="paymentDueDate">2015-01-30</time>
+  <div property="minimumPaymentDue" typeof="PriceSpecification">
+    <span property="price">0.00</span>
+    <span property="priceCurrency">USD</span>
+  </div>
+  <div property="totalPaymentDue" typeof="PriceSpecification">
+    <span property="price">0.00</span>
+    <span property="priceCurrency">USD</span>
+  </div>
+  <meta itemprop="paymentStatus" content="PaymentComplete" />
+  <div property="referencesOrder" typeof="Order">
+    <span property="description">furnace</span>
+    <time property="orderDate">2014-12-01</time>
+    <span property="orderNumber">123ABC</span>
+    <div property="orderedItem" typeof="Product">
+      <span property="name">ACME Furnace 3000</span>
+      <meta property="productId" content="ABC123" />
+    </div>
+  </div>
+  <div property="referencesOrder" typeof="Order">
+    <span property="description">furnace installation</span>
+    <time property="orderDate">2014-12-02</time>
+    <div property="orderedItem" typeof="Service">
+      <span property="description">furnace installation</span>
+    </div>
+  </div>
+</div>

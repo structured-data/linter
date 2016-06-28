@@ -1,0 +1,30 @@
+<div itemscope itemtype="http://schema.org/FoodEstablishment">
+  <span itemprop="name">Joe's Pizza</span>
+  <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
+    <span itemprop="streetAddress">123 Main Street</span>
+    <span itemprop="addressLocality">Cambridge</span>
+    <span itemprop="addressRegion">MA</span>
+    <span itemprop="postalCode">02142</span>
+  </div>
+  delivers within 5 km of its store
+  <div itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
+    <div itemprop="availableAtOrFrom" itemscope itemtype="http://schema.org/GeoCircle">
+      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <meta itemprop="streetAddress" content="123 Main Street" />
+        <meta itemprop="addressLocality" content="Cambridge" />
+        <meta itemprop="addressRegion" content="MA" />
+        <meta itemprop="postalCode" content="02142" />
+      </div>
+      <meta itemprop="geoRadius" content="5000" />
+    </div>
+
+    with a minium order of $20.
+    <div itemprop="priceSpecification" itemscope itemtype="http://schema.org/DeliveryChargeSpecification">
+      <meta itemprop="appliesToDeliveryMethod" link="http://purl.org/goodrelations/v1#DeliveryModeOwnFleet">
+      <div itemprop="eligibleTransactionVolume" itemscope itemtype="http://schema.org/PriceSpecification">
+        <meta itemprop="price" content="20.00" />
+        <meta itemprop="priceCurrency" content="USD" />
+      </div>
+    </div>
+  </div>
+</div>
