@@ -1,0 +1,52 @@
+<body vocab="http://schema.org/" typeof="WebPage">
+  <h1 property="name">Payment Fees</h1>
+  <h2>Selling is $0.15 - $0.50 per sale.</h2>
+  <div>
+    <div>
+      <table property="mainEntity" typeof="ItemList">
+        <meta property="name" content="Payment List"/>
+        <tr property="itemListElement" typeof="PaymentService">
+          <th property="name">Sales within the US</th>
+          <td property="offers" typeof="Offer">
+            <span property="priceSpecification" typeof="PriceSpecification">
+              <span property="priceCurrency" content="USD">$</span><span property="price">0.30</span>
+            </span>
+          </td>
+        </tr>
+        <tr property="itemListElement" typeof="PaymentService">
+          <th property="name">Discounted rate for eligible nonprofits</th>
+          <td property="offers" typeof="Offer">
+            <span property="priceSpecification" typeof="PriceSpecification">
+              <span property="priceCurrency" content="USD">$</span><span property="price">0.25</span>
+              <span property="eligibleQuantity" typeof="QuantitativeValue">
+                    <span property="unitText">per transaction</span>
+              </span>
+            </span>
+          </td>
+        </tr>
+        <tr property="itemListElement" typeof="PaymentService">
+          <th property="name">International sales</th>
+          <td property="offers" typeof="Offer">
+            <span property="priceSpecification" typeof="PriceSpecification">
+              <span property="priceCurrency" content="USD">$</span><span property="price">0.50</span>
+              <span property="eligibleQuantity" typeof="QuantitativeValue">
+                    <span property="unitText">per transaction</span>
+              </span>
+            </span>
+          </td>
+        </tr>
+        <tr property="itemListElement" typeof="PaymentService">
+          <th property="name">Card reader</th>
+          <td property="offers" typeof="Offer">
+            <span property="priceSpecification" typeof="PriceSpecification">
+              <span property="priceCurrency" content="USD">$</span><span property="price">0.15</span>
+              <span property="eligibleQuantity" typeof="QuantitativeValue">
+                    <span property="unitText">per transaction</span>
+              </span>
+            </span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>

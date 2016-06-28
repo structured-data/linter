@@ -1,0 +1,41 @@
+<!-- Wells Fargo GraduateSM Student Loan -->
+<script type="application/ld+json">
+{
+"@context":"http://schema.org",
+"@type":"LoanOrCredit",
+"name":"Wells Fargo GraduateSM Student Loan",
+"loanTerm":{
+    "@type":"QuantitativeValue",
+    "value":"15",
+    "unitCode": "ANN"
+},
+"annualPercentageRate":[
+  {
+    "@type":"QuantitativeValue",
+    "name": "variable interest rates",
+    "minValue":"3.22",
+    "maxValue":"8.74"
+  },
+  {
+    "@type":"QuantitativeValue",
+    "name": "fixed interest rates",
+    "minValue":"6.36",
+    "maxValue":"10.61"
+  }
+  ],
+"amount":[
+  {
+    "@type": "MonetaryAmount",
+    "name":"debt for law and business",
+    "value":"180000",
+    "currency":"USD"
+  },
+  {
+    "@type": "MonetaryAmount",
+    "name":"debt for other fields of study than law and business",
+    "value":"120000",
+    "currency":"USD"
+  }
+  ]
+}
+</script>

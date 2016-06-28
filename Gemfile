@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.3.0"
+ruby "2.3.1"
 
 gem 'unicorn'
 gem 'rdf',            git: "git://github.com/ruby-rdf/rdf.git", branch: "develop"

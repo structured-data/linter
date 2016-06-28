@@ -1,0 +1,72 @@
+<script type="application/ld+json">
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfa": "http://www.w3.org/ns/rdfa#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://example.org/colls/68",
+      "@type": "schema:Collection",
+      "schema:creator": "Twinkle T. Hose",
+      "schema:hasPart": [
+        {
+          "@id": "http://www.worldcat.org/oclc/17105155"
+        },
+        {
+          "@id": "http://www.worldcat.org/oclc/68043906"
+        },
+        {
+          "@id": "http://www.worldcat.org/oclc/297618476"
+        }
+      ],
+      "schema:name": "Eclectic Time"
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/17105155",
+      "@type": "schema:Book",
+      "schema:author": {
+        "@id": "http://viaf.org/viaf/102304634"
+      },
+      "schema:isPartOf": {
+        "@id": "http://example.org/colls/68"
+      },
+      "schema:isbn": "055305340X",
+      "schema:name": "A brief history of time : from the big bang to black holes"
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/68043906",
+      "@type": "schema:Book",
+      "schema:author": "Douglas Adams",
+      "schema:bookFormat": "AudioBook",
+      "schema:isPartOf": {
+        "@id": "http://example.org/colls/68"
+      },
+      "schema:isbn": "9781405699532",
+      "schema:name": "The Hitchhiker's guide to the galaxy. The quandry phase"
+    },
+    {
+      "@id": "",
+      "rdfa:usesVocabulary": {
+        "@id": "schema:"
+      }
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/297618476",
+      "@type": [
+        "http://productontology.org/id/DVD",
+        "schema:Movie"
+      ],
+      "schema:director": "Steven Spielberg",
+      "schema:isPartOf": {
+        "@id": "http://example.org/colls/68"
+      },
+      "schema:name": "Back to the future",
+      "schema:productionCompany": "Universal Pictures"
+    }
+  ]
+}
+</script>

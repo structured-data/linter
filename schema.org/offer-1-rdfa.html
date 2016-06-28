@@ -1,0 +1,25 @@
+<!-- Uses both the "Book" and "Product" item types to support Offer relationships -->
+ <div vocab="http://schema.org/" resource="#record" typeof="Book Product">
+   <h3 property="name">Le concerto</h3>
+   <table summary="Bibliographic Details">
+     <tr>
+       <th>Main Author: </th>
+       <td property="author">Ferchault, Guy</td>
+     </tr>
+   </table>
+ </div>
+
+ <table vocab="http://schema.org/" summary="Holdings details from Anytown City Library">
+   <!-- Example of a copy available for loan -->
+   <tr typeof="Offer">
+     <th>Copy </th>
+     <td>Available
+       <link property="availability" href="http://schema.org/InStock">
+       <div>Barcode: <span property="serialNumber">CONC91000937</span></div>
+       <div>Call number: <span property="sku">780 R2</span></div>
+       <div>Library: <span property="offeredBy" typeof="Library" resource="http://library.anytown.gov.uk" >Anytown City Library</span></div>
+       <link property="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut">
+       <link property="itemOffered" href="#record">
+     </td>
+   </tr>
+ <table>
