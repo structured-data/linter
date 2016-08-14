@@ -11,6 +11,7 @@ gem 'rdf-reasoner',       github: "ruby-rdf/rdf-reasoner", branch: "develop"
 gem 'rdf-turtle',         github: "ruby-rdf/rdf-turtle", branch: "develop"
 gem 'rdf-vocab',          github: "ruby-rdf/rdf-vocab", branch: "develop"
 gem 'json-ld',            github: "ruby-rdf/json-ld", branch: "develop"
+gem 'json-ld-preloaded',  github: "ruby-rdf/json-ld-preloaded", branch: "develop"
 gem 'jsonlint',           github: "dougbarth/jsonlint"
 
 group :development, :test do
