@@ -36,8 +36,9 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'rack',               '~> 1.6'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.6'
   gem.add_runtime_dependency      'rack-contrib',       '~> 1.4'
-  gem.add_runtime_dependency      'unicorn',            '~> 5.1'
+  gem.add_runtime_dependency      'puma',               '~> 3.6'
 
+  gem.add_development_dependency  'foreman'
   gem.add_development_dependency  'yard' ,              '~> 0.9'
   gem.add_development_dependency  'shotgun',            '~> 0.9'
   gem.add_development_dependency  'rspec',              '~> 3.5'
