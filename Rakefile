@@ -22,6 +22,7 @@ namespace :schema do
       sdo-examples-goodrelations
       sdo-exhibitionevent-examples
       sdo-fibo-examples
+      sdo-hotels-examples
       sdo-invoice-examples
       sdo-itemlist-examples
       sdo-library-examples
