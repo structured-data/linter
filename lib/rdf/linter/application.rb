@@ -17,10 +17,10 @@ module RDF::Linter
       disable :raise_errors, :show_exceptions if settings.environment == :production
 
       # Cache client requests
-      RestClient.enable Rack::Cache,
-        verbose:     true,
-        metastore:   "file:" + ::File.join(APP_DIR, "cache/meta"),
-        entitystore: "file:" + ::File.join(APP_DIR, "cache/body")
+      #RestClient.enable Rack::Cache,
+      #  verbose:     true,
+      #  metastore:   "file:" + ::File.join(APP_DIR, "cache/meta"),
+      #  entitystore: "file:" + ::File.join(APP_DIR, "cache/body")
 
       # Parse JSON post content
       use Rack::PostBodyContentTypeParser

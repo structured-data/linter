@@ -25,8 +25,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'activesupport',      '~> 4.0'
   gem.add_runtime_dependency      'sinatra-linkeddata', '~> 2.0'
   gem.add_runtime_dependency      'sinatra-assetpack',  '~> 0.3.3'
-  gem.add_runtime_dependency      'rest-client'
-  gem.add_runtime_dependency      'rest-client-components'
   gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.4'
   gem.add_runtime_dependency      'rdf-vocab',          '~> 2.0'
   gem.add_runtime_dependency      'equivalent-xml'
