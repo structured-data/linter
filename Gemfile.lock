@@ -87,13 +87,14 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.3.3)
+    linter (2.3.4)
       activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
       haml (~> 4.0)
       linkeddata (~> 2.0)
       nokogiri (~> 1.6)
+      puma (~> 3.6)
       rack (~> 1.6)
       rack-cache (~> 1.6)
       rack-contrib (~> 1.4)
@@ -102,7 +103,6 @@ PATH
       sinatra (~> 1.4)
       sinatra-assetpack (~> 0.3.3)
       sinatra-linkeddata (~> 2.0)
-      unicorn (~> 5.1)
 
 GEM
   remote: https://rubygems.org/
@@ -135,6 +135,8 @@ GEM
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
     erubis (2.7.0)
+    foreman (0.82.0)
+      thor (~> 0.19.1)
     git-version-bump (0.15.1)
     haml (4.0.7)
       tilt
@@ -144,7 +146,6 @@ GEM
     i18n (0.7.0)
     jsmin (1.0.1)
     json (1.8.3)
-    kgio (2.10.0)
     ld-patch (0.3.0)
       ebnf (~> 1.0, >= 1.0.1)
       rdf (~> 2.0)
@@ -183,6 +184,7 @@ GEM
       pkg-config (~> 1.1.7)
     oj (2.17.2)
     pkg-config (1.1.7)
+    puma (3.6.0)
     rack (1.6.4)
     rack-cache (1.6.1)
       rack (>= 0.4)
@@ -196,7 +198,6 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    raindrops (0.17.0)
     rake (11.2.2)
     rdf-aggregate-repo (2.0.0)
       rdf (~> 2.0)
@@ -275,14 +276,12 @@ GEM
     sxp (1.0.0)
       rdf (~> 2.0)
     syntax (1.2.1)
+    thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
     trollop (2.1.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    unicorn (5.1.0)
-      kgio (~> 2.6)
-      raindrops (~> 0.7)
     yard (0.9.5)
 
 PLATFORMS
@@ -292,6 +291,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   byebug
+  foreman
   json-ld!
   json-ld-preloaded!
   jsonlint!
