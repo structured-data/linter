@@ -1,5 +1,6 @@
 require 'rdf/linter/writer'
 require 'rdf/xsd'
+require 'json/ld/preloaded' # Preload certain contexts
 require 'nokogiri'
 
 module RDF::Linter

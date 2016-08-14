@@ -558,6 +558,13 @@
       "jsonld": "schema.org/fiboex-1-jsonld.html"
     }
   },
+  "DDxElement": {
+    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
+      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
+      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
+      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
+    }
+  },
   "DataFeed": {
     "datafeed-1": {
       "microdata": "schema.org/datafeed-1-microdata.html",
@@ -641,6 +648,20 @@
   "DrinkAction": {
     "DrinkAction-53": {
       "jsonld": "schema.org/DrinkAction-53-jsonld.html"
+    }
+  },
+  "Drug": {
+    "Drug-TreatmentIndication-MedicalContraindication-226": {
+      "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-microdata.html",
+      "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-rdfa.html",
+      "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-jsonld.html"
+    }
+  },
+  "DrugClass": {
+    "MedicalWebPage-DrugClass-229": {
+      "microdata": "schema.org/MedicalWebPage-DrugClass-229-microdata.html",
+      "rdfa": "schema.org/MedicalWebPage-DrugClass-229-rdfa.html",
+      "jsonld": "schema.org/MedicalWebPage-DrugClass-229-jsonld.html"
     }
   },
   "DryCleaningOrLaundry": {
@@ -1119,6 +1140,76 @@
       "microdata": "schema.org/eg-6-microdata.html",
       "rdfa": "schema.org/eg-6-rdfa.html",
       "jsonld": "schema.org/eg-6-jsonld.html"
+    }
+  },
+  "MedicalCause": {
+    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
+      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
+      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
+      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
+    }
+  },
+  "MedicalCondition": {
+    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
+      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
+      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
+      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
+    }
+  },
+  "MedicalContraindication": {
+    "Drug-TreatmentIndication-MedicalContraindication-226": {
+      "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-microdata.html",
+      "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-rdfa.html",
+      "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-jsonld.html"
+    }
+  },
+  "MedicalGuideline": {
+    "MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228": {
+      "microdata": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-microdata.html",
+      "rdfa": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-rdfa.html",
+      "jsonld": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-jsonld.html"
+    }
+  },
+  "MedicalGuidelineRecommendation": {
+    "MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228": {
+      "microdata": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-microdata.html",
+      "rdfa": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-rdfa.html",
+      "jsonld": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-jsonld.html"
+    }
+  },
+  "MedicalRiskFactor": {
+    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
+      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
+      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
+      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
+    }
+  },
+  "MedicalScholarlyArticle": {
+    "MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228": {
+      "microdata": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-microdata.html",
+      "rdfa": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-rdfa.html",
+      "jsonld": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-jsonld.html"
+    }
+  },
+  "MedicalSignOrSymptom": {
+    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
+      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
+      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
+      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
+    }
+  },
+  "MedicalSymptom": {
+    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
+      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
+      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
+      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
+    }
+  },
+  "MedicalWebPage": {
+    "MedicalWebPage-DrugClass-229": {
+      "microdata": "schema.org/MedicalWebPage-DrugClass-229-microdata.html",
+      "rdfa": "schema.org/MedicalWebPage-DrugClass-229-rdfa.html",
+      "jsonld": "schema.org/MedicalWebPage-DrugClass-229-jsonld.html"
     }
   },
   "MobileApplication": {
@@ -2468,6 +2559,13 @@
     },
     "TravelAction-118": {
       "jsonld": "schema.org/TravelAction-118-jsonld.html"
+    }
+  },
+  "TreatmentIndication": {
+    "Drug-TreatmentIndication-MedicalContraindication-226": {
+      "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-microdata.html",
+      "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-rdfa.html",
+      "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-jsonld.html"
     }
   },
   "UnRegisterAction": {
