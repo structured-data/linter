@@ -18,12 +18,12 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/json-ld.git
-  revision: 7d4bfc0bef91c1ed180bbd49328d363ff1a0c7d3
+  revision: 1663d106a92996d4eba1cbf52f7377cd7816e9f7
   branch: develop
   specs:
-    json-ld (2.0.1)
+    json-ld (2.1.0)
       multi_json (~> 1.11)
-      rdf (~> 2.0)
+      rdf (~> 2.1)
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-microdata.git
@@ -50,7 +50,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 7b1ee0d0ef10cf4a581f7b2cbd609c52bb69fe26
+  revision: 7da646f503af0a582781f1348059a75ac646402c
   branch: develop
   specs:
     rdf-reasoner (0.4.0)
@@ -69,15 +69,15 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-vocab.git
-  revision: 1c7e905ce08c12ed133576c421f9c7a6ff410b1a
+  revision: 1d623971734a59e61cae69a7e97988c2ab835ee6
   branch: develop
   specs:
-    rdf-vocab (2.0.3)
-      rdf (~> 2.0)
+    rdf-vocab (2.1.0)
+      rdf (~> 2.1)
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: 2eb18cc04ec4f526e304d236ab2429115d4f32dd
+  revision: f47ccd0df3d745e230c6f6f65ba761ed23af41dd
   branch: develop
   specs:
     rdf (2.1.0)
@@ -87,7 +87,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.3.4)
+    linter (2.3.5)
       activesupport (~> 4.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -182,7 +182,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
-    oj (2.17.2)
+    oj (2.17.3)
     pkg-config (1.1.7)
     puma (3.6.0)
     rack (1.6.4)
