@@ -18,11 +18,11 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/json-ld.git
-  revision: 1663d106a92996d4eba1cbf52f7377cd7816e9f7
+  revision: f830eca03ac52a2ccc207dc448ad33c93a81c74e
   branch: develop
   specs:
     json-ld (2.1.0)
-      multi_json (~> 1.11)
+      multi_json (~> 1.12)
       rdf (~> 2.1)
 
 GIT
@@ -50,7 +50,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-reasoner.git
-  revision: 7da646f503af0a582781f1348059a75ac646402c
+  revision: f181ca153cbb558906cf5e8c40b681bd5bfa02ac
   branch: develop
   specs:
     rdf-reasoner (0.4.0)
@@ -69,7 +69,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf-vocab.git
-  revision: 1d623971734a59e61cae69a7e97988c2ab835ee6
+  revision: 731d4d43ad5819a4a412893d062ca4426a10c92e
   branch: develop
   specs:
     rdf-vocab (2.1.0)
@@ -77,7 +77,7 @@ GIT
 
 GIT
   remote: git://github.com/ruby-rdf/rdf.git
-  revision: f47ccd0df3d745e230c6f6f65ba761ed23af41dd
+  revision: e46839c0fffa2b53b50e92cb338c472e2512db65
   branch: develop
   specs:
     rdf (2.1.0)
@@ -182,7 +182,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
-    oj (2.17.3)
+    oj (2.17.4)
     pkg-config (1.1.7)
     puma (3.6.0)
     rack (1.6.4)
@@ -231,7 +231,7 @@ GEM
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
       rspec-mocks (~> 3.5.0)
-    rspec-core (3.5.2)
+    rspec-core (3.5.3)
       rspec-support (~> 3.5.0)
     rspec-expectations (3.5.0)
       diff-lcs (>= 1.2.0, < 2.0)
@@ -270,7 +270,7 @@ GEM
       rdf-xsd (~> 2.0)
       sparql-client (~> 2.0)
       sxp (~> 1.0)
-    sparql-client (2.0.1)
+    sparql-client (2.1.0)
       net-http-persistent (~> 2.9)
       rdf (~> 2.0)
     sxp (1.0.0)
