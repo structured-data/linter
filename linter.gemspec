@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
 
   gem.name               = 'linter'
   gem.homepage           = 'http://structured-data.org/'
-  gem.license            = 'Public Domain' if gem.respond_to?(:license=)
+  gem.license            = 'Unlicense'
   gem.summary            = 'Extract Microdata, RDFa and JSON-LD to provide Rich Snippet preview and analysis of structured data.'
   gem.description        = gem.summary
 
@@ -19,20 +19,21 @@ Gem::Specification.new do |gem|
   gem.require_paths      = %w(lib)
   gem.has_rdoc           = false
 
-  gem.required_ruby_version       = '2.3.1'
+  gem.required_ruby_version       = '>= 2.2.2'
   gem.requirements                = []
-  gem.add_runtime_dependency      'linkeddata',         '~> 2.0'
+  gem.add_runtime_dependency      'linkeddata',         '~> 2.2'
+  gem.add_runtime_dependency      'json-ld-preloaded',  '~> 1.0'
   gem.add_runtime_dependency      'activesupport',      '~> 4.0'
   gem.add_runtime_dependency      'sinatra-linkeddata', '~> 2.0'
   gem.add_runtime_dependency      'sinatra-assetpack',  '~> 0.3.3'
   gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.4'
-  gem.add_runtime_dependency      'rdf-vocab',          '~> 2.0'
+  gem.add_runtime_dependency      'rdf-vocab',          '~> 2.2'
   gem.add_runtime_dependency      'equivalent-xml'
   gem.add_runtime_dependency      'sinatra',            '~> 1.4'
   gem.add_runtime_dependency      'erubis',             '~> 2.7'
   gem.add_runtime_dependency      'haml',               '~> 4.0'
   #gem.add_runtime_dependency      'facets',             '~> 2.9'
-  gem.add_runtime_dependency      'nokogiri',           '~> 1.6'
+  gem.add_runtime_dependency      'nokogiri',           '~> 1.7'
   gem.add_runtime_dependency      'rack',               '~> 1.6'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.6'
   gem.add_runtime_dependency      'rack-contrib',       '~> 1.4'
