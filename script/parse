@@ -31,7 +31,6 @@ options = {
   verbose: false,
   strict: true,
   output: STDOUT,
-  format: :all,
 }
 input = nil
 
