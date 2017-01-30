@@ -52,7 +52,7 @@ namespace :schema do
 
   desc "Create schema example index"
   task :examples do
-    #%x{rm -rf ./schema.org && mkdir -p ./schema.org/ext/bib ./schema.org/ext/health-lifesci}
+    %x{rm -rf ./schema.org && mkdir -p ./schema.org/ext/bib ./schema.org/ext/health-lifesci}
     %w(
       examples
       sdo-automobile-examples
@@ -101,7 +101,7 @@ namespace :schema do
       ext/health-lifesci/medicalWebpage-example
       ext/health-lifesci/physical-activity-and-exercise
     ).each do |e|
-      #%x{curl #{schema_base}/#{e}.txt -o ./schema.org/#{e}.txt}
+      %x{curl #{schema_base}/#{e}.txt -o ./schema.org/#{e}.txt}
     end
     $:.unshift(File.expand_path("../lib", __FILE__))
     require 'rdf/linter'
