@@ -9,7 +9,47 @@ namespace :doc do
   end
 end
 
+# https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.2/all-layers.nq
+schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/")
+schema_version = ENV.fetch("schema_version", "3.2")
+
 namespace :schema do
+  desc "Create custom pre-compiled vocabulary"
+  task vocab: "lib/rdf/vocab/schema.rb"
+
+  file "lib/rdf/vocab/schema.rb" => :do_build do
+    puts "Generate lib/rdf/vocab/schema.rb"
+    cmd = "bundle exec rdf"
+    cmd += " serialize --uri http://schema.org/ --output-format vocabulary"
+    cmd += " --module-name RDF::Vocab"
+    cmd += " --class-name SCHEMA"
+    cmd += " --strict"
+    cmd += " -o lib/rdf/vocab/schema.rb_t"
+    cmd += " #{schema_base}/releases/#{schema_version}/all-layers.nq"
+    puts "  #{cmd}"
+    begin
+      %x{#{cmd} && mv lib/rdf/vocab/schema.rb_t lib/rdf/vocab/schema.rb}
+    rescue
+      puts "Failed to load schema: #{$!.message}"
+    ensure
+      %x{rm -f lib/rdf/vocab/schema.rb_t}
+    end
+  end
+  task :do_build
+
+  desc "Create pre-compiled context"
+  task context: "lib/rdf/vocab/schema_context.rb"
+  file "lib/rdf/vocab/schema_context.rb" => :do_build do
+    puts "Generate lib/rdf/vocab/schema_context.rb"
+    require 'json/ld'
+    File.open("lib/rdf/vocab/schema_context.rb", "w") do |f|
+      # FIXME: you would think this would be someplace in the data directory
+      # schema_base + '/releases/' + schema_version + '/schema.jsonld'
+      c = JSON::LD::Context.new().parse("http://schema.org/")
+      f.write c.to_rb
+    end
+  end
+
   desc "Create schema example index"
   task :examples do
     #%x{rm -rf ./schema.org && mkdir -p ./schema.org/ext/bib ./schema.org/ext/health-lifesci}
@@ -61,7 +101,7 @@ namespace :schema do
       ext/health-lifesci/medicalWebpage-example
       ext/health-lifesci/physical-activity-and-exercise
     ).each do |e|
-      #%x{curl https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/#{e}.txt -o ./schema.org/#{e}.txt}
+      #%x{curl #{schema_base}/#{e}.txt -o ./schema.org/#{e}.txt}
     end
     $:.unshift(File.expand_path("../lib", __FILE__))
     require 'rdf/linter'

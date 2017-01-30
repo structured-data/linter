@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
   gem.requirements                = []
   gem.add_runtime_dependency      'linkeddata',         '~> 2.2'
   gem.add_runtime_dependency      'json-ld-preloaded',  '~> 1.0'
-  gem.add_runtime_dependency      'activesupport',      '~> 4.0'
+  gem.add_runtime_dependency      'activesupport',      '~> 5.0'
   gem.add_runtime_dependency      'sinatra-linkeddata', '~> 2.0'
   gem.add_runtime_dependency      'sinatra-assetpack',  '~> 0.3.3'
   gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.4'
@@ -37,7 +37,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'rack',               '~> 1.6'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.6'
   gem.add_runtime_dependency      'rack-contrib',       '~> 1.4'
-  gem.add_runtime_dependency      'puma',               '~> 3.6'
+  gem.add_runtime_dependency      'puma',               '~> 3.7'
 
   gem.add_development_dependency  'foreman'
   gem.add_development_dependency  'yard' ,              '~> 0.9'
