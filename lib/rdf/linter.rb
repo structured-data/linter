@@ -1,4 +1,7 @@
 require 'sinatra/linkeddata'
+require 'json/ld/preloaded' # Preload certain contexts
+require 'rdf/vocab/schema'
+require 'rdf/vocab/schema_context'
 require 'rdf/reasoner'
 require 'rdf/linter/extensions'
 require 'rdf/vocab'

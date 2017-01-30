@@ -331,10 +331,10 @@
     }
   },
   "Car": {
-    "Car-230": {
-      "microdata": "schema.org/Car-230-microdata.html",
-      "rdfa": "schema.org/Car-230-rdfa.html",
-      "jsonld": "schema.org/Car-230-jsonld.html"
+    "Car-227": {
+      "microdata": "schema.org/Car-227-microdata.html",
+      "rdfa": "schema.org/Car-227-rdfa.html",
+      "jsonld": "schema.org/Car-227-jsonld.html"
     },
     "compoundPrice-2": {
       "microdata": "schema.org/compoundPrice-2-microdata.html",
@@ -558,13 +558,6 @@
       "jsonld": "schema.org/fiboex-1-jsonld.html"
     }
   },
-  "DDxElement": {
-    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
-      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
-      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
-      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
-    }
-  },
   "DataFeed": {
     "datafeed-1": {
       "microdata": "schema.org/datafeed-1-microdata.html",
@@ -655,13 +648,6 @@
       "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-microdata.html",
       "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-rdfa.html",
       "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-jsonld.html"
-    }
-  },
-  "DrugClass": {
-    "MedicalWebPage-DrugClass-229": {
-      "microdata": "schema.org/MedicalWebPage-DrugClass-229-microdata.html",
-      "rdfa": "schema.org/MedicalWebPage-DrugClass-229-rdfa.html",
-      "jsonld": "schema.org/MedicalWebPage-DrugClass-229-jsonld.html"
     }
   },
   "DryCleaningOrLaundry": {
@@ -853,6 +839,11 @@
       "microdata": "schema.org/eg-5-microdata.html",
       "rdfa": "schema.org/eg-5-rdfa.html",
       "jsonld": "schema.org/eg-5-jsonld.html"
+    },
+    "GeoCoordinates-geo-248": {
+      "microdata": "schema.org/GeoCoordinates-geo-248-microdata.html",
+      "rdfa": "schema.org/GeoCoordinates-geo-248-rdfa.html",
+      "jsonld": "schema.org/GeoCoordinates-geo-248-jsonld.html"
     }
   },
   "GiveAction": {
@@ -890,6 +881,30 @@
   "Hospital": {
     "GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-170": {
       "jsonld": "schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-170-jsonld.html"
+    }
+  },
+  "Hotel": {
+    "Hotel-243": {
+      "microdata": "schema.org/Hotel-243-microdata.html",
+      "rdfa": "schema.org/Hotel-243-rdfa.html",
+      "jsonld": "schema.org/Hotel-243-jsonld.html"
+    },
+    "Hotel-logo-image-246": {
+      "microdata": "schema.org/Hotel-logo-image-246-microdata.html",
+      "rdfa": "schema.org/Hotel-logo-image-246-rdfa.html",
+      "jsonld": "schema.org/Hotel-logo-image-246-jsonld.html"
+    },
+    "HotelRoom-Hotel-255": {
+      "microdata": "schema.org/HotelRoom-Hotel-255-microdata.html",
+      "rdfa": "schema.org/HotelRoom-Hotel-255-rdfa.html",
+      "jsonld": "schema.org/HotelRoom-Hotel-255-jsonld.html"
+    }
+  },
+  "HotelRoom": {
+    "HotelRoom-Hotel-255": {
+      "microdata": "schema.org/HotelRoom-Hotel-255-microdata.html",
+      "rdfa": "schema.org/HotelRoom-Hotel-255-rdfa.html",
+      "jsonld": "schema.org/HotelRoom-Hotel-255-jsonld.html"
     }
   },
   "IgnoreAction": {
@@ -980,10 +995,10 @@
       "rdfa": "schema.org/invoice-1-rdfa.html",
       "jsonld": "schema.org/invoice-1-jsonld.html"
     },
-    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247": {
-      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-microdata.html",
-      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-rdfa.html",
-      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-jsonld.html"
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-jsonld.html"
     }
   },
   "ItemList": {
@@ -1042,6 +1057,11 @@
   "Language": {
     "GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-170": {
       "jsonld": "schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-170-jsonld.html"
+    },
+    "availableLanguage-Language-254": {
+      "microdata": "schema.org/availableLanguage-Language-254-microdata.html",
+      "rdfa": "schema.org/availableLanguage-Language-254-rdfa.html",
+      "jsonld": "schema.org/availableLanguage-Language-254-jsonld.html"
     }
   },
   "LeaveAction": {
@@ -1102,15 +1122,27 @@
       "rdfa": "schema.org/eg-4-rdfa.html",
       "jsonld": "schema.org/eg-4-jsonld.html"
     },
-    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247": {
-      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-microdata.html",
-      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-rdfa.html",
-      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-jsonld.html"
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-jsonld.html"
     },
     "offer-3": {
       "microdata": "schema.org/offer-3-microdata.html",
       "rdfa": "schema.org/offer-3-rdfa.html",
       "jsonld": "schema.org/offer-3-jsonld.html"
+    }
+  },
+  "LocationFeatureSpecification": {
+    "feature-LocationFeatureSpecification-251": {
+      "microdata": "schema.org/feature-LocationFeatureSpecification-251-microdata.html",
+      "rdfa": "schema.org/feature-LocationFeatureSpecification-251-rdfa.html",
+      "jsonld": "schema.org/feature-LocationFeatureSpecification-251-jsonld.html"
+    },
+    "feature-LocationFeatureSpecification-hoursAvailable-252": {
+      "microdata": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-252-microdata.html",
+      "rdfa": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-252-rdfa.html",
+      "jsonld": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-252-jsonld.html"
     }
   },
   "LodgingReservation": {
@@ -1142,74 +1174,11 @@
       "jsonld": "schema.org/eg-6-jsonld.html"
     }
   },
-  "MedicalCause": {
-    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
-      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
-      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
-      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
-    }
-  },
-  "MedicalCondition": {
-    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
-      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
-      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
-      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
-    }
-  },
   "MedicalContraindication": {
     "Drug-TreatmentIndication-MedicalContraindication-226": {
       "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-microdata.html",
       "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-rdfa.html",
       "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-jsonld.html"
-    }
-  },
-  "MedicalGuideline": {
-    "MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228": {
-      "microdata": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-microdata.html",
-      "rdfa": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-rdfa.html",
-      "jsonld": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-jsonld.html"
-    }
-  },
-  "MedicalGuidelineRecommendation": {
-    "MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228": {
-      "microdata": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-microdata.html",
-      "rdfa": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-rdfa.html",
-      "jsonld": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-jsonld.html"
-    }
-  },
-  "MedicalRiskFactor": {
-    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
-      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
-      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
-      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
-    }
-  },
-  "MedicalScholarlyArticle": {
-    "MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228": {
-      "microdata": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-microdata.html",
-      "rdfa": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-rdfa.html",
-      "jsonld": "schema.org/MedicalScholarlyArticle-MedicalGuideline-MedicalGuidelineRecommendation-228-jsonld.html"
-    }
-  },
-  "MedicalSignOrSymptom": {
-    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
-      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
-      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
-      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
-    }
-  },
-  "MedicalSymptom": {
-    "MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227": {
-      "microdata": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-microdata.html",
-      "rdfa": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-rdfa.html",
-      "jsonld": "schema.org/MedicalCondition-MedicalCause-MedicalRiskFactor-DDxElement-MedicalSymptom-MedicalSignOrSymptom-227-jsonld.html"
-    }
-  },
-  "MedicalWebPage": {
-    "MedicalWebPage-DrugClass-229": {
-      "microdata": "schema.org/MedicalWebPage-DrugClass-229-microdata.html",
-      "rdfa": "schema.org/MedicalWebPage-DrugClass-229-rdfa.html",
-      "jsonld": "schema.org/MedicalWebPage-DrugClass-229-jsonld.html"
     }
   },
   "MobileApplication": {
@@ -1520,15 +1489,15 @@
     }
   },
   "Order": {
-    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247": {
-      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-microdata.html",
-      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-rdfa.html",
-      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-jsonld.html"
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-jsonld.html"
     },
-    "Order-OrderItem-Organization-Person-248": {
-      "microdata": "schema.org/Order-OrderItem-Organization-Person-248-microdata.html",
-      "rdfa": "schema.org/Order-OrderItem-Organization-Person-248-rdfa.html",
-      "jsonld": "schema.org/Order-OrderItem-Organization-Person-248-jsonld.html"
+    "Order-OrderItem-Organization-Person-258": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-258-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-258-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-258-jsonld.html"
     }
   },
   "OrderAction": {
@@ -1537,10 +1506,10 @@
     }
   },
   "OrderItem": {
-    "Order-OrderItem-Organization-Person-248": {
-      "microdata": "schema.org/Order-OrderItem-Organization-Person-248-microdata.html",
-      "rdfa": "schema.org/Order-OrderItem-Organization-Person-248-rdfa.html",
-      "jsonld": "schema.org/Order-OrderItem-Organization-Person-248-jsonld.html"
+    "Order-OrderItem-Organization-Person-258": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-258-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-258-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-258-jsonld.html"
     }
   },
   "Organization": {
@@ -1564,10 +1533,10 @@
       "rdfa": "schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-210-rdfa.html",
       "jsonld": "schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-210-jsonld.html"
     },
-    "Order-OrderItem-Organization-Person-248": {
-      "microdata": "schema.org/Order-OrderItem-Organization-Person-248-microdata.html",
-      "rdfa": "schema.org/Order-OrderItem-Organization-Person-248-rdfa.html",
-      "jsonld": "schema.org/Order-OrderItem-Organization-Person-248-jsonld.html"
+    "Order-OrderItem-Organization-Person-258": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-258-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-258-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-258-jsonld.html"
     },
     "music-2": {
       "microdata": "schema.org/music-2-microdata.html",
@@ -1708,15 +1677,15 @@
       "rdfa": "schema.org/invoice-1-rdfa.html",
       "jsonld": "schema.org/invoice-1-jsonld.html"
     },
-    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247": {
-      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-microdata.html",
-      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-rdfa.html",
-      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-jsonld.html"
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-jsonld.html"
     },
-    "Order-OrderItem-Organization-Person-248": {
-      "microdata": "schema.org/Order-OrderItem-Organization-Person-248-microdata.html",
-      "rdfa": "schema.org/Order-OrderItem-Organization-Person-248-rdfa.html",
-      "jsonld": "schema.org/Order-OrderItem-Organization-Person-248-jsonld.html"
+    "Order-OrderItem-Organization-Person-258": {
+      "microdata": "schema.org/Order-OrderItem-Organization-Person-258-microdata.html",
+      "rdfa": "schema.org/Order-OrderItem-Organization-Person-258-rdfa.html",
+      "jsonld": "schema.org/Order-OrderItem-Organization-Person-258-jsonld.html"
     },
     "music-2": {
       "microdata": "schema.org/music-2-microdata.html",
@@ -1733,10 +1702,10 @@
       "rdfa": "schema.org/sponsor-3-rdfa.html",
       "jsonld": "schema.org/sponsor-3-jsonld.html"
     },
-    "VisualArtwork-Person-310": {
-      "microdata": "schema.org/VisualArtwork-Person-310-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-310-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-310-jsonld.html"
+    "VisualArtwork-Person-320": {
+      "microdata": "schema.org/VisualArtwork-Person-320-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-320-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-320-jsonld.html"
     }
   },
   "Pharmacy": {
@@ -1915,10 +1884,10 @@
       "rdfa": "schema.org/invoice-1-rdfa.html",
       "jsonld": "schema.org/invoice-1-jsonld.html"
     },
-    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247": {
-      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-microdata.html",
-      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-rdfa.html",
-      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-jsonld.html"
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-jsonld.html"
     },
     "offer-4": {
       "microdata": "schema.org/offer-4-microdata.html",
@@ -2325,10 +2294,10 @@
     }
   },
   "Service": {
-    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247": {
-      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-microdata.html",
-      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-rdfa.html",
-      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-247-jsonld.html"
+    "Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257": {
+      "microdata": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-microdata.html",
+      "rdfa": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-rdfa.html",
+      "jsonld": "schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-257-jsonld.html"
     },
     "offer-3": {
       "microdata": "schema.org/offer-3-microdata.html",
@@ -2645,20 +2614,20 @@
     }
   },
   "VisualArtwork": {
-    "VisualArtwork-Person-310": {
-      "microdata": "schema.org/VisualArtwork-Person-310-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-310-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-310-jsonld.html"
+    "VisualArtwork-Person-320": {
+      "microdata": "schema.org/VisualArtwork-Person-320-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-320-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-320-jsonld.html"
     },
-    "VisualArtwork-311": {
-      "microdata": "schema.org/VisualArtwork-311-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-311-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-311-jsonld.html"
+    "VisualArtwork-321": {
+      "microdata": "schema.org/VisualArtwork-321-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-321-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-321-jsonld.html"
     },
-    "VisualArtwork-312": {
-      "microdata": "schema.org/VisualArtwork-312-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-312-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-312-jsonld.html"
+    "VisualArtwork-322": {
+      "microdata": "schema.org/VisualArtwork-322-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-322-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-322-jsonld.html"
     }
   },
   "VoteAction": {
@@ -2957,6 +2926,13 @@
       "jsonld": "schema.org/eg-10-jsonld.html"
     }
   },
+  "availableLanguage": {
+    "availableLanguage-Language-254": {
+      "microdata": "schema.org/availableLanguage-Language-254-microdata.html",
+      "rdfa": "schema.org/availableLanguage-Language-254-rdfa.html",
+      "jsonld": "schema.org/availableLanguage-Language-254-jsonld.html"
+    }
+  },
   "broadcastOfEvent": {
     "tv-listing4": {
       "microdata": "schema.org/tv-listing4-microdata.html",
@@ -2969,6 +2945,20 @@
       "microdata": "schema.org/eg-13-microdata.html",
       "rdfa": "schema.org/eg-13-rdfa.html",
       "jsonld": "schema.org/eg-13-jsonld.html"
+    }
+  },
+  "checkinTime": {
+    "checkinTime-checkoutTime-253": {
+      "microdata": "schema.org/checkinTime-checkoutTime-253-microdata.html",
+      "rdfa": "schema.org/checkinTime-checkoutTime-253-rdfa.html",
+      "jsonld": "schema.org/checkinTime-checkoutTime-253-jsonld.html"
+    }
+  },
+  "checkoutTime": {
+    "checkinTime-checkoutTime-253": {
+      "microdata": "schema.org/checkinTime-checkoutTime-253-microdata.html",
+      "rdfa": "schema.org/checkinTime-checkoutTime-253-rdfa.html",
+      "jsonld": "schema.org/checkinTime-checkoutTime-253-jsonld.html"
     }
   },
   "colorist": {
@@ -3129,6 +3119,11 @@
       "microdata": "schema.org/eg-5-microdata.html",
       "rdfa": "schema.org/eg-5-rdfa.html",
       "jsonld": "schema.org/eg-5-jsonld.html"
+    },
+    "GeoCoordinates-geo-248": {
+      "microdata": "schema.org/GeoCoordinates-geo-248-microdata.html",
+      "rdfa": "schema.org/GeoCoordinates-geo-248-rdfa.html",
+      "jsonld": "schema.org/GeoCoordinates-geo-248-jsonld.html"
     }
   },
   "geoRadius": {
@@ -3138,11 +3133,25 @@
       "jsonld": "schema.org/service-1-jsonld.html"
     }
   },
+  "hasMap": {
+    "hasMap-247": {
+      "microdata": "schema.org/hasMap-247-microdata.html",
+      "rdfa": "schema.org/hasMap-247-rdfa.html",
+      "jsonld": "schema.org/hasMap-247-jsonld.html"
+    }
+  },
   "hasOfferCatalog": {
     "offer-3": {
       "microdata": "schema.org/offer-3-microdata.html",
       "rdfa": "schema.org/offer-3-rdfa.html",
       "jsonld": "schema.org/offer-3-jsonld.html"
+    }
+  },
+  "hoursAvailable": {
+    "feature-LocationFeatureSpecification-hoursAvailable-252": {
+      "microdata": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-252-microdata.html",
+      "rdfa": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-252-rdfa.html",
+      "jsonld": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-252-jsonld.html"
     }
   },
   "image": {
@@ -3155,6 +3164,11 @@
       "microdata": "schema.org/eg-13-microdata.html",
       "rdfa": "schema.org/eg-13-rdfa.html",
       "jsonld": "schema.org/eg-13-jsonld.html"
+    },
+    "Hotel-logo-image-246": {
+      "microdata": "schema.org/Hotel-logo-image-246-microdata.html",
+      "rdfa": "schema.org/Hotel-logo-image-246-rdfa.html",
+      "jsonld": "schema.org/Hotel-logo-image-246-jsonld.html"
     }
   },
   "inSupportOf": {
@@ -3234,6 +3248,13 @@
       "jsonld": "schema.org/eg-9-jsonld.html"
     }
   },
+  "logo": {
+    "Hotel-logo-image-246": {
+      "microdata": "schema.org/Hotel-logo-image-246-microdata.html",
+      "rdfa": "schema.org/Hotel-logo-image-246-rdfa.html",
+      "jsonld": "schema.org/Hotel-logo-image-246-jsonld.html"
+    }
+  },
   "longitude": {
     "eg-5": {
       "microdata": "schema.org/eg-5-microdata.html",
@@ -3265,6 +3286,18 @@
       "microdata": "schema.org/offer-2-microdata.html",
       "rdfa": "schema.org/offer-2-rdfa.html",
       "jsonld": "schema.org/offer-2-jsonld.html"
+    }
+  },
+  "numberOfRooms": {
+    "numberOfRooms-249": {
+      "microdata": "schema.org/numberOfRooms-249-microdata.html",
+      "rdfa": "schema.org/numberOfRooms-249-rdfa.html",
+      "jsonld": "schema.org/numberOfRooms-249-jsonld.html"
+    },
+    "numberOfRooms-250": {
+      "microdata": "schema.org/numberOfRooms-250-microdata.html",
+      "rdfa": "schema.org/numberOfRooms-250-rdfa.html",
+      "jsonld": "schema.org/numberOfRooms-250-jsonld.html"
     }
   },
   "offerCount": {
@@ -3395,6 +3428,18 @@
       "microdata": "schema.org/social-media-1-microdata.html",
       "rdfa": "schema.org/social-media-1-rdfa.html",
       "jsonld": "schema.org/social-media-1-jsonld.html"
+    }
+  },
+  "starRating": {
+    "starRating-244": {
+      "microdata": "schema.org/starRating-244-microdata.html",
+      "rdfa": "schema.org/starRating-244-rdfa.html",
+      "jsonld": "schema.org/starRating-244-jsonld.html"
+    },
+    "starRating-245": {
+      "microdata": "schema.org/starRating-245-microdata.html",
+      "rdfa": "schema.org/starRating-245-rdfa.html",
+      "jsonld": "schema.org/starRating-245-jsonld.html"
     }
   },
   "startDate": {
