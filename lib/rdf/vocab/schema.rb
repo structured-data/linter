@@ -529,6 +529,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "BroadcastService".freeze,
       subClassOf: "schema:Service".freeze,
       type: "rdfs:Class".freeze
+    term :BrokerageAccount,
+      comment: %(An account that allows an investor to deposit funds and place investment orders with a licensed broker or brokerage firm.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      label: "BrokerageAccount".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:InvestmentOrDeposit".freeze,
+      type: "rdfs:Class".freeze
     term :BuddhistTemple,
       comment: %(A Buddhist temple.).freeze,
       label: "BuddhistTemple".freeze,
@@ -675,6 +683,22 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "Casino".freeze,
       subClassOf: "schema:EntertainmentBusiness".freeze,
       type: "rdfs:Class".freeze
+    term :CategoryCode,
+      comment: %(A Category Code.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
+      label: "CategoryCode".freeze,
+      :"schema:category" => %(issue-894).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Intangible".freeze,
+      type: "rdfs:Class".freeze
+    term :CategoryCodeSet,
+      comment: %(A set of Category Code values.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
+      label: "CategoryCodeSet".freeze,
+      :"schema:category" => %(issue-894).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:CreativeWork".freeze,
+      type: "rdfs:Class".freeze
     term :CatholicChurch,
       comment: %(A Catholic church.).freeze,
       label: "CatholicChurch".freeze,
@@ -692,7 +716,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       subClassOf: "schema:CreativeWork".freeze,
       type: "rdfs:Class".freeze
     term :CheckAction,
-      comment: %(An agent inspects/determines/investigates/inquire or examine an object's accuracy/quality/condition or state.).freeze,
+      comment: %(An agent inspects, determines, investigates, inquires, or examines an object's accuracy, quality, condition, or state.).freeze,
       label: "CheckAction".freeze,
       subClassOf: "schema:FindAction".freeze,
       type: "rdfs:Class".freeze
@@ -769,7 +793,6 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1061).freeze,
       label: "ClaimReview".freeze,
       :"schema:category" => %(issue-1061).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       subClassOf: "schema:Review".freeze,
       type: "rdfs:Class".freeze
     term :Class,
@@ -872,6 +895,16 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "CommunicateAction".freeze,
       subClassOf: "schema:InteractAction".freeze,
       type: "rdfs:Class".freeze
+    term :CompleteDataFeed,
+      comment: %(A <a class="localLink" href="http://schema.org/CompleteDataFeed">CompleteDataFeed</a> is a <a class="localLink" href="http://schema.org/DataFeed">DataFeed</a> whose standard representation includes content for every item currently in the feed.</p>
+
+<p>This is the equivalent of Atom's element as defined in Feed Paging and Archiving <a href="https://tools.ietf.org/html/rfc5005">RFC 5005</a>, For example \(and as defined for Atom\), when using data from a feed that represents a collection of items that varies over time \(e.g. "Top Twenty Records"\) there is no need to have newer entries mixed in alongside older, obsolete entries. By marking this feed as a CompleteDataFeed, old entries can be safely discarded when the feed is refreshed, since we can assume the feed has provided descriptions for all current items.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1397).freeze,
+      label: "CompleteDataFeed".freeze,
+      :"schema:category" => %(issue-1397).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:DataFeed".freeze,
+      type: "rdfs:Class".freeze
     term :CompoundPriceSpecification,
       comment: %(A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption. Use the name property of the attached unit price specification for indicating the dimension of a price component \(e.g. "electricity" or "final cleaning"\).).freeze,
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass).freeze,
@@ -899,6 +932,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
 ).freeze,
       label: "ConfirmAction".freeze,
       subClassOf: "schema:InformAction".freeze,
+      type: "rdfs:Class".freeze
+    term :Consortium,
+      comment: %(A Consortium is a membership <a class="localLink" href="http://schema.org/Organization">Organization</a> whose members are typically Organizations.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1559).freeze,
+      label: "Consortium".freeze,
+      :"schema:category" => %(issue-1559).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Organization".freeze,
       type: "rdfs:Class".freeze
     term :ConsumeAction,
       comment: %(The act of ingesting information/resources/food.).freeze,
@@ -1457,22 +1498,6 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "Enumeration".freeze,
       subClassOf: "schema:Intangible".freeze,
       type: "rdfs:Class".freeze
-    term :EnumerationValue,
-      comment: %(An enumeration value.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
-      label: "EnumerationValue".freeze,
-      :"schema:category" => %(issue-894).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
-      subClassOf: "schema:Enumeration".freeze,
-      type: "rdfs:Class".freeze
-    term :EnumerationValueSet,
-      comment: %(A set of enumerated values.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
-      label: "EnumerationValueSet".freeze,
-      :"schema:category" => %(issue-894).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
-      subClassOf: "schema:CreativeWork".freeze,
-      type: "rdfs:Class".freeze
     term :Episode,
       comment: %(A media episode \(e.g. TV, radio, video game\) which can be part of a series or season.).freeze,
       label: "Episode".freeze,
@@ -1520,6 +1545,14 @@ it may also sometimes prove useful to describe a longer-term series as an Event.
       comment: %(An event venue.).freeze,
       label: "EventVenue".freeze,
       subClassOf: "schema:CivicStructure".freeze,
+      type: "rdfs:Class".freeze
+    term :ExchangeRateSpecification,
+      comment: %(A structured value representing exchange rate.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      label: "ExchangeRateSpecification".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:StructuredValue".freeze,
       type: "rdfs:Class".freeze
     term :ExerciseAction,
       comment: %(The act of participating in exertive activity for the purposes of improving health and fitness.).freeze,
@@ -1577,7 +1610,7 @@ it may also sometimes prove useful to describe a longer-term series as an Event.
       subClassOf: "schema:LocalBusiness".freeze,
       type: "rdfs:Class".freeze
     term :FindAction,
-      comment: %(<p>TThe act of finding an object.</p>
+      comment: %(<p>The act of finding an object.</p>
 
 <p>Related actions:</p>
 
@@ -1724,6 +1757,14 @@ it may also sometimes prove useful to describe a longer-term series as an Event.
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews).freeze,
       label: "GeoShape".freeze,
       subClassOf: "schema:StructuredValue".freeze,
+      type: "rdfs:Class".freeze
+    term :GeospatialGeometry,
+      comment: %(\(Eventually to be defined as\) a supertype of GeoShape designed to accommodate definitions from Geo-Spatial best practices.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      label: "GeospatialGeometry".freeze,
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Intangible".freeze,
       type: "rdfs:Class".freeze
     term :GiveAction,
       comment: %(<p>The act of transferring ownership of an object to a destination. Reciprocal of TakeAction.</p>
@@ -1988,6 +2029,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "InternetCafe".freeze,
       subClassOf: "schema:LocalBusiness".freeze,
       type: "rdfs:Class".freeze
+    term :InvestmentFund,
+      comment: %(A company or fund that gathers capital from a number of investors to create a pool of money that is then re-invested into stocks, bonds and other assets.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      label: "InvestmentFund".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:InvestmentOrDeposit".freeze,
+      type: "rdfs:Class".freeze
     term :InvestmentOrDeposit,
       comment: %(A type of financial product that typically requires the client to transfer funds to a financial service in return for potential beneficial financial return.).freeze,
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze,
@@ -2116,6 +2165,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "Library".freeze,
       subClassOf: "schema:LocalBusiness".freeze,
       type: "rdfs:Class".freeze
+    term :LibrarySystem,
+      comment: %(A <a class="localLink" href="http://schema.org/LibrarySystem">LibrarySystem</a> is a collaborative system amongst several libraries.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1495).freeze,
+      label: "LibrarySystem".freeze,
+      :"schema:category" => %(issue-1495).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Organization".freeze,
+      type: "rdfs:Class".freeze
     term :LifestyleModification,
       comment: %(A process of care involving exercise, changes to diet, fitness routines, and other lifestyle changes aimed at improving a health condition.).freeze,
       label: "LifestyleModification".freeze,
@@ -2175,6 +2232,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
     term :LocalBusiness,
       comment: %(A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc.).freeze,
       label: "LocalBusiness".freeze,
+      :"skos:closeMatch" => %(http://www.w3.org/ns/regorg#RegisteredOrganization).freeze,
       subClassOf: ["schema:Organization".freeze, "schema:Place".freeze],
       type: "rdfs:Class".freeze
     term :LocationFeatureSpecification,
@@ -2275,7 +2333,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       comment: %(A code for a medical entity.).freeze,
       label: "MedicalCode".freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
-      subClassOf: "schema:MedicalIntangible".freeze,
+      subClassOf: ["schema:CategoryCode".freeze, "schema:MedicalIntangible".freeze],
       type: "rdfs:Class".freeze
     term :MedicalCondition,
       comment: %(Any condition of the human body that affects the normal functioning of a person, whether physically or mentally. Includes diseases, injuries, disabilities, disorders, syndromes, etc.).freeze,
@@ -2514,6 +2572,21 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "MensClothingStore".freeze,
       subClassOf: "schema:Store".freeze,
       type: "rdfs:Class".freeze
+    term :Menu,
+      comment: %(A structured representation of food or drink items available from a FoodEstablishment.).freeze,
+      label: "Menu".freeze,
+      subClassOf: "schema:CreativeWork".freeze,
+      type: "rdfs:Class".freeze
+    term :MenuItem,
+      comment: %(A food or drink item listed in a menu or menu section.).freeze,
+      label: "MenuItem".freeze,
+      subClassOf: "schema:Intangible".freeze,
+      type: "rdfs:Class".freeze
+    term :MenuSection,
+      comment: %(A sub-grouping of food or drink items in a menu. E.g. courses \(such as 'Dinner', 'Breakfast', etc.\), specific type of dishes \(such as 'Meat', 'Vegan', 'Drinks', etc.\), or some other classification made by the menu provider.).freeze,
+      label: "MenuSection".freeze,
+      subClassOf: "schema:CreativeWork".freeze,
+      type: "rdfs:Class".freeze
     term :Message,
       comment: %(A single message from a sender to one or more organizations or people.).freeze,
       label: "Message".freeze,
@@ -2539,6 +2612,22 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze,
       label: "MonetaryAmount".freeze,
       subClassOf: "schema:StructuredValue".freeze,
+      type: "rdfs:Class".freeze
+    term :MoneyTransfer,
+      comment: %(The act of transferring money from one place to another place. This may occur electronically or physically.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      label: "MoneyTransfer".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:TransferAction".freeze,
+      type: "rdfs:Class".freeze
+    term :MortgageLoan,
+      comment: %(A loan in which property or real estate is used as collateral. \(A loan securitized against some real estate.\)).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      label: "MortgageLoan".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:LoanOrCredit".freeze,
       type: "rdfs:Class".freeze
     term :Mosque,
       comment: %(A mosque.).freeze,
@@ -3428,6 +3517,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "RentalCarReservation".freeze,
       subClassOf: "schema:Reservation".freeze,
       type: "rdfs:Class".freeze
+    term :RepaymentSpecification,
+      comment: %(A structured value representing repayment.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      label: "RepaymentSpecification".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:StructuredValue".freeze,
+      type: "rdfs:Class".freeze
     term :ReplaceAction,
       comment: %(The act of editing a recipient by replacing an old object with a new object.).freeze,
       label: "ReplaceAction".freeze,
@@ -3730,6 +3827,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "SomeProducts".freeze,
       subClassOf: "schema:Product".freeze,
       type: "rdfs:Class".freeze
+    term :SpeakableSpecification,
+      comment: %(A SpeakableSpecification indicates \(typically via <a class="localLink" href="http://schema.org/xpath">xpath</a> or <a class="localLink" href="http://schema.org/cssSelector">cssSelector</a>\) sections of a document that are highlighted as particularly <a class="localLink" href="http://schema.org/speakable">speakable</a>. Instances of this type are expected to be used primarily as values of the <a class="localLink" href="http://schema.org/speakable">speakable</a> property.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1389).freeze,
+      label: "SpeakableSpecification".freeze,
+      :"schema:category" => %(issue-1389).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Intangible".freeze,
+      type: "rdfs:Class".freeze
     term :Specialty,
       comment: %(Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.).freeze,
       label: "Specialty".freeze,
@@ -3837,7 +3942,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       subClassOf: "schema:MedicalEntity".freeze,
       type: "rdfs:Class".freeze
     term :SurgicalProcedure,
-      comment: %(A medical procedure involving an incision with instruments; performed for diagnose, or therapeutic purposes.).freeze,
+      comment: %(A type of medical procedure that involves invasive surgical techniques.).freeze,
       label: "SurgicalProcedure".freeze,
       :"owl:equivalentClass" => %(http://purl.bioontology.org/ontology/SNOMEDCT/387713003).freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
@@ -4319,6 +4424,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "WearAction".freeze,
       subClassOf: "schema:UseAction".freeze,
       type: "rdfs:Class".freeze
+    term :WebAPI,
+      comment: %(An application programming interface accessible over Web/Internet technologies.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1423).freeze,
+      label: "WebAPI".freeze,
+      :"schema:category" => %(issue-1423).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Service".freeze,
+      type: "rdfs:Class".freeze
     term :WebApplication,
       comment: %(Web applications.).freeze,
       label: "WebApplication".freeze,
@@ -4376,7 +4489,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
     # Property definitions
     property :about,
       comment: %(The subject matter of the content.).freeze,
-      domainIncludes: ["schema:CommunicateAction".freeze, "schema:CreativeWork".freeze],
+      domainIncludes: ["schema:CommunicateAction".freeze, "schema:CreativeWork".freeze, "schema:Event".freeze],
       label: "about".freeze,
       rangeIncludes: "schema:Thing".freeze,
       type: "rdf:Property".freeze
@@ -4441,7 +4554,6 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "accessMode".freeze,
       rangeIncludes: "schema:Text".freeze,
       :"schema:category" => %(issue-1110).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :accessModeSufficient,
       comment: %(A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. Expected values include:  auditory, tactile, textual, visual.).freeze,
@@ -4450,7 +4562,6 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "accessModeSufficient".freeze,
       rangeIncludes: "schema:Text".freeze,
       :"schema:category" => %(issue-1110).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :accessibilityAPI,
       comment: %(Indicates that the resource is compatible with the referenced accessibility API \(<a href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki lists possible values</a>\).).freeze,
@@ -4483,13 +4594,31 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "accessibilitySummary".freeze,
       rangeIncludes: "schema:Text".freeze,
       :"schema:category" => %(issue-1110).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :accountId,
       comment: %(The identifier for the account the payment will be applied to.).freeze,
       domainIncludes: "schema:Invoice".freeze,
       label: "accountId".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
+      type: "rdf:Property".freeze
+    property :accountMinimumInflow,
+      comment: %(A minimum amount that has to be paid in every month.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:BankAccount".freeze,
+      label: "accountMinimumInflow".freeze,
+      rangeIncludes: "schema:MonetaryAmount".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :accountOverdraftLimit,
+      comment: %(An overdraft is an extension of credit from a lending institution when an account reaches zero. An overdraft allows the individual to continue withdrawing money even if the account has no funds in it. Basically the bank allows people to borrow a set amount of money.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:BankAccount".freeze,
+      label: "accountOverdraftLimit".freeze,
+      rangeIncludes: "schema:MonetaryAmount".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :accountablePerson,
       comment: %(Specifies the Person that is legally accountable for the CreativeWork.).freeze,
@@ -4785,9 +4914,11 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       type: "rdf:Property".freeze
     property :amount,
       comment: %(The amount of money.).freeze,
-      domainIncludes: ["schema:DatedMoneySpecification".freeze, "schema:InvestmentOrDeposit".freeze, "schema:LoanOrCredit".freeze],
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1253).freeze,
+      domainIncludes: ["schema:DatedMoneySpecification".freeze, "schema:InvestmentOrDeposit".freeze, "schema:LoanOrCredit".freeze, "schema:MoneyTransfer".freeze],
       label: "amount".freeze,
       rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:Number".freeze],
+      :"schema:category" => %(issue-1253).freeze,
       type: "rdf:Property".freeze
     property :amountOfThisGood,
       comment: %(The quantity of the goods included in the offer.).freeze,
@@ -5039,7 +5170,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       type: "rdf:Property".freeze
     property :audience,
       comment: %(An intended audience, i.e. a group for whom something was created.).freeze,
-      domainIncludes: ["schema:CreativeWork".freeze, "schema:LodgingBusiness".freeze, "schema:PlayAction".freeze, "schema:Product".freeze, "schema:Service".freeze],
+      domainIncludes: ["schema:CreativeWork".freeze, "schema:Event".freeze, "schema:LodgingBusiness".freeze, "schema:PlayAction".freeze, "schema:Product".freeze, "schema:Service".freeze],
       label: "audience".freeze,
       rangeIncludes: "schema:Audience".freeze,
       type: "rdf:Property".freeze
@@ -5181,6 +5312,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       rangeIncludes: "schema:Text".freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "rdf:Property".freeze
+    property :bankAccountType,
+      comment: %(The type of a bank account.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:BankAccount".freeze,
+      label: "bankAccountType".freeze,
+      rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :baseSalary,
       comment: %(The base salary of the job or of an employee in an EmployeeRole.).freeze,
       domainIncludes: ["schema:EmployeeRole".freeze, "schema:JobPosting".freeze],
@@ -5194,6 +5334,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: ["schema:HotelRoom".freeze, "schema:Suite".freeze],
       label: "bed".freeze,
       rangeIncludes: ["schema:BedDetails".freeze, "schema:BedType".freeze, "schema:Text".freeze],
+      type: "rdf:Property".freeze
+    property :beneficiaryBank,
+      comment: %(A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:MoneyTransfer".freeze,
+      label: "beneficiaryBank".freeze,
+      rangeIncludes: ["schema:BankOrCreditUnion".freeze, "schema:Text".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :benefits,
       comment: %(Description of benefits associated with the job.).freeze,
@@ -5450,7 +5599,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       type: "rdf:Property".freeze
     property :broker,
       comment: %(An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.).freeze,
-      domainIncludes: ["schema:Invoice".freeze, "schema:Order".freeze, "schema:Reservation".freeze],
+      domainIncludes: ["schema:Invoice".freeze, "schema:Order".freeze, "schema:Reservation".freeze, "schema:Service".freeze],
       label: "broker".freeze,
       rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       type: "rdf:Property".freeze
@@ -5540,6 +5689,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: "schema:MobileApplication".freeze,
       label: "carrierRequirements".freeze,
       rangeIncludes: "schema:Text".freeze,
+      type: "rdf:Property".freeze
+    property :cashBack,
+      comment: %(A cardholder benefit that pays the cardholder a small percentage of their net expenditures.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:PaymentCard".freeze,
+      label: "cashBack".freeze,
+      rangeIncludes: ["schema:Boolean".freeze, "schema:Number".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :catalog,
       comment: %(A data catalog which contains this dataset.).freeze,
@@ -5654,7 +5812,6 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "claimReviewed".freeze,
       rangeIncludes: "schema:Text".freeze,
       :"schema:category" => %(issue-1061).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :clincalPharmacology,
       comment: %(Description of the absorption and elimination of drugs, including their concentration \(pharmacokinetics, pK\) and biological effects \(pharmacodynamics, pD\).).freeze,
@@ -5711,11 +5868,13 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       rangeIncludes: "schema:Text".freeze,
       type: "rdf:Property".freeze
     property :codeValue,
-      comment: %(The actual code.).freeze,
-      domainIncludes: "schema:MedicalCode".freeze,
+      comment: %(A short textual code that uniquely identifies the value.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
+      domainIncludes: ["schema:CategoryCode".freeze, "schema:MedicalCode".freeze],
       label: "codeValue".freeze,
       rangeIncludes: "schema:Text".freeze,
-      :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
+      :"schema:category" => %(issue-894).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :codingSystem,
       comment: %(The coding system, e.g. 'ICD-10'.).freeze,
@@ -5809,6 +5968,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: ["schema:Invoice".freeze, "schema:Order".freeze],
       label: "confirmationNumber".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :connectedTo,
       comment: %(Other anatomical structures to which this structure is connected.).freeze,
@@ -5828,7 +5988,6 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: ["schema:HealthInsurancePlan".freeze, "schema:Organization".freeze, "schema:Person".freeze],
       label: "contactPoint".freeze,
       rangeIncludes: "schema:ContactPoint".freeze,
-      :"schema:category" => %(issue-1062).freeze,
       type: "rdf:Property".freeze
     property :contactPoints,
       comment: %(A contact point for a person or organization.).freeze,
@@ -5842,6 +6001,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: "schema:ContactPoint".freeze,
       label: "contactType".freeze,
       rangeIncludes: "schema:Text".freeze,
+      type: "rdf:Property".freeze
+    property :contactlessPayment,
+      comment: %(A secure method for consumers to purchase products or services via debit, credit or smartcards by using RFID or NFC technology.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:PaymentCard".freeze,
+      label: "contactlessPayment".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :containedIn,
       comment: %(The basic containment relation between a place and one that contains it.).freeze,
@@ -6057,6 +6225,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "creditedTo".freeze,
       rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       type: "rdf:Property".freeze
+    property :cssSelector,
+      comment: %(A CSS selector.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1389).freeze,
+      domainIncludes: "schema:SpeakableSpecification".freeze,
+      label: "cssSelector".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      :"schema:category" => %(issue-1389).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :currenciesAccepted,
       comment: %(The currency accepted \(in <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency format</a>\).).freeze,
       domainIncludes: "schema:LocalBusiness".freeze,
@@ -6065,9 +6242,20 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       type: "rdf:Property".freeze
     property :currency,
       comment: %(The currency in which the monetary amount is expressed \(in 3-letter <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> format\).).freeze,
-      domainIncludes: ["schema:DatedMoneySpecification".freeze, "schema:MonetaryAmount".freeze],
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1253).freeze,
+      domainIncludes: ["schema:DatedMoneySpecification".freeze, "schema:ExchangeRateSpecification".freeze, "schema:LoanOrCredit".freeze, "schema:MonetaryAmount".freeze],
       label: "currency".freeze,
       rangeIncludes: "schema:Text".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      type: "rdf:Property".freeze
+    property :currentExchangeRate,
+      comment: %(The current price of a currency.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:ExchangeRateSpecification".freeze,
+      label: "currentExchangeRate".freeze,
+      rangeIncludes: "schema:UnitPriceSpecification".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :customer,
       comment: %(Party placing the order or paying the invoice.).freeze,
@@ -6399,12 +6587,30 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "distribution".freeze,
       rangeIncludes: "schema:DataDownload".freeze,
       type: "rdf:Property".freeze
+    property :documentation,
+      comment: %(Further documentation describing the Web API in more detail.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1423).freeze,
+      domainIncludes: "schema:WebAPI".freeze,
+      label: "documentation".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1423).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :domainIncludes,
       comment: %(Relates a property to a class that is \(one of\) the type\(s\) the property is expected to be used on.).freeze,
       domainIncludes: "schema:Property".freeze,
       label: "domainIncludes".freeze,
       rangeIncludes: "schema:Class".freeze,
       :"schema:isPartOf" => %(http://meta.schema.org/).freeze,
+      type: "rdf:Property".freeze
+    property :domiciledMortgage,
+      comment: %(Whether borrower is a resident of the jurisdiction where the property is located.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:MortgageLoan".freeze,
+      label: "domiciledMortgage".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :doorTime,
       comment: %(The time admission will commence.).freeze,
@@ -6439,6 +6645,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "doseValue".freeze,
       rangeIncludes: ["schema:Number".freeze, "schema:QualitativeValue".freeze],
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :downPayment,
+      comment: %(a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:RepaymentSpecification".freeze,
+      label: "downPayment".freeze,
+      rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:Number".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :downloadUrl,
       comment: %(If the file can be downloaded, URL to download the binary.).freeze,
@@ -6505,6 +6720,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       label: "duns".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :duplicateTherapy,
       comment: %(A therapy that duplicates or overlaps this one.).freeze,
@@ -6525,6 +6741,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: "schema:WarrantyPromise".freeze,
       label: "durationOfWarranty".freeze,
       rangeIncludes: "schema:QuantitativeValue".freeze,
+      type: "rdf:Property".freeze
+    property :earlyPrepaymentPenalty,
+      comment: %(The amount to be paid as a penalty in the event of early payment of the loan.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:RepaymentSpecification".freeze,
+      label: "earlyPrepaymentPenalty".freeze,
+      rangeIncludes: "schema:MonetaryAmount".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :editor,
       comment: %(Specifies the Person who edited the CreativeWork.).freeze,
@@ -6756,15 +6981,6 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       rangeIncludes: "schema:EntertainmentBusiness".freeze,
       subPropertyOf: "schema:location".freeze,
       type: "rdf:Property".freeze
-    property :enumerationValueCode,
-      comment: %(A short textual code that uniquely identifies the value. The code is typically used in structured URLs.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
-      domainIncludes: "schema:EnumerationValue".freeze,
-      label: "enumerationValueCode".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      :"schema:category" => %(issue-894).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
-      type: "rdf:Property".freeze
     property :epidemiology,
       comment: %(The characteristics of associated patients, such as age, gender, race etc.).freeze,
       domainIncludes: ["schema:MedicalCondition".freeze, "schema:PhysicalActivity".freeze],
@@ -6859,6 +7075,23 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       inverseOf: "schema:workExample".freeze,
       label: "exampleOfWork".freeze,
       rangeIncludes: "schema:CreativeWork".freeze,
+      type: "rdf:Property".freeze
+    property :exchangeRate,
+      comment: %(The price of a currency in terms of another currency.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      label: "exchangeRate".freeze,
+      rangeIncludes: ["schema:ExchangeRateSpecification".freeze, "schema:UnitPriceSpecification".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :exchangeRateSpread,
+      comment: %(The difference between the price at which a broker or other intermediary buys and sells foreign currency.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:ExchangeRateSpecification".freeze,
+      label: "exchangeRateSpread".freeze,
+      rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:Number".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :executableLibraryName,
       comment: %(Library file name e.g., mscorlib.dll, system.web.dll.).freeze,
@@ -7013,6 +7246,16 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: "schema:Flight".freeze,
       label: "flightNumber".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
+      type: "rdf:Property".freeze
+    property :floorLimit,
+      comment: %(A floor limit is the amount of money above which credit card transactions must be authorized.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:PaymentCard".freeze,
+      label: "floorLimit".freeze,
+      rangeIncludes: "schema:MonetaryAmount".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :floorSize,
       comment: %(The size of the accommodation, e.g. in square meter or squarefoot.
@@ -7220,8 +7463,8 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       rangeIncludes: ["schema:GenderType".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
     property :genre,
-      comment: %(Genre of the creative work or group.).freeze,
-      domainIncludes: ["schema:CreativeWork".freeze, "schema:MusicGroup".freeze],
+      comment: %(Genre of the creative work, broadcast channel or group.).freeze,
+      domainIncludes: ["schema:BroadcastChannel".freeze, "schema:CreativeWork".freeze, "schema:MusicGroup".freeze],
       label: "genre".freeze,
       rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
       type: "rdf:Property".freeze
@@ -7249,6 +7492,96 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "geographicArea".freeze,
       rangeIncludes: "schema:AdministrativeArea".freeze,
       type: "rdf:Property".freeze
+    property :geospatiallyContains,
+      comment: %(Represents a relationship between two geometries \(or the places they represent\), relating a containing geometry to a contained geometry. "a contains b iff no points of b lie in the exterior of a, and at least one point of the interior of b lies in the interior of a". As defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyContains".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyCoveredBy,
+      comment: %(Represents a relationship between two geometries \(or the places they represent\), relating a geometry to another that covers it. As defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyCoveredBy".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyCovers,
+      comment: %(Represents a relationship between two geometries \(or the places they represent\), relating a covering geometry to a covered geometry. "Every point of b is a point of \(the interior or boundary of\) a". As defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyCovers".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyCrosses,
+      comment: %(Represents a relationship between two geometries \(or the places they represent\), relating a geometry to another that crosses it: "a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them". As defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyCrosses".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyDisjoint,
+      comment: %(Represents spatial relations in which two geometries \(or the places they represent\) are topologically disjoint: they have no point in common. They form a set of disconnected geometries." \(a symmetric relationship, as defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>\)).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyDisjoint".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyEquals,
+      comment: %(Represents spatial relations in which two geometries \(or the places they represent\) are topologically equal, as defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>. "Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other" \(a symmetric relationship\)).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyEquals".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyIntersects,
+      comment: %(Represents spatial relations in which two geometries \(or the places they represent\) have at least one point in common. As defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyIntersects".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyOverlaps,
+      comment: %(Represents a relationship between two geometries \(or the places they represent\), relating a geometry to another that geospatially overlaps it, i.e. they have some but not all points in common. As defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyOverlaps".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyTouches,
+      comment: %(Represents spatial relations in which two geometries \(or the places they represent\) touch: they have at least one boundary point in common, but no interior points." \(a symmetric relationship, as defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a> \)).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyTouches".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :geospatiallyWithin,
+      comment: %(Represents a relationship between two geometries \(or the places they represent\), relating a geometry to one that contains it, i.e. it is inside \(i.e. within\) its interior. As defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1375).freeze,
+      domainIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      label: "geospatiallyWithin".freeze,
+      rangeIncludes: ["schema:GeospatialGeometry".freeze, "schema:Place".freeze],
+      :"schema:category" => %(issue-1375).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :givenName,
       comment: %(Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property.).freeze,
       domainIncludes: "schema:Person".freeze,
@@ -7261,6 +7594,16 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       domainIncludes: ["schema:Organization".freeze, "schema:Person".freeze, "schema:Place".freeze],
       label: "globalLocationNumber".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
+      type: "rdf:Property".freeze
+    property :gracePeriod,
+      comment: %(The period of time after any due date that the borrower has to fulfil its obligations before a default \(failure to pay\) is deemed to have occurred.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:LoanOrCredit".freeze,
+      label: "gracePeriod".freeze,
+      rangeIncludes: "schema:Duration".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :grantee,
       comment: %(The person, organization, contact point, or audience that has been granted this permission.).freeze,
@@ -7287,6 +7630,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       domainIncludes: ["schema:Demand".freeze, "schema:Offer".freeze, "schema:Product".freeze],
       label: "gtin12".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :gtin13,
       comment: %(The <a href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-13.aspx">GTIN-13</a> code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN Summary</a> for more details.).freeze,
@@ -7294,6 +7638,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       domainIncludes: ["schema:Demand".freeze, "schema:Offer".freeze, "schema:Product".freeze],
       label: "gtin13".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :gtin14,
       comment: %(The <a href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-14.aspx">GTIN-14</a> code of the product, or the product to which the offer refers. See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN Summary</a> for more details.).freeze,
@@ -7301,6 +7646,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       domainIncludes: ["schema:Demand".freeze, "schema:Offer".freeze, "schema:Product".freeze],
       label: "gtin14".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :gtin8,
       comment: %(The <a href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx">GTIN-8</a> code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN Summary</a> for more details.).freeze,
@@ -7308,6 +7654,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       domainIncludes: ["schema:Demand".freeze, "schema:Offer".freeze, "schema:Product".freeze],
       label: "gtin8".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :guideline,
       comment: %(A medical guideline related to this entity.).freeze,
@@ -7340,6 +7687,16 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       :"schema:category" => %(issue-1004).freeze,
       :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
+    property :hasCategoryCode,
+      comment: %(A Category code contained in this code set.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
+      domainIncludes: "schema:CategoryCodeSet".freeze,
+      label: "hasCategoryCode".freeze,
+      rangeIncludes: "schema:CategoryCode".freeze,
+      :"schema:category" => %(issue-894).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:hasPart".freeze,
+      type: "rdf:Property".freeze
     property :hasCourseInstance,
       comment: %(An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students.).freeze,
       :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
@@ -7360,21 +7717,29 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "hasDigitalDocumentPermission".freeze,
       rangeIncludes: "schema:DigitalDocumentPermission".freeze,
       type: "rdf:Property".freeze
-    property :hasEnumerationValue,
-      comment: %(Value contained in value set.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
-      domainIncludes: "schema:EnumerationValueSet".freeze,
-      label: "hasEnumerationValue".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      :"schema:category" => %(issue-894).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
-      subPropertyOf: "schema:hasPart".freeze,
-      type: "rdf:Property".freeze
     property :hasMap,
       comment: %(A URL to a map of the place.).freeze,
       domainIncludes: "schema:Place".freeze,
       label: "hasMap".freeze,
       rangeIncludes: ["schema:Map".freeze, "schema:URL".freeze],
+      type: "rdf:Property".freeze
+    property :hasMenu,
+      comment: %(Either the actual menu as a structured representation, as text, or a URL of the menu.).freeze,
+      domainIncludes: "schema:FoodEstablishment".freeze,
+      label: "hasMenu".freeze,
+      rangeIncludes: ["schema:Menu".freeze, "schema:Text".freeze, "schema:URL".freeze],
+      type: "rdf:Property".freeze
+    property :hasMenuItem,
+      comment: %(A food or drink item contained in a menu or menu section.).freeze,
+      domainIncludes: ["schema:Menu".freeze, "schema:MenuSection".freeze],
+      label: "hasMenuItem".freeze,
+      rangeIncludes: "schema:MenuItem".freeze,
+      type: "rdf:Property".freeze
+    property :hasMenuSection,
+      comment: %(A subgrouping of the menu \(by dishes, course, serving time period, etc.\).).freeze,
+      domainIncludes: ["schema:Menu".freeze, "schema:MenuSection".freeze],
+      label: "hasMenuSection".freeze,
+      rangeIncludes: "schema:MenuSection".freeze,
       type: "rdf:Property".freeze
     property :hasOfferCatalog,
       comment: %(Indicates an OfferCatalog listing for this Organization, Person, or Service.).freeze,
@@ -7606,6 +7971,13 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "icaoCode".freeze,
       rangeIncludes: "schema:Text".freeze,
       type: "rdf:Property".freeze
+    property :identifier,
+      comment: %(The identifier property represents any kind of identifier for any kind of <a class="localLink" href="http://schema.org/Thing">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL \(URI\) links. See <a href="/docs/datamodel.html#identifierBg">background notes</a> for more details.).freeze,
+      domainIncludes: "schema:Thing".freeze,
+      label: "identifier".freeze,
+      :"owl:equivalentProperty" => %(dc:identifier).freeze,
+      rangeIncludes: ["schema:PropertyValue".freeze, "schema:Text".freeze, "schema:URL".freeze],
+      type: "rdf:Property".freeze
     property :identifyingExam,
       comment: %(A physical examination that can identify this sign.).freeze,
       domainIncludes: "schema:MedicalSign".freeze,
@@ -7650,6 +8022,16 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       domainIncludes: "schema:BroadcastChannel".freeze,
       label: "inBroadcastLineup".freeze,
       rangeIncludes: "schema:CableOrSatelliteService".freeze,
+      type: "rdf:Property".freeze
+    property :inCodeSet,
+      comment: %(A <a class="localLink" href="http://schema.org/CategoryCodeSet">CategoryCodeSet</a> that contains this catagory code.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
+      domainIncludes: "schema:CategoryCode".freeze,
+      label: "inCodeSet".freeze,
+      rangeIncludes: ["schema:CategoryCodeSet".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-894).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:isPartOf".freeze,
       type: "rdf:Property".freeze
     property :inLanguage,
       comment: %(The language of the content or performance or used in an action. Please use one of the language codes from the <a href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also <a class="localLink" href="http://schema.org/availableLanguage">availableLanguage</a>.).freeze,
@@ -8001,6 +8383,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "isbn".freeze,
       :"owl:equivalentProperty" => %(bibo:isbn).freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :isicV4,
       comment: %(The International Standard of Industrial Classification of All Economic Activities \(ISIC\), Revision 4 code for a particular organization, business person, or place.).freeze,
@@ -8023,6 +8406,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "issn".freeze,
       :"owl:equivalentProperty" => %(bibo:issn).freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :issueNumber,
       comment: %(Identifies the issue of publication; for example, "iii" or "2".).freeze,
@@ -8191,16 +8575,17 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       type: "rdf:Property".freeze
     property :leiCode,
       comment: %(An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.).freeze,
-      :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#GLEIF).freeze],
       domainIncludes: "schema:Organization".freeze,
       label: "leiCode".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :lender,
       comment: %(A sub property of participant. The person that lends the object being borrowed.).freeze,
       domainIncludes: "schema:BorrowAction".freeze,
       label: "lender".freeze,
-      rangeIncludes: "schema:Person".freeze,
+      rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       subPropertyOf: "schema:participant".freeze,
       type: "rdf:Property".freeze
     property :lesser,
@@ -8252,6 +8637,42 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "liveBlogUpdate".freeze,
       rangeIncludes: "schema:BlogPosting".freeze,
       type: "rdf:Property".freeze
+    property :loanMortgageMandateAmount,
+      comment: %(Amount of mortgage mandate that can be converted into a proper mortgage at a later stage.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:MortgageLoan".freeze,
+      label: "loanMortgageMandateAmount".freeze,
+      rangeIncludes: "schema:MonetaryAmount".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :loanPaymentAmount,
+      comment: %(The amount of money to pay in a single payment.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:RepaymentSpecification".freeze,
+      label: "loanPaymentAmount".freeze,
+      rangeIncludes: "schema:MonetaryAmount".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :loanPaymentFrequency,
+      comment: %(Frequency of payments due, i.e. number of months between payments. This is defined as a frequency, i.e. the reciprocal of a period of time.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:RepaymentSpecification".freeze,
+      label: "loanPaymentFrequency".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :loanRepaymentForm,
+      comment: %(A form of paying back money previously borrowed from a lender. Repayment usually takes the form of periodic payments that normally include part principal plus interest in each payment.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:LoanOrCredit".freeze,
+      label: "loanRepaymentForm".freeze,
+      rangeIncludes: "schema:RepaymentSpecification".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :loanTerm,
       comment: %(The duration of the loan or credit agreement.).freeze,
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze,
@@ -8259,6 +8680,15 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "loanTerm".freeze,
       rangeIncludes: "schema:QuantitativeValue".freeze,
       subPropertyOf: "schema:duration".freeze,
+      type: "rdf:Property".freeze
+    property :loanType,
+      comment: %(The type of a loan or credit.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:LoanOrCredit".freeze,
+      label: "loanType".freeze,
+      rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :location,
       comment: %(The location of for example where the event is happening, an organization is located, or where an action takes place.).freeze,
@@ -8418,6 +8848,22 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "mealService".freeze,
       rangeIncludes: "schema:Text".freeze,
       type: "rdf:Property".freeze
+    property :measurementTechnique,
+      comment: %(A technique or technology used in a <a class="localLink" href="http://schema.org/Dataset">Dataset</a> \(or <a class="localLink" href="http://schema.org/DataDownload">DataDownload</a>, <a class="localLink" href="http://schema.org/DataCatalog">DataCatalog</a>\),
+corresponding to the method used for measuring the corresponding variable\(s\) \(described using <a class="localLink" href="http://schema.org/variableMeasured">variableMeasured</a>\). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.</p>
+
+<p>For example, if <a class="localLink" href="http://schema.org/variableMeasured">variableMeasured</a> is: molecule concentration, <a class="localLink" href="http://schema.org/measurementTechnique">measurementTechnique</a> could be: "mass spectrometry" or "nmr spectroscopy" or "colorimetry" or "immunofluorescence".</p>
+
+<p>If the <a class="localLink" href="http://schema.org/variableMeasured">variableMeasured</a> is "depression rating", the <a class="localLink" href="http://schema.org/measurementTechnique">measurementTechnique</a> could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory".</p>
+
+<p>If there are several <a class="localLink" href="http://schema.org/variableMeasured">variableMeasured</a> properties recorded for some given data object, use a <a class="localLink" href="http://schema.org/PropertyValue">PropertyValue</a> for each <a class="localLink" href="http://schema.org/variableMeasured">variableMeasured</a> and attach the corresponding <a class="localLink" href="http://schema.org/measurementTechnique">measurementTechnique</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1425).freeze,
+      domainIncludes: ["schema:DataCatalog".freeze, "schema:DataDownload".freeze, "schema:Dataset".freeze, "schema:PropertyValue".freeze],
+      label: "measurementTechnique".freeze,
+      rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1425).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :mechanismOfAction,
       comment: %(The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.).freeze,
       domainIncludes: ["schema:DietarySupplement".freeze, "schema:Drug".freeze],
@@ -8487,10 +8933,20 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       rangeIncludes: "schema:Thing".freeze,
       type: "rdf:Property".freeze
     property :menu,
-      comment: %(Either the actual menu or a URL of the menu.).freeze,
+      comment: %(Either the actual menu as a structured representation, as text, or a URL of the menu.).freeze,
       domainIncludes: "schema:FoodEstablishment".freeze,
       label: "menu".freeze,
-      rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
+      rangeIncludes: ["schema:Menu".freeze, "schema:Text".freeze, "schema:URL".freeze],
+      :"schema:supersededBy" => %(schema:hasMenu).freeze,
+      type: "rdf:Property".freeze
+    property :menuAddOn,
+      comment: %(Additional menu item\(s\) such as a side dish of salad or side order of fries that can be added to this menu item. Additionally it can be a menu section containing allowed add-on menu items for this menu item.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1541).freeze,
+      domainIncludes: "schema:MenuItem".freeze,
+      label: "menuAddOn".freeze,
+      rangeIncludes: ["schema:MenuItem".freeze, "schema:MenuSection".freeze],
+      :"schema:category" => %(issue-1541).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :merchant,
       comment: %('merchant' is an out-dated term for 'seller'.).freeze,
@@ -8553,6 +9009,15 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       domainIncludes: "schema:Reservation".freeze,
       label: "modifiedTime".freeze,
       rangeIncludes: "schema:DateTime".freeze,
+      type: "rdf:Property".freeze
+    property :monthlyMinimumRepaymentAmount,
+      comment: %(The minimum payment is the lowest amount of money that one is required to pay on a credit card statement each month.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:CreditCard".freeze,
+      label: "monthlyMinimumRepaymentAmount".freeze,
+      rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:Number".freeze],
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :mpn,
       comment: %(The Manufacturer Part Number \(MPN\) of the product, or the product to which the offer refers.).freeze,
@@ -8772,6 +9237,15 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "numberOfItems".freeze,
       rangeIncludes: "schema:Integer".freeze,
       type: "rdf:Property".freeze
+    property :numberOfLoanPayments,
+      comment: %(The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:RepaymentSpecification".freeze,
+      label: "numberOfLoanPayments".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :numberOfPages,
       comment: %(The number of pages in the book.).freeze,
       domainIncludes: "schema:Book".freeze,
@@ -8814,8 +9288,8 @@ Typical unit code\(s\): ROM for room or C62 for no unit. The type of room can be
       rangeIncludes: "schema:Number".freeze,
       type: "rdf:Property".freeze
     property :nutrition,
-      comment: %(Nutrition information about the recipe.).freeze,
-      domainIncludes: "schema:Recipe".freeze,
+      comment: %(Nutrition information about the recipe or menu item.).freeze,
+      domainIncludes: ["schema:MenuItem".freeze, "schema:Recipe".freeze],
       label: "nutrition".freeze,
       rangeIncludes: "schema:NutritionInformation".freeze,
       type: "rdf:Property".freeze
@@ -8854,7 +9328,7 @@ Typical unit code\(s\): C62 for person).freeze,
       type: "rdf:Property".freeze
     property :offers,
       comment: %(An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.).freeze,
-      domainIncludes: ["schema:AggregateOffer".freeze, "schema:CreativeWork".freeze, "schema:Event".freeze, "schema:Product".freeze, "schema:Service".freeze],
+      domainIncludes: ["schema:AggregateOffer".freeze, "schema:CreativeWork".freeze, "schema:Event".freeze, "schema:MenuItem".freeze, "schema:Product".freeze, "schema:Service".freeze],
       label: "offers".freeze,
       rangeIncludes: "schema:Offer".freeze,
       type: "rdf:Property".freeze
@@ -8945,6 +9419,7 @@ Typical unit code\(s\): C62 for person).freeze,
       domainIncludes: "schema:Order".freeze,
       label: "orderNumber".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :orderQuantity,
       comment: %(The number of the item ordered. If the property is not set, assume the quantity is one.).freeze,
@@ -9069,7 +9544,7 @@ Typical unit code\(s\): C62 for person).freeze,
       rangeIncludes: "schema:Question".freeze,
       type: "rdf:Property".freeze
     property :parentOrganization,
-      comment: %(The larger organization that this local business is a branch of, if any.).freeze,
+      comment: %(The larger organization that this organization is a <a class="localLink" href="http://schema.org/subOrganization">subOrganization</a> of, if any.).freeze,
       domainIncludes: "schema:Organization".freeze,
       inverseOf: "schema:subOrganization".freeze,
       label: "parentOrganization".freeze,
@@ -9087,16 +9562,6 @@ Typical unit code\(s\): C62 for person).freeze,
       label: "parents".freeze,
       rangeIncludes: "schema:Person".freeze,
       :"schema:supersededBy" => %(schema:parent).freeze,
-      type: "rdf:Property".freeze
-    property :partOfEnumerationValueSet,
-      comment: %(The set \(enumeration\) of values of which contains this value.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/894).freeze,
-      domainIncludes: "schema:EnumerationValue".freeze,
-      label: "partOfEnumerationValueSet".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      :"schema:category" => %(issue-894).freeze,
-      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
-      subPropertyOf: "schema:isPartOf".freeze,
       type: "rdf:Property".freeze
     property :partOfEpisode,
       comment: %(The episode to which this clip belongs.).freeze,
@@ -9617,6 +10082,7 @@ Typical unit code\(s\): C62 for person).freeze,
       domainIncludes: "schema:Product".freeze,
       label: "productID".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :productSupported,
       comment: %(The product or service this support contact point is related to \(such as product support for a particular product line\). This can be a specific product or product line \(e.g. "iPhone"\) or a general category of products or services \(e.g. "smartphones"\).).freeze,
@@ -9943,6 +10409,15 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       label: "recordingOf".freeze,
       rangeIncludes: "schema:MusicComposition".freeze,
       type: "rdf:Property".freeze
+    property :recourseLoan,
+      comment: %(The only way you get the money back in the event of default is the security. Recourse is where you still have the opportunity to go back to the borrower for the rest of the money.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:LoanOrCredit".freeze,
+      label: "recourseLoan".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :referenceQuantity,
       comment: %(The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit.).freeze,
       :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsProperties).freeze, %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms).freeze],
@@ -10055,6 +10530,15 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       domainIncludes: "schema:Event".freeze,
       label: "remainingAttendeeCapacity".freeze,
       rangeIncludes: "schema:Integer".freeze,
+      type: "rdf:Property".freeze
+    property :renegotiableLoan,
+      comment: %(Whether the terms for payment of interest can be renegotiated during the life of the loan.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO).freeze, %(https://github.com/schemaorg/schemaorg/issues/1253).freeze],
+      domainIncludes: "schema:LoanOrCredit".freeze,
+      label: "renegotiableLoan".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      :"schema:category" => %(issue-1253).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :repetitions,
       comment: %(Number of times one should repeat the activity.).freeze,
@@ -10464,6 +10948,7 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       domainIncludes: ["schema:Demand".freeze, "schema:IndividualProduct".freeze, "schema:Offer".freeze],
       label: "serialNumber".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :seriousAdverseOutcome,
       comment: %(A possible serious complication and/or serious side effect of this therapy. Serious adverse outcomes include those that are life-threatening; result in death, disability, or permanent damage; require hospitalization or prolong existing hospitalization; cause congenital anomalies or birth defects; or jeopardize the patient and may require medical or surgical intervention to prevent one of the outcomes in this definition.).freeze,
@@ -10617,6 +11102,7 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       domainIncludes: ["schema:Demand".freeze, "schema:Offer".freeze, "schema:Product".freeze],
       label: "sku".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :smokingAllowed,
       comment: %(Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.).freeze,
@@ -10692,6 +11178,26 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       :"owl:equivalentProperty" => %(dc:spatial).freeze,
       rangeIncludes: "schema:Place".freeze,
       subPropertyOf: "schema:contentLocation".freeze,
+      type: "rdf:Property".freeze
+    property :speakable,
+      comment: %(Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be usefully spoken in particular circumstances; the 'speakable' property serves to indicate the parts most likely to be generally useful for speech.</p>
+
+<p>The <em>speakable</em> property can be repeated an arbitrary number of times, with three kinds of possible 'content-locator' values:</p>
+
+<p>1.\) <em>id-value</em> URL references - uses <em>id-value</em> of an element in the page being annotated. The simplest use of <em>speakable</em> has \(potentially relative\) URL values, referencing identified sections of the document concerned.</p>
+
+<p>2.\) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the <a class="localLink" href="http://schema.org/cssSelector">cssSelector</a> property.</p>
+
+<p>3.\)  XPaths - addresses content via XPaths \(assuming an XML view of the content\). Use the <a class="localLink" href="http://schema.org/xpath">xpath</a> property.</p>
+
+<p>For more sophisticated markup of speakable sections beyond simple ID references, either CSS selectors or XPath expressions to pick out document section\(s\) as speakable. For this
+we define a supporting type, <a class="localLink" href="http://schema.org/SpeakableSpecification">SpeakableSpecification</a>  which is defined to be a possible value of the <em>speakable</em> property.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1389).freeze,
+      domainIncludes: "schema:WebPage".freeze,
+      label: "speakable".freeze,
+      rangeIncludes: ["schema:SpeakableSpecification".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1389).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :specialCommitments,
       comment: %(Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.).freeze,
@@ -10989,8 +11495,8 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       rangeIncludes: "schema:Number".freeze,
       type: "rdf:Property".freeze
     property :suitableForDiet,
-      comment: %(Indicates a dietary restriction or guideline for which this recipe is suitable, e.g. diabetic, halal etc.).freeze,
-      domainIncludes: "schema:Recipe".freeze,
+      comment: %(Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc.).freeze,
+      domainIncludes: ["schema:MenuItem".freeze, "schema:Recipe".freeze],
       label: "suitableForDiet".freeze,
       rangeIncludes: "schema:RestrictedDiet".freeze,
       type: "rdf:Property".freeze
@@ -11085,6 +11591,7 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       domainIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       label: "taxID".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :telephone,
       comment: %(The telephone number.).freeze,
@@ -11107,6 +11614,15 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       label: "temporalCoverage".freeze,
       :"owl:equivalentProperty" => %(dc:temporal).freeze,
       rangeIncludes: ["schema:DateTime".freeze, "schema:Text".freeze, "schema:URL".freeze],
+      type: "rdf:Property".freeze
+    property :termsOfService,
+      comment: %(Human-readable terms of service documentation.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1423).freeze,
+      domainIncludes: "schema:Service".freeze,
+      label: "termsOfService".freeze,
+      rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1423).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :text,
       comment: %(The textual content of this CreativeWork.).freeze,
@@ -11305,9 +11821,9 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       :"schema:isPartOf" => %(http://bib.schema.org).freeze,
       type: "rdf:Property".freeze
     property :translator,
-      comment: [%(An agent responsible for rendering a translated work from a source work).freeze, %(Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.).freeze],
+      comment: %(Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.).freeze,
       domainIncludes: ["schema:CreativeWork".freeze, "schema:Event".freeze],
-      label: ["translator".freeze, "translator".freeze],
+      label: "translator".freeze,
       rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       type: "rdf:Property".freeze
     property :transmissionMethod,
@@ -11526,12 +12042,12 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       label: "valueRequired".freeze,
       rangeIncludes: "schema:Boolean".freeze,
       type: "rdf:Property".freeze
-    property :variablesMeasured,
-      comment: %(The variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.).freeze,
+    property :variableMeasured,
+      comment: %(The variableMeasured property can indicate \(repeated as necessary\) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.).freeze,
       :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1083).freeze,
       domainIncludes: "schema:Dataset".freeze,
-      label: "variablesMeasured".freeze,
-      rangeIncludes: "schema:Text".freeze,
+      label: "variableMeasured".freeze,
+      rangeIncludes: ["schema:PropertyValue".freeze, "schema:Text".freeze],
       :"schema:category" => %(issue-1083).freeze,
       :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
@@ -11821,6 +12337,15 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       domainIncludes: "schema:Rating".freeze,
       label: "worstRating".freeze,
       rangeIncludes: ["schema:Number".freeze, "schema:Text".freeze],
+      type: "rdf:Property".freeze
+    property :xpath,
+      comment: %(An XPath.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1389).freeze,
+      domainIncludes: "schema:SpeakableSpecification".freeze,
+      label: "xpath".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      :"schema:category" => %(issue-1389).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :yearlyRevenue,
       comment: %(The size of the business in annual revenue.).freeze,
