@@ -34,6 +34,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'haml',               '~> 4.0'
   #gem.add_runtime_dependency      'facets',             '~> 2.9'
   gem.add_runtime_dependency      'nokogiri',           '~> 1.7'
+  gem.add_runtime_dependency      'nokogumbo',          '~> 1.4'
   gem.add_runtime_dependency      'rack',               '~> 1.6'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.6'
   gem.add_runtime_dependency      'rack-contrib',       '~> 1.4'
