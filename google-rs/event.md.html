@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Spinal Tap</title>
   <base href="http://example.org/"/>
 </head>
@@ -10,7 +10,7 @@
   <a href="http://www.example.com/events/spinaltap" itemprop="url" >
     <span itemprop="summary">Spinal Tap</span>
   </a>
-   <img itemprop="photo" src="http://upload.wikimedia.org/wikipedia/en/4/45/Spinal_Tap_logo.jpg" />
+   <img itemprop="photo" src="http://upload.wikimedia.org/wikipedia/en/4/45/Spinal_Tap_logo.jpg" alt="foo" />
 
   <span itemprop="description">After their highly-publicized search for a new drummer,
    Spinal Tap kicks off their latest comeback tour with a San
@@ -38,13 +38,13 @@
 
   <span itemprop="ticket" itemscope itemtype="http://data-vocabulary.org/Offer">
     <a href="http://www.example.com/events/spinaltap/presale" itemprop="offerurl">Presale tickets</a>
-    <span itemprop="price">$10</span><span itemprop="currency" content="USD" />
+    <span itemprop="price">$10</span><meta itemprop="currency" content="USD" />
       till <time itemprop="priceValidUntil" datetime="2015-11-10">10 November 2015</time>
       (<span itemprop="quantity">1000</span> available)
   </span>
   <span itemprop="ticket" itemscope itemtype="http://data-vocabulary.org/Offer">
     <a href="http://www.example.com/events/spinaltap/tickets" itemprop="offerurl">Full-price tickets</a>
-    <span itemprop="price">$11</span><span itemprop="currency" content="USD" />
+    <span itemprop="price">$11</span><meta itemprop="currency" content="USD" />
   </span>
 </div>
 </body>
