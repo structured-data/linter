@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.3.8)
+    linter (2.3.10)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -259,7 +259,7 @@ DEPENDENCIES
   yard (~> 0.9)
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.4.1p111
 
 BUNDLED WITH
    1.14.6

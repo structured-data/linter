@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Spinal Tap</title>
   <base href="http://example.org/"/>
 </head>
@@ -9,7 +9,7 @@
 <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Event">
   <a href="http://www.example.com/events/spinaltap" rel="v:url"
      property="v:summary">Spinal Tap</a>
-  <span rel="v:photo"><img src="http://upload.wikimedia.org/wikipedia/en/4/45/Spinal_Tap_logo.jpg" /></span>
+  <span rel="v:photo"><img src="http://upload.wikimedia.org/wikipedia/en/4/45/Spinal_Tap_logo.jpg" alt="foo" /></span>
   <span property="v:description">After their highly-publicized search for a new drummer,
   Spinal Tap kicks off their latest comeback tour with a San Francisco show. </span>
 
@@ -41,16 +41,17 @@
   Category: <span property="v:eventType">Concert</span>
 
    <span rel="v:ticket">
-     <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Offer">
+     <span xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Offer">
       <a href="http://www.example.com/events/spinaltap/presale" property="v:offerurl">Presale tickets</a>
         <span property="v:price">$10 </span>  <span property="v:currency">USD </span> till
         <span property="v:pricevaliduntil" content="2025-10-15T19:00+08:00">10 November 2015 </span>
         (<span property="v:quantity">1000 </span> available)
-     </div>
-     <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Offer">
+     </span>
+     <span xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Offer">
        <a href="http://www.example.com/events/spinaltap/tickets" property="v:offerurl">Full-price tickets</a>
          <span property="v:price">$11 </span> <span property="v:currency">USD </span>
-     </div>
+     </span>
+   </span>
 
 </div>
 </body>
