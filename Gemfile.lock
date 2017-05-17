@@ -9,7 +9,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.3.10)
+    linter (2.3.11)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -31,7 +31,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.1.0)
+    activesupport (5.1.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
@@ -117,7 +117,7 @@ GEM
     oj (2.18.5)
     public_suffix (2.0.5)
     puma (3.8.2)
-    rack (1.6.6)
+    rack (1.6.8)
     rack-cache (1.7.0)
       rack (>= 0.4)
     rack-contrib (1.4.0)
@@ -140,7 +140,7 @@ GEM
       rdf (~> 2.0)
     rdf-json (2.0.0)
       rdf (~> 2.0)
-    rdf-microdata (2.2.0)
+    rdf-microdata (2.2.1)
       htmlentities (~> 4.3)
       nokogiri (~> 1.7)
       rdf (~> 2.2)
@@ -204,7 +204,7 @@ GEM
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
-    simplecov-html (0.10.0)
+    simplecov-html (0.10.1)
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)

@@ -55,7 +55,9 @@ namespace :schema do
     %x{rm -rf ./schema.org && mkdir -p ./schema.org/ext/bib ./schema.org/ext/health-lifesci}
     %w(
       examples
+      sdo-ClaimReview-issue-1061-examples.txt
       sdo-automobile-examples
+      sdo-course-examples.txt
       sdo-creativwork-examples
       sdo-datafeed-examples
       sdo-digital-document-examples
@@ -63,6 +65,7 @@ namespace :schema do
       sdo-exhibitionevent-examples
       sdo-fibo-examples
       sdo-hotels-examples
+      sdo-identifier-examples.txt
       sdo-invoice-examples
       sdo-itemlist-examples
       sdo-library-examples
