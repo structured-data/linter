@@ -1,6 +1,9 @@
 require 'sinatra'
 require 'sinatra/linkeddata'
-require 'sinatra/assetpack'
+require 'sinatra/asset_pipeline'
+require 'sprockets-helpers'
+require 'uglifier'
+require 'sass'
 require 'erubis'
 require 'rack/contrib'
 
@@ -26,25 +29,33 @@ module RDF::Linter
       use Rack::PostBodyContentTypeParser
 
       # Asset pipeline
-      register Sinatra::AssetPack
-      assets do
-        serve '/js', from: 'assets/js'
-        serve '/css', from: 'assets/css'
-        serve '/images', from: 'assets/images'
+      set :digest_assets, false
 
-        css :app, %w(
-          /css/application.css
-          /css/snippet.css
-        )
-        js :app, %w(
-          /js/application.js
-          /js/angular-file-upload.js
-          /js/chili/jquery.chili-2.2.js
-          /js/chili/recipes.js
-        )
+      # Include these files when precompiling assets
+      set :assets_precompile, %w(*.js *.css *.ttf *.gif)
 
-        js_compression  :jsmin
-        css_compression :simple
+      # The path to your assets
+      set :assets_paths, %w(assets/js assets/css assets/images)
+
+      # CSS minification
+      set :assets_css_compressor, :sass
+
+      # JavaScript minification
+      set :assets_js_compressor, :uglifier
+
+      register Sinatra::AssetPipeline
+
+      # Configure Sprockets::Helpers (if necessary)
+      Sprockets::Helpers.configure do |config|
+        config.environment = sprockets
+        config.prefix      = assets_prefix
+        config.digest      = digest_assets
+        config.public_path = public_folder
+
+        # Force to debug mode in development mode
+        # Debug mode automatically sets
+        # expand = true, digest = false, manifest = false
+        config.debug       = true if development?
       end
     end
 
@@ -60,6 +71,8 @@ module RDF::Linter
     end
 
     helpers do
+      include Sprockets::Helpers
+
       # Set cache control
       def set_cache_header(options = {})
         options = {:max_age => ENV.fetch('max_age', 60*5)}.merge(options)

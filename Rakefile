@@ -1,4 +1,6 @@
 require 'rubygems'
+require 'sinatra/asset_pipeline/task'
+require 'rdf/linter'
 
 namespace :doc do
   begin
@@ -8,6 +10,8 @@ namespace :doc do
   rescue LoadError
   end
 end
+
+Sinatra::AssetPipeline::Task.define! RDF::Linter::Application
 
 # https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.2/all-layers.nq
 schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/")
