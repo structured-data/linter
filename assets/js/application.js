@@ -44,12 +44,12 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize', 'angularFile
           $location.search('verify_ssl', 'false'); // Add only if false
         }
         $http.get("/", {params: {url: path, verify_ssl: $scope.verifySSL}})
-          .success(function(data) {
-            $scope.result = data;
+          .then(function(response) {
+            $scope.result = response.data;
             $scope.loading = false;
           })
-          .error(function(data) {
-            $scope.result = data;
+          .catch(function(response) {
+            $scope.result = response.data;
             $scope.loading = false;
           });
       };
@@ -59,12 +59,12 @@ var testApp = angular.module('linterApp', ['ngRoute', 'ngSanitize', 'angularFile
         $scope.result = null;
         $location.url($location.path()); // Clear parameters
         $http.post("/", {content: input, verify_ssl: $scope.verifySSL})
-          .success(function(data) {
-            $scope.result = data;
+          .then(function(response) {
+            $scope.result = response.data;
             $scope.loading = false;
           })
-          .error(function(data) {
-            $scope.result = data;
+          .catch(function(response) {
+            $scope.result = response.data;
             $scope.loading = false;
           });
       };
