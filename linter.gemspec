@@ -24,7 +24,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'activesupport',      '~> 5.0'
   gem.add_runtime_dependency      'equivalent-xml'
   gem.add_runtime_dependency      'erubis',             '~> 2.7'
-  gem.add_runtime_dependency      'haml',               '~> 4.0'
+  gem.add_runtime_dependency      'haml',               '~> 5.0'
   gem.add_runtime_dependency      'json-ld-preloaded',  '~> 2.0'
   gem.add_runtime_dependency      'linkeddata',         '~> 2.2'
   gem.add_runtime_dependency      'nokogiri',           '~> 1.7'
