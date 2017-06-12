@@ -17,7 +17,7 @@ module RDF::Linter
       set :snippets, ::File.expand_path('../snippets',  __FILE__)
       set :app_name, "Structured Data Linter"
       enable :logging
-      disable :raise_errors, :show_exceptions if settings.environment == :production
+      disable :raise_errors, :show_exceptions if settings.production?
 
       # Cache client requests
       #RestClient.enable Rack::Cache,
@@ -81,7 +81,7 @@ module RDF::Linter
     end
 
     before do
-      request.logger.level = Logger::DEBUG unless settings.environment == :production
+      request.logger.level = Logger::DEBUG unless settings.production?
       request.logger.info "#{request.request_method} [#{request.path_info}], " +
         params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ")
     end
@@ -297,7 +297,7 @@ module RDF::Linter
         reader_opts[:content] = content
       end
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
-      reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :development
+      reader_opts[:debug] = @debug = [] if params["debug"] || settings.development?
       reader_opts[:matched_templates] = []
       reader_opts[:logger] = request.logger
 
@@ -372,7 +372,7 @@ module RDF::Linter
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue
-      raise unless settings.environment == :production
+      raise unless settings.production?
       request.logger.error "#{$!.class}: #{$!.message}"
       content_type :json
       status 400
