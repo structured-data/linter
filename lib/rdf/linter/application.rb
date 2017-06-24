@@ -107,7 +107,7 @@ module RDF::Linter
     # @see {#linter}
     post '/' do
       payload = params
-      payload = JSON.parse(request.body.read) unless params[:path]
+      payload = JSON.parse(request.body.read) unless params['file']
       linter payload
     end
 
