@@ -48,7 +48,7 @@ describe RDF::Linter::Application do
         context "with #{param}" do
           subject {
             expect_any_instance_of(RDF::Linter::Application).to receive(:linter).
-              with(opts).
+              with(hash_including(opts)).
               and_return("<div/>")
             get "/", opts, "HTTP_ACCEPT" => "application/json"
             last_response
@@ -57,6 +57,32 @@ describe RDF::Linter::Application do
           its(:content_type) {should include("text/html")}
         end
       end
+    end
+  end
+
+  describe "post /" do
+    context "File Upload" do
+      subject {
+        expect_any_instance_of(RDF::Linter::Application).to receive(:linter).
+          with(hash_including({})).
+          and_return("<div/>")
+        post "/", "file" => Rack::Test::UploadedFile.new(File.expand_path("../test.html", __FILE__), "text/html"), path: "test.html"
+        last_response
+      }
+      it {should be_ok}
+      its(:content_type) {should include("text/html")}
+    end
+
+    context "Form content" do
+      subject {
+        expect_any_instance_of(RDF::Linter::Application).to receive(:linter).
+          with(hash_including({})).
+          and_return("<div/>")
+        post "/", %({"content": "<html></html>"})
+        last_response
+      }
+      it {should be_ok}
+      its(:content_type) {should include("text/html")}
     end
   end
 

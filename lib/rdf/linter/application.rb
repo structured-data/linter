@@ -5,7 +5,6 @@ require 'sprockets-helpers'
 require 'uglifier'
 require 'sass'
 require 'erubis'
-require 'rack/contrib'
 
 module RDF::Linter
   class Application < Sinatra::Base
@@ -24,9 +23,6 @@ module RDF::Linter
       #  verbose:     true,
       #  metastore:   "file:" + ::File.join(APP_DIR, "cache/meta"),
       #  entitystore: "file:" + ::File.join(APP_DIR, "cache/body")
-
-      # Parse JSON post content
-      use Rack::PostBodyContentTypeParser
 
       # Asset pipeline
       set :digest_assets, false
@@ -110,7 +106,9 @@ module RDF::Linter
     # @overload post "/", params
     # @see {#linter}
     post '/' do
-      linter params
+      payload = params
+      payload = JSON.parse(request.body.read) unless params[:path]
+      linter payload
     end
 
     # Return about page
