@@ -22,7 +22,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.3.12)
+    linter (2.4.0)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
