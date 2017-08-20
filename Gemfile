@@ -4,6 +4,7 @@ ruby "2.4.1"
 
 gemspec
 
+gem 'sinatra-asset-pipeline', github: 'gkellogg/sinatra-asset-pipeline', branch: 'sinatra-2'
 gem 'jsonlint',           github: "dougbarth/jsonlint"
 
 group :development, :test do

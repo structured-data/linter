@@ -91,6 +91,13 @@
       "jsonld": "schema.org/AllocateAction-121-jsonld.html"
     }
   },
+  "AmusementPark": {
+    "tourism-2": {
+      "microdata": "schema.org/tourism-2-microdata.html",
+      "rdfa": "schema.org/tourism-2-rdfa.html",
+      "jsonld": "schema.org/tourism-2-jsonld.html"
+    }
+  },
   "Answer": {
     "ReplyAction-Question-Answer-99": {
       "jsonld": "schema.org/ReplyAction-Question-Answer-99-jsonld.html"
@@ -340,6 +347,13 @@
       "microdata": "schema.org/compoundPrice-2-microdata.html",
       "rdfa": "schema.org/compoundPrice-2-rdfa.html",
       "jsonld": "schema.org/compoundPrice-2-jsonld.html"
+    }
+  },
+  "Cemetery": {
+    "tourism-8": {
+      "microdata": "schema.org/tourism-8-microdata.html",
+      "rdfa": "schema.org/tourism-8-rdfa.html",
+      "jsonld": "schema.org/tourism-8-jsonld.html"
     }
   },
   "Chapter": {
@@ -744,6 +758,11 @@
       "microdata": "schema.org/sponsor-1-microdata.html",
       "rdfa": "schema.org/sponsor-1-rdfa.html",
       "jsonld": "schema.org/sponsor-1-jsonld.html"
+    },
+    "tourism-6": {
+      "microdata": "schema.org/tourism-6-microdata.html",
+      "rdfa": "schema.org/tourism-6-rdfa.html",
+      "jsonld": "schema.org/tourism-6-jsonld.html"
     }
   },
   "EventReservation": {
@@ -1181,6 +1200,42 @@
       "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-226-jsonld.html"
     }
   },
+  "Menu": {
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-jsonld.html"
+    },
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-jsonld.html"
+    }
+  },
+  "MenuItem": {
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-jsonld.html"
+    },
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-jsonld.html"
+    }
+  },
+  "MenuSection": {
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-jsonld.html"
+    },
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-jsonld.html"
+    }
+  },
   "MobileApplication": {
     "datafeed-2": {
       "microdata": "schema.org/datafeed-2-microdata.html",
@@ -1237,6 +1292,13 @@
       "microdata": "schema.org/screening-1-microdata.html",
       "rdfa": "schema.org/screening-1-rdfa.html",
       "jsonld": "schema.org/screening-1-jsonld.html"
+    }
+  },
+  "Museum": {
+    "tourism-4": {
+      "microdata": "schema.org/tourism-4-microdata.html",
+      "rdfa": "schema.org/tourism-4-rdfa.html",
+      "jsonld": "schema.org/tourism-4-jsonld.html"
     }
   },
   "MusicAlbum": {
@@ -1380,6 +1442,16 @@
       "microdata": "schema.org/eg-13-microdata.html",
       "rdfa": "schema.org/eg-13-rdfa.html",
       "jsonld": "schema.org/eg-13-jsonld.html"
+    },
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-jsonld.html"
+    },
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-jsonld.html"
     }
   },
   "Offer": {
@@ -1702,10 +1774,10 @@
       "rdfa": "schema.org/sponsor-3-rdfa.html",
       "jsonld": "schema.org/sponsor-3-jsonld.html"
     },
-    "VisualArtwork-Person-320": {
-      "microdata": "schema.org/VisualArtwork-Person-320-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-320-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-320-jsonld.html"
+    "VisualArtwork-Person-331": {
+      "microdata": "schema.org/VisualArtwork-Person-331-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-331-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-331-jsonld.html"
     }
   },
   "Pharmacy": {
@@ -2497,6 +2569,53 @@
       "jsonld": "schema.org/TipAction-149-jsonld.html"
     }
   },
+  "TouristAttraction": {
+    "tourism-1": {
+      "microdata": "schema.org/tourism-1-microdata.html",
+      "rdfa": "schema.org/tourism-1-rdfa.html",
+      "jsonld": "schema.org/tourism-1-jsonld.html"
+    },
+    "tourism-2": {
+      "microdata": "schema.org/tourism-2-microdata.html",
+      "rdfa": "schema.org/tourism-2-rdfa.html",
+      "jsonld": "schema.org/tourism-2-jsonld.html"
+    },
+    "tourism-3": {
+      "microdata": "schema.org/tourism-3-microdata.html",
+      "rdfa": "schema.org/tourism-3-rdfa.html",
+      "jsonld": "schema.org/tourism-3-jsonld.html"
+    },
+    "tourism-4": {
+      "microdata": "schema.org/tourism-4-microdata.html",
+      "rdfa": "schema.org/tourism-4-rdfa.html",
+      "jsonld": "schema.org/tourism-4-jsonld.html"
+    },
+    "tourism-5": {
+      "microdata": "schema.org/tourism-5-microdata.html",
+      "rdfa": "schema.org/tourism-5-rdfa.html",
+      "jsonld": "schema.org/tourism-5-jsonld.html"
+    },
+    "tourism-6": {
+      "microdata": "schema.org/tourism-6-microdata.html",
+      "rdfa": "schema.org/tourism-6-rdfa.html",
+      "jsonld": "schema.org/tourism-6-jsonld.html"
+    },
+    "tourism-7": {
+      "microdata": "schema.org/tourism-7-microdata.html",
+      "rdfa": "schema.org/tourism-7-rdfa.html",
+      "jsonld": "schema.org/tourism-7-jsonld.html"
+    },
+    "tourism-8": {
+      "microdata": "schema.org/tourism-8-microdata.html",
+      "rdfa": "schema.org/tourism-8-rdfa.html",
+      "jsonld": "schema.org/tourism-8-jsonld.html"
+    },
+    "tourism-9": {
+      "microdata": "schema.org/tourism-9-microdata.html",
+      "rdfa": "schema.org/tourism-9-rdfa.html",
+      "jsonld": "schema.org/tourism-9-jsonld.html"
+    }
+  },
   "TrackAction": {
     "TrackAction-83": {
       "jsonld": "schema.org/TrackAction-83-jsonld.html"
@@ -2614,20 +2733,20 @@
     }
   },
   "VisualArtwork": {
-    "VisualArtwork-Person-320": {
-      "microdata": "schema.org/VisualArtwork-Person-320-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-320-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-320-jsonld.html"
+    "VisualArtwork-Person-331": {
+      "microdata": "schema.org/VisualArtwork-Person-331-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-331-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-331-jsonld.html"
     },
-    "VisualArtwork-321": {
-      "microdata": "schema.org/VisualArtwork-321-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-321-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-321-jsonld.html"
+    "VisualArtwork-332": {
+      "microdata": "schema.org/VisualArtwork-332-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-332-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-332-jsonld.html"
     },
-    "VisualArtwork-322": {
-      "microdata": "schema.org/VisualArtwork-322-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-322-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-322-jsonld.html"
+    "VisualArtwork-333": {
+      "microdata": "schema.org/VisualArtwork-333-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-333-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-333-jsonld.html"
     }
   },
   "VoteAction": {
@@ -2686,6 +2805,13 @@
   "WinAction": {
     "WinAction-36": {
       "jsonld": "schema.org/WinAction-36-jsonld.html"
+    }
+  },
+  "Winery": {
+    "tourism-9": {
+      "microdata": "schema.org/tourism-9-microdata.html",
+      "rdfa": "schema.org/tourism-9-rdfa.html",
+      "jsonld": "schema.org/tourism-9-jsonld.html"
     }
   },
   "WriteAction": {
@@ -2931,6 +3057,11 @@
       "microdata": "schema.org/availableLanguage-Language-254-microdata.html",
       "rdfa": "schema.org/availableLanguage-Language-254-rdfa.html",
       "jsonld": "schema.org/availableLanguage-Language-254-jsonld.html"
+    },
+    "tourism-3": {
+      "microdata": "schema.org/tourism-3-microdata.html",
+      "rdfa": "schema.org/tourism-3-rdfa.html",
+      "jsonld": "schema.org/tourism-3-jsonld.html"
     }
   },
   "broadcastOfEvent": {
@@ -2994,6 +3125,13 @@
       "microdata": "schema.org/screening-2-microdata.html",
       "rdfa": "schema.org/screening-2-rdfa.html",
       "jsonld": "schema.org/screening-2-jsonld.html"
+    }
+  },
+  "currenciesAccepted": {
+    "tourism-2": {
+      "microdata": "schema.org/tourism-2-microdata.html",
+      "rdfa": "schema.org/tourism-2-rdfa.html",
+      "jsonld": "schema.org/tourism-2-jsonld.html"
     }
   },
   "datePublished": {
@@ -3074,6 +3212,13 @@
       "jsonld": "schema.org/eg-6-jsonld.html"
     }
   },
+  "event": {
+    "tourism-6": {
+      "microdata": "schema.org/tourism-6-microdata.html",
+      "rdfa": "schema.org/tourism-6-rdfa.html",
+      "jsonld": "schema.org/tourism-6-jsonld.html"
+    }
+  },
   "exampleOfWork": {
     "bib-5": {
       "microdata": "schema.org/bib-5-microdata.html",
@@ -3140,6 +3285,30 @@
       "jsonld": "schema.org/hasMap-247-jsonld.html"
     }
   },
+  "hasMenuItem": {
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-jsonld.html"
+    },
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-jsonld.html"
+    }
+  },
+  "hasMenuSection": {
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-266-jsonld.html"
+    },
+    "Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267": {
+      "microdata": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-microdata.html",
+      "rdfa": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-rdfa.html",
+      "jsonld": "schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-267-jsonld.html"
+    }
+  },
   "hasOfferCatalog": {
     "offer-3": {
       "microdata": "schema.org/offer-3-microdata.html",
@@ -3197,6 +3366,28 @@
       "microdata": "schema.org/eg-14-microdata.html",
       "rdfa": "schema.org/eg-14-rdfa.html",
       "jsonld": "schema.org/eg-14-jsonld.html"
+    }
+  },
+  "isAccessibleForFree": {
+    "tourism-1": {
+      "microdata": "schema.org/tourism-1-microdata.html",
+      "rdfa": "schema.org/tourism-1-rdfa.html",
+      "jsonld": "schema.org/tourism-1-jsonld.html"
+    },
+    "tourism-2": {
+      "microdata": "schema.org/tourism-2-microdata.html",
+      "rdfa": "schema.org/tourism-2-rdfa.html",
+      "jsonld": "schema.org/tourism-2-jsonld.html"
+    },
+    "tourism-7": {
+      "microdata": "schema.org/tourism-7-microdata.html",
+      "rdfa": "schema.org/tourism-7-rdfa.html",
+      "jsonld": "schema.org/tourism-7-jsonld.html"
+    },
+    "tourism-8": {
+      "microdata": "schema.org/tourism-8-microdata.html",
+      "rdfa": "schema.org/tourism-8-rdfa.html",
+      "jsonld": "schema.org/tourism-8-jsonld.html"
     }
   },
   "isLiveBroadcast": {
@@ -3336,6 +3527,11 @@
       "microdata": "schema.org/Pharmacy-openingHours-telephone-197-microdata.html",
       "rdfa": "schema.org/Pharmacy-openingHours-telephone-197-rdfa.html",
       "jsonld": "schema.org/Pharmacy-openingHours-telephone-197-jsonld.html"
+    },
+    "tourism-2": {
+      "microdata": "schema.org/tourism-2-microdata.html",
+      "rdfa": "schema.org/tourism-2-rdfa.html",
+      "jsonld": "schema.org/tourism-2-jsonld.html"
     }
   },
   "openingHoursSpecification": {
@@ -3343,6 +3539,13 @@
       "microdata": "schema.org/library-1-microdata.html",
       "rdfa": "schema.org/library-1-rdfa.html",
       "jsonld": "schema.org/library-1-jsonld.html"
+    }
+  },
+  "paymentAccepted": {
+    "tourism-2": {
+      "microdata": "schema.org/tourism-2-microdata.html",
+      "rdfa": "schema.org/tourism-2-rdfa.html",
+      "jsonld": "schema.org/tourism-2-jsonld.html"
     }
   },
   "postalCode": {
@@ -3376,6 +3579,13 @@
       "microdata": "schema.org/service-1-microdata.html",
       "rdfa": "schema.org/service-1-rdfa.html",
       "jsonld": "schema.org/service-1-jsonld.html"
+    }
+  },
+  "publicAccess": {
+    "tourism-5": {
+      "microdata": "schema.org/tourism-5-microdata.html",
+      "rdfa": "schema.org/tourism-5-rdfa.html",
+      "jsonld": "schema.org/tourism-5-jsonld.html"
     }
   },
   "ratingValue": {
@@ -3531,6 +3741,23 @@
       "microdata": "schema.org/lrmi-2-microdata.html",
       "rdfa": "schema.org/lrmi-2-rdfa.html",
       "jsonld": "schema.org/lrmi-2-jsonld.html"
+    }
+  },
+  "touristType": {
+    "tourism-4": {
+      "microdata": "schema.org/tourism-4-microdata.html",
+      "rdfa": "schema.org/tourism-4-rdfa.html",
+      "jsonld": "schema.org/tourism-4-jsonld.html"
+    },
+    "tourism-8": {
+      "microdata": "schema.org/tourism-8-microdata.html",
+      "rdfa": "schema.org/tourism-8-rdfa.html",
+      "jsonld": "schema.org/tourism-8-jsonld.html"
+    },
+    "tourism-9": {
+      "microdata": "schema.org/tourism-9-microdata.html",
+      "rdfa": "schema.org/tourism-9-rdfa.html",
+      "jsonld": "schema.org/tourism-9-jsonld.html"
     }
   },
   "translationOfWork": {

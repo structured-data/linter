@@ -1,4 +1,6 @@
 require 'rubygems'
+require 'sinatra/asset_pipeline/task'
+require 'rdf/linter'
 
 namespace :doc do
   begin
@@ -9,9 +11,11 @@ namespace :doc do
   end
 end
 
-# https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.2/all-layers.nq
-schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/")
-schema_version = ENV.fetch("schema_version", "3.2")
+Sinatra::AssetPipeline::Task.define! RDF::Linter::Application
+
+# https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.3/all-layers.nq
+schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/")
+schema_version = ENV.fetch("schema_version", "3.3")
 
 namespace :schema do
   desc "Create custom pre-compiled vocabulary"
@@ -65,6 +69,7 @@ namespace :schema do
       sdo-exhibitionevent-examples
       sdo-fibo-examples
       sdo-hotels-examples
+      sdo-howto-examples.txt
       sdo-identifier-examples.txt
       sdo-invoice-examples
       sdo-itemlist-examples
@@ -72,6 +77,7 @@ namespace :schema do
       sdo-lrmi-examples
       sdo-mainEntity-examples
       sdo-map-examples
+      sdo-menu-examples
       sdo-music-examples
       sdo-offeredby-examples
       sdo-periodical-examples
@@ -81,6 +87,7 @@ namespace :schema do
       sdo-social-media-examples
       sdo-sponsor-examples
       sdo-sports-examples
+      sdo-tourism-examples
       sdo-tv-listing-examples
       sdo-userinteraction-examples
       sdo-videogame-examples

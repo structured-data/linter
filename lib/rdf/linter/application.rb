@@ -1,8 +1,10 @@
 require 'sinatra'
 require 'sinatra/linkeddata'
-require 'sinatra/assetpack'
+require 'sinatra/asset_pipeline'
+require 'sprockets-helpers'
+require 'uglifier'
+require 'sass'
 require 'erubis'
-require 'rack/contrib'
 
 module RDF::Linter
   class Application < Sinatra::Base
@@ -14,7 +16,7 @@ module RDF::Linter
       set :snippets, ::File.expand_path('../snippets',  __FILE__)
       set :app_name, "Structured Data Linter"
       enable :logging
-      disable :raise_errors, :show_exceptions if settings.environment == :production
+      disable :raise_errors, :show_exceptions if settings.production?
 
       # Cache client requests
       #RestClient.enable Rack::Cache,
@@ -22,29 +24,34 @@ module RDF::Linter
       #  metastore:   "file:" + ::File.join(APP_DIR, "cache/meta"),
       #  entitystore: "file:" + ::File.join(APP_DIR, "cache/body")
 
-      # Parse JSON post content
-      use Rack::PostBodyContentTypeParser
-
       # Asset pipeline
-      register Sinatra::AssetPack
-      assets do
-        serve '/js', from: 'assets/js'
-        serve '/css', from: 'assets/css'
-        serve '/images', from: 'assets/images'
+      set :digest_assets, false
 
-        css :app, %w(
-          /css/application.css
-          /css/snippet.css
-        )
-        js :app, %w(
-          /js/application.js
-          /js/angular-file-upload.js
-          /js/chili/jquery.chili-2.2.js
-          /js/chili/recipes.js
-        )
+      # Include these files when precompiling assets
+      set :assets_precompile, %w(*.js *.css *.ttf *.gif)
 
-        js_compression  :jsmin
-        css_compression :simple
+      # The path to your assets
+      set :assets_paths, %w(assets/js assets/css assets/images)
+
+      # CSS minification
+      set :assets_css_compressor, :sass
+
+      # JavaScript minification
+      set :assets_js_compressor, :uglifier
+
+      register Sinatra::AssetPipeline
+
+      # Configure Sprockets::Helpers (if necessary)
+      Sprockets::Helpers.configure do |config|
+        config.environment = sprockets
+        config.prefix      = assets_prefix
+        config.digest      = digest_assets
+        config.public_path = public_folder
+
+        # Force to debug mode in development mode
+        # Debug mode automatically sets
+        # expand = true, digest = false, manifest = false
+        config.debug       = true if development?
       end
     end
 
@@ -60,6 +67,8 @@ module RDF::Linter
     end
 
     helpers do
+      include Sprockets::Helpers
+
       # Set cache control
       def set_cache_header(options = {})
         options = {:max_age => ENV.fetch('max_age', 60*5)}.merge(options)
@@ -68,7 +77,7 @@ module RDF::Linter
     end
 
     before do
-      request.logger.level = Logger::DEBUG unless settings.environment == :production
+      request.logger.level = Logger::DEBUG unless settings.production?
       request.logger.info "#{request.request_method} [#{request.path_info}], " +
         params.merge(Accept: request.accept.map(&:to_s)).map {|k,v| "#{k}=#{v}"}.join(" ")
     end
@@ -97,7 +106,9 @@ module RDF::Linter
     # @overload post "/", params
     # @see {#linter}
     post '/' do
-      linter params
+      payload = params
+      payload = JSON.parse(request.body.read) unless params['file']
+      linter payload
     end
 
     # Return about page
@@ -284,7 +295,7 @@ module RDF::Linter
         reader_opts[:content] = content
       end
       reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
-      reader_opts[:debug] = @debug = [] if params["debug"] || settings.environment == :development
+      reader_opts[:debug] = @debug = [] if params["debug"] || settings.development?
       reader_opts[:matched_templates] = []
       reader_opts[:logger] = request.logger
 
@@ -359,7 +370,7 @@ module RDF::Linter
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
     rescue
-      raise unless settings.environment == :production
+      raise unless settings.production?
       request.logger.error "#{$!.class}: #{$!.message}"
       content_type :json
       status 400
