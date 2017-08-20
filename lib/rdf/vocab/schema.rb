@@ -94,6 +94,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "AdultEntertainment".freeze,
       subClassOf: "schema:EntertainmentBusiness".freeze,
       type: "rdfs:Class".freeze
+    term :AdvertiserContentArticle,
+      comment: %(An <a class="localLink" href="http://schema.org/Article">Article</a> that an external entity has paid to place or to produce to its specifications. Includes <a href="https://en.wikipedia.org/wiki/Advertorial">advertorials</a>, sponsored content, native advertising and other paid content.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "AdvertiserContentArticle".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Article".freeze,
+      type: "rdfs:Class".freeze
     term :AggregateOffer,
       comment: %(When a single product is associated with multiple offers \(for example, the same pair of shoes is offered by different merchants\), then AggregateOffer can be used.).freeze,
       label: "AggregateOffer".freeze,
@@ -134,6 +142,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       comment: %(An amusement park.).freeze,
       label: "AmusementPark".freeze,
       subClassOf: "schema:EntertainmentBusiness".freeze,
+      type: "rdfs:Class".freeze
+    term :AnalysisNewsArticle,
+      comment: %(An AnalysisNewsArticle is a <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> that, while based on factual reporting, incorporates the expertise of the author/producer, offering interpretations and conclusions.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "AnalysisNewsArticle".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:NewsArticle".freeze,
       type: "rdfs:Class".freeze
     term :AnatomicalStructure,
       comment: %(Any part of the human body, typically a component of an anatomical system. Organs, tissues, and cells are all anatomical structures.).freeze,
@@ -319,6 +335,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       comment: %(Car repair, sales, or parts.).freeze,
       label: "AutomotiveBusiness".freeze,
       subClassOf: "schema:LocalBusiness".freeze,
+      type: "rdfs:Class".freeze
+    term :BackgroundNewsArticle,
+      comment: %(A <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> providing historical context, definition and detail on a specific topic \(aka "explainer" or "backgrounder"\). For example, an in-depth article or frequently-asked-questions \(<a href="https://en.wikipedia.org/wiki/FAQ">FAQ</a>\) document on topics such as Climate Change or the European Union. Other kinds of background material from a non-news setting are often described using <a class="localLink" href="http://schema.org/Book">Book</a> or <a class="localLink" href="http://schema.org/Article">Article</a>, in particular <a class="localLink" href="http://schema.org/ScholarlyArticle">ScholarlyArticle</a>. See also <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> for related vocabulary from a learning/education perspective.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "BackgroundNewsArticle".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:NewsArticle".freeze,
       type: "rdfs:Class".freeze
     term :Bacteria,
       comment: %(Pathogenic bacteria that cause bacterial infection.).freeze,
@@ -999,16 +1023,12 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       type: "rdfs:Class".freeze
     term :Course,
       comment: %(A description of an educational course which may be offered as distinct instances at which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
       label: "Course".freeze,
-      :"schema:category" => %(issue-195).freeze,
       subClassOf: "schema:CreativeWork".freeze,
       type: "rdfs:Class".freeze
     term :CourseInstance,
       comment: %(An instance of a <a class="localLink" href="http://schema.org/Course">Course</a> which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
       label: "CourseInstance".freeze,
-      :"schema:category" => %(issue-195).freeze,
       subClassOf: "schema:Event".freeze,
       type: "rdfs:Class".freeze
     term :Courthouse,
@@ -1070,6 +1090,22 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       comment: %(A crematorium.).freeze,
       label: "Crematorium".freeze,
       subClassOf: "schema:CivicStructure".freeze,
+      type: "rdfs:Class".freeze
+    term :CriticReview,
+      comment: %(A <a class="localLink" href="http://schema.org/CriticReview">CriticReview</a> is a more specialized form of Review written or published by a source that is recognized for its reviewing activities. These can include online columns, travel and food guides, TV and radio shows, blogs and other independent Web sites. <a class="localLink" href="http://schema.org/CriticReview">CriticReview</a>s are typically more in-depth and professionally written. For simpler, casually written user/visitor/viewer/customer reviews, it is more appropriate to use the <a class="localLink" href="http://schema.org/UserReview">UserReview</a> type. Review aggregator sites such as Metacritic already separate out the site's user reviews from selected critic reviews that originate from third-party sources.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1589).freeze,
+      label: "CriticReview".freeze,
+      :"schema:category" => %(issue-1589).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Review".freeze,
+      type: "rdfs:Class".freeze
+    term :CssSelectorType,
+      comment: %(Text representing a CSS selector.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1672).freeze,
+      label: "CssSelectorType".freeze,
+      :"schema:category" => %(issue-1672).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Text".freeze,
       type: "rdfs:Class".freeze
     term :CurrencyConversionService,
       comment: %(A service to convert funds from one currency to another currency.).freeze,
@@ -1447,6 +1483,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       comment: %(A subclass of OrganizationRole used to describe employee relationships.).freeze,
       label: "EmployeeRole".freeze,
       subClassOf: "schema:OrganizationRole".freeze,
+      type: "rdfs:Class".freeze
+    term :EmployerReview,
+      comment: %(An <a class="localLink" href="http://schema.org/EmployerReview">EmployerReview</a> is a review of an <a class="localLink" href="http://schema.org/Organization">Organization</a> regarding its role as an employer, written by a current or former employee of that organization.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1589).freeze,
+      label: "EmployerReview".freeze,
+      :"schema:category" => %(issue-1576).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Review".freeze,
       type: "rdfs:Class".freeze
     term :EmploymentAgency,
       comment: %(An employment agency.).freeze,
@@ -1939,6 +1983,46 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "HousePainter".freeze,
       subClassOf: "schema:HomeAndConstructionBusiness".freeze,
       type: "rdfs:Class".freeze
+    term :HowTo,
+      comment: %(Instructions that explain how to achieve a result by performing a sequence of steps.).freeze,
+      label: "HowTo".freeze,
+      subClassOf: "schema:CreativeWork".freeze,
+      type: "rdfs:Class".freeze
+    term :HowToDirection,
+      comment: %(A direction indicating a single action to do in the instructions for how to achieve a result.).freeze,
+      label: "HowToDirection".freeze,
+      subClassOf: "schema:ListItem".freeze,
+      type: "rdfs:Class".freeze
+    term :HowToItem,
+      comment: %(An item used as either a tool or supply when performing the instructions for how to to achieve a result.).freeze,
+      label: "HowToItem".freeze,
+      subClassOf: "schema:ListItem".freeze,
+      type: "rdfs:Class".freeze
+    term :HowToSection,
+      comment: %(A sub-grouping of steps in the instructions for how to achieve a result \(e.g. steps for making a pie crust within a pie recipe\).).freeze,
+      label: "HowToSection".freeze,
+      subClassOf: "schema:ItemList".freeze,
+      type: "rdfs:Class".freeze
+    term :HowToStep,
+      comment: %(A step in the instructions for how to achieve a result. It is an ordered list with HowToDirection and/or HowToTip items.).freeze,
+      label: "HowToStep".freeze,
+      subClassOf: "schema:ItemList".freeze,
+      type: "rdfs:Class".freeze
+    term :HowToSupply,
+      comment: %(A supply consumed when performing the instructions for how to achieve a result.).freeze,
+      label: "HowToSupply".freeze,
+      subClassOf: "schema:HowToItem".freeze,
+      type: "rdfs:Class".freeze
+    term :HowToTip,
+      comment: %(An explanation in the instructions for how to achieve a result. It provides supplementary information about a technique, supply, author's preference, etc. It can explain what could be done, or what should not be done, but doesn't specify what should be done \(see HowToDirection\).).freeze,
+      label: "HowToTip".freeze,
+      subClassOf: "schema:ListItem".freeze,
+      type: "rdfs:Class".freeze
+    term :HowToTool,
+      comment: %(A tool used \(but not consumed\) when performing instructions for how to achieve a result.).freeze,
+      label: "HowToTool".freeze,
+      subClassOf: "schema:HowToItem".freeze,
+      type: "rdfs:Class".freeze
     term :IceCreamShop,
       comment: %(An ice cream shop.).freeze,
       label: "IceCreamShop".freeze,
@@ -2136,12 +2220,48 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "LeaveAction".freeze,
       subClassOf: "schema:InteractAction".freeze,
       type: "rdfs:Class".freeze
+    term :LegalForceStatus,
+      comment: %(A list of possible statuses for the legal force of a legislation.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "LegalForceStatus".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#InForce).freeze,
+      subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
     term :LegalService,
       comment: %(A LegalService is a business that provides legally-oriented services, advice and representation, e.g. law firms.</p>
 
 <p>As a <a class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a> it can be described as a <a class="localLink" href="http://schema.org/provider">provider</a> of one or more <a class="localLink" href="http://schema.org/Service">Service</a>\(s\).).freeze,
       label: "LegalService".freeze,
       subClassOf: "schema:LocalBusiness".freeze,
+      type: "rdfs:Class".freeze
+    term :LegalValueLevel,
+      comment: %(A list of possible levels for the legal validity of a legislation.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "LegalValueLevel".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:closeMatch" => %(http://data.europa.eu/eli/ontology#LegalValue).freeze,
+      subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
+    term :Legislation,
+      comment: %(A legal act \(enforceable or not\) or a component of a legal act \(like an article\).).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:closeMatch" => [%(http://data.europa.eu/eli/ontology#LegalExpression).freeze, %(http://data.europa.eu/eli/ontology#LegalResource).freeze],
+      subClassOf: "schema:CreativeWork".freeze,
+      type: "rdfs:Class".freeze
+    term :LegislationObject,
+      comment: %(A specific object or file containing a Legislation. Note that the same Legislation can be published in multiple files. For example, a digitally signed PDF, a plain PDF and an HTML version.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "LegislationObject".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:closeMatch" => %(http://data.europa.eu/eli/ontology#Format).freeze,
+      subClassOf: ["schema:Legislation".freeze, "schema:MediaObject".freeze],
       type: "rdfs:Class".freeze
     term :LegislativeBuilding,
       comment: %(A legislative building&#x2014;for example, the state capitol.).freeze,
@@ -2815,10 +2935,20 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       subClassOf: "schema:AnatomicalStructure".freeze,
       type: "rdfs:Class".freeze
     term :NewsArticle,
-      comment: %(A news article.).freeze,
-      :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews).freeze,
+      comment: %(A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news.</p>
+
+<p>A more detailed overview of <a href="/docs/news.html">schema.org News markup</a> is also available.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP-draws).freeze],
       label: "NewsArticle".freeze,
       subClassOf: "schema:Article".freeze,
+      type: "rdfs:Class".freeze
+    term :NewsMediaOrganization,
+      comment: %(A News/Media organization such as a newspaper or TV station.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "NewsMediaOrganization".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Organization".freeze,
       type: "rdfs:Class".freeze
     term :Newspaper,
       comment: %(A publication containing information about varied topics that are pertinent to general information, a geographic area, or a specific subject matter \(i.e. business, culture, education\). Often published daily.).freeze,
@@ -2893,6 +3023,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass).freeze,
       label: "OpeningHoursSpecification".freeze,
       subClassOf: "schema:StructuredValue".freeze,
+      type: "rdfs:Class".freeze
+    term :OpinionNewsArticle,
+      comment: %(An <a class="localLink" href="http://schema.org/OpinionNewsArticle">OpinionNewsArticle</a> is a <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> that primarily expresses opinions rather than journalistic reporting of news and events. For example, a <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> consisting of a column or <a class="localLink" href="http://schema.org/Blog">Blog</a>/<a class="localLink" href="http://schema.org/BlogPosting">BlogPosting</a> entry in the Opinions section of a news publication.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "OpinionNewsArticle".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:NewsArticle".freeze,
       type: "rdfs:Class".freeze
     term :Optician,
       comment: %(A store that sells reading glasses and similar devices for improving vision.).freeze,
@@ -3324,6 +3462,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "PublicSwimmingPool".freeze,
       subClassOf: "schema:SportsActivityLocation".freeze,
       type: "rdfs:Class".freeze
+    term :PublicToilet,
+      comment: %(A public toilet is a room or small building containing one or more toilets \(and possibly also urinals\) which is available for use by the general public, or by customers or employees of certain businesses.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1624).freeze,
+      label: "PublicToilet".freeze,
+      :"schema:category" => %(issue-1624).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:CivicStructure".freeze,
+      type: "rdfs:Class".freeze
     term :PublicationEvent,
       comment: %(A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type e.g. a broadcast event, an on-demand event, a book/journal publication via a variety of delivery media.).freeze,
       label: "PublicationEvent".freeze,
@@ -3466,7 +3612,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
     term :Recipe,
       comment: %(A recipe. For dietary restrictions covered by the recipe, a few common restrictions are enumerated via <a class="localLink" href="http://schema.org/suitableForDiet">suitableForDiet</a>. The <a class="localLink" href="http://schema.org/keywords">keywords</a> property can also be used to add more detail.).freeze,
       label: "Recipe".freeze,
-      subClassOf: "schema:CreativeWork".freeze,
+      subClassOf: "schema:HowTo".freeze,
       type: "rdfs:Class".freeze
     term :RecommendedDoseSchedule,
       comment: %(A recommended dosing schedule for a drug or supplement as prescribed or recommended by an authority or by the drug/supplement's manufacturer. Capture the recommending authority in the recognizingAuthority property of MedicalEntity.).freeze,
@@ -3546,6 +3692,21 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       comment: %(A Report generated by governmental or non-governmental organization.).freeze,
       label: "Report".freeze,
       subClassOf: "schema:Article".freeze,
+      type: "rdfs:Class".freeze
+    term :ReportageNewsArticle,
+      comment: %(The <a class="localLink" href="http://schema.org/ReportageNewsArticle">ReportageNewsArticle</a> type is a subtype of <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> representing
+ news articles which are the result of journalistic news reporting conventions.</p>
+
+<p>In practice many news publishers produce a wide variety of article types, many of which might be considered a <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> but not a <a class="localLink" href="http://schema.org/ReportageNewsArticle">ReportageNewsArticle</a>. For example, opinion pieces, reviews, analysis, sponsored or satirical articles, or articles that combine several of these elements.</p>
+
+<p>The <a class="localLink" href="http://schema.org/ReportageNewsArticle">ReportageNewsArticle</a> type is based on a stricter ideal for "news" as a work of journalism, with articles based on factual information either observed or verified by the author, or reported and verified from knowledgeable sources.  This often includes perspectives from multiple viewpoints on a particular issue \(distinguishing news reports from public relations or propaganda\).  News reports in the <a class="localLink" href="http://schema.org/ReportageNewsArticle">ReportageNewsArticle</a> sense de-emphasize the opinion of the author, with commentary and value judgements typically expressed elsewhere.</p>
+
+<p>A <a class="localLink" href="http://schema.org/ReportageNewsArticle">ReportageNewsArticle</a> which goes deeper into analysis can also be marked with an additional type of <a class="localLink" href="http://schema.org/AnalysisNewsArticle">AnalysisNewsArticle</a>.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "ReportageNewsArticle".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:NewsArticle".freeze,
       type: "rdfs:Class".freeze
     term :ReportedDoseSchedule,
       comment: %(A patient-reported or observed dosing schedule for a drug or supplement.).freeze,
@@ -3630,6 +3791,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "ReviewAction".freeze,
       subClassOf: "schema:AssessAction".freeze,
       type: "rdfs:Class".freeze
+    term :ReviewNewsArticle,
+      comment: %(A <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> and <a class="localLink" href="http://schema.org/CriticReview">CriticReview</a> providing a professional critic's assessment of a service, product, performance, or artistic or literary work.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "ReviewNewsArticle".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: ["schema:CriticReview".freeze, "schema:NewsArticle".freeze],
+      type: "rdfs:Class".freeze
     term :RiverBodyOfWater,
       comment: %(A river \(for example, the broad majestic Shannon\).).freeze,
       label: "RiverBodyOfWater".freeze,
@@ -3669,6 +3838,24 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       comment: %(Event type: Sales event.).freeze,
       label: "SaleEvent".freeze,
       subClassOf: "schema:Event".freeze,
+      type: "rdfs:Class".freeze
+    term :SatiricalArticle,
+      comment: %(An <a class="localLink" href="http://schema.org/Article">Article</a> whose content is primarily <a href="https://en.wikipedia.org/wiki/Satire">[satirical]</a> in nature, i.e. unlikely to be literally true. A satirical article is sometimes but not necessarily also a <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>. <a class="localLink" href="http://schema.org/ScholarlyArticle">ScholarlyArticle</a>s are also sometimes satirized.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      label: "SatiricalArticle".freeze,
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Article".freeze,
+      type: "rdfs:Class".freeze
+    term :Schedule,
+      comment: %(A schedule defines a repeating time period used to describe a regularly occurring <a class="localLink" href="http://schema.org/Event">Event</a>. At a minimum a schedule will specify <a class="localLink" href="http://schema.org/repeatFrequency">repeatFrequency</a> which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely. 
+      This includes identifying the day\(s\) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also
+      have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      label: "Schedule".freeze,
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Intangible".freeze,
       type: "rdfs:Class".freeze
     term :ScheduleAction,
       comment: %(<p>Scheduling future actions, events, or tasks.</p>
@@ -4106,7 +4293,8 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       subClassOf: "schema:Store".freeze,
       type: "rdfs:Class".freeze
     term :TouristAttraction,
-      comment: %(A tourist attraction.).freeze,
+      comment: %(A tourist attraction.  In principle any Thing can be a <a class="localLink" href="http://schema.org/TouristAttraction">TouristAttraction</a>, from a <a class="localLink" href="http://schema.org/Mountain">Mountain</a> and <a class="localLink" href="http://schema.org/LandmarksOrHistoricalBuildings">LandmarksOrHistoricalBuildings</a> to a <a class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>.  This Type can be used on its own to describe a general <a class="localLink" href="http://schema.org/TourstAttraction">TourstAttraction</a>, or be used as an <a class="localLink" href="http://schema.org/additionalType">additionalType</a> to add tourist attraction properties to any other type.  \(See examples below\)).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it).freeze, %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism).freeze],
       label: "TouristAttraction".freeze,
       subClassOf: "schema:Place".freeze,
       type: "rdfs:Class".freeze
@@ -4270,6 +4458,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "UserPlusOnes".freeze,
       :"schema:supersededBy" => %(schema:InteractionCounter).freeze,
       subClassOf: "schema:UserInteraction".freeze,
+      type: "rdfs:Class".freeze
+    term :UserReview,
+      comment: %(A review created by an end-user \(e.g. consumer, purchaser, attendee etc.\), in contrast with <a class="localLink" href="http://schema.org/CriticReview">CriticReview</a>.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1589).freeze,
+      label: "UserReview".freeze,
+      :"schema:category" => %(issue-1589).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Review".freeze,
       type: "rdfs:Class".freeze
     term :UserTweets,
       comment: %(UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class="localLink" href="http://schema.org/Action">Action</a>-based vocabulary, alongside types such as <a class="localLink" href="http://schema.org/Comment">Comment</a>.).freeze,
@@ -4480,6 +4676,14 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "WriteAction".freeze,
       subClassOf: "schema:CreateAction".freeze,
       type: "rdfs:Class".freeze
+    term :XPathType,
+      comment: %(Text representing an XPath \(typically but not necessarily version 1.0\).).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1672).freeze,
+      label: "XPathType".freeze,
+      :"schema:category" => %(issue-1672).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subClassOf: "schema:Text".freeze,
+      type: "rdfs:Class".freeze
     term :Zoo,
       comment: %(A zoo.).freeze,
       label: "Zoo".freeze,
@@ -4673,6 +4877,16 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "actionStatus".freeze,
       rangeIncludes: "schema:ActionStatusType".freeze,
       type: "rdf:Property".freeze
+    property :actionableFeedbackPolicy,
+      comment: %(For a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a> or other news-related <a class="localLink" href="http://schema.org/Organization">Organization</a>, a statement about public engagement activities \(for news media, the newsroom’s\), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      domainIncludes: ["schema:NewsMediaOrganization".freeze, "schema:Organization".freeze],
+      label: "actionableFeedbackPolicy".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:publishingPrinciples".freeze,
+      type: "rdf:Property".freeze
     property :activeIngredient,
       comment: %(An active ingredient, typically chemical compounds and/or biologic substances.).freeze,
       domainIncludes: ["schema:DietarySupplement".freeze, "schema:Drug".freeze, "schema:DrugStrength".freeze, "schema:Substance".freeze],
@@ -4806,6 +5020,12 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "affiliation".freeze,
       rangeIncludes: "schema:Organization".freeze,
       subPropertyOf: "schema:memberOf".freeze,
+      type: "rdf:Property".freeze
+    property :afterMedia,
+      comment: %(A media object representing the circumstances after performing this direction.).freeze,
+      domainIncludes: "schema:HowToDirection".freeze,
+      label: "afterMedia".freeze,
+      rangeIncludes: "schema:MediaObject".freeze,
       type: "rdf:Property".freeze
     property :agent,
       comment: %(The direct performer or driver of the action \(animate or inanimate\). e.g. <em>John</em> wrote a book.).freeze,
@@ -5247,8 +5467,8 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "rdf:Property".freeze
     property :availableLanguage,
-      comment: %(A language someone may use with the item. Please use one of the language codes from the <a href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also <a class="localLink" href="http://schema.org/inLanguage">inLanguage</a>).freeze,
-      domainIncludes: ["schema:ContactPoint".freeze, "schema:LodgingBusiness".freeze, "schema:ServiceChannel".freeze],
+      comment: %(A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also <a class="localLink" href="http://schema.org/inLanguage">inLanguage</a>).freeze,
+      domainIncludes: ["schema:ContactPoint".freeze, "schema:LodgingBusiness".freeze, "schema:ServiceChannel".freeze, "schema:TouristAttraction".freeze],
       label: "availableLanguage".freeze,
       rangeIncludes: ["schema:Language".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
@@ -5327,6 +5547,13 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "baseSalary".freeze,
       rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:Number".freeze, "schema:PriceSpecification".freeze],
       type: "rdf:Property".freeze
+    property :bccRecipient,
+      comment: %(A sub property of recipient. The recipient blind copied on a message.).freeze,
+      domainIncludes: "schema:Message".freeze,
+      label: "bccRecipient".freeze,
+      rangeIncludes: ["schema:ContactPoint".freeze, "schema:Organization".freeze, "schema:Person".freeze],
+      subPropertyOf: "schema:recipient".freeze,
+      type: "rdf:Property".freeze
     property :bed,
       comment: %(The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text.
       If you want to indicate the quantity of a certain kind of bed, use an instance of BedDetails. For more detailed information, use the amenityFeature property.).freeze,
@@ -5334,6 +5561,12 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: ["schema:HotelRoom".freeze, "schema:Suite".freeze],
       label: "bed".freeze,
       rangeIncludes: ["schema:BedDetails".freeze, "schema:BedType".freeze, "schema:Text".freeze],
+      type: "rdf:Property".freeze
+    property :beforeMedia,
+      comment: %(A media object representing the circumstances before performing this direction.).freeze,
+      domainIncludes: "schema:HowToDirection".freeze,
+      label: "beforeMedia".freeze,
+      rangeIncludes: "schema:MediaObject".freeze,
       type: "rdf:Property".freeze
     property :beneficiaryBank,
       comment: %(A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary).freeze,
@@ -5641,6 +5874,33 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "byArtist".freeze,
       rangeIncludes: "schema:MusicGroup".freeze,
       type: "rdf:Property".freeze
+    property :byDay,
+      comment: %(Defines the day\(s\) of the week on which a recurring <a class="localLink" href="http://schema.org/Event">Event</a> takes place).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      domainIncludes: "schema:Schedule".freeze,
+      label: "byDay".freeze,
+      rangeIncludes: "schema:DayOfWeek".freeze,
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :byMonth,
+      comment: %(Defines the month\(s\) of the year on which a recurring <a class="localLink" href="http://schema.org/Event">Event</a> takes place. Specified as an <a class="localLink" href="http://schema.org/Integer">Integer</a> between 1-12. January is 1.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      domainIncludes: "schema:Schedule".freeze,
+      label: "byMonth".freeze,
+      rangeIncludes: "schema:Integer".freeze,
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :byMonthDay,
+      comment: %(Defines the day\(s\) of the month on which a recurring <a class="localLink" href="http://schema.org/Event">Event</a> takes place. Specified as an <a class="localLink" href="http://schema.org/Integer">Integer</a> between 1-31.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      domainIncludes: "schema:Schedule".freeze,
+      label: "byMonthDay".freeze,
+      rangeIncludes: "schema:Integer".freeze,
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :calories,
       comment: %(The number of calories.).freeze,
       domainIncludes: "schema:NutritionInformation".freeze,
@@ -5732,6 +5992,13 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "causeOf".freeze,
       rangeIncludes: "schema:MedicalEntity".freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :ccRecipient,
+      comment: %(A sub property of recipient. The recipient copied on a message.).freeze,
+      domainIncludes: "schema:Message".freeze,
+      label: "ccRecipient".freeze,
+      rangeIncludes: ["schema:ContactPoint".freeze, "schema:Organization".freeze, "schema:Person".freeze],
+      subPropertyOf: "schema:recipient".freeze,
       type: "rdf:Property".freeze
     property :character,
       comment: %(Fictional person connected with a creative work.).freeze,
@@ -6096,6 +6363,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: "schema:Recipe".freeze,
       label: "cookTime".freeze,
       rangeIncludes: "schema:Duration".freeze,
+      subPropertyOf: "schema:performTime".freeze,
       type: "rdf:Property".freeze
     property :cookingMethod,
       comment: %(The method of cooking, such as Frying, Steaming, ...).freeze,
@@ -6114,6 +6382,16 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: "schema:CreativeWork".freeze,
       label: "copyrightYear".freeze,
       rangeIncludes: "schema:Number".freeze,
+      type: "rdf:Property".freeze
+    property :correctionsPolicy,
+      comment: %(For an <a class="localLink" href="http://schema.org/Organization">Organization</a> \(e.g. <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>\), a statement describing \(in news media, the newsroom’s\) disclosure and correction policy for errors.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      domainIncludes: ["schema:NewsMediaOrganization".freeze, "schema:Organization".freeze],
+      label: "correctionsPolicy".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:publishingPrinciples".freeze,
       type: "rdf:Property".freeze
     property :cost,
       comment: %(Cost per unit of the drug, as reported by the source being tagged.).freeze,
@@ -6178,27 +6456,21 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       type: "rdf:Property".freeze
     property :courseCode,
       comment: %(The identifier for the <a class="localLink" href="http://schema.org/Course">Course</a> used by the course <a class="localLink" href="http://schema.org/provider">provider</a> \(e.g. CS101 or 6.001\).).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
       domainIncludes: "schema:Course".freeze,
       label: "courseCode".freeze,
       rangeIncludes: "schema:Text".freeze,
-      :"schema:category" => %(issue-195).freeze,
       type: "rdf:Property".freeze
     property :courseMode,
       comment: %(The medium or means of delivery of the course instance or the mode of study, either as a text label \(e.g. "online", "onsite" or "blended"; "synchronous" or "asynchronous"; "full-time" or "part-time"\) or as a URL reference to a term from a controlled vocabulary \(e.g. https://ceds.ed.gov/element/001311#Asynchronous \).).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
       domainIncludes: "schema:CourseInstance".freeze,
       label: "courseMode".freeze,
       rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
-      :"schema:category" => %(issue-195).freeze,
       type: "rdf:Property".freeze
     property :coursePrerequisites,
       comment: %(Requirements for taking the Course. May be completion of another <a class="localLink" href="http://schema.org/Course">Course</a> or a textual description like "permission of instructor". Requirements may be a pre-requisite competency, referenced using <a class="localLink" href="http://schema.org/AlignmentObject">AlignmentObject</a>.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
       domainIncludes: "schema:Course".freeze,
       label: "coursePrerequisites".freeze,
       rangeIncludes: ["schema:AlignmentObject".freeze, "schema:Course".freeze, "schema:Text".freeze],
-      :"schema:category" => %(issue-195).freeze,
       type: "rdf:Property".freeze
     property :coverageEndTime,
       comment: %(The time when the live blog will stop covering the Event. Note that coverage may continue after the Event concludes.).freeze,
@@ -6230,7 +6502,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1389).freeze,
       domainIncludes: "schema:SpeakableSpecification".freeze,
       label: "cssSelector".freeze,
-      rangeIncludes: "schema:Text".freeze,
+      rangeIncludes: "schema:CssSelectorType".freeze,
       :"schema:category" => %(issue-1389).freeze,
       :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
@@ -6345,7 +6617,7 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       rangeIncludes: "schema:Date".freeze,
       type: "rdf:Property".freeze
     property :dateline,
-      comment: %(The location where the NewsArticle was produced.).freeze,
+      comment: %(A <a href="https://en.wikipedia.org/wiki/Dateline">dateline</a> is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided.).freeze,
       domainIncludes: "schema:NewsArticle".freeze,
       label: "dateline".freeze,
       rangeIncludes: "schema:Text".freeze,
@@ -6587,6 +6859,15 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "distribution".freeze,
       rangeIncludes: "schema:DataDownload".freeze,
       type: "rdf:Property".freeze
+    property :diversityPolicy,
+      comment: %(Statement on diversity policy by an <a class="localLink" href="http://schema.org/Organization">Organization</a> e.g. a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>. For a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, a statement describing the newsroom’s diversity policy on both staffing and sources, typically providing staffing data.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      domainIncludes: ["schema:NewsMediaOrganization".freeze, "schema:Organization".freeze],
+      label: "diversityPolicy".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :documentation,
       comment: %(Further documentation describing the Web API in more detail.).freeze,
       :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1423).freeze,
@@ -6741,6 +7022,12 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       domainIncludes: "schema:WarrantyPromise".freeze,
       label: "durationOfWarranty".freeze,
       rangeIncludes: "schema:QuantitativeValue".freeze,
+      type: "rdf:Property".freeze
+    property :duringMedia,
+      comment: %(A media object representing the circumstances while performing this direction.).freeze,
+      domainIncludes: "schema:HowToDirection".freeze,
+      label: "duringMedia".freeze,
+      rangeIncludes: "schema:MediaObject".freeze,
       type: "rdf:Property".freeze
     property :earlyPrepaymentPenalty,
       comment: %(The amount to be paid as a penalty in the event of early payment of the loan.).freeze,
@@ -7022,11 +7309,26 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "error".freeze,
       rangeIncludes: "schema:Thing".freeze,
       type: "rdf:Property".freeze
+    property :estimatedCost,
+      comment: %(The estimated cost of the supply or supplies consumed when performing instructions.).freeze,
+      domainIncludes: ["schema:HowTo".freeze, "schema:HowToSupply".freeze],
+      label: "estimatedCost".freeze,
+      rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:Text".freeze],
+      type: "rdf:Property".freeze
     property :estimatedFlightDuration,
       comment: %(The estimated time the flight will take.).freeze,
       domainIncludes: "schema:Flight".freeze,
       label: "estimatedFlightDuration".freeze,
       rangeIncludes: ["schema:Duration".freeze, "schema:Text".freeze],
+      type: "rdf:Property".freeze
+    property :estimatedSalary,
+      comment: %(A property describing the estimated salary for a job posting based on a variety of variables including, but not limited to industry, job title, and location. The estimated salary is usually computed by outside organizations and therefore the hiring organization is not bound to this estimated salary.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1577).freeze,
+      domainIncludes: "schema:JobPosting".freeze,
+      label: "estimatedSalary".freeze,
+      rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:Number".freeze, "schema:PriceSpecification".freeze],
+      :"schema:category" => %(issue-1577).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :estimatesRiskOf,
       comment: %(The condition, complication, or symptom whose risk is being estimated.).freeze,
@@ -7035,11 +7337,34 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       rangeIncludes: "schema:MedicalEntity".freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "rdf:Property".freeze
+    property :ethicsPolicy,
+      comment: %(Statement about ethics policy, e.g. of a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a> regarding journalistic and publishing practices, or of a <a class="localLink" href="http://schema.org/Restaurant">Restaurant</a>, a page describing food source policies. In the case of a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1525).freeze,
+      domainIncludes: ["schema:NewsMediaOrganization".freeze, "schema:Organization".freeze],
+      label: "ethicsPolicy".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
     property :event,
       comment: %(Upcoming or past event associated with this place, organization, or action.).freeze,
       domainIncludes: ["schema:InformAction".freeze, "schema:InviteAction".freeze, "schema:JoinAction".freeze, "schema:LeaveAction".freeze, "schema:Organization".freeze, "schema:Place".freeze, "schema:PlayAction".freeze],
       label: "event".freeze,
       rangeIncludes: "schema:Event".freeze,
+      type: "rdf:Property".freeze
+    property :eventSchedule,
+      comment: %(Associates an <a class="localLink" href="http://schema.org/Event">Event</a> with a <a class="localLink" href="http://schema.org/Schedule">Schedule</a>. There are circumstances where it is preferable to share a schedule for a series of
+      repeating events rather than data on the individual events themselves. For example, a website or application might prefer to publish a schedule for a weekly
+      gym class rather than provide data on every event. A schedule could be processed by applications to add forthcoming events to a calendar. An <a class="localLink" href="http://schema.org/Event">Event</a> that
+      is associated with a <a class="localLink" href="http://schema.org/Schedule">Schedule</a> using this property should not have <a class="localLink" href="http://schema.org/startDate">startDate</a> or <a class="localLink" href="http://schema.org/endDate">endDate</a> properties. These are instead defined within the associated
+      <a class="localLink" href="http://schema.org/Schedule">Schedule</a>, this avoids any ambiguity for clients using the data. The propery might have repeated values to specify different schedules, e.g. for different months
+      or seasons.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      domainIncludes: "schema:Schedule".freeze,
+      label: "eventSchedule".freeze,
+      rangeIncludes: "schema:Duration".freeze,
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :eventStatus,
       comment: %(An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.).freeze,
@@ -7075,6 +7400,18 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       inverseOf: "schema:workExample".freeze,
       label: "exampleOfWork".freeze,
       rangeIncludes: "schema:CreativeWork".freeze,
+      type: "rdf:Property".freeze
+    property :exceptDate,
+      comment: %(Defines a <a class="localLink" href="http://schema.org/Date">Date</a> or <a class="localLink" href="http://schema.org/DateTime">DateTime</a> during which a scheduled <a class="localLink" href="http://schema.org/Event">Event</a> will not take place. The property allows exceptions to
+      a <a class="localLink" href="http://schema.org/Schedule">Schedule</a> to be specified. If an exception is specified as a <a class="localLink" href="http://schema.org/DateTime">DateTime</a> then only the event that would have started at that specific date and time
+      should be excluded from the schedule. If an exception is specified as a <a class="localLink" href="http://schema.org/Date">Date</a> then any event that is scheduled for that 24 hour period should be
+      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      domainIncludes: "schema:Schedule".freeze,
+      label: "exceptDate".freeze,
+      rangeIncludes: ["schema:Date".freeze, "schema:DateTime".freeze],
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :exchangeRate,
       comment: %(The price of a currency in terms of another currency.).freeze,
@@ -7174,8 +7511,8 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "rdf:Property".freeze
     property :expires,
-      comment: %(Date the content expires and is no longer useful or available. Useful for videos.).freeze,
-      domainIncludes: "schema:MediaObject".freeze,
+      comment: %(Date the content expires and is no longer useful or available. For example a <a class="localLink" href="http://schema.org/VideoObject">VideoObject</a> or <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> whose availability or relevance is time-limited, or a <a class="localLink" href="http://schema.org/ClaimReview">ClaimReview</a> fact check whose publisher wants to indicate that it may no longer be relevant \(or helpful to highlight\) after some date.).freeze,
+      domainIncludes: "schema:CreativeWork".freeze,
       label: "expires".freeze,
       rangeIncludes: "schema:Date".freeze,
       type: "rdf:Property".freeze
@@ -7332,7 +7669,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       rangeIncludes: "schema:Place".freeze,
       type: "rdf:Property".freeze
     property :free,
-      comment: %(A flag to signal that the publication or event is accessible for free.).freeze,
+      comment: %(A flag to signal that the item, event, or place is accessible for free.).freeze,
       domainIncludes: "schema:PublicationEvent".freeze,
       label: "free".freeze,
       rangeIncludes: "schema:Boolean".freeze,
@@ -7699,11 +8036,9 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       type: "rdf:Property".freeze
     property :hasCourseInstance,
       comment: %(An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
       domainIncludes: "schema:Course".freeze,
       label: "hasCourseInstance".freeze,
       rangeIncludes: "schema:CourseInstance".freeze,
-      :"schema:category" => %(issue-195).freeze,
       type: "rdf:Property".freeze
     property :hasDeliveryMethod,
       comment: %(Method used for delivery or shipping.).freeze,
@@ -8175,6 +8510,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "ingredients".freeze,
       rangeIncludes: "schema:Text".freeze,
       :"schema:supersededBy" => %(schema:recipeIngredient).freeze,
+      subPropertyOf: "schema:supply".freeze,
       type: "rdf:Property".freeze
     property :inker,
       comment: %(The individual who traces over the pencil drawings in ink after pencils are complete.).freeze,
@@ -8199,11 +8535,9 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       type: "rdf:Property".freeze
     property :instructor,
       comment: %(A person assigned to instruct or provide instructional assistance for the <a class="localLink" href="http://schema.org/CourseInstance">CourseInstance</a>.).freeze,
-      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/195).freeze,
       domainIncludes: "schema:CourseInstance".freeze,
       label: "instructor".freeze,
       rangeIncludes: "schema:Person".freeze,
-      :"schema:category" => %(issue-195).freeze,
       type: "rdf:Property".freeze
     property :instrument,
       comment: %(The object that helped the agent perform the action. e.g. John wrote a book with <em>a pen</em>.).freeze,
@@ -8285,8 +8619,8 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
     property :isAccessibleForFree,
-      comment: %(A flag to signal that the publication is accessible for free.).freeze,
-      domainIncludes: ["schema:CreativeWork".freeze, "schema:Event".freeze, "schema:PublicationEvent".freeze],
+      comment: %(A flag to signal that the item, event, or place is accessible for free.).freeze,
+      domainIncludes: ["schema:CreativeWork".freeze, "schema:Event".freeze, "schema:Place".freeze, "schema:PublicationEvent".freeze],
       label: "isAccessibleForFree".freeze,
       rangeIncludes: "schema:Boolean".freeze,
       type: "rdf:Property".freeze
@@ -8400,9 +8734,9 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       rangeIncludes: "schema:Text".freeze,
       type: "rdf:Property".freeze
     property :issn,
-      comment: %(The International Standard Serial Number \(ISSN\) that identifies this periodical. You can repeat this property to \(for example\) identify different formats of this periodical.).freeze,
+      comment: %(The International Standard Serial Number \(ISSN\) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN \(ISSN-L\) for, this serial publication.).freeze,
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex).freeze,
-      domainIncludes: "schema:Periodical".freeze,
+      domainIncludes: ["schema:Blog".freeze, "schema:CreativeWorkSeries".freeze, "schema:Dataset".freeze, "schema:WebSite".freeze],
       label: "issn".freeze,
       :"owl:equivalentProperty" => %(bibo:issn).freeze,
       rangeIncludes: "schema:Text".freeze,
@@ -8572,6 +8906,195 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "legalStatus".freeze,
       rangeIncludes: ["schema:DrugLegalStatus".freeze, "schema:MedicalEnumeration".freeze, "schema:Text".freeze],
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :legislationAppliedBy,
+      comment: %(Indicates that this legislation \(or part of a legislation\) is somehow transfered by another legislation in a different legislative context. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the property <a href="/legislationTransposedBy">legislationTransposedBy</a>. For example the informative consolidated version of the European Directive is somehow "applied by" an informative consolidated law in a European Union's member state.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationApplies".freeze,
+      label: "legislationAppliedBy".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#implemented_by).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#implemented_by).freeze,
+      type: "rdf:Property".freeze
+    property :legislationApplies,
+      comment: %(Indicates that this legislation \(or part of a legislation\) somehow transfers another legislation in a different legislative context. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the <a href="/legislationTransposes">legislationTransposes</a> property. For example an informative consolidated law of a European Union's member state "applies" the consolidated version of the European Directive implemented in it.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationAppliedBy".freeze,
+      label: "legislationApplies".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#implements).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#implements).freeze,
+      type: "rdf:Property".freeze
+    property :legislationChangedBy,
+      comment: %(Another legislation that changes this legislation. This encompasses the notions of amendment, replacement, correction, repeal, or other types of change. This may be a direct change \(textual or non-textual amendment\) or a consequential or indirect change. The property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the <a href="/legislationConsolidatedBy">legislationConsolidatedBy</a> property.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationChanges".freeze,
+      label: "legislationChangedBy".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#changed_by).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#changed_by).freeze,
+      type: "rdf:Property".freeze
+    property :legislationChanges,
+      comment: %(Another legislation that this legislation changes. This encompasses the notions of amendment, replacement, correction, repeal, or other types of change. This may be a direct change \(textual or non-textual amendment\) or a consequential or indirect change. The property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the <a href="/legislationConsolidates">legislationConsolidates</a> property.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationChangedBy".freeze,
+      label: "legislationChanges".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#changes).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#changes).freeze,
+      type: "rdf:Property".freeze
+    property :legislationConsolidatedBy,
+      comment: %(Indicates a consolidated legislation \(which is usually the product of an editorial process that revises the legislation\) that take into account this legislation.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationConsolidates".freeze,
+      label: "legislationConsolidatedBy".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#consolidated_by).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#consolidated_by).freeze,
+      type: "rdf:Property".freeze
+    property :legislationConsolidates,
+      comment: %(Indicates another legislation taken into account in this consolidated legislation \(which is usually the product of an editorial process that revises the legislation\). This property should be used multiple times to refer to both the original version or the previous consolidated version, and to the legislations making the change.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationConsolidatedBy".freeze,
+      label: "legislationConsolidates".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#consolidates).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#consolidates).freeze,
+      type: "rdf:Property".freeze
+    property :legislationDate,
+      comment: %(The date of adoption or signature of the legislation. This is the date at which the text is officially aknowledged to be a legislation, even though it might not even be published or in force.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      label: "legislationDate".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#date_document).freeze,
+      rangeIncludes: "schema:Date".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#date_document).freeze,
+      subPropertyOf: "schema:dateCreated".freeze,
+      type: "rdf:Property".freeze
+    property :legislationDateVersion,
+      comment: %(The point-in-time at which the provided description of the legislation is valid \(e.g. : when looking at the law on the 2016-04-07 \(= dateVersion\), I get the consolidation of 2015-04-12 of the "National Insurance Contributions Act 2015"\)).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      label: "legislationDateVersion".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#version_date).freeze,
+      rangeIncludes: "schema:Date".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#version_date).freeze,
+      type: "rdf:Property".freeze
+    property :legislationIdentifier,
+      comment: %(An identifier for the legislation. For example the CELEX at EU level, the NOR in France, or the ELI \(European Legislation Identifier\).).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      label: "legislationIdentifier".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:closeMatch" => %(http://data.europa.eu/eli/ontology#id_local).freeze,
+      subPropertyOf: "schema:identifier".freeze,
+      type: "rdf:Property".freeze
+    property :legislationLegalForce,
+      comment: %(Whether the legislation is currently in force, not in force, or partially in force.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      label: "legislationLegalForce".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#in_force).freeze,
+      rangeIncludes: "schema:LegalForceStatus".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#in_force).freeze,
+      type: "rdf:Property".freeze
+    property :legislationLegalValue,
+      comment: %(The legal value of this legislation file. The same legislation can be written in multiple files with different legal values. Typically a digitally signed PDF have a "stronger" legal value than the HTML file of the same act.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:LegislationObject".freeze,
+      label: "legislationLegalValue".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#legal_value).freeze,
+      rangeIncludes: "schema:LegalValueLevel".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#legal_value).freeze,
+      type: "rdf:Property".freeze
+    property :legislationPassedBy,
+      comment: %(The person or organization that originally passed or made the law : typically parliament \(for primary legislation\) or government \(for secondary legislation\). This indicates the "legal author" of the law, as opposed to its physical author.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      label: "legislationPassedBy".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#passed_by).freeze,
+      rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#passed_by).freeze,
+      subPropertyOf: "schema:creator".freeze,
+      type: "rdf:Property".freeze
+    property :legislationResponsible,
+      comment: %(An individual or organization that has some kind of responsibility for the legislation. Typically the ministry who is/was in charge of elaborating the legislation, or the adressee for potential questions about the legislation once it is published.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      label: "legislationResponsible".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#responsibility_of).freeze,
+      rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#responsibility_of).freeze,
+      type: "rdf:Property".freeze
+    property :legislationTransposedBy,
+      comment: %(Indicates that the objectives set by this legislation \(or part of legislation\) are fulfilled by another legislation who passed appropriate implementation measures. Typically, European Directives are transposed by the legislations of European Union's member states or regions. This indicates a legally binding link between the 2 legislations.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationTransposes".freeze,
+      label: "legislationTransposedBy".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#transposed_by).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#transposed_by).freeze,
+      subPropertyOf: "schema:legislationAppliedBy".freeze,
+      type: "rdf:Property".freeze
+    property :legislationTransposes,
+      comment: %(Indicates that this legislation \(or part of legislation\) fulfills the objectives set by another legislation, by passing appropriate implementation measures. Typically, some legislations of European Union's member states or regions transpose European Directives. This indicates a legally binding link between the 2 legislations.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      inverseOf: "schema:legislationTransposedBy".freeze,
+      label: "legislationTransposes".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#transposes).freeze,
+      rangeIncludes: "schema:Legislation".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#transposes).freeze,
+      subPropertyOf: "schema:legislationApplies".freeze,
+      type: "rdf:Property".freeze
+    property :legislationType,
+      comment: %(The type of the legislation. Examples of values are "law", "act", "directive", "decree", "regulation", "statutory instrument", "loi organique", "règlement grand-ducal", etc., depending on the country.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      domainIncludes: "schema:Legislation".freeze,
+      label: "legislationType".freeze,
+      :"owl:equivalentProperty" => %(http://data.europa.eu/eli/ontology#type_document).freeze,
+      rangeIncludes: ["schema:CategoryCode".freeze, "schema:Text".freeze],
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#type_document).freeze,
+      subPropertyOf: "schema:genre".freeze,
       type: "rdf:Property".freeze
     property :leiCode,
       comment: %(An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.).freeze,
@@ -8767,6 +9290,7 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       inverseOf: "schema:mainEntityOfPage".freeze,
       label: "mainEntity".freeze,
       rangeIncludes: "schema:Thing".freeze,
+      subPropertyOf: "schema:about".freeze,
       type: "rdf:Property".freeze
     property :mainEntityOfPage,
       comment: %(Indicates a page \(or other CreativeWork\) for which this thing is the main entity being described. See <a href="/docs/datamodel.html#mainEntityBackground">background notes</a> for details.).freeze,
@@ -8808,6 +9332,16 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       label: "maps".freeze,
       rangeIncludes: "schema:URL".freeze,
       :"schema:supersededBy" => %(schema:hasMap).freeze,
+      type: "rdf:Property".freeze
+    property :masthead,
+      comment: %(For a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, a link to the masthead page or a page listing top editorial management.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      domainIncludes: "schema:NewsMediaOrganization".freeze,
+      label: "masthead".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:publishingPrinciples".freeze,
       type: "rdf:Property".freeze
     property :material,
       comment: %(A material that something is made from, e.g. leather, wool, cotton, paper.).freeze,
@@ -8989,6 +9523,16 @@ corresponding to the method used for measuring the corresponding variable\(s\) \
       domainIncludes: "schema:Invoice".freeze,
       label: "minimumPaymentDue".freeze,
       rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:PriceSpecification".freeze],
+      type: "rdf:Property".freeze
+    property :missionCoveragePrioritiesPolicy,
+      comment: %(For a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, a statement on coverage priorities, including any public agenda or stance on issues.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      domainIncludes: "schema:NewsMediaOrganization".freeze,
+      label: "missionCoveragePrioritiesPolicy".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:publishingPrinciples".freeze,
       type: "rdf:Property".freeze
     property :model,
       comment: %(The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.).freeze,
@@ -9711,6 +10255,12 @@ Typical unit code\(s\): C62 for person).freeze,
       :"schema:category" => %(Comics).freeze,
       :"schema:isPartOf" => %(http://bib.schema.org).freeze,
       type: "rdf:Property".freeze
+    property :performTime,
+      comment: %(The length of time it takes to perform instructions or a direction \(not including time to prepare the supplies\), in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.).freeze,
+      domainIncludes: ["schema:HowTo".freeze, "schema:HowToDirection".freeze],
+      label: "performTime".freeze,
+      rangeIncludes: "schema:Duration".freeze,
+      type: "rdf:Property".freeze
     property :performer,
       comment: %(A performer at the event&#x2014;for example, a presenter, musician, musical group or actor.).freeze,
       domainIncludes: "schema:Event".freeze,
@@ -9907,8 +10457,8 @@ Typical unit code\(s\): C62 for person).freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "rdf:Property".freeze
     property :prepTime,
-      comment: %(The length of time it takes to prepare the recipe, in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.).freeze,
-      domainIncludes: "schema:Recipe".freeze,
+      comment: %(The length of time it takes to prepare the items to be used in instructions or a direction, in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.).freeze,
+      domainIncludes: ["schema:HowTo".freeze, "schema:HowToDirection".freeze],
       label: "prepTime".freeze,
       rangeIncludes: "schema:Duration".freeze,
       type: "rdf:Property".freeze
@@ -10180,6 +10730,12 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       label: "providesService".freeze,
       rangeIncludes: "schema:Service".freeze,
       type: "rdf:Property".freeze
+    property :publicAccess,
+      comment: %(A flag to signal that the <a class="localLink" href="http://schema.org/Place">Place</a> is open to public visitors.  If this property is omitted there is no assumed default boolean value).freeze,
+      domainIncludes: "schema:Place".freeze,
+      label: "publicAccess".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      type: "rdf:Property".freeze
     property :publication,
       comment: %(A publication event associated with the item.).freeze,
       domainIncludes: "schema:CreativeWork".freeze,
@@ -10221,10 +10777,12 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       :"schema:isPartOf" => %(http://bib.schema.org).freeze,
       type: "rdf:Property".freeze
     property :publishingPrinciples,
-      comment: %(Link to page describing the editorial principles of the organization primarily responsible for the creation of the CreativeWork.).freeze,
-      domainIncludes: "schema:CreativeWork".freeze,
+      comment: %(The publishingPrinciples property indicates \(typically via <a class="localLink" href="http://schema.org/URL">URL</a>\) a document describing the editorial principles of an <a class="localLink" href="http://schema.org/Organization">Organization</a> \(or individual e.g. a <a class="localLink" href="http://schema.org/Person">Person</a> writing a blog\) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class="localLink" href="http://schema.org/CreativeWork">CreativeWork</a> \(e.g. <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>\) the principles are those of the party primarily responsible for the creation of the <a class="localLink" href="http://schema.org/CreativeWork">CreativeWork</a>.</p>
+
+<p>While such policies are most typically expressed in natural language, sometimes related information \(e.g. indicating a <a class="localLink" href="http://schema.org/funder">funder</a>\) can be expressed using schema.org terminology.).freeze,
+      domainIncludes: ["schema:CreativeWork".freeze, "schema:Organization".freeze, "schema:Person".freeze],
       label: "publishingPrinciples".freeze,
-      rangeIncludes: "schema:URL".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
       type: "rdf:Property".freeze
     property :purchaseDate,
       comment: %(The date the item e.g. vehicle was purchased by the current owner.).freeze,
@@ -10330,24 +10888,27 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       domainIncludes: "schema:Recipe".freeze,
       label: "recipeIngredient".freeze,
       rangeIncludes: "schema:Text".freeze,
+      subPropertyOf: "schema:supply".freeze,
       type: "rdf:Property".freeze
     property :recipeInstructions,
-      comment: %(A step or instruction involved in making the recipe.).freeze,
+      comment: %(A step in making the recipe, in the form of a single item \(document, video, etc.\) or an ordered list with HowToStep and/or HowToSection items.).freeze,
       domainIncludes: "schema:Recipe".freeze,
       label: "recipeInstructions".freeze,
-      rangeIncludes: ["schema:ItemList".freeze, "schema:Text".freeze],
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:ItemList".freeze, "schema:Text".freeze],
+      subPropertyOf: "schema:steps".freeze,
       type: "rdf:Property".freeze
     property :recipeYield,
       comment: %(The quantity produced by the recipe \(for example, number of people served, number of servings, etc\).).freeze,
       domainIncludes: "schema:Recipe".freeze,
       label: "recipeYield".freeze,
-      rangeIncludes: "schema:Text".freeze,
+      rangeIncludes: ["schema:QuantitativeValue".freeze, "schema:Text".freeze],
+      subPropertyOf: "schema:yield".freeze,
       type: "rdf:Property".freeze
     property :recipient,
       comment: %(A sub property of participant. The participant who is at the receiving end of the action.).freeze,
       domainIncludes: ["schema:AuthorizeAction".freeze, "schema:CommunicateAction".freeze, "schema:DonateAction".freeze, "schema:GiveAction".freeze, "schema:Message".freeze, "schema:PayAction".freeze, "schema:ReturnAction".freeze, "schema:SendAction".freeze, "schema:TipAction".freeze],
       label: "recipient".freeze,
-      rangeIncludes: ["schema:Audience".freeze, "schema:Organization".freeze, "schema:Person".freeze],
+      rangeIncludes: ["schema:Audience".freeze, "schema:ContactPoint".freeze, "schema:Organization".freeze, "schema:Person".freeze],
       subPropertyOf: "schema:participant".freeze,
       type: "rdf:Property".freeze
     property :recognizingAuthority,
@@ -10540,6 +11101,26 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       :"schema:category" => %(issue-1253).freeze,
       :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
+    property :repeatCount,
+      comment: %(Defines the number of times a recurring <a class="localLink" href="http://schema.org/Event">Event</a> will take place).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      domainIncludes: "schema:Schedule".freeze,
+      label: "repeatCount".freeze,
+      rangeIncludes: "schema:Integer".freeze,
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :repeatFrequency,
+      comment: %(Defines the frequency at which <a class="localLink" href="http://schema.org/Events">Events</a> will occur according to a schedule <a class="localLink" href="http://schema.org/Schedule">Schedule</a>. The intervals between
+      events should be defined as a <a class="localLink" href="http://schema.org/Duration">Duration</a> of time.).freeze,
+      :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1457).freeze,
+      domainIncludes: "schema:Schedule".freeze,
+      label: "repeatFrequency".freeze,
+      rangeIncludes: ["schema:Duration".freeze, "schema:Text".freeze],
+      :"schema:category" => %(issue-1457).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "http://health-lifesci.schema.org/frequency".freeze,
+      type: "rdf:Property".freeze
     property :repetitions,
       comment: %(Number of times one should repeat the activity.).freeze,
       domainIncludes: "schema:ExercisePlan".freeze,
@@ -10603,6 +11184,12 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       domainIncludes: "schema:PeopleAudience".freeze,
       label: "requiredMinAge".freeze,
       rangeIncludes: "schema:Integer".freeze,
+      type: "rdf:Property".freeze
+    property :requiredQuantity,
+      comment: %(The required quantity of the item\(s\).).freeze,
+      domainIncludes: "schema:HowToItem".freeze,
+      label: "requiredQuantity".freeze,
+      rangeIncludes: ["schema:Number".freeze, "schema:QuantitativeValue".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
     property :requirements,
       comment: %(Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application \(Examples: DirectX, Java or .NET runtime\).).freeze,
@@ -11193,7 +11780,7 @@ Standards bodies should promote a standard prefix for the identifiers of propert
 <p>For more sophisticated markup of speakable sections beyond simple ID references, either CSS selectors or XPath expressions to pick out document section\(s\) as speakable. For this
 we define a supporting type, <a class="localLink" href="http://schema.org/SpeakableSpecification">SpeakableSpecification</a>  which is defined to be a possible value of the <em>speakable</em> property.).freeze,
       :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1389).freeze,
-      domainIncludes: "schema:WebPage".freeze,
+      domainIncludes: ["schema:Article".freeze, "schema:WebPage".freeze],
       label: "speakable".freeze,
       rangeIncludes: ["schema:SpeakableSpecification".freeze, "schema:URL".freeze],
       :"schema:category" => %(issue-1389).freeze,
@@ -11334,6 +11921,12 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       domainIncludes: "schema:PropertyValueSpecification".freeze,
       label: "stepValue".freeze,
       rangeIncludes: "schema:Number".freeze,
+      type: "rdf:Property".freeze
+    property :steps,
+      comment: %(The steps in the form of a single item \(text, document, video, etc.\) or an ordered list with HowToStep and/or HowToSection items.).freeze,
+      domainIncludes: ["schema:HowTo".freeze, "schema:HowToSection".freeze],
+      label: "steps".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:ItemList".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
     property :storageRequirements,
       comment: %(Storage requirements \(free space required\).).freeze,
@@ -11514,6 +12107,13 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       rangeIncludes: ["schema:Class".freeze, "schema:Enumeration".freeze, "schema:Property".freeze],
       :"schema:isPartOf" => %(http://meta.schema.org/).freeze,
       type: "rdf:Property".freeze
+    property :supply,
+      comment: %(A sub-property of instrument. A supply consumed when performing instructions or a direction.).freeze,
+      domainIncludes: ["schema:HowTo".freeze, "schema:HowToDirection".freeze],
+      label: "supply".freeze,
+      rangeIncludes: ["schema:HowToSupply".freeze, "schema:Text".freeze],
+      subPropertyOf: "schema:instrument".freeze,
+      type: "rdf:Property".freeze
     property :supplyTo,
       comment: %(The area to which the artery supplies blood.).freeze,
       domainIncludes: "schema:Artery".freeze,
@@ -11692,6 +12292,13 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       rangeIncludes: "schema:Place".freeze,
       subPropertyOf: "schema:location".freeze,
       type: "rdf:Property".freeze
+    property :toRecipient,
+      comment: %(A sub property of recipient. The recipient who was directly sent the message.).freeze,
+      domainIncludes: "schema:Message".freeze,
+      label: "toRecipient".freeze,
+      rangeIncludes: ["schema:Audience".freeze, "schema:ContactPoint".freeze, "schema:Organization".freeze, "schema:Person".freeze],
+      subPropertyOf: "schema:recipient".freeze,
+      type: "rdf:Property".freeze
     property :tongueWeight,
       comment: %(<p>The permitted vertical load \(TWR\) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating \(TLR\) or Vertical Load Rating \(VLR\)</p>
 
@@ -11708,6 +12315,13 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       label: "tongueWeight".freeze,
       rangeIncludes: "schema:QuantitativeValue".freeze,
       :"schema:isPartOf" => %(http://auto.schema.org).freeze,
+      type: "rdf:Property".freeze
+    property :tool,
+      comment: %(A sub property of instrument. An object used \(but not consumed\) when performing instructions or a direction.).freeze,
+      domainIncludes: ["schema:HowTo".freeze, "schema:HowToDirection".freeze],
+      label: "tool".freeze,
+      rangeIncludes: ["schema:HowToTool".freeze, "schema:Text".freeze],
+      subPropertyOf: "schema:instrument".freeze,
       type: "rdf:Property".freeze
     property :torque,
       comment: %(<p>The torque \(turning force\) of the vehicle's engine.</p>
@@ -11738,10 +12352,17 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       rangeIncludes: ["schema:Number".freeze, "schema:PriceSpecification".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
     property :totalTime,
-      comment: %(The total time it takes to prepare and cook the recipe, in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.).freeze,
-      domainIncludes: "schema:Recipe".freeze,
+      comment: %(The total time required to perform instructions or a direction \(including time to prepare the supplies\), in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.).freeze,
+      domainIncludes: ["schema:HowTo".freeze, "schema:HowToDirection".freeze],
       label: "totalTime".freeze,
       rangeIncludes: "schema:Duration".freeze,
+      type: "rdf:Property".freeze
+    property :touristType,
+      comment: %(Attraction suitable for type\(s\) of tourist. eg. Children, visitors from a particular country, etc.).freeze,
+      :"dc:source" => [%(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it).freeze, %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism).freeze],
+      domainIncludes: "schema:TouristAttraction".freeze,
+      label: "touristType".freeze,
+      rangeIncludes: ["schema:Audience".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
     property :track,
       comment: %(A music recording \(track\)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.).freeze,
@@ -11893,6 +12514,16 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       domainIncludes: ["schema:PropertyValue".freeze, "schema:QuantitativeValue".freeze, "schema:TypeAndQuantityNode".freeze, "schema:UnitPriceSpecification".freeze],
       label: "unitText".freeze,
       rangeIncludes: "schema:Text".freeze,
+      type: "rdf:Property".freeze
+    property :unnamedSourcesPolicy,
+      comment: %(For an <a class="localLink" href="http://schema.org/Organization">Organization</a> \(typically a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>\), a statement about policy on use of unnamed sources and the decision process required.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      domainIncludes: ["schema:NewsMediaOrganization".freeze, "schema:Organization".freeze],
+      label: "unnamedSourcesPolicy".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:publishingPrinciples".freeze,
       type: "rdf:Property".freeze
     property :unsaturatedFatContent,
       comment: %(The number of grams of unsaturated fat.).freeze,
@@ -12143,6 +12774,16 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       :"schema:supersededBy" => %(schema:seller).freeze,
       subPropertyOf: "schema:participant".freeze,
       type: "rdf:Property".freeze
+    property :verificationFactCheckingPolicy,
+      comment: %(Disclosure about verification and fact-checking processes for a <a class="localLink" href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a> or other fact-checking <a class="localLink" href="http://schema.org/Organization">Organization</a>.).freeze,
+      :"dc:source" => [%(https://github.com/schemaorg/schemaorg/issues/1525).freeze, %(https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP).freeze],
+      domainIncludes: "schema:NewsMediaOrganization".freeze,
+      label: "verificationFactCheckingPolicy".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      :"schema:category" => %(issue-1525).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      subPropertyOf: "schema:publishingPrinciples".freeze,
+      type: "rdf:Property".freeze
     property :version,
       comment: %(The version of the CreativeWork embodied by a specified resource.).freeze,
       domainIncludes: "schema:CreativeWork".freeze,
@@ -12343,7 +12984,7 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       :"dc:source" => %(https://github.com/schemaorg/schemaorg/issues/1389).freeze,
       domainIncludes: "schema:SpeakableSpecification".freeze,
       label: "xpath".freeze,
-      rangeIncludes: "schema:Text".freeze,
+      rangeIncludes: "schema:XPathType".freeze,
       :"schema:category" => %(issue-1389).freeze,
       :"schema:isPartOf" => %(http://pending.schema.org).freeze,
       type: "rdf:Property".freeze
@@ -12358,6 +12999,12 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       domainIncludes: "schema:BusinessAudience".freeze,
       label: "yearsInOperation".freeze,
       rangeIncludes: "schema:QuantitativeValue".freeze,
+      type: "rdf:Property".freeze
+    property :yield,
+      comment: %(The quantity that results by performing instructions. For example, a paper airplane, 10 personalized candles.).freeze,
+      domainIncludes: "schema:HowTo".freeze,
+      label: "yield".freeze,
+      rangeIncludes: ["schema:QuantitativeValue".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
 
     # Extra definitions
@@ -12409,6 +13056,14 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       comment: %(Book format: Audiobook. This is an enumerated value for use with the bookFormat property. There is also a type 'Audiobook' in the bib extension which includes Audiobook specific properties.).freeze,
       label: "AudiobookFormat".freeze,
       type: "schema:BookFormatType".freeze
+    term :AuthoritativeLegalValue,
+      comment: %(Indicates that the publisher gives some special status to the publication of the document. \("The Queens Printer" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications\). Something "AuthoritativeLegalValue" is considered to be also <a class="localLink" href="http://schema.org/OfficialLegalValue">OfficialLegalValue</a>".).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "AuthoritativeLegalValue".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#LegalValue-authoritative).freeze,
+      type: "schema:LegalValueLevel".freeze
     term :Ayurvedic,
       comment: %(A system of medicine that originated in India over thousands of years and that focuses on integrating and balancing the body, mind, and spirit.).freeze,
       label: "Ayurvedic".freeze,
@@ -12516,6 +13171,15 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       comment: %(Indicates that the item is damaged.).freeze,
       label: "DamagedCondition".freeze,
       type: "schema:OfferItemCondition".freeze
+    term :Definitive,
+      comment: %(Indicates a document for which the text is conclusively what the law says and is legally binding. \(e.g. The digitally signed version of an Official Journal.\)
+  Something "Definitive" is considered to be also "<a href="/Authoritative">Authoritative</a>".).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "Definitive".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#LegalValue-definitive).freeze,
+      type: "schema:LegalValueLevel".freeze
     term :DemoAlbum,
       comment: %(DemoAlbum.).freeze,
       :"dc:source" => %(http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ).freeze,
@@ -12778,6 +13442,14 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       label: "Homeopathic".freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "schema:MedicineSystem".freeze
+    term :InForce,
+      comment: %(Indicates that a legislation is in force.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "InForce".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#InForce-inForce).freeze,
+      type: "schema:LegalForceStatus".freeze
     term :InStock,
       comment: %(Indicates that the item is in stock.).freeze,
       label: "InStock".freeze,
@@ -12945,6 +13617,14 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       label: "Nose".freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "schema:PhysicalExam".freeze
+    term :NotInForce,
+      comment: %(Indicates that a legislation is currently not in force.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "NotInForce".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#InForce-notInForce).freeze,
+      type: "schema:LegalForceStatus".freeze
     term :NotYetRecruiting,
       comment: %(Not yet recruiting.).freeze,
       label: "NotYetRecruiting".freeze,
@@ -12983,6 +13663,14 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       subClassOf: "schema:MedicalTherapy".freeze,
       type: "schema:MedicalSpecialty".freeze
+    term :OfficialLegalValue,
+      comment: %(All the documents published by an official publisher should have at least the legal value level "OfficialLegalValue". This indicates that the document was published by an organisation with the public task of making it available \(e.g. a consolidated version of a EU directive published by the EU Office of Publications\).).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "OfficialLegalValue".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#LegalValue-official).freeze,
+      type: "schema:LegalValueLevel".freeze
     term :OfflinePermanently,
       comment: %(Game server status: OfflinePermanently. Server is offline and not available.).freeze,
       label: "OfflinePermanently".freeze,
@@ -13084,6 +13772,14 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       comment: %(A parking map.).freeze,
       label: "ParkingMap".freeze,
       type: "schema:MapCategoryType".freeze
+    term :PartiallyInForce,
+      comment: %(Indicates that parts of the legislation are in force, and parts are not.).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "PartiallyInForce".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#InForce-partiallyInForce).freeze,
+      type: "schema:LegalForceStatus".freeze
     term :Pathology,
       comment: %(A specific branch of medical science that is concerned with the study of the cause, origin and nature of a disease state, including its consequences as a result of manifestation of the disease. In clinical care, the term is used to designate a branch of medicine using laboratory tests to diagnose and determine the prognostic significance of illness.).freeze,
       label: "Pathology".freeze,
@@ -13450,6 +14146,14 @@ we define a supporting type, <a class="localLink" href="http://schema.org/Speaka
       label: "Ultrasound".freeze,
       :"schema:isPartOf" => %(http://health-lifesci.schema.org).freeze,
       type: "schema:MedicalImagingTechnique".freeze
+    term :UnofficialLegalValue,
+      comment: %(Indicates that a document has no particular or special standing \(e.g. a republication of a law by a private publisher\).).freeze,
+      :"dc:source" => [%(http://publications.europa.eu/mdr/eli/index.html).freeze, %(https://github.com/schemaorg/schemaorg/issues/1156).freeze],
+      label: "UnofficialLegalValue".freeze,
+      :"schema:category" => %(issue-1156).freeze,
+      :"schema:isPartOf" => %(http://pending.schema.org).freeze,
+      :"skos:exactMatch" => %(http://data.europa.eu/eli/ontology#LegalValue-unofficial).freeze,
+      type: "schema:LegalValueLevel".freeze
     term :Urologic,
       comment: %(A specific branch of medical science that is concerned with the diagnosis and treatment of diseases pertaining to the urinary tract and the urogenital system.).freeze,
       label: "Urologic".freeze,
