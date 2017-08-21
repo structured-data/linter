@@ -22,7 +22,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.4.0)
+    linter (2.4.1)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -93,8 +93,8 @@ GEM
     json-ld (2.1.5)
       multi_json (~> 1.12)
       rdf (~> 2.2)
-    json-ld-preloaded (2.1.0)
-      json-ld (~> 2.1)
+    json-ld-preloaded (2.2.0)
+      json-ld (~> 2.1, >= 2.1.5)
       multi_json (~> 1.11)
       rdf (~> 2.2)
     ld-patch (0.3.1)
@@ -296,4 +296,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.3
+   1.15.4
