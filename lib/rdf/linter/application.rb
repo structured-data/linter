@@ -279,12 +279,12 @@ module RDF::Linter
     #   Perform strict validation of markup
     def linter(params)
       reader_opts = {
-        base_uri: params["url"],
         headers:  {
           "User-Agent"    => "Structured-Data-Linter/#{RDF::Linter::VERSION}",
           "Cache-Control" => "no-cache"
         },
         verify_none: params["verify_ssl"] == "false",
+        encoding: Encoding::UTF_8
       }
       reader_opts[:format] = params["format"].to_sym if params["format"]
       reader_opts[:base_uri] = params["url"].strip if params["url"]
@@ -294,7 +294,6 @@ module RDF::Linter
         content = content.encode(Encoding::UTF_8) unless content.encoding.to_s.include?("UTF")
         reader_opts[:content] = content
       end
-      reader_opts[:encoding] = Encoding::UTF_8  # Read files as UTF_8
       reader_opts[:debug] = @debug = [] if params["debug"] || settings.development?
       reader_opts[:matched_templates] = []
       reader_opts[:logger] = request.logger
@@ -304,7 +303,11 @@ module RDF::Linter
       root = url("/")
       request.logger.debug "params: #{params.inspect}"
 
-      # Parset and lint input yielding a graph
+      unless reader_opts[:base_uri].nil? || RDF::URI(reader_opts[:base_uri]).absolute?
+        raise ArgumentError, "URL must be absolute: #{reader_opts[:base_uri]}"
+      end
+
+      # Parse and lint input yielding a graph
       graph, messages, reader = parse(reader_opts)
       raise "Graph not read" unless graph
 
