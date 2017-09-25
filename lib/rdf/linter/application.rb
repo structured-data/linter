@@ -348,7 +348,7 @@ module RDF::Linter
         },
         debug: (writer_opts[:debug].join("\n") if writer_opts[:debug])
       }.to_json
-    rescue RDF::ReaderError => e
+    rescue RDF::ReaderError, ArgumentError => e
       request.logger.error "RDF::ReaderError: #{e.message}"
       request.logger.debug e.backtrace.join("\n")
       content_type :json
