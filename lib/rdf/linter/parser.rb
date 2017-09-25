@@ -6,7 +6,7 @@ module RDF::Linter
   module Parser
     CTX = RDF::URI("http://linter.structured-data.org/#tbox")
 
-    # Parse the an input file and re-serialize based on params and/or content-type/accept headers
+    # Parse the an input file based on params and/or content-type header
     # @param [Hash{Symbol => Object}] reader_opts
     #   options also passed to reader
     # @option options [Symbol] :format RDF Reader format symbol for reading content
@@ -14,8 +14,6 @@ module RDF::Linter
     # @option options [Tempfile] :tempfile location of content
     # @option options [String] :content literal content
     # @option options [RDF::URI] :base_uri location of file, or where to treat content as having been located.
-    # @option options [Boolean] :output_format (:linter)
-    #   Output format of graph, defaults to linter-based RDFa.
     # @return [Array(RDF::Graph, Hash{Symbol => Array(String)}, RDF::URI)] graph, messages, base_uri
     def parse(reader_opts)
       logger = reader_opts[:logger] ||= begin

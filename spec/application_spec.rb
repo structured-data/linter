@@ -58,6 +58,13 @@ describe RDF::Linter::Application do
         end
       end
     end
+
+    context "mal-formed" do
+      it "requires url to be absolute" do
+        get '/', {url: 'relative-foo', format: "ntriples"}, "HTTP_ACCEPT" => "application/json"
+        expect(last_response).not_to be_ok
+      end
+    end
   end
 
   describe "post /" do
