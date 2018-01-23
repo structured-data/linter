@@ -109,7 +109,6 @@ namespace :schema do
       ext/health-lifesci/medicalGuideline-example
       ext/health-lifesci/MedicalScholarlyArticle-example
       ext/health-lifesci/medicalWebpage-example
-      ext/health-lifesci/physical-activity-and-exercise
     ).each do |e|
       %x{curl #{schema_base}/#{e}.txt -o ./schema.org/#{e}.txt}
     end
