@@ -233,7 +233,7 @@ describe RDF::Linter::Application do
 
   describe "get /examples/schema.org/:file" do
     {
-      "Car-227-jsonld.html" => "text/html",
+      "Role-PerformanceRole-261-jsonld.html" => "text/html",
     }.each do |file, content_type|
       context file do
         subject {
