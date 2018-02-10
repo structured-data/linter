@@ -28,7 +28,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'json-ld-preloaded',  '~> 2.2'
   gem.add_runtime_dependency      'linkeddata',         '~> 3.0'
   gem.add_runtime_dependency      'nokogiri',           '~> 1.8'
-  gem.add_runtime_dependency      'nokogumbo',          '= 1.4.11'
+  gem.add_runtime_dependency      'nokogumbo',          '~> 1.5'
   gem.add_runtime_dependency      'puma',               '~> 3.1'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.7'
   gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.5'
