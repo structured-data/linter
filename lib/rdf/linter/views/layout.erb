@@ -23,7 +23,7 @@
 
     <%= erb "#{head}_head".to_sym, layout: false if locals[:head] %>
 
-    <script type="text/javascript">
+    <script>
       // Navigation
       $(function () {
         // Select appropriate nav tab
@@ -33,8 +33,8 @@
       });
     </script>
   </head>
-  <body class="linter" role="document">
-    <nav class="navbar" role="navigation">
+  <body class="linter" about="/" typeof="schema:SoftwareApplication cc:Work">
+    <nav class="navbar">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle">
@@ -51,12 +51,12 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="/snippets/" target="_self">Snippet Definitions</a></li>
-              <li><a href="/about/" target="_self">About</a></li>
-              <li><a href="https://github.com/structured-data/linter/releases/tag/<%= RDF::Linter::VERSION.to_s %>" target="_other">Release Notes</a></li>
-              <li><a href="https://github.com/structured-data/linter/issues" target="_other">Issue Tracker</a></li>
+              <li><a resource="/about/" href="/about/" target="_self" property="schema:softwareHelp">About</a></li>
+              <li><a href="https://github.com/structured-data/linter/releases/tag/<%= RDF::Linter::VERSION.to_s %>" target="_blank">Release Notes</a></li>
+              <li><a href="https://github.com/structured-data/linter/issues" target="_blank">Issue Tracker</a></li>
             </ul>
           </li>
-          <li><span class="vers"><%= RDF::Linter::VERSION.to_s %></span></li>
+          <li><span class="vers" about="http://linter.strctured-data.org/" property="softwareVersion"><%= RDF::Linter::VERSION.to_s %></span></li>
         </ul>
       </div>
     </nav>
@@ -65,7 +65,7 @@
     </div>
     <footer id="footer">
       <p class="content">
-       Website content released under a <a rel="cc:license license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+       Website content released under a <a rel="cc:license license schema:license" href="http://creativecommons.org/licenses/by-sa/3.0/">
        Creative Commons Attribution Share-Alike license</a> except where an
        alternate is specified.
        </p>
