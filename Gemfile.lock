@@ -166,10 +166,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: 44ec0e55a4b2b272cbf87ab4fc54f5fc72ec6620
+  revision: 2ba4cee3e285617abfe52509d2434e566f5fc585
   branch: develop
   specs:
-    rdf-rdfa (3.0.0)
+    rdf-rdfa (3.0.1)
       haml (~> 5.0)
       htmlentities (~> 4.3)
       rdf (~> 3.0)
@@ -314,7 +314,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.4.5)
+    linter (2.4.6)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)

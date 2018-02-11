@@ -12,12 +12,12 @@
     <form id="linter_input">
       <fieldset class="input-group" ng-show="fieldset === 'url'">
         <legend>Page URL</legend>
-        <input class="form-control" size="80" type="text" size="80" ng-model="url"/>
+        <input class="form-control" type="text" size="80" ng-model="url"/>
         <input type="submit" ng-click="lintUrl(url)" value="Submit" ng-disabled="fieldset !== 'url'"/>
         <fieldset>
           <legend>Options</legend>
           <label for="verify-ssl">Verify SSL</label>
-          <input name="verify-ssl" type="checkbox"  ng-model="verifySSL" />
+          <input id="verify-ssl" type="checkbox"  ng-model="verifySSL" />
         </fieldset>
         <br/>
         <span class="form-examples">Examples:
@@ -42,7 +42,7 @@
         <table class="table">
           <thead>
             <tr>
-              <th width="50%">Name</th>
+              <th style="width='50%'">Name</th>
               <th>Size</th>
               <th>Progress</th>
               <th>Status</th>
@@ -52,7 +52,7 @@
           <tbody>
            <tr ng-repeat="item in uploader.queue">
               <td><strong>{{ item.file.name }}</strong></td>
-              <td nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+              <td style="white-space: nowrap">{{ item.file.size/1024/1024|number:2 }} MB</td>
               <td>
                 <div class="progress" style="margin-bottom: 0;">
                   <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
@@ -63,7 +63,7 @@
                 <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
                 <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
               </td>
-              <td nowrap>
+              <td style="white-space: nowrap">
                 <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
                   <span class="glyphicon glyphicon-upload"></span> Upload
                 </button>
@@ -84,7 +84,7 @@
         <legend>Markup</legend>
         <textarea class="input form-control" cols="120" rows="15" ng-model="input"></textarea>
         <input type="submit" ng-click="lintInput(input)" value="Submit" ng-disabled="fieldset !== 'input'" />
-      </fieldset class="input-group">
+      </fieldset>
     </form>
   </div>
 

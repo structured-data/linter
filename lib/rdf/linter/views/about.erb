@@ -1,8 +1,10 @@
-<div class="lighter">
-<section class="content">
+<div class="lighter" about="/about/" property="schema:about" resource="/" typeof="schema:WebPage">
+<section class="content" property="schema:description">
   <h1>About the Structured Data Linter</h1>
   <p>
-    The Structured Data Linter is a tool aiding webmasters and web developers
+    The Structured Data
+    <span about="/" property="schema:applicationCategory" resource="https://www.wikidata.org/wiki/Q1727373">Linter</span>
+    is a tool aiding webmasters and web developers
     to verify the structured data present in their HTML pages. Search engines
     use structured data to understand webpages more accurately and to present
     enhanced search results. The Linter understands the <a
@@ -26,9 +28,14 @@
     <a href="http://ogp.me/ns#">Simple Knowledge Organization System (SKOS)</a>, and
     <a href="http://www.data-vocabulary.org">Data-Vocabulary.org</a>.
   <p>
-    The Structured Data Linter was initiated by <a
-    href="http://openspring.net/">Stéphane Corlosquet</a> and <a
-    href="http://greggkellogg.net/">Gregg Kellogg</a>, as part of the larger <a
+    The Structured Data Linter was initiated by <a about="/" property="schema:author"
+    href="http://openspring.net/">Stéphane Corlosquet</a> and <a about="/" property="schema:author"
+    href="http://greggkellogg.net/foaf#me">
+    <span resource="http://greggkellogg.net/foaf#me" typeof="schema:Person">
+      <span property="schema:givenName">Gregg</span>
+      <span property="schema:familyName">Kellogg</span>
+    </span>
+  </a>, as part of the larger <a about="/" property="schema:applicationSuite"
     href="http://structured-data.org">Structured Data initiative</a>. Community
     input is welcome to improve this tool, suggest new features, etc. Anyone
     can contribute by filing <a
