@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.10.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-RUBY-ERUBIS-20482:
+    - '* > linter@2.4.6':
+        reason: None given
+        expires: '2018-03-16T15:38:45.695Z'
+  SNYK-RUBY-NOKOGIRI-20299:
+    - '* > rdf-microdata@2.2.3':
+        reason: None given
+        expires: '2018-03-16T15:38:45.695Z'
+patch: {}
