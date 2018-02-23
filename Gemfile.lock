@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/dryruby/sxp.rb
-  revision: 0bad01bca952e85a4cad4b827acca3ad532fe846
+  revision: 77c5073a773982d9f94f49e266ce01dac4051b68
   branch: develop
   specs:
     sxp (1.0.1)
@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 0fe9cca7346aced5afc3ddab0e591f4eb11b4c7d
+  revision: 10f0d539c024caf10383564199a77164bcd9018c
   branch: develop
   specs:
     json-ld (2.2.1)
@@ -123,7 +123,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-isomorphic
-  revision: 5a02cfe0f2a4e4de896a53f268116443d1dca7c7
+  revision: aef35942fe540132ae1a109020dbbef1765aea03
   branch: develop
   specs:
     rdf-isomorphic (3.0.0)
@@ -314,7 +314,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.4.6)
+    linter (2.4.7)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -337,7 +337,7 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (5.1.4)
+    activesupport (5.1.5)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
@@ -378,7 +378,7 @@ GEM
     erubi (1.7.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.21)
+    ffi (1.9.22)
     foreman (0.84.0)
       thor (~> 0.19.1)
     haml (5.0.4)
@@ -390,7 +390,7 @@ GEM
     htmlentities (4.3.4)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (0.9.4)
+    i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     link_header (0.0.8)
@@ -400,7 +400,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mustermann (1.0.1)
+    mustermann (1.0.2)
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
     netrc (0.11.0)
@@ -409,12 +409,12 @@ GEM
     nokogumbo (1.5.0)
       nokogiri
     oj (2.18.5)
-    public_suffix (3.0.1)
+    public_suffix (3.0.2)
     puma (3.11.2)
     rack (2.0.4)
     rack-cache (1.7.1)
       rack (>= 0.4)
-    rack-protection (2.0.0)
+    rack-protection (2.0.1)
       rack
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
@@ -455,10 +455,10 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    sinatra (2.0.0)
+    sinatra (2.0.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.0)
+      rack-protection (= 2.0.1)
       tilt (~> 2.0)
     sinatra-asset-pipeline (2.0.0)
       coffee-script (~> 2.4)
