@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 10f0d539c024caf10383564199a77164bcd9018c
+  revision: 4e4abd980e6b95ba01d140537d02ad197da95477
   branch: develop
   specs:
     json-ld (2.2.1)
@@ -166,7 +166,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: 2ba4cee3e285617abfe52509d2434e566f5fc585
+  revision: 64ca6c8311daa7c5b1eaa24717525ed7b4d1ac33
   branch: develop
   specs:
     rdf-rdfa (3.0.1)
@@ -314,7 +314,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (2.4.7)
+    linter (2.4.8)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -378,7 +378,7 @@ GEM
     erubi (1.7.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.9.22)
+    ffi (1.9.23)
     foreman (0.84.0)
       thor (~> 0.19.1)
     haml (5.0.4)
@@ -416,7 +416,7 @@ GEM
       rack (>= 0.4)
     rack-protection (2.0.1)
       rack
-    rack-test (0.8.2)
+    rack-test (0.8.3)
       rack (>= 1.0, < 3)
     rake (12.3.0)
     rb-fsevent (0.10.2)
