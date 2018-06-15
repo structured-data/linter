@@ -2825,10 +2825,10 @@
       "rdfa": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-rdfa.html",
       "jsonld": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-jsonld.html"
     },
-    "fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
-      "microdata": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
-      "rdfa": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
-      "jsonld": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
+    "encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
+      "microdata": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
+      "rdfa": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
+      "jsonld": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
     }
   },
   "accessibilityControl": {
@@ -2837,10 +2837,10 @@
       "rdfa": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-rdfa.html",
       "jsonld": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-jsonld.html"
     },
-    "fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
-      "microdata": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
-      "rdfa": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
-      "jsonld": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
+    "encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
+      "microdata": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
+      "rdfa": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
+      "jsonld": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
     }
   },
   "accessibilityFeature": {
@@ -2849,15 +2849,15 @@
       "rdfa": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-rdfa.html",
       "jsonld": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-jsonld.html"
     },
-    "accessibilityFeature-accessibilityHazard-fileFormat-229": {
-      "microdata": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-microdata.html",
-      "rdfa": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-rdfa.html",
-      "jsonld": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-jsonld.html"
+    "accessibilityFeature-accessibilityHazard-encodingFormat-229": {
+      "microdata": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-microdata.html",
+      "rdfa": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-rdfa.html",
+      "jsonld": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-jsonld.html"
     },
-    "fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
-      "microdata": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
-      "rdfa": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
-      "jsonld": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
+    "encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
+      "microdata": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
+      "rdfa": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
+      "jsonld": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
     }
   },
   "accessibilityHazard": {
@@ -2866,15 +2866,15 @@
       "rdfa": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-rdfa.html",
       "jsonld": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-228-jsonld.html"
     },
-    "accessibilityFeature-accessibilityHazard-fileFormat-229": {
-      "microdata": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-microdata.html",
-      "rdfa": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-rdfa.html",
-      "jsonld": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-jsonld.html"
+    "accessibilityFeature-accessibilityHazard-encodingFormat-229": {
+      "microdata": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-microdata.html",
+      "rdfa": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-rdfa.html",
+      "jsonld": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-jsonld.html"
     },
-    "fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
-      "microdata": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
-      "rdfa": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
-      "jsonld": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
+    "encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
+      "microdata": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
+      "rdfa": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
+      "jsonld": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
     }
   },
   "additionalProperty": {
@@ -3210,6 +3210,16 @@
       "microdata": "schema.org/eg-6-microdata.html",
       "rdfa": "schema.org/eg-6-rdfa.html",
       "jsonld": "schema.org/eg-6-jsonld.html"
+    },
+    "accessibilityFeature-accessibilityHazard-encodingFormat-229": {
+      "microdata": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-microdata.html",
+      "rdfa": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-rdfa.html",
+      "jsonld": "schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-229-jsonld.html"
+    },
+    "encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
+      "microdata": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
+      "rdfa": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
+      "jsonld": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
     }
   },
   "event": {
@@ -3238,18 +3248,6 @@
       "microdata": "schema.org/eg-7-microdata.html",
       "rdfa": "schema.org/eg-7-rdfa.html",
       "jsonld": "schema.org/eg-7-jsonld.html"
-    }
-  },
-  "fileFormat": {
-    "accessibilityFeature-accessibilityHazard-fileFormat-229": {
-      "microdata": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-microdata.html",
-      "rdfa": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-rdfa.html",
-      "jsonld": "schema.org/accessibilityFeature-accessibilityHazard-fileFormat-229-jsonld.html"
-    },
-    "fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230": {
-      "microdata": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-microdata.html",
-      "rdfa": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-rdfa.html",
-      "jsonld": "schema.org/fileFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-230-jsonld.html"
     }
   },
   "genre": {
@@ -3903,6 +3901,27 @@
       "microdata": "schema.org/digitaldocument-1-microdata.html",
       "rdfa": "schema.org/digitaldocument-1-rdfa.html",
       "jsonld": "schema.org/digitaldocument-1-jsonld.html"
+    }
+  },
+  "TouristTrip": {
+    "trip-1": {
+      "microdata": "schema.org/trip-1-microdata.html",
+      "rdfa": "schema.org/trip-1-rdfa.html",
+      "jsonld": "schema.org/trip-1-jsonld.html"
+    }
+  },
+  "Trip": {
+    "trip-1": {
+      "microdata": "schema.org/trip-1-microdata.html",
+      "rdfa": "schema.org/trip-1-rdfa.html",
+      "jsonld": "schema.org/trip-1-jsonld.html"
+    }
+  },
+  "itinerary": {
+    "trip-1": {
+      "microdata": "schema.org/trip-1-microdata.html",
+      "rdfa": "schema.org/trip-1-rdfa.html",
+      "jsonld": "schema.org/trip-1-jsonld.html"
     }
   }
 }
