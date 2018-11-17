@@ -17,46 +17,46 @@ GIT
 
 GIT
   remote: https://github.com/dryruby/sxp.rb
-  revision: 77c5073a773982d9f94f49e266ce01dac4051b68
+  revision: a4c21f2e7eecd734b4f1c140893cc5a3df831122
   branch: develop
   specs:
     sxp (1.0.1)
-      rdf (>= 2.2, < 4.0)
+      rdf (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 67f310ec951ba1657ff4ddc734dd4f9dcaaac344
+  revision: d4556f730a9b97a739d9d30f601b8e8ddbe55cd4
   branch: develop
   specs:
-    json-ld (2.2.1)
+    json-ld (3.0.2)
       multi_json (~> 1.12)
       rdf (>= 2.2.8, < 4.0)
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: dbe260b53935377981021334f8fad4d9ef3327fa
+  revision: 585102706a8f9f668e424ad3a5cf176ac4a2bd7d
   branch: develop
   specs:
-    json-ld-preloaded (2.2.3)
-      json-ld (>= 2.2, < 4.0)
+    json-ld-preloaded (3.0.1)
+      json-ld (~> 3.0)
       multi_json (~> 1.12)
-      rdf (>= 2.2, < 4.0)
+      rdf (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/ld-patch
-  revision: 9feafc9ec1a8575612668f69a29ef047264d28f7
+  revision: 2f348de18b710993a6047341013cd0c037e1b400
   branch: develop
   specs:
     ld-patch (0.3.3)
       ebnf (~> 1.1)
-      rdf (>= 2.2, < 4.0)
-      rdf-xsd (>= 2.2, < 4.0)
-      sparql (>= 2.2, < 4.0)
+      rdf (~> 3.0)
+      rdf-xsd (~> 3.0)
+      sparql (~> 3.0)
       sxp (~> 1.0)
 
 GIT
   remote: https://github.com/ruby-rdf/linkeddata
-  revision: 0d5a83cc74bed52b508ddc8272092dd8e4644623
+  revision: 2b666d43d7a4c019ad86ec58c610b76e68507a3b
   branch: develop
   specs:
     linkeddata (3.0.1)
@@ -87,7 +87,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rack-linkeddata
-  revision: f1546f1c2327892a1c9d31cf1d9b2bcc1d4bd88b
+  revision: a9631ac0a78a3454f625e501307367ea98e0f68e
   branch: develop
   specs:
     rack-linkeddata (2.2.3)
@@ -97,24 +97,24 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: c7356a6367f8f2ce4c23f0d6908bb3cd84bdb6c5
+  revision: 1df873100431a9211f83d69f929e3578edb1af0b
   branch: develop
   specs:
-    rdf (3.0.2)
+    rdf (3.0.6)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-aggregate-repo
-  revision: e6e8d1d6826efc403f1bde21599ef208b00c1a26
+  revision: 57d526e3bd82897edcdf540e26da1db3a3b53dc1
   branch: develop
   specs:
     rdf-aggregate-repo (2.2.1)
-      rdf (>= 2.2, < 4.0)
+      rdf (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-do
-  revision: 9c1e0ad288798fd10746f9ea8d30b3fc33589090
+  revision: 2ba3f581f0e81fb7ec44ae336cddc6456a2ec50f
   branch: develop
   specs:
     rdf-do (2.2.0)
@@ -123,7 +123,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-isomorphic
-  revision: aef35942fe540132ae1a109020dbbef1765aea03
+  revision: b2a4cf0fe11284332cde5e54066d32ebaf0b4d0f
   branch: develop
   specs:
     rdf-isomorphic (3.0.0)
@@ -131,7 +131,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-json
-  revision: 1af65b89b732fcff9436923e633b7984e1e661ac
+  revision: 3ea668ef8905430a3226d59b0ffead4dab62a9ca
   branch: develop
   specs:
     rdf-json (2.2.0)
@@ -139,7 +139,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-microdata
-  revision: 2d8dbca83eeca29b8ffbb0eaab9acbc9c0b61104
+  revision: 4faeb525a56b398812c76eff33693740cf700c88
   branch: develop
   specs:
     rdf-microdata (2.2.3)
@@ -150,15 +150,15 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-n3
-  revision: 3a340a80c18256ebf1b9f082903484282a19894c
+  revision: eeb7e2ca9463ea67889362aa6573aae4ddf9c272
   branch: develop
   specs:
-    rdf-n3 (3.0.0)
+    rdf-n3 (3.0.1)
       rdf (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-normalize
-  revision: 954d9c6738f16908a9ad679738471ae2ce33a996
+  revision: 7721c0bf9bdfb8e3d360cf55a8a7e6ddc27c9fe7
   branch: develop
   specs:
     rdf-normalize (0.3.3)
@@ -166,7 +166,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: 64ca6c8311daa7c5b1eaa24717525ed7b4d1ac33
+  revision: 4ca5edf60ab8927f0320ec966eef11e0737b5c2f
   branch: develop
   specs:
     rdf-rdfa (3.0.1)
@@ -178,18 +178,18 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfxml
-  revision: dd99a73f7b9931bcd7b3893007e5c26d894c23da
+  revision: 68047f4a291520b196a0af497387ba3499d98643
   branch: develop
   specs:
     rdf-rdfxml (2.2.1)
       htmlentities (~> 4.3)
       rdf (~> 3.0)
-      rdf-rdfa (>= 2.2, < 4.0)
+      rdf-rdfa (~> 3.0)
       rdf-xsd (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: 9fa5bbe5866dea125e248549088c6c0d090fca94
+  revision: 63fee6d2320c554a40f7067477c7bf8ba1601a2b
   branch: develop
   specs:
     rdf-reasoner (0.5.1)
@@ -199,7 +199,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: 9aa20fb58f9a066fe09e0f3fb044f45ab7625a91
+  revision: ab2aa521dd4665bf7091423dda437693716cf403
   branch: develop
   specs:
     rdf-spec (3.0.0)
@@ -211,7 +211,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-tabular
-  revision: e6dd10a784d9cb6beffdac3d2337e95bee84ced7
+  revision: 40be65aa0ee46978d05ee80fbdcb9e3869f57b7b
   branch: develop
   specs:
     rdf-tabular (2.2.1)
@@ -224,17 +224,17 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-trig
-  revision: b2bcf1b9c9ab06aedefcaf5dbf92b042b01f5abc
+  revision: ea6e53796b677c203f2cc7ad220b744ea32d227b
   branch: develop
   specs:
-    rdf-trig (2.2.0)
-      ebnf (~> 1.0, >= 1.0.1)
+    rdf-trig (3.0.1)
+      ebnf (~> 1.1)
       rdf (~> 3.0)
-      rdf-turtle (~> 3.0)
+      rdf-turtle (~> 3.0, >= 3.0.3)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-trix
-  revision: c76891d5bdd6ebbb70a61e7b7f9b2adf85eae799
+  revision: 7eafacbcb8c1a488e9b0af23375590db6e07ea94
   branch: develop
   specs:
     rdf-trix (2.2.1)
@@ -242,46 +242,46 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-turtle
-  revision: f03e5032c9eeb4f21aca9f3b97110284625afb55
+  revision: fb10116ce928fa9442ea0f49f71ced6185eb644d
   branch: develop
   specs:
-    rdf-turtle (3.0.1)
+    rdf-turtle (3.0.3)
       ebnf (~> 1.1)
       rdf (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: f34ce0a86d847d331f61e0c9284e7ccd7949540f
+  revision: 799235274ed78bd2f17b9a6cf1ede1e4725d4dcd
   branch: develop
   specs:
-    rdf-vocab (3.0.2)
+    rdf-vocab (3.0.3)
       rdf (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-xsd
-  revision: 0489489cebb4969369552d7ef852328ee7aec059
+  revision: e532a0ab71893f4138f2cdf49a828fb214d3a83d
   branch: develop
   specs:
-    rdf-xsd (3.0.0)
+    rdf-xsd (3.0.1)
       rdf (~> 3.0)
 
 GIT
   remote: https://github.com/ruby-rdf/shex
-  revision: f279d12a594c1cb238c7e8e6a8688d56a2988053
+  revision: 7708cc1a0591b3c079654dc1edc05d728fdda3c7
   branch: develop
   specs:
     shex (0.5.2)
       ebnf (~> 1.1)
       json-ld (>= 2.2, < 4.0)
-      json-ld-preloaded (>= 2.2, < 4.0)
-      rdf (>= 2.2, < 4.0)
-      rdf-xsd (>= 2.2, < 4.0)
-      sparql (>= 2.2, < 4.0)
+      json-ld-preloaded (~> 3.0)
+      rdf (~> 3.0)
+      rdf-xsd (~> 3.0)
+      sparql (~> 3.0)
       sxp (~> 1.0)
 
 GIT
   remote: https://github.com/ruby-rdf/sinatra-linkeddata
-  revision: 9820f9d87e8e8c0c1b796f1c0fc8fadf3e9f6e09
+  revision: 85b3265d11229500bd0632ecff337183f4490e66
   branch: develop
   specs:
     sinatra-linkeddata (2.2.1)
@@ -290,10 +290,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/sparql
-  revision: 683a29666c28f70f50800c8c98386617c3820bc5
+  revision: 7b34b4cf091aafa2a9e1618b7735ab2572da4cd2
   branch: develop
   specs:
-    sparql (3.0.1)
+    sparql (3.0.2)
       builder (~> 3.2)
       ebnf (~> 1.1)
       rdf (~> 3.0)
@@ -304,7 +304,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/sparql-client
-  revision: 609d9eed6a1f4a5d469eb891dad7100f6ff7b1f0
+  revision: 8957d3a567f61212a199807571ee72e9083e1830
   branch: develop
   specs:
     sparql-client (3.0.0)
@@ -314,12 +314,12 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.5.0)
+    linter (3.5.1)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
       haml (~> 5.0)
-      json-ld-preloaded (~> 2.2)
+      json-ld-preloaded (~> 3.0)
       linkeddata (~> 3.0)
       nokogiri (~> 1.8)
       nokogumbo (~> 1.5)
@@ -337,7 +337,7 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (5.2.0)
+    activesupport (5.2.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -346,7 +346,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     bcp47 (0.3.3)
       i18n
-    better_errors (2.4.0)
+    better_errors (2.5.0)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
@@ -359,7 +359,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.3)
     connection_pool (2.2.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
@@ -370,8 +370,8 @@ GEM
     docile (1.3.1)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
-    ebnf (1.1.2)
-      rdf (>= 2.2, < 4.0)
+    ebnf (1.1.3)
+      rdf (~> 3.0)
       sxp (~> 1.0)
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
@@ -379,7 +379,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.25)
-    foreman (0.84.0)
+    foreman (0.85.0)
       thor (~> 0.19.1)
     haml (5.0.4)
       temple (>= 0.8.0)
@@ -390,31 +390,31 @@ GEM
     htmlentities (4.3.4)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (1.0.1)
+    i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     link_header (0.0.8)
-    mime-types (3.1)
+    mime-types (3.2.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
+    mime-types-data (3.2018.0812)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
     netrc (0.11.0)
-    nokogiri (1.8.2)
+    nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
     nokogumbo (1.5.0)
       nokogiri
     oj (2.18.5)
-    public_suffix (3.0.2)
-    puma (3.11.4)
-    rack (2.0.5)
+    public_suffix (3.0.3)
+    puma (3.12.0)
+    rack (2.0.6)
     rack-cache (1.8.0)
       rack (>= 0.4)
-    rack-protection (2.0.3)
+    rack-protection (2.0.4)
       rack
     rack-test (0.8.3)
       rack (>= 1.0, < 3)
@@ -426,24 +426,24 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rspec (3.7.0)
-      rspec-core (~> 3.7.0)
-      rspec-expectations (~> 3.7.0)
-      rspec-mocks (~> 3.7.0)
-    rspec-core (3.7.1)
-      rspec-support (~> 3.7.0)
-    rspec-expectations (3.7.0)
+    rspec (3.8.0)
+      rspec-core (~> 3.8.0)
+      rspec-expectations (~> 3.8.0)
+      rspec-mocks (~> 3.8.0)
+    rspec-core (3.8.0)
+      rspec-support (~> 3.8.0)
+    rspec-expectations (3.8.2)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
+      rspec-support (~> 3.8.0)
     rspec-its (1.2.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.7.0)
+    rspec-mocks (3.8.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.7.0)
-    rspec-support (3.7.1)
+      rspec-support (~> 3.8.0)
+    rspec-support (3.8.0)
     safe_yaml (1.0.4)
-    sass (3.5.6)
+    sass (3.7.2)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -455,19 +455,19 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    sinatra (2.0.3)
+    sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.3)
+      rack-protection (= 2.0.4)
       tilt (~> 2.0)
-    sinatra-asset-pipeline (2.1.0)
+    sinatra-asset-pipeline (2.2.0)
       coffee-script (~> 2.4)
       rake (~> 12.3)
       sass (~> 3.5)
       sinatra (~> 2.0)
       sprockets (~> 3.7)
       sprockets-helpers (~> 1.2)
-    sprockets (3.7.1)
+    sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-helpers (1.2.1)
@@ -477,7 +477,7 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    trollop (2.1.2)
+    trollop (2.9.9)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -489,7 +489,7 @@ GEM
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff
-    yard (0.9.14)
+    yard (0.9.16)
 
 PLATFORMS
   ruby
@@ -543,4 +543,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.1
+   1.17.1

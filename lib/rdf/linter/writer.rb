@@ -7,12 +7,14 @@ module RDF::Linter
   #
   # Adds some special-purpose controls to the RDF::RDFa::Writer class
   class Writer < RDF::RDFa::Writer
+    format RDF::RDFa::Format
     def initialize(output = $stdout, options = {}, &block)
       options = {
         standard_prefixes: true,
         haml: LINTER_HAML,
         matched_templates: [],
         prefixes: {},
+        encoding: "utf-8"
       }.merge(options)
       options[:logger] = options.fetch(:debug, false)
       options[:prefixes].delete(:dcterms) if options[:prefixes].has_key?(:dc)
