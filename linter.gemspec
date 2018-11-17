@@ -17,7 +17,6 @@ Gem::Specification.new do |gem|
   gem.platform           = Gem::Platform::RUBY
   gem.files              = %w(README.md VERSION) + Dir.glob('lib/**/*.rb')
   gem.require_paths      = %w(lib)
-  gem.has_rdoc           = false
 
   gem.required_ruby_version       = '>= 2.2.2'
   gem.requirements                = []
@@ -25,7 +24,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'equivalent-xml'
   gem.add_runtime_dependency      'erubis',             '~> 2.7'
   gem.add_runtime_dependency      'haml',               '~> 5.0'
-  gem.add_runtime_dependency      'json-ld-preloaded',  '~> 2.2'
+  gem.add_runtime_dependency      'json-ld-preloaded',  '~> 3.0'
   gem.add_runtime_dependency      'linkeddata',         '~> 3.0'
   gem.add_runtime_dependency      'nokogiri',           '~> 1.8'
   gem.add_runtime_dependency      'nokogumbo',          '~> 1.5'
