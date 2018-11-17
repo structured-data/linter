@@ -2616,6 +2616,13 @@
       "jsonld": "schema.org/tourism-9-jsonld.html"
     }
   },
+  "TouristTrip": {
+    "trip-1": {
+      "microdata": "schema.org/trip-1-microdata.html",
+      "rdfa": "schema.org/trip-1-rdfa.html",
+      "jsonld": "schema.org/trip-1-jsonld.html"
+    }
+  },
   "TrackAction": {
     "TrackAction-135": {
       "jsonld": "schema.org/TrackAction-135-jsonld.html"
@@ -2654,6 +2661,13 @@
       "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-273-microdata.html",
       "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-273-rdfa.html",
       "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-273-jsonld.html"
+    }
+  },
+  "Trip": {
+    "trip-1": {
+      "microdata": "schema.org/trip-1-microdata.html",
+      "rdfa": "schema.org/trip-1-rdfa.html",
+      "jsonld": "schema.org/trip-1-jsonld.html"
     }
   },
   "UnRegisterAction": {
@@ -3409,6 +3423,13 @@
       "jsonld": "schema.org/itemlist-1-jsonld.html"
     }
   },
+  "itinerary": {
+    "trip-1": {
+      "microdata": "schema.org/trip-1-microdata.html",
+      "rdfa": "schema.org/trip-1-rdfa.html",
+      "jsonld": "schema.org/trip-1-jsonld.html"
+    }
+  },
   "latitude": {
     "eg-5": {
       "microdata": "schema.org/eg-5-microdata.html",
@@ -3901,27 +3922,6 @@
       "microdata": "schema.org/digitaldocument-1-microdata.html",
       "rdfa": "schema.org/digitaldocument-1-rdfa.html",
       "jsonld": "schema.org/digitaldocument-1-jsonld.html"
-    }
-  },
-  "TouristTrip": {
-    "trip-1": {
-      "microdata": "schema.org/trip-1-microdata.html",
-      "rdfa": "schema.org/trip-1-rdfa.html",
-      "jsonld": "schema.org/trip-1-jsonld.html"
-    }
-  },
-  "Trip": {
-    "trip-1": {
-      "microdata": "schema.org/trip-1-microdata.html",
-      "rdfa": "schema.org/trip-1-rdfa.html",
-      "jsonld": "schema.org/trip-1-jsonld.html"
-    }
-  },
-  "itinerary": {
-    "trip-1": {
-      "microdata": "schema.org/trip-1-microdata.html",
-      "rdfa": "schema.org/trip-1-rdfa.html",
-      "jsonld": "schema.org/trip-1-jsonld.html"
     }
   }
 }
