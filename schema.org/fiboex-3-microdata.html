@@ -4,7 +4,7 @@
     <ul>
         <li itemscope itemtype="http://schema.org/BankAccount"><b><span itemprop="name">Select Account</span></b><br/>
             <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <link itemprop="eligibleCustomerType" content="http://purl.org/goodrelations/v1#Enduser"/>
+                <link itemprop="eligibleCustomerType" href="http://purl.org/goodrelations/v1#Enduser"/>
                 <span itemprop="offeredBy" itemscope itemtype="http://schema.org/BankOrCreditUnion">
                     <meta itemprop="name" content="RBS"/>
                     <link itemprop="url" href="http://rbs.co.uk"/>
@@ -16,13 +16,13 @@
         </li>
         <li itemscope itemtype="http://schema.org/BankAccount"><b><span itemprop="name">Select Silver Account</span></b><br/>
             <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <link itemprop="eligibleCustomerType" content="http://purl.org/goodrelations/v1#Enduser"/>
+                <link itemprop="eligibleCustomerType" href="http://purl.org/goodrelations/v1#Enduser"/>
                 <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/PriceSpecification">
                     <meta itemprop="priceCurrency" content="GBP"/>
                     - £<span itemprop="price">10</span> per month<br/>
                     <span itemprop="eligibleQuantity" itemscope itemtype="http://schema.org/QuantitativeValue">
                         <meta itemprop="value" content="1"/><meta itemprop="unitCode" content="ANN"/>
-                    <s/pan>
+                    </span>
                 </span>
             -   <span itemprop="description">You need to be aged 18 or over, and UK resident to apply</span>
                 <span itemprop="offeredBy" itemscope itemtype="http://schema.org/BankOrCreditUnion">
@@ -34,7 +34,7 @@
         </li>
         <li itemscope itemtype="http://schema.org/BankAccount"><b><span itemprop="name">Select Platinum Account</span></b><br/>
             <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <link itemprop="eligibleCustomerType" content="http://purl.org/goodrelations/v1#Enduser"/>
+                <link itemprop="eligibleCustomerType" href="http://purl.org/goodrelations/v1#Enduser"/>
                 <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/PriceSpecification">
                     <meta itemprop="priceCurrency" content="GBP"/>
                     - £<span itemprop="price">16</span> per month<br/>
@@ -51,8 +51,8 @@
             <link itemprop="feesAndCommissionsSpecification" href="http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"/>
         </li>
         <li itemscope itemtype="http://schema.org/BankAccount"><b><span itemprop="name">Black Account</span></b><br/>
-            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                <link itemprop="eligibleCustomerType" content="http://purl.org/goodrelations/v1#Enduser">
+            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <link itemprop="eligibleCustomerType" href="http://purl.org/goodrelations/v1#Enduser">
                 <span itemprop="priceSpecification" itemscope itemtype="http://schema.org/PriceSpecification">
                     <meta itemprop="priceCurrency" content="GBP"/>
                     - £<span itemprop="price">24</span> per month<br/>
@@ -60,17 +60,17 @@
                         <meta itemprop="value" content="1"/><meta itemprop="unitCode" content="ANN"/>
                     </span>
                 </span>
-            -   <span itemprop="description">   You need to be aged 18 or over, and UK resident to apply, with either:
+            -   <div itemprop="description">   You need to be aged 18 or over, and UK resident to apply, with either:
                 <ul>
                     <li>£100,000 sole income paid into this account</li>
                     <li>a RBS mortgage of at lease £300,000</li>
                     <li>£100,000 in RBS savings and investments</li>
-                </ul></span>
+                </ul></div>
                 <span itemprop="offeredBy" itemscope itemtype="http://schema.org/BankOrCreditUnion">
                     <meta itemprop="name" content="RBS"/>
                     <link itemprop="url" href="http://rbs.co.uk"/>
                 </span>
-            </span>
+            </div>
             <link itemprop="feesAndCommissionsSpecification" href="http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf"/>
         </li>
     </ul>

@@ -1,44 +1,27 @@
-<div xmlns="http://www.w3.org/1999/xhtml"
-  prefix="
-    schema: http://schema.org/
-    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-    xsd: http://www.w3.org/2001/XMLSchema#
-    rdfs: http://www.w3.org/2000/01/rdf-schema#"
-  >
-  <div typeof="schema:Cemetery">
-    <div rel="rdf:type" resource="http://schema.org/TouristAttraction"></div>
-    <div property="schema:name" content="Villers–Bretonneux Australian National Memorial"></div>
-    <div property="schema:description" content="The Australian National Memorial, Villers–Bretonneux is the main memorial to Australian military personnel killed on the Western Front during World War I."></div>
-    <div rel="schema:touristType">
-      <div typeof="schema:Audience">
-        <div property="schema:audienceType" content="Memorial Tourism"></div>
-        <div rel="schema:geographicArea">
-          <div typeof="schema:AdministrativeArea">
-            <div property="schema:name" content="New Zealand"></div>
-          </div>
+<div vocab="http://schema.org/" typeof="Cemetery TouristAttraction">
+    <div property="name" content="Villers–Bretonneux Australian National Memorial"></div>
+    <div property="description" content="The Australian National Memorial, Villers–Bretonneux is the main memorial to Australian military personnel killed on the Western Front during World War I."></div>
+    <div property="touristType" typeof="Audience">
+        <div property="audienceType" content="Memorial Tourism"></div>
+        <div property="geographicArea" typeof="AdministrativeArea">
+            &gt;
+            <div property="name" content="New Zealand"></div>
         </div>
-        <div rel="schema:geographicArea">
-          <div typeof="schema:AdministrativeArea">
-            <div property="schema:name" content="Australia"></div>
-          </div>
+        <div property="geographicArea" typeof="AdministrativeArea">
+            <div property="name" content="Australia"></div>
         </div>
-      </div>
     </div>
-    <div rel="schema:address">
-      <div typeof="schema:PostalAddress">
-        <div property="schema:addressCountry" content="FR"></div>
-        <div property="schema:addressLocality" content="Fouilloy"></div>
-      </div>
-    </div>
-    <div rel="schema:geo">
-      <div typeof="schema:GeoCoordinates">
-        <div property="schema:latitude" content="49.8852515"></div>
-        <div property="schema:longitude" content="2.5106436"></div>
-      </div>
-    </div>
-    <div property="schema:publicAccess" datatype="xsd:boolean" content="true"></div>
-    <div property="schema:isAccessibleForFree" datatype="xsd:boolean" content="true"></div>
-    <div rel="schema:sameAs" resource="https://www.wikidata.org/wiki/Q2544355"></div>
-    <div rel="schema:image" resource="https://commons.wikimedia.org/wiki/File%3AVillers-Bretonneux_m%C3%A9morial_australien_(tour_et_croix)_1.jpg"></div>
-  </div>
+</div>
+<div property="address" typeof="PostalAddress">
+    <div property="addressCountry" content="FR"></div>
+    <div property="addressLocality" content="Fouilloy"></div>
+</div>
+<div property="geo" typeof="GeoCoordinates">
+    <div property="latitude" content="49.8852515"></div>
+    <div property="longitude" content="2.5106436"></div>
+</div>
+<div property="publicAccess" datatype="xsd:boolean" content="true"></div>
+<div property="isAccessibleForFree" datatype="xsd:boolean" content="true">
+    <link property="sameAs" href="https://www.wikidata.org/wiki/Q2544355">
+    <link property="image" href="https://commons.wikimedia.org/wiki/File%3AVillers-Bretonneux_m%C3%A9morial_australien_(tour_et_croix)_1.jpg">
 </div>
