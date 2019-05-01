@@ -1,33 +1,24 @@
-<div xmlns="http://www.w3.org/1999/xhtml"
-  prefix="
-    schema: http://schema.org/
-    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-    xsd: http://www.w3.org/2001/XMLSchema#
-    rdfs: http://www.w3.org/2000/01/rdf-schema#"
-  >
-  <div typeof="schema:TouristAttraction">
-    <div rel="rdf:type" resource="http://schema.org/Winery"></div>
-    <div property="schema:name" content="Bodegas Protos"></div>
-    <div property="schema:description" content="Protos means “first” in Greek, and since 1927 this centenary winery has embarked on the mission to be number one. This attitude has driven their search for constant improvement. The new facilities designed by prestigious architect and winner of the Priztker Award, Sir Richard Rogers, once again took the winery to the forefront of wine tourism. A tour around Protos includes a detailed visit to both the underground cellar dug into the hillside of Peñafiel Castle and to the winery designed by celebrated architect Sir Richard Rogers. After completing the itinerary, visitors can taste 2 excellent Protos wines and will receive a gift. The visit lasts 1.5 hours (including the sampling)."></div>
-    <div rel="schema:address">
-      <div typeof="schema:PostalAddress">
-        <div property="schema:addressCountry" content="ES"></div>
-        <div property="schema:addressLocality" content="Peñafiel"></div>
-        <div property="schema:postalCode" content="47300"></div>
-        <div property="schema:streetAddress" content="C/ Bodegas Protos, 24-28"></div>
-      </div>
+<div>
+    <div vocab="http://schema.org/" typeof="Winery TouristAttraction">
+        <div property="name" content="Bodegas Protos"></div>
+        <div property="description" content="Protos means “first” in Greek, and since 1927 this centenary winery has embarked on the mission to be number one. This attitude has driven their search for constant improvement. The new facilities designed by prestigious architect and winner of the Priztker Award, Sir Richard Rogers, once again took the winery to the forefront of wine tourism. A tour around Protos includes a detailed visit to both the underground cellar dug into the hillside of Peñafiel Castle and to the winery designed by celebrated architect Sir Richard Rogers. After completing the itinerary, visitors can taste 2 excellent Protos wines and will receive a gift. The visit lasts 1.5 hours (including the sampling)."></div>
+        <div property="address" typeof="PostalAddress">
+            <div property="addressCountry" content="ES"></div>
+            <div property="addressLocality" content="Peñafiel"></div>
+            <div property="postalCode" content="47300"></div>
+            <div property="streetAddress" content="C/ Bodegas Protos, 24-28"></div>
+        </div>
+        <div property="publicAccess" datatype="xsd:boolean" content="true"></div>
+        <div property="availableLanguage" content="English"></div>
+        <div property="availableLanguage" content="Spanish"></div>
+        <div property="openingHours" content="Mo-Fr 10:00-13:00"></div>
+        <div property="openingHours" content="Mo-Fr 16:30-18:00"></div>
+        <div property="touristType" content="Wine tourism"></div>
+        <div property="touristType" content="Cultural tourism"></div>
+        <div property="telephone" content="+34983878011"></div>
+        <div property="telephone" content="+34659843463"></div>
+        <link property="sameAs" href="http://www.bodegasprotos.com/">
+        <div property="email" content="enoturismo@bodegasprotos.com"></div>
+        <link property="image" href="https://commons.wikimedia.org/wiki/File%3AFoto_Bodega_Rogers2.jpg">
     </div>
-    <div property="schema:publicAccess" datatype="xsd:boolean" content="true"></div>
-    <div property="schema:availableLanguage" content="English"></div>
-    <div property="schema:availableLanguage" content="Spanish"></div>
-    <div property="schema:openingHours" content="Mo-Fr 10:00-13:00"></div>
-    <div property="schema:openingHours" content="Mo-Fr 16:30-18:00"></div>
-    <div property="schema:touristType" content="Wine tourism"></div>
-    <div property="schema:touristType" content="Cultural tourism"></div>
-    <div property="schema:telephone" content="+34983878011"></div>
-    <div property="schema:telephone" content="+34659843463"></div>
-    <div rel="schema:sameAs" resource="http://www.bodegasprotos.com/"></div>
-    <div property="schema:email" content="enoturismo@bodegasprotos.com"></div>
-    <div rel="schema:image" resource="https://commons.wikimedia.org/wiki/File%3AFoto_Bodega_Rogers2.jpg"></div>
-  </div>
 </div>

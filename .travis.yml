@@ -1,11 +1,14 @@
 language: ruby
 bundler_args: --without debug
 script: "bundle exec rspec spec"
-before_install: "gem update --system"
+before_install: 
+  - 'gem update --system --conservative || (gem i "rubygems-update:~>2.7" --no-document && update_rubygems)'
+  - 'gem update bundler --conservative'
 env:
-  - CI=true
-rvm:
-  - 2.5.1
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - CI=true
+rvm: 2.6.2
 sudo: false
 cache: bundler
 dist: trusty
