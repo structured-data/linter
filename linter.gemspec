@@ -40,7 +40,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'uglifier',           '~> 3.2'
 
   gem.add_development_dependency  'foreman'
-  gem.add_development_dependency  'yard' ,              '~> 0.9'
+  gem.add_development_dependency  'yard' ,              '~> 0.9', ">= 0.9.20"
   gem.add_development_dependency  'shotgun',            '~> 0.9'
   gem.add_development_dependency  'rspec',              '~> 3.8'
   gem.add_development_dependency  'rspec-its',          '~> 1.3'
