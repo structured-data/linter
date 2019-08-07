@@ -4347,6 +4347,12 @@ Related actions:<br/><br/>
       label: "StructuredValue".freeze,
       subClassOf: "schema:Intangible".freeze,
       type: "rdfs:Class".freeze
+    term :StupidType,
+      comment: %(A StupidType for testing.).freeze,
+      label: "StupidType".freeze,
+      "schema:isPartOf": "http://attic.schema.org".freeze,
+      subClassOf: "schema:Thing".freeze,
+      type: "rdfs:Class".freeze
     term :SubscribeAction,
       comment: %(The act of forming a personal connection with someone/something \(object\) unidirectionally/asymmetrically to get updates pushed to.<br/><br/>
 
@@ -12702,6 +12708,13 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       rangeIncludes: "schema:MedicalEntity".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
+    property :stupidProperty,
+      comment: %(This is a StupidProperty! - for testing only).freeze,
+      domainIncludes: ["schema:StupidType".freeze, "schema:Vehicle".freeze],
+      label: "stupidProperty".freeze,
+      rangeIncludes: "schema:QuantitativeValue".freeze,
+      "schema:isPartOf": "http://attic.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :subEvent,
       comment: %(An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference.).freeze,
       domainIncludes: "schema:Event".freeze,
@@ -13439,6 +13452,13 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound
       rangeIncludes: ["schema:PropertyValue".freeze, "schema:Text".freeze],
       "schema:category": "issue-1083".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :variablesMeasured,
+      comment: %(Originally named <a class="localLink" href="http://schema.org/variablesMeasured">variablesMeasured</a>, The <a class="localLink" href="http://schema.org/variableMeasured">variableMeasured</a> property can indicate \(repeated as necessary\) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.).freeze,
+      domainIncludes: "schema:Dataset".freeze,
+      label: "variablesMeasured".freeze,
+      rangeIncludes: ["schema:PropertyValue".freeze, "schema:Text".freeze],
+      "schema:isPartOf": "http://attic.schema.org".freeze,
       type: "rdf:Property".freeze
     property :variantCover,
       comment: %(A description of the variant cover
