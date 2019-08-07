@@ -49,8 +49,8 @@ namespace :schema do
     File.open("lib/rdf/vocab/schema_context.rb", "w") do |f|
       # FIXME: you would think this would be someplace in the data directory
       # schema_base + '/releases/' + schema_version + '/schema.jsonld'
-      c = JSON::LD::Context.new().parse("http://schema.org/")
-      f.write c.to_rb
+      c = JSON::LD::Context.parse("https://schema.org/", headers: {'Accept' => 'application/ld+json'})
+      f.write c.to_rb("http://schema.org/", "http://schema.org", "https://schema.org")
     end
   end
 
@@ -59,7 +59,9 @@ namespace :schema do
     %x{rm -rf ./schema.org && mkdir -p ./schema.org/ext/bib ./schema.org/ext/health-lifesci}
     %w(
       examples
-      sdo-ClaimReview-issue-1061-examples.txt
+      issue-1004-examples
+      issue-1100-examples
+      sdo-ClaimReview-issue-1061-examples
       sdo-automobile-examples
       sdo-course-examples.txt
       sdo-creativwork-examples
@@ -87,8 +89,8 @@ namespace :schema do
       sdo-social-media-examples
       sdo-sponsor-examples
       sdo-sports-examples
-      sdo-trip-examples
       sdo-tourism-examples
+      sdo-trip-examples
       sdo-tv-listing-examples
       sdo-userinteraction-examples
       sdo-videogame-examples

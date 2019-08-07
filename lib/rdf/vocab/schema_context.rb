@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from http://schema.org/
+# This file generated automatically from https://schema.org/
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("http://schema.org/") do
+  add_preloaded("https://schema.org/") do
     new(vocab: "http://schema.org/", term_definitions: {
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
       "APIReference" => TermDefinition.new("APIReference", id: "http://schema.org/APIReference"),
@@ -2181,4 +2181,7 @@ class JSON::LD::Context
       "yearsInOperation" => TermDefinition.new("yearsInOperation", id: "http://schema.org/yearsInOperation")
     })
   end
+  alias_preloaded("http://schema.org/", "https://schema.org/")
+  alias_preloaded("http://schema.org", "https://schema.org/")
+  alias_preloaded("https://schema.org", "https://schema.org/")
 end
