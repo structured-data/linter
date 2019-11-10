@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Book",
+  "name": "Alice in Wonderland",
+  "accessMode": ["auditory", "textual", "visual"],
+  "accessibilityFeature": ["alternativeText", "synchronizedAudioText"],
+  "accessModeSufficient": [ 
+    {
+      "@type": "ItemList", 
+      "itemListElement": ["textual"], 
+      "description": "See the text"
+    },
+    {
+      "@type": "ItemList", 
+      "itemListElement": ["textual", "visual"], 
+      "description": "See the text and images"
+    },
+    {
+      "@type": "ItemList", 
+      "itemListElement": ["auditory"], 
+      "description": "Hear the text and image descriptions"
+    },
+    {
+      "@type": "ItemList", 
+      "itemListElement": ["auditory", "visual"], 
+      "description": "Hear the text and see the images"
+    },
+    {
+      "@type": "ItemList", 
+      "itemListElement": ["auditory", "visual", "textual"], 
+      "description": "Hear the text and see the text and images"
+    }
+  ],
+  "accessibilitySummary": "Short descriptions are provided; long descriptions of the images are not needed for most readers."
+}
+404: Not Found
