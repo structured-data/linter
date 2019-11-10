@@ -1,36 +1,19 @@
 {
   "@context": "http://schema.org/",
-  "@type": "Book",
-  "name": "Alice in Wonderland",
-  "accessMode": ["auditory", "textual", "visual"],
-  "accessibilityFeature": ["alternativeText", "synchronizedAudioText"],
+  "@type": "Movie",
+  "accessMode": ["auditory", "visual"],
+  "accessibilityFeature": ["audioDescription", "captions"],
   "accessModeSufficient": [ 
     {
       "@type": "ItemList", 
-      "itemListElement": ["textual"], 
-      "description": "See the text"
-    },
-    {
-      "@type": "ItemList", 
       "itemListElement": ["textual", "visual"], 
-      "description": "See the text and images"
+      "description": "Closed captioning"
     },
     {
       "@type": "ItemList", 
       "itemListElement": ["auditory"], 
-      "description": "Hear the text and image descriptions"
-    },
-    {
-      "@type": "ItemList", 
-      "itemListElement": ["auditory", "visual"], 
-      "description": "Hear the text and see the images"
-    },
-    {
-      "@type": "ItemList", 
-      "itemListElement": ["auditory", "visual", "textual"], 
-      "description": "Hear the text and see the text and images"
+      "description": "Audio description"
     }
   ],
-  "accessibilitySummary": "Short descriptions are provided; long descriptions of the images are not needed for most readers."
+  "accessibilitySummary": "Captions provided in English; short scenes in French have English subtitles instead."
 }
-404: Not Found
