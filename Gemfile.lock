@@ -25,7 +25,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 94ee7791d19fc530cf71a2c799613e4b564bdb6f
+  revision: 9e94758cc0b0674ff9227cfb56f8935cbb6df89c
   branch: develop
   specs:
     json-ld (3.0.2)
@@ -38,10 +38,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 7cf4b89823d682705b50d22678b8fd917965e77f
+  revision: b4a16b53a488815411d105dc29cf1ef3650e7f81
   branch: develop
   specs:
-    json-ld-preloaded (3.0.4)
+    json-ld-preloaded (3.0.6)
       json-ld (~> 3.0)
       multi_json (~> 1.12)
       rdf (~> 3.0)
@@ -101,10 +101,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: 7506695c9b4f8b91f2e8230f8d499a9e40b71d63
+  revision: 96fc834d6b23c12923a9850c6f9b94492125058e
   branch: develop
   specs:
-    rdf (3.0.12)
+    rdf (3.0.13)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
 
@@ -205,7 +205,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: fc9710e70bc674ec240c62b5bba560f3fe5fa1fb
+  revision: 484d46c7a4742b70e4012496ee9777336d290f65
   branch: develop
   specs:
     rdf-spec (3.0.0)
@@ -257,10 +257,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: 3c7e11d3d0919cbe9b50fe70e17061d857903456
+  revision: 8858ef97ebf5dff702b59b54ccde59ba91d3e406
   branch: develop
   specs:
-    rdf-vocab (3.0.10)
+    rdf-vocab (3.0.14)
       rdf (~> 3.0, >= 3.0.11)
 
 GIT
@@ -296,7 +296,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/sparql
-  revision: 2d2905435bf8ee0fce28bd7c88832f5eb179a4f3
+  revision: 78c2af8f957e679277769bf623d3c0f54819fe29
   branch: develop
   specs:
     sparql (3.0.2)
@@ -320,7 +320,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.6.4)
+    linter (3.6.5)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -381,12 +381,11 @@ GEM
       sxp (~> 1.0)
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
-    erubi (1.8.0)
+    erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.11.1)
-    foreman (0.85.0)
-      thor (~> 0.19.1)
+    foreman (0.86.0)
     haml (5.1.2)
       temple (>= 0.8.0)
       tilt
@@ -397,31 +396,31 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (1.6.0)
+    i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     json (2.2.0)
     json-canonicalization (0.1.0)
     link_header (0.0.8)
-    mime-types (3.2.2)
+    mime-types (3.3)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.0331)
+    mime-types-data (3.2019.1009)
     mini_portile2 (2.4.0)
-    minitest (5.11.3)
-    multi_json (1.13.1)
+    minitest (5.13.0)
+    multi_json (1.14.1)
     mustermann (1.0.3)
     net-http-persistent (3.1.0)
       connection_pool (~> 2.2)
     netrc (0.11.0)
-    nokogiri (1.10.4)
+    nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     nokogumbo (1.5.0)
       nokogiri
-    oj (3.9.1)
+    oj (3.9.2)
     optimist (3.0.0)
     public_suffix (4.0.1)
     puma (3.12.1)
     rack (2.0.7)
-    rack-cache (1.9.0)
+    rack-cache (1.10.0)
       rack (>= 0.4)
     rack-protection (2.0.7)
       rack
@@ -436,22 +435,22 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    rspec (3.8.0)
-      rspec-core (~> 3.8.0)
-      rspec-expectations (~> 3.8.0)
-      rspec-mocks (~> 3.8.0)
-    rspec-core (3.8.2)
-      rspec-support (~> 3.8.0)
-    rspec-expectations (3.8.4)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.0)
+      rspec-support (~> 3.9.0)
+    rspec-expectations (3.9.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.8.0)
+      rspec-support (~> 3.9.0)
     rspec-its (1.3.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.8.1)
+    rspec-mocks (3.9.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.8.0)
-    rspec-support (3.8.2)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -460,7 +459,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     shotgun (0.9.2)
       rack (>= 1.0)
-    simplecov (0.17.0)
+    simplecov (0.17.1)
       docile (~> 1.1)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
@@ -483,10 +482,9 @@ GEM
     sprockets-helpers (1.2.1)
       sprockets (>= 2.2)
     syntax (1.2.2)
-    temple (0.8.1)
-    thor (0.19.4)
+    temple (0.8.2)
     thread_safe (0.3.6)
-    tilt (2.0.9)
+    tilt (2.0.10)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uglifier (3.2.0)
@@ -494,7 +492,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
-    webmock (3.7.1)
+    webmock (3.7.6)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
