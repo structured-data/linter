@@ -329,7 +329,7 @@ PATH
       linkeddata (~> 3.0)
       nokogiri (~> 1.10)
       nokogumbo (~> 1.5)
-      puma (~> 3.12)
+      puma (>= 3.12, < 5.0)
       rack-cache (~> 1.9)
       rdf-reasoner (~> 0.5)
       rdf-vocab (~> 3.0)
@@ -343,7 +343,7 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (5.2.3)
+    activesupport (5.2.4)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -384,7 +384,7 @@ GEM
     erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.11.1)
+    ffi (1.11.3)
     foreman (0.86.0)
     haml (5.1.2)
       temple (>= 0.8.0)
@@ -411,6 +411,7 @@ GEM
     net-http-persistent (3.1.0)
       connection_pool (~> 2.2)
     netrc (0.11.0)
+    nio4r (2.3.1)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     nokogumbo (1.5.0)
@@ -418,9 +419,10 @@ GEM
     oj (3.9.2)
     optimist (3.0.0)
     public_suffix (4.0.1)
-    puma (3.12.1)
+    puma (4.3.1)
+      nio4r (~> 2.0)
     rack (2.0.7)
-    rack-cache (1.10.0)
+    rack-cache (1.9.0)
       rack (>= 0.4)
     rack-protection (2.0.7)
       rack

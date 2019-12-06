@@ -28,7 +28,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'linkeddata',         '~> 3.0'
   gem.add_runtime_dependency      'nokogiri',           '~> 1.10'
   gem.add_runtime_dependency      'nokogumbo',          '~> 1.5'
-  gem.add_runtime_dependency      'puma',               '~> 3.12'
+  gem.add_runtime_dependency      'puma',               '>= 3.12', '< 5.0'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.9'
   gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.5'
   gem.add_runtime_dependency      'rdf-vocab',          '~> 3.0'
