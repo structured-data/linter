@@ -15,7 +15,7 @@ module RDF::Linter
     # @option options [String] :content literal content
     # @option options [RDF::URI] :base_uri location of file, or where to treat content as having been located.
     # @return [Array(RDF::Graph, Hash{Symbol => Array(String)}, RDF::URI)] graph, messages, base_uri
-    def parse(reader_opts)
+    def parse(**reader_opts)
       logger = reader_opts[:logger] ||= begin
         l = Logger.new(STDOUT)  # In case we're not invoked from rack
         l.level = ::RDF::Linter.debug? ? Logger::DEBUG : Logger::INFO
@@ -38,15 +38,15 @@ module RDF::Linter
           logger.info "Parse input file #{reader_opts[:tempfile].inspect} with format #{reader_opts[:format]}"
           reader_opts[:base_uri] ||= "http://example.org/"  # Allow relative URIs
           reader_class = RDF::Reader.for(reader_opts[:format] || reader_opts) || RDF::RDFa::Reader
-          reader_class.new(reader_opts[:tempfile], reader_opts) { |r| graph << r}
+          reader_class.new(reader_opts[:tempfile], **reader_opts) { |r| graph << r}
         when reader_opts[:content]
           logger.info "Parse form data with format #{reader_opts[:format]}"
           reader_opts[:base_uri] ||= "http://example.org/"  # Allow relative URIs
           reader_class = RDF::Reader.for(reader_opts[:format] || reader_opts) || RDF::RDFa::Reader
-          reader_class.new(reader_opts[:content], reader_opts) { |r| graph << r}
+          reader_class.new(reader_opts[:content], **reader_opts) { |r| graph << r}
         when reader_opts[:base_uri]
           logger.info "Open url <#{reader_opts[:base_uri]}> with format #{reader_opts[:format]}"
-          RDF::Reader.open(reader_opts[:base_uri], reader_opts) { |r| graph << r}
+          RDF::Reader.open(reader_opts[:base_uri], **reader_opts) { |r| graph << r}
         else
           raise RDF::ReaderError, "Expected one of tempfile, content or base_uri"
         end
@@ -77,13 +77,13 @@ module RDF::Linter
       # Special case for Facebook OGP. Facebook (apparently) doesn't believe in rdf:type,
       # so we look for statements with predicate og:type with a literal object and create
       # an rdf:type in a similar namespace
-      graph.query(:predicate => RDF::URI("http://ogp.me/ns#type")) do |statement|
-        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://types.ogp.me/ns##{statement.object}"), :context => CTX)
+      graph.query(predicate: RDF::URI("http://ogp.me/ns#type")) do |statement|
+        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://types.ogp.me/ns##{statement.object}"), graph_name: CTX)
       end
       
       # Similar, but using old namespace
-      graph.query(:predicate => RDF::URI("http://opengraphprotocol.org/schema/type")) do |statement|
-        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://opengraphprotocol.org/types/#{statement.object}"), :context => CTX)
+      graph.query(predicate: RDF::URI("http://opengraphprotocol.org/schema/type")) do |statement|
+        graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://opengraphprotocol.org/types/#{statement.object}"), graph_name: CTX)
       end
 
       # Use Reasoner entailment
