@@ -8,7 +8,7 @@ module RDF::Linter
   # Adds some special-purpose controls to the RDF::RDFa::Writer class
   class Writer < RDF::RDFa::Writer
     format RDF::RDFa::Format
-    def initialize(output = $stdout, options = {}, &block)
+    def initialize(output = $stdout, **options, &block)
       options = {
         standard_prefixes: true,
         haml: LINTER_HAML,
@@ -25,10 +25,10 @@ module RDF::Linter
 
     # Override render_subject to look for a :rel template if this is a relation.
     # In which case, we'll also pass the typeof the referencing resource
-    def render_subject(subject, predicates, options = {}, &block)
+    def render_subject(subject, predicates, **options, &block)
       options = options.merge(haml: @prev_templ[:rel]) if options[:rel] && @prev_templ[:rel]
       @prev_templ = haml_template
-      super(subject, predicates, options) do |predicate|
+      super(subject, predicates, **options) do |predicate|
         if predicate.is_a?(Symbol)
           # Special snippet processing
           # Render associated properties with associated or default formatting
