@@ -1,5 +1,5 @@
 require 'rdf/rdfa/writer'
-require 'rdf/linter/rdfa_template'
+require_relative 'rdfa_template'
 
 module RDF::Linter
   ##

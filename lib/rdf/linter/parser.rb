@@ -1,4 +1,4 @@
-require 'rdf/linter/writer'
+require_relative 'writer'
 require 'rdf/xsd'
 require 'nokogiri'
 

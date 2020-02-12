@@ -1,6 +1,4 @@
 #!/usr/bin/env rackup
-$:.unshift(File.expand_path('../lib',  __FILE__))
-
 require 'rubygems' || Gem.clear_paths
 require 'bundler'
 Bundler.setup(:default)
@@ -8,7 +6,7 @@ Bundler.setup(:default)
 require 'rack/cache'
 require 'sinatra'
 require 'sinatra/base'
-require 'rdf/linter'
+require_relative 'lib/rdf/linter'
 
 set :environment, (ENV['RACK_ENV'] || 'production').to_sym
 

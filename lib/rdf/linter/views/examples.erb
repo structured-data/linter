@@ -8,53 +8,6 @@
   </section>
 
   <section class="content">
-    <h2>Google Rich Snippets examples</h2>
-    <p>
-      The following examples are taken from the Google
-      <a target="_blank" href="http://www.google.com/support/webmasters/bin/topic.py?hl=en&topic=21997">
-        Webmaster Tools Help
-      </a>.
-    </p>
-    <% %w(Review Aggregate-Reviews People Organization Event Event-Multiple Recipe Product Offer-Aggregate).each do |name| -%>
-    <div class="example d1">
-      <a href="/examples/google-rs/<%=name%>/" title="Show <%=name%> markup example"><%= name %></a>
-      (<% %w(RDFa MD).each do |fmt|
-        file = File.join(settings.root, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
-        next unless File.file?(file)
-        path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
-      -%>
-        <a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
-      <% end -%>)
-    </div>
-    <% end -%>
-  </section>
-
-  <section class="content">
-    <h2>Good Relations examples</h2>
-    <p>
-      The following examples are taken from Good Relations
-      <a target="_blank" href="http://www.ebusiness-unibw.org/wiki/GoodRelations#CookBook:_GoodRelations_Recipes_and_Examples">
-        Recipes
-      </a>.
-    </p>
-    <%
-      require 'find'
-      schema = {}
-      Dir.entries(File.join(settings.root, "good-relations")).each do |name|
-        file = File.join(settings.root, "good-relations", "#{name}")
-        next unless File.file?(file)
-        path = "#{root}examples/good-relations/#{name}"
-        fmt = name =~ /rdfa/ ? "RDFa" : "TTL"
-        name = name.split('.').first
-    -%>
-    <div class="example d1">
-      <a href="/examples/good-relations/<%=name%>/" title="Show <%=name%> markup example"><%= name %></a>
-      (<a href="/?url=<%= path %>" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>)
-    </div>
-    <% end -%>
-  </section>
-
-  <section class="content">
     <h2>Schema.org examples</h2>
     <p>
       The following examples are taken from Schema.org
