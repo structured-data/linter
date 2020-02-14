@@ -2,7 +2,7 @@
 require 'rubygems'
 $:.unshift(File.expand_path(File.join(File.dirname(__FILE__), "..", 'lib')))
 require "bundler/setup"
-require 'rdf/linter'
+require_relative '../lib/rdf/linter'
 require 'getoptlong'
 require 'open-uri'
 

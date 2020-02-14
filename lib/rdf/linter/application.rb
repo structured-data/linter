@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/linkeddata'
+require 'sinatra/rdf'
 require 'sinatra/asset_pipeline'
 require 'sprockets-helpers'
 require 'uglifier'
@@ -133,57 +133,6 @@ module RDF::Linter
     end
     get '/examples' do
       redirect '/examples/'
-    end
-
-    # Return a specific Google Rich Snippet example
-    # @method get_rs_example
-    # @overload get "/examples/google-rs/:name/"
-    # @param [String] name Name of the example to return
-    get '/examples/google-rs/:name/' do
-      set_cache_header
-      @title = "Google RS #{params[:name]}"
-      erb :rs_example, locals: {
-        head: :examples,
-        name: params[:name],
-        root: url("/")
-      }
-    end
-
-    # Return source of a specific Google Rich Snippet example
-    # @method get_rs_example
-    # @overload get "/examples/google-rs/:file"
-    # @param [String] file Name of the example to return
-    get '/examples/google-rs/:file' do
-      set_cache_header
-      file_loc = params[:file]
-      send_file File.join(APP_DIR, "google-rs/#{file_loc}"),
-        type: (params[:file].end_with?(".jsonld") ? :jsonld : :html),
-        charset: "utf-8"
-    end
-
-    # Return a specific Good Relations example
-    # @method get_gr_example
-    # @overload get "/examples/good-relations/:name/"
-    # @param [String] name Name of the example to return
-    get '/examples/good-relations/:name/' do
-      set_cache_header
-      @title = "Good Relations #{params[:name]}"
-      erb :gr_example, locals: {
-        head: :examples,
-        name: params[:name],
-        root: url("/")
-      }
-    end
-
-    # Return source of a specific Good Relations example
-    # @method get_gr_example
-    # @overload get "/examples/good-relations/:file"
-    # @param [String] file Name of the example to return
-    get '/examples/good-relations/:file' do
-      set_cache_header
-      send_file File.join(APP_DIR, "good-relations/#{params[:file]}"),
-        type: (params[:file].end_with?(".jsonld") ? :jsonld : :html),
-        charset: "utf-8"
     end
 
     # Return a specific schema.org example

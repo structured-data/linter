@@ -1133,6 +1133,24 @@ It is common for properties applicable to an item from the series to be usefully
       label: "CreativeWorkSeries".freeze,
       subClassOf: ["schema:CreativeWork".freeze, "schema:Series".freeze],
       type: "rdfs:Class".freeze
+    term :CreditCard,
+      comment: %(A card payment method of a particular brand or name.  Used to mark up a particular payment method and/or the financial product/service that supplies the card account.<br/><br/>
+
+Commonly used values:<br/><br/>
+
+<ul>
+<li>http://purl.org/goodrelations/v1#AmericanExpress</li>
+<li>http://purl.org/goodrelations/v1#DinersClub</li>
+<li>http://purl.org/goodrelations/v1#Discover</li>
+<li>http://purl.org/goodrelations/v1#JCB</li>
+<li>http://purl.org/goodrelations/v1#MasterCard</li>
+<li>http://purl.org/goodrelations/v1#VISA</li>
+</ul>
+).freeze,
+      "dc:source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO".freeze, "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass".freeze],
+      label: "CreditCard".freeze,
+      subClassOf: ["schema:LoanOrCredit".freeze, "schema:PaymentCard".freeze],
+      type: "rdfs:Class".freeze
     term :Crematorium,
       comment: %(A crematorium.).freeze,
       label: "Crematorium".freeze,
@@ -1446,17 +1464,41 @@ Commonly used values:<br/><br/>
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:Substance".freeze,
       type: "rdfs:Class".freeze
+    term :DrugClass,
+      comment: %(A class of medical drugs, e.g., statins. Classes can represent general pharmacological class, common mechanisms of action, common physiological effects, etc.).freeze,
+      label: "DrugClass".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
+      type: "rdfs:Class".freeze
     term :DrugCost,
       comment: %(The cost per unit of a medical drug. Note that this type is not meant to represent the price in an offer of a drug for sale; see the Offer type for that. This type will typically be used to tag wholesale or average retail cost of a drug, or maximum reimbursable cost. Costs of medical drugs vary widely depending on how and where they are paid for, so while this type captures some of the variables, costs should be used with caution by consumers of this schema's markup.).freeze,
       label: "DrugCost".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      subClassOf: "schema:Intangible".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
+      type: "rdfs:Class".freeze
+    term :DrugCostCategory,
+      comment: %(Enumerated categories of medical drug costs.).freeze,
+      label: "DrugCostCategory".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
       type: "rdfs:Class".freeze
     term :DrugLegalStatus,
       comment: %(The legal availability status of a medical drug.).freeze,
       label: "DrugLegalStatus".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalIntangible".freeze,
+      type: "rdfs:Class".freeze
+    term :DrugPregnancyCategory,
+      comment: %(Categories that represent an assessment of the risk of fetal injury due to a drug or pharmaceutical used as directed by the mother during pregnancy.).freeze,
+      label: "DrugPregnancyCategory".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
+      type: "rdfs:Class".freeze
+    term :DrugPrescriptionStatus,
+      comment: %(Indicates whether this drug is available by prescription or over-the-counter.).freeze,
+      label: "DrugPrescriptionStatus".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
       type: "rdfs:Class".freeze
     term :DrugStrength,
       comment: %(A specific strength in which a medical drug is available in a specific country.).freeze,
@@ -2201,6 +2243,12 @@ See also the <a href="/docs/hotels.html">dedicated document on the use of schema
       label: "IndividualProduct".freeze,
       subClassOf: "schema:Product".freeze,
       type: "rdfs:Class".freeze
+    term :InfectiousAgentClass,
+      comment: %(Classes of agents or pathogens that transmit infectious diseases. Enumerated type.).freeze,
+      label: "InfectiousAgentClass".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
+      type: "rdfs:Class".freeze
     term :InfectiousDisease,
       comment: %(An infectious disease is a clinically evident human disease resulting from the presence of pathogenic microbial agents, like pathogenic viruses, pathogenic bacteria, fungi, protozoa, multicellular parasites, and prions. To be considered an infectious disease, such pathogens are known to be able to cause this disease.).freeze,
       label: "InfectiousDisease".freeze,
@@ -2500,6 +2548,11 @@ Related actions:<br/><br/>
       label: "LocationFeatureSpecification".freeze,
       subClassOf: "schema:PropertyValue".freeze,
       type: "rdfs:Class".freeze
+    term :LockerDelivery,
+      comment: %(A DeliveryMethod in which an item is made available via locker.).freeze,
+      label: "LockerDelivery".freeze,
+      subClassOf: "schema:DeliveryMethod".freeze,
+      type: "rdfs:Class".freeze
     term :Locksmith,
       comment: %(A locksmith.).freeze,
       label: "Locksmith".freeze,
@@ -2579,6 +2632,12 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       "schema:category": "issue-1741".freeze,
       subClassOf: "schema:Intangible".freeze,
       type: "rdfs:Class".freeze
+    term :MedicalAudience,
+      comment: %(Target audiences for medical web pages. Enumerated type.).freeze,
+      label: "MedicalAudience".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: ["schema:Audience".freeze, "schema:MedicalEnumeration".freeze, "schema:PeopleAudience".freeze],
+      type: "rdfs:Class".freeze
     term :MedicalBusiness,
       comment: %(A particular physical or virtual business of an organization for medical purposes. Examples of MedicalBusiness include differents business run by health professionals.).freeze,
       label: "MedicalBusiness".freeze,
@@ -2628,6 +2687,12 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalEntity".freeze,
       type: "rdfs:Class".freeze
+    term :MedicalDevicePurpose,
+      comment: %(Categories of medical devices, organized by the purpose or intended use of the device.).freeze,
+      label: "MedicalDevicePurpose".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
+      type: "rdfs:Class".freeze
     term :MedicalEntity,
       comment: %(The most generic type of entity related to health and the practice of medicine.).freeze,
       label: "MedicalEntity".freeze,
@@ -2639,6 +2704,12 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       label: "MedicalEnumeration".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
+    term :MedicalEvidenceLevel,
+      comment: %(Level of evidence for a medical guideline. Enumerated type.).freeze,
+      label: "MedicalEvidenceLevel".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
       type: "rdfs:Class".freeze
     term :MedicalGuideline,
       comment: %(Any recommendation made by a standard society \(e.g. ACC/AHA\) or consensus statement that denotes how to diagnose and treat a particular condition. Note: this type should be used to tag the actual guideline recommendation; if the guideline recommendation occurs in a larger scholarly article, use MedicalScholarlyArticle to tag the overall article, not this type. Note also: the organization making the recommendation should be captured in the recognizingAuthority base property of MedicalEntity.).freeze,
@@ -2658,6 +2729,12 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalGuideline".freeze,
       type: "rdfs:Class".freeze
+    term :MedicalImagingTechnique,
+      comment: %(Any medical imaging modality typically used for diagnostic purposes. Enumerated type.).freeze,
+      label: "MedicalImagingTechnique".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
+      type: "rdfs:Class".freeze
     term :MedicalIndication,
       comment: %(A condition or factor that indicates use of a medical therapy, including signs, symptoms, risk factors, anatomical states, etc.).freeze,
       label: "MedicalIndication".freeze,
@@ -2676,6 +2753,12 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalStudy".freeze,
       type: "rdfs:Class".freeze
+    term :MedicalObservationalStudyDesign,
+      comment: %(Design models for observational medical studies. Enumerated type.).freeze,
+      label: "MedicalObservationalStudyDesign".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
+      type: "rdfs:Class".freeze
     term :MedicalOrganization,
       comment: %(A medical organization \(physical or not\), such as hospital, institution or clinic.).freeze,
       label: "MedicalOrganization".freeze,
@@ -2687,6 +2770,12 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       label: "MedicalProcedure".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalEntity".freeze,
+      type: "rdfs:Class".freeze
+    term :MedicalProcedureType,
+      comment: %(An enumeration that describes different types of medical procedures.).freeze,
+      label: "MedicalProcedureType".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
       type: "rdfs:Class".freeze
     term :MedicalRiskCalculator,
       comment: %(A complex mathematical calculation requiring an online calculator, used to assess prognosis. Note: use the url property of Thing to record any URLs for online calculators.).freeze,
@@ -2730,11 +2819,23 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalCondition".freeze,
       type: "rdfs:Class".freeze
+    term :MedicalSpecialty,
+      comment: %(Any specific branch of medical science or practice. Medical specialities include clinical specialties that pertain to particular organ systems and their respective disease states, as well as allied health specialties. Enumerated type.).freeze,
+      label: "MedicalSpecialty".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: ["schema:MedicalEnumeration".freeze, "schema:Specialty".freeze],
+      type: "rdfs:Class".freeze
     term :MedicalStudy,
       comment: %(A medical study is an umbrella type covering all kinds of research studies relating to human medicine or health, including observational studies and interventional trials and registries, randomized, controlled or not. When the specific type of study is known, use one of the extensions of this type, such as MedicalTrial or MedicalObservationalStudy. Also, note that this type should be used to mark up data that describes the study itself; to tag an article that publishes the results of a study, use MedicalScholarlyArticle. Note: use the code property of MedicalEntity to store study IDs, e.g. clinicaltrials.gov ID.).freeze,
       label: "MedicalStudy".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalEntity".freeze,
+      type: "rdfs:Class".freeze
+    term :MedicalStudyStatus,
+      comment: %(The status of a medical study. Enumerated type.).freeze,
+      label: "MedicalStudyStatus".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
       type: "rdfs:Class".freeze
     term :MedicalSymptom,
       comment: %(Any complaint sensed and expressed by the patient \(therefore defined as subjective\)  like stomachache, lower-back pain, or fatigue.).freeze,
@@ -2766,11 +2867,24 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalStudy".freeze,
       type: "rdfs:Class".freeze
+    term :MedicalTrialDesign,
+      comment: %(Design models for medical trials. Enumerated type.).freeze,
+      "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_WikiDoc".freeze,
+      label: "MedicalTrialDesign".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: ["schema:Enumeration".freeze, "schema:MedicalEnumeration".freeze],
+      type: "rdfs:Class".freeze
     term :MedicalWebPage,
       comment: %(A web page that provides medical information.).freeze,
       label: "MedicalWebPage".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:WebPage".freeze,
+      type: "rdfs:Class".freeze
+    term :MedicineSystem,
+      comment: %(Systems of medical practice.).freeze,
+      label: "MedicineSystem".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: "schema:MedicalEnumeration".freeze,
       type: "rdfs:Class".freeze
     term :MeetingRoom,
       comment: %(A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings \(Source: Wikipedia, the free encyclopedia, see <a href="http://en.wikipedia.org/wiki/Conference_hall">http://en.wikipedia.org/wiki/Conference_hall</a>\).
@@ -3281,6 +3395,21 @@ If the value for the <a class="localLink" href="http://schema.org/closes">closes
       label: "ParcelDelivery".freeze,
       subClassOf: "schema:Intangible".freeze,
       type: "rdfs:Class".freeze
+    term :ParcelService,
+      comment: %(A private parcel service as the delivery mode available for a certain offer.<br/><br/>
+
+Commonly used values:<br/><br/>
+
+<ul>
+<li>http://purl.org/goodrelations/v1#DHL</li>
+<li>http://purl.org/goodrelations/v1#FederalExpress</li>
+<li>http://purl.org/goodrelations/v1#UPS</li>
+</ul>
+).freeze,
+      "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass".freeze,
+      label: "ParcelService".freeze,
+      subClassOf: "schema:DeliveryMethod".freeze,
+      type: "rdfs:Class".freeze
     term :ParentAudience,
       comment: %(A set of characteristics describing parents, who can be interested in viewing some content.).freeze,
       label: "ParentAudience".freeze,
@@ -3302,6 +3431,13 @@ If the value for the <a class="localLink" href="http://schema.org/closes">closes
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalTest".freeze,
       type: "rdfs:Class".freeze
+    term :Patient,
+      comment: %(A patient is any person recipient of health care services.).freeze,
+      equivalentClass: "http://purl.bioontology.org/ontology/SNOMEDCT/116154003".freeze,
+      label: "Patient".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: ["schema:MedicalAudience".freeze, "schema:Person".freeze],
+      type: "rdfs:Class".freeze
     term :PawnShop,
       comment: %(A shop that will buy, or lend money against the security of, personal possessions.).freeze,
       label: "PawnShop".freeze,
@@ -3311,6 +3447,12 @@ If the value for the <a class="localLink" href="http://schema.org/closes">closes
       comment: %(An agent pays a price to a participant.).freeze,
       label: "PayAction".freeze,
       subClassOf: "schema:TradeAction".freeze,
+      type: "rdfs:Class".freeze
+    term :PaymentCard,
+      comment: %(A payment method using a credit, debit, store or other card to associate the payment with an account.).freeze,
+      "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO".freeze,
+      label: "PaymentCard".freeze,
+      subClassOf: ["schema:FinancialProduct".freeze, "schema:PaymentMethod".freeze],
       type: "rdfs:Class".freeze
     term :PaymentChargeSpecification,
       comment: %(The costs of settling the payment using a particular payment method.).freeze,
@@ -3427,6 +3569,12 @@ See also <a href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliogra
       label: "PhysicalActivityCategory".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
+    term :PhysicalExam,
+      comment: %(A type of physical examination of a patient performed by a physician.).freeze,
+      label: "PhysicalExam".freeze,
+      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      subClassOf: ["schema:MedicalEnumeration".freeze, "schema:MedicalProcedure".freeze],
       type: "rdfs:Class".freeze
     term :PhysicalTherapy,
       comment: %(A process of progressive physical care and rehabilitation aimed at improving a health condition.).freeze,
@@ -14647,24 +14795,6 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "schema:category": "issue-2374".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "schema:HealthAspectEnumeration".freeze
-    term :CreditCard,
-      comment: %(A card payment method of a particular brand or name.  Used to mark up a particular payment method and/or the financial product/service that supplies the card account.<br/><br/>
-
-Commonly used values:<br/><br/>
-
-<ul>
-<li>http://purl.org/goodrelations/v1#AmericanExpress</li>
-<li>http://purl.org/goodrelations/v1#DinersClub</li>
-<li>http://purl.org/goodrelations/v1#Discover</li>
-<li>http://purl.org/goodrelations/v1#JCB</li>
-<li>http://purl.org/goodrelations/v1#MasterCard</li>
-<li>http://purl.org/goodrelations/v1#VISA</li>
-</ul>
-).freeze,
-      "dc:source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO".freeze, "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass".freeze],
-      label: "CreditCard".freeze,
-      subClassOf: "schema:LoanOrCredit".freeze,
-      type: "schema:PaymentCard".freeze
     term :CrossSectional,
       comment: %(Studies carried out on pre-existing data \(usually from 'snapshot' surveys\), such as that collected by the Census Bureau. Sometimes called Prevalence Studies.).freeze,
       label: "CrossSectional".freeze,
@@ -14755,26 +14885,6 @@ Commonly used values:<br/><br/>
       label: "DrivingSchoolVehicleUsage".freeze,
       "schema:isPartOf": "http://auto.schema.org".freeze,
       type: "schema:CarUsageType".freeze
-    term :DrugClass,
-      comment: %(A class of medical drugs, e.g., statins. Classes can represent general pharmacological class, common mechanisms of action, common physiological effects, etc.).freeze,
-      label: "DrugClass".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :DrugCostCategory,
-      comment: %(Enumerated categories of medical drug costs.).freeze,
-      label: "DrugCostCategory".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :DrugPregnancyCategory,
-      comment: %(Categories that represent an assessment of the risk of fetal injury due to a drug or pharmaceutical used as directed by the mother during pregnancy.).freeze,
-      label: "DrugPregnancyCategory".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :DrugPrescriptionStatus,
-      comment: %(Indicates whether this drug is available by prescription or over-the-counter.).freeze,
-      label: "DrugPrescriptionStatus".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
     term :EBook,
       comment: %(Book format: Ebook.).freeze,
       label: "EBook".freeze,
@@ -15017,11 +15127,6 @@ Commonly used values:<br/><br/>
       label: "Infectious".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:MedicalSpecialty".freeze
-    term :InfectiousAgentClass,
-      comment: %(Classes of agents or pathogens that transmit infectious diseases. Enumerated type.).freeze,
-      label: "InfectiousAgentClass".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
     term :InternationalTrial,
       comment: %(An international trial.).freeze,
       label: "InternationalTrial".freeze,
@@ -15079,10 +15184,6 @@ Commonly used values:<br/><br/>
       "schema:category": "issue-2374".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "schema:HealthAspectEnumeration".freeze
-    term :LockerDelivery,
-      comment: %(A DeliveryMethod in which an item is made available via locker.).freeze,
-      label: "LockerDelivery".freeze,
-      type: "schema:DeliveryMethod".freeze
     term :Longitudinal,
       comment: %(Unlike cross-sectional studies, longitudinal studies track the same people, and therefore the differences observed in those people are less likely to be the result of cultural differences across generations. Longitudinal studies are also used in medicine to uncover predictors of certain diseases.).freeze,
       label: "Longitudinal".freeze,
@@ -15125,63 +15226,11 @@ Commonly used values:<br/><br/>
       "schema:category": "issue-2374".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "schema:HealthAspectEnumeration".freeze
-    term :MedicalAudience,
-      comment: %(Target audiences for medical web pages. Enumerated type.).freeze,
-      label: "MedicalAudience".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      subClassOf: ["schema:Audience".freeze, "schema:PeopleAudience".freeze],
-      type: "schema:MedicalEnumeration".freeze
-    term :MedicalDevicePurpose,
-      comment: %(Categories of medical devices, organized by the purpose or intended use of the device.).freeze,
-      label: "MedicalDevicePurpose".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :MedicalEvidenceLevel,
-      comment: %(Level of evidence for a medical guideline. Enumerated type.).freeze,
-      label: "MedicalEvidenceLevel".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :MedicalImagingTechnique,
-      comment: %(Any medical imaging modality typically used for diagnostic purposes. Enumerated type.).freeze,
-      label: "MedicalImagingTechnique".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :MedicalObservationalStudyDesign,
-      comment: %(Design models for observational medical studies. Enumerated type.).freeze,
-      label: "MedicalObservationalStudyDesign".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :MedicalProcedureType,
-      comment: %(An enumeration that describes different types of medical procedures.).freeze,
-      label: "MedicalProcedureType".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
     term :MedicalResearcher,
       comment: %(Medical researchers.).freeze,
       label: "MedicalResearcher".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:MedicalAudience".freeze
-    term :MedicalSpecialty,
-      comment: %(Any specific branch of medical science or practice. Medical specialities include clinical specialties that pertain to particular organ systems and their respective disease states, as well as allied health specialties. Enumerated type.).freeze,
-      label: "MedicalSpecialty".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:Specialty".freeze
-    term :MedicalStudyStatus,
-      comment: %(The status of a medical study. Enumerated type.).freeze,
-      label: "MedicalStudyStatus".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :MedicalTrialDesign,
-      comment: %(Design models for medical trials. Enumerated type.).freeze,
-      "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_WikiDoc".freeze,
-      label: "MedicalTrialDesign".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
-    term :MedicineSystem,
-      comment: %(Systems of medical practice.).freeze,
-      label: "MedicineSystem".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "schema:MedicalEnumeration".freeze
     term :MerchantReturnFiniteReturnWindow,
       comment: %(MerchantReturnFiniteReturnWindow: there is a finite window for product returns.).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/2288".freeze,
@@ -15440,20 +15489,6 @@ Commonly used values:<br/><br/>
       comment: %(Book format: Paperback.).freeze,
       label: "Paperback".freeze,
       type: "schema:BookFormatType".freeze
-    term :ParcelService,
-      comment: %(A private parcel service as the delivery mode available for a certain offer.<br/><br/>
-
-Commonly used values:<br/><br/>
-
-<ul>
-<li>http://purl.org/goodrelations/v1#DHL</li>
-<li>http://purl.org/goodrelations/v1#FederalExpress</li>
-<li>http://purl.org/goodrelations/v1#UPS</li>
-</ul>
-).freeze,
-      "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass".freeze,
-      label: "ParcelService".freeze,
-      type: "schema:DeliveryMethod".freeze
     term :ParkingMap,
       comment: %(A parking map.).freeze,
       label: "ParkingMap".freeze,
@@ -15471,13 +15506,6 @@ Commonly used values:<br/><br/>
       label: "Pathology".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:MedicalSpecialty".freeze
-    term :Patient,
-      comment: %(A patient is any person recipient of health care services.).freeze,
-      equivalentClass: "http://purl.bioontology.org/ontology/SNOMEDCT/116154003".freeze,
-      label: "Patient".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      subClassOf: "schema:Person".freeze,
-      type: "schema:MedicalAudience".freeze
     term :PatientExperienceHealthAspect,
       comment: %(Content about the real life experience of patients or people that have lived a similar experience about the topic. May be forums, topics, Q-and-A and related material.).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/2374".freeze,
@@ -15489,12 +15517,6 @@ Commonly used values:<br/><br/>
       comment: %(An automatic payment system is in place and will be used.).freeze,
       label: "PaymentAutomaticallyApplied".freeze,
       type: "schema:PaymentStatusType".freeze
-    term :PaymentCard,
-      comment: %(A payment method using a credit, debit, store or other card to associate the payment with an account.).freeze,
-      "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO".freeze,
-      label: "PaymentCard".freeze,
-      subClassOf: "schema:FinancialProduct".freeze,
-      type: "schema:PaymentMethod".freeze
     term :PaymentComplete,
       comment: %(The payment has been received and processed.).freeze,
       label: "PaymentComplete".freeze,
@@ -15527,12 +15549,6 @@ Commonly used values:<br/><br/>
       label: "PharmacySpecialty".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:MedicalSpecialty".freeze
-    term :PhysicalExam,
-      comment: %(A type of physical examination of a patient performed by a physician.).freeze,
-      label: "PhysicalExam".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      subClassOf: "schema:MedicalProcedure".freeze,
-      type: "schema:MedicalEnumeration".freeze
     term :Physiotherapy,
       comment: %(The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery..).freeze,
       label: "Physiotherapy".freeze,

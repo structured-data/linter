@@ -5,7 +5,6 @@ require "bundler/setup"
 require 'rubygems'
 require 'rspec'
 require 'rspec/its'
-require 'rdf/isomorphic'
 require 'rack/cache'
 require 'sinatra'
 require 'matchers'
@@ -31,5 +30,4 @@ set :logging, false
   }
 end
 
-EXAMPLE_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "..", "google-rs")
 SCHEMA_DIR = File.join(File.expand_path(File.dirname(__FILE__)), "..", "schema-org-rdf", "examples", "Thing")

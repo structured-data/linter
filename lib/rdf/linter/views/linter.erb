@@ -21,12 +21,12 @@
         </fieldset>
         <br/>
         <span class="form-examples">Examples:
-        <% %w(Review People Event Recipe Product).each do |name| -%>
+        <% {Review: "ClaimReview-320", Person: "eg-1", Event: "eg-9", Recipe: "eg-13", Product: "eg-10"}.each do |name, p|%>
           <%= name %> (
-          <% %w(RDFa MD).each do |fmt|
-            file = File.join(settings.root, "google-rs", "#{name.downcase}.#{fmt.downcase}.html")
+          <% {RDFa: "rdfa", "JSON-LD": "jsonld", MD: "microdata"}.each do |fmt, c|
+            file = File.join(settings.root, "schema.org", "#{p}-#{c}.html")
             next unless File.file?(file)
-            path = "#{root}examples/google-rs/#{name.downcase}.#{fmt.downcase}.html"
+            path = "#{root}examples/schema.org/#{p}-#{c}.html"
           -%>
             <a href="" ng-click="lintUrl('<%= path %>')" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
           <% end -%>)
