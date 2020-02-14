@@ -32,7 +32,7 @@ class RDF::Graph
     @properties.delete(subject.to_s) if recalc
     @properties[subject.to_s] ||= begin
       hash = Hash.new
-      self.query(subject: subject) do |statement|
+      self.query({subject: subject}) do |statement|
         pred = statement.predicate.to_s
 
         hash[pred] ||= []

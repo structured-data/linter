@@ -77,12 +77,12 @@ module RDF::Linter
       # Special case for Facebook OGP. Facebook (apparently) doesn't believe in rdf:type,
       # so we look for statements with predicate og:type with a literal object and create
       # an rdf:type in a similar namespace
-      graph.query(predicate: RDF::URI("http://ogp.me/ns#type")) do |statement|
+      graph.query({predicate: RDF::URI("http://ogp.me/ns#type")}) do |statement|
         graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://types.ogp.me/ns##{statement.object}"), graph_name: CTX)
       end
       
       # Similar, but using old namespace
-      graph.query(predicate: RDF::URI("http://opengraphprotocol.org/schema/type")) do |statement|
+      graph.query({predicate: RDF::URI("http://opengraphprotocol.org/schema/type")}) do |statement|
         graph << RDF::Statement.new(statement.subject, RDF.type, RDF::URI("http://opengraphprotocol.org/types/#{statement.object}"), graph_name: CTX)
       end
 
