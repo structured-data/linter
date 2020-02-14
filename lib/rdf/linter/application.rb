@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/linkeddata'
+require 'sinatra/rdf'
 require 'sinatra/asset_pipeline'
 require 'sprockets-helpers'
 require 'uglifier'

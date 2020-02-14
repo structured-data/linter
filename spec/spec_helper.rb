@@ -5,7 +5,6 @@ require "bundler/setup"
 require 'rubygems'
 require 'rspec'
 require 'rspec/its'
-require 'rdf/isomorphic'
 require 'rack/cache'
 require 'sinatra'
 require 'matchers'
