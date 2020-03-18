@@ -1108,6 +1108,17 @@ Related actions:<br/><br/>
       "schema:isPartOf": "http://bib.schema.org".freeze,
       subClassOf: "schema:VisualArtwork".freeze,
       type: "rdfs:Class".freeze
+    term :CovidTestingFacility,
+      comment: %(A CovidTestingFacility is a <a class="localLink" href="http://schema.org/MedicalClinic">MedicalClinic</a> where testing for the COVID-19 Coronavirus
+      disease is available. If the facility is being made available from an established <a class="localLink" href="http://schema.org/Pharmacy">Pharmacy</a>, <a class="localLink" href="http://schema.org/Hotel">Hotel</a>, or other
+      non-medical organization, multiple types can be listed. This makes it easier to re-use existing schema.org information
+      about that place e.g. contact info, address, opening hours. Note that in an emergency, such information may not always be reliable.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      label: "CovidTestingFacility".freeze,
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:MedicalClinic".freeze,
+      type: "rdfs:Class".freeze
     term :CreateAction,
       comment: %(The act of deliberately creating/producing/generating/building a result out of the agent.).freeze,
       label: "CreateAction".freeze,
@@ -1663,6 +1674,14 @@ endorsement rating is particularly useful in the absence of numeric scales as it
       label: "Event".freeze,
       subClassOf: "schema:Thing".freeze,
       type: "rdfs:Class".freeze
+    term :EventAttendanceModeEnumeration,
+      comment: %(An EventAttendanceModeEnumeration value is one of potentially several modes of organising an event, relating to whether it is online or offline.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      label: "EventAttendanceModeEnumeration".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
     term :EventReservation,
       comment: %(A reservation for an event like a concert, sporting event, or lecture.<br/><br/>
 
@@ -2051,7 +2070,7 @@ The amount of a <a class="localLink" href="http://schema.org/Grant">Grant</a> is
       type: "rdfs:Class".freeze
     term :HealthAspectEnumeration,
       comment: %(HealthAspectEnumeration enumerates several aspects of health content online, each of which might be described using <a class="localLink" href="http://schema.org/hasHealthAspect">hasHealthAspect</a> and <a class="localLink" href="http://schema.org/HealthTopicContent">HealthTopicContent</a>.).freeze,
-      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2288".freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2374".freeze,
       label: "HealthAspectEnumeration".freeze,
       "schema:category": "issue-2374".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
@@ -2620,10 +2639,28 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       label: "MediaGallery".freeze,
       subClassOf: "schema:CollectionPage".freeze,
       type: "rdfs:Class".freeze
+    term :MediaManipulationRatingEnumeration,
+      comment: %(\(editorial work in progress, this definition is incomplete and unreviewed\) MediaManipulationRatingEnumeration classifies a number of ways in which a media item \(video, image, audio\) can be manipulated, taking into account the context within which they are published or presented.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "MediaManipulationRatingEnumeration".freeze,
+      "schema:category": "issue-2450".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
     term :MediaObject,
       comment: %(A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song \(MusicRecording\) may have a music video \(VideoObject\), and a high and low bandwidth audio stream \(2 AudioObject's\).).freeze,
       label: "MediaObject".freeze,
       subClassOf: "schema:CreativeWork".freeze,
+      type: "rdfs:Class".freeze
+    term :MediaReview,
+      comment: %(\(editorial work in progress, this definition is incomplete and unreviewed\)
+    A <a class="localLink" href="http://schema.org/MediaReview">MediaReview</a> is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.
+    For more general reviews of media in the broader sense, use <a class="localLink" href="http://schema.org/UserReview">UserReview</a>, <a class="localLink" href="http://schema.org/CriticReview">CriticReview</a> or other <a class="localLink" href="http://schema.org/Review">Review</a> types.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "MediaReview".freeze,
+      "schema:category": "issue-2450".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:Review".freeze,
       type: "rdfs:Class".freeze
     term :MediaSubscription,
       comment: %(A subscription which allows a user to access media including audio, video, books, etc.).freeze,
@@ -4456,6 +4493,46 @@ Related actions:<br/><br/>
       "schema:category": "issue-1389".freeze,
       subClassOf: "schema:Intangible".freeze,
       type: "rdfs:Class".freeze
+    term :SpecialAnnouncement,
+      comment: %(A SpecialAnnouncement combines a simple date-stamped textual information update
+      with contextualized Web links and other structured data.  It represents an information update made by a
+      locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,
+      local government.<br/><br/>
+
+The motivating scenario for SpecialAnnouncement is the <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org
+expect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our
+usual <a href="https://github.com/schemaorg/schemaorg/issues/2490">Github entry</a>, feedback comments can also be provided in <a href="https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#">this document</a>.<br/><br/>
+
+While this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like <a href="https://en.wikipedia.org/wiki/Common_Alerting_Protocol">CAP</a>, although there may be overlaps. The intent is to cover
+the kinds of everyday practical information being posted to existing websites during an emergency situation.<br/><br/>
+
+Several kinds of information can be provided:<br/><br/>
+
+We encourage the provision of "name", "text", "datePosted", "expires" \(if appropriate\) and
+"url" as a simple baseline. It is important to provide a value for "category" where possible, most ideally as a well known
+URL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be "https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic" or "https://www.wikidata.org/wiki/Q81068910".<br/><br/>
+
+For many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a <a class="localLink" href="http://schema.org/WebContent">WebContent</a> type, and provide the url as a property of that, alongside at least a simple "<a class="localLink" href="http://schema.org/text">text</a>" summary of the page. It is
+unlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously. More options may be added
+later if<br/><br/>
+
+We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class="localLink" href="http://schema.org/openingHours">openingHours</a>, <a class="localLink" href="http://schema.org/Event">Event</a>, <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> etc. By linking to those pages from a <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation
+\(e.g. Coronavirus\) indicated by the <a class="localLink" href="http://schema.org/category">category</a> property of the <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a>.<br/><br/>
+
+The basic content of <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> is similar to that of an <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> or <a href="https://en.wikipedia.org/wiki/Atom_\(Web_standard\)">Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting
+<a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed
+with the <a class="localLink" href="http://schema.org/webFeed">webFeed</a> property. This can be a simple URL, or an inline <a class="localLink" href="http://schema.org/DataFeed">DataFeed</a> object, with <a class="localLink" href="http://schema.org/encodingFormat">encodingFormat</a> providing
+media type information e.g. "application/rss+xml" or "application/atom+xml".<br/><br/>
+
+For an announcement that is about a place, you can use <a class="localLink" href="http://schema.org/about">about</a> \(or <a class="localLink" href="http://schema.org/mainEntity">mainEntity</a>\) to make that relationship explicit.
+For example, the announcement could be "about" a new <a class="localLink" href="http://schema.org/CovidTestingFacility">CovidTestingFacility</a>, and provide contact information, <a class="localLink" href="http://schema.org/location">location</a>, <a class="localLink" href="http://schema.org/geo">geo</a>,
+<a class="localLink" href="http://schema.org/openingHours">openingHours</a> etc.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      label: "SpecialAnnouncement".freeze,
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:CreativeWork".freeze,
+      type: "rdfs:Class".freeze
     term :Specialty,
       comment: %(Any branch of a field in which people typically develop specific expertise, usually after significant study, time, and effort.).freeze,
       label: "Specialty".freeze,
@@ -5001,6 +5078,14 @@ Related actions:<br/><br/>
       label: "ViewAction".freeze,
       subClassOf: "schema:ConsumeAction".freeze,
       type: "rdfs:Class".freeze
+    term :VirtualLocation,
+      comment: %(An online or virtual location for attending events. For example, one may attend an online seminar or educational event. While a virtual location may be used as the location of an event, virtual locations should not be confused with physical locations in the real world.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      label: "VirtualLocation".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:Intangible".freeze,
+      type: "rdfs:Class".freeze
     term :Virus,
       comment: %(Pathogenic virus that causes viral infection.).freeze,
       label: "Virus".freeze,
@@ -5350,6 +5435,16 @@ Typical unit code\(s\): SEC for seconds<br/><br/>
       label: "accountablePerson".freeze,
       rangeIncludes: "schema:Person".freeze,
       type: "rdf:Property".freeze
+    property :acquireLicensePage,
+      comment: %(Indicates a page documenting how licenses can be purchased or otherwise acquired, for the current item.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2454".freeze,
+      domainIncludes: "schema:CreativeWork".freeze,
+      label: "acquireLicensePage".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      "schema:category": "issue-2454".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subPropertyOf: "schema:usageInfo".freeze,
+      type: "rdf:Property".freeze
     property :acquiredFrom,
       comment: %(The organization or person from which the product was acquired.).freeze,
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms".freeze,
@@ -5364,13 +5459,6 @@ Typical unit code\(s\): SEC for seconds<br/><br/>
       label: "acrissCode".freeze,
       rangeIncludes: "schema:Text".freeze,
       "schema:isPartOf": "http://auto.schema.org".freeze,
-      type: "rdf:Property".freeze
-    property :action,
-      comment: %(Obsolete term for <a class="localLink" href="http://schema.org/muscleAction">muscleAction</a>. Not to be confused with <a class="localLink" href="http://schema.org/potentialAction">potentialAction</a>.).freeze,
-      domainIncludes: "schema:Muscle".freeze,
-      label: "action".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :actionAccessibilityRequirement,
       comment: %(A set of requirements that a must be fulfilled in order to perform an Action. If more than one value is specied, fulfilling one set of requirements will allow the Action to be performed.).freeze,
@@ -5656,7 +5744,7 @@ Note: Publishers should be aware that applications designed to use specific sche
     property :amenityFeature,
       comment: %(An amenity feature \(e.g. a characteristic or service\) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.).freeze,
       "dc:source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology".freeze,
-      domainIncludes: ["schema:Accommodation".freeze, "schema:LodgingBusiness".freeze, "schema:Place".freeze],
+      domainIncludes: ["schema:Accommodation".freeze, "schema:FloorPlan".freeze, "schema:LodgingBusiness".freeze, "schema:Place".freeze],
       label: "amenityFeature".freeze,
       rangeIncludes: "schema:LocationFeatureSpecification".freeze,
       type: "rdf:Property".freeze
@@ -6120,13 +6208,6 @@ Note: Publishers should be aware that applications designed to use specific sche
       label: "awayTeam".freeze,
       rangeIncludes: ["schema:Person".freeze, "schema:SportsTeam".freeze],
       subPropertyOf: "schema:competitor".freeze,
-      type: "rdf:Property".freeze
-    property :background,
-      comment: %(Descriptive information establishing a historical perspective on the supplement. May include the rationale for the name, the population where the supplement first came to prominence, etc.).freeze,
-      domainIncludes: "schema:DietarySupplement".freeze,
-      label: "background".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :backstory,
       comment: %(For an <a class="localLink" href="http://schema.org/Article">Article</a>, typically a <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could include information about reporting process, methods, interviews, data sources, etc.).freeze,
@@ -6606,18 +6687,11 @@ Note: You can use <a class="localLink" href="http://schema.org/minValue">minValu
       type: "rdf:Property".freeze
     property :category,
       comment: %(A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.).freeze,
-      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1741".freeze,
-      domainIncludes: ["schema:ActionAccessSpecification".freeze, "schema:Invoice".freeze, "schema:Offer".freeze, "schema:PhysicalActivity".freeze, "schema:Product".freeze, "schema:Recommendation".freeze, "schema:Service".freeze],
+      "dc:source": ["https://github.com/schemaorg/schemaorg/issues/1741".freeze, "https://github.com/schemaorg/schemaorg/issues/2490".freeze],
+      domainIncludes: ["schema:ActionAccessSpecification".freeze, "schema:Invoice".freeze, "schema:Offer".freeze, "schema:PhysicalActivity".freeze, "schema:Product".freeze, "schema:Recommendation".freeze, "schema:Service".freeze, "schema:SpecialAnnouncement".freeze, "schema:URL".freeze],
       label: "category".freeze,
       rangeIncludes: ["schema:PhysicalActivityCategory".freeze, "schema:Text".freeze, "schema:Thing".freeze],
       "schema:category": "issue-1741".freeze,
-      type: "rdf:Property".freeze
-    property :cause,
-      comment: %(Specifying a cause of something in general. e.g in medicine , one of the causative agent\(s\) that are most directly responsible for the pathophysiologic process that eventually results in the occurrence.).freeze,
-      domainIncludes: ["schema:MedicalCondition".freeze, "schema:MedicalSignOrSymptom".freeze],
-      label: "cause".freeze,
-      rangeIncludes: "schema:MedicalCause".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :causeOf,
       comment: %(The condition, complication, symptom, sign, etc. caused.).freeze,
@@ -7074,13 +7148,6 @@ For example "Available by appointment from the Reading Room" or "Accessible only
       "schema:category": "issue-1525".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       subPropertyOf: "schema:publishingPrinciples".freeze,
-      type: "rdf:Property".freeze
-    property :cost,
-      comment: %(Cost per unit of the drug, as reported by the source being tagged.).freeze,
-      domainIncludes: "schema:Drug".freeze,
-      label: "cost".freeze,
-      rangeIncludes: "schema:DrugCost".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :costCategory,
       comment: %(The category of cost, such as wholesale, retail, reimbursement cap, etc.).freeze,
@@ -7552,6 +7619,26 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       label: "discussionUrl".freeze,
       rangeIncludes: "schema:URL".freeze,
       type: "rdf:Property".freeze
+    property :diseasePreventionInfo,
+      comment: %(Information about disease prevention.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "diseasePreventionInfo".freeze,
+      rangeIncludes: ["schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :diseaseSpreadStatistics,
+      comment: %(Statistical information about the spread of a disease, either as <a class="localLink" href="http://schema.org/WebContent">WebContent</a>, or
+  described directly as a <a class="localLink" href="http://schema.org/Dataset">Dataset</a>, or the specific <a class="localLink" href="http://schema.org/Observation">Observation</a>s in the dataset. When a <a class="localLink" href="http://schema.org/WebContent">WebContent</a> URL is
+  provided, the page indicated might also contain more such markup.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "diseaseSpreadStatistics".freeze,
+      rangeIncludes: ["schema:Dataset".freeze, "schema:Observation".freeze, "schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :dissolutionDate,
       comment: %(The date that this organization was dissolved.).freeze,
       domainIncludes: "schema:Organization".freeze,
@@ -7974,9 +8061,11 @@ Unregistered or niche encoding and file formats can be indicated instead via the
       type: "rdf:Property".freeze
     property :endDate,
       comment: %(The end date and time of the item \(in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>\).).freeze,
-      domainIncludes: ["schema:CreativeWorkSeason".freeze, "schema:CreativeWorkSeries".freeze, "schema:DatedMoneySpecification".freeze, "schema:EducationalOccupationalProgram".freeze, "schema:Event".freeze, "schema:Role".freeze],
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2486".freeze,
+      domainIncludes: ["schema:CreativeWorkSeason".freeze, "schema:CreativeWorkSeries".freeze, "schema:DatedMoneySpecification".freeze, "schema:EducationalOccupationalProgram".freeze, "schema:Event".freeze, "schema:Role".freeze, "schema:Schedule".freeze],
       label: "endDate".freeze,
       rangeIncludes: ["schema:Date".freeze, "schema:DateTime".freeze],
+      "schema:category": "issue-2486".freeze,
       type: "rdf:Property".freeze
     property :endOffset,
       comment: %(The end time of the clip expressed as the number of seconds from the beginning of the work.).freeze,
@@ -8134,6 +8223,15 @@ Typical unit code\(s\): CMQ for cubic centimeter, LTR for liters, INQ for cubic 
       domainIncludes: ["schema:InformAction".freeze, "schema:InviteAction".freeze, "schema:JoinAction".freeze, "schema:LeaveAction".freeze, "schema:Organization".freeze, "schema:Place".freeze, "schema:PlayAction".freeze],
       label: "event".freeze,
       rangeIncludes: "schema:Event".freeze,
+      type: "rdf:Property".freeze
+    property :eventAttendanceMode,
+      comment: %(The eventAttendanceMode of an event indicates whether it occurs online, offline, or a mix.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      domainIncludes: "schema:Event".freeze,
+      label: "eventAttendanceMode".freeze,
+      rangeIncludes: "schema:EventAttendanceModeEnumeration".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :eventSchedule,
       comment: %(Associates an <a class="localLink" href="http://schema.org/Event">Event</a> with a <a class="localLink" href="http://schema.org/Schedule">Schedule</a>. There are circumstances where it is preferable to share a schedule for a series of
@@ -8407,7 +8505,7 @@ Typical unit code\(s\): CMQ for cubic centimeter, LTR for liters, INQ for cubic 
       comment: %(The size of the accommodation, e.g. in square meter or squarefoot.
 Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for square yard).freeze,
       "dc:source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology".freeze,
-      domainIncludes: "schema:Accommodation".freeze,
+      domainIncludes: ["schema:Accommodation".freeze, "schema:FloorPlan".freeze],
       label: "floorSize".freeze,
       rangeIncludes: "schema:QuantitativeValue".freeze,
       type: "rdf:Property".freeze
@@ -8542,13 +8640,6 @@ Typical unit code\(s\): LTR for liters, GLL of US gallons, GLI for UK / imperial
       domainIncludes: ["schema:EngineSpecification".freeze, "schema:Vehicle".freeze],
       label: "fuelType".freeze,
       rangeIncludes: ["schema:QualitativeValue".freeze, "schema:Text".freeze, "schema:URL".freeze],
-      type: "rdf:Property".freeze
-    property :function,
-      comment: %(Function of the anatomical structure.).freeze,
-      domainIncludes: "schema:AnatomicalStructure".freeze,
-      label: "function".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :functionalClass,
       comment: %(The degree of mobility the joint allows.).freeze,
@@ -8710,6 +8801,15 @@ Typical unit code\(s\): LTR for liters, GLL of US gallons, GLI for UK / imperial
       label: "geographicArea".freeze,
       rangeIncludes: "schema:AdministrativeArea".freeze,
       type: "rdf:Property".freeze
+    property :gettingTestedInfo,
+      comment: %(Information about getting tested \(for a <a class="localLink" href="http://schema.org/MedicalCondition">MedicalCondition</a>\), e.g. in the context of a pandemic.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "gettingTestedInfo".freeze,
+      rangeIncludes: ["schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :givenName,
       comment: %(Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property.).freeze,
       domainIncludes: "schema:Person".freeze,
@@ -8870,6 +8970,15 @@ Typical unit code\(s\): LTR for liters, GLL of US gallons, GLI for UK / imperial
       domainIncludes: "schema:DigitalDocument".freeze,
       label: "hasDigitalDocumentPermission".freeze,
       rangeIncludes: "schema:DigitalDocumentPermission".freeze,
+      type: "rdf:Property".freeze
+    property :hasDriveThroughService,
+      comment: %(Indicates whether some facility \(e.g. <a class="localLink" href="http://schema.org/FoodEstablishment">FoodEstablishment</a>, <a class="localLink" href="http://schema.org/CovidTestingFacility">CovidTestingFacility</a>\) offers a service that can be used by driving through in a car. In the case of <a class="localLink" href="http://schema.org/CovidTestingFacility">CovidTestingFacility</a> such facilities could potentially help with social distancing from other potentially-infected users.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:Place".freeze,
+      label: "hasDriveThroughService".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :hasHealthAspect,
       comment: %(Indicates the aspect or aspects specifically addressed in some <a class="localLink" href="http://schema.org/HealthTopicContent">HealthTopicContent</a>. For example, that the content is an overview, or that it talks about treatment, self-care, treatments or their side-effects.).freeze,
@@ -9370,13 +9479,6 @@ Usage guidelines:<br/><br/>
       domainIncludes: "schema:MedicalRiskFactor".freeze,
       label: "increasesRiskOf".freeze,
       rangeIncludes: "schema:MedicalEntity".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "rdf:Property".freeze
-    property :indication,
-      comment: %(A factor that indicates use of this therapy for treatment and/or prevention of a condition, symptom, etc. For therapies such as drugs, indications can include both officially-approved indications as well as off-label uses. These can be distinguished by using the ApprovedIndication subtype of MedicalIndication.).freeze,
-      domainIncludes: ["schema:MedicalDevice".freeze, "schema:MedicalProcedure".freeze, "schema:TherapeuticProcedure".freeze],
-      label: "indication".freeze,
-      rangeIncludes: "schema:MedicalIndication".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :industry,
@@ -10179,7 +10281,7 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
       comment: %(The location of for example where the event is happening, an organization is located, or where an action takes place.).freeze,
       domainIncludes: ["schema:Action".freeze, "schema:Event".freeze, "schema:Organization".freeze],
       label: "location".freeze,
-      rangeIncludes: ["schema:Place".freeze, "schema:PostalAddress".freeze, "schema:Text".freeze],
+      rangeIncludes: ["schema:Place".freeze, "schema:PostalAddress".freeze, "schema:Text".freeze, "schema:VirtualLocation".freeze],
       type: "rdf:Property".freeze
     property :locationCreated,
       comment: %(The location where the CreativeWork was created, which may not be the same as the location depicted in the CreativeWork.).freeze,
@@ -10382,6 +10484,24 @@ Usage guidelines:<br/><br/>
       rangeIncludes: "schema:MaximumDoseSchedule".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
+    property :maximumPhysicalAttendeeCapacity,
+      comment: %(The maximum physical attendee capacity of an <a class="localLink" href="http://schema.org/Event">Event</a> whose <a class="localLink" href="http://schema.org/eventAttendanceMode">eventAttendanceMode</a> is <a class="localLink" href="http://schema.org/OfflineEventAttendanceMode">OfflineEventAttendanceMode</a> \(or the offline aspects, in the case of a <a class="localLink" href="http://schema.org/MixedEventAttendanceMode">MixedEventAttendanceMode</a>\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      domainIncludes: "schema:Event".freeze,
+      label: "maximumPhysicalAttendeeCapacity".freeze,
+      rangeIncludes: "schema:Integer".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :maximumVirtualAttendeeCapacity,
+      comment: %(The maximum physical attendee capacity of an <a class="localLink" href="http://schema.org/Event">Event</a> whose <a class="localLink" href="http://schema.org/eventAttendanceMode">eventAttendanceMode</a> is <a class="localLink" href="http://schema.org/OnlineEventAttendanceMode">OnlineEventAttendanceMode</a> \(or the online aspects, in the case of a <a class="localLink" href="http://schema.org/MixedEventAttendanceMode">MixedEventAttendanceMode</a>\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      domainIncludes: "schema:Event".freeze,
+      label: "maximumVirtualAttendeeCapacity".freeze,
+      rangeIncludes: "schema:Integer".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :mealService,
       comment: %(Description of the meals that will be provided or available for purchase.).freeze,
       domainIncludes: "schema:Flight".freeze,
@@ -10428,6 +10548,15 @@ If there are several <a class="localLink" href="http://schema.org/variableMeasur
       label: "mechanismOfAction".freeze,
       rangeIncludes: "schema:Text".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :mediaAuthenticityCategory,
+      comment: %(Indicates a MediaManipulationRatingEnumeration classification of a media object \(in the context of how it was published or shared\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      domainIncludes: "schema:MediaReview".freeze,
+      label: "mediaAuthenticityCategory".freeze,
+      rangeIncludes: "schema:MediaManipulationRatingEnumeration".freeze,
+      "schema:category": "issue-2450".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :median,
       comment: %(The median value.).freeze,
@@ -10737,6 +10866,15 @@ Typical unit code\(s\): KMT for kilometers, SMI for statute miles).freeze,
       label: "netWorth".freeze,
       rangeIncludes: ["schema:MonetaryAmount".freeze, "schema:PriceSpecification".freeze],
       type: "rdf:Property".freeze
+    property :newsUpdatesAndGuidelines,
+      comment: %(Indicates a page with news updates and guidelines. This could often be \(but is not required to be\) the main page containing <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> markup on a site.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "newsUpdatesAndGuidelines".freeze,
+      rangeIncludes: ["schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :nextItem,
       comment: %(A link to the ListItem that follows the current one.).freeze,
       domainIncludes: "schema:ListItem".freeze,
@@ -10851,6 +10989,15 @@ Typical unit code\(s\): C62).freeze,
       domainIncludes: ["schema:Accommodation".freeze, "schema:FloorPlan".freeze],
       label: "numberOfBathroomsTotal".freeze,
       rangeIncludes: "schema:Integer".freeze,
+      "schema:category": "issue-2373".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :numberOfBedrooms,
+      comment: %(The total integer number of bedrooms in a some <a class="localLink" href="http://schema.org/Accommodation">Accommodation</a>, <a class="localLink" href="http://schema.org/ApartmentComplex">ApartmentComplex</a> or <a class="localLink" href="http://schema.org/FloorPlan">FloorPlan</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2373".freeze,
+      domainIncludes: ["schema:Accommodation".freeze, "schema:ApartmentComplex".freeze, "schema:FloorPlan".freeze],
+      label: "numberOfBedrooms".freeze,
+      rangeIncludes: ["schema:Number".freeze, "schema:QuantitativeValue".freeze],
       "schema:category": "issue-2373".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
@@ -11024,11 +11171,12 @@ Typical unit code\(s\): C62 for person).freeze,
       comment: %(A category describing the job, preferably using a term from a taxonomy such as <a href="http://www.onetcenter.org/taxonomy.html">BLS O*NET-SOC</a>, <a href="https://www.ilo.org/public/english/bureau/stat/isco/isco08/">ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>
 
 Note: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.).freeze,
-      "dc:source": ["https://github.com/schemaorg/schemaorg/issues/1698".freeze, "https://github.com/schemaorg/schemaorg/issues/2192".freeze, "https://github.com/schemaorg/schemaorg/issues/2289".freeze],
-      domainIncludes: ["schema:JobPosting".freeze, "schema:Occupation".freeze, "schema:WorkBasedProgram".freeze],
+      "dc:source": ["https://github.com/schemaorg/schemaorg/issues/1698".freeze, "https://github.com/schemaorg/schemaorg/issues/2192".freeze, "https://github.com/schemaorg/schemaorg/issues/2289".freeze, "https://github.com/schemaorg/schemaorg/issues/2460".freeze],
+      domainIncludes: ["schema:EducationalOccupationalProgram".freeze, "schema:JobPosting".freeze, "schema:Occupation".freeze, "schema:WorkBasedProgram".freeze],
       label: "occupationalCategory".freeze,
       rangeIncludes: ["schema:CategoryCode".freeze, "schema:Text".freeze],
-      "schema:category": ["issue-1698".freeze, "issue-2192".freeze, "issue-2289".freeze],
+      "schema:category": ["issue-1698".freeze, "issue-2192".freeze, "issue-2289".freeze, "issue-2460".freeze],
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :occupationalCredentialAwarded,
       comment: %(A description of the qualification, award, certificate, diploma or other occupational credential awarded as a consequence of successful completion of this course or program.).freeze,
@@ -11174,13 +11322,6 @@ Note: for historical reasons, any textual label and formal code provided as a li
       label: "organizer".freeze,
       rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       type: "rdf:Property".freeze
-    property :origin,
-      comment: %(The place or point where a muscle arises.).freeze,
-      domainIncludes: "schema:Muscle".freeze,
-      label: "origin".freeze,
-      rangeIncludes: "schema:AnatomicalStructure".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "rdf:Property".freeze
     property :originAddress,
       comment: %(Shipper's address.).freeze,
       domainIncludes: "schema:ParcelDelivery".freeze,
@@ -11194,24 +11335,10 @@ Note: for historical reasons, any textual label and formal code provided as a li
       rangeIncludes: "schema:Vessel".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
-    property :outcome,
-      comment: %(Expected or actual outcomes of the study.).freeze,
-      domainIncludes: ["schema:MedicalProcedure".freeze, "schema:MedicalStudy".freeze],
-      label: "outcome".freeze,
-      rangeIncludes: ["schema:MedicalEntity".freeze, "schema:Text".freeze],
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "rdf:Property".freeze
     property :overdosage,
       comment: %(Any information related to overdose on a drug, including signs or symptoms, treatments, contact information for emergency response.).freeze,
       domainIncludes: "schema:Drug".freeze,
       label: "overdosage".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "rdf:Property".freeze
-    property :overview,
-      comment: %(Descriptive information establishing the overarching theory/philosophy of the plan. May include the rationale for the name, the population where the plan first came to prominence, etc.).freeze,
-      domainIncludes: "schema:Diet".freeze,
-      label: "overview".freeze,
       rangeIncludes: "schema:Text".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
@@ -11545,16 +11672,9 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound<br/><br/>
     property :petsAllowed,
       comment: %(Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.).freeze,
       "dc:source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology".freeze,
-      domainIncludes: ["schema:Accommodation".freeze, "schema:LodgingBusiness".freeze],
+      domainIncludes: ["schema:Accommodation".freeze, "schema:ApartmentComplex".freeze, "schema:FloorPlan".freeze, "schema:LodgingBusiness".freeze],
       label: "petsAllowed".freeze,
       rangeIncludes: ["schema:Boolean".freeze, "schema:Text".freeze],
-      type: "rdf:Property".freeze
-    property :phase,
-      comment: %(The phase of the clinical trial.).freeze,
-      domainIncludes: "schema:MedicalTrial".freeze,
-      label: "phase".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :phoneticText,
       comment: %(Representation of a text <a class="localLink" href="http://schema.org/textValue">textValue</a> using the specified <a class="localLink" href="http://schema.org/speechToTextMarkup">speechToTextMarkup</a>. For example the city name of Houston in IPA: /ˈhjuːstən/.).freeze,
@@ -11630,13 +11750,6 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound<br/><br/>
       domainIncludes: "schema:GeoShape".freeze,
       label: "polygon".freeze,
       rangeIncludes: "schema:Text".freeze,
-      type: "rdf:Property".freeze
-    property :population,
-      comment: %(Any characteristics of the population used in the study, e.g. 'males under 65'.).freeze,
-      domainIncludes: "schema:MedicalStudy".freeze,
-      label: "population".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :populationType,
       comment: %(Indicates the populationType common to all members of a <a class="localLink" href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.).freeze,
@@ -11965,6 +12078,15 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       "schema:category": "issue-2289".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
+    property :programType,
+      comment: %(The type of educational or occupational program. For example, classroom, internship, alternance, etc..).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2460".freeze,
+      domainIncludes: "schema:EducationalOccupationalProgram".freeze,
+      label: "programType".freeze,
+      rangeIncludes: ["schema:DefinedTerm".freeze, "schema:Text".freeze],
+      "schema:category": "issue-2460".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :programmingLanguage,
       comment: %(The computer programming language.).freeze,
       domainIncludes: "schema:SoftwareSourceCode".freeze,
@@ -12032,6 +12154,15 @@ Standards bodies should promote a standard prefix for the identifiers of propert
       label: "publicAccess".freeze,
       rangeIncludes: "schema:Boolean".freeze,
       type: "rdf:Property".freeze
+    property :publicTransportClosuresInfo,
+      comment: %(Information about public transport closures.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "publicTransportClosuresInfo".freeze,
+      rangeIncludes: ["schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :publication,
       comment: %(A publication event associated with the item.).freeze,
       domainIncludes: "schema:CreativeWork".freeze,
@@ -12087,13 +12218,6 @@ While such policies are most typically expressed in natural language, sometimes 
       label: "purchaseDate".freeze,
       rangeIncludes: "schema:Date".freeze,
       type: "rdf:Property".freeze
-    property :purpose,
-      comment: %(A goal towards an action is taken. Can be concrete or abstract.).freeze,
-      domainIncludes: ["schema:AllocateAction".freeze, "schema:MedicalDevice".freeze, "schema:PayAction".freeze],
-      label: "purpose".freeze,
-      rangeIncludes: ["schema:MedicalDevicePurpose".freeze, "schema:Thing".freeze],
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "rdf:Property".freeze
     property :qualifications,
       comment: %(Specific qualifications required for this role or Occupation.).freeze,
       "dc:source": ["https://github.com/schemaorg/schemaorg/issues/1698".freeze, "https://github.com/schemaorg/schemaorg/issues/1779".freeze],
@@ -12101,6 +12225,15 @@ While such policies are most typically expressed in natural language, sometimes 
       label: "qualifications".freeze,
       rangeIncludes: ["schema:EducationalOccupationalCredential".freeze, "schema:Text".freeze],
       "schema:category": ["issue-1698".freeze, "issue-1779".freeze],
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :quarantineGuidelines,
+      comment: %(Guidelines about quarantine rules, e.g. in the context of a pandemic.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "quarantineGuidelines".freeze,
+      rangeIncludes: ["schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :query,
@@ -12810,6 +12943,15 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound<br/><br/>
       label: "schemaVersion".freeze,
       rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
       type: "rdf:Property".freeze
+    property :schoolClosuresInfo,
+      comment: %(Information about school closures.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "schoolClosuresInfo".freeze,
+      rangeIncludes: ["schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :screenCount,
       comment: %(The number of screens in the movie theater.).freeze,
       domainIncludes: "schema:MovieTheater".freeze,
@@ -13172,13 +13314,6 @@ Typical unit code\(s\): C62 for persons).freeze,
       label: "softwareVersion".freeze,
       rangeIncludes: "schema:Text".freeze,
       type: "rdf:Property".freeze
-    property :source,
-      comment: %(The anatomical or organ system that the artery originates from.).freeze,
-      domainIncludes: "schema:Artery".freeze,
-      label: "source".freeze,
-      rangeIncludes: "schema:AnatomicalStructure".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
-      type: "rdf:Property".freeze
     property :sourceOrganization,
       comment: %(The Organization on whose behalf the creator was working.).freeze,
       domainIncludes: "schema:CreativeWork".freeze,
@@ -13345,9 +13480,11 @@ Typical unit code\(s\): KMH for km/h, HM for mile per hour \(0.447 04 m/s\), KNT
       type: "rdf:Property".freeze
     property :startDate,
       comment: %(The start date and time of the item \(in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>\).).freeze,
-      domainIncludes: ["schema:CreativeWorkSeason".freeze, "schema:CreativeWorkSeries".freeze, "schema:DatedMoneySpecification".freeze, "schema:EducationalOccupationalProgram".freeze, "schema:Event".freeze, "schema:Role".freeze],
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2486".freeze,
+      domainIncludes: ["schema:CreativeWorkSeason".freeze, "schema:CreativeWorkSeries".freeze, "schema:DatedMoneySpecification".freeze, "schema:EducationalOccupationalProgram".freeze, "schema:Event".freeze, "schema:Role".freeze, "schema:Schedule".freeze],
       label: "startDate".freeze,
       rangeIncludes: ["schema:Date".freeze, "schema:DateTime".freeze],
+      "schema:category": "issue-2486".freeze,
       type: "rdf:Property".freeze
     property :startOffset,
       comment: %(The start time of the clip expressed as the number of seconds from the beginning of the work.).freeze,
@@ -13542,13 +13679,6 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       rangeIncludes: ["schema:Language".freeze, "schema:Text".freeze],
       "schema:category": "issue-2110".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
-      type: "rdf:Property".freeze
-    property :subtype,
-      comment: %(A more specific type of the condition, where applicable, for example 'Type 1 Diabetes', 'Type 2 Diabetes', or 'Gestational Diabetes' for Diabetes.).freeze,
-      domainIncludes: "schema:MedicalCondition".freeze,
-      label: "subtype".freeze,
-      rangeIncludes: "schema:Text".freeze,
-      "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :successorOf,
       comment: %(A pointer from a newer variant of a product  to its previous, often discontinued predecessor.).freeze,
@@ -13930,6 +14060,15 @@ Usage guidelines:<br/><br/>
       label: "totalTime".freeze,
       rangeIncludes: "schema:Duration".freeze,
       type: "rdf:Property".freeze
+    property :tourBookingPage,
+      comment: %(A page providing information on how to book a tour of some <a class="localLink" href="http://schema.org/Place">Place</a>, such as an <a class="localLink" href="http://schema.org/Accommodation">Accommodation</a> or <a class="localLink" href="http://schema.org/ApartmentComplex">ApartmentComplex</a> in a real estate setting, as well as other kinds of tours as appropriate.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2373".freeze,
+      domainIncludes: ["schema:Accommodation".freeze, "schema:ApartmentComplex".freeze, "schema:Place".freeze],
+      label: "tourBookingPage".freeze,
+      rangeIncludes: "schema:URL".freeze,
+      "schema:category": "issue-2373".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :touristType,
       comment: %(Attraction suitable for type\(s\) of tourist. eg. Children, visitors from a particular country, etc.).freeze,
       "dc:source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it".freeze, "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism".freeze],
@@ -13997,11 +14136,11 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound
       type: "rdf:Property".freeze
     property :trainingSalary,
       comment: %(The estimated salary earned while in the program.).freeze,
-      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2289".freeze,
-      domainIncludes: "schema:WorkBasedProgram".freeze,
+      "dc:source": ["https://github.com/schemaorg/schemaorg/issues/2289".freeze, "https://github.com/schemaorg/schemaorg/issues/2460".freeze],
+      domainIncludes: ["schema:EducationalOccupationalProgram".freeze, "schema:WorkBasedProgram".freeze],
       label: "trainingSalary".freeze,
       rangeIncludes: "schema:MonetaryAmountDistribution".freeze,
-      "schema:category": "issue-2289".freeze,
+      "schema:category": ["issue-2289".freeze, "issue-2460".freeze],
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :transFatContent,
@@ -14036,6 +14175,15 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound
       label: "transmissionMethod".freeze,
       rangeIncludes: "schema:Text".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :travelBans,
+      comment: %(Information about travel bans, e.g. in the context of a pandemic.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "travelBans".freeze,
+      rangeIncludes: ["schema:URL".freeze, "schema:WebContent".freeze],
+      "schema:category": "issue-2490".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :trialDesign,
       comment: %(Specifics about the trial design \(enumerated\).).freeze,
@@ -14146,6 +14294,17 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound
       domainIncludes: "schema:EntryPoint".freeze,
       label: "urlTemplate".freeze,
       rangeIncludes: "schema:Text".freeze,
+      type: "rdf:Property".freeze
+    property :usageInfo,
+      comment: %(The schema.org <a class="localLink" href="http://schema.org/usageInfo">usageInfo</a> property indicates further information about a <a class="localLink" href="http://schema.org/CreativeWork">CreativeWork</a>. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.<br/><br/>
+
+This property can be used alongside the license property which indicates license\(s\) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2454".freeze,
+      domainIncludes: "schema:CreativeWork".freeze,
+      label: "usageInfo".freeze,
+      rangeIncludes: ["schema:CreativeWork".freeze, "schema:URL".freeze],
+      "schema:category": "issue-2454".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :usedToDiagnose,
       comment: %(A condition the test is used to diagnose.).freeze,
@@ -14463,11 +14622,11 @@ Typical unit code\(s\): C62 for persons.).freeze,
       rangeIncludes: "schema:DateTime".freeze,
       type: "rdf:Property".freeze
     property :webFeed,
-      comment: %(The URL for the feed associated with the podcast series. This is usually RSS or Atom.).freeze,
+      comment: %(The URL for a feed, e.g. associated with a podcast series, blog, or series of date-stamped updates. This is usually RSS or Atom.).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/373".freeze,
       domainIncludes: "schema:PodcastSeries".freeze,
       label: "webFeed".freeze,
-      rangeIncludes: "schema:URL".freeze,
+      rangeIncludes: ["schema:DataFeed".freeze, "schema:URL".freeze],
       "schema:category": "issue-373".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
@@ -14678,6 +14837,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       comment: %(Book format: Audiobook. This is an enumerated value for use with the bookFormat property. There is also a type 'Audiobook' in the bib extension which includes Audiobook specific properties.).freeze,
       label: "AudiobookFormat".freeze,
       type: "schema:BookFormatType".freeze
+    term :AuthenticContent,
+      comment: %(AuthenticMediaObject: An unaltered image that is presented in an accurate way.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "AuthenticContent".freeze,
+      "schema:category": "issue-2450".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:MediaManipulationRatingEnumeration".freeze
     term :AuthoritativeLegalValue,
       comment: %(Indicates that the publisher gives some special status to the publication of the document. \("The Queens Printer" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications\). Something "Authoritative" is considered to be also <a class="localLink" href="http://schema.org/OfficialLegalValue">OfficialLegalValue</a>".).freeze,
       "dc:source": ["http://publications.europa.eu/mdr/eli/index.html".freeze, "https://github.com/schemaorg/schemaorg/issues/1156".freeze],
@@ -14918,6 +15084,10 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
     term :EventCancelled,
       comment: %(The event has been cancelled. If the event has multiple startDate values, all are assumed to be cancelled. Either startDate or previousStartDate may be used to specify the event's cancelled date\(s\).).freeze,
       label: "EventCancelled".freeze,
+      type: "schema:EventStatusType".freeze
+    term :EventMovedOnline,
+      comment: %(Indicates that the event was changed to allow online participation. See <a class="localLink" href="http://schema.org/eventAttendanceMode">eventAttendanceMode</a> for specifics of whether it is now fully or partially online.).freeze,
+      label: "EventMovedOnline".freeze,
       type: "schema:EventStatusType".freeze
     term :EventPostponed,
       comment: %(The event has been postponed and no new date has been set. The event's previousStartDate should be set.).freeze,
@@ -15272,6 +15442,20 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "schema:category": "issue-2374".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "schema:HealthAspectEnumeration".freeze
+    term :MissingContext,
+      comment: %(MissingContext: ...).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "MissingContext".freeze,
+      "schema:category": "issue-2450".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:MediaManipulationRatingEnumeration".freeze
+    term :MixedEventAttendanceMode,
+      comment: %(MixedEventAttendanceMode - an event that is conducted as a combination of both offline and online modes.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      label: "MixedEventAttendanceMode".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:EventAttendanceModeEnumeration".freeze
     term :MixtapeAlbum,
       comment: %(MixtapeAlbum.).freeze,
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
@@ -15378,6 +15562,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "schema:category": "issue-1156".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "schema:LegalValueLevel".freeze
+    term :OfflineEventAttendanceMode,
+      comment: %(OfflineEventAttendanceMode - an event that is primarily conducted offline.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      label: "OfflineEventAttendanceMode".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:EventAttendanceModeEnumeration".freeze
     term :OfflinePermanently,
       comment: %(Game server status: OfflinePermanently. Server is offline and not available.).freeze,
       label: "OfflinePermanently".freeze,
@@ -15400,6 +15591,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       comment: %(Game server status: Online. Server is available.).freeze,
       label: "Online".freeze,
       type: "schema:GameServerStatus".freeze
+    term :OnlineEventAttendanceMode,
+      comment: %(OnlineEventAttendanceMode - an event that is primarily conducted online.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/1842".freeze,
+      label: "OnlineEventAttendanceMode".freeze,
+      "schema:category": "issue-1842".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:EventAttendanceModeEnumeration".freeze
     term :OnlineFull,
       comment: %(Game server status: OnlineFull. Server is online but unavailable. The maximum number of players has reached.).freeze,
       label: "OnlineFull".freeze,
