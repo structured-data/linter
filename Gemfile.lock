@@ -17,10 +17,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: f663709f5a98abca4106730e5139ad2c6aefa0e3
+  revision: 35eea2b50bbd71029ab6255b48b4490fb371ea12
   branch: develop
   specs:
-    json-ld (3.1.1)
+    json-ld (3.1.2)
       htmlentities (~> 4.3)
       json-canonicalization (~> 0.2)
       link_header (~> 0.0, >= 0.0.8)
@@ -30,10 +30,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 48b0cb183f4330b410b56acef44f6861e86898c4
+  revision: 2d88cb9d4b6454a75fb1d2fc7cc3796082867c71
   branch: develop
   specs:
-    json-ld-preloaded (3.1.1)
+    json-ld-preloaded (3.1.2)
       json-ld (~> 3.1)
       rdf (~> 3.1)
 
@@ -123,7 +123,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: e836244f56da2c2a34f6d90e15f5fd86ac5f4301
+  revision: 779b81baea4e88f842f421545d821a27daade253
   branch: develop
   specs:
     rdf-vocab (3.1.2)
@@ -149,7 +149,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.7.2)
+    linter (3.7.3)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -243,7 +243,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
-    oj (3.10.3)
+    oj (3.10.5)
     optimist (3.0.0)
     public_suffix (4.0.3)
     puma (4.3.3)
@@ -274,7 +274,7 @@ GEM
       rspec-mocks (~> 3.9.0)
     rspec-core (3.9.1)
       rspec-support (~> 3.9.1)
-    rspec-expectations (3.9.0)
+    rspec-expectations (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-its (1.3.0)
@@ -327,7 +327,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
-    webmock (3.8.2)
+    webmock (3.8.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
