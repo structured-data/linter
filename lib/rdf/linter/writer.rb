@@ -211,7 +211,6 @@ module RDF::Linter
     #
     # @param [String] property
     # @param [RDF::Resource] object
-    # @param [String] property
     # @return [String]
     #   HTML+RDFa markup of review using Raty.
     def rating_helper(property, object)

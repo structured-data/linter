@@ -96,7 +96,7 @@ module RDF::Linter
     # @param [String] types
     #   schema type of example, may be multiple separated by commas
     # @param [String] example the body of the example
-    # @param [Integer] number
+    # @param [Integer] ex_num
     #   This example number, used to create appropriate grouping
     # @param [Symbol] format :microdata, :rdfa, or :jsonld
     def add_example(types, example, ex_num, format)
