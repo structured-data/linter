@@ -90,8 +90,8 @@ module RDF::Linter
 
     # Get "/" either returns the main linter page or linted markup
     #
-    # @method get_linter
-    # @overload get "/", params
+    # @!parse
+    #   def get_linter; end
     # @see {#linter}
     get '/' do
       respond_to do |wants|
@@ -102,8 +102,8 @@ module RDF::Linter
 
     # POST "/" returns linted markup as JSON
     #
-    # @method post_linter
-    # @overload post "/", params
+    # @!parse
+    #   def post_linter; end
     # @see {#linter}
     post '/' do
       payload = params
@@ -112,8 +112,8 @@ module RDF::Linter
     end
 
     # Return about page
-    # @method get_about
-    # @overload get "/about/"
+    # @!parse
+    #   def get_about; end
     get '/about/' do
       @title = "About the Linter"
       set_cache_header
@@ -124,8 +124,8 @@ module RDF::Linter
     end
 
     # Return markup examples
-    # @method get_examples
-    # @overload get "/examples/"
+    # @!parse
+    #   def get_examples; end
     get '/examples/' do
       @title = "Markup Examples"
       set_cache_header
@@ -136,9 +136,9 @@ module RDF::Linter
     end
 
     # Return a specific schema.org example
-    # @method get_sc_example
-    # @overload get "/examples/schema.org/:name/"
     # @param [String] name Name of the example to return
+    # @!parse
+    #   def get_sc_example(name); end
     get '/examples/schema.org/:name/' do
       set_cache_header
       @title = "Schema.org #{params[:name]}"
@@ -167,9 +167,9 @@ module RDF::Linter
     end
 
     # Return source of a specific schema.org example
-    # @method get_sc_example
-    # @overload get "/examples/good-relations/:file"
     # @param [String] file Name of the example to return
+    # @!parse
+    #   def get_sc_example(file); end
     get '/examples/schema.org/:file' do
       set_cache_header
       file = File.join(APP_DIR, "schema.org", params[:file])
@@ -184,8 +184,8 @@ module RDF::Linter
     end
 
     # Display list of snippets
-    # @method get_snipptes
-    # @overload get "/snippets/"
+    # @!parse
+    #   def get_snippets; end
     get '/snippets/' do
       @title = "Snippet definitions"
       set_cache_header
@@ -197,6 +197,9 @@ module RDF::Linter
       redirect '/snippets/'
     end
 
+    # @param [String] name Name of the snippet to return
+    # @!parse
+    #   def get_snippets(name); end
     get '/snippets/:name' do
       set_cache_header
       @title = params[:name]
@@ -337,13 +340,16 @@ module RDF::Linter
 
     # Should use Rack::Conneg, but helpers not loading properly
     #
-    # @param [Symbol] ext (type)
+    # @param [Symbol] type (nil)
     #   optional extension to override accept matching
     def respond_to(type = nil)
       wants = { '*/*' => Proc.new { raise TypeError, "No handler for #{request.accept.join(',')}" } }
-      def wants.method_missing(ext, *args, &handler)
-        type = ext == :other ? '*/*' : Rack::Mime::MIME_TYPES[".#{ext.to_s}"]
-        self[type] = handler
+
+      wants.instance_exec do
+        def method_missing(ext, *args, &handler)
+          type = ext == :other ? '*/*' : Rack::Mime::MIME_TYPES[".#{ext.to_s}"]
+          self[type] = handler
+        end
       end
 
       yield wants

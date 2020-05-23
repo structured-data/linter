@@ -9,11 +9,11 @@ module RDF::Linter
     # Parse the an input file based on params and/or content-type header
     # @param [Hash{Symbol => Object}] reader_opts
     #   options also passed to reader
-    # @option options [Symbol] :format RDF Reader format symbol for reading content
-    # @option options [Hash{Symbol => RDF::URI}] :prefixes passed to reader and writer
-    # @option options [Tempfile] :tempfile location of content
-    # @option options [String] :content literal content
-    # @option options [RDF::URI] :base_uri location of file, or where to treat content as having been located.
+    # @option reader_opts [Symbol] :format RDF Reader format symbol for reading content
+    # @option reader_opts [Hash{Symbol => RDF::URI}] :prefixes passed to reader and writer
+    # @option reader_opts [Tempfile] :tempfile location of content
+    # @option reader_opts [String] :content literal content
+    # @option reader_opts [RDF::URI] :base_uri location of file, or where to treat content as having been located.
     # @return [Array(RDF::Graph, Hash{Symbol => Array(String)}, RDF::URI)] graph, messages, base_uri
     def parse(**reader_opts)
       logger = reader_opts[:logger] ||= begin
