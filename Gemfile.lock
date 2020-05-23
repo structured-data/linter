@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 2d88cb9d4b6454a75fb1d2fc7cc3796082867c71
+  revision: 93c13b843044e462e1f27567ef778deb5a71caf1
   branch: develop
   specs:
     json-ld-preloaded (3.1.2)
@@ -149,7 +149,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.7.3)
+    linter (3.7.4)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
