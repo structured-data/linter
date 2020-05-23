@@ -49,23 +49,23 @@ This application is represented as a [Sinatra][] application implemented in [Rub
     spec                  -- Tests
 
 ## Dependencies
-* [Haml](http://rubygems.org/gems/haml) (>= 4.0.0)
-* [Erubis](http://rubygems.org/gems/erubis) (>= 2.7)
-* [RDF.rb](http://rubygems.org/gems/rdf) (>= 1.0)
-* [Linked Data](http://rubygems.org/gems/linkeddata) (>= 1.0)
-* [Linked Data for Rack](http://rubygems.org/gems/rack-linkeddata) (>= 1.0)
-* [Linked Data for Sinatra](http://rubygems.org/gems/sinatra-linkeddata) (>= 1.0)
-* [Nokogiri](http://rubygems.org/gems/nokogiri) (>= 1.5.9)
-* [RDF::JSON](http://rubygems.org/gems/rdf-json) (>= 1.0)
-* [RDF::Microdata](http://rubygems.org/gems/rdf-microdata) (>= 1.0)
-* [RDF::N3](http://rubygems.org/gems/rdf-n3) (>= 1.0)
-* [RDF::RDFa](http://rubygems.org/gems/rdf-rdfa) (>= 1.0)
-* [RDF::RDFXML](http://rubygems.org/gems/rdf-rdfxml) (>= 1.0)
-* [RDF::TriX](http://rubygems.org/gems/rdf-trix) (>= 1.0)
-* [JSON::LD](http://rubygems.org/gems/json-ld) (>= 1.0)
+* [Haml](https://rubygems.org/gems/haml) (>= 4.0.0)
+* [Erubis](https://rubygems.org/gems/erubis) (>= 2.7)
+* [RDF.rb](https://rubygems.org/gems/rdf) (>= 1.0)
+* [Linked Data](https://rubygems.org/gems/linkeddata) (>= 1.0)
+* [Linked Data for Rack](https://rubygems.org/gems/rack-linkeddata) (>= 1.0)
+* [Linked Data for Sinatra](https://rubygems.org/gems/sinatra-linkeddata) (>= 1.0)
+* [Nokogiri](https://rubygems.org/gems/nokogiri) (>= 1.5.9)
+* [RDF::JSON](https://rubygems.org/gems/rdf-json) (>= 1.0)
+* [RDF::Microdata](https://rubygems.org/gems/rdf-microdata) (>= 1.0)
+* [RDF::N3](https://rubygems.org/gems/rdf-n3) (>= 1.0)
+* [RDF::RDFa](https://rubygems.org/gems/rdf-rdfa) (>= 1.0)
+* [RDF::RDFXML](https://rubygems.org/gems/rdf-rdfxml) (>= 1.0)
+* [RDF::TriX](https://rubygems.org/gems/rdf-trix) (>= 1.0)
+* [JSON::LD](https://rubygems.org/gems/json-ld) (>= 1.0)
 
 ## AUTHORS
-* [Gregg Kellogg](http://github.com/ruby-rdf) - <http://kellogg-assoc.com/>
+* [Gregg Kellogg](https://github.com/ruby-rdf) - <https://greggkellogg.net/>
 * Stéphane Corlosquet
 
 ## Setup notes
@@ -80,7 +80,7 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 
 ## FEEDBACK
 
-* http://groups.google.com/group/structured-data-dev
+* https://groups.google.com/group/structured-data-dev
 * https://github.com/structured-data/linter/issues
 
 ## Contributing
@@ -98,27 +98,27 @@ This application is represented as a [Sinatra][] application implemented in [Rub
 
 ## License
 This is free and unencumbered public domain software. For more information,
-see <http://unlicense.org/> or the accompanying {file:UNLICENSE} file.
+see <https://unlicense.org/> or the accompanying {file:UNLICENSE} file.
 
-[JSON-LD]:        http://www.w3.org/TR/2013/CR-json-ld-20130910/
-[Microdata]:      http://www.w3.org/TR/microdata-rdf/
-[N-Triples]:      http://en.wikipedia.org/wiki/N-Triples
-[Notation3]:      http://en.wikipedia.org/wiki/Notation3
-[RDF/JSON]:       http://n2.talis.com/wiki/RDF_JSON_Specification
-[RDF/XML]:        http://www.w3.org/TR/rdf-syntax-grammar/
-[RDFa]:           http://en.wikipedia.org/wiki/RDFa
-[TriX]:           http://en.wikipedia.org/wiki/TriX_(syntax)
-[Turtle]:         http://en.wikipedia.org/wiki/Turtle_(syntax)
-[Sinatra]:        http://www.sinatrarb.com/
-[Ruby]:           http://www.ruby-lang.org/en/
-[RDF.rb]:         http://rubygems.org/gems/rdf
-[Linked Data]:    http://rubygems.org/gems/linkeddata
-[RDF::Microdata]: http://rubygems.org/gems/rdf-microdata
-[RDF::N3]:        http://rubygems.org/gems/rdf-n3
-[RDF::RDFa]:      http://rubygems.org/gems/rdf-rdfa
-[RDF::RDFXML]:    http://rubygems.org/gems/rdf-rdfxml
-[RDF::TriX]:      http://rubygems.org/gems/rdf-trix
-[JSON::LD]:       http://rubygems.org/gems/json-ld
-[Haml]:           http://haml-lang.com/
-[Erubis]:         http://www.kuwata-lab.com/erubis/
+[JSON-LD]:        https://www.w3.org/TR/2013/CR-json-ld-20130910/
+[Microdata]:      https://www.w3.org/TR/microdata-rdf/
+[N-Triples]:      https://en.wikipedia.org/wiki/N-Triples
+[Notation3]:      https://en.wikipedia.org/wiki/Notation3
+[RDF/JSON]:       https://n2.talis.com/wiki/RDF_JSON_Specification
+[RDF/XML]:        https://www.w3.org/TR/rdf-syntax-grammar/
+[RDFa]:           https://en.wikipedia.org/wiki/RDFa
+[TriX]:           https://en.wikipedia.org/wiki/TriX_(syntax)
+[Turtle]:         https://en.wikipedia.org/wiki/Turtle_(syntax)
+[Sinatra]:        https://www.sinatrarb.com/
+[Ruby]:           https://www.ruby-lang.org/en/
+[RDF.rb]:         https://rubygems.org/gems/rdf
+[Linked Data]:    https://rubygems.org/gems/linkeddata
+[RDF::Microdata]: https://rubygems.org/gems/rdf-microdata
+[RDF::N3]:        https://rubygems.org/gems/rdf-n3
+[RDF::RDFa]:      https://rubygems.org/gems/rdf-rdfa
+[RDF::RDFXML]:    https://rubygems.org/gems/rdf-rdfxml
+[RDF::TriX]:      https://rubygems.org/gems/rdf-trix
+[JSON::LD]:       https://rubygems.org/gems/json-ld
+[Haml]:           https://haml-lang.com/
+[Erubis]:         https://www.kuwata-lab.com/erubis/
 [Rack]:           https://github.com/rack/rack/wiki

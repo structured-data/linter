@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rack-rdf
-  revision: a8f8cd0928a505374deb249c018b9a70a758abfe
+  revision: 6198a209af73c03bf8abc28598c266e13e10609e
   branch: develop
   specs:
     rack-rdf (3.1.0)
@@ -48,7 +48,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: a43f0d76d5008454ccb3a6eb31abbc7db1580106
+  revision: 26d4cf9907b0fb0906fe8514a3eff4fea8251d54
   branch: develop
   specs:
     rdf (3.1.1)
@@ -68,7 +68,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: f777fa0bcdc8aaafb0d8d0d9ca8ef40ce3645783
+  revision: 219e5ea3ab1734d922e60cc772c2357aa5a883f6
   branch: develop
   specs:
     rdf-rdfa (3.1.0)
@@ -367,7 +367,7 @@ DEPENDENCIES
   yard (~> 0.9, >= 0.9.24)
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 2.7.1p83
 
 BUNDLED WITH
-   2.1.2
+   2.1.4
