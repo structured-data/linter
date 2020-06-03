@@ -75,11 +75,6 @@
     }
   },
   "AlignmentObject": {
-    "lrmi-1": {
-      "microdata": "schema.org/lrmi-1-microdata.html",
-      "rdfa": "schema.org/lrmi-1-rdfa.html",
-      "jsonld": "schema.org/lrmi-1-jsonld.html"
-    },
     "lrmi-2": {
       "microdata": "schema.org/lrmi-2-microdata.html",
       "rdfa": "schema.org/lrmi-2-rdfa.html",
@@ -156,10 +151,10 @@
     }
   },
   "Atlas": {
-    "Atlas-275": {
-      "microdata": "schema.org/Atlas-275-microdata.html",
-      "rdfa": "schema.org/Atlas-275-rdfa.html",
-      "jsonld": "schema.org/Atlas-275-jsonld.html"
+    "Atlas-274": {
+      "microdata": "schema.org/Atlas-274-microdata.html",
+      "rdfa": "schema.org/Atlas-274-rdfa.html",
+      "jsonld": "schema.org/Atlas-274-jsonld.html"
     }
   },
   "AudioObject": {
@@ -170,10 +165,10 @@
     }
   },
   "Audiobook": {
-    "Audiobook-readBy-277": {
-      "microdata": "schema.org/Audiobook-readBy-277-microdata.html",
-      "rdfa": "schema.org/Audiobook-readBy-277-rdfa.html",
-      "jsonld": "schema.org/Audiobook-readBy-277-jsonld.html"
+    "Audiobook-readBy-276": {
+      "microdata": "schema.org/Audiobook-readBy-276-microdata.html",
+      "rdfa": "schema.org/Audiobook-readBy-276-rdfa.html",
+      "jsonld": "schema.org/Audiobook-readBy-276-jsonld.html"
     }
   },
   "AuthorizeAction": {
@@ -228,15 +223,10 @@
       "rdfa": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-227-rdfa.html",
       "jsonld": "schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-227-jsonld.html"
     },
-    "CreativeWork-Book-translator-translationOfWork-workTranslation-278": {
-      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-microdata.html",
-      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-rdfa.html",
-      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-jsonld.html"
-    },
-    "offer-1": {
-      "microdata": "schema.org/offer-1-microdata.html",
-      "rdfa": "schema.org/offer-1-rdfa.html",
-      "jsonld": "schema.org/offer-1-jsonld.html"
+    "CreativeWork-Book-translator-translationOfWork-workTranslation-277": {
+      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-microdata.html",
+      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-rdfa.html",
+      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-jsonld.html"
     },
     "offeredBy-1": {
       "microdata": "schema.org/offeredBy-1-microdata.html",
@@ -284,15 +274,15 @@
     }
   },
   "BroadcastFrequencySpecification": {
+    "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278": {
+      "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-microdata.html",
+      "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-rdfa.html",
+      "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-jsonld.html"
+    },
     "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279": {
       "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-microdata.html",
       "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-rdfa.html",
       "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-jsonld.html"
-    },
-    "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280": {
-      "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-microdata.html",
-      "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-rdfa.html",
-      "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-jsonld.html"
     }
   },
   "BroadcastService": {
@@ -321,15 +311,15 @@
       "rdfa": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-219-rdfa.html",
       "jsonld": "schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-219-jsonld.html"
     },
+    "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278": {
+      "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-microdata.html",
+      "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-rdfa.html",
+      "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-jsonld.html"
+    },
     "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279": {
       "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-microdata.html",
       "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-rdfa.html",
       "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-jsonld.html"
-    },
-    "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280": {
-      "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-microdata.html",
-      "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-rdfa.html",
-      "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-jsonld.html"
     }
   },
   "BusReservation": {
@@ -379,10 +369,10 @@
     }
   },
   "Chapter": {
-    "Chapter-274": {
-      "microdata": "schema.org/Chapter-274-microdata.html",
-      "rdfa": "schema.org/Chapter-274-rdfa.html",
-      "jsonld": "schema.org/Chapter-274-jsonld.html"
+    "Chapter-273": {
+      "microdata": "schema.org/Chapter-273-microdata.html",
+      "rdfa": "schema.org/Chapter-273-rdfa.html",
+      "jsonld": "schema.org/Chapter-273-jsonld.html"
     }
   },
   "CheckAction": {
@@ -432,22 +422,22 @@
     }
   },
   "ClaimReview": {
-    "ClaimReview-320": {
-      "microdata": "schema.org/ClaimReview-320-microdata.html",
-      "rdfa": "schema.org/ClaimReview-320-rdfa.html",
-      "jsonld": "schema.org/ClaimReview-320-jsonld.html"
+    "ClaimReview-317": {
+      "microdata": "schema.org/ClaimReview-317-microdata.html",
+      "rdfa": "schema.org/ClaimReview-317-rdfa.html",
+      "jsonld": "schema.org/ClaimReview-317-jsonld.html"
     },
-    "ClaimReview-321": {
-      "microdata": "schema.org/ClaimReview-321-microdata.html",
-      "rdfa": "schema.org/ClaimReview-321-rdfa.html",
-      "jsonld": "schema.org/ClaimReview-321-jsonld.html"
+    "ClaimReview-318": {
+      "microdata": "schema.org/ClaimReview-318-microdata.html",
+      "rdfa": "schema.org/ClaimReview-318-rdfa.html",
+      "jsonld": "schema.org/ClaimReview-318-jsonld.html"
     }
   },
   "Collection": {
-    "Collection-276": {
-      "microdata": "schema.org/Collection-276-microdata.html",
-      "rdfa": "schema.org/Collection-276-rdfa.html",
-      "jsonld": "schema.org/Collection-276-jsonld.html"
+    "Collection-275": {
+      "microdata": "schema.org/Collection-275-microdata.html",
+      "rdfa": "schema.org/Collection-275-rdfa.html",
+      "jsonld": "schema.org/Collection-275-jsonld.html"
     }
   },
   "CollegeOrUniversity": {
@@ -463,24 +453,24 @@
     }
   },
   "ComicCoverArt": {
-    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273": {
-      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-microdata.html",
-      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-rdfa.html",
-      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-jsonld.html"
+    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272": {
+      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html",
+      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html",
+      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html"
     }
   },
   "ComicIssue": {
-    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273": {
-      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-microdata.html",
-      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-rdfa.html",
-      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-jsonld.html"
+    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272": {
+      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html",
+      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html",
+      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html"
     }
   },
   "ComicSeries": {
-    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273": {
-      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-microdata.html",
-      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-rdfa.html",
-      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-jsonld.html"
+    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272": {
+      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html",
+      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html",
+      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html"
     }
   },
   "CommentAction": {
@@ -546,10 +536,10 @@
     }
   },
   "CoverArt": {
-    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273": {
-      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-microdata.html",
-      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-rdfa.html",
-      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-jsonld.html"
+    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272": {
+      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html",
+      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html",
+      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html"
     }
   },
   "CreateAction": {
@@ -588,10 +578,10 @@
       "rdfa": "schema.org/ItemList-CreativeWork-261-rdfa.html",
       "jsonld": "schema.org/ItemList-CreativeWork-261-jsonld.html"
     },
-    "CreativeWork-Book-translator-translationOfWork-workTranslation-278": {
-      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-microdata.html",
-      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-rdfa.html",
-      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-jsonld.html"
+    "CreativeWork-Book-translator-translationOfWork-workTranslation-277": {
+      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-microdata.html",
+      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-rdfa.html",
+      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-jsonld.html"
     }
   },
   "CreditCard": {
@@ -635,13 +625,6 @@
       "microdata": "schema.org/fiboex-4-microdata.html",
       "rdfa": "schema.org/fiboex-4-rdfa.html",
       "jsonld": "schema.org/fiboex-4-jsonld.html"
-    }
-  },
-  "DigitalDocument": {
-    "digitaldocument-1": {
-      "microdata": "schema.org/digitaldocument-1-microdata.html",
-      "rdfa": "schema.org/digitaldocument-1-rdfa.html",
-      "jsonld": "schema.org/digitaldocument-1-jsonld.html"
     }
   },
   "DisagreeAction": {
@@ -883,10 +866,10 @@
       "rdfa": "schema.org/eg-5-rdfa.html",
       "jsonld": "schema.org/eg-5-jsonld.html"
     },
-    "GeoCoordinates-geo-301": {
-      "microdata": "schema.org/GeoCoordinates-geo-301-microdata.html",
-      "rdfa": "schema.org/GeoCoordinates-geo-301-rdfa.html",
-      "jsonld": "schema.org/GeoCoordinates-geo-301-jsonld.html"
+    "GeoCoordinates-geo-300": {
+      "microdata": "schema.org/GeoCoordinates-geo-300-microdata.html",
+      "rdfa": "schema.org/GeoCoordinates-geo-300-rdfa.html",
+      "jsonld": "schema.org/GeoCoordinates-geo-300-jsonld.html"
     }
   },
   "GiveAction": {
@@ -930,27 +913,27 @@
     }
   },
   "Hotel": {
-    "Hotel-296": {
-      "microdata": "schema.org/Hotel-296-microdata.html",
-      "rdfa": "schema.org/Hotel-296-rdfa.html",
-      "jsonld": "schema.org/Hotel-296-jsonld.html"
+    "Hotel-295": {
+      "microdata": "schema.org/Hotel-295-microdata.html",
+      "rdfa": "schema.org/Hotel-295-rdfa.html",
+      "jsonld": "schema.org/Hotel-295-jsonld.html"
     },
-    "Hotel-logo-image-299": {
-      "microdata": "schema.org/Hotel-logo-image-299-microdata.html",
-      "rdfa": "schema.org/Hotel-logo-image-299-rdfa.html",
-      "jsonld": "schema.org/Hotel-logo-image-299-jsonld.html"
+    "Hotel-logo-image-298": {
+      "microdata": "schema.org/Hotel-logo-image-298-microdata.html",
+      "rdfa": "schema.org/Hotel-logo-image-298-rdfa.html",
+      "jsonld": "schema.org/Hotel-logo-image-298-jsonld.html"
     },
-    "HotelRoom-Hotel-308": {
-      "microdata": "schema.org/HotelRoom-Hotel-308-microdata.html",
-      "rdfa": "schema.org/HotelRoom-Hotel-308-rdfa.html",
-      "jsonld": "schema.org/HotelRoom-Hotel-308-jsonld.html"
+    "HotelRoom-Hotel-307": {
+      "microdata": "schema.org/HotelRoom-Hotel-307-microdata.html",
+      "rdfa": "schema.org/HotelRoom-Hotel-307-rdfa.html",
+      "jsonld": "schema.org/HotelRoom-Hotel-307-jsonld.html"
     }
   },
   "HotelRoom": {
-    "HotelRoom-Hotel-308": {
-      "microdata": "schema.org/HotelRoom-Hotel-308-microdata.html",
-      "rdfa": "schema.org/HotelRoom-Hotel-308-rdfa.html",
-      "jsonld": "schema.org/HotelRoom-Hotel-308-jsonld.html"
+    "HotelRoom-Hotel-307": {
+      "microdata": "schema.org/HotelRoom-Hotel-307-microdata.html",
+      "rdfa": "schema.org/HotelRoom-Hotel-307-rdfa.html",
+      "jsonld": "schema.org/HotelRoom-Hotel-307-jsonld.html"
     }
   },
   "IgnoreAction": {
@@ -1104,10 +1087,10 @@
     "GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-221": {
       "jsonld": "schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-221-jsonld.html"
     },
-    "availableLanguage-Language-307": {
-      "microdata": "schema.org/availableLanguage-Language-307-microdata.html",
-      "rdfa": "schema.org/availableLanguage-Language-307-rdfa.html",
-      "jsonld": "schema.org/availableLanguage-Language-307-jsonld.html"
+    "availableLanguage-Language-306": {
+      "microdata": "schema.org/availableLanguage-Language-306-microdata.html",
+      "rdfa": "schema.org/availableLanguage-Language-306-rdfa.html",
+      "jsonld": "schema.org/availableLanguage-Language-306-jsonld.html"
     }
   },
   "LeaveAction": {
@@ -1180,15 +1163,15 @@
     }
   },
   "LocationFeatureSpecification": {
-    "feature-LocationFeatureSpecification-304": {
-      "microdata": "schema.org/feature-LocationFeatureSpecification-304-microdata.html",
-      "rdfa": "schema.org/feature-LocationFeatureSpecification-304-rdfa.html",
-      "jsonld": "schema.org/feature-LocationFeatureSpecification-304-jsonld.html"
+    "feature-LocationFeatureSpecification-303": {
+      "microdata": "schema.org/feature-LocationFeatureSpecification-303-microdata.html",
+      "rdfa": "schema.org/feature-LocationFeatureSpecification-303-rdfa.html",
+      "jsonld": "schema.org/feature-LocationFeatureSpecification-303-jsonld.html"
     },
-    "feature-LocationFeatureSpecification-hoursAvailable-305": {
-      "microdata": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-305-microdata.html",
-      "rdfa": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-305-rdfa.html",
-      "jsonld": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-305-jsonld.html"
+    "feature-LocationFeatureSpecification-hoursAvailable-304": {
+      "microdata": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-microdata.html",
+      "rdfa": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-rdfa.html",
+      "jsonld": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-jsonld.html"
     }
   },
   "LodgingReservation": {
@@ -1339,11 +1322,6 @@
       "rdfa": "schema.org/ItemList-MusicAlbum-263-rdfa.html",
       "jsonld": "schema.org/ItemList-MusicAlbum-263-jsonld.html"
     },
-    "music-1": {
-      "microdata": "schema.org/music-1-microdata.html",
-      "rdfa": "schema.org/music-1-rdfa.html",
-      "jsonld": "schema.org/music-1-jsonld.html"
-    },
     "music-3": {
       "microdata": "schema.org/music-3-microdata.html",
       "rdfa": "schema.org/music-3-rdfa.html",
@@ -1403,11 +1381,6 @@
       "rdfa": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-254-rdfa.html",
       "jsonld": "schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-254-jsonld.html"
     },
-    "music-1": {
-      "microdata": "schema.org/music-1-microdata.html",
-      "rdfa": "schema.org/music-1-rdfa.html",
-      "jsonld": "schema.org/music-1-jsonld.html"
-    },
     "music-3": {
       "microdata": "schema.org/music-3-microdata.html",
       "rdfa": "schema.org/music-3-rdfa.html",
@@ -1439,11 +1412,6 @@
     }
   },
   "MusicRelease": {
-    "music-1": {
-      "microdata": "schema.org/music-1-microdata.html",
-      "rdfa": "schema.org/music-1-rdfa.html",
-      "jsonld": "schema.org/music-1-jsonld.html"
-    },
     "music-5": {
       "microdata": "schema.org/music-5-microdata.html",
       "rdfa": "schema.org/music-5-rdfa.html",
@@ -1455,13 +1423,6 @@
       "microdata": "schema.org/eg-8-microdata.html",
       "rdfa": "schema.org/eg-8-rdfa.html",
       "jsonld": "schema.org/eg-8-jsonld.html"
-    }
-  },
-  "Newspaper": {
-    "Newspaper-271": {
-      "microdata": "schema.org/Newspaper-271-microdata.html",
-      "rdfa": "schema.org/Newspaper-271-rdfa.html",
-      "jsonld": "schema.org/Newspaper-271-jsonld.html"
     }
   },
   "NutritionInformation": {
@@ -1534,11 +1495,6 @@
       "microdata": "schema.org/ItemList-Product-Offer-260-microdata.html",
       "rdfa": "schema.org/ItemList-Product-Offer-260-rdfa.html",
       "jsonld": "schema.org/ItemList-Product-Offer-260-jsonld.html"
-    },
-    "offer-1": {
-      "microdata": "schema.org/offer-1-microdata.html",
-      "rdfa": "schema.org/offer-1-rdfa.html",
-      "jsonld": "schema.org/offer-1-jsonld.html"
     },
     "offer-2": {
       "microdata": "schema.org/offer-2-microdata.html",
@@ -1791,10 +1747,10 @@
       "rdfa": "schema.org/Person-disambiguatingDescription-264-rdfa.html",
       "jsonld": "schema.org/Person-disambiguatingDescription-264-jsonld.html"
     },
-    "VisualArtwork-Person-282": {
-      "microdata": "schema.org/VisualArtwork-Person-282-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-282-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-282-jsonld.html"
+    "VisualArtwork-Person-281": {
+      "microdata": "schema.org/VisualArtwork-Person-281-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-281-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-281-jsonld.html"
     },
     "music-2": {
       "microdata": "schema.org/music-2-microdata.html",
@@ -2560,10 +2516,10 @@
     }
   },
   "Thesis": {
-    "Thesis-inSupportOf-272": {
-      "microdata": "schema.org/Thesis-inSupportOf-272-microdata.html",
-      "rdfa": "schema.org/Thesis-inSupportOf-272-rdfa.html",
-      "jsonld": "schema.org/Thesis-inSupportOf-272-jsonld.html"
+    "Thesis-inSupportOf-271": {
+      "microdata": "schema.org/Thesis-inSupportOf-271-microdata.html",
+      "rdfa": "schema.org/Thesis-inSupportOf-271-rdfa.html",
+      "jsonld": "schema.org/Thesis-inSupportOf-271-jsonld.html"
     }
   },
   "Ticket": {
@@ -2759,20 +2715,20 @@
     }
   },
   "VisualArtwork": {
-    "VisualArtwork-Person-282": {
-      "microdata": "schema.org/VisualArtwork-Person-282-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-Person-282-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-Person-282-jsonld.html"
+    "VisualArtwork-Person-281": {
+      "microdata": "schema.org/VisualArtwork-Person-281-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-Person-281-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-Person-281-jsonld.html"
+    },
+    "VisualArtwork-282": {
+      "microdata": "schema.org/VisualArtwork-282-microdata.html",
+      "rdfa": "schema.org/VisualArtwork-282-rdfa.html",
+      "jsonld": "schema.org/VisualArtwork-282-jsonld.html"
     },
     "VisualArtwork-283": {
       "microdata": "schema.org/VisualArtwork-283-microdata.html",
       "rdfa": "schema.org/VisualArtwork-283-rdfa.html",
       "jsonld": "schema.org/VisualArtwork-283-jsonld.html"
-    },
-    "VisualArtwork-284": {
-      "microdata": "schema.org/VisualArtwork-284-microdata.html",
-      "rdfa": "schema.org/VisualArtwork-284-rdfa.html",
-      "jsonld": "schema.org/VisualArtwork-284-jsonld.html"
     }
   },
   "VoteAction": {
@@ -2846,37 +2802,27 @@
     }
   },
   "accessMode": {
+    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308": {
+      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-microdata.html",
+      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-rdfa.html",
+      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-jsonld.html"
+    },
     "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309": {
       "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-microdata.html",
       "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-rdfa.html",
       "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-jsonld.html"
     }
   },
   "accessModeSufficient": {
+    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308": {
+      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-microdata.html",
+      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-rdfa.html",
+      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-jsonld.html"
+    },
     "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309": {
       "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-microdata.html",
       "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-rdfa.html",
       "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-jsonld.html"
     }
   },
   "accessibilityAPI": {
@@ -2919,20 +2865,15 @@
       "rdfa": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-229-rdfa.html",
       "jsonld": "schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-229-jsonld.html"
     },
+    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308": {
+      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-microdata.html",
+      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-rdfa.html",
+      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-jsonld.html"
+    },
     "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309": {
       "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-microdata.html",
       "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-rdfa.html",
       "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-jsonld.html"
     }
   },
   "accessibilityHazard": {
@@ -2953,20 +2894,15 @@
     }
   },
   "accessibilitySummary": {
+    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308": {
+      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-microdata.html",
+      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-rdfa.html",
+      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-jsonld.html"
+    },
     "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309": {
       "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-microdata.html",
       "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-rdfa.html",
       "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-310-jsonld.html"
-    },
-    "accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311": {
-      "microdata": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-microdata.html",
-      "rdfa": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-rdfa.html",
-      "jsonld": "schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-311-jsonld.html"
     }
   },
   "additionalProperty": {
@@ -3041,13 +2977,6 @@
       "jsonld": "schema.org/grouping-jsonld.html"
     }
   },
-  "additionalType": {
-    "offer-1": {
-      "microdata": "schema.org/offer-1-microdata.html",
-      "rdfa": "schema.org/offer-1-rdfa.html",
-      "jsonld": "schema.org/offer-1-jsonld.html"
-    }
-  },
   "address": {
     "eg-1": {
       "microdata": "schema.org/eg-1-microdata.html",
@@ -3112,11 +3041,6 @@
     }
   },
   "alignmentType": {
-    "lrmi-1": {
-      "microdata": "schema.org/lrmi-1-microdata.html",
-      "rdfa": "schema.org/lrmi-1-rdfa.html",
-      "jsonld": "schema.org/lrmi-1-jsonld.html"
-    },
     "lrmi-2": {
       "microdata": "schema.org/lrmi-2-microdata.html",
       "rdfa": "schema.org/lrmi-2-rdfa.html",
@@ -3124,10 +3048,10 @@
     }
   },
   "artist": {
-    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273": {
-      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-microdata.html",
-      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-rdfa.html",
-      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-jsonld.html"
+    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272": {
+      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html",
+      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html",
+      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html"
     }
   },
   "audience": {
@@ -3150,22 +3074,22 @@
       "rdfa": "schema.org/tourism-3-rdfa.html",
       "jsonld": "schema.org/tourism-3-jsonld.html"
     },
-    "availableLanguage-Language-307": {
-      "microdata": "schema.org/availableLanguage-Language-307-microdata.html",
-      "rdfa": "schema.org/availableLanguage-Language-307-rdfa.html",
-      "jsonld": "schema.org/availableLanguage-Language-307-jsonld.html"
+    "availableLanguage-Language-306": {
+      "microdata": "schema.org/availableLanguage-Language-306-microdata.html",
+      "rdfa": "schema.org/availableLanguage-Language-306-rdfa.html",
+      "jsonld": "schema.org/availableLanguage-Language-306-jsonld.html"
     }
   },
   "broadcastFrequency": {
+    "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278": {
+      "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-microdata.html",
+      "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-rdfa.html",
+      "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-jsonld.html"
+    },
     "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279": {
       "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-microdata.html",
       "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-rdfa.html",
       "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-jsonld.html"
-    },
-    "broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280": {
-      "microdata": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-microdata.html",
-      "rdfa": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-rdfa.html",
-      "jsonld": "schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-280-jsonld.html"
     }
   },
   "broadcastOfEvent": {
@@ -3183,24 +3107,24 @@
     }
   },
   "checkinTime": {
-    "checkinTime-checkoutTime-306": {
-      "microdata": "schema.org/checkinTime-checkoutTime-306-microdata.html",
-      "rdfa": "schema.org/checkinTime-checkoutTime-306-rdfa.html",
-      "jsonld": "schema.org/checkinTime-checkoutTime-306-jsonld.html"
+    "checkinTime-checkoutTime-305": {
+      "microdata": "schema.org/checkinTime-checkoutTime-305-microdata.html",
+      "rdfa": "schema.org/checkinTime-checkoutTime-305-rdfa.html",
+      "jsonld": "schema.org/checkinTime-checkoutTime-305-jsonld.html"
     }
   },
   "checkoutTime": {
-    "checkinTime-checkoutTime-306": {
-      "microdata": "schema.org/checkinTime-checkoutTime-306-microdata.html",
-      "rdfa": "schema.org/checkinTime-checkoutTime-306-rdfa.html",
-      "jsonld": "schema.org/checkinTime-checkoutTime-306-jsonld.html"
+    "checkinTime-checkoutTime-305": {
+      "microdata": "schema.org/checkinTime-checkoutTime-305-microdata.html",
+      "rdfa": "schema.org/checkinTime-checkoutTime-305-rdfa.html",
+      "jsonld": "schema.org/checkinTime-checkoutTime-305-jsonld.html"
     }
   },
   "colorist": {
-    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273": {
-      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-microdata.html",
-      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-rdfa.html",
-      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-jsonld.html"
+    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272": {
+      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html",
+      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html",
+      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html"
     }
   },
   "competitor": {
@@ -3272,11 +3196,6 @@
     }
   },
   "educationalAlignment": {
-    "lrmi-1": {
-      "microdata": "schema.org/lrmi-1-microdata.html",
-      "rdfa": "schema.org/lrmi-1-rdfa.html",
-      "jsonld": "schema.org/lrmi-1-jsonld.html"
-    },
     "lrmi-2": {
       "microdata": "schema.org/lrmi-2-microdata.html",
       "rdfa": "schema.org/lrmi-2-rdfa.html",
@@ -3284,6 +3203,13 @@
     }
   },
   "educationalFramework": {
+    "lrmi-2": {
+      "microdata": "schema.org/lrmi-2-microdata.html",
+      "rdfa": "schema.org/lrmi-2-rdfa.html",
+      "jsonld": "schema.org/lrmi-2-jsonld.html"
+    }
+  },
+  "educationalLevel": {
     "lrmi-1": {
       "microdata": "schema.org/lrmi-1-microdata.html",
       "rdfa": "schema.org/lrmi-1-rdfa.html",
@@ -3367,10 +3293,10 @@
       "rdfa": "schema.org/eg-5-rdfa.html",
       "jsonld": "schema.org/eg-5-jsonld.html"
     },
-    "GeoCoordinates-geo-301": {
-      "microdata": "schema.org/GeoCoordinates-geo-301-microdata.html",
-      "rdfa": "schema.org/GeoCoordinates-geo-301-rdfa.html",
-      "jsonld": "schema.org/GeoCoordinates-geo-301-jsonld.html"
+    "GeoCoordinates-geo-300": {
+      "microdata": "schema.org/GeoCoordinates-geo-300-microdata.html",
+      "rdfa": "schema.org/GeoCoordinates-geo-300-rdfa.html",
+      "jsonld": "schema.org/GeoCoordinates-geo-300-jsonld.html"
     }
   },
   "geoRadius": {
@@ -3381,10 +3307,10 @@
     }
   },
   "hasMap": {
-    "hasMap-300": {
-      "microdata": "schema.org/hasMap-300-microdata.html",
-      "rdfa": "schema.org/hasMap-300-rdfa.html",
-      "jsonld": "schema.org/hasMap-300-jsonld.html"
+    "hasMap-299": {
+      "microdata": "schema.org/hasMap-299-microdata.html",
+      "rdfa": "schema.org/hasMap-299-rdfa.html",
+      "jsonld": "schema.org/hasMap-299-jsonld.html"
     }
   },
   "hasMenuItem": {
@@ -3419,10 +3345,10 @@
     }
   },
   "hoursAvailable": {
-    "feature-LocationFeatureSpecification-hoursAvailable-305": {
-      "microdata": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-305-microdata.html",
-      "rdfa": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-305-rdfa.html",
-      "jsonld": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-305-jsonld.html"
+    "feature-LocationFeatureSpecification-hoursAvailable-304": {
+      "microdata": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-microdata.html",
+      "rdfa": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-rdfa.html",
+      "jsonld": "schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-jsonld.html"
     }
   },
   "image": {
@@ -3436,17 +3362,17 @@
       "rdfa": "schema.org/eg-13-rdfa.html",
       "jsonld": "schema.org/eg-13-jsonld.html"
     },
-    "Hotel-logo-image-299": {
-      "microdata": "schema.org/Hotel-logo-image-299-microdata.html",
-      "rdfa": "schema.org/Hotel-logo-image-299-rdfa.html",
-      "jsonld": "schema.org/Hotel-logo-image-299-jsonld.html"
+    "Hotel-logo-image-298": {
+      "microdata": "schema.org/Hotel-logo-image-298-microdata.html",
+      "rdfa": "schema.org/Hotel-logo-image-298-rdfa.html",
+      "jsonld": "schema.org/Hotel-logo-image-298-jsonld.html"
     }
   },
   "inSupportOf": {
-    "Thesis-inSupportOf-272": {
-      "microdata": "schema.org/Thesis-inSupportOf-272-microdata.html",
-      "rdfa": "schema.org/Thesis-inSupportOf-272-rdfa.html",
-      "jsonld": "schema.org/Thesis-inSupportOf-272-jsonld.html"
+    "Thesis-inSupportOf-271": {
+      "microdata": "schema.org/Thesis-inSupportOf-271-microdata.html",
+      "rdfa": "schema.org/Thesis-inSupportOf-271-rdfa.html",
+      "jsonld": "schema.org/Thesis-inSupportOf-271-jsonld.html"
     }
   },
   "interactionStatistic": {
@@ -3535,10 +3461,10 @@
     }
   },
   "letterer": {
-    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273": {
-      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-microdata.html",
-      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-rdfa.html",
-      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-273-jsonld.html"
+    "ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272": {
+      "microdata": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html",
+      "rdfa": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html",
+      "jsonld": "schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html"
     }
   },
   "location": {
@@ -3549,10 +3475,10 @@
     }
   },
   "logo": {
-    "Hotel-logo-image-299": {
-      "microdata": "schema.org/Hotel-logo-image-299-microdata.html",
-      "rdfa": "schema.org/Hotel-logo-image-299-rdfa.html",
-      "jsonld": "schema.org/Hotel-logo-image-299-jsonld.html"
+    "Hotel-logo-image-298": {
+      "microdata": "schema.org/Hotel-logo-image-298-microdata.html",
+      "rdfa": "schema.org/Hotel-logo-image-298-rdfa.html",
+      "jsonld": "schema.org/Hotel-logo-image-298-jsonld.html"
     }
   },
   "longitude": {
@@ -3589,15 +3515,15 @@
     }
   },
   "numberOfRooms": {
+    "numberOfRooms-301": {
+      "microdata": "schema.org/numberOfRooms-301-microdata.html",
+      "rdfa": "schema.org/numberOfRooms-301-rdfa.html",
+      "jsonld": "schema.org/numberOfRooms-301-jsonld.html"
+    },
     "numberOfRooms-302": {
       "microdata": "schema.org/numberOfRooms-302-microdata.html",
       "rdfa": "schema.org/numberOfRooms-302-rdfa.html",
       "jsonld": "schema.org/numberOfRooms-302-jsonld.html"
-    },
-    "numberOfRooms-303": {
-      "microdata": "schema.org/numberOfRooms-303-microdata.html",
-      "rdfa": "schema.org/numberOfRooms-303-rdfa.html",
-      "jsonld": "schema.org/numberOfRooms-303-jsonld.html"
     }
   },
   "offerCount": {
@@ -3608,11 +3534,6 @@
     }
   },
   "offeredBy": {
-    "offer-1": {
-      "microdata": "schema.org/offer-1-microdata.html",
-      "rdfa": "schema.org/offer-1-rdfa.html",
-      "jsonld": "schema.org/offer-1-jsonld.html"
-    },
     "offeredBy-1": {
       "microdata": "schema.org/offeredBy-1-microdata.html",
       "rdfa": "schema.org/offeredBy-1-rdfa.html",
@@ -3710,10 +3631,10 @@
     }
   },
   "readBy": {
-    "Audiobook-readBy-277": {
-      "microdata": "schema.org/Audiobook-readBy-277-microdata.html",
-      "rdfa": "schema.org/Audiobook-readBy-277-rdfa.html",
-      "jsonld": "schema.org/Audiobook-readBy-277-jsonld.html"
+    "Audiobook-readBy-276": {
+      "microdata": "schema.org/Audiobook-readBy-276-microdata.html",
+      "rdfa": "schema.org/Audiobook-readBy-276-rdfa.html",
+      "jsonld": "schema.org/Audiobook-readBy-276-jsonld.html"
     }
   },
   "recipeIngredient": {
@@ -3757,15 +3678,15 @@
     }
   },
   "starRating": {
+    "starRating-296": {
+      "microdata": "schema.org/starRating-296-microdata.html",
+      "rdfa": "schema.org/starRating-296-rdfa.html",
+      "jsonld": "schema.org/starRating-296-jsonld.html"
+    },
     "starRating-297": {
       "microdata": "schema.org/starRating-297-microdata.html",
       "rdfa": "schema.org/starRating-297-rdfa.html",
       "jsonld": "schema.org/starRating-297-jsonld.html"
-    },
-    "starRating-298": {
-      "microdata": "schema.org/starRating-298-microdata.html",
-      "rdfa": "schema.org/starRating-298-rdfa.html",
-      "jsonld": "schema.org/starRating-298-jsonld.html"
     }
   },
   "startDate": {
@@ -3807,11 +3728,6 @@
     }
   },
   "targetName": {
-    "lrmi-1": {
-      "microdata": "schema.org/lrmi-1-microdata.html",
-      "rdfa": "schema.org/lrmi-1-rdfa.html",
-      "jsonld": "schema.org/lrmi-1-jsonld.html"
-    },
     "lrmi-2": {
       "microdata": "schema.org/lrmi-2-microdata.html",
       "rdfa": "schema.org/lrmi-2-rdfa.html",
@@ -3819,11 +3735,6 @@
     }
   },
   "targetUrl": {
-    "lrmi-1": {
-      "microdata": "schema.org/lrmi-1-microdata.html",
-      "rdfa": "schema.org/lrmi-1-rdfa.html",
-      "jsonld": "schema.org/lrmi-1-jsonld.html"
-    },
     "lrmi-2": {
       "microdata": "schema.org/lrmi-2-microdata.html",
       "rdfa": "schema.org/lrmi-2-rdfa.html",
@@ -3877,17 +3788,17 @@
     }
   },
   "translationOfWork": {
-    "CreativeWork-Book-translator-translationOfWork-workTranslation-278": {
-      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-microdata.html",
-      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-rdfa.html",
-      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-jsonld.html"
+    "CreativeWork-Book-translator-translationOfWork-workTranslation-277": {
+      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-microdata.html",
+      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-rdfa.html",
+      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-jsonld.html"
     }
   },
   "translator": {
-    "CreativeWork-Book-translator-translationOfWork-workTranslation-278": {
-      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-microdata.html",
-      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-rdfa.html",
-      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-jsonld.html"
+    "CreativeWork-Book-translator-translationOfWork-workTranslation-277": {
+      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-microdata.html",
+      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-rdfa.html",
+      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-jsonld.html"
     }
   },
   "typicalAgeRange": {
@@ -3926,17 +3837,10 @@
     }
   },
   "workTranslation": {
-    "CreativeWork-Book-translator-translationOfWork-workTranslation-278": {
-      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-microdata.html",
-      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-rdfa.html",
-      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-278-jsonld.html"
-    }
-  },
-  "AlbumRelease": {
-    "music-1": {
-      "microdata": "schema.org/music-1-microdata.html",
-      "rdfa": "schema.org/music-1-rdfa.html",
-      "jsonld": "schema.org/music-1-jsonld.html"
+    "CreativeWork-Book-translator-translationOfWork-workTranslation-277": {
+      "microdata": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-microdata.html",
+      "rdfa": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-rdfa.html",
+      "jsonld": "schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-jsonld.html"
     }
   },
   "EventCancelled": {
@@ -3979,25 +3883,11 @@
       "jsonld": "schema.org/eg-13-jsonld.html"
     }
   },
-  "ReadPermission": {
-    "digitaldocument-1": {
-      "microdata": "schema.org/digitaldocument-1-microdata.html",
-      "rdfa": "schema.org/digitaldocument-1-rdfa.html",
-      "jsonld": "schema.org/digitaldocument-1-jsonld.html"
-    }
-  },
   "SoldOut": {
     "Event-Place-PostalAddress-Offer-SoldOut-225": {
       "microdata": "schema.org/Event-Place-PostalAddress-Offer-SoldOut-225-microdata.html",
       "rdfa": "schema.org/Event-Place-PostalAddress-Offer-SoldOut-225-rdfa.html",
       "jsonld": "schema.org/Event-Place-PostalAddress-Offer-SoldOut-225-jsonld.html"
-    }
-  },
-  "StudioAlbum": {
-    "music-1": {
-      "microdata": "schema.org/music-1-microdata.html",
-      "rdfa": "schema.org/music-1-rdfa.html",
-      "jsonld": "schema.org/music-1-jsonld.html"
     }
   },
   "TollFree": {
@@ -4012,13 +3902,6 @@
       "microdata": "schema.org/map-1-microdata.html",
       "rdfa": "schema.org/map-1-rdfa.html",
       "jsonld": "schema.org/map-1-jsonld.html"
-    }
-  },
-  "WritePermission": {
-    "digitaldocument-1": {
-      "microdata": "schema.org/digitaldocument-1-microdata.html",
-      "rdfa": "schema.org/digitaldocument-1-rdfa.html",
-      "jsonld": "schema.org/digitaldocument-1-jsonld.html"
     }
   }
 }

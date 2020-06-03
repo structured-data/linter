@@ -87,7 +87,7 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :Airport
   #
-  #     # An intangible item that describes an alignment between a learning resource and a node in an educational framework.
+  #     # An intangible item that describes an alignment between a learning resource and a node in an educational framework.<br/><br/>  Should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class="localLink" href="http://schema.org/teaches">teaches</a> or <a class="localLink" href="http://schema.org/assesses">assesses</a> a competency.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :AlignmentObject
   #
@@ -434,6 +434,10 @@ module RDF::Vocab
   #     # The act of giving money to a seller in exchange for goods or services rendered. An agent buys an object, product, or service from a seller for a price. Reciprocal of SellAction.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :BuyAction
+  #
+  #     # A CDCPMDRecord is a data structure representing a record in a CDC tabular data format       used for hospital data reporting. See <a href="/docs/cdc-covid.html">documentation</a> for details, and the linked CDC materials for authoritative       definitions used as the source here.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :CDCPMDRecord
   #
   #     # A service which provides access to media programming like TV or radio. Access may be via cable or satellite.
   #     # @return [RDF::Vocabulary::Term]
@@ -799,6 +803,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :DefenceEstablishment
   #
+  #     # A DefinedRegion is a geographic area defined by potentially arbitrary (rather than political, administrative or natural geographical) criteria. Properties are provided for defining a region by reference to sets of postal codes.<br/><br/>  Examples: a delivery destination when shopping. Region where regional pricing is configured.<br/><br/>  Requirement 1: Country: US States: "NY", "CA"<br/><br/>  Requirement 2: Country: US PostalCode Set: { [94000-94585], [97000, 97999], [13000, 13599]} { [12345, 12345], [78945, 78945], } Region = state, canton, prefecture, autonomous community...
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :DefinedRegion
+  #
   #     # A word, name, acronym, phrase, etc. with a formal definition. Often used in the context of category or subject classification, glossaries or dictionaries, product or creative work types, etc. Use the name property for the term being defined, use termCode if the term has an alpha-numeric code allocated, use description to provide the definition of the term.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :DefinedTerm
@@ -822,6 +830,10 @@ module RDF::Vocab
   #     # A delivery method is a standardized procedure for transferring the product or service to the destination of fulfillment chosen by the customer. Delivery methods are characterized by the means of transportation used, and by the organization or group that is the contracting party for the sending organization or person.<br/><br/>  Commonly used values:<br/><br/>  <ul> <li>http://purl.org/goodrelations/v1#DeliveryModeDirectDownload</li> <li>http://purl.org/goodrelations/v1#DeliveryModeFreight</li> <li>http://purl.org/goodrelations/v1#DeliveryModeMail</li> <li>http://purl.org/goodrelations/v1#DeliveryModeOwnFleet</li> <li>http://purl.org/goodrelations/v1#DeliveryModePickUp</li> <li>http://purl.org/goodrelations/v1#DHL</li> <li>http://purl.org/goodrelations/v1#FederalExpress</li> <li>http://purl.org/goodrelations/v1#UPS</li> </ul> 
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :DeliveryMethod
+  #
+  #     # A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> property of a <a class="localLink" href="http://schema.org/OfferShippingSpecification">OfferShippingSpecification</a>. Several occurrences can be published, distinguished (and identified/referenced) by their different values for <a class="localLink" href="http://schema.org/shippingLabel">shippingLabel</a>.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :DeliveryTimeSettings
   #
   #     # A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand using this type, the very same properties used for Offer apply.
   #     # @return [RDF::Vocabulary::Term]
@@ -1255,6 +1267,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :GolfCourse
   #
+  #     # GovernmentBenefitsType enumerates several kinds of government benefits to support the COVID-19 situation. Note that this structure may not capture all benefits offered.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :GovernmentBenefitsType
+  #
   #     # A government building.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :GovernmentBuilding
@@ -1290,6 +1306,10 @@ module RDF::Vocab
   #     # A business that provide Heating, Ventilation and Air Conditioning services.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :HVACBusiness
+  #
+  #     # A <a href="https://en.wikipedia.org/wiki/Hackathon">hackathon</a> event.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Hackathon
   #
   #     # A hair salon.
   #     # @return [RDF::Vocabulary::Term]
@@ -2051,6 +2071,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :NGO
   #
+  #     # NLNonprofitType: Non-profit organization type originating from the Netherlands.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :NLNonprofitType
+  #
   #     # A nail salon.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :NailSalon
@@ -2074,6 +2098,10 @@ module RDF::Vocab
   #     # A nightclub or discotheque.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :NightClub
+  #
+  #     # NonprofitType enumerates several kinds of official non-profit types of which a non-profit organization can be.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :NonprofitType
   #
   #     # A notary.
   #     # @return [RDF::Vocabulary::Term]
@@ -2126,6 +2154,10 @@ module RDF::Vocab
   #     # A list of possible conditions for the item.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :OfferItemCondition
+  #
+  #     # OfferShippingDetails represents information about shipping destinations.<br/><br/>  Multiple of these entities can be used to represent different shipping rates for different destinations:<br/><br/>  One entity for Alaska/Hawaii. A different one for continental US.A different one for all France.<br/><br/>  Multiple of these entities can be used to represent different shipping costs and delivery times.<br/><br/>  Two entities that are identical but differ in rate and time:<br/><br/>  e.g. Cheaper and slower: $5 in 5-7days or Fast and expensive: $15 in 1-2 days
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :OfferShippingDetails
   #
   #     # An office equipment store.
   #     # @return [RDF::Vocabulary::Term]
@@ -2374,6 +2406,10 @@ module RDF::Vocab
   #     # The mailing address.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :PostalAddress
+  #
+  #     # Indicates a range of postalcodes, usually defined as the set of valid codes between <a class="localLink" href="http://schema.org/postalCodeBegin">postalCodeBegin</a> and <a class="localLink" href="http://schema.org/postalCodeEnd">postalCodeEnd</a>, inclusively.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :PostalCodeRangeSpecification
   #
   #     # A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.
   #     # @return [RDF::Vocabulary::Term]
@@ -2747,6 +2783,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :School
   #
+  #     # A School District is an administrative area for the administration of schools.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :SchoolDistrict
+  #
   #     # A screening of a movie or other video.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :ScreeningEvent
@@ -2807,6 +2847,14 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :SheetMusic
   #
+  #     # ShippingDeliveryTime provides various pieces of information about delivery times for shipping.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :ShippingDeliveryTime
+  #
+  #     # A ShippingRateSettings represents re-usable pieces of shipping information. It is designed for publication on an URL that may be referenced via the <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> property of a <a class="localLink" href="http://schema.org/OfferShippingSpecification">OfferShippingSpecification</a>. Several occurrences can be published, distinguished and matched (i.e. identified/referenced) by their different values for <a class="localLink" href="http://schema.org/shippingLabel">shippingLabel</a>.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :ShippingRateSettings
+  #
   #     # A shoe store.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :ShoeStore
@@ -2855,7 +2903,7 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :SpeakableSpecification
   #
-  #     # A SpecialAnnouncement combines a simple date-stamped textual information update       with contextualized Web links and other structured data.  It represents an information update made by a       locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,       local government.<br/><br/>  The motivating scenario for SpecialAnnouncement is the <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org expect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our usual <a href="https://github.com/schemaorg/schemaorg/issues/2490">Github entry</a>, feedback comments can also be provided in <a href="https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#">this document</a>.<br/><br/>  While this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like <a href="https://en.wikipedia.org/wiki/Common_Alerting_Protocol">CAP</a>, although there may be overlaps. The intent is to cover the kinds of everyday practical information being posted to existing websites during an emergency situation.<br/><br/>  Several kinds of information can be provided:<br/><br/>  We encourage the provision of "name", "text", "datePosted", "expires" (if appropriate) and "url" as a simple baseline. It is important to provide a value for "category" where possible, most ideally as a well known URL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be "https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic" or "https://www.wikidata.org/wiki/Q81068910".<br/><br/>  For many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a <a class="localLink" href="http://schema.org/WebContent">WebContent</a> type, and provide the url as a property of that, alongside at least a simple "<a class="localLink" href="http://schema.org/text">text</a>" summary of the page. It is unlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously. More options may be added later if<br/><br/>  We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class="localLink" href="http://schema.org/openingHours">openingHours</a>, <a class="localLink" href="http://schema.org/Event">Event</a>, <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> etc. By linking to those pages from a <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the <a class="localLink" href="http://schema.org/category">category</a> property of the <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a>.<br/><br/>  The basic content of <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> is similar to that of an <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> or <a href="https://en.wikipedia.org/wiki/Atom_(Web_standard)">Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed with the <a class="localLink" href="http://schema.org/webFeed">webFeed</a> property. This can be a simple URL, or an inline <a class="localLink" href="http://schema.org/DataFeed">DataFeed</a> object, with <a class="localLink" href="http://schema.org/encodingFormat">encodingFormat</a> providing media type information e.g. "application/rss+xml" or "application/atom+xml".<br/><br/>  For an announcement that is about a place, you can use <a class="localLink" href="http://schema.org/about">about</a> (or <a class="localLink" href="http://schema.org/mainEntity">mainEntity</a>) to make that relationship explicit. For example, the announcement could be "about" a new <a class="localLink" href="http://schema.org/CovidTestingFacility">CovidTestingFacility</a>, and provide contact information, <a class="localLink" href="http://schema.org/location">location</a>, <a class="localLink" href="http://schema.org/geo">geo</a>, <a class="localLink" href="http://schema.org/openingHours">openingHours</a> etc.
+  #     # A SpecialAnnouncement combines a simple date-stamped textual information update       with contextualized Web links and other structured data.  It represents an information update made by a       locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,       local government.<br/><br/>  For work in progress guidelines on Coronavirus-related markup see <a href="https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#">this doc</a>.<br/><br/>  The motivating scenario for SpecialAnnouncement is the <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org expect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our usual <a href="https://github.com/schemaorg/schemaorg/issues/2490">Github entry</a>, feedback comments can also be provided in <a href="https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#">this document</a>.<br/><br/>  While this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like <a href="https://en.wikipedia.org/wiki/Common_Alerting_Protocol">CAP</a>, although there may be overlaps. The intent is to cover the kinds of everyday practical information being posted to existing websites during an emergency situation.<br/><br/>  Several kinds of information can be provided:<br/><br/>  We encourage the provision of "name", "text", "datePosted", "expires" (if appropriate), "category" and "url" as a simple baseline. It is important to provide a value for "category" where possible, most ideally as a well known URL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be "https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic" or "https://www.wikidata.org/wiki/Q81068910".<br/><br/>  For many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a <a class="localLink" href="http://schema.org/WebContent">WebContent</a> type, and provide the url as a property of that, alongside at least a simple "<a class="localLink" href="http://schema.org/text">text</a>" summary of the page. It is unlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.<br/><br/>  We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class="localLink" href="http://schema.org/openingHours">openingHours</a>, <a class="localLink" href="http://schema.org/Event">Event</a>, <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> etc. By linking to those pages from a <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the <a class="localLink" href="http://schema.org/category">category</a> property of the <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a>.<br/><br/>  Many <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a>s will relate to particular regions and to identifiable local organizations. Use <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a> for the region, and <a class="localLink" href="http://schema.org/announcementLocation">announcementLocation</a> to indicate specific <a class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>es and <a class="localLink" href="http://schema.org/CivicStructures">CivicStructures</a>. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a> and <a class="localLink" href="http://schema.org/announcementLocation">announcementLocation</a>.<br/><br/>  The <a class="localLink" href="http://schema.org/about">about</a> property can be used to indicate entities that are the focus of the announcement. We now recommend using <a class="localLink" href="http://schema.org/about">about</a> only for representing non-location entities (e.g. a <a class="localLink" href="http://schema.org/Course">Course</a> or a <a class="localLink" href="http://schema.org/RadioStation">RadioStation</a>). For places, use <a class="localLink" href="http://schema.org/announcementLocation">announcementLocation</a> and <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a>. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.<br/><br/>  The basic content of <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> is similar to that of an <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> or <a href="https://en.wikipedia.org/wiki/Atom_(Web_standard)">Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed with the <a class="localLink" href="http://schema.org/webFeed">webFeed</a> property. This can be a simple URL, or an inline <a class="localLink" href="http://schema.org/DataFeed">DataFeed</a> object, with <a class="localLink" href="http://schema.org/encodingFormat">encodingFormat</a> providing media type information e.g. "application/rss+xml" or "application/atom+xml".
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :SpecialAnnouncement
   #
@@ -3123,9 +3171,17 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :TypeAndQuantityNode
   #
+  #     # UKNonprofitType: Non-profit organization type originating from the United Kingdom.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :UKNonprofitType
+  #
   #     # Data type: URL.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :URL
+  #
+  #     # USNonprofitType: Non-profit organization type originating from the United States.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :USNonprofitType
   #
   #     # The act of un-registering from a service.<br/><br/>  Related actions:<br/><br/>  <ul> <li><a class="localLink" href="http://schema.org/RegisterAction">RegisterAction</a>: antonym of UnRegisterAction.</li> <li><a class="localLink" href="http://schema.org/LeaveAction">LeaveAction</a>: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you werer previously registered, rather than leaving a team/group of people.</li> </ul> 
   #     # @return [RDF::Vocabulary::Term]
@@ -3599,7 +3655,7 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :algorithm
   #
-  #     # A category of alignment between the learning resource and the framework node. Recommended values include: 'assesses', 'teaches', 'requires', 'textComplexity', 'readingLevel', 'educationalSubject', and 'educationalLevel'.
+  #     # A category of alignment between the learning resource and the framework node. Recommended values include: 'requires', 'textComplexity', 'readingLevel', and 'educationalSubject'.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :alignmentType
   #
@@ -3630,6 +3686,10 @@ module RDF::Vocab
   #     # The quantity of the goods included in the offer.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :amountOfThisGood
+  #
+  #     # Indicates a specific <a class="localLink" href="http://schema.org/CivicStructure">CivicStructure</a> or <a class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a> associated with the SpecialAnnouncement. For example, a specific testing facility or business with special opening hours. For a larger geographic region like a quarantine of an entire region, use <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a>.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :announcementLocation
   #
   #     # The annual rate that is charged for borrowing (or made by investing), expressed as a single percentage number that represents the actual yearly cost of funds over the term of a loan. This includes any fees or additional costs associated with the transaction.
   #     # @return [RDF::Vocabulary::Term]
@@ -3774,6 +3834,10 @@ module RDF::Vocab
   #     # Associated product/technology version. e.g., .NET Framework 4.5.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :assemblyVersion
+  #
+  #     # The item being described is intended to assess the competency or learning outcome defined by the referenced term.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :assesses
   #
   #     # The anatomy of the underlying organ system or structures associated with this entity.
   #     # @return [RDF::Vocabulary::Term]
@@ -4094,6 +4158,10 @@ module RDF::Vocab
   #     # The unique identifier for the bus.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :busNumber
+  #
+  #     # Days of the week when the merchant typically operates, indicated via opening hours markup.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :businessDays
   #
   #     # The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.
   #     # @return [RDF::Vocabulary::Term]
@@ -4523,6 +4591,74 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :customer
   #
+  #     # Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the <a class="localLink" href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> publication pattern. The time is indicated using the time notation from the ISO-8601 DateTime format, e.g.       14:45:15Z would represent a daily cutoff at 14:45h UTC.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cutoffTime
+  #
+  #     # collectiondate - Date for which patient counts are reported.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdCollectionDate
+  #
+  #     # Name of the County of the NHSN facility that this data record applies to. Use <a class="localLink" href="http://schema.org/cvdFacilityId">cvdFacilityId</a> to identify the facility. To provide other details, <a class="localLink" href="http://schema.org/healthcareReportingData">healthcareReportingData</a> can be used on a <a class="localLink" href="http://schema.org/Hospital">Hospital</a> entry.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdFacilityCounty
+  #
+  #     # Identifier of the NHSN facility that this data record applies to. Use <a class="localLink" href="http://schema.org/cvdFacilityCounty">cvdFacilityCounty</a> to indicate the county. To provide other details, <a class="localLink" href="http://schema.org/healthcareReportingData">healthcareReportingData</a> can be used on a <a class="localLink" href="http://schema.org/Hospital">Hospital</a> entry.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdFacilityId
+  #
+  #     # numbeds - HOSPITAL INPATIENT BEDS: Inpatient beds, including all staffed, licensed, and overflow (surge) beds used for inpatients.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumBeds
+  #
+  #     # numbedsocc - HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are occupied.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumBedsOcc
+  #
+  #     # numc19died - DEATHS: Patients with suspected or confirmed COVID-19 who died in the hospital, ED, or any overflow location.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumC19Died
+  #
+  #     # numc19hopats - HOSPITAL ONSET: Patients hospitalized in an NHSN inpatient care location with onset of suspected or confirmed COVID-19 14 or more days after hospitalization.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumC19HOPats
+  #
+  #     # numc19hosppats - HOSPITALIZED: Patients currently hospitalized in an inpatient care location who have suspected or confirmed COVID-19.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumC19HospPats
+  #
+  #     # numc19mechventpats - HOSPITALIZED and VENTILATED: Patients hospitalized in an NHSN inpatient care location who have suspected or confirmed COVID-19 and are on a mechanical ventilator.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumC19MechVentPats
+  #
+  #     # numc19ofmechventpats - ED/OVERFLOW and VENTILATED: Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumC19OFMechVentPats
+  #
+  #     # numc19overflowpats - ED/OVERFLOW: Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumC19OverflowPats
+  #
+  #     # numicubeds - ICU BEDS: Total number of staffed inpatient intensive care unit (ICU) beds.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumICUBeds
+  #
+  #     # numicubedsocc - ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumICUBedsOcc
+  #
+  #     # numtotbeds - ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds, including all staffed,ICU, licensed, and overflow (surge) beds used for inpatients or outpatients.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumTotBeds
+  #
+  #     # numvent - MECHANICAL VENTILATORS: Total number of ventilators available.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumVent
+  #
+  #     # numventuse - MECHANICAL VENTILATORS IN USE: Total number of ventilators in use.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :cvdNumVentUse
+  #
   #     # An item within in a data feed. Data feeds may have many elements.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :dataFeedElement
@@ -4610,6 +4746,10 @@ module RDF::Vocab
   #     # New entry added as the package passes through each leg of its journey (from shipment to final delivery).
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :deliveryStatus
+  #
+  #     # The total delay between the receipt of the order and the goods reaching the final customer.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :deliveryTime
   #
   #     # A relationship between an organization and a department of that organization, also described as an organization (allowing different urls, logos, opening hours). For example: a store with a pharmacy, or a bakery with a cafe.
   #     # @return [RDF::Vocabulary::Term]
@@ -4747,6 +4887,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :documentation
   #
+  #     # Indicates, as part of an <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>, when shipping to a particular <a class="localLink" href="http://schema.org/shippingDestination">shippingDestination</a> is not available.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :doesNotShip
+  #
   #     # Relates a property to a class that is (one of) the type(s) the property is expected to be used on.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :domainIncludes
@@ -4839,6 +4983,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :earlyPrepaymentPenalty
   #
+  #     # An <a href="https://eidr.org/">EIDR</a> (Entertainment Identifier Registry) <a class="localLink" href="http://schema.org/identifier">identifier</a> representing a specific edit / edition for a work of film or television.<br/><br/>  For example, the motion picture known as "Ghostbusters" whose <a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> is "10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits e.g. "10.5240/1F2A-E1C5-680A-14C6-E76B-I" and "10.5240/8A35-3BEE-6497-5D12-9E4F-3".<br/><br/>  Since schema.org types like <a class="localLink" href="http://schema.org/Movie">Movie</a> and <a class="localLink" href="http://schema.org/TVEpisode">TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> alone (for a general description), or alongside <a class="localLink" href="http://schema.org/editEIDR">editEIDR</a> for a more edit-specific description.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :editEIDR
+  #
   #     # Specifies the Person who edited the CreativeWork.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :editor
@@ -4847,7 +4995,7 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :educationRequirements
   #
-  #     # An alignment to an established educational framework.
+  #     # An alignment to an established educational framework.<br/><br/>  This property should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class="localLink" href="http://schema.org/teaches">teaches</a> or <a class="localLink" href="http://schema.org/assesses">assesses</a> a competency.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :educationalAlignment
   #
@@ -4878,6 +5026,10 @@ module RDF::Vocab
   #     # The elevation of a location (<a href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>). Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :elevation
+  #
+  #     # The legal requirements such as citizenship, visa and other documentation required for an applicant to this job.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :eligibilityToWorkRequirement
   #
   #     # The type(s) of customers for which the given offer is valid.
   #     # @return [RDF::Vocabulary::Term]
@@ -5231,6 +5383,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :free
   #
+  #     # A monetary value above which (or equal to) the shipping rate becomes free. Intended to be used via an <a class="localLink" href="http://schema.org/OfferShippingSpecification">OfferShippingSpecification</a> with <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> matching this <a class="localLink" href="http://schema.org/ShippingSettings">ShippingSettings</a>.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :freeShippingThreshold
+  #
   #     # How often the dose is taken, e.g. 'daily'.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :frequency
@@ -5367,6 +5523,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :globalLocationNumber
   #
+  #     # governmentBenefitsInfo provides information about government benefits associated with a SpecialAnnouncement.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :governmentBenefitsInfo
+  #
   #     # The period of time after any due date that the borrower has to fulfil its obligations before a default (failure to pay) is deemed to have occurred.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :gracePeriod
@@ -5414,6 +5574,10 @@ module RDF::Vocab
   #     # The medical conditions, treatments, etc. that are the subject of the guideline.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :guidelineSubject
+  #
+  #     # The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup. Typical properties: minValue, maxValue, unitCode (d for DAY).  This is by common convention assumed to mean business days (if a unitCode is used, coded as "d"), i.e. only counting days when the business normally operates.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :handlingTime
   #
   #     # A broadcast channel of a broadcast service.
   #     # @return [RDF::Vocabulary::Term]
@@ -5546,6 +5710,10 @@ module RDF::Vocab
   #     # The category or type of pharmacy associated with this cost sharing.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :healthPlanPharmacyCategory
+  #
+  #     # Indicates data describing a hospital, e.g. a CDC <a class="localLink" href="http://schema.org/CDCPMDRecord">CDCPMDRecord</a> or as some kind of <a class="localLink" href="http://schema.org/Dataset">Dataset</a>.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :healthcareReportingData
   #
   #     # The height of the item.
   #     # @return [RDF::Vocabulary::Term]
@@ -5855,6 +6023,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :isSimilarTo
   #
+  #     # This can be marked 'true' to indicate that some published ShippingRateSettings are intended to apply to all <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> published by the same merchant, when referenced by a <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> in those settings. It is not meaningful to use a 'true' value for this property alongside a shippingLabel, since this property is for use with unlabelled ShippingRateSettings.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :isUnlabelledFallback
+  #
   #     # A pointer to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :isVariantOf
@@ -5950,6 +6122,10 @@ module RDF::Vocab
   #     # The job title of the person (for example, Financial Manager).
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :jobTitle
+  #
+  #     # Indicates a legal jurisdiction, e.g. of some legislation, or where some government service is based.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :jurisdiction
   #
   #     # Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.
   #     # @return [RDF::Vocabulary::Term]
@@ -6455,6 +6631,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :nonProprietaryName
   #
+  #     # nonprofit Status indicates the legal status of a non-profit organization in its primary place of business.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :nonprofitStatus
+  #
   #     # Range of acceptable values for a typical patient, when applicable.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :normalRange
@@ -6946,6 +7126,22 @@ module RDF::Vocab
   #     # The postal code. For example, 94043.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :postalCode
+  #
+  #     # First postal code in a range (included).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :postalCodeBegin
+  #
+  #     # Last postal code in the range (included). Needs to be after <a class="localLink" href="http://schema.org/postalCodeBegin">postalCodeBegin</a>.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :postalCodeEnd
+  #
+  #     # A defined range of postal codes indicated by a common textual prefix. Used for non-numeric systems such as UK.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :postalCodePrefix
+  #
+  #     # A defined range of postal codes.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :postalCodeRange
   #
   #     # Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.
   #     # @return [RDF::Vocabulary::Term]
@@ -7743,6 +7939,26 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :sharedContent
   #
+  #     # indicates (possibly multiple) shipping destinations. These can be defined in several ways e.g. postalCode ranges.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :shippingDestination
+  #
+  #     # Indicates information about the shipping policies and options associated with an <a class="localLink" href="http://schema.org/Offer">Offer</a>.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :shippingDetails
+  #
+  #     # Label to match an <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with a <a class="localLink" href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> (within the context of a <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> cross-reference).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :shippingLabel
+  #
+  #     # The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the <a class="localLink" href="http://schema.org/MonetaryAmount">MonetaryAmount</a>) are most appropriate.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :shippingRate
+  #
+  #     # Link to a page containing <a class="localLink" href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> and <a class="localLink" href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a> details.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :shippingSettingsLink
+  #
   #     # A sibling of the person.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :sibling
@@ -8087,6 +8303,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :taxID
   #
+  #     # The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :teaches
+  #
   #     # The telephone number.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :telephone
@@ -8166,6 +8386,10 @@ module RDF::Vocab
   #     # The title of the job.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :title
+  #
+  #     # An <a href="https://eidr.org/">EIDR</a> (Entertainment Identifier Registry) <a class="localLink" href="http://schema.org/identifier">identifier</a> representing at the most general/abstract level, a work of film or television.<br/><br/>  For example, the motion picture known as "Ghostbusters" has a titleEIDR of  "10.5240/7EC7-228A-510A-053E-CBB8-J". This title (or work) may have several variants, which EIDR calls "edits". See <a class="localLink" href="http://schema.org/editEIDR">editEIDR</a>.<br/><br/>  Since schema.org types like <a class="localLink" href="http://schema.org/Movie">Movie</a> and <a class="localLink" href="http://schema.org/TVEpisode">TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> alone (for a general description), or alongside <a class="localLink" href="http://schema.org/editEIDR">editEIDR</a> for a more edit-specific description.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :titleEIDR
   #
   #     # A sub property of location. The final location of the object or the agent after the action.
   #     # @return [RDF::Vocabulary::Term]
@@ -8254,6 +8478,14 @@ module RDF::Vocab
   #     # If this MediaObject is an AudioObject or VideoObject, the transcript of that object.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :transcript
+  #
+  #     # The typical delay the order has been sent for delivery and the goods reach the final customer. Typical properties: minValue, maxValue, unitCode (d for DAY).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :transitTime
+  #
+  #     # Label to match an <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with a <a class="localLink" href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a> (within the context of a <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> cross-reference).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :transitTimeLabel
   #
   #     # The work that this work has been translated from. e.g. 物种起源 is a translationOf “On the Origin of Species”
   #     # @return [RDF::Vocabulary::Term]
@@ -8655,6 +8887,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :Balance
   #
+  #     # BasicIncome: this is a benefit for basic income.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :BasicIncome
+  #
   #     # Content about the benefits and advantages of usage or utilization of topic.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :BenefitsHealthAspect
@@ -8662,6 +8898,10 @@ module RDF::Vocab
   #     # BroadcastRelease.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :BroadcastRelease
+  #
+  #     # BusinessSupport: this is a benefit for supporting businesses.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :BusinessSupport
   #
   #     # CDFormat.
   #     # @return [RDF::Vocabulary::Term]
@@ -8690,6 +8930,10 @@ module RDF::Vocab
   #     # Information about the causes and main actions that gave rise to the topic.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :CausesHealthAspect
+  #
+  #     # CharitableIncorporatedOrganization: Non-profit type referring to a Charitable Incorporated Organization (UK).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :CharitableIncorporatedOrganization
   #
   #     # A system of medicine focused on the relationship between the body's structure, mainly the spine, and its functioning.
   #     # @return [RDF::Vocabulary::Term]
@@ -8786,6 +9030,10 @@ module RDF::Vocab
   #     # DigitalFormat.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :DigitalFormat
+  #
+  #     # DisabilitySupport: this is a benefit for disability support.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :DisabilitySupport
   #
   #     # Indicates that the item has been discontinued.
   #     # @return [RDF::Vocabulary::Term]
@@ -8963,6 +9211,10 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :Head
   #
+  #     # HealthCare: this is a benefit for health care.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :HealthCare
+  #
   #     # Uses devices to support users with hearing impairments.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :HearingImpairedSupported
@@ -9038,6 +9290,10 @@ module RDF::Vocab
   #     # Indicates that the item has limited availability.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :LimitedAvailability
+  #
+  #     # LimitedByGuaranteeCharity: Non-profit type referring to a charitable company that is limited by guarantee (UK).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :LimitedByGuaranteeCharity
   #
   #     # LiveAlbum.
   #     # @return [RDF::Vocabulary::Term]
@@ -9163,6 +9419,158 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :NoninvasiveProcedure
   #
+  #     # Nonprofit501a: Non-profit type referring to Farmers’ Cooperative Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501a
+  #
+  #     # Nonprofit501c1: Non-profit type referring to Corporations Organized Under Act of Congress, including Federal Credit Unions and National Farm Loan Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c1
+  #
+  #     # Nonprofit501c10: Non-profit type referring to Domestic Fraternal Societies and Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c10
+  #
+  #     # Nonprofit501c11: Non-profit type referring to Teachers' Retirement Fund Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c11
+  #
+  #     # Nonprofit501c12: Non-profit type referring to Benevolent Life Insurance Associations, Mutual Ditch or Irrigation Companies, Mutual or Cooperative Telephone Companies.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c12
+  #
+  #     # Nonprofit501c13: Non-profit type referring to Cemetery Companies.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c13
+  #
+  #     # Nonprofit501c14: Non-profit type referring to State-Chartered Credit Unions, Mutual Reserve Funds.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c14
+  #
+  #     # Nonprofit501c15: Non-profit type referring to Mutual Insurance Companies or Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c15
+  #
+  #     # Nonprofit501c16: Non-profit type referring to Cooperative Organizations to Finance Crop Operations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c16
+  #
+  #     # Nonprofit501c17: Non-profit type referring to Supplemental Unemployment Benefit Trusts.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c17
+  #
+  #     # Nonprofit501c18: Non-profit type referring to Employee Funded Pension Trust (created before 25 June 1959).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c18
+  #
+  #     # Nonprofit501c19: Non-profit type referring to Post or Organization of Past or Present Members of the Armed Forces.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c19
+  #
+  #     # Nonprofit501c2: Non-profit type referring to Title-holding Corporations for Exempt Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c2
+  #
+  #     # Nonprofit501c20: Non-profit type referring to Group Legal Services Plan Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c20
+  #
+  #     # Nonprofit501c21: Non-profit type referring to Black Lung Benefit Trusts.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c21
+  #
+  #     # Nonprofit501c22: Non-profit type referring to Withdrawal Liability Payment Funds.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c22
+  #
+  #     # Nonprofit501c23: Non-profit type referring to Veterans Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c23
+  #
+  #     # Nonprofit501c24: Non-profit type referring to Section 4049 ERISA Trusts.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c24
+  #
+  #     # Nonprofit501c25: Non-profit type referring to Real Property Title-Holding Corporations or Trusts with Multiple Parents.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c25
+  #
+  #     # Nonprofit501c26: Non-profit type referring to State-Sponsored Organizations Providing Health Coverage for High-Risk Individuals.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c26
+  #
+  #     # Nonprofit501c27: Non-profit type referring to State-Sponsored Workers' Compensation Reinsurance Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c27
+  #
+  #     # Nonprofit501c28: Non-profit type referring to National Railroad Retirement Investment Trusts.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c28
+  #
+  #     # Nonprofit501c3: Non-profit type referring to Religious, Educational, Charitable, Scientific, Literary, Testing for Public Safety, to Foster National or International Amateur Sports Competition, or Prevention of Cruelty to Children or Animals Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c3
+  #
+  #     # Nonprofit501c4: Non-profit type referring to Civic Leagues, Social Welfare Organizations, and Local Associations of Employees.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c4
+  #
+  #     # Nonprofit501c5: Non-profit type referring to Labor, Agricultural and Horticultural Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c5
+  #
+  #     # Nonprofit501c6: Non-profit type referring to Business Leagues, Chambers of Commerce, Real Estate Boards.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c6
+  #
+  #     # Nonprofit501c7: Non-profit type referring to Social and Recreational Clubs.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c7
+  #
+  #     # Nonprofit501c8: Non-profit type referring to Fraternal Beneficiary Societies and Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c8
+  #
+  #     # Nonprofit501c9: Non-profit type referring to Voluntary Employee Beneficiary Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501c9
+  #
+  #     # Nonprofit501d: Non-profit type referring to Religious and Apostolic Associations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501d
+  #
+  #     # Nonprofit501e: Non-profit type referring to Cooperative Hospital Service Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501e
+  #
+  #     # Nonprofit501f: Non-profit type referring to Cooperative Service Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501f
+  #
+  #     # Nonprofit501k: Non-profit type referring to Child Care Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501k
+  #
+  #     # Nonprofit501n: Non-profit type referring to Charitable Risk Pools.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501n
+  #
+  #     # Nonprofit501q: Non-profit type referring to Credit Counseling Organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit501q
+  #
+  #     # Nonprofit527: Non-profit type referring to Political organizations.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :Nonprofit527
+  #
+  #     # NonprofitANBI: Non-profit type referring to a Public Benefit Organization (NL).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :NonprofitANBI
+  #
+  #     # NonprofitSBBI: Non-profit type referring to a Social Interest Promoting Institution (NL).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :NonprofitSBBI
+  #
   #     # Nose function assessment with clinical examination.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :Nose
@@ -9218,6 +9626,10 @@ module RDF::Vocab
   #     # A specific branch of medical science that deals with benign and malignant tumors, including the study of their development, diagnosis, treatment and prevention.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :Oncologic
+  #
+  #     # OneTimePayments: this is a benefit for one-time payments for individuals.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :OneTimePayments
   #
   #     # Game server status: Online. Server is available.
   #     # @return [RDF::Vocabulary::Term]
@@ -9299,9 +9711,17 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :PET
   #
+  #     # PaidLeave: this is a benefit for paid leave.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :PaidLeave
+  #
   #     # Book format: Paperback.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :Paperback
+  #
+  #     # ParentalSupport: this is a benefit for parental support.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :ParentalSupport
   #
   #     # A parking map.
   #     # @return [RDF::Vocabulary::Term]
@@ -9691,9 +10111,21 @@ module RDF::Vocab
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :TypesHealthAspect
   #
+  #     # UKTrust: Non-profit type referring to a UK trust.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :UKTrust
+  #
   #     # Ultrasound imaging.
   #     # @return [RDF::Vocabulary::Term]
   #     attr_reader :Ultrasound
+  #
+  #     # UnemploymentSupport: this is a benefit for unemployment support.
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :UnemploymentSupport
+  #
+  #     # UnincorporatedAssociationCharity: Non-profit type referring to a charitable company that is not incorporated (UK).
+  #     # @return [RDF::Vocabulary::Term]
+  #     attr_reader :UnincorporatedAssociationCharity
   #
   #     # Indicates that a document has no particular or special standing (e.g. a republication of a law by a private publisher).
   #     # @return [RDF::Vocabulary::Term]
@@ -9766,7 +10198,7 @@ case of a single file published after Zip compression, the convention of appendi
       label: "3DModel".freeze,
       "schema:category": "issue-2140".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
-      subClassOf: "schema:CreativeWork".freeze,
+      subClassOf: "schema:MediaObject".freeze,
       type: "rdfs:Class".freeze
     term :AMRadioChannel,
       comment: %(A radio channel that uses AM.).freeze,
@@ -9894,7 +10326,9 @@ Note: AggregateOffers are normally expected to associate multiple offers that al
       subClassOf: "schema:CivicStructure".freeze,
       type: "rdfs:Class".freeze
     term :AlignmentObject,
-      comment: %(An intangible item that describes an alignment between a learning resource and a node in an educational framework.).freeze,
+      comment: %(An intangible item that describes an alignment between a learning resource and a node in an educational framework.<br/><br/>
+
+Should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class="localLink" href="http://schema.org/teaches">teaches</a> or <a class="localLink" href="http://schema.org/assesses">assesses</a> a competency.).freeze,
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_LRMIClass".freeze,
       label: "AlignmentObject".freeze,
       subClassOf: "schema:Intangible".freeze,
@@ -10433,6 +10867,16 @@ Commonly used values:<br/><br/>
       comment: %(The act of giving money to a seller in exchange for goods or services rendered. An agent buys an object, product, or service from a seller for a price. Reciprocal of SellAction.).freeze,
       label: "BuyAction".freeze,
       subClassOf: "schema:TradeAction".freeze,
+      type: "rdfs:Class".freeze
+    term :CDCPMDRecord,
+      comment: %(A CDCPMDRecord is a data structure representing a record in a CDC tabular data format
+      used for hospital data reporting. See <a href="/docs/cdc-covid.html">documentation</a> for details, and the linked CDC materials for authoritative
+      definitions used as the source here.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      label: "CDCPMDRecord".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:StructuredValue".freeze,
       type: "rdfs:Class".freeze
     term :CableOrSatelliteService,
       comment: %(A service which provides access to media programming like TV or radio. Access may be via cable or satellite.).freeze,
@@ -11027,6 +11471,26 @@ Originally, URLs from <a href="http://purl.org/goodrelations/v1">GoodRelations</
       label: "DefenceEstablishment".freeze,
       subClassOf: "schema:GovernmentBuilding".freeze,
       type: "rdfs:Class".freeze
+    term :DefinedRegion,
+      comment: %(A DefinedRegion is a geographic area defined by potentially arbitrary \(rather than political, administrative or natural geographical\) criteria. Properties are provided for defining a region by reference to sets of postal codes.<br/><br/>
+
+Examples: a delivery destination when shopping. Region where regional pricing is configured.<br/><br/>
+
+Requirement 1:
+Country: US
+States: "NY", "CA"<br/><br/>
+
+Requirement 2:
+Country: US
+PostalCode Set: { [94000-94585], [97000, 97999], [13000, 13599]}
+{ [12345, 12345], [78945, 78945], }
+Region = state, canton, prefecture, autonomous community...).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      label: "DefinedRegion".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:StructuredValue".freeze,
+      type: "rdfs:Class".freeze
     term :DefinedTerm,
       comment: %(A word, name, acronym, phrase, etc. with a formal definition. Often used in the context of category or subject classification, glossaries or dictionaries, product or creative work types, etc. Use the name property for the term being defined, use termCode if the term has an alpha-numeric code allocated, use description to provide the definition of the term.).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/894".freeze,
@@ -11078,6 +11542,14 @@ Commonly used values:<br/><br/>
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass".freeze,
       label: "DeliveryMethod".freeze,
       subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
+    term :DeliveryTimeSettings,
+      comment: %(A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> property of a <a class="localLink" href="http://schema.org/OfferShippingSpecification">OfferShippingSpecification</a>. Several occurrences can be published, distinguished \(and identified/referenced\) by their different values for <a class="localLink" href="http://schema.org/shippingLabel">shippingLabel</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      label: "DeliveryTimeSettings".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:StructuredValue".freeze,
       type: "rdfs:Class".freeze
     term :Demand,
       comment: %(A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand using this type, the very same properties used for Offer apply.).freeze,
@@ -11311,7 +11783,7 @@ Commonly used values:<br/><br/>
     term :EducationalOrganization,
       comment: %(An educational organization.).freeze,
       label: "EducationalOrganization".freeze,
-      subClassOf: "schema:Organization".freeze,
+      subClassOf: ["schema:CivicStructure".freeze, "schema:Organization".freeze],
       type: "rdfs:Class".freeze
     term :Electrician,
       comment: %(An electrician.).freeze,
@@ -11746,6 +12218,14 @@ Related actions:<br/><br/>
       label: "GolfCourse".freeze,
       subClassOf: "schema:SportsActivityLocation".freeze,
       type: "rdfs:Class".freeze
+    term :GovernmentBenefitsType,
+      comment: %(GovernmentBenefitsType enumerates several kinds of government benefits to support the COVID-19 situation. Note that this structure may not capture all benefits offered.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "GovernmentBenefitsType".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
     term :GovernmentBuilding,
       comment: %(A government building.).freeze,
       label: "GovernmentBuilding".freeze,
@@ -11801,6 +12281,14 @@ The amount of a <a class="localLink" href="http://schema.org/Grant">Grant</a> is
       comment: %(A business that provide Heating, Ventilation and Air Conditioning services.).freeze,
       label: "HVACBusiness".freeze,
       subClassOf: "schema:HomeAndConstructionBusiness".freeze,
+      type: "rdfs:Class".freeze
+    term :Hackathon,
+      comment: %(A <a href="https://en.wikipedia.org/wiki/Hackathon">hackathon</a> event.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2526".freeze,
+      label: "Hackathon".freeze,
+      "schema:category": "issue-2526".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:Event".freeze,
       type: "rdfs:Class".freeze
     term :HairSalon,
       comment: %(A hair salon.).freeze,
@@ -12947,6 +13435,14 @@ Related actions:<br/><br/>
       label: "NGO".freeze,
       subClassOf: "schema:Organization".freeze,
       type: "rdfs:Class".freeze
+    term :NLNonprofitType,
+      comment: %(NLNonprofitType: Non-profit organization type originating from the Netherlands.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "NLNonprofitType".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:NonprofitType".freeze,
+      type: "rdfs:Class".freeze
     term :NailSalon,
       comment: %(A nail salon.).freeze,
       label: "NailSalon".freeze,
@@ -12985,6 +13481,14 @@ A more detailed overview of <a href="/docs/news.html">schema.org News markup</a>
       comment: %(A nightclub or discotheque.).freeze,
       label: "NightClub".freeze,
       subClassOf: "schema:EntertainmentBusiness".freeze,
+      type: "rdfs:Class".freeze
+    term :NonprofitType,
+      comment: %(NonprofitType enumerates several kinds of official non-profit types of which a non-profit organization can be.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "NonprofitType".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:Enumeration".freeze,
       type: "rdfs:Class".freeze
     term :Notary,
       comment: %(A notary.).freeze,
@@ -13079,6 +13583,25 @@ For <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GTIN</a>-related
       comment: %(A list of possible conditions for the item.).freeze,
       label: "OfferItemCondition".freeze,
       subClassOf: "schema:Enumeration".freeze,
+      type: "rdfs:Class".freeze
+    term :OfferShippingDetails,
+      comment: %(OfferShippingDetails represents information about shipping destinations.<br/><br/>
+
+Multiple of these entities can be used to represent different shipping rates for different destinations:<br/><br/>
+
+One entity for Alaska/Hawaii. A different one for continental US.A different one for all France.<br/><br/>
+
+Multiple of these entities can be used to represent different shipping costs and delivery times.<br/><br/>
+
+Two entities that are identical but differ in rate and time:<br/><br/>
+
+e.g. Cheaper and slower: $5 in 5-7days
+or Fast and expensive: $15 in 1-2 days).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      label: "OfferShippingDetails".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:StructuredValue".freeze,
       type: "rdfs:Class".freeze
     term :OfficeEquipmentStore,
       comment: %(An office equipment store.).freeze,
@@ -13462,6 +13985,14 @@ Related actions:<br/><br/>
       comment: %(The mailing address.).freeze,
       label: "PostalAddress".freeze,
       subClassOf: "schema:ContactPoint".freeze,
+      type: "rdfs:Class".freeze
+    term :PostalCodeRangeSpecification,
+      comment: %(Indicates a range of postalcodes, usually defined as the set of valid codes between <a class="localLink" href="http://schema.org/postalCodeBegin">postalCodeBegin</a> and <a class="localLink" href="http://schema.org/postalCodeEnd">postalCodeEnd</a>, inclusively.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      label: "PostalCodeRangeSpecification".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:StructuredValue".freeze,
       type: "rdfs:Class".freeze
     term :Poster,
       comment: %(A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.).freeze,
@@ -14084,6 +14615,14 @@ Related actions:<br/><br/>
       label: "School".freeze,
       subClassOf: "schema:EducationalOrganization".freeze,
       type: "rdfs:Class".freeze
+    term :SchoolDistrict,
+      comment: %(A School District is an administrative area for the administration of schools.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2500".freeze,
+      label: "SchoolDistrict".freeze,
+      "schema:category": "issue-2500".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:AdministrativeArea".freeze,
+      type: "rdfs:Class".freeze
     term :ScreeningEvent,
       comment: %(A screening of a movie or other video.).freeze,
       label: "ScreeningEvent".freeze,
@@ -14176,6 +14715,22 @@ Related actions:<br/><br/>
       "schema:isPartOf": "http://pending.schema.org".freeze,
       subClassOf: "schema:CreativeWork".freeze,
       type: "rdfs:Class".freeze
+    term :ShippingDeliveryTime,
+      comment: %(ShippingDeliveryTime provides various pieces of information about delivery times for shipping.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      label: "ShippingDeliveryTime".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:StructuredValue".freeze,
+      type: "rdfs:Class".freeze
+    term :ShippingRateSettings,
+      comment: %(A ShippingRateSettings represents re-usable pieces of shipping information. It is designed for publication on an URL that may be referenced via the <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> property of a <a class="localLink" href="http://schema.org/OfferShippingSpecification">OfferShippingSpecification</a>. Several occurrences can be published, distinguished and matched \(i.e. identified/referenced\) by their different values for <a class="localLink" href="http://schema.org/shippingLabel">shippingLabel</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      label: "ShippingRateSettings".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:StructuredValue".freeze,
+      type: "rdfs:Class".freeze
     term :ShoeStore,
       comment: %(A shoe store.).freeze,
       label: "ShoeStore".freeze,
@@ -14248,6 +14803,8 @@ Related actions:<br/><br/>
       locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,
       local government.<br/><br/>
 
+For work in progress guidelines on Coronavirus-related markup see <a href="https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#">this doc</a>.<br/><br/>
+
 The motivating scenario for SpecialAnnouncement is the <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org
 expect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our
 usual <a href="https://github.com/schemaorg/schemaorg/issues/2490">Github entry</a>, feedback comments can also be provided in <a href="https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#">this document</a>.<br/><br/>
@@ -14257,25 +14814,24 @@ the kinds of everyday practical information being posted to existing websites du
 
 Several kinds of information can be provided:<br/><br/>
 
-We encourage the provision of "name", "text", "datePosted", "expires" \(if appropriate\) and
+We encourage the provision of "name", "text", "datePosted", "expires" \(if appropriate\), "category" and
 "url" as a simple baseline. It is important to provide a value for "category" where possible, most ideally as a well known
 URL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be "https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic" or "https://www.wikidata.org/wiki/Q81068910".<br/><br/>
 
 For many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a <a class="localLink" href="http://schema.org/WebContent">WebContent</a> type, and provide the url as a property of that, alongside at least a simple "<a class="localLink" href="http://schema.org/text">text</a>" summary of the page. It is
-unlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously. More options may be added
-later if<br/><br/>
+unlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.<br/><br/>
 
-We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class="localLink" href="http://schema.org/openingHours">openingHours</a>, <a class="localLink" href="http://schema.org/Event">Event</a>, <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> etc. By linking to those pages from a <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation
-\(e.g. Coronavirus\) indicated by the <a class="localLink" href="http://schema.org/category">category</a> property of the <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a>.<br/><br/>
+We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class="localLink" href="http://schema.org/openingHours">openingHours</a>, <a class="localLink" href="http://schema.org/Event">Event</a>, <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> etc. By linking to those pages from a <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation \(e.g. Coronavirus\) indicated by the <a class="localLink" href="http://schema.org/category">category</a> property of the <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a>.<br/><br/>
+
+Many <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a>s will relate to particular regions and to identifiable local organizations. Use <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a> for the region, and <a class="localLink" href="http://schema.org/announcementLocation">announcementLocation</a> to indicate specific <a class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>es and <a class="localLink" href="http://schema.org/CivicStructures">CivicStructures</a>. If the announcement affects both a particular region and a specific location \(for example, a library closure that serves an entire region\), use both <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a> and <a class="localLink" href="http://schema.org/announcementLocation">announcementLocation</a>.<br/><br/>
+
+The <a class="localLink" href="http://schema.org/about">about</a> property can be used to indicate entities that are the focus of the announcement. We now recommend using <a class="localLink" href="http://schema.org/about">about</a> only
+for representing non-location entities \(e.g. a <a class="localLink" href="http://schema.org/Course">Course</a> or a <a class="localLink" href="http://schema.org/RadioStation">RadioStation</a>\). For places, use <a class="localLink" href="http://schema.org/announcementLocation">announcementLocation</a> and <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a>. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.<br/><br/>
 
 The basic content of <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> is similar to that of an <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> or <a href="https://en.wikipedia.org/wiki/Atom_\(Web_standard\)">Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting
 <a class="localLink" href="http://schema.org/SpecialAnnouncement">SpecialAnnouncement</a> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed
 with the <a class="localLink" href="http://schema.org/webFeed">webFeed</a> property. This can be a simple URL, or an inline <a class="localLink" href="http://schema.org/DataFeed">DataFeed</a> object, with <a class="localLink" href="http://schema.org/encodingFormat">encodingFormat</a> providing
-media type information e.g. "application/rss+xml" or "application/atom+xml".<br/><br/>
-
-For an announcement that is about a place, you can use <a class="localLink" href="http://schema.org/about">about</a> \(or <a class="localLink" href="http://schema.org/mainEntity">mainEntity</a>\) to make that relationship explicit.
-For example, the announcement could be "about" a new <a class="localLink" href="http://schema.org/CovidTestingFacility">CovidTestingFacility</a>, and provide contact information, <a class="localLink" href="http://schema.org/location">location</a>, <a class="localLink" href="http://schema.org/geo">geo</a>,
-<a class="localLink" href="http://schema.org/openingHours">openingHours</a> etc.).freeze,
+media type information e.g. "application/rss+xml" or "application/atom+xml".).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
       label: "SpecialAnnouncement".freeze,
       "schema:category": "issue-2490".freeze,
@@ -14670,10 +15226,26 @@ Note: This type is for information about actual reservations, e.g. in confirmati
       label: "TypeAndQuantityNode".freeze,
       subClassOf: "schema:StructuredValue".freeze,
       type: "rdfs:Class".freeze
+    term :UKNonprofitType,
+      comment: %(UKNonprofitType: Non-profit organization type originating from the United Kingdom.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "UKNonprofitType".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:NonprofitType".freeze,
+      type: "rdfs:Class".freeze
     term :URL,
       comment: %(Data type: URL.).freeze,
       label: "URL".freeze,
       subClassOf: "schema:Text".freeze,
+      type: "rdfs:Class".freeze
+    term :USNonprofitType,
+      comment: %(USNonprofitType: Non-profit organization type originating from the United States.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "USNonprofitType".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subClassOf: "schema:NonprofitType".freeze,
       type: "rdfs:Class".freeze
     term :UnRegisterAction,
       comment: %(The act of un-registering from a service.<br/><br/>
@@ -15335,9 +15907,11 @@ Note: Publishers should be aware that applications designed to use specific sche
       type: "rdf:Property".freeze
     property :addressCountry,
       comment: %(The country. For example, USA. You can also provide the two-letter <a href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1 alpha-2 country code</a>.).freeze,
-      domainIncludes: ["schema:GeoCoordinates".freeze, "schema:GeoShape".freeze, "schema:PostalAddress".freeze],
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:DefinedRegion".freeze, "schema:GeoCoordinates".freeze, "schema:GeoShape".freeze, "schema:PostalAddress".freeze],
       label: "addressCountry".freeze,
       rangeIncludes: ["schema:Country".freeze, "schema:Text".freeze],
+      "schema:category": "issue-2506".freeze,
       type: "rdf:Property".freeze
     property :addressLocality,
       comment: %(The locality in which the street address is, and which is in the region. For example, Mountain View.).freeze,
@@ -15347,9 +15921,11 @@ Note: Publishers should be aware that applications designed to use specific sche
       type: "rdf:Property".freeze
     property :addressRegion,
       comment: %(The region in which the locality is, and which is in the country. For example, California or another appropriate first-level <a href="https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country">Administrative division</a>).freeze,
-      domainIncludes: "schema:PostalAddress".freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:DefinedRegion".freeze, "schema:PostalAddress".freeze],
       label: "addressRegion".freeze,
       rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
       type: "rdf:Property".freeze
     property :administrationRoute,
       comment: %(A route by which this drug may be administered, e.g. 'oral'.).freeze,
@@ -15459,7 +16035,7 @@ Note: Publishers should be aware that applications designed to use specific sche
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "rdf:Property".freeze
     property :alignmentType,
-      comment: %(A category of alignment between the learning resource and the framework node. Recommended values include: 'assesses', 'teaches', 'requires', 'textComplexity', 'readingLevel', 'educationalSubject', and 'educationalLevel'.).freeze,
+      comment: %(A category of alignment between the learning resource and the framework node. Recommended values include: 'requires', 'textComplexity', 'readingLevel', and 'educationalSubject'.).freeze,
       domainIncludes: "schema:AlignmentObject".freeze,
       label: "alignmentType".freeze,
       rangeIncludes: "schema:Text".freeze,
@@ -15511,6 +16087,16 @@ Note: Publishers should be aware that applications designed to use specific sche
       domainIncludes: "schema:TypeAndQuantityNode".freeze,
       label: "amountOfThisGood".freeze,
       rangeIncludes: "schema:Number".freeze,
+      type: "rdf:Property".freeze
+    property :announcementLocation,
+      comment: %(Indicates a specific <a class="localLink" href="http://schema.org/CivicStructure">CivicStructure</a> or <a class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a> associated with the SpecialAnnouncement. For example, a specific testing facility or business with special opening hours. For a larger geographic region like a quarantine of an entire region, use <a class="localLink" href="http://schema.org/spatialCoverage">spatialCoverage</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2514".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "announcementLocation".freeze,
+      rangeIncludes: ["schema:CivicStructure".freeze, "schema:LocalBusiness".freeze],
+      "schema:category": "issue-2514".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subPropertyOf: "schema:spatialCoverage".freeze,
       type: "rdf:Property".freeze
     property :annualPercentageRate,
       comment: %(The annual rate that is charged for borrowing \(or made by investing\), expressed as a single percentage number that represents the actual yearly cost of funds over the term of a loan. This includes any fees or additional costs associated with the transaction.).freeze,
@@ -15763,6 +16349,15 @@ Note: Publishers should be aware that applications designed to use specific sche
       domainIncludes: "schema:APIReference".freeze,
       label: "assemblyVersion".freeze,
       rangeIncludes: "schema:Text".freeze,
+      type: "rdf:Property".freeze
+    property :assesses,
+      comment: %(The item being described is intended to assess the competency or learning outcome defined by the referenced term.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2427".freeze,
+      domainIncludes: ["schema:CreativeWork".freeze, "schema:EducationEvent".freeze],
+      label: "assesses".freeze,
+      rangeIncludes: ["schema:DefinedTerm".freeze, "schema:Text".freeze],
+      "schema:category": "issue-2427".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :associatedAnatomy,
       comment: %(The anatomy of the underlying organ system or structures associated with this entity.).freeze,
@@ -16305,6 +16900,15 @@ For example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047
       label: "busNumber".freeze,
       rangeIncludes: "schema:Text".freeze,
       type: "rdf:Property".freeze
+    property :businessDays,
+      comment: %(Days of the week when the merchant typically operates, indicated via opening hours markup.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:ShippingDeliveryTime".freeze,
+      label: "businessDays".freeze,
+      rangeIncludes: "schema:OpeningHoursSpecification".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :businessFunction,
       comment: %(The business function \(e.g. sell, lease, repair, dispose\) of the offer or component of a bundle \(TypeAndQuantityNode\). The default is http://purl.org/goodrelations/v1#Sell.).freeze,
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms".freeze,
@@ -16437,9 +17041,9 @@ Note: You can use <a class="localLink" href="http://schema.org/minValue">minValu
     property :category,
       comment: %(A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.).freeze,
       "dc:source": ["https://github.com/schemaorg/schemaorg/issues/1741".freeze, "https://github.com/schemaorg/schemaorg/issues/2490".freeze],
-      domainIncludes: ["schema:ActionAccessSpecification".freeze, "schema:Invoice".freeze, "schema:Offer".freeze, "schema:PhysicalActivity".freeze, "schema:Product".freeze, "schema:Recommendation".freeze, "schema:Service".freeze, "schema:SpecialAnnouncement".freeze, "schema:URL".freeze],
+      domainIncludes: ["schema:ActionAccessSpecification".freeze, "schema:Invoice".freeze, "schema:Offer".freeze, "schema:PhysicalActivity".freeze, "schema:Product".freeze, "schema:Recommendation".freeze, "schema:Service".freeze, "schema:SpecialAnnouncement".freeze],
       label: "category".freeze,
-      rangeIncludes: ["schema:PhysicalActivityCategory".freeze, "schema:Text".freeze, "schema:Thing".freeze],
+      rangeIncludes: ["schema:PhysicalActivityCategory".freeze, "schema:Text".freeze, "schema:Thing".freeze, "schema:URL".freeze],
       "schema:category": "issue-1741".freeze,
       type: "rdf:Property".freeze
     property :causeOf,
@@ -17063,6 +17667,160 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       label: "customer".freeze,
       rangeIncludes: ["schema:Organization".freeze, "schema:Person".freeze],
       type: "rdf:Property".freeze
+    property :cutoffTime,
+      comment: %(Order cutoff time allows merchants to describe the time after which they will no longer process orders received on that day. For orders processed after cutoff time, one day gets added to the delivery time estimate. This property is expected to be most typically used via the <a class="localLink" href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> publication pattern. The time is indicated using the time notation from the ISO-8601 DateTime format, e.g.
+      14:45:15Z would represent a daily cutoff at 14:45h UTC.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:ShippingDeliveryTime".freeze,
+      label: "cutoffTime".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdCollectionDate,
+      comment: %(collectiondate - Date for which patient counts are reported.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdCollectionDate".freeze,
+      rangeIncludes: ["schema:DateTime".freeze, "schema:Text".freeze],
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdFacilityCounty,
+      comment: %(Name of the County of the NHSN facility that this data record applies to. Use <a class="localLink" href="http://schema.org/cvdFacilityId">cvdFacilityId</a> to identify the facility. To provide other details, <a class="localLink" href="http://schema.org/healthcareReportingData">healthcareReportingData</a> can be used on a <a class="localLink" href="http://schema.org/Hospital">Hospital</a> entry.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdFacilityCounty".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdFacilityId,
+      comment: %(Identifier of the NHSN facility that this data record applies to. Use <a class="localLink" href="http://schema.org/cvdFacilityCounty">cvdFacilityCounty</a> to indicate the county. To provide other details, <a class="localLink" href="http://schema.org/healthcareReportingData">healthcareReportingData</a> can be used on a <a class="localLink" href="http://schema.org/Hospital">Hospital</a> entry.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdFacilityId".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumBeds,
+      comment: %(numbeds - HOSPITAL INPATIENT BEDS: Inpatient beds, including all staffed, licensed, and overflow \(surge\) beds used for inpatients.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumBeds".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumBedsOcc,
+      comment: %(numbedsocc - HOSPITAL INPATIENT BED OCCUPANCY: Total number of staffed inpatient beds that are occupied.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumBedsOcc".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumC19Died,
+      comment: %(numc19died - DEATHS: Patients with suspected or confirmed COVID-19 who died in the hospital, ED, or any overflow location.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumC19Died".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumC19HOPats,
+      comment: %(numc19hopats - HOSPITAL ONSET: Patients hospitalized in an NHSN inpatient care location with onset of suspected or confirmed COVID-19 14 or more days after hospitalization.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumC19HOPats".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumC19HospPats,
+      comment: %(numc19hosppats - HOSPITALIZED: Patients currently hospitalized in an inpatient care location who have suspected or confirmed COVID-19.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumC19HospPats".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumC19MechVentPats,
+      comment: %(numc19mechventpats - HOSPITALIZED and VENTILATED: Patients hospitalized in an NHSN inpatient care location who have suspected or confirmed COVID-19 and are on a mechanical ventilator.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumC19MechVentPats".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumC19OFMechVentPats,
+      comment: %(numc19ofmechventpats - ED/OVERFLOW and VENTILATED: Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed and on a mechanical ventilator.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumC19OFMechVentPats".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumC19OverflowPats,
+      comment: %(numc19overflowpats - ED/OVERFLOW: Patients with suspected or confirmed COVID-19 who are in the ED or any overflow location awaiting an inpatient bed.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumC19OverflowPats".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumICUBeds,
+      comment: %(numicubeds - ICU BEDS: Total number of staffed inpatient intensive care unit \(ICU\) beds.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumICUBeds".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumICUBedsOcc,
+      comment: %(numicubedsocc - ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumICUBedsOcc".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumTotBeds,
+      comment: %(numtotbeds - ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds, including all staffed,ICU, licensed, and overflow \(surge\) beds used for inpatients or outpatients.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumTotBeds".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumVent,
+      comment: %(numvent - MECHANICAL VENTILATORS: Total number of ventilators available.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumVent".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :cvdNumVentUse,
+      comment: %(numventuse - MECHANICAL VENTILATORS IN USE: Total number of ventilators in use.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:CDCPMDRecord".freeze,
+      label: "cvdNumVentUse".freeze,
+      rangeIncludes: "schema:Number".freeze,
+      "schema:category": "issue-2521".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :dataFeedElement,
       comment: %(An item within in a data feed. Data feeds may have many elements.).freeze,
       domainIncludes: "schema:DataFeed".freeze,
@@ -17109,9 +17867,11 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       type: "rdf:Property".freeze
     property :datePosted,
       comment: %(Publication date of an online listing.).freeze,
-      domainIncludes: ["schema:JobPosting".freeze, "schema:RealEstateListing".freeze],
+      "dc:source": ["https://github.com/schemaorg/schemaorg/issues/2490".freeze, "https://github.com/schemaorg/schemaorg/issues/2521".freeze],
+      domainIncludes: ["schema:CDCPMDRecord".freeze, "schema:JobPosting".freeze, "schema:RealEstateListing".freeze, "schema:SpecialAnnouncement".freeze],
       label: "datePosted".freeze,
-      rangeIncludes: "schema:Date".freeze,
+      rangeIncludes: ["schema:Date".freeze, "schema:DateTime".freeze],
+      "schema:category": ["issue-2490".freeze, "issue-2521".freeze],
       type: "rdf:Property".freeze
     property :datePublished,
       comment: %(Date of first broadcast/publication.).freeze,
@@ -17204,6 +17964,15 @@ Dateline summaries are oriented more towards human readers than towards automate
       domainIncludes: "schema:ParcelDelivery".freeze,
       label: "deliveryStatus".freeze,
       rangeIncludes: "schema:DeliveryEvent".freeze,
+      type: "rdf:Property".freeze
+    property :deliveryTime,
+      comment: %(The total delay between the receipt of the order and the goods reaching the final customer.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:DeliveryTimeSettings".freeze, "schema:OfferShippingDetails".freeze],
+      label: "deliveryTime".freeze,
+      rangeIncludes: "schema:ShippingDeliveryTime".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :department,
       comment: %(A relationship between an organization and a department of that organization, also described as an organization \(allowing different urls, logos, opening hours\). For example: a store with a pharmacy, or a bakery with a cafe.).freeze,
@@ -17441,6 +18210,15 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       "schema:category": "issue-1423".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
+    property :doesNotShip,
+      comment: %(Indicates, as part of an <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>, when shipping to a particular <a class="localLink" href="http://schema.org/shippingDestination">shippingDestination</a> is not available.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:OfferShippingDetails".freeze, "schema:ShippingRateSettings".freeze],
+      label: "doesNotShip".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :domainIncludes,
       comment: %(Relates a property to a class that is \(one of\) the type\(s\) the property is expected to be used on.).freeze,
       domainIncludes: "schema:Property".freeze,
@@ -17604,6 +18382,20 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       "schema:category": "issue-1253".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
+    property :editEIDR,
+      comment: %(An <a href="https://eidr.org/">EIDR</a> \(Entertainment Identifier Registry\) <a class="localLink" href="http://schema.org/identifier">identifier</a> representing a specific edit / edition for a work of film or television.<br/><br/>
+
+For example, the motion picture known as "Ghostbusters" whose <a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> is "10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits e.g. "10.5240/1F2A-E1C5-680A-14C6-E76B-I" and "10.5240/8A35-3BEE-6497-5D12-9E4F-3".<br/><br/>
+
+Since schema.org types like <a class="localLink" href="http://schema.org/Movie">Movie</a> and <a class="localLink" href="http://schema.org/TVEpisode">TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> alone \(for a general description\), or alongside <a class="localLink" href="http://schema.org/editEIDR">editEIDR</a> for a more edit-specific description.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2469".freeze,
+      domainIncludes: "schema:CreativeWork".freeze,
+      label: "editEIDR".freeze,
+      rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
+      "schema:category": "issue-2469".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subPropertyOf: "schema:identifier".freeze,
+      type: "rdf:Property".freeze
     property :editor,
       comment: %(Specifies the Person who edited the CreativeWork.).freeze,
       domainIncludes: "schema:CreativeWork".freeze,
@@ -17620,7 +18412,9 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :educationalAlignment,
-      comment: %(An alignment to an established educational framework.).freeze,
+      comment: %(An alignment to an established educational framework.<br/><br/>
+
+This property should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource <a class="localLink" href="http://schema.org/teaches">teaches</a> or <a class="localLink" href="http://schema.org/assesses">assesses</a> a competency.).freeze,
       domainIncludes: "schema:CreativeWork".freeze,
       label: "educationalAlignment".freeze,
       rangeIncludes: "schema:AlignmentObject".freeze,
@@ -17642,7 +18436,7 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
     property :educationalLevel,
       comment: %(The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/1779".freeze,
-      domainIncludes: "schema:EducationalOccupationalCredential".freeze,
+      domainIncludes: ["schema:CreativeWork".freeze, "schema:EducationEvent".freeze, "schema:EducationalOccupationalCredential".freeze],
       label: "educationalLevel".freeze,
       rangeIncludes: ["schema:DefinedTerm".freeze, "schema:Text".freeze, "schema:URL".freeze],
       "schema:category": "issue-1779".freeze,
@@ -17674,6 +18468,15 @@ Use standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 c
       domainIncludes: ["schema:GeoCoordinates".freeze, "schema:GeoShape".freeze],
       label: "elevation".freeze,
       rangeIncludes: ["schema:Number".freeze, "schema:Text".freeze],
+      type: "rdf:Property".freeze
+    property :eligibilityToWorkRequirement,
+      comment: %(The legal requirements such as citizenship, visa and other documentation required for an applicant to this job.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2384".freeze,
+      domainIncludes: "schema:JobPosting".freeze,
+      label: "eligibilityToWorkRequirement".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2384".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :eligibleCustomerType,
       comment: %(The type\(s\) of customers for which the given offer is valid.).freeze,
@@ -17829,9 +18632,11 @@ Unregistered or niche encoding and file formats can be indicated instead via the
       comment: %(The endTime of something. For a reserved event or service \(e.g. FoodEstablishmentReservation\), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>. For media, including audio and video, it's the time offset of the end of a clip within a larger file.<br/><br/>
 
 Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.).freeze,
-      domainIncludes: ["schema:Action".freeze, "schema:FoodEstablishmentReservation".freeze, "schema:MediaObject".freeze],
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2493".freeze,
+      domainIncludes: ["schema:Action".freeze, "schema:FoodEstablishmentReservation".freeze, "schema:MediaObject".freeze, "schema:Schedule".freeze],
       label: "endTime".freeze,
       rangeIncludes: ["schema:DateTime".freeze, "schema:Time".freeze],
+      "schema:category": "issue-2493".freeze,
       type: "rdf:Property".freeze
     property :endorsee,
       comment: %(A sub property of participant. The person/organization being supported.).freeze,
@@ -18331,6 +19136,15 @@ Typical unit code\(s\): MTK for square meter, FTK for square foot, or YDK for sq
       rangeIncludes: "schema:Boolean".freeze,
       "schema:supersededBy": "schema:isAccessibleForFree".freeze,
       type: "rdf:Property".freeze
+    property :freeShippingThreshold,
+      comment: %(A monetary value above which \(or equal to\) the shipping rate becomes free. Intended to be used via an <a class="localLink" href="http://schema.org/OfferShippingSpecification">OfferShippingSpecification</a> with <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> matching this <a class="localLink" href="http://schema.org/ShippingSettings">ShippingSettings</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:ShippingRateSettings".freeze,
+      label: "freeShippingThreshold".freeze,
+      rangeIncludes: ["schema:DeliveryChargeSpecification".freeze, "schema:MonetaryAmount".freeze],
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :frequency,
       comment: %(How often the dose is taken, e.g. 'daily'.).freeze,
       domainIncludes: "schema:DoseSchedule".freeze,
@@ -18573,6 +19387,15 @@ Typical unit code\(s\): LTR for liters, GLL of US gallons, GLI for UK / imperial
       rangeIncludes: "schema:Text".freeze,
       subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
+    property :governmentBenefitsInfo,
+      comment: %(governmentBenefitsInfo provides information about government benefits associated with a SpecialAnnouncement.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      domainIncludes: "schema:SpecialAnnouncement".freeze,
+      label: "governmentBenefitsInfo".freeze,
+      rangeIncludes: "schema:GovernmentService".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :gracePeriod,
       comment: %(The period of time after any due date that the borrower has to fulfil its obligations before a default \(failure to pay\) is deemed to have occurred.).freeze,
       "dc:source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO".freeze, "https://github.com/schemaorg/schemaorg/issues/1253".freeze],
@@ -18663,6 +19486,15 @@ Typical unit code\(s\): LTR for liters, GLL of US gallons, GLI for UK / imperial
       label: "guidelineSubject".freeze,
       rangeIncludes: "schema:MedicalEntity".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :handlingTime,
+      comment: %(The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup. Typical properties: minValue, maxValue, unitCode \(d for DAY\).  This is by common convention assumed to mean business days \(if a unitCode is used, coded as "d"\), i.e. only counting days when the business normally operates.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:ShippingDeliveryTime".freeze,
+      label: "handlingTime".freeze,
+      rangeIncludes: "schema:QuantitativeValue".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :hasBroadcastChannel,
       comment: %(A broadcast channel of a broadcast service.).freeze,
@@ -18929,6 +19761,15 @@ Typical unit code\(s\): LTR for liters, GLL of US gallons, GLI for UK / imperial
       label: "healthPlanPharmacyCategory".freeze,
       rangeIncludes: "schema:Text".freeze,
       "schema:category": "issue-1062".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :healthcareReportingData,
+      comment: %(Indicates data describing a hospital, e.g. a CDC <a class="localLink" href="http://schema.org/CDCPMDRecord">CDCPMDRecord</a> or as some kind of <a class="localLink" href="http://schema.org/Dataset">Dataset</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2521".freeze,
+      domainIncludes: "schema:Hospital".freeze,
+      label: "healthcareReportingData".freeze,
+      rangeIncludes: ["schema:CDCPMDRecord".freeze, "schema:Dataset".freeze],
+      "schema:category": "issue-2521".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :height,
@@ -19481,6 +20322,15 @@ See also <a class="localLink" href="http://schema.org/eligibleRegion">eligibleRe
       label: "isSimilarTo".freeze,
       rangeIncludes: ["schema:Product".freeze, "schema:Service".freeze],
       type: "rdf:Property".freeze
+    property :isUnlabelledFallback,
+      comment: %(This can be marked 'true' to indicate that some published ShippingRateSettings are intended to apply to all <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> published by the same merchant, when referenced by a <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> in those settings. It is not meaningful to use a 'true' value for this property alongside a shippingLabel, since this property is for use with unlabelled ShippingRateSettings.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:ShippingRateSettings".freeze,
+      label: "isUnlabelledFallback".freeze,
+      rangeIncludes: "schema:Boolean".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :isVariantOf,
       comment: %(A pointer to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive.).freeze,
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms".freeze,
@@ -19661,6 +20511,15 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
       "schema:category": "issue-2192".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
+    property :jurisdiction,
+      comment: %(Indicates a legal jurisdiction, e.g. of some legislation, or where some government service is based.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      domainIncludes: ["schema:GovernmentService".freeze, "schema:Legislation".freeze],
+      label: "jurisdiction".freeze,
+      rangeIncludes: ["schema:AdministrativeArea".freeze, "schema:Text".freeze],
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :keywords,
       comment: %(Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.).freeze,
       domainIncludes: "schema:CreativeWork".freeze,
@@ -19838,7 +20697,7 @@ Note: The order of elements in your mark-up is not sufficient for indicating the
       rangeIncludes: ["schema:AdministrativeArea".freeze, "schema:Text".freeze],
       "schema:category": "issue-1156".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
-      subPropertyOf: "schema:spatialCoverage".freeze,
+      subPropertyOf: ["schema:jurisdiction".freeze, "schema:spatialCoverage".freeze],
       type: "rdf:Property".freeze
     property :legislationLegalForce,
       comment: %(Whether the legislation is currently in force, not in force, or partially in force.).freeze,
@@ -20653,6 +21512,15 @@ Typical unit code\(s\): KMT for kilometers, SMI for statute miles).freeze,
       label: "nonProprietaryName".freeze,
       rangeIncludes: "schema:Text".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :nonprofitStatus,
+      comment: %(nonprofit Status indicates the legal status of a non-profit organization in its primary place of business.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      domainIncludes: "schema:Organization".freeze,
+      label: "nonprofitStatus".freeze,
+      rangeIncludes: "schema:NonprofitType".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :normalRange,
       comment: %(Range of acceptable values for a typical patient, when applicable.).freeze,
@@ -21544,9 +22412,47 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound<br/><br/>
       type: "rdf:Property".freeze
     property :postalCode,
       comment: %(The postal code. For example, 94043.).freeze,
-      domainIncludes: ["schema:GeoCoordinates".freeze, "schema:GeoShape".freeze, "schema:PostalAddress".freeze],
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:DefinedRegion".freeze, "schema:GeoCoordinates".freeze, "schema:GeoShape".freeze, "schema:PostalAddress".freeze],
       label: "postalCode".freeze,
       rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
+      type: "rdf:Property".freeze
+    property :postalCodeBegin,
+      comment: %(First postal code in a range \(included\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:PostalCodeRangeSpecification".freeze,
+      label: "postalCodeBegin".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :postalCodeEnd,
+      comment: %(Last postal code in the range \(included\). Needs to be after <a class="localLink" href="http://schema.org/postalCodeBegin">postalCodeBegin</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:PostalCodeRangeSpecification".freeze,
+      label: "postalCodeEnd".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :postalCodePrefix,
+      comment: %(A defined range of postal codes indicated by a common textual prefix. Used for non-numeric systems such as UK.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:DefinedRegion".freeze,
+      label: "postalCodePrefix".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :postalCodeRange,
+      comment: %(A defined range of postal codes.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:DefinedRegion".freeze,
+      label: "postalCodeRange".freeze,
+      rangeIncludes: "schema:PostalCodeRangeSpecification".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :potentialAction,
       comment: %(Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.).freeze,
@@ -22937,7 +23843,7 @@ Typical unit code\(s\): C62 for persons).freeze,
       comment: %(The type of service being offered, e.g. veterans' benefits, emergency relief, etc.).freeze,
       domainIncludes: "schema:Service".freeze,
       label: "serviceType".freeze,
-      rangeIncludes: "schema:Text".freeze,
+      rangeIncludes: ["schema:GovernmentBenefitsType".freeze, "schema:Text".freeze],
       type: "rdf:Property".freeze
     property :serviceUrl,
       comment: %(The website to access the service.).freeze,
@@ -22956,6 +23862,51 @@ Typical unit code\(s\): C62 for persons).freeze,
       domainIncludes: "schema:SocialMediaPosting".freeze,
       label: "sharedContent".freeze,
       rangeIncludes: "schema:CreativeWork".freeze,
+      type: "rdf:Property".freeze
+    property :shippingDestination,
+      comment: %(indicates \(possibly multiple\) shipping destinations. These can be defined in several ways e.g. postalCode ranges.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:DeliveryTimeSettings".freeze, "schema:OfferShippingDetails".freeze, "schema:ShippingRateSettings".freeze],
+      label: "shippingDestination".freeze,
+      rangeIncludes: "schema:DefinedRegion".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :shippingDetails,
+      comment: %(Indicates information about the shipping policies and options associated with an <a class="localLink" href="http://schema.org/Offer">Offer</a>.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:Offer".freeze,
+      label: "shippingDetails".freeze,
+      rangeIncludes: "schema:OfferShippingDetails".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :shippingLabel,
+      comment: %(Label to match an <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with a <a class="localLink" href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> \(within the context of a <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> cross-reference\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:OfferShippingDetails".freeze, "schema:ShippingRateSettings".freeze],
+      label: "shippingLabel".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :shippingRate,
+      comment: %(The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values \(of the <a class="localLink" href="http://schema.org/MonetaryAmount">MonetaryAmount</a>\) are most appropriate.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:OfferShippingDetails".freeze, "schema:ShippingRateSettings".freeze],
+      label: "shippingRate".freeze,
+      rangeIncludes: "schema:MonetaryAmount".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :shippingSettingsLink,
+      comment: %(Link to a page containing <a class="localLink" href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> and <a class="localLink" href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a> details.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:OfferShippingDetails".freeze,
+      label: "shippingSettingsLink".freeze,
+      rangeIncludes: "schema:URL".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :sibling,
       comment: %(A sibling of the person.).freeze,
@@ -23248,9 +24199,11 @@ Typical unit code\(s\): KMH for km/h, HM for mile per hour \(0.447 04 m/s\), KNT
       comment: %(The startTime of something. For a reserved event or service \(e.g. FoodEstablishmentReservation\), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from <em>January</em> to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.<br/><br/>
 
 Note that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.).freeze,
-      domainIncludes: ["schema:Action".freeze, "schema:FoodEstablishmentReservation".freeze, "schema:MediaObject".freeze],
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2493".freeze,
+      domainIncludes: ["schema:Action".freeze, "schema:FoodEstablishmentReservation".freeze, "schema:MediaObject".freeze, "schema:Schedule".freeze],
       label: "startTime".freeze,
       rangeIncludes: ["schema:DateTime".freeze, "schema:Time".freeze],
+      "schema:category": "issue-2493".freeze,
       type: "rdf:Property".freeze
     property :status,
       comment: %(The status of the study \(enumerated\).).freeze,
@@ -23572,6 +24525,15 @@ Note that Event uses startDate/endDate instead of startTime/endTime, even when d
       rangeIncludes: "schema:Text".freeze,
       subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
+    property :teaches,
+      comment: %(The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2427".freeze,
+      domainIncludes: ["schema:CreativeWork".freeze, "schema:EducationEvent".freeze],
+      label: "teaches".freeze,
+      rangeIncludes: ["schema:DefinedTerm".freeze, "schema:Text".freeze],
+      "schema:category": "issue-2427".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
     property :telephone,
       comment: %(The telephone number.).freeze,
       domainIncludes: ["schema:ContactPoint".freeze, "schema:Organization".freeze, "schema:Person".freeze, "schema:Place".freeze],
@@ -23719,6 +24681,20 @@ Open-ended date ranges can be written with ".." in place of the end date. For ex
       domainIncludes: "schema:JobPosting".freeze,
       label: "title".freeze,
       rangeIncludes: "schema:Text".freeze,
+      type: "rdf:Property".freeze
+    property :titleEIDR,
+      comment: %(An <a href="https://eidr.org/">EIDR</a> \(Entertainment Identifier Registry\) <a class="localLink" href="http://schema.org/identifier">identifier</a> representing at the most general/abstract level, a work of film or television.<br/><br/>
+
+For example, the motion picture known as "Ghostbusters" has a titleEIDR of  "10.5240/7EC7-228A-510A-053E-CBB8-J". This title \(or work\) may have several variants, which EIDR calls "edits". See <a class="localLink" href="http://schema.org/editEIDR">editEIDR</a>.<br/><br/>
+
+Since schema.org types like <a class="localLink" href="http://schema.org/Movie">Movie</a> and <a class="localLink" href="http://schema.org/TVEpisode">TVEpisode</a> can be used for both works and their multiple expressions, it is possible to use <a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> alone \(for a general description\), or alongside <a class="localLink" href="http://schema.org/editEIDR">editEIDR</a> for a more edit-specific description.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2469".freeze,
+      domainIncludes: ["schema:Movie".freeze, "schema:TVEpisode".freeze],
+      label: "titleEIDR".freeze,
+      rangeIncludes: ["schema:Text".freeze, "schema:URL".freeze],
+      "schema:category": "issue-2469".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      subPropertyOf: "schema:identifier".freeze,
       type: "rdf:Property".freeze
     property :toLocation,
       comment: %(A sub property of location. The final location of the object or the agent after the action.).freeze,
@@ -23903,6 +24879,24 @@ Typical unit code\(s\): KGM for kilogram, LBR for pound
       domainIncludes: ["schema:AudioObject".freeze, "schema:VideoObject".freeze],
       label: "transcript".freeze,
       rangeIncludes: "schema:Text".freeze,
+      type: "rdf:Property".freeze
+    property :transitTime,
+      comment: %(The typical delay the order has been sent for delivery and the goods reach the final customer. Typical properties: minValue, maxValue, unitCode \(d for DAY\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: "schema:ShippingDeliveryTime".freeze,
+      label: "transitTime".freeze,
+      rangeIncludes: "schema:QuantitativeValue".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "rdf:Property".freeze
+    property :transitTimeLabel,
+      comment: %(Label to match an <a class="localLink" href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with a <a class="localLink" href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a> \(within the context of a <a class="localLink" href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> cross-reference\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
+      domainIncludes: ["schema:DeliveryTimeSettings".freeze, "schema:OfferShippingDetails".freeze],
+      label: "transitTimeLabel".freeze,
+      rangeIncludes: "schema:Text".freeze,
+      "schema:category": "issue-2506".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "rdf:Property".freeze
     property :translationOfWork,
       comment: %(The work that this work has been translated from. e.g. 物种起源 is a translationOf “On the Origin of Species”).freeze,
@@ -24373,7 +25367,7 @@ Typical unit code\(s\): C62 for persons.).freeze,
     property :webFeed,
       comment: %(The URL for a feed, e.g. associated with a podcast series, blog, or series of date-stamped updates. This is usually RSS or Atom.).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/373".freeze,
-      domainIncludes: "schema:PodcastSeries".freeze,
+      domainIncludes: ["schema:PodcastSeries".freeze, "schema:SpecialAnnouncement".freeze],
       label: "webFeed".freeze,
       rangeIncludes: ["schema:DataFeed".freeze, "schema:URL".freeze],
       "schema:category": "issue-373".freeze,
@@ -24611,6 +25605,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       label: "Balance".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:PhysicalActivityCategory".freeze
+    term :BasicIncome,
+      comment: %(BasicIncome: this is a benefit for basic income.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "BasicIncome".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
     term :BenefitsHealthAspect,
       comment: %(Content about the benefits and advantages of usage or utilization of topic.).freeze,
       "dc:source": "https://github.com/schemaorg/schemaorg/issues/2374".freeze,
@@ -24623,6 +25624,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
       label: "BroadcastRelease".freeze,
       type: "schema:MusicAlbumReleaseType".freeze
+    term :BusinessSupport,
+      comment: %(BusinessSupport: this is a benefit for supporting businesses.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "BusinessSupport".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
     term :CDFormat,
       comment: %(CDFormat.).freeze,
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
@@ -24660,6 +25668,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "schema:category": "issue-2374".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "schema:HealthAspectEnumeration".freeze
+    term :CharitableIncorporatedOrganization,
+      comment: %(CharitableIncorporatedOrganization: Non-profit type referring to a Charitable Incorporated Organization \(UK\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "CharitableIncorporatedOrganization".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:UKNonprofitType".freeze
     term :Chiropractic,
       comment: %(A system of medicine focused on the relationship between the body's structure, mainly the spine, and its functioning.).freeze,
       label: "Chiropractic".freeze,
@@ -24785,6 +25800,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
       label: "DigitalFormat".freeze,
       type: "schema:MusicReleaseFormatType".freeze
+    term :DisabilitySupport,
+      comment: %(DisabilitySupport: this is a benefit for disability support.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "DisabilitySupport".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
     term :Discontinued,
       comment: %(Indicates that the item has been discontinued.).freeze,
       label: "Discontinued".freeze,
@@ -25000,6 +26022,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       label: "Head".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:PhysicalExam".freeze
+    term :HealthCare,
+      comment: %(HealthCare: this is a benefit for health care.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "HealthCare".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
     term :HearingImpairedSupported,
       comment: %(Uses devices to support users with hearing impairments.).freeze,
       label: "HearingImpairedSupported".freeze,
@@ -25091,6 +26120,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       comment: %(Indicates that the item has limited availability.).freeze,
       label: "LimitedAvailability".freeze,
       type: "schema:ItemAvailability".freeze
+    term :LimitedByGuaranteeCharity,
+      comment: %(LimitedByGuaranteeCharity: Non-profit type referring to a charitable company that is limited by guarantee \(UK\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "LimitedByGuaranteeCharity".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:UKNonprofitType".freeze
     term :LiveAlbum,
       comment: %(LiveAlbum.).freeze,
       "dc:source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
@@ -25258,6 +26294,272 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       label: "NoninvasiveProcedure".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:MedicalProcedureType".freeze
+    term :Nonprofit501a,
+      comment: %(Nonprofit501a: Non-profit type referring to Farmers’ Cooperative Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501a".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c1,
+      comment: %(Nonprofit501c1: Non-profit type referring to Corporations Organized Under Act of Congress, including Federal Credit Unions and National Farm Loan Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c1".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c10,
+      comment: %(Nonprofit501c10: Non-profit type referring to Domestic Fraternal Societies and Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c10".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c11,
+      comment: %(Nonprofit501c11: Non-profit type referring to Teachers' Retirement Fund Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c11".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c12,
+      comment: %(Nonprofit501c12: Non-profit type referring to Benevolent Life Insurance Associations, Mutual Ditch or Irrigation Companies, Mutual or Cooperative Telephone Companies.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c12".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c13,
+      comment: %(Nonprofit501c13: Non-profit type referring to Cemetery Companies.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c13".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c14,
+      comment: %(Nonprofit501c14: Non-profit type referring to State-Chartered Credit Unions, Mutual Reserve Funds.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c14".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c15,
+      comment: %(Nonprofit501c15: Non-profit type referring to Mutual Insurance Companies or Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c15".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c16,
+      comment: %(Nonprofit501c16: Non-profit type referring to Cooperative Organizations to Finance Crop Operations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c16".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c17,
+      comment: %(Nonprofit501c17: Non-profit type referring to Supplemental Unemployment Benefit Trusts.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c17".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c18,
+      comment: %(Nonprofit501c18: Non-profit type referring to Employee Funded Pension Trust \(created before 25 June 1959\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c18".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c19,
+      comment: %(Nonprofit501c19: Non-profit type referring to Post or Organization of Past or Present Members of the Armed Forces.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c19".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c2,
+      comment: %(Nonprofit501c2: Non-profit type referring to Title-holding Corporations for Exempt Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c2".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c20,
+      comment: %(Nonprofit501c20: Non-profit type referring to Group Legal Services Plan Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c20".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c21,
+      comment: %(Nonprofit501c21: Non-profit type referring to Black Lung Benefit Trusts.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c21".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c22,
+      comment: %(Nonprofit501c22: Non-profit type referring to Withdrawal Liability Payment Funds.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c22".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c23,
+      comment: %(Nonprofit501c23: Non-profit type referring to Veterans Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c23".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c24,
+      comment: %(Nonprofit501c24: Non-profit type referring to Section 4049 ERISA Trusts.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c24".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c25,
+      comment: %(Nonprofit501c25: Non-profit type referring to Real Property Title-Holding Corporations or Trusts with Multiple Parents.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c25".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c26,
+      comment: %(Nonprofit501c26: Non-profit type referring to State-Sponsored Organizations Providing Health Coverage for High-Risk Individuals.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c26".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c27,
+      comment: %(Nonprofit501c27: Non-profit type referring to State-Sponsored Workers' Compensation Reinsurance Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c27".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c28,
+      comment: %(Nonprofit501c28: Non-profit type referring to National Railroad Retirement Investment Trusts.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c28".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c3,
+      comment: %(Nonprofit501c3: Non-profit type referring to Religious, Educational, Charitable, Scientific, Literary, Testing for Public Safety, to Foster National or International Amateur Sports Competition, or Prevention of Cruelty to Children or Animals Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c3".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c4,
+      comment: %(Nonprofit501c4: Non-profit type referring to Civic Leagues, Social Welfare Organizations, and Local Associations of Employees.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c4".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c5,
+      comment: %(Nonprofit501c5: Non-profit type referring to Labor, Agricultural and Horticultural Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c5".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c6,
+      comment: %(Nonprofit501c6: Non-profit type referring to Business Leagues, Chambers of Commerce, Real Estate Boards.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c6".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c7,
+      comment: %(Nonprofit501c7: Non-profit type referring to Social and Recreational Clubs.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c7".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c8,
+      comment: %(Nonprofit501c8: Non-profit type referring to Fraternal Beneficiary Societies and Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c8".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501c9,
+      comment: %(Nonprofit501c9: Non-profit type referring to Voluntary Employee Beneficiary Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501c9".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501d,
+      comment: %(Nonprofit501d: Non-profit type referring to Religious and Apostolic Associations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501d".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501e,
+      comment: %(Nonprofit501e: Non-profit type referring to Cooperative Hospital Service Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501e".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501f,
+      comment: %(Nonprofit501f: Non-profit type referring to Cooperative Service Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501f".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501k,
+      comment: %(Nonprofit501k: Non-profit type referring to Child Care Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501k".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501n,
+      comment: %(Nonprofit501n: Non-profit type referring to Charitable Risk Pools.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501n".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit501q,
+      comment: %(Nonprofit501q: Non-profit type referring to Credit Counseling Organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit501q".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :Nonprofit527,
+      comment: %(Nonprofit527: Non-profit type referring to Political organizations.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "Nonprofit527".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:USNonprofitType".freeze
+    term :NonprofitANBI,
+      comment: %(NonprofitANBI: Non-profit type referring to a Public Benefit Organization \(NL\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "NonprofitANBI".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:NLNonprofitType".freeze
+    term :NonprofitSBBI,
+      comment: %(NonprofitSBBI: Non-profit type referring to a Social Interest Promoting Institution \(NL\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "NonprofitSBBI".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:NLNonprofitType".freeze
     term :Nose,
       comment: %(Nose function assessment with clinical examination.).freeze,
       label: "Nose".freeze,
@@ -25336,6 +26638,13 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       subClassOf: "schema:MedicalBusiness".freeze,
       type: "schema:MedicalSpecialty".freeze
+    term :OneTimePayments,
+      comment: %(OneTimePayments: this is a benefit for one-time payments for individuals.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "OneTimePayments".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
     term :Online,
       comment: %(Game server status: Online. Server is available.).freeze,
       label: "Online".freeze,
@@ -25432,10 +26741,24 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       label: "PET".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:MedicalImagingTechnique".freeze
+    term :PaidLeave,
+      comment: %(PaidLeave: this is a benefit for paid leave.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "PaidLeave".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
     term :Paperback,
       comment: %(Book format: Paperback.).freeze,
       label: "Paperback".freeze,
       type: "schema:BookFormatType".freeze
+    term :ParentalSupport,
+      comment: %(ParentalSupport: this is a benefit for parental support.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "ParentalSupport".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
     term :ParkingMap,
       comment: %(A parking map.).freeze,
       label: "ParkingMap".freeze,
@@ -25953,11 +27276,32 @@ Typical unit code\(s\): CMT for centimeters, MTR for meters, INH for inches, FOT
       "schema:category": "issue-2374".freeze,
       "schema:isPartOf": "http://pending.schema.org".freeze,
       type: "schema:HealthAspectEnumeration".freeze
+    term :UKTrust,
+      comment: %(UKTrust: Non-profit type referring to a UK trust.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "UKTrust".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:UKNonprofitType".freeze
     term :Ultrasound,
       comment: %(Ultrasound imaging.).freeze,
       label: "Ultrasound".freeze,
       "schema:isPartOf": "http://health-lifesci.schema.org".freeze,
       type: "schema:MedicalImagingTechnique".freeze
+    term :UnemploymentSupport,
+      comment: %(UnemploymentSupport: this is a benefit for unemployment support.).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2534".freeze,
+      label: "UnemploymentSupport".freeze,
+      "schema:category": "issue-2534".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:GovernmentBenefitsType".freeze
+    term :UnincorporatedAssociationCharity,
+      comment: %(UnincorporatedAssociationCharity: Non-profit type referring to a charitable company that is not incorporated \(UK\).).freeze,
+      "dc:source": "https://github.com/schemaorg/schemaorg/issues/2543".freeze,
+      label: "UnincorporatedAssociationCharity".freeze,
+      "schema:category": "issue-2543".freeze,
+      "schema:isPartOf": "http://pending.schema.org".freeze,
+      type: "schema:UKNonprofitType".freeze
     term :UnofficialLegalValue,
       comment: %(Indicates that a document has no particular or special standing \(e.g. a republication of a law by a private publisher\).).freeze,
       "dc:source": ["http://publications.europa.eu/mdr/eli/index.html".freeze, "https://github.com/schemaorg/schemaorg/issues/1156".freeze],
