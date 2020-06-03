@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: b221e102fa93553981746efc201196fd24e0a232
+  revision: d7c1879dbce268735536347f8820b132b47eac9e
   branch: develop
   specs:
     json-ld (3.1.4)
@@ -30,10 +30,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 93c13b843044e462e1f27567ef778deb5a71caf1
+  revision: 7cc3c023158a36b808073da5ba9695d0b70a20af
   branch: develop
   specs:
-    json-ld-preloaded (3.1.2)
+    json-ld-preloaded (3.1.3)
       json-ld (~> 3.1)
       rdf (~> 3.1)
 
@@ -48,16 +48,16 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: 26d4cf9907b0fb0906fe8514a3eff4fea8251d54
+  revision: 24ba7cdc342f091723ebddfe8c7923e72bdb7e78
   branch: develop
   specs:
-    rdf (3.1.1)
+    rdf (3.1.2)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-microdata
-  revision: 50c2d36d1bb525cc91ca35fa413c2a7097766fe6
+  revision: 10cee9d2db1979b3c066c2ee532ebda7ff032449
   branch: develop
   specs:
     rdf-microdata (3.1.0)
@@ -68,19 +68,20 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: 219e5ea3ab1734d922e60cc772c2357aa5a883f6
+  revision: 3bc939b4db3fb1ca0d16ec5dcda00b9e409e1c45
   branch: develop
   specs:
-    rdf-rdfa (3.1.0)
+    rdf-rdfa (3.1.1)
       haml (~> 5.1)
       htmlentities (~> 4.3)
-      rdf (~> 3.1)
+      rdf (~> 3.1, >= 3.1.2)
       rdf-aggregate-repo (~> 3.1)
+      rdf-vocab (~> 3.1, >= 3.1.5)
       rdf-xsd (~> 3.1)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfxml
-  revision: 225358ca70febae89482b765e12d7d614cf21de0
+  revision: 40cd73cb5aba87d6918a5ce387cb9e92d90e92cd
   branch: develop
   specs:
     rdf-rdfxml (3.1.0)
@@ -91,17 +92,17 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: 0b2a115e363edd7cf979c012f50f0d5569f46b2b
+  revision: c87a2d9a13507236123605baafcba028aad42e6d
   branch: develop
   specs:
-    rdf-reasoner (0.6.0)
-      rdf (~> 3.1)
-      rdf-vocab (~> 3.1)
+    rdf-reasoner (0.6.1)
+      rdf (~> 3.1, >= 3.1.2)
+      rdf-vocab (~> 3.1, >= 3.1.5)
       rdf-xsd (~> 3.1)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: 8f4805465c9ae75b46804a7a084b00d85b6193a3
+  revision: bb8845b27eb4cfc9ecf0ab3322f5d14c16c24ce4
   branch: develop
   specs:
     rdf-spec (3.1.0)
@@ -114,24 +115,24 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-turtle
-  revision: 6b82bfbf08425b0c2d2a0ed6f6af876aa81d03c4
+  revision: 3ac5e1bd6dcc82c8b845d49842caa7dabfe4e8d4
   branch: develop
   specs:
-    rdf-turtle (3.1.0)
+    rdf-turtle (3.1.1)
       ebnf (~> 1.2)
-      rdf (~> 3.1)
+      rdf (~> 3.1, >= 3.1.2)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: d07779dbcc4cca5c34a96d6118c4aa8ee23673a9
+  revision: 7bb82695cd86b1ce93a0d045d3f467ca27ea6369
   branch: develop
   specs:
-    rdf-vocab (3.1.4)
-      rdf (~> 3.1)
+    rdf-vocab (3.1.5)
+      rdf (~> 3.1, >= 3.1.2)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-xsd
-  revision: 1c538f47ea397cdc7b11a59868dfdcdd61a73860
+  revision: 5db1bec0a9b8db300fd52b63172ce6a51128ea95
   branch: develop
   specs:
     rdf-xsd (3.1.0)
@@ -139,7 +140,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/sinatra-rdf
-  revision: 530cebed822e5fb72c2a151519b08d95ae21d345
+  revision: b75d44682fd96af2513603aae5690958f1b0b234
   branch: develop
   specs:
     sinatra-rdf (3.1.0)
@@ -149,7 +150,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.7.4)
+    linter (3.8.0)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -192,7 +193,7 @@ GEM
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     byebug (11.1.3)
-    coderay (1.1.2)
+    coderay (1.1.3)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -213,7 +214,7 @@ GEM
     erubi (1.9.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.12.2)
+    ffi (1.13.0)
     foreman (0.87.1)
     haml (5.1.2)
       temple (>= 0.8.0)

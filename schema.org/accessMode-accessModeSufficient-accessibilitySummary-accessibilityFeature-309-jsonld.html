@@ -1,21 +1,25 @@
 <script type="application/ld+json">
 {
-  "@context": "http://schema.org/",
-  "@type": "Book",
-  "name": "Some graphic novel",
-  "accessMode": ["textual", "visual"],
-  "accessModeSufficient": [ 
+  "@type": "DigitalDocument",
+  "name": "New schema.org types proposal",
+  "author": "Alice",
+  "hasDigitalDocumentPermission": [
     {
-      "@type": "ItemList", 
-      "itemListElement": ["textual", "visual"], 
-      "description": "Text and images"
+      "@type": "DigitalDocumentPermissionType",
+      "permissionType": "http://schema.org/WritePermission",
+      "grantee": {
+        "@type": "Person",
+        "email": "alice@example.com"
+      }
     },
     {
-      "@type": "ItemList", 
-      "itemListElement": ["textual"], 
-      "description": "Text with textual alternatives and descriptions for images"
+      "@type": "DigitalDocumentPermissionType",
+      "permissionType": "http://schema.org/ReadPermission",
+      "grantee": {
+        "@type": "Audience",
+        "audienceType": "public"
+      }
     }
-  ],
-  "accessibilitySummary": "Visual elements are not described."
+  ]
 }
 </script>
