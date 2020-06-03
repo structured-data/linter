@@ -155,7 +155,7 @@ module RDF::Linter
 
       output = %(<div class="example d#{depth}">\n)
       output += "  &nbsp;&nbsp;|&nbsp;&nbsp;" * depth
-      if @classes[cls].has_key?(:examples)
+      if @classes.fetch(cls, {}).has_key?(:examples)
         # Create link to class-specific page
         output += %(<a href="/examples/schema.org/#{cls}/" title="Show #{cls} markup examples">#{cls}</a>\n)
         # Output examples
