@@ -19,7 +19,7 @@ gem 'rdf-xsd',            git: "https://github.com/ruby-rdf/rdf-xsd", branch: "d
 gem 'json-ld',            git: "https://github.com/ruby-rdf/json-ld", branch: "develop"
 gem 'json-ld-preloaded',  git: "https://github.com/ruby-rdf/json-ld-preloaded", branch: "develop"
 gem "syntax"
-gem 'better_errors'
+gem 'better_errors', '>= 2.7.1'
 gem 'binding_of_caller'
 
 group :development, :test do
@@ -36,6 +36,6 @@ gem 'rest-client-components', git: "https://github.com/amatriain/rest-client-com
 gem 'jsonlint',           git: "https://github.com/dougbarth/jsonlint"
 
 group :debug do
-  gem 'shotgun'
+  gem 'shotgun', '>= 0.9.2'
   gem "byebug"
 end
