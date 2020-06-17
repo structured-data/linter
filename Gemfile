@@ -9,6 +9,7 @@ gem "rack-rdf",           git: "https://github.com/ruby-rdf/rack-rdf", branch: "
 gem "rdf",                git: "https://github.com/ruby-rdf/rdf", branch: "develop"
 gem "rdf-spec",           git: "https://github.com/ruby-rdf/rdf-spec", branch: "develop"
 
+gem 'ebnf',               git: "https://github.com/dryruby/ebnf",  branch: "develop"
 gem 'rdf-microdata',      git: "https://github.com/ruby-rdf/rdf-microdata", branch: "develop"
 gem 'rdf-rdfa',           git: "https://github.com/ruby-rdf/rdf-rdfa", branch: "develop"
 gem 'rdf-rdfxml',         git: "https://github.com/ruby-rdf/rdf-rdfxml", branch: "develop"
@@ -29,9 +30,6 @@ end
 
 # Becuase rest-client-commonents doesn't seem like it's going to be updated:
 gem 'rest-client-components', git: "https://github.com/amatriain/rest-client-components", branch: "rest-client-2-compatibility"
-
-# Until Tilt is updated to remove (issue #316)
-#gem 'tilt',               git: "https://github.com/rtomayko/tilt"
 
 gem 'jsonlint',           git: "https://github.com/dougbarth/jsonlint"
 
