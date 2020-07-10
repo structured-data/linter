@@ -134,10 +134,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: 734b0251c13119f8cc7e48ed336c47c6b5c750b4
+  revision: 513baa0ebeb2f0ce7284147e451d41ce79dce01b
   branch: develop
   specs:
-    rdf-vocab (3.1.6)
+    rdf-vocab (3.1.7)
       rdf (~> 3.1, >= 3.1.2)
 
 GIT
@@ -160,7 +160,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.8.2)
+    linter (3.8.3)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
