@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/master/data//releases/8.0/schemaorgcontext.jsonld
+# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/8.0/schemaorgcontext.jsonld
 require 'json/ld'
 class JSON::LD::Context
   add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/8.0/schemaorgcontext.jsonld") do
