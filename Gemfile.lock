@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/dryruby/ebnf
-  revision: 3a4629ef6ebd18cb3c887d280d23e59814242c0f
+  revision: ecac5a90c432eda80a2cbc2225a07ad2b2b976b7
   branch: develop
   specs:
     ebnf (2.0.0)
@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: d7c1879dbce268735536347f8820b132b47eac9e
+  revision: f62940d9d1d1a99fc20351d9179c379ffd53494a
   branch: develop
   specs:
     json-ld (3.1.4)
@@ -58,19 +58,19 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: b186dffe85d5007b71aeea2a222ff34603fc1386
+  revision: 2394451de335812376032ccb9ccad479b99a6856
   branch: develop
   specs:
-    rdf (3.1.3)
+    rdf (3.1.4)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-microdata
-  revision: 10cee9d2db1979b3c066c2ee532ebda7ff032449
+  revision: dc74bc4243a9dd73ad4539613891269cfecee9e1
   branch: develop
   specs:
-    rdf-microdata (3.1.0)
+    rdf-microdata (3.1.1)
       htmlentities (~> 4.3)
       nokogiri (~> 1.10)
       rdf (~> 3.1)
@@ -78,10 +78,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: 3bc939b4db3fb1ca0d16ec5dcda00b9e409e1c45
+  revision: 2a44cc21d5f3372e630655f75ff539c9c2ba39ef
   branch: develop
   specs:
-    rdf-rdfa (3.1.1)
+    rdf-rdfa (3.1.2)
       haml (~> 5.1)
       htmlentities (~> 4.3)
       rdf (~> 3.1, >= 3.1.2)
@@ -102,10 +102,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: c87a2d9a13507236123605baafcba028aad42e6d
+  revision: f318f605cd749ac6ca082f24d1be12ebc1275b6a
   branch: develop
   specs:
-    rdf-reasoner (0.6.1)
+    rdf-reasoner (0.6.2)
       rdf (~> 3.1, >= 3.1.2)
       rdf-vocab (~> 3.1, >= 3.1.5)
       rdf-xsd (~> 3.1)
@@ -134,10 +134,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: ebdabd34582e01b03877d6806b97e9b4cc742f9f
+  revision: 734b0251c13119f8cc7e48ed336c47c6b5c750b4
   branch: develop
   specs:
-    rdf-vocab (3.1.5)
+    rdf-vocab (3.1.6)
       rdf (~> 3.1, >= 3.1.2)
 
 GIT
@@ -160,7 +160,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.8.1)
+    linter (3.8.2)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -212,7 +212,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     debug_inspector (0.0.3)
-    diff-lcs (1.3)
+    diff-lcs (1.4.4)
     docile (1.3.2)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -242,12 +242,12 @@ GEM
     mime-types-data (3.2020.0512)
     mini_portile2 (2.4.0)
     minitest (5.14.1)
-    multi_json (1.14.1)
+    multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
     nio4r (2.5.2)
-    nokogiri (1.10.9)
+    nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
