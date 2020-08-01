@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/8.0/schemaorgcontext.jsonld
+# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/8.0/schemaorgcontext.jsonld") do
+  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld") do
     new(vocab: "http://schema.org/", processingMode: "json-ld-1.1", term_definitions: {
       "3DModel" => TermDefinition.new("3DModel", id: "http://schema.org/3DModel"),
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
@@ -98,6 +98,9 @@ class JSON::LD::Context
       "BlogPosting" => TermDefinition.new("BlogPosting", id: "http://schema.org/BlogPosting"),
       "BloodTest" => TermDefinition.new("BloodTest", id: "http://schema.org/BloodTest"),
       "BoardingPolicyType" => TermDefinition.new("BoardingPolicyType", id: "http://schema.org/BoardingPolicyType"),
+      "BoatReservation" => TermDefinition.new("BoatReservation", id: "http://schema.org/BoatReservation"),
+      "BoatTerminal" => TermDefinition.new("BoatTerminal", id: "http://schema.org/BoatTerminal"),
+      "BoatTrip" => TermDefinition.new("BoatTrip", id: "http://schema.org/BoatTrip"),
       "BodyOfWater" => TermDefinition.new("BodyOfWater", id: "http://schema.org/BodyOfWater"),
       "Bone" => TermDefinition.new("Bone", id: "http://schema.org/Bone"),
       "Book" => TermDefinition.new("Book", id: "http://schema.org/Book"),
@@ -507,6 +510,7 @@ class JSON::LD::Context
       "LandmarksOrHistoricalBuildings" => TermDefinition.new("LandmarksOrHistoricalBuildings", id: "http://schema.org/LandmarksOrHistoricalBuildings"),
       "Language" => TermDefinition.new("Language", id: "http://schema.org/Language"),
       "LaserDiscFormat" => TermDefinition.new("LaserDiscFormat", id: "http://schema.org/LaserDiscFormat"),
+      "LearningResource" => TermDefinition.new("LearningResource", id: "http://schema.org/LearningResource"),
       "LeaveAction" => TermDefinition.new("LeaveAction", id: "http://schema.org/LeaveAction"),
       "LeftHandDriving" => TermDefinition.new("LeftHandDriving", id: "http://schema.org/LeftHandDriving"),
       "LegalForceStatus" => TermDefinition.new("LegalForceStatus", id: "http://schema.org/LegalForceStatus"),
@@ -562,6 +566,7 @@ class JSON::LD::Context
       "MediaReview" => TermDefinition.new("MediaReview", id: "http://schema.org/MediaReview"),
       "MediaSubscription" => TermDefinition.new("MediaSubscription", id: "http://schema.org/MediaSubscription"),
       "MedicalAudience" => TermDefinition.new("MedicalAudience", id: "http://schema.org/MedicalAudience"),
+      "MedicalAudienceType" => TermDefinition.new("MedicalAudienceType", id: "http://schema.org/MedicalAudienceType"),
       "MedicalBusiness" => TermDefinition.new("MedicalBusiness", id: "http://schema.org/MedicalBusiness"),
       "MedicalCause" => TermDefinition.new("MedicalCause", id: "http://schema.org/MedicalCause"),
       "MedicalClinic" => TermDefinition.new("MedicalClinic", id: "http://schema.org/MedicalClinic"),
@@ -862,6 +867,8 @@ class JSON::LD::Context
       "PrimaryCare" => TermDefinition.new("PrimaryCare", id: "http://schema.org/PrimaryCare"),
       "Prion" => TermDefinition.new("Prion", id: "http://schema.org/Prion"),
       "Product" => TermDefinition.new("Product", id: "http://schema.org/Product"),
+      "ProductCollection" => TermDefinition.new("ProductCollection", id: "http://schema.org/ProductCollection"),
+      "ProductGroup" => TermDefinition.new("ProductGroup", id: "http://schema.org/ProductGroup"),
       "ProductModel" => TermDefinition.new("ProductModel", id: "http://schema.org/ProductModel"),
       "ProductReturnEnumeration" => TermDefinition.new("ProductReturnEnumeration", id: "http://schema.org/ProductReturnEnumeration"),
       "ProductReturnFiniteReturnWindow" => TermDefinition.new("ProductReturnFiniteReturnWindow", id: "http://schema.org/ProductReturnFiniteReturnWindow"),
@@ -895,6 +902,7 @@ class JSON::LD::Context
       "QuantitativeValueDistribution" => TermDefinition.new("QuantitativeValueDistribution", id: "http://schema.org/QuantitativeValueDistribution"),
       "Quantity" => TermDefinition.new("Quantity", id: "http://schema.org/Quantity"),
       "Question" => TermDefinition.new("Question", id: "http://schema.org/Question"),
+      "Quiz" => TermDefinition.new("Quiz", id: "http://schema.org/Quiz"),
       "Quotation" => TermDefinition.new("Quotation", id: "http://schema.org/Quotation"),
       "QuoteAction" => TermDefinition.new("QuoteAction", id: "http://schema.org/QuoteAction"),
       "RVPark" => TermDefinition.new("RVPark", id: "http://schema.org/RVPark"),
@@ -1042,6 +1050,7 @@ class JSON::LD::Context
       "StagesHealthAspect" => TermDefinition.new("StagesHealthAspect", id: "http://schema.org/StagesHealthAspect"),
       "State" => TermDefinition.new("State", id: "http://schema.org/State"),
       "StatisticalPopulation" => TermDefinition.new("StatisticalPopulation", id: "http://schema.org/StatisticalPopulation"),
+      "StatusEnumeration" => TermDefinition.new("StatusEnumeration", id: "http://schema.org/StatusEnumeration"),
       "SteeringPositionValue" => TermDefinition.new("SteeringPositionValue", id: "http://schema.org/SteeringPositionValue"),
       "Store" => TermDefinition.new("Store", id: "http://schema.org/Store"),
       "StoreCreditRefund" => TermDefinition.new("StoreCreditRefund", id: "http://schema.org/StoreCreditRefund"),
@@ -1286,6 +1295,7 @@ class JSON::LD::Context
       "area" => TermDefinition.new("area", id: "http://schema.org/area"),
       "areaServed" => TermDefinition.new("areaServed", id: "http://schema.org/areaServed"),
       "arrivalAirport" => TermDefinition.new("arrivalAirport", id: "http://schema.org/arrivalAirport"),
+      "arrivalBoatTerminal" => TermDefinition.new("arrivalBoatTerminal", id: "http://schema.org/arrivalBoatTerminal"),
       "arrivalBusStop" => TermDefinition.new("arrivalBusStop", id: "http://schema.org/arrivalBusStop"),
       "arrivalGate" => TermDefinition.new("arrivalGate", id: "http://schema.org/arrivalGate"),
       "arrivalPlatform" => TermDefinition.new("arrivalPlatform", id: "http://schema.org/arrivalPlatform"),
@@ -1392,6 +1402,7 @@ class JSON::LD::Context
       "byDay" => TermDefinition.new("byDay", id: "http://schema.org/byDay"),
       "byMonth" => TermDefinition.new("byMonth", id: "http://schema.org/byMonth"),
       "byMonthDay" => TermDefinition.new("byMonthDay", id: "http://schema.org/byMonthDay"),
+      "byMonthWeek" => TermDefinition.new("byMonthWeek", id: "http://schema.org/byMonthWeek"),
       "callSign" => TermDefinition.new("callSign", id: "http://schema.org/callSign"),
       "calories" => TermDefinition.new("calories", id: "http://schema.org/calories"),
       "candidate" => TermDefinition.new("candidate", id: "http://schema.org/candidate"),
@@ -1540,6 +1551,7 @@ class JSON::LD::Context
       "deliveryTime" => TermDefinition.new("deliveryTime", id: "http://schema.org/deliveryTime"),
       "department" => TermDefinition.new("department", id: "http://schema.org/department"),
       "departureAirport" => TermDefinition.new("departureAirport", id: "http://schema.org/departureAirport"),
+      "departureBoatTerminal" => TermDefinition.new("departureBoatTerminal", id: "http://schema.org/departureBoatTerminal"),
       "departureBusStop" => TermDefinition.new("departureBusStop", id: "http://schema.org/departureBusStop"),
       "departureGate" => TermDefinition.new("departureGate", id: "http://schema.org/departureGate"),
       "departurePlatform" => TermDefinition.new("departurePlatform", id: "http://schema.org/departurePlatform"),
@@ -1766,6 +1778,7 @@ class JSON::LD::Context
       "hasPOS" => TermDefinition.new("hasPOS", id: "http://schema.org/hasPOS"),
       "hasPart" => TermDefinition.new("hasPart", id: "http://schema.org/hasPart"),
       "hasProductReturnPolicy" => TermDefinition.new("hasProductReturnPolicy", id: "http://schema.org/hasProductReturnPolicy"),
+      "hasVariant" => TermDefinition.new("hasVariant", id: "http://schema.org/hasVariant"),
       "headline" => TermDefinition.new("headline", id: "http://schema.org/headline"),
       "healthCondition" => TermDefinition.new("healthCondition", id: "http://schema.org/healthCondition"),
       "healthPlanCoinsuranceOption" => TermDefinition.new("healthPlanCoinsuranceOption", id: "http://schema.org/healthPlanCoinsuranceOption"),
@@ -1828,6 +1841,7 @@ class JSON::LD::Context
       "inDefinedTermSet" => TermDefinition.new("inDefinedTermSet", id: "http://schema.org/inDefinedTermSet", type_mapping: "@id"),
       "inLanguage" => TermDefinition.new("inLanguage", id: "http://schema.org/inLanguage"),
       "inPlaylist" => TermDefinition.new("inPlaylist", id: "http://schema.org/inPlaylist"),
+      "inProductGroupWithID" => TermDefinition.new("inProductGroupWithID", id: "http://schema.org/inProductGroupWithID"),
       "inStoreReturnsOffered" => TermDefinition.new("inStoreReturnsOffered", id: "http://schema.org/inStoreReturnsOffered"),
       "inSupportOf" => TermDefinition.new("inSupportOf", id: "http://schema.org/inSupportOf"),
       "incentiveCompensation" => TermDefinition.new("incentiveCompensation", id: "http://schema.org/incentiveCompensation"),
@@ -1983,6 +1997,7 @@ class JSON::LD::Context
       "mechanismOfAction" => TermDefinition.new("mechanismOfAction", id: "http://schema.org/mechanismOfAction"),
       "mediaAuthenticityCategory" => TermDefinition.new("mediaAuthenticityCategory", id: "http://schema.org/mediaAuthenticityCategory"),
       "median" => TermDefinition.new("median", id: "http://schema.org/median"),
+      "medicalAudience" => TermDefinition.new("medicalAudience", id: "http://schema.org/medicalAudience"),
       "medicalSpecialty" => TermDefinition.new("medicalSpecialty", id: "http://schema.org/medicalSpecialty"),
       "medicineSystem" => TermDefinition.new("medicineSystem", id: "http://schema.org/medicineSystem"),
       "meetsEmissionStandard" => TermDefinition.new("meetsEmissionStandard", id: "http://schema.org/meetsEmissionStandard"),
@@ -2115,6 +2130,7 @@ class JSON::LD::Context
       "passengerPriorityStatus" => TermDefinition.new("passengerPriorityStatus", id: "http://schema.org/passengerPriorityStatus"),
       "passengerSequenceNumber" => TermDefinition.new("passengerSequenceNumber", id: "http://schema.org/passengerSequenceNumber"),
       "pathophysiology" => TermDefinition.new("pathophysiology", id: "http://schema.org/pathophysiology"),
+      "pattern" => TermDefinition.new("pattern", id: "http://schema.org/pattern"),
       "payload" => TermDefinition.new("payload", id: "http://schema.org/payload"),
       "paymentAccepted" => TermDefinition.new("paymentAccepted", id: "http://schema.org/paymentAccepted"),
       "paymentDue" => TermDefinition.new("paymentDue", id: "http://schema.org/paymentDue", type_mapping: "http://schema.org/DateTime"),
@@ -2189,6 +2205,7 @@ class JSON::LD::Context
       "processorRequirements" => TermDefinition.new("processorRequirements", id: "http://schema.org/processorRequirements"),
       "producer" => TermDefinition.new("producer", id: "http://schema.org/producer"),
       "produces" => TermDefinition.new("produces", id: "http://schema.org/produces"),
+      "productGroupID" => TermDefinition.new("productGroupID", id: "http://schema.org/productGroupID"),
       "productID" => TermDefinition.new("productID", id: "http://schema.org/productID"),
       "productReturnDays" => TermDefinition.new("productReturnDays", id: "http://schema.org/productReturnDays"),
       "productReturnLink" => TermDefinition.new("productReturnLink", id: "http://schema.org/productReturnLink", type_mapping: "@id"),
@@ -2374,6 +2391,7 @@ class JSON::LD::Context
       "significance" => TermDefinition.new("significance", id: "http://schema.org/significance"),
       "significantLink" => TermDefinition.new("significantLink", id: "http://schema.org/significantLink", type_mapping: "@id"),
       "significantLinks" => TermDefinition.new("significantLinks", id: "http://schema.org/significantLinks", type_mapping: "@id"),
+      "size" => TermDefinition.new("size", id: "http://schema.org/size"),
       "skills" => TermDefinition.new("skills", id: "http://schema.org/skills"),
       "skos" => TermDefinition.new("skos", id: "http://www.w3.org/2004/02/skos/core#", simple: true, prefix: true),
       "sku" => TermDefinition.new("sku", id: "http://schema.org/sku"),
@@ -2543,6 +2561,7 @@ class JSON::LD::Context
       "variableMeasured" => TermDefinition.new("variableMeasured", id: "http://schema.org/variableMeasured"),
       "variablesMeasured" => TermDefinition.new("variablesMeasured", id: "http://schema.org/variablesMeasured"),
       "variantCover" => TermDefinition.new("variantCover", id: "http://schema.org/variantCover"),
+      "variesBy" => TermDefinition.new("variesBy", id: "http://schema.org/variesBy"),
       "vatID" => TermDefinition.new("vatID", id: "http://schema.org/vatID"),
       "vehicleConfiguration" => TermDefinition.new("vehicleConfiguration", id: "http://schema.org/vehicleConfiguration"),
       "vehicleEngine" => TermDefinition.new("vehicleEngine", id: "http://schema.org/vehicleEngine"),
@@ -2593,7 +2612,7 @@ class JSON::LD::Context
       "yield" => TermDefinition.new("yield", id: "http://schema.org/yield")
     })
   end
-  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/8.0/schemaorgcontext.jsonld")
-  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/8.0/schemaorgcontext.jsonld")
-  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/master/data/releases/8.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld")
+  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld")
 end

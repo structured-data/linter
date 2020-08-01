@@ -1,4 +1,4 @@
-<!-- John checked into a flight at the airport. -->
+<!-- John checked into a flight online. -->
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -9,23 +9,11 @@
   },
   "object": {
     "@type": "Flight",
-    "flightNumber": "110",
-    "provider": "Aeroflot",
-    "departureAirport": "SVO",
-    "departureTime": "2014-10-01T15:30:00Z",
-    "arrivalTime": "2014-10-02T12:00:00Z",
-    "arrivalAirport": "SFO"
+    "flightNumber": "AA110"
   },
-  "location": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "name": "Sheremetyevo International Airport",
-      "addressLocality": "Khimki",
-      "addressRegion": "Moscow Region",
-      "addressCountry": "Russia",
-      "postalCode": "141400"
-    }
+  "instrument": {
+    "@type": "WebApplication",
+    "url": "http://aa.com"
   }
 }
 </script>

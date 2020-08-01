@@ -149,7 +149,7 @@ describe RDF::Linter::Application do
 
   describe "get /examples/schema.org/:file" do
     {
-      "Role-PerformanceRole-257-jsonld.html" => "text/html",
+      "AcceptAction-174-jsonld.html" => "text/html",
     }.each do |file, content_type|
       context file do
         subject {

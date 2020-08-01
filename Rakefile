@@ -14,8 +14,8 @@ end
 Sinatra::AssetPipeline::Task.define! RDF::Linter::Application
 
 # https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.3/all-layers.nq
-schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/master/data")
-schema_version = ENV.fetch("schema_version", "8.0")
+schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data")
+schema_version = ENV.fetch("schema_version", "9.0")
 
 namespace :schema do
   desc "Create custom pre-compiled vocabulary"
@@ -29,7 +29,7 @@ namespace :schema do
     cmd += " --class-name SCHEMA"
     cmd += " --strict"
     cmd += " -o lib/rdf/vocab/schema.rb_t"
-    cmd += " #{schema_base}/releases/#{schema_version}/all-layers.nq"
+    cmd += " #{schema_base}/releases/#{schema_version}/schemaorg-current-http.nq"
     puts "  #{cmd}"
     begin
       %x{#{cmd} && mv lib/rdf/vocab/schema.rb_t lib/rdf/vocab/schema.rb}
@@ -59,11 +59,17 @@ namespace :schema do
       examples
       issue-1004-examples
       issue-1100-examples
-      sdo-ClaimReview-issue-1061-examples
+      sdo-airport-examples.txt
+      sdo-apartment-examples.txt
       sdo-automobile-examples
+      sdo-book-series-examples.txt
+      sdo-bus-stop-examples.txt
+      sdo-ClaimReview-issue-1061-examples
       sdo-course-examples.txt
       sdo-creativwork-examples
       sdo-datafeed-examples
+      sdo-defined-region-examples.txt
+      sdo-dentist-examples.txt
       sdo-digital-document-examples
       sdo-examples-goodrelations
       sdo-exhibitionevent-examples
@@ -79,15 +85,19 @@ namespace :schema do
       sdo-map-examples
       sdo-menu-examples
       sdo-music-examples
+      sdo-offer-shipping-details-examples.txt
       sdo-offeredby-examples
       sdo-periodical-examples
+      sdo-police-station-examples.txt
       sdo-property-value-examples
       sdo-screeningevent-examples
       sdo-service-examples
+      sdo-single-family-residence-examples.txt
       sdo-social-media-examples
       sdo-sponsor-examples
       sdo-sports-examples
       sdo-tourism-examples
+      sdo-train-station-examples.txt
       sdo-trip-examples
       sdo-tv-listing-examples
       sdo-userinteraction-examples

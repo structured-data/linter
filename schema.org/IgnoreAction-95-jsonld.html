@@ -1,4 +1,4 @@
-<!--  John and Steve ignored an article. -->
+<!--  John ignores a friend request from Steve. -->
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
@@ -8,12 +8,15 @@
     "name": "John"
   },
   "object": {
-    "@type": "ScholarlyArticle",
-    "name": "Do we really need to know whether P = NP?"
-  },
-  "participant": {
-    "@type": "Person",
-    "name": "Steve"
+    "@type": "BefriendAction",
+    "agent": {
+      "@type": "Person",
+      "name": "Steve"
+    },
+    "instrument": {
+      "@type": "WebPage",
+      "url": "https://www.social.com"
+    }
   }
 }
 </script>
