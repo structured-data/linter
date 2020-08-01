@@ -17,10 +17,11 @@ GIT
 
 GIT
   remote: https://github.com/dryruby/ebnf
-  revision: ecac5a90c432eda80a2cbc2225a07ad2b2b976b7
+  revision: 80a11d12a4184e16c31fc388e10639106d2ec88f
   branch: develop
   specs:
-    ebnf (2.0.0)
+    ebnf (2.1.1)
+      htmlentities (~> 4.3)
       rdf (~> 3.1)
       scanf (~> 1.0)
       sxp (~> 1.1)
@@ -58,7 +59,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: 2394451de335812376032ccb9ccad479b99a6856
+  revision: 9ad105ed5359512ca159f74865f2ba9db541066c
   branch: develop
   specs:
     rdf (3.1.4)
@@ -112,10 +113,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: bb8845b27eb4cfc9ecf0ab3322f5d14c16c24ce4
+  revision: d168eb5a0031d3e7bf8edaf4d52d0226fd49d986
   branch: develop
   specs:
-    rdf-spec (3.1.0)
+    rdf-spec (3.1.1)
       awesome_print (~> 1.8)
       rdf (~> 3.1)
       rdf-isomorphic (~> 3.1)
@@ -125,10 +126,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-turtle
-  revision: 4609fcd182a525b49924095baf24048332d8366f
+  revision: 5a5b8a3fa5849281216b445c201d444f157e1ee3
   branch: develop
   specs:
-    rdf-turtle (3.1.1)
+    rdf-turtle (3.1.2)
       ebnf (~> 2.0)
       rdf (~> 3.1, >= 3.1.2)
 
@@ -160,7 +161,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.8.3)
+    linter (3.9.0)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -233,7 +234,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    i18n (1.8.3)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     json-canonicalization (0.2.0)
     link_header (0.0.8)
@@ -251,7 +252,7 @@ GEM
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
-    oj (3.10.6)
+    oj (3.10.8)
     optimist (3.0.1)
     public_suffix (4.0.5)
     puma (4.3.5)

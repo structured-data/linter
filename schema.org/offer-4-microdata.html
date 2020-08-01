@@ -1,30 +1,53 @@
-<div itemscope itemtype="http://schema.org/FoodEstablishment">
-  <span itemprop="name">Joe's Pizza</span>
-  <div itemprop="location" itemscope itemtype="http://schema.org/PostalAddress">
-    <span itemprop="streetAddress">123 Main Street</span>
-    <span itemprop="addressLocality">Cambridge</span>
-    <span itemprop="addressRegion">MA</span>
-    <span itemprop="postalCode">02142</span>
-  </div>
-  delivers within 5 km of its store
-  <div itemprop="makesOffer" itemscope itemtype="http://schema.org/Offer">
-    <div itemprop="eligibleRegion" itemscope itemtype="http://schema.org/GeoCircle">
-      <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-        <meta itemprop="streetAddress" content="123 Main Street" />
-        <meta itemprop="addressLocality" content="Cambridge" />
-        <meta itemprop="addressRegion" content="MA" />
-        <meta itemprop="postalCode" content="02142" />
-      </div>
-      <meta itemprop="geoRadius" content="5000" />
+<div itemscope itemtype="http://schema.org/Library">
+    <h1 itemprop="name">
+        Music Resource Centre
+    </h1>
+    <h2>
+        Opening hours
+    </h2>
+    <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <link itemprop="dayOfWeek" href="http://schema.org/Monday">Monday: <time itemprop="opens" content="09:00:00">9:00 AM</time> - <time itemprop="closes" content="17:00:00">5:00 PM</time>
     </div>
-
-    with a minium order of $20.
-    <div itemprop="priceSpecification" itemscope itemtype="http://schema.org/DeliveryChargeSpecification">
-      <meta itemprop="appliesToDeliveryMethod" link="http://purl.org/goodrelations/v1#DeliveryModeOwnFleet">
-      <div itemprop="eligibleTransactionVolume" itemscope itemtype="http://schema.org/PriceSpecification">
-        <meta itemprop="price" content="20.00" />
-        <meta itemprop="priceCurrency" content="USD" />
-      </div>
+    <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <link itemprop="dayOfWeek" href="http://schema.org/Tuesday">Tuesday: <time itemprop="opens" content="09:00:00">9:00 AM</time> - <time itemprop="closes" content="17:00:00">5:00 PM</time>
     </div>
-  </div>
+    <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <link itemprop="dayOfWeek" href="http://schema.org/Wednesday">Wednesday: <time itemprop="opens" content="09:00:00">9:00 AM</time> - <time itemprop="closes" content="17:00:00">5:00 PM</time>
+    </div>
+    <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <link itemprop="dayOfWeek" href="http://schema.org/Thursday">Thursday: <time itemprop="opens" content="09:00:00">9:00 AM</time> - <time itemprop="closes" content="17:00:00">5:00 PM</time>
+    </div>
+    <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <link itemprop="dayOfWeek" href="http://schema.org/Friday">Friday: <time itemprop="opens" content="09:00:00">9:00 AM</time> - <time itemprop="closes" content="17:00:00">5:00 PM</time>
+    </div>
+    <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <link itemprop="dayOfWeek" href="http://schema.org/Saturday">Saturday: <time itemprop="opens" content="09:00:00">9:00 AM</time> - <time itemprop="closes" content="17:00:00">5:00 PM</time>
+    </div>
+    <div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
+        <link itemprop="dayOfWeek" href="http://schema.org/Sunday">Sunday: <time itemprop="opens" content="09:00:00">9:00 AM</time> - <time itemprop="closes" content="17:00:00">5:00 PM</time>
+    </div>
+    <h2>
+        Contact information
+    </h2>
+    <div>
+        Email address: <a href="mailto:dscott@laurentian.ca" itemprop="email">dscott@laurentian.ca</a>
+    </div>
+    <div>
+        <div itemprop="location address" itemscope itemtype="http://schema.org/PostalAddress">
+            <h3 itemprop="contactType">
+                Mailing address
+            </h3><span itemprop="streetAddress">School of Education - Music Resource Centre<br>
+            Laurentian University</span><br>
+            <span itemprop="addressLocality">Sudbury</span><br>
+            <span itemprop="addressRegion">ON</span><br>
+            <span itemprop="addressCountry">Canada</span><br>
+            <span itemprop="postalCode">P3E 2C6</span><br>
+        </div>
+    </div>
+    <h2>
+        Branch relationship
+    </h2>
+    <div>
+        Parent library: <a itemprop="parentOrganization" href="/eg/opac/library/LUSYS">Laurentian University</a>
+    </div>
 </div>
