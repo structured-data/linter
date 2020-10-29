@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld
+# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/10.0/schemaorgcontext.jsonld
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld") do
+  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/10.0/schemaorgcontext.jsonld") do
     new(vocab: "http://schema.org/", processingMode: "json-ld-1.1", term_definitions: {
       "3DModel" => TermDefinition.new("3DModel", id: "http://schema.org/3DModel"),
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
@@ -307,6 +307,17 @@ class JSON::LD::Context
       "Duration" => TermDefinition.new("Duration", id: "http://schema.org/Duration"),
       "EBook" => TermDefinition.new("EBook", id: "http://schema.org/EBook"),
       "EPRelease" => TermDefinition.new("EPRelease", id: "http://schema.org/EPRelease"),
+      "EUEnergyEfficiencyCategoryA" => TermDefinition.new("EUEnergyEfficiencyCategoryA", id: "http://schema.org/EUEnergyEfficiencyCategoryA"),
+      "EUEnergyEfficiencyCategoryA1Plus" => TermDefinition.new("EUEnergyEfficiencyCategoryA1Plus", id: "http://schema.org/EUEnergyEfficiencyCategoryA1Plus"),
+      "EUEnergyEfficiencyCategoryA2Plus" => TermDefinition.new("EUEnergyEfficiencyCategoryA2Plus", id: "http://schema.org/EUEnergyEfficiencyCategoryA2Plus"),
+      "EUEnergyEfficiencyCategoryA3Plus" => TermDefinition.new("EUEnergyEfficiencyCategoryA3Plus", id: "http://schema.org/EUEnergyEfficiencyCategoryA3Plus"),
+      "EUEnergyEfficiencyCategoryB" => TermDefinition.new("EUEnergyEfficiencyCategoryB", id: "http://schema.org/EUEnergyEfficiencyCategoryB"),
+      "EUEnergyEfficiencyCategoryC" => TermDefinition.new("EUEnergyEfficiencyCategoryC", id: "http://schema.org/EUEnergyEfficiencyCategoryC"),
+      "EUEnergyEfficiencyCategoryD" => TermDefinition.new("EUEnergyEfficiencyCategoryD", id: "http://schema.org/EUEnergyEfficiencyCategoryD"),
+      "EUEnergyEfficiencyCategoryE" => TermDefinition.new("EUEnergyEfficiencyCategoryE", id: "http://schema.org/EUEnergyEfficiencyCategoryE"),
+      "EUEnergyEfficiencyCategoryF" => TermDefinition.new("EUEnergyEfficiencyCategoryF", id: "http://schema.org/EUEnergyEfficiencyCategoryF"),
+      "EUEnergyEfficiencyCategoryG" => TermDefinition.new("EUEnergyEfficiencyCategoryG", id: "http://schema.org/EUEnergyEfficiencyCategoryG"),
+      "EUEnergyEfficiencyEnumeration" => TermDefinition.new("EUEnergyEfficiencyEnumeration", id: "http://schema.org/EUEnergyEfficiencyEnumeration"),
       "Ear" => TermDefinition.new("Ear", id: "http://schema.org/Ear"),
       "EatAction" => TermDefinition.new("EatAction", id: "http://schema.org/EatAction"),
       "EducationEvent" => TermDefinition.new("EducationEvent", id: "http://schema.org/EducationEvent"),
@@ -329,6 +340,10 @@ class JSON::LD::Context
       "EndorseAction" => TermDefinition.new("EndorseAction", id: "http://schema.org/EndorseAction"),
       "EndorsementRating" => TermDefinition.new("EndorsementRating", id: "http://schema.org/EndorsementRating"),
       "Energy" => TermDefinition.new("Energy", id: "http://schema.org/Energy"),
+      "EnergyConsumptionDetails" => TermDefinition.new("EnergyConsumptionDetails", id: "http://schema.org/EnergyConsumptionDetails"),
+      "EnergyEfficiencyEnumeration" => TermDefinition.new("EnergyEfficiencyEnumeration", id: "http://schema.org/EnergyEfficiencyEnumeration"),
+      "EnergyStarCertified" => TermDefinition.new("EnergyStarCertified", id: "http://schema.org/EnergyStarCertified"),
+      "EnergyStarEnergyEfficiencyEnumeration" => TermDefinition.new("EnergyStarEnergyEfficiencyEnumeration", id: "http://schema.org/EnergyStarEnergyEfficiencyEnumeration"),
       "EngineSpecification" => TermDefinition.new("EngineSpecification", id: "http://schema.org/EngineSpecification"),
       "EnrollingByInvitation" => TermDefinition.new("EnrollingByInvitation", id: "http://schema.org/EnrollingByInvitation"),
       "EntertainmentBusiness" => TermDefinition.new("EntertainmentBusiness", id: "http://schema.org/EntertainmentBusiness"),
@@ -1278,6 +1293,7 @@ class JSON::LD::Context
       "announcementLocation" => TermDefinition.new("announcementLocation", id: "http://schema.org/announcementLocation"),
       "annualPercentageRate" => TermDefinition.new("annualPercentageRate", id: "http://schema.org/annualPercentageRate"),
       "answerCount" => TermDefinition.new("answerCount", id: "http://schema.org/answerCount"),
+      "answerExplanation" => TermDefinition.new("answerExplanation", id: "http://schema.org/answerExplanation"),
       "antagonist" => TermDefinition.new("antagonist", id: "http://schema.org/antagonist"),
       "appearance" => TermDefinition.new("appearance", id: "http://schema.org/appearance"),
       "applicableLocation" => TermDefinition.new("applicableLocation", id: "http://schema.org/applicableLocation"),
@@ -1610,6 +1626,7 @@ class JSON::LD::Context
       "earlyPrepaymentPenalty" => TermDefinition.new("earlyPrepaymentPenalty", id: "http://schema.org/earlyPrepaymentPenalty"),
       "editEIDR" => TermDefinition.new("editEIDR", id: "http://schema.org/editEIDR"),
       "editor" => TermDefinition.new("editor", id: "http://schema.org/editor"),
+      "eduQuestionType" => TermDefinition.new("eduQuestionType", id: "http://schema.org/eduQuestionType"),
       "educationRequirements" => TermDefinition.new("educationRequirements", id: "http://schema.org/educationRequirements"),
       "educationalAlignment" => TermDefinition.new("educationalAlignment", id: "http://schema.org/educationalAlignment"),
       "educationalCredentialAwarded" => TermDefinition.new("educationalCredentialAwarded", id: "http://schema.org/educationalCredentialAwarded"),
@@ -1644,6 +1661,8 @@ class JSON::LD::Context
       "endTime" => TermDefinition.new("endTime", id: "http://schema.org/endTime", type_mapping: "http://schema.org/DateTime"),
       "endorsee" => TermDefinition.new("endorsee", id: "http://schema.org/endorsee"),
       "endorsers" => TermDefinition.new("endorsers", id: "http://schema.org/endorsers"),
+      "energyEfficiencyScaleMax" => TermDefinition.new("energyEfficiencyScaleMax", id: "http://schema.org/energyEfficiencyScaleMax"),
+      "energyEfficiencyScaleMin" => TermDefinition.new("energyEfficiencyScaleMin", id: "http://schema.org/energyEfficiencyScaleMin"),
       "engineDisplacement" => TermDefinition.new("engineDisplacement", id: "http://schema.org/engineDisplacement"),
       "enginePower" => TermDefinition.new("enginePower", id: "http://schema.org/enginePower"),
       "engineType" => TermDefinition.new("engineType", id: "http://schema.org/engineType"),
@@ -1761,12 +1780,15 @@ class JSON::LD::Context
       "handlingTime" => TermDefinition.new("handlingTime", id: "http://schema.org/handlingTime"),
       "hasBroadcastChannel" => TermDefinition.new("hasBroadcastChannel", id: "http://schema.org/hasBroadcastChannel"),
       "hasCategoryCode" => TermDefinition.new("hasCategoryCode", id: "http://schema.org/hasCategoryCode"),
+      "hasCourse" => TermDefinition.new("hasCourse", id: "http://schema.org/hasCourse"),
       "hasCourseInstance" => TermDefinition.new("hasCourseInstance", id: "http://schema.org/hasCourseInstance"),
       "hasCredential" => TermDefinition.new("hasCredential", id: "http://schema.org/hasCredential"),
       "hasDefinedTerm" => TermDefinition.new("hasDefinedTerm", id: "http://schema.org/hasDefinedTerm"),
       "hasDeliveryMethod" => TermDefinition.new("hasDeliveryMethod", id: "http://schema.org/hasDeliveryMethod"),
       "hasDigitalDocumentPermission" => TermDefinition.new("hasDigitalDocumentPermission", id: "http://schema.org/hasDigitalDocumentPermission"),
       "hasDriveThroughService" => TermDefinition.new("hasDriveThroughService", id: "http://schema.org/hasDriveThroughService"),
+      "hasEnergyConsumptionDetails" => TermDefinition.new("hasEnergyConsumptionDetails", id: "http://schema.org/hasEnergyConsumptionDetails"),
+      "hasEnergyEfficiencyCategory" => TermDefinition.new("hasEnergyEfficiencyCategory", id: "http://schema.org/hasEnergyEfficiencyCategory"),
       "hasHealthAspect" => TermDefinition.new("hasHealthAspect", id: "http://schema.org/hasHealthAspect"),
       "hasMap" => TermDefinition.new("hasMap", id: "http://schema.org/hasMap", type_mapping: "@id"),
       "hasMenu" => TermDefinition.new("hasMenu", id: "http://schema.org/hasMenu"),
@@ -1928,6 +1950,7 @@ class JSON::LD::Context
       "language" => TermDefinition.new("language", id: "http://schema.org/language"),
       "lastReviewed" => TermDefinition.new("lastReviewed", id: "http://schema.org/lastReviewed", type_mapping: "http://schema.org/Date"),
       "latitude" => TermDefinition.new("latitude", id: "http://schema.org/latitude"),
+      "layoutImage" => TermDefinition.new("layoutImage", id: "http://schema.org/layoutImage", type_mapping: "@id"),
       "learningResourceType" => TermDefinition.new("learningResourceType", id: "http://schema.org/learningResourceType"),
       "leaseLength" => TermDefinition.new("leaseLength", id: "http://schema.org/leaseLength"),
       "legalName" => TermDefinition.new("legalName", id: "http://schema.org/legalName"),
@@ -2612,7 +2635,7 @@ class JSON::LD::Context
       "yield" => TermDefinition.new("yield", id: "http://schema.org/yield")
     })
   end
-  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld")
-  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld")
-  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/9.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/10.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/10.0/schemaorgcontext.jsonld")
+  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/10.0/schemaorgcontext.jsonld")
 end

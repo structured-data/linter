@@ -1,0 +1,31 @@
+<!--  John received a book from Steve via UPS from Brazil to the USA.-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ReceiveAction",
+  "agent": {
+    "@type": "Person",
+    "name": "John"
+  },
+  "object": {
+    "@type": "Book",
+    "name": "Outliers"
+  },
+  "sender": {
+    "@type": "Person",
+    "name": "Steve"
+  },
+  "deliveryMethod": {
+    "@type": "DeliveryMethod",
+    "name": "http://purl.org/goodrelations/v1#UPS"
+  },
+  "fromLocation": {
+    "@type": "Country",
+    "name": "Brazil"
+  },
+  "toLocation": {
+    "@type": "Country",
+    "name": "USA"
+  }
+}
+</script>

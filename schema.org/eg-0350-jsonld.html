@@ -1,0 +1,33 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreditCard",
+  "name": "Wells Fargo Secured Visa® Credit Card",
+  "requiredCollateral": "Requires a minimum $300 security deposit.",
+  "amount": {
+      "@type": "MonetaryAmount",
+      "minValue": "300",
+      "maxValue": "10000",
+      "currency": "USD"
+  },
+  "offers": {
+      "@type": "Offer",
+      "offeredBy": {
+        "@type": "BankOrCreditUnion",
+        "name":"Wells Fargo"
+      },
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "25",
+        "priceCurrency": "USD",
+        "referenceQuantity": {
+          "@type": "QuantitativeValue",
+          "value": "1",
+          "unitCode": "ANN"
+        }
+      }
+  },
+  "annualPercentageRate": "18.99",
+  "feesAndCommissionsSpecification": "https://www.wellsfargo.com/credit-cards/secured/terms/"
+}
+</script>
