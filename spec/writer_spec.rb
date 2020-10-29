@@ -22,7 +22,7 @@ describe RDF::Linter::Writer do
           @debug_out = StringIO.new
           logger = Logger.new(@debug_out)
           logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
-          graph = RDF::Graph.new << RDF::Turtle::Reader.new(input)
+          graph = RDF::OrderedRepo.new << RDF::Turtle::Reader.new(input)
           RDF::Linter::Writer.buffer {|w| w << graph}
         }
         
@@ -75,7 +75,7 @@ describe RDF::Linter::Writer do
           @debug_out = StringIO.new
           logger = Logger.new(@debug_out)
           logger.formatter = lambda {|severity, datetime, progname, msg| "#{msg}\n"}
-          graph = RDF::Graph.new << RDF::Turtle::Reader.new("@prefix schema: <http://schema.org/> . #{input}")
+          graph = RDF::OrderedRepo.new << RDF::Turtle::Reader.new("@prefix schema: <http://schema.org/> . #{input}")
           RDF::Linter::Writer.buffer {|w| w << graph}
         }
         
