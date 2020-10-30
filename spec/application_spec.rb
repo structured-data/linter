@@ -109,7 +109,7 @@ describe RDF::Linter::Application do
         %(//section[@class="content"]/h2[contains(text(), "Schema.org examples")]/) +
           %(../div/a[contains(text(), "CreativeWork")]),
         %(//section[@class="content"]/div/a[@href="/examples/schema.org/CreativeWork/"]),
-        %(//a[@href="/?url=http://example.org/examples/schema.org/eg-10-rdfa.html"]),
+        %(//a[@href="/?url=http://example.org/examples/schema.org/eg-0032-jsonld.html"]),
       ].each do |xpath|
         it "has xpath #{xpath}" do
           expect(subject.body).to have_xpath(xpath, true)
@@ -149,7 +149,7 @@ describe RDF::Linter::Application do
 
   describe "get /examples/schema.org/:file" do
     {
-      "AcceptAction-174-jsonld.html" => "text/html",
+      "eg-0173-rdfa.html" => "text/html",
     }.each do |file, content_type|
       context file do
         subject {

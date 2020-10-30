@@ -1,4 +1,5 @@
 require_relative 'writer'
+require 'rdf/ordered_repo'
 require 'rdf/xsd'
 require 'nokogiri'
 
@@ -25,7 +26,7 @@ module RDF::Linter
       # Readers now use :logger for debug output, which may be an array
       reader_opts = reader_opts.merge(logger: reader_opts.fetch(:debug, []))
       RDF::Reasoner.apply(:rdfs, :schema)
-      graph = RDF::Repository.new
+      graph = RDF::OrderedRepo.new
       reader_opts[:prefixes] ||= {}
       reader_opts[:validate] = true
       reader_opts[:rdf_terms] = true unless reader_opts.has_key?(:rdf_terms)

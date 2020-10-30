@@ -4,7 +4,7 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     - CI=true
-rvm: 2.7.1
+rvm: 2.7.2
 sudo: false
 cache: bundler
 dist: trusty

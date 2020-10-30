@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BusReservation",
+  "reservationId": "123456",
+  "underName": {
+    "@type": "Person",
+    "name": "John Smith"
+  },
+  "reservationStatus": "https://schema.org/ReservationConfirmed",
+  "reservationFor": {
+    "@type": "BusTrip",
+    "provider": {
+      "@type": "Organization",
+      "name": "Bolt NYC"
+    },
+    "departureBusStop": {
+      "@type": "BusStop",
+      "name": "Port Authority, NYC"
+    },
+    "departureTime": "2017-01-04T12:30:00-05:00",
+    "arrivalBusStop": {
+      "@type": "BusStop",
+      "name": "Boston South Station"
+    },
+    "arrivalTime": "2017-01-04T17:10:00-05:00"
+  }
+}
+</script>

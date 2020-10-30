@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gemspec
-ruby "2.7.1"
+ruby "2.7.2"
 
 # Include non-released gems first
 gem "sinatra-rdf",        git: "https://github.com/ruby-rdf/sinatra-rdf", branch: "develop"
@@ -11,6 +11,7 @@ gem "rdf-spec",           git: "https://github.com/ruby-rdf/rdf-spec", branch: "
 
 gem 'ebnf',               git: "https://github.com/dryruby/ebnf",  branch: "develop"
 gem 'rdf-microdata',      git: "https://github.com/ruby-rdf/rdf-microdata", branch: "develop"
+gem 'rdf-ordered-repo',   git: "https://github.com/ruby-rdf/rdf-ordered-repo", branch: "develop"
 gem 'rdf-rdfa',           git: "https://github.com/ruby-rdf/rdf-rdfa", branch: "develop"
 gem 'rdf-rdfxml',         git: "https://github.com/ruby-rdf/rdf-rdfxml", branch: "develop"
 gem 'rdf-reasoner',       git: "https://github.com/ruby-rdf/rdf-reasoner", branch: "develop"
