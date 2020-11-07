@@ -157,6 +157,14 @@ module RDF::Linter
             src: src
           }
         end
+
+        # Create strucure for this example
+        struct_fmt = (formats.keys - [:pre]).last
+        struct_src = File.read(File.join(APP_DIR, formats[struct_fmt]))
+        graph = RDF::OrderedRepo.new << RDF::RDFa::Reader.new(struct_src)
+        examples[ex_num][:struct] = {
+          src: RDF::Linter::Writer.buffer(haml: RDF::Linter::TABULAR_HAML) {|w| w << graph}
+        }
       end
 
       request.logger.debug "examples for #{@title}: #{examples.keys.inspect}"

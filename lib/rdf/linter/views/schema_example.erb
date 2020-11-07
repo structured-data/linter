@@ -6,8 +6,8 @@
   <h2>Example <%= ex_num %></h2>
   <ul class="nav nav-tabs" role="tablist">
   <%
-    [:pre, :rdfa, :microdata, :jsonld].each do |fmt|
-      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD"}[fmt]
+    [:pre, :rdfa, :microdata, :jsonld, :struct].each do |fmt|
+      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD", struct: "structured"}[fmt]
       loc = "#{ex_num}-#{fmt}"
   -%>
   <li role="presentation">
@@ -17,8 +17,8 @@
   </ul>
   <div class="tab-content">
   <%
-    [:pre, :rdfa, :microdata, :jsonld].each do |fmt|
-      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD"}[fmt]
+    [:pre, :rdfa, :microdata, :jsonld, :struct].each do |fmt|
+      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD", struct: "structured"}[fmt]
       h = examples[ex_num].fetch(fmt, {})
       path = h[:path]
       source = h[:src]
@@ -30,7 +30,9 @@
       (<a href="<%= path %>" title="Load <%=fmt_name%> example">source</a> <a href="/?url=<%= path %>" title="Show snippet in <%=fmt_name%>">lint</a>)
       <% end -%>
     </h3>
-    <% if source -%>
+    <% if fmt == :struct %>
+    <%= source %>
+    <% elsif source -%>
     <pre class="example"><code class="<%= fmt == :jsonld ? 'js' : 'html'%>"><%= CGI.escapeHTML(source) %></code></pre>
     <% else -%>
     No example in this format
