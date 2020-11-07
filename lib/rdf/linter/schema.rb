@@ -15,7 +15,7 @@ module RDF::Linter
     attr_reader :thing
 
     def initialize
-      @classes = {'Thing' => {}}
+      @classes = {}
       @examples = {}
 
       RDF::Vocab::SCHEMA.each do |vocab_term|
@@ -27,12 +27,26 @@ module RDF::Linter
       @classes.each do |c, s|
         sc = s[:super_class]
         next unless @classes.has_key?(sc)
-        @classes[sc][:sub_classes] ||= {}
-        @classes[sc][:sub_classes][c] = @classes[c]
+        @classes[sc][:sub_classes] ||= []
+        @classes[sc][:sub_classes] << c
       end
       
       # Remember Thing
+      add_path('Thing', nil)
       @thing = @classes['Thing']
+    end
+
+    ##
+    # Add class path to class
+    def add_path(cls, super_class)
+      if super_class
+        @classes[cls][:path] = Array(@classes[super_class][:path]) + [super_class].compact
+      else
+        @classes[cls][:path] = []
+      end
+      (@classes[cls][:sub_classes] ||= []).each do |sub_class|
+        add_path(sub_class, cls)
+      end
     end
 
     ##
@@ -73,12 +87,10 @@ module RDF::Linter
         end
       end
 
-      trim_classes
-
       # Create example index
       File.open(APP_DIR + "/schema.org/examples.json", "w") do |f|
         examples = @classes.keys.inject({}) {|memo, k|
-          memo[k] = @classes[k][:examples] if @classes[k].has_key?(:examples); memo
+          memo.merge(k => @classes[k] || {})
         }
         f.write(examples.to_json(JSON::LD::JSON_STATE))
       end
@@ -86,7 +98,7 @@ module RDF::Linter
       # Create partial for example index
       File.open(APP_DIR + "/lib/rdf/linter/views/_schema_examples.erb", "w") do |f|
         f.puts("<!-- This file is created automaticaly by rake schema_examples -->")
-        f.write(create_partial("Thing", 0))
+        f.write(create_partial("Thing", []))
       end
     end
 
@@ -126,64 +138,21 @@ module RDF::Linter
     end
     
     ##
-    # Trim leaf classes having no examples until there
-    # are no more leaves without examples
-    def trim_classes
-      deletions = 1
-      while deletions > 0 do
-        deletions = 0
-        @classes.each do |cls, value|
-          next unless value.fetch(:sub_classes, {}).empty? && !value.has_key?(:examples)
-          deletions += 1
-          @classes.delete(cls)
-          sc = value[:super_class]
-          next unless sc
-          puts "trim class #{cls}, super-class #{sc}"
-          @classes[sc][:sub_classes].delete(cls) if @classes.fetch(sc, {})[:sub_classes]
-        end
-      end
-    end
-    
-    ##
-    # Create examples partial
+    # Create class index partial
     #
     # @param[String] root base URL of service
     # @param[String] cls class name to render
-    # @param[Integer] depth of rendering
-    def create_partial(cls, depth)
-      puts "create partial for #{cls} at depth #{depth}"
+    # @param[Integer] class path to this class.
+    def create_partial(cls, path)
+      puts "create partial for #{cls} at depth #{path.length}"
 
-      output = %(<div class="example d#{depth}">\n)
-      output += "  &nbsp;&nbsp;|&nbsp;&nbsp;" * depth
-      if @classes.fetch(cls, {}).has_key?(:examples)
-        # Create link to class-specific page
-        output += %(<a href="/examples/schema.org/#{cls}/" title="Show #{cls} markup examples">#{cls}</a>\n)
-        # Output examples
-        @classes[cls][:examples].keys.sort.each do |name|
-          example = @classes[cls][:examples][name]
-          output += %(\n<div class="ex">) + "  &nbsp;&nbsp;|&nbsp;&nbsp;" * depth
-          output += %[&nbsp;&nbsp;#{name} (]
-          output += [:rdfa, :jsonld, :microdata].map do |fmt|
-            if example.has_key?(fmt)
-              fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
-              sn_path = "<%=root%>examples/schema.org/#{File.basename(example[fmt])}"
-              %(<a href="/?url=#{sn_path}" title="Show #{cls} snippet in #{fmt_name}">#{fmt_name}</a>)
-            end
-          end.join(" ")
-          output += ")"
+      output = %(<div class="example d#{path.length}">\n)
+      output += "  &nbsp;&nbsp;|&nbsp;&nbsp;" * path.length
 
-          type = RDF::URI("http://schema.org/" + cls)
-          unless RDF::Linter::LINTER_HAML.has_key?(RDF::URI(type))
-            output += %(<a href="#no_snip" title="snippets not optimized for this type">*</a>)
-          end
-          output += "</div>\n"
-        end
-      else
-        output += "#{cls}\n"
-      end
-      output += %(</div>\n)
-      @classes[cls].fetch(:sub_classes, {}).keys.sort.each do |sc|
-        output += create_partial(sc, depth + 1)
+      # Create link to class-specific page
+      output += %(<a href="/examples/schema.org/#{cls}/" title="Show #{cls}">#{cls}</a></div>\n)
+      @classes[cls].fetch(:sub_classes, []).sort.uniq.each do |sc|
+        output += create_partial(sc, path + [cls])
       end
       output
     end

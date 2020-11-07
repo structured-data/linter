@@ -146,7 +146,9 @@ module RDF::Linter
       
       # Find examples using this class
       examples = {}
-      @examples.fetch(params[:name], {}).each do |ex_num, formats|
+      cls = @examples.fetch(params[:name], {})
+      clsex = cls.fetch('examples', {})
+      Array(clsex).each do |ex_num, formats|
         examples[ex_num] = {}
         formats.each do |format, path|
           src = File.read(File.join(APP_DIR, path))
@@ -158,9 +160,12 @@ module RDF::Linter
       end
 
       request.logger.debug "examples for #{@title}: #{examples.keys.inspect}"
+      term = RDF::Vocab::SCHEMA[params[:name]]
       erb :schema_example, locals: {
         head: :examples,
         name: params[:name],
+        label: term.label,
+        comment: term.comment,
         examples: examples,
         root: url("/")
       }
