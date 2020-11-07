@@ -6,8 +6,8 @@
   <h2>Example <%= ex_num %></h2>
   <ul class="nav nav-tabs" role="tablist">
   <%
-    [:rdfa, :microdata, :jsonld].each do |fmt|
-      fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
+    [:pre, :rdfa, :microdata, :jsonld].each do |fmt|
+      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD"}[fmt]
       loc = "#{ex_num}-#{fmt}"
   -%>
   <li role="presentation">
@@ -17,8 +17,8 @@
   </ul>
   <div class="tab-content">
   <%
-    [:rdfa, :microdata, :jsonld].each do |fmt|
-      fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
+    [:pre, :rdfa, :microdata, :jsonld].each do |fmt|
+      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD"}[fmt]
       h = examples[ex_num].fetch(fmt, {})
       path = h[:path]
       source = h[:src]

@@ -70,7 +70,7 @@ module RDF::Linter
         # Trim body
         body = body[0..-(s.matched.to_s.length+1)].gsub("\r", '').strip + "\n"
         case format
-        when :microdata, :rdfa, :jsonld
+        when :pre, :microdata, :rdfa, :jsonld
           add_example(types, body, number, format) unless types.include?("FakeEntryNeeded")
         end
 
