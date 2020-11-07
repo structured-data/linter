@@ -150,7 +150,16 @@ module RDF::Linter
       output += "  &nbsp;&nbsp;|&nbsp;&nbsp;" * path.length
 
       # Create link to class-specific page
-      output += %(<a href="/examples/schema.org/#{cls}/" title="Show #{cls}">#{cls}</a></div>\n)
+      output += %(<a href="/examples/schema.org/#{cls}/" title="Show #{cls}">#{cls}</a>\n)
+      output += case @classes[cls].fetch(:examples, {}).length
+      when 0
+        "(no examples)\n"
+      when 1
+        "(one example)\n"
+      else
+        "(#{@classes[cls][:examples].length} examples)\n"
+      end
+      output += %(</div>\n)
       @classes[cls].fetch(:sub_classes, []).sort.uniq.each do |sc|
         output += create_partial(sc, path + [cls])
       end
