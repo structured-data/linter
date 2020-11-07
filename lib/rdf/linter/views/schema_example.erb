@@ -1,19 +1,45 @@
 <section class="example content">
+  <h1><%== label %></h1>
+  <div><%= comment %></div>
 <% examples.keys.sort.each do |ex_num| -%>
   <section class="example num">
-  <h1>Example <%= ex_num %></h3>
+  <h2>Example <%= ex_num %></h2>
+  <ul class="nav nav-tabs" role="tablist">
   <%
-    [:rdfa, :microdata, :jsonld].each do |fmt|
-      fmt_name = {:rdfa => "RDFa", :microdata => "microdata", :jsonld => "JSON-LD"}[fmt]
-      next unless examples[ex_num].has_key?(fmt)
-      path = examples[ex_num][fmt][:path]
-      source = examples[ex_num][fmt][:src]
+    [:pre, :rdfa, :microdata, :jsonld, :struct].each do |fmt|
+      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD", struct: "structured"}[fmt]
+      loc = "#{ex_num}-#{fmt}"
   -%>
-  <section>
-    <h2><%= fmt_name %> (<a href="<%= path %>" title="Load <%=fmt_name%> example">source</a> <a href="/?url=<%= path %>" title="Show snippet in <%=fmt_name%>">lint</a>)</h2>
-      <pre class="example"><code class="<%= fmt == :jsonld ? 'js' : 'html'%>"><%= CGI.escapeHTML(source) %></code></pre>
-  </section>
+  <li role="presentation">
+    <a href="#<%=loc%>" area-controls="<%=fmt %>" role="tab" data-toggle="tab"><%= fmt_name %></a>
+  </li>
   <% end -%>
+  </ul>
+  <div class="tab-content">
+  <%
+    [:pre, :rdfa, :microdata, :jsonld, :struct].each do |fmt|
+      fmt_name = {pre: "Without Markup", rdfa: "RDFa", microdata: "microdata", jsonld: "JSON-LD", struct: "structured"}[fmt]
+      h = examples[ex_num].fetch(fmt, {})
+      path = h[:path]
+      source = h[:src]
+      loc = "#{ex_num}-#{fmt}"
+  -%>
+  <div role="tabpanel" class="tab-pane" id="<%=loc%>">
+    <h3><%= fmt_name %>
+      <% if path -%>
+      (<a href="<%= path %>" title="Load <%=fmt_name%> example">source</a> <a href="/?url=<%= path %>" title="Show snippet in <%=fmt_name%>">lint</a>)
+      <% end -%>
+    </h3>
+    <% if fmt == :struct %>
+    <%= source %>
+    <% elsif source -%>
+    <pre class="example"><code class="<%= fmt == :jsonld ? 'js' : 'html'%>"><%= CGI.escapeHTML(source) %></code></pre>
+    <% else -%>
+    No example in this format
+    <% end -%>
+  </div>
+  <% end -%>
+  </div>
   </section>
 <% end -%>
 </section>

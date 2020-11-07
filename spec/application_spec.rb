@@ -109,7 +109,6 @@ describe RDF::Linter::Application do
         %(//section[@class="content"]/h2[contains(text(), "Schema.org examples")]/) +
           %(../div/a[contains(text(), "CreativeWork")]),
         %(//section[@class="content"]/div/a[@href="/examples/schema.org/CreativeWork/"]),
-        %(//a[@href="/?url=http://example.org/examples/schema.org/eg-0032-jsonld.html"]),
       ].each do |xpath|
         it "has xpath #{xpath}" do
           expect(subject.body).to have_xpath(xpath, true)
@@ -134,9 +133,9 @@ describe RDF::Linter::Application do
         context "body" do
           [
             %(/html),
-            %(//h2[contains(text(), "RDFa")]),
-            %(//h2[contains(text(), "microdata")]),
-            %(//h2[contains(text(), "JSON-LD")]),
+            %(//h3[contains(text(), "RDFa")]),
+            %(//h3[contains(text(), "microdata")]),
+            %(//h3[contains(text(), "JSON-LD")]),
           ].each do |xpath|
             it "has xpath #{xpath}" do
               expect(subject.body).to have_xpath(xpath, true)
