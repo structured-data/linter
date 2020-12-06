@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/akshaymohite/awesome_print.git
+  revision: 5f7d86ee65bf4d6ce88938b3f4ccf496e9427e5f
+  specs:
+    awesome_print (1.8.0)
+
+GIT
   remote: https://github.com/amatriain/rest-client-components
   revision: 236ac31ed1a061d479332ff179bf78fcb11edb74
   branch: rest-client-2-compatibility
@@ -17,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/dryruby/ebnf
-  revision: 670c15b8d12b39daceeac0a156a004ab805752e3
+  revision: ec494f1a4f5bd1117322989709676d642b408d1f
   branch: develop
   specs:
     ebnf (2.1.2)
@@ -28,10 +34,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: d864b20f6c8bff286a9a12f7c69917105842bc29
+  revision: a9f45ac16ca36ce9b2ea036302a57a20a9b624ff
   branch: develop
   specs:
-    json-ld (3.1.4)
+    json-ld (3.1.5)
       htmlentities (~> 4.3)
       json-canonicalization (~> 0.2)
       link_header (~> 0.0, >= 0.0.8)
@@ -41,7 +47,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 718781dee2f9d30565050735dbf7a65cbdeede83
+  revision: 057bd8f194e60994e91182220f5c8f72d28e4bc6
   branch: develop
   specs:
     json-ld-preloaded (3.1.3)
@@ -59,10 +65,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: ec6eb51533a36ad6887dd5152bbedebaf246fc63
+  revision: 123cace6478b152216e1b9d0f20ce381f4646808
   branch: develop
   specs:
-    rdf (3.1.6)
+    rdf (3.1.7)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
 
@@ -87,7 +93,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: f9efe24f781a87dd149d5ae4e9ed966f7c8d65b8
+  revision: 99909ccd10f752811beaf580a267c2b168a98f7f
   branch: develop
   specs:
     rdf-rdfa (3.1.2)
@@ -121,20 +127,21 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: 579f921d5019c26cc96a01ebb727abb1dcbb398e
+  revision: 50861616756c13466c6b8454344cdb03aeeaa565
   branch: develop
   specs:
     rdf-spec (3.1.1)
       awesome_print (~> 1.8)
       rdf (~> 3.1)
       rdf-isomorphic (~> 3.1)
+      rexml (~> 3.2)
       rspec (~> 3.9)
       rspec-its (~> 1.3)
       webmock (~> 3.7)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-turtle
-  revision: fa2b43c07dfaf74670f7e0018cc46134b0a305c2
+  revision: fb576c5a5a4cfe4c4d24d61aea51ecb5cbd965f7
   branch: develop
   specs:
     rdf-turtle (3.1.2)
@@ -143,10 +150,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: 602e9c20ac1d3b1f2b3734b99ab857d18c83f575
+  revision: 404ece031e48ccd02ae36fbac93485a5503692ae
   branch: develop
   specs:
-    rdf-vocab (3.1.8)
+    rdf-vocab (3.1.9)
       rdf (~> 3.1, >= 3.1.2)
 
 GIT
@@ -169,7 +176,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.10.1)
+    linter (3.11.0)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -204,7 +211,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    awesome_print (1.8.0)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -226,12 +232,12 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     equivalent-xml (0.6.0)
       nokogiri (>= 1.4.3)
-    erubi (1.9.0)
+    erubi (1.10.0)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.13.1)
     foreman (0.87.2)
-    haml (5.2.0)
+    haml (5.2.1)
       temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
@@ -257,12 +263,12 @@ GEM
     nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
-    nokogumbo (2.0.2)
+    nokogumbo (2.0.4)
       nokogiri (~> 1.8, >= 1.8.4)
-    oj (3.10.15)
+    oj (3.10.16)
     optimist (3.0.1)
     public_suffix (4.0.6)
-    puma (4.3.6)
+    puma (4.3.7)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-cache (1.12.1)
@@ -284,6 +290,7 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    rexml (3.2.4)
     rspec (3.10.0)
       rspec-core (~> 3.10.0)
       rspec-expectations (~> 3.10.0)
@@ -309,10 +316,12 @@ GEM
     scanf (1.0.0)
     shotgun (0.9.2)
       rack (>= 1.0)
-    simplecov (0.19.1)
+    simplecov (0.20.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
+    simplecov_json_formatter (0.1.2)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -336,14 +345,14 @@ GEM
     temple (0.8.2)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    tzinfo (1.2.7)
+    tzinfo (1.2.8)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
-    webmock (3.9.4)
+    webmock (3.10.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -353,6 +362,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print!
   better_errors
   binding_of_caller
   byebug

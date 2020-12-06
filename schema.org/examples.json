@@ -1795,6 +1795,12 @@
         "microdata": "schema.org/compoundPrice-2-microdata.html",
         "rdfa": "schema.org/compoundPrice-2-rdfa.html",
         "jsonld": "schema.org/compoundPrice-2-jsonld.html"
+      },
+      "eg-0329": {
+        "pre": "schema.org/eg-0329-pre.html",
+        "microdata": "schema.org/eg-0329-microdata.html",
+        "rdfa": "schema.org/eg-0329-rdfa.html",
+        "jsonld": "schema.org/eg-0329-jsonld.html"
       }
     }
   },
@@ -6213,7 +6219,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0424": {
+        "pre": "schema.org/eg-0424-pre.html",
+        "microdata": "schema.org/eg-0424-microdata.html",
+        "rdfa": "schema.org/eg-0424-rdfa.html",
+        "jsonld": "schema.org/eg-0424-jsonld.html"
+      }
+    }
   },
   "LoanOrCredit": {
     "super_class": "FinancialProduct",
@@ -13785,7 +13799,21 @@
     "super_class": null
   },
   "amenityFeature": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0366": {
+        "pre": "schema.org/eg-0366-pre.html",
+        "microdata": "schema.org/eg-0366-microdata.html",
+        "rdfa": "schema.org/eg-0366-rdfa.html",
+        "jsonld": "schema.org/eg-0366-jsonld.html"
+      },
+      "eg-0367": {
+        "pre": "schema.org/eg-0367-pre.html",
+        "microdata": "schema.org/eg-0367-microdata.html",
+        "rdfa": "schema.org/eg-0367-rdfa.html",
+        "jsonld": "schema.org/eg-0367-jsonld.html"
+      }
+    }
   },
   "amount": {
     "super_class": null
@@ -14473,7 +14501,15 @@
     "super_class": null
   },
   "contentRating": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0020": {
+        "pre": "schema.org/eg-0020-pre.html",
+        "microdata": "schema.org/eg-0020-microdata.html",
+        "rdfa": "schema.org/eg-0020-rdfa.html",
+        "jsonld": "schema.org/eg-0020-jsonld.html"
+      }
+    }
   },
   "contentReferenceTime": {
     "super_class": null
@@ -15455,7 +15491,15 @@
     "super_class": null
   },
   "geoMidpoint": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0421": {
+        "pre": "schema.org/eg-0421-pre.html",
+        "microdata": "schema.org/eg-0421-microdata.html",
+        "rdfa": "schema.org/eg-0421-rdfa.html",
+        "jsonld": "schema.org/eg-0421-jsonld.html"
+      }
+    }
   },
   "geoOverlaps": {
     "super_class": null
@@ -16354,6 +16398,12 @@
   "makesOffer": {
     "super_class": null,
     "examples": {
+      "eg-0329": {
+        "pre": "schema.org/eg-0329-pre.html",
+        "microdata": "schema.org/eg-0329-microdata.html",
+        "rdfa": "schema.org/eg-0329-rdfa.html",
+        "jsonld": "schema.org/eg-0329-jsonld.html"
+      },
       "eg-0394": {
         "pre": "schema.org/eg-0394-pre.html",
         "microdata": "schema.org/eg-0394-microdata.html",
