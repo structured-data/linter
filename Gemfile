@@ -35,6 +35,7 @@ gem 'rest-client-components', git: "https://github.com/amatriain/rest-client-com
 gem 'jsonlint',           git: "https://github.com/dougbarth/jsonlint"
 
 group :debug do
+  gem 'awesome_print', github: 'akshaymohite/awesome_print'
   gem 'shotgun'
   gem "byebug"
 end
