@@ -15,7 +15,7 @@ Sinatra::AssetPipeline::Task.define! RDF::Linter::Application
 
 # https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.3/all-layers.nq
 schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data")
-schema_version = ENV.fetch("schema_version", "10.0")
+schema_version = ENV.fetch("schema_version", "11.0")
 
 namespace :schema do
   desc "Create custom pre-compiled vocabulary"
