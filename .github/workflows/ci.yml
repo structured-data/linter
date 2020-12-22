@@ -1,0 +1,30 @@
+# This workflow runs continuous CI across different versions of ruby on all branches and pull requests to develop.
+
+name: CI
+
+on:
+  push:
+    branches: [ '**' ]
+  pull_request:
+    branches: [ develop ]
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Test
+    if: "contains(github.event.commits[0].message, '[ci skip]') == false"
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.2
+      - name: Install dependencies
+        run: bundle install --jobs 4 --retry 3
+      - name: Run tests
+        run: bundle exec rspec spec
+ 
