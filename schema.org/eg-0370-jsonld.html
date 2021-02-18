@@ -1,21 +1,30 @@
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org/",
-  "@type": "Book",
-  "name": "Some graphic novel",
-  "accessMode": ["textual", "visual"],
-  "accessModeSufficient": [
-    {
-      "@type": "ItemList",
-      "itemListElement": ["textual", "visual"],
-      "description": "Text and images"
+    "@context": "https://schema.org/",
+    "@type": "Invoice",
+    "description": "January 2015 Visa bill.",
+    "url": "http://acmebank.com/invoice.pdf",
+    "broker": {
+      "@type": "BankOrCreditUnion",
+      "name": "ACME Bank"
     },
-    {
-      "@type": "ItemList",
-      "itemListElement": ["textual"],
-      "description": "Text with textual alternatives and descriptions for images"
-    }
-  ],
-  "accessibilitySummary": "Visual elements are not described."
+    "accountId": "xxxx-xxxx-xxxx-1234",
+    "customer": {
+      "@type": "Person",
+      "name": "Jane Doe"
+    },
+    "paymentDueDate": "2015-01-30T12:00:00",
+    "minimumPaymentDue": {
+      "@type": "PriceSpecification",
+      "price": 15.00,
+      "priceCurrency": "USD"
+    },
+    "totalPaymentDue": {
+      "@type": "PriceSpecification",
+      "price": 200.00,
+      "priceCurrency": "USD"
+    },
+    "billingPeriod": "P30D",
+    "paymentStatus": "https://schema.org/PaymentDue"
 }
 </script>

@@ -1,987 +1,2205 @@
-schema.org/AcceptAction-175-jsonld.html: {
-  "property": {
-    "schema:purpose": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/AchieveAction-86-jsonld.html: ok
-schema.org/Action-84-jsonld.html: ok
-schema.org/Action-85-jsonld.html: ok
-schema.org/AddAction-211-jsonld.html: ok
-schema.org/AddAction-212-jsonld.html: ok
-schema.org/AgreeAction-98-jsonld.html: ok
-schema.org/AllocateAction-174-jsonld.html: {
-  "property": {
-    "schema:purpose": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/AppendAction-214-jsonld.html: ok
-schema.org/ApplyAction-179-jsonld.html: ok
-schema.org/ArriveAction-168-jsonld.html: ok
-schema.org/AskAction-Question-142-jsonld.html: ok
-schema.org/AssessAction-90-jsonld.html: ok
-schema.org/AssignAction-176-jsonld.html: {
-  "property": {
-    "schema:purpose": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/Atlas-274-jsonld.html: ok
-schema.org/Atlas-274-microdata.html: ok
-schema.org/Atlas-274-rdfa.html: ok
-schema.org/Audiobook-readBy-276-jsonld.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Audiobook-readBy-276-jsonld.html": [
-      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/Audiobook-readBy-276-jsonld.html\nunexpected character (description) at line 7, column 568 [parse.c:714]",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/Audiobook-readBy-276-jsonld.html\nunexpected character (description) at line 7, column 568 [parse.c:714]: Called from /Users/gregg/.rvm/gems/ruby-2.7.1/bundler/gems/json-ld-f62940d9d1d1/lib/json/ld/reader.rb:99"
-    ]
-  }
-}
-schema.org/Audiobook-readBy-276-microdata.html: {
-  "property": {
-    "schema:actor": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schema:Clip,schema:CreativeWorkSeason,schema:Episode,schema:Event,schema:Movie,schema:MovieSeries,schema:RadioSeries,schema:TVSeries,schema:VideoGame,schema:VideoGameSeries,schema:VideoObject)"
-    ],
-    "schema:title": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schema:JobPosting)"
-    ]
-  }
-}
-schema.org/Audiobook-readBy-276-rdfa.html: {
-  "property": {
-    "schema:actor": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schema:Clip,schema:CreativeWorkSeason,schema:Episode,schema:Event,schema:Movie,schema:MovieSeries,schema:RadioSeries,schema:TVSeries,schema:VideoGame,schema:VideoGameSeries,schema:VideoObject)"
-    ],
-    "schema:title": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schema:JobPosting)"
-    ]
-  }
-}
-schema.org/AuthorizeAction-177-jsonld.html: {
-  "property": {
-    "schema:purpose": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/BefriendAction-139-jsonld.html: ok
-schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-227-jsonld.html: ok
-schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-227-microdata.html: ok
-schema.org/Book-CreativeWork-accessibilityFeature-accessibilityHazard-accessibilityControl-accessibilityAPI-227-rdfa.html: ok
-schema.org/BookmarkAction-180-jsonld.html: ok
-schema.org/BorrowAction-202-jsonld.html: ok
-schema.org/BusReservation-BusTrip-231-jsonld.html: ok
-schema.org/BuyAction-193-jsonld.html: ok
-schema.org/CancelAction-183-jsonld.html: ok
-schema.org/Car makesOffer-269-jsonld.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Car makesOffer-269-jsonld.html": [
-      "\"<file:///Users/gregg/Projects/linter/schema.org/Car\\\\u0020makesOffer-269-jsonld.html>\" is not a valid IRI"
-    ]
-  }
-}
-schema.org/Car makesOffer-269-microdata.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Car makesOffer-269-microdata.html": [
-      "\"<file:///Users/gregg/Projects/linter/schema.org/Car\\\\u0020makesOffer-269-microdata.html>\" is not a valid IRI"
-    ]
-  },
-  "statement": {
-    "schema:image": [
-      "Triple _:g352340 <http://schema.org/image> <file:///Users/gregg/Projects/linter/schema.org/Car\\u0020makesOffer-269-microdata.html> .\n is invalid"
-    ]
-  }
-}
-schema.org/Car makesOffer-269-rdfa.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Car makesOffer-269-rdfa.html": [
-      "\"<file:///Users/gregg/Projects/linter/schema.org/Car\\\\u0020makesOffer-269-rdfa.html>\" is not a valid IRI"
-    ]
-  },
-  "statement": {
-    "rdfa:usesVocabulary": [
-      "Triple <file:///Users/gregg/Projects/linter/schema.org/Car\\u0020makesOffer-269-rdfa.html> <http://www.w3.org/ns/rdfa#usesVocabulary> <http://schema.org/> .\n is invalid"
-    ]
-  }
-}
-schema.org/Car-268-jsonld.html: ok
-schema.org/Car-268-microdata.html: ok
-schema.org/Car-268-rdfa.html: ok
-schema.org/Chapter-273-jsonld.html: ok
-schema.org/Chapter-273-microdata.html: ok
-schema.org/Chapter-273-rdfa.html: ok
-schema.org/CheckAction-133-jsonld.html: ok
-schema.org/CheckAction-134-jsonld.html: ok
-schema.org/CheckInAction-143-jsonld.html: ok
-schema.org/CheckInAction-144-jsonld.html: ok
-schema.org/CheckInAction-145-jsonld.html: ok
-schema.org/CheckOutAction-146-jsonld.html: ok
-schema.org/ChooseAction-91-jsonld.html: ok
-schema.org/ChooseAction-92-jsonld.html: ok
-schema.org/CivicStructure-Place-76-jsonld.html: ok
-schema.org/CivicStructure-Place-76-microdata.html: ok
-schema.org/CivicStructure-Place-76-rdfa.html: ok
-schema.org/ClaimReview-317-jsonld.html: ok
-schema.org/ClaimReview-317-microdata.html: ok
-schema.org/ClaimReview-317-rdfa.html: ok
-schema.org/ClaimReview-318-jsonld.html: ok
-schema.org/ClaimReview-318-microdata.html: ok
-schema.org/ClaimReview-318-rdfa.html: ok
-schema.org/Collection-275-jsonld.html: ok
-schema.org/Collection-275-microdata.html: Error: undefined method `pname' for #<RDF::Literal:0x5715c("DVD")>
-schema.org/Collection-275-rdfa.html: ok
-schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-jsonld.html: ok
-schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-microdata.html: ok
-schema.org/ComicIssue-ComicSeries-ComicCoverArt-CoverArt-artist-colorist-letterer-272-rdfa.html: ok
-schema.org/CommentAction-147-jsonld.html: ok
-schema.org/CommunicateAction-140-jsonld.html: ok
-schema.org/CommunicateAction-141-jsonld.html: {
-  "property": {
-    "schema:participant": [
-      "Object _:b2(schema:Thing,schema:Intangible,schema:Audience,schema:MedicalEnumeration,schema:MedicalAudience,schema:Enumeration,rdfs:Resource,schema:PeopleAudience) not compatible with rangeIncludes (schema:Organization,schema:Person)"
-    ]
-  }
-}
-schema.org/ConfirmAction-149-jsonld.html: ok
-schema.org/ConsumeAction-105-jsonld.html: ok
-schema.org/CookAction-126-jsonld.html: ok
-schema.org/CreateAction-125-jsonld.html: ok
-schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-jsonld.html: ok
-schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-microdata.html: ok
-schema.org/CreativeWork-Book-translator-translationOfWork-workTranslation-277-rdfa.html: ok
-schema.org/CreativeWork-ContentRating-72-jsonld.html: ok
-schema.org/CreativeWork-ContentRating-72-microdata.html: ok
-schema.org/CreativeWork-ContentRating-72-rdfa.html: ok
-schema.org/DeleteAction-216-jsonld.html: ok
-schema.org/DepartAction-169-jsonld.html: ok
-schema.org/DisagreeAction-99-jsonld.html: ok
-schema.org/DiscoverAction-135-jsonld.html: ok
-schema.org/DislikeAction-100-jsonld.html: ok
-schema.org/DonateAction-194-jsonld.html: ok
-schema.org/DownloadAction-203-jsonld.html: ok
-schema.org/DrawAction-127-jsonld.html: ok
-schema.org/DrinkAction-106-jsonld.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-270-jsonld.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-270-microdata.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-270-rdfa.html: ok
-schema.org/EatAction-107-jsonld.html: ok
-schema.org/EducationalOrganization-77-jsonld.html: ok
-schema.org/EducationalOrganization-77-microdata.html: ok
-schema.org/EducationalOrganization-77-rdfa.html: ok
-schema.org/EndorseAction-101-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-MusicGroup-Offer-LimitedAvailability-226-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-Offer-222-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-Offer-222-microdata.html: ok
-schema.org/Event-Place-PostalAddress-Offer-222-rdfa.html: ok
-schema.org/Event-Place-PostalAddress-Offer-224-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-Offer-224-microdata.html: ok
-schema.org/Event-Place-PostalAddress-Offer-224-rdfa.html: ok
-schema.org/Event-Place-PostalAddress-Offer-EventCancelled-223-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-Offer-EventCancelled-223-microdata.html: ok
-schema.org/Event-Place-PostalAddress-Offer-EventCancelled-223-rdfa.html: ok
-schema.org/Event-Place-PostalAddress-Offer-SoldOut-225-jsonld.html: ok
-schema.org/Event-Place-PostalAddress-Offer-SoldOut-225-microdata.html: ok
-schema.org/Event-Place-PostalAddress-Offer-SoldOut-225-rdfa.html: ok
-schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-242-jsonld.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-242-jsonld.html": [
-      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-242-jsonld.html\nThe same key is defined more than once: workPerformed.sameAs",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-242-jsonld.html\nThe same key is defined more than once: workPerformed.sameAs: Called from /Users/gregg/.rvm/gems/ruby-2.7.1/bundler/gems/json-ld-f62940d9d1d1/lib/json/ld/reader.rb:99"
-    ]
-  }
-}
-schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-242-microdata.html: ok
-schema.org/Event-TheaterEvent-PerformingArtsTheater-CreativeWork-242-rdfa.html: ok
-schema.org/EventReservation-Ticket-Seat-232-jsonld.html: ok
-schema.org/ExerciseAction-187-jsonld.html: ok
-schema.org/ExerciseAction-188-jsonld.html: ok
-schema.org/FilmAction-128-jsonld.html: ok
-schema.org/FindAction-132-jsonld.html: ok
-schema.org/Flight-FlightReservation-233-jsonld.html: {
-  "property": {
-    "schema:participant": [
-      "Subject _:b2(schema:Flight,schema:Thing,schema:Intangible,schema:Trip,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
-    ]
-  }
-}
-schema.org/FollowAction-155-jsonld.html: ok
-schema.org/FoodEstablishmentReservation-234-jsonld.html: ok
-schema.org/GeoCoordinates-geo-300-jsonld.html: ok
-schema.org/GeoCoordinates-geo-300-microdata.html: ok
-schema.org/GeoCoordinates-geo-300-rdfa.html: ok
-schema.org/GiveAction-204-jsonld.html: ok
-schema.org/GiveAction-209-jsonld.html: ok
-schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-220-jsonld.html: ok
-schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-220-microdata.html: ok
-schema.org/GovernmentPermit-GovernmentOrganization-GovernmentService-AdministrativeArea-220-rdfa.html: ok
-schema.org/GovernmentService-GovernmentOrganization-AdministrativeArea-CivicAudience-ContactPoint-Language-Hospital-221-jsonld.html: ok
-schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-252-jsonld.html: ok
-schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-252-microdata.html: ok
-schema.org/HearingImpairedSupported-TollFree-ContactPoint-Organization-252-rdfa.html: ok
-schema.org/Hotel-295-jsonld.html: ok
-schema.org/Hotel-295-microdata.html: ok
-schema.org/Hotel-295-rdfa.html: ok
-schema.org/Hotel-logo-image-298-jsonld.html: ok
-schema.org/Hotel-logo-image-298-microdata.html: ok
-schema.org/Hotel-logo-image-298-rdfa.html: ok
-schema.org/HotelRoom-Hotel-307-jsonld.html: ok
-schema.org/HotelRoom-Hotel-307-microdata.html: ok
-schema.org/HotelRoom-Hotel-307-rdfa.html: ok
-schema.org/IgnoreAction-94-jsonld.html: ok
-schema.org/IgnoreAction-95-jsonld.html: ok
-schema.org/IgnoreAction-96-jsonld.html: ok
-schema.org/ImageObject-73-jsonld.html: ok
-schema.org/ImageObject-73-microdata.html: ok
-schema.org/ImageObject-73-rdfa.html: ok
-schema.org/IndividualProduct-81-jsonld.html: ok
-schema.org/IndividualProduct-81-microdata.html: ok
-schema.org/IndividualProduct-81-rdfa.html: ok
-schema.org/InformAction-148-jsonld.html: ok
-schema.org/InsertAction-213-jsonld.html: ok
-schema.org/InstallAction-108-jsonld.html: ok
-schema.org/InteractAction-137-jsonld.html: ok
-schema.org/InteractAction-138-jsonld.html: ok
-schema.org/InteractionCounter-Article-75-jsonld.html: ok
-schema.org/InteractionCounter-Article-75-microdata.html: ok
-schema.org/InteractionCounter-Article-75-rdfa.html: ok
-schema.org/InviteAction-151-jsonld.html: ok
-schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-6-jsonld.html: ok
-schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-6-microdata.html: ok
-schema.org/Invoice-Order-LocalBusiness-Person-PriceSpecification-Service-6-rdfa.html: ok
-schema.org/ItemList-262-jsonld.html: ok
-schema.org/ItemList-262-microdata.html: ok
-schema.org/ItemList-262-rdfa.html: ok
-schema.org/ItemList-68-jsonld.html: ok
-schema.org/ItemList-68-microdata.html: ok
-schema.org/ItemList-68-rdfa.html: ok
-schema.org/ItemList-CreativeWork-261-jsonld.html: ok
-schema.org/ItemList-CreativeWork-261-microdata.html: ok
-schema.org/ItemList-CreativeWork-261-rdfa.html: ok
-schema.org/ItemList-MusicAlbum-263-jsonld.html: ok
-schema.org/ItemList-MusicAlbum-263-microdata.html: ok
-schema.org/ItemList-MusicAlbum-263-rdfa.html: ok
-schema.org/ItemList-Product-Offer-260-jsonld.html: ok
-schema.org/ItemList-Product-Offer-260-microdata.html: ok
-schema.org/ItemList-Product-Offer-260-rdfa.html: ok
-schema.org/JobPosting-80-jsonld.html: ok
-schema.org/JobPosting-80-microdata.html: ok
-schema.org/JobPosting-80-rdfa.html: ok
-schema.org/JoinAction-156-jsonld.html: ok
-schema.org/JoinAction-157-jsonld.html: ok
-schema.org/JoinAction-158-jsonld.html: ok
-schema.org/JoinAction-159-jsonld.html: ok
-schema.org/LeaveAction-160-jsonld.html: ok
-schema.org/LendAction-205-jsonld.html: ok
-schema.org/LikeAction-102-jsonld.html: ok
-schema.org/ListenAction-109-jsonld.html: ok
-schema.org/ListenAction-110-jsonld.html: ok
-schema.org/ListenAction-111-jsonld.html: ok
-schema.org/LodgingReservation-235-jsonld.html: ok
-schema.org/LoseAction-87-jsonld.html: ok
-schema.org/MarryAction-161-jsonld.html: ok
-schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-38-jsonld.html: {
-  "property": {
-    "schema:availabilityEnds": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
-    ],
-    "schema:availabilityStarts": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
-    ]
-  }
-}
-schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-38-microdata.html: ok
-schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-38-rdfa.html: ok
-schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-39-jsonld.html: {
-  "property": {
-    "schema:availabilityEnds": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
-    ],
-    "schema:availabilityStarts": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
-    ]
-  }
-}
-schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-39-microdata.html: ok
-schema.org/Menu-MenuSection-hasMenuItem-hasMenuSection-NutritionInformation-MenuItem-39-rdfa.html: ok
-schema.org/MoveAction-167-jsonld.html: ok
-schema.org/Movie-69-jsonld.html: ok
-schema.org/Movie-69-microdata.html: ok
-schema.org/Movie-69-rdfa.html: ok
-schema.org/MusicAlbum-79-jsonld.html: ok
-schema.org/MusicAlbum-79-microdata.html: ok
-schema.org/MusicAlbum-79-rdfa.html: ok
-schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-241-jsonld.html: ok
-schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-241-microdata.html: ok
-schema.org/MusicEvent-Event-CreativeWork-MusicGroup-Person-241-rdfa.html: ok
-schema.org/MusicEvent-Place-Offer-253-jsonld.html: ok
-schema.org/MusicEvent-Place-Offer-253-microdata.html: ok
-schema.org/MusicEvent-Place-Offer-253-rdfa.html: ok
-schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-254-jsonld.html: ok
-schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-254-microdata.html: ok
-schema.org/MusicEvent-Place-PostalAddress-Offer-MusicGroup-EventRescheduled-254-rdfa.html: ok
-schema.org/MusicPlaylist-74-jsonld.html: ok
-schema.org/MusicPlaylist-74-microdata.html: ok
-schema.org/MusicPlaylist-74-rdfa.html: ok
-schema.org/Order-OrderItem-Organization-Person-7-jsonld.html: {
-  "property": {
-    "schema:participant": [
-      "Subject _:b0(schema:Thing,schema:Intangible,schema:Order,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
-    ]
-  }
-}
-schema.org/Order-OrderItem-Organization-Person-7-microdata.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Order-OrderItem-Organization-Person-7-microdata.html": [
-      "Errors found during processing",
-      "ERROR <file:///Users/gregg/Projects/linter/schema.org/Order-OrderItem-Organization-Person-7-microdata.html>: 16:45: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, div, div, .\n      <time=\"expectedArrivalFrom\">2015-03-10</time>\n                                            ^\n17:5: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, div, div, .\n    </div>\n    ^"
-    ]
-  },
-  "property": {
-    "schema:participant": [
-      "Subject _:g380800(schema:Thing,schema:Intangible,schema:Order,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
-    ]
-  }
-}
-schema.org/Order-OrderItem-Organization-Person-7-rdfa.html: {
-  "property": {
-    "schema:participant": [
-      "Subject _:g381220(schema:Thing,schema:Intangible,schema:Order,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
-    ]
-  }
-}
-schema.org/OrderAction-195-jsonld.html: ok
-schema.org/Organization-ContactPoint-251-jsonld.html: ok
-schema.org/Organization-ContactPoint-251-microdata.html: ok
-schema.org/Organization-ContactPoint-251-rdfa.html: ok
-schema.org/OrganizeAction-172-jsonld.html: ok
-schema.org/OrganizeAction-173-jsonld.html: ok
-schema.org/PaintAction-129-jsonld.html: ok
-schema.org/PayAction-196-jsonld.html: {
-  "property": {
-    "schema:purpose": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/PerformAction-189-jsonld.html: ok
-schema.org/Person-disambiguatingDescription-264-jsonld.html: ok
-schema.org/Person-disambiguatingDescription-264-microdata.html: ok
-schema.org/Person-disambiguatingDescription-264-rdfa.html: ok
-schema.org/Pharmacy-openingHours-telephone-246-jsonld.html: ok
-schema.org/Pharmacy-openingHours-telephone-246-microdata.html: ok
-schema.org/Pharmacy-openingHours-telephone-246-rdfa.html: ok
-schema.org/PhotographAction-130-jsonld.html: ok
-schema.org/PlanAction-181-jsonld.html: ok
-schema.org/PlanAction-182-jsonld.html: ok
-schema.org/PlayAction-186-jsonld.html: ok
-schema.org/PostalAddress-71-jsonld.html: ok
-schema.org/PostalAddress-71-microdata.html: ok
-schema.org/PostalAddress-71-rdfa.html: ok
-schema.org/PostalAddress-Pharmacy-Store-250-jsonld.html: ok
-schema.org/PostalAddress-Pharmacy-Store-250-microdata.html: ok
-schema.org/PostalAddress-Pharmacy-Store-250-rdfa.html: ok
-schema.org/PrependAction-215-jsonld.html: ok
-schema.org/ProductModel-83-jsonld.html: ok
-schema.org/ProductModel-83-microdata.html: ok
-schema.org/ProductModel-83-rdfa.html: ok
-schema.org/Question-Answer-238-jsonld.html: ok
-schema.org/Question-Answer-238-microdata.html: ok
-schema.org/Question-Answer-238-rdfa.html: ok
-schema.org/QuoteAction-197-jsonld.html: ok
-schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-219-jsonld.html: ok
-schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-219-microdata.html: ok
-schema.org/RadioSeries-RadioSeason-RadioEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-219-rdfa.html: ok
-schema.org/ReactAction-97-jsonld.html: ok
-schema.org/ReadAction-112-jsonld.html: ok
-schema.org/ReadAction-113-jsonld.html: ok
-schema.org/ReadAction-114-jsonld.html: ok
-schema.org/ReadAction-115-jsonld.html: ok
-schema.org/ReceiveAction-206-jsonld.html: ok
-schema.org/RegisterAction-162-jsonld.html: ok
-schema.org/RegisterAction-163-jsonld.html: ok
-schema.org/RegisterAction-164-jsonld.html: ok
-schema.org/RejectAction-178-jsonld.html: {
-  "property": {
-    "schema:purpose": [
-      "No property definition found"
-    ]
-  }
-}
-schema.org/RentAction-198-jsonld.html: ok
-schema.org/RentalCarReservation-236-jsonld.html: ok
-schema.org/ReplaceAction-217-jsonld.html: ok
-schema.org/ReplyAction-Question-Answer-152-jsonld.html: ok
-schema.org/ReserveAction-184-jsonld.html: ok
-schema.org/Restaurant-244-jsonld.html: ok
-schema.org/Restaurant-244-microdata.html: ok
-schema.org/Restaurant-244-rdfa.html: ok
-schema.org/Restaurant-ViewAction-EntryPoint-SoftwareApplication-240-jsonld.html: ok
-schema.org/ReturnAction-207-jsonld.html: ok
-schema.org/ReviewAction-104-jsonld.html: ok
-schema.org/Role-OrganizationRole-255-jsonld.html: ok
-schema.org/Role-OrganizationRole-255-microdata.html: ok
-schema.org/Role-OrganizationRole-255-rdfa.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-256-jsonld.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-256-microdata.html: ok
-schema.org/Role-OrganizationRole-CollegeOrUniversity-EducationalOrganization-256-rdfa.html: ok
-schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-258-jsonld.html: ok
-schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-258-microdata.html: ok
-schema.org/Role-OrganizationRole-Person-SportsTeam-Organization-258-rdfa.html: ok
-schema.org/Role-PerformanceRole-257-jsonld.html: ok
-schema.org/Role-PerformanceRole-257-microdata.html: ok
-schema.org/Role-PerformanceRole-257-rdfa.html: ok
-schema.org/RsvpAction-150-jsonld.html: ok
-schema.org/ScheduleAction-185-jsonld.html: ok
-schema.org/SearchAction-190-jsonld.html: ok
-schema.org/SearchAction-191-jsonld.html: ok
-schema.org/SellAction-199-jsonld.html: ok
-schema.org/SendAction-208-jsonld.html: ok
-schema.org/ShareAction-153-jsonld.html: ok
-schema.org/ShareAction-154-jsonld.html: ok
-schema.org/SomeProducts-82-jsonld.html: ok
-schema.org/SomeProducts-82-microdata.html: ok
-schema.org/SomeProducts-82-rdfa.html: ok
-schema.org/SportsEvent-243-jsonld.html: ok
-schema.org/SportsEvent-243-microdata.html: ok
-schema.org/SportsEvent-243-rdfa.html: ok
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-248-jsonld.html: ok
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-248-microdata.html: ok
-schema.org/Store-DryCleaningOrLaundry-Corporation-Pharmacy-248-rdfa.html: ok
-schema.org/Store-OpeningHoursSpecification-245-jsonld.html: ok
-schema.org/Store-OpeningHoursSpecification-245-microdata.html: ok
-schema.org/Store-OpeningHoursSpecification-245-rdfa.html: ok
-schema.org/Store-Pharmacy-247-jsonld.html: ok
-schema.org/Store-Pharmacy-247-microdata.html: ok
-schema.org/Store-Pharmacy-247-rdfa.html: ok
-schema.org/Store-PostalAddress-Pharmacy-249-jsonld.html: ok
-schema.org/Store-PostalAddress-Pharmacy-249-microdata.html: ok
-schema.org/Store-PostalAddress-Pharmacy-249-rdfa.html: ok
-schema.org/SubscribeAction-165-jsonld.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-78-jsonld.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-78-microdata.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-78-rdfa.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-218-jsonld.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-218-microdata.html: ok
-schema.org/TVSeries-TVSeason-TVEpisode-OnDemandEvent-BroadcastEvent-BroadcastService-218-rdfa.html: ok
-schema.org/Table-70-jsonld.html: ok
-schema.org/Table-70-microdata.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Table-70-microdata.html": [
-      "Errors found during processing",
-      "ERROR <file:///Users/gregg/Projects/linter/schema.org/Table-70-microdata.html>: 12:10: ERROR: Character tokens aren't legal here\n    </tr>\n         ^\n13:1: ERROR: Character tokens aren't legal here\n    ...\n^\n13:2: ERROR: Character tokens aren't legal here\n    ...\n ^\n13:3: ERROR: Character tokens aren't legal here\n    ...\n  ^\n13:4: ERROR: Character tokens aren't legal here\n    ...\n   ^\n13:5: ERROR: Character tokens aren't legal here\n    ...\n    ^\n13:6: ERROR: Character tokens aren't legal here\n    ...\n     ^\n13:7: ERROR: Character tokens aren't legal here\n    ...\n      ^\n13:8: ERROR: Character tokens aren't legal here\n    ...\n       ^\n14:1: ERROR: Character tokens aren't legal here\n  </table>\n^\n14:2: ERROR: Character tokens aren't legal here\n  </table>\n ^"
-    ]
-  }
-}
-schema.org/Table-70-rdfa.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/Table-70-rdfa.html": [
-      "Errors found during processing",
-      "ERROR <file:///Users/gregg/Projects/linter/schema.org/Table-70-rdfa.html>: 12:10: ERROR: Character tokens aren't legal here\n    </tr>\n         ^\n13:1: ERROR: Character tokens aren't legal here\n    ...\n^\n13:2: ERROR: Character tokens aren't legal here\n    ...\n ^\n13:3: ERROR: Character tokens aren't legal here\n    ...\n  ^\n13:4: ERROR: Character tokens aren't legal here\n    ...\n   ^\n13:5: ERROR: Character tokens aren't legal here\n    ...\n    ^\n13:6: ERROR: Character tokens aren't legal here\n    ...\n     ^\n13:7: ERROR: Character tokens aren't legal here\n    ...\n      ^\n13:8: ERROR: Character tokens aren't legal here\n    ...\n       ^\n14:1: ERROR: Character tokens aren't legal here\n  </table>\n^\n14:2: ERROR: Character tokens aren't legal here\n  </table>\n ^"
-    ]
-  }
-}
-schema.org/TaxiReservation-237-jsonld.html: ok
-schema.org/Thesis-inSupportOf-271-jsonld.html: ok
-schema.org/Thesis-inSupportOf-271-microdata.html: ok
-schema.org/Thesis-inSupportOf-271-rdfa.html: ok
-schema.org/TieAction-88-jsonld.html: ok
-schema.org/TipAction-200-jsonld.html: ok
-schema.org/TrackAction-136-jsonld.html: ok
-schema.org/TradeAction-192-jsonld.html: ok
-schema.org/TrainReservation-TrainTrip-230-jsonld.html: ok
-schema.org/TransferAction-201-jsonld.html: ok
-schema.org/TravelAction-170-jsonld.html: ok
-schema.org/TravelAction-171-jsonld.html: ok
-schema.org/UnRegisterAction-166-jsonld.html: ok
-schema.org/UpdateAction-210-jsonld.html: ok
-schema.org/UseAction-116-jsonld.html: ok
-schema.org/ViewAction-118-jsonld.html: ok
-schema.org/ViewAction-119-jsonld.html: ok
-schema.org/ViewAction-120-jsonld.html: ok
-schema.org/VisualArtwork-282-jsonld.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/VisualArtwork-282-jsonld.html": [
-      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/VisualArtwork-282-jsonld.html\nThe same key is defined more than once: artMedium",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/VisualArtwork-282-jsonld.html\nThe same key is defined more than once: artMedium: Called from /Users/gregg/.rvm/gems/ruby-2.7.1/bundler/gems/json-ld-f62940d9d1d1/lib/json/ld/reader.rb:99"
-    ]
-  }
-}
-schema.org/VisualArtwork-282-microdata.html: ok
-schema.org/VisualArtwork-282-rdfa.html: ok
-schema.org/VisualArtwork-283-jsonld.html: ok
-schema.org/VisualArtwork-283-microdata.html: ok
-schema.org/VisualArtwork-283-rdfa.html: ok
-schema.org/VisualArtwork-Person-281-jsonld.html: ok
-schema.org/VisualArtwork-Person-281-microdata.html: ok
-schema.org/VisualArtwork-Person-281-rdfa.html: ok
-schema.org/VoteAction-93-jsonld.html: ok
-schema.org/WantAction-103-jsonld.html: ok
-schema.org/WatchAction-121-jsonld.html: ok
-schema.org/WatchAction-122-jsonld.html: ok
-schema.org/WatchAction-123-jsonld.html: ok
-schema.org/WatchAction-124-jsonld.html: ok
-schema.org/WatchAction-Movie-239-jsonld.html: ok
-schema.org/WatchAction-Movie-239-microdata.html: ok
-schema.org/WatchAction-Movie-239-rdfa.html: ok
-schema.org/WearAction-117-jsonld.html: ok
-schema.org/WebPage-CollegeOrUniversity-259-jsonld.html: ok
-schema.org/WebPage-CollegeOrUniversity-259-microdata.html: ok
-schema.org/WebPage-CollegeOrUniversity-259-rdfa.html: ok
-schema.org/WinAction-89-jsonld.html: ok
-schema.org/WriteAction-131-jsonld.html: ok
-schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-jsonld.html: ok
-schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-microdata.html: ok
-schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-308-rdfa.html: ok
-schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-jsonld.html: ok
-schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-microdata.html: ok
-schema.org/accessMode-accessModeSufficient-accessibilitySummary-accessibilityFeature-309-rdfa.html: ok
-schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-228-jsonld.html: ok
-schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-228-microdata.html: ok
-schema.org/accessibilityFeature-accessibilityHazard-encodingFormat-228-rdfa.html: ok
-schema.org/availableLanguage-Language-306-jsonld.html: ok
-schema.org/availableLanguage-Language-306-microdata.html: ok
-schema.org/availableLanguage-Language-306-rdfa.html: ok
-schema.org/bib-1-jsonld.html: ok
-schema.org/bib-1-microdata.html: ok
-schema.org/bib-1-rdfa.html: ok
-schema.org/bib-2-jsonld.html: ok
-schema.org/bib-2-microdata.html: ok
-schema.org/bib-2-rdfa.html: ok
-schema.org/bib-3-jsonld.html: ok
-schema.org/bib-3-microdata.html: ok
-schema.org/bib-3-rdfa.html: ok
-schema.org/bib-4-jsonld.html: ok
-schema.org/bib-4-microdata.html: ok
-schema.org/bib-4-rdfa.html: ok
-schema.org/bib-5-jsonld.html: ok
-schema.org/bib-5-microdata.html: ok
-schema.org/bib-5-rdfa.html: ok
-schema.org/boolean-jsonld.html: ok
-schema.org/boolean-microdata.html: ok
-schema.org/boolean-rdfa.html: ok
-schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-jsonld.html: ok
-schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-microdata.html: ok
-schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-278-rdfa.html: ok
-schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-jsonld.html: ok
-schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-microdata.html: ok
-schema.org/broadcastFrequency-BroadcastService-BroadcastFrequencySpecification-279-rdfa.html: ok
-schema.org/checkinTime-checkoutTime-305-jsonld.html: ok
-schema.org/checkinTime-checkoutTime-305-microdata.html: ok
-schema.org/checkinTime-checkoutTime-305-rdfa.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html: ok
+schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html: ok
 schema.org/compoundPrice-1-jsonld.html: ok
 schema.org/compoundPrice-1-microdata.html: ok
+schema.org/compoundPrice-1-pre.html: ok
 schema.org/compoundPrice-1-rdfa.html: ok
 schema.org/compoundPrice-2-jsonld.html: ok
 schema.org/compoundPrice-2-microdata.html: ok
+schema.org/compoundPrice-2-pre.html: ok
 schema.org/compoundPrice-2-rdfa.html: ok
-schema.org/datafeed-1-jsonld.html: ok
-schema.org/datafeed-1-microdata.html: ok
-schema.org/datafeed-1-rdfa.html: ok
-schema.org/datafeed-2-jsonld.html: ok
-schema.org/datafeed-2-microdata.html: ok
-schema.org/datafeed-2-rdfa.html: ok
-schema.org/eg-1-jsonld.html: ok
-schema.org/eg-1-microdata.html: ok
-schema.org/eg-1-rdfa.html: ok
-schema.org/eg-10-jsonld.html: ok
-schema.org/eg-10-microdata.html: ok
-schema.org/eg-10-rdfa.html: ok
-schema.org/eg-11-jsonld.html: ok
-schema.org/eg-11-microdata.html: ok
-schema.org/eg-11-rdfa.html: ok
-schema.org/eg-12-jsonld.html: ok
-schema.org/eg-12-microdata.html: ok
-schema.org/eg-12-rdfa.html: ok
-schema.org/eg-13-jsonld.html: {
+schema.org/eg-0001-jsonld.html: ok
+schema.org/eg-0001-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.janedoe.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0001-pre.html: ok
+schema.org/eg-0001-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.janedoe.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0003-jsonld.html: ok
+schema.org/eg-0003-microdata.html: ok
+schema.org/eg-0003-pre.html: ok
+schema.org/eg-0003-rdfa.html: ok
+schema.org/eg-0004-jsonld.html: ok
+schema.org/eg-0004-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.greatfood.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0004-pre.html: ok
+schema.org/eg-0004-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.greatfood.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0005-jsonld.html: ok
+schema.org/eg-0005-microdata.html: ok
+schema.org/eg-0005-pre.html: ok
+schema.org/eg-0005-rdfa.html: ok
+schema.org/eg-0006-jsonld.html: ok
+schema.org/eg-0006-microdata.html: ok
+schema.org/eg-0006-pre.html: ok
+schema.org/eg-0006-rdfa.html: ok
+schema.org/eg-0007-jsonld.html: ok
+schema.org/eg-0007-microdata.html: ok
+schema.org/eg-0007-pre.html: ok
+schema.org/eg-0007-rdfa.html: ok
+schema.org/eg-0008-jsonld.html: ok
+schema.org/eg-0008-microdata.html: ok
+schema.org/eg-0008-pre.html: ok
+schema.org/eg-0008-rdfa.html: ok
+schema.org/eg-0009-jsonld.html: ok
+schema.org/eg-0009-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may20-fedexforum> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may23-midamericacenter> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-everlong.html> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-rope.html> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0009-pre.html: ok
+schema.org/eg-0009-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-everlong.html> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-rope.html> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may23-midamericacenter> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may20-fedexforum> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0010-jsonld.html: ok
+schema.org/eg-0010-microdata.html: ok
+schema.org/eg-0010-pre.html: ok
+schema.org/eg-0010-rdfa.html: ok
+schema.org/eg-0011-jsonld.html: ok
+schema.org/eg-0011-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/save-a-lot-monitors.com/dell-30.html> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/jondoe-gadgets.com/dell-30.html> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0011-pre.html: ok
+schema.org/eg-0011-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/jondoe-gadgets.com/dell-30.html> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/save-a-lot-monitors.com/dell-30.html> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0012-jsonld.html: ok
+schema.org/eg-0012-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0012-pre.html: ok
+schema.org/eg-0012-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0013-jsonld.html: {
   "property": {
     "schema:instrument": [
-      "Subject _:b0(schema:Recipe,schema:HowTo,schema:CreativeWork,schema:Thing,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+      "Subject _:g432700(schema:Recipe,schema:Thing,schema:CreativeWork,schema:HowTo,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
     ]
   }
 }
-schema.org/eg-13-microdata.html: {
+schema.org/eg-0013-microdata.html: {
   "property": {
-    "schema:instrument": [
-      "Subject _:g407040(schema:Recipe,schema:HowTo,schema:CreativeWork,schema:Thing,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    "schemas:instrument": [
+      "Subject _:g433180(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
-schema.org/eg-13-rdfa.html: {
+schema.org/eg-0013-pre.html: ok
+schema.org/eg-0013-rdfa.html: {
   "property": {
-    "schema:instrument": [
-      "Subject _:g407220(schema:Recipe,schema:HowTo,schema:CreativeWork,schema:Thing,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    "schemas:instrument": [
+      "Subject _:g433760(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
-schema.org/eg-14-jsonld.html: ok
-schema.org/eg-14-microdata.html: ok
-schema.org/eg-14-rdfa.html: ok
-schema.org/eg-3-jsonld.html: ok
-schema.org/eg-3-microdata.html: ok
-schema.org/eg-3-rdfa.html: ok
-schema.org/eg-4-jsonld.html: ok
-schema.org/eg-4-microdata.html: ok
-schema.org/eg-4-rdfa.html: ok
-schema.org/eg-5-jsonld.html: ok
-schema.org/eg-5-microdata.html: ok
-schema.org/eg-5-rdfa.html: ok
-schema.org/eg-6-jsonld.html: ok
-schema.org/eg-6-microdata.html: ok
-schema.org/eg-6-rdfa.html: ok
-schema.org/eg-7-jsonld.html: ok
-schema.org/eg-7-microdata.html: ok
-schema.org/eg-7-rdfa.html: ok
-schema.org/eg-8-jsonld.html: ok
-schema.org/eg-8-microdata.html: ok
-schema.org/eg-8-rdfa.html: ok
-schema.org/eg-9-jsonld.html: ok
-schema.org/eg-9-microdata.html: ok
-schema.org/eg-9-rdfa.html: ok
-schema.org/eg2-jsonld.html: ok
-schema.org/eg2-microdata.html: ok
-schema.org/eg2-rdfa.html: ok
-schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-229-jsonld.html: ok
-schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-229-microdata.html: ok
-schema.org/encodingFormat-accessibilityHazard-accessibilityFeature-accessibilityControl-accessibilityAPI-229-rdfa.html: ok
-schema.org/exhibitionevent-1-jsonld.html: ok
-schema.org/exhibitionevent-1-microdata.html: ok
-schema.org/exhibitionevent-1-rdfa.html: ok
-schema.org/exif-jsonld.html: ok
-schema.org/exif-microdata.html: ok
-schema.org/exif-rdfa.html: ok
-schema.org/feature-LocationFeatureSpecification-303-jsonld.html: ok
-schema.org/feature-LocationFeatureSpecification-303-microdata.html: ok
-schema.org/feature-LocationFeatureSpecification-303-rdfa.html: ok
-schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-jsonld.html: ok
-schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-microdata.html: ok
-schema.org/feature-LocationFeatureSpecification-hoursAvailable-304-rdfa.html: ok
-schema.org/fiboex-1-jsonld.html: ok
-schema.org/fiboex-1-microdata.html: ok
-schema.org/fiboex-1-rdfa.html: ok
-schema.org/fiboex-2-jsonld.html: {
-  "property": {
-    "schema:duration": [
-      "Subject _:b0(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:LoanOrCredit,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:Audiobook,schema:Event,schema:MediaObject,schema:Movie,schema:MusicRecording,schema:MusicRelease,schema:QuantitativeValueDistribution,schema:Schedule)",
-      "Object _:b1(schema:StructuredValue,schema:Thing,schema:Intangible,schema:QuantitativeValue,rdfs:Resource) not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/fiboex-2-microdata.html: {
-  "property": {
-    "schema:duration": [
-      "Subject _:g413940(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:LoanOrCredit,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:Audiobook,schema:Event,schema:MediaObject,schema:Movie,schema:MusicRecording,schema:MusicRelease,schema:QuantitativeValueDistribution,schema:Schedule)",
-      "Object _:g414080(schema:StructuredValue,schema:Thing,schema:Intangible,schema:QuantitativeValue,rdfs:Resource) not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/fiboex-2-rdfa.html: {
-  "property": {
-    "schema:duration": [
-      "Subject _:g414240(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:LoanOrCredit,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:Audiobook,schema:Event,schema:MediaObject,schema:Movie,schema:MusicRecording,schema:MusicRelease,schema:QuantitativeValueDistribution,schema:Schedule)",
-      "Object _:g414260(schema:StructuredValue,schema:Thing,schema:Intangible,schema:QuantitativeValue,rdfs:Resource) not compatible with rangeIncludes (schema:Duration)"
-    ]
-  }
-}
-schema.org/fiboex-3-jsonld.html: ok
-schema.org/fiboex-3-microdata.html: ok
-schema.org/fiboex-3-rdfa.html: ok
-schema.org/fiboex-4-jsonld.html: ok
-schema.org/fiboex-4-microdata.html: ok
-schema.org/fiboex-4-rdfa.html: ok
-schema.org/fiboex-5-jsonld.html: ok
-schema.org/fiboex-5-microdata.html: ok
-schema.org/fiboex-5-rdfa.html: ok
-schema.org/fiboex-6-jsonld.html: ok
-schema.org/fiboex-6-microdata.html: ok
-schema.org/fiboex-6-rdfa.html: ok
-schema.org/fiboex-7-jsonld.html: {
-  "property": {
-    "schema:amount": [
-      "Subject _:b0(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:InvestmentOrDeposit,schema:LoanOrCredit,schema:MonetaryGrant,schema:MoneyTransfer)"
-    ]
-  }
-}
-schema.org/fiboex-7-microdata.html: {
-  "property": {
-    "schema:amount": [
-      "Subject _:g418640(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:InvestmentOrDeposit,schema:LoanOrCredit,schema:MonetaryGrant,schema:MoneyTransfer)"
-    ]
-  }
-}
-schema.org/fiboex-7-rdfa.html: {
-  "property": {
-    "schema:amount": [
-      "Subject _:g418820(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:InvestmentOrDeposit,schema:LoanOrCredit,schema:MonetaryGrant,schema:MoneyTransfer)"
-    ]
-  }
-}
-schema.org/fiboex-8-jsonld.html: ok
-schema.org/fiboex-8-microdata.html: ok
-schema.org/fiboex-8-rdfa.html: ok
-schema.org/games-1-jsonld.html: ok
-schema.org/games-1-microdata.html: ok
-schema.org/games-1-rdfa.html: ok
-schema.org/games-2-jsonld.html: ok
-schema.org/games-2-microdata.html: ok
-schema.org/games-2-rdfa.html: ok
-schema.org/games-3-jsonld.html: {
+schema.org/eg-0015-jsonld.html: ok
+schema.org/eg-0015-microdata.html: ok
+schema.org/eg-0015-pre.html: ok
+schema.org/eg-0015-rdfa.html: ok
+schema.org/eg-0016-jsonld.html: ok
+schema.org/eg-0016-microdata.html: ok
+schema.org/eg-0016-pre.html: ok
+schema.org/eg-0016-rdfa.html: ok
+schema.org/eg-0017-jsonld.html: ok
+schema.org/eg-0017-microdata.html: ok
+schema.org/eg-0017-pre.html: ok
+schema.org/eg-0017-rdfa.html: ok
+schema.org/eg-0018-jsonld.html: ok
+schema.org/eg-0018-microdata.html: {
   "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/games-3-jsonld.html": [
-      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/games-3-jsonld.html\nThe same key is defined more than once: author.employee",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/games-3-jsonld.html\nThe same key is defined more than once: author.employee: Called from /Users/gregg/.rvm/gems/ruby-2.7.1/bundler/gems/json-ld-f62940d9d1d1/lib/json/ld/reader.rb:99"
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0018-microdata.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0018-microdata.html>: 12:10: ERROR: Character tokens aren't legal here\n    </tr>\n         ^\n13:1: ERROR: Character tokens aren't legal here\n    ...\n^\n13:2: ERROR: Character tokens aren't legal here\n    ...\n ^\n13:3: ERROR: Character tokens aren't legal here\n    ...\n  ^\n13:4: ERROR: Character tokens aren't legal here\n    ...\n   ^\n13:5: ERROR: Character tokens aren't legal here\n    ...\n    ^\n13:6: ERROR: Character tokens aren't legal here\n    ...\n     ^\n13:7: ERROR: Character tokens aren't legal here\n    ...\n      ^\n13:8: ERROR: Character tokens aren't legal here\n    ...\n       ^\n14:1: ERROR: Character tokens aren't legal here\n  </table>\n^\n14:2: ERROR: Character tokens aren't legal here\n  </table>\n ^"
     ]
   }
 }
-schema.org/games-3-microdata.html: ok
-schema.org/games-3-rdfa.html: ok
-schema.org/games-4-jsonld.html: ok
-schema.org/games-4-microdata.html: ok
-schema.org/games-4-rdfa.html: ok
-schema.org/games-5-jsonld.html: ok
-schema.org/games-6-jsonld.html: ok
-schema.org/games-6-microdata.html: ok
-schema.org/games-6-rdfa.html: ok
-schema.org/games-7-jsonld.html: ok
-schema.org/grouping-jsonld.html: ok
-schema.org/grouping-microdata.html: ok
-schema.org/grouping-rdfa.html: ok
-schema.org/hasMap-299-jsonld.html: ok
-schema.org/hasMap-299-microdata.html: ok
-schema.org/hasMap-299-rdfa.html: ok
-schema.org/interaction-counter-1-jsonld.html: ok
-schema.org/interaction-counter-1-microdata.html: ok
-schema.org/interaction-counter-1-rdfa.html: ok
-schema.org/intervals-jsonld.html: ok
-schema.org/intervals-microdata.html: ok
-schema.org/intervals-rdfa.html: ok
-schema.org/invoice-1-jsonld.html: ok
-schema.org/invoice-1-microdata.html: ok
-schema.org/invoice-1-rdfa.html: ok
-schema.org/itemlist-1-jsonld.html: ok
-schema.org/itemlist-1-microdata.html: ok
-schema.org/itemlist-1-rdfa.html: ok
-schema.org/library-1-jsonld.html: ok
-schema.org/library-1-microdata.html: ok
-schema.org/library-1-rdfa.html: ok
-schema.org/lrmi-1-jsonld.html: ok
-schema.org/lrmi-1-microdata.html: {
+schema.org/eg-0018-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0018-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0018-pre.html>: 11:8: ERROR: Character tokens aren't legal here\n  </tr>\n       ^\n12:1: ERROR: Character tokens aren't legal here\n  ...\n^\n12:2: ERROR: Character tokens aren't legal here\n  ...\n ^\n12:3: ERROR: Character tokens aren't legal here\n  ...\n  ^\n12:4: ERROR: Character tokens aren't legal here\n  ...\n   ^\n12:5: ERROR: Character tokens aren't legal here\n  ...\n    ^\n12:6: ERROR: Character tokens aren't legal here\n  ...\n     ^"
+    ]
+  }
+}
+schema.org/eg-0018-rdfa.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0018-rdfa.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0018-rdfa.html>: 12:10: ERROR: Character tokens aren't legal here\n    </tr>\n         ^\n13:1: ERROR: Character tokens aren't legal here\n    ...\n^\n13:2: ERROR: Character tokens aren't legal here\n    ...\n ^\n13:3: ERROR: Character tokens aren't legal here\n    ...\n  ^\n13:4: ERROR: Character tokens aren't legal here\n    ...\n   ^\n13:5: ERROR: Character tokens aren't legal here\n    ...\n    ^\n13:6: ERROR: Character tokens aren't legal here\n    ...\n     ^\n13:7: ERROR: Character tokens aren't legal here\n    ...\n      ^\n13:8: ERROR: Character tokens aren't legal here\n    ...\n       ^\n14:1: ERROR: Character tokens aren't legal here\n  </table>\n^\n14:2: ERROR: Character tokens aren't legal here\n  </table>\n ^"
+    ]
+  }
+}
+schema.org/eg-0019-jsonld.html: ok
+schema.org/eg-0019-microdata.html: ok
+schema.org/eg-0019-pre.html: ok
+schema.org/eg-0019-rdfa.html: ok
+schema.org/eg-0020-jsonld.html: ok
+schema.org/eg-0020-microdata.html: ok
+schema.org/eg-0020-pre.html: ok
+schema.org/eg-0020-rdfa.html: ok
+schema.org/eg-0021-jsonld.html: ok
+schema.org/eg-0021-microdata.html: {
   "property": {
-    "schema:inDefinedtermSet": [
+    "schemas:contentUrl": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0021-pre.html: ok
+schema.org/eg-0021-rdfa.html: {
+  "property": {
+    "schemas:contentUrl": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0022-jsonld.html: ok
+schema.org/eg-0022-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/sharp-dressed-man> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/hurt-so-good> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/sweet-home-alabama> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/shook-you-all-night-long> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/old-time-rock-and-roll> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0022-pre.html: ok
+schema.org/eg-0022-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/hurt-so-good> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/sharp-dressed-man> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/shook-you-all-night-long> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/sweet-home-alabama> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/old-time-rock-and-roll> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0023-jsonld.html: ok
+schema.org/eg-0023-microdata.html: ok
+schema.org/eg-0023-pre.html: ok
+schema.org/eg-0023-rdfa.html: ok
+schema.org/eg-0024-jsonld.html: ok
+schema.org/eg-0024-microdata.html: ok
+schema.org/eg-0024-pre.html: ok
+schema.org/eg-0024-rdfa.html: ok
+schema.org/eg-0025-jsonld.html: ok
+schema.org/eg-0025-microdata.html: ok
+schema.org/eg-0025-pre.html: ok
+schema.org/eg-0025-rdfa.html: ok
+schema.org/eg-0026-jsonld.html: ok
+schema.org/eg-0026-microdata.html: ok
+schema.org/eg-0026-pre.html: ok
+schema.org/eg-0026-rdfa.html: ok
+schema.org/eg-0027-jsonld.html: ok
+schema.org/eg-0027-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/morning-mr-magpie> not compatible with rangeIncludes ()",
+      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/bloom> not compatible with rangeIncludes ()",
+      "Object <file:///artist/radiohead/album/the-king-of-limbs> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0027-pre.html: ok
+schema.org/eg-0027-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/morning-mr-magpie> not compatible with rangeIncludes ()",
+      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/bloom> not compatible with rangeIncludes ()",
+      "Object <file:///artist/radiohead/album/the-king-of-limbs> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0028-jsonld.html: ok
+schema.org/eg-0028-microdata.html: ok
+schema.org/eg-0028-pre.html: ok
+schema.org/eg-0028-rdfa.html: ok
+schema.org/eg-0029-jsonld.html: ok
+schema.org/eg-0029-microdata.html: {
+  "property": {
+    "schemas:additionalType": [
+      "Object <http://www.productontology.org/id/Racing_bicycle> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0029-pre.html: ok
+schema.org/eg-0029-rdfa.html: ok
+schema.org/eg-0030-jsonld.html: ok
+schema.org/eg-0030-microdata.html: {
+  "property": {
+    "schemas:additionalType": [
+      "Object <http://www.productontology.org/id/Printer_(computing)> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0030-pre.html: ok
+schema.org/eg-0030-rdfa.html: ok
+schema.org/eg-0031-jsonld.html: ok
+schema.org/eg-0031-microdata.html: {
+  "property": {
+    "schemas:additionalType": [
+      "Object <http://www.productontology.org/id/Television_set> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0031-pre.html: ok
+schema.org/eg-0031-rdfa.html: ok
+schema.org/eg-0032-jsonld.html: ok
+schema.org/eg-0032-pre.html: ok
+schema.org/eg-0033-jsonld.html: ok
+schema.org/eg-0033-pre.html: ok
+schema.org/eg-0034-jsonld.html: ok
+schema.org/eg-0034-pre.html: ok
+schema.org/eg-0035-jsonld.html: ok
+schema.org/eg-0035-pre.html: ok
+schema.org/eg-0036-jsonld.html: ok
+schema.org/eg-0036-pre.html: ok
+schema.org/eg-0037-jsonld.html: ok
+schema.org/eg-0037-pre.html: ok
+schema.org/eg-0038-jsonld.html: ok
+schema.org/eg-0038-pre.html: ok
+schema.org/eg-0039-jsonld.html: ok
+schema.org/eg-0039-pre.html: ok
+schema.org/eg-0040-jsonld.html: ok
+schema.org/eg-0040-pre.html: ok
+schema.org/eg-0041-jsonld.html: ok
+schema.org/eg-0041-pre.html: ok
+schema.org/eg-0042-jsonld.html: ok
+schema.org/eg-0042-pre.html: ok
+schema.org/eg-0043-jsonld.html: ok
+schema.org/eg-0043-pre.html: ok
+schema.org/eg-0044-jsonld.html: ok
+schema.org/eg-0044-pre.html: ok
+schema.org/eg-0045-jsonld.html: ok
+schema.org/eg-0045-pre.html: ok
+schema.org/eg-0046-jsonld.html: ok
+schema.org/eg-0046-pre.html: ok
+schema.org/eg-0047-jsonld.html: ok
+schema.org/eg-0047-pre.html: ok
+schema.org/eg-0048-jsonld.html: ok
+schema.org/eg-0048-pre.html: ok
+schema.org/eg-0049-jsonld.html: ok
+schema.org/eg-0049-pre.html: ok
+schema.org/eg-0050-jsonld.html: ok
+schema.org/eg-0050-pre.html: ok
+schema.org/eg-0051-jsonld.html: ok
+schema.org/eg-0051-pre.html: ok
+schema.org/eg-0052-jsonld.html: ok
+schema.org/eg-0052-pre.html: ok
+schema.org/eg-0053-jsonld.html: ok
+schema.org/eg-0053-pre.html: ok
+schema.org/eg-0054-jsonld.html: ok
+schema.org/eg-0054-pre.html: ok
+schema.org/eg-0055-jsonld.html: ok
+schema.org/eg-0055-pre.html: ok
+schema.org/eg-0056-jsonld.html: ok
+schema.org/eg-0056-pre.html: ok
+schema.org/eg-0057-jsonld.html: ok
+schema.org/eg-0057-pre.html: ok
+schema.org/eg-0058-jsonld.html: ok
+schema.org/eg-0058-pre.html: ok
+schema.org/eg-0059-jsonld.html: ok
+schema.org/eg-0059-pre.html: ok
+schema.org/eg-0060-jsonld.html: ok
+schema.org/eg-0060-pre.html: ok
+schema.org/eg-0061-jsonld.html: ok
+schema.org/eg-0061-pre.html: ok
+schema.org/eg-0062-jsonld.html: ok
+schema.org/eg-0062-pre.html: ok
+schema.org/eg-0063-jsonld.html: ok
+schema.org/eg-0063-pre.html: ok
+schema.org/eg-0064-jsonld.html: ok
+schema.org/eg-0064-pre.html: ok
+schema.org/eg-0065-jsonld.html: ok
+schema.org/eg-0065-pre.html: ok
+schema.org/eg-0066-jsonld.html: ok
+schema.org/eg-0066-pre.html: ok
+schema.org/eg-0067-jsonld.html: ok
+schema.org/eg-0067-pre.html: ok
+schema.org/eg-0068-jsonld.html: ok
+schema.org/eg-0068-pre.html: ok
+schema.org/eg-0069-jsonld.html: ok
+schema.org/eg-0069-pre.html: ok
+schema.org/eg-0070-jsonld.html: ok
+schema.org/eg-0070-pre.html: ok
+schema.org/eg-0071-jsonld.html: ok
+schema.org/eg-0071-pre.html: ok
+schema.org/eg-0072-jsonld.html: ok
+schema.org/eg-0072-pre.html: ok
+schema.org/eg-0073-jsonld.html: ok
+schema.org/eg-0073-pre.html: ok
+schema.org/eg-0074-jsonld.html: ok
+schema.org/eg-0074-pre.html: ok
+schema.org/eg-0075-jsonld.html: ok
+schema.org/eg-0075-pre.html: ok
+schema.org/eg-0076-jsonld.html: ok
+schema.org/eg-0076-pre.html: ok
+schema.org/eg-0077-jsonld.html: ok
+schema.org/eg-0077-pre.html: ok
+schema.org/eg-0078-jsonld.html: ok
+schema.org/eg-0078-pre.html: ok
+schema.org/eg-0079-jsonld.html: ok
+schema.org/eg-0079-pre.html: ok
+schema.org/eg-0080-jsonld.html: ok
+schema.org/eg-0080-pre.html: ok
+schema.org/eg-0081-jsonld.html: ok
+schema.org/eg-0081-pre.html: ok
+schema.org/eg-0082-jsonld.html: ok
+schema.org/eg-0082-pre.html: ok
+schema.org/eg-0083-jsonld.html: ok
+schema.org/eg-0083-pre.html: ok
+schema.org/eg-0084-jsonld.html: ok
+schema.org/eg-0084-pre.html: ok
+schema.org/eg-0085-jsonld.html: ok
+schema.org/eg-0085-pre.html: ok
+schema.org/eg-0086-jsonld.html: ok
+schema.org/eg-0086-pre.html: ok
+schema.org/eg-0087-jsonld.html: ok
+schema.org/eg-0087-pre.html: ok
+schema.org/eg-0088-jsonld.html: ok
+schema.org/eg-0088-pre.html: ok
+schema.org/eg-0089-jsonld.html: {
+  "property": {
+    "schema:participant": [
+      "Object _:g456900(schema:MedicalAudience,schema:Thing,schema:Intangible,schema:Audience,schema:PeopleAudience,rdfs:Resource) not compatible with rangeIncludes (schema:Organization,schema:Person)"
+    ]
+  }
+}
+schema.org/eg-0089-pre.html: ok
+schema.org/eg-0090-jsonld.html: ok
+schema.org/eg-0090-pre.html: ok
+schema.org/eg-0091-jsonld.html: ok
+schema.org/eg-0091-pre.html: ok
+schema.org/eg-0092-jsonld.html: ok
+schema.org/eg-0092-pre.html: ok
+schema.org/eg-0093-jsonld.html: ok
+schema.org/eg-0093-pre.html: ok
+schema.org/eg-0094-jsonld.html: ok
+schema.org/eg-0094-pre.html: ok
+schema.org/eg-0095-jsonld.html: ok
+schema.org/eg-0095-pre.html: ok
+schema.org/eg-0096-jsonld.html: ok
+schema.org/eg-0096-pre.html: ok
+schema.org/eg-0097-jsonld.html: ok
+schema.org/eg-0097-pre.html: ok
+schema.org/eg-0098-jsonld.html: ok
+schema.org/eg-0098-pre.html: ok
+schema.org/eg-0099-jsonld.html: ok
+schema.org/eg-0099-pre.html: ok
+schema.org/eg-0100-jsonld.html: ok
+schema.org/eg-0100-pre.html: ok
+schema.org/eg-0101-jsonld.html: ok
+schema.org/eg-0101-pre.html: ok
+schema.org/eg-0102-jsonld.html: ok
+schema.org/eg-0102-pre.html: ok
+schema.org/eg-0103-jsonld.html: ok
+schema.org/eg-0103-pre.html: ok
+schema.org/eg-0104-jsonld.html: ok
+schema.org/eg-0104-pre.html: ok
+schema.org/eg-0105-jsonld.html: ok
+schema.org/eg-0105-pre.html: ok
+schema.org/eg-0106-jsonld.html: ok
+schema.org/eg-0106-pre.html: ok
+schema.org/eg-0107-jsonld.html: ok
+schema.org/eg-0107-pre.html: ok
+schema.org/eg-0108-jsonld.html: ok
+schema.org/eg-0108-pre.html: ok
+schema.org/eg-0109-jsonld.html: ok
+schema.org/eg-0109-pre.html: ok
+schema.org/eg-0110-jsonld.html: ok
+schema.org/eg-0110-pre.html: ok
+schema.org/eg-0111-jsonld.html: ok
+schema.org/eg-0111-pre.html: ok
+schema.org/eg-0112-jsonld.html: ok
+schema.org/eg-0112-pre.html: ok
+schema.org/eg-0113-jsonld.html: ok
+schema.org/eg-0113-pre.html: ok
+schema.org/eg-0114-jsonld.html: ok
+schema.org/eg-0114-pre.html: ok
+schema.org/eg-0115-jsonld.html: ok
+schema.org/eg-0115-pre.html: ok
+schema.org/eg-0116-jsonld.html: ok
+schema.org/eg-0116-pre.html: ok
+schema.org/eg-0117-jsonld.html: ok
+schema.org/eg-0117-pre.html: ok
+schema.org/eg-0118-jsonld.html: ok
+schema.org/eg-0118-pre.html: ok
+schema.org/eg-0119-jsonld.html: ok
+schema.org/eg-0119-pre.html: ok
+schema.org/eg-0120-jsonld.html: ok
+schema.org/eg-0120-pre.html: ok
+schema.org/eg-0121-jsonld.html: ok
+schema.org/eg-0121-pre.html: ok
+schema.org/eg-0122-jsonld.html: {
+  "property": {
+    "schema:purpose": [
       "No property definition found"
     ]
   }
 }
-schema.org/lrmi-1-rdfa.html: {
+schema.org/eg-0122-pre.html: ok
+schema.org/eg-0123-jsonld.html: {
   "property": {
-    "schema:isPartOf": [
-      "Subject _:g426420(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+    "schema:purpose": [
+      "No property definition found"
     ]
   }
 }
-schema.org/lrmi-2-jsonld.html: {
+schema.org/eg-0123-pre.html: ok
+schema.org/eg-0124-jsonld.html: {
   "property": {
-    "schema:isPartOf": [
-      "Subject _:b6(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)",
-      "Subject _:b4(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+    "schema:purpose": [
+      "No property definition found"
     ]
   }
 }
-schema.org/lrmi-2-microdata.html: {
+schema.org/eg-0124-pre.html: ok
+schema.org/eg-0125-jsonld.html: {
   "property": {
-    "schema:isPartOf": [
-      "Subject _:g427240(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)",
-      "Subject _:g427180(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+    "schema:purpose": [
+      "No property definition found"
     ]
   }
 }
-schema.org/lrmi-2-rdfa.html: {
+schema.org/eg-0125-pre.html: ok
+schema.org/eg-0126-jsonld.html: {
   "property": {
-    "schema:isPartOf": [
-      "Subject _:g427460(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)",
-      "Subject _:g427400(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+    "schema:purpose": [
+      "No property definition found"
     ]
   }
 }
-schema.org/lrmi-3-jsonld.html: ok
-schema.org/lrmi-3-microdata.html: ok
-schema.org/lrmi-3-rdfa.html: ok
-schema.org/mainEntity-1-jsonld.html: ok
-schema.org/mainEntity-1-microdata.html: ok
-schema.org/mainEntity-1-rdfa.html: ok
-schema.org/mainEntity-2-jsonld.html: ok
-schema.org/mainEntity-2-microdata.html: ok
-schema.org/mainEntity-2-rdfa.html: ok
-schema.org/map-1-jsonld.html: ok
-schema.org/map-1-microdata.html: ok
-schema.org/map-1-rdfa.html: ok
-schema.org/music-2-jsonld.html: ok
-schema.org/music-2-microdata.html: ok
-schema.org/music-2-rdfa.html: ok
-schema.org/music-3-jsonld.html: ok
-schema.org/music-3-microdata.html: ok
-schema.org/music-3-rdfa.html: ok
-schema.org/music-4-jsonld.html: ok
-schema.org/music-4-microdata.html: ok
-schema.org/music-4-rdfa.html: ok
-schema.org/music-5-jsonld.html: ok
-schema.org/music-5-microdata.html: ok
-schema.org/music-5-rdfa.html: ok
-schema.org/numberOfRooms-301-jsonld.html: ok
-schema.org/numberOfRooms-301-microdata.html: ok
-schema.org/numberOfRooms-301-rdfa.html: ok
-schema.org/numberOfRooms-302-jsonld.html: ok
-schema.org/numberOfRooms-302-microdata.html: ok
-schema.org/numberOfRooms-302-rdfa.html: ok
-schema.org/offer-2-jsonld.html: ok
-schema.org/offer-2-microdata.html: ok
-schema.org/offer-2-rdfa.html: ok
-schema.org/offer-3-jsonld.html: ok
-schema.org/offer-3-microdata.html: ok
-schema.org/offer-3-rdfa.html: ok
-schema.org/offer-4-jsonld.html: ok
-schema.org/offer-4-microdata.html: ok
-schema.org/offer-4-rdfa.html: ok
-schema.org/offeredBy-1-jsonld.html: {
+schema.org/eg-0126-pre.html: ok
+schema.org/eg-0127-jsonld.html: ok
+schema.org/eg-0127-pre.html: ok
+schema.org/eg-0128-jsonld.html: ok
+schema.org/eg-0128-pre.html: ok
+schema.org/eg-0129-jsonld.html: ok
+schema.org/eg-0129-pre.html: ok
+schema.org/eg-0130-jsonld.html: ok
+schema.org/eg-0130-pre.html: ok
+schema.org/eg-0131-jsonld.html: ok
+schema.org/eg-0131-pre.html: ok
+schema.org/eg-0132-jsonld.html: {
+  "property": {
+    "schema:scheduledTime": [
+      "Object \"May\" not compatible with rangeIncludes (schema:DateTime)"
+    ]
+  }
+}
+schema.org/eg-0132-pre.html: ok
+schema.org/eg-0133-jsonld.html: {
+  "property": {
+    "schema:scheduledTime": [
+      "Object \"May\" not compatible with rangeIncludes (schema:DateTime)"
+    ]
+  }
+}
+schema.org/eg-0133-pre.html: ok
+schema.org/eg-0134-jsonld.html: ok
+schema.org/eg-0134-pre.html: ok
+schema.org/eg-0135-jsonld.html: ok
+schema.org/eg-0135-pre.html: ok
+schema.org/eg-0136-jsonld.html: ok
+schema.org/eg-0136-pre.html: ok
+schema.org/eg-0137-jsonld.html: ok
+schema.org/eg-0137-pre.html: ok
+schema.org/eg-0138-jsonld.html: ok
+schema.org/eg-0138-pre.html: ok
+schema.org/eg-0139-jsonld.html: ok
+schema.org/eg-0139-pre.html: ok
+schema.org/eg-0140-jsonld.html: ok
+schema.org/eg-0140-pre.html: ok
+schema.org/eg-0141-jsonld.html: ok
+schema.org/eg-0141-pre.html: ok
+schema.org/eg-0142-jsonld.html: ok
+schema.org/eg-0142-pre.html: ok
+schema.org/eg-0143-jsonld.html: ok
+schema.org/eg-0143-pre.html: ok
+schema.org/eg-0144-jsonld.html: {
+  "property": {
+    "schema:purpose": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0144-pre.html: ok
+schema.org/eg-0145-jsonld.html: ok
+schema.org/eg-0145-pre.html: ok
+schema.org/eg-0146-jsonld.html: ok
+schema.org/eg-0146-pre.html: ok
+schema.org/eg-0147-jsonld.html: ok
+schema.org/eg-0147-pre.html: ok
+schema.org/eg-0148-jsonld.html: ok
+schema.org/eg-0148-pre.html: ok
+schema.org/eg-0149-jsonld.html: ok
+schema.org/eg-0149-pre.html: ok
+schema.org/eg-0150-jsonld.html: ok
+schema.org/eg-0150-pre.html: ok
+schema.org/eg-0151-jsonld.html: ok
+schema.org/eg-0151-pre.html: ok
+schema.org/eg-0152-jsonld.html: ok
+schema.org/eg-0152-pre.html: ok
+schema.org/eg-0153-jsonld.html: ok
+schema.org/eg-0153-pre.html: ok
+schema.org/eg-0154-jsonld.html: ok
+schema.org/eg-0154-pre.html: ok
+schema.org/eg-0155-jsonld.html: ok
+schema.org/eg-0155-pre.html: ok
+schema.org/eg-0156-jsonld.html: ok
+schema.org/eg-0156-pre.html: ok
+schema.org/eg-0157-jsonld.html: ok
+schema.org/eg-0157-pre.html: ok
+schema.org/eg-0158-jsonld.html: ok
+schema.org/eg-0158-pre.html: ok
+schema.org/eg-0159-jsonld.html: ok
+schema.org/eg-0159-pre.html: ok
+schema.org/eg-0160-jsonld.html: ok
+schema.org/eg-0160-pre.html: ok
+schema.org/eg-0161-jsonld.html: ok
+schema.org/eg-0161-pre.html: ok
+schema.org/eg-0162-jsonld.html: ok
+schema.org/eg-0162-pre.html: ok
+schema.org/eg-0163-jsonld.html: ok
+schema.org/eg-0163-pre.html: ok
+schema.org/eg-0164-jsonld.html: ok
+schema.org/eg-0164-pre.html: ok
+schema.org/eg-0165-jsonld.html: ok
+schema.org/eg-0165-pre.html: ok
+schema.org/eg-0166-jsonld.html: ok
+schema.org/eg-0166-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.bbc.co.uk/iplayer/episode/b00sj9sq> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b006q2x0> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/bbcone> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b00rs69w> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b00sj9sq> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0166-pre.html: ok
+schema.org/eg-0166-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.bbc.co.uk/programmes/b006q2x0> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/bbcone> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b00sj9sq> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b00rs69w> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/iplayer/episode/b00sj9sq> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0167-jsonld.html: ok
+schema.org/eg-0167-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.bbc.co.uk/programmes/b006qykl> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/radio4> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b03ggc19> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0167-pre.html: ok
+schema.org/eg-0167-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.bbc.co.uk/radio4> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b03ggc19> not compatible with rangeIncludes ()",
+      "Object <http://www.bbc.co.uk/programmes/b006qykl> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0168-jsonld.html: ok
+schema.org/eg-0168-microdata.html: ok
+schema.org/eg-0168-pre.html: ok
+schema.org/eg-0168-rdfa.html: ok
+schema.org/eg-0169-jsonld.html: ok
+schema.org/eg-0169-pre.html: ok
+schema.org/eg-0171-jsonld.html: ok
+schema.org/eg-0171-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0171-pre.html: ok
+schema.org/eg-0171-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0172-jsonld.html: ok
+schema.org/eg-0172-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0172-pre.html: ok
+schema.org/eg-0172-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0173-jsonld.html: ok
+schema.org/eg-0173-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0173-pre.html: ok
+schema.org/eg-0173-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0174-jsonld.html: ok
+schema.org/eg-0174-pre.html: ok
+schema.org/eg-0175-jsonld.html: ok
+schema.org/eg-0175-microdata.html: ok
+schema.org/eg-0175-pre.html: ok
+schema.org/eg-0175-rdfa.html: ok
+schema.org/eg-0176-jsonld.html: ok
+schema.org/eg-0176-microdata.html: ok
+schema.org/eg-0176-pre.html: ok
+schema.org/eg-0176-rdfa.html: ok
+schema.org/eg-0177-jsonld.html: ok
+schema.org/eg-0177-microdata.html: ok
+schema.org/eg-0177-pre.html: ok
+schema.org/eg-0177-rdfa.html: ok
+schema.org/eg-0178-jsonld.html: ok
+schema.org/eg-0178-pre.html: ok
+schema.org/eg-0179-jsonld.html: ok
+schema.org/eg-0179-pre.html: ok
+schema.org/eg-0180-jsonld.html: ok
+schema.org/eg-0180-pre.html: ok
+schema.org/eg-0181-jsonld.html: {
   "property": {
     "schema:participant": [
-      "Subject _:b0(schema:Offer,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+      "Subject _:g482600(schema:Flight,schema:Thing,schema:Intangible,schema:Trip,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
     ]
   }
 }
-schema.org/offeredBy-1-microdata.html: ok
-schema.org/offeredBy-1-rdfa.html: ok
-schema.org/openinterval-jsonld.html: ok
-schema.org/openinterval-microdata.html: ok
-schema.org/openinterval-rdfa.html: ok
-schema.org/pointvalue-1-jsonld.html: ok
-schema.org/pointvalue-1-microdata.html: ok
-schema.org/pointvalue-1-rdfa.html: ok
-schema.org/pointvalue-3-jsonld.html: ok
-schema.org/pointvalue-3-microdata.html: ok
-schema.org/pointvalue-3-rdfa.html: ok
-schema.org/property-id-1-jsonld.html: ok
-schema.org/property-id-1-microdata.html: ok
-schema.org/property-id-1-rdfa.html: ok
-schema.org/property-id-2-jsonld.html: ok
-schema.org/property-id-2-microdata.html: ok
-schema.org/property-id-2-rdfa.html: ok
-schema.org/qualitative-1-jsonld.html: ok
-schema.org/qualitative-1-microdata.html: ok
-schema.org/qualitative-1-rdfa.html: ok
-schema.org/qualitative-2-jsonld.html: ok
-schema.org/qualitative-2-microdata.html: ok
-schema.org/qualitative-2-rdfa.html: ok
-schema.org/range-1-jsonld.html: ok
-schema.org/range-1-microdata.html: ok
-schema.org/range-1-rdfa.html: ok
-schema.org/range-and-enumeration-jsonld.html: ok
-schema.org/range-and-enumeration-microdata.html: ok
-schema.org/range-and-enumeration-rdfa.html: ok
-schema.org/ratios-jsonld.html: ok
-schema.org/ratios-microdata.html: ok
-schema.org/ratios-rdfa.html: ok
-schema.org/screening-1-jsonld.html: ok
-schema.org/screening-1-microdata.html: ok
-schema.org/screening-1-rdfa.html: ok
-schema.org/screening-2-jsonld.html: ok
-schema.org/screening-2-microdata.html: ok
-schema.org/screening-2-rdfa.html: ok
-schema.org/service-1-jsonld.html: ok
-schema.org/service-1-microdata.html: ok
-schema.org/service-1-rdfa.html: ok
-schema.org/skills-265-jsonld.html: {
+schema.org/eg-0181-pre.html: ok
+schema.org/eg-0182-jsonld.html: ok
+schema.org/eg-0182-pre.html: ok
+schema.org/eg-0183-jsonld.html: ok
+schema.org/eg-0183-pre.html: ok
+schema.org/eg-0184-jsonld.html: ok
+schema.org/eg-0184-pre.html: ok
+schema.org/eg-0185-jsonld.html: ok
+schema.org/eg-0185-pre.html: ok
+schema.org/eg-0186-jsonld.html: ok
+schema.org/eg-0186-microdata.html: ok
+schema.org/eg-0186-pre.html: ok
+schema.org/eg-0186-rdfa.html: ok
+schema.org/eg-0187-jsonld.html: ok
+schema.org/eg-0187-microdata.html: ok
+schema.org/eg-0187-pre.html: ok
+schema.org/eg-0187-rdfa.html: ok
+schema.org/eg-0188-jsonld.html: ok
+schema.org/eg-0188-pre.html: ok
+schema.org/eg-0189-jsonld.html: ok
+schema.org/eg-0189-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///examples/ticket/12341234> not compatible with rangeIncludes ()"
+    ],
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/Symphony_No._7_(Shostakovich)> not compatible with rangeIncludes ()",
+      "Object <http://www.jaapvanzweden.com/> not compatible with rangeIncludes ()",
+      "Object <http://cso.org/> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Symphony_Center> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Peter_Grimes> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0189-pre.html: ok
+schema.org/eg-0189-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/Symphony_Center> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Symphony_No._7_(Shostakovich)> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Peter_Grimes> not compatible with rangeIncludes ()",
+      "Object <http://www.jaapvanzweden.com/> not compatible with rangeIncludes ()",
+      "Object <http://cso.org/> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra> not compatible with rangeIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <file:///examples/ticket/12341234> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0190-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html\nThe same key is defined more than once: workPerformed.sameAs",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html\nThe same key is defined more than once: workPerformed.sameAs: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0190-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/William_Shakespeare> not compatible with rangeIncludes ()",
+      "Object <http://www.shakespearesglobe.com/> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Julius_Caesar_(play)> not compatible with rangeIncludes ()",
+      "Object <http://worldcat.org/entity/work/id/1807288036> not compatible with rangeIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <file:///examples/ticket/0012301230123> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0190-pre.html: ok
+schema.org/eg-0190-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/Julius_Caesar_(play)> not compatible with rangeIncludes ()",
+      "Object <http://worldcat.org/entity/work/id/1807288036> not compatible with rangeIncludes ()",
+      "Object <http://www.shakespearesglobe.com/> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/William_Shakespeare> not compatible with rangeIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <file:///examples/ticket/0012301230123> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0191-jsonld.html: ok
+schema.org/eg-0191-microdata.html: ok
+schema.org/eg-0191-pre.html: ok
+schema.org/eg-0191-rdfa.html: ok
+schema.org/eg-0192-jsonld.html: ok
+schema.org/eg-0192-microdata.html: ok
+schema.org/eg-0192-pre.html: ok
+schema.org/eg-0192-rdfa.html: ok
+schema.org/eg-0193-jsonld.html: ok
+schema.org/eg-0193-microdata.html: ok
+schema.org/eg-0193-pre.html: ok
+schema.org/eg-0193-rdfa.html: ok
+schema.org/eg-0194-jsonld.html: ok
+schema.org/eg-0194-microdata.html: ok
+schema.org/eg-0194-pre.html: ok
+schema.org/eg-0194-rdfa.html: ok
+schema.org/eg-0195-jsonld.html: ok
+schema.org/eg-0195-microdata.html: ok
+schema.org/eg-0195-pre.html: ok
+schema.org/eg-0195-rdfa.html: ok
+schema.org/eg-0196-jsonld.html: ok
+schema.org/eg-0196-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://example.com/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0196-pre.html: ok
+schema.org/eg-0196-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://example.com/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0197-jsonld.html: ok
+schema.org/eg-0197-microdata.html: ok
+schema.org/eg-0197-pre.html: ok
+schema.org/eg-0197-rdfa.html: ok
+schema.org/eg-0198-jsonld.html: ok
+schema.org/eg-0198-microdata.html: ok
+schema.org/eg-0198-pre.html: ok
+schema.org/eg-0198-rdfa.html: ok
+schema.org/eg-0199-jsonld.html: ok
+schema.org/eg-0199-microdata.html: ok
+schema.org/eg-0199-pre.html: ok
+schema.org/eg-0199-rdfa.html: ok
+schema.org/eg-0200-jsonld.html: ok
+schema.org/eg-0200-microdata.html: ok
+schema.org/eg-0200-pre.html: ok
+schema.org/eg-0200-rdfa.html: ok
+schema.org/eg-0201-jsonld.html: ok
+schema.org/eg-0201-microdata.html: ok
+schema.org/eg-0201-pre.html: ok
+schema.org/eg-0201-rdfa.html: ok
+schema.org/eg-0202-jsonld.html: {
+  "property": {
+    "schema:doorTime": [
+      "Object \"18:30\" not compatible with rangeIncludes (schema:DateTime,schema:Time)"
+    ]
+  }
+}
+schema.org/eg-0202-microdata.html: ok
+schema.org/eg-0202-pre.html: ok
+schema.org/eg-0202-rdfa.html: ok
+schema.org/eg-0203-jsonld.html: ok
+schema.org/eg-0203-microdata.html: ok
+schema.org/eg-0203-pre.html: ok
+schema.org/eg-0203-rdfa.html: ok
+schema.org/eg-0204-jsonld.html: ok
+schema.org/eg-0204-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/Delia_Derbyshire> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/University_of_Cambridge> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0204-pre.html: ok
+schema.org/eg-0204-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/University_of_Cambridge> not compatible with rangeIncludes ()",
+      "Object <http://en.wikipedia.org/wiki/Delia_Derbyshire> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0205-jsonld.html: ok
+schema.org/eg-0205-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/Ghostbusters> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0205-pre.html: ok
+schema.org/eg-0205-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://en.wikipedia.org/wiki/Ghostbusters> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0206-jsonld.html: ok
+schema.org/eg-0206-microdata.html: ok
+schema.org/eg-0206-pre.html: ok
+schema.org/eg-0206-rdfa.html: ok
+schema.org/eg-0207-jsonld.html: ok
+schema.org/eg-0207-microdata.html: ok
+schema.org/eg-0207-pre.html: ok
+schema.org/eg-0207-rdfa.html: ok
+schema.org/eg-0208-jsonld.html: ok
+schema.org/eg-0208-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://multivarki.ru?filters%5Bprice%5D%5BLTE%5D=39600> not compatible with rangeIncludes ()",
+      "Object <http://multivarki.ru/brand_502/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0208-pre.html: ok
+schema.org/eg-0208-rdfa.html: {
+  "property": {
+    "schema:priceCurrency": [
+      "Subject _:g496940(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:Reservation,schema:Ticket,schema:TradeAction)"
+    ],
+    "schema:itemCondition": [
+      "Subject _:g496940(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Demand,schema:Offer,schema:Product)"
+    ],
+    "schema:price": [
+      "Subject _:g496940(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:TradeAction)"
+    ],
+    "schemas:url": [
+      "Object <http://multivarki.ru?filters%5Bprice%5D%5BLTE%5D=39600> not compatible with rangeIncludes ()",
+      "Object <http://multivarki.ru/brand_502/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0209-jsonld.html: ok
+schema.org/eg-0209-microdata.html: ok
+schema.org/eg-0209-pre.html: ok
+schema.org/eg-0209-rdfa.html: ok
+schema.org/eg-0210-jsonld.html: ok
+schema.org/eg-0210-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://en.wikipedia.org/wiki/Billboard_200> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0210-pre.html: ok
+schema.org/eg-0210-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://en.wikipedia.org/wiki/Billboard_200> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0211-jsonld.html: ok
+schema.org/eg-0211-microdata.html: ok
+schema.org/eg-0211-pre.html: ok
+schema.org/eg-0211-rdfa.html: ok
+schema.org/eg-0212-jsonld.html: ok
+schema.org/eg-0212-microdata.html: ok
+schema.org/eg-0212-pre.html: ok
+schema.org/eg-0212-rdfa.html: ok
+schema.org/eg-0213-jsonld.html: {
   "property": {
     "schema:isPartOf": [
-      "Subject _:b1(schema:Thing,schema:Intangible,schema:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g501340(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
     ]
   }
 }
-schema.org/skills-265-microdata.html: ok
-schema.org/skills-265-rdfa.html: ok
-schema.org/social-media-1-jsonld.html: ok
-schema.org/social-media-1-microdata.html: ok
-schema.org/social-media-1-rdfa.html: ok
-schema.org/social-media-2-jsonld.html: ok
-schema.org/social-media-2-microdata.html: ok
-schema.org/social-media-2-rdfa.html: ok
-schema.org/social-media-3-jsonld.html: ok
-schema.org/social-media-3-microdata.html: ok
-schema.org/social-media-3-rdfa.html: ok
-schema.org/sponsor-1-jsonld.html: ok
-schema.org/sponsor-1-microdata.html: ok
-schema.org/sponsor-1-rdfa.html: ok
-schema.org/sponsor-2-jsonld.html: ok
-schema.org/sponsor-2-microdata.html: ok
-schema.org/sponsor-2-rdfa.html: ok
-schema.org/sponsor-3-jsonld.html: ok
-schema.org/sponsor-3-microdata.html: ok
-schema.org/sponsor-3-rdfa.html: ok
-schema.org/sponsor-4-jsonld.html: ok
-schema.org/sponsor-4-microdata.html: ok
-schema.org/sponsor-4-rdfa.html: ok
-schema.org/sports-1-jsonld.html: ok
-schema.org/starRating-296-jsonld.html: ok
-schema.org/starRating-296-microdata.html: ok
-schema.org/starRating-296-rdfa.html: ok
-schema.org/starRating-297-jsonld.html: ok
-schema.org/starRating-297-microdata.html: ok
-schema.org/starRating-297-rdfa.html: ok
-schema.org/tourism-1-jsonld.html: ok
-schema.org/tourism-1-microdata.html: ok
-schema.org/tourism-1-rdfa.html: ok
-schema.org/tourism-2-jsonld.html: ok
-schema.org/tourism-2-microdata.html: ok
-schema.org/tourism-2-rdfa.html: ok
-schema.org/tourism-3-jsonld.html: ok
-schema.org/tourism-3-microdata.html: ok
-schema.org/tourism-3-rdfa.html: ok
-schema.org/tourism-4-jsonld.html: ok
-schema.org/tourism-4-microdata.html: ok
-schema.org/tourism-4-rdfa.html: ok
-schema.org/tourism-5-jsonld.html: ok
-schema.org/tourism-5-microdata.html: ok
-schema.org/tourism-5-rdfa.html: ok
-schema.org/tourism-6-jsonld.html: ok
-schema.org/tourism-6-microdata.html: ok
-schema.org/tourism-6-rdfa.html: ok
-schema.org/tourism-7-jsonld.html: {
+schema.org/eg-0213-microdata.html: ok
+schema.org/eg-0213-pre.html: ok
+schema.org/eg-0213-rdfa.html: ok
+schema.org/eg-0214-jsonld.html: ok
+schema.org/eg-0214-microdata.html: ok
+schema.org/eg-0214-pre.html: ok
+schema.org/eg-0214-rdfa.html: ok
+schema.org/eg-0215-jsonld.html: {
   "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/tourism-7-jsonld.html": [
-      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/tourism-7-jsonld.html\nThe same key is defined more than once: name\nThe same key is defined more than once: description",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/tourism-7-jsonld.html\nThe same key is defined more than once: name\nThe same key is defined more than once: description: Called from /Users/gregg/.rvm/gems/ruby-2.7.1/bundler/gems/json-ld-f62940d9d1d1/lib/json/ld/reader.rb:99"
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0215-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0215-jsonld.html\nunexpected character (after description) at line 7, column 568 [parse.c:724]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0215-jsonld.html\nunexpected character (after description) at line 7, column 568 [parse.c:724]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
     ]
   }
 }
-schema.org/tourism-7-microdata.html: ok
-schema.org/tourism-7-rdfa.html: ok
-schema.org/tourism-8-jsonld.html: ok
-schema.org/tourism-8-microdata.html: ok
-schema.org/tourism-8-rdfa.html: ok
-schema.org/tourism-9-jsonld.html: ok
-schema.org/tourism-9-microdata.html: ok
-schema.org/tourism-9-rdfa.html: ok
-schema.org/trip-1-jsonld.html: ok
-schema.org/trip-1-microdata.html: ok
-schema.org/trip-1-rdfa.html: ok
-schema.org/tv-listing1-jsonld.html: ok
-schema.org/tv-listing1-microdata.html: ok
-schema.org/tv-listing1-rdfa.html: ok
-schema.org/tv-listing2-jsonld.html: ok
-schema.org/tv-listing2-microdata.html: ok
-schema.org/tv-listing2-rdfa.html: ok
-schema.org/tv-listing3-jsonld.html: ok
-schema.org/tv-listing3-microdata.html: ok
-schema.org/tv-listing3-rdfa.html: ok
-schema.org/tv-listing4-jsonld.html: ok
-schema.org/tv-listing4-microdata.html: ok
-schema.org/tv-listing4-rdfa.html: ok
-schema.org/valueref-jsonld.html: ok
-schema.org/valueref-microdata.html: ok
-schema.org/valueref-rdfa.html: ok
-schema.org/website-1-jsonld.html: ok
-schema.org/website-1-microdata.html: ok
-schema.org/website-1-rdfa.html: ok
+schema.org/eg-0215-microdata.html: {
+  "property": {
+    "schemas:contentUrl": [
+      "Object <https://archive.org/download/alices_adventures_1005_librivox/AlicesAdventuresInWonderlandV5_librivox.m4b> not compatible with rangeIncludes ()"
+    ],
+    "schemas:title": [
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+    ],
+    "schemas:actor": [
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0215-pre.html: ok
+schema.org/eg-0215-rdfa.html: {
+  "property": {
+    "schemas:contentUrl": [
+      "Object <https://archive.org/download/alices_adventures_1005_librivox/AlicesAdventuresInWonderlandV5_librivox.m4b> not compatible with rangeIncludes ()"
+    ],
+    "schemas:title": [
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+    ],
+    "schemas:actor": [
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0216-jsonld.html: ok
+schema.org/eg-0216-microdata.html: ok
+schema.org/eg-0216-pre.html: ok
+schema.org/eg-0216-rdfa.html: ok
+schema.org/eg-0217-jsonld.html: ok
+schema.org/eg-0217-microdata.html: Error: undefined method `pname' for #<RDF::Literal:0x7af58("DVD")>
+schema.org/eg-0217-pre.html: ok
+schema.org/eg-0217-rdfa.html: ok
+schema.org/eg-0218-jsonld.html: ok
+schema.org/eg-0218-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://ft.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0218-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0218-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0218-pre.html>: 6:50: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, div, a.\n  <div>URL: <a href=\"http://ft.com\">http://ft.com</div>\n                                                 ^\n8:1: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, a.\n</div>\n^\n9:1: ERROR: Premature end of file  Currently open tags: html, body, a.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0218-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://ft.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0219-jsonld.html: ok
+schema.org/eg-0219-microdata.html: ok
+schema.org/eg-0219-pre.html: ok
+schema.org/eg-0219-rdfa.html: ok
+schema.org/eg-0220-jsonld.html: ok
+schema.org/eg-0220-microdata.html: ok
+schema.org/eg-0220-pre.html: ok
+schema.org/eg-0220-rdfa.html: ok
+schema.org/eg-0221-jsonld.html: ok
+schema.org/eg-0221-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.idwpublishing.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0221-pre.html: ok
+schema.org/eg-0221-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.idwpublishing.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0320-jsonld.html: ok
+schema.org/eg-0320-microdata.html: ok
+schema.org/eg-0320-pre.html: ok
+schema.org/eg-0320-rdfa.html: ok
+schema.org/eg-0321-jsonld.html: ok
+schema.org/eg-0321-microdata.html: ok
+schema.org/eg-0321-pre.html: ok
+schema.org/eg-0321-rdfa.html: ok
+schema.org/eg-0322-jsonld.html: ok
+schema.org/eg-0322-microdata.html: ok
+schema.org/eg-0322-pre.html: ok
+schema.org/eg-0322-rdfa.html: ok
+schema.org/eg-0323-jsonld.html: ok
+schema.org/eg-0323-microdata.html: ok
+schema.org/eg-0323-pre.html: ok
+schema.org/eg-0323-rdfa.html: ok
+schema.org/eg-0324-jsonld.html: ok
+schema.org/eg-0324-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://twitter.com/politifact> not compatible with rangeIncludes ()",
+      "Object <https://en.wikipedia.org/wiki/Rick_Perry> not compatible with rangeIncludes ()",
+      "Object <https://rickperry.org/> not compatible with rangeIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <http://www.politifact.com/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0324-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0324-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0324-pre.html>: 40:1: ERROR: That tag isn't allowed here  Currently open tags: html, body.\n</p>\n^"
+    ]
+  }
+}
+schema.org/eg-0324-rdfa.html: ok
+schema.org/eg-0325-jsonld.html: ok
+schema.org/eg-0325-microdata.html: ok
+schema.org/eg-0325-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0325-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0325-pre.html>: 17:1: ERROR: Premature end of file  Currently open tags: html, body, div.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0325-rdfa.html: ok
+schema.org/eg-0329-jsonld.html: ok
+schema.org/eg-0329-microdata.html: ok
+schema.org/eg-0329-pre.html: ok
+schema.org/eg-0329-rdfa.html: ok
+schema.org/eg-0345-jsonld.html: ok
+schema.org/eg-0345-microdata.html: ok
+schema.org/eg-0345-pre.html: ok
+schema.org/eg-0345-rdfa.html: ok
+schema.org/eg-0349-jsonld.html: ok
+schema.org/eg-0349-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.vam.ac.uk/whatson/event/5150/shoes-pleasure-and-pain-696789408/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0349-pre.html: ok
+schema.org/eg-0349-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.vam.ac.uk/whatson/event/5150/shoes-pleasure-and-pain-696789408/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0350-jsonld.html: ok
+schema.org/eg-0350-microdata.html: {
+  "property": {
+    "schemas:feesAndCommissionsSpecification": [
+      "Object <https://www.wellsfargo.com/credit-cards/secured/terms/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0350-pre.html: ok
+schema.org/eg-0350-rdfa.html: {
+  "property": {
+    "schemas:feesAndCommissionsSpecification": [
+      "Object <https://www.wellsfargo.com/credit-cards/secured/terms/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0351-jsonld.html: {
+  "property": {
+    "schema:duration": [
+      "Subject _:g512420(schema:LoanOrCredit,schema:Thing,schema:Intangible,schema:Service,schema:FinancialProduct,rdfs:Resource) not compatible with domainIncludes (schema:Audiobook,schema:Event,schema:MediaObject,schema:Movie,schema:MusicRecording,schema:MusicRelease,schema:QuantitativeValueDistribution,schema:Schedule)",
+      "Object _:g512440(schema:QuantitativeValue,schema:Thing,schema:Intangible,schema:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schema:Duration)"
+    ]
+  }
+}
+schema.org/eg-0351-microdata.html: {
+  "property": {
+    "schemas:duration": [
+      "Subject _:g512620(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
+      "Object _:g512760(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0351-pre.html: ok
+schema.org/eg-0351-rdfa.html: {
+  "property": {
+    "schemas:duration": [
+      "Subject _:g513000(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
+      "Object _:g513020(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0352-jsonld.html: ok
+schema.org/eg-0352-microdata.html: {
+  "property": {
+    "schemas:feesAndCommissionsSpecification": [
+      "Object <http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf> not compatible with rangeIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <http://rbs.co.uk> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0352-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0352-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0352-pre.html>: 17:56: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, ul, li.\n        <li><b>Black Account</b>Select Platinum Account</b><br/>\n                                                       ^\n29:1: ERROR: Premature end of file  Currently open tags: html, body, div, div.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0352-rdfa.html: {
+  "property": {
+    "schemas:feesAndCommissionsSpecification": [
+      "Object <http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf> not compatible with rangeIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <http://rbs.co.uk> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0353-jsonld.html: ok
+schema.org/eg-0353-microdata.html: ok
+schema.org/eg-0353-pre.html: ok
+schema.org/eg-0353-rdfa.html: ok
+schema.org/eg-0354-jsonld.html: ok
+schema.org/eg-0354-microdata.html: {
+  "property": {
+    "schemas:feesAndCommissionsSpecification": [
+      "Object <https://www.wellsfargo.com/debit-card/#overview> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0354-pre.html: ok
+schema.org/eg-0354-rdfa.html: ok
+schema.org/eg-0355-jsonld.html: ok
+schema.org/eg-0355-microdata.html: ok
+schema.org/eg-0355-pre.html: ok
+schema.org/eg-0355-rdfa.html: ok
+schema.org/eg-0356-jsonld.html: {
+  "property": {
+    "schema:amount": [
+      "Subject _:g518840(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:InvestmentOrDeposit,schema:LoanOrCredit,schema:MonetaryGrant,schema:MoneyTransfer)"
+    ]
+  }
+}
+schema.org/eg-0356-microdata.html: {
+  "property": {
+    "schemas:amount": [
+      "Subject _:g518980(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0356-pre.html: ok
+schema.org/eg-0356-rdfa.html: {
+  "property": {
+    "schemas:amount": [
+      "Subject _:g519240(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0357-jsonld.html: ok
+schema.org/eg-0357-microdata.html: ok
+schema.org/eg-0357-pre.html: ok
+schema.org/eg-0357-rdfa.html: ok
+schema.org/eg-0358-jsonld.html: ok
+schema.org/eg-0358-microdata.html: ok
+schema.org/eg-0358-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0358-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0358-pre.html>: 10:3: ERROR: That tag isn't allowed here  Currently open tags: html, body.\n  </div>\n  ^\n15:1: ERROR: That tag isn't allowed here  Currently open tags: html, body.\n</div>\n^"
+    ]
+  }
+}
+schema.org/eg-0358-rdfa.html: ok
+schema.org/eg-0359-jsonld.html: ok
+schema.org/eg-0359-microdata.html: ok
+schema.org/eg-0359-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0359-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0359-pre.html>: 7:1: ERROR: That tag isn't allowed here  Currently open tags: html, body.\n</div>\n^"
+    ]
+  }
+}
+schema.org/eg-0359-rdfa.html: ok
+schema.org/eg-0360-jsonld.html: ok
+schema.org/eg-0360-microdata.html: ok
+schema.org/eg-0360-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0360-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0360-pre.html>: 7:1: ERROR: That tag isn't allowed here  Currently open tags: html, body.\n</div>\n^"
+    ]
+  }
+}
+schema.org/eg-0360-rdfa.html: ok
+schema.org/eg-0361-jsonld.html: ok
+schema.org/eg-0361-microdata.html: ok
+schema.org/eg-0361-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0361-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0361-pre.html>: 7:1: ERROR: That tag isn't allowed here  Currently open tags: html, body.\n</div>\n^"
+    ]
+  }
+}
+schema.org/eg-0361-rdfa.html: ok
+schema.org/eg-0362-jsonld.html: ok
+schema.org/eg-0362-microdata.html: ok
+schema.org/eg-0362-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0362-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0362-pre.html>: 6:1: ERROR: That tag isn't allowed here  Currently open tags: html, body.\n</div>\n^"
+    ]
+  }
+}
+schema.org/eg-0362-rdfa.html: ok
+schema.org/eg-0363-jsonld.html: ok
+schema.org/eg-0363-microdata.html: ok
+schema.org/eg-0363-pre.html: ok
+schema.org/eg-0363-rdfa.html: ok
+schema.org/eg-0364-jsonld.html: ok
+schema.org/eg-0364-microdata.html: ok
+schema.org/eg-0364-pre.html: ok
+schema.org/eg-0364-rdfa.html: ok
+schema.org/eg-0365-jsonld.html: ok
+schema.org/eg-0365-microdata.html: ok
+schema.org/eg-0365-pre.html: ok
+schema.org/eg-0365-rdfa.html: ok
+schema.org/eg-0366-jsonld.html: ok
+schema.org/eg-0366-microdata.html: ok
+schema.org/eg-0366-pre.html: ok
+schema.org/eg-0366-rdfa.html: ok
+schema.org/eg-0367-jsonld.html: ok
+schema.org/eg-0367-microdata.html: ok
+schema.org/eg-0367-pre.html: ok
+schema.org/eg-0367-rdfa.html: ok
+schema.org/eg-0368-jsonld.html: ok
+schema.org/eg-0368-microdata.html: ok
+schema.org/eg-0368-pre.html: ok
+schema.org/eg-0368-rdfa.html: ok
+schema.org/eg-0369-jsonld.html: ok
+schema.org/eg-0369-microdata.html: ok
+schema.org/eg-0369-pre.html: ok
+schema.org/eg-0369-rdfa.html: ok
+schema.org/eg-0370-jsonld.html: ok
+schema.org/eg-0370-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://acmebank.com/invoice.pdf> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0370-pre.html: ok
+schema.org/eg-0370-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://acmebank.com/invoice.pdf> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0375-jsonld.html: ok
+schema.org/eg-0375-microdata.html: ok
+schema.org/eg-0375-pre.html: ok
+schema.org/eg-0375-rdfa.html: ok
+schema.org/eg-0376-jsonld.html: {
+  "property": {
+    "schema:participant": [
+      "Subject _:g526620(schema:Order,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    ]
+  }
+}
+schema.org/eg-0376-microdata.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0376-microdata.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0376-microdata.html>: 16:45: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, div, div, .\n      <time=\"expectedArrivalFrom\">2015-03-10</time>\n                                            ^\n17:5: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, div, div, .\n    </div>\n    ^"
+    ]
+  },
+  "property": {
+    "schemas:participant": [
+      "Subject _:g527400(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0376-pre.html: ok
+schema.org/eg-0376-rdfa.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g528080(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0377-jsonld.html: ok
+schema.org/eg-0377-microdata.html: ok
+schema.org/eg-0377-pre.html: ok
+schema.org/eg-0377-rdfa.html: ok
+schema.org/eg-0378-jsonld.html: ok
+schema.org/eg-0378-microdata.html: ok
+schema.org/eg-0378-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0378-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0378-pre.html>: 38:1: ERROR: Premature end of file  Currently open tags: html, body, div.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0378-rdfa.html: ok
+schema.org/eg-0379-jsonld.html: ok
+schema.org/eg-0379-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://purl.org/ASN/scheme/ASNEducationLevel/2> not compatible with rangeIncludes ()",
+      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()"
+    ],
+    "schemas:inDefinedtermSet": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0379-pre.html: ok
+schema.org/eg-0379-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()",
+      "Object <http://purl.org/ASN/scheme/ASNEducationLevel/2> not compatible with rangeIncludes ()"
+    ],
+    "schemas:isPartOf": [
+      "Subject _:g530620(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0380-jsonld.html: {
+  "property": {
+    "schema:isPartOf": [
+      "Subject _:g530800(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)",
+      "Subject _:g530840(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0380-microdata.html: {
+  "property": {
+    "schemas:targetUrl": [
+      "Object <http://example.org/ENC/subjects/3102> not compatible with rangeIncludes ()",
+      "Object <http://example.org/CFE/subjects/3362> not compatible with rangeIncludes ()"
+    ],
+    "schemas:isPartOf": [
+      "Subject _:g531540(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
+      "Subject _:g531600(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()",
+      "Object <https://scqf.org.uk/> not compatible with rangeIncludes ()",
+      "Object <http://example.org/movie.mp4> not compatible with rangeIncludes ()",
+      "Object <https://www.gov.uk/government/collections/national-curriculum> not compatible with rangeIncludes ()"
+    ],
+    "schemas:thumbnailUrl": [
+      "Object <http://example.org/thubnail.mp4> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0380-pre.html: ok
+schema.org/eg-0380-rdfa.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g532060(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
+      "Subject _:g532120(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+    ],
+    "schemas:url": [
+      "Object <https://scqf.org.uk/> not compatible with rangeIncludes ()",
+      "Object <https://www.gov.uk/government/collections/national-curriculum> not compatible with rangeIncludes ()",
+      "Object <http://example.org/movie.mp4> not compatible with rangeIncludes ()",
+      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()"
+    ],
+    "schemas:thumbnailUrl": [
+      "Object <http://example.org/thubnail.mp4> not compatible with rangeIncludes ()"
+    ],
+    "schemas:targetUrl": [
+      "Object <http://example.org/CFE/subjects/3362> not compatible with rangeIncludes ()",
+      "Object <http://example.org/ENC/subjects/3102> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0381-jsonld.html: ok
+schema.org/eg-0381-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <https://en.wikipedia.org/wiki/Derivative_work> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0381-pre.html: ok
+schema.org/eg-0381-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <https://en.wikipedia.org/wiki/Derivative_work> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0382-jsonld.html: ok
+schema.org/eg-0382-microdata.html: ok
+schema.org/eg-0382-pre.html: ok
+schema.org/eg-0382-rdfa.html: ok
+schema.org/eg-0383-jsonld.html: ok
+schema.org/eg-0383-microdata.html: ok
+schema.org/eg-0383-pre.html: ok
+schema.org/eg-0383-rdfa.html: ok
+schema.org/eg-0384-jsonld.html: ok
+schema.org/eg-0384-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///map1234/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0384-pre.html: ok
+schema.org/eg-0384-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///map1234/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0385-jsonld.html: {
+  "property": {
+    "schema:availabilityStarts": [
+      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    ],
+    "schema:availabilityEnds": [
+      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    ]
+  }
+}
+schema.org/eg-0385-microdata.html: ok
+schema.org/eg-0385-pre.html: ok
+schema.org/eg-0385-rdfa.html: ok
+schema.org/eg-0386-jsonld.html: {
+  "property": {
+    "schema:availabilityStarts": [
+      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    ],
+    "schema:availabilityEnds": [
+      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    ]
+  }
+}
+schema.org/eg-0386-microdata.html: ok
+schema.org/eg-0386-pre.html: ok
+schema.org/eg-0386-rdfa.html: ok
+schema.org/eg-0387-jsonld.html: ok
+schema.org/eg-0387-microdata.html: ok
+schema.org/eg-0387-pre.html: ok
+schema.org/eg-0387-rdfa.html: ok
+schema.org/eg-0388-jsonld.html: ok
+schema.org/eg-0388-microdata.html: ok
+schema.org/eg-0388-pre.html: ok
+schema.org/eg-0388-rdfa.html: ok
+schema.org/eg-0389-jsonld.html: ok
+schema.org/eg-0389-microdata.html: ok
+schema.org/eg-0389-pre.html: ok
+schema.org/eg-0389-rdfa.html: ok
+schema.org/eg-0390-jsonld.html: ok
+schema.org/eg-0390-microdata.html: ok
+schema.org/eg-0390-pre.html: ok
+schema.org/eg-0390-rdfa.html: ok
+schema.org/eg-0391-jsonld.html: ok
+schema.org/eg-0391-microdata.html: {
+  "property": {
+    "schemas:additionalType": [
+      "Object <https://schema.org/Product> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0391-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0391-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0391-pre.html>: 28:6: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, table, tbody.\n     <table>\n     ^\n29:2: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, table.\n </div>\n ^\n30:1: ERROR: Premature end of file  Currently open tags: html, body, div, table.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0391-rdfa.html: ok
+schema.org/eg-0394-jsonld.html: ok
+schema.org/eg-0394-microdata.html: ok
+schema.org/eg-0394-pre.html: ok
+schema.org/eg-0394-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://example.com/explosive-tennis-balls> not compatible with rangeIncludes ()",
+      "Object <http://example.com> not compatible with rangeIncludes ()"
+    ],
+    "schemas:sameAs": [
+      "Object <https://plus.google.com/u/0/+AcmeInc/> not compatible with rangeIncludes ()",
+      "Object <https://www.facebook.com/AcmeInc> not compatible with rangeIncludes ()",
+      "Object <https://twitter.com/AcmeInc> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0395-jsonld.html: {
+  "property": {
+    "schema:participant": [
+      "Subject _:g537600(schema:Offer,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    ]
+  }
+}
+schema.org/eg-0395-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/eg-0395-microdata.html#schemarecord> not compatible with rangeIncludes ()"
+    ],
+    "schemas:additionalType": [
+      "Object <https://schema.org/Product> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0395-pre.html: ok
+schema.org/eg-0395-rdfa.html: ok
+schema.org/eg-0396-jsonld.html: ok
+schema.org/eg-0396-microdata.html: ok
+schema.org/eg-0396-pre.html: ok
+schema.org/eg-0396-rdfa.html: ok
+schema.org/eg-0397-jsonld.html: ok
+schema.org/eg-0397-microdata.html: ok
+schema.org/eg-0397-pre.html: ok
+schema.org/eg-0397-rdfa.html: ok
+schema.org/eg-0398-jsonld.html: ok
+schema.org/eg-0398-microdata.html: ok
+schema.org/eg-0398-pre.html: ok
+schema.org/eg-0398-rdfa.html: ok
+schema.org/eg-0399-jsonld.html: ok
+schema.org/eg-0399-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <https://doi.org/10.1080/01639374.2012.682254> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0399-pre.html: ok
+schema.org/eg-0399-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <https://doi.org/10.1080/01639374.2012.682254> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0400-jsonld.html: ok
+schema.org/eg-0400-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://viaf.org/viaf/95218067> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0400-pre.html: ok
+schema.org/eg-0400-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://viaf.org/viaf/95218067> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0401-jsonld.html: ok
+schema.org/eg-0401-microdata.html: ok
+schema.org/eg-0401-pre.html: ok
+schema.org/eg-0401-rdfa.html: ok
+schema.org/eg-0402-jsonld.html: ok
+schema.org/eg-0402-microdata.html: {
+  "property": {
+    "schemas:contentUrl": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0402-pre.html: ok
+schema.org/eg-0402-rdfa.html: {
+  "property": {
+    "schemas:contentUrl": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0405-jsonld.html: ok
+schema.org/eg-0405-microdata.html: ok
+schema.org/eg-0405-pre.html: ok
+schema.org/eg-0405-rdfa.html: ok
+schema.org/eg-0406-jsonld.html: ok
+schema.org/eg-0406-microdata.html: ok
+schema.org/eg-0406-pre.html: ok
+schema.org/eg-0406-rdfa.html: ok
+schema.org/eg-0407-jsonld.html: ok
+schema.org/eg-0407-microdata.html: ok
+schema.org/eg-0407-pre.html: ok
+schema.org/eg-0407-rdfa.html: ok
+schema.org/eg-0408-jsonld.html: ok
+schema.org/eg-0408-microdata.html: ok
+schema.org/eg-0408-pre.html: ok
+schema.org/eg-0408-rdfa.html: ok
+schema.org/eg-0409-jsonld.html: ok
+schema.org/eg-0409-microdata.html: ok
+schema.org/eg-0409-pre.html: ok
+schema.org/eg-0409-rdfa.html: ok
+schema.org/eg-0410-jsonld.html: ok
+schema.org/eg-0410-microdata.html: ok
+schema.org/eg-0410-pre.html: ok
+schema.org/eg-0410-rdfa.html: ok
+schema.org/eg-0411-jsonld.html: ok
+schema.org/eg-0411-microdata.html: ok
+schema.org/eg-0411-pre.html: ok
+schema.org/eg-0411-rdfa.html: ok
+schema.org/eg-0412-jsonld.html: ok
+schema.org/eg-0412-microdata.html: ok
+schema.org/eg-0412-pre.html: ok
+schema.org/eg-0412-rdfa.html: ok
+schema.org/eg-0413-jsonld.html: ok
+schema.org/eg-0413-microdata.html: ok
+schema.org/eg-0413-pre.html: ok
+schema.org/eg-0413-rdfa.html: ok
+schema.org/eg-0414-jsonld.html: ok
+schema.org/eg-0414-microdata.html: {
+  "property": {
+    "schemas:propertyID": [
+      "Object <http://purl.org/vvo/ns#luggageCapacitySeatsFolded> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0414-pre.html: ok
+schema.org/eg-0414-rdfa.html: ok
+schema.org/eg-0415-jsonld.html: ok
+schema.org/eg-0415-microdata.html: ok
+schema.org/eg-0415-pre.html: ok
+schema.org/eg-0415-rdfa.html: ok
+schema.org/eg-0416-jsonld.html: ok
+schema.org/eg-0416-microdata.html: ok
+schema.org/eg-0416-pre.html: ok
+schema.org/eg-0416-rdfa.html: ok
+schema.org/eg-0417-jsonld.html: ok
+schema.org/eg-0417-microdata.html: ok
+schema.org/eg-0417-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0417-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0417-pre.html>: 8:18: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, div.\n      <meta>liter</span> /\n                 ^"
+    ]
+  }
+}
+schema.org/eg-0417-rdfa.html: ok
+schema.org/eg-0418-jsonld.html: ok
+schema.org/eg-0418-microdata.html: ok
+schema.org/eg-0418-pre.html: ok
+schema.org/eg-0418-rdfa.html: ok
+schema.org/eg-0419-jsonld.html: ok
+schema.org/eg-0419-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/www.imdb.com/title/tt0085750/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0419-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0419-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0419-pre.html>: 8:3: ERROR: That tag isn't allowed here  Currently open tags: html, body, div.\n  </p>\n  ^"
+    ]
+  }
+}
+schema.org/eg-0419-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/www.imdb.com/title/tt0085750/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0420-jsonld.html: ok
+schema.org/eg-0420-microdata.html: ok
+schema.org/eg-0420-pre.html: ok
+schema.org/eg-0420-rdfa.html: ok
+schema.org/eg-0421-jsonld.html: ok
+schema.org/eg-0421-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <https://www.pinterest.com/ryansammy/> not compatible with rangeIncludes ()",
+      "Object <http://www.reddit.com/r/BMW/comments/1oyh6j/leaked_new_bmw_2_series_m235i_ahead_of_oct_25/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0421-pre.html: ok
+schema.org/eg-0421-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <https://www.pinterest.com/ryansammy/> not compatible with rangeIncludes ()",
+      "Object <http://www.reddit.com/r/BMW/comments/1oyh6j/leaked_new_bmw_2_series_m235i_ahead_of_oct_25/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0424-jsonld.html: ok
+schema.org/eg-0424-microdata.html: ok
+schema.org/eg-0424-pre.html: ok
+schema.org/eg-0424-rdfa.html: ok
+schema.org/eg-0425-jsonld.html: ok
+schema.org/eg-0425-microdata.html: ok
+schema.org/eg-0425-pre.html: ok
+schema.org/eg-0425-rdfa.html: ok
+schema.org/eg-0426-jsonld.html: ok
+schema.org/eg-0426-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.missoulamarathon.org/events/marathon/> not compatible with rangeIncludes ()",
+      "Object <http://www.runwildmissoula.org/> not compatible with rangeIncludes ()",
+      "Object <http://www.runwildmissoula.org/runwild/index.php/ID/mmar2016/fuseaction/register.main.htm> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0426-pre.html: ok
+schema.org/eg-0426-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.runwildmissoula.org/runwild/index.php/ID/mmar2016/fuseaction/register.main.htm> not compatible with rangeIncludes ()",
+      "Object <http://www.missoulamarathon.org/events/marathon/> not compatible with rangeIncludes ()",
+      "Object <http://www.runwildmissoula.org/> not compatible with rangeIncludes ()",
+      "Object <http://www.ci.missoula.mt.us/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0427-jsonld.html: ok
+schema.org/eg-0427-microdata.html: ok
+schema.org/eg-0427-pre.html: ok
+schema.org/eg-0427-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.skysports.com/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0428-jsonld.html: ok
+schema.org/eg-0428-microdata.html: ok
+schema.org/eg-0428-pre.html: ok
+schema.org/eg-0428-rdfa.html: ok
+schema.org/eg-0429-jsonld.html: ok
+schema.org/eg-0429-microdata.html: ok
+schema.org/eg-0429-pre.html: ok
+schema.org/eg-0429-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://npr.org> not compatible with rangeIncludes ()",
+      "Object <http://www.example.com/GloboCorp> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0430-jsonld.html: ok
+schema.org/eg-0430-pre.html: ok
+schema.org/eg-0431-jsonld.html: ok
+schema.org/eg-0431-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.royalparks.org.uk/parks/hyde-park> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0431-pre.html: ok
+schema.org/eg-0431-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.royalparks.org.uk/parks/hyde-park> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0432-jsonld.html: ok
+schema.org/eg-0432-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.disneylandparis.it/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0432-pre.html: ok
+schema.org/eg-0432-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.disneylandparis.it/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0433-jsonld.html: ok
+schema.org/eg-0433-microdata.html: ok
+schema.org/eg-0433-pre.html: ok
+schema.org/eg-0433-rdfa.html: ok
+schema.org/eg-0434-jsonld.html: ok
+schema.org/eg-0434-microdata.html: {
+  "property": {
+    "schemas:additionalType": [
+      "Object <https://schema.org/Museum> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0434-pre.html: ok
+schema.org/eg-0434-rdfa.html: ok
+schema.org/eg-0435-jsonld.html: ok
+schema.org/eg-0435-microdata.html: ok
+schema.org/eg-0435-pre.html: ok
+schema.org/eg-0435-rdfa.html: ok
+schema.org/eg-0436-jsonld.html: ok
+schema.org/eg-0436-microdata.html: ok
+schema.org/eg-0436-pre.html: ok
+schema.org/eg-0436-rdfa.html: ok
+schema.org/eg-0437-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0437-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0437-jsonld.html\nThe same key is defined more than once: name\nThe same key is defined more than once: description",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0437-jsonld.html\nThe same key is defined more than once: name\nThe same key is defined more than once: description: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0437-microdata.html: {
+  "property": {
+    "schemas:additionalType": [
+      "Object <https://schema.org/Event> not compatible with rangeIncludes ()"
+    ],
+    "schemas:sameAs": [
+      "Object <http://www.wikidata.org/entity/Q1143768> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0437-pre.html: ok
+schema.org/eg-0437-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://www.wikidata.org/entity/Q1143768> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0438-jsonld.html: ok
+schema.org/eg-0438-microdata.html: {
+  "property": {
+    "schemas:additionalType": [
+      "Object <https://schema.org/Cemetery> not compatible with rangeIncludes ()"
+    ],
+    "schemas:sameAs": [
+      "Object <https://www.wikidata.org/wiki/Q2544355> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0438-pre.html: ok
+schema.org/eg-0438-rdfa.html: ok
+schema.org/eg-0439-jsonld.html: ok
+schema.org/eg-0439-microdata.html: ok
+schema.org/eg-0439-pre.html: ok
+schema.org/eg-0439-rdfa.html: ok
+schema.org/eg-0442-jsonld.html: ok
+schema.org/eg-0442-microdata.html: ok
+schema.org/eg-0442-pre.html: ok
+schema.org/eg-0442-rdfa.html: ok
+schema.org/eg-0443-jsonld.html: ok
+schema.org/eg-0443-microdata.html: ok
+schema.org/eg-0443-pre.html: ok
+schema.org/eg-0443-rdfa.html: ok
+schema.org/eg-0444-jsonld.html: ok
+schema.org/eg-0444-microdata.html: ok
+schema.org/eg-0444-pre.html: ok
+schema.org/eg-0444-rdfa.html: ok
+schema.org/eg-0445-jsonld.html: ok
+schema.org/eg-0445-microdata.html: ok
+schema.org/eg-0445-pre.html: ok
+schema.org/eg-0445-rdfa.html: ok
+schema.org/eg-0446-jsonld.html: ok
+schema.org/eg-0446-microdata.html: ok
+schema.org/eg-0446-pre.html: ok
+schema.org/eg-0446-rdfa.html: ok
+schema.org/eg-0447-jsonld.html: ok
+schema.org/eg-0447-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://gds.com> not compatible with rangeIncludes ()",
+      "Object <http://example.com/supergame1> not compatible with rangeIncludes ()",
+      "Object <http://example.com/supergamedlc1> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0447-pre.html: ok
+schema.org/eg-0447-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://example.com/supergamedlc1> not compatible with rangeIncludes ()",
+      "Object <http://example.com/supergame1> not compatible with rangeIncludes ()",
+      "Object <http://gds.com> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0448-jsonld.html: ok
+schema.org/eg-0448-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://elderscrolls.wikia.com/wiki/Oghma_Infinium_(Skyrim)> not compatible with rangeIncludes ()",
+      "Object <http://www.elderscrolls.com/skyrim> not compatible with rangeIncludes ()",
+      "Object <http://elderscrolls.wikia.com/wiki/Before_the_Storm> not compatible with rangeIncludes ()",
+      "Object <http://elderscrolls.wikia.com/wiki/Unbound> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0448-pre.html: ok
+schema.org/eg-0448-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.elderscrolls.com/skyrim> not compatible with rangeIncludes ()",
+      "Object <http://elderscrolls.wikia.com/wiki/Unbound> not compatible with rangeIncludes ()",
+      "Object <http://elderscrolls.wikia.com/wiki/Oghma_Infinium_(Skyrim)> not compatible with rangeIncludes ()",
+      "Object <http://elderscrolls.wikia.com/wiki/Before_the_Storm> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0449-jsonld.html: ok
+schema.org/eg-0449-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.bethsoft.com/> not compatible with rangeIncludes ()",
+      "Object <http://fallout.wikia.com/wiki/Fallout_3_items> not compatible with rangeIncludes ()",
+      "Object <http://www.elderscrolls.com/skyrim> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0449-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0449-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0449-pre.html>: 56:1: ERROR: That tag isn't allowed here  Currently open tags: html, body, ul.\n</body>\n^"
+    ]
+  }
+}
+schema.org/eg-0449-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://fallout.wikia.com/wiki/Fallout_3_items> not compatible with rangeIncludes ()",
+      "Object <http://www.bethsoft.com/> not compatible with rangeIncludes ()",
+      "Object <http://fallout.wikia.com/wiki/Fallout_3> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0450-jsonld.html: ok
+schema.org/eg-0450-microdata.html: ok
+schema.org/eg-0450-pre.html: ok
+schema.org/eg-0450-rdfa.html: ok
+schema.org/eg-0451-jsonld.html: {
+  "property": {
+    "schema:video": [
+      "Object _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with rangeIncludes (schema:Clip,schema:VideoObject)"
+    ],
+    "schema:description": [
+      "Subject _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
+    ],
+    "schema:caption": [
+      "Subject _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:AudioObject,schema:ImageObject,schema:VideoObject)"
+    ],
+    "schema:url": [
+      "Subject _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
+    ]
+  }
+}
+schema.org/eg-0452-jsonld.html: ok
+schema.org/eg-0452-microdata.html: ok
+schema.org/eg-0452-pre.html: ok
+schema.org/eg-0452-rdfa.html: ok
+schema.org/eg-0453-jsonld.html: ok
+schema.org/eg-0454-jsonld.html: ok
+schema.org/eg-0454-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://rdf.freebase.com/rdf/m.0439_q> not compatible with rangeIncludes ()",
+      "Object <https://www.freebase.com/m/06h88> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0454-pre.html: ok
+schema.org/eg-0454-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://rdf.freebase.com/rdf/m.0439_q> not compatible with rangeIncludes ()",
+      "Object <https://www.freebase.com/m/06h88> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0455-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html\nThe same key is defined more than once: artMedium",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html\nThe same key is defined more than once: artMedium: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0455-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <http://rdf.freebase.com/rdf/m.0dbwsn> not compatible with rangeIncludes ()",
+      "Object <https://www.freebase.com/m/015sxw> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0455-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0455-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0455-pre.html>: 20:81: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, ul, li, a.\n            <li>Artist: <a  href=\"https://www.freebase.com/m/015sxw\">Tracey Emin</li>\n                                                                                ^\n21:9: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, ul, a.\n        </ul>\n        ^\n32:5: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, a.\n    </div>\n    ^\n33:1: ERROR: Premature end of file  Currently open tags: html, body, a.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0455-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <https://www.freebase.com/m/015sxw> not compatible with rangeIncludes ()",
+      "Object <http://rdf.freebase.com/rdf/m.0dbwsn> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0456-jsonld.html: ok
+schema.org/eg-0456-microdata.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <https://www.freebase.com/m/07pj7mx> not compatible with rangeIncludes ()",
+      "Object <http://www.pada.net/members/memPicFull.php/38/367> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0456-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0456-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0456-pre.html>: 22:83: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, ul, li, a.\n            <li>Artist: <a href=\"https://www.freebase.com/m/07pj7mx\">Pablo Picasso</li>\n                                                                                  ^\n26:26: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, ul, a, li.\n                See also <a href=\"http://www.pada.net/members/memPicFull.php/38/367\">here</a>\n                         ^"
+    ]
+  }
+}
+schema.org/eg-0456-rdfa.html: {
+  "property": {
+    "schemas:sameAs": [
+      "Object <https://www.freebase.com/m/07pj7mx> not compatible with rangeIncludes ()",
+      "Object <http://www.pada.net/members/memPicFull.php/38/367> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0457-jsonld.html: ok
+schema.org/eg-0457-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.example.com/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0457-pre.html: ok
+schema.org/eg-0457-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <http://www.example.com/> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0461-jsonld.html: ok
+schema.org/eg-0461-microdata.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/nba-miami-philidelphia-game3.html> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/wells-fargo-center.html> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0461-pre.html: ok
+schema.org/eg-0461-rdfa.html: {
+  "property": {
+    "schemas:url": [
+      "Object <file:///Users/gregg/Projects/linter/schema.org/nba-miami-philidelphia-game3.html> not compatible with rangeIncludes ()",
+      "Object <file:///Users/gregg/Projects/linter/schema.org/wells-fargo-center.html> not compatible with rangeIncludes ()"
+    ]
+  }
+}
+schema.org/eg-0462-jsonld.html: ok
+schema.org/eg-0462-microdata.html: ok
+schema.org/eg-0462-pre.html: ok
+schema.org/eg-0462-rdfa.html: ok

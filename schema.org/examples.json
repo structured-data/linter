@@ -121,6 +121,8 @@
       "OrganizeAction",
       "PlayAction",
       "SearchAction",
+      "SeekToAction",
+      "SolveMathAction",
       "TradeAction",
       "TransferAction",
       "UpdateAction"
@@ -380,6 +382,16 @@
       }
     }
   },
+  "AmpStory": {
+    "super_class": "CreativeWork",
+    "path": [
+      "Thing",
+      "CreativeWork"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "AmusementPark": {
     "super_class": "EntertainmentBusiness",
     "path": [
@@ -630,6 +642,12 @@
       "CreativeWork"
     ],
     "examples": {
+      "eg-0023": {
+        "pre": "schema.org/eg-0023-pre.html",
+        "microdata": "schema.org/eg-0023-microdata.html",
+        "rdfa": "schema.org/eg-0023-rdfa.html",
+        "jsonld": "schema.org/eg-0023-jsonld.html"
+      },
       "eg-0398": {
         "pre": "schema.org/eg-0398-pre.html",
         "microdata": "schema.org/eg-0398-microdata.html",
@@ -641,12 +659,6 @@
         "microdata": "schema.org/eg-0399-microdata.html",
         "rdfa": "schema.org/eg-0399-rdfa.html",
         "jsonld": "schema.org/eg-0399-jsonld.html"
-      },
-      "eg-0023": {
-        "pre": "schema.org/eg-0023-pre.html",
-        "microdata": "schema.org/eg-0023-microdata.html",
-        "rdfa": "schema.org/eg-0023-rdfa.html",
-        "jsonld": "schema.org/eg-0023-jsonld.html"
       }
     }
   },
@@ -984,15 +996,7 @@
     ],
     "sub_classes": [
 
-    ],
-    "examples": {
-      "eg-0374": {
-        "pre": "schema.org/eg-0374-pre.html",
-        "microdata": "schema.org/eg-0374-microdata.html",
-        "rdfa": "schema.org/eg-0374-rdfa.html",
-        "jsonld": "schema.org/eg-0374-jsonld.html"
-      }
-    }
+    ]
   },
   "BarOrPub": {
     "super_class": "FoodEstablishment",
@@ -1228,12 +1232,6 @@
 
     ],
     "examples": {
-      "eg-0400": {
-        "pre": "schema.org/eg-0400-pre.html",
-        "microdata": "schema.org/eg-0400-microdata.html",
-        "rdfa": "schema.org/eg-0400-rdfa.html",
-        "jsonld": "schema.org/eg-0400-jsonld.html"
-      },
       "eg-0462": {
         "pre": "schema.org/eg-0462-pre.html",
         "microdata": "schema.org/eg-0462-microdata.html",
@@ -1257,6 +1255,12 @@
         "microdata": "schema.org/eg-0395-microdata.html",
         "rdfa": "schema.org/eg-0395-rdfa.html",
         "jsonld": "schema.org/eg-0395-jsonld.html"
+      },
+      "eg-0400": {
+        "pre": "schema.org/eg-0400-pre.html",
+        "microdata": "schema.org/eg-0400-microdata.html",
+        "rdfa": "schema.org/eg-0400-rdfa.html",
+        "jsonld": "schema.org/eg-0400-jsonld.html"
       }
     }
   },
@@ -1428,18 +1432,6 @@
 
     ],
     "examples": {
-      "eg-0444": {
-        "pre": "schema.org/eg-0444-pre.html",
-        "microdata": "schema.org/eg-0444-microdata.html",
-        "rdfa": "schema.org/eg-0444-rdfa.html",
-        "jsonld": "schema.org/eg-0444-jsonld.html"
-      },
-      "eg-0445": {
-        "pre": "schema.org/eg-0445-pre.html",
-        "microdata": "schema.org/eg-0445-microdata.html",
-        "rdfa": "schema.org/eg-0445-rdfa.html",
-        "jsonld": "schema.org/eg-0445-jsonld.html"
-      },
       "eg-0166": {
         "pre": "schema.org/eg-0166-pre.html",
         "microdata": "schema.org/eg-0166-microdata.html",
@@ -1451,6 +1443,18 @@
         "microdata": "schema.org/eg-0167-microdata.html",
         "rdfa": "schema.org/eg-0167-rdfa.html",
         "jsonld": "schema.org/eg-0167-jsonld.html"
+      },
+      "eg-0444": {
+        "pre": "schema.org/eg-0444-pre.html",
+        "microdata": "schema.org/eg-0444-microdata.html",
+        "rdfa": "schema.org/eg-0444-rdfa.html",
+        "jsonld": "schema.org/eg-0444-jsonld.html"
+      },
+      "eg-0445": {
+        "pre": "schema.org/eg-0445-pre.html",
+        "microdata": "schema.org/eg-0445-microdata.html",
+        "rdfa": "schema.org/eg-0445-rdfa.html",
+        "jsonld": "schema.org/eg-0445-jsonld.html"
       }
     }
   },
@@ -1464,12 +1468,6 @@
 
     ],
     "examples": {
-      "eg-0319": {
-        "pre": "schema.org/eg-0319-pre.html",
-        "microdata": "schema.org/eg-0319-microdata.html",
-        "rdfa": "schema.org/eg-0319-rdfa.html",
-        "jsonld": "schema.org/eg-0319-jsonld.html"
-      },
       "eg-0320": {
         "pre": "schema.org/eg-0320-pre.html",
         "microdata": "schema.org/eg-0320-microdata.html",
@@ -1489,6 +1487,24 @@
       "Service"
     ],
     "examples": {
+      "eg-0166": {
+        "pre": "schema.org/eg-0166-pre.html",
+        "microdata": "schema.org/eg-0166-microdata.html",
+        "rdfa": "schema.org/eg-0166-rdfa.html",
+        "jsonld": "schema.org/eg-0166-jsonld.html"
+      },
+      "eg-0167": {
+        "pre": "schema.org/eg-0167-pre.html",
+        "microdata": "schema.org/eg-0167-microdata.html",
+        "rdfa": "schema.org/eg-0167-rdfa.html",
+        "jsonld": "schema.org/eg-0167-jsonld.html"
+      },
+      "eg-0320": {
+        "pre": "schema.org/eg-0320-pre.html",
+        "microdata": "schema.org/eg-0320-microdata.html",
+        "rdfa": "schema.org/eg-0320-rdfa.html",
+        "jsonld": "schema.org/eg-0320-jsonld.html"
+      },
       "eg-0442": {
         "pre": "schema.org/eg-0442-pre.html",
         "microdata": "schema.org/eg-0442-microdata.html",
@@ -1506,30 +1522,6 @@
         "microdata": "schema.org/eg-0444-microdata.html",
         "rdfa": "schema.org/eg-0444-rdfa.html",
         "jsonld": "schema.org/eg-0444-jsonld.html"
-      },
-      "eg-0166": {
-        "pre": "schema.org/eg-0166-pre.html",
-        "microdata": "schema.org/eg-0166-microdata.html",
-        "rdfa": "schema.org/eg-0166-rdfa.html",
-        "jsonld": "schema.org/eg-0166-jsonld.html"
-      },
-      "eg-0167": {
-        "pre": "schema.org/eg-0167-pre.html",
-        "microdata": "schema.org/eg-0167-microdata.html",
-        "rdfa": "schema.org/eg-0167-rdfa.html",
-        "jsonld": "schema.org/eg-0167-jsonld.html"
-      },
-      "eg-0319": {
-        "pre": "schema.org/eg-0319-pre.html",
-        "microdata": "schema.org/eg-0319-microdata.html",
-        "rdfa": "schema.org/eg-0319-rdfa.html",
-        "jsonld": "schema.org/eg-0319-jsonld.html"
-      },
-      "eg-0320": {
-        "pre": "schema.org/eg-0320-pre.html",
-        "microdata": "schema.org/eg-0320-microdata.html",
-        "rdfa": "schema.org/eg-0320-rdfa.html",
-        "jsonld": "schema.org/eg-0320-jsonld.html"
       }
     }
   },
@@ -1790,17 +1782,17 @@
 
     ],
     "examples": {
-      "compoundPrice-2": {
-        "pre": "schema.org/compoundPrice-2-pre.html",
-        "microdata": "schema.org/compoundPrice-2-microdata.html",
-        "rdfa": "schema.org/compoundPrice-2-rdfa.html",
-        "jsonld": "schema.org/compoundPrice-2-jsonld.html"
-      },
       "eg-0329": {
         "pre": "schema.org/eg-0329-pre.html",
         "microdata": "schema.org/eg-0329-microdata.html",
         "rdfa": "schema.org/eg-0329-rdfa.html",
         "jsonld": "schema.org/eg-0329-jsonld.html"
+      },
+      "compoundPrice-2": {
+        "pre": "schema.org/compoundPrice-2-pre.html",
+        "microdata": "schema.org/compoundPrice-2-microdata.html",
+        "rdfa": "schema.org/compoundPrice-2-rdfa.html",
+        "jsonld": "schema.org/compoundPrice-2-jsonld.html"
       }
     }
   },
@@ -2129,6 +2121,12 @@
 
     ],
     "examples": {
+      "eg-0324": {
+        "pre": "schema.org/eg-0324-pre.html",
+        "microdata": "schema.org/eg-0324-microdata.html",
+        "rdfa": "schema.org/eg-0324-rdfa.html",
+        "jsonld": "schema.org/eg-0324-jsonld.html"
+      },
       "eg-0325": {
         "pre": "schema.org/eg-0325-pre.html",
         "microdata": "schema.org/eg-0325-microdata.html",
@@ -2739,6 +2737,7 @@
   "CreativeWork": {
     "super_class": "Thing",
     "sub_classes": [
+      "AmpStory",
       "ArchiveComponent",
       "Article",
       "Atlas",
@@ -2771,10 +2770,13 @@
       "HowToSection",
       "HowToStep",
       "HowToTip",
+      "HyperToc",
+      "HyperTocEntry",
       "LearningResource",
       "Legislation",
       "Manuscript",
       "Map",
+      "MathSolver",
       "MediaObject",
       "Menu",
       "MenuSection",
@@ -3003,12 +3005,6 @@
       "Dataset"
     ],
     "examples": {
-      "eg-0344": {
-        "pre": "schema.org/eg-0344-pre.html",
-        "microdata": "schema.org/eg-0344-microdata.html",
-        "rdfa": "schema.org/eg-0344-rdfa.html",
-        "jsonld": "schema.org/eg-0344-jsonld.html"
-      },
       "eg-0345": {
         "pre": "schema.org/eg-0345-pre.html",
         "microdata": "schema.org/eg-0345-microdata.html",
@@ -3561,11 +3557,11 @@
 
     ],
     "examples": {
-      "Drug-TreatmentIndication-MedicalContraindication-267": {
-        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-pre.html",
-        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-microdata.html",
-        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-rdfa.html",
-        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-jsonld.html"
+      "Drug-TreatmentIndication-MedicalContraindication-221": {
+        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html",
+        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html",
+        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html",
+        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html"
       }
     }
   },
@@ -3942,7 +3938,14 @@
     ]
   },
   "EnergyConsumptionDetails": {
-    "super_class": null
+    "super_class": "Intangible",
+    "path": [
+      "Thing",
+      "Intangible"
+    ],
+    "sub_classes": [
+
+    ]
   },
   "EnergyEfficiencyEnumeration": {
     "super_class": "Enumeration",
@@ -4043,6 +4046,8 @@
       "OfferItemCondition",
       "PaymentMethod",
       "PhysicalActivityCategory",
+      "PriceComponentTypeEnumeration",
+      "PriceTypeEnumeration",
       "QualitativeValue",
       "RefundTypeEnumeration",
       "RestrictedDiet",
@@ -4099,18 +4104,6 @@
       "Thing"
     ],
     "examples": {
-      "eg-0426": {
-        "pre": "schema.org/eg-0426-pre.html",
-        "microdata": "schema.org/eg-0426-microdata.html",
-        "rdfa": "schema.org/eg-0426-rdfa.html",
-        "jsonld": "schema.org/eg-0426-jsonld.html"
-      },
-      "eg-0436": {
-        "pre": "schema.org/eg-0436-pre.html",
-        "microdata": "schema.org/eg-0436-microdata.html",
-        "rdfa": "schema.org/eg-0436-rdfa.html",
-        "jsonld": "schema.org/eg-0436-jsonld.html"
-      },
       "eg-0461": {
         "pre": "schema.org/eg-0461-pre.html",
         "microdata": "schema.org/eg-0461-microdata.html",
@@ -4162,6 +4155,18 @@
         "microdata": "schema.org/eg-0190-microdata.html",
         "rdfa": "schema.org/eg-0190-rdfa.html",
         "jsonld": "schema.org/eg-0190-jsonld.html"
+      },
+      "eg-0426": {
+        "pre": "schema.org/eg-0426-pre.html",
+        "microdata": "schema.org/eg-0426-microdata.html",
+        "rdfa": "schema.org/eg-0426-rdfa.html",
+        "jsonld": "schema.org/eg-0426-jsonld.html"
+      },
+      "eg-0436": {
+        "pre": "schema.org/eg-0436-pre.html",
+        "microdata": "schema.org/eg-0436-microdata.html",
+        "rdfa": "schema.org/eg-0436-rdfa.html",
+        "jsonld": "schema.org/eg-0436-jsonld.html"
       }
     }
   },
@@ -4731,17 +4736,17 @@
 
     ],
     "examples": {
-      "eg-0421": {
-        "pre": "schema.org/eg-0421-pre.html",
-        "microdata": "schema.org/eg-0421-microdata.html",
-        "rdfa": "schema.org/eg-0421-rdfa.html",
-        "jsonld": "schema.org/eg-0421-jsonld.html"
-      },
       "eg-0397": {
         "pre": "schema.org/eg-0397-pre.html",
         "microdata": "schema.org/eg-0397-microdata.html",
         "rdfa": "schema.org/eg-0397-rdfa.html",
         "jsonld": "schema.org/eg-0397-jsonld.html"
+      },
+      "eg-0421": {
+        "pre": "schema.org/eg-0421-pre.html",
+        "microdata": "schema.org/eg-0421-microdata.html",
+        "rdfa": "schema.org/eg-0421-rdfa.html",
+        "jsonld": "schema.org/eg-0421-jsonld.html"
       }
     }
   },
@@ -5349,6 +5354,26 @@
 
     ]
   },
+  "HyperToc": {
+    "super_class": "CreativeWork",
+    "path": [
+      "Thing",
+      "CreativeWork"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "HyperTocEntry": {
+    "super_class": "CreativeWork",
+    "path": [
+      "Thing",
+      "CreativeWork"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "IceCreamShop": {
     "super_class": "FoodEstablishment",
     "path": [
@@ -5410,12 +5435,6 @@
       "MediaObject"
     ],
     "examples": {
-      "eg-0404": {
-        "pre": "schema.org/eg-0404-pre.html",
-        "microdata": "schema.org/eg-0404-microdata.html",
-        "rdfa": "schema.org/eg-0404-rdfa.html",
-        "jsonld": "schema.org/eg-0404-jsonld.html"
-      },
       "eg-0021": {
         "pre": "schema.org/eg-0021-pre.html",
         "microdata": "schema.org/eg-0021-microdata.html",
@@ -5560,6 +5579,7 @@
       "Demand",
       "DigitalDocumentPermission",
       "EducationalOccupationalProgram",
+      "EnergyConsumptionDetails",
       "EntryPoint",
       "Enumeration",
       "FloorPlan",
@@ -5661,6 +5681,12 @@
         "microdata": "schema.org/eg-0023-microdata.html",
         "rdfa": "schema.org/eg-0023-rdfa.html",
         "jsonld": "schema.org/eg-0023-jsonld.html"
+      },
+      "eg-0446": {
+        "pre": "schema.org/eg-0446-pre.html",
+        "microdata": "schema.org/eg-0446-microdata.html",
+        "rdfa": "schema.org/eg-0446-rdfa.html",
+        "jsonld": "schema.org/eg-0446-jsonld.html"
       }
     }
   },
@@ -5737,12 +5763,6 @@
 
     ],
     "examples": {
-      "eg-0374": {
-        "pre": "schema.org/eg-0374-pre.html",
-        "microdata": "schema.org/eg-0374-microdata.html",
-        "rdfa": "schema.org/eg-0374-rdfa.html",
-        "jsonld": "schema.org/eg-0374-jsonld.html"
-      },
       "eg-0375": {
         "pre": "schema.org/eg-0375-pre.html",
         "microdata": "schema.org/eg-0375-microdata.html",
@@ -6081,7 +6101,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0378": {
+        "pre": "schema.org/eg-0378-pre.html",
+        "microdata": "schema.org/eg-0378-microdata.html",
+        "rdfa": "schema.org/eg-0378-rdfa.html",
+        "jsonld": "schema.org/eg-0378-jsonld.html"
+      }
+    }
   },
   "LibrarySystem": {
     "super_class": "Organization",
@@ -6289,12 +6317,6 @@
       "Organization"
     ],
     "examples": {
-      "eg-0375": {
-        "pre": "schema.org/eg-0375-pre.html",
-        "microdata": "schema.org/eg-0375-microdata.html",
-        "rdfa": "schema.org/eg-0375-rdfa.html",
-        "jsonld": "schema.org/eg-0375-jsonld.html"
-      },
       "eg-0015": {
         "pre": "schema.org/eg-0015-pre.html",
         "microdata": "schema.org/eg-0015-microdata.html",
@@ -6306,6 +6328,12 @@
         "microdata": "schema.org/eg-0004-microdata.html",
         "rdfa": "schema.org/eg-0004-rdfa.html",
         "jsonld": "schema.org/eg-0004-jsonld.html"
+      },
+      "eg-0375": {
+        "pre": "schema.org/eg-0375-pre.html",
+        "microdata": "schema.org/eg-0375-microdata.html",
+        "rdfa": "schema.org/eg-0375-rdfa.html",
+        "jsonld": "schema.org/eg-0375-jsonld.html"
       },
       "eg-0396": {
         "pre": "schema.org/eg-0396-pre.html",
@@ -6476,6 +6504,16 @@
       "Thing",
       "Intangible",
       "Quantity"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "MathSolver": {
+    "super_class": "CreativeWork",
+    "path": [
+      "Thing",
+      "CreativeWork"
     ],
     "sub_classes": [
 
@@ -6683,11 +6721,11 @@
 
     ],
     "examples": {
-      "Drug-TreatmentIndication-MedicalContraindication-267": {
-        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-pre.html",
-        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-microdata.html",
-        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-rdfa.html",
-        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-jsonld.html"
+      "Drug-TreatmentIndication-MedicalContraindication-221": {
+        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html",
+        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html",
+        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html",
+        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html"
       }
     }
   },
@@ -7487,6 +7525,12 @@
         "rdfa": "schema.org/eg-0187-rdfa.html",
         "jsonld": "schema.org/eg-0187-jsonld.html"
       },
+      "eg-0419": {
+        "pre": "schema.org/eg-0419-pre.html",
+        "microdata": "schema.org/eg-0419-microdata.html",
+        "rdfa": "schema.org/eg-0419-rdfa.html",
+        "jsonld": "schema.org/eg-0419-jsonld.html"
+      },
       "eg-0420": {
         "pre": "schema.org/eg-0420-pre.html",
         "microdata": "schema.org/eg-0420-microdata.html",
@@ -7538,7 +7582,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0419": {
+        "pre": "schema.org/eg-0419-pre.html",
+        "microdata": "schema.org/eg-0419-microdata.html",
+        "rdfa": "schema.org/eg-0419-rdfa.html",
+        "jsonld": "schema.org/eg-0419-jsonld.html"
+      }
+    }
   },
   "MovingCompany": {
     "super_class": "HomeAndConstructionBusiness",
@@ -7607,6 +7659,12 @@
         "microdata": "schema.org/eg-0211-microdata.html",
         "rdfa": "schema.org/eg-0211-rdfa.html",
         "jsonld": "schema.org/eg-0211-jsonld.html"
+      },
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
       },
       "eg-0389": {
         "pre": "schema.org/eg-0389-pre.html",
@@ -7731,6 +7789,12 @@
         "rdfa": "schema.org/eg-0202-rdfa.html",
         "jsonld": "schema.org/eg-0202-jsonld.html"
       },
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
+      },
       "eg-0389": {
         "pre": "schema.org/eg-0389-pre.html",
         "microdata": "schema.org/eg-0389-microdata.html",
@@ -7799,6 +7863,12 @@
 
     ],
     "examples": {
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
+      },
       "eg-0391": {
         "pre": "schema.org/eg-0391-pre.html",
         "microdata": "schema.org/eg-0391-microdata.html",
@@ -7940,7 +8010,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0218": {
+        "pre": "schema.org/eg-0218-pre.html",
+        "microdata": "schema.org/eg-0218-microdata.html",
+        "rdfa": "schema.org/eg-0218-rdfa.html",
+        "jsonld": "schema.org/eg-0218-jsonld.html"
+      }
+    }
   },
   "NightClub": {
     "super_class": "EntertainmentBusiness",
@@ -8008,6 +8086,12 @@
 
     ],
     "examples": {
+      "eg-0013": {
+        "pre": "schema.org/eg-0013-pre.html",
+        "microdata": "schema.org/eg-0013-microdata.html",
+        "rdfa": "schema.org/eg-0013-rdfa.html",
+        "jsonld": "schema.org/eg-0013-jsonld.html"
+      },
       "eg-0385": {
         "pre": "schema.org/eg-0385-pre.html",
         "microdata": "schema.org/eg-0385-microdata.html",
@@ -8019,12 +8103,6 @@
         "microdata": "schema.org/eg-0386-microdata.html",
         "rdfa": "schema.org/eg-0386-rdfa.html",
         "jsonld": "schema.org/eg-0386-jsonld.html"
-      },
-      "eg-0013": {
-        "pre": "schema.org/eg-0013-pre.html",
-        "microdata": "schema.org/eg-0013-microdata.html",
-        "rdfa": "schema.org/eg-0013-rdfa.html",
-        "jsonld": "schema.org/eg-0013-jsonld.html"
       }
     }
   },
@@ -8285,6 +8363,12 @@
         "microdata": "schema.org/eg-0193-microdata.html",
         "rdfa": "schema.org/eg-0193-rdfa.html",
         "jsonld": "schema.org/eg-0193-jsonld.html"
+      },
+      "eg-0378": {
+        "pre": "schema.org/eg-0378-pre.html",
+        "microdata": "schema.org/eg-0378-microdata.html",
+        "rdfa": "schema.org/eg-0378-rdfa.html",
+        "jsonld": "schema.org/eg-0378-jsonld.html"
       }
     }
   },
@@ -8405,30 +8489,6 @@
       "Thing"
     ],
     "examples": {
-      "eg-0376": {
-        "pre": "schema.org/eg-0376-pre.html",
-        "microdata": "schema.org/eg-0376-microdata.html",
-        "rdfa": "schema.org/eg-0376-rdfa.html",
-        "jsonld": "schema.org/eg-0376-jsonld.html"
-      },
-      "eg-0429": {
-        "pre": "schema.org/eg-0429-pre.html",
-        "microdata": "schema.org/eg-0429-microdata.html",
-        "rdfa": "schema.org/eg-0429-rdfa.html",
-        "jsonld": "schema.org/eg-0429-jsonld.html"
-      },
-      "eg-0442": {
-        "pre": "schema.org/eg-0442-pre.html",
-        "microdata": "schema.org/eg-0442-microdata.html",
-        "rdfa": "schema.org/eg-0442-rdfa.html",
-        "jsonld": "schema.org/eg-0442-jsonld.html"
-      },
-      "eg-0443": {
-        "pre": "schema.org/eg-0443-pre.html",
-        "microdata": "schema.org/eg-0443-microdata.html",
-        "rdfa": "schema.org/eg-0443-rdfa.html",
-        "jsonld": "schema.org/eg-0443-jsonld.html"
-      },
       "eg-0007": {
         "pre": "schema.org/eg-0007-pre.html",
         "microdata": "schema.org/eg-0007-microdata.html",
@@ -8453,11 +8513,35 @@
         "rdfa": "schema.org/eg-0206-rdfa.html",
         "jsonld": "schema.org/eg-0206-jsonld.html"
       },
+      "eg-0376": {
+        "pre": "schema.org/eg-0376-pre.html",
+        "microdata": "schema.org/eg-0376-microdata.html",
+        "rdfa": "schema.org/eg-0376-rdfa.html",
+        "jsonld": "schema.org/eg-0376-jsonld.html"
+      },
       "eg-0388": {
         "pre": "schema.org/eg-0388-pre.html",
         "microdata": "schema.org/eg-0388-microdata.html",
         "rdfa": "schema.org/eg-0388-rdfa.html",
         "jsonld": "schema.org/eg-0388-jsonld.html"
+      },
+      "eg-0429": {
+        "pre": "schema.org/eg-0429-pre.html",
+        "microdata": "schema.org/eg-0429-microdata.html",
+        "rdfa": "schema.org/eg-0429-rdfa.html",
+        "jsonld": "schema.org/eg-0429-jsonld.html"
+      },
+      "eg-0442": {
+        "pre": "schema.org/eg-0442-pre.html",
+        "microdata": "schema.org/eg-0442-microdata.html",
+        "rdfa": "schema.org/eg-0442-rdfa.html",
+        "jsonld": "schema.org/eg-0442-jsonld.html"
+      },
+      "eg-0443": {
+        "pre": "schema.org/eg-0443-pre.html",
+        "microdata": "schema.org/eg-0443-microdata.html",
+        "rdfa": "schema.org/eg-0443-rdfa.html",
+        "jsonld": "schema.org/eg-0443-jsonld.html"
       }
     }
   },
@@ -8878,36 +8962,6 @@
 
     ],
     "examples": {
-      "eg-0374": {
-        "pre": "schema.org/eg-0374-pre.html",
-        "microdata": "schema.org/eg-0374-microdata.html",
-        "rdfa": "schema.org/eg-0374-rdfa.html",
-        "jsonld": "schema.org/eg-0374-jsonld.html"
-      },
-      "eg-0375": {
-        "pre": "schema.org/eg-0375-pre.html",
-        "microdata": "schema.org/eg-0375-microdata.html",
-        "rdfa": "schema.org/eg-0375-rdfa.html",
-        "jsonld": "schema.org/eg-0375-jsonld.html"
-      },
-      "eg-0376": {
-        "pre": "schema.org/eg-0376-pre.html",
-        "microdata": "schema.org/eg-0376-microdata.html",
-        "rdfa": "schema.org/eg-0376-rdfa.html",
-        "jsonld": "schema.org/eg-0376-jsonld.html"
-      },
-      "eg-0427": {
-        "pre": "schema.org/eg-0427-pre.html",
-        "microdata": "schema.org/eg-0427-microdata.html",
-        "rdfa": "schema.org/eg-0427-rdfa.html",
-        "jsonld": "schema.org/eg-0427-jsonld.html"
-      },
-      "eg-0428": {
-        "pre": "schema.org/eg-0428-pre.html",
-        "microdata": "schema.org/eg-0428-microdata.html",
-        "rdfa": "schema.org/eg-0428-rdfa.html",
-        "jsonld": "schema.org/eg-0428-jsonld.html"
-      },
       "eg-0001": {
         "pre": "schema.org/eg-0001-pre.html",
         "microdata": "schema.org/eg-0001-microdata.html",
@@ -8932,11 +8986,41 @@
         "rdfa": "schema.org/eg-0212-rdfa.html",
         "jsonld": "schema.org/eg-0212-jsonld.html"
       },
+      "eg-0375": {
+        "pre": "schema.org/eg-0375-pre.html",
+        "microdata": "schema.org/eg-0375-microdata.html",
+        "rdfa": "schema.org/eg-0375-rdfa.html",
+        "jsonld": "schema.org/eg-0375-jsonld.html"
+      },
+      "eg-0376": {
+        "pre": "schema.org/eg-0376-pre.html",
+        "microdata": "schema.org/eg-0376-microdata.html",
+        "rdfa": "schema.org/eg-0376-rdfa.html",
+        "jsonld": "schema.org/eg-0376-jsonld.html"
+      },
       "eg-0388": {
         "pre": "schema.org/eg-0388-pre.html",
         "microdata": "schema.org/eg-0388-microdata.html",
         "rdfa": "schema.org/eg-0388-rdfa.html",
         "jsonld": "schema.org/eg-0388-jsonld.html"
+      },
+      "eg-0427": {
+        "pre": "schema.org/eg-0427-pre.html",
+        "microdata": "schema.org/eg-0427-microdata.html",
+        "rdfa": "schema.org/eg-0427-rdfa.html",
+        "jsonld": "schema.org/eg-0427-jsonld.html"
+      },
+      "eg-0428": {
+        "pre": "schema.org/eg-0428-pre.html",
+        "microdata": "schema.org/eg-0428-microdata.html",
+        "rdfa": "schema.org/eg-0428-rdfa.html",
+        "jsonld": "schema.org/eg-0428-jsonld.html"
+      },
+      "eg-0454": {
+        "pre": "schema.org/eg-0454-pre.html",
+        "microdata": "schema.org/eg-0454-microdata.html",
+        "rdfa": "schema.org/eg-0454-rdfa.html",
+        "jsonld": "schema.org/eg-0454-jsonld.html"
       }
     }
   },
@@ -9495,6 +9579,17 @@
 
     ]
   },
+  "PriceComponentTypeEnumeration": {
+    "super_class": "Enumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "PriceSpecification": {
     "super_class": "StructuredValue",
     "sub_classes": [
@@ -9509,12 +9604,6 @@
       "StructuredValue"
     ],
     "examples": {
-      "eg-0374": {
-        "pre": "schema.org/eg-0374-pre.html",
-        "microdata": "schema.org/eg-0374-microdata.html",
-        "rdfa": "schema.org/eg-0374-rdfa.html",
-        "jsonld": "schema.org/eg-0374-jsonld.html"
-      },
       "eg-0375": {
         "pre": "schema.org/eg-0375-pre.html",
         "microdata": "schema.org/eg-0375-microdata.html",
@@ -9528,6 +9617,17 @@
         "jsonld": "schema.org/eg-0397-jsonld.html"
       }
     }
+  },
+  "PriceTypeEnumeration": {
+    "super_class": "Enumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
   },
   "Prion": {
     "super_class": null
@@ -9671,12 +9771,6 @@
       "StructuredValue"
     ],
     "examples": {
-      "eg-0404": {
-        "pre": "schema.org/eg-0404-pre.html",
-        "microdata": "schema.org/eg-0404-microdata.html",
-        "rdfa": "schema.org/eg-0404-rdfa.html",
-        "jsonld": "schema.org/eg-0404-jsonld.html"
-      },
       "eg-0405": {
         "pre": "schema.org/eg-0405-pre.html",
         "microdata": "schema.org/eg-0405-microdata.html",
@@ -10956,7 +11050,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0419": {
+        "pre": "schema.org/eg-0419-pre.html",
+        "microdata": "schema.org/eg-0419-microdata.html",
+        "rdfa": "schema.org/eg-0419-rdfa.html",
+        "jsonld": "schema.org/eg-0419-jsonld.html"
+      }
+    }
   },
   "Sculpture": {
     "super_class": "CreativeWork",
@@ -11043,6 +11145,16 @@
       }
     }
   },
+  "SeekToAction": {
+    "super_class": "Action",
+    "path": [
+      "Thing",
+      "Action"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "SelfStorage": {
     "super_class": "LocalBusiness",
     "path": [
@@ -11121,17 +11233,17 @@
         "rdfa": "schema.org/eg-0375-rdfa.html",
         "jsonld": "schema.org/eg-0375-jsonld.html"
       },
-      "eg-0421": {
-        "pre": "schema.org/eg-0421-pre.html",
-        "microdata": "schema.org/eg-0421-microdata.html",
-        "rdfa": "schema.org/eg-0421-rdfa.html",
-        "jsonld": "schema.org/eg-0421-jsonld.html"
-      },
       "eg-0396": {
         "pre": "schema.org/eg-0396-pre.html",
         "microdata": "schema.org/eg-0396-microdata.html",
         "rdfa": "schema.org/eg-0396-rdfa.html",
         "jsonld": "schema.org/eg-0396-jsonld.html"
+      },
+      "eg-0421": {
+        "pre": "schema.org/eg-0421-pre.html",
+        "microdata": "schema.org/eg-0421-microdata.html",
+        "rdfa": "schema.org/eg-0421-rdfa.html",
+        "jsonld": "schema.org/eg-0421-jsonld.html"
       }
     }
   },
@@ -11288,15 +11400,7 @@
       "Thing",
       "CreativeWork",
       "Article"
-    ],
-    "examples": {
-      "eg-0423": {
-        "pre": "schema.org/eg-0423-pre.html",
-        "microdata": "schema.org/eg-0423-microdata.html",
-        "rdfa": "schema.org/eg-0423-rdfa.html",
-        "jsonld": "schema.org/eg-0423-jsonld.html"
-      }
-    }
+    ]
   },
   "SoftwareApplication": {
     "super_class": "CreativeWork",
@@ -11320,6 +11424,16 @@
     "path": [
       "Thing",
       "CreativeWork"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "SolveMathAction": {
+    "super_class": "Action",
+    "path": [
+      "Thing",
+      "Action"
     ],
     "sub_classes": [
 
@@ -11424,17 +11538,17 @@
 
     ],
     "examples": {
-      "eg-0445": {
-        "pre": "schema.org/eg-0445-pre.html",
-        "microdata": "schema.org/eg-0445-microdata.html",
-        "rdfa": "schema.org/eg-0445-rdfa.html",
-        "jsonld": "schema.org/eg-0445-jsonld.html"
-      },
       "eg-0191": {
         "pre": "schema.org/eg-0191-pre.html",
         "microdata": "schema.org/eg-0191-microdata.html",
         "rdfa": "schema.org/eg-0191-rdfa.html",
         "jsonld": "schema.org/eg-0191-jsonld.html"
+      },
+      "eg-0445": {
+        "pre": "schema.org/eg-0445-pre.html",
+        "microdata": "schema.org/eg-0445-microdata.html",
+        "rdfa": "schema.org/eg-0445-rdfa.html",
+        "jsonld": "schema.org/eg-0445-jsonld.html"
       }
     }
   },
@@ -11770,12 +11884,6 @@
 
     ],
     "examples": {
-      "eg-0444": {
-        "pre": "schema.org/eg-0444-pre.html",
-        "microdata": "schema.org/eg-0444-microdata.html",
-        "rdfa": "schema.org/eg-0444-rdfa.html",
-        "jsonld": "schema.org/eg-0444-jsonld.html"
-      },
       "eg-0026": {
         "pre": "schema.org/eg-0026-pre.html",
         "microdata": "schema.org/eg-0026-microdata.html",
@@ -11787,6 +11895,12 @@
         "microdata": "schema.org/eg-0166-microdata.html",
         "rdfa": "schema.org/eg-0166-rdfa.html",
         "jsonld": "schema.org/eg-0166-jsonld.html"
+      },
+      "eg-0444": {
+        "pre": "schema.org/eg-0444-pre.html",
+        "microdata": "schema.org/eg-0444-microdata.html",
+        "rdfa": "schema.org/eg-0444-rdfa.html",
+        "jsonld": "schema.org/eg-0444-jsonld.html"
       }
     }
   },
@@ -12248,15 +12362,7 @@
     ],
     "sub_classes": [
 
-    ],
-    "examples": {
-      "eg-0441": {
-        "pre": "schema.org/eg-0441-pre.html",
-        "microdata": "schema.org/eg-0441-microdata.html",
-        "rdfa": "schema.org/eg-0441-rdfa.html",
-        "jsonld": "schema.org/eg-0441-jsonld.html"
-      }
-    }
+    ]
   },
   "ToyStore": {
     "super_class": "Store",
@@ -12423,11 +12529,11 @@
 
     ],
     "examples": {
-      "Drug-TreatmentIndication-MedicalContraindication-267": {
-        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-pre.html",
-        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-microdata.html",
-        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-rdfa.html",
-        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-267-jsonld.html"
+      "Drug-TreatmentIndication-MedicalContraindication-221": {
+        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html",
+        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html",
+        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html",
+        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html"
       }
     }
   },
@@ -12443,15 +12549,7 @@
     "path": [
       "Thing",
       "Intangible"
-    ],
-    "examples": {
-      "eg-0441": {
-        "pre": "schema.org/eg-0441-pre.html",
-        "microdata": "schema.org/eg-0441-microdata.html",
-        "rdfa": "schema.org/eg-0441-rdfa.html",
-        "jsonld": "schema.org/eg-0441-jsonld.html"
-      }
-    }
+    ]
   },
   "TypeAndQuantityNode": {
     "super_class": "StructuredValue",
@@ -12792,10 +12890,7 @@
         "jsonld": "schema.org/eg-0451-jsonld.html"
       },
       "eg-0453": {
-        "jsonld": "schema.org/eg-0453-jsonld.html",
-        "pre": "schema.org/eg-0453-pre.html",
-        "microdata": "schema.org/eg-0453-microdata.html",
-        "rdfa": "schema.org/eg-0453-rdfa.html"
+        "jsonld": "schema.org/eg-0453-jsonld.html"
       }
     }
   },
@@ -12837,6 +12932,12 @@
         "microdata": "schema.org/eg-0009-microdata.html",
         "rdfa": "schema.org/eg-0009-rdfa.html",
         "jsonld": "schema.org/eg-0009-jsonld.html"
+      },
+      "eg-0446": {
+        "pre": "schema.org/eg-0446-pre.html",
+        "microdata": "schema.org/eg-0446-microdata.html",
+        "rdfa": "schema.org/eg-0446-rdfa.html",
+        "jsonld": "schema.org/eg-0446-jsonld.html"
       }
     }
   },
@@ -12902,6 +13003,12 @@
       "CreativeWork"
     ],
     "examples": {
+      "eg-0454": {
+        "pre": "schema.org/eg-0454-pre.html",
+        "microdata": "schema.org/eg-0454-microdata.html",
+        "rdfa": "schema.org/eg-0454-rdfa.html",
+        "jsonld": "schema.org/eg-0454-jsonld.html"
+      },
       "eg-0455": {
         "pre": "schema.org/eg-0455-pre.html",
         "microdata": "schema.org/eg-0455-microdata.html",
@@ -13337,6 +13444,12 @@
   "accessMode": {
     "super_class": null,
     "examples": {
+      "eg-0321": {
+        "pre": "schema.org/eg-0321-pre.html",
+        "microdata": "schema.org/eg-0321-microdata.html",
+        "rdfa": "schema.org/eg-0321-rdfa.html",
+        "jsonld": "schema.org/eg-0321-jsonld.html"
+      },
       "eg-0322": {
         "pre": "schema.org/eg-0322-pre.html",
         "microdata": "schema.org/eg-0322-microdata.html",
@@ -13354,6 +13467,12 @@
   "accessModeSufficient": {
     "super_class": null,
     "examples": {
+      "eg-0321": {
+        "pre": "schema.org/eg-0321-pre.html",
+        "microdata": "schema.org/eg-0321-microdata.html",
+        "rdfa": "schema.org/eg-0321-rdfa.html",
+        "jsonld": "schema.org/eg-0321-jsonld.html"
+      },
       "eg-0322": {
         "pre": "schema.org/eg-0322-pre.html",
         "microdata": "schema.org/eg-0322-microdata.html",
@@ -13423,6 +13542,12 @@
         "rdfa": "schema.org/eg-0177-rdfa.html",
         "jsonld": "schema.org/eg-0177-jsonld.html"
       },
+      "eg-0321": {
+        "pre": "schema.org/eg-0321-pre.html",
+        "microdata": "schema.org/eg-0321-microdata.html",
+        "rdfa": "schema.org/eg-0321-rdfa.html",
+        "jsonld": "schema.org/eg-0321-jsonld.html"
+      },
       "eg-0322": {
         "pre": "schema.org/eg-0322-pre.html",
         "microdata": "schema.org/eg-0322-microdata.html",
@@ -13463,6 +13588,12 @@
   "accessibilitySummary": {
     "super_class": null,
     "examples": {
+      "eg-0321": {
+        "pre": "schema.org/eg-0321-pre.html",
+        "microdata": "schema.org/eg-0321-microdata.html",
+        "rdfa": "schema.org/eg-0321-rdfa.html",
+        "jsonld": "schema.org/eg-0321-jsonld.html"
+      },
       "eg-0322": {
         "pre": "schema.org/eg-0322-pre.html",
         "microdata": "schema.org/eg-0322-microdata.html",
@@ -13549,12 +13680,6 @@
   "additionalProperty": {
     "super_class": null,
     "examples": {
-      "eg-0404": {
-        "pre": "schema.org/eg-0404-pre.html",
-        "microdata": "schema.org/eg-0404-microdata.html",
-        "rdfa": "schema.org/eg-0404-rdfa.html",
-        "jsonld": "schema.org/eg-0404-jsonld.html"
-      },
       "eg-0405": {
         "pre": "schema.org/eg-0405-pre.html",
         "microdata": "schema.org/eg-0405-microdata.html",
@@ -14028,17 +14153,17 @@
   "availableLanguage": {
     "super_class": null,
     "examples": {
-      "eg-0433": {
-        "pre": "schema.org/eg-0433-pre.html",
-        "microdata": "schema.org/eg-0433-microdata.html",
-        "rdfa": "schema.org/eg-0433-rdfa.html",
-        "jsonld": "schema.org/eg-0433-jsonld.html"
-      },
       "eg-0369": {
         "pre": "schema.org/eg-0369-pre.html",
         "microdata": "schema.org/eg-0369-microdata.html",
         "rdfa": "schema.org/eg-0369-rdfa.html",
         "jsonld": "schema.org/eg-0369-jsonld.html"
+      },
+      "eg-0433": {
+        "pre": "schema.org/eg-0433-pre.html",
+        "microdata": "schema.org/eg-0433-microdata.html",
+        "rdfa": "schema.org/eg-0433-rdfa.html",
+        "jsonld": "schema.org/eg-0433-jsonld.html"
       }
     }
   },
@@ -14099,10 +14224,16 @@
   "billingAddress": {
     "super_class": null
   },
+  "billingDuration": {
+    "super_class": null
+  },
   "billingIncrement": {
     "super_class": null
   },
   "billingPeriod": {
+    "super_class": null
+  },
+  "billingStart": {
     "super_class": null
   },
   "biomechnicalClass": {
@@ -14186,12 +14317,6 @@
   "broadcastFrequency": {
     "super_class": null,
     "examples": {
-      "eg-0319": {
-        "pre": "schema.org/eg-0319-pre.html",
-        "microdata": "schema.org/eg-0319-microdata.html",
-        "rdfa": "schema.org/eg-0319-rdfa.html",
-        "jsonld": "schema.org/eg-0319-jsonld.html"
-      },
       "eg-0320": {
         "pre": "schema.org/eg-0320-pre.html",
         "microdata": "schema.org/eg-0320-microdata.html",
@@ -14554,6 +14679,9 @@
   "copyrightHolder": {
     "super_class": null
   },
+  "copyrightNotice": {
+    "super_class": null
+  },
   "copyrightYear": {
     "super_class": null
   },
@@ -14620,6 +14748,9 @@
     "super_class": null
   },
   "credentialCategory": {
+    "super_class": null
+  },
+  "creditText": {
     "super_class": null
   },
   "creditedTo": {
@@ -16129,15 +16260,7 @@
     "super_class": null
   },
   "itinerary": {
-    "super_class": null,
-    "examples": {
-      "eg-0441": {
-        "pre": "schema.org/eg-0441-pre.html",
-        "microdata": "schema.org/eg-0441-microdata.html",
-        "rdfa": "schema.org/eg-0441-rdfa.html",
-        "jsonld": "schema.org/eg-0441-jsonld.html"
-      }
-    }
+    "super_class": null
   },
   "jobBenefits": {
     "super_class": null
@@ -16378,6 +16501,12 @@
         "microdata": "schema.org/eg-0462-microdata.html",
         "rdfa": "schema.org/eg-0462-rdfa.html",
         "jsonld": "schema.org/eg-0462-jsonld.html"
+      },
+      "eg-0382": {
+        "pre": "schema.org/eg-0382-pre.html",
+        "microdata": "schema.org/eg-0382-microdata.html",
+        "rdfa": "schema.org/eg-0382-rdfa.html",
+        "jsonld": "schema.org/eg-0382-jsonld.html"
       }
     }
   },
@@ -16434,6 +16563,9 @@
     "super_class": null
   },
   "materialExtent": {
+    "super_class": null
+  },
+  "mathExpression": {
     "super_class": null
   },
   "maxPrice": {
@@ -16792,22 +16924,30 @@
   "openingHours": {
     "super_class": null,
     "examples": {
-      "eg-0432": {
-        "pre": "schema.org/eg-0432-pre.html",
-        "microdata": "schema.org/eg-0432-microdata.html",
-        "rdfa": "schema.org/eg-0432-rdfa.html",
-        "jsonld": "schema.org/eg-0432-jsonld.html"
-      },
       "eg-0194": {
         "pre": "schema.org/eg-0194-pre.html",
         "microdata": "schema.org/eg-0194-microdata.html",
         "rdfa": "schema.org/eg-0194-rdfa.html",
         "jsonld": "schema.org/eg-0194-jsonld.html"
+      },
+      "eg-0432": {
+        "pre": "schema.org/eg-0432-pre.html",
+        "microdata": "schema.org/eg-0432-microdata.html",
+        "rdfa": "schema.org/eg-0432-rdfa.html",
+        "jsonld": "schema.org/eg-0432-jsonld.html"
       }
     }
   },
   "openingHoursSpecification": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0378": {
+        "pre": "schema.org/eg-0378-pre.html",
+        "microdata": "schema.org/eg-0378-microdata.html",
+        "rdfa": "schema.org/eg-0378-rdfa.html",
+        "jsonld": "schema.org/eg-0378-jsonld.html"
+      }
+    }
   },
   "opens": {
     "super_class": null
@@ -17142,6 +17282,9 @@
     }
   },
   "priceComponent": {
+    "super_class": null
+  },
+  "priceComponentType": {
     "super_class": null
   },
   "priceCurrency": {
@@ -17765,15 +17908,7 @@
     "super_class": null
   },
   "sharedContent": {
-    "super_class": null,
-    "examples": {
-      "eg-0423": {
-        "pre": "schema.org/eg-0423-pre.html",
-        "microdata": "schema.org/eg-0423-microdata.html",
-        "rdfa": "schema.org/eg-0423-rdfa.html",
-        "jsonld": "schema.org/eg-0423-jsonld.html"
-      }
-    }
+    "super_class": null
   },
   "shippingDestination": {
     "super_class": null
@@ -18236,6 +18371,12 @@
   "toRecipient": {
     "super_class": null
   },
+  "tocContinuation": {
+    "super_class": null
+  },
+  "tocEntry": {
+    "super_class": null
+  },
   "tongueWeight": {
     "super_class": null
   },
@@ -18427,6 +18568,9 @@
     "super_class": null
   },
   "usesHealthPlanIdStandard": {
+    "super_class": null
+  },
+  "utterances": {
     "super_class": null
   },
   "validFor": {
@@ -18647,6 +18791,9 @@
   "Abdomen": {
     "super_class": null
   },
+  "ActivationFee": {
+    "super_class": null
+  },
   "ActiveActionStatus": {
     "super_class": null
   },
@@ -18657,7 +18804,15 @@
     "super_class": null
   },
   "AlbumRelease": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
+      }
+    }
   },
   "AllWheelDriveConfiguration": {
     "super_class": null
@@ -18723,6 +18878,9 @@
     "super_class": null
   },
   "Chiropractic": {
+    "super_class": null
+  },
+  "CleaningFee": {
     "super_class": null
   },
   "Clinician": {
@@ -18827,7 +18985,13 @@
   "Discontinued": {
     "super_class": null
   },
+  "DistanceFee": {
+    "super_class": null
+  },
   "DoubleBlindedTrial": {
+    "super_class": null
+  },
+  "Downpayment": {
     "super_class": null
   },
   "DrivingSchoolVehicleUsage": {
@@ -19078,7 +19242,13 @@
   "Infectious": {
     "super_class": null
   },
+  "Installment": {
+    "super_class": null
+  },
   "InternationalTrial": {
+    "super_class": null
+  },
+  "InvoicePrice": {
     "super_class": null
   },
   "ItemListOrderAscending": {
@@ -19115,6 +19285,9 @@
     }
   },
   "LimitedByGuaranteeCharity": {
+    "super_class": null
+  },
+  "ListPrice": {
     "super_class": null
   },
   "LiveAlbum": {
@@ -19155,6 +19328,9 @@
   "MRI": {
     "super_class": null
   },
+  "MSRP": {
+    "super_class": null
+  },
   "Male": {
     "super_class": null
   },
@@ -19187,6 +19363,9 @@
     "sub_classes": [
 
     ]
+  },
+  "MinimumAdvertisedPrice": {
+    "super_class": null
   },
   "MisconceptionsHealthAspect": {
     "super_class": null
@@ -19744,6 +19923,12 @@
   "RsvpResponseYes": {
     "super_class": null
   },
+  "SRP": {
+    "super_class": null
+  },
+  "SalePrice": {
+    "super_class": null
+  },
   "Saturday": {
     "super_class": null
   },
@@ -19807,6 +19992,17 @@
     "super_class": null
   },
   "StudioAlbum": {
+    "super_class": null,
+    "examples": {
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
+      }
+    }
+  },
+  "Subscription": {
     "super_class": null
   },
   "Sunday": {

@@ -1,25 +1,35 @@
-<script type="application/ld+json">
 {
-  "@type": "DigitalDocument",
-  "name": "New schema.org types proposal",
-  "author": "Alice",
-  "hasDigitalDocumentPermission": [
+  "@context": "https://schema.org/",
+  "@type": "Book",
+  "name": "Alice in Wonderland",
+  "accessMode": ["auditory", "textual", "visual"],
+  "accessibilityFeature": ["alternativeText", "synchronizedAudioText"],
+  "accessModeSufficient": [
     {
-      "@type": "DigitalDocumentPermission",
-      "permissionType": "https://schema.org/WritePermission",
-      "grantee": {
-        "@type": "Person",
-        "email": "alice@example.com"
-      }
+      "@type": "ItemList",
+      "itemListElement": ["textual"],
+      "description": "See the text"
     },
     {
-      "@type": "DigitalDocumentPermission",
-      "permissionType": "https://schema.org/ReadPermission",
-      "grantee": {
-        "@type": "Audience",
-        "audienceType": "public"
-      }
+      "@type": "ItemList",
+      "itemListElement": ["textual", "visual"],
+      "description": "See the text and images"
+    },
+    {
+      "@type": "ItemList",
+      "itemListElement": ["auditory"],
+      "description": "Hear the text and image descriptions"
+    },
+    {
+      "@type": "ItemList",
+      "itemListElement": ["auditory", "visual"],
+      "description": "Hear the text and see the images"
+    },
+    {
+      "@type": "ItemList",
+      "itemListElement": ["auditory", "visual", "textual"],
+      "description": "Hear the text and see the text and images"
     }
-  ]
+  ],
+  "accessibilitySummary": "Short descriptions are provided; long descriptions of the images are not needed for most readers."
 }
-</script>
