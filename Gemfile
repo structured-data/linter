@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gemspec
-ruby "2.7.2"
+ruby "3.0"
 
 # Include non-released gems first
 gem "sinatra-rdf",        git: "https://github.com/ruby-rdf/sinatra-rdf", branch: "develop"
@@ -35,7 +35,6 @@ gem 'rest-client-components', git: "https://github.com/amatriain/rest-client-com
 gem 'jsonlint',           git: "https://github.com/dougbarth/jsonlint"
 
 group :debug do
-  gem 'awesome_print', github: 'akshaymohite/awesome_print'
   gem 'shotgun'
   gem "byebug"
 end
