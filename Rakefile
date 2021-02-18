@@ -18,8 +18,8 @@ schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schema
 schema_version = ENV.fetch("schema_version", "11.0")
 
 namespace :schema do
-  desc "Create custom pre-compiled vocabulary"
-  task vocab: "lib/rdf/vocab/schema.rb"
+  desc "Create custom pre-compiled vocabularies"
+  task vocab: %w(lib/rdf/vocab/schema.rb lib/rdf/vocab/schemas.rb)
 
   file "lib/rdf/vocab/schema.rb" => :do_build do
     puts "Generate lib/rdf/vocab/schema.rb"
@@ -28,6 +28,7 @@ namespace :schema do
     cmd += " --module-name RDF::Vocab"
     cmd += " --class-name SCHEMA"
     cmd += " --strict"
+    cmd += " --noDoc"
     cmd += " -o lib/rdf/vocab/schema.rb_t"
     cmd += " #{schema_base}/releases/#{schema_version}/schemaorg-current-http.nq"
     puts "  #{cmd}"
@@ -39,6 +40,28 @@ namespace :schema do
       %x{rm -f lib/rdf/vocab/schema.rb_t}
     end
   end
+
+
+  file "lib/rdf/vocab/schemas.rb" => :do_build do
+    puts "Generate lib/rdf/vocab/schemas.rb"
+    cmd = "bundle exec rdf"
+    cmd += " serialize --uri https://schema.org/ --output-format vocabulary"
+    cmd += " --module-name RDF::Vocab"
+    cmd += " --class-name SCHEMAS"
+    cmd += " --strict"
+    cmd += " --noDoc"
+    cmd += " -o lib/rdf/vocab/schemas.rb_t"
+    cmd += " #{schema_base}/releases/#{schema_version}/schemaorg-current-https.nq"
+    puts "  #{cmd}"
+    begin
+      %x{#{cmd} && mv lib/rdf/vocab/schemas.rb_t lib/rdf/vocab/schemas.rb}
+    rescue
+      puts "Failed to load schema: #{$!.message}"
+    ensure
+      %x{rm -f lib/rdf/vocab/schemas.rb_t}
+    end
+  end
+
   task :do_build
 
   desc "Create pre-compiled context"
