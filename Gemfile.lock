@@ -111,10 +111,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: 53650fa857f9b33a930eecde7ead05cc00d5fb1b
+  revision: 55f447d809d84e208e11d4545d3d97535452aeab
   branch: develop
   specs:
-    rdf-reasoner (0.7.0)
+    rdf-reasoner (0.7.1)
       rdf (~> 3.1, >= 3.1.12)
       rdf-xsd (~> 3.1)
 
@@ -170,7 +170,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.11.0)
+    linter (3.11.1)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)

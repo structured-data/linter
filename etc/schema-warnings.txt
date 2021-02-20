@@ -11,41 +11,17 @@ schema.org/compoundPrice-2-microdata.html: ok
 schema.org/compoundPrice-2-pre.html: ok
 schema.org/compoundPrice-2-rdfa.html: ok
 schema.org/eg-0001-jsonld.html: ok
-schema.org/eg-0001-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.janedoe.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0001-microdata.html: ok
 schema.org/eg-0001-pre.html: ok
-schema.org/eg-0001-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.janedoe.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0001-rdfa.html: ok
 schema.org/eg-0003-jsonld.html: ok
 schema.org/eg-0003-microdata.html: ok
 schema.org/eg-0003-pre.html: ok
 schema.org/eg-0003-rdfa.html: ok
 schema.org/eg-0004-jsonld.html: ok
-schema.org/eg-0004-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.greatfood.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0004-microdata.html: ok
 schema.org/eg-0004-pre.html: ok
-schema.org/eg-0004-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.greatfood.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0004-rdfa.html: ok
 schema.org/eg-0005-jsonld.html: ok
 schema.org/eg-0005-microdata.html: ok
 schema.org/eg-0005-pre.html: ok
@@ -63,76 +39,32 @@ schema.org/eg-0008-microdata.html: ok
 schema.org/eg-0008-pre.html: ok
 schema.org/eg-0008-rdfa.html: ok
 schema.org/eg-0009-jsonld.html: ok
-schema.org/eg-0009-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may20-fedexforum> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may23-midamericacenter> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-everlong.html> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-rope.html> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0009-microdata.html: ok
 schema.org/eg-0009-pre.html: ok
-schema.org/eg-0009-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-everlong.html> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-rope.html> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may23-midamericacenter> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/foo-fighters-may20-fedexforum> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0009-rdfa.html: ok
 schema.org/eg-0010-jsonld.html: ok
 schema.org/eg-0010-microdata.html: ok
 schema.org/eg-0010-pre.html: ok
 schema.org/eg-0010-rdfa.html: ok
 schema.org/eg-0011-jsonld.html: ok
-schema.org/eg-0011-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/save-a-lot-monitors.com/dell-30.html> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/jondoe-gadgets.com/dell-30.html> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0011-microdata.html: ok
 schema.org/eg-0011-pre.html: ok
-schema.org/eg-0011-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/jondoe-gadgets.com/dell-30.html> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/save-a-lot-monitors.com/dell-30.html> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0011-rdfa.html: ok
 schema.org/eg-0012-jsonld.html: ok
-schema.org/eg-0012-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0012-microdata.html: ok
 schema.org/eg-0012-pre.html: ok
-schema.org/eg-0012-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0012-rdfa.html: ok
 schema.org/eg-0013-jsonld.html: {
   "property": {
     "schema:instrument": [
-      "Subject _:g432700(schema:Recipe,schema:Thing,schema:CreativeWork,schema:HowTo,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+      "Subject _:g432260(schema:Recipe,schema:Thing,schema:CreativeWork,schema:HowTo,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
     ]
   }
 }
 schema.org/eg-0013-microdata.html: {
   "property": {
     "schemas:instrument": [
-      "Subject _:g433180(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g432740(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
@@ -140,7 +72,7 @@ schema.org/eg-0013-pre.html: ok
 schema.org/eg-0013-rdfa.html: {
   "property": {
     "schemas:instrument": [
-      "Subject _:g433760(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g433320(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
@@ -190,45 +122,13 @@ schema.org/eg-0020-microdata.html: ok
 schema.org/eg-0020-pre.html: ok
 schema.org/eg-0020-rdfa.html: ok
 schema.org/eg-0021-jsonld.html: ok
-schema.org/eg-0021-microdata.html: {
-  "property": {
-    "schemas:contentUrl": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0021-microdata.html: ok
 schema.org/eg-0021-pre.html: ok
-schema.org/eg-0021-rdfa.html: {
-  "property": {
-    "schemas:contentUrl": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0021-rdfa.html: ok
 schema.org/eg-0022-jsonld.html: ok
-schema.org/eg-0022-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/sharp-dressed-man> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/hurt-so-good> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/sweet-home-alabama> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/shook-you-all-night-long> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/old-time-rock-and-roll> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0022-microdata.html: ok
 schema.org/eg-0022-pre.html: ok
-schema.org/eg-0022-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/hurt-so-good> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/sharp-dressed-man> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/shook-you-all-night-long> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/sweet-home-alabama> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/old-time-rock-and-roll> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0022-rdfa.html: ok
 schema.org/eg-0023-jsonld.html: ok
 schema.org/eg-0023-microdata.html: ok
 schema.org/eg-0023-pre.html: ok
@@ -246,57 +146,23 @@ schema.org/eg-0026-microdata.html: ok
 schema.org/eg-0026-pre.html: ok
 schema.org/eg-0026-rdfa.html: ok
 schema.org/eg-0027-jsonld.html: ok
-schema.org/eg-0027-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/morning-mr-magpie> not compatible with rangeIncludes ()",
-      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/bloom> not compatible with rangeIncludes ()",
-      "Object <file:///artist/radiohead/album/the-king-of-limbs> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0027-microdata.html: ok
 schema.org/eg-0027-pre.html: ok
-schema.org/eg-0027-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/morning-mr-magpie> not compatible with rangeIncludes ()",
-      "Object <file:///artist/radiohead/album/the-king-of-limbs/track/bloom> not compatible with rangeIncludes ()",
-      "Object <file:///artist/radiohead/album/the-king-of-limbs> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0027-rdfa.html: ok
 schema.org/eg-0028-jsonld.html: ok
 schema.org/eg-0028-microdata.html: ok
 schema.org/eg-0028-pre.html: ok
 schema.org/eg-0028-rdfa.html: ok
 schema.org/eg-0029-jsonld.html: ok
-schema.org/eg-0029-microdata.html: {
-  "property": {
-    "schemas:additionalType": [
-      "Object <http://www.productontology.org/id/Racing_bicycle> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0029-microdata.html: ok
 schema.org/eg-0029-pre.html: ok
 schema.org/eg-0029-rdfa.html: ok
 schema.org/eg-0030-jsonld.html: ok
-schema.org/eg-0030-microdata.html: {
-  "property": {
-    "schemas:additionalType": [
-      "Object <http://www.productontology.org/id/Printer_(computing)> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0030-microdata.html: ok
 schema.org/eg-0030-pre.html: ok
 schema.org/eg-0030-rdfa.html: ok
 schema.org/eg-0031-jsonld.html: ok
-schema.org/eg-0031-microdata.html: {
-  "property": {
-    "schemas:additionalType": [
-      "Object <http://www.productontology.org/id/Television_set> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0031-microdata.html: ok
 schema.org/eg-0031-pre.html: ok
 schema.org/eg-0031-rdfa.html: ok
 schema.org/eg-0032-jsonld.html: ok
@@ -416,7 +282,7 @@ schema.org/eg-0088-pre.html: ok
 schema.org/eg-0089-jsonld.html: {
   "property": {
     "schema:participant": [
-      "Object _:g456900(schema:MedicalAudience,schema:Thing,schema:Intangible,schema:Audience,schema:PeopleAudience,rdfs:Resource) not compatible with rangeIncludes (schema:Organization,schema:Person)"
+      "Object _:g456660(schema:MedicalAudience,schema:Thing,schema:Intangible,schema:Audience,schema:PeopleAudience,rdfs:Resource) not compatible with rangeIncludes (schema:Organization,schema:Person)"
     ]
   }
 }
@@ -622,49 +488,13 @@ schema.org/eg-0164-pre.html: ok
 schema.org/eg-0165-jsonld.html: ok
 schema.org/eg-0165-pre.html: ok
 schema.org/eg-0166-jsonld.html: ok
-schema.org/eg-0166-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.bbc.co.uk/iplayer/episode/b00sj9sq> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b006q2x0> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/bbcone> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b00rs69w> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b00sj9sq> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0166-microdata.html: ok
 schema.org/eg-0166-pre.html: ok
-schema.org/eg-0166-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.bbc.co.uk/programmes/b006q2x0> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/bbcone> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b00sj9sq> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b00rs69w> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/iplayer/episode/b00sj9sq> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0166-rdfa.html: ok
 schema.org/eg-0167-jsonld.html: ok
-schema.org/eg-0167-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.bbc.co.uk/programmes/b006qykl> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/radio4> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b03ggc19> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0167-microdata.html: ok
 schema.org/eg-0167-pre.html: ok
-schema.org/eg-0167-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.bbc.co.uk/radio4> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b03ggc19> not compatible with rangeIncludes ()",
-      "Object <http://www.bbc.co.uk/programmes/b006qykl> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0167-rdfa.html: ok
 schema.org/eg-0168-jsonld.html: ok
 schema.org/eg-0168-microdata.html: ok
 schema.org/eg-0168-pre.html: ok
@@ -672,53 +502,17 @@ schema.org/eg-0168-rdfa.html: ok
 schema.org/eg-0169-jsonld.html: ok
 schema.org/eg-0169-pre.html: ok
 schema.org/eg-0171-jsonld.html: ok
-schema.org/eg-0171-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0171-microdata.html: ok
 schema.org/eg-0171-pre.html: ok
-schema.org/eg-0171-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0171-rdfa.html: ok
 schema.org/eg-0172-jsonld.html: ok
-schema.org/eg-0172-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0172-microdata.html: ok
 schema.org/eg-0172-pre.html: ok
-schema.org/eg-0172-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0172-rdfa.html: ok
 schema.org/eg-0173-jsonld.html: ok
-schema.org/eg-0173-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0173-microdata.html: ok
 schema.org/eg-0173-pre.html: ok
-schema.org/eg-0173-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.ticketfly.com/purchase/309433> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0173-rdfa.html: ok
 schema.org/eg-0174-jsonld.html: ok
 schema.org/eg-0174-pre.html: ok
 schema.org/eg-0175-jsonld.html: ok
@@ -742,7 +536,7 @@ schema.org/eg-0180-pre.html: ok
 schema.org/eg-0181-jsonld.html: {
   "property": {
     "schema:participant": [
-      "Subject _:g482600(schema:Flight,schema:Thing,schema:Intangible,schema:Trip,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+      "Subject _:g482360(schema:Flight,schema:Thing,schema:Intangible,schema:Trip,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
     ]
   }
 }
@@ -766,37 +560,9 @@ schema.org/eg-0187-rdfa.html: ok
 schema.org/eg-0188-jsonld.html: ok
 schema.org/eg-0188-pre.html: ok
 schema.org/eg-0189-jsonld.html: ok
-schema.org/eg-0189-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///examples/ticket/12341234> not compatible with rangeIncludes ()"
-    ],
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/Symphony_No._7_(Shostakovich)> not compatible with rangeIncludes ()",
-      "Object <http://www.jaapvanzweden.com/> not compatible with rangeIncludes ()",
-      "Object <http://cso.org/> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Symphony_Center> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Peter_Grimes> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0189-microdata.html: ok
 schema.org/eg-0189-pre.html: ok
-schema.org/eg-0189-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/Symphony_Center> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Symphony_No._7_(Shostakovich)> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Peter_Grimes> not compatible with rangeIncludes ()",
-      "Object <http://www.jaapvanzweden.com/> not compatible with rangeIncludes ()",
-      "Object <http://cso.org/> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Chicago_Symphony_Orchestra> not compatible with rangeIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <file:///examples/ticket/12341234> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0189-rdfa.html: ok
 schema.org/eg-0190-jsonld.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html": [
@@ -805,33 +571,9 @@ schema.org/eg-0190-jsonld.html: {
     ]
   }
 }
-schema.org/eg-0190-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/William_Shakespeare> not compatible with rangeIncludes ()",
-      "Object <http://www.shakespearesglobe.com/> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Julius_Caesar_(play)> not compatible with rangeIncludes ()",
-      "Object <http://worldcat.org/entity/work/id/1807288036> not compatible with rangeIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <file:///examples/ticket/0012301230123> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0190-microdata.html: ok
 schema.org/eg-0190-pre.html: ok
-schema.org/eg-0190-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/Julius_Caesar_(play)> not compatible with rangeIncludes ()",
-      "Object <http://worldcat.org/entity/work/id/1807288036> not compatible with rangeIncludes ()",
-      "Object <http://www.shakespearesglobe.com/> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/William_Shakespeare> not compatible with rangeIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <file:///examples/ticket/0012301230123> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0190-rdfa.html: ok
 schema.org/eg-0191-jsonld.html: ok
 schema.org/eg-0191-microdata.html: ok
 schema.org/eg-0191-pre.html: ok
@@ -853,21 +595,9 @@ schema.org/eg-0195-microdata.html: ok
 schema.org/eg-0195-pre.html: ok
 schema.org/eg-0195-rdfa.html: ok
 schema.org/eg-0196-jsonld.html: ok
-schema.org/eg-0196-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://example.com/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0196-microdata.html: ok
 schema.org/eg-0196-pre.html: ok
-schema.org/eg-0196-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://example.com/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0196-rdfa.html: ok
 schema.org/eg-0197-jsonld.html: ok
 schema.org/eg-0197-microdata.html: ok
 schema.org/eg-0197-pre.html: ok
@@ -903,39 +633,13 @@ schema.org/eg-0203-microdata.html: ok
 schema.org/eg-0203-pre.html: ok
 schema.org/eg-0203-rdfa.html: ok
 schema.org/eg-0204-jsonld.html: ok
-schema.org/eg-0204-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/Delia_Derbyshire> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/University_of_Cambridge> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0204-microdata.html: ok
 schema.org/eg-0204-pre.html: ok
-schema.org/eg-0204-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/University_of_Cambridge> not compatible with rangeIncludes ()",
-      "Object <http://en.wikipedia.org/wiki/Delia_Derbyshire> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0204-rdfa.html: ok
 schema.org/eg-0205-jsonld.html: ok
-schema.org/eg-0205-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/Ghostbusters> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0205-microdata.html: ok
 schema.org/eg-0205-pre.html: ok
-schema.org/eg-0205-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://en.wikipedia.org/wiki/Ghostbusters> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0205-rdfa.html: ok
 schema.org/eg-0206-jsonld.html: ok
 schema.org/eg-0206-microdata.html: ok
 schema.org/eg-0206-pre.html: ok
@@ -945,29 +649,18 @@ schema.org/eg-0207-microdata.html: ok
 schema.org/eg-0207-pre.html: ok
 schema.org/eg-0207-rdfa.html: ok
 schema.org/eg-0208-jsonld.html: ok
-schema.org/eg-0208-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://multivarki.ru?filters%5Bprice%5D%5BLTE%5D=39600> not compatible with rangeIncludes ()",
-      "Object <http://multivarki.ru/brand_502/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0208-microdata.html: ok
 schema.org/eg-0208-pre.html: ok
 schema.org/eg-0208-rdfa.html: {
   "property": {
-    "schema:priceCurrency": [
-      "Subject _:g496940(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:Reservation,schema:Ticket,schema:TradeAction)"
-    ],
     "schema:itemCondition": [
-      "Subject _:g496940(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Demand,schema:Offer,schema:Product)"
+      "Subject _:g496700(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Demand,schema:Offer,schema:Product)"
     ],
     "schema:price": [
-      "Subject _:g496940(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:TradeAction)"
+      "Subject _:g496700(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:TradeAction)"
     ],
-    "schemas:url": [
-      "Object <http://multivarki.ru?filters%5Bprice%5D%5BLTE%5D=39600> not compatible with rangeIncludes ()",
-      "Object <http://multivarki.ru/brand_502/> not compatible with rangeIncludes ()"
+    "schema:priceCurrency": [
+      "Subject _:g496700(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:Reservation,schema:Ticket,schema:TradeAction)"
     ]
   }
 }
@@ -976,21 +669,9 @@ schema.org/eg-0209-microdata.html: ok
 schema.org/eg-0209-pre.html: ok
 schema.org/eg-0209-rdfa.html: ok
 schema.org/eg-0210-jsonld.html: ok
-schema.org/eg-0210-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://en.wikipedia.org/wiki/Billboard_200> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0210-microdata.html: ok
 schema.org/eg-0210-pre.html: ok
-schema.org/eg-0210-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://en.wikipedia.org/wiki/Billboard_200> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0210-rdfa.html: ok
 schema.org/eg-0211-jsonld.html: ok
 schema.org/eg-0211-microdata.html: ok
 schema.org/eg-0211-pre.html: ok
@@ -1002,7 +683,7 @@ schema.org/eg-0212-rdfa.html: ok
 schema.org/eg-0213-jsonld.html: {
   "property": {
     "schema:isPartOf": [
-      "Subject _:g501340(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g501100(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
     ]
   }
 }
@@ -1023,9 +704,6 @@ schema.org/eg-0215-jsonld.html: {
 }
 schema.org/eg-0215-microdata.html: {
   "property": {
-    "schemas:contentUrl": [
-      "Object <https://archive.org/download/alices_adventures_1005_librivox/AlicesAdventuresInWonderlandV5_librivox.m4b> not compatible with rangeIncludes ()"
-    ],
     "schemas:title": [
       "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
     ],
@@ -1037,9 +715,6 @@ schema.org/eg-0215-microdata.html: {
 schema.org/eg-0215-pre.html: ok
 schema.org/eg-0215-rdfa.html: {
   "property": {
-    "schemas:contentUrl": [
-      "Object <https://archive.org/download/alices_adventures_1005_librivox/AlicesAdventuresInWonderlandV5_librivox.m4b> not compatible with rangeIncludes ()"
-    ],
     "schemas:title": [
       "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
     ],
@@ -1053,17 +728,11 @@ schema.org/eg-0216-microdata.html: ok
 schema.org/eg-0216-pre.html: ok
 schema.org/eg-0216-rdfa.html: ok
 schema.org/eg-0217-jsonld.html: ok
-schema.org/eg-0217-microdata.html: Error: undefined method `pname' for #<RDF::Literal:0x7af58("DVD")>
+schema.org/eg-0217-microdata.html: Error: undefined method `pname' for #<RDF::Literal:0x7ae68("DVD")>
 schema.org/eg-0217-pre.html: ok
 schema.org/eg-0217-rdfa.html: ok
 schema.org/eg-0218-jsonld.html: ok
-schema.org/eg-0218-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://ft.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0218-microdata.html: ok
 schema.org/eg-0218-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0218-pre.html": [
@@ -1072,13 +741,7 @@ schema.org/eg-0218-pre.html: {
     ]
   }
 }
-schema.org/eg-0218-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://ft.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0218-rdfa.html: ok
 schema.org/eg-0219-jsonld.html: ok
 schema.org/eg-0219-microdata.html: ok
 schema.org/eg-0219-pre.html: ok
@@ -1088,21 +751,9 @@ schema.org/eg-0220-microdata.html: ok
 schema.org/eg-0220-pre.html: ok
 schema.org/eg-0220-rdfa.html: ok
 schema.org/eg-0221-jsonld.html: ok
-schema.org/eg-0221-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.idwpublishing.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0221-microdata.html: ok
 schema.org/eg-0221-pre.html: ok
-schema.org/eg-0221-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.idwpublishing.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0221-rdfa.html: ok
 schema.org/eg-0320-jsonld.html: ok
 schema.org/eg-0320-microdata.html: ok
 schema.org/eg-0320-pre.html: ok
@@ -1120,18 +771,7 @@ schema.org/eg-0323-microdata.html: ok
 schema.org/eg-0323-pre.html: ok
 schema.org/eg-0323-rdfa.html: ok
 schema.org/eg-0324-jsonld.html: ok
-schema.org/eg-0324-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://twitter.com/politifact> not compatible with rangeIncludes ()",
-      "Object <https://en.wikipedia.org/wiki/Rick_Perry> not compatible with rangeIncludes ()",
-      "Object <https://rickperry.org/> not compatible with rangeIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <http://www.politifact.com/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0324-microdata.html: ok
 schema.org/eg-0324-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0324-pre.html": [
@@ -1161,50 +801,26 @@ schema.org/eg-0345-microdata.html: ok
 schema.org/eg-0345-pre.html: ok
 schema.org/eg-0345-rdfa.html: ok
 schema.org/eg-0349-jsonld.html: ok
-schema.org/eg-0349-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.vam.ac.uk/whatson/event/5150/shoes-pleasure-and-pain-696789408/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0349-microdata.html: ok
 schema.org/eg-0349-pre.html: ok
-schema.org/eg-0349-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.vam.ac.uk/whatson/event/5150/shoes-pleasure-and-pain-696789408/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0349-rdfa.html: ok
 schema.org/eg-0350-jsonld.html: ok
-schema.org/eg-0350-microdata.html: {
-  "property": {
-    "schemas:feesAndCommissionsSpecification": [
-      "Object <https://www.wellsfargo.com/credit-cards/secured/terms/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0350-microdata.html: ok
 schema.org/eg-0350-pre.html: ok
-schema.org/eg-0350-rdfa.html: {
-  "property": {
-    "schemas:feesAndCommissionsSpecification": [
-      "Object <https://www.wellsfargo.com/credit-cards/secured/terms/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0350-rdfa.html: ok
 schema.org/eg-0351-jsonld.html: {
   "property": {
     "schema:duration": [
-      "Subject _:g512420(schema:LoanOrCredit,schema:Thing,schema:Intangible,schema:Service,schema:FinancialProduct,rdfs:Resource) not compatible with domainIncludes (schema:Audiobook,schema:Event,schema:MediaObject,schema:Movie,schema:MusicRecording,schema:MusicRelease,schema:QuantitativeValueDistribution,schema:Schedule)",
-      "Object _:g512440(schema:QuantitativeValue,schema:Thing,schema:Intangible,schema:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schema:Duration)"
+      "Subject _:g512180(schema:LoanOrCredit,schema:Thing,schema:Intangible,schema:Service,schema:FinancialProduct,rdfs:Resource) not compatible with domainIncludes (schema:Audiobook,schema:Event,schema:MediaObject,schema:Movie,schema:MusicRecording,schema:MusicRelease,schema:QuantitativeValueDistribution,schema:Schedule)",
+      "Object _:g512200(schema:QuantitativeValue,schema:Thing,schema:Intangible,schema:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schema:Duration)"
     ]
   }
 }
 schema.org/eg-0351-microdata.html: {
   "property": {
     "schemas:duration": [
-      "Subject _:g512620(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
-      "Object _:g512760(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
+      "Subject _:g512380(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
+      "Object _:g512520(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
     ]
   }
 }
@@ -1212,22 +828,13 @@ schema.org/eg-0351-pre.html: ok
 schema.org/eg-0351-rdfa.html: {
   "property": {
     "schemas:duration": [
-      "Subject _:g513000(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
-      "Object _:g513020(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
+      "Subject _:g512760(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
+      "Object _:g512780(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
     ]
   }
 }
 schema.org/eg-0352-jsonld.html: ok
-schema.org/eg-0352-microdata.html: {
-  "property": {
-    "schemas:feesAndCommissionsSpecification": [
-      "Object <http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf> not compatible with rangeIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <http://rbs.co.uk> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0352-microdata.html: ok
 schema.org/eg-0352-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0352-pre.html": [
@@ -1236,28 +843,13 @@ schema.org/eg-0352-pre.html: {
     ]
   }
 }
-schema.org/eg-0352-rdfa.html: {
-  "property": {
-    "schemas:feesAndCommissionsSpecification": [
-      "Object <http://personal.rbs.co.uk/content/dam/rbs_co_uk/currentaccounts/downloads/Reward/Personal%20and%20Private%20Current%20Account%20Fees%20and%20Interest%20Rates.pdf> not compatible with rangeIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <http://rbs.co.uk> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0352-rdfa.html: ok
 schema.org/eg-0353-jsonld.html: ok
 schema.org/eg-0353-microdata.html: ok
 schema.org/eg-0353-pre.html: ok
 schema.org/eg-0353-rdfa.html: ok
 schema.org/eg-0354-jsonld.html: ok
-schema.org/eg-0354-microdata.html: {
-  "property": {
-    "schemas:feesAndCommissionsSpecification": [
-      "Object <https://www.wellsfargo.com/debit-card/#overview> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0354-microdata.html: ok
 schema.org/eg-0354-pre.html: ok
 schema.org/eg-0354-rdfa.html: ok
 schema.org/eg-0355-jsonld.html: ok
@@ -1267,14 +859,14 @@ schema.org/eg-0355-rdfa.html: ok
 schema.org/eg-0356-jsonld.html: {
   "property": {
     "schema:amount": [
-      "Subject _:g518840(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:InvestmentOrDeposit,schema:LoanOrCredit,schema:MonetaryGrant,schema:MoneyTransfer)"
+      "Subject _:g518600(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:InvestmentOrDeposit,schema:LoanOrCredit,schema:MonetaryGrant,schema:MoneyTransfer)"
     ]
   }
 }
 schema.org/eg-0356-microdata.html: {
   "property": {
     "schemas:amount": [
-      "Subject _:g518980(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g518740(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
@@ -1282,7 +874,7 @@ schema.org/eg-0356-pre.html: ok
 schema.org/eg-0356-rdfa.html: {
   "property": {
     "schemas:amount": [
-      "Subject _:g519240(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g519000(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
@@ -1374,21 +966,9 @@ schema.org/eg-0369-microdata.html: ok
 schema.org/eg-0369-pre.html: ok
 schema.org/eg-0369-rdfa.html: ok
 schema.org/eg-0370-jsonld.html: ok
-schema.org/eg-0370-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://acmebank.com/invoice.pdf> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0370-microdata.html: ok
 schema.org/eg-0370-pre.html: ok
-schema.org/eg-0370-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://acmebank.com/invoice.pdf> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0370-rdfa.html: ok
 schema.org/eg-0375-jsonld.html: ok
 schema.org/eg-0375-microdata.html: ok
 schema.org/eg-0375-pre.html: ok
@@ -1396,7 +976,7 @@ schema.org/eg-0375-rdfa.html: ok
 schema.org/eg-0376-jsonld.html: {
   "property": {
     "schema:participant": [
-      "Subject _:g526620(schema:Order,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+      "Subject _:g526380(schema:Order,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
     ]
   }
 }
@@ -1409,7 +989,7 @@ schema.org/eg-0376-microdata.html: {
   },
   "property": {
     "schemas:participant": [
-      "Subject _:g527400(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g527160(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
@@ -1417,7 +997,7 @@ schema.org/eg-0376-pre.html: ok
 schema.org/eg-0376-rdfa.html: {
   "property": {
     "schemas:participant": [
-      "Subject _:g528080(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g527840(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
@@ -1439,10 +1019,6 @@ schema.org/eg-0378-rdfa.html: ok
 schema.org/eg-0379-jsonld.html: ok
 schema.org/eg-0379-microdata.html: {
   "property": {
-    "schemas:url": [
-      "Object <http://purl.org/ASN/scheme/ASNEducationLevel/2> not compatible with rangeIncludes ()",
-      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()"
-    ],
     "schemas:inDefinedtermSet": [
       "No property definition found"
     ]
@@ -1451,41 +1027,24 @@ schema.org/eg-0379-microdata.html: {
 schema.org/eg-0379-pre.html: ok
 schema.org/eg-0379-rdfa.html: {
   "property": {
-    "schemas:url": [
-      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()",
-      "Object <http://purl.org/ASN/scheme/ASNEducationLevel/2> not compatible with rangeIncludes ()"
-    ],
     "schemas:isPartOf": [
-      "Subject _:g530620(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g530380(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
 schema.org/eg-0380-jsonld.html: {
   "property": {
     "schema:isPartOf": [
-      "Subject _:g530800(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)",
-      "Subject _:g530840(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+      "Subject _:g530560(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)",
+      "Subject _:g530600(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
     ]
   }
 }
 schema.org/eg-0380-microdata.html: {
   "property": {
-    "schemas:targetUrl": [
-      "Object <http://example.org/ENC/subjects/3102> not compatible with rangeIncludes ()",
-      "Object <http://example.org/CFE/subjects/3362> not compatible with rangeIncludes ()"
-    ],
     "schemas:isPartOf": [
-      "Subject _:g531540(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
-      "Subject _:g531600(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()",
-      "Object <https://scqf.org.uk/> not compatible with rangeIncludes ()",
-      "Object <http://example.org/movie.mp4> not compatible with rangeIncludes ()",
-      "Object <https://www.gov.uk/government/collections/national-curriculum> not compatible with rangeIncludes ()"
-    ],
-    "schemas:thumbnailUrl": [
-      "Object <http://example.org/thubnail.mp4> not compatible with rangeIncludes ()"
+      "Subject _:g531300(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
+      "Subject _:g531360(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
@@ -1493,40 +1052,15 @@ schema.org/eg-0380-pre.html: ok
 schema.org/eg-0380-rdfa.html: {
   "property": {
     "schemas:isPartOf": [
-      "Subject _:g532060(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
-      "Subject _:g532120(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
-    ],
-    "schemas:url": [
-      "Object <https://scqf.org.uk/> not compatible with rangeIncludes ()",
-      "Object <https://www.gov.uk/government/collections/national-curriculum> not compatible with rangeIncludes ()",
-      "Object <http://example.org/movie.mp4> not compatible with rangeIncludes ()",
-      "Object <http://example.org/lessonplan> not compatible with rangeIncludes ()"
-    ],
-    "schemas:thumbnailUrl": [
-      "Object <http://example.org/thubnail.mp4> not compatible with rangeIncludes ()"
-    ],
-    "schemas:targetUrl": [
-      "Object <http://example.org/CFE/subjects/3362> not compatible with rangeIncludes ()",
-      "Object <http://example.org/ENC/subjects/3102> not compatible with rangeIncludes ()"
+      "Subject _:g531880(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
+      "Subject _:g531820(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
     ]
   }
 }
 schema.org/eg-0381-jsonld.html: ok
-schema.org/eg-0381-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <https://en.wikipedia.org/wiki/Derivative_work> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0381-microdata.html: ok
 schema.org/eg-0381-pre.html: ok
-schema.org/eg-0381-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <https://en.wikipedia.org/wiki/Derivative_work> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0381-rdfa.html: ok
 schema.org/eg-0382-jsonld.html: ok
 schema.org/eg-0382-microdata.html: ok
 schema.org/eg-0382-pre.html: ok
@@ -1536,27 +1070,15 @@ schema.org/eg-0383-microdata.html: ok
 schema.org/eg-0383-pre.html: ok
 schema.org/eg-0383-rdfa.html: ok
 schema.org/eg-0384-jsonld.html: ok
-schema.org/eg-0384-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///map1234/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0384-microdata.html: ok
 schema.org/eg-0384-pre.html: ok
-schema.org/eg-0384-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///map1234/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0384-rdfa.html: ok
 schema.org/eg-0385-jsonld.html: {
   "property": {
-    "schema:availabilityStarts": [
+    "schema:availabilityEnds": [
       "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
     ],
-    "schema:availabilityEnds": [
+    "schema:availabilityStarts": [
       "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
     ]
   }
@@ -1566,10 +1088,10 @@ schema.org/eg-0385-pre.html: ok
 schema.org/eg-0385-rdfa.html: ok
 schema.org/eg-0386-jsonld.html: {
   "property": {
-    "schema:availabilityStarts": [
+    "schema:availabilityEnds": [
       "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
     ],
-    "schema:availabilityEnds": [
+    "schema:availabilityStarts": [
       "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
     ]
   }
@@ -1594,13 +1116,7 @@ schema.org/eg-0390-microdata.html: ok
 schema.org/eg-0390-pre.html: ok
 schema.org/eg-0390-rdfa.html: ok
 schema.org/eg-0391-jsonld.html: ok
-schema.org/eg-0391-microdata.html: {
-  "property": {
-    "schemas:additionalType": [
-      "Object <https://schema.org/Product> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0391-microdata.html: ok
 schema.org/eg-0391-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0391-pre.html": [
@@ -1613,36 +1129,15 @@ schema.org/eg-0391-rdfa.html: ok
 schema.org/eg-0394-jsonld.html: ok
 schema.org/eg-0394-microdata.html: ok
 schema.org/eg-0394-pre.html: ok
-schema.org/eg-0394-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://example.com/explosive-tennis-balls> not compatible with rangeIncludes ()",
-      "Object <http://example.com> not compatible with rangeIncludes ()"
-    ],
-    "schemas:sameAs": [
-      "Object <https://plus.google.com/u/0/+AcmeInc/> not compatible with rangeIncludes ()",
-      "Object <https://www.facebook.com/AcmeInc> not compatible with rangeIncludes ()",
-      "Object <https://twitter.com/AcmeInc> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0394-rdfa.html: ok
 schema.org/eg-0395-jsonld.html: {
   "property": {
     "schema:participant": [
-      "Subject _:g537600(schema:Offer,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+      "Subject _:g537360(schema:Offer,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
     ]
   }
 }
-schema.org/eg-0395-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/eg-0395-microdata.html#schemarecord> not compatible with rangeIncludes ()"
-    ],
-    "schemas:additionalType": [
-      "Object <https://schema.org/Product> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0395-microdata.html: ok
 schema.org/eg-0395-pre.html: ok
 schema.org/eg-0395-rdfa.html: ok
 schema.org/eg-0396-jsonld.html: ok
@@ -1658,57 +1153,21 @@ schema.org/eg-0398-microdata.html: ok
 schema.org/eg-0398-pre.html: ok
 schema.org/eg-0398-rdfa.html: ok
 schema.org/eg-0399-jsonld.html: ok
-schema.org/eg-0399-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <https://doi.org/10.1080/01639374.2012.682254> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0399-microdata.html: ok
 schema.org/eg-0399-pre.html: ok
-schema.org/eg-0399-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <https://doi.org/10.1080/01639374.2012.682254> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0399-rdfa.html: ok
 schema.org/eg-0400-jsonld.html: ok
-schema.org/eg-0400-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://viaf.org/viaf/95218067> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0400-microdata.html: ok
 schema.org/eg-0400-pre.html: ok
-schema.org/eg-0400-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://viaf.org/viaf/95218067> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0400-rdfa.html: ok
 schema.org/eg-0401-jsonld.html: ok
 schema.org/eg-0401-microdata.html: ok
 schema.org/eg-0401-pre.html: ok
 schema.org/eg-0401-rdfa.html: ok
 schema.org/eg-0402-jsonld.html: ok
-schema.org/eg-0402-microdata.html: {
-  "property": {
-    "schemas:contentUrl": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0402-microdata.html: ok
 schema.org/eg-0402-pre.html: ok
-schema.org/eg-0402-rdfa.html: {
-  "property": {
-    "schemas:contentUrl": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/mexico-beach.jpg> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0402-rdfa.html: ok
 schema.org/eg-0405-jsonld.html: ok
 schema.org/eg-0405-microdata.html: ok
 schema.org/eg-0405-pre.html: ok
@@ -1746,13 +1205,7 @@ schema.org/eg-0413-microdata.html: ok
 schema.org/eg-0413-pre.html: ok
 schema.org/eg-0413-rdfa.html: ok
 schema.org/eg-0414-jsonld.html: ok
-schema.org/eg-0414-microdata.html: {
-  "property": {
-    "schemas:propertyID": [
-      "Object <http://purl.org/vvo/ns#luggageCapacitySeatsFolded> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0414-microdata.html: ok
 schema.org/eg-0414-pre.html: ok
 schema.org/eg-0414-rdfa.html: ok
 schema.org/eg-0415-jsonld.html: ok
@@ -1779,13 +1232,7 @@ schema.org/eg-0418-microdata.html: ok
 schema.org/eg-0418-pre.html: ok
 schema.org/eg-0418-rdfa.html: ok
 schema.org/eg-0419-jsonld.html: ok
-schema.org/eg-0419-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/www.imdb.com/title/tt0085750/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0419-microdata.html: ok
 schema.org/eg-0419-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0419-pre.html": [
@@ -1794,35 +1241,15 @@ schema.org/eg-0419-pre.html: {
     ]
   }
 }
-schema.org/eg-0419-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/www.imdb.com/title/tt0085750/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0419-rdfa.html: ok
 schema.org/eg-0420-jsonld.html: ok
 schema.org/eg-0420-microdata.html: ok
 schema.org/eg-0420-pre.html: ok
 schema.org/eg-0420-rdfa.html: ok
 schema.org/eg-0421-jsonld.html: ok
-schema.org/eg-0421-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <https://www.pinterest.com/ryansammy/> not compatible with rangeIncludes ()",
-      "Object <http://www.reddit.com/r/BMW/comments/1oyh6j/leaked_new_bmw_2_series_m235i_ahead_of_oct_25/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0421-microdata.html: ok
 schema.org/eg-0421-pre.html: ok
-schema.org/eg-0421-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <https://www.pinterest.com/ryansammy/> not compatible with rangeIncludes ()",
-      "Object <http://www.reddit.com/r/BMW/comments/1oyh6j/leaked_new_bmw_2_series_m235i_ahead_of_oct_25/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0421-rdfa.html: ok
 schema.org/eg-0424-jsonld.html: ok
 schema.org/eg-0424-microdata.html: ok
 schema.org/eg-0424-pre.html: ok
@@ -1832,36 +1259,13 @@ schema.org/eg-0425-microdata.html: ok
 schema.org/eg-0425-pre.html: ok
 schema.org/eg-0425-rdfa.html: ok
 schema.org/eg-0426-jsonld.html: ok
-schema.org/eg-0426-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.missoulamarathon.org/events/marathon/> not compatible with rangeIncludes ()",
-      "Object <http://www.runwildmissoula.org/> not compatible with rangeIncludes ()",
-      "Object <http://www.runwildmissoula.org/runwild/index.php/ID/mmar2016/fuseaction/register.main.htm> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0426-microdata.html: ok
 schema.org/eg-0426-pre.html: ok
-schema.org/eg-0426-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.runwildmissoula.org/runwild/index.php/ID/mmar2016/fuseaction/register.main.htm> not compatible with rangeIncludes ()",
-      "Object <http://www.missoulamarathon.org/events/marathon/> not compatible with rangeIncludes ()",
-      "Object <http://www.runwildmissoula.org/> not compatible with rangeIncludes ()",
-      "Object <http://www.ci.missoula.mt.us/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0426-rdfa.html: ok
 schema.org/eg-0427-jsonld.html: ok
 schema.org/eg-0427-microdata.html: ok
 schema.org/eg-0427-pre.html: ok
-schema.org/eg-0427-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.skysports.com/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0427-rdfa.html: ok
 schema.org/eg-0428-jsonld.html: ok
 schema.org/eg-0428-microdata.html: ok
 schema.org/eg-0428-pre.html: ok
@@ -1869,60 +1273,23 @@ schema.org/eg-0428-rdfa.html: ok
 schema.org/eg-0429-jsonld.html: ok
 schema.org/eg-0429-microdata.html: ok
 schema.org/eg-0429-pre.html: ok
-schema.org/eg-0429-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://npr.org> not compatible with rangeIncludes ()",
-      "Object <http://www.example.com/GloboCorp> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0429-rdfa.html: ok
 schema.org/eg-0430-jsonld.html: ok
 schema.org/eg-0430-pre.html: ok
 schema.org/eg-0431-jsonld.html: ok
-schema.org/eg-0431-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.royalparks.org.uk/parks/hyde-park> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0431-microdata.html: ok
 schema.org/eg-0431-pre.html: ok
-schema.org/eg-0431-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.royalparks.org.uk/parks/hyde-park> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0431-rdfa.html: ok
 schema.org/eg-0432-jsonld.html: ok
-schema.org/eg-0432-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.disneylandparis.it/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0432-microdata.html: ok
 schema.org/eg-0432-pre.html: ok
-schema.org/eg-0432-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.disneylandparis.it/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0432-rdfa.html: ok
 schema.org/eg-0433-jsonld.html: ok
 schema.org/eg-0433-microdata.html: ok
 schema.org/eg-0433-pre.html: ok
 schema.org/eg-0433-rdfa.html: ok
 schema.org/eg-0434-jsonld.html: ok
-schema.org/eg-0434-microdata.html: {
-  "property": {
-    "schemas:additionalType": [
-      "Object <https://schema.org/Museum> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0434-microdata.html: ok
 schema.org/eg-0434-pre.html: ok
 schema.org/eg-0434-rdfa.html: ok
 schema.org/eg-0435-jsonld.html: ok
@@ -1941,35 +1308,11 @@ schema.org/eg-0437-jsonld.html: {
     ]
   }
 }
-schema.org/eg-0437-microdata.html: {
-  "property": {
-    "schemas:additionalType": [
-      "Object <https://schema.org/Event> not compatible with rangeIncludes ()"
-    ],
-    "schemas:sameAs": [
-      "Object <http://www.wikidata.org/entity/Q1143768> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0437-microdata.html: ok
 schema.org/eg-0437-pre.html: ok
-schema.org/eg-0437-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://www.wikidata.org/entity/Q1143768> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0437-rdfa.html: ok
 schema.org/eg-0438-jsonld.html: ok
-schema.org/eg-0438-microdata.html: {
-  "property": {
-    "schemas:additionalType": [
-      "Object <https://schema.org/Cemetery> not compatible with rangeIncludes ()"
-    ],
-    "schemas:sameAs": [
-      "Object <https://www.wikidata.org/wiki/Q2544355> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0438-microdata.html: ok
 schema.org/eg-0438-pre.html: ok
 schema.org/eg-0438-rdfa.html: ok
 schema.org/eg-0439-jsonld.html: ok
@@ -1997,57 +1340,15 @@ schema.org/eg-0446-microdata.html: ok
 schema.org/eg-0446-pre.html: ok
 schema.org/eg-0446-rdfa.html: ok
 schema.org/eg-0447-jsonld.html: ok
-schema.org/eg-0447-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://gds.com> not compatible with rangeIncludes ()",
-      "Object <http://example.com/supergame1> not compatible with rangeIncludes ()",
-      "Object <http://example.com/supergamedlc1> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0447-microdata.html: ok
 schema.org/eg-0447-pre.html: ok
-schema.org/eg-0447-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://example.com/supergamedlc1> not compatible with rangeIncludes ()",
-      "Object <http://example.com/supergame1> not compatible with rangeIncludes ()",
-      "Object <http://gds.com> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0447-rdfa.html: ok
 schema.org/eg-0448-jsonld.html: ok
-schema.org/eg-0448-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://elderscrolls.wikia.com/wiki/Oghma_Infinium_(Skyrim)> not compatible with rangeIncludes ()",
-      "Object <http://www.elderscrolls.com/skyrim> not compatible with rangeIncludes ()",
-      "Object <http://elderscrolls.wikia.com/wiki/Before_the_Storm> not compatible with rangeIncludes ()",
-      "Object <http://elderscrolls.wikia.com/wiki/Unbound> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0448-microdata.html: ok
 schema.org/eg-0448-pre.html: ok
-schema.org/eg-0448-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.elderscrolls.com/skyrim> not compatible with rangeIncludes ()",
-      "Object <http://elderscrolls.wikia.com/wiki/Unbound> not compatible with rangeIncludes ()",
-      "Object <http://elderscrolls.wikia.com/wiki/Oghma_Infinium_(Skyrim)> not compatible with rangeIncludes ()",
-      "Object <http://elderscrolls.wikia.com/wiki/Before_the_Storm> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0448-rdfa.html: ok
 schema.org/eg-0449-jsonld.html: ok
-schema.org/eg-0449-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.bethsoft.com/> not compatible with rangeIncludes ()",
-      "Object <http://fallout.wikia.com/wiki/Fallout_3_items> not compatible with rangeIncludes ()",
-      "Object <http://www.elderscrolls.com/skyrim> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0449-microdata.html: ok
 schema.org/eg-0449-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0449-pre.html": [
@@ -2056,32 +1357,24 @@ schema.org/eg-0449-pre.html: {
     ]
   }
 }
-schema.org/eg-0449-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://fallout.wikia.com/wiki/Fallout_3_items> not compatible with rangeIncludes ()",
-      "Object <http://www.bethsoft.com/> not compatible with rangeIncludes ()",
-      "Object <http://fallout.wikia.com/wiki/Fallout_3> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0449-rdfa.html: ok
 schema.org/eg-0450-jsonld.html: ok
 schema.org/eg-0450-microdata.html: ok
 schema.org/eg-0450-pre.html: ok
 schema.org/eg-0450-rdfa.html: ok
 schema.org/eg-0451-jsonld.html: {
   "property": {
-    "schema:video": [
-      "Object _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with rangeIncludes (schema:Clip,schema:VideoObject)"
-    ],
-    "schema:description": [
-      "Subject _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
+    "schema:url": [
+      "Subject _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
     ],
     "schema:caption": [
-      "Subject _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:AudioObject,schema:ImageObject,schema:VideoObject)"
+      "Subject _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:AudioObject,schema:ImageObject,schema:VideoObject)"
     ],
-    "schema:url": [
-      "Subject _:g568600(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
+    "schema:description": [
+      "Subject _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
+    ],
+    "schema:video": [
+      "Object _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with rangeIncludes (schema:Clip,schema:VideoObject)"
     ]
   }
 }
@@ -2091,23 +1384,9 @@ schema.org/eg-0452-pre.html: ok
 schema.org/eg-0452-rdfa.html: ok
 schema.org/eg-0453-jsonld.html: ok
 schema.org/eg-0454-jsonld.html: ok
-schema.org/eg-0454-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://rdf.freebase.com/rdf/m.0439_q> not compatible with rangeIncludes ()",
-      "Object <https://www.freebase.com/m/06h88> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0454-microdata.html: ok
 schema.org/eg-0454-pre.html: ok
-schema.org/eg-0454-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://rdf.freebase.com/rdf/m.0439_q> not compatible with rangeIncludes ()",
-      "Object <https://www.freebase.com/m/06h88> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0454-rdfa.html: ok
 schema.org/eg-0455-jsonld.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html": [
@@ -2116,14 +1395,7 @@ schema.org/eg-0455-jsonld.html: {
     ]
   }
 }
-schema.org/eg-0455-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <http://rdf.freebase.com/rdf/m.0dbwsn> not compatible with rangeIncludes ()",
-      "Object <https://www.freebase.com/m/015sxw> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0455-microdata.html: ok
 schema.org/eg-0455-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0455-pre.html": [
@@ -2132,23 +1404,9 @@ schema.org/eg-0455-pre.html: {
     ]
   }
 }
-schema.org/eg-0455-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <https://www.freebase.com/m/015sxw> not compatible with rangeIncludes ()",
-      "Object <http://rdf.freebase.com/rdf/m.0dbwsn> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0455-rdfa.html: ok
 schema.org/eg-0456-jsonld.html: ok
-schema.org/eg-0456-microdata.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <https://www.freebase.com/m/07pj7mx> not compatible with rangeIncludes ()",
-      "Object <http://www.pada.net/members/memPicFull.php/38/367> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0456-microdata.html: ok
 schema.org/eg-0456-pre.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0456-pre.html": [
@@ -2157,48 +1415,15 @@ schema.org/eg-0456-pre.html: {
     ]
   }
 }
-schema.org/eg-0456-rdfa.html: {
-  "property": {
-    "schemas:sameAs": [
-      "Object <https://www.freebase.com/m/07pj7mx> not compatible with rangeIncludes ()",
-      "Object <http://www.pada.net/members/memPicFull.php/38/367> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0456-rdfa.html: ok
 schema.org/eg-0457-jsonld.html: ok
-schema.org/eg-0457-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.example.com/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0457-microdata.html: ok
 schema.org/eg-0457-pre.html: ok
-schema.org/eg-0457-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <http://www.example.com/> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0457-rdfa.html: ok
 schema.org/eg-0461-jsonld.html: ok
-schema.org/eg-0461-microdata.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/nba-miami-philidelphia-game3.html> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/wells-fargo-center.html> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0461-microdata.html: ok
 schema.org/eg-0461-pre.html: ok
-schema.org/eg-0461-rdfa.html: {
-  "property": {
-    "schemas:url": [
-      "Object <file:///Users/gregg/Projects/linter/schema.org/nba-miami-philidelphia-game3.html> not compatible with rangeIncludes ()",
-      "Object <file:///Users/gregg/Projects/linter/schema.org/wells-fargo-center.html> not compatible with rangeIncludes ()"
-    ]
-  }
-}
+schema.org/eg-0461-rdfa.html: ok
 schema.org/eg-0462-jsonld.html: ok
 schema.org/eg-0462-microdata.html: ok
 schema.org/eg-0462-pre.html: ok
