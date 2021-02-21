@@ -1,28 +1,28 @@
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name" : "Brent",
-  "makesOffer" : {
-        "@type" :"Offer",
-        "priceSpecification" : {
-            "@type" : "UnitPriceSpecification",
-            "priceCurrency" : "USD",
-            "price" : "18000" },
-        "itemOffered" : {
-            "@type" : "Car",
-            "name" : "2009 Volkswagen Golf V GTI MY09 Direct-Shift Gearbox",
-            "description" : "2009 Volkswagen Golf V GTI MY09 Direct-Shift Gearbox in perfect mechanical condition and low kilometres. It's impressive 2.0 litre turbo engine makes every drive a fun experience. Well looked after by one owner with full service history. It drives like new and has only done 50,000kms. (...)",
-        "image" : "2009_Volkswagen_Golf_V_GTI_MY09.png",
-        "color" : "Black",
-        "numberOfForwardGears" : "6",
-        "vehicleEngine" : {
-            "@type": "EngineSpecification",
-            "name" : "4 cylinder Petrol Turbo Intercooled 2.0 L (1984 cc)"
-            }
-        }
+  "@context": "https://schema.org/",
+  "@type": "DataFeed",
+  "name": "Company directory",
+  "dateModified": "2015-01-02",
+  "dataFeedElement": [
+    {
+      "@type": "DataFeedItem",
+      "dateCreated": "2014-07-01",
+      "item": {
+        "@type": "Person",
+        "name": "Alice",
+        "email": "alice@example.com"
+      }
+    },
+    {
+      "@type": "DataFeedItem",
+      "dateModified": "2015-01-02",
+      "item": {
+        "@type": "Person",
+        "name": "Bob",
+        "email": "bob@example.com"
+      }
     }
+  ]
 }
 </script>
-
-404: Not Found404: Not Found404: Not Found

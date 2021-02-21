@@ -179,6 +179,23 @@ module RDF::Linter
       }
     end
 
+    # Robots
+    # @param [String] file Name of the example to return
+    # @!parse
+    #   def get_sc_example(file); end
+    get '/robots.txt' do
+      set_cache_header
+      file = File.join(APP_DIR, "robots.txt")
+      if File.exist?(file)
+        send_file file,
+          type: :text,
+          charset: "utf-8"
+      else
+        status 401
+        body "Could not find schema example #{params[:file]}"
+      end
+    end
+
     # Return source of a specific schema.org example
     # @param [String] file Name of the example to return
     # @!parse
