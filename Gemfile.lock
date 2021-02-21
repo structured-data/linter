@@ -170,7 +170,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.11.1)
+    linter (3.11.1a)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -258,6 +258,8 @@ GEM
     netrc (0.11.0)
     nio4r (2.5.5)
     nokogiri (1.11.1-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.11.1-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.4)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -357,6 +359,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   better_errors
