@@ -1,15 +1,3 @@
-schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html: ok
-schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html: ok
-schema.org/compoundPrice-1-jsonld.html: ok
-schema.org/compoundPrice-1-microdata.html: ok
-schema.org/compoundPrice-1-pre.html: ok
-schema.org/compoundPrice-1-rdfa.html: ok
-schema.org/compoundPrice-2-jsonld.html: ok
-schema.org/compoundPrice-2-microdata.html: ok
-schema.org/compoundPrice-2-pre.html: ok
-schema.org/compoundPrice-2-rdfa.html: ok
 schema.org/eg-0001-jsonld.html: ok
 schema.org/eg-0001-microdata.html: ok
 schema.org/eg-0001-pre.html: ok
@@ -56,15 +44,15 @@ schema.org/eg-0012-pre.html: ok
 schema.org/eg-0012-rdfa.html: ok
 schema.org/eg-0013-jsonld.html: {
   "property": {
-    "schema:instrument": [
-      "Subject _:g432260(schema:Recipe,schema:Thing,schema:CreativeWork,schema:HowTo,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    "schemas:instrument": [
+      "Subject _:g432000(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
 schema.org/eg-0013-microdata.html: {
   "property": {
     "schemas:instrument": [
-      "Subject _:g432740(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g432480(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
@@ -72,10 +60,14 @@ schema.org/eg-0013-pre.html: ok
 schema.org/eg-0013-rdfa.html: {
   "property": {
     "schemas:instrument": [
-      "Subject _:g433320(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g432720(schemas:Recipe,schemas:Thing,schemas:CreativeWork,schemas:HowTo,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
+schema.org/eg-0014-jsonld.html: ok
+schema.org/eg-0014-microdata.html: ok
+schema.org/eg-0014-pre.html: ok
+schema.org/eg-0014-rdfa.html: ok
 schema.org/eg-0015-jsonld.html: ok
 schema.org/eg-0015-microdata.html: ok
 schema.org/eg-0015-pre.html: ok
@@ -281,8 +273,8 @@ schema.org/eg-0088-jsonld.html: ok
 schema.org/eg-0088-pre.html: ok
 schema.org/eg-0089-jsonld.html: {
   "property": {
-    "schema:participant": [
-      "Object _:g456660(schema:MedicalAudience,schema:Thing,schema:Intangible,schema:Audience,schema:PeopleAudience,rdfs:Resource) not compatible with rangeIncludes (schema:Organization,schema:Person)"
+    "schemas:participant": [
+      "Object _:g455360(schemas:MedicalAudience,schemas:Thing,schemas:Intangible,schemas:Audience,schemas:PeopleAudience,rdfs:Resource) not compatible with rangeIncludes (schemas:Organization,schemas:Person)"
     ]
   }
 }
@@ -353,7 +345,7 @@ schema.org/eg-0121-jsonld.html: ok
 schema.org/eg-0121-pre.html: ok
 schema.org/eg-0122-jsonld.html: {
   "property": {
-    "schema:purpose": [
+    "schemas:purpose": [
       "No property definition found"
     ]
   }
@@ -361,7 +353,7 @@ schema.org/eg-0122-jsonld.html: {
 schema.org/eg-0122-pre.html: ok
 schema.org/eg-0123-jsonld.html: {
   "property": {
-    "schema:purpose": [
+    "schemas:purpose": [
       "No property definition found"
     ]
   }
@@ -369,7 +361,7 @@ schema.org/eg-0123-jsonld.html: {
 schema.org/eg-0123-pre.html: ok
 schema.org/eg-0124-jsonld.html: {
   "property": {
-    "schema:purpose": [
+    "schemas:purpose": [
       "No property definition found"
     ]
   }
@@ -377,7 +369,7 @@ schema.org/eg-0124-jsonld.html: {
 schema.org/eg-0124-pre.html: ok
 schema.org/eg-0125-jsonld.html: {
   "property": {
-    "schema:purpose": [
+    "schemas:purpose": [
       "No property definition found"
     ]
   }
@@ -385,7 +377,7 @@ schema.org/eg-0125-jsonld.html: {
 schema.org/eg-0125-pre.html: ok
 schema.org/eg-0126-jsonld.html: {
   "property": {
-    "schema:purpose": [
+    "schemas:purpose": [
       "No property definition found"
     ]
   }
@@ -403,16 +395,16 @@ schema.org/eg-0131-jsonld.html: ok
 schema.org/eg-0131-pre.html: ok
 schema.org/eg-0132-jsonld.html: {
   "property": {
-    "schema:scheduledTime": [
-      "Object \"May\" not compatible with rangeIncludes (schema:DateTime)"
+    "schemas:scheduledTime": [
+      "Object \"May\" not compatible with rangeIncludes (schemas:DateTime)"
     ]
   }
 }
 schema.org/eg-0132-pre.html: ok
 schema.org/eg-0133-jsonld.html: {
   "property": {
-    "schema:scheduledTime": [
-      "Object \"May\" not compatible with rangeIncludes (schema:DateTime)"
+    "schemas:scheduledTime": [
+      "Object \"May\" not compatible with rangeIncludes (schemas:DateTime)"
     ]
   }
 }
@@ -439,7 +431,7 @@ schema.org/eg-0143-jsonld.html: ok
 schema.org/eg-0143-pre.html: ok
 schema.org/eg-0144-jsonld.html: {
   "property": {
-    "schema:purpose": [
+    "schemas:purpose": [
       "No property definition found"
     ]
   }
@@ -501,6 +493,10 @@ schema.org/eg-0168-pre.html: ok
 schema.org/eg-0168-rdfa.html: ok
 schema.org/eg-0169-jsonld.html: ok
 schema.org/eg-0169-pre.html: ok
+schema.org/eg-0170-jsonld.html: ok
+schema.org/eg-0170-microdata.html: ok
+schema.org/eg-0170-pre.html: ok
+schema.org/eg-0170-rdfa.html: ok
 schema.org/eg-0171-jsonld.html: ok
 schema.org/eg-0171-microdata.html: ok
 schema.org/eg-0171-pre.html: ok
@@ -535,8 +531,8 @@ schema.org/eg-0180-jsonld.html: ok
 schema.org/eg-0180-pre.html: ok
 schema.org/eg-0181-jsonld.html: {
   "property": {
-    "schema:participant": [
-      "Subject _:g482360(schema:Flight,schema:Thing,schema:Intangible,schema:Trip,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    "schemas:participant": [
+      "Subject _:g480760(schemas:Flight,schemas:Thing,schemas:Intangible,schemas:Trip,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
@@ -567,7 +563,7 @@ schema.org/eg-0190-jsonld.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html": [
       "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html\nThe same key is defined more than once: workPerformed.sameAs",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html\nThe same key is defined more than once: workPerformed.sameAs: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0190-jsonld.html\nThe same key is defined more than once: workPerformed.sameAs: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
     ]
   }
 }
@@ -620,8 +616,8 @@ schema.org/eg-0201-pre.html: ok
 schema.org/eg-0201-rdfa.html: ok
 schema.org/eg-0202-jsonld.html: {
   "property": {
-    "schema:doorTime": [
-      "Object \"18:30\" not compatible with rangeIncludes (schema:DateTime,schema:Time)"
+    "schemas:doorTime": [
+      "Object \"18:30\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
     ]
   }
 }
@@ -653,14 +649,14 @@ schema.org/eg-0208-microdata.html: ok
 schema.org/eg-0208-pre.html: ok
 schema.org/eg-0208-rdfa.html: {
   "property": {
-    "schema:itemCondition": [
-      "Subject _:g496700(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Demand,schema:Offer,schema:Product)"
-    ],
     "schema:price": [
-      "Subject _:g496700(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:TradeAction)"
+      "Subject _:g494100(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:TradeAction)"
     ],
     "schema:priceCurrency": [
-      "Subject _:g496700(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:Reservation,schema:Ticket,schema:TradeAction)"
+      "Subject _:g494100(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Offer,schema:PriceSpecification,schema:Reservation,schema:Ticket,schema:TradeAction)"
+    ],
+    "schema:itemCondition": [
+      "Subject _:g494100(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Demand,schema:Offer,schema:Product)"
     ]
   }
 }
@@ -682,8 +678,8 @@ schema.org/eg-0212-pre.html: ok
 schema.org/eg-0212-rdfa.html: ok
 schema.org/eg-0213-jsonld.html: {
   "property": {
-    "schema:isPartOf": [
-      "Subject _:g501100(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+    "schemas:isPartOf": [
+      "Subject _:g498460(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
     ]
   }
 }
@@ -698,17 +694,17 @@ schema.org/eg-0215-jsonld.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0215-jsonld.html": [
       "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0215-jsonld.html\nunexpected character (after description) at line 7, column 568 [parse.c:724]",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0215-jsonld.html\nunexpected character (after description) at line 7, column 568 [parse.c:724]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0215-jsonld.html\nunexpected character (after description) at line 7, column 568 [parse.c:724]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
     ]
   }
 }
 schema.org/eg-0215-microdata.html: {
   "property": {
     "schemas:title": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schemas:JobPosting)"
     ],
     "schemas:actor": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schemas:Clip,schemas:CreativeWorkSeason,schemas:Episode,schemas:Event,schemas:Movie,schemas:MovieSeries,schemas:RadioSeries,schemas:TVSeries,schemas:VideoGame,schemas:VideoGameSeries,schemas:VideoObject)"
     ]
   }
 }
@@ -716,10 +712,10 @@ schema.org/eg-0215-pre.html: ok
 schema.org/eg-0215-rdfa.html: {
   "property": {
     "schemas:title": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schemas:JobPosting)"
     ],
     "schemas:actor": [
-      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes ()"
+      "Subject <https://archive.org/details/alices_adventures_1005_librivox#work> not compatible with domainIncludes (schemas:Clip,schemas:CreativeWorkSeason,schemas:Episode,schemas:Event,schemas:Movie,schemas:MovieSeries,schemas:RadioSeries,schemas:TVSeries,schemas:VideoGame,schemas:VideoGameSeries,schemas:VideoObject)"
     ]
   }
 }
@@ -728,7 +724,7 @@ schema.org/eg-0216-microdata.html: ok
 schema.org/eg-0216-pre.html: ok
 schema.org/eg-0216-rdfa.html: ok
 schema.org/eg-0217-jsonld.html: ok
-schema.org/eg-0217-microdata.html: Error: undefined method `pname' for #<RDF::Literal:0x7ae68("DVD")>
+schema.org/eg-0217-microdata.html: Error: undefined method `pname' for #<RDF::Literal:0x7a3dc("DVD")>
 schema.org/eg-0217-pre.html: ok
 schema.org/eg-0217-rdfa.html: ok
 schema.org/eg-0218-jsonld.html: ok
@@ -754,6 +750,1136 @@ schema.org/eg-0221-jsonld.html: ok
 schema.org/eg-0221-microdata.html: ok
 schema.org/eg-0221-pre.html: ok
 schema.org/eg-0221-rdfa.html: ok
+schema.org/eg-0222-jsonld.html: {
+  "property": {
+    "schemas:code": [
+      "Subject _:g503660(schemas:MedicalScholarlyArticle,schemas:Thing,schemas:CreativeWork,schemas:Article,schemas:ScholarlyArticle,rdfs:Resource) not compatible with domainIncludes (schemas:MedicalEntity)"
+    ],
+    "schemas:evidenceLevel": [
+      "Subject _:g503660(schemas:MedicalScholarlyArticle,schemas:Thing,schemas:CreativeWork,schemas:Article,schemas:ScholarlyArticle,rdfs:Resource) not compatible with domainIncludes (schemas:MedicalGuideline)"
+    ],
+    "schemas:guidelineSubject": [
+      "Subject _:g503660(schemas:MedicalScholarlyArticle,schemas:Thing,schemas:CreativeWork,schemas:Article,schemas:ScholarlyArticle,rdfs:Resource) not compatible with domainIncludes (schemas:MedicalGuideline)"
+    ],
+    "schemas:recommendationStrength": [
+      "Subject _:g503660(schemas:MedicalScholarlyArticle,schemas:Thing,schemas:CreativeWork,schemas:Article,schemas:ScholarlyArticle,rdfs:Resource) not compatible with domainIncludes (schemas:MedicalGuidelineRecommendation)"
+    ]
+  }
+}
+schema.org/eg-0222-microdata.html: ok
+schema.org/eg-0222-pre.html: ok
+schema.org/eg-0222-rdfa.html: ok
+schema.org/eg-0223-jsonld.html: {
+  "property": {
+    "schemas:secondaryPrevention": [
+      "Object _:g505100(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g505140(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g505120(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)"
+    ],
+    "schemas:possibleTreatment": [
+      "Object _:g504960(schemas:Drug,schemas:Thing,schemas:MedicalEntity,schemas:Substance,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g504940(schemas:DrugClass,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g504920(schemas:DrugClass,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g504900(schemas:Drug,schemas:Thing,schemas:MedicalEntity,schemas:Substance,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)"
+    ],
+    "schemas:cause": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0223-microdata.html: {
+  "property": {
+    "schemas:secondaryPrevention": [
+      "Object _:g506360(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g506380(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g506340(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)"
+    ],
+    "schemas:possibleTreatment": [
+      "Object _:g506260(schemas:Drug,schemas:Thing,schemas:MedicalEntity,schemas:Substance,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g506280(schemas:DrugClass,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g506320(schemas:Drug,schemas:Thing,schemas:MedicalEntity,schemas:Substance,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g506300(schemas:DrugClass,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)"
+    ],
+    "schemas:cause": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0223-pre.html: ok
+schema.org/eg-0223-rdfa.html: {
+  "property": {
+    "schemas:secondaryPrevention": [
+      "Object _:g507140(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g507120(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g507160(schemas:LifestyleModification,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)"
+    ],
+    "schemas:possibleTreatment": [
+      "Object _:g507080(schemas:DrugClass,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g507060(schemas:DrugClass,schemas:Thing,schemas:MedicalEntity,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g507040(schemas:Drug,schemas:Thing,schemas:MedicalEntity,schemas:Substance,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)",
+      "Object _:g507100(schemas:Drug,schemas:Thing,schemas:MedicalEntity,schemas:Substance,rdfs:Resource) not compatible with rangeIncludes (schemas:MedicalTherapy)"
+    ],
+    "schemas:cause": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0224-jsonld.html: ok
+schema.org/eg-0224-microdata.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0224-microdata.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0224-microdata.html>: 27:60: ERROR: That tag isn't allowed here  Currently open tags: html, body, ul, li, span.\n    <span itemprop=\"evidenceOrigin\">standard of care</span></a>)\n                                                           ^"
+    ]
+  }
+}
+schema.org/eg-0224-pre.html: ok
+schema.org/eg-0224-rdfa.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0224-rdfa.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0224-rdfa.html>: 28:60: ERROR: That tag isn't allowed here  Currently open tags: html, body, ul, li, span.\n    <span property=\"evidenceOrigin\">standard of care</span></a>)\n                                                           ^"
+    ]
+  }
+}
+schema.org/eg-0225-jsonld.html: {
+  "property": {
+    "schemas:drug": [
+      "Subject _:g508440(schemas:MedicalWebPage,schemas:Thing,schemas:CreativeWork,schemas:WebPage,rdfs:Resource) not compatible with domainIncludes (schemas:DrugClass,schemas:MedicalCondition,schemas:Patient,schemas:TherapeuticProcedure)"
+    ]
+  }
+}
+schema.org/eg-0225-microdata.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0225-microdata.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0225-microdata.html>: 29:1: ERROR: That tag isn't allowed here  Currently open tags: html, body, span.\n</body>\n^"
+    ]
+  }
+}
+schema.org/eg-0225-pre.html: ok
+schema.org/eg-0225-rdfa.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0225-rdfa.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0225-rdfa.html>: 29:1: ERROR: That tag isn't allowed here  Currently open tags: html, body, span.\n</body>\n^"
+    ]
+  }
+}
+schema.org/eg-0226-jsonld.html: ok
+schema.org/eg-0226-microdata.html: ok
+schema.org/eg-0226-pre.html: ok
+schema.org/eg-0226-rdfa.html: ok
+schema.org/eg-0227-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0227-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0227-jsonld.html\nThe same key is defined more than once: url",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0227-jsonld.html\nThe same key is defined more than once: url: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  },
+  "property": {
+    "schemas:url": [
+      "Object _:g509860(schemas:LinkRole,schemas:Thing,schemas:Intangible,schemas:Role,rdfs:Resource) not compatible with rangeIncludes (schemas:URL)"
+    ]
+  }
+}
+schema.org/eg-0227-microdata.html: ok
+schema.org/eg-0227-pre.html: ok
+schema.org/eg-0227-rdfa.html: ok
+schema.org/eg-0228-jsonld.html: ok
+schema.org/eg-0228-microdata.html: ok
+schema.org/eg-0228-pre.html: ok
+schema.org/eg-0228-rdfa.html: ok
+schema.org/eg-0229-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0229-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0229-jsonld.html\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanDrugTier\nThe same key is defined more than once: includesHealthPlanFormulary.0.offersPrescriptionByMail\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanPharmacyType\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay.price\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay.currency\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopayOption\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCoinsuranceRate\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCoinsuranceOption\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanPharmacyType\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay.price\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay.currency\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopayOption\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCoinsuranceRate\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCoinsuranceOption",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0229-jsonld.html\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanDrugTier\nThe same key is defined more than once: includesHealthPlanFormulary.0.offersPrescriptionByMail\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanPharmacyType\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay.price\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopay.currency\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCopayOption\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCoinsuranceRate\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.0.healthPlanCoinsuranceOption\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanPharmacyType\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay.@type\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay.price\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopay.currency\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCopayOption\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCoinsuranceRate\nThe same key is defined more than once: includesHealthPlanFormulary.0.healthPlanCostSharing.1.healthPlanCoinsuranceOption: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  },
+  "property": {
+    "schema:healthPlanPharmacyType": [
+      "No property definition found"
+    ],
+    "schema:currency": [
+      "Subject _:g510960(schema:PriceSpecification,schema:Thing,schema:Intangible,schema:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:ExchangeRateSpecification,schema:LoanOrCredit,schema:MonetaryAmount,schema:MonetaryAmountDistribution)",
+      "Subject _:g510920(schema:PriceSpecification,schema:Thing,schema:Intangible,schema:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:ExchangeRateSpecification,schema:LoanOrCredit,schema:MonetaryAmount,schema:MonetaryAmountDistribution)"
+    ],
+    "schema:healthPlanCostSharing": [
+      "Object _:g510900(schema:HealthPlanCostSharingSpecification,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with rangeIncludes (schema:Boolean)",
+      "Object _:g510940(schema:HealthPlanCostSharingSpecification,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with rangeIncludes (schema:Boolean)"
+    ],
+    "schema:summaryUrl": [
+      "No property definition found"
+    ],
+    "schema:usesHealthPlanIdType": [
+      "No property definition found"
+    ],
+    "schema:healthPlanNetworkTiers": [
+      "No property definition found"
+    ],
+    "schema:marketingUrl": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0229-microdata.html: ok
+schema.org/eg-0229-pre.html: ok
+schema.org/eg-0229-rdfa.html: ok
+schema.org/eg-0230-jsonld.html: ok
+schema.org/eg-0230-microdata.html: ok
+schema.org/eg-0230-pre.html: ok
+schema.org/eg-0230-rdfa.html: ok
+schema.org/eg-0231-jsonld.html: ok
+schema.org/eg-0231-microdata.html: ok
+schema.org/eg-0231-pre.html: ok
+schema.org/eg-0231-rdfa.html: ok
+schema.org/eg-0232-jsonld.html: {
+  "property": {
+    "schemas:serviceMobileApp": [
+      "No property definition found"
+    ],
+    "schemas:minAmount": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0232-microdata.html: {
+  "property": {
+    "schemas:minAmount": [
+      "No property definition found"
+    ],
+    "schemas:serviceMobileApp": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0232-pre.html: ok
+schema.org/eg-0232-rdfa.html: {
+  "property": {
+    "schemas:minAmount": [
+      "No property definition found"
+    ],
+    "schemas:serviceMobileApp": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0233-jsonld.html: {
+  "property": {
+    "schemas:maxAmount": [
+      "No property definition found"
+    ],
+    "schemas:minAmount": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0233-microdata.html: {
+  "property": {
+    "schemas:maxAmount": [
+      "No property definition found"
+    ],
+    "schemas:minAmount": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0233-pre.html: ok
+schema.org/eg-0233-rdfa.html: {
+  "property": {
+    "schemas:maxAmount": [
+      "No property definition found"
+    ],
+    "schemas:minAmount": [
+      "No property definition found"
+    ]
+  }
+}
+schema.org/eg-0234-jsonld.html: {
+  "property": {
+    "schemas:amount": [
+      "Subject _:g514140(schemas:MonetaryAmount,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)",
+      "Subject _:g514200(schemas:MonetaryAmount,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)"
+    ],
+    "schemas:duration": [
+      "Subject _:g514120(schemas:MortgageLoan,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,schemas:LoanOrCredit,rdfs:Resource) not compatible with domainIncludes (schemas:Audiobook,schemas:Episode,schemas:Event,schemas:MediaObject,schemas:Movie,schemas:MusicRecording,schemas:MusicRelease,schemas:QuantitativeValueDistribution,schemas:Schedule)",
+      "Object _:g514160(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Duration)"
+    ],
+    "schemas:loanPaymentFrequency": [
+      "Object \"Monthly\" not compatible with rangeIncludes (schemas:Number)"
+    ]
+  }
+}
+schema.org/eg-0234-microdata.html: {
+  "property": {
+    "schemas:amount": [
+      "Subject _:g514680(schemas:MonetaryAmount,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)",
+      "Subject _:g514660(schemas:MonetaryAmount,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)"
+    ],
+    "schemas:duration": [
+      "Subject _:g514500(schemas:MortgageLoan,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,schemas:LoanOrCredit,rdfs:Resource) not compatible with domainIncludes (schemas:Audiobook,schemas:Episode,schemas:Event,schemas:MediaObject,schemas:Movie,schemas:MusicRecording,schemas:MusicRelease,schemas:QuantitativeValueDistribution,schemas:Schedule)",
+      "Object _:g514620(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Duration)"
+    ],
+    "schemas:loanPaymentFrequency": [
+      "Object \"Monthly\" not compatible with rangeIncludes (schemas:Number)"
+    ]
+  }
+}
+schema.org/eg-0234-pre.html: ok
+schema.org/eg-0234-rdfa.html: {
+  "property": {
+    "schemas:amount": [
+      "Subject _:g514900(schemas:MonetaryAmount,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)",
+      "Subject _:g514880(schemas:MonetaryAmount,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)"
+    ],
+    "schemas:numberOfLoanPayments": [
+      "Subject _:g514820(schemas:MortgageLoan,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,schemas:LoanOrCredit,rdfs:Resource) not compatible with domainIncludes (schemas:RepaymentSpecification)"
+    ],
+    "schemas:loanPaymentAmount": [
+      "Subject _:g514820(schemas:MortgageLoan,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,schemas:LoanOrCredit,rdfs:Resource) not compatible with domainIncludes (schemas:RepaymentSpecification)"
+    ],
+    "schemas:duration": [
+      "Subject _:g514820(schemas:MortgageLoan,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,schemas:LoanOrCredit,rdfs:Resource) not compatible with domainIncludes (schemas:Audiobook,schemas:Episode,schemas:Event,schemas:MediaObject,schemas:Movie,schemas:MusicRecording,schemas:MusicRelease,schemas:QuantitativeValueDistribution,schemas:Schedule)",
+      "Object _:g514840(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Duration)"
+    ],
+    "schemas:loanPaymentFrequency": [
+      "Object \"Monthly\" not compatible with rangeIncludes (schemas:Number)"
+    ]
+  }
+}
+schema.org/eg-0235-jsonld.html: ok
+schema.org/eg-0235-microdata.html: ok
+schema.org/eg-0235-pre.html: ok
+schema.org/eg-0235-rdfa.html: ok
+schema.org/eg-0237-jsonld.html: ok
+schema.org/eg-0237-microdata.html: ok
+schema.org/eg-0237-pre.html: ok
+schema.org/eg-0237-rdfa.html: ok
+schema.org/eg-0238-jsonld.html: ok
+schema.org/eg-0238-microdata.html: ok
+schema.org/eg-0238-pre.html: ok
+schema.org/eg-0238-rdfa.html: ok
+schema.org/eg-0239-jsonld.html: ok
+schema.org/eg-0239-microdata.html: ok
+schema.org/eg-0239-pre.html: ok
+schema.org/eg-0239-rdfa.html: ok
+schema.org/eg-0240-jsonld.html: {
+  "property": {
+    "schemas:endTime": [
+      "Object \"20:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:startTime": [
+      "Object \"19:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:frequency": [
+      "Subject _:g516720(schemas:Schedule,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:DoseSchedule)"
+    ]
+  }
+}
+schema.org/eg-0240-microdata.html: ok
+schema.org/eg-0240-pre.html: ok
+schema.org/eg-0240-rdfa.html: ok
+schema.org/eg-0241-jsonld.html: {
+  "property": {
+    "schemas:endTime": [
+      "Object \"10:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:startTime": [
+      "Object \"09:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:frequency": [
+      "Subject _:g517140(schemas:Schedule,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:DoseSchedule)"
+    ]
+  }
+}
+schema.org/eg-0241-microdata.html: ok
+schema.org/eg-0241-pre.html: ok
+schema.org/eg-0241-rdfa.html: ok
+schema.org/eg-0242-jsonld.html: {
+  "property": {
+    "schemas:endTime": [
+      "Object \"10:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:startTime": [
+      "Object \"09:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:frequency": [
+      "Subject _:g517440(schemas:Schedule,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:DoseSchedule)"
+    ]
+  }
+}
+schema.org/eg-0242-microdata.html: ok
+schema.org/eg-0242-pre.html: ok
+schema.org/eg-0242-rdfa.html: ok
+schema.org/eg-0243-jsonld.html: {
+  "property": {
+    "schemas:endTime": [
+      "Object \"15:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)",
+      "Object \"10:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:startTime": [
+      "Object \"14:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)",
+      "Object \"09:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:frequency": [
+      "Subject _:g517760(schemas:Schedule,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:DoseSchedule)",
+      "Subject _:g517740(schemas:Schedule,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:DoseSchedule)"
+    ]
+  }
+}
+schema.org/eg-0243-microdata.html: ok
+schema.org/eg-0243-pre.html: ok
+schema.org/eg-0243-rdfa.html: ok
+schema.org/eg-0244-jsonld.html: {
+  "property": {
+    "schemas:endTime": [
+      "Object \"19:30\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:startTime": [
+      "Object \"18:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:frequency": [
+      "Subject _:g518040(schemas:Schedule,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:DoseSchedule)"
+    ]
+  }
+}
+schema.org/eg-0244-microdata.html: ok
+schema.org/eg-0244-pre.html: ok
+schema.org/eg-0244-rdfa.html: ok
+schema.org/eg-0245-jsonld.html: ok
+schema.org/eg-0245-microdata.html: ok
+schema.org/eg-0245-pre.html: ok
+schema.org/eg-0245-rdfa.html: ok
+schema.org/eg-0246-jsonld.html: ok
+schema.org/eg-0246-microdata.html: ok
+schema.org/eg-0246-pre.html: ok
+schema.org/eg-0246-rdfa.html: ok
+schema.org/eg-0247-jsonld.html: ok
+schema.org/eg-0247-microdata.html: ok
+schema.org/eg-0247-pre.html: ok
+schema.org/eg-0247-rdfa.html: ok
+schema.org/eg-0248-jsonld.html: ok
+schema.org/eg-0248-microdata.html: ok
+schema.org/eg-0248-pre.html: ok
+schema.org/eg-0248-rdfa.html: ok
+schema.org/eg-0249-jsonld.html: ok
+schema.org/eg-0249-microdata.html: ok
+schema.org/eg-0249-pre.html: ok
+schema.org/eg-0249-rdfa.html: ok
+schema.org/eg-0250-jsonld.html: ok
+schema.org/eg-0250-microdata.html: ok
+schema.org/eg-0250-pre.html: ok
+schema.org/eg-0250-rdfa.html: ok
+schema.org/eg-0251-jsonld.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g520300(schemas:CategoryCode,schemas:Thing,schemas:Intangible,schemas:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0251-microdata.html: ok
+schema.org/eg-0251-pre.html: ok
+schema.org/eg-0251-rdfa.html: ok
+schema.org/eg-0252-jsonld.html: ok
+schema.org/eg-0252-microdata.html: ok
+schema.org/eg-0252-pre.html: ok
+schema.org/eg-0252-rdfa.html: ok
+schema.org/eg-0253-jsonld.html: {
+  "property": {
+    "schemas:areaServed": [
+      "Subject _:g521200(schemas:ActionAccessSpecification,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:ContactPoint,schemas:DeliveryChargeSpecification,schemas:Demand,schemas:Offer,schemas:Organization,schemas:Service)"
+    ]
+  }
+}
+schema.org/eg-0253-microdata.html: ok
+schema.org/eg-0253-pre.html: ok
+schema.org/eg-0253-rdfa.html: ok
+schema.org/eg-0254-jsonld.html: ok
+schema.org/eg-0254-microdata.html: ok
+schema.org/eg-0254-pre.html: ok
+schema.org/eg-0254-rdfa.html: ok
+schema.org/eg-0255-jsonld.html: {
+  "property": {
+    "schemas:location": [
+      "Subject <https://archiveshub.jisc.ac.uk/data/gb71-thm/407> not compatible with domainIncludes (schemas:Action,schemas:Event,schemas:Organization)"
+    ]
+  }
+}
+schema.org/eg-0255-microdata.html: ok
+schema.org/eg-0255-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0255-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0255-pre.html>: 27:1: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, span, span.\n</div>\n^"
+    ]
+  }
+}
+schema.org/eg-0255-rdfa.html: ok
+schema.org/eg-0256-jsonld.html: {
+  "property": {
+    "schemas:dateCreated": [
+      "Object \"1971-1972\"^^<https://schema.org/Date> not compatible with rangeIncludes (schemas:Date,schemas:DateTime)"
+    ],
+    "schemas:location": [
+      "Subject <https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8/3> not compatible with domainIncludes (schemas:Action,schemas:Event,schemas:Organization)"
+    ]
+  }
+}
+schema.org/eg-0256-microdata.html: {
+  "property": {
+    "schemas:dateCreated": [
+      "Object \"1971-1972\" not compatible with rangeIncludes (schemas:Date,schemas:DateTime)"
+    ]
+  }
+}
+schema.org/eg-0256-pre.html: ok
+schema.org/eg-0256-rdfa.html: {
+  "property": {
+    "schemas:dateCreated": [
+      "Object \"1971-1972\" not compatible with rangeIncludes (schemas:Date,schemas:DateTime)"
+    ]
+  }
+}
+schema.org/eg-0257-jsonld.html: ok
+schema.org/eg-0257-microdata.html: ok
+schema.org/eg-0257-pre.html: ok
+schema.org/eg-0257-rdfa.html: ok
+schema.org/eg-0258-jsonld.html: ok
+schema.org/eg-0258-microdata.html: ok
+schema.org/eg-0258-pre.html: ok
+schema.org/eg-0258-rdfa.html: ok
+schema.org/eg-0259-jsonld.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g523640(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject _:g523680(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0259-microdata.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g524000(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject _:g524040(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0259-pre.html: ok
+schema.org/eg-0259-rdfa.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g524240(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject _:g524200(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0260-jsonld.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject <http://purl.org/ctdl/terms/Certification> not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0260-microdata.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g524520(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0260-pre.html: ok
+schema.org/eg-0260-rdfa.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject <http://purl.org/ctdl/terms/Certification> not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0261-jsonld.html: ok
+schema.org/eg-0261-microdata.html: ok
+schema.org/eg-0261-pre.html: ok
+schema.org/eg-0261-rdfa.html: ok
+schema.org/eg-0262-jsonld.html: ok
+schema.org/eg-0262-microdata.html: ok
+schema.org/eg-0262-pre.html: ok
+schema.org/eg-0262-rdfa.html: ok
+schema.org/eg-0263-jsonld.html: ok
+schema.org/eg-0263-microdata.html: ok
+schema.org/eg-0263-pre.html: ok
+schema.org/eg-0263-rdfa.html: ok
+schema.org/eg-0264-jsonld.html: ok
+schema.org/eg-0264-microdata.html: ok
+schema.org/eg-0264-pre.html: ok
+schema.org/eg-0264-rdfa.html: ok
+schema.org/eg-0265-jsonld.html: ok
+schema.org/eg-0265-microdata.html: ok
+schema.org/eg-0265-pre.html: ok
+schema.org/eg-0265-rdfa.html: ok
+schema.org/eg-0266-jsonld.html: {
+  "property": {
+    "schemas:Headline": [
+      "No property definition found"
+    ],
+    "schemas:datePublished": [
+      "Object \"2018:01:23\"^^<https://schema.org/Date> not compatible with rangeIncludes (schemas:Date,schemas:DateTime)"
+    ],
+    "schemas:dateModified": [
+      "Object \"2018:01:23\"^^<https://schema.org/Date> not compatible with rangeIncludes (schemas:Date,schemas:DateTime)"
+    ]
+  }
+}
+schema.org/eg-0266-microdata.html: ok
+schema.org/eg-0266-pre.html: ok
+schema.org/eg-0266-rdfa.html: ok
+schema.org/eg-0267-jsonld.html: ok
+schema.org/eg-0267-microdata.html: ok
+schema.org/eg-0267-pre.html: ok
+schema.org/eg-0267-rdfa.html: ok
+schema.org/eg-0268-jsonld.html: ok
+schema.org/eg-0268-microdata.html: ok
+schema.org/eg-0268-pre.html: ok
+schema.org/eg-0268-rdfa.html: ok
+schema.org/eg-0269-jsonld.html: ok
+schema.org/eg-0269-microdata.html: ok
+schema.org/eg-0269-pre.html: ok
+schema.org/eg-0269-rdfa.html: ok
+schema.org/eg-0270-jsonld.html: {
+  "property": {
+    "schemas:name": [
+      "Object _:g530660(schemas:PronounceableText,schemas:Text,rdfs:Resource) not compatible with rangeIncludes (schemas:Text)"
+    ],
+    "rdfs:label": [
+      "Object _:g530660(schemas:PronounceableText,schemas:Text,rdfs:Resource) not compatible with range (rdfs:Literal)"
+    ]
+  }
+}
+schema.org/eg-0270-microdata.html: ok
+schema.org/eg-0270-pre.html: ok
+schema.org/eg-0270-rdfa.html: ok
+schema.org/eg-0271-jsonld.html: {
+  "property": {
+    "schemas:name": [
+      "Object _:g531040(schemas:PronounceableText,schemas:Text,rdfs:Resource) not compatible with rangeIncludes (schemas:Text)"
+    ],
+    "rdfs:label": [
+      "Object _:g531040(schemas:PronounceableText,schemas:Text,rdfs:Resource) not compatible with range (rdfs:Literal)"
+    ]
+  }
+}
+schema.org/eg-0271-microdata.html: ok
+schema.org/eg-0271-pre.html: ok
+schema.org/eg-0271-rdfa.html: ok
+schema.org/eg-0272-jsonld.html: ok
+schema.org/eg-0272-microdata.html: ok
+schema.org/eg-0272-pre.html: ok
+schema.org/eg-0272-rdfa.html: ok
+schema.org/eg-0273-jsonld.html: ok
+schema.org/eg-0273-microdata.html: ok
+schema.org/eg-0273-pre.html: ok
+schema.org/eg-0273-rdfa.html: ok
+schema.org/eg-0274-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0274-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0274-jsonld.html\nexpected comma, not a string (after @type) at line 4, column 7 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0274-jsonld.html\nexpected comma, not a string (after @type) at line 4, column 7 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0274-microdata.html: ok
+schema.org/eg-0274-pre.html: ok
+schema.org/eg-0274-rdfa.html: ok
+schema.org/eg-0275-jsonld.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g532160(schemas:CategoryCode,schemas:Thing,schemas:Intangible,schemas:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0275-microdata.html: ok
+schema.org/eg-0275-pre.html: ok
+schema.org/eg-0275-rdfa.html: ok
+schema.org/eg-0276-jsonld.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g532460(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0276-microdata.html: ok
+schema.org/eg-0276-pre.html: ok
+schema.org/eg-0276-rdfa.html: ok
+schema.org/eg-0277-jsonld.html: ok
+schema.org/eg-0277-microdata.html: ok
+schema.org/eg-0277-pre.html: ok
+schema.org/eg-0277-rdfa.html: ok
+schema.org/eg-0278-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0278-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0278-jsonld.html\nunexpected character (after url) at line 6, column 5 [parse.c:724]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0278-jsonld.html\nunexpected character (after url) at line 6, column 5 [parse.c:724]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0278-microdata.html: ok
+schema.org/eg-0278-pre.html: ok
+schema.org/eg-0278-rdfa.html: ok
+schema.org/eg-0279-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0279-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0279-jsonld.html\nunexpected character (after offeredBy) at line 9, column 4 [parse.c:724]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0279-jsonld.html\nunexpected character (after offeredBy) at line 9, column 4 [parse.c:724]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0279-microdata.html: ok
+schema.org/eg-0279-pre.html: ok
+schema.org/eg-0279-rdfa.html: ok
+schema.org/eg-0280-jsonld.html: ok
+schema.org/eg-0280-microdata.html: ok
+schema.org/eg-0280-pre.html: ok
+schema.org/eg-0280-rdfa.html: ok
+schema.org/eg-0281-jsonld.html: ok
+schema.org/eg-0281-microdata.html: ok
+schema.org/eg-0281-pre.html: ok
+schema.org/eg-0281-rdfa.html: ok
+schema.org/eg-0282-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0282-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0282-jsonld.html\nunexpected hash close (after ) at line 25, column 2 [parse.c:584]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0282-jsonld.html\nunexpected hash close (after ) at line 25, column 2 [parse.c:584]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0282-microdata.html: ok
+schema.org/eg-0282-pre.html: ok
+schema.org/eg-0282-rdfa.html: ok
+schema.org/eg-0283-jsonld.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g534500(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0283-microdata.html: ok
+schema.org/eg-0283-pre.html: ok
+schema.org/eg-0283-rdfa.html: ok
+schema.org/eg-0284-jsonld.html: ok
+schema.org/eg-0284-microdata.html: ok
+schema.org/eg-0284-pre.html: ok
+schema.org/eg-0284-rdfa.html: ok
+schema.org/eg-0285-jsonld.html: ok
+schema.org/eg-0285-microdata.html: ok
+schema.org/eg-0285-pre.html: ok
+schema.org/eg-0285-rdfa.html: ok
+schema.org/eg-0286-jsonld.html: ok
+schema.org/eg-0286-microdata.html: ok
+schema.org/eg-0286-pre.html: ok
+schema.org/eg-0286-rdfa.html: ok
+schema.org/eg-0287-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0287-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0287-jsonld.html\nexpected comma, not a string (after industry.url) at line 10, column 22 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0287-jsonld.html\nexpected comma, not a string (after industry.url) at line 10, column 22 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0287-microdata.html: ok
+schema.org/eg-0287-pre.html: ok
+schema.org/eg-0287-rdfa.html: ok
+schema.org/eg-0288-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0288-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0288-jsonld.html\nexpected comma, not a hash close (after reviewAspect[3]) at line 11, column 2 [parse.c:586]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0288-jsonld.html\nexpected comma, not a hash close (after reviewAspect[3]) at line 11, column 2 [parse.c:586]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0288-microdata.html: ok
+schema.org/eg-0288-pre.html: ok
+schema.org/eg-0288-rdfa.html: ok
+schema.org/eg-0289-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0289-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0289-jsonld.html\nexpected comma, not a string (after hasPart[0].about) at line 16, column 12 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0289-jsonld.html\nexpected comma, not a string (after hasPart[0].about) at line 16, column 12 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0289-microdata.html: ok
+schema.org/eg-0289-pre.html: ok
+schema.org/eg-0289-rdfa.html: ok
+schema.org/eg-0290-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0290-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0290-jsonld.html\nexpected comma, not a string (after hasPart[0].itemReviewed.name) at line 14, column 16 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0290-jsonld.html\nexpected comma, not a string (after hasPart[0].itemReviewed.name) at line 14, column 16 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0290-microdata.html: ok
+schema.org/eg-0290-pre.html: ok
+schema.org/eg-0290-rdfa.html: ok
+schema.org/eg-0291-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0291-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0291-jsonld.html\nexpected comma, not a string (after text) at line 7, column 12 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0291-jsonld.html\nexpected comma, not a string (after text) at line 7, column 12 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0291-microdata.html: ok
+schema.org/eg-0291-pre.html: ok
+schema.org/eg-0291-rdfa.html: ok
+schema.org/eg-0292-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0292-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0292-jsonld.html\nexpected comma, not a string (after hasPart[0].itemReviewed.name) at line 14, column 16 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0292-jsonld.html\nexpected comma, not a string (after hasPart[0].itemReviewed.name) at line 14, column 16 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0292-microdata.html: ok
+schema.org/eg-0292-pre.html: ok
+schema.org/eg-0292-rdfa.html: ok
+schema.org/eg-0293-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0293-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0293-jsonld.html\nexpected comma, not a string (after text) at line 7, column 12 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0293-jsonld.html\nexpected comma, not a string (after text) at line 7, column 12 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0293-microdata.html: ok
+schema.org/eg-0293-pre.html: ok
+schema.org/eg-0293-rdfa.html: ok
+schema.org/eg-0294-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0294-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0294-jsonld.html\nunexpected hash close (after ) at line 14, column 2 [parse.c:584]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0294-jsonld.html\nunexpected hash close (after ) at line 14, column 2 [parse.c:584]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0294-microdata.html: ok
+schema.org/eg-0294-pre.html: ok
+schema.org/eg-0294-rdfa.html: ok
+schema.org/eg-0295-jsonld.html: ok
+schema.org/eg-0295-microdata.html: ok
+schema.org/eg-0295-pre.html: ok
+schema.org/eg-0295-rdfa.html: ok
+schema.org/eg-0296-jsonld.html: ok
+schema.org/eg-0296-microdata.html: ok
+schema.org/eg-0296-pre.html: ok
+schema.org/eg-0296-rdfa.html: ok
+schema.org/eg-0297-jsonld.html: ok
+schema.org/eg-0297-microdata.html: ok
+schema.org/eg-0297-pre.html: ok
+schema.org/eg-0297-rdfa.html: ok
+schema.org/eg-0298-jsonld.html: {
+  "class": {
+    "schemas:DateFeed": [
+      "No class definition found"
+    ]
+  },
+  "property": {
+    "schemas:encodingFormat": [
+      "Subject _:g538760(schemas:DateFeed,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork,schemas:MediaObject)"
+    ],
+    "schemas:webFeed": [
+      "Object _:g538760(schemas:DateFeed,rdfs:Resource) not compatible with rangeIncludes (schemas:DataFeed,schemas:URL)"
+    ]
+  }
+}
+schema.org/eg-0298-microdata.html: ok
+schema.org/eg-0298-pre.html: ok
+schema.org/eg-0298-rdfa.html: ok
+schema.org/eg-0299-jsonld.html: ok
+schema.org/eg-0299-microdata.html: ok
+schema.org/eg-0299-pre.html: ok
+schema.org/eg-0299-rdfa.html: ok
+schema.org/eg-0300-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0300-jsonld.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0300-jsonld.html>: 37:1: ERROR: Premature end of file  Currently open tags: html, head, script.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0300-microdata.html: ok
+schema.org/eg-0300-pre.html: ok
+schema.org/eg-0300-rdfa.html: ok
+schema.org/eg-0301-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0301-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0301-jsonld.html\nunexpected hash close (after ) at line 29, column 2 [parse.c:584]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0301-jsonld.html\nunexpected hash close (after ) at line 29, column 2 [parse.c:584]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0301-microdata.html: ok
+schema.org/eg-0301-pre.html: ok
+schema.org/eg-0301-rdfa.html: ok
+schema.org/eg-0302-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0302-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0302-jsonld.html\nexpected comma, not a string (after url) at line 9, column 12 [parse.c:364]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0302-jsonld.html\nexpected comma, not a string (after url) at line 9, column 12 [parse.c:364]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0302-microdata.html: ok
+schema.org/eg-0302-pre.html: ok
+schema.org/eg-0302-rdfa.html: ok
+schema.org/eg-0303-jsonld.html: {
+  "property": {
+    "schemas:endTime": [
+      "Object \"22:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ],
+    "schemas:startTime": [
+      "Object \"20:00\" not compatible with rangeIncludes (schemas:DateTime,schemas:Time)"
+    ]
+  }
+}
+schema.org/eg-0303-microdata.html: ok
+schema.org/eg-0303-pre.html: ok
+schema.org/eg-0303-rdfa.html: ok
+schema.org/eg-0304-jsonld.html: ok
+schema.org/eg-0304-microdata.html: ok
+schema.org/eg-0304-pre.html: ok
+schema.org/eg-0304-rdfa.html: ok
+schema.org/eg-0305-jsonld.html: ok
+schema.org/eg-0305-microdata.html: ok
+schema.org/eg-0305-pre.html: ok
+schema.org/eg-0305-rdfa.html: ok
+schema.org/eg-0306-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0306-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0306-jsonld.html\nunexpected hash close (after ) at line 14, column 2 [parse.c:584]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0306-jsonld.html\nunexpected hash close (after ) at line 14, column 2 [parse.c:584]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0306-microdata.html: ok
+schema.org/eg-0306-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0306-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0306-pre.html>: 16:33: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, h5, .\n  <h5>Hosted By<spam>Myke Hurley</span></h5>\n                                ^\n16:40: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, h5, .\n  <h5>Hosted By<spam>Myke Hurley</span></h5>\n                                       ^"
+    ]
+  }
+}
+schema.org/eg-0306-rdfa.html: ok
+schema.org/eg-0307-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0307-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0307-jsonld.html\nunexpected hash close (after ) at line 19, column 2 [parse.c:584]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0307-jsonld.html\nunexpected hash close (after ) at line 19, column 2 [parse.c:584]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0307-microdata.html: {
+  "property": {
+    "schemas:datePublished": [
+      "Object \"February 18th, 2015\" not compatible with rangeIncludes (schemas:Date,schemas:DateTime)"
+    ],
+    "schemas:timeRequired": [
+      "Object \"37 minutes\" not compatible with rangeIncludes (schemas:Duration)"
+    ]
+  }
+}
+schema.org/eg-0307-pre.html: ok
+schema.org/eg-0307-rdfa.html: ok
+schema.org/eg-0308-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0308-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0308-jsonld.html\nunexpected hash close (after ) at line 14, column 2 [parse.c:584]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0308-jsonld.html\nunexpected hash close (after ) at line 14, column 2 [parse.c:584]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0308-microdata.html: ok
+schema.org/eg-0308-pre.html: ok
+schema.org/eg-0308-rdfa.html: ok
+schema.org/eg-0309-jsonld.html: {
+  "property": {
+    "schemas:funding": [
+      "No property definition found"
+    ],
+    "schemas:funder": [
+      "Subject _:g542840(schemas:Grant,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork,schemas:Event,schemas:MonetaryGrant,schemas:Organization,schemas:Person)"
+    ]
+  }
+}
+schema.org/eg-0309-microdata.html: ok
+schema.org/eg-0309-pre.html: ok
+schema.org/eg-0309-rdfa.html: ok
+schema.org/eg-0310-jsonld.html: ok
+schema.org/eg-0310-microdata.html: ok
+schema.org/eg-0310-pre.html: ok
+schema.org/eg-0310-rdfa.html: ok
+schema.org/eg-0311-jsonld.html: {
+  "property": {
+    "schemas:endDate": [
+      "Subject _:g543440(schemas:MonetaryGrant,schemas:Thing,schemas:Intangible,schemas:Grant,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWorkSeason,schemas:CreativeWorkSeries,schemas:DatedMoneySpecification,schemas:EducationalOccupationalProgram,schemas:Event,schemas:Role,schemas:Schedule)"
+    ],
+    "schemas:startDate": [
+      "Subject _:g543440(schemas:MonetaryGrant,schemas:Thing,schemas:Intangible,schemas:Grant,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWorkSeason,schemas:CreativeWorkSeries,schemas:DatedMoneySpecification,schemas:EducationalOccupationalProgram,schemas:Event,schemas:Role,schemas:Schedule)"
+    ]
+  }
+}
+schema.org/eg-0311-microdata.html: ok
+schema.org/eg-0311-pre.html: ok
+schema.org/eg-0311-rdfa.html: ok
+schema.org/eg-0312-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0312-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0312-jsonld.html\nunexpected character (after @context) at line 3, column 4 [parse.c:724]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0312-jsonld.html\nunexpected character (after @context) at line 3, column 4 [parse.c:724]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0312-microdata.html: ok
+schema.org/eg-0312-pre.html: ok
+schema.org/eg-0312-rdfa.html: ok
+schema.org/eg-0313-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0313-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0313-jsonld.html\nThe same key is defined more than once: 0.subEvent",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0313-jsonld.html\nThe same key is defined more than once: 0.subEvent: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0313-microdata.html: ok
+schema.org/eg-0313-pre.html: ok
+schema.org/eg-0313-rdfa.html: ok
+schema.org/eg-0314-jsonld.html: ok
+schema.org/eg-0314-microdata.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g544460(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0314-pre.html: ok
+schema.org/eg-0314-rdfa.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g544620(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0315-jsonld.html: ok
+schema.org/eg-0315-microdata.html: Error: undefined method `pname' for #<RDF::Literal:0x850ac("https://schema.org/Book")>
+schema.org/eg-0315-pre.html: ok
+schema.org/eg-0315-rdfa.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g545100(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject _:g545120(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0316-jsonld.html: ok
+schema.org/eg-0316-microdata.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g545280(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0316-pre.html: ok
+schema.org/eg-0316-rdfa.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g545440(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0317-jsonld.html: ok
+schema.org/eg-0317-microdata.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g545660(schemas:CategoryCode,schemas:Thing,schemas:Intangible,schemas:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0317-pre.html: ok
+schema.org/eg-0317-rdfa.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g545860(schemas:CategoryCode,schemas:Thing,schemas:Intangible,schemas:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0318-jsonld.html: ok
+schema.org/eg-0318-microdata.html: {
+  "property": {
+    "schemas:isPartOf": [
+      "Subject <http://id.loc.gov/vocabulary/iso639-2/cze> not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  }
+}
+schema.org/eg-0318-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0318-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0318-pre.html>: 2:73: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, h1.\n\t<h1>ISO 639-2: Codes for the Representation of Names of Languages<h1>\n                                                                        ^\n3:8: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, h1.\n\t<h2>Listing of codes:</h2>\n       ^"
+    ]
+  }
+}
+schema.org/eg-0318-rdfa.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0318-rdfa.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0318-rdfa.html>: 10:65: ERROR: Unexpected character (=) in unquoted attribute value.\n<div vocab=\"https://schema.org/\" typeof=\"CategoryCode\" resource==\"http://id.loc.gov/vocabulary/iso639-2/cze\">\n                                                                ^\n10:66: ERROR: Unexpected character (\") in unquoted attribute value.\n<div vocab=\"https://schema.org/\" typeof=\"CategoryCode\" resource==\"http://id.loc.gov/vocabulary/iso639-2/cze\">\n                                                                 ^\n10:108: ERROR: Unexpected character (\") in unquoted attribute value.\n<div vocab=\"https://schema.org/\" typeof=\"CategoryCode\" resource==\"http://id.loc.gov/vocabulary/iso639-2/cze\">\n                                                                                                           ^"
+    ]
+  },
+  "property": {
+    "schemas:isPartOf": [
+      "Subject _:g546240(schemas:CategoryCode,schemas:Thing,schemas:Intangible,schemas:DefinedTerm,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> not compatible with domainIncludes (schemas:CreativeWork)"
+    ]
+  },
+  "statement": {
+    "schemas:name": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/name> \"tchèque\"@fr .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/name> \"Czech\"@en .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/name> \"Tschechisch\"@de .\n is invalid"
+    ],
+    "schemas:codeValue": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/codeValue> \"cze\" .\n is invalid"
+    ],
+    "schemas:inCodeSet": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/inCodeSet> <http://id.loc.gov/vocabulary/iso639-2> .\n is invalid"
+    ],
+    "rdf:type": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/CategoryCode> .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Thing> .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Intangible> .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/DefinedTerm> .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Resource> .\n is invalid"
+    ],
+    "rdfs:label": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/2000/01/rdf-schema#label> \"tchèque\"@fr .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/2000/01/rdf-schema#label> \"Czech\"@en .\n is invalid",
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <http://www.w3.org/2000/01/rdf-schema#label> \"Tschechisch\"@de .\n is invalid"
+    ],
+    "schemas:termCode": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/termCode> \"cze\" .\n is invalid"
+    ],
+    "schemas:isPartOf": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/isPartOf> <http://id.loc.gov/vocabulary/iso639-2> .\n is invalid"
+    ],
+    "schemas:inDefinedTermSet": [
+      "Triple <=\\u0022http://id.loc.gov/vocabulary/iso639-2/cze\\u0022> <https://schema.org/inDefinedTermSet> <http://id.loc.gov/vocabulary/iso639-2> .\n is invalid"
+    ]
+  }
+}
+schema.org/eg-0319-jsonld.html: ok
+schema.org/eg-0319-microdata.html: ok
+schema.org/eg-0319-pre.html: ok
+schema.org/eg-0319-rdfa.html: ok
 schema.org/eg-0320-jsonld.html: ok
 schema.org/eg-0320-microdata.html: ok
 schema.org/eg-0320-pre.html: ok
@@ -783,23 +1909,182 @@ schema.org/eg-0324-pre.html: {
 schema.org/eg-0324-rdfa.html: ok
 schema.org/eg-0325-jsonld.html: ok
 schema.org/eg-0325-microdata.html: ok
-schema.org/eg-0325-pre.html: {
-  "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/eg-0325-pre.html": [
-      "Errors found during processing",
-      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0325-pre.html>: 17:1: ERROR: Premature end of file  Currently open tags: html, body, div.\n\n^"
+schema.org/eg-0325-pre.html: ok
+schema.org/eg-0325-rdfa.html: ok
+schema.org/eg-0326-jsonld.html: ok
+schema.org/eg-0326-microdata.html: ok
+schema.org/eg-0326-pre.html: ok
+schema.org/eg-0326-rdfa.html: ok
+schema.org/eg-0327-jsonld.html: {
+  "property": {
+    "schemas:floorLevel": [
+      "Object \"5\"^^<http://www.w3.org/2001/XMLSchema#integer> not compatible with rangeIncludes (schemas:Text)"
     ]
   }
 }
-schema.org/eg-0325-rdfa.html: ok
+schema.org/eg-0327-microdata.html: ok
+schema.org/eg-0327-pre.html: ok
+schema.org/eg-0327-rdfa.html: ok
+schema.org/eg-0328-jsonld.html: ok
+schema.org/eg-0328-microdata.html: ok
+schema.org/eg-0328-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0328-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0328-pre.html>: 17:1: ERROR: Premature end of file  Currently open tags: html, body, div.\n\n^"
+    ]
+  }
+}
+schema.org/eg-0328-rdfa.html: ok
 schema.org/eg-0329-jsonld.html: ok
 schema.org/eg-0329-microdata.html: ok
-schema.org/eg-0329-pre.html: ok
+schema.org/eg-0329-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0329-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0329-pre.html>: 17:1: ERROR: Premature end of file  Currently open tags: html, body, div.\n\n^"
+    ]
+  }
+}
 schema.org/eg-0329-rdfa.html: ok
+schema.org/eg-0330-jsonld.html: ok
+schema.org/eg-0330-microdata.html: ok
+schema.org/eg-0330-pre.html: ok
+schema.org/eg-0330-rdfa.html: ok
+schema.org/eg-0331-jsonld.html: ok
+schema.org/eg-0331-microdata.html: ok
+schema.org/eg-0331-pre.html: ok
+schema.org/eg-0331-rdfa.html: ok
+schema.org/eg-0332-jsonld.html: ok
+schema.org/eg-0332-microdata.html: ok
+schema.org/eg-0332-pre.html: ok
+schema.org/eg-0332-rdfa.html: ok
+schema.org/eg-0333-jsonld.html: ok
+schema.org/eg-0333-microdata.html: ok
+schema.org/eg-0333-pre.html: ok
+schema.org/eg-0333-rdfa.html: ok
+schema.org/eg-0334-jsonld.html: ok
+schema.org/eg-0334-microdata.html: ok
+schema.org/eg-0334-pre.html: ok
+schema.org/eg-0334-rdfa.html: ok
+schema.org/eg-0335-jsonld.html: ok
+schema.org/eg-0335-microdata.html: ok
+schema.org/eg-0335-pre.html: ok
+schema.org/eg-0335-rdfa.html: ok
+schema.org/eg-0336-jsonld.html: ok
+schema.org/eg-0336-microdata.html: ok
+schema.org/eg-0336-pre.html: ok
+schema.org/eg-0336-rdfa.html: ok
+schema.org/eg-0337-jsonld.html: ok
+schema.org/eg-0337-microdata.html: ok
+schema.org/eg-0337-pre.html: ok
+schema.org/eg-0337-rdfa.html: ok
+schema.org/eg-0338-jsonld.html: ok
+schema.org/eg-0338-microdata.html: ok
+schema.org/eg-0338-pre.html: ok
+schema.org/eg-0338-rdfa.html: ok
+schema.org/eg-0340-jsonld.html: ok
+schema.org/eg-0340-microdata.html: ok
+schema.org/eg-0340-pre.html: ok
+schema.org/eg-0340-rdfa.html: ok
+schema.org/eg-0341-jsonld.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g555940(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)",
+      "Subject _:g556020(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0341-microdata.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g556480(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)",
+      "Subject _:g556400(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0341-pre.html: ok
+schema.org/eg-0341-rdfa.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g556700(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)",
+      "Subject _:g556780(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0342-jsonld.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g556920(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0342-microdata.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g557120(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0342-pre.html: ok
+schema.org/eg-0342-rdfa.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g557440(schemas:Message,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0343-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0343-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0343-jsonld.html\nThe same key is defined more than once: ccRecipient\nThe same key is defined more than once: ccRecipient.@type\nThe same key is defined more than once: ccRecipient.email",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0343-jsonld.html\nThe same key is defined more than once: ccRecipient\nThe same key is defined more than once: ccRecipient.@type\nThe same key is defined more than once: ccRecipient.email: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  },
+  "property": {
+    "schemas:participant": [
+      "Subject _:g557620(schemas:EmailMessage,schemas:Thing,schemas:CreativeWork,schemas:Message,rdfs:Resource) not compatible with domainIncludes (schemas:Action)",
+      "Object _:g557680(schemas:ContactPoint,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Organization,schemas:Person)"
+    ]
+  }
+}
+schema.org/eg-0343-microdata.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g557860(schemas:EmailMessage,schemas:Thing,schemas:CreativeWork,schemas:Message,rdfs:Resource) not compatible with domainIncludes (schemas:Action)",
+      "Object _:g558080(schemas:ContactPoint,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Organization,schemas:Person)"
+    ]
+  }
+}
+schema.org/eg-0343-pre.html: ok
+schema.org/eg-0343-rdfa.html: {
+  "property": {
+    "schemas:participant": [
+      "Subject _:g558280(schemas:EmailMessage,schemas:Thing,schemas:CreativeWork,schemas:Message,rdfs:Resource) not compatible with domainIncludes (schemas:Action)",
+      "Object _:g558360(schemas:ContactPoint,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Organization,schemas:Person)"
+    ]
+  }
+}
+schema.org/eg-0344-jsonld.html: ok
+schema.org/eg-0344-microdata.html: ok
+schema.org/eg-0344-pre.html: ok
+schema.org/eg-0344-rdfa.html: ok
 schema.org/eg-0345-jsonld.html: ok
 schema.org/eg-0345-microdata.html: ok
 schema.org/eg-0345-pre.html: ok
 schema.org/eg-0345-rdfa.html: ok
+schema.org/eg-0346-jsonld.html: ok
+schema.org/eg-0346-microdata.html: ok
+schema.org/eg-0346-pre.html: ok
+schema.org/eg-0346-rdfa.html: ok
+schema.org/eg-0347-jsonld.html: ok
+schema.org/eg-0347-microdata.html: ok
+schema.org/eg-0347-pre.html: ok
+schema.org/eg-0347-rdfa.html: ok
+schema.org/eg-0348-jsonld.html: ok
+schema.org/eg-0348-microdata.html: ok
+schema.org/eg-0348-pre.html: ok
+schema.org/eg-0348-rdfa.html: ok
 schema.org/eg-0349-jsonld.html: ok
 schema.org/eg-0349-microdata.html: ok
 schema.org/eg-0349-pre.html: ok
@@ -810,17 +2095,17 @@ schema.org/eg-0350-pre.html: ok
 schema.org/eg-0350-rdfa.html: ok
 schema.org/eg-0351-jsonld.html: {
   "property": {
-    "schema:duration": [
-      "Subject _:g512180(schema:LoanOrCredit,schema:Thing,schema:Intangible,schema:Service,schema:FinancialProduct,rdfs:Resource) not compatible with domainIncludes (schema:Audiobook,schema:Event,schema:MediaObject,schema:Movie,schema:MusicRecording,schema:MusicRelease,schema:QuantitativeValueDistribution,schema:Schedule)",
-      "Object _:g512200(schema:QuantitativeValue,schema:Thing,schema:Intangible,schema:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schema:Duration)"
+    "schemas:duration": [
+      "Subject _:g561540(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes (schemas:Audiobook,schemas:Episode,schemas:Event,schemas:MediaObject,schemas:Movie,schemas:MusicRecording,schemas:MusicRelease,schemas:QuantitativeValueDistribution,schemas:Schedule)",
+      "Object _:g561560(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Duration)"
     ]
   }
 }
 schema.org/eg-0351-microdata.html: {
   "property": {
     "schemas:duration": [
-      "Subject _:g512380(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
-      "Object _:g512520(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
+      "Subject _:g561720(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes (schemas:Audiobook,schemas:Episode,schemas:Event,schemas:MediaObject,schemas:Movie,schemas:MusicRecording,schemas:MusicRelease,schemas:QuantitativeValueDistribution,schemas:Schedule)",
+      "Object _:g561860(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Duration)"
     ]
   }
 }
@@ -828,8 +2113,8 @@ schema.org/eg-0351-pre.html: ok
 schema.org/eg-0351-rdfa.html: {
   "property": {
     "schemas:duration": [
-      "Subject _:g512760(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes ()",
-      "Object _:g512780(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes ()"
+      "Subject _:g562080(schemas:LoanOrCredit,schemas:Thing,schemas:Intangible,schemas:Service,schemas:FinancialProduct,rdfs:Resource) not compatible with domainIncludes (schemas:Audiobook,schemas:Episode,schemas:Event,schemas:MediaObject,schemas:Movie,schemas:MusicRecording,schemas:MusicRelease,schemas:QuantitativeValueDistribution,schemas:Schedule)",
+      "Object _:g562100(schemas:QuantitativeValue,schemas:Thing,schemas:Intangible,schemas:StructuredValue,rdfs:Resource) not compatible with rangeIncludes (schemas:Duration)"
     ]
   }
 }
@@ -858,15 +2143,15 @@ schema.org/eg-0355-pre.html: ok
 schema.org/eg-0355-rdfa.html: ok
 schema.org/eg-0356-jsonld.html: {
   "property": {
-    "schema:amount": [
-      "Subject _:g518600(schema:FinancialProduct,schema:Thing,schema:Intangible,schema:Service,rdfs:Resource) not compatible with domainIncludes (schema:DatedMoneySpecification,schema:InvestmentOrDeposit,schema:LoanOrCredit,schema:MonetaryGrant,schema:MoneyTransfer)"
+    "schemas:amount": [
+      "Subject _:g567560(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)"
     ]
   }
 }
 schema.org/eg-0356-microdata.html: {
   "property": {
     "schemas:amount": [
-      "Subject _:g518740(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g567700(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)"
     ]
   }
 }
@@ -874,7 +2159,7 @@ schema.org/eg-0356-pre.html: ok
 schema.org/eg-0356-rdfa.html: {
   "property": {
     "schemas:amount": [
-      "Subject _:g519000(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g567960(schemas:FinancialProduct,schemas:Thing,schemas:Intangible,schemas:Service,rdfs:Resource) not compatible with domainIncludes (schemas:DatedMoneySpecification,schemas:InvestmentOrDeposit,schemas:LoanOrCredit,schemas:MonetaryGrant,schemas:MoneyTransfer)"
     ]
   }
 }
@@ -969,14 +2254,55 @@ schema.org/eg-0370-jsonld.html: ok
 schema.org/eg-0370-microdata.html: ok
 schema.org/eg-0370-pre.html: ok
 schema.org/eg-0370-rdfa.html: ok
+schema.org/eg-0371-jsonld.html: {
+  "property": {
+    "schemas:instrument": [
+      "Subject _:g573400(schemas:HowTo,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0371-microdata.html: {
+  "property": {
+    "schemas:instrument": [
+      "Subject _:g574560(schemas:HowTo,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0371-pre.html: ok
+schema.org/eg-0371-rdfa.html: {
+  "property": {
+    "schemas:instrument": [
+      "Subject _:g576040(schemas:HowTo,schemas:Thing,schemas:CreativeWork,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
+    ]
+  }
+}
+schema.org/eg-0372-jsonld.html: ok
+schema.org/eg-0372-microdata.html: ok
+schema.org/eg-0372-pre.html: ok
+schema.org/eg-0372-rdfa.html: ok
+schema.org/eg-0373-jsonld.html: ok
+schema.org/eg-0373-microdata.html: ok
+schema.org/eg-0373-pre.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0373-pre.html": [
+      "Errors found during processing",
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0373-pre.html>: 6:1: ERROR: That tag isn't allowed here  Currently open tags: html, body, .\n</div>\n^\n7:1: ERROR: Premature end of file  Currently open tags: html, body, .\n\n^"
+    ]
+  }
+}
+schema.org/eg-0373-rdfa.html: ok
+schema.org/eg-0374-jsonld.html: ok
+schema.org/eg-0374-microdata.html: ok
+schema.org/eg-0374-pre.html: ok
+schema.org/eg-0374-rdfa.html: ok
 schema.org/eg-0375-jsonld.html: ok
 schema.org/eg-0375-microdata.html: ok
 schema.org/eg-0375-pre.html: ok
 schema.org/eg-0375-rdfa.html: ok
 schema.org/eg-0376-jsonld.html: {
   "property": {
-    "schema:participant": [
-      "Subject _:g526380(schema:Order,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    "schemas:participant": [
+      "Subject _:g579520(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
@@ -989,7 +2315,7 @@ schema.org/eg-0376-microdata.html: {
   },
   "property": {
     "schemas:participant": [
-      "Subject _:g527160(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g580300(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
@@ -997,7 +2323,7 @@ schema.org/eg-0376-pre.html: ok
 schema.org/eg-0376-rdfa.html: {
   "property": {
     "schemas:participant": [
-      "Subject _:g527840(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g580780(schemas:Order,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
@@ -1028,23 +2354,23 @@ schema.org/eg-0379-pre.html: ok
 schema.org/eg-0379-rdfa.html: {
   "property": {
     "schemas:isPartOf": [
-      "Subject _:g530380(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g583080(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
     ]
   }
 }
 schema.org/eg-0380-jsonld.html: {
   "property": {
-    "schema:isPartOf": [
-      "Subject _:g530560(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)",
-      "Subject _:g530600(schema:DefinedTerm,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:CreativeWork)"
+    "schemas:isPartOf": [
+      "Subject _:g583240(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject _:g583280(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
     ]
   }
 }
 schema.org/eg-0380-microdata.html: {
   "property": {
     "schemas:isPartOf": [
-      "Subject _:g531300(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
-      "Subject _:g531360(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g583940(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject _:g584000(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
     ]
   }
 }
@@ -1052,8 +2378,8 @@ schema.org/eg-0380-pre.html: ok
 schema.org/eg-0380-rdfa.html: {
   "property": {
     "schemas:isPartOf": [
-      "Subject _:g531880(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()",
-      "Subject _:g531820(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes ()"
+      "Subject _:g584280(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)",
+      "Subject _:g584220(schemas:DefinedTerm,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:CreativeWork)"
     ]
   }
 }
@@ -1075,11 +2401,11 @@ schema.org/eg-0384-pre.html: ok
 schema.org/eg-0384-rdfa.html: ok
 schema.org/eg-0385-jsonld.html: {
   "property": {
-    "schema:availabilityEnds": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    "schemas:availabilityEnds": [
+      "Object \"T8:22:00\"^^<https://schema.org/Date> not compatible with rangeIncludes (schemas:Date,schemas:DateTime,schemas:Time)"
     ],
-    "schema:availabilityStarts": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    "schemas:availabilityStarts": [
+      "Object \"T8:22:00\"^^<https://schema.org/Date> not compatible with rangeIncludes (schemas:Date,schemas:DateTime,schemas:Time)"
     ]
   }
 }
@@ -1088,11 +2414,11 @@ schema.org/eg-0385-pre.html: ok
 schema.org/eg-0385-rdfa.html: ok
 schema.org/eg-0386-jsonld.html: {
   "property": {
-    "schema:availabilityEnds": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    "schemas:availabilityEnds": [
+      "Object \"T8:22:00\"^^<https://schema.org/Date> not compatible with rangeIncludes (schemas:Date,schemas:DateTime,schemas:Time)"
     ],
-    "schema:availabilityStarts": [
-      "Object \"T8:22:00\"^^<http://schema.org/Date> not compatible with rangeIncludes (schema:Date,schema:DateTime,schema:Time)"
+    "schemas:availabilityStarts": [
+      "Object \"T8:22:00\"^^<https://schema.org/Date> not compatible with rangeIncludes (schemas:Date,schemas:DateTime,schemas:Time)"
     ]
   }
 }
@@ -1117,23 +2443,31 @@ schema.org/eg-0390-pre.html: ok
 schema.org/eg-0390-rdfa.html: ok
 schema.org/eg-0391-jsonld.html: ok
 schema.org/eg-0391-microdata.html: ok
-schema.org/eg-0391-pre.html: {
+schema.org/eg-0391-pre.html: ok
+schema.org/eg-0391-rdfa.html: ok
+schema.org/eg-0392-jsonld.html: ok
+schema.org/eg-0392-microdata.html: ok
+schema.org/eg-0392-pre.html: ok
+schema.org/eg-0392-rdfa.html: ok
+schema.org/eg-0393-jsonld.html: ok
+schema.org/eg-0393-microdata.html: ok
+schema.org/eg-0393-pre.html: {
   "validation": {
-    "file:///Users/gregg/Projects/linter/schema.org/eg-0391-pre.html": [
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0393-pre.html": [
       "Errors found during processing",
-      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0391-pre.html>: 28:6: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, table, tbody.\n     <table>\n     ^\n29:2: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, table.\n </div>\n ^\n30:1: ERROR: Premature end of file  Currently open tags: html, body, div, table.\n\n^"
+      "ERROR <file:///Users/gregg/Projects/linter/schema.org/eg-0393-pre.html>: 28:6: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, table, tbody.\n     <table>\n     ^\n29:2: ERROR: That tag isn't allowed here  Currently open tags: html, body, div, table.\n </div>\n ^\n30:1: ERROR: Premature end of file  Currently open tags: html, body, div, table.\n\n^"
     ]
   }
 }
-schema.org/eg-0391-rdfa.html: ok
+schema.org/eg-0393-rdfa.html: ok
 schema.org/eg-0394-jsonld.html: ok
 schema.org/eg-0394-microdata.html: ok
 schema.org/eg-0394-pre.html: ok
 schema.org/eg-0394-rdfa.html: ok
 schema.org/eg-0395-jsonld.html: {
   "property": {
-    "schema:participant": [
-      "Subject _:g537360(schema:Offer,schema:Thing,schema:Intangible,rdfs:Resource) not compatible with domainIncludes (schema:Action)"
+    "schemas:participant": [
+      "Subject _:g590560(schemas:Offer,schemas:Thing,schemas:Intangible,rdfs:Resource) not compatible with domainIncludes (schemas:Action)"
     ]
   }
 }
@@ -1168,6 +2502,14 @@ schema.org/eg-0402-jsonld.html: ok
 schema.org/eg-0402-microdata.html: ok
 schema.org/eg-0402-pre.html: ok
 schema.org/eg-0402-rdfa.html: ok
+schema.org/eg-0403-jsonld.html: ok
+schema.org/eg-0403-microdata.html: ok
+schema.org/eg-0403-pre.html: ok
+schema.org/eg-0403-rdfa.html: ok
+schema.org/eg-0404-jsonld.html: ok
+schema.org/eg-0404-microdata.html: ok
+schema.org/eg-0404-pre.html: ok
+schema.org/eg-0404-rdfa.html: ok
 schema.org/eg-0405-jsonld.html: ok
 schema.org/eg-0405-microdata.html: ok
 schema.org/eg-0405-pre.html: ok
@@ -1250,6 +2592,14 @@ schema.org/eg-0421-jsonld.html: ok
 schema.org/eg-0421-microdata.html: ok
 schema.org/eg-0421-pre.html: ok
 schema.org/eg-0421-rdfa.html: ok
+schema.org/eg-0422-jsonld.html: ok
+schema.org/eg-0422-microdata.html: ok
+schema.org/eg-0422-pre.html: ok
+schema.org/eg-0422-rdfa.html: ok
+schema.org/eg-0423-jsonld.html: ok
+schema.org/eg-0423-microdata.html: ok
+schema.org/eg-0423-pre.html: ok
+schema.org/eg-0423-rdfa.html: ok
 schema.org/eg-0424-jsonld.html: ok
 schema.org/eg-0424-microdata.html: ok
 schema.org/eg-0424-pre.html: ok
@@ -1304,7 +2654,7 @@ schema.org/eg-0437-jsonld.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0437-jsonld.html": [
       "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0437-jsonld.html\nThe same key is defined more than once: name\nThe same key is defined more than once: description",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0437-jsonld.html\nThe same key is defined more than once: name\nThe same key is defined more than once: description: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0437-jsonld.html\nThe same key is defined more than once: name\nThe same key is defined more than once: description: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
     ]
   }
 }
@@ -1319,6 +2669,14 @@ schema.org/eg-0439-jsonld.html: ok
 schema.org/eg-0439-microdata.html: ok
 schema.org/eg-0439-pre.html: ok
 schema.org/eg-0439-rdfa.html: ok
+schema.org/eg-0440-jsonld.html: ok
+schema.org/eg-0440-microdata.html: ok
+schema.org/eg-0440-pre.html: ok
+schema.org/eg-0440-rdfa.html: ok
+schema.org/eg-0441-jsonld.html: ok
+schema.org/eg-0441-microdata.html: ok
+schema.org/eg-0441-pre.html: ok
+schema.org/eg-0441-rdfa.html: ok
 schema.org/eg-0442-jsonld.html: ok
 schema.org/eg-0442-microdata.html: ok
 schema.org/eg-0442-pre.html: ok
@@ -1362,22 +2720,7 @@ schema.org/eg-0450-jsonld.html: ok
 schema.org/eg-0450-microdata.html: ok
 schema.org/eg-0450-pre.html: ok
 schema.org/eg-0450-rdfa.html: ok
-schema.org/eg-0451-jsonld.html: {
-  "property": {
-    "schema:url": [
-      "Subject _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
-    ],
-    "schema:caption": [
-      "Subject _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:AudioObject,schema:ImageObject,schema:VideoObject)"
-    ],
-    "schema:description": [
-      "Subject _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with domainIncludes (schema:Thing)"
-    ],
-    "schema:video": [
-      "Object _:g568360(schemas:VideoObject,schemas:Thing,schemas:CreativeWork,schemas:MediaObject,rdfs:Resource) not compatible with rangeIncludes (schema:Clip,schema:VideoObject)"
-    ]
-  }
-}
+schema.org/eg-0451-jsonld.html: ok
 schema.org/eg-0452-jsonld.html: ok
 schema.org/eg-0452-microdata.html: ok
 schema.org/eg-0452-pre.html: ok
@@ -1391,7 +2734,7 @@ schema.org/eg-0455-jsonld.html: {
   "validation": {
     "file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html": [
       "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html\nThe same key is defined more than once: artMedium",
-      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html\nThe same key is defined more than once: artMedium: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-00b2961c9898/lib/json/ld/reader.rb:100"
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0455-jsonld.html\nThe same key is defined more than once: artMedium: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
     ]
   }
 }
@@ -1420,6 +2763,25 @@ schema.org/eg-0457-jsonld.html: ok
 schema.org/eg-0457-microdata.html: ok
 schema.org/eg-0457-pre.html: ok
 schema.org/eg-0457-rdfa.html: ok
+schema.org/eg-0458-jsonld.html: ok
+schema.org/eg-0458-microdata.html: ok
+schema.org/eg-0458-pre.html: ok
+schema.org/eg-0458-rdfa.html: ok
+schema.org/eg-0459-jsonld.html: ok
+schema.org/eg-0459-microdata.html: ok
+schema.org/eg-0459-pre.html: ok
+schema.org/eg-0459-rdfa.html: ok
+schema.org/eg-0460-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0460-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0460-jsonld.html\nunexpected hash close (after ) at line 13, column 2 [parse.c:584]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0460-jsonld.html\nunexpected hash close (after ) at line 13, column 2 [parse.c:584]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0460-microdata.html: ok
+schema.org/eg-0460-pre.html: ok
+schema.org/eg-0460-rdfa.html: ok
 schema.org/eg-0461-jsonld.html: ok
 schema.org/eg-0461-microdata.html: ok
 schema.org/eg-0461-pre.html: ok
@@ -1428,3 +2790,28 @@ schema.org/eg-0462-jsonld.html: ok
 schema.org/eg-0462-microdata.html: ok
 schema.org/eg-0462-pre.html: ok
 schema.org/eg-0462-rdfa.html: ok
+schema.org/eg-0463-jsonld.html: {
+  "validation": {
+    "file:///Users/gregg/Projects/linter/schema.org/eg-0463-jsonld.html": [
+      "Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0463-jsonld.html\nexpected hash key, not a hash close (after potentialAction[1].eduQuestionType) at line 16, column 5 [parse.c:586]",
+      "FATAL Failed to parse input document: loading document failed: url: file:///Users/gregg/Projects/linter/schema.org/eg-0463-jsonld.html\nexpected hash key, not a hash close (after potentialAction[1].eduQuestionType) at line 16, column 5 [parse.c:586]: Called from /Users/gregg/.rvm/gems/ruby-3.0.0/bundler/gems/json-ld-6d1165d8a4ab/lib/json/ld/reader.rb:100"
+    ]
+  }
+}
+schema.org/eg-0463-microdata.html: ok
+schema.org/eg-0463-pre.html: ok
+schema.org/eg-0463-rdfa.html: ok
+schema.org/eg-0464-jsonld.html: {
+  "property": {
+    "schemas:brand": [
+      "Object _:g628460(schemas:Thing,rdfs:Resource) not compatible with rangeIncludes (schemas:Brand,schemas:Organization)"
+    ]
+  }
+}
+schema.org/eg-0464-microdata.html: ok
+schema.org/eg-0464-pre.html: ok
+schema.org/eg-0464-rdfa.html: ok
+schema.org/eg-0465-jsonld.html: ok
+schema.org/eg-0465-microdata.html: ok
+schema.org/eg-0465-pre.html: ok
+schema.org/eg-0465-rdfa.html: ok

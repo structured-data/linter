@@ -1,0 +1,31 @@
+<div itemscope itemtype="https://schema.org/MortgageLoan" itemref="amount intRate apr">
+  <h1 itemprop="name">Agency 30 Year Fixed</h1>
+  <div itemprop="loanTerm" itemscope itemtype="https://schema.org/QuantitativeValue">
+    <meta itemprop="value" content="30">
+    <meta itemprop="unitCode" content="ANN">
+  </div>
+  <p itemprop="description">Experience easier budgeting with predictable monthly payments. Relax knowing you’ll never have to worry about rising interest rates for the life of your loan.</p>
+  <div itemprop="loanRepaymentForm" itemscope itemtype="https://schema.org/RepaymentSpecification" itemref="estPay payNum">
+    <meta itemprop="downPayment" content="20">
+    <meta itemprop="loanPaymentFrequency" content="Monthly">
+  </div>
+</div>
+<table>
+  <caption id="amount" itemprop="amount" itemscope itemtype="https://schema.org/MonetaryAmount">Rates are based on a loan amount of <span itemprop="currency" content="USD">$</span><span itemprop="amount" content="200000">200,000</span> and 20% down payment.</caption>
+  <tr>
+    <td>Interest rate</td>
+    <td><span id="intRate" itemprop="interestRate">3.625</span>%</td>
+  </tr>
+  <tr>
+    <td>APR</td>
+    <td><span id="apr" itemprop="annualPercentageRate">3.8047</span>%</td>
+  </tr>
+  <tr>
+    <td>Estimated payment</td>
+    <td id="estPay" itemprop="loanPaymentAmount" itemscope itemtype="https://schema.org/MonetaryAmount"><span itemprop="currency" content="USD">$</span><span itemprop="amount">912.11</span></td>
+  </tr>
+  <tr>
+    <td>Months</td>
+    <td id="payNum" itemprop="numberOfLoanPayments">360</td>
+  </tr>
+</table>

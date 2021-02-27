@@ -75,7 +75,21 @@
     "path": [
       "Thing",
       "Place"
-    ]
+    ],
+    "examples": {
+      "eg-0327": {
+        "pre": "schema.org/eg-0327-pre.html",
+        "microdata": "schema.org/eg-0327-microdata.html",
+        "rdfa": "schema.org/eg-0327-rdfa.html",
+        "jsonld": "schema.org/eg-0327-jsonld.html"
+      },
+      "eg-0422": {
+        "pre": "schema.org/eg-0422-pre.html",
+        "microdata": "schema.org/eg-0422-microdata.html",
+        "rdfa": "schema.org/eg-0422-rdfa.html",
+        "jsonld": "schema.org/eg-0422-jsonld.html"
+      }
+    }
   },
   "AccountingService": {
     "super_class": "FinancialService",
@@ -149,7 +163,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0253": {
+        "pre": "schema.org/eg-0253-pre.html",
+        "microdata": "schema.org/eg-0253-microdata.html",
+        "rdfa": "schema.org/eg-0253-rdfa.html",
+        "jsonld": "schema.org/eg-0253-jsonld.html"
+      }
+    }
   },
   "ActionStatusType": {
     "super_class": "StatusEnumeration",
@@ -342,7 +364,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0326": {
+        "pre": "schema.org/eg-0326-pre.html",
+        "microdata": "schema.org/eg-0326-microdata.html",
+        "rdfa": "schema.org/eg-0326-rdfa.html",
+        "jsonld": "schema.org/eg-0326-jsonld.html"
+      }
+    }
   },
   "AlignmentObject": {
     "super_class": "Intangible",
@@ -493,7 +523,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0327": {
+        "pre": "schema.org/eg-0327-pre.html",
+        "microdata": "schema.org/eg-0327-microdata.html",
+        "rdfa": "schema.org/eg-0327-rdfa.html",
+        "jsonld": "schema.org/eg-0327-jsonld.html"
+      }
+    }
   },
   "ApartmentComplex": {
     "super_class": "Residence",
@@ -572,7 +610,27 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0274": {
+        "pre": "schema.org/eg-0274-pre.html",
+        "microdata": "schema.org/eg-0274-microdata.html",
+        "rdfa": "schema.org/eg-0274-rdfa.html",
+        "jsonld": "schema.org/eg-0274-jsonld.html"
+      },
+      "eg-0255": {
+        "pre": "schema.org/eg-0255-pre.html",
+        "microdata": "schema.org/eg-0255-microdata.html",
+        "rdfa": "schema.org/eg-0255-rdfa.html",
+        "jsonld": "schema.org/eg-0255-jsonld.html"
+      },
+      "eg-0256": {
+        "pre": "schema.org/eg-0256-pre.html",
+        "microdata": "schema.org/eg-0256-microdata.html",
+        "rdfa": "schema.org/eg-0256-rdfa.html",
+        "jsonld": "schema.org/eg-0256-jsonld.html"
+      }
+    }
   },
   "ArchiveOrganization": {
     "super_class": "LocalBusiness",
@@ -583,7 +641,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0254": {
+        "pre": "schema.org/eg-0254-pre.html",
+        "microdata": "schema.org/eg-0254-microdata.html",
+        "rdfa": "schema.org/eg-0254-rdfa.html",
+        "jsonld": "schema.org/eg-0254-jsonld.html"
+      }
+    }
   },
   "ArriveAction": {
     "super_class": "MoveAction",
@@ -659,6 +725,12 @@
         "microdata": "schema.org/eg-0399-microdata.html",
         "rdfa": "schema.org/eg-0399-rdfa.html",
         "jsonld": "schema.org/eg-0399-jsonld.html"
+      },
+      "eg-0228": {
+        "pre": "schema.org/eg-0228-pre.html",
+        "microdata": "schema.org/eg-0228-microdata.html",
+        "rdfa": "schema.org/eg-0228-rdfa.html",
+        "jsonld": "schema.org/eg-0228-jsonld.html"
       }
     }
   },
@@ -771,7 +843,15 @@
     "path": [
       "Thing",
       "Intangible"
-    ]
+    ],
+    "examples": {
+      "eg-0301": {
+        "pre": "schema.org/eg-0301-pre.html",
+        "microdata": "schema.org/eg-0301-microdata.html",
+        "rdfa": "schema.org/eg-0301-rdfa.html",
+        "jsonld": "schema.org/eg-0301-jsonld.html"
+      }
+    }
   },
   "AudioObject": {
     "super_class": "MediaObject",
@@ -809,6 +889,12 @@
         "microdata": "schema.org/eg-0215-microdata.html",
         "rdfa": "schema.org/eg-0215-rdfa.html",
         "jsonld": "schema.org/eg-0215-jsonld.html"
+      },
+      "eg-0282": {
+        "pre": "schema.org/eg-0282-pre.html",
+        "microdata": "schema.org/eg-0282-microdata.html",
+        "rdfa": "schema.org/eg-0282-rdfa.html",
+        "jsonld": "schema.org/eg-0282-jsonld.html"
       }
     }
   },
@@ -972,12 +1058,6 @@
       "FinancialProduct"
     ],
     "examples": {
-      "compoundPrice-1": {
-        "pre": "schema.org/compoundPrice-1-pre.html",
-        "microdata": "schema.org/compoundPrice-1-microdata.html",
-        "rdfa": "schema.org/compoundPrice-1-rdfa.html",
-        "jsonld": "schema.org/compoundPrice-1-jsonld.html"
-      },
       "eg-0352": {
         "pre": "schema.org/eg-0352-pre.html",
         "microdata": "schema.org/eg-0352-microdata.html",
@@ -996,7 +1076,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0374": {
+        "pre": "schema.org/eg-0374-pre.html",
+        "microdata": "schema.org/eg-0374-microdata.html",
+        "rdfa": "schema.org/eg-0374-rdfa.html",
+        "jsonld": "schema.org/eg-0374-jsonld.html"
+      }
+    }
   },
   "BarOrPub": {
     "super_class": "FoodEstablishment",
@@ -1244,11 +1332,17 @@
         "rdfa": "schema.org/eg-0175-rdfa.html",
         "jsonld": "schema.org/eg-0175-jsonld.html"
       },
-      "eg-0220": {
-        "pre": "schema.org/eg-0220-pre.html",
-        "microdata": "schema.org/eg-0220-microdata.html",
-        "rdfa": "schema.org/eg-0220-rdfa.html",
-        "jsonld": "schema.org/eg-0220-jsonld.html"
+      "eg-0400": {
+        "pre": "schema.org/eg-0400-pre.html",
+        "microdata": "schema.org/eg-0400-microdata.html",
+        "rdfa": "schema.org/eg-0400-rdfa.html",
+        "jsonld": "schema.org/eg-0400-jsonld.html"
+      },
+      "eg-0393": {
+        "pre": "schema.org/eg-0393-pre.html",
+        "microdata": "schema.org/eg-0393-microdata.html",
+        "rdfa": "schema.org/eg-0393-rdfa.html",
+        "jsonld": "schema.org/eg-0393-jsonld.html"
       },
       "eg-0395": {
         "pre": "schema.org/eg-0395-pre.html",
@@ -1256,11 +1350,11 @@
         "rdfa": "schema.org/eg-0395-rdfa.html",
         "jsonld": "schema.org/eg-0395-jsonld.html"
       },
-      "eg-0400": {
-        "pre": "schema.org/eg-0400-pre.html",
-        "microdata": "schema.org/eg-0400-microdata.html",
-        "rdfa": "schema.org/eg-0400-rdfa.html",
-        "jsonld": "schema.org/eg-0400-jsonld.html"
+      "eg-0220": {
+        "pre": "schema.org/eg-0220-pre.html",
+        "microdata": "schema.org/eg-0220-microdata.html",
+        "rdfa": "schema.org/eg-0220-rdfa.html",
+        "jsonld": "schema.org/eg-0220-jsonld.html"
       }
     }
   },
@@ -1284,7 +1378,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0330": {
+        "pre": "schema.org/eg-0330-pre.html",
+        "microdata": "schema.org/eg-0330-microdata.html",
+        "rdfa": "schema.org/eg-0330-rdfa.html",
+        "jsonld": "schema.org/eg-0330-jsonld.html"
+      }
+    }
   },
   "BookStore": {
     "super_class": "Store",
@@ -1432,18 +1534,6 @@
 
     ],
     "examples": {
-      "eg-0166": {
-        "pre": "schema.org/eg-0166-pre.html",
-        "microdata": "schema.org/eg-0166-microdata.html",
-        "rdfa": "schema.org/eg-0166-rdfa.html",
-        "jsonld": "schema.org/eg-0166-jsonld.html"
-      },
-      "eg-0167": {
-        "pre": "schema.org/eg-0167-pre.html",
-        "microdata": "schema.org/eg-0167-microdata.html",
-        "rdfa": "schema.org/eg-0167-rdfa.html",
-        "jsonld": "schema.org/eg-0167-jsonld.html"
-      },
       "eg-0444": {
         "pre": "schema.org/eg-0444-pre.html",
         "microdata": "schema.org/eg-0444-microdata.html",
@@ -1455,6 +1545,18 @@
         "microdata": "schema.org/eg-0445-microdata.html",
         "rdfa": "schema.org/eg-0445-rdfa.html",
         "jsonld": "schema.org/eg-0445-jsonld.html"
+      },
+      "eg-0166": {
+        "pre": "schema.org/eg-0166-pre.html",
+        "microdata": "schema.org/eg-0166-microdata.html",
+        "rdfa": "schema.org/eg-0166-rdfa.html",
+        "jsonld": "schema.org/eg-0166-jsonld.html"
+      },
+      "eg-0167": {
+        "pre": "schema.org/eg-0167-pre.html",
+        "microdata": "schema.org/eg-0167-microdata.html",
+        "rdfa": "schema.org/eg-0167-rdfa.html",
+        "jsonld": "schema.org/eg-0167-jsonld.html"
       }
     }
   },
@@ -1468,6 +1570,12 @@
 
     ],
     "examples": {
+      "eg-0319": {
+        "pre": "schema.org/eg-0319-pre.html",
+        "microdata": "schema.org/eg-0319-microdata.html",
+        "rdfa": "schema.org/eg-0319-rdfa.html",
+        "jsonld": "schema.org/eg-0319-jsonld.html"
+      },
       "eg-0320": {
         "pre": "schema.org/eg-0320-pre.html",
         "microdata": "schema.org/eg-0320-microdata.html",
@@ -1487,24 +1595,6 @@
       "Service"
     ],
     "examples": {
-      "eg-0166": {
-        "pre": "schema.org/eg-0166-pre.html",
-        "microdata": "schema.org/eg-0166-microdata.html",
-        "rdfa": "schema.org/eg-0166-rdfa.html",
-        "jsonld": "schema.org/eg-0166-jsonld.html"
-      },
-      "eg-0167": {
-        "pre": "schema.org/eg-0167-pre.html",
-        "microdata": "schema.org/eg-0167-microdata.html",
-        "rdfa": "schema.org/eg-0167-rdfa.html",
-        "jsonld": "schema.org/eg-0167-jsonld.html"
-      },
-      "eg-0320": {
-        "pre": "schema.org/eg-0320-pre.html",
-        "microdata": "schema.org/eg-0320-microdata.html",
-        "rdfa": "schema.org/eg-0320-rdfa.html",
-        "jsonld": "schema.org/eg-0320-jsonld.html"
-      },
       "eg-0442": {
         "pre": "schema.org/eg-0442-pre.html",
         "microdata": "schema.org/eg-0442-microdata.html",
@@ -1522,6 +1612,30 @@
         "microdata": "schema.org/eg-0444-microdata.html",
         "rdfa": "schema.org/eg-0444-rdfa.html",
         "jsonld": "schema.org/eg-0444-jsonld.html"
+      },
+      "eg-0166": {
+        "pre": "schema.org/eg-0166-pre.html",
+        "microdata": "schema.org/eg-0166-microdata.html",
+        "rdfa": "schema.org/eg-0166-rdfa.html",
+        "jsonld": "schema.org/eg-0166-jsonld.html"
+      },
+      "eg-0167": {
+        "pre": "schema.org/eg-0167-pre.html",
+        "microdata": "schema.org/eg-0167-microdata.html",
+        "rdfa": "schema.org/eg-0167-rdfa.html",
+        "jsonld": "schema.org/eg-0167-jsonld.html"
+      },
+      "eg-0319": {
+        "pre": "schema.org/eg-0319-pre.html",
+        "microdata": "schema.org/eg-0319-microdata.html",
+        "rdfa": "schema.org/eg-0319-rdfa.html",
+        "jsonld": "schema.org/eg-0319-jsonld.html"
+      },
+      "eg-0320": {
+        "pre": "schema.org/eg-0320-pre.html",
+        "microdata": "schema.org/eg-0320-microdata.html",
+        "rdfa": "schema.org/eg-0320-rdfa.html",
+        "jsonld": "schema.org/eg-0320-jsonld.html"
       }
     }
   },
@@ -1536,7 +1650,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0232": {
+        "pre": "schema.org/eg-0232-pre.html",
+        "microdata": "schema.org/eg-0232-microdata.html",
+        "rdfa": "schema.org/eg-0232-rdfa.html",
+        "jsonld": "schema.org/eg-0232-jsonld.html"
+      }
+    }
   },
   "BuddhistTemple": {
     "super_class": "PlaceOfWorship",
@@ -1598,7 +1720,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0331": {
+        "pre": "schema.org/eg-0331-pre.html",
+        "microdata": "schema.org/eg-0331-microdata.html",
+        "rdfa": "schema.org/eg-0331-rdfa.html",
+        "jsonld": "schema.org/eg-0331-jsonld.html"
+      }
+    }
   },
   "BusTrip": {
     "super_class": "Trip",
@@ -1782,17 +1912,17 @@
 
     ],
     "examples": {
+      "eg-0328": {
+        "pre": "schema.org/eg-0328-pre.html",
+        "microdata": "schema.org/eg-0328-microdata.html",
+        "rdfa": "schema.org/eg-0328-rdfa.html",
+        "jsonld": "schema.org/eg-0328-jsonld.html"
+      },
       "eg-0329": {
         "pre": "schema.org/eg-0329-pre.html",
         "microdata": "schema.org/eg-0329-microdata.html",
         "rdfa": "schema.org/eg-0329-rdfa.html",
         "jsonld": "schema.org/eg-0329-jsonld.html"
-      },
-      "compoundPrice-2": {
-        "pre": "schema.org/compoundPrice-2-pre.html",
-        "microdata": "schema.org/compoundPrice-2-microdata.html",
-        "rdfa": "schema.org/compoundPrice-2-rdfa.html",
-        "jsonld": "schema.org/compoundPrice-2-jsonld.html"
       }
     }
   },
@@ -1828,7 +1958,21 @@
       "Thing",
       "Intangible",
       "DefinedTerm"
-    ]
+    ],
+    "examples": {
+      "eg-0317": {
+        "pre": "schema.org/eg-0317-pre.html",
+        "microdata": "schema.org/eg-0317-microdata.html",
+        "rdfa": "schema.org/eg-0317-rdfa.html",
+        "jsonld": "schema.org/eg-0317-jsonld.html"
+      },
+      "eg-0318": {
+        "pre": "schema.org/eg-0318-pre.html",
+        "microdata": "schema.org/eg-0318-microdata.html",
+        "rdfa": "schema.org/eg-0318-rdfa.html",
+        "jsonld": "schema.org/eg-0318-jsonld.html"
+      }
+    }
   },
   "CategoryCodeSet": {
     "super_class": "DefinedTermSet",
@@ -1839,7 +1983,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0317": {
+        "pre": "schema.org/eg-0317-pre.html",
+        "microdata": "schema.org/eg-0317-microdata.html",
+        "rdfa": "schema.org/eg-0317-rdfa.html",
+        "jsonld": "schema.org/eg-0317-jsonld.html"
+      },
+      "eg-0318": {
+        "pre": "schema.org/eg-0318-pre.html",
+        "microdata": "schema.org/eg-0318-microdata.html",
+        "rdfa": "schema.org/eg-0318-rdfa.html",
+        "jsonld": "schema.org/eg-0318-jsonld.html"
+      }
+    }
   },
   "CatholicChurch": {
     "super_class": "Church",
@@ -2156,7 +2314,15 @@
     "path": [
       "Thing",
       "CreativeWork"
-    ]
+    ],
+    "examples": {
+      "eg-0267": {
+        "pre": "schema.org/eg-0267-pre.html",
+        "microdata": "schema.org/eg-0267-microdata.html",
+        "rdfa": "schema.org/eg-0267-rdfa.html",
+        "jsonld": "schema.org/eg-0267-jsonld.html"
+      }
+    }
   },
   "ClothingStore": {
     "super_class": "Store",
@@ -2232,6 +2398,12 @@
         "microdata": "schema.org/eg-0207-microdata.html",
         "rdfa": "schema.org/eg-0207-rdfa.html",
         "jsonld": "schema.org/eg-0207-jsonld.html"
+      },
+      "eg-0277": {
+        "pre": "schema.org/eg-0277-pre.html",
+        "microdata": "schema.org/eg-0277-microdata.html",
+        "rdfa": "schema.org/eg-0277-rdfa.html",
+        "jsonld": "schema.org/eg-0277-jsonld.html"
       }
     }
   },
@@ -2405,21 +2577,7 @@
     ],
     "sub_classes": [
 
-    ],
-    "examples": {
-      "compoundPrice-1": {
-        "pre": "schema.org/compoundPrice-1-pre.html",
-        "microdata": "schema.org/compoundPrice-1-microdata.html",
-        "rdfa": "schema.org/compoundPrice-1-rdfa.html",
-        "jsonld": "schema.org/compoundPrice-1-jsonld.html"
-      },
-      "compoundPrice-2": {
-        "pre": "schema.org/compoundPrice-2-pre.html",
-        "microdata": "schema.org/compoundPrice-2-microdata.html",
-        "rdfa": "schema.org/compoundPrice-2-rdfa.html",
-        "jsonld": "schema.org/compoundPrice-2-jsonld.html"
-      }
-    }
+    ]
   },
   "ComputerLanguage": {
     "super_class": "Intangible",
@@ -2590,7 +2748,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0341": {
+        "pre": "schema.org/eg-0341-pre.html",
+        "microdata": "schema.org/eg-0341-microdata.html",
+        "rdfa": "schema.org/eg-0341-rdfa.html",
+        "jsonld": "schema.org/eg-0341-jsonld.html"
+      }
+    }
   },
   "CookAction": {
     "super_class": "CreateAction",
@@ -2636,7 +2802,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0266": {
+        "pre": "schema.org/eg-0266-pre.html",
+        "microdata": "schema.org/eg-0266-microdata.html",
+        "rdfa": "schema.org/eg-0266-rdfa.html",
+        "jsonld": "schema.org/eg-0266-jsonld.html"
+      }
+    }
   },
   "Country": {
     "super_class": "AdministrativeArea",
@@ -2657,7 +2831,33 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0332": {
+        "pre": "schema.org/eg-0332-pre.html",
+        "microdata": "schema.org/eg-0332-microdata.html",
+        "rdfa": "schema.org/eg-0332-rdfa.html",
+        "jsonld": "schema.org/eg-0332-jsonld.html"
+      },
+      "eg-0333": {
+        "pre": "schema.org/eg-0333-pre.html",
+        "microdata": "schema.org/eg-0333-microdata.html",
+        "rdfa": "schema.org/eg-0333-rdfa.html",
+        "jsonld": "schema.org/eg-0333-jsonld.html"
+      },
+      "eg-0334": {
+        "pre": "schema.org/eg-0334-pre.html",
+        "microdata": "schema.org/eg-0334-microdata.html",
+        "rdfa": "schema.org/eg-0334-rdfa.html",
+        "jsonld": "schema.org/eg-0334-jsonld.html"
+      },
+      "eg-0338": {
+        "pre": "schema.org/eg-0338-pre.html",
+        "microdata": "schema.org/eg-0338-microdata.html",
+        "rdfa": "schema.org/eg-0338-rdfa.html",
+        "jsonld": "schema.org/eg-0338-jsonld.html"
+      }
+    }
   },
   "CourseInstance": {
     "super_class": "Event",
@@ -2667,7 +2867,27 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0332": {
+        "pre": "schema.org/eg-0332-pre.html",
+        "microdata": "schema.org/eg-0332-microdata.html",
+        "rdfa": "schema.org/eg-0332-rdfa.html",
+        "jsonld": "schema.org/eg-0332-jsonld.html"
+      },
+      "eg-0333": {
+        "pre": "schema.org/eg-0333-pre.html",
+        "microdata": "schema.org/eg-0333-microdata.html",
+        "rdfa": "schema.org/eg-0333-rdfa.html",
+        "jsonld": "schema.org/eg-0333-jsonld.html"
+      },
+      "eg-0334": {
+        "pre": "schema.org/eg-0334-pre.html",
+        "microdata": "schema.org/eg-0334-microdata.html",
+        "rdfa": "schema.org/eg-0334-rdfa.html",
+        "jsonld": "schema.org/eg-0334-jsonld.html"
+      }
+    }
   },
   "Courthouse": {
     "super_class": "GovernmentBuilding",
@@ -2711,7 +2931,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0297": {
+        "pre": "schema.org/eg-0297-pre.html",
+        "microdata": "schema.org/eg-0297-microdata.html",
+        "rdfa": "schema.org/eg-0297-rdfa.html",
+        "jsonld": "schema.org/eg-0297-jsonld.html"
+      }
+    }
   },
   "CreateAction": {
     "super_class": "Action",
@@ -2854,6 +3082,30 @@
         "microdata": "schema.org/eg-0220-microdata.html",
         "rdfa": "schema.org/eg-0220-rdfa.html",
         "jsonld": "schema.org/eg-0220-jsonld.html"
+      },
+      "eg-0465": {
+        "pre": "schema.org/eg-0465-pre.html",
+        "microdata": "schema.org/eg-0465-microdata.html",
+        "rdfa": "schema.org/eg-0465-rdfa.html",
+        "jsonld": "schema.org/eg-0465-jsonld.html"
+      },
+      "eg-0246": {
+        "pre": "schema.org/eg-0246-pre.html",
+        "microdata": "schema.org/eg-0246-microdata.html",
+        "rdfa": "schema.org/eg-0246-rdfa.html",
+        "jsonld": "schema.org/eg-0246-jsonld.html"
+      },
+      "eg-0257": {
+        "pre": "schema.org/eg-0257-pre.html",
+        "microdata": "schema.org/eg-0257-microdata.html",
+        "rdfa": "schema.org/eg-0257-rdfa.html",
+        "jsonld": "schema.org/eg-0257-jsonld.html"
+      },
+      "eg-0258": {
+        "pre": "schema.org/eg-0258-pre.html",
+        "microdata": "schema.org/eg-0258-microdata.html",
+        "rdfa": "schema.org/eg-0258-rdfa.html",
+        "jsonld": "schema.org/eg-0258-jsonld.html"
       }
     }
   },
@@ -2950,7 +3202,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0223": {
+        "pre": "schema.org/eg-0223-pre.html",
+        "microdata": "schema.org/eg-0223-microdata.html",
+        "rdfa": "schema.org/eg-0223-rdfa.html",
+        "jsonld": "schema.org/eg-0223-jsonld.html"
+      }
+    }
   },
   "DanceEvent": {
     "super_class": "Event",
@@ -3005,6 +3265,12 @@
       "Dataset"
     ],
     "examples": {
+      "eg-0344": {
+        "pre": "schema.org/eg-0344-pre.html",
+        "microdata": "schema.org/eg-0344-microdata.html",
+        "rdfa": "schema.org/eg-0344-rdfa.html",
+        "jsonld": "schema.org/eg-0344-jsonld.html"
+      },
       "eg-0345": {
         "pre": "schema.org/eg-0345-pre.html",
         "microdata": "schema.org/eg-0345-microdata.html",
@@ -3108,7 +3374,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0346": {
+        "pre": "schema.org/eg-0346-pre.html",
+        "microdata": "schema.org/eg-0346-microdata.html",
+        "rdfa": "schema.org/eg-0346-rdfa.html",
+        "jsonld": "schema.org/eg-0346-jsonld.html"
+      }
+    }
   },
   "DefinedTerm": {
     "super_class": "Intangible",
@@ -3118,7 +3392,33 @@
     "path": [
       "Thing",
       "Intangible"
-    ]
+    ],
+    "examples": {
+      "eg-0314": {
+        "pre": "schema.org/eg-0314-pre.html",
+        "microdata": "schema.org/eg-0314-microdata.html",
+        "rdfa": "schema.org/eg-0314-rdfa.html",
+        "jsonld": "schema.org/eg-0314-jsonld.html"
+      },
+      "eg-0315": {
+        "pre": "schema.org/eg-0315-pre.html",
+        "microdata": "schema.org/eg-0315-microdata.html",
+        "rdfa": "schema.org/eg-0315-rdfa.html",
+        "jsonld": "schema.org/eg-0315-jsonld.html"
+      },
+      "eg-0316": {
+        "pre": "schema.org/eg-0316-pre.html",
+        "microdata": "schema.org/eg-0316-microdata.html",
+        "rdfa": "schema.org/eg-0316-rdfa.html",
+        "jsonld": "schema.org/eg-0316-jsonld.html"
+      },
+      "eg-0287": {
+        "pre": "schema.org/eg-0287-pre.html",
+        "microdata": "schema.org/eg-0287-microdata.html",
+        "rdfa": "schema.org/eg-0287-rdfa.html",
+        "jsonld": "schema.org/eg-0287-jsonld.html"
+      }
+    }
   },
   "DefinedTermSet": {
     "super_class": "CreativeWork",
@@ -3128,7 +3428,15 @@
     "path": [
       "Thing",
       "CreativeWork"
-    ]
+    ],
+    "examples": {
+      "eg-0315": {
+        "pre": "schema.org/eg-0315-pre.html",
+        "microdata": "schema.org/eg-0315-microdata.html",
+        "rdfa": "schema.org/eg-0315-rdfa.html",
+        "jsonld": "schema.org/eg-0315-jsonld.html"
+      }
+    }
   },
   "DeleteAction": {
     "super_class": "UpdateAction",
@@ -3218,7 +3526,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0347": {
+        "pre": "schema.org/eg-0347-pre.html",
+        "microdata": "schema.org/eg-0347-microdata.html",
+        "rdfa": "schema.org/eg-0347-rdfa.html",
+        "jsonld": "schema.org/eg-0347-jsonld.html"
+      }
+    }
   },
   "DepartAction": {
     "super_class": "MoveAction",
@@ -3324,7 +3640,15 @@
     "path": [
       "Thing",
       "CreativeWork"
-    ]
+    ],
+    "examples": {
+      "eg-0348": {
+        "pre": "schema.org/eg-0348-pre.html",
+        "microdata": "schema.org/eg-0348-microdata.html",
+        "rdfa": "schema.org/eg-0348-rdfa.html",
+        "jsonld": "schema.org/eg-0348-jsonld.html"
+      }
+    }
   },
   "DigitalDocumentPermission": {
     "super_class": "Intangible",
@@ -3334,7 +3658,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0348": {
+        "pre": "schema.org/eg-0348-pre.html",
+        "microdata": "schema.org/eg-0348-microdata.html",
+        "rdfa": "schema.org/eg-0348-rdfa.html",
+        "jsonld": "schema.org/eg-0348-jsonld.html"
+      }
+    }
   },
   "DigitalDocumentPermissionType": {
     "super_class": "Enumeration",
@@ -3555,15 +3887,7 @@
     ],
     "sub_classes": [
 
-    ],
-    "examples": {
-      "Drug-TreatmentIndication-MedicalContraindication-221": {
-        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html",
-        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html",
-        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html",
-        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html"
-      }
-    }
+    ]
   },
   "DrugClass": {
     "super_class": "MedicalEntity",
@@ -3573,7 +3897,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0225": {
+        "pre": "schema.org/eg-0225-pre.html",
+        "microdata": "schema.org/eg-0225-microdata.html",
+        "rdfa": "schema.org/eg-0225-rdfa.html",
+        "jsonld": "schema.org/eg-0225-jsonld.html"
+      }
+    }
   },
   "DrugCost": {
     "super_class": "MedicalEntity",
@@ -3739,7 +4071,27 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0259": {
+        "pre": "schema.org/eg-0259-pre.html",
+        "microdata": "schema.org/eg-0259-microdata.html",
+        "rdfa": "schema.org/eg-0259-rdfa.html",
+        "jsonld": "schema.org/eg-0259-jsonld.html"
+      },
+      "eg-0260": {
+        "pre": "schema.org/eg-0260-pre.html",
+        "microdata": "schema.org/eg-0260-microdata.html",
+        "rdfa": "schema.org/eg-0260-rdfa.html",
+        "jsonld": "schema.org/eg-0260-jsonld.html"
+      },
+      "eg-0261": {
+        "pre": "schema.org/eg-0261-pre.html",
+        "microdata": "schema.org/eg-0261-microdata.html",
+        "rdfa": "schema.org/eg-0261-rdfa.html",
+        "jsonld": "schema.org/eg-0261-jsonld.html"
+      }
+    }
   },
   "EducationalOccupationalProgram": {
     "super_class": "Intangible",
@@ -3749,7 +4101,21 @@
     "path": [
       "Thing",
       "Intangible"
-    ]
+    ],
+    "examples": {
+      "eg-0294": {
+        "pre": "schema.org/eg-0294-pre.html",
+        "microdata": "schema.org/eg-0294-microdata.html",
+        "rdfa": "schema.org/eg-0294-rdfa.html",
+        "jsonld": "schema.org/eg-0294-jsonld.html"
+      },
+      "eg-0278": {
+        "pre": "schema.org/eg-0278-pre.html",
+        "microdata": "schema.org/eg-0278-microdata.html",
+        "rdfa": "schema.org/eg-0278-rdfa.html",
+        "jsonld": "schema.org/eg-0278-jsonld.html"
+      }
+    }
   },
   "EducationalOrganization": {
     "super_class": "CivicStructure",
@@ -3826,7 +4192,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0343": {
+        "pre": "schema.org/eg-0343-pre.html",
+        "microdata": "schema.org/eg-0343-microdata.html",
+        "rdfa": "schema.org/eg-0343-rdfa.html",
+        "jsonld": "schema.org/eg-0343-jsonld.html"
+      }
+    }
   },
   "Embassy": {
     "super_class": "GovernmentBuilding",
@@ -3873,7 +4247,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0247": {
+        "pre": "schema.org/eg-0247-pre.html",
+        "microdata": "schema.org/eg-0247-microdata.html",
+        "rdfa": "schema.org/eg-0247-rdfa.html",
+        "jsonld": "schema.org/eg-0247-jsonld.html"
+      }
+    }
   },
   "EmployerReview": {
     "super_class": "Review",
@@ -4104,6 +4486,18 @@
       "Thing"
     ],
     "examples": {
+      "eg-0436": {
+        "pre": "schema.org/eg-0436-pre.html",
+        "microdata": "schema.org/eg-0436-microdata.html",
+        "rdfa": "schema.org/eg-0436-rdfa.html",
+        "jsonld": "schema.org/eg-0436-jsonld.html"
+      },
+      "eg-0426": {
+        "pre": "schema.org/eg-0426-pre.html",
+        "microdata": "schema.org/eg-0426-microdata.html",
+        "rdfa": "schema.org/eg-0426-rdfa.html",
+        "jsonld": "schema.org/eg-0426-jsonld.html"
+      },
       "eg-0461": {
         "pre": "schema.org/eg-0461-pre.html",
         "microdata": "schema.org/eg-0461-microdata.html",
@@ -4156,17 +4550,53 @@
         "rdfa": "schema.org/eg-0190-rdfa.html",
         "jsonld": "schema.org/eg-0190-jsonld.html"
       },
-      "eg-0426": {
-        "pre": "schema.org/eg-0426-pre.html",
-        "microdata": "schema.org/eg-0426-microdata.html",
-        "rdfa": "schema.org/eg-0426-rdfa.html",
-        "jsonld": "schema.org/eg-0426-jsonld.html"
+      "eg-0228": {
+        "pre": "schema.org/eg-0228-pre.html",
+        "microdata": "schema.org/eg-0228-microdata.html",
+        "rdfa": "schema.org/eg-0228-rdfa.html",
+        "jsonld": "schema.org/eg-0228-jsonld.html"
       },
-      "eg-0436": {
-        "pre": "schema.org/eg-0436-pre.html",
-        "microdata": "schema.org/eg-0436-microdata.html",
-        "rdfa": "schema.org/eg-0436-rdfa.html",
-        "jsonld": "schema.org/eg-0436-jsonld.html"
+      "eg-0240": {
+        "pre": "schema.org/eg-0240-pre.html",
+        "microdata": "schema.org/eg-0240-microdata.html",
+        "rdfa": "schema.org/eg-0240-rdfa.html",
+        "jsonld": "schema.org/eg-0240-jsonld.html"
+      },
+      "eg-0241": {
+        "pre": "schema.org/eg-0241-pre.html",
+        "microdata": "schema.org/eg-0241-microdata.html",
+        "rdfa": "schema.org/eg-0241-rdfa.html",
+        "jsonld": "schema.org/eg-0241-jsonld.html"
+      },
+      "eg-0242": {
+        "pre": "schema.org/eg-0242-pre.html",
+        "microdata": "schema.org/eg-0242-microdata.html",
+        "rdfa": "schema.org/eg-0242-rdfa.html",
+        "jsonld": "schema.org/eg-0242-jsonld.html"
+      },
+      "eg-0243": {
+        "pre": "schema.org/eg-0243-pre.html",
+        "microdata": "schema.org/eg-0243-microdata.html",
+        "rdfa": "schema.org/eg-0243-rdfa.html",
+        "jsonld": "schema.org/eg-0243-jsonld.html"
+      },
+      "eg-0244": {
+        "pre": "schema.org/eg-0244-pre.html",
+        "microdata": "schema.org/eg-0244-microdata.html",
+        "rdfa": "schema.org/eg-0244-rdfa.html",
+        "jsonld": "schema.org/eg-0244-jsonld.html"
+      },
+      "eg-0170": {
+        "pre": "schema.org/eg-0170-pre.html",
+        "microdata": "schema.org/eg-0170-microdata.html",
+        "rdfa": "schema.org/eg-0170-rdfa.html",
+        "jsonld": "schema.org/eg-0170-jsonld.html"
+      },
+      "eg-0014": {
+        "pre": "schema.org/eg-0014-pre.html",
+        "microdata": "schema.org/eg-0014-microdata.html",
+        "rdfa": "schema.org/eg-0014-rdfa.html",
+        "jsonld": "schema.org/eg-0014-jsonld.html"
       }
     }
   },
@@ -4206,7 +4636,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0313": {
+        "pre": "schema.org/eg-0313-pre.html",
+        "microdata": "schema.org/eg-0313-microdata.html",
+        "rdfa": "schema.org/eg-0313-rdfa.html",
+        "jsonld": "schema.org/eg-0313-jsonld.html"
+      }
+    }
   },
   "EventStatusType": {
     "super_class": "StatusEnumeration",
@@ -4240,7 +4678,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0235": {
+        "pre": "schema.org/eg-0235-pre.html",
+        "microdata": "schema.org/eg-0235-microdata.html",
+        "rdfa": "schema.org/eg-0235-rdfa.html",
+        "jsonld": "schema.org/eg-0235-jsonld.html"
+      }
+    }
   },
   "ExerciseAction": {
     "super_class": "PlayAction",
@@ -4736,17 +5182,17 @@
 
     ],
     "examples": {
-      "eg-0397": {
-        "pre": "schema.org/eg-0397-pre.html",
-        "microdata": "schema.org/eg-0397-microdata.html",
-        "rdfa": "schema.org/eg-0397-rdfa.html",
-        "jsonld": "schema.org/eg-0397-jsonld.html"
-      },
       "eg-0421": {
         "pre": "schema.org/eg-0421-pre.html",
         "microdata": "schema.org/eg-0421-microdata.html",
         "rdfa": "schema.org/eg-0421-rdfa.html",
         "jsonld": "schema.org/eg-0421-jsonld.html"
+      },
+      "eg-0397": {
+        "pre": "schema.org/eg-0397-pre.html",
+        "microdata": "schema.org/eg-0397-microdata.html",
+        "rdfa": "schema.org/eg-0397-rdfa.html",
+        "jsonld": "schema.org/eg-0397-jsonld.html"
       }
     }
   },
@@ -4761,17 +5207,17 @@
 
     ],
     "examples": {
-      "eg-0005": {
-        "pre": "schema.org/eg-0005-pre.html",
-        "microdata": "schema.org/eg-0005-microdata.html",
-        "rdfa": "schema.org/eg-0005-rdfa.html",
-        "jsonld": "schema.org/eg-0005-jsonld.html"
-      },
       "eg-0363": {
         "pre": "schema.org/eg-0363-pre.html",
         "microdata": "schema.org/eg-0363-microdata.html",
         "rdfa": "schema.org/eg-0363-rdfa.html",
         "jsonld": "schema.org/eg-0363-jsonld.html"
+      },
+      "eg-0005": {
+        "pre": "schema.org/eg-0005-pre.html",
+        "microdata": "schema.org/eg-0005-microdata.html",
+        "rdfa": "schema.org/eg-0005-rdfa.html",
+        "jsonld": "schema.org/eg-0005-jsonld.html"
       }
     }
   },
@@ -4927,6 +5373,12 @@
       "eg-0169": {
         "pre": "schema.org/eg-0169-pre.html",
         "jsonld": "schema.org/eg-0169-jsonld.html"
+      },
+      "eg-0301": {
+        "pre": "schema.org/eg-0301-pre.html",
+        "microdata": "schema.org/eg-0301-microdata.html",
+        "rdfa": "schema.org/eg-0301-rdfa.html",
+        "jsonld": "schema.org/eg-0301-jsonld.html"
       }
     }
   },
@@ -4938,7 +5390,27 @@
     "path": [
       "Thing",
       "Intangible"
-    ]
+    ],
+    "examples": {
+      "eg-0309": {
+        "pre": "schema.org/eg-0309-pre.html",
+        "microdata": "schema.org/eg-0309-microdata.html",
+        "rdfa": "schema.org/eg-0309-rdfa.html",
+        "jsonld": "schema.org/eg-0309-jsonld.html"
+      },
+      "eg-0310": {
+        "pre": "schema.org/eg-0310-pre.html",
+        "microdata": "schema.org/eg-0310-microdata.html",
+        "rdfa": "schema.org/eg-0310-rdfa.html",
+        "jsonld": "schema.org/eg-0310-jsonld.html"
+      },
+      "eg-0312": {
+        "pre": "schema.org/eg-0312-pre.html",
+        "microdata": "schema.org/eg-0312-microdata.html",
+        "rdfa": "schema.org/eg-0312-rdfa.html",
+        "jsonld": "schema.org/eg-0312-jsonld.html"
+      }
+    }
   },
   "GroceryStore": {
     "super_class": "Store",
@@ -4960,7 +5432,33 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0288": {
+        "pre": "schema.org/eg-0288-pre.html",
+        "microdata": "schema.org/eg-0288-microdata.html",
+        "rdfa": "schema.org/eg-0288-rdfa.html",
+        "jsonld": "schema.org/eg-0288-jsonld.html"
+      },
+      "eg-0289": {
+        "pre": "schema.org/eg-0289-pre.html",
+        "microdata": "schema.org/eg-0289-microdata.html",
+        "rdfa": "schema.org/eg-0289-rdfa.html",
+        "jsonld": "schema.org/eg-0289-jsonld.html"
+      },
+      "eg-0290": {
+        "pre": "schema.org/eg-0290-pre.html",
+        "microdata": "schema.org/eg-0290-microdata.html",
+        "rdfa": "schema.org/eg-0290-rdfa.html",
+        "jsonld": "schema.org/eg-0290-jsonld.html"
+      },
+      "eg-0291": {
+        "pre": "schema.org/eg-0291-pre.html",
+        "microdata": "schema.org/eg-0291-microdata.html",
+        "rdfa": "schema.org/eg-0291-rdfa.html",
+        "jsonld": "schema.org/eg-0291-jsonld.html"
+      }
+    }
   },
   "HVACBusiness": {
     "super_class": "HomeAndConstructionBusiness",
@@ -5055,7 +5553,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0229": {
+        "pre": "schema.org/eg-0229-pre.html",
+        "microdata": "schema.org/eg-0229-microdata.html",
+        "rdfa": "schema.org/eg-0229-rdfa.html",
+        "jsonld": "schema.org/eg-0229-jsonld.html"
+      }
+    }
   },
   "HealthPlanCostSharingSpecification": {
     "super_class": "Intangible",
@@ -5065,7 +5571,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0229": {
+        "pre": "schema.org/eg-0229-pre.html",
+        "microdata": "schema.org/eg-0229-microdata.html",
+        "rdfa": "schema.org/eg-0229-rdfa.html",
+        "jsonld": "schema.org/eg-0229-jsonld.html"
+      }
+    }
   },
   "HealthPlanFormulary": {
     "super_class": "Intangible",
@@ -5075,7 +5589,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0229": {
+        "pre": "schema.org/eg-0229-pre.html",
+        "microdata": "schema.org/eg-0229-microdata.html",
+        "rdfa": "schema.org/eg-0229-rdfa.html",
+        "jsonld": "schema.org/eg-0229-jsonld.html"
+      }
+    }
   },
   "HealthPlanNetwork": {
     "super_class": "Intangible",
@@ -5276,7 +5798,15 @@
     "path": [
       "Thing",
       "CreativeWork"
-    ]
+    ],
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "HowToDirection": {
     "super_class": "CreativeWork",
@@ -5286,7 +5816,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "HowToItem": {
     "super_class": "ListItem",
@@ -5308,7 +5846,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "HowToStep": {
     "super_class": "CreativeWork",
@@ -5318,7 +5864,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "HowToSupply": {
     "super_class": "HowToItem",
@@ -5340,7 +5894,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "HowToTool": {
     "super_class": "HowToItem",
@@ -5435,6 +5997,12 @@
       "MediaObject"
     ],
     "examples": {
+      "eg-0404": {
+        "pre": "schema.org/eg-0404-pre.html",
+        "microdata": "schema.org/eg-0404-microdata.html",
+        "rdfa": "schema.org/eg-0404-rdfa.html",
+        "jsonld": "schema.org/eg-0404-jsonld.html"
+      },
       "eg-0021": {
         "pre": "schema.org/eg-0021-pre.html",
         "microdata": "schema.org/eg-0021-microdata.html",
@@ -5670,6 +6238,12 @@
 
     ],
     "examples": {
+      "eg-0446": {
+        "pre": "schema.org/eg-0446-pre.html",
+        "microdata": "schema.org/eg-0446-microdata.html",
+        "rdfa": "schema.org/eg-0446-rdfa.html",
+        "jsonld": "schema.org/eg-0446-jsonld.html"
+      },
       "eg-0009": {
         "pre": "schema.org/eg-0009-pre.html",
         "microdata": "schema.org/eg-0009-microdata.html",
@@ -5682,11 +6256,17 @@
         "rdfa": "schema.org/eg-0023-rdfa.html",
         "jsonld": "schema.org/eg-0023-jsonld.html"
       },
-      "eg-0446": {
-        "pre": "schema.org/eg-0446-pre.html",
-        "microdata": "schema.org/eg-0446-microdata.html",
-        "rdfa": "schema.org/eg-0446-rdfa.html",
-        "jsonld": "schema.org/eg-0446-jsonld.html"
+      "eg-0295": {
+        "pre": "schema.org/eg-0295-pre.html",
+        "microdata": "schema.org/eg-0295-microdata.html",
+        "rdfa": "schema.org/eg-0295-rdfa.html",
+        "jsonld": "schema.org/eg-0295-jsonld.html"
+      },
+      "eg-0296": {
+        "pre": "schema.org/eg-0296-pre.html",
+        "microdata": "schema.org/eg-0296-microdata.html",
+        "rdfa": "schema.org/eg-0296-rdfa.html",
+        "jsonld": "schema.org/eg-0296-jsonld.html"
       }
     }
   },
@@ -5712,7 +6292,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0233": {
+        "pre": "schema.org/eg-0233-pre.html",
+        "microdata": "schema.org/eg-0233-microdata.html",
+        "rdfa": "schema.org/eg-0233-rdfa.html",
+        "jsonld": "schema.org/eg-0233-jsonld.html"
+      }
+    }
   },
   "InvestmentOrDeposit": {
     "super_class": "FinancialProduct",
@@ -5763,6 +6351,12 @@
 
     ],
     "examples": {
+      "eg-0374": {
+        "pre": "schema.org/eg-0374-pre.html",
+        "microdata": "schema.org/eg-0374-microdata.html",
+        "rdfa": "schema.org/eg-0374-rdfa.html",
+        "jsonld": "schema.org/eg-0374-jsonld.html"
+      },
       "eg-0375": {
         "pre": "schema.org/eg-0375-pre.html",
         "microdata": "schema.org/eg-0375-microdata.html",
@@ -5793,6 +6387,12 @@
       "Intangible"
     ],
     "examples": {
+      "eg-0377": {
+        "pre": "schema.org/eg-0377-pre.html",
+        "microdata": "schema.org/eg-0377-microdata.html",
+        "rdfa": "schema.org/eg-0377-rdfa.html",
+        "jsonld": "schema.org/eg-0377-jsonld.html"
+      },
       "eg-0016": {
         "pre": "schema.org/eg-0016-pre.html",
         "microdata": "schema.org/eg-0016-microdata.html",
@@ -5822,12 +6422,6 @@
         "microdata": "schema.org/eg-0211-microdata.html",
         "rdfa": "schema.org/eg-0211-rdfa.html",
         "jsonld": "schema.org/eg-0211-jsonld.html"
-      },
-      "eg-0377": {
-        "pre": "schema.org/eg-0377-pre.html",
-        "microdata": "schema.org/eg-0377-microdata.html",
-        "rdfa": "schema.org/eg-0377-rdfa.html",
-        "jsonld": "schema.org/eg-0377-jsonld.html"
       }
     }
   },
@@ -5880,6 +6474,30 @@
         "microdata": "schema.org/eg-0028-microdata.html",
         "rdfa": "schema.org/eg-0028-rdfa.html",
         "jsonld": "schema.org/eg-0028-jsonld.html"
+      },
+      "eg-0465": {
+        "pre": "schema.org/eg-0465-pre.html",
+        "microdata": "schema.org/eg-0465-microdata.html",
+        "rdfa": "schema.org/eg-0465-rdfa.html",
+        "jsonld": "schema.org/eg-0465-jsonld.html"
+      },
+      "eg-0280": {
+        "pre": "schema.org/eg-0280-pre.html",
+        "microdata": "schema.org/eg-0280-microdata.html",
+        "rdfa": "schema.org/eg-0280-rdfa.html",
+        "jsonld": "schema.org/eg-0280-jsonld.html"
+      },
+      "eg-0251": {
+        "pre": "schema.org/eg-0251-pre.html",
+        "microdata": "schema.org/eg-0251-microdata.html",
+        "rdfa": "schema.org/eg-0251-rdfa.html",
+        "jsonld": "schema.org/eg-0251-jsonld.html"
+      },
+      "eg-0268": {
+        "pre": "schema.org/eg-0268-pre.html",
+        "microdata": "schema.org/eg-0268-microdata.html",
+        "rdfa": "schema.org/eg-0268-rdfa.html",
+        "jsonld": "schema.org/eg-0268-jsonld.html"
       }
     }
   },
@@ -5968,15 +6586,15 @@
 
     ],
     "examples": {
-      "eg-0169": {
-        "pre": "schema.org/eg-0169-pre.html",
-        "jsonld": "schema.org/eg-0169-jsonld.html"
-      },
       "eg-0369": {
         "pre": "schema.org/eg-0369-pre.html",
         "microdata": "schema.org/eg-0369-microdata.html",
         "rdfa": "schema.org/eg-0369-rdfa.html",
         "jsonld": "schema.org/eg-0369-jsonld.html"
+      },
+      "eg-0169": {
+        "pre": "schema.org/eg-0169-pre.html",
+        "jsonld": "schema.org/eg-0169-jsonld.html"
       }
     }
   },
@@ -6050,7 +6668,21 @@
     "path": [
       "Thing",
       "CreativeWork"
-    ]
+    ],
+    "examples": {
+      "eg-0230": {
+        "pre": "schema.org/eg-0230-pre.html",
+        "microdata": "schema.org/eg-0230-microdata.html",
+        "rdfa": "schema.org/eg-0230-rdfa.html",
+        "jsonld": "schema.org/eg-0230-jsonld.html"
+      },
+      "eg-0231": {
+        "pre": "schema.org/eg-0231-pre.html",
+        "microdata": "schema.org/eg-0231-microdata.html",
+        "rdfa": "schema.org/eg-0231-rdfa.html",
+        "jsonld": "schema.org/eg-0231-jsonld.html"
+      }
+    }
   },
   "LegislationObject": {
     "super_class": "Legislation",
@@ -6061,7 +6693,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0231": {
+        "pre": "schema.org/eg-0231-pre.html",
+        "microdata": "schema.org/eg-0231-microdata.html",
+        "rdfa": "schema.org/eg-0231-rdfa.html",
+        "jsonld": "schema.org/eg-0231-jsonld.html"
+      }
+    }
   },
   "LegislativeBuilding": {
     "super_class": "GovernmentBuilding",
@@ -6169,7 +6809,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0226": {
+        "pre": "schema.org/eg-0226-pre.html",
+        "microdata": "schema.org/eg-0226-microdata.html",
+        "rdfa": "schema.org/eg-0226-rdfa.html",
+        "jsonld": "schema.org/eg-0226-jsonld.html"
+      },
+      "eg-0227": {
+        "pre": "schema.org/eg-0227-pre.html",
+        "microdata": "schema.org/eg-0227-microdata.html",
+        "rdfa": "schema.org/eg-0227-rdfa.html",
+        "jsonld": "schema.org/eg-0227-jsonld.html"
+      }
+    }
   },
   "LiquorStore": {
     "super_class": "Store",
@@ -6223,6 +6877,12 @@
       "eg-0059": {
         "pre": "schema.org/eg-0059-pre.html",
         "jsonld": "schema.org/eg-0059-jsonld.html"
+      },
+      "eg-0253": {
+        "pre": "schema.org/eg-0253-pre.html",
+        "microdata": "schema.org/eg-0253-microdata.html",
+        "rdfa": "schema.org/eg-0253-rdfa.html",
+        "jsonld": "schema.org/eg-0253-jsonld.html"
       }
     }
   },
@@ -6234,7 +6894,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0303": {
+        "pre": "schema.org/eg-0303-pre.html",
+        "microdata": "schema.org/eg-0303-microdata.html",
+        "rdfa": "schema.org/eg-0303-rdfa.html",
+        "jsonld": "schema.org/eg-0303-jsonld.html"
+      }
+    }
   },
   "LiveBlogPosting": {
     "super_class": "BlogPosting",
@@ -6517,7 +7185,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0463": {
+        "pre": "schema.org/eg-0463-pre.html",
+        "microdata": "schema.org/eg-0463-microdata.html",
+        "rdfa": "schema.org/eg-0463-rdfa.html",
+        "jsonld": "schema.org/eg-0463-jsonld.html"
+      }
+    }
   },
   "MaximumDoseSchedule": {
     "super_class": "DoseSchedule",
@@ -6597,7 +7273,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0253": {
+        "pre": "schema.org/eg-0253-pre.html",
+        "microdata": "schema.org/eg-0253-microdata.html",
+        "rdfa": "schema.org/eg-0253-rdfa.html",
+        "jsonld": "schema.org/eg-0253-jsonld.html"
+      }
+    }
   },
   "MedicalAudience": {
     "super_class": "Audience",
@@ -6663,7 +7347,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0223": {
+        "pre": "schema.org/eg-0223-pre.html",
+        "microdata": "schema.org/eg-0223-microdata.html",
+        "rdfa": "schema.org/eg-0223-rdfa.html",
+        "jsonld": "schema.org/eg-0223-jsonld.html"
+      }
+    }
   },
   "MedicalClinic": {
     "super_class": "MedicalBusiness",
@@ -6698,7 +7390,15 @@
     "path": [
       "Thing",
       "MedicalEntity"
-    ]
+    ],
+    "examples": {
+      "eg-0223": {
+        "pre": "schema.org/eg-0223-pre.html",
+        "microdata": "schema.org/eg-0223-microdata.html",
+        "rdfa": "schema.org/eg-0223-rdfa.html",
+        "jsonld": "schema.org/eg-0223-jsonld.html"
+      }
+    }
   },
   "MedicalConditionStage": {
     "super_class": "MedicalIntangible",
@@ -6719,15 +7419,7 @@
     ],
     "sub_classes": [
 
-    ],
-    "examples": {
-      "Drug-TreatmentIndication-MedicalContraindication-221": {
-        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html",
-        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html",
-        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html",
-        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html"
-      }
-    }
+    ]
   },
   "MedicalDevice": {
     "super_class": "MedicalEntity",
@@ -6824,7 +7516,21 @@
     "path": [
       "Thing",
       "MedicalEntity"
-    ]
+    ],
+    "examples": {
+      "eg-0222": {
+        "pre": "schema.org/eg-0222-pre.html",
+        "microdata": "schema.org/eg-0222-microdata.html",
+        "rdfa": "schema.org/eg-0222-rdfa.html",
+        "jsonld": "schema.org/eg-0222-jsonld.html"
+      },
+      "eg-0224": {
+        "pre": "schema.org/eg-0224-pre.html",
+        "microdata": "schema.org/eg-0224-microdata.html",
+        "rdfa": "schema.org/eg-0224-rdfa.html",
+        "jsonld": "schema.org/eg-0224-jsonld.html"
+      }
+    }
   },
   "MedicalGuidelineContraindication": {
     "super_class": "MedicalGuideline",
@@ -6835,7 +7541,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0224": {
+        "pre": "schema.org/eg-0224-pre.html",
+        "microdata": "schema.org/eg-0224-microdata.html",
+        "rdfa": "schema.org/eg-0224-rdfa.html",
+        "jsonld": "schema.org/eg-0224-jsonld.html"
+      }
+    }
   },
   "MedicalGuidelineRecommendation": {
     "super_class": "MedicalGuideline",
@@ -6846,7 +7560,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0222": {
+        "pre": "schema.org/eg-0222-pre.html",
+        "microdata": "schema.org/eg-0222-microdata.html",
+        "rdfa": "schema.org/eg-0222-rdfa.html",
+        "jsonld": "schema.org/eg-0222-jsonld.html"
+      },
+      "eg-0224": {
+        "pre": "schema.org/eg-0224-pre.html",
+        "microdata": "schema.org/eg-0224-microdata.html",
+        "rdfa": "schema.org/eg-0224-rdfa.html",
+        "jsonld": "schema.org/eg-0224-jsonld.html"
+      }
+    }
   },
   "MedicalImagingTechnique": {
     "super_class": "MedicalEnumeration",
@@ -6975,7 +7703,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0223": {
+        "pre": "schema.org/eg-0223-pre.html",
+        "microdata": "schema.org/eg-0223-microdata.html",
+        "rdfa": "schema.org/eg-0223-rdfa.html",
+        "jsonld": "schema.org/eg-0223-jsonld.html"
+      }
+    }
   },
   "MedicalRiskScore": {
     "super_class": "MedicalRiskEstimator",
@@ -6998,7 +7734,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0222": {
+        "pre": "schema.org/eg-0222-pre.html",
+        "microdata": "schema.org/eg-0222-microdata.html",
+        "rdfa": "schema.org/eg-0222-rdfa.html",
+        "jsonld": "schema.org/eg-0222-jsonld.html"
+      }
+    }
   },
   "MedicalSign": {
     "super_class": "MedicalSignOrSymptom",
@@ -7022,7 +7766,15 @@
       "Thing",
       "MedicalEntity",
       "MedicalCondition"
-    ]
+    ],
+    "examples": {
+      "eg-0223": {
+        "pre": "schema.org/eg-0223-pre.html",
+        "microdata": "schema.org/eg-0223-microdata.html",
+        "rdfa": "schema.org/eg-0223-rdfa.html",
+        "jsonld": "schema.org/eg-0223-jsonld.html"
+      }
+    }
   },
   "MedicalSpecialty": {
     "super_class": "MedicalEnumeration",
@@ -7069,7 +7821,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0223": {
+        "pre": "schema.org/eg-0223-pre.html",
+        "microdata": "schema.org/eg-0223-microdata.html",
+        "rdfa": "schema.org/eg-0223-rdfa.html",
+        "jsonld": "schema.org/eg-0223-jsonld.html"
+      }
+    }
   },
   "MedicalTest": {
     "super_class": "MedicalEntity",
@@ -7142,7 +7902,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0225": {
+        "pre": "schema.org/eg-0225-pre.html",
+        "microdata": "schema.org/eg-0225-microdata.html",
+        "rdfa": "schema.org/eg-0225-rdfa.html",
+        "jsonld": "schema.org/eg-0225-jsonld.html"
+      }
+    }
   },
   "MedicineSystem": {
     "super_class": "MedicalEnumeration",
@@ -7281,7 +8049,21 @@
     "path": [
       "Thing",
       "CreativeWork"
-    ]
+    ],
+    "examples": {
+      "eg-0341": {
+        "pre": "schema.org/eg-0341-pre.html",
+        "microdata": "schema.org/eg-0341-microdata.html",
+        "rdfa": "schema.org/eg-0341-rdfa.html",
+        "jsonld": "schema.org/eg-0341-jsonld.html"
+      },
+      "eg-0342": {
+        "pre": "schema.org/eg-0342-pre.html",
+        "microdata": "schema.org/eg-0342-microdata.html",
+        "rdfa": "schema.org/eg-0342-rdfa.html",
+        "jsonld": "schema.org/eg-0342-jsonld.html"
+      }
+    }
   },
   "MiddleSchool": {
     "super_class": "EducationalOrganization",
@@ -7367,7 +8149,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0252": {
+        "pre": "schema.org/eg-0252-pre.html",
+        "microdata": "schema.org/eg-0252-microdata.html",
+        "rdfa": "schema.org/eg-0252-rdfa.html",
+        "jsonld": "schema.org/eg-0252-jsonld.html"
+      }
+    }
   },
   "MonetaryGrant": {
     "super_class": "Grant",
@@ -7378,7 +8168,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0311": {
+        "pre": "schema.org/eg-0311-pre.html",
+        "microdata": "schema.org/eg-0311-microdata.html",
+        "rdfa": "schema.org/eg-0311-rdfa.html",
+        "jsonld": "schema.org/eg-0311-jsonld.html"
+      }
+    }
   },
   "MoneyTransfer": {
     "super_class": "TransferAction",
@@ -7402,7 +8200,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0234": {
+        "pre": "schema.org/eg-0234-pre.html",
+        "microdata": "schema.org/eg-0234-microdata.html",
+        "rdfa": "schema.org/eg-0234-rdfa.html",
+        "jsonld": "schema.org/eg-0234-jsonld.html"
+      }
+    }
   },
   "Mosque": {
     "super_class": "PlaceOfWorship",
@@ -7536,6 +8342,12 @@
         "microdata": "schema.org/eg-0420-microdata.html",
         "rdfa": "schema.org/eg-0420-rdfa.html",
         "jsonld": "schema.org/eg-0420-jsonld.html"
+      },
+      "eg-0460": {
+        "pre": "schema.org/eg-0460-pre.html",
+        "microdata": "schema.org/eg-0460-microdata.html",
+        "rdfa": "schema.org/eg-0460-rdfa.html",
+        "jsonld": "schema.org/eg-0460-jsonld.html"
       }
     }
   },
@@ -7648,18 +8460,6 @@
 
     ],
     "examples": {
-      "eg-0027": {
-        "pre": "schema.org/eg-0027-pre.html",
-        "microdata": "schema.org/eg-0027-microdata.html",
-        "rdfa": "schema.org/eg-0027-rdfa.html",
-        "jsonld": "schema.org/eg-0027-jsonld.html"
-      },
-      "eg-0211": {
-        "pre": "schema.org/eg-0211-pre.html",
-        "microdata": "schema.org/eg-0211-microdata.html",
-        "rdfa": "schema.org/eg-0211-rdfa.html",
-        "jsonld": "schema.org/eg-0211-jsonld.html"
-      },
       "eg-0387": {
         "pre": "schema.org/eg-0387-pre.html",
         "microdata": "schema.org/eg-0387-microdata.html",
@@ -7671,6 +8471,18 @@
         "microdata": "schema.org/eg-0389-microdata.html",
         "rdfa": "schema.org/eg-0389-rdfa.html",
         "jsonld": "schema.org/eg-0389-jsonld.html"
+      },
+      "eg-0027": {
+        "pre": "schema.org/eg-0027-pre.html",
+        "microdata": "schema.org/eg-0027-microdata.html",
+        "rdfa": "schema.org/eg-0027-rdfa.html",
+        "jsonld": "schema.org/eg-0027-jsonld.html"
+      },
+      "eg-0211": {
+        "pre": "schema.org/eg-0211-pre.html",
+        "microdata": "schema.org/eg-0211-microdata.html",
+        "rdfa": "schema.org/eg-0211-rdfa.html",
+        "jsonld": "schema.org/eg-0211-jsonld.html"
       }
     }
   },
@@ -7767,6 +8579,18 @@
 
     ],
     "examples": {
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
+      },
+      "eg-0389": {
+        "pre": "schema.org/eg-0389-pre.html",
+        "microdata": "schema.org/eg-0389-microdata.html",
+        "rdfa": "schema.org/eg-0389-rdfa.html",
+        "jsonld": "schema.org/eg-0389-jsonld.html"
+      },
       "eg-0009": {
         "pre": "schema.org/eg-0009-pre.html",
         "microdata": "schema.org/eg-0009-microdata.html",
@@ -7788,18 +8612,6 @@
         "microdata": "schema.org/eg-0202-microdata.html",
         "rdfa": "schema.org/eg-0202-rdfa.html",
         "jsonld": "schema.org/eg-0202-jsonld.html"
-      },
-      "eg-0387": {
-        "pre": "schema.org/eg-0387-pre.html",
-        "microdata": "schema.org/eg-0387-microdata.html",
-        "rdfa": "schema.org/eg-0387-rdfa.html",
-        "jsonld": "schema.org/eg-0387-jsonld.html"
-      },
-      "eg-0389": {
-        "pre": "schema.org/eg-0389-pre.html",
-        "microdata": "schema.org/eg-0389-microdata.html",
-        "rdfa": "schema.org/eg-0389-rdfa.html",
-        "jsonld": "schema.org/eg-0389-jsonld.html"
       }
     }
   },
@@ -7832,12 +8644,6 @@
 
     ],
     "examples": {
-      "eg-0009": {
-        "pre": "schema.org/eg-0009-pre.html",
-        "microdata": "schema.org/eg-0009-microdata.html",
-        "rdfa": "schema.org/eg-0009-rdfa.html",
-        "jsonld": "schema.org/eg-0009-jsonld.html"
-      },
       "eg-0390": {
         "pre": "schema.org/eg-0390-pre.html",
         "microdata": "schema.org/eg-0390-microdata.html",
@@ -7849,6 +8655,12 @@
         "microdata": "schema.org/eg-0391-microdata.html",
         "rdfa": "schema.org/eg-0391-rdfa.html",
         "jsonld": "schema.org/eg-0391-jsonld.html"
+      },
+      "eg-0009": {
+        "pre": "schema.org/eg-0009-pre.html",
+        "microdata": "schema.org/eg-0009-microdata.html",
+        "rdfa": "schema.org/eg-0009-rdfa.html",
+        "jsonld": "schema.org/eg-0009-jsonld.html"
       }
     }
   },
@@ -7988,7 +8800,15 @@
       "Thing",
       "CreativeWork",
       "Article"
-    ]
+    ],
+    "examples": {
+      "eg-0245": {
+        "pre": "schema.org/eg-0245-pre.html",
+        "microdata": "schema.org/eg-0245-microdata.html",
+        "rdfa": "schema.org/eg-0245-rdfa.html",
+        "jsonld": "schema.org/eg-0245-jsonld.html"
+      }
+    }
   },
   "NewsMediaOrganization": {
     "super_class": "Organization",
@@ -8043,7 +8863,15 @@
       "Thing",
       "Intangible",
       "Enumeration"
-    ]
+    ],
+    "examples": {
+      "eg-0302": {
+        "pre": "schema.org/eg-0302-pre.html",
+        "microdata": "schema.org/eg-0302-microdata.html",
+        "rdfa": "schema.org/eg-0302-rdfa.html",
+        "jsonld": "schema.org/eg-0302-jsonld.html"
+      }
+    }
   },
   "Notary": {
     "super_class": "LegalService",
@@ -8124,7 +8952,45 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0261": {
+        "pre": "schema.org/eg-0261-pre.html",
+        "microdata": "schema.org/eg-0261-microdata.html",
+        "rdfa": "schema.org/eg-0261-rdfa.html",
+        "jsonld": "schema.org/eg-0261-jsonld.html"
+      },
+      "eg-0249": {
+        "pre": "schema.org/eg-0249-pre.html",
+        "microdata": "schema.org/eg-0249-microdata.html",
+        "rdfa": "schema.org/eg-0249-rdfa.html",
+        "jsonld": "schema.org/eg-0249-jsonld.html"
+      },
+      "eg-0250": {
+        "pre": "schema.org/eg-0250-pre.html",
+        "microdata": "schema.org/eg-0250-microdata.html",
+        "rdfa": "schema.org/eg-0250-rdfa.html",
+        "jsonld": "schema.org/eg-0250-jsonld.html"
+      },
+      "eg-0251": {
+        "pre": "schema.org/eg-0251-pre.html",
+        "microdata": "schema.org/eg-0251-microdata.html",
+        "rdfa": "schema.org/eg-0251-rdfa.html",
+        "jsonld": "schema.org/eg-0251-jsonld.html"
+      },
+      "eg-0252": {
+        "pre": "schema.org/eg-0252-pre.html",
+        "microdata": "schema.org/eg-0252-microdata.html",
+        "rdfa": "schema.org/eg-0252-rdfa.html",
+        "jsonld": "schema.org/eg-0252-jsonld.html"
+      },
+      "eg-0275": {
+        "pre": "schema.org/eg-0275-pre.html",
+        "microdata": "schema.org/eg-0275-microdata.html",
+        "rdfa": "schema.org/eg-0275-rdfa.html",
+        "jsonld": "schema.org/eg-0275-jsonld.html"
+      }
+    }
   },
   "OccupationalTherapy": {
     "super_class": "MedicalTherapy",
@@ -8227,6 +9093,12 @@
         "rdfa": "schema.org/eg-0208-rdfa.html",
         "jsonld": "schema.org/eg-0208-jsonld.html"
       },
+      "eg-0393": {
+        "pre": "schema.org/eg-0393-pre.html",
+        "microdata": "schema.org/eg-0393-microdata.html",
+        "rdfa": "schema.org/eg-0393-rdfa.html",
+        "jsonld": "schema.org/eg-0393-jsonld.html"
+      },
       "eg-0394": {
         "pre": "schema.org/eg-0394-pre.html",
         "microdata": "schema.org/eg-0394-microdata.html",
@@ -8308,7 +9180,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0392": {
+        "pre": "schema.org/eg-0392-pre.html",
+        "microdata": "schema.org/eg-0392-microdata.html",
+        "rdfa": "schema.org/eg-0392-rdfa.html",
+        "jsonld": "schema.org/eg-0392-jsonld.html"
+      }
+    }
   },
   "OfficeEquipmentStore": {
     "super_class": "Store",
@@ -8358,17 +9238,17 @@
 
     ],
     "examples": {
-      "eg-0193": {
-        "pre": "schema.org/eg-0193-pre.html",
-        "microdata": "schema.org/eg-0193-microdata.html",
-        "rdfa": "schema.org/eg-0193-rdfa.html",
-        "jsonld": "schema.org/eg-0193-jsonld.html"
-      },
       "eg-0378": {
         "pre": "schema.org/eg-0378-pre.html",
         "microdata": "schema.org/eg-0378-microdata.html",
         "rdfa": "schema.org/eg-0378-rdfa.html",
         "jsonld": "schema.org/eg-0378-jsonld.html"
+      },
+      "eg-0193": {
+        "pre": "schema.org/eg-0193-pre.html",
+        "microdata": "schema.org/eg-0193-microdata.html",
+        "rdfa": "schema.org/eg-0193-rdfa.html",
+        "jsonld": "schema.org/eg-0193-jsonld.html"
       }
     }
   },
@@ -8489,6 +9369,30 @@
       "Thing"
     ],
     "examples": {
+      "eg-0442": {
+        "pre": "schema.org/eg-0442-pre.html",
+        "microdata": "schema.org/eg-0442-microdata.html",
+        "rdfa": "schema.org/eg-0442-rdfa.html",
+        "jsonld": "schema.org/eg-0442-jsonld.html"
+      },
+      "eg-0443": {
+        "pre": "schema.org/eg-0443-pre.html",
+        "microdata": "schema.org/eg-0443-microdata.html",
+        "rdfa": "schema.org/eg-0443-rdfa.html",
+        "jsonld": "schema.org/eg-0443-jsonld.html"
+      },
+      "eg-0388": {
+        "pre": "schema.org/eg-0388-pre.html",
+        "microdata": "schema.org/eg-0388-microdata.html",
+        "rdfa": "schema.org/eg-0388-rdfa.html",
+        "jsonld": "schema.org/eg-0388-jsonld.html"
+      },
+      "eg-0429": {
+        "pre": "schema.org/eg-0429-pre.html",
+        "microdata": "schema.org/eg-0429-microdata.html",
+        "rdfa": "schema.org/eg-0429-rdfa.html",
+        "jsonld": "schema.org/eg-0429-jsonld.html"
+      },
       "eg-0007": {
         "pre": "schema.org/eg-0007-pre.html",
         "microdata": "schema.org/eg-0007-microdata.html",
@@ -8519,29 +9423,11 @@
         "rdfa": "schema.org/eg-0376-rdfa.html",
         "jsonld": "schema.org/eg-0376-jsonld.html"
       },
-      "eg-0388": {
-        "pre": "schema.org/eg-0388-pre.html",
-        "microdata": "schema.org/eg-0388-microdata.html",
-        "rdfa": "schema.org/eg-0388-rdfa.html",
-        "jsonld": "schema.org/eg-0388-jsonld.html"
-      },
-      "eg-0429": {
-        "pre": "schema.org/eg-0429-pre.html",
-        "microdata": "schema.org/eg-0429-microdata.html",
-        "rdfa": "schema.org/eg-0429-rdfa.html",
-        "jsonld": "schema.org/eg-0429-jsonld.html"
-      },
-      "eg-0442": {
-        "pre": "schema.org/eg-0442-pre.html",
-        "microdata": "schema.org/eg-0442-microdata.html",
-        "rdfa": "schema.org/eg-0442-rdfa.html",
-        "jsonld": "schema.org/eg-0442-jsonld.html"
-      },
-      "eg-0443": {
-        "pre": "schema.org/eg-0443-pre.html",
-        "microdata": "schema.org/eg-0443-microdata.html",
-        "rdfa": "schema.org/eg-0443-rdfa.html",
-        "jsonld": "schema.org/eg-0443-jsonld.html"
+      "eg-0296": {
+        "pre": "schema.org/eg-0296-pre.html",
+        "microdata": "schema.org/eg-0296-microdata.html",
+        "rdfa": "schema.org/eg-0296-rdfa.html",
+        "jsonld": "schema.org/eg-0296-jsonld.html"
       }
     }
   },
@@ -8649,6 +9535,12 @@
 
     ],
     "examples": {
+      "eg-0340": {
+        "pre": "schema.org/eg-0340-pre.html",
+        "microdata": "schema.org/eg-0340-microdata.html",
+        "rdfa": "schema.org/eg-0340-rdfa.html",
+        "jsonld": "schema.org/eg-0340-jsonld.html"
+      },
       "eg-0003": {
         "pre": "schema.org/eg-0003-pre.html",
         "microdata": "schema.org/eg-0003-microdata.html",
@@ -8962,6 +9854,30 @@
 
     ],
     "examples": {
+      "eg-0388": {
+        "pre": "schema.org/eg-0388-pre.html",
+        "microdata": "schema.org/eg-0388-microdata.html",
+        "rdfa": "schema.org/eg-0388-rdfa.html",
+        "jsonld": "schema.org/eg-0388-jsonld.html"
+      },
+      "eg-0454": {
+        "pre": "schema.org/eg-0454-pre.html",
+        "microdata": "schema.org/eg-0454-microdata.html",
+        "rdfa": "schema.org/eg-0454-rdfa.html",
+        "jsonld": "schema.org/eg-0454-jsonld.html"
+      },
+      "eg-0427": {
+        "pre": "schema.org/eg-0427-pre.html",
+        "microdata": "schema.org/eg-0427-microdata.html",
+        "rdfa": "schema.org/eg-0427-rdfa.html",
+        "jsonld": "schema.org/eg-0427-jsonld.html"
+      },
+      "eg-0428": {
+        "pre": "schema.org/eg-0428-pre.html",
+        "microdata": "schema.org/eg-0428-microdata.html",
+        "rdfa": "schema.org/eg-0428-rdfa.html",
+        "jsonld": "schema.org/eg-0428-jsonld.html"
+      },
       "eg-0001": {
         "pre": "schema.org/eg-0001-pre.html",
         "microdata": "schema.org/eg-0001-microdata.html",
@@ -8986,6 +9902,12 @@
         "rdfa": "schema.org/eg-0212-rdfa.html",
         "jsonld": "schema.org/eg-0212-jsonld.html"
       },
+      "eg-0374": {
+        "pre": "schema.org/eg-0374-pre.html",
+        "microdata": "schema.org/eg-0374-microdata.html",
+        "rdfa": "schema.org/eg-0374-rdfa.html",
+        "jsonld": "schema.org/eg-0374-jsonld.html"
+      },
       "eg-0375": {
         "pre": "schema.org/eg-0375-pre.html",
         "microdata": "schema.org/eg-0375-microdata.html",
@@ -8998,29 +9920,29 @@
         "rdfa": "schema.org/eg-0376-rdfa.html",
         "jsonld": "schema.org/eg-0376-jsonld.html"
       },
-      "eg-0388": {
-        "pre": "schema.org/eg-0388-pre.html",
-        "microdata": "schema.org/eg-0388-microdata.html",
-        "rdfa": "schema.org/eg-0388-rdfa.html",
-        "jsonld": "schema.org/eg-0388-jsonld.html"
+      "eg-0249": {
+        "pre": "schema.org/eg-0249-pre.html",
+        "microdata": "schema.org/eg-0249-microdata.html",
+        "rdfa": "schema.org/eg-0249-rdfa.html",
+        "jsonld": "schema.org/eg-0249-jsonld.html"
       },
-      "eg-0427": {
-        "pre": "schema.org/eg-0427-pre.html",
-        "microdata": "schema.org/eg-0427-microdata.html",
-        "rdfa": "schema.org/eg-0427-rdfa.html",
-        "jsonld": "schema.org/eg-0427-jsonld.html"
+      "eg-0250": {
+        "pre": "schema.org/eg-0250-pre.html",
+        "microdata": "schema.org/eg-0250-microdata.html",
+        "rdfa": "schema.org/eg-0250-rdfa.html",
+        "jsonld": "schema.org/eg-0250-jsonld.html"
       },
-      "eg-0428": {
-        "pre": "schema.org/eg-0428-pre.html",
-        "microdata": "schema.org/eg-0428-microdata.html",
-        "rdfa": "schema.org/eg-0428-rdfa.html",
-        "jsonld": "schema.org/eg-0428-jsonld.html"
+      "eg-0295": {
+        "pre": "schema.org/eg-0295-pre.html",
+        "microdata": "schema.org/eg-0295-microdata.html",
+        "rdfa": "schema.org/eg-0295-rdfa.html",
+        "jsonld": "schema.org/eg-0295-jsonld.html"
       },
-      "eg-0454": {
-        "pre": "schema.org/eg-0454-pre.html",
-        "microdata": "schema.org/eg-0454-microdata.html",
-        "rdfa": "schema.org/eg-0454-rdfa.html",
-        "jsonld": "schema.org/eg-0454-jsonld.html"
+      "eg-0276": {
+        "pre": "schema.org/eg-0276-pre.html",
+        "microdata": "schema.org/eg-0276-microdata.html",
+        "rdfa": "schema.org/eg-0276-rdfa.html",
+        "jsonld": "schema.org/eg-0276-jsonld.html"
       }
     }
   },
@@ -9345,7 +10267,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0307": {
+        "pre": "schema.org/eg-0307-pre.html",
+        "microdata": "schema.org/eg-0307-microdata.html",
+        "rdfa": "schema.org/eg-0307-rdfa.html",
+        "jsonld": "schema.org/eg-0307-jsonld.html"
+      }
+    }
   },
   "PodcastSeason": {
     "super_class": "CreativeWorkSeason",
@@ -9356,7 +10286,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0308": {
+        "pre": "schema.org/eg-0308-pre.html",
+        "microdata": "schema.org/eg-0308-microdata.html",
+        "rdfa": "schema.org/eg-0308-rdfa.html",
+        "jsonld": "schema.org/eg-0308-jsonld.html"
+      }
+    }
   },
   "PodcastSeries": {
     "super_class": "CreativeWorkSeries",
@@ -9367,7 +10305,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0306": {
+        "pre": "schema.org/eg-0306-pre.html",
+        "microdata": "schema.org/eg-0306-microdata.html",
+        "rdfa": "schema.org/eg-0306-rdfa.html",
+        "jsonld": "schema.org/eg-0306-jsonld.html"
+      }
+    }
   },
   "PoliceStation": {
     "super_class": "CivicStructure",
@@ -9378,7 +10324,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0403": {
+        "pre": "schema.org/eg-0403-pre.html",
+        "microdata": "schema.org/eg-0403-microdata.html",
+        "rdfa": "schema.org/eg-0403-rdfa.html",
+        "jsonld": "schema.org/eg-0403-jsonld.html"
+      }
+    }
   },
   "Pond": {
     "super_class": "BodyOfWater",
@@ -9604,6 +10558,12 @@
       "StructuredValue"
     ],
     "examples": {
+      "eg-0374": {
+        "pre": "schema.org/eg-0374-pre.html",
+        "microdata": "schema.org/eg-0374-microdata.html",
+        "rdfa": "schema.org/eg-0374-rdfa.html",
+        "jsonld": "schema.org/eg-0374-jsonld.html"
+      },
       "eg-0375": {
         "pre": "schema.org/eg-0375-pre.html",
         "microdata": "schema.org/eg-0375-microdata.html",
@@ -9734,7 +10694,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0269": {
+        "pre": "schema.org/eg-0269-pre.html",
+        "microdata": "schema.org/eg-0269-microdata.html",
+        "rdfa": "schema.org/eg-0269-rdfa.html",
+        "jsonld": "schema.org/eg-0269-jsonld.html"
+      }
+    }
   },
   "Project": {
     "super_class": "Organization",
@@ -9748,7 +10716,21 @@
     ]
   },
   "PronounceableText": {
-    "super_class": "Text"
+    "super_class": "Text",
+    "examples": {
+      "eg-0270": {
+        "pre": "schema.org/eg-0270-pre.html",
+        "microdata": "schema.org/eg-0270-microdata.html",
+        "rdfa": "schema.org/eg-0270-rdfa.html",
+        "jsonld": "schema.org/eg-0270-jsonld.html"
+      },
+      "eg-0271": {
+        "pre": "schema.org/eg-0271-pre.html",
+        "microdata": "schema.org/eg-0271-microdata.html",
+        "rdfa": "schema.org/eg-0271-rdfa.html",
+        "jsonld": "schema.org/eg-0271-jsonld.html"
+      }
+    }
   },
   "Property": {
     "super_class": "Intangible",
@@ -9771,6 +10753,12 @@
       "StructuredValue"
     ],
     "examples": {
+      "eg-0404": {
+        "pre": "schema.org/eg-0404-pre.html",
+        "microdata": "schema.org/eg-0404-microdata.html",
+        "rdfa": "schema.org/eg-0404-rdfa.html",
+        "jsonld": "schema.org/eg-0404-jsonld.html"
+      },
       "eg-0405": {
         "pre": "schema.org/eg-0405-pre.html",
         "microdata": "schema.org/eg-0405-microdata.html",
@@ -10095,7 +11083,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0304": {
+        "pre": "schema.org/eg-0304-pre.html",
+        "microdata": "schema.org/eg-0304-microdata.html",
+        "rdfa": "schema.org/eg-0304-rdfa.html",
+        "jsonld": "schema.org/eg-0304-jsonld.html"
+      },
+      "eg-0305": {
+        "pre": "schema.org/eg-0305-pre.html",
+        "microdata": "schema.org/eg-0305-microdata.html",
+        "rdfa": "schema.org/eg-0305-rdfa.html",
+        "jsonld": "schema.org/eg-0305-jsonld.html"
+      }
+    }
   },
   "QuoteAction": {
     "super_class": "TradeAction",
@@ -10148,7 +11150,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0272": {
+        "pre": "schema.org/eg-0272-pre.html",
+        "microdata": "schema.org/eg-0272-microdata.html",
+        "rdfa": "schema.org/eg-0272-rdfa.html",
+        "jsonld": "schema.org/eg-0272-jsonld.html"
+      }
+    }
   },
   "RadioChannel": {
     "super_class": "BroadcastChannel",
@@ -10257,6 +11267,12 @@
         "microdata": "schema.org/eg-0010-microdata.html",
         "rdfa": "schema.org/eg-0010-rdfa.html",
         "jsonld": "schema.org/eg-0010-jsonld.html"
+      },
+      "eg-0248": {
+        "pre": "schema.org/eg-0248-pre.html",
+        "microdata": "schema.org/eg-0248-microdata.html",
+        "rdfa": "schema.org/eg-0248-rdfa.html",
+        "jsonld": "schema.org/eg-0248-jsonld.html"
       }
     }
   },
@@ -10378,7 +11394,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0292": {
+        "pre": "schema.org/eg-0292-pre.html",
+        "microdata": "schema.org/eg-0292-microdata.html",
+        "rdfa": "schema.org/eg-0292-rdfa.html",
+        "jsonld": "schema.org/eg-0292-jsonld.html"
+      },
+      "eg-0293": {
+        "pre": "schema.org/eg-0293-pre.html",
+        "microdata": "schema.org/eg-0293-microdata.html",
+        "rdfa": "schema.org/eg-0293-rdfa.html",
+        "jsonld": "schema.org/eg-0293-jsonld.html"
+      }
+    }
   },
   "RecommendedDoseSchedule": {
     "super_class": "DoseSchedule",
@@ -10500,7 +11530,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0234": {
+        "pre": "schema.org/eg-0234-pre.html",
+        "microdata": "schema.org/eg-0234-microdata.html",
+        "rdfa": "schema.org/eg-0234-rdfa.html",
+        "jsonld": "schema.org/eg-0234-jsonld.html"
+      }
+    }
   },
   "ReplaceAction": {
     "super_class": "UpdateAction",
@@ -10651,6 +11689,18 @@
       "eg-0132": {
         "pre": "schema.org/eg-0132-pre.html",
         "jsonld": "schema.org/eg-0132-jsonld.html"
+      },
+      "eg-0226": {
+        "pre": "schema.org/eg-0226-pre.html",
+        "microdata": "schema.org/eg-0226-microdata.html",
+        "rdfa": "schema.org/eg-0226-rdfa.html",
+        "jsonld": "schema.org/eg-0226-jsonld.html"
+      },
+      "eg-0227": {
+        "pre": "schema.org/eg-0227-pre.html",
+        "microdata": "schema.org/eg-0227-microdata.html",
+        "rdfa": "schema.org/eg-0227-rdfa.html",
+        "jsonld": "schema.org/eg-0227-jsonld.html"
       }
     }
   },
@@ -10803,6 +11853,12 @@
         "microdata": "schema.org/eg-0462-microdata.html",
         "rdfa": "schema.org/eg-0462-rdfa.html",
         "jsonld": "schema.org/eg-0462-jsonld.html"
+      },
+      "eg-0248": {
+        "pre": "schema.org/eg-0248-pre.html",
+        "microdata": "schema.org/eg-0248-microdata.html",
+        "rdfa": "schema.org/eg-0248-rdfa.html",
+        "jsonld": "schema.org/eg-0248-jsonld.html"
       }
     }
   },
@@ -10882,6 +11938,12 @@
         "microdata": "schema.org/eg-0206-microdata.html",
         "rdfa": "schema.org/eg-0206-rdfa.html",
         "jsonld": "schema.org/eg-0206-jsonld.html"
+      },
+      "eg-0250": {
+        "pre": "schema.org/eg-0250-pre.html",
+        "microdata": "schema.org/eg-0250-microdata.html",
+        "rdfa": "schema.org/eg-0250-rdfa.html",
+        "jsonld": "schema.org/eg-0250-jsonld.html"
       }
     }
   },
@@ -10968,7 +12030,45 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0303": {
+        "pre": "schema.org/eg-0303-pre.html",
+        "microdata": "schema.org/eg-0303-microdata.html",
+        "rdfa": "schema.org/eg-0303-rdfa.html",
+        "jsonld": "schema.org/eg-0303-jsonld.html"
+      },
+      "eg-0240": {
+        "pre": "schema.org/eg-0240-pre.html",
+        "microdata": "schema.org/eg-0240-microdata.html",
+        "rdfa": "schema.org/eg-0240-rdfa.html",
+        "jsonld": "schema.org/eg-0240-jsonld.html"
+      },
+      "eg-0241": {
+        "pre": "schema.org/eg-0241-pre.html",
+        "microdata": "schema.org/eg-0241-microdata.html",
+        "rdfa": "schema.org/eg-0241-rdfa.html",
+        "jsonld": "schema.org/eg-0241-jsonld.html"
+      },
+      "eg-0242": {
+        "pre": "schema.org/eg-0242-pre.html",
+        "microdata": "schema.org/eg-0242-microdata.html",
+        "rdfa": "schema.org/eg-0242-rdfa.html",
+        "jsonld": "schema.org/eg-0242-jsonld.html"
+      },
+      "eg-0243": {
+        "pre": "schema.org/eg-0243-pre.html",
+        "microdata": "schema.org/eg-0243-microdata.html",
+        "rdfa": "schema.org/eg-0243-rdfa.html",
+        "jsonld": "schema.org/eg-0243-jsonld.html"
+      },
+      "eg-0244": {
+        "pre": "schema.org/eg-0244-pre.html",
+        "microdata": "schema.org/eg-0244-microdata.html",
+        "rdfa": "schema.org/eg-0244-rdfa.html",
+        "jsonld": "schema.org/eg-0244-jsonld.html"
+      }
+    }
   },
   "ScheduleAction": {
     "super_class": "PlanAction",
@@ -11092,6 +12192,12 @@
 
     ],
     "examples": {
+      "eg-0457": {
+        "pre": "schema.org/eg-0457-pre.html",
+        "microdata": "schema.org/eg-0457-microdata.html",
+        "rdfa": "schema.org/eg-0457-rdfa.html",
+        "jsonld": "schema.org/eg-0457-jsonld.html"
+      },
       "eg-0138": {
         "pre": "schema.org/eg-0138-pre.html",
         "jsonld": "schema.org/eg-0138-jsonld.html"
@@ -11099,12 +12205,6 @@
       "eg-0139": {
         "pre": "schema.org/eg-0139-pre.html",
         "jsonld": "schema.org/eg-0139-jsonld.html"
-      },
-      "eg-0457": {
-        "pre": "schema.org/eg-0457-pre.html",
-        "microdata": "schema.org/eg-0457-microdata.html",
-        "rdfa": "schema.org/eg-0457-rdfa.html",
-        "jsonld": "schema.org/eg-0457-jsonld.html"
       }
     }
   },
@@ -11227,6 +12327,12 @@
       "Intangible"
     ],
     "examples": {
+      "eg-0421": {
+        "pre": "schema.org/eg-0421-pre.html",
+        "microdata": "schema.org/eg-0421-microdata.html",
+        "rdfa": "schema.org/eg-0421-rdfa.html",
+        "jsonld": "schema.org/eg-0421-jsonld.html"
+      },
       "eg-0375": {
         "pre": "schema.org/eg-0375-pre.html",
         "microdata": "schema.org/eg-0375-microdata.html",
@@ -11238,12 +12344,6 @@
         "microdata": "schema.org/eg-0396-microdata.html",
         "rdfa": "schema.org/eg-0396-rdfa.html",
         "jsonld": "schema.org/eg-0396-jsonld.html"
-      },
-      "eg-0421": {
-        "pre": "schema.org/eg-0421-pre.html",
-        "microdata": "schema.org/eg-0421-microdata.html",
-        "rdfa": "schema.org/eg-0421-rdfa.html",
-        "jsonld": "schema.org/eg-0421-jsonld.html"
       }
     }
   },
@@ -11298,7 +12398,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0392": {
+        "pre": "schema.org/eg-0392-pre.html",
+        "microdata": "schema.org/eg-0392-microdata.html",
+        "rdfa": "schema.org/eg-0392-rdfa.html",
+        "jsonld": "schema.org/eg-0392-jsonld.html"
+      }
+    }
   },
   "ShippingRateSettings": {
     "super_class": "StructuredValue",
@@ -11354,7 +12462,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0422": {
+        "pre": "schema.org/eg-0422-pre.html",
+        "microdata": "schema.org/eg-0422-microdata.html",
+        "rdfa": "schema.org/eg-0422-rdfa.html",
+        "jsonld": "schema.org/eg-0422-jsonld.html"
+      }
+    }
   },
   "SiteNavigationElement": {
     "super_class": "WebPageElement",
@@ -11400,7 +12516,15 @@
       "Thing",
       "CreativeWork",
       "Article"
-    ]
+    ],
+    "examples": {
+      "eg-0423": {
+        "pre": "schema.org/eg-0423-pre.html",
+        "microdata": "schema.org/eg-0423-microdata.html",
+        "rdfa": "schema.org/eg-0423-rdfa.html",
+        "jsonld": "schema.org/eg-0423-jsonld.html"
+      }
+    }
   },
   "SoftwareApplication": {
     "super_class": "CreativeWork",
@@ -11437,7 +12561,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0463": {
+        "pre": "schema.org/eg-0463-pre.html",
+        "microdata": "schema.org/eg-0463-microdata.html",
+        "rdfa": "schema.org/eg-0463-rdfa.html",
+        "jsonld": "schema.org/eg-0463-jsonld.html"
+      }
+    }
   },
   "SomeProducts": {
     "super_class": "Product",
@@ -11465,7 +12597,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0237": {
+        "pre": "schema.org/eg-0237-pre.html",
+        "microdata": "schema.org/eg-0237-microdata.html",
+        "rdfa": "schema.org/eg-0237-rdfa.html",
+        "jsonld": "schema.org/eg-0237-jsonld.html"
+      },
+      "eg-0238": {
+        "pre": "schema.org/eg-0238-pre.html",
+        "microdata": "schema.org/eg-0238-microdata.html",
+        "rdfa": "schema.org/eg-0238-rdfa.html",
+        "jsonld": "schema.org/eg-0238-jsonld.html"
+      }
+    }
   },
   "SpecialAnnouncement": {
     "super_class": "CreativeWork",
@@ -11475,7 +12621,39 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0300": {
+        "pre": "schema.org/eg-0300-pre.html",
+        "microdata": "schema.org/eg-0300-microdata.html",
+        "rdfa": "schema.org/eg-0300-rdfa.html",
+        "jsonld": "schema.org/eg-0300-jsonld.html"
+      },
+      "eg-0297": {
+        "pre": "schema.org/eg-0297-pre.html",
+        "microdata": "schema.org/eg-0297-microdata.html",
+        "rdfa": "schema.org/eg-0297-rdfa.html",
+        "jsonld": "schema.org/eg-0297-jsonld.html"
+      },
+      "eg-0298": {
+        "pre": "schema.org/eg-0298-pre.html",
+        "microdata": "schema.org/eg-0298-microdata.html",
+        "rdfa": "schema.org/eg-0298-rdfa.html",
+        "jsonld": "schema.org/eg-0298-jsonld.html"
+      },
+      "eg-0299": {
+        "pre": "schema.org/eg-0299-pre.html",
+        "microdata": "schema.org/eg-0299-microdata.html",
+        "rdfa": "schema.org/eg-0299-rdfa.html",
+        "jsonld": "schema.org/eg-0299-jsonld.html"
+      },
+      "eg-0301": {
+        "pre": "schema.org/eg-0301-pre.html",
+        "microdata": "schema.org/eg-0301-microdata.html",
+        "rdfa": "schema.org/eg-0301-rdfa.html",
+        "jsonld": "schema.org/eg-0301-jsonld.html"
+      }
+    }
   },
   "Specialty": {
     "super_class": "Enumeration",
@@ -11538,17 +12716,17 @@
 
     ],
     "examples": {
-      "eg-0191": {
-        "pre": "schema.org/eg-0191-pre.html",
-        "microdata": "schema.org/eg-0191-microdata.html",
-        "rdfa": "schema.org/eg-0191-rdfa.html",
-        "jsonld": "schema.org/eg-0191-jsonld.html"
-      },
       "eg-0445": {
         "pre": "schema.org/eg-0445-pre.html",
         "microdata": "schema.org/eg-0445-microdata.html",
         "rdfa": "schema.org/eg-0445-rdfa.html",
         "jsonld": "schema.org/eg-0445-jsonld.html"
+      },
+      "eg-0191": {
+        "pre": "schema.org/eg-0191-pre.html",
+        "microdata": "schema.org/eg-0191-microdata.html",
+        "rdfa": "schema.org/eg-0191-rdfa.html",
+        "jsonld": "schema.org/eg-0191-jsonld.html"
       }
     }
   },
@@ -11579,15 +12757,15 @@
 
     ],
     "examples": {
+      "eg-0430": {
+        "pre": "schema.org/eg-0430-pre.html",
+        "jsonld": "schema.org/eg-0430-jsonld.html"
+      },
       "eg-0206": {
         "pre": "schema.org/eg-0206-pre.html",
         "microdata": "schema.org/eg-0206-microdata.html",
         "rdfa": "schema.org/eg-0206-rdfa.html",
         "jsonld": "schema.org/eg-0206-jsonld.html"
-      },
-      "eg-0430": {
-        "pre": "schema.org/eg-0430-pre.html",
-        "jsonld": "schema.org/eg-0430-jsonld.html"
       }
     }
   },
@@ -11884,6 +13062,12 @@
 
     ],
     "examples": {
+      "eg-0444": {
+        "pre": "schema.org/eg-0444-pre.html",
+        "microdata": "schema.org/eg-0444-microdata.html",
+        "rdfa": "schema.org/eg-0444-rdfa.html",
+        "jsonld": "schema.org/eg-0444-jsonld.html"
+      },
       "eg-0026": {
         "pre": "schema.org/eg-0026-pre.html",
         "microdata": "schema.org/eg-0026-microdata.html",
@@ -11895,12 +13079,6 @@
         "microdata": "schema.org/eg-0166-microdata.html",
         "rdfa": "schema.org/eg-0166-rdfa.html",
         "jsonld": "schema.org/eg-0166-jsonld.html"
-      },
-      "eg-0444": {
-        "pre": "schema.org/eg-0444-pre.html",
-        "microdata": "schema.org/eg-0444-microdata.html",
-        "rdfa": "schema.org/eg-0444-rdfa.html",
-        "jsonld": "schema.org/eg-0444-jsonld.html"
       }
     }
   },
@@ -12199,7 +13377,15 @@
     ],
     "path": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0246": {
+        "pre": "schema.org/eg-0246-pre.html",
+        "microdata": "schema.org/eg-0246-microdata.html",
+        "rdfa": "schema.org/eg-0246-rdfa.html",
+        "jsonld": "schema.org/eg-0246-jsonld.html"
+      }
+    }
   },
   "Ticket": {
     "super_class": "Intangible",
@@ -12340,7 +13526,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0262": {
+        "pre": "schema.org/eg-0262-pre.html",
+        "microdata": "schema.org/eg-0262-microdata.html",
+        "rdfa": "schema.org/eg-0262-rdfa.html",
+        "jsonld": "schema.org/eg-0262-jsonld.html"
+      }
+    }
   },
   "TouristInformationCenter": {
     "super_class": "LocalBusiness",
@@ -12362,7 +13556,33 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0441": {
+        "pre": "schema.org/eg-0441-pre.html",
+        "microdata": "schema.org/eg-0441-microdata.html",
+        "rdfa": "schema.org/eg-0441-rdfa.html",
+        "jsonld": "schema.org/eg-0441-jsonld.html"
+      },
+      "eg-0263": {
+        "pre": "schema.org/eg-0263-pre.html",
+        "microdata": "schema.org/eg-0263-microdata.html",
+        "rdfa": "schema.org/eg-0263-rdfa.html",
+        "jsonld": "schema.org/eg-0263-jsonld.html"
+      },
+      "eg-0264": {
+        "pre": "schema.org/eg-0264-pre.html",
+        "microdata": "schema.org/eg-0264-microdata.html",
+        "rdfa": "schema.org/eg-0264-rdfa.html",
+        "jsonld": "schema.org/eg-0264-jsonld.html"
+      },
+      "eg-0265": {
+        "pre": "schema.org/eg-0265-pre.html",
+        "microdata": "schema.org/eg-0265-microdata.html",
+        "rdfa": "schema.org/eg-0265-rdfa.html",
+        "jsonld": "schema.org/eg-0265-jsonld.html"
+      }
+    }
   },
   "ToyStore": {
     "super_class": "Store",
@@ -12443,7 +13663,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0440": {
+        "pre": "schema.org/eg-0440-pre.html",
+        "microdata": "schema.org/eg-0440-microdata.html",
+        "rdfa": "schema.org/eg-0440-rdfa.html",
+        "jsonld": "schema.org/eg-0440-jsonld.html"
+      }
+    }
   },
   "TrainTrip": {
     "super_class": "Trip",
@@ -12527,15 +13755,7 @@
     ],
     "sub_classes": [
 
-    ],
-    "examples": {
-      "Drug-TreatmentIndication-MedicalContraindication-221": {
-        "pre": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-pre.html",
-        "microdata": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-microdata.html",
-        "rdfa": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-rdfa.html",
-        "jsonld": "schema.org/Drug-TreatmentIndication-MedicalContraindication-221-jsonld.html"
-      }
-    }
+    ]
   },
   "Trip": {
     "super_class": "Intangible",
@@ -12549,7 +13769,21 @@
     "path": [
       "Thing",
       "Intangible"
-    ]
+    ],
+    "examples": {
+      "eg-0441": {
+        "pre": "schema.org/eg-0441-pre.html",
+        "microdata": "schema.org/eg-0441-microdata.html",
+        "rdfa": "schema.org/eg-0441-rdfa.html",
+        "jsonld": "schema.org/eg-0441-jsonld.html"
+      },
+      "eg-0264": {
+        "pre": "schema.org/eg-0264-pre.html",
+        "microdata": "schema.org/eg-0264-microdata.html",
+        "rdfa": "schema.org/eg-0264-rdfa.html",
+        "jsonld": "schema.org/eg-0264-jsonld.html"
+      }
+    }
   },
   "TypeAndQuantityNode": {
     "super_class": "StructuredValue",
@@ -12927,17 +14161,17 @@
 
     ],
     "examples": {
-      "eg-0009": {
-        "pre": "schema.org/eg-0009-pre.html",
-        "microdata": "schema.org/eg-0009-microdata.html",
-        "rdfa": "schema.org/eg-0009-rdfa.html",
-        "jsonld": "schema.org/eg-0009-jsonld.html"
-      },
       "eg-0446": {
         "pre": "schema.org/eg-0446-pre.html",
         "microdata": "schema.org/eg-0446-microdata.html",
         "rdfa": "schema.org/eg-0446-rdfa.html",
         "jsonld": "schema.org/eg-0446-jsonld.html"
+      },
+      "eg-0009": {
+        "pre": "schema.org/eg-0009-pre.html",
+        "microdata": "schema.org/eg-0009-microdata.html",
+        "rdfa": "schema.org/eg-0009-rdfa.html",
+        "jsonld": "schema.org/eg-0009-jsonld.html"
       }
     }
   },
@@ -12978,7 +14212,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0170": {
+        "pre": "schema.org/eg-0170-pre.html",
+        "microdata": "schema.org/eg-0170-microdata.html",
+        "rdfa": "schema.org/eg-0170-rdfa.html",
+        "jsonld": "schema.org/eg-0170-jsonld.html"
+      },
+      "eg-0014": {
+        "pre": "schema.org/eg-0014-pre.html",
+        "microdata": "schema.org/eg-0014-microdata.html",
+        "rdfa": "schema.org/eg-0014-rdfa.html",
+        "jsonld": "schema.org/eg-0014-jsonld.html"
+      }
+    }
   },
   "Virus": {
     "super_class": null
@@ -13223,7 +14471,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0239": {
+        "pre": "schema.org/eg-0239-pre.html",
+        "microdata": "schema.org/eg-0239-microdata.html",
+        "rdfa": "schema.org/eg-0239-rdfa.html",
+        "jsonld": "schema.org/eg-0239-jsonld.html"
+      }
+    }
   },
   "WebApplication": {
     "super_class": "SoftwareApplication",
@@ -13371,7 +14627,15 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0279": {
+        "pre": "schema.org/eg-0279-pre.html",
+        "microdata": "schema.org/eg-0279-microdata.html",
+        "rdfa": "schema.org/eg-0279-rdfa.html",
+        "jsonld": "schema.org/eg-0279-jsonld.html"
+      }
+    }
   },
   "WorkersUnion": {
     "super_class": "Organization",
@@ -13415,7 +14679,15 @@
     ]
   },
   "about": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0228": {
+        "pre": "schema.org/eg-0228-pre.html",
+        "microdata": "schema.org/eg-0228-microdata.html",
+        "rdfa": "schema.org/eg-0228-rdfa.html",
+        "jsonld": "schema.org/eg-0228-jsonld.html"
+      }
+    }
   },
   "abridged": {
     "super_class": null
@@ -13524,24 +14796,6 @@
   "accessibilityFeature": {
     "super_class": null,
     "examples": {
-      "eg-0175": {
-        "pre": "schema.org/eg-0175-pre.html",
-        "microdata": "schema.org/eg-0175-microdata.html",
-        "rdfa": "schema.org/eg-0175-rdfa.html",
-        "jsonld": "schema.org/eg-0175-jsonld.html"
-      },
-      "eg-0176": {
-        "pre": "schema.org/eg-0176-pre.html",
-        "microdata": "schema.org/eg-0176-microdata.html",
-        "rdfa": "schema.org/eg-0176-rdfa.html",
-        "jsonld": "schema.org/eg-0176-jsonld.html"
-      },
-      "eg-0177": {
-        "pre": "schema.org/eg-0177-pre.html",
-        "microdata": "schema.org/eg-0177-microdata.html",
-        "rdfa": "schema.org/eg-0177-rdfa.html",
-        "jsonld": "schema.org/eg-0177-jsonld.html"
-      },
       "eg-0321": {
         "pre": "schema.org/eg-0321-pre.html",
         "microdata": "schema.org/eg-0321-microdata.html",
@@ -13559,6 +14813,24 @@
         "microdata": "schema.org/eg-0323-microdata.html",
         "rdfa": "schema.org/eg-0323-rdfa.html",
         "jsonld": "schema.org/eg-0323-jsonld.html"
+      },
+      "eg-0175": {
+        "pre": "schema.org/eg-0175-pre.html",
+        "microdata": "schema.org/eg-0175-microdata.html",
+        "rdfa": "schema.org/eg-0175-rdfa.html",
+        "jsonld": "schema.org/eg-0175-jsonld.html"
+      },
+      "eg-0176": {
+        "pre": "schema.org/eg-0176-pre.html",
+        "microdata": "schema.org/eg-0176-microdata.html",
+        "rdfa": "schema.org/eg-0176-rdfa.html",
+        "jsonld": "schema.org/eg-0176-jsonld.html"
+      },
+      "eg-0177": {
+        "pre": "schema.org/eg-0177-pre.html",
+        "microdata": "schema.org/eg-0177-microdata.html",
+        "rdfa": "schema.org/eg-0177-rdfa.html",
+        "jsonld": "schema.org/eg-0177-jsonld.html"
       }
     }
   },
@@ -13680,6 +14952,12 @@
   "additionalProperty": {
     "super_class": null,
     "examples": {
+      "eg-0404": {
+        "pre": "schema.org/eg-0404-pre.html",
+        "microdata": "schema.org/eg-0404-microdata.html",
+        "rdfa": "schema.org/eg-0404-rdfa.html",
+        "jsonld": "schema.org/eg-0404-jsonld.html"
+      },
       "eg-0405": {
         "pre": "schema.org/eg-0405-pre.html",
         "microdata": "schema.org/eg-0405-microdata.html",
@@ -13761,7 +15039,15 @@
     }
   },
   "additionalType": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0393": {
+        "pre": "schema.org/eg-0393-pre.html",
+        "microdata": "schema.org/eg-0393-microdata.html",
+        "rdfa": "schema.org/eg-0393-rdfa.html",
+        "jsonld": "schema.org/eg-0393-jsonld.html"
+      }
+    }
   },
   "additionalVariable": {
     "super_class": null
@@ -13848,7 +15134,15 @@
     "super_class": null
   },
   "afterMedia": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "agent": {
     "super_class": null
@@ -13968,7 +15262,15 @@
     "super_class": null
   },
   "applicantLocationRequirements": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0268": {
+        "pre": "schema.org/eg-0268-pre.html",
+        "microdata": "schema.org/eg-0268-microdata.html",
+        "rdfa": "schema.org/eg-0268-rdfa.html",
+        "jsonld": "schema.org/eg-0268-jsonld.html"
+      }
+    }
   },
   "application": {
     "super_class": null
@@ -13977,7 +15279,15 @@
     "super_class": null
   },
   "applicationContact": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0285": {
+        "pre": "schema.org/eg-0285-pre.html",
+        "microdata": "schema.org/eg-0285-microdata.html",
+        "rdfa": "schema.org/eg-0285-rdfa.html",
+        "jsonld": "schema.org/eg-0285-jsonld.html"
+      }
+    }
   },
   "applicationDeadline": {
     "super_class": null
@@ -13998,13 +15308,29 @@
     "super_class": null
   },
   "archiveHeld": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0254": {
+        "pre": "schema.org/eg-0254-pre.html",
+        "microdata": "schema.org/eg-0254-microdata.html",
+        "rdfa": "schema.org/eg-0254-rdfa.html",
+        "jsonld": "schema.org/eg-0254-jsonld.html"
+      }
+    }
   },
   "area": {
     "super_class": null
   },
   "areaServed": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0403": {
+        "pre": "schema.org/eg-0403-pre.html",
+        "microdata": "schema.org/eg-0403-microdata.html",
+        "rdfa": "schema.org/eg-0403-rdfa.html",
+        "jsonld": "schema.org/eg-0403-jsonld.html"
+      }
+    }
   },
   "arrivalAirport": {
     "super_class": null
@@ -14103,6 +15429,12 @@
         "microdata": "schema.org/eg-0379-microdata.html",
         "rdfa": "schema.org/eg-0379-rdfa.html",
         "jsonld": "schema.org/eg-0379-jsonld.html"
+      },
+      "eg-0301": {
+        "pre": "schema.org/eg-0301-pre.html",
+        "microdata": "schema.org/eg-0301-microdata.html",
+        "rdfa": "schema.org/eg-0301-rdfa.html",
+        "jsonld": "schema.org/eg-0301-jsonld.html"
       }
     }
   },
@@ -14116,7 +15448,15 @@
     "super_class": null
   },
   "author": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0330": {
+        "pre": "schema.org/eg-0330-pre.html",
+        "microdata": "schema.org/eg-0330-microdata.html",
+        "rdfa": "schema.org/eg-0330-rdfa.html",
+        "jsonld": "schema.org/eg-0330-jsonld.html"
+      }
+    }
   },
   "availability": {
     "super_class": null,
@@ -14201,13 +15541,29 @@
     "super_class": null
   },
   "bccRecipient": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0343": {
+        "pre": "schema.org/eg-0343-pre.html",
+        "microdata": "schema.org/eg-0343-microdata.html",
+        "rdfa": "schema.org/eg-0343-rdfa.html",
+        "jsonld": "schema.org/eg-0343-jsonld.html"
+      }
+    }
   },
   "bed": {
     "super_class": null
   },
   "beforeMedia": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "beneficiaryBank": {
     "super_class": null
@@ -14317,6 +15673,12 @@
   "broadcastFrequency": {
     "super_class": null,
     "examples": {
+      "eg-0319": {
+        "pre": "schema.org/eg-0319-pre.html",
+        "microdata": "schema.org/eg-0319-microdata.html",
+        "rdfa": "schema.org/eg-0319-rdfa.html",
+        "jsonld": "schema.org/eg-0319-jsonld.html"
+      },
       "eg-0320": {
         "pre": "schema.org/eg-0320-pre.html",
         "microdata": "schema.org/eg-0320-microdata.html",
@@ -14391,7 +15753,15 @@
     "super_class": null
   },
   "callSign": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0272": {
+        "pre": "schema.org/eg-0272-pre.html",
+        "microdata": "schema.org/eg-0272-microdata.html",
+        "rdfa": "schema.org/eg-0272-rdfa.html",
+        "jsonld": "schema.org/eg-0272-jsonld.html"
+      }
+    }
   },
   "calories": {
     "super_class": null,
@@ -14438,7 +15808,15 @@
     "super_class": null
   },
   "ccRecipient": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0343": {
+        "pre": "schema.org/eg-0343-pre.html",
+        "microdata": "schema.org/eg-0343-microdata.html",
+        "rdfa": "schema.org/eg-0343-rdfa.html",
+        "jsonld": "schema.org/eg-0343-jsonld.html"
+      }
+    }
   },
   "character": {
     "super_class": null
@@ -14520,7 +15898,15 @@
     "super_class": null
   },
   "codeValue": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0318": {
+        "pre": "schema.org/eg-0318-pre.html",
+        "microdata": "schema.org/eg-0318-microdata.html",
+        "rdfa": "schema.org/eg-0318-rdfa.html",
+        "jsonld": "schema.org/eg-0318-jsonld.html"
+      }
+    }
   },
   "codingSystem": {
     "super_class": null
@@ -14564,7 +15950,15 @@
     "super_class": null
   },
   "competencyRequired": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0259": {
+        "pre": "schema.org/eg-0259-pre.html",
+        "microdata": "schema.org/eg-0259-microdata.html",
+        "rdfa": "schema.org/eg-0259-rdfa.html",
+        "jsonld": "schema.org/eg-0259-jsonld.html"
+      }
+    }
   },
   "competitor": {
     "super_class": null,
@@ -14584,7 +15978,21 @@
     "super_class": null
   },
   "conditionsOfAccess": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0273": {
+        "pre": "schema.org/eg-0273-pre.html",
+        "microdata": "schema.org/eg-0273-microdata.html",
+        "rdfa": "schema.org/eg-0273-rdfa.html",
+        "jsonld": "schema.org/eg-0273-jsonld.html"
+      },
+      "eg-0274": {
+        "pre": "schema.org/eg-0274-pre.html",
+        "microdata": "schema.org/eg-0274-microdata.html",
+        "rdfa": "schema.org/eg-0274-rdfa.html",
+        "jsonld": "schema.org/eg-0274-jsonld.html"
+      }
+    }
   },
   "confirmationNumber": {
     "super_class": null
@@ -14623,7 +16031,15 @@
     "super_class": null
   },
   "contentLocation": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0340": {
+        "pre": "schema.org/eg-0340-pre.html",
+        "microdata": "schema.org/eg-0340-microdata.html",
+        "rdfa": "schema.org/eg-0340-rdfa.html",
+        "jsonld": "schema.org/eg-0340-jsonld.html"
+      }
+    }
   },
   "contentRating": {
     "super_class": null,
@@ -14637,7 +16053,15 @@
     }
   },
   "contentReferenceTime": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0228": {
+        "pre": "schema.org/eg-0228-pre.html",
+        "microdata": "schema.org/eg-0228-microdata.html",
+        "rdfa": "schema.org/eg-0228-rdfa.html",
+        "jsonld": "schema.org/eg-0228-jsonld.html"
+      }
+    }
   },
   "contentSize": {
     "super_class": null
@@ -14686,7 +16110,15 @@
     "super_class": null
   },
   "correction": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0266": {
+        "pre": "schema.org/eg-0266-pre.html",
+        "microdata": "schema.org/eg-0266-microdata.html",
+        "rdfa": "schema.org/eg-0266-rdfa.html",
+        "jsonld": "schema.org/eg-0266-jsonld.html"
+      }
+    }
   },
   "correctionsPolicy": {
     "super_class": null
@@ -14724,10 +16156,38 @@
     "super_class": null
   },
   "courseCode": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0338": {
+        "pre": "schema.org/eg-0338-pre.html",
+        "microdata": "schema.org/eg-0338-microdata.html",
+        "rdfa": "schema.org/eg-0338-rdfa.html",
+        "jsonld": "schema.org/eg-0338-jsonld.html"
+      }
+    }
   },
   "courseMode": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0332": {
+        "pre": "schema.org/eg-0332-pre.html",
+        "microdata": "schema.org/eg-0332-microdata.html",
+        "rdfa": "schema.org/eg-0332-rdfa.html",
+        "jsonld": "schema.org/eg-0332-jsonld.html"
+      },
+      "eg-0333": {
+        "pre": "schema.org/eg-0333-pre.html",
+        "microdata": "schema.org/eg-0333-microdata.html",
+        "rdfa": "schema.org/eg-0333-rdfa.html",
+        "jsonld": "schema.org/eg-0333-jsonld.html"
+      },
+      "eg-0334": {
+        "pre": "schema.org/eg-0334-pre.html",
+        "microdata": "schema.org/eg-0334-microdata.html",
+        "rdfa": "schema.org/eg-0334-rdfa.html",
+        "jsonld": "schema.org/eg-0334-jsonld.html"
+      }
+    }
   },
   "coursePrerequisites": {
     "super_class": null
@@ -14748,7 +16208,27 @@
     "super_class": null
   },
   "credentialCategory": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0259": {
+        "pre": "schema.org/eg-0259-pre.html",
+        "microdata": "schema.org/eg-0259-microdata.html",
+        "rdfa": "schema.org/eg-0259-rdfa.html",
+        "jsonld": "schema.org/eg-0259-jsonld.html"
+      },
+      "eg-0260": {
+        "pre": "schema.org/eg-0260-pre.html",
+        "microdata": "schema.org/eg-0260-microdata.html",
+        "rdfa": "schema.org/eg-0260-rdfa.html",
+        "jsonld": "schema.org/eg-0260-jsonld.html"
+      },
+      "eg-0465": {
+        "pre": "schema.org/eg-0465-pre.html",
+        "microdata": "schema.org/eg-0465-microdata.html",
+        "rdfa": "schema.org/eg-0465-rdfa.html",
+        "jsonld": "schema.org/eg-0465-jsonld.html"
+      }
+    }
   },
   "creditText": {
     "super_class": null
@@ -14757,7 +16237,21 @@
     "super_class": null
   },
   "cssSelector": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0237": {
+        "pre": "schema.org/eg-0237-pre.html",
+        "microdata": "schema.org/eg-0237-microdata.html",
+        "rdfa": "schema.org/eg-0237-rdfa.html",
+        "jsonld": "schema.org/eg-0237-jsonld.html"
+      },
+      "eg-0238": {
+        "pre": "schema.org/eg-0238-pre.html",
+        "microdata": "schema.org/eg-0238-microdata.html",
+        "rdfa": "schema.org/eg-0238-rdfa.html",
+        "jsonld": "schema.org/eg-0238-jsonld.html"
+      }
+    }
   },
   "currenciesAccepted": {
     "super_class": null,
@@ -14905,7 +16399,15 @@
     "super_class": null
   },
   "deliveryTime": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0392": {
+        "pre": "schema.org/eg-0392-pre.html",
+        "microdata": "schema.org/eg-0392-microdata.html",
+        "rdfa": "schema.org/eg-0392-rdfa.html",
+        "jsonld": "schema.org/eg-0392-jsonld.html"
+      }
+    }
   },
   "department": {
     "super_class": null
@@ -15026,7 +16528,15 @@
     "super_class": null
   },
   "documentation": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0239": {
+        "pre": "schema.org/eg-0239-pre.html",
+        "microdata": "schema.org/eg-0239-microdata.html",
+        "rdfa": "schema.org/eg-0239-rdfa.html",
+        "jsonld": "schema.org/eg-0239-jsonld.html"
+      }
+    }
   },
   "doesNotShip": {
     "super_class": null
@@ -15109,13 +16619,35 @@
     "super_class": null
   },
   "duringMedia": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "earlyPrepaymentPenalty": {
     "super_class": null
   },
   "editEIDR": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0459": {
+        "pre": "schema.org/eg-0459-pre.html",
+        "microdata": "schema.org/eg-0459-microdata.html",
+        "rdfa": "schema.org/eg-0459-rdfa.html",
+        "jsonld": "schema.org/eg-0459-jsonld.html"
+      },
+      "eg-0460": {
+        "pre": "schema.org/eg-0460-pre.html",
+        "microdata": "schema.org/eg-0460-microdata.html",
+        "rdfa": "schema.org/eg-0460-rdfa.html",
+        "jsonld": "schema.org/eg-0460-jsonld.html"
+      }
+    }
   },
   "editor": {
     "super_class": null
@@ -15124,7 +16656,21 @@
     "super_class": null
   },
   "educationRequirements": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0261": {
+        "pre": "schema.org/eg-0261-pre.html",
+        "microdata": "schema.org/eg-0261-microdata.html",
+        "rdfa": "schema.org/eg-0261-rdfa.html",
+        "jsonld": "schema.org/eg-0261-jsonld.html"
+      },
+      "eg-0465": {
+        "pre": "schema.org/eg-0465-pre.html",
+        "microdata": "schema.org/eg-0465-microdata.html",
+        "rdfa": "schema.org/eg-0465-rdfa.html",
+        "jsonld": "schema.org/eg-0465-jsonld.html"
+      }
+    }
   },
   "educationalAlignment": {
     "super_class": null,
@@ -15138,7 +16684,21 @@
     }
   },
   "educationalCredentialAwarded": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0335": {
+        "pre": "schema.org/eg-0335-pre.html",
+        "microdata": "schema.org/eg-0335-microdata.html",
+        "rdfa": "schema.org/eg-0335-rdfa.html",
+        "jsonld": "schema.org/eg-0335-jsonld.html"
+      },
+      "eg-0336": {
+        "pre": "schema.org/eg-0336-pre.html",
+        "microdata": "schema.org/eg-0336-microdata.html",
+        "rdfa": "schema.org/eg-0336-rdfa.html",
+        "jsonld": "schema.org/eg-0336-jsonld.html"
+      }
+    }
   },
   "educationalFramework": {
     "super_class": null,
@@ -15165,6 +16725,12 @@
         "microdata": "schema.org/eg-0380-microdata.html",
         "rdfa": "schema.org/eg-0380-rdfa.html",
         "jsonld": "schema.org/eg-0380-jsonld.html"
+      },
+      "eg-0259": {
+        "pre": "schema.org/eg-0259-pre.html",
+        "microdata": "schema.org/eg-0259-microdata.html",
+        "rdfa": "schema.org/eg-0259-rdfa.html",
+        "jsonld": "schema.org/eg-0259-jsonld.html"
       }
     }
   },
@@ -15230,13 +16796,29 @@
     "super_class": null
   },
   "employerOverview": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0286": {
+        "pre": "schema.org/eg-0286-pre.html",
+        "microdata": "schema.org/eg-0286-microdata.html",
+        "rdfa": "schema.org/eg-0286-rdfa.html",
+        "jsonld": "schema.org/eg-0286-jsonld.html"
+      }
+    }
   },
   "employmentType": {
     "super_class": null
   },
   "employmentUnit": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0281": {
+        "pre": "schema.org/eg-0281-pre.html",
+        "microdata": "schema.org/eg-0281-microdata.html",
+        "rdfa": "schema.org/eg-0281-rdfa.html",
+        "jsonld": "schema.org/eg-0281-jsonld.html"
+      }
+    }
   },
   "encodesCreativeWork": {
     "super_class": null
@@ -15277,7 +16859,15 @@
     "super_class": null
   },
   "endOffset": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0267": {
+        "pre": "schema.org/eg-0267-pre.html",
+        "microdata": "schema.org/eg-0267-microdata.html",
+        "rdfa": "schema.org/eg-0267-rdfa.html",
+        "jsonld": "schema.org/eg-0267-jsonld.html"
+      }
+    }
   },
   "endTime": {
     "super_class": null
@@ -15325,7 +16915,15 @@
     "super_class": null
   },
   "estimatedCost": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "estimatedFlightDuration": {
     "super_class": null
@@ -15351,10 +16949,56 @@
     }
   },
   "eventAttendanceMode": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0170": {
+        "pre": "schema.org/eg-0170-pre.html",
+        "microdata": "schema.org/eg-0170-microdata.html",
+        "rdfa": "schema.org/eg-0170-rdfa.html",
+        "jsonld": "schema.org/eg-0170-jsonld.html"
+      },
+      "eg-0014": {
+        "pre": "schema.org/eg-0014-pre.html",
+        "microdata": "schema.org/eg-0014-microdata.html",
+        "rdfa": "schema.org/eg-0014-rdfa.html",
+        "jsonld": "schema.org/eg-0014-jsonld.html"
+      }
+    }
   },
   "eventSchedule": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0240": {
+        "pre": "schema.org/eg-0240-pre.html",
+        "microdata": "schema.org/eg-0240-microdata.html",
+        "rdfa": "schema.org/eg-0240-rdfa.html",
+        "jsonld": "schema.org/eg-0240-jsonld.html"
+      },
+      "eg-0241": {
+        "pre": "schema.org/eg-0241-pre.html",
+        "microdata": "schema.org/eg-0241-microdata.html",
+        "rdfa": "schema.org/eg-0241-rdfa.html",
+        "jsonld": "schema.org/eg-0241-jsonld.html"
+      },
+      "eg-0242": {
+        "pre": "schema.org/eg-0242-pre.html",
+        "microdata": "schema.org/eg-0242-microdata.html",
+        "rdfa": "schema.org/eg-0242-rdfa.html",
+        "jsonld": "schema.org/eg-0242-jsonld.html"
+      },
+      "eg-0243": {
+        "pre": "schema.org/eg-0243-pre.html",
+        "microdata": "schema.org/eg-0243-microdata.html",
+        "rdfa": "schema.org/eg-0243-rdfa.html",
+        "jsonld": "schema.org/eg-0243-jsonld.html"
+      },
+      "eg-0244": {
+        "pre": "schema.org/eg-0244-pre.html",
+        "microdata": "schema.org/eg-0244-microdata.html",
+        "rdfa": "schema.org/eg-0244-rdfa.html",
+        "jsonld": "schema.org/eg-0244-jsonld.html"
+      }
+    }
   },
   "eventStatus": {
     "super_class": null
@@ -15486,7 +17130,21 @@
     "super_class": null
   },
   "floorSize": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0327": {
+        "pre": "schema.org/eg-0327-pre.html",
+        "microdata": "schema.org/eg-0327-microdata.html",
+        "rdfa": "schema.org/eg-0327-rdfa.html",
+        "jsonld": "schema.org/eg-0327-jsonld.html"
+      },
+      "eg-0422": {
+        "pre": "schema.org/eg-0422-pre.html",
+        "microdata": "schema.org/eg-0422-microdata.html",
+        "rdfa": "schema.org/eg-0422-rdfa.html",
+        "jsonld": "schema.org/eg-0422-jsonld.html"
+      }
+    }
   },
   "followee": {
     "super_class": null
@@ -15586,17 +17244,17 @@
   "geo": {
     "super_class": null,
     "examples": {
-      "eg-0005": {
-        "pre": "schema.org/eg-0005-pre.html",
-        "microdata": "schema.org/eg-0005-microdata.html",
-        "rdfa": "schema.org/eg-0005-rdfa.html",
-        "jsonld": "schema.org/eg-0005-jsonld.html"
-      },
       "eg-0363": {
         "pre": "schema.org/eg-0363-pre.html",
         "microdata": "schema.org/eg-0363-microdata.html",
         "rdfa": "schema.org/eg-0363-rdfa.html",
         "jsonld": "schema.org/eg-0363-jsonld.html"
+      },
+      "eg-0005": {
+        "pre": "schema.org/eg-0005-pre.html",
+        "microdata": "schema.org/eg-0005-microdata.html",
+        "rdfa": "schema.org/eg-0005-rdfa.html",
+        "jsonld": "schema.org/eg-0005-jsonld.html"
       }
     }
   },
@@ -15665,7 +17323,15 @@
     "super_class": null
   },
   "governmentBenefitsInfo": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0301": {
+        "pre": "schema.org/eg-0301-pre.html",
+        "microdata": "schema.org/eg-0301-microdata.html",
+        "rdfa": "schema.org/eg-0301-rdfa.html",
+        "jsonld": "schema.org/eg-0301-jsonld.html"
+      }
+    }
   },
   "gracePeriod": {
     "super_class": null
@@ -15710,13 +17376,47 @@
     "super_class": null
   },
   "hasCategoryCode": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0317": {
+        "pre": "schema.org/eg-0317-pre.html",
+        "microdata": "schema.org/eg-0317-microdata.html",
+        "rdfa": "schema.org/eg-0317-rdfa.html",
+        "jsonld": "schema.org/eg-0317-jsonld.html"
+      },
+      "eg-0318": {
+        "pre": "schema.org/eg-0318-pre.html",
+        "microdata": "schema.org/eg-0318-microdata.html",
+        "rdfa": "schema.org/eg-0318-rdfa.html",
+        "jsonld": "schema.org/eg-0318-jsonld.html"
+      }
+    }
   },
   "hasCourse": {
     "super_class": null
   },
   "hasCourseInstance": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0332": {
+        "pre": "schema.org/eg-0332-pre.html",
+        "microdata": "schema.org/eg-0332-microdata.html",
+        "rdfa": "schema.org/eg-0332-rdfa.html",
+        "jsonld": "schema.org/eg-0332-jsonld.html"
+      },
+      "eg-0333": {
+        "pre": "schema.org/eg-0333-pre.html",
+        "microdata": "schema.org/eg-0333-microdata.html",
+        "rdfa": "schema.org/eg-0333-rdfa.html",
+        "jsonld": "schema.org/eg-0333-jsonld.html"
+      },
+      "eg-0334": {
+        "pre": "schema.org/eg-0334-pre.html",
+        "microdata": "schema.org/eg-0334-microdata.html",
+        "rdfa": "schema.org/eg-0334-rdfa.html",
+        "jsonld": "schema.org/eg-0334-jsonld.html"
+      }
+    }
   },
   "hasCredential": {
     "super_class": null
@@ -15871,7 +17571,15 @@
     "super_class": null
   },
   "holdingArchive": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0255": {
+        "pre": "schema.org/eg-0255-pre.html",
+        "microdata": "schema.org/eg-0255-microdata.html",
+        "rdfa": "schema.org/eg-0255-rdfa.html",
+        "jsonld": "schema.org/eg-0255-jsonld.html"
+      }
+    }
   },
   "homeLocation": {
     "super_class": null
@@ -15915,7 +17623,21 @@
     "super_class": null
   },
   "identifier": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0372": {
+        "pre": "schema.org/eg-0372-pre.html",
+        "microdata": "schema.org/eg-0372-microdata.html",
+        "rdfa": "schema.org/eg-0372-rdfa.html",
+        "jsonld": "schema.org/eg-0372-jsonld.html"
+      },
+      "eg-0373": {
+        "pre": "schema.org/eg-0373-pre.html",
+        "microdata": "schema.org/eg-0373-microdata.html",
+        "rdfa": "schema.org/eg-0373-rdfa.html",
+        "jsonld": "schema.org/eg-0373-jsonld.html"
+      }
+    }
   },
   "identifyingExam": {
     "super_class": null
@@ -15929,6 +17651,12 @@
   "image": {
     "super_class": null,
     "examples": {
+      "eg-0361": {
+        "pre": "schema.org/eg-0361-pre.html",
+        "microdata": "schema.org/eg-0361-microdata.html",
+        "rdfa": "schema.org/eg-0361-rdfa.html",
+        "jsonld": "schema.org/eg-0361-jsonld.html"
+      },
       "eg-0011": {
         "pre": "schema.org/eg-0011-pre.html",
         "microdata": "schema.org/eg-0011-microdata.html",
@@ -15940,12 +17668,6 @@
         "microdata": "schema.org/eg-0013-microdata.html",
         "rdfa": "schema.org/eg-0013-rdfa.html",
         "jsonld": "schema.org/eg-0013-jsonld.html"
-      },
-      "eg-0361": {
-        "pre": "schema.org/eg-0361-pre.html",
-        "microdata": "schema.org/eg-0361-microdata.html",
-        "rdfa": "schema.org/eg-0361-rdfa.html",
-        "jsonld": "schema.org/eg-0361-jsonld.html"
       }
     }
   },
@@ -15959,10 +17681,38 @@
     "super_class": null
   },
   "inCodeSet": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0317": {
+        "pre": "schema.org/eg-0317-pre.html",
+        "microdata": "schema.org/eg-0317-microdata.html",
+        "rdfa": "schema.org/eg-0317-rdfa.html",
+        "jsonld": "schema.org/eg-0317-jsonld.html"
+      },
+      "eg-0318": {
+        "pre": "schema.org/eg-0318-pre.html",
+        "microdata": "schema.org/eg-0318-microdata.html",
+        "rdfa": "schema.org/eg-0318-rdfa.html",
+        "jsonld": "schema.org/eg-0318-jsonld.html"
+      }
+    }
   },
   "inDefinedTermSet": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0315": {
+        "pre": "schema.org/eg-0315-pre.html",
+        "microdata": "schema.org/eg-0315-microdata.html",
+        "rdfa": "schema.org/eg-0315-rdfa.html",
+        "jsonld": "schema.org/eg-0315-jsonld.html"
+      },
+      "eg-0316": {
+        "pre": "schema.org/eg-0316-pre.html",
+        "microdata": "schema.org/eg-0316-microdata.html",
+        "rdfa": "schema.org/eg-0316-rdfa.html",
+        "jsonld": "schema.org/eg-0316-jsonld.html"
+      }
+    }
   },
   "inLanguage": {
     "super_class": null
@@ -16024,7 +17774,15 @@
     "super_class": null
   },
   "industry": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0287": {
+        "pre": "schema.org/eg-0287-pre.html",
+        "microdata": "schema.org/eg-0287-microdata.html",
+        "rdfa": "schema.org/eg-0287-rdfa.html",
+        "jsonld": "schema.org/eg-0287-jsonld.html"
+      }
+    }
   },
   "ineligibleRegion": {
     "super_class": null
@@ -16048,7 +17806,15 @@
     "super_class": null
   },
   "instructor": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0337": {
+        "pre": "schema.org/eg-0337-pre.html",
+        "microdata": "schema.org/eg-0337-microdata.html",
+        "rdfa": "schema.org/eg-0337-rdfa.html",
+        "jsonld": "schema.org/eg-0337-jsonld.html"
+      }
+    }
   },
   "instrument": {
     "super_class": null
@@ -16260,7 +18026,27 @@
     "super_class": null
   },
   "itinerary": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0441": {
+        "pre": "schema.org/eg-0441-pre.html",
+        "microdata": "schema.org/eg-0441-microdata.html",
+        "rdfa": "schema.org/eg-0441-rdfa.html",
+        "jsonld": "schema.org/eg-0441-jsonld.html"
+      },
+      "eg-0263": {
+        "pre": "schema.org/eg-0263-pre.html",
+        "microdata": "schema.org/eg-0263-microdata.html",
+        "rdfa": "schema.org/eg-0263-rdfa.html",
+        "jsonld": "schema.org/eg-0263-jsonld.html"
+      },
+      "eg-0264": {
+        "pre": "schema.org/eg-0264-pre.html",
+        "microdata": "schema.org/eg-0264-microdata.html",
+        "rdfa": "schema.org/eg-0264-rdfa.html",
+        "jsonld": "schema.org/eg-0264-jsonld.html"
+      }
+    }
   },
   "jobBenefits": {
     "super_class": null
@@ -16278,10 +18064,26 @@
     "super_class": null
   },
   "jobTitle": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0276": {
+        "pre": "schema.org/eg-0276-pre.html",
+        "microdata": "schema.org/eg-0276-microdata.html",
+        "rdfa": "schema.org/eg-0276-rdfa.html",
+        "jsonld": "schema.org/eg-0276-jsonld.html"
+      }
+    }
   },
   "jurisdiction": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0301": {
+        "pre": "schema.org/eg-0301-pre.html",
+        "microdata": "schema.org/eg-0301-microdata.html",
+        "rdfa": "schema.org/eg-0301-rdfa.html",
+        "jsonld": "schema.org/eg-0301-jsonld.html"
+      }
+    }
   },
   "keywords": {
     "super_class": null
@@ -16336,7 +18138,15 @@
     }
   },
   "leaseLength": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0422": {
+        "pre": "schema.org/eg-0422-pre.html",
+        "microdata": "schema.org/eg-0422-microdata.html",
+        "rdfa": "schema.org/eg-0422-rdfa.html",
+        "jsonld": "schema.org/eg-0422-jsonld.html"
+      }
+    }
   },
   "legalName": {
     "super_class": null
@@ -16448,7 +18258,15 @@
     }
   },
   "locationCreated": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0340": {
+        "pre": "schema.org/eg-0340-pre.html",
+        "microdata": "schema.org/eg-0340-microdata.html",
+        "rdfa": "schema.org/eg-0340-rdfa.html",
+        "jsonld": "schema.org/eg-0340-jsonld.html"
+      }
+    }
   },
   "lodgingUnitDescription": {
     "super_class": null
@@ -16496,17 +18314,17 @@
   "mainEntity": {
     "super_class": null,
     "examples": {
-      "eg-0462": {
-        "pre": "schema.org/eg-0462-pre.html",
-        "microdata": "schema.org/eg-0462-microdata.html",
-        "rdfa": "schema.org/eg-0462-rdfa.html",
-        "jsonld": "schema.org/eg-0462-jsonld.html"
-      },
       "eg-0382": {
         "pre": "schema.org/eg-0382-pre.html",
         "microdata": "schema.org/eg-0382-microdata.html",
         "rdfa": "schema.org/eg-0382-rdfa.html",
         "jsonld": "schema.org/eg-0382-jsonld.html"
+      },
+      "eg-0462": {
+        "pre": "schema.org/eg-0462-pre.html",
+        "microdata": "schema.org/eg-0462-microdata.html",
+        "rdfa": "schema.org/eg-0462-rdfa.html",
+        "jsonld": "schema.org/eg-0462-jsonld.html"
       }
     }
   },
@@ -16563,7 +18381,21 @@
     "super_class": null
   },
   "materialExtent": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0257": {
+        "pre": "schema.org/eg-0257-pre.html",
+        "microdata": "schema.org/eg-0257-microdata.html",
+        "rdfa": "schema.org/eg-0257-rdfa.html",
+        "jsonld": "schema.org/eg-0257-jsonld.html"
+      },
+      "eg-0258": {
+        "pre": "schema.org/eg-0258-pre.html",
+        "microdata": "schema.org/eg-0258-microdata.html",
+        "rdfa": "schema.org/eg-0258-rdfa.html",
+        "jsonld": "schema.org/eg-0258-jsonld.html"
+      }
+    }
   },
   "mathExpression": {
     "super_class": null
@@ -16635,7 +18467,15 @@
     "super_class": null
   },
   "membershipPointsEarned": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0269": {
+        "pre": "schema.org/eg-0269-pre.html",
+        "microdata": "schema.org/eg-0269-microdata.html",
+        "rdfa": "schema.org/eg-0269-rdfa.html",
+        "jsonld": "schema.org/eg-0269-jsonld.html"
+      }
+    }
   },
   "memoryRequirements": {
     "super_class": null
@@ -16755,7 +18595,15 @@
     "super_class": null
   },
   "nonprofitStatus": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0302": {
+        "pre": "schema.org/eg-0302-pre.html",
+        "microdata": "schema.org/eg-0302-microdata.html",
+        "rdfa": "schema.org/eg-0302-rdfa.html",
+        "jsonld": "schema.org/eg-0302-jsonld.html"
+      }
+    }
   },
   "normalRange": {
     "super_class": null
@@ -16868,13 +18716,47 @@
     "super_class": null
   },
   "occupancy": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0327": {
+        "pre": "schema.org/eg-0327-pre.html",
+        "microdata": "schema.org/eg-0327-microdata.html",
+        "rdfa": "schema.org/eg-0327-rdfa.html",
+        "jsonld": "schema.org/eg-0327-jsonld.html"
+      },
+      "eg-0422": {
+        "pre": "schema.org/eg-0422-pre.html",
+        "microdata": "schema.org/eg-0422-microdata.html",
+        "rdfa": "schema.org/eg-0422-rdfa.html",
+        "jsonld": "schema.org/eg-0422-jsonld.html"
+      }
+    }
   },
   "occupationLocation": {
     "super_class": null
   },
   "occupationalCategory": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0250": {
+        "pre": "schema.org/eg-0250-pre.html",
+        "microdata": "schema.org/eg-0250-microdata.html",
+        "rdfa": "schema.org/eg-0250-rdfa.html",
+        "jsonld": "schema.org/eg-0250-jsonld.html"
+      },
+      "eg-0251": {
+        "pre": "schema.org/eg-0251-pre.html",
+        "microdata": "schema.org/eg-0251-microdata.html",
+        "rdfa": "schema.org/eg-0251-rdfa.html",
+        "jsonld": "schema.org/eg-0251-jsonld.html"
+      },
+      "eg-0275": {
+        "pre": "schema.org/eg-0275-pre.html",
+        "microdata": "schema.org/eg-0275-microdata.html",
+        "rdfa": "schema.org/eg-0275-rdfa.html",
+        "jsonld": "schema.org/eg-0275-jsonld.html"
+      }
+    }
   },
   "occupationalCredentialAwarded": {
     "super_class": null
@@ -16893,6 +18775,12 @@
   "offeredBy": {
     "super_class": null,
     "examples": {
+      "eg-0393": {
+        "pre": "schema.org/eg-0393-pre.html",
+        "microdata": "schema.org/eg-0393-microdata.html",
+        "rdfa": "schema.org/eg-0393-rdfa.html",
+        "jsonld": "schema.org/eg-0393-jsonld.html"
+      },
       "eg-0395": {
         "pre": "schema.org/eg-0395-pre.html",
         "microdata": "schema.org/eg-0395-microdata.html",
@@ -16924,17 +18812,17 @@
   "openingHours": {
     "super_class": null,
     "examples": {
-      "eg-0194": {
-        "pre": "schema.org/eg-0194-pre.html",
-        "microdata": "schema.org/eg-0194-microdata.html",
-        "rdfa": "schema.org/eg-0194-rdfa.html",
-        "jsonld": "schema.org/eg-0194-jsonld.html"
-      },
       "eg-0432": {
         "pre": "schema.org/eg-0432-pre.html",
         "microdata": "schema.org/eg-0432-microdata.html",
         "rdfa": "schema.org/eg-0432-rdfa.html",
         "jsonld": "schema.org/eg-0432-jsonld.html"
+      },
+      "eg-0194": {
+        "pre": "schema.org/eg-0194-pre.html",
+        "microdata": "schema.org/eg-0194-microdata.html",
+        "rdfa": "schema.org/eg-0194-rdfa.html",
+        "jsonld": "schema.org/eg-0194-jsonld.html"
       }
     }
   },
@@ -17150,7 +19038,21 @@
     "super_class": null
   },
   "phoneticText": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0270": {
+        "pre": "schema.org/eg-0270-pre.html",
+        "microdata": "schema.org/eg-0270-microdata.html",
+        "rdfa": "schema.org/eg-0270-rdfa.html",
+        "jsonld": "schema.org/eg-0270-jsonld.html"
+      },
+      "eg-0271": {
+        "pre": "schema.org/eg-0271-pre.html",
+        "microdata": "schema.org/eg-0271-microdata.html",
+        "rdfa": "schema.org/eg-0271-rdfa.html",
+        "jsonld": "schema.org/eg-0271-jsonld.html"
+      }
+    }
   },
   "photo": {
     "super_class": null
@@ -17159,7 +19061,15 @@
     "super_class": null
   },
   "physicalRequirement": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0284": {
+        "pre": "schema.org/eg-0284-pre.html",
+        "microdata": "schema.org/eg-0284-microdata.html",
+        "rdfa": "schema.org/eg-0284-rdfa.html",
+        "jsonld": "schema.org/eg-0284-jsonld.html"
+      }
+    }
   },
   "physiologicalBenefits": {
     "super_class": null
@@ -17384,7 +19294,21 @@
     "super_class": null
   },
   "provider": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0337": {
+        "pre": "schema.org/eg-0337-pre.html",
+        "microdata": "schema.org/eg-0337-microdata.html",
+        "rdfa": "schema.org/eg-0337-rdfa.html",
+        "jsonld": "schema.org/eg-0337-jsonld.html"
+      },
+      "eg-0338": {
+        "pre": "schema.org/eg-0338-pre.html",
+        "microdata": "schema.org/eg-0338-microdata.html",
+        "rdfa": "schema.org/eg-0338-rdfa.html",
+        "jsonld": "schema.org/eg-0338-jsonld.html"
+      }
+    }
   },
   "providerMobility": {
     "super_class": null,
@@ -17442,7 +19366,15 @@
     "super_class": null
   },
   "qualifications": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0280": {
+        "pre": "schema.org/eg-0280-pre.html",
+        "microdata": "schema.org/eg-0280-microdata.html",
+        "rdfa": "schema.org/eg-0280-rdfa.html",
+        "jsonld": "schema.org/eg-0280-jsonld.html"
+      }
+    }
   },
   "quarantineGuidelines": {
     "super_class": null
@@ -17708,7 +19640,15 @@
     "super_class": null
   },
   "reviewAspect": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0248": {
+        "pre": "schema.org/eg-0248-pre.html",
+        "microdata": "schema.org/eg-0248-microdata.html",
+        "rdfa": "schema.org/eg-0248-rdfa.html",
+        "jsonld": "schema.org/eg-0248-jsonld.html"
+      }
+    }
   },
   "reviewBody": {
     "super_class": null
@@ -17776,7 +19716,15 @@
     "super_class": null
   },
   "sameAs": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0458": {
+        "pre": "schema.org/eg-0458-pre.html",
+        "microdata": "schema.org/eg-0458-microdata.html",
+        "rdfa": "schema.org/eg-0458-rdfa.html",
+        "jsonld": "schema.org/eg-0458-jsonld.html"
+      }
+    }
   },
   "sampleType": {
     "super_class": null
@@ -17857,7 +19805,15 @@
     "super_class": null
   },
   "sensoryRequirement": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0283": {
+        "pre": "schema.org/eg-0283-pre.html",
+        "microdata": "schema.org/eg-0283-microdata.html",
+        "rdfa": "schema.org/eg-0283-rdfa.html",
+        "jsonld": "schema.org/eg-0283-jsonld.html"
+      }
+    }
   },
   "sensoryUnit": {
     "super_class": null
@@ -17899,7 +19855,15 @@
     "super_class": null
   },
   "serviceType": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0301": {
+        "pre": "schema.org/eg-0301-pre.html",
+        "microdata": "schema.org/eg-0301-microdata.html",
+        "rdfa": "schema.org/eg-0301-rdfa.html",
+        "jsonld": "schema.org/eg-0301-jsonld.html"
+      }
+    }
   },
   "serviceUrl": {
     "super_class": null
@@ -17908,7 +19872,15 @@
     "super_class": null
   },
   "sharedContent": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0423": {
+        "pre": "schema.org/eg-0423-pre.html",
+        "microdata": "schema.org/eg-0423-microdata.html",
+        "rdfa": "schema.org/eg-0423-rdfa.html",
+        "jsonld": "schema.org/eg-0423-jsonld.html"
+      }
+    }
   },
   "shippingDestination": {
     "super_class": null
@@ -17920,7 +19892,15 @@
     "super_class": null
   },
   "shippingRate": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0392": {
+        "pre": "schema.org/eg-0392-pre.html",
+        "microdata": "schema.org/eg-0392-microdata.html",
+        "rdfa": "schema.org/eg-0392-rdfa.html",
+        "jsonld": "schema.org/eg-0392-jsonld.html"
+      }
+    }
   },
   "shippingSettingsLink": {
     "super_class": null
@@ -17997,7 +19977,21 @@
     "super_class": null
   },
   "speakable": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0237": {
+        "pre": "schema.org/eg-0237-pre.html",
+        "microdata": "schema.org/eg-0237-microdata.html",
+        "rdfa": "schema.org/eg-0237-rdfa.html",
+        "jsonld": "schema.org/eg-0237-jsonld.html"
+      },
+      "eg-0238": {
+        "pre": "schema.org/eg-0238-pre.html",
+        "microdata": "schema.org/eg-0238-microdata.html",
+        "rdfa": "schema.org/eg-0238-rdfa.html",
+        "jsonld": "schema.org/eg-0238-jsonld.html"
+      }
+    }
   },
   "specialCommitments": {
     "super_class": null
@@ -18015,7 +20009,21 @@
     "super_class": null
   },
   "spokenByCharacter": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0304": {
+        "pre": "schema.org/eg-0304-pre.html",
+        "microdata": "schema.org/eg-0304-microdata.html",
+        "rdfa": "schema.org/eg-0304-rdfa.html",
+        "jsonld": "schema.org/eg-0304-jsonld.html"
+      },
+      "eg-0305": {
+        "pre": "schema.org/eg-0305-pre.html",
+        "microdata": "schema.org/eg-0305-microdata.html",
+        "rdfa": "schema.org/eg-0305-rdfa.html",
+        "jsonld": "schema.org/eg-0305-jsonld.html"
+      }
+    }
   },
   "sponsor": {
     "super_class": null
@@ -18070,7 +20078,15 @@
     }
   },
   "startOffset": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0267": {
+        "pre": "schema.org/eg-0267-pre.html",
+        "microdata": "schema.org/eg-0267-microdata.html",
+        "rdfa": "schema.org/eg-0267-rdfa.html",
+        "jsonld": "schema.org/eg-0267-jsonld.html"
+      }
+    }
   },
   "startTime": {
     "super_class": null
@@ -18088,7 +20104,15 @@
     "super_class": null
   },
   "steps": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "storageRequirements": {
     "super_class": null
@@ -18203,7 +20227,15 @@
     "super_class": null
   },
   "supply": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "supplyTo": {
     "super_class": null
@@ -18304,13 +20336,35 @@
     "super_class": null
   },
   "termCode": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0314": {
+        "pre": "schema.org/eg-0314-pre.html",
+        "microdata": "schema.org/eg-0314-microdata.html",
+        "rdfa": "schema.org/eg-0314-rdfa.html",
+        "jsonld": "schema.org/eg-0314-jsonld.html"
+      },
+      "eg-0316": {
+        "pre": "schema.org/eg-0316-pre.html",
+        "microdata": "schema.org/eg-0316-microdata.html",
+        "rdfa": "schema.org/eg-0316-rdfa.html",
+        "jsonld": "schema.org/eg-0316-jsonld.html"
+      }
+    }
   },
   "termDuration": {
     "super_class": null
   },
   "termsOfService": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0239": {
+        "pre": "schema.org/eg-0239-pre.html",
+        "microdata": "schema.org/eg-0239-microdata.html",
+        "rdfa": "schema.org/eg-0239-rdfa.html",
+        "jsonld": "schema.org/eg-0239-jsonld.html"
+      }
+    }
   },
   "termsPerYear": {
     "super_class": null
@@ -18363,13 +20417,35 @@
     "super_class": null
   },
   "titleEIDR": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0459": {
+        "pre": "schema.org/eg-0459-pre.html",
+        "microdata": "schema.org/eg-0459-microdata.html",
+        "rdfa": "schema.org/eg-0459-rdfa.html",
+        "jsonld": "schema.org/eg-0459-jsonld.html"
+      },
+      "eg-0460": {
+        "pre": "schema.org/eg-0460-pre.html",
+        "microdata": "schema.org/eg-0460-microdata.html",
+        "rdfa": "schema.org/eg-0460-rdfa.html",
+        "jsonld": "schema.org/eg-0460-jsonld.html"
+      }
+    }
   },
   "toLocation": {
     "super_class": null
   },
   "toRecipient": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0343": {
+        "pre": "schema.org/eg-0343-pre.html",
+        "microdata": "schema.org/eg-0343-microdata.html",
+        "rdfa": "schema.org/eg-0343-rdfa.html",
+        "jsonld": "schema.org/eg-0343-jsonld.html"
+      }
+    }
   },
   "tocContinuation": {
     "super_class": null
@@ -18381,7 +20457,15 @@
     "super_class": null
   },
   "tool": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "torque": {
     "super_class": null
@@ -18396,7 +20480,15 @@
     "super_class": null
   },
   "totalTime": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0371": {
+        "pre": "schema.org/eg-0371-pre.html",
+        "microdata": "schema.org/eg-0371-microdata.html",
+        "rdfa": "schema.org/eg-0371-rdfa.html",
+        "jsonld": "schema.org/eg-0371-jsonld.html"
+      }
+    }
   },
   "tourBookingPage": {
     "super_class": null
@@ -19836,7 +21928,15 @@
     "super_class": null
   },
   "ReadPermission": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0348": {
+        "pre": "schema.org/eg-0348-pre.html",
+        "microdata": "schema.org/eg-0348-microdata.html",
+        "rdfa": "schema.org/eg-0348-rdfa.html",
+        "jsonld": "schema.org/eg-0348-jsonld.html"
+      }
+    }
   },
   "RearWheelDriveConfiguration": {
     "super_class": null
@@ -20124,7 +22224,15 @@
     "super_class": null
   },
   "WritePermission": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0348": {
+        "pre": "schema.org/eg-0348-pre.html",
+        "microdata": "schema.org/eg-0348-microdata.html",
+        "rdfa": "schema.org/eg-0348-rdfa.html",
+        "jsonld": "schema.org/eg-0348-jsonld.html"
+      }
+    }
   },
   "XRay": {
     "super_class": null

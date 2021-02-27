@@ -1,31 +1,41 @@
-<div vocab="https://schema.org/" typeof="ImageObject">
-  <h2 property="name">Beach in Mexico</h2>
-  <img src="mexico-beach.jpg" alt="" property="contentUrl" />
-  By <span property="author">Jane Doe</span>
-  Photographed in
-    <span property="contentLocation">Puerto Vallarta, Mexico</span>
-  Date uploaded:
-    <meta property="datePublished" content="2008-01-25">Jan 25, 2008
-  <span property="description">I took this picture while on vacation last year.</span>
-<!-- Note: We do not split value strings in unit and value information, since this the raw EXIF data does not provide this granularity. If you are able to separate the unit, you can use the unitText property -->
-  <div property="exifData" typeOf="PropertyValue">
-      <meta property="name" content="Exposure Time">
-      <meta property="value" content="1/659 sec.">
-  </div>
-  <div property="exifData" typeOf="PropertyValue">
-      <meta property="name" content="FNumber">
-      <meta property="value" content="f/4.0">
-  </div>
-  <div property="exifData" typeOf="PropertyValue">
-      <meta property="name" content="MaxApertureValue">
-      <meta property="value" content="2.00">
-  </div>
-  <div property="exifData" typeOf="PropertyValue">
-      <meta property="name" content="Metering Mode">
-      <meta property="value" content="Pattern">
-  </div>
-  <div property="exifData" typeOf="PropertyValue">
-      <meta property="name" content="Flash">
-      <meta property="value" content="Flash did not fire.">
-  </div>
+<div vocab="https://schema.org/">
+    <p typeof="Book" resource="http://www.freebase.com/m/0h35m">
+        <em property="name">The Fellowship of the Rings</em> was written by
+        <span property="author">J.R.R Tolkien</span> and was originally published
+        in the <span property="publisher" typeof="Organization">
+            <span property="location">United Kingdom</span> by
+            <span property="name">George Allen &amp; Unwin</span>
+        </span> in <time property="datePublished">1954</time>.
+        The book has been republished many times, including editions by
+        <span property="workExample" typeof="Book">
+            <span property="publisher" typeof="Organization">
+                <span property="name">HarperCollins</span>
+            </span> in <time property="datePublished">1974</time>
+            (ISBN: <span property="isbn">0007149212</span>)
+        </span> and by
+        <span property="workExample" typeof="Book">
+            <span property="publisher" typeof="Organization">
+                <span property="name">Ballantine</span>
+            </span> in <time property="datePublished">1984</time>
+            (ISBN: <span property="isbn">0345296052</span>).
+        </span>
+    </p>
+    <p>
+        The book has also been adapted for the screen several times.
+        <span typeof="Movie">
+            <link property="exampleOfWork" href="http://www.freebase.com/m/0h35m">
+            <em property="name">J.R.R. Tolkien's The Lord of the Rings</em>, an
+            animated version directed by <span property="director">Ralph Bakshi</span>
+            and released in <time property="datePublished">1978</time>, covered the
+            events of the novel and parts of its sequel.
+        </span>
+        <span typeof="Movie">
+            <link property="exampleOfWork" href="http://www.freebase.com/m/0h35m">
+            The movie <em property="name">The Lord of the Rings: The Fellowship of the
+            Ring</em>, directed by <span property="director">Peter Jackson</span> and
+            released in <time property="datePublished">2001</time>, ran
+            <time property="duration" datetime="PT178M">178</time> minutes long in its
+            theatrical release.
+        </span>
+    </p>
 </div>
