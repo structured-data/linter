@@ -1,0 +1,129 @@
+<div>
+  <div vocab="https://schema.org/" typeof="TouristTrip">
+    <div property="name" content="Weekend in San Francisco"></div>
+    <div property="description" content="Short trip to San Francisco for first-time visitors."></div>
+    <div property="touristType" content="Nightlife tourism"></div>
+    <div property="touristType" content="Urban tourism"></div>
+    <div property="touristType" content="Shopping tourism"></div>
+    <div rel="offers">
+      <div typeof="Offer">
+        <div property="name" content="Trip proposed by MyTripco for tourists located in the USA."></div>
+        <div property="description" content="The price includes two hotel nights in a 4 star hotel. Plane tickets not included."></div>
+        <div property="price" content="500"></div>
+        <div property="priceCurrency" content="USD"></div>
+        <div property="availabilityEnds" datatype="DateTime" content="2017-10-31"></div>
+        <div rel="url" resource="https://mytripco.com/trip/12345"></div>
+        <div rel="eligibleRegion">
+          <div typeof="Country">
+            <div property="name" content="USA"></div>
+          </div>
+        </div>
+        <div rel="offeredBy">
+          <div typeof="Organization">
+            <div rel="url" resource="https://mytripco.com/"></div>
+            <div property="name" content="MyTripCo"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div rel="itinerary">
+      <div typeof="ItemList">
+        <div property="numberOfItems" datatype="xsd:integer" content="2"></div>
+
+        <div rel="itemListElement">
+          <div typeof="ListItem">
+            <div rel="rdf:type" resource="https://schema.org/ItemList"></div>
+            <div property="name" content="Saturday"></div>
+            <div property="position" datatype="xsd:integer" content="1"></div>
+            <div property="numberOfItems" datatype="xsd:integer" content="3"></div>
+
+            <div rel="itemListElement">
+              <div typeof="ListItem">
+                <div property="name" content="Morning"></div>
+                <div property="description" content="Pedestrian visit of the Golden Gate Bridge."></div>
+                <div property="position" datatype="xsd:integer" content="1"></div>
+                <div rel="item">
+                  <div typeof="Bridge">
+                    <div rel="rdf:type" resource="https://schema.org/TouristAttraction"></div>
+                    <div property="name" content="Golden Gate Bridge"></div>
+                    <div property="description" content="Very popular suspension bridge. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers."></div>
+                    <div rel="url" resource="https://en.wikipedia.org/wiki/Golden_Gate_Bridge"></div>
+                    <div rel="geo">
+                      <div typeof="GeoCoordinates">
+                        <div property="latitude" datatype="xsd:double" content="37.8199286"></div>
+                        <div property="longitude" datatype="xsd:double" content="-122.4804438"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div rel="itemListElement">
+              <div typeof="ListItem">
+                <div property="name" content="Afternoon"></div>
+                <div property="description" content="Visit of the famous SF Chinatown."></div>
+                <div property="position" datatype="xsd:integer" content="2"></div>
+                <div rel="item">
+                  <div typeof="TouristAttraction">
+                    <div property="name" content="Chinatown"></div>
+                    <div property="address" content="Stockton St and Clay St, San Francisco CA"></div>
+                    <div property="description" content="Oldest Chinatown in North America and the largest Chinese enclave outside Asia. Visit its exotic shops, food markets, restaurants, and temples."></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div rel="itemListElement">
+              <div typeof="ListItem">
+                <div property="name" content="Night"></div>
+                <div property="description" content="Enjoy the SF nightlife"></div>
+                <div property="position" datatype="xsd:integer" content="3"></div>
+                <div rel="item">
+                  <div typeof="TouristAttraction">
+                    <div property="name" content="The Mission"></div>
+                    <div property="description" content="The Mission District offers visitors an unparalleled menu of food and flavors as well as venues for fans of underground indie rock, funk, soul and jazz."></div>
+                    <div property="address" content="Mission St and 19th St, San Francisco CA"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div rel="itemListElement">
+          <div typeof="ListItem">
+            <div rel="rdf:type" resource="https://schema.org/ItemList"></div>
+            <div property="name" content="Sunday"></div>
+            <div property="position" datatype="xsd:integer" content="2"></div>
+            <div property="numberOfItems" datatype="xsd:integer" content="2"></div>
+
+            <div rel="itemListElement">
+              <div typeof="ListItem">
+                <div property="name" content="Morning"></div>
+                <div property="description" content="Spend your morning shopping in one of the best spots in America."></div>
+                <div property="position" datatype="xsd:integer" content="1"></div>
+                <div rel="item">
+                  <div typeof="TouristAttraction">
+                    <div property="description" content="Union Street is the major commercial hub of San Francisco. You will find most fashion labels there."></div>
+                    <div property="address" content="Union St and Buchanan St, San Francisco CA"></div>
+                    <div property="name" content="Union Street Area"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div rel="itemListElement">
+              <div typeof="ListItem">
+                <div property="name" content="Afternoon"></div>
+                <div property="description" content="Take your plane back home."></div>
+                <div rel="item">
+                  <div typeof="Airport">
+                    <div property="name" content="San Francisco Airport"></div>
+                  </div>
+                </div>
+                <div property="position" datatype="xsd:integer" content="2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

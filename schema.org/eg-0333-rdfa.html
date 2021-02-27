@@ -1,0 +1,39 @@
+<body vocab="https://schema.org/" typeof="Course">
+<!-- A college course offered at several locations -->
+<!-- based on http://www.fife.ac.uk/student/courses/course/HCACC -->
+  <h1>Course Details</h1>
+  <h2 property="name">HNC Accounting</h2>
+    <p property="description">This course is designed for those wishing to take up
+       a career in Accounting and Financial Administration within a range of
+       organisations....</p>
+  <h2>This course is currently offered on the date(s) and venue(s) listed below.</h2>
+    <table >
+      <tbody>
+        <tr >
+          <th scope="col" >Method of Study</th>
+          <th scope="col" >Starts</th>
+          <th scope="col" >Ends</th>
+          <th scope="col" >Based at</th>
+        </tr>
+        <tr rel="hasCourseInstance" typeof="CourseInstance">
+          <td property="courseMode">full-time</td>
+          <td property="startDate" content="2016-08-29" datatype="schema:date">29 Aug 2016</td>
+          <td property="endDate" content="2017-06-23" datatype="schema:date">23 Jun 2017</td>
+          <td property="location">St Brycedale Campus Kirkcaldy</td>
+        </tr>
+        <tr rel="hasCourseInstance" typeof="CourseInstance">
+          <td property="courseMode">full-time</td>
+          <td property="startDate" content="2016-08-29" datatype="schema:date">29 Aug 2016</td>
+          <td property="endDate" content="2017-06-23" datatype="schema:date">23 Jun 2017</td>
+          <td  property="location">Halbeath Campus Dunfermline</td>
+        </tr>
+        <tr rel="hasCourseInstance" typeof="CourseInstance">
+          <td><meta property="courseMode" content="part-time">
+              Evenings only and weekends</td>
+          <td property="startDate" content="2016-08-31" datatype="schema:date">31 Aug 2016</td>
+          <td property="endDate" content="2017-06-21" datatype="schema:date">21 Jun 2017</td>
+          <td  property="location">St Brycedale Campus Kirkcaldy</td>
+        </tr>
+      </tbody>
+    </table>
+</body>

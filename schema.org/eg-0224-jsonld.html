@@ -1,0 +1,38 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalGuidelineRecommendation",
+      "evidenceLevel": "https://schema.org/EvidenceLevelA",
+      "evidenceOrigin": "multiple randomized clinical trials",
+      "recommendationStrength": "Strong recommendation",
+      "guidelineSubject": [
+        {
+          "@type": "Drug",
+          "name": "NewvoDrug"
+        },
+        {
+          "@type": "MedicalCondition",
+          "name": "cardiac failure"
+        }
+      ]
+    },
+    {
+      "@type": "MedicalGuidelineContraindication",
+      "evidenceLevel": "https://schema.org/EvidenceLevelC",
+      "evidenceOrigin": "standard of care",
+      "guidelineSubject": [
+        {
+          "@type": "MedicalCondition",
+          "name": "cardiac failure"
+        },
+        {
+          "@type": "TherapeuticProcedure",
+          "name": "appendectomy"
+        }
+      ]
+    }
+  ]
+}
+</script>

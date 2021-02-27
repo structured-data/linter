@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Australia and New Zealand",
+  "description": "This trip is modeled as two distinct Tourist Trips using the subTrip property.",
+  "subTrip": [
+      {
+        "@type": "TouristTrip",
+        "name": "Australia",
+        "description": "This is a trip on its own."
+      },
+      {
+        "@type": "TouristTrip",
+        "name": "New Zealand",
+        "description": "This is another trip nested inside the main one."
+      }
+    ]
+}

@@ -1,0 +1,18 @@
+<div>
+  <div vocab="https://schema.org/" typeof="TouristTrip">
+    <div property="name" content="Australia and New Zealand"></div>
+    <div property="description" content="This trip is modeled as two distinct Tourist Trips using the subTrip property."></div>
+    <div rel="subTrip">
+      <div typeof="TouristTrip">
+        <div property="name" content="Australia"></div>
+        <div property="description" content="This is a trip on its own."></div>
+      </div>
+    </div>
+    <div rel="subTrip">
+      <div typeof="TouristTrip">
+        <div property="description" content="This is another trip nested inside the main one."></div>
+        <div property="name" content="New Zealand"></div>
+      </div>
+    </div>
+  </div>
+</div>

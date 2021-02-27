@@ -1,23 +1,45 @@
 <script type="application/ld+json">
 {
-  "@context":  "https://schema.org/",
-  "@id": "#record",
-  "@type": "Book",
-  "additionalType": "Product",
-  "name": "Le concerto",
-  "author": "Ferchault, Guy",
-  "offers":{
-      "@type": "Offer",
-      "availability": "https://schema.org/InStock",
-      "serialNumber": "CONC91000937",
-      "sku": "780 R2",
-      "offeredBy": {
-          "@type": "Library",
-          "@id": "http://library.anytown.gov.uk",
-          "name": "Anytown City Library"
-      },
-      "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
-      "itemOffered": "#record"
-    }
+    "@context": "https://schema.org",
+    "@type": "MusicRelease",
+    "name": "The Beatles",
+    "alternateName": "White Album",
+    "musicReleaseFormat": "https://schema.org/VinylFormat",
+    "duration": "PT1H33M50S",
+    "inLanguage": "EN",
+    "recordLabel": {
+        "@type": "Organization",
+        "@id": "http://musicbrainz.org/label/cf7fc5cf-e011-4ef4-b511-cd0188537910",
+        "name": "Apple Records"
+    },
+    "catalogNumber": "SWBO 101",
+    "releasedEvent": [
+        {
+            "@type": "PublicationEvent",
+            "startDate": "1968-11-22",
+            "location": {
+                "@type": "Country",
+                "name": "Canada"
+            }
+        },
+        {
+            "@type": "PublicationEvent",
+            "startDate": "1968-11-25",
+            "location": {
+                "@type": "Country",
+                "name": "United States"
+            }
+        }
+    ],
+    "producer": [
+        {
+            "@type": "Person",
+            "name": "George Martin"
+        },
+        {
+            "@type": "Person",
+            "name": "Chris Thomas"
+        }
+    ]
 }
 </script>
