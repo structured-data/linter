@@ -15,7 +15,7 @@ Sinatra::AssetPipeline::Task.define! RDF::Linter::Application
 
 # https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.3/all-layers.nq
 schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data")
-schema_version = ENV.fetch("schema_version", "11.0")
+schema_version = ENV.fetch("schema_version", "12.0")
 
 namespace :schema do
   desc "Create custom pre-compiled vocabularies"
@@ -71,87 +71,20 @@ namespace :schema do
     require 'json/ld'
     File.open("lib/rdf/vocab/schema_context.rb", "w") do |f|
       c = JSON::LD::Context.parse("#{schema_base}/releases/#{schema_version}/schemaorgcontext.jsonld")
-      f.write c.to_rb("http://schema.org/", "http://schema.org", "https://schema.org")
+      f.write c.to_rb("https://schema.org/", "http://schema.org/", "https://schema.org", "http://schema.org")
     end
   end
 
   desc "Create schema example index"
   task :examples do
     %x{rm -rf ./schema.org && mkdir -p ./schema.org/ext/bib ./schema.org/ext/health-lifesci}
-    %w(
-      examples
-      issue-1004-examples
-      issue-1100-examples
-      sdo-airport-examples.txt
-      sdo-apartment-examples.txt
-      sdo-automobile-examples
-      sdo-book-series-examples.txt
-      sdo-bus-stop-examples.txt
-      sdo-ClaimReview-issue-1061-examples
-      sdo-course-examples.txt
-      sdo-creativwork-examples
-      sdo-datafeed-examples
-      sdo-defined-region-examples.txt
-      sdo-dentist-examples.txt
-      sdo-digital-document-examples
-      sdo-examples-goodrelations
-      sdo-exhibitionevent-examples
-      sdo-fibo-examples
-      sdo-hotels-examples
-      sdo-howto-examples.txt
-      sdo-identifier-examples.txt
-      sdo-invoice-examples
-      sdo-itemlist-examples
-      sdo-library-examples
-      sdo-lrmi-examples
-      sdo-mainEntity-examples
-      sdo-map-examples
-      sdo-menu-examples
-      sdo-music-examples
-      sdo-offer-shipping-details-examples.txt
-      sdo-offeredby-examples
-      sdo-periodical-examples
-      sdo-police-station-examples.txt
-      sdo-property-value-examples
-      sdo-screeningevent-examples
-      sdo-service-examples
-      sdo-single-family-residence-examples.txt
-      sdo-social-media-examples
-      sdo-sponsor-examples
-      sdo-sports-examples
-      sdo-tourism-examples
-      sdo-train-station-examples.txt
-      sdo-trip-examples
-      sdo-tv-listing-examples
-      sdo-userinteraction-examples
-      sdo-videogame-examples
-      sdo-visualartwork-examples
-      sdo-website-examples
-
-      ext/bib/bsdo-atlas-examples
-      ext/bib/bsdo-audiobook-examples
-      ext/bib/bsdo-chapter-examples
-      ext/bib/bsdo-collection-examples
-      ext/bib/bsdo-newspaper-examples
-      ext/bib/bsdo-thesis-examples
-      ext/bib/bsdo-translation-examples
-      ext/bib/comics-examples
-
-      ext/health-lifesci/drug-example
-      ext/health-lifesci/medicalCondition-example
-      ext/health-lifesci/medicalGuideline-example
-      ext/health-lifesci/MedicalScholarlyArticle-example
-      ext/health-lifesci/medicalWebpage-example
-    ).each do |e|
-      %x{curl #{schema_base}/#{e}.txt -o ./schema.org/#{e}.txt}
-    end
+    %x{curl #{schema_base}/releases/#{schema_version}/schemaorg-all-examples.txt -o ./schema.org/schemaorg-all-examples.txt}
     $:.unshift(File.expand_path("../lib", __FILE__))
     require 'rdf/linter'
     schema = RDF::Linter::Schema.new
-    catted = StringIO.new
-    Dir.glob(File.expand_path("../schema.org/**/*.txt", __FILE__)).each {|f| catted.write(File.read(f))}
-    catted.rewind
-    schema.load_examples(catted)
+    File.open(File.expand_path("../schema.org/schemaorg-all-examples.txt", __FILE__)) do |f|
+      schema.load_examples(f)
+    end
   end
 
   desc "Generate workings for schema examples"

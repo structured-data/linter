@@ -1,0 +1,125 @@
+{
+  "@context": "https://schema.org",
+  "@type": "TouristTrip",
+  "name": "Weekend in San Francisco",
+  "description": "Short trip to San Francisco for first-time visitors.",
+  "touristType": [
+    "Urban tourism",
+    "Nightlife tourism",
+    "Shopping tourism"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "name": "Trip proposed by MyTripco for tourists located in the USA.",
+    "description": "The price includes two hotel nights in a 4 star hotel. Plane tickets not included.",
+    "price": "500",
+    "priceCurrency": "USD",
+    "availabilityEnds": "2017-10-31",
+    "url": "https://mytripco.com/trip/12345",
+    "eligibleRegion": {
+      "@type": "Country",
+      "name": "USA"
+    },
+    "offeredBy": {
+      "@type": "Organization",
+      "name": "MyTripCo",
+      "url": "https://mytripco.com"
+    }
+  },
+  "itinerary": {
+    "@type": "ItemList",
+    "numberOfItems": 2,
+    "itemListElement": [
+      {
+        "@type": ["ItemList","ListItem"],
+        "name": "Saturday",
+        "position": 1,
+        "numberOfItems": 3,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "name": "Morning",
+            "description": "Pedestrian visit of the Golden Gate Bridge.",
+            "position": 1,
+            "item": {
+              "@type": [
+                "TouristAttraction",
+                "Bridge"
+              ],
+              "name": "Golden Gate Bridge",
+              "description": "Very popular suspension bridge. The bridge is one of the most internationally recognized symbols of San Francisco, California, and the United States. It has been declared one of the Wonders of the Modern World by the American Society of Civil Engineers.",
+              "url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge",
+              "geo": {
+                "@type":"GeoCoordinates",
+                "latitude": 37.8199286,
+                "longitude": -122.4804438
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "name": "Afternoon",
+            "description": "Visit of the famous SF Chinatown.",
+            "position": 2,
+            "item": {
+              "@type": [
+                "TouristAttraction"
+              ],
+              "name": "Chinatown",
+              "description": "Oldest Chinatown in North America and the largest Chinese enclave outside Asia. Visit its exotic shops, food markets, restaurants, and temples.",
+              "address": "Stockton St and Clay St, San Francisco CA"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "name": "Night",
+            "description": "Enjoy the SF nightlife",
+            "position": 3,
+            "item": {
+              "@type": [
+                "TouristAttraction"
+              ],
+              "name": "The Mission",
+              "description": "The Mission District offers visitors an unparalleled menu of food and flavors as well as venues for fans of underground indie rock, funk, soul and jazz.",
+              "address": "Mission St and 19th St, San Francisco CA"
+            }
+          }
+        ]
+      },
+      {
+        "@type": ["ItemList","ListItem"],
+        "name": "Sunday",
+        "position":2,
+        "numberOfItems": 2,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "name": "Morning",
+            "description":"Spend your morning shopping in one of the best spots in America.",
+            "position": 1,
+            "item": {
+              "@type": [
+                "TouristAttraction"
+              ],
+              "name": "Union Street Area",
+              "description": "Union Street is the major commercial hub of San Francisco. You will find most fashion labels there.",
+              "address":"Union St and Buchanan St, San Francisco CA"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "name": "Afternoon",
+            "description": "Take your plane back home.",
+            "position": 2,
+            "item": {
+              "@type": [
+                "Airport"
+              ],
+              "name": "San Francisco Airport"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

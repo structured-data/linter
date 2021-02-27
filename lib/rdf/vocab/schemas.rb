@@ -454,6 +454,13 @@ module RDF::Vocab
       label: "BoatTrip".freeze,
       subClassOf: "https://schema.org/Trip".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :BodyMeasurementTypeEnumeration,
+      comment: "Enumerates types (or dimensions) of a person's body measurements, for example for fitting of clothes.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementTypeEnumeration".freeze,
+      subClassOf: "https://schema.org/MeasurementTypeEnumeration".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :BodyOfWater,
       comment: "A body of water, such as a sea, ocean, or lake.".freeze,
       label: "BodyOfWater".freeze,
@@ -761,7 +768,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Place".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :Claim,
-      comment: "A [[Claim]] in Schema.org represents a specific, factually-oriented claim that could be the [[itemReviewed]] in a [[ClaimReview]]. The content of a claim can be summarized with the [[text]] property. Variations on well known claims can have their common identity indicated via [[sameAs]] links, and summarized with a [[name]]. Ideally, a [[Claim]] description includes enough contextual information to minimize the risk of ambiguity or inclarity. In practice, many claims are better understood in the context in which they appear or the interpretations provided by claim reviews.\n\n  Beyond [[ClaimReview]], the Claim type can be associated with related creative works - for example a [[ScholaryArticle]] or [[Question]] might be [[about]] some [[Claim]].\n\n  At this time, Schema.org does not define any types of relationship between claims. This is a natural area for future exploration.\n  ".freeze,
+      comment: "A [[Claim]] in Schema.org represents a specific, factually-oriented claim that could be the [[itemReviewed]] in a [[ClaimReview]]. The content of a claim can be summarized with the [[text]] property. Variations on well known claims can have their common identity indicated via [[sameAs]] links, and summarized with a [[name]]. Ideally, a [[Claim]] description includes enough contextual information to minimize the risk of ambiguity or inclarity. In practice, many claims are better understood in the context in which they appear or the interpretations provided by claim reviews.\n\n  Beyond [[ClaimReview]], the Claim type can be associated with related creative works - for example a [[ScholarlyArticle]] or [[Question]] might be [[about]] some [[Claim]].\n\n  At this time, Schema.org does not define any types of relationship between claims. This is a natural area for future exploration.\n  ".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1828".freeze,
       label: "Claim".freeze,
@@ -1372,7 +1379,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Quantity".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :EUEnergyEfficiencyEnumeration,
-      comment: "Enumerates the EU energy efficiency classes A-G as well as A+, A++, and A+++ as defined in EU directive 2017/1369".freeze,
+      comment: "Enumerates the EU energy efficiency classes A-G as well as A+, A++, and A+++ as defined in EU directive 2017/1369.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyEnumeration".freeze,
@@ -1483,7 +1490,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Quantity".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :EnergyConsumptionDetails,
-      comment: "EnergyConsumptionDetails represents information related to the energy efficiency of a product that consumes energy. The information that can be provided is based on international regulations such as for example [EU directive 2017/1369](https://eur-lex.europa.eu/eli/reg/2017/1369/oj) for energy labeling and the [Energy labeling rule](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/energy-water-use-labeling-consumer) under the Energy Policy and Conservation Act (EPCA) in the US".freeze,
+      comment: "EnergyConsumptionDetails represents information related to the energy efficiency of a product that consumes energy. The information that can be provided is based on international regulations such as for example [EU directive 2017/1369](https://eur-lex.europa.eu/eli/reg/2017/1369/oj) for energy labeling and the [Energy labeling rule](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/energy-water-use-labeling-consumer) under the Energy Policy and Conservation Act (EPCA) in the US.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EnergyConsumptionDetails".freeze,
@@ -1497,7 +1504,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Enumeration".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :EnergyStarEnergyEfficiencyEnumeration,
-      comment: "Used to indicate whether a product is EnergyStar certified".freeze,
+      comment: "Used to indicate whether a product is EnergyStar certified.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EnergyStarEnergyEfficiencyEnumeration".freeze,
@@ -2208,7 +2215,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Intangible".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :LearningResource,
-      comment: "The LearningResource type can be used to indicate [[CreativeWork]]s (whether physical or digital) that have a particular and explicit orientation towards learning, education, skill acquisition, and other educational purposes.\n\n[[LearningResource]] is expected to be used as an addition to a primary type such as [[Book]], [[Video]], [[Product]] etc.\n\n[[EducationEvent]] serves a similar purpose for event-like things (e.g. a [[Trip]]). A [[LearningResource]] may be created as a result of an [[EducationEvent]], for example by recording one.".freeze,
+      comment: "The LearningResource type can be used to indicate [[CreativeWork]]s (whether physical or digital) that have a particular and explicit orientation towards learning, education, skill acquisition, and other educational purposes.\n\n[[LearningResource]] is expected to be used as an addition to a primary type such as [[Book]], [[VideoObject]], [[Product]] etc.\n\n[[EducationEvent]] serves a similar purpose for event-like things (e.g. a [[Trip]]). A [[LearningResource]] may be created as a result of an [[EducationEvent]], for example by recording one.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1401".freeze,
       label: "LearningResource".freeze,
@@ -2411,13 +2418,20 @@ module RDF::Vocab
       label: "MaximumDoseSchedule".freeze,
       subClassOf: "https://schema.org/DoseSchedule".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :MeasurementTypeEnumeration,
+      comment: "Enumeration of common measurement types (or dimensions), for example \"chest\" for a person, \"inseam\" for pants, \"gauge\" for screws, or \"wheel\" for bicycles.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "MeasurementTypeEnumeration".freeze,
+      subClassOf: "https://schema.org/Enumeration".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :MediaGallery,
       comment: "Web page type: Media gallery page. A mixed-media page that can contains media such as images, videos, and other multimedia.".freeze,
       label: "MediaGallery".freeze,
       subClassOf: "https://schema.org/CollectionPage".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :MediaManipulationRatingEnumeration,
-      comment: "(editorial work in progress, this definition is incomplete and unreviewed) MediaManipulationRatingEnumeration classifies a number of ways in which a media item (video, image, audio) can be manipulated, taking into account the context within which they are published or presented.".freeze,
+      comment: " Codes for use with the [[mediaAuthenticityCategory]] property, indicating the authenticity of a media object (in the context of how it was published or shared). In general these codes are not mutually exclusive, although some combinations (such as 'original' versus 'transformed', 'edited' and 'staged') would be contradictory if applied in the same [[MediaReview]]. Note that the application of these codes is with regard to a piece of media shared or published in a particular context.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
       label: "MediaManipulationRatingEnumeration".freeze,
@@ -2429,7 +2443,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/CreativeWork".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :MediaReview,
-      comment: "(editorial work in progress, this definition is incomplete and unreviewed)\n    A [[MediaReview]] is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.\n    For more general reviews of media in the broader sense, use [[UserReview]], [[CriticReview]] or other [[Review]] types.".freeze,
+      comment: "A [[MediaReview]] is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.\n    For more general reviews of media in the broader sense, use [[UserReview]], [[CriticReview]] or other [[Review]] types. This definition is\n    a work in progress. While the [[MediaManipulationRatingEnumeration]] list reflects significant community review amongst fact-checkers and others working\n    to combat misinformation, the specific structures for representing media objects, their versions and publication context, is still evolving. Similarly, best practices for the relationship between [[MediaReview]] and [[ClaimReview]] markup has not yet been finalized.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
       label: "MediaReview".freeze,
@@ -2788,7 +2802,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/TransferAction".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :MortgageLoan,
-      comment: "A loan in which property or real estate is used as collateral. (A loan securitized against some real estate.)".freeze,
+      comment: "A loan in which property or real estate is used as collateral. (A loan securitized against some real estate).".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO".freeze, "https://github.com/schemaorg/schemaorg/issues/1253".freeze],
       label: "MortgageLoan".freeze,
@@ -3041,6 +3055,13 @@ module RDF::Vocab
       label: "Occupation".freeze,
       subClassOf: "https://schema.org/Intangible".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :OccupationalExperienceRequirements,
+      comment: "Indicates employment-related experience requirements, e.g. [[monthsOfExperience]].".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2681".freeze,
+      label: "OccupationalExperienceRequirements".freeze,
+      subClassOf: "https://schema.org/Intangible".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :OccupationalTherapy,
       comment: "A treatment of people with physical, emotional, or social problems, using purposeful activity to help them overcome or learn to deal with their problems.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
@@ -3083,7 +3104,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Enumeration".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :OfferShippingDetails,
-      comment: "OfferShippingDetails represents information about shipping destinations.\n\nMultiple of these entities can be used to represent different shipping rates for different destinations:\n\nOne entity for Alaska/Hawaii. A different one for continental US.A different one for all France.\n\nMultiple of these entities can be used to represent different shipping costs and delivery times.\n\nTwo entities that are identical but differ in rate and time:\n\ne.g. Cheaper and slower: $5 in 5-7days\nor Fast and expensive: $15 in 1-2 days\n".freeze,
+      comment: "OfferShippingDetails represents information about shipping destinations.\n\nMultiple of these entities can be used to represent different shipping rates for different destinations:\n\nOne entity for Alaska/Hawaii. A different one for continental US.A different one for all France.\n\nMultiple of these entities can be used to represent different shipping costs and delivery times.\n\nTwo entities that are identical but differ in rate and time:\n\ne.g. Cheaper and slower: $5 in 5-7days\nor Fast and expensive: $15 in 1-2 days.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506".freeze,
       label: "OfferShippingDetails".freeze,
@@ -3850,7 +3871,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/StatusEnumeration".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :ReserveAction,
-      comment: "Reserving a concrete object.\\n\\nRelated actions:\\n\\n* [[ScheduleAction]]</a>: Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a hotel) towards a time slot / spatial allocation.".freeze,
+      comment: "Reserving a concrete object.\\n\\nRelated actions:\\n\\n* [[ScheduleAction]]: Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a hotel) towards a time slot / spatial allocation.".freeze,
       label: "ReserveAction".freeze,
       subClassOf: "https://schema.org/PlanAction".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
@@ -4045,7 +4066,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/TransferAction".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :Series,
-      comment: "\n          A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also [[CreativeWorkSeries]], [[EventSeries]].".freeze,
+      comment: "A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also [[CreativeWorkSeries]], [[EventSeries]].".freeze,
       label: "Series".freeze,
       subClassOf: "https://schema.org/Intangible".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
@@ -4112,6 +4133,27 @@ module RDF::Vocab
       label: "SiteNavigationElement".freeze,
       subClassOf: "https://schema.org/WebPageElement".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :SizeGroupEnumeration,
+      comment: "Enumerates common size groups for various product categories.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "SizeGroupEnumeration".freeze,
+      subClassOf: "https://schema.org/Enumeration".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :SizeSpecification,
+      comment: "Size related properties of a product, typically a size code ([[name]]) and optionally a [[sizeSystem]], [[sizeGroup]], and product measurements ([[hasMeasurement]]). In addition, the intended audience can be defined through [[suggestedAge]], [[suggestedGender]], and suggested body measurements ([[suggestedMeasurement]]).".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "SizeSpecification".freeze,
+      subClassOf: "https://schema.org/QualitativeValue".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :SizeSystemEnumeration,
+      comment: "Enumerates common size systems for different categories of products, for example \"EN-13402\" or \"UK\" for wearables or \"Imperial\" for screws.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "SizeSystemEnumeration".freeze,
+      subClassOf: "https://schema.org/Enumeration".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :SkiResort,
       comment: "A ski resort.".freeze,
       label: "SkiResort".freeze,
@@ -4157,7 +4199,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Intangible".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :SpecialAnnouncement,
-      comment: "A SpecialAnnouncement combines a simple date-stamped textual information update\n      with contextualized Web links and other structured data.  It represents an information update made by a\n      locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,\n      local government.\n\nFor work in progress guidelines on Coronavirus-related markup see [this doc](https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#).\n\nThe motivating scenario for SpecialAnnouncement is the [Coronavirus pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic), and the initial vocabulary is oriented to this urgent situation. Schema.org\nexpect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our\nusual [Github entry](https://github.com/schemaorg/schemaorg/issues/2490), feedback comments can also be provided in [this document](https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#).\n\n\nWhile this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like [CAP](https://en.wikipedia.org/wiki/Common_Alerting_Protocol), although there may be overlaps. The intent is to cover\nthe kinds of everyday practical information being posted to existing websites during an emergency situation.\n\nSeveral kinds of information can be provided:\n\nWe encourage the provision of \"name\", \"text\", \"datePosted\", \"expires\" (if appropriate), \"category\" and\n\"url\" as a simple baseline. It is important to provide a value for \"category\" where possible, most ideally as a well known\nURL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be \"https://en.wikipedia.org/w/index.php?title=2019-20\\_coronavirus\\_pandemic\" or \"https://www.wikidata.org/wiki/Q81068910\".\n\nFor many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a [[WebContent]] type, and provide the url as a property of that, alongside at least a simple \"[[text]]\" summary of the page. It is\nunlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.\n\nWe expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, [[openingHours]], [[Event]], [[FAQPage]] etc. By linking to those pages from a [[SpecialAnnouncement]] you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the [[category]] property of the [[SpecialAnnouncement]].\n\nMany [[SpecialAnnouncement]]s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific [[LocalBusiness]]es and [[CivicStructures]]. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].\n\nThe [[about]] property can be used to indicate entities that are the focus of the announcement. We now recommend using [[about]] only\nfor representing non-location entities (e.g. a [[Course]] or a [[RadioStation]]). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.\n\nThe basic content of [[SpecialAnnouncement]] is similar to that of an [RSS](https://en.wikipedia.org/wiki/RSS) or [Atom](https://en.wikipedia.org/wiki/Atom_(Web_standard)) feed. For publishers without such feeds, basic feed-like information can be shared by posting\n[[SpecialAnnouncement]] updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed\nwith the [[webFeed]] property. This can be a simple URL, or an inline [[DataFeed]] object, with [[encodingFormat]] providing\nmedia type information e.g. \"application/rss+xml\" or \"application/atom+xml\".\n".freeze,
+      comment: "A SpecialAnnouncement combines a simple date-stamped textual information update\n      with contextualized Web links and other structured data.  It represents an information update made by a\n      locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,\n      local government.\n\nFor work in progress guidelines on Coronavirus-related markup see [this doc](https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#).\n\nThe motivating scenario for SpecialAnnouncement is the [Coronavirus pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic), and the initial vocabulary is oriented to this urgent situation. Schema.org\nexpect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our\nusual [Github entry](https://github.com/schemaorg/schemaorg/issues/2490), feedback comments can also be provided in [this document](https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#).\n\n\nWhile this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like [CAP](https://en.wikipedia.org/wiki/Common_Alerting_Protocol), although there may be overlaps. The intent is to cover\nthe kinds of everyday practical information being posted to existing websites during an emergency situation.\n\nSeveral kinds of information can be provided:\n\nWe encourage the provision of \"name\", \"text\", \"datePosted\", \"expires\" (if appropriate), \"category\" and\n\"url\" as a simple baseline. It is important to provide a value for \"category\" where possible, most ideally as a well known\nURL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be \"https://en.wikipedia.org/w/index.php?title=2019-20\\_coronavirus\\_pandemic\" or \"https://www.wikidata.org/wiki/Q81068910\".\n\nFor many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a [[WebContent]] type, and provide the url as a property of that, alongside at least a simple \"[[text]]\" summary of the page. It is\nunlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.\n\nWe expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, [[openingHours]], [[Event]], [[FAQPage]] etc. By linking to those pages from a [[SpecialAnnouncement]] you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the [[category]] property of the [[SpecialAnnouncement]].\n\nMany [[SpecialAnnouncement]]s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific [[LocalBusiness]]es and [[CivicStructure]]s. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].\n\nThe [[about]] property can be used to indicate entities that are the focus of the announcement. We now recommend using [[about]] only\nfor representing non-location entities (e.g. a [[Course]] or a [[RadioStation]]). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.\n\nThe basic content of [[SpecialAnnouncement]] is similar to that of an [RSS](https://en.wikipedia.org/wiki/RSS) or [Atom](https://en.wikipedia.org/wiki/Atom_(Web_standard)) feed. For publishers without such feeds, basic feed-like information can be shared by posting\n[[SpecialAnnouncement]] updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed\nwith the [[webFeed]] property. This can be a simple URL, or an inline [[DataFeed]] object, with [[encodingFormat]] providing\nmedia type information e.g. \"application/rss+xml\" or \"application/atom+xml\".\n".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2490".freeze,
       label: "SpecialAnnouncement".freeze,
@@ -4214,7 +4256,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/AdministrativeArea".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :StatisticalPopulation,
-      comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California, would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constrainingProperties]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ".freeze,
+      comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California, would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constrainingProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291".freeze,
       label: "StatisticalPopulation".freeze,
@@ -4432,7 +4474,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Place".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :TouristDestination,
-      comment: "A tourist destination. In principle any [[Place]] can be a [[TouristDestination]] from a [[City]], [[Region]] or [[Country]] to an [[AmusementPark]] or [[Hotel]]. This Type can be used on its own to describe a general [[TouristDestination]], or be used as an [[additionalType]] to add tourist relevant properties to any other [[Place]].  A [[TouristDestination]] is defined as a [[Place]] that contains, or is colocated with, one or more [[TouristAttraction]]s, often linked by a similar theme or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.\n  (See examples below).".freeze,
+      comment: "A tourist destination. In principle any [[Place]] can be a [[TouristDestination]] from a [[City]], Region or [[Country]] to an [[AmusementPark]] or [[Hotel]]. This Type can be used on its own to describe a general [[TouristDestination]], or be used as an [[additionalType]] to add tourist relevant properties to any other [[Place]].  A [[TouristDestination]] is defined as a [[Place]] that contains, or is colocated with, one or more [[TouristAttraction]]s, often linked by a similar theme or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.\n  (See examples below).".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it".freeze, "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism".freeze, "https://github.com/schemaorg/schemaorg/issues/1810".freeze],
       label: "TouristDestination".freeze,
@@ -4766,6 +4808,27 @@ module RDF::Vocab
       label: "WearAction".freeze,
       subClassOf: "https://schema.org/UseAction".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :WearableMeasurementTypeEnumeration,
+      comment: "Enumerates common types of measurement for wearables products.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementTypeEnumeration".freeze,
+      subClassOf: "https://schema.org/MeasurementTypeEnumeration".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :WearableSizeGroupEnumeration,
+      comment: "Enumerates common size groups (also known as \"size types\") for wearable products.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupEnumeration".freeze,
+      subClassOf: "https://schema.org/SizeGroupEnumeration".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
+    term :WearableSizeSystemEnumeration,
+      comment: "Enumerates common size systems specific for wearable products".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemEnumeration".freeze,
+      subClassOf: "https://schema.org/SizeSystemEnumeration".freeze,
+      type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :WebAPI,
       comment: "An application programming interface accessible over Web/Internet technologies.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
@@ -4779,7 +4842,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/SoftwareApplication".freeze,
       type: "http://www.w3.org/2000/01/rdf-schema#Class".freeze
     term :WebContent,
-      comment: "WebContent is a type representing all [[WebPage]], [[WebSite]] and [[WebPageElement]] content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts is not always important or obvious. The  [[WebContent]] type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types [[WebPage]], [[WebSite]] and [[WebPageElement]] will eventually be declared as subtypes of [[WebContent]].)\n  ".freeze,
+      comment: "WebContent is a type representing all [[WebPage]], [[WebSite]] and [[WebPageElement]] content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts is not always important or obvious. The  [[WebContent]] type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types [[WebPage]], [[WebSite]] and [[WebPageElement]] will eventually be declared as subtypes of [[WebContent]]).".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2358".freeze,
       label: "WebContent".freeze,
@@ -5834,7 +5897,7 @@ module RDF::Vocab
       label: "beforeMedia".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :beneficiaryBank,
-      comment: "A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary".freeze,
+      comment: "A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/MoneyTransfer".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/BankOrCreditUnion".freeze, "https://schema.org/Text".freeze],
@@ -5869,7 +5932,7 @@ module RDF::Vocab
       label: "billingAddress".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :billingDuration,
-      comment: "Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan. Type can be either a Duration or a Number (in which case the unit of measurement, for example month, is specified by the unitCode property)".freeze,
+      comment: "Specifies for how long this price (or price component) will be billed. Can be used, for example, to model the contractual duration of a subscription or payment plan. Type can be either a Duration or a Number (in which case the unit of measurement, for example month, is specified by the unitCode property).".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/UnitPriceSpecification".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/Duration".freeze, "https://schema.org/Number".freeze, "https://schema.org/QuantitativeValue".freeze],
@@ -5890,7 +5953,7 @@ module RDF::Vocab
       label: "billingPeriod".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :billingStart,
-      comment: "Specifies after how much time this price (or price component) becomes valid and billing starts. Can be used, for example, to model a price increase after the first year of a subscription. The unit of measurement is specified by the unitCode property".freeze,
+      comment: "Specifies after how much time this price (or price component) becomes valid and billing starts. Can be used, for example, to model a price increase after the first year of a subscription. The unit of measurement is specified by the unitCode property.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/UnitPriceSpecification".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/Number".freeze,
@@ -6012,7 +6075,7 @@ module RDF::Vocab
       "https://schema.org/domainIncludes": "https://schema.org/Nerve".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/AnatomicalStructure".freeze,
-      "https://schema.org/supersededBy": ["https://schema.org/arterialBranch".freeze, "https://schema.org/nerveBranch".freeze, "https://schema.org/veinBranch".freeze],
+      "https://schema.org/supersededBy": "https://schema.org/arterialBranch".freeze,
       label: "branch".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :branchCode,
@@ -6092,7 +6155,7 @@ module RDF::Vocab
       label: "broadcastServiceTier".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :broadcastSignalModulation,
-      comment: "The modulation (e.g. FM, AM, etc) used by a particular broadcast service".freeze,
+      comment: "The modulation (e.g. FM, AM, etc) used by a particular broadcast service.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/BroadcastFrequencySpecification".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/QualitativeValue".freeze, "https://schema.org/Text".freeze],
@@ -6172,7 +6235,7 @@ module RDF::Vocab
       label: "byArtist".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :byDay,
-      comment: "Defines the day(s) of the week on which a recurring [[Event]] takes place. May be specified using either [[DayOfWeek]], or alternatively [[Text]] conforming to iCal's syntax for byDay recurrence rules".freeze,
+      comment: "Defines the day(s) of the week on which a recurring [[Event]] takes place. May be specified using either [[DayOfWeek]], or alternatively [[Text]] conforming to iCal's syntax for byDay recurrence rules.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/Schedule".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/DayOfWeek".freeze, "https://schema.org/Text".freeze],
@@ -6744,7 +6807,7 @@ module RDF::Vocab
       label: "costCategory".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :costCurrency,
-      comment: "The currency (in 3-letter of the drug cost. See: http://en.wikipedia.org/wiki/ISO_4217 ".freeze,
+      comment: "The currency (in 3-letter of the drug cost. See: http://en.wikipedia.org/wiki/ISO_4217. ".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/DrugCost".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/Text".freeze,
@@ -7521,7 +7584,7 @@ module RDF::Vocab
       label: "dropoffTime".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :drug,
-      comment: "Specifying a drug or medicine used in a medication procedure".freeze,
+      comment: "Specifying a drug or medicine used in a medication procedure.".freeze,
       "https://schema.org/domainIncludes": ["https://schema.org/DrugClass".freeze, "https://schema.org/MedicalCondition".freeze, "https://schema.org/Patient".freeze, "https://schema.org/TherapeuticProcedure".freeze],
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/Drug".freeze,
@@ -7558,7 +7621,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :duration,
       comment: "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).".freeze,
-      "https://schema.org/domainIncludes": ["https://schema.org/Audiobook".freeze, "https://schema.org/Event".freeze, "https://schema.org/MediaObject".freeze, "https://schema.org/Movie".freeze, "https://schema.org/MusicRecording".freeze, "https://schema.org/MusicRelease".freeze, "https://schema.org/QuantitativeValueDistribution".freeze, "https://schema.org/Schedule".freeze],
+      "https://schema.org/domainIncludes": ["https://schema.org/Audiobook".freeze, "https://schema.org/Episode".freeze, "https://schema.org/Event".freeze, "https://schema.org/MediaObject".freeze, "https://schema.org/Movie".freeze, "https://schema.org/MusicRecording".freeze, "https://schema.org/MusicRelease".freeze, "https://schema.org/QuantitativeValueDistribution".freeze, "https://schema.org/Schedule".freeze],
       "https://schema.org/rangeIncludes": "https://schema.org/Duration".freeze,
       "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1457".freeze, "https://github.com/schemaorg/schemaorg/issues/1698".freeze],
       label: "duration".freeze,
@@ -8099,10 +8162,18 @@ module RDF::Vocab
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1741".freeze,
       label: "expectsAcceptanceOf".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
+    property :experienceInPlaceOfEducation,
+      comment: "Indicates whether a [[JobPosting]] will accept experience (as indicated by [[OccupationalExperienceRequirements]]) in place of its formal educational qualifications (as indicated by [[educationRequirements]]). If true, indicates that satisfying one of these requirements is sufficient.".freeze,
+      "https://schema.org/domainIncludes": "https://schema.org/JobPosting".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/rangeIncludes": "https://schema.org/Boolean".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2681".freeze,
+      label: "experienceInPlaceOfEducation".freeze,
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :experienceRequirements,
       comment: "Description of skills and experience needed for the position or Occupation.".freeze,
       "https://schema.org/domainIncludes": ["https://schema.org/JobPosting".freeze, "https://schema.org/Occupation".freeze],
-      "https://schema.org/rangeIncludes": "https://schema.org/Text".freeze,
+      "https://schema.org/rangeIncludes": ["https://schema.org/OccupationalExperienceRequirements".freeze, "https://schema.org/Text".freeze],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1698".freeze,
       label: "experienceRequirements".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
@@ -8602,7 +8673,7 @@ module RDF::Vocab
       subPropertyOf: ["https://schema.org/gtin".freeze, "https://schema.org/identifier".freeze],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :gtin8,
-      comment: "The [GTIN-8](http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx) code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.".freeze,
+      comment: "The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.".freeze,
       "https://schema.org/domainIncludes": ["https://schema.org/Demand".freeze, "https://schema.org/Offer".freeze, "https://schema.org/Product".freeze],
       "https://schema.org/rangeIncludes": "https://schema.org/Text".freeze,
       "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms".freeze,
@@ -8706,7 +8777,7 @@ module RDF::Vocab
       label: "hasDriveThroughService".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :hasEnergyConsumptionDetails,
-      comment: "Defines the energy efficiency Category (also known as \"class\" or \"rating\") for a product according to an international energy efficiency standard".freeze,
+      comment: "Defines the energy efficiency Category (also known as \"class\" or \"rating\") for a product according to an international energy efficiency standard.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/Product".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/EnergyConsumptionDetails".freeze,
@@ -8714,7 +8785,7 @@ module RDF::Vocab
       label: "hasEnergyConsumptionDetails".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :hasEnergyEfficiencyCategory,
-      comment: "Defines the energy efficiency Category (which could be either a rating out of range of values or a yes/no certification) for a product according to an international energy efficiency standard".freeze,
+      comment: "Defines the energy efficiency Category (which could be either a rating out of range of values or a yes/no certification) for a product according to an international energy efficiency standard.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/EnergyConsumptionDetails".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/EnergyEfficiencyEnumeration".freeze,
@@ -8734,6 +8805,14 @@ module RDF::Vocab
       "https://schema.org/domainIncludes": "https://schema.org/Place".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/Map".freeze, "https://schema.org/URL".freeze],
       label: "hasMap".freeze,
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
+    property :hasMeasurement,
+      comment: "A product measurement, for example the inseam of pants, the wheel size of a bicycle, or the gauge of a screw. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.".freeze,
+      "https://schema.org/domainIncludes": ["https://schema.org/Offer".freeze, "https://schema.org/Product".freeze, "https://schema.org/SizeSpecification".freeze],
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "hasMeasurement".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :hasMenu,
       comment: "Either the actual menu as a structured representation, as text, or a URL of the menu.".freeze,
@@ -9213,7 +9292,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :ineligibleRegion,
       comment: "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ".freeze,
-      "https://schema.org/domainIncludes": ["https://schema.org/ActionAccessSpecification".freeze, "https://schema.org/DeliveryChargeSpecification".freeze, "https://schema.org/Demand".freeze, "https://schema.org/Offer".freeze],
+      "https://schema.org/domainIncludes": ["https://schema.org/ActionAccessSpecification".freeze, "https://schema.org/DeliveryChargeSpecification".freeze, "https://schema.org/Demand".freeze, "https://schema.org/MediaObject".freeze, "https://schema.org/Offer".freeze],
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/GeoShape".freeze, "https://schema.org/Place".freeze, "https://schema.org/Text".freeze],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2242".freeze,
@@ -9399,7 +9478,7 @@ module RDF::Vocab
       label: "isGift".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :isLiveBroadcast,
-      comment: "True is the broadcast is of a live event.".freeze,
+      comment: "True if the broadcast is of a live event.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/BroadcastEvent".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/Boolean".freeze,
       label: "isLiveBroadcast".freeze,
@@ -10118,7 +10197,7 @@ module RDF::Vocab
       comment: "A marginOfError for an [[Observation]].".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/Observation".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
-      "https://schema.org/rangeIncludes": "https://schema.org/DateTime".freeze,
+      "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291".freeze,
       label: "marginOfError".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
@@ -10438,6 +10517,14 @@ module RDF::Vocab
       "https://schema.org/rangeIncludes": ["https://schema.org/MonetaryAmount".freeze, "https://schema.org/Number".freeze],
       "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO".freeze, "https://github.com/schemaorg/schemaorg/issues/1253".freeze],
       label: "monthlyMinimumRepaymentAmount".freeze,
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
+    property :monthsOfExperience,
+      comment: "Indicates the minimal number of months of experience required for a position.".freeze,
+      "https://schema.org/domainIncludes": "https://schema.org/OccupationalExperienceRequirements".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/rangeIncludes": "https://schema.org/Number".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2681".freeze,
+      label: "monthsOfExperience".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :mpn,
       comment: "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.".freeze,
@@ -12222,7 +12309,7 @@ module RDF::Vocab
       label: "repeatCount".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :repeatFrequency,
-      comment: "Defines the frequency at which [[Events]] will occur according to a schedule [[Schedule]]. The intervals between\n      events should be defined as a [[Duration]] of time.".freeze,
+      comment: "Defines the frequency at which [[Event]]s will occur according to a schedule [[Schedule]]. The intervals between\n      events should be defined as a [[Duration]] of time.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/Schedule".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/Duration".freeze, "https://schema.org/Text".freeze],
@@ -12555,7 +12642,7 @@ module RDF::Vocab
       label: "scheduledTime".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :schemaVersion,
-      comment: "Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as https://schema.org/version/2.0/ if precise indication of schema version was required by some application. ".freeze,
+      comment: "Indicates (by URL or string) a particular version of a schema used in some CreativeWork. This property was created primarily to\n    indicate the use of a specific schema.org release, e.g. ```10.0``` as a simple string, or more explicitly via URL, ```https://schema.org/docs/releases.html#v10.0```. There may be situations in which other schemas might usefully be referenced this way, e.g. ```http://dublincore.org/specifications/dublin-core/dces/1999-07-02/``` but this has not been carefully explored in the community.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/CreativeWork".freeze,
       "https://schema.org/rangeIncludes": ["https://schema.org/Text".freeze, "https://schema.org/URL".freeze],
       label: "schemaVersion".freeze,
@@ -12904,12 +12991,28 @@ module RDF::Vocab
       label: "significantLinks".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :size,
-      comment: "A standardized size of a product or creative work, often simplifying richer information into a simple textual string, either through referring to named sizes or (in the case of product markup), by adopting conventional simplifications. Use of QuantitativeValue with a unitCode or unitText can add more structure; in other cases, the /width, /height, /depth and /weight properties may be more applicable. ".freeze,
+      comment: "A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a  QuantitativeValue with a unitCode, or a comprehensive and structured [[SizeSpecification]]; in other cases, the [[width]], [[height]], [[depth]] and [[weight]] properties may be more applicable. ".freeze,
       "https://schema.org/domainIncludes": ["https://schema.org/CreativeWork".freeze, "https://schema.org/Product".freeze],
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
-      "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm".freeze, "https://schema.org/QuantitativeValue".freeze, "https://schema.org/Text".freeze],
+      "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm".freeze, "https://schema.org/QuantitativeValue".freeze, "https://schema.org/SizeSpecification".freeze, "https://schema.org/Text".freeze],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1797".freeze,
       label: "size".freeze,
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
+    property :sizeGroup,
+      comment: "The size group (also known as \"size type\") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example \"men's big and tall\", \"petite maternity\" or \"regular\"".freeze,
+      "https://schema.org/domainIncludes": "https://schema.org/SizeSpecification".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/rangeIncludes": ["https://schema.org/SizeGroupEnumeration".freeze, "https://schema.org/Text".freeze],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "sizeGroup".freeze,
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
+    property :sizeSystem,
+      comment: "The size system used to identify a product's size. Typically either a standard (for example, \"GS1\" or \"ISO-EN13402\"), country code (for example \"US\" or \"JP\"), or a measuring system (for example \"Metric\" or \"Imperial\").".freeze,
+      "https://schema.org/domainIncludes": "https://schema.org/SizeSpecification".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/rangeIncludes": ["https://schema.org/SizeSystemEnumeration".freeze, "https://schema.org/Text".freeze],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "sizeSystem".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :skills,
       comment: "A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is desired or required to fulfill this role or to work in this occupation.".freeze,
@@ -13310,6 +13413,14 @@ module RDF::Vocab
       "https://schema.org/rangeIncludes": "https://schema.org/Mass".freeze,
       label: "sugarContent".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
+    property :suggestedAge,
+      comment: "The age or age range for the intended audience or person, for example 3-12 months for infants, 1-5 years for toddlers.".freeze,
+      "https://schema.org/domainIncludes": ["https://schema.org/PeopleAudience".freeze, "https://schema.org/SizeSpecification".freeze],
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "suggestedAge".freeze,
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :suggestedAnswer,
       comment: "An answer (possibly one of several, possibly incorrect) to a Question, e.g. on a Question/Answer site.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/Question".freeze,
@@ -13317,19 +13428,27 @@ module RDF::Vocab
       label: "suggestedAnswer".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :suggestedGender,
-      comment: "The gender of the person or audience.".freeze,
-      "https://schema.org/domainIncludes": "https://schema.org/PeopleAudience".freeze,
-      "https://schema.org/rangeIncludes": "https://schema.org/Text".freeze,
+      comment: "The suggested gender of the intended person or audience, for example \"male\", \"female\", or \"unisex\".".freeze,
+      "https://schema.org/domainIncludes": ["https://schema.org/PeopleAudience".freeze, "https://schema.org/SizeSpecification".freeze],
+      "https://schema.org/rangeIncludes": ["https://schema.org/GenderType".freeze, "https://schema.org/Text".freeze],
       label: "suggestedGender".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :suggestedMaxAge,
-      comment: "Maximal age recommended for viewing content.".freeze,
+      comment: "Maximum recommended age in years for the audience or user.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/PeopleAudience".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/Number".freeze,
       label: "suggestedMaxAge".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
+    property :suggestedMeasurement,
+      comment: "A suggested range of body measurements for the intended audience or person, for example inseam between 32 and 34 inches or height between 170 and 190 cm. Typically found on a size chart for wearable products.".freeze,
+      "https://schema.org/domainIncludes": ["https://schema.org/PeopleAudience".freeze, "https://schema.org/SizeSpecification".freeze],
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "suggestedMeasurement".freeze,
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :suggestedMinAge,
-      comment: "Minimal age recommended for viewing content.".freeze,
+      comment: "Minimum recommended age in years for the audience or user.".freeze,
       "https://schema.org/domainIncludes": "https://schema.org/PeopleAudience".freeze,
       "https://schema.org/rangeIncludes": "https://schema.org/Number".freeze,
       label: "suggestedMinAge".freeze,
@@ -14029,9 +14148,9 @@ module RDF::Vocab
       label: "valuePattern".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
     property :valueReference,
-      comment: "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.".freeze,
+      comment: "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.".freeze,
       "https://schema.org/domainIncludes": ["https://schema.org/PropertyValue".freeze, "https://schema.org/QualitativeValue".freeze, "https://schema.org/QuantitativeValue".freeze],
-      "https://schema.org/rangeIncludes": ["https://schema.org/Enumeration".freeze, "https://schema.org/PropertyValue".freeze, "https://schema.org/QualitativeValue".freeze, "https://schema.org/QuantitativeValue".freeze, "https://schema.org/StructuredValue".freeze],
+      "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm".freeze, "https://schema.org/Enumeration".freeze, "https://schema.org/MeasurementTypeEnumeration".freeze, "https://schema.org/PropertyValue".freeze, "https://schema.org/QualitativeValue".freeze, "https://schema.org/QuantitativeValue".freeze, "https://schema.org/StructuredValue".freeze, "https://schema.org/Text".freeze],
       "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms".freeze,
       label: "valueReference".freeze,
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property".freeze
@@ -14385,7 +14504,7 @@ module RDF::Vocab
       label: "Abdomen".freeze,
       type: "https://schema.org/PhysicalExam".freeze
     term :ActivationFee,
-      comment: "Represents the activation fee part of the total price for an offered product, for example a cellphone contract".freeze,
+      comment: "Represents the activation fee part of the total price for an offered product, for example a cellphone contract.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2689".freeze,
       label: "ActivationFee".freeze,
@@ -14414,6 +14533,12 @@ module RDF::Vocab
       "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group".freeze,
       label: "AllWheelDriveConfiguration".freeze,
       type: "https://schema.org/DriveWheelConfigurationValue".freeze
+    term :AllergiesHealthAspect,
+      comment: "Content about the allergy-related aspects of a health topic.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2799".freeze,
+      label: "AllergiesHealthAspect".freeze,
+      type: "https://schema.org/HealthAspectEnumeration".freeze
     term :AnaerobicActivity,
       comment: "Physical activity that is of high-intensity which utilizes the anaerobic metabolism of the body.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
@@ -14433,12 +14558,6 @@ module RDF::Vocab
       comment: "Book format: Audiobook. This is an enumerated value for use with the bookFormat property. There is also a type 'Audiobook' in the bib extension which includes Audiobook specific properties.".freeze,
       label: "AudiobookFormat".freeze,
       type: "https://schema.org/BookFormatType".freeze
-    term :AuthenticContent,
-      comment: "AuthenticMediaObject: An unaltered image that is presented in an accurate way.".freeze,
-      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
-      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
-      label: "AuthenticContent".freeze,
-      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
     term :AuthoritativeLegalValue,
       comment: "Indicates that the publisher gives some special status to the publication of the document. (\"The Queens Printer\" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications). Something \"Authoritative\" is considered to be also [[OfficialLegalValue]]\".".freeze,
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-authoritative".freeze,
@@ -14451,6 +14570,10 @@ module RDF::Vocab
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "Ayurvedic".freeze,
       type: "https://schema.org/MedicineSystem".freeze
+    term :BackOrder,
+      comment: "Indicates that the item is available on back order.".freeze,
+      label: "BackOrder".freeze,
+      type: "https://schema.org/ItemAvailability".freeze
     term :Balance,
       comment: "Physical activity that is engaged to help maintain posture and balance.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
@@ -14468,6 +14591,84 @@ module RDF::Vocab
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2374".freeze,
       label: "BenefitsHealthAspect".freeze,
       type: "https://schema.org/HealthAspectEnumeration".freeze
+    term :BodyMeasurementArm,
+      comment: "Arm length (measured between arms/shoulder line intersection and the prominent wrist bone). Used, for example, to fit shirts.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementArm".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementBust,
+      comment: "Maximum girth of bust. Used, for example, to fit women's suits.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementBust".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementChest,
+      comment: "Maximum girth of chest. Used, for example, to fit men's suits.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementChest".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementFoot,
+      comment: "Foot length (measured between end of the most prominent toe and the most prominent part of the heel). Used, for example, to measure socks.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementFoot".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementHand,
+      comment: "Maximum hand girth (measured over the knuckles of the open right hand excluding thumb, fingers together). Used, for example, to fit gloves.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementHand".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementHead,
+      comment: "Maximum girth of head above the ears. Used, for example, to fit hats.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementHead".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementHeight,
+      comment: "Body height (measured between crown of head and soles of feet). Used, for example, to fit jackets.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementHeight".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementHips,
+      comment: "Girth of hips (measured around the buttocks). Used, for example, to fit skirts.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementHips".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementInsideLeg,
+      comment: "Inside leg (measured between crotch and soles of feet). Used, for example, to fit pants.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementInsideLeg".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementNeck,
+      comment: "Girth of neck. Used, for example, to fit shirts.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementNeck".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementUnderbust,
+      comment: "Girth of body just below the bust. Used, for example, to fit women's swimwear.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementUnderbust".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementWaist,
+      comment: "Girth of natural waistline (between hip bones and lower ribs). Used, for example, to fit pants.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementWaist".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
+    term :BodyMeasurementWeight,
+      comment: "Body weight. Used, for example, to measure pantyhose.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "BodyMeasurementWeight".freeze,
+      type: "https://schema.org/BodyMeasurementTypeEnumeration".freeze
     term :BroadcastRelease,
       comment: "BroadcastRelease.".freeze,
       "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
@@ -14527,7 +14728,7 @@ module RDF::Vocab
       label: "Chiropractic".freeze,
       type: "https://schema.org/MedicineSystem".freeze
     term :CleaningFee,
-      comment: "Represents the cleaning fee part of the total price for an offered product, for example a vacation rental".freeze,
+      comment: "Represents the cleaning fee part of the total price for an offered product, for example a vacation rental.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2689".freeze,
       label: "CleaningFee".freeze,
@@ -14551,7 +14752,7 @@ module RDF::Vocab
       label: "CommentPermission".freeze,
       type: "https://schema.org/DigitalDocumentPermissionType".freeze
     term :CommunityHealth,
-      comment: "A field of public health focusing on improving health characteristics of a defined population in relation with their geographical or environment areas".freeze,
+      comment: "A field of public health focusing on improving health characteristics of a defined population in relation with their geographical or environment areas.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "CommunityHealth".freeze,
       subClassOf: "https://schema.org/MedicalBusiness".freeze,
@@ -14595,6 +14796,12 @@ module RDF::Vocab
       comment: "Indicates that the item is damaged.".freeze,
       label: "DamagedCondition".freeze,
       type: "https://schema.org/OfferItemCondition".freeze
+    term :DecontextualizedContent,
+      comment: "Content coded 'missing context' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'missing context': Presenting unaltered video in an inaccurate manner that misrepresents the footage. For example, using incorrect dates or locations, altering the transcript or sharing brief clips from a longer video to mislead viewers. (A video rated 'original' can also be missing context.)\n\nFor an [[ImageObject]] to be 'missing context': Presenting unaltered images in an inaccurate manner to misrepresent the image and mislead the viewer. For example, a common tactic is using an unaltered image but saying it came from a different time or place. (An image rated 'original' can also be missing context.)\n\nFor an [[ImageObject]] with embedded text to be 'missing context': An unaltered image presented in an inaccurate manner to misrepresent the image and mislead the viewer. For example, a common tactic is using an unaltered image but saying it came from a different time or place. (An 'original' image with inaccurate text would generally fall in this category.)\n\nFor an [[AudioObject]] to be 'missing context': Unaltered audio presented in an inaccurate manner that misrepresents it. For example, using incorrect dates or locations, or sharing brief clips from a longer recording to mislead viewers. (Audio rated “original” can also be missing context.)\n".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "DecontextualizedContent".freeze,
+      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
     term :DefinitiveLegalValue,
       comment: "Indicates a document for which the text is conclusively what the law says and is legally binding. (e.g. The digitally signed version of an Official Journal.)\n  Something \"Definitive\" is considered to be also [[AuthoritativeLegalValue]].".freeze,
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-definitive".freeze,
@@ -14613,7 +14820,7 @@ module RDF::Vocab
       label: "Dentistry".freeze,
       type: "https://schema.org/MedicalSpecialty".freeze
     term :Dermatologic,
-      comment: "Something relating to or practicing dermatology".freeze,
+      comment: "Something relating to or practicing dermatology.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       "https://schema.org/supersededBy": "https://schema.org/Dermatology".freeze,
       label: "Dermatologic".freeze,
@@ -14634,7 +14841,7 @@ module RDF::Vocab
       label: "Diagnostic".freeze,
       type: "https://schema.org/MedicalDevicePurpose".freeze
     term :DietNutrition,
-      comment: "Dietetic and nutrition as a medical speciality.".freeze,
+      comment: "Dietetic and nutrition as a medical specialty.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "DietNutrition".freeze,
       subClassOf: "https://schema.org/MedicalBusiness".freeze,
@@ -14660,7 +14867,7 @@ module RDF::Vocab
       label: "Discontinued".freeze,
       type: "https://schema.org/ItemAvailability".freeze
     term :DistanceFee,
-      comment: "Represents the distance fee (e.g., price per km or mile) part of the total price for an offered product, for example a car rental".freeze,
+      comment: "Represents the distance fee (e.g., price per km or mile) part of the total price for an offered product, for example a car rental.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2689".freeze,
       label: "DistanceFee".freeze,
@@ -14671,7 +14878,7 @@ module RDF::Vocab
       label: "DoubleBlindedTrial".freeze,
       type: "https://schema.org/MedicalTrialDesign".freeze
     term :Downpayment,
-      comment: "Represents the downpayment (up-front payment) price component of the total price for an offered product that has additional installment payments".freeze,
+      comment: "Represents the downpayment (up-front payment) price component of the total price for an offered product that has additional installment payments.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2689".freeze,
       label: "Downpayment".freeze,
@@ -14692,61 +14899,61 @@ module RDF::Vocab
       label: "EPRelease".freeze,
       type: "https://schema.org/MusicAlbumReleaseType".freeze
     term :EUEnergyEfficiencyCategoryA,
-      comment: "Represents EU Energy Efficiency Class A as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class A as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryA".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryA1Plus,
-      comment: "Represents EU Energy Efficiency Class A+ as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class A+ as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryA1Plus".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryA2Plus,
-      comment: "Represents EU Energy Efficiency Class A++ as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class A++ as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryA2Plus".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryA3Plus,
-      comment: "Represents EU Energy Efficiency Class A+++ as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class A+++ as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryA3Plus".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryB,
-      comment: "Represents EU Energy Efficiency Class B as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class B as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryB".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryC,
-      comment: "Represents EU Energy Efficiency Class C as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class C as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryC".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryD,
-      comment: "Represents EU Energy Efficiency Class D as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class D as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryD".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryE,
-      comment: "Represents EU Energy Efficiency Class E as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class E as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryE".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryF,
-      comment: "Represents EU Energy Efficiency Class F as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class F as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryF".freeze,
       type: "https://schema.org/EUEnergyEfficiencyEnumeration".freeze
     term :EUEnergyEfficiencyCategoryG,
-      comment: "Represents EU Energy Efficiency Class G as defined in EU energy labeling regulations".freeze,
+      comment: "Represents EU Energy Efficiency Class G as defined in EU energy labeling regulations.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EUEnergyEfficiencyCategoryG".freeze,
@@ -14756,6 +14963,18 @@ module RDF::Vocab
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "Ear".freeze,
       type: "https://schema.org/PhysicalExam".freeze
+    term :EditedOrCroppedContent,
+      comment: "Content coded 'edited or cropped content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'edited or cropped content': The video has been edited or rearranged. This category applies to time edits, including editing multiple videos together to alter the story being told or editing out large portions from a video.\n\nFor an [[ImageObject]] to be 'edited or cropped content': Presenting a part of an image from a larger whole to mislead the viewer.\n\nFor an [[ImageObject]] with embedded text to be 'edited or cropped content': Presenting a part of an image from a larger whole to mislead the viewer.\n\nFor an [[AudioObject]] to be 'edited or cropped content': The audio has been edited or rearranged. This category applies to time edits, including editing multiple audio clips together to alter the story being told or editing out large portions from the recording.\n".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "EditedOrCroppedContent".freeze,
+      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
+    term :EffectivenessHealthAspect,
+      comment: "Content about the effectiveness-related aspects of a health topic.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2799".freeze,
+      label: "EffectivenessHealthAspect".freeze,
+      type: "https://schema.org/HealthAspectEnumeration".freeze
     term :Emergency,
       comment: "A specific branch of medical science that deals with the evaluation and initial treatment of medical conditions caused by trauma or sudden illness.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
@@ -14768,7 +14987,7 @@ module RDF::Vocab
       label: "Endocrine".freeze,
       type: "https://schema.org/MedicalSpecialty".freeze
     term :EnergyStarCertified,
-      comment: "Represents EnergyStar certification".freeze,
+      comment: "Represents EnergyStar certification.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2670".freeze,
       label: "EnergyStarCertified".freeze,
@@ -14913,6 +15132,12 @@ module RDF::Vocab
       label: "Geriatric".freeze,
       subClassOf: "https://schema.org/MedicalBusiness".freeze,
       type: "https://schema.org/MedicalSpecialty".freeze
+    term :GettingAccessHealthAspect,
+      comment: "Content that discusses practical and policy aspects for getting access to specific kinds of healthcare (e.g. distribution mechanisms for vaccines).".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2799".freeze,
+      label: "GettingAccessHealthAspect".freeze,
+      type: "https://schema.org/HealthAspectEnumeration".freeze
     term :GlutenFreeDiet,
       comment: "A diet exclusive of gluten.".freeze,
       label: "GlutenFreeDiet".freeze,
@@ -14969,6 +15194,12 @@ module RDF::Vocab
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "Homeopathic".freeze,
       type: "https://schema.org/MedicineSystem".freeze
+    term :HowItWorksHealthAspect,
+      comment: "Content that discusses and explains how a particular health-related topic works, e.g. in terms of mechanisms and underlying science.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2799".freeze,
+      label: "HowItWorksHealthAspect".freeze,
+      type: "https://schema.org/HealthAspectEnumeration".freeze
     term :HowOrWhereHealthAspect,
       comment: "Information about how or where to find a topic. Also may contain location data that can be used for where to look for help if the topic is observed.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
@@ -14995,8 +15226,14 @@ module RDF::Vocab
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "Infectious".freeze,
       type: "https://schema.org/MedicalSpecialty".freeze
+    term :IngredientsHealthAspect,
+      comment: "Content discussing ingredients-related aspects of a health topic.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2799".freeze,
+      label: "IngredientsHealthAspect".freeze,
+      type: "https://schema.org/HealthAspectEnumeration".freeze
     term :Installment,
-      comment: "Represents the installment pricing component of the total price for an offered product".freeze,
+      comment: "Represents the installment pricing component of the total price for an offered product.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2689".freeze,
       label: "Installment".freeze,
@@ -15029,7 +15266,7 @@ module RDF::Vocab
       label: "KosherDiet".freeze,
       type: "https://schema.org/RestrictedDiet".freeze
     term :LaboratoryScience,
-      comment: "A medical science pertaining to chemical, hematological, immunologic, microscopic, or bacteriological diagnostic analyses or research".freeze,
+      comment: "A medical science pertaining to chemical, hematological, immunologic, microscopic, or bacteriological diagnostic analyses or research.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "LaboratoryScience".freeze,
       type: "https://schema.org/MedicalSpecialty".freeze
@@ -15173,12 +15410,6 @@ module RDF::Vocab
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2374".freeze,
       label: "MisconceptionsHealthAspect".freeze,
       type: "https://schema.org/HealthAspectEnumeration".freeze
-    term :MissingContext,
-      comment: "MissingContext: ...".freeze,
-      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
-      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
-      label: "MissingContext".freeze,
-      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
     term :MixedEventAttendanceMode,
       comment: "MixedEventAttendanceMode - an event that is conducted as a combination of both offline and online modes.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
@@ -15608,6 +15839,12 @@ module RDF::Vocab
       comment: "OrderStatus representing that an order has been returned.".freeze,
       label: "OrderReturned".freeze,
       type: "https://schema.org/OrderStatus".freeze
+    term :OriginalMediaContent,
+      comment: "Content coded 'as original media content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'original': No evidence the footage has been misleadingly altered or manipulated, though it may contain false or misleading claims.\n\nFor an [[ImageObject]] to be 'original': No evidence the image has been misleadingly altered or manipulated, though it may still contain false or misleading claims.\n\nFor an [[ImageObject]] with embedded text to be 'original': No evidence the image has been misleadingly altered or manipulated, though it may still contain false or misleading claims.\n\nFor an [[AudioObject]] to be 'original': No evidence the audio has been misleadingly altered or manipulated, though it may contain false or misleading claims.\n".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "OriginalMediaContent".freeze,
+      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
     term :OriginalShippingFees,
       comment: "OriginalShippingFees ...".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
@@ -15754,6 +15991,12 @@ module RDF::Vocab
       comment: "Indicates that the item is available for ordering and delivery before general availability.".freeze,
       label: "PreSale".freeze,
       type: "https://schema.org/ItemAvailability".freeze
+    term :PregnancyHealthAspect,
+      comment: "Content discussing pregnancy-related aspects of a health topic.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2799".freeze,
+      label: "PregnancyHealthAspect".freeze,
+      type: "https://schema.org/HealthAspectEnumeration".freeze
     term :PrescriptionOnly,
       comment: "Available by prescription only.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
@@ -15942,12 +16185,24 @@ module RDF::Vocab
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2712".freeze,
       label: "SRP".freeze,
       type: "https://schema.org/PriceTypeEnumeration".freeze
+    term :SafetyHealthAspect,
+      comment: "Content about the safety-related aspects of a health topic.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2799".freeze,
+      label: "SafetyHealthAspect".freeze,
+      type: "https://schema.org/HealthAspectEnumeration".freeze
     term :SalePrice,
       comment: "Represents a sale price (usually active for a limited period) of an offered product.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2712".freeze,
       label: "SalePrice".freeze,
       type: "https://schema.org/PriceTypeEnumeration".freeze
+    term :SatireOrParodyContent,
+      comment: "Content coded 'satire or content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'satire or parody content': A video that was created as political or humorous commentary and is presented in that context. (Reshares of satire/parody content that do not include relevant context are more likely to fall under the “missing context” rating.)\n\nFor an [[ImageObject]] to be 'satire or parody content': An image that was created as political or humorous commentary and is presented in that context. (Reshares of satire/parody content that do not include relevant context are more likely to fall under the “missing context” rating.)\n\nFor an [[ImageObject]] with embedded text to be 'satire or parody content': An image that was created as political or humorous commentary and is presented in that context. (Reshares of satire/parody content that do not include relevant context are more likely to fall under the “missing context” rating.)\n\nFor an [[AudioObject]] to be 'satire or parody content': Audio that was created as political or humorous commentary and is presented in that context. (Reshares of satire/parody content that do not include relevant context are more likely to fall under the “missing context” rating.)\n".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "SatireOrParodyContent".freeze,
+      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
     term :Saturday,
       comment: "The day of the week between Friday and Sunday.".freeze,
       "https://schema.org/sameAs": "http://www.wikidata.org/entity/Q131".freeze,
@@ -16000,6 +16255,18 @@ module RDF::Vocab
       "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
       label: "SingleRelease".freeze,
       type: "https://schema.org/MusicAlbumReleaseType".freeze
+    term :SizeSystemImperial,
+      comment: "Imperial size system.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "SizeSystemImperial".freeze,
+      type: "https://schema.org/SizeSystemEnumeration".freeze
+    term :SizeSystemMetric,
+      comment: "Metric size system.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "SizeSystemMetric".freeze,
+      type: "https://schema.org/SizeSystemEnumeration".freeze
     term :Skin,
       comment: "Skin assessment with clinical examination.".freeze,
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
@@ -16024,6 +16291,12 @@ module RDF::Vocab
       "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
       label: "SpokenWordAlbum".freeze,
       type: "https://schema.org/MusicAlbumProductionType".freeze
+    term :StagedContent,
+      comment: "Content coded 'staged content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'staged content': A video that has been created using actors or similarly contrived.\n\nFor an [[ImageObject]] to be 'staged content': An image that was created using actors or similarly contrived, such as a screenshot of a fake tweet.\n\nFor an [[ImageObject]] with embedded text to be 'staged content': An image that was created using actors or similarly contrived, such as a screenshot of a fake tweet.\n\nFor an [[AudioObject]] to be 'staged content': Audio that has been created using actors or similarly contrived.\n".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "StagedContent".freeze,
+      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
     term :StagesHealthAspect,
       comment: "Stages that can be observed from a topic.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
@@ -16047,7 +16320,7 @@ module RDF::Vocab
       label: "StudioAlbum".freeze,
       type: "https://schema.org/MusicAlbumProductionType".freeze
     term :Subscription,
-      comment: "Represents the subscription pricing component of the total price for an offered product".freeze,
+      comment: "Represents the subscription pricing component of the total price for an offered product.".freeze,
       "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2689".freeze,
       label: "Subscription".freeze,
@@ -16113,6 +16386,12 @@ module RDF::Vocab
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org".freeze,
       label: "TraditionalChinese".freeze,
       type: "https://schema.org/MedicineSystem".freeze
+    term :TransformedContent,
+      comment: "Content coded 'transformed content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'transformed content':  or all of the video has been manipulated to transform the footage itself. This category includes using tools like the Adobe Suite to change the speed of the video, add or remove visual elements or dub audio. Deepfakes are also a subset of transformation.\n\nFor an [[ImageObject]] to be transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[ImageObject]] with embedded text to be 'transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[AudioObject]] to be 'transformed content': Part or all of the audio has been manipulated to alter the words or sounds, or the audio has been synthetically generated, such as to create a sound-alike voice.\n".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450".freeze,
+      label: "TransformedContent".freeze,
+      type: "https://schema.org/MediaManipulationRatingEnumeration".freeze
     term :TransitMap,
       comment: "A transit map.".freeze,
       label: "TransitMap".freeze,
@@ -16205,6 +16484,264 @@ module RDF::Vocab
       "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ".freeze,
       label: "VinylFormat".freeze,
       type: "https://schema.org/MusicReleaseFormatType".freeze
+    term :WearableMeasurementBack,
+      comment: "Measurement of the back section, for example of a jacket".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementBack".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementChestOrBust,
+      comment: "Measurement of the chest/bust section, for example of a suit".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementChestOrBust".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementCollar,
+      comment: "Measurement of the collar, for example of a shirt".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementCollar".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementCup,
+      comment: "Measurement of the cup, for example of a bra".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementCup".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementHeight,
+      comment: "Measurement of the height, for example the heel height of a shoe".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementHeight".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementHips,
+      comment: "Measurement of the hip section, for example of a skirt".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementHips".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementInseam,
+      comment: "Measurement of the inseam, for example of pants".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementInseam".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementLength,
+      comment: "Represents the length, for example of a dress".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementLength".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementOutsideLeg,
+      comment: "Measurement of the outside leg, for example of pants".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementOutsideLeg".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementSleeve,
+      comment: "Measurement of the sleeve length, for example of a shirt".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementSleeve".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementWaist,
+      comment: "Measurement of the waist section, for example of pants".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementWaist".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableMeasurementWidth,
+      comment: "Measurement of the width, for example of shoes".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableMeasurementWidth".freeze,
+      type: "https://schema.org/WearableMeasurementTypeEnumeration".freeze
+    term :WearableSizeGroupBig,
+      comment: "Size group \"Big\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupBig".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupBoys,
+      comment: "Size group \"Boys\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupBoys".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupExtraShort,
+      comment: "Size group \"Extra Short\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupExtraShort".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupExtraTall,
+      comment: "Size group \"Extra Tall\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupExtraTall".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupGirls,
+      comment: "Size group \"Girls\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupGirls".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupHusky,
+      comment: "Size group \"Husky\" (or \"Stocky\") for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupHusky".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupInfants,
+      comment: "Size group \"Infants\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupInfants".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupJuniors,
+      comment: "Size group \"Juniors\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupJuniors".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupMaternity,
+      comment: "Size group \"Maternity\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupMaternity".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupMens,
+      comment: "Size group \"Mens\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupMens".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupMisses,
+      comment: "Size group \"Misses\" (also known as \"Missy\") for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupMisses".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupPetite,
+      comment: "Size group \"Petite\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupPetite".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupPlus,
+      comment: "Size group \"Plus\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupPlus".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupRegular,
+      comment: "Size group \"Regular\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupRegular".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupShort,
+      comment: "Size group \"Short\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupShort".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupTall,
+      comment: "Size group \"Tall\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupTall".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeGroupWomens,
+      comment: "Size group \"Womens\" for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeGroupWomens".freeze,
+      type: "https://schema.org/WearableSizeGroupEnumeration".freeze
+    term :WearableSizeSystemAU,
+      comment: "Australian size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemAU".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemBR,
+      comment: "Brazilian size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemBR".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemCN,
+      comment: "Chinese size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemCN".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemContinental,
+      comment: "Continental size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemContinental".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemDE,
+      comment: "German size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemDE".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemEN13402,
+      comment: "EN 13402 (joint European standard for size labelling of clothes).".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemEN13402".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemEurope,
+      comment: "European size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemEurope".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemFR,
+      comment: "French size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemFR".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemGS1,
+      comment: "GS1 (formerly NRF) size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemGS1".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemIT,
+      comment: "Italian size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemIT".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemJP,
+      comment: "Japanese size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemJP".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemMX,
+      comment: "Mexican size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemMX".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemUK,
+      comment: "United Kingdom size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemUK".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
+    term :WearableSizeSystemUS,
+      comment: "United States size system for wearables.".freeze,
+      "https://schema.org/isPartOf": "https://pending.schema.org".freeze,
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811".freeze,
+      label: "WearableSizeSystemUS".freeze,
+      type: "https://schema.org/WearableSizeSystemEnumeration".freeze
     term :Wednesday,
       comment: "The day of the week between Tuesday and Thursday.".freeze,
       "https://schema.org/sameAs": "http://www.wikidata.org/entity/Q128".freeze,

@@ -28,10 +28,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 00b2961c989865fb80b7db1354e7cc059ad3c1ae
+  revision: 6d1165d8a4ab1347a2e8a2981f508f34c11f1d57
   branch: develop
   specs:
-    json-ld (3.1.8)
+    json-ld (3.1.9)
       htmlentities (~> 4.3)
       json-canonicalization (~> 0.2)
       link_header (~> 0.0, >= 0.0.8)
@@ -59,7 +59,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: ed7439deb428e47bffaf5252306bdf1ec91d87cc
+  revision: 0fb0185e8ca1f95ebe7a803cef9fe1ca19fa1ed4
   branch: develop
   specs:
     rdf (3.1.12)
@@ -111,7 +111,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: 55f447d809d84e208e11d4545d3d97535452aeab
+  revision: 024857b7e54ddb86bfd270633a265c2ae578dff3
   branch: develop
   specs:
     rdf-reasoner (0.7.1)
@@ -143,7 +143,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: 6ad9f864f1d19f372634973287335ba6d2c39cf1
+  revision: 78f32edeeb899a2b3e8c301de759ffe4e4d23dca
   branch: develop
   specs:
     rdf-vocab (3.1.11)
@@ -170,7 +170,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.11.1a)
+    linter (3.12.0)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -250,8 +250,8 @@ GEM
     link_header (0.0.8)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0212)
-    minitest (5.14.3)
+    mime-types-data (3.2021.0225)
+    minitest (5.14.4)
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
@@ -351,7 +351,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
-    webmock (3.11.2)
+    webmock (3.12.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
