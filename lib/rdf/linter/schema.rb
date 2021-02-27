@@ -55,10 +55,7 @@ module RDF::Linter
     # @param [String, #read] file
     def load_examples(file)
       s = StringScanner.new(file.respond_to?(:read) ? file.read : File.read(file))
-      types = nil
-      body = nil
-      format = nil
-      number = 0
+      types = body = format = nil
       while !s.eos?
         # Scan each format until TYPES is found again, or EOF
         body = s.scan_until(/^(TYPES|PRE-MARKUP|MICRODATA|RDFA|JSON|JSONLD):/)
@@ -71,19 +68,20 @@ module RDF::Linter
         body = body[0..-(s.matched.to_s.length+1)].gsub("\r", '').strip + "\n"
         case format
         when :pre, :microdata, :rdfa, :jsonld
-          add_example(types, body, number, format) unless types.include?("FakeEntryNeeded")
+          add_example(types, body, format) unless types.include?("FakeEntryNeeded")
         end
 
         case s.matched
         when "TYPES:"
           types = s.scan_until(/$/).strip
-          number += 1 unless types.include?("FakeEntryNeeded")
           format = :types
         when "PRE-MARKUP:"  then format = :pre
         when "MICRODATA:"   then format = :microdata
         when "RDFA:"        then format = :rdfa
         when "JSON:"        then format = :jsonld
         when "JSONLD:"      then format = :jsonld
+        else
+          format = nil
         end
       end
 
@@ -108,18 +106,13 @@ module RDF::Linter
     # @param [String] types
     #   schema type of example, may be multiple separated by commas
     # @param [String] example the body of the example
-    # @param [Integer] ex_num
-    #   This example number, used to create appropriate grouping
     # @param [Symbol] format :microdata, :rdfa, or :jsonld
-    def add_example(types, example, ex_num, format)
+    def add_example(types, example, format)
       # Skip example if it is JSON only
       return if example =~ /This example is JSON only/m
-      name = nil
-      if types.start_with?('#')
-        # In some cases, a more specific name is used.
-        name, types = types.split(/\s+/, 2)
-        name = name[1..-1]  # Remove initial '#'
-      end
+      raise "TYPES does not start with example frag: #{types}" unless types.to_s.start_with?('#')
+      name, types = types.split(/\s+/, 2)
+      name = name[1..-1]  # Remove initial '#'
       types = types.split(/,\s*/)
       name ||= "#{types.join('-')}-#{ex_num}"
 
