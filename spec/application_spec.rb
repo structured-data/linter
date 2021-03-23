@@ -24,13 +24,32 @@ describe RDF::Linter::Application do
         get "/"
         last_response
       }
-      it {should be_ok}
-      its(:content_type) {should include("text/html")}
+      it {is_expected.to be_ok}
+      its(:content_type) {is_expected.to include("text/html")}
+      its(:body) {is_expected.to be_valid_html}
 
       context "body" do
-        %w{
-          /html
-        }.each do |xpath|
+        [
+          %(/html/body[@class="linter"])
+        ].each do |xpath|
+          it "has xpath #{xpath}" do
+            expect(subject.body).to have_xpath(xpath, true)
+          end
+        end
+      end
+
+      context "examples" do
+        [
+          '//span[@class="form-examples"]',
+          '//span[@class="form-examples"]//a[@class="Review rdfa"]',
+          '//span[@class="form-examples"]//a[@class="Review jsonld"]',
+          '//span[@class="form-examples"]//a[@class="Review microdata"]',
+
+          '//span[@class="form-examples"]//a[@class="Person rdfa"]',
+          '//span[@class="form-examples"]//a[@class="Event jsonld"]',
+          '//span[@class="form-examples"]//a[@class="Recipe microdata"]',
+          '//span[@class="form-examples"]//a[@class="Product rdfa"]',
+        ].each do |xpath|
           it "has xpath #{xpath}" do
             expect(subject.body).to have_xpath(xpath, true)
           end
@@ -53,8 +72,7 @@ describe RDF::Linter::Application do
             get "/", opts, "HTTP_ACCEPT" => "application/json"
             last_response
           }
-          it {should be_ok}
-          its(:content_type) {should include("text/html")}
+          it {is_expected.to be_ok}
         end
       end
     end
@@ -70,26 +88,23 @@ describe RDF::Linter::Application do
   describe "post /" do
     context "File Upload" do
       subject {
-        expect_any_instance_of(RDF::Linter::Application).to receive(:linter).
-          with(hash_including({})).
-          and_return("<div/>")
-        post "/", "file" => Rack::Test::UploadedFile.new(File.expand_path("../test.html", __FILE__), "text/html"), path: "test.html"
+        post "/", {
+          "file" => Rack::Test::UploadedFile.new(File.expand_path("../test.html", __FILE__), "text/html"),
+          path: "test.html"},
+          "HTTP_ACCEPT" => "application/json"
         last_response
       }
-      it {should be_ok}
-      its(:content_type) {should include("text/html")}
+      it {is_expected.to be_ok}
+      its(:content_type) {is_expected.to include("application/json")}
     end
 
     context "Form content" do
       subject {
-        expect_any_instance_of(RDF::Linter::Application).to receive(:linter).
-          with(hash_including({})).
-          and_return("<div/>")
         post "/", %({"content": "<html></html>"})
         last_response
       }
-      it {should be_ok}
-      its(:content_type) {should include("text/html")}
+      it {is_expected.to be_ok}
+      its(:content_type) {is_expected.to include("application/json")}
     end
   end
 
@@ -98,12 +113,15 @@ describe RDF::Linter::Application do
       get "/examples/"
       last_response
     }
-    it {should be_ok}
-    its(:content_type) {should include("text/html")}
+    it {is_expected.to be_ok}
+    its(:content_type) {is_expected.to include("text/html")}
+    its(:body) {is_expected.to be_valid_html}
 
     context "body" do
       [
         %(/html),
+        %(/html/body[@class="linter"]),
+        %(//section[@class="content"]),
 
         %(//section[@class="content"]/h2[contains(text(), "Schema.org examples")]),
         %(//section[@class="content"]/h2[contains(text(), "Schema.org examples")]/) +
@@ -127,8 +145,9 @@ describe RDF::Linter::Application do
           get "/examples/schema.org/#{name}/"
           last_response
         }
-        it {should be_ok}
-        its(:content_type) {should include("text/html")}
+        it {is_expected.to be_ok}
+        its(:content_type) {is_expected.to include("text/html")}
+        its(:body) {is_expected.to be_valid_html}
 
         context "body" do
           [
@@ -155,9 +174,17 @@ describe RDF::Linter::Application do
           get "/examples/schema.org/#{file}"
           last_response
         }
-        it {should be_ok}
-        its(:content_type) {should include(content_type)}
+        it {is_expected.to be_ok}
+        its(:content_type) {is_expected.to include(content_type)}
       end
+    end
+  end
+
+  describe "#linter" do
+    context :format do
+    end
+
+    context :base_uri do
     end
   end
 end
