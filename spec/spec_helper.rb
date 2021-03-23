@@ -8,12 +8,6 @@ require 'rspec/its'
 require 'rack/cache'
 require 'sinatra'
 require 'matchers'
-require 'simplecov'
-SimpleCov.start do
-  add_filter "/spec/"
-  add_filter "/snippets/"
-end
-
 require 'rdf/linter'
 
 # set test environment
