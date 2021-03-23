@@ -21,14 +21,14 @@
         </fieldset>
         <br/>
         <span class="form-examples">Examples:
-        <% {Review: "ClaimReview-320", Person: "eg-1", Event: "eg-9", Recipe: "eg-13", Product: "eg-10"}.each do |name, p|%>
+        <% {Review: "eg-0010", Person: "eg-0001", Event: "eg-0009", Recipe: "eg-0013", Product: "eg-0010"}.each do |name, p|%>
           <%= name %> (
           <% {RDFa: "rdfa", "JSON-LD": "jsonld", MD: "microdata"}.each do |fmt, c|
             file = File.join(settings.root, "schema.org", "#{p}-#{c}.html")
             next unless File.file?(file)
             path = "#{root}examples/schema.org/#{p}-#{c}.html"
           -%>
-            <a href="" ng-click="lintUrl('<%= path %>')" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
+            <a class="<%= name %> <%= c %>" href="" ng-click="lintUrl('<%= path %>')" title="Show <%=name%> snippet in <%=fmt%>"><%=fmt %></a>
           <% end -%>)
         <% end -%>
         </span>
