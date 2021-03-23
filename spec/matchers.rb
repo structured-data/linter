@@ -1,39 +1,52 @@
 require 'rspec/matchers'
+require 'nokogumbo'
 
-RSpec::Matchers.define :have_xpath do |xpath, value, trace|
+RSpec::Matchers.define :have_xpath do |path, value, trace|
   match do |actual|
-    @doc = Nokogiri::XML.parse(actual)
-    expect(@doc).to be_a(Nokogiri::XML::Document)
-    expect(@doc.root).to be_a(Nokogiri::XML::Element)
-    @namespaces = @doc.namespaces.merge("xhtml" => "http://www.w3.org/1999/xhtml", "xml" => "http://www.w3.org/XML/1998/namespace")
+    root = Nokogiri::HTML5(actual, max_parse_errors: 1000)
+    return false unless root
+    namespaces = root.namespaces.inject({}) {|memo, (k,v)| memo[k.to_s.sub(/xmlns:?/, '')] = v; memo}.
+      merge("xhtml" => "http://www.w3.org/1999/xhtml", "xml" => "http://www.w3.org/XML/1998/namespace")
+    @result = root.at_xpath(path, namespaces) rescue false
     case value
     when false
-      expect(@doc.root.at_xpath(xpath, @namespaces)).to be_nil
+      @result.nil?
     when true
-      expect(@doc.root.at_xpath(xpath, @namespaces)).not_to be_nil
-      true
+      !@result.nil?
     when Array
-      expect(@doc.root.at_xpath(xpath, @namespaces).to_s.split(" ")).to include(*value)
+      @result.to_s.split(" ").include?(*value)
     when Regexp
-      expect(@doc.root.at_xpath(xpath, @namespaces).to_s).to match value
-    when String
-      expect(@doc.root.at_xpath(xpath, @namespaces).to_s).to eql value
+      @result.to_s =~ value
     else
-      false
+      @result.to_s == value
     end
   end
   
   failure_message do |actual|
-    msg = "expected that #{xpath.inspect} would be #{value.inspect} in:\n" + actual.to_s
-    msg += "was: #{@doc.root.at_xpath(xpath, @namespaces)}" rescue @doc
-    msg +=  "\nDebug:#{trace.join("\n")}" if trace
+    msg = "expected that #{path.inspect}\nwould be: #{value.inspect}"
+    msg += "\n     was: #{@result}"
+    msg += "\nsource:" + actual
+    msg +=  "\nDebug:#{logger}"
     msg
   end
-  
+
   failure_message_when_negated do |actual|
-    msg = "expected that #{xpath.inspect} would not be #{value.inspect} in:\n" + actual.to_s
-    msg +=  "\nDebug:#{trace.join("\n")}" if trace
+    msg = "expected that #{path.inspect}\nwould not be #{value.inspect}"
+    msg += "\nsource:" + actual
+    msg +=  "\nDebug:#{logger}"
     msg
+  end
+end
+
+RSpec::Matchers.define :be_valid_html do
+  match do |actual|
+    root = Nokogiri::HTML5(actual, max_parse_errors: 1000)
+    @errors = Array(root && root.errors.map(&:to_s))
+    @errors.empty?
+  end
+  
+  failure_message do |actual|
+    "expected no errors, was #{@errors.join("\n")}"
   end
 end
 
