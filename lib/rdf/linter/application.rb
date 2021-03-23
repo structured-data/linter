@@ -290,7 +290,7 @@ module RDF::Linter
       end
 
       # Parse and lint input yielding a graph
-      graph, messages, reader = parse(reader_opts)
+      graph, messages, reader = parse(**reader_opts)
       raise "Graph not read" unless graph
 
       # Write in requested format
@@ -298,17 +298,17 @@ module RDF::Linter
 
       writer_opts[:base_uri] ||= reader.base_uri if reader && reader.base_uri
       writer_opts[:debug] ||= [] if logger.level <= Logger::DEBUG
-      request.logger.debug graph.dump(:ttl, writer_opts)
+      request.logger.debug graph.dump(:ttl, **writer_opts)
 
       result = snippet = nil
       if graph.size > 0
         # Move elements with class `snippet` to the front of the root element
-        result = writer.buffer(writer_opts.merge(haml: RDF::Linter::TABULAR_HAML)) {|w| w << graph}
+        result = writer.buffer(**writer_opts.merge(haml: RDF::Linter::TABULAR_HAML)) {|w| w << graph}
         result.gsub!(/--root--/, root)
 
         # Generate snippet
         snippet = begin
-          RDF::Linter::Writer.buffer(writer_opts) {|w| w << graph}
+          RDF::Linter::Writer.buffer(**writer_opts) {|w| w << graph}
         rescue
           request.logger.error "Snippet Writer returned error: #{$!.inspect}"
           raise

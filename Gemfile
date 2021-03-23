@@ -26,7 +26,6 @@ gem 'binding_of_caller'
 
 group :development, :test do
   gem 'rake'
-  gem 'simplecov', require: false
 end
 
 # Becuase rest-client-commonents doesn't seem like it's going to be updated:

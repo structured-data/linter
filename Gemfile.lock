@@ -41,10 +41,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 626e75d367d538de637c4a0a0c0bee098522e81e
+  revision: 58bcee6012cc0dbcbf2e1deb8911c266f1a4b5aa
   branch: develop
   specs:
-    json-ld-preloaded (3.1.4)
+    json-ld-preloaded (3.1.5)
       json-ld (~> 3.1)
       rdf (~> 3.1)
 
@@ -59,22 +59,23 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: 0fb0185e8ca1f95ebe7a803cef9fe1ca19fa1ed4
+  revision: 92dfc028cc51824f783822a774f7eff0881bfbdd
   branch: develop
   specs:
-    rdf (3.1.12)
+    rdf (3.1.13)
       hamster (~> 3.0)
       link_header (~> 0.0, >= 0.0.8)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-microdata
-  revision: ce9170bf71a85c82e115950df92a8c717d0c3752
+  revision: 5fe0cadcda10c7f4d36e9d4247f3fabf47a46175
   branch: develop
   specs:
-    rdf-microdata (3.1.1)
+    rdf-microdata (3.1.3)
       htmlentities (~> 4.3)
       nokogiri (~> 1.10)
-      rdf (~> 3.1)
+      rdf (~> 3.1, >= 3.1.13)
+      rdf-rdfa (~> 3.1, >= 3.1.3)
       rdf-xsd (~> 3.1)
 
 GIT
@@ -87,34 +88,34 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: 4313b0b05d54206df00919457e2da662a69684a6
+  revision: 17421be4d4581bdc740166053fcbc5c5323010cb
   branch: develop
   specs:
-    rdf-rdfa (3.1.2)
+    rdf-rdfa (3.1.3)
       haml (~> 5.2)
       htmlentities (~> 4.3)
-      rdf (~> 3.1, >= 3.1.2)
+      rdf (~> 3.1, >= 3.1.13)
       rdf-aggregate-repo (~> 3.1)
-      rdf-vocab (~> 3.1, >= 3.1.5)
+      rdf-vocab (~> 3.1, >= 3.1.11)
       rdf-xsd (~> 3.1)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfxml
-  revision: eb13205294623a9396939c8d6c0d62667a366ad3
+  revision: f800559d4bc4f1351bf69ac27c688ffc001f97dd
   branch: develop
   specs:
     rdf-rdfxml (3.1.1)
       htmlentities (~> 4.3)
-      rdf (~> 3.1)
-      rdf-rdfa (~> 3.1)
+      rdf (~> 3.1, >= 3.1.12)
+      rdf-rdfa (~> 3.1, >= 3.1.2)
       rdf-xsd (~> 3.1)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: 024857b7e54ddb86bfd270633a265c2ae578dff3
+  revision: bfa7ce11926310414369ef432a33d55f83636ba2
   branch: develop
   specs:
-    rdf-reasoner (0.7.1)
+    rdf-reasoner (0.7.2)
       rdf (~> 3.1, >= 3.1.12)
       rdf-xsd (~> 3.1)
 
@@ -143,10 +144,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: 78f32edeeb899a2b3e8c301de759ffe4e4d23dca
+  revision: 4b3b6b30b6ca42c1fe3bf8ed5c2a1cc59f0b31b2
   branch: develop
   specs:
-    rdf-vocab (3.1.11)
+    rdf-vocab (3.1.12)
       rdf (~> 3.1, >= 3.1.12)
 
 GIT
@@ -170,7 +171,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.12.0)
+    linter (3.12.0b)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
@@ -206,7 +207,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    amazing_print (1.2.2)
+    amazing_print (1.3.0)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -222,9 +223,8 @@ GEM
     concurrent-ruby (1.1.8)
     crack (0.4.5)
       rexml
-    debug_inspector (1.0.0)
+    debug_inspector (1.1.0)
     diff-lcs (1.4.4)
-    docile (1.3.5)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equivalent-xml (0.6.0)
@@ -232,7 +232,7 @@ GEM
     erubi (1.10.0)
     erubis (2.7.0)
     execjs (2.7.0)
-    ffi (1.14.2)
+    ffi (1.15.0)
     foreman (0.87.2)
     haml (5.2.1)
       temple (>= 0.8.0)
@@ -256,14 +256,14 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
-    nio4r (2.5.5)
-    nokogiri (1.11.1-x86_64-darwin)
+    nio4r (2.5.7)
+    nokogiri (1.11.2-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.11.1-x86_64-linux)
+    nokogiri (1.11.2-x86_64-linux)
       racc (~> 1.4)
-    nokogumbo (2.0.4)
+    nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
-    oj (3.11.2)
+    oj (3.11.3)
     optimist (3.0.1)
     public_suffix (4.0.6)
     puma (4.3.7)
@@ -315,12 +315,6 @@ GEM
     scanf (1.0.0)
     shotgun (0.9.2)
       rack (>= 1.0)
-    simplecov (0.21.2)
-      docile (~> 1.1)
-      simplecov-html (~> 0.11)
-      simplecov_json_formatter (~> 0.1)
-    simplecov-html (0.12.3)
-    simplecov_json_formatter (0.1.2)
     sinatra (2.1.0)
       mustermann (~> 1.0)
       rack (~> 2.2)
@@ -351,7 +345,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
-    webmock (3.12.0)
+    webmock (3.12.1)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -388,7 +382,6 @@ DEPENDENCIES
   rspec (~> 3.9)
   rspec-its (~> 1.3)
   shotgun
-  simplecov
   sinatra-rdf!
   syntax
   yard (~> 0.9, >= 0.9.24)
