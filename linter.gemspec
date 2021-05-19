@@ -18,7 +18,7 @@ Gem::Specification.new do |gem|
   gem.files              = %w(README.md VERSION) + Dir.glob('lib/**/*.rb')
   gem.require_paths      = %w(lib)
 
-  gem.required_ruby_version       = '>= 2.4'
+  gem.required_ruby_version       = '>= 3.0'
   gem.requirements                = []
   gem.add_runtime_dependency      'activesupport',      '~> 5.0'
   gem.add_runtime_dependency      'equivalent-xml'
@@ -26,7 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'haml',               '~> 5.1'
   gem.add_runtime_dependency      'json-ld',            '~> 3.1'
   gem.add_runtime_dependency      'json-ld-preloaded',  '~> 3.1'
-  gem.add_runtime_dependency      'nokogiri',           '~> 1.10'
+  gem.add_runtime_dependency      'nokogiri',           '~> 1.11', '>= 1.11.4'
   gem.add_runtime_dependency      'nokogumbo',          '~> 2.0'
   gem.add_runtime_dependency      'puma',               '~> 5.3'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.11'
