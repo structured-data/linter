@@ -856,6 +856,7 @@
   "AudioObject": {
     "super_class": "MediaObject",
     "sub_classes": [
+      "AudioObjectSnapshot",
       "Audiobook"
     ],
     "path": [
@@ -871,6 +872,18 @@
         "jsonld": "schema.org/eg-0006-jsonld.html"
       }
     }
+  },
+  "AudioObjectSnapshot": {
+    "super_class": "AudioObject",
+    "path": [
+      "Thing",
+      "CreativeWork",
+      "MediaObject",
+      "AudioObject"
+    ],
+    "sub_classes": [
+
+    ]
   },
   "Audiobook": {
     "super_class": "AudioObject",
@@ -1196,6 +1209,26 @@
 
     ]
   },
+  "BioChemEntity": {
+    "super_class": "Thing",
+    "sub_classes": [
+      "ChemicalSubstance",
+      "Gene",
+      "MolecularEntity",
+      "Protein"
+    ],
+    "path": [
+      "Thing"
+    ],
+    "examples": {
+      "eg-0466": {
+        "pre": "schema.org/eg-0466-pre.html",
+        "microdata": "schema.org/eg-0466-microdata.html",
+        "rdfa": "schema.org/eg-0466-rdfa.html",
+        "jsonld": "schema.org/eg-0466-jsonld.html"
+      }
+    }
+  },
   "Blog": {
     "super_class": "CreativeWork",
     "path": [
@@ -1216,15 +1249,7 @@
       "CreativeWork",
       "Article",
       "SocialMediaPosting"
-    ],
-    "examples": {
-      "eg-0424": {
-        "pre": "schema.org/eg-0424-pre.html",
-        "microdata": "schema.org/eg-0424-microdata.html",
-        "rdfa": "schema.org/eg-0424-rdfa.html",
-        "jsonld": "schema.org/eg-0424-jsonld.html"
-      }
-    }
+    ]
   },
   "BloodTest": {
     "super_class": "MedicalTest",
@@ -1280,6 +1305,26 @@
     "sub_classes": [
 
     ]
+  },
+  "BodyMeasurementTypeEnumeration": {
+    "super_class": "MeasurementTypeEnumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration",
+      "MeasurementTypeEnumeration"
+    ],
+    "sub_classes": [
+
+    ],
+    "examples": {
+      "eg-0464": {
+        "pre": "schema.org/eg-0464-pre.html",
+        "microdata": "schema.org/eg-0464-microdata.html",
+        "rdfa": "schema.org/eg-0464-rdfa.html",
+        "jsonld": "schema.org/eg-0464-jsonld.html"
+      }
+    }
   },
   "BodyOfWater": {
     "super_class": "Landform",
@@ -2120,6 +2165,16 @@
       "Thing",
       "CreativeWork",
       "WebPage"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "ChemicalSubstance": {
+    "super_class": "BioChemEntity",
+    "path": [
+      "Thing",
+      "BioChemEntity"
     ],
     "sub_classes": [
 
@@ -3006,6 +3061,7 @@
       "Map",
       "MathSolver",
       "MediaObject",
+      "MediaReviewItem",
       "Menu",
       "MenuSection",
       "Message",
@@ -3028,6 +3084,7 @@
       "SoftwareApplication",
       "SoftwareSourceCode",
       "SpecialAnnouncement",
+      "Statement",
       "TVSeason",
       "TVSeries",
       "Thesis",
@@ -4418,6 +4475,7 @@
       "ItemListOrderType",
       "LegalValueLevel",
       "MapCategoryType",
+      "MeasurementTypeEnumeration",
       "MediaManipulationRatingEnumeration",
       "MedicalEnumeration",
       "MerchantReturnEnumeration",
@@ -4434,7 +4492,11 @@
       "RefundTypeEnumeration",
       "RestrictedDiet",
       "ReturnFeesEnumeration",
+      "ReturnLabelSourceEnumeration",
+      "ReturnMethodEnumeration",
       "RsvpResponseType",
+      "SizeGroupEnumeration",
+      "SizeSystemEnumeration",
       "Specialty",
       "StatusEnumeration",
       "WarrantyScope"
@@ -5153,6 +5215,16 @@
       "Thing",
       "Intangible",
       "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "Gene": {
+    "super_class": "BioChemEntity",
+    "path": [
+      "Thing",
+      "BioChemEntity"
     ],
     "sub_classes": [
 
@@ -5989,7 +6061,8 @@
   "ImageObject": {
     "super_class": "MediaObject",
     "sub_classes": [
-      "Barcode"
+      "Barcode",
+      "ImageObjectSnapshot"
     ],
     "path": [
       "Thing",
@@ -6010,6 +6083,18 @@
         "jsonld": "schema.org/eg-0021-jsonld.html"
       }
     }
+  },
+  "ImageObjectSnapshot": {
+    "super_class": "ImageObject",
+    "path": [
+      "Thing",
+      "CreativeWork",
+      "MediaObject",
+      "ImageObject"
+    ],
+    "sub_classes": [
+
+    ]
   },
   "ImagingTest": {
     "super_class": "MedicalTest",
@@ -6166,8 +6251,10 @@
       "MediaSubscription",
       "MenuItem",
       "MerchantReturnPolicy",
+      "MerchantReturnPolicySeasonalOverride",
       "Observation",
       "Occupation",
+      "OccupationalExperienceRequirements",
       "Offer",
       "Order",
       "OrderItem",
@@ -7207,6 +7294,26 @@
 
     ]
   },
+  "MeasurementTypeEnumeration": {
+    "super_class": "Enumeration",
+    "sub_classes": [
+      "BodyMeasurementTypeEnumeration",
+      "WearableMeasurementTypeEnumeration"
+    ],
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "examples": {
+      "eg-0464": {
+        "pre": "schema.org/eg-0464-pre.html",
+        "microdata": "schema.org/eg-0464-microdata.html",
+        "rdfa": "schema.org/eg-0464-rdfa.html",
+        "jsonld": "schema.org/eg-0464-jsonld.html"
+      }
+    }
+  },
   "MediaGallery": {
     "super_class": "CollectionPage",
     "sub_classes": [
@@ -7260,6 +7367,24 @@
       "Thing",
       "CreativeWork",
       "Review"
+    ],
+    "sub_classes": [
+
+    ],
+    "examples": {
+      "eg-0467": {
+        "pre": "schema.org/eg-0467-pre.html",
+        "microdata": "schema.org/eg-0467-microdata.html",
+        "rdfa": "schema.org/eg-0467-rdfa.html",
+        "jsonld": "schema.org/eg-0467-jsonld.html"
+      }
+    }
+  },
+  "MediaReviewItem": {
+    "super_class": "CreativeWork",
+    "path": [
+      "Thing",
+      "CreativeWork"
     ],
     "sub_classes": [
 
@@ -8041,6 +8166,16 @@
 
     ]
   },
+  "MerchantReturnPolicySeasonalOverride": {
+    "super_class": "Intangible",
+    "path": [
+      "Thing",
+      "Intangible"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "Message": {
     "super_class": "CreativeWork",
     "sub_classes": [
@@ -8103,6 +8238,16 @@
       "Organization",
       "LocalBusiness",
       "Store"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "MolecularEntity": {
+    "super_class": "BioChemEntity",
+    "path": [
+      "Thing",
+      "BioChemEntity"
     ],
     "sub_classes": [
 
@@ -8992,6 +9137,24 @@
       }
     }
   },
+  "OccupationalExperienceRequirements": {
+    "super_class": "Intangible",
+    "path": [
+      "Thing",
+      "Intangible"
+    ],
+    "sub_classes": [
+
+    ],
+    "examples": {
+      "eg-0465": {
+        "pre": "schema.org/eg-0465-pre.html",
+        "microdata": "schema.org/eg-0465-microdata.html",
+        "rdfa": "schema.org/eg-0465-rdfa.html",
+        "jsonld": "schema.org/eg-0465-jsonld.html"
+      }
+    }
+  },
   "OccupationalTherapy": {
     "super_class": "MedicalTherapy",
     "path": [
@@ -9362,6 +9525,7 @@
       "NewsMediaOrganization",
       "PerformingGroup",
       "Project",
+      "ResearchOrganization",
       "SportsOrganization",
       "WorkersUnion"
     ],
@@ -10855,6 +11019,16 @@
 
     ]
   },
+  "Protein": {
+    "super_class": "BioChemEntity",
+    "path": [
+      "Thing",
+      "BioChemEntity"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "Protozoa": {
     "super_class": null
   },
@@ -10994,6 +11168,7 @@
     "sub_classes": [
       "BedType",
       "DriveWheelConfigurationValue",
+      "SizeSpecification",
       "SteeringPositionValue"
     ],
     "path": [
@@ -11610,6 +11785,16 @@
 
     ]
   },
+  "ResearchOrganization": {
+    "super_class": "Organization",
+    "path": [
+      "Thing",
+      "Organization"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "ResearchProject": {
     "super_class": "Project",
     "path": [
@@ -11817,6 +12002,28 @@
     }
   },
   "ReturnFeesEnumeration": {
+    "super_class": "Enumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "ReturnLabelSourceEnumeration": {
+    "super_class": "Enumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "ReturnMethodEnumeration": {
     "super_class": "Enumeration",
     "path": [
       "Thing",
@@ -12483,6 +12690,64 @@
 
     ]
   },
+  "SizeGroupEnumeration": {
+    "super_class": "Enumeration",
+    "sub_classes": [
+      "WearableSizeGroupEnumeration"
+    ],
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "examples": {
+      "eg-0464": {
+        "pre": "schema.org/eg-0464-pre.html",
+        "microdata": "schema.org/eg-0464-microdata.html",
+        "rdfa": "schema.org/eg-0464-rdfa.html",
+        "jsonld": "schema.org/eg-0464-jsonld.html"
+      }
+    }
+  },
+  "SizeSpecification": {
+    "super_class": "QualitativeValue",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration",
+      "QualitativeValue"
+    ],
+    "sub_classes": [
+
+    ],
+    "examples": {
+      "eg-0464": {
+        "pre": "schema.org/eg-0464-pre.html",
+        "microdata": "schema.org/eg-0464-microdata.html",
+        "rdfa": "schema.org/eg-0464-rdfa.html",
+        "jsonld": "schema.org/eg-0464-jsonld.html"
+      }
+    }
+  },
+  "SizeSystemEnumeration": {
+    "super_class": "Enumeration",
+    "sub_classes": [
+      "WearableSizeSystemEnumeration"
+    ],
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "examples": {
+      "eg-0464": {
+        "pre": "schema.org/eg-0464-pre.html",
+        "microdata": "schema.org/eg-0464-microdata.html",
+        "rdfa": "schema.org/eg-0464-rdfa.html",
+        "jsonld": "schema.org/eg-0464-jsonld.html"
+      }
+    }
+  },
   "SkiResort": {
     "super_class": "Resort",
     "path": [
@@ -12797,6 +13062,16 @@
       "Thing",
       "Place",
       "AdministrativeArea"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "Statement": {
+    "super_class": "CreativeWork",
+    "path": [
+      "Thing",
+      "CreativeWork"
     ],
     "sub_classes": [
 
@@ -13230,6 +13505,15 @@
 
     ]
   },
+  "Taxon": {
+    "super_class": "Thing",
+    "path": [
+      "Thing"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "TechArticle": {
     "super_class": "Article",
     "sub_classes": [
@@ -13366,6 +13650,7 @@
     "super_class": null,
     "sub_classes": [
       "Action",
+      "BioChemEntity",
       "CreativeWork",
       "Event",
       "Intangible",
@@ -13373,7 +13658,8 @@
       "Organization",
       "Person",
       "Place",
-      "Product"
+      "Product",
+      "Taxon"
     ],
     "path": [
 
@@ -14152,13 +14438,13 @@
   },
   "VideoObject": {
     "super_class": "MediaObject",
+    "sub_classes": [
+      "VideoObjectSnapshot"
+    ],
     "path": [
       "Thing",
       "CreativeWork",
       "MediaObject"
-    ],
-    "sub_classes": [
-
     ],
     "examples": {
       "eg-0446": {
@@ -14174,6 +14460,18 @@
         "jsonld": "schema.org/eg-0009-jsonld.html"
       }
     }
+  },
+  "VideoObjectSnapshot": {
+    "super_class": "VideoObject",
+    "path": [
+      "Thing",
+      "CreativeWork",
+      "MediaObject",
+      "VideoObject"
+    ],
+    "sub_classes": [
+
+    ]
   },
   "ViewAction": {
     "super_class": "ConsumeAction",
@@ -14461,6 +14759,50 @@
         "jsonld": "schema.org/eg-0065-jsonld.html"
       }
     }
+  },
+  "WearableMeasurementTypeEnumeration": {
+    "super_class": "MeasurementTypeEnumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration",
+      "MeasurementTypeEnumeration"
+    ],
+    "sub_classes": [
+
+    ],
+    "examples": {
+      "eg-0464": {
+        "pre": "schema.org/eg-0464-pre.html",
+        "microdata": "schema.org/eg-0464-microdata.html",
+        "rdfa": "schema.org/eg-0464-rdfa.html",
+        "jsonld": "schema.org/eg-0464-jsonld.html"
+      }
+    }
+  },
+  "WearableSizeGroupEnumeration": {
+    "super_class": "SizeGroupEnumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration",
+      "SizeGroupEnumeration"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "WearableSizeSystemEnumeration": {
+    "super_class": "SizeSystemEnumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration",
+      "SizeSystemEnumeration"
+    ],
+    "sub_classes": [
+
+    ]
   },
   "WebAPI": {
     "super_class": "Service",
@@ -15211,6 +15553,9 @@
   "alternativeHeadline": {
     "super_class": null
   },
+  "alternativeOf": {
+    "super_class": null
+  },
   "alumni": {
     "super_class": null
   },
@@ -15318,6 +15663,9 @@
       }
     }
   },
+  "archivedAt": {
+    "super_class": null
+  },
   "area": {
     "super_class": null
   },
@@ -15406,10 +15754,22 @@
   "associatedArticle": {
     "super_class": null
   },
+  "associatedClaimReview": {
+    "super_class": null
+  },
+  "associatedDisease": {
+    "super_class": null
+  },
   "associatedMedia": {
     "super_class": null
   },
+  "associatedMediaReview": {
+    "super_class": null
+  },
   "associatedPathophysiology": {
+    "super_class": null
+  },
+  "associatedReview": {
     "super_class": null
   },
   "athlete": {
@@ -15590,6 +15950,15 @@
     "super_class": null
   },
   "billingStart": {
+    "super_class": null
+  },
+  "bioChemInteraction": {
+    "super_class": null
+  },
+  "bioChemSimilarity": {
+    "super_class": null
+  },
+  "biologicalRole": {
     "super_class": null
   },
   "biomechnicalClass": {
@@ -15852,10 +16221,19 @@
       }
     }
   },
+  "chemicalComposition": {
+    "super_class": null
+  },
+  "chemicalRole": {
+    "super_class": null
+  },
   "childMaxAge": {
     "super_class": null
   },
   "childMinAge": {
+    "super_class": null
+  },
+  "childTaxon": {
     "super_class": null
   },
   "children": {
@@ -15868,6 +16246,9 @@
     "super_class": null
   },
   "citation": {
+    "super_class": null
+  },
+  "claimInterpreter": {
     "super_class": null
   },
   "claimReviewed": {
@@ -16141,6 +16522,12 @@
   "countriesSupported": {
     "super_class": null
   },
+  "countryOfAssembly": {
+    "super_class": null
+  },
+  "countryOfLastProcessing": {
+    "super_class": null
+  },
   "countryOfOrigin": {
     "super_class": null,
     "examples": {
@@ -16271,6 +16658,15 @@
     "super_class": null
   },
   "customer": {
+    "super_class": null
+  },
+  "customerRemorseReturnFees": {
+    "super_class": null
+  },
+  "customerRemorseReturnLabelSource": {
+    "super_class": null
+  },
+  "customerRemorseReturnShippingFeesAmount": {
     "super_class": null
   },
   "cutoffTime": {
@@ -16469,6 +16865,9 @@
     "super_class": null
   },
   "differentialDiagnosis": {
+    "super_class": null
+  },
+  "directApply": {
     "super_class": null
   },
   "director": {
@@ -16786,6 +17185,9 @@
   "embedUrl": {
     "super_class": null
   },
+  "embeddedTextCaption": {
+    "super_class": null
+  },
   "emissionsCO2": {
     "super_class": null
   },
@@ -16819,6 +17221,9 @@
         "jsonld": "schema.org/eg-0281-jsonld.html"
       }
     }
+  },
+  "encodesBioChemEntity": {
+    "super_class": null
   },
   "encodesCreativeWork": {
     "super_class": null
@@ -17059,6 +17464,17 @@
   "expectsAcceptanceOf": {
     "super_class": null
   },
+  "experienceInPlaceOfEducation": {
+    "super_class": null,
+    "examples": {
+      "eg-0465": {
+        "pre": "schema.org/eg-0465-pre.html",
+        "microdata": "schema.org/eg-0465-microdata.html",
+        "rdfa": "schema.org/eg-0465-rdfa.html",
+        "jsonld": "schema.org/eg-0465-jsonld.html"
+      }
+    }
+  },
   "experienceRequirements": {
     "super_class": null
   },
@@ -17066,6 +17482,9 @@
     "super_class": null
   },
   "expires": {
+    "super_class": null
+  },
+  "expressedIn": {
     "super_class": null
   },
   "familyName": {
@@ -17372,6 +17791,12 @@
   "handlingTime": {
     "super_class": null
   },
+  "hasBioChemEntityPart": {
+    "super_class": null
+  },
+  "hasBioPolymerSequence": {
+    "super_class": null
+  },
   "hasBroadcastChannel": {
     "super_class": null
   },
@@ -17453,6 +17878,9 @@
       }
     }
   },
+  "hasMeasurement": {
+    "super_class": null
+  },
   "hasMenu": {
     "super_class": null
   },
@@ -17493,6 +17921,9 @@
   "hasMerchantReturnPolicy": {
     "super_class": null
   },
+  "hasMolecularFunction": {
+    "super_class": null
+  },
   "hasOccupation": {
     "super_class": null
   },
@@ -17511,6 +17942,9 @@
     "super_class": null
   },
   "hasPart": {
+    "super_class": null
+  },
+  "hasRepresentation": {
     "super_class": null
   },
   "hasVariant": {
@@ -17678,6 +18112,12 @@
     "super_class": null
   },
   "inBroadcastLineup": {
+    "super_class": null
+  },
+  "inChI": {
+    "super_class": null
+  },
+  "inChIKey": {
     "super_class": null
   },
   "inCodeSet": {
@@ -17859,6 +18299,9 @@
   "interestRate": {
     "super_class": null
   },
+  "interpretedAsClaim": {
+    "super_class": null
+  },
   "inventoryLevel": {
     "super_class": null
   },
@@ -17920,10 +18363,16 @@
   "isConsumableFor": {
     "super_class": null
   },
+  "isEncodedByBioChemEntity": {
+    "super_class": null
+  },
   "isFamilyFriendly": {
     "super_class": null
   },
   "isGift": {
+    "super_class": null
+  },
+  "isInvolvedInBiologicalProcess": {
     "super_class": null
   },
   "isLiveBroadcast": {
@@ -17937,7 +18386,13 @@
       }
     }
   },
+  "isLocatedInSubcellularLocation": {
+    "super_class": null
+  },
   "isPartOf": {
+    "super_class": null
+  },
+  "isPartOfBioChemEntity": {
     "super_class": null
   },
   "isPlanForApartment": {
@@ -17999,6 +18454,15 @@
   "itemCondition": {
     "super_class": null
   },
+  "itemDefectReturnFees": {
+    "super_class": null
+  },
+  "itemDefectReturnLabelSource": {
+    "super_class": null
+  },
+  "itemDefectReturnShippingFeesAmount": {
+    "super_class": null
+  },
   "itemListElement": {
     "super_class": null,
     "examples": {
@@ -18047,6 +18511,9 @@
         "jsonld": "schema.org/eg-0264-jsonld.html"
       }
     }
+  },
+  "iupacName": {
+    "super_class": null
   },
   "jobBenefits": {
     "super_class": null
@@ -18439,6 +18906,9 @@
   "mediaAuthenticityCategory": {
     "super_class": null
   },
+  "mediaItemAppearance": {
+    "super_class": null
+  },
   "median": {
     "super_class": null
   },
@@ -18525,7 +18995,19 @@
   "modifiedTime": {
     "super_class": null
   },
+  "molecularFormula": {
+    "super_class": null
+  },
+  "molecularWeight": {
+    "super_class": null
+  },
+  "monoisotopicMolecularWeight": {
+    "super_class": null
+  },
   "monthlyMinimumRepaymentAmount": {
+    "super_class": null
+  },
+  "monthsOfExperience": {
     "super_class": null
   },
   "mpn": {
@@ -18568,6 +19050,9 @@
     "super_class": null
   },
   "naturalProgression": {
+    "super_class": null
+  },
+  "negativeNotes": {
     "super_class": null
   },
   "nerve": {
@@ -18879,6 +19364,12 @@
   "originAddress": {
     "super_class": null
   },
+  "originalMediaContextDescription": {
+    "super_class": null
+  },
+  "originalMediaLink": {
+    "super_class": null
+  },
   "originatesFrom": {
     "super_class": null
   },
@@ -18916,6 +19407,9 @@
     "super_class": null
   },
   "parentService": {
+    "super_class": null
+  },
+  "parentTaxon": {
     "super_class": null
   },
   "parents": {
@@ -19098,6 +19592,9 @@
   "position": {
     "super_class": null
   },
+  "positiveNotes": {
+    "super_class": null
+  },
   "possibleComplication": {
     "super_class": null
   },
@@ -19140,6 +19637,9 @@
     "super_class": null
   },
   "potentialAction": {
+    "super_class": null
+  },
+  "potentialUse": {
     "super_class": null
   },
   "preOp": {
@@ -19621,6 +20121,9 @@
   "restPeriods": {
     "super_class": null
   },
+  "restockingFee": {
+    "super_class": null
+  },
   "result": {
     "super_class": null
   },
@@ -19633,7 +20136,22 @@
   "returnFees": {
     "super_class": null
   },
+  "returnLabelSource": {
+    "super_class": null
+  },
+  "returnMethod": {
+    "super_class": null
+  },
   "returnPolicyCategory": {
+    "super_class": null
+  },
+  "returnPolicyCountry": {
+    "super_class": null
+  },
+  "returnPolicySeasonalOverride": {
+    "super_class": null
+  },
+  "returnShippingFeesAmount": {
     "super_class": null
   },
   "review": {
@@ -19871,6 +20389,9 @@
   "servingSize": {
     "super_class": null
   },
+  "sha256": {
+    "super_class": null
+  },
   "sharedContent": {
     "super_class": null,
     "examples": {
@@ -19929,6 +20450,12 @@
   "size": {
     "super_class": null
   },
+  "sizeGroup": {
+    "super_class": null
+  },
+  "sizeSystem": {
+    "super_class": null
+  },
   "skills": {
     "super_class": null,
     "examples": {
@@ -19944,6 +20471,9 @@
     "super_class": null
   },
   "slogan": {
+    "super_class": null
+  },
+  "smiles": {
     "super_class": null
   },
   "smokingAllowed": {
@@ -20197,6 +20727,9 @@
   "sugarContent": {
     "super_class": null
   },
+  "suggestedAge": {
+    "super_class": null
+  },
   "suggestedAnswer": {
     "super_class": null
   },
@@ -20204,6 +20737,9 @@
     "super_class": null
   },
   "suggestedMaxAge": {
+    "super_class": null
+  },
+  "suggestedMeasurement": {
     "super_class": null
   },
   "suggestedMinAge": {
@@ -20295,6 +20831,12 @@
     }
   },
   "taxID": {
+    "super_class": null
+  },
+  "taxonRank": {
+    "super_class": null
+  },
+  "taxonomicRange": {
     "super_class": null
   },
   "teaches": {
@@ -20909,6 +21451,9 @@
   "AllWheelDriveConfiguration": {
     "super_class": null
   },
+  "AllergiesHealthAspect": {
+    "super_class": null
+  },
   "AnaerobicActivity": {
     "super_class": null
   },
@@ -20921,13 +21466,13 @@
   "AudiobookFormat": {
     "super_class": null
   },
-  "AuthenticContent": {
-    "super_class": null
-  },
   "AuthoritativeLegalValue": {
     "super_class": null
   },
   "Ayurvedic": {
+    "super_class": null
+  },
+  "BackOrder": {
     "super_class": null
   },
   "Balance": {
@@ -20937,6 +21482,45 @@
     "super_class": null
   },
   "BenefitsHealthAspect": {
+    "super_class": null
+  },
+  "BodyMeasurementArm": {
+    "super_class": null
+  },
+  "BodyMeasurementBust": {
+    "super_class": null
+  },
+  "BodyMeasurementChest": {
+    "super_class": null
+  },
+  "BodyMeasurementFoot": {
+    "super_class": null
+  },
+  "BodyMeasurementHand": {
+    "super_class": null
+  },
+  "BodyMeasurementHead": {
+    "super_class": null
+  },
+  "BodyMeasurementHeight": {
+    "super_class": null
+  },
+  "BodyMeasurementHips": {
+    "super_class": null
+  },
+  "BodyMeasurementInsideLeg": {
+    "super_class": null
+  },
+  "BodyMeasurementNeck": {
+    "super_class": null
+  },
+  "BodyMeasurementUnderbust": {
+    "super_class": null
+  },
+  "BodyMeasurementWaist": {
+    "super_class": null
+  },
+  "BodyMeasurementWeight": {
     "super_class": null
   },
   "BroadcastRelease": {
@@ -21021,6 +21605,9 @@
     "super_class": null
   },
   "DamagedCondition": {
+    "super_class": null
+  },
+  "DecontextualizedContent": {
     "super_class": null
   },
   "DefinitiveLegalValue": {
@@ -21128,6 +21715,12 @@
   "Ear": {
     "super_class": null
   },
+  "EditedOrCroppedContent": {
+    "super_class": null
+  },
+  "EffectivenessHealthAspect": {
+    "super_class": null
+  },
   "Emergency": {
     "super_class": "MedicalBusiness",
     "path": [
@@ -21228,6 +21821,9 @@
   "FourWheelDriveConfiguration": {
     "super_class": null
   },
+  "FreeReturn": {
+    "super_class": null
+  },
   "Friday": {
     "super_class": null
   },
@@ -21257,6 +21853,9 @@
     "sub_classes": [
 
     ]
+  },
+  "GettingAccessHealthAspect": {
+    "super_class": null
   },
   "GlutenFreeDiet": {
     "super_class": null
@@ -21311,6 +21910,9 @@
   "Homeopathic": {
     "super_class": null
   },
+  "HowItWorksHealthAspect": {
+    "super_class": null
+  },
   "HowOrWhereHealthAspect": {
     "super_class": null
   },
@@ -21332,6 +21934,9 @@
     "super_class": null
   },
   "Infectious": {
+    "super_class": null
+  },
+  "IngredientsHealthAspect": {
     "super_class": null
   },
   "Installment": {
@@ -21460,9 +22065,6 @@
     "super_class": null
   },
   "MisconceptionsHealthAspect": {
-    "super_class": null
-  },
-  "MissingContext": {
     "super_class": null
   },
   "MixedEventAttendanceMode": {
@@ -21738,6 +22340,9 @@
   "OrderReturned": {
     "super_class": null
   },
+  "OriginalMediaContent": {
+    "super_class": null
+  },
   "OriginalShippingFees": {
     "super_class": null
   },
@@ -21868,6 +22473,9 @@
     "super_class": null
   },
   "PreSale": {
+    "super_class": null
+  },
+  "PregnancyHealthAspect": {
     "super_class": null
   },
   "PrescriptionOnly": {
@@ -22002,6 +22610,27 @@
   "Retail": {
     "super_class": null
   },
+  "ReturnAtKiosk": {
+    "super_class": null
+  },
+  "ReturnByMail": {
+    "super_class": null
+  },
+  "ReturnFeesCustomerResponsibility": {
+    "super_class": null
+  },
+  "ReturnInStore": {
+    "super_class": null
+  },
+  "ReturnLabelCustomerResponsibility": {
+    "super_class": null
+  },
+  "ReturnLabelDownloadAndPrint": {
+    "super_class": null
+  },
+  "ReturnLabelInBox": {
+    "super_class": null
+  },
   "ReturnShippingFees": {
     "super_class": null
   },
@@ -22026,7 +22655,13 @@
   "SRP": {
     "super_class": null
   },
+  "SafetyHealthAspect": {
+    "super_class": null
+  },
   "SalePrice": {
+    "super_class": null
+  },
+  "SatireOrParodyContent": {
     "super_class": null
   },
   "Saturday": {
@@ -22059,6 +22694,12 @@
   "SingleRelease": {
     "super_class": null
   },
+  "SizeSystemImperial": {
+    "super_class": null
+  },
+  "SizeSystemMetric": {
+    "super_class": null
+  },
   "Skin": {
     "super_class": null
   },
@@ -22080,6 +22721,9 @@
     "super_class": null
   },
   "SpokenWordAlbum": {
+    "super_class": null
+  },
+  "StagedContent": {
     "super_class": null
   },
   "StagesHealthAspect": {
@@ -22149,6 +22793,9 @@
   "TraditionalChinese": {
     "super_class": null
   },
+  "TransformedContent": {
+    "super_class": null
+  },
   "TransitMap": {
     "super_class": null
   },
@@ -22209,6 +22856,135 @@
     }
   },
   "VinylFormat": {
+    "super_class": null
+  },
+  "WearableMeasurementBack": {
+    "super_class": null
+  },
+  "WearableMeasurementChestOrBust": {
+    "super_class": null
+  },
+  "WearableMeasurementCollar": {
+    "super_class": null
+  },
+  "WearableMeasurementCup": {
+    "super_class": null
+  },
+  "WearableMeasurementHeight": {
+    "super_class": null
+  },
+  "WearableMeasurementHips": {
+    "super_class": null
+  },
+  "WearableMeasurementInseam": {
+    "super_class": null
+  },
+  "WearableMeasurementLength": {
+    "super_class": null
+  },
+  "WearableMeasurementOutsideLeg": {
+    "super_class": null
+  },
+  "WearableMeasurementSleeve": {
+    "super_class": null
+  },
+  "WearableMeasurementWaist": {
+    "super_class": null
+  },
+  "WearableMeasurementWidth": {
+    "super_class": null
+  },
+  "WearableSizeGroupBig": {
+    "super_class": null
+  },
+  "WearableSizeGroupBoys": {
+    "super_class": null
+  },
+  "WearableSizeGroupExtraShort": {
+    "super_class": null
+  },
+  "WearableSizeGroupExtraTall": {
+    "super_class": null
+  },
+  "WearableSizeGroupGirls": {
+    "super_class": null
+  },
+  "WearableSizeGroupHusky": {
+    "super_class": null
+  },
+  "WearableSizeGroupInfants": {
+    "super_class": null
+  },
+  "WearableSizeGroupJuniors": {
+    "super_class": null
+  },
+  "WearableSizeGroupMaternity": {
+    "super_class": null
+  },
+  "WearableSizeGroupMens": {
+    "super_class": null
+  },
+  "WearableSizeGroupMisses": {
+    "super_class": null
+  },
+  "WearableSizeGroupPetite": {
+    "super_class": null
+  },
+  "WearableSizeGroupPlus": {
+    "super_class": null
+  },
+  "WearableSizeGroupRegular": {
+    "super_class": null
+  },
+  "WearableSizeGroupShort": {
+    "super_class": null
+  },
+  "WearableSizeGroupTall": {
+    "super_class": null
+  },
+  "WearableSizeGroupWomens": {
+    "super_class": null
+  },
+  "WearableSizeSystemAU": {
+    "super_class": null
+  },
+  "WearableSizeSystemBR": {
+    "super_class": null
+  },
+  "WearableSizeSystemCN": {
+    "super_class": null
+  },
+  "WearableSizeSystemContinental": {
+    "super_class": null
+  },
+  "WearableSizeSystemDE": {
+    "super_class": null
+  },
+  "WearableSizeSystemEN13402": {
+    "super_class": null
+  },
+  "WearableSizeSystemEurope": {
+    "super_class": null
+  },
+  "WearableSizeSystemFR": {
+    "super_class": null
+  },
+  "WearableSizeSystemGS1": {
+    "super_class": null
+  },
+  "WearableSizeSystemIT": {
+    "super_class": null
+  },
+  "WearableSizeSystemJP": {
+    "super_class": null
+  },
+  "WearableSizeSystemMX": {
+    "super_class": null
+  },
+  "WearableSizeSystemUK": {
+    "super_class": null
+  },
+  "WearableSizeSystemUS": {
     "super_class": null
   },
   "Wednesday": {

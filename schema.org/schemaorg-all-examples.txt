@@ -2701,7 +2701,7 @@ JSON:
     "serverStatus": "Online"
   },
 "video": {
-  "@type" : "https://schema.org/VideoObject",
+  "@type" : "VideoObject",
   "caption" : "CHALLENGE ACCEPTED! #6 [Hot Pepper Challenge!]",
   "description" : "How many Jalapeno can I eat without crying? ZERO. Today's challenge is for every chest I open, I have to eat a Jalapeno and... I HAVE TO WIN. This video was painful",
   "url" : "http://www.youtube.com/watch?v=0q6a9aFk3XY"
@@ -5871,7 +5871,7 @@ JSON:
 }
 </script>
 
-TYPES: #eg-0424 LiveBlogPosting, BlogPosting
+TYPES: #eg-0424 LiveBlogPosting
 
 PRE-MARKUP:
 
@@ -8264,7 +8264,7 @@ MICRODATA:
         <span itemprop="educationalRole">teacher</span></span>s.
     </p>
     <p itemprop="educationalLevel" itemscope itemtype="https://schema.org/DefinedTerm">
-        <span itemprop="inDefinedtermSet">US Grade Levels</span>
+        <span itemprop="inDefinedTermSet">US Grade Levels</span>
         <span itemprop="name">2</span>
         <link itemprop="url" href="http://purl.org/ASN/scheme/ASNEducationLevel/2" />
     </p>
@@ -10708,7 +10708,7 @@ PRE-MARKUP:
     <td>John Adams (1797-1801)</td>
     <td>Federalist</td>
   </tr>
-  ...
+  <!-- ... -->
 </table>
 
 MICRODATA:
@@ -10725,7 +10725,7 @@ MICRODATA:
       <td>John Adams (1797-1801)</td>
       <td>Federalist</td>
     </tr>
-    ...
+    <!-- ... -->
   </table>
 </div>
 
@@ -10743,7 +10743,7 @@ RDFA:
       <td>John Adams (1797-1801)</td>
       <td>Federalist</td>
     </tr>
-    ...
+    <!-- ... -->
   </table>
 </div>
 
@@ -19499,7 +19499,7 @@ JSON:
     "image" : "http://www.bbking.com/gallery/b-b-king-live.jpg",
     "url" : "http://www.bbking.com/events/apr12-providence.html",
     "startDate" : "2014-04-12T19:30",
-    "doorTime" : "18:30",
+    "doorTime" : "18:30:00",
     "endDate" : "2014-04-12T22:00",
     "location" : {
         "@type" : "Place",
@@ -21350,7 +21350,7 @@ RDFA:
 
 <div vocab="https://schema.org/" typeof="Invoice">
   <h1 property="description">New furnace and installation</h1>
-  <div property="broker" typeof="/LocalBusiness">
+  <div property="broker" typeof="LocalBusiness">
     <b property="name">ACME Home Heating</b>
   </div>
   <div property="customer" typeof="Person">
@@ -21467,7 +21467,7 @@ MICRODATA:
     </div>
     <link itemprop="orderItemStatus" href="https://schema.org/OrderDelivered" />Delivered
     <div itemprop="orderDelivery" itemscope itemtype="https://schema.org/ParcelDelivery">
-      <time="expectedArrivalFrom">2015-03-10</time>
+      <time itemprop="expectedArrivalFrom">2015-03-10</time>
     </div>
   </div>
   <div itemprop="orderedItem" itemscope itemtype="https://schema.org/OrderItem">
@@ -23399,8 +23399,8 @@ JSON:
          ],
          "offers":{
             "@type":"Offer",
-            "availabilityEnds":"T8:22:00",
-            "availabilityStarts":"T8:22:00"
+            "availabilityEnds":"2017-03-02T08:22:00",
+            "availabilityStarts":"2017-03-02T08:22:00"
          },
          "hasMenuItem":{
             "@type":"MenuItem",
@@ -23465,8 +23465,8 @@ JSON:
             "image":"https://thisisarestaurant.com/dinner_dishes.jpg",
             "offers":{
                "@type":"Offer",
-               "availabilityEnds":"T8:22:00",
-               "availabilityStarts":"T8:22:00"
+               "availabilityEnds":"2017-03-02T08:22:00",
+               "availabilityStarts":"2017-03-02T08:22:00"
             },
             "hasMenuSection":[
                {
@@ -23476,8 +23476,8 @@ JSON:
                   "image":"https://thisisarestaurant.com/starter_dishes.jpg",
                   "offers":{
                      "@type":"Offer",
-                     "availabilityEnds":"T8:22:00",
-                     "availabilityStarts":"T8:22:00"
+                     "availabilityEnds":"2017-03-02T08:22:00",
+                     "availabilityStarts":"2017-03-02T08:22:00"
                   },
                   "hasMenuItem":{
                      "@type":"MenuItem",
@@ -23498,8 +23498,8 @@ JSON:
                   "image":"https://thisisarestaurant.com/soup_and_salad_dishes.jpg",
                   "offers":{
                      "@type":"Offer",
-                     "availabilityEnds":"T8:22:00",
-                     "availabilityStarts":"T8:22:00"
+                     "availabilityEnds":"2017-03-02T08:22:00",
+                     "availabilityStarts":"2017-03-02T08:22:00"
                   },
                   "hasMenuItem":{
                      "@type":"MenuItem",
@@ -23557,6 +23557,7 @@ MICRODATA:
       <span itemprop="nonProprietaryName">propanaolol</span>
       (<span itemprop="alternateName">Innopran</span>)
     </span>
+  </span>
   and
     <span itemprop="drug" itemscope itemtype="https://schema.org/Drug">
       <span itemprop="nonProprietaryName">atenolol</span>
@@ -23589,6 +23590,7 @@ RDFA:
       <span property="nonProprietaryName">propanaolol</span>
       (<span property="alternateName">Innopran</span>)
     </span>
+  </span>
   and
     <span property="drug"  typeof="Drug">
       <span property="nonProprietaryName">atenolol</span>
@@ -23841,7 +23843,7 @@ MICRODATA:
     <span itemprop="guidelineSubject" itemscope itemtype="https://schema.org/TherapeuticProcedure">
       <span itemprop="name">appendectomy</span></span> in adults.
     (Class III, <link itemprop="evidenceLevel" href="https://schema.org/EvidenceLevelC"/>
-    <span itemprop="evidenceOrigin">standard of care</span></a>)
+    <span itemprop="evidenceOrigin">standard of care</span>)
   </span></li>
 </ul>
 
@@ -23874,7 +23876,7 @@ RDFA:
     <span property="guidelineSubject"  typeof="TherapeuticProcedure">
       <span property="name">appendectomy</span></span> in adults.
     (Class III, <link property="evidenceLevel" href="https://schema.org/EvidenceLevelC"/>
-    <span property="evidenceOrigin">standard of care</span></a>)
+    <span property="evidenceOrigin">standard of care</span>)
   </span></li>
 </ul>
 
@@ -24486,7 +24488,7 @@ MICRODATA:
   <h1 itemprop="name">Back to the future</h1>
   <div>Director: <span itemprop="director">Steven Spielberg</span></div>
   <div>Production Company: <span itemprop="productionCompany">Universal Pictures</span></div>
-  <div>Format: <span itemprop="additionalType" itemtype="productontology.org/id/DVD">DVD</div>
+  <div>Format: <a itemprop="additionalType" href="http://www.productontology.org/id/DVD">DVD</a></div>
   <link itemprop="isPartOf" itemscope itemtype="https://schema.org/Collection" itemid="http://example.org/colls/68" />
 </div>
 </div>
@@ -24821,13 +24823,13 @@ PRE-MARKUP:
 MICRODATA:
 
 <div itemscope itemtype="https://schema.org/Audiobook" itemid="https://archive.org/details/alices_adventures_1005_librivox#work">
-<h1 itemprop="title">Alice's Adventures in Wonderland</h1>
+<h1 itemprop="name">Alice's Adventures in Wonderland</h1>
 <h2>by <span itemprop="author">Lewis Carroll</span></h2>
 <p>provided by <a href="http://archive.org/" itemprop="provider">The Internet Archive</a>;
    published by <a href="http://librivox.org/" itemprop="publisher">LibriVox.org</a>
-   on <datetime itemprop="datePublished" content="2010-05-03">May 3, 2010</datetime></p>
+   on <time itemprop="datePublished" datetime="2010-05-03">May 3, 2010</time></p>
 <p><a itemprop="contentUrl" href="https://archive.org/download/alices_adventures_1005_librivox/AlicesAdventuresInWonderlandV5_librivox.m4b">Download M4B (70MB)</a></p>
-<p>Description: <datetime itemprop="duration" content="PT2H31M21S">1 sound file (2 hr., 31 min., 21 sec.) : digital</datetime></p>
+<p>Description: <time itemprop="duration" datetime="PT2H31M21S">1 sound file (2 hr., 31 min., 21 sec.) : digital</time></p>
 <p>Summary: <span itemprop="description">Alice's Adventures in Wonderland (commonly shortened to Alice in Wonderland) is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells the story of a girl named Alice who falls down a rabbit hole into a fantasy world populated by peculiar and anthropomorphic creatures. The tale is filled with allusions to Dodgson's friends. The tale plays with logic in ways that have given the story lasting popularity with adults as well as children. It is considered to be one of the best examples of the "literary nonsense" genre, and its narrative course and structure have been enormously influential, especially in the fantasy genre. (Introduction by Wikipedia)</span></p>
 <p><meta itemprop="abridged" content="false" />Unabridged</p>
 <p>Format: M4B audiobook (<span itemprop="encodingFormat">video/mp4</span>)</p>
@@ -24839,13 +24841,13 @@ MICRODATA:
 RDFA:
 
 <div vocab="https://schema.org/" typeof="Audiobook" resource="https://archive.org/details/alices_adventures_1005_librivox#work">
-<h1 property="title">Alice's Adventures in Wonderland</h1>
+<h1 property="name">Alice's Adventures in Wonderland</h1>
 <h2>by <span property="author">Lewis Carroll</span></h2>
 <p>provided by <a href="http://archive.org/" property="provider">The Internet Archive</a>;
    published by <a href="http://librivox.org/" property="publisher">LibriVox.org</a>
-   on <datetime property="datePublished" content="2010-05-03">May 3, 2010</datetime></p>
+   on <time property="datePublished" datetime="2010-05-03">May 3, 2010</time></p>
 <p><a property="contentUrl" href="https://archive.org/download/alices_adventures_1005_librivox/AlicesAdventuresInWonderlandV5_librivox.m4b">Download M4B (70MB)</a></p>
-<p>Description: <datetime property="duration" content="PT2H31M21S">1 sound file (2 hr., 31 min., 21 sec.) : digital</datetime></p>
+<p>Description: <time property="duration" datetime="PT2H31M21S">1 sound file (2 hr., 31 min., 21 sec.) : digital</time></p>
 <p>Summary: <span property="description">Alice's Adventures in Wonderland (commonly shortened to Alice in Wonderland) is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells the story of a girl named Alice who falls down a rabbit hole into a fantasy world populated by peculiar and anthropomorphic creatures. The tale is filled with allusions to Dodgson's friends. The tale plays with logic in ways that have given the story lasting popularity with adults as well as children. It is considered to be one of the best examples of the "literary nonsense" genre, and its narrative course and structure have been enormously influential, especially in the fantasy genre. (Introduction by Wikipedia)</span></p>
 <p><meta property="abridged" content="false" />Unabridged</p>
 <p>Format: M4B audiobook (<span property="encodingFormat">video/mp4</span>)</p>
@@ -24863,7 +24865,7 @@ JSON:
   "@id": "https://archive.org/details/alices_adventures_1005_librivox#work",
   "abridged": "false",
   "author": "Lewis Carroll",
-  "description": "Alice's Adventures in Wonderland (commonly shortened to Alice in Wonderland) is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells the story of a girl named Alice who falls down a rabbit hole into a fantasy world populated by peculiar and anthropomorphic creatures. The tale is filled with allusions to Dodgson's friends. The tale plays with logic in ways that have given the story lasting popularity with adults as well as children. It is considered to be one of the best examples of the "literary nonsense" genre, and its narrative course and structure have been enormously influential, especially in the fantasy genre. (Introduction by Wikipedia)",
+  "description": "Alice's Adventures in Wonderland (commonly shortened to Alice in Wonderland) is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells the story of a girl named Alice who falls down a rabbit hole into a fantasy world populated by peculiar and anthropomorphic creatures. The tale is filled with allusions to Dodgson's friends. The tale plays with logic in ways that have given the story lasting popularity with adults as well as children. It is considered to be one of the best examples of the \"literary nonsense\" genre, and its narrative course and structure have been enormously influential, especially in the fantasy genre. (Introduction by Wikipedia)",
   "datePublished": "2010-05-03",
   "duration": "PT2H31M21S",
   "encodingFormat": "video/mp4",
@@ -25486,7 +25488,6 @@ JSON:
      "@type": "Person",
      "name": "Myke Hurley"
    }
- }
 }
 </script>
 
@@ -25521,8 +25522,8 @@ MICRODATA:
       <span itemprop="name">#27: Behind the App #1: History</span>
     </a>
   </h2>
-  <small itemprop="datePublished" datetime="2015-02-18">February 18th, 2015</small>
-  <small itemprop="timeRequired" datetime="PT37M">37 minutes</small>
+  <small><time itemprop="datePublished" datetime="2015-02-18">February 18th, 2015</time></small>
+  <small><time itemprop="timeRequired" datetime="PT37M">37 minutes</time></small>
   <p itemprop="description">
     In the first episode of “Behind the App”, a special series of
     Inquisitive, we take a look at the beginnings of iOS app development,
@@ -25560,7 +25561,6 @@ JSON:
      "name": "Inquisitive",
      "url": "http://www.relay.fm/inquisitive"
    }
- }
 }
 </script>
 
@@ -25612,7 +25612,6 @@ JSON:
      "name": "Serial",
      "url": "http://serialpodcast.org/"
    }
- }
 }
 </script>
 
@@ -25668,6 +25667,7 @@ JSON:
     }
   ]
 }
+</script>
 
 TYPES: #eg-0314 DefinedTerm, termCode
 
@@ -25729,7 +25729,7 @@ MICRODATA:
 
 <div>
 	<div itemscope itemtype="https://schema.org/DefinedTermSet">
-	<meta itemprop="additionalType" content="https://schema.org/Book">
+	<link itemprop="additionalType" href="https://schema.org/Book">
 	 <h1><a itemprop="url" href="http://openjurist.org/dictionary/Ballentine"><span itemprop="name">Ballentine&apos;s Law Dictionary</span></a></h1>
 	</div>
 	<div itemscope itemtype="https://schema.org/DefinedTerm">
@@ -25941,7 +25941,7 @@ RDFA:
 		<li>...</li>
 	</ul>
 </div>
-<div vocab="https://schema.org/" typeof="CategoryCode" resource=="http://id.loc.gov/vocabulary/iso639-2/cze">
+<div vocab="https://schema.org/" typeof="CategoryCode" resource="http://id.loc.gov/vocabulary/iso639-2/cze">
 	<meta property="codeValue" content="cze">
 	<h2>Czech; tchèque; Tschechisch</h2>
 	<link property="inCodeSet" href="http://id.loc.gov/vocabulary/iso639-2">
@@ -26415,7 +26415,7 @@ JSON:
 
 <script type="application/ld+json">
 {
-  "@context": "schema.org",
+  "@context": "https://schema.org",
   "@type": "Guide",
   "about": "Hiking Boots",
   "name": "How to Choose Hiking Boots",
@@ -26424,6 +26424,7 @@ JSON:
     "Types",
     "Components",
     "Fit"
+  ]
 }
 </script>
 
@@ -26448,7 +26449,7 @@ JSON:
 
 <script type="application/ld+json">
 {
-  "@context": "schema.org",
+  "@context": "https://schema.org",
   "@type": "Guide",
   "about": "Hiking Boots",
   "name": "How to Choose Hiking Boots",
@@ -26461,37 +26462,34 @@ JSON:
   "hasPart": [
     {
       "@type": "Guide",
-      "about": "Types"
-      "name": "Types of Hiking Boots"
+      "about": "Types",
+      "name": "Types of Hiking Boots",
       "reviewAspect": [
        "Hiking shoes",
        "Day hiking boots",
        "Backpacking boots"
      ],
-     "Text": "Hiking shoes: Low-cut models with flexible midsoles are excellent for day hiking. Some ultralight backpackers may even choose trail-running shoes for long-distance journeys…"
+     "text": "Hiking shoes: Low-cut models with flexible midsoles are excellent for day hiking. Some ultralight backpackers may even choose trail-running shoes for long-distance journeys…"
     },
     {
       "@type": "Guide",
-      "about": "Components"
-      "name": "Hiking Boot Components"
+      "about": "Components",
+      "name": "Hiking Boot Components",
       "reviewAspect": [
        "Hiking Boot Uppers",
        "Hiking Boot Midsoles",
        "Hiking Boot Internal Support",
        "Hiking Boot Outsoles",
-       "Crampon Compatibility",
+       "Crampon Compatibility"
      ],
-     "Text": "Hiking Boot Uppers
-Materials impact a boot's weight, breathability, durability and water resistance.
-Full-grain leather: Full-grain leather offers..."
+     "text": "Hiking Boot Uppers Materials impact a boot's weight, breathability, durability and water resistance. Full-grain leather: Full-grain leather offers..."
     },
     {
       "@type": "Guide",
-      "about": "Fit"
-      "name": "Hiking Boot Fit"
-     "Text": "Hiking boots should fit snug everywhere, tight nowhere and offer room to wiggle your toes. Try them on at the end of the day (after feet swell) and with the socks you plan to wear.
-Know your size. It's best to have your foot's length, width and arch length measured on a specially calibrated fit .."
-    },
+      "about": "Fit",
+      "name": "Hiking Boot Fit",
+      "text": "Hiking boots should fit snug everywhere, tight nowhere and offer room to wiggle your toes. Try them on at the end of the day (after feet swell) and with the socks you plan to wear. Know your size. It's best to have your foot's length, width and arch length measured on a specially calibrated fit .."
+    }
   ]
 }
 </script>
@@ -26515,7 +26513,7 @@ JSON:
 
 <script type="application/ld+json">
 {
-  "@context": "schema.org",
+  "@context": "https://schema.org",
   "@type": "Guide",
   "name": "The Best TVs",
   "category": "TVs",
@@ -26526,7 +26524,7 @@ JSON:
       "name": "The best overall LCD/LED TV",
       "itemReviewed": {
         "@type": "Product",
-        "name": "Vizio P-Series F1"
+        "name": "Vizio P-Series F1",
         "offers": {
            "@type": "Offer",
            "price": "$750",
@@ -26537,17 +26535,17 @@ JSON:
         {
           "@type": "PropertyValue",
           "name": "Available sizes",
-          "value": "55, 65, 77 inches",
+          "value": "55, 65, 77 inches"
         },
         {
           "@type": "PropertyValue",
           "name": "HDMI ports",
-          "value": "four",
+          "value": "four"
         },
         {
           "@type": "PropertyValue",
           "name": "Smart OS",
-          "value": "SmartCast OS",
+          "value": "SmartCast OS"
         }
       ],
       "reviewBody": "The 2018 Vizio P-Series F1 offers everything you need to enjoy a high-end TV experience today. The TV uses full-array local dimming, which produces superior contrast ratios for SD and HD content but also provides the best HDR experience on an LCD TV. The LCD panel has a native 120 Hz refresh ..."
@@ -26558,10 +26556,10 @@ JSON:
       "name": "If you can't spend as much: Best budget 4K TV",
       "itemReviewed": {
         "@type": "Product",
-        "name": "TCL 55S517"
+        "name": "TCL 55S517",
         "offers": {
            "@type": "Offer",
-           "Price": "$606",
+           "price": "$606",
            "url": "https://wclink.co/link/30228/151537/4/88249?merchant=Walmart"
          }
        },
@@ -26569,21 +26567,21 @@ JSON:
         {
           "@type": "PropertyValue",
           "name": "Available sizes",
-          "value": "43, 49, 55, and 65 inches",
+          "value": "43, 49, 55, and 65 inches"
         },
         {
           "@type": "PropertyValue",
           "name": "HDMI ports",
-          "value": "three",
+          "value": "three"
         },
         {
           "@type": "PropertyValue",
-          "Name": "Smart OS",
-         "Value": "Roku",
+          "name": "Smart OS",
+          "value": "Roku"
         }
       ],
       "reviewBody": "The TCL 5-Series TV offers image quality on a par with much more expensive TVs and it offers media-streaming services and some extra features that costlier TVs don't have. We still think ..."
-    },
+    }
   ]
 }
 </script>
@@ -26608,12 +26606,12 @@ JSON:
 
 <script type="application/ld+json">
 {
-  "@context": "schema.org",
+  "@context": "https://schema.org",
   "@type": "Guide",
   "category": "Best Midsize Cars",
   "name": "12 Best Midsize Cars for the Money in 2019",
-  "text": "While manufacturers scramble for a piece of the growing SUV market, many well-known midsize cars continue to offer a lot of features for the money. Most of the twelve models on this list are very familiar to shoppers since they've been around for years. But many of these models have seen recent upgrades that brought advanced safety and infotainment technologies to these well-known names..."
-   "hasPart": [
+  "text": "While manufacturers scramble for a piece of the growing SUV market, many well-known midsize cars continue to offer a lot of features for the money. Most of the twelve models on this list are very familiar to shoppers since they've been around for years. But many of these models have seen recent upgrades that brought advanced safety and infotainment technologies to these well-known names...",
+  "hasPart": [
     {
       "@type": "Recommendation",
       "position": 12,
@@ -26627,14 +26625,14 @@ JSON:
           "@type": "PropertyValue",
           "name": "price",
           "value": "$25,070"
-        },
+        }
       ],
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": 7.6,
         "bestRating": 10,
-        "worstRating": 1,
-      }
+        "worstRating": 1
+      },
       "reviewBody": "The 2019 Buick Regal has one of the highest price tags on this list, and its cost of ownership continues to be high. It has the highest fuel cost in the ..."
     },
     {
@@ -26651,16 +26649,17 @@ JSON:
           "@type": "PropertyValue",
           "name": "price",
           "value": "$22,840"
-        },
+        }
       ],
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": 8.2,
         "bestRating": 10,
-        "worstRating": 1,
-      }
+        "worstRating": 1
+      },
       "reviewBody": "It's interesting to note that the 2019 Ford Fusion with its gasoline engine has a higher fuel cost than almost all of its competitors. There are plug-in and hybrid versions of the Fusion that do better in this regard. The hybrid in particular..."
-    },  ]
+    }
+  ]
 }
 </script>
 
@@ -26683,7 +26682,7 @@ JSON:
 
 <script type="application/ld+json">
 {
-  "@context": "schema.org",
+  "@context": "https://schema.org",
   "@type": "Guide",
   "name": "The Best TVs",
   "category": "TVs",
@@ -26694,7 +26693,7 @@ JSON:
       "name": "The best overall LCD/LED TV",
       "itemReviewed": {
         "@type": "Product",
-        "name": "Vizio P-Series F1"
+        "name": "Vizio P-Series F1",
         "offers": {
            "@type": "Offer",
            "price": "$750",
@@ -26705,17 +26704,17 @@ JSON:
         {
           "@type": "PropertyValue",
           "name": "Available sizes",
-          "value": "55, 65, 77 inches",
+          "value": "55, 65, 77 inches"
         },
         {
           "@type": "PropertyValue",
           "name": "HDMI ports",
-          "value": "four",
+          "value": "four"
         },
         {
           "@type": "PropertyValue",
           "name": "Smart OS",
-          "value": "SmartCast OS",
+          "value": "SmartCast OS"
         }
       ],
       "reviewBody": "The 2018 Vizio P-Series F1 offers everything you need to enjoy a high-end TV experience today. The TV uses full-array local dimming, which produces superior contrast ratios for SD and HD content but also provides the best HDR experience on an LCD TV. The LCD panel has a native 120 Hz refresh ..."
@@ -26726,10 +26725,10 @@ JSON:
       "name": "If you can't spend as much: Best budget 4K TV",
       "itemReviewed": {
         "@type": "Product",
-        "name": "TCL 55S517"
+        "name": "TCL 55S517",
         "offers": {
            "@type": "Offer",
-           "Price": "$606",
+           "price": "$606",
            "url": "https://wclink.co/link/30228/151537/4/88249?merchant=Walmart"
          }
        },
@@ -26737,21 +26736,21 @@ JSON:
         {
           "@type": "PropertyValue",
           "name": "Available sizes",
-          "value": "43, 49, 55, and 65 inches",
+          "value": "43, 49, 55, and 65 inches"
         },
         {
           "@type": "PropertyValue",
           "name": "HDMI ports",
-          "value": "three",
+          "value": "three"
         },
         {
           "@type": "PropertyValue",
-          "Name": "Smart OS",
-         "Value": "Roku",
+          "name": "Smart OS",
+          "value": "Roku"
         }
       ],
       "reviewBody": "The TCL 5-Series TV offers image quality on a par with much more expensive TVs and it offers media-streaming services and some extra features that costlier TVs don't have. We still think ..."
-    },
+    }
   ]
 }
 </script>
@@ -26776,11 +26775,11 @@ JSON:
 
 <script type="application/ld+json">
 {
-  "@context": "schema.org",
+  "@context": "https://schema.org",
   "@type": "Guide",
   "category": "Best Midsize Cars",
   "name": "12 Best Midsize Cars for the Money in 2019",
-  "text": "While manufacturers scramble for a piece of the growing SUV market, many well-known midsize cars continue to offer a lot of features for the money. Most of the twelve models on this list are very familiar to shoppers since they've been around for years. But many of these models have seen recent upgrades that brought advanced safety and infotainment technologies to these well-known names..."
+  "text": "While manufacturers scramble for a piece of the growing SUV market, many well-known midsize cars continue to offer a lot of features for the money. Most of the twelve models on this list are very familiar to shoppers since they've been around for years. But many of these models have seen recent upgrades that brought advanced safety and infotainment technologies to these well-known names...",
    "hasPart": [
     {
       "@type": "Recommendation",
@@ -26795,14 +26794,14 @@ JSON:
           "@type": "PropertyValue",
           "name": "price",
           "value": "$25,070"
-        },
+        }
       ],
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": 7.6,
         "bestRating": 10,
-        "worstRating": 1,
-      }
+        "worstRating": 1
+        },
       "reviewBody": "The 2019 Buick Regal has one of the highest price tags on this list, and its cost of ownership continues to be high. It has the highest fuel cost in the ..."
     },
     {
@@ -26819,16 +26818,17 @@ JSON:
           "@type": "PropertyValue",
           "name": "price",
           "value": "$22,840"
-        },
+        }
       ],
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": 8.2,
         "bestRating": 10,
-        "worstRating": 1,
-      }
+        "worstRating": 1
+      },
       "reviewBody": "It's interesting to note that the 2019 Ford Fusion with its gasoline engine has a higher fuel cost than almost all of its competitors. There are plug-in and hybrid versions of the Fusion that do better in this regard. The hybrid in particular..."
-    },  ]
+    }
+  ]
 }
 </script>
 
@@ -26962,9 +26962,8 @@ JSON:
   "exampleOfWork":
     {
        "@type": "Movie",
-         "sameAs": "https://www.wikidata.org/wiki/Q836821"
+       "sameAs": "https://www.wikidata.org/wiki/Q836821"
     }
-  }
 }
 </script>
 
@@ -27002,7 +27001,7 @@ JSON:
   "name": "Large green jacket",
   "description": "Large wool green jacket for the winter months",
   "brand": {
-    "@type": "Thing",
+    "@type": "Brand",
     "name": "A fashion brand"
   },
   "color": "green",
@@ -27018,7 +27017,7 @@ JSON:
     "hasMeasurement": [
       {
         "@type": "QuantitativeValue",
-        "valueReference": "https://schema.org/WearableMeasurementChest",
+        "valueReference": "https://schema.org/WearableMeasurementChestOrBust",
         "unitCode": "INH",
         "value": 52
       },
@@ -27266,9 +27265,9 @@ JSON:
        "name": "New York Times",
        "@id": "https://www.nytimes.com"
        },
-   "datePublished":"2018:01:23",
-   "dateModified":"2018:01:23",
-   "Headline":"The Snubs and Surprises of the 2018 Oscar Nominations",
+   "datePublished":"2018-01-23",
+   "dateModified":"2018-01-23",
+   "headline":"The Snubs and Surprises of the 2018 Oscar Nominations",
    "mainEntityOfPage": "https://www.nytimes.com/2018/01/23/movies/oscars-snubs-surprises.html",
    "correction": {
       "@type": "CorrectionComment",
@@ -27307,7 +27306,6 @@ JSON:
   "termDuration": "P4M",
   "termsPerYear": 2,
   "typicalCreditsPerTerm": 4
-  }
 }
 </script>
 
@@ -27464,9 +27462,7 @@ JSON:
   "@context": "https://schema.org/",
   "@type": "JobPosting",
   "title": "Systems Research Engineer",
-  "employerOverview": "Acme is committed to providing an environment where the
-     most creative people want to work. We are committed to creating a diverse
-     environment and are proud to be an equal opportunity employer."
+  "employerOverview": "Acme is committed to providing an environment where the  most creative people want to work. We are committed to creating a diverse environment and are proud to be an equal opportunity employer."
 }
 </script>
 
@@ -27495,7 +27491,7 @@ JSON:
     "@type": "DefinedTerm",
     "termCode": "511210",
     "name": "Software Publishers",
-    "url": "https://www.naics.com/naics-code-description/?code=511210"
+    "url": "https://www.naics.com/naics-code-description/?code=511210",
     "inDefinedTermSet": "NAICS (North American Industry Classification System)"
   }
 }
@@ -28550,6 +28546,62 @@ JSON:
 }
 </script>
 
+TYPES: #eg-0467 MediaReview
+
+PRE-MARKUP:
+
+Example of MediaReview vocabulary usage.
+
+MICRODATA:
+
+N/A
+
+RDFA:
+
+N/A
+
+JSON:
+
+<script type="application/ld+json">
+{
+   "@context":"https://schema.org",
+   "@type":"MediaReview",
+   "datePublished":"2021-04-27",
+   "url":"https://www.politifact.com/factchecks/2021/apr/27/instagram-posts/mariah-carey-didnt-fake-getting-her-covid-19-vacci/",
+   "author":{
+      "@type":"Organization",
+      "name":"PolitiFact",
+      "url": "https://politifact.com"
+   },
+   "mediaAuthenticityCategory":"DecontexualizedContent",
+    "originalMediaContextDescription":"Singer Mariah Carey shared a video of herself receiving a COVID-19 vaccination.",
+   "itemReviewed":{
+      "@type":"MediaReviewItem",
+      "creator":{
+         "@type":"Person",
+         "name":"Instagram user",
+         "url":"https://www.instagram.com/wrong_saloon_bear/?hl=en"
+      },
+      "interpretedAsClaim":{
+         "@type":"Claim",
+         "description": "Mariah Carey faked getting her COVID-19 vaccine because the needle can’t be seen coming out of her arm."
+      },
+      "mediaItemAppearance":[
+         {
+            "@type":"VideoObjectSnapshot",
+            "description": "An Instagram user posted a zoomed-in version of a video of Mariah Carey receiving a COVID vaccination, writing ‘It’s all a scam, don’t celebrate celebrities.’"
+         },
+         {
+            "@type":"VideoObjectSnapshot",
+            "contentUrl":"https://www.instagram.com/p/CNtao_WA0Dr/",
+            "archivedAt":"https://archive.is/EXAMPLE"
+         }
+      ]
+   }
+}
+
+</script>
+
 TYPES: #eg-0249 Person, Occupation
 
 PRE-MARKUP:
@@ -28801,8 +28853,8 @@ JSON:
       "@type": "Schedule",
       "byDay": "https://schema.org/Wednesday",
       "byMonthWeek": [1, 3],
-      "startTime": "20:00",
-      "endTime": "22:00"
+      "startTime": "20:00:00",
+      "endTime": "22:00:00"
     }
 }
 </script>
@@ -28926,7 +28978,7 @@ JSON:
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  @type": "Person",
+  "@type": "Person",
   "name": "Turner, Caroline B.",
   "givenName": "Caroline B.",
   "familyName": "Turner",
@@ -28935,7 +28987,7 @@ JSON:
      "identifier": "1448821",
      "funder": {
        "@type": "Organization",
-       "name": National Science Foundation",
+       "name": "National Science Foundation",
        "identifier": "https://doi.org/10.13039/100000001"
      }
    }
@@ -29212,7 +29264,7 @@ JSON:
     "category": "https://www.wikidata.org/wiki/Q81068910",
     "schoolClosuresInfo": "http://example.org/schools/school/eastergate-cofe-primary-school/closures",
     "webFeed": {
-      "@type": "DateFeed",
+      "@type": "DataFeed",
       "@url": "http://example.org/schools/school/eastergate-cofe-primary-school/closures",
       "encodingFormat": "application/rss+atom"
     },
@@ -29339,7 +29391,6 @@ JSON:
       "name": "Small businesses"
      }
    }
-  }
 }
 </script>
 
@@ -29389,7 +29440,6 @@ JSON:
       "author": "https://openlibrary.org/authors/OL26320A/J.R.R._Tolkien",
       "image": "https://covers.openlibrary.org/w/id/8167232-M.jpg",
       "description": "The Two Towers by J.R.R. Tolkien; 183 editions; First published in 1954; Subjects: Ents, Orcs, hobbits, magic, Ficción fantástica inglesa, Ficción, translations into Spanish, readers for new literates, The Lord of the Rings, English Fantasy fiction, In library, Open Library Staff Picks, Accessible book, Fiction, Large type books, Fantasy, Protected DAISY, Popular Print Disabled Books, Popular Carousel, Internet Archive Wishlist, Middle Earth (Imaginary place), Tierra Media (Lugar imaginario), Baggins, Frodo (Personaje literario); Places: Middle Earth (Imaginary place), Tierra Media, River Anduin, Middle Earth, Minas Tirith, Rohan, Fangorn Forrest, Moria, Edoras, Helm's Deep, Isengard, Gondor, Mount Doom, Ithilien, Dead Marshes; People: Gandalf, Frodo Baggins, Aragorn II, Merry, Pippin, Samwise, Boromir, Saruman the White, Uruk-hai, Sauron, Shelob, Legolas, Gimli, Huorns, Gollum, Éomer, Gríma Wormtongue, the Balrog, Treebeard, Rohirrim, Théoden"
-      }
   }
 }
 </script>
@@ -29449,8 +29499,8 @@ JSON:
      "endDate": "2017-12-31",
      "repeatFrequency": "P1W",
      "byDay": "https://schema.org/Wednesday",
-     "startTime": "19:00",
-     "endTime": "20:00",
+     "startTime": "19:00:00",
+     "endTime": "20:00:00",
      "scheduleTimezone": "Europe/London"
   }
 }
@@ -29481,8 +29531,8 @@ JSON:
      "@type": "Schedule",
      "repeatFrequency": "P1M",
      "byMonthDay": [1,15],
-     "startTime": "09:00",
-     "endTime": "10:00",
+     "startTime": "09:00:00",
+     "endTime": "10:00:00",
      "scheduleTimezone": "America/Glace_Bay"
   }
 }
@@ -29515,8 +29565,8 @@ JSON:
           "startDate": "2016-12-24",
           "repeatFrequency": "P1D",
           "repeatCount": 10,
-          "startTime": "09:00",
-          "endTime": "10:00",
+          "startTime": "09:00:00",
+          "endTime": "10:00:00",
           "scheduleTimezone": "Europe/London"
         }
     }
@@ -29554,8 +29604,8 @@ JSON:
         "https://schema.org/Thursday",
         "https://schema.org/Friday"
       ],
-      "startTime": "09:00",
-      "endTime": "10:00",
+      "startTime": "09:00:00",
+      "endTime": "10:00:00",
       "scheduleTimezone": "America/Glace_Bay"
     },
     {
@@ -29568,8 +29618,8 @@ JSON:
         "https://schema.org/Thursday",
         "https://schema.org/Friday"
       ],
-      "startTime": "14:00",
-      "endTime": "15:00",
+      "startTime": "14:00:00",
+      "endTime": "15:00:00",
       "scheduleTimezone": "America/Glace_Bay"
     }
   ]
@@ -29602,8 +29652,8 @@ JSON:
       "@type": "Schedule",
       "repeatFrequency": "P1M",
       "byDay": "2MO",
-      "startTime": "18:00",
-      "endTime": "19:30",
+      "startTime": "18:00:00",
+      "endTime": "19:30:00",
       "scheduleTimezone": "Asia/Shanghai"
     }
   ]
@@ -29682,6 +29732,46 @@ JSON:
       "http://ichef-1.bbci.co.uk/news/560/cpsprodpb/12B64/production/_95244667_mediaitem95244666.jpg"
    ],
    "datePublished":"2017-03-20T20:30:54+00:00"
+}
+</script>
+
+TYPES: #eg-0466 BioChemEntity
+
+PRE-MARKUP:
+
+<div>
+    <span>APP<span>
+    can refer to either a gene or a protein known to be associated to
+    <span>Alzheimer disease</span>. Whenever possible, this should actually
+    be marked up as either a Protein or a Gene. Here we use BioChemEntity
+    to show how the property works in a generic way.
+</div>
+
+MICRODATA:
+
+<div>Not available</div>
+
+RDFA:
+
+<div>Not available</div>
+
+JSON:
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BioChemEntity",
+  "name": "APP",
+  "associatedDisease": {
+      "@type": "MedicalCondition",
+      "name": "Alzheimer disease",
+      "code": {
+          "@type": "MedicalCode",
+          "codeValue": "104300",
+          "codingSystem": "OMIM",
+          "url": "http://www.omim.org/entry/104300"
+      }
+  }
 }
 </script>
 
@@ -29809,25 +29899,25 @@ JSON:
   "@type": "EducationalOccupationalProgram",
   "name": "Undergraduate CS degree from ACME College",
   "url": "http://www.acme.edu/CS",
-   provider": {
+  "provider": {
     "@type": "CollegeOrUniversity",
     "name": "ACME Community College",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Main Street",
       "addressLocality": "Boston",
-      "addressRegion", "MA",
+      "addressRegion": "MA",
       "postalCode": "02134"
-    },
+    }
   },
-  timeToComplete": "P4Y",
+  "timeToComplete": "P4Y",
   "educationalCredentialAwarded": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Bachelor of Science in Computer Science"
   },
-  programPrerequisites": {
-      "@type": "EducationalOccupationalCredential",
-      "credentialCategory": "High school diploma"
+  "programPrerequisites": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "High school diploma"
   },
   "offers": [
     {
@@ -29896,22 +29986,22 @@ JSON:
     "@type": "WorkersUnion",
     "name": "International Brotherhood of Electrical Workers"
   },
-  occupationalCategory": "47-2111.00",
+  "occupationalCategory": "47-2111.00",
   "occupationalCredentialAwarded": {
     "@type": "EducationalOccupationalCredential",
     "credentialCategory": "Electrical workers license"
   },
-  salaryUponCompletion": {
+  "salaryUponCompletion": {
     "@type": "MonetaryAmountDistribution",
     "currency": "USD",
     "duration": "P1Y",
     "median": 41500.00
   },
-  trainingSalary": {
+  "trainingSalary": {
     "@type": "MonetaryAmountDistribution",
     "currency": "USD",
-    "duration": "P1H",
-    "median": 16.00"
+    "duration": "PT1H",
+    "median": "16.00"
   }
 }
 </script>
@@ -30093,21 +30183,18 @@ RDFA:
 JSON:
 
 <script type="application/ld+json">
-
 {
-"@context": "https://schema.org",
-"@type": "LegalService",
-"name": "Example Legal Aid Nonprofit",
-"text": "A nonprofit statewide law firm dedicated to providing equal access to justice for low income people through quality advocacy and education.",
-"nonprofitStatus" : "Nonprofit501c20",
-"url":  "https://www.example.org/nonprofit/info"
-"areaServed": {
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Example Legal Aid Nonprofit",
+  "description": "A nonprofit statewide law firm dedicated to providing equal access to justice for low income people through quality advocacy and education.",
+  "nonprofitStatus" : "Nonprofit501c20",
+  "url":  "https://www.example.org/nonprofit/info",
+  "areaServed": {
     "@type": "AdministrativeArea",
     "name": "Idaho"
-    }
-
+  }
 }
-
 </script>
 
 TYPES: #eg-0230 Legislation
@@ -30539,7 +30626,7 @@ JSON:
      "@type": "SolveMathAction",
      "target": "https://mathdomain.com/graph?q={math_expression_string}",
      "mathExpression-input": "required name=math_expression_string",
-     "eduQuestionType": "Graphing",
+     "eduQuestionType": "Graphing"
    }]
 }
 
@@ -30596,7 +30683,7 @@ JSON:
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
-  "@type": ["CreativeWork","ArchiveComponent"]
+  "@type": ["CreativeWork","ArchiveComponent"],
   "url": "https://purl.stanford.edu/bp158wj7223",
   "name": "Margaret Mitchell letter to Herschel Bricknell, 1936 August 22",
   "conditionsOfAccess": "Online content is available for access via the Special Collections Reading Room.",
@@ -30605,7 +30692,8 @@ JSON:
     "name": "Stanford Digital Repository",
     "url": "https://purl.stanford.edu/"
   }
-}</script>
+}
+</script>
 
 TYPES: #eg-0170 Event, eventAttendanceMode, VirtualLocation
 
