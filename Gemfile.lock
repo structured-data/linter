@@ -17,10 +17,10 @@ GIT
 
 GIT
   remote: https://github.com/dryruby/ebnf
-  revision: 5a6acf90e3e76ecbf899bea959f47a70a85fbd5c
+  revision: d3495fb540989f2ff57b04fbd867bab485a0ec20
   branch: develop
   specs:
-    ebnf (2.1.3)
+    ebnf (2.2.1)
       amazing_print (~> 1.2)
       htmlentities (~> 4.3)
       rdf (~> 3.1)
@@ -30,10 +30,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 97d0daa4ff8f9497de683bd4cee902f9e5cf2131
+  revision: f7daf36de697a4654c73d7bc81445e93a5d0a3aa
   branch: develop
   specs:
-    json-ld (3.1.9)
+    json-ld (3.1.10)
       htmlentities (~> 4.3)
       json-canonicalization (~> 0.2)
       link_header (~> 0.0, >= 0.0.8)
@@ -43,10 +43,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 58bcee6012cc0dbcbf2e1deb8911c266f1a4b5aa
+  revision: 241b763afb158c59b7b4440d868fe5744bba167e
   branch: develop
   specs:
-    json-ld-preloaded (3.1.5)
+    json-ld-preloaded (3.1.6)
       json-ld (~> 3.1)
       rdf (~> 3.1)
 
@@ -61,7 +61,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: 8de7b80ab60e4e1225ed1fee73d3fc7f64d50eaa
+  revision: e4be611d9ee4ef009ce67f82dbe30dd99ecb6f29
   branch: develop
   specs:
     rdf (3.1.15)
@@ -70,7 +70,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-microdata
-  revision: 5fe0cadcda10c7f4d36e9d4247f3fabf47a46175
+  revision: 60eb619bd4f9197adf3895e06d855542c4e9f788
   branch: develop
   specs:
     rdf-microdata (3.1.3)
@@ -82,7 +82,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-ordered-repo
-  revision: 8e81a910c24bdf15860274afff314c5dddc6e401
+  revision: e363c2e8475cbb689e13ed5ae560f736a3a0aea8
   branch: develop
   specs:
     rdf-ordered-repo (3.1.1)
@@ -90,7 +90,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: 17421be4d4581bdc740166053fcbc5c5323010cb
+  revision: f30555a36c764e3b189ee9da48b34410c5cf86e5
   branch: develop
   specs:
     rdf-rdfa (3.1.3)
@@ -103,7 +103,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfxml
-  revision: f800559d4bc4f1351bf69ac27c688ffc001f97dd
+  revision: 37c6a104a5f88ad18ca0f31965e6a94cfd307154
   branch: develop
   specs:
     rdf-rdfxml (3.1.1)
@@ -114,7 +114,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: bfa7ce11926310414369ef432a33d55f83636ba2
+  revision: ef53ba0e229e32f0a39c6820ee73e264afbd67d5
   branch: develop
   specs:
     rdf-reasoner (0.7.2)
@@ -123,7 +123,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: 8ec503ea107d100d7bb17f460ccd22152e1b526c
+  revision: 8fc8a1f1fdd54ffbcf459a36bbebbe870635d328
   branch: develop
   specs:
     rdf-spec (3.1.2)
@@ -137,7 +137,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-turtle
-  revision: 71b3a093728688e90dc2576e786c1fa0070599ad
+  revision: 01375389d2ce1d39259689e74ff3198a393e7b05
   branch: develop
   specs:
     rdf-turtle (3.1.3)
@@ -146,15 +146,15 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: 37b948b476c126e05e1234da4cd6d1a90a29ea37
+  revision: 19764d54f513a11a394d3ba70507b9f2116208ab
   branch: develop
   specs:
-    rdf-vocab (3.1.13)
+    rdf-vocab (3.1.14)
       rdf (~> 3.1, >= 3.1.12)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-xsd
-  revision: 093c0abb125d812bf08cf5a584c3371065f0bc65
+  revision: e1038022de9eb017e1f219864cc13031a44c2440
   branch: develop
   specs:
     rdf-xsd (3.1.1)
@@ -173,18 +173,17 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.13.0)
+    linter (3.13.1)
       activesupport (~> 5.0)
       equivalent-xml
       erubis (~> 2.7)
-      haml (~> 5.1)
+      haml (~> 5.2)
       json-ld (~> 3.1)
       json-ld-preloaded (~> 3.1)
-      nokogiri (~> 1.11, >= 1.11.4)
-      nokogumbo (~> 2.0)
-      puma (~> 5.3)
-      rack-cache (~> 1.11)
-      rdf (~> 3.1, >= 3.1.12)
+      nokogiri (~> 1.12)
+      puma (~> 5.5)
+      rack-cache (~> 1.13)
+      rdf (~> 3.1, >= 3.1.15)
       rdf-microdata (~> 3.1)
       rdf-rdfa (~> 3.1)
       rdf-rdfxml (~> 3.1)
@@ -193,10 +192,10 @@ PATH
       rdf-vocab (~> 3.1)
       rdf-xsd (~> 3.1)
       sass (~> 3.7)
-      sinatra (~> 2.0)
+      sinatra (~> 2.1)
       sinatra-asset-pipeline (~> 2.2)
       sinatra-rdf (~> 3.1)
-      sprockets-helpers (~> 1.2)
+      sprockets-helpers (~> 1.4)
       uglifier (~> 4.2)
 
 GEM
@@ -234,9 +233,9 @@ GEM
     erubi (1.10.0)
     erubis (2.7.0)
     execjs (2.8.1)
-    ffi (1.15.3)
+    ffi (1.15.4)
     foreman (0.87.2)
-    haml (5.2.1)
+    haml (5.2.2)
       temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
@@ -252,27 +251,27 @@ GEM
     link_header (0.0.8)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0704)
+    mime-types-data (3.2021.0901)
     minitest (5.14.4)
     multi_json (1.15.0)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
-    nio4r (2.5.7)
+    nio4r (2.5.8)
+    nokogiri (1.12.5-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
-    nokogumbo (2.0.5)
-      nokogiri (~> 1.8, >= 1.8.4)
-    oj (3.12.0)
+    oj (3.13.8)
     optimist (3.0.1)
     public_suffix (4.0.6)
-    puma (5.3.2)
+    puma (5.5.0)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
-    rack-cache (1.12.1)
+    rack-cache (1.13.0)
       rack (>= 0.4)
     rack-protection (2.1.0)
       rack
@@ -308,7 +307,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
     rspec-support (3.10.2)
-    ruby2_keywords (0.0.4)
+    ruby2_keywords (0.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -346,20 +345,21 @@ GEM
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.7)
-    unicode-types (1.6.0)
-    webmock (3.13.0)
-      addressable (>= 2.3.6)
+    unf_ext (0.0.8)
+    unicode-types (1.7.0)
+    webmock (3.14.0)
+      addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
     yard (0.9.26)
 
 PLATFORMS
+  arm64-darwin-20
   x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
-  better_errors
+  better_errors (>= 2.9.1)
   binding_of_caller
   byebug
   ebnf!
@@ -382,15 +382,15 @@ DEPENDENCIES
   rdf-vocab!
   rdf-xsd!
   rest-client-components!
-  rspec (~> 3.9)
+  rspec (~> 3.10)
   rspec-its (~> 1.3)
-  shotgun
+  shotgun (>= 0.9.2)
   sinatra-rdf!
   syntax
-  yard (~> 0.9, >= 0.9.24)
+  yard (~> 0.9, >= 0.9.26)
 
 RUBY VERSION
-   ruby 3.0.1p64
+   ruby 3.0.2p107
 
 BUNDLED WITH
-   2.2.15
+   2.2.28
