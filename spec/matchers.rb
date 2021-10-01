@@ -1,5 +1,4 @@
 require 'rspec/matchers'
-require 'nokogumbo'
 
 RSpec::Matchers.define :have_xpath do |path, value, trace|
   match do |actual|
