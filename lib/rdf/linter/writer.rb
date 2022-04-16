@@ -226,7 +226,7 @@ module RDF::Linter
       else
         subject_done(object)
         # It is marked up in a Review class
-        graph.query(subject: object) do |st|
+        graph.query({subject: object}) do |st|
           html += %(<span property='#{get_curie(st.predicate)}' content='#{st.object}' />)
           case st.predicate.to_s
           when /best(?:Rating)/
