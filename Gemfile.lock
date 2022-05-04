@@ -30,7 +30,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 04675dbb0db113b5bde3f25bcdc5ce8ca479ee0f
+  revision: 9fd51e0622ebe5c52c736d56f31ddf74b4eb7bb5
   branch: develop
   specs:
     json-ld (3.2.0)
@@ -61,10 +61,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: a08362390381c43cca011052f67853f9c3530917
+  revision: 9543ab3c4cc79628382b917e41a53c9cf66679b4
   branch: develop
   specs:
-    rdf (3.2.6)
+    rdf (3.2.7)
       link_header (~> 0.0, >= 0.0.8)
 
 GIT
@@ -122,7 +122,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: 6adb61112b4f3c9e56db78cab3791dfa954bb6c7
+  revision: 829d16a711d85afb136cd48b23e542b533f3e6f1
   branch: develop
   specs:
     rdf-spec (3.2.0)
@@ -191,7 +191,7 @@ PATH
       rdf-vocab (~> 3.1)
       rdf-xsd (~> 3.1)
       sass (~> 3.7)
-      sinatra (~> 2.1)
+      sinatra (~> 2.2)
       sinatra-asset-pipeline (~> 2.2)
       sinatra-rdf (~> 3.1)
       sprockets-helpers (~> 1.4)
@@ -200,7 +200,7 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (5.2.7)
+    activesupport (5.2.7.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)

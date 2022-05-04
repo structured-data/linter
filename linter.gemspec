@@ -38,7 +38,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'rdf-vocab',          '~> 3.1'
   gem.add_runtime_dependency      'rdf-xsd',            '~> 3.1'
   gem.add_runtime_dependency      'sass',               '~> 3.7'
-  gem.add_runtime_dependency      'sinatra',            '~> 2.1'
+  gem.add_runtime_dependency      'sinatra',            '~> 2.2'
   gem.add_runtime_dependency      'sinatra-rdf',        '~> 3.1'
   gem.add_runtime_dependency      'sinatra-asset-pipeline', '~> 2.2'
   gem.add_runtime_dependency      'sprockets-helpers',  '~> 1.4'
