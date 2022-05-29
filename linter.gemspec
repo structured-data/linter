@@ -26,7 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'haml',               '~> 5.2'
   gem.add_runtime_dependency      'json-ld',            '~> 3.1'
   gem.add_runtime_dependency      'json-ld-preloaded',  '~> 3.1'
-  gem.add_runtime_dependency      'nokogiri',           '~> 1.13', '>= 1.13.4'
+  gem.add_runtime_dependency      'nokogiri',           '~> 1.13', '>= 1.13.6'
   gem.add_runtime_dependency      'puma',               '~> 5.5'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.13'
   gem.add_runtime_dependency      'rdf',                '~> 3.1', '>= 3.1.15'
