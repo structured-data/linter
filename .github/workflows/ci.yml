@@ -22,7 +22,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1.0
+          ruby-version: 3.1.2
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3
       - name: Run tests
