@@ -708,12 +708,6 @@
       "CreativeWork"
     ],
     "examples": {
-      "eg-0023": {
-        "pre": "schema.org/eg-0023-pre.html",
-        "microdata": "schema.org/eg-0023-microdata.html",
-        "rdfa": "schema.org/eg-0023-rdfa.html",
-        "jsonld": "schema.org/eg-0023-jsonld.html"
-      },
       "eg-0398": {
         "pre": "schema.org/eg-0398-pre.html",
         "microdata": "schema.org/eg-0398-microdata.html",
@@ -725,6 +719,12 @@
         "microdata": "schema.org/eg-0399-microdata.html",
         "rdfa": "schema.org/eg-0399-rdfa.html",
         "jsonld": "schema.org/eg-0399-jsonld.html"
+      },
+      "eg-0023": {
+        "pre": "schema.org/eg-0023-pre.html",
+        "microdata": "schema.org/eg-0023-microdata.html",
+        "rdfa": "schema.org/eg-0023-rdfa.html",
+        "jsonld": "schema.org/eg-0023-jsonld.html"
       },
       "eg-0228": {
         "pre": "schema.org/eg-0228-pre.html",
@@ -1237,7 +1237,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0476": {
+        "pre": "schema.org/eg-0476-pre.html",
+        "microdata": "schema.org/eg-0476-microdata.html",
+        "rdfa": "schema.org/eg-0476-rdfa.html",
+        "jsonld": "schema.org/eg-0476-jsonld.html"
+      },
+      "eg-0477": {
+        "pre": "schema.org/eg-0477-pre.html",
+        "microdata": "schema.org/eg-0477-microdata.html",
+        "rdfa": "schema.org/eg-0477-rdfa.html",
+        "jsonld": "schema.org/eg-0477-jsonld.html"
+      }
+    }
   },
   "BlogPosting": {
     "super_class": "SocialMediaPosting",
@@ -1249,7 +1263,21 @@
       "CreativeWork",
       "Article",
       "SocialMediaPosting"
-    ]
+    ],
+    "examples": {
+      "eg-0476": {
+        "pre": "schema.org/eg-0476-pre.html",
+        "microdata": "schema.org/eg-0476-microdata.html",
+        "rdfa": "schema.org/eg-0476-rdfa.html",
+        "jsonld": "schema.org/eg-0476-jsonld.html"
+      },
+      "eg-0477": {
+        "pre": "schema.org/eg-0477-pre.html",
+        "microdata": "schema.org/eg-0477-microdata.html",
+        "rdfa": "schema.org/eg-0477-rdfa.html",
+        "jsonld": "schema.org/eg-0477-jsonld.html"
+      }
+    }
   },
   "BloodTest": {
     "super_class": "MedicalTest",
@@ -1365,6 +1393,12 @@
 
     ],
     "examples": {
+      "eg-0400": {
+        "pre": "schema.org/eg-0400-pre.html",
+        "microdata": "schema.org/eg-0400-microdata.html",
+        "rdfa": "schema.org/eg-0400-rdfa.html",
+        "jsonld": "schema.org/eg-0400-jsonld.html"
+      },
       "eg-0462": {
         "pre": "schema.org/eg-0462-pre.html",
         "microdata": "schema.org/eg-0462-microdata.html",
@@ -1376,12 +1410,6 @@
         "microdata": "schema.org/eg-0175-microdata.html",
         "rdfa": "schema.org/eg-0175-rdfa.html",
         "jsonld": "schema.org/eg-0175-jsonld.html"
-      },
-      "eg-0400": {
-        "pre": "schema.org/eg-0400-pre.html",
-        "microdata": "schema.org/eg-0400-microdata.html",
-        "rdfa": "schema.org/eg-0400-rdfa.html",
-        "jsonld": "schema.org/eg-0400-jsonld.html"
       },
       "eg-0393": {
         "pre": "schema.org/eg-0393-pre.html",
@@ -3140,17 +3168,17 @@
         "rdfa": "schema.org/eg-0220-rdfa.html",
         "jsonld": "schema.org/eg-0220-jsonld.html"
       },
-      "eg-0465": {
-        "pre": "schema.org/eg-0465-pre.html",
-        "microdata": "schema.org/eg-0465-microdata.html",
-        "rdfa": "schema.org/eg-0465-rdfa.html",
-        "jsonld": "schema.org/eg-0465-jsonld.html"
-      },
       "eg-0246": {
         "pre": "schema.org/eg-0246-pre.html",
         "microdata": "schema.org/eg-0246-microdata.html",
         "rdfa": "schema.org/eg-0246-rdfa.html",
         "jsonld": "schema.org/eg-0246-jsonld.html"
+      },
+      "eg-0465": {
+        "pre": "schema.org/eg-0465-pre.html",
+        "microdata": "schema.org/eg-0465-microdata.html",
+        "rdfa": "schema.org/eg-0465-rdfa.html",
+        "jsonld": "schema.org/eg-0465-jsonld.html"
       },
       "eg-0257": {
         "pre": "schema.org/eg-0257-pre.html",
@@ -3357,7 +3385,21 @@
     "path": [
       "Thing",
       "CreativeWork"
-    ]
+    ],
+    "examples": {
+      "eg-0470": {
+        "pre": "schema.org/eg-0470-pre.html",
+        "microdata": "schema.org/eg-0470-microdata.html",
+        "rdfa": "schema.org/eg-0470-rdfa.html",
+        "jsonld": "schema.org/eg-0470-jsonld.html"
+      },
+      "eg-0472": {
+        "pre": "schema.org/eg-0472-pre.html",
+        "microdata": "schema.org/eg-0472-microdata.html",
+        "rdfa": "schema.org/eg-0472-rdfa.html",
+        "jsonld": "schema.org/eg-0472-jsonld.html"
+      }
+    }
   },
   "Date": {
     "super_class": null
@@ -3451,6 +3493,12 @@
       "Intangible"
     ],
     "examples": {
+      "eg-0287": {
+        "pre": "schema.org/eg-0287-pre.html",
+        "microdata": "schema.org/eg-0287-microdata.html",
+        "rdfa": "schema.org/eg-0287-rdfa.html",
+        "jsonld": "schema.org/eg-0287-jsonld.html"
+      },
       "eg-0314": {
         "pre": "schema.org/eg-0314-pre.html",
         "microdata": "schema.org/eg-0314-microdata.html",
@@ -3468,12 +3516,6 @@
         "microdata": "schema.org/eg-0316-microdata.html",
         "rdfa": "schema.org/eg-0316-rdfa.html",
         "jsonld": "schema.org/eg-0316-jsonld.html"
-      },
-      "eg-0287": {
-        "pre": "schema.org/eg-0287-pre.html",
-        "microdata": "schema.org/eg-0287-microdata.html",
-        "rdfa": "schema.org/eg-0287-rdfa.html",
-        "jsonld": "schema.org/eg-0287-jsonld.html"
       }
     }
   },
@@ -4548,17 +4590,17 @@
       "Thing"
     ],
     "examples": {
-      "eg-0436": {
-        "pre": "schema.org/eg-0436-pre.html",
-        "microdata": "schema.org/eg-0436-microdata.html",
-        "rdfa": "schema.org/eg-0436-rdfa.html",
-        "jsonld": "schema.org/eg-0436-jsonld.html"
-      },
       "eg-0426": {
         "pre": "schema.org/eg-0426-pre.html",
         "microdata": "schema.org/eg-0426-microdata.html",
         "rdfa": "schema.org/eg-0426-rdfa.html",
         "jsonld": "schema.org/eg-0426-jsonld.html"
+      },
+      "eg-0436": {
+        "pre": "schema.org/eg-0436-pre.html",
+        "microdata": "schema.org/eg-0436-microdata.html",
+        "rdfa": "schema.org/eg-0436-rdfa.html",
+        "jsonld": "schema.org/eg-0436-jsonld.html"
       },
       "eg-0461": {
         "pre": "schema.org/eg-0461-pre.html",
@@ -4612,12 +4654,6 @@
         "rdfa": "schema.org/eg-0190-rdfa.html",
         "jsonld": "schema.org/eg-0190-jsonld.html"
       },
-      "eg-0228": {
-        "pre": "schema.org/eg-0228-pre.html",
-        "microdata": "schema.org/eg-0228-microdata.html",
-        "rdfa": "schema.org/eg-0228-rdfa.html",
-        "jsonld": "schema.org/eg-0228-jsonld.html"
-      },
       "eg-0240": {
         "pre": "schema.org/eg-0240-pre.html",
         "microdata": "schema.org/eg-0240-microdata.html",
@@ -4647,6 +4683,12 @@
         "microdata": "schema.org/eg-0244-microdata.html",
         "rdfa": "schema.org/eg-0244-rdfa.html",
         "jsonld": "schema.org/eg-0244-jsonld.html"
+      },
+      "eg-0228": {
+        "pre": "schema.org/eg-0228-pre.html",
+        "microdata": "schema.org/eg-0228-microdata.html",
+        "rdfa": "schema.org/eg-0228-rdfa.html",
+        "jsonld": "schema.org/eg-0228-jsonld.html"
       },
       "eg-0170": {
         "pre": "schema.org/eg-0170-pre.html",
@@ -5096,7 +5138,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0469": {
+        "pre": "schema.org/eg-0469-pre.html",
+        "microdata": "schema.org/eg-0469-microdata.html",
+        "rdfa": "schema.org/eg-0469-rdfa.html",
+        "jsonld": "schema.org/eg-0469-jsonld.html"
+      },
+      "eg-0471": {
+        "pre": "schema.org/eg-0471-pre.html",
+        "microdata": "schema.org/eg-0471-microdata.html",
+        "rdfa": "schema.org/eg-0471-rdfa.html",
+        "jsonld": "schema.org/eg-0471-jsonld.html"
+      }
+    }
   },
   "FundingScheme": {
     "super_class": "Organization",
@@ -5279,17 +5335,17 @@
 
     ],
     "examples": {
-      "eg-0363": {
-        "pre": "schema.org/eg-0363-pre.html",
-        "microdata": "schema.org/eg-0363-microdata.html",
-        "rdfa": "schema.org/eg-0363-rdfa.html",
-        "jsonld": "schema.org/eg-0363-jsonld.html"
-      },
       "eg-0005": {
         "pre": "schema.org/eg-0005-pre.html",
         "microdata": "schema.org/eg-0005-microdata.html",
         "rdfa": "schema.org/eg-0005-rdfa.html",
         "jsonld": "schema.org/eg-0005-jsonld.html"
+      },
+      "eg-0363": {
+        "pre": "schema.org/eg-0363-pre.html",
+        "microdata": "schema.org/eg-0363-microdata.html",
+        "rdfa": "schema.org/eg-0363-rdfa.html",
+        "jsonld": "schema.org/eg-0363-jsonld.html"
       }
     }
   },
@@ -5481,6 +5537,30 @@
         "microdata": "schema.org/eg-0312-microdata.html",
         "rdfa": "schema.org/eg-0312-rdfa.html",
         "jsonld": "schema.org/eg-0312-jsonld.html"
+      },
+      "eg-0469": {
+        "pre": "schema.org/eg-0469-pre.html",
+        "microdata": "schema.org/eg-0469-microdata.html",
+        "rdfa": "schema.org/eg-0469-rdfa.html",
+        "jsonld": "schema.org/eg-0469-jsonld.html"
+      },
+      "eg-0470": {
+        "pre": "schema.org/eg-0470-pre.html",
+        "microdata": "schema.org/eg-0470-microdata.html",
+        "rdfa": "schema.org/eg-0470-rdfa.html",
+        "jsonld": "schema.org/eg-0470-jsonld.html"
+      },
+      "eg-0471": {
+        "pre": "schema.org/eg-0471-pre.html",
+        "microdata": "schema.org/eg-0471-microdata.html",
+        "rdfa": "schema.org/eg-0471-rdfa.html",
+        "jsonld": "schema.org/eg-0471-jsonld.html"
+      },
+      "eg-0472": {
+        "pre": "schema.org/eg-0472-pre.html",
+        "microdata": "schema.org/eg-0472-microdata.html",
+        "rdfa": "schema.org/eg-0472-rdfa.html",
+        "jsonld": "schema.org/eg-0472-jsonld.html"
       }
     }
   },
@@ -6325,12 +6405,6 @@
 
     ],
     "examples": {
-      "eg-0446": {
-        "pre": "schema.org/eg-0446-pre.html",
-        "microdata": "schema.org/eg-0446-microdata.html",
-        "rdfa": "schema.org/eg-0446-rdfa.html",
-        "jsonld": "schema.org/eg-0446-jsonld.html"
-      },
       "eg-0009": {
         "pre": "schema.org/eg-0009-pre.html",
         "microdata": "schema.org/eg-0009-microdata.html",
@@ -6342,6 +6416,12 @@
         "microdata": "schema.org/eg-0023-microdata.html",
         "rdfa": "schema.org/eg-0023-rdfa.html",
         "jsonld": "schema.org/eg-0023-jsonld.html"
+      },
+      "eg-0446": {
+        "pre": "schema.org/eg-0446-pre.html",
+        "microdata": "schema.org/eg-0446-microdata.html",
+        "rdfa": "schema.org/eg-0446-rdfa.html",
+        "jsonld": "schema.org/eg-0446-jsonld.html"
       },
       "eg-0295": {
         "pre": "schema.org/eg-0295-pre.html",
@@ -6474,12 +6554,6 @@
       "Intangible"
     ],
     "examples": {
-      "eg-0377": {
-        "pre": "schema.org/eg-0377-pre.html",
-        "microdata": "schema.org/eg-0377-microdata.html",
-        "rdfa": "schema.org/eg-0377-rdfa.html",
-        "jsonld": "schema.org/eg-0377-jsonld.html"
-      },
       "eg-0016": {
         "pre": "schema.org/eg-0016-pre.html",
         "microdata": "schema.org/eg-0016-microdata.html",
@@ -6509,6 +6583,12 @@
         "microdata": "schema.org/eg-0211-microdata.html",
         "rdfa": "schema.org/eg-0211-rdfa.html",
         "jsonld": "schema.org/eg-0211-jsonld.html"
+      },
+      "eg-0377": {
+        "pre": "schema.org/eg-0377-pre.html",
+        "microdata": "schema.org/eg-0377-microdata.html",
+        "rdfa": "schema.org/eg-0377-rdfa.html",
+        "jsonld": "schema.org/eg-0377-jsonld.html"
       }
     }
   },
@@ -6562,6 +6642,18 @@
         "rdfa": "schema.org/eg-0028-rdfa.html",
         "jsonld": "schema.org/eg-0028-jsonld.html"
       },
+      "eg-0268": {
+        "pre": "schema.org/eg-0268-pre.html",
+        "microdata": "schema.org/eg-0268-microdata.html",
+        "rdfa": "schema.org/eg-0268-rdfa.html",
+        "jsonld": "schema.org/eg-0268-jsonld.html"
+      },
+      "eg-0251": {
+        "pre": "schema.org/eg-0251-pre.html",
+        "microdata": "schema.org/eg-0251-microdata.html",
+        "rdfa": "schema.org/eg-0251-rdfa.html",
+        "jsonld": "schema.org/eg-0251-jsonld.html"
+      },
       "eg-0465": {
         "pre": "schema.org/eg-0465-pre.html",
         "microdata": "schema.org/eg-0465-microdata.html",
@@ -6573,18 +6665,6 @@
         "microdata": "schema.org/eg-0280-microdata.html",
         "rdfa": "schema.org/eg-0280-rdfa.html",
         "jsonld": "schema.org/eg-0280-jsonld.html"
-      },
-      "eg-0251": {
-        "pre": "schema.org/eg-0251-pre.html",
-        "microdata": "schema.org/eg-0251-microdata.html",
-        "rdfa": "schema.org/eg-0251-rdfa.html",
-        "jsonld": "schema.org/eg-0251-jsonld.html"
-      },
-      "eg-0268": {
-        "pre": "schema.org/eg-0268-pre.html",
-        "microdata": "schema.org/eg-0268-microdata.html",
-        "rdfa": "schema.org/eg-0268-rdfa.html",
-        "jsonld": "schema.org/eg-0268-jsonld.html"
       }
     }
   },
@@ -6673,15 +6753,15 @@
 
     ],
     "examples": {
+      "eg-0169": {
+        "pre": "schema.org/eg-0169-pre.html",
+        "jsonld": "schema.org/eg-0169-jsonld.html"
+      },
       "eg-0369": {
         "pre": "schema.org/eg-0369-pre.html",
         "microdata": "schema.org/eg-0369-microdata.html",
         "rdfa": "schema.org/eg-0369-rdfa.html",
         "jsonld": "schema.org/eg-0369-jsonld.html"
-      },
-      "eg-0169": {
-        "pre": "schema.org/eg-0169-pre.html",
-        "jsonld": "schema.org/eg-0169-jsonld.html"
       }
     }
   },
@@ -7072,6 +7152,12 @@
       "Organization"
     ],
     "examples": {
+      "eg-0375": {
+        "pre": "schema.org/eg-0375-pre.html",
+        "microdata": "schema.org/eg-0375-microdata.html",
+        "rdfa": "schema.org/eg-0375-rdfa.html",
+        "jsonld": "schema.org/eg-0375-jsonld.html"
+      },
       "eg-0015": {
         "pre": "schema.org/eg-0015-pre.html",
         "microdata": "schema.org/eg-0015-microdata.html",
@@ -7083,12 +7169,6 @@
         "microdata": "schema.org/eg-0004-microdata.html",
         "rdfa": "schema.org/eg-0004-rdfa.html",
         "jsonld": "schema.org/eg-0004-jsonld.html"
-      },
-      "eg-0375": {
-        "pre": "schema.org/eg-0375-pre.html",
-        "microdata": "schema.org/eg-0375-microdata.html",
-        "rdfa": "schema.org/eg-0375-rdfa.html",
-        "jsonld": "schema.org/eg-0375-jsonld.html"
       },
       "eg-0396": {
         "pre": "schema.org/eg-0396-pre.html",
@@ -8605,18 +8685,6 @@
 
     ],
     "examples": {
-      "eg-0387": {
-        "pre": "schema.org/eg-0387-pre.html",
-        "microdata": "schema.org/eg-0387-microdata.html",
-        "rdfa": "schema.org/eg-0387-rdfa.html",
-        "jsonld": "schema.org/eg-0387-jsonld.html"
-      },
-      "eg-0389": {
-        "pre": "schema.org/eg-0389-pre.html",
-        "microdata": "schema.org/eg-0389-microdata.html",
-        "rdfa": "schema.org/eg-0389-rdfa.html",
-        "jsonld": "schema.org/eg-0389-jsonld.html"
-      },
       "eg-0027": {
         "pre": "schema.org/eg-0027-pre.html",
         "microdata": "schema.org/eg-0027-microdata.html",
@@ -8628,6 +8696,18 @@
         "microdata": "schema.org/eg-0211-microdata.html",
         "rdfa": "schema.org/eg-0211-rdfa.html",
         "jsonld": "schema.org/eg-0211-jsonld.html"
+      },
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
+      },
+      "eg-0389": {
+        "pre": "schema.org/eg-0389-pre.html",
+        "microdata": "schema.org/eg-0389-microdata.html",
+        "rdfa": "schema.org/eg-0389-rdfa.html",
+        "jsonld": "schema.org/eg-0389-jsonld.html"
       }
     }
   },
@@ -8674,12 +8754,6 @@
         "microdata": "schema.org/eg-0390-microdata.html",
         "rdfa": "schema.org/eg-0390-rdfa.html",
         "jsonld": "schema.org/eg-0390-jsonld.html"
-      },
-      "eg-0391": {
-        "pre": "schema.org/eg-0391-pre.html",
-        "microdata": "schema.org/eg-0391-microdata.html",
-        "rdfa": "schema.org/eg-0391-rdfa.html",
-        "jsonld": "schema.org/eg-0391-jsonld.html"
       }
     }
   },
@@ -8724,18 +8798,6 @@
 
     ],
     "examples": {
-      "eg-0387": {
-        "pre": "schema.org/eg-0387-pre.html",
-        "microdata": "schema.org/eg-0387-microdata.html",
-        "rdfa": "schema.org/eg-0387-rdfa.html",
-        "jsonld": "schema.org/eg-0387-jsonld.html"
-      },
-      "eg-0389": {
-        "pre": "schema.org/eg-0389-pre.html",
-        "microdata": "schema.org/eg-0389-microdata.html",
-        "rdfa": "schema.org/eg-0389-rdfa.html",
-        "jsonld": "schema.org/eg-0389-jsonld.html"
-      },
       "eg-0009": {
         "pre": "schema.org/eg-0009-pre.html",
         "microdata": "schema.org/eg-0009-microdata.html",
@@ -8757,6 +8819,18 @@
         "microdata": "schema.org/eg-0202-microdata.html",
         "rdfa": "schema.org/eg-0202-rdfa.html",
         "jsonld": "schema.org/eg-0202-jsonld.html"
+      },
+      "eg-0387": {
+        "pre": "schema.org/eg-0387-pre.html",
+        "microdata": "schema.org/eg-0387-microdata.html",
+        "rdfa": "schema.org/eg-0387-rdfa.html",
+        "jsonld": "schema.org/eg-0387-jsonld.html"
+      },
+      "eg-0389": {
+        "pre": "schema.org/eg-0389-pre.html",
+        "microdata": "schema.org/eg-0389-microdata.html",
+        "rdfa": "schema.org/eg-0389-rdfa.html",
+        "jsonld": "schema.org/eg-0389-jsonld.html"
       }
     }
   },
@@ -8789,23 +8863,17 @@
 
     ],
     "examples": {
-      "eg-0390": {
-        "pre": "schema.org/eg-0390-pre.html",
-        "microdata": "schema.org/eg-0390-microdata.html",
-        "rdfa": "schema.org/eg-0390-rdfa.html",
-        "jsonld": "schema.org/eg-0390-jsonld.html"
-      },
-      "eg-0391": {
-        "pre": "schema.org/eg-0391-pre.html",
-        "microdata": "schema.org/eg-0391-microdata.html",
-        "rdfa": "schema.org/eg-0391-rdfa.html",
-        "jsonld": "schema.org/eg-0391-jsonld.html"
-      },
       "eg-0009": {
         "pre": "schema.org/eg-0009-pre.html",
         "microdata": "schema.org/eg-0009-microdata.html",
         "rdfa": "schema.org/eg-0009-rdfa.html",
         "jsonld": "schema.org/eg-0009-jsonld.html"
+      },
+      "eg-0390": {
+        "pre": "schema.org/eg-0390-pre.html",
+        "microdata": "schema.org/eg-0390-microdata.html",
+        "rdfa": "schema.org/eg-0390-rdfa.html",
+        "jsonld": "schema.org/eg-0390-jsonld.html"
       }
     }
   },
@@ -9059,12 +9127,6 @@
 
     ],
     "examples": {
-      "eg-0013": {
-        "pre": "schema.org/eg-0013-pre.html",
-        "microdata": "schema.org/eg-0013-microdata.html",
-        "rdfa": "schema.org/eg-0013-rdfa.html",
-        "jsonld": "schema.org/eg-0013-jsonld.html"
-      },
       "eg-0385": {
         "pre": "schema.org/eg-0385-pre.html",
         "microdata": "schema.org/eg-0385-microdata.html",
@@ -9076,6 +9138,12 @@
         "microdata": "schema.org/eg-0386-microdata.html",
         "rdfa": "schema.org/eg-0386-rdfa.html",
         "jsonld": "schema.org/eg-0386-jsonld.html"
+      },
+      "eg-0013": {
+        "pre": "schema.org/eg-0013-pre.html",
+        "microdata": "schema.org/eg-0013-microdata.html",
+        "rdfa": "schema.org/eg-0013-rdfa.html",
+        "jsonld": "schema.org/eg-0013-jsonld.html"
       }
     }
   },
@@ -9279,6 +9347,12 @@
         "microdata": "schema.org/eg-0397-microdata.html",
         "rdfa": "schema.org/eg-0397-rdfa.html",
         "jsonld": "schema.org/eg-0397-jsonld.html"
+      },
+      "eg-0475": {
+        "pre": "schema.org/eg-0475-pre.html",
+        "microdata": "schema.org/eg-0475-microdata.html",
+        "rdfa": "schema.org/eg-0475-rdfa.html",
+        "jsonld": "schema.org/eg-0475-jsonld.html"
       }
     }
   },
@@ -9401,17 +9475,17 @@
 
     ],
     "examples": {
-      "eg-0378": {
-        "pre": "schema.org/eg-0378-pre.html",
-        "microdata": "schema.org/eg-0378-microdata.html",
-        "rdfa": "schema.org/eg-0378-rdfa.html",
-        "jsonld": "schema.org/eg-0378-jsonld.html"
-      },
       "eg-0193": {
         "pre": "schema.org/eg-0193-pre.html",
         "microdata": "schema.org/eg-0193-microdata.html",
         "rdfa": "schema.org/eg-0193-rdfa.html",
         "jsonld": "schema.org/eg-0193-jsonld.html"
+      },
+      "eg-0378": {
+        "pre": "schema.org/eg-0378-pre.html",
+        "microdata": "schema.org/eg-0378-microdata.html",
+        "rdfa": "schema.org/eg-0378-rdfa.html",
+        "jsonld": "schema.org/eg-0378-jsonld.html"
       }
     }
   },
@@ -9533,6 +9607,18 @@
       "Thing"
     ],
     "examples": {
+      "eg-0376": {
+        "pre": "schema.org/eg-0376-pre.html",
+        "microdata": "schema.org/eg-0376-microdata.html",
+        "rdfa": "schema.org/eg-0376-rdfa.html",
+        "jsonld": "schema.org/eg-0376-jsonld.html"
+      },
+      "eg-0429": {
+        "pre": "schema.org/eg-0429-pre.html",
+        "microdata": "schema.org/eg-0429-microdata.html",
+        "rdfa": "schema.org/eg-0429-rdfa.html",
+        "jsonld": "schema.org/eg-0429-jsonld.html"
+      },
       "eg-0442": {
         "pre": "schema.org/eg-0442-pre.html",
         "microdata": "schema.org/eg-0442-microdata.html",
@@ -9544,18 +9630,6 @@
         "microdata": "schema.org/eg-0443-microdata.html",
         "rdfa": "schema.org/eg-0443-rdfa.html",
         "jsonld": "schema.org/eg-0443-jsonld.html"
-      },
-      "eg-0388": {
-        "pre": "schema.org/eg-0388-pre.html",
-        "microdata": "schema.org/eg-0388-microdata.html",
-        "rdfa": "schema.org/eg-0388-rdfa.html",
-        "jsonld": "schema.org/eg-0388-jsonld.html"
-      },
-      "eg-0429": {
-        "pre": "schema.org/eg-0429-pre.html",
-        "microdata": "schema.org/eg-0429-microdata.html",
-        "rdfa": "schema.org/eg-0429-rdfa.html",
-        "jsonld": "schema.org/eg-0429-jsonld.html"
       },
       "eg-0007": {
         "pre": "schema.org/eg-0007-pre.html",
@@ -9581,11 +9655,11 @@
         "rdfa": "schema.org/eg-0206-rdfa.html",
         "jsonld": "schema.org/eg-0206-jsonld.html"
       },
-      "eg-0376": {
-        "pre": "schema.org/eg-0376-pre.html",
-        "microdata": "schema.org/eg-0376-microdata.html",
-        "rdfa": "schema.org/eg-0376-rdfa.html",
-        "jsonld": "schema.org/eg-0376-jsonld.html"
+      "eg-0388": {
+        "pre": "schema.org/eg-0388-pre.html",
+        "microdata": "schema.org/eg-0388-microdata.html",
+        "rdfa": "schema.org/eg-0388-rdfa.html",
+        "jsonld": "schema.org/eg-0388-jsonld.html"
       },
       "eg-0296": {
         "pre": "schema.org/eg-0296-pre.html",
@@ -9699,17 +9773,17 @@
 
     ],
     "examples": {
-      "eg-0340": {
-        "pre": "schema.org/eg-0340-pre.html",
-        "microdata": "schema.org/eg-0340-microdata.html",
-        "rdfa": "schema.org/eg-0340-rdfa.html",
-        "jsonld": "schema.org/eg-0340-jsonld.html"
-      },
       "eg-0003": {
         "pre": "schema.org/eg-0003-pre.html",
         "microdata": "schema.org/eg-0003-microdata.html",
         "rdfa": "schema.org/eg-0003-rdfa.html",
         "jsonld": "schema.org/eg-0003-jsonld.html"
+      },
+      "eg-0340": {
+        "pre": "schema.org/eg-0340-pre.html",
+        "microdata": "schema.org/eg-0340-microdata.html",
+        "rdfa": "schema.org/eg-0340-rdfa.html",
+        "jsonld": "schema.org/eg-0340-jsonld.html"
       }
     }
   },
@@ -10018,17 +10092,23 @@
 
     ],
     "examples": {
-      "eg-0388": {
-        "pre": "schema.org/eg-0388-pre.html",
-        "microdata": "schema.org/eg-0388-microdata.html",
-        "rdfa": "schema.org/eg-0388-rdfa.html",
-        "jsonld": "schema.org/eg-0388-jsonld.html"
+      "eg-0374": {
+        "pre": "schema.org/eg-0374-pre.html",
+        "microdata": "schema.org/eg-0374-microdata.html",
+        "rdfa": "schema.org/eg-0374-rdfa.html",
+        "jsonld": "schema.org/eg-0374-jsonld.html"
       },
-      "eg-0454": {
-        "pre": "schema.org/eg-0454-pre.html",
-        "microdata": "schema.org/eg-0454-microdata.html",
-        "rdfa": "schema.org/eg-0454-rdfa.html",
-        "jsonld": "schema.org/eg-0454-jsonld.html"
+      "eg-0375": {
+        "pre": "schema.org/eg-0375-pre.html",
+        "microdata": "schema.org/eg-0375-microdata.html",
+        "rdfa": "schema.org/eg-0375-rdfa.html",
+        "jsonld": "schema.org/eg-0375-jsonld.html"
+      },
+      "eg-0376": {
+        "pre": "schema.org/eg-0376-pre.html",
+        "microdata": "schema.org/eg-0376-microdata.html",
+        "rdfa": "schema.org/eg-0376-rdfa.html",
+        "jsonld": "schema.org/eg-0376-jsonld.html"
       },
       "eg-0427": {
         "pre": "schema.org/eg-0427-pre.html",
@@ -10066,23 +10146,17 @@
         "rdfa": "schema.org/eg-0212-rdfa.html",
         "jsonld": "schema.org/eg-0212-jsonld.html"
       },
-      "eg-0374": {
-        "pre": "schema.org/eg-0374-pre.html",
-        "microdata": "schema.org/eg-0374-microdata.html",
-        "rdfa": "schema.org/eg-0374-rdfa.html",
-        "jsonld": "schema.org/eg-0374-jsonld.html"
+      "eg-0454": {
+        "pre": "schema.org/eg-0454-pre.html",
+        "microdata": "schema.org/eg-0454-microdata.html",
+        "rdfa": "schema.org/eg-0454-rdfa.html",
+        "jsonld": "schema.org/eg-0454-jsonld.html"
       },
-      "eg-0375": {
-        "pre": "schema.org/eg-0375-pre.html",
-        "microdata": "schema.org/eg-0375-microdata.html",
-        "rdfa": "schema.org/eg-0375-rdfa.html",
-        "jsonld": "schema.org/eg-0375-jsonld.html"
-      },
-      "eg-0376": {
-        "pre": "schema.org/eg-0376-pre.html",
-        "microdata": "schema.org/eg-0376-microdata.html",
-        "rdfa": "schema.org/eg-0376-rdfa.html",
-        "jsonld": "schema.org/eg-0376-jsonld.html"
+      "eg-0388": {
+        "pre": "schema.org/eg-0388-pre.html",
+        "microdata": "schema.org/eg-0388-microdata.html",
+        "rdfa": "schema.org/eg-0388-rdfa.html",
+        "jsonld": "schema.org/eg-0388-jsonld.html"
       },
       "eg-0249": {
         "pre": "schema.org/eg-0249-pre.html",
@@ -11804,7 +11878,21 @@
     ],
     "sub_classes": [
 
-    ]
+    ],
+    "examples": {
+      "eg-0469": {
+        "pre": "schema.org/eg-0469-pre.html",
+        "microdata": "schema.org/eg-0469-microdata.html",
+        "rdfa": "schema.org/eg-0469-rdfa.html",
+        "jsonld": "schema.org/eg-0469-jsonld.html"
+      },
+      "eg-0471": {
+        "pre": "schema.org/eg-0471-pre.html",
+        "microdata": "schema.org/eg-0471-microdata.html",
+        "rdfa": "schema.org/eg-0471-rdfa.html",
+        "jsonld": "schema.org/eg-0471-jsonld.html"
+      }
+    }
   },
   "Researcher": {
     "super_class": "Audience",
@@ -12239,12 +12327,6 @@
 
     ],
     "examples": {
-      "eg-0303": {
-        "pre": "schema.org/eg-0303-pre.html",
-        "microdata": "schema.org/eg-0303-microdata.html",
-        "rdfa": "schema.org/eg-0303-rdfa.html",
-        "jsonld": "schema.org/eg-0303-jsonld.html"
-      },
       "eg-0240": {
         "pre": "schema.org/eg-0240-pre.html",
         "microdata": "schema.org/eg-0240-microdata.html",
@@ -12274,6 +12356,12 @@
         "microdata": "schema.org/eg-0244-microdata.html",
         "rdfa": "schema.org/eg-0244-rdfa.html",
         "jsonld": "schema.org/eg-0244-jsonld.html"
+      },
+      "eg-0303": {
+        "pre": "schema.org/eg-0303-pre.html",
+        "microdata": "schema.org/eg-0303-microdata.html",
+        "rdfa": "schema.org/eg-0303-rdfa.html",
+        "jsonld": "schema.org/eg-0303-jsonld.html"
       }
     }
   },
@@ -12399,12 +12487,6 @@
 
     ],
     "examples": {
-      "eg-0457": {
-        "pre": "schema.org/eg-0457-pre.html",
-        "microdata": "schema.org/eg-0457-microdata.html",
-        "rdfa": "schema.org/eg-0457-rdfa.html",
-        "jsonld": "schema.org/eg-0457-jsonld.html"
-      },
       "eg-0138": {
         "pre": "schema.org/eg-0138-pre.html",
         "jsonld": "schema.org/eg-0138-jsonld.html"
@@ -12412,6 +12494,12 @@
       "eg-0139": {
         "pre": "schema.org/eg-0139-pre.html",
         "jsonld": "schema.org/eg-0139-jsonld.html"
+      },
+      "eg-0457": {
+        "pre": "schema.org/eg-0457-pre.html",
+        "microdata": "schema.org/eg-0457-microdata.html",
+        "rdfa": "schema.org/eg-0457-rdfa.html",
+        "jsonld": "schema.org/eg-0457-jsonld.html"
       }
     }
   },
@@ -12534,17 +12622,17 @@
       "Intangible"
     ],
     "examples": {
-      "eg-0421": {
-        "pre": "schema.org/eg-0421-pre.html",
-        "microdata": "schema.org/eg-0421-microdata.html",
-        "rdfa": "schema.org/eg-0421-rdfa.html",
-        "jsonld": "schema.org/eg-0421-jsonld.html"
-      },
       "eg-0375": {
         "pre": "schema.org/eg-0375-pre.html",
         "microdata": "schema.org/eg-0375-microdata.html",
         "rdfa": "schema.org/eg-0375-rdfa.html",
         "jsonld": "schema.org/eg-0375-jsonld.html"
+      },
+      "eg-0421": {
+        "pre": "schema.org/eg-0421-pre.html",
+        "microdata": "schema.org/eg-0421-microdata.html",
+        "rdfa": "schema.org/eg-0421-rdfa.html",
+        "jsonld": "schema.org/eg-0421-jsonld.html"
       },
       "eg-0396": {
         "pre": "schema.org/eg-0396-pre.html",
@@ -12888,12 +12976,6 @@
 
     ],
     "examples": {
-      "eg-0300": {
-        "pre": "schema.org/eg-0300-pre.html",
-        "microdata": "schema.org/eg-0300-microdata.html",
-        "rdfa": "schema.org/eg-0300-rdfa.html",
-        "jsonld": "schema.org/eg-0300-jsonld.html"
-      },
       "eg-0297": {
         "pre": "schema.org/eg-0297-pre.html",
         "microdata": "schema.org/eg-0297-microdata.html",
@@ -12911,6 +12993,12 @@
         "microdata": "schema.org/eg-0299-microdata.html",
         "rdfa": "schema.org/eg-0299-rdfa.html",
         "jsonld": "schema.org/eg-0299-jsonld.html"
+      },
+      "eg-0300": {
+        "pre": "schema.org/eg-0300-pre.html",
+        "microdata": "schema.org/eg-0300-microdata.html",
+        "rdfa": "schema.org/eg-0300-rdfa.html",
+        "jsonld": "schema.org/eg-0300-jsonld.html"
       },
       "eg-0301": {
         "pre": "schema.org/eg-0301-pre.html",
@@ -13022,15 +13110,15 @@
 
     ],
     "examples": {
-      "eg-0430": {
-        "pre": "schema.org/eg-0430-pre.html",
-        "jsonld": "schema.org/eg-0430-jsonld.html"
-      },
       "eg-0206": {
         "pre": "schema.org/eg-0206-pre.html",
         "microdata": "schema.org/eg-0206-microdata.html",
         "rdfa": "schema.org/eg-0206-rdfa.html",
         "jsonld": "schema.org/eg-0206-jsonld.html"
+      },
+      "eg-0430": {
+        "pre": "schema.org/eg-0430-pre.html",
+        "jsonld": "schema.org/eg-0430-jsonld.html"
       }
     }
   },
@@ -14447,17 +14535,17 @@
       "MediaObject"
     ],
     "examples": {
-      "eg-0446": {
-        "pre": "schema.org/eg-0446-pre.html",
-        "microdata": "schema.org/eg-0446-microdata.html",
-        "rdfa": "schema.org/eg-0446-rdfa.html",
-        "jsonld": "schema.org/eg-0446-jsonld.html"
-      },
       "eg-0009": {
         "pre": "schema.org/eg-0009-pre.html",
         "microdata": "schema.org/eg-0009-microdata.html",
         "rdfa": "schema.org/eg-0009-rdfa.html",
         "jsonld": "schema.org/eg-0009-jsonld.html"
+      },
+      "eg-0446": {
+        "pre": "schema.org/eg-0446-pre.html",
+        "microdata": "schema.org/eg-0446-microdata.html",
+        "rdfa": "schema.org/eg-0446-rdfa.html",
+        "jsonld": "schema.org/eg-0446-jsonld.html"
       }
     }
   },
@@ -15138,24 +15226,6 @@
   "accessibilityFeature": {
     "super_class": null,
     "examples": {
-      "eg-0321": {
-        "pre": "schema.org/eg-0321-pre.html",
-        "microdata": "schema.org/eg-0321-microdata.html",
-        "rdfa": "schema.org/eg-0321-rdfa.html",
-        "jsonld": "schema.org/eg-0321-jsonld.html"
-      },
-      "eg-0322": {
-        "pre": "schema.org/eg-0322-pre.html",
-        "microdata": "schema.org/eg-0322-microdata.html",
-        "rdfa": "schema.org/eg-0322-rdfa.html",
-        "jsonld": "schema.org/eg-0322-jsonld.html"
-      },
-      "eg-0323": {
-        "pre": "schema.org/eg-0323-pre.html",
-        "microdata": "schema.org/eg-0323-microdata.html",
-        "rdfa": "schema.org/eg-0323-rdfa.html",
-        "jsonld": "schema.org/eg-0323-jsonld.html"
-      },
       "eg-0175": {
         "pre": "schema.org/eg-0175-pre.html",
         "microdata": "schema.org/eg-0175-microdata.html",
@@ -15173,6 +15243,24 @@
         "microdata": "schema.org/eg-0177-microdata.html",
         "rdfa": "schema.org/eg-0177-rdfa.html",
         "jsonld": "schema.org/eg-0177-jsonld.html"
+      },
+      "eg-0321": {
+        "pre": "schema.org/eg-0321-pre.html",
+        "microdata": "schema.org/eg-0321-microdata.html",
+        "rdfa": "schema.org/eg-0321-rdfa.html",
+        "jsonld": "schema.org/eg-0321-jsonld.html"
+      },
+      "eg-0322": {
+        "pre": "schema.org/eg-0322-pre.html",
+        "microdata": "schema.org/eg-0322-microdata.html",
+        "rdfa": "schema.org/eg-0322-rdfa.html",
+        "jsonld": "schema.org/eg-0322-jsonld.html"
+      },
+      "eg-0323": {
+        "pre": "schema.org/eg-0323-pre.html",
+        "microdata": "schema.org/eg-0323-microdata.html",
+        "rdfa": "schema.org/eg-0323-rdfa.html",
+        "jsonld": "schema.org/eg-0323-jsonld.html"
       }
     }
   },
@@ -15853,17 +15941,17 @@
   "availableLanguage": {
     "super_class": null,
     "examples": {
-      "eg-0369": {
-        "pre": "schema.org/eg-0369-pre.html",
-        "microdata": "schema.org/eg-0369-microdata.html",
-        "rdfa": "schema.org/eg-0369-rdfa.html",
-        "jsonld": "schema.org/eg-0369-jsonld.html"
-      },
       "eg-0433": {
         "pre": "schema.org/eg-0433-pre.html",
         "microdata": "schema.org/eg-0433-microdata.html",
         "rdfa": "schema.org/eg-0433-rdfa.html",
         "jsonld": "schema.org/eg-0433-jsonld.html"
+      },
+      "eg-0369": {
+        "pre": "schema.org/eg-0369-pre.html",
+        "microdata": "schema.org/eg-0369-microdata.html",
+        "rdfa": "schema.org/eg-0369-rdfa.html",
+        "jsonld": "schema.org/eg-0369-jsonld.html"
       }
     }
   },
@@ -17663,17 +17751,17 @@
   "geo": {
     "super_class": null,
     "examples": {
-      "eg-0363": {
-        "pre": "schema.org/eg-0363-pre.html",
-        "microdata": "schema.org/eg-0363-microdata.html",
-        "rdfa": "schema.org/eg-0363-rdfa.html",
-        "jsonld": "schema.org/eg-0363-jsonld.html"
-      },
       "eg-0005": {
         "pre": "schema.org/eg-0005-pre.html",
         "microdata": "schema.org/eg-0005-microdata.html",
         "rdfa": "schema.org/eg-0005-rdfa.html",
         "jsonld": "schema.org/eg-0005-jsonld.html"
+      },
+      "eg-0363": {
+        "pre": "schema.org/eg-0363-pre.html",
+        "microdata": "schema.org/eg-0363-microdata.html",
+        "rdfa": "schema.org/eg-0363-rdfa.html",
+        "jsonld": "schema.org/eg-0363-jsonld.html"
       }
     }
   },
@@ -18085,12 +18173,6 @@
   "image": {
     "super_class": null,
     "examples": {
-      "eg-0361": {
-        "pre": "schema.org/eg-0361-pre.html",
-        "microdata": "schema.org/eg-0361-microdata.html",
-        "rdfa": "schema.org/eg-0361-rdfa.html",
-        "jsonld": "schema.org/eg-0361-jsonld.html"
-      },
       "eg-0011": {
         "pre": "schema.org/eg-0011-pre.html",
         "microdata": "schema.org/eg-0011-microdata.html",
@@ -18102,6 +18184,12 @@
         "microdata": "schema.org/eg-0013-microdata.html",
         "rdfa": "schema.org/eg-0013-rdfa.html",
         "jsonld": "schema.org/eg-0013-jsonld.html"
+      },
+      "eg-0361": {
+        "pre": "schema.org/eg-0361-pre.html",
+        "microdata": "schema.org/eg-0361-microdata.html",
+        "rdfa": "schema.org/eg-0361-rdfa.html",
+        "jsonld": "schema.org/eg-0361-jsonld.html"
       }
     }
   },
@@ -19053,7 +19141,15 @@
     "super_class": null
   },
   "negativeNotes": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0468": {
+        "pre": "schema.org/eg-0468-pre.html",
+        "microdata": "schema.org/eg-0468-microdata.html",
+        "rdfa": "schema.org/eg-0468-rdfa.html",
+        "jsonld": "schema.org/eg-0468-jsonld.html"
+      }
+    }
   },
   "nerve": {
     "super_class": null
@@ -19593,7 +19689,15 @@
     "super_class": null
   },
   "positiveNotes": {
-    "super_class": null
+    "super_class": null,
+    "examples": {
+      "eg-0468": {
+        "pre": "schema.org/eg-0468-pre.html",
+        "microdata": "schema.org/eg-0468-microdata.html",
+        "rdfa": "schema.org/eg-0468-rdfa.html",
+        "jsonld": "schema.org/eg-0468-jsonld.html"
+      }
+    }
   },
   "possibleComplication": {
     "super_class": null
@@ -20514,6 +20618,12 @@
         "microdata": "schema.org/eg-0237-microdata.html",
         "rdfa": "schema.org/eg-0237-rdfa.html",
         "jsonld": "schema.org/eg-0237-jsonld.html"
+      },
+      "eg-0474": {
+        "pre": "schema.org/eg-0474-pre.html",
+        "microdata": "schema.org/eg-0474-microdata.html",
+        "rdfa": "schema.org/eg-0474-rdfa.html",
+        "jsonld": "schema.org/eg-0474-jsonld.html"
       },
       "eg-0238": {
         "pre": "schema.org/eg-0238-pre.html",
