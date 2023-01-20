@@ -173,7 +173,7 @@ PATH
   remote: .
   specs:
     linter (3.15.1)
-      activesupport (~> 5.0)
+      activesupport (>= 5, < 8)
       equivalent-xml
       erubis (~> 2.7)
       haml (~> 5.2)
@@ -200,11 +200,11 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (5.2.8.1)
+    activesupport (7.0.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     addressable (2.8.1)
       public_suffix (>= 2.0.2, < 6.0)
     amazing_print (1.4.0)
@@ -336,10 +336,9 @@ GEM
       rdf (~> 3.2)
     syntax (1.2.2)
     temple (0.9.1)
-    thread_safe (0.3.6)
     tilt (2.0.11)
-    tzinfo (1.2.10)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)

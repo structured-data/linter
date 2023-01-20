@@ -20,7 +20,7 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version       = '>= 3.0'
   gem.requirements                = []
-  gem.add_runtime_dependency      'activesupport',      '~> 5.0'
+  gem.add_runtime_dependency      'activesupport',      '>= 5', '< 8'
   gem.add_runtime_dependency      'equivalent-xml'
   gem.add_runtime_dependency      'erubis',             '~> 2.7'
   gem.add_runtime_dependency      'haml',               '~> 5.2'
