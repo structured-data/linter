@@ -59,7 +59,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ActionAccessSpecification,
-      comment: "A set of requirements that a must be fulfilled in order to perform an Action.",
+      comment: "A set of requirements that must be fulfilled in order to perform an Action.",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1741",
       label: "ActionAccessSpecification",
       subClassOf: "http://schema.org/Intangible",
@@ -88,6 +88,13 @@ module RDF::Vocab
       comment: "An adult entertainment establishment.",
       label: "AdultEntertainment",
       subClassOf: "http://schema.org/EntertainmentBusiness",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :AdultOrientedEnumeration,
+      comment: "Enumeration of considerations that make a product relevant or potentially restricted for adults only.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "AdultOrientedEnumeration",
+      subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AdvertiserContentArticle,
       comment: "An [[Article]] that an external entity has paid to place or to produce to its specifications. Includes [advertorials](https://en.wikipedia.org/wiki/Advertorial), sponsored content, native advertising and other paid content.",
@@ -137,7 +144,7 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2646",
       label: "AmpStory",
-      subClassOf: "http://schema.org/CreativeWork",
+      subClassOf: ["http://schema.org/CreativeWork", "http://schema.org/MediaObject"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AmusementPark,
       comment: "An amusement park.",
@@ -158,7 +165,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MedicalEntity",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AnatomicalSystem,
-      comment: "An anatomical system is a group of anatomical structures that work together to perform a certain task. Anatomical systems, such as organ systems, are one organizing principle of anatomy, and can includes circulatory, digestive, endocrine, integumentary, immune, lymphatic, muscular, nervous, reproductive, respiratory, skeletal, urinary, vestibular, and other systems.",
+      comment: "An anatomical system is a group of anatomical structures that work together to perform a certain task. Anatomical systems, such as organ systems, are one organizing principle of anatomy, and can include circulatory, digestive, endocrine, integumentary, immune, lymphatic, muscular, nervous, reproductive, respiratory, skeletal, urinary, vestibular, and other systems.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "AnatomicalSystem",
       subClassOf: "http://schema.org/MedicalEntity",
@@ -175,7 +182,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Comment",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Apartment,
-      comment: "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Apartment\">http://en.wikipedia.org/wiki/Apartment</a>).",
+      comment: "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Apartment\">http://en.wikipedia.org/wiki/Apartment</a>).",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "Apartment",
       subClassOf: "http://schema.org/Accommodation",
@@ -429,7 +436,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Blog,
-      comment: "A [blog](https://en.wikipedia.org/wiki/Blog), sometimes known as a \"weblog\". Note that the individual posts ([[BlogPosting]]s) in a [[Blog]] are often colloqually referred to by the same term.",
+      comment: "A [blog](https://en.wikipedia.org/wiki/Blog), sometimes known as a \"weblog\". Note that the individual posts ([[BlogPosting]]s) in a [[Blog]] are often colloquially referred to by the same term.",
       label: "Blog",
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -540,7 +547,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BreadcrumbList,
-      comment: "A BreadcrumbList is an ItemList consisting of a chain of linked Web pages, typically described using at least their URL and their name, and typically ending with the current page.\\n\\nThe [[position]] property is used to reconstruct the order of the items in a BreadcrumbList The convention is that a breadcrumb list has an [[itemListOrder]] of [[ItemListOrderAscending]] (lower values listed first), and that the first items in this list correspond to the \"top\" or beginning of the breadcrumb trail, e.g. with a site or section homepage. The specific values of 'position' are not assigned meaning for a BreadcrumbList, but they should be integers, e.g. beginning with '1' for the first item in the list.\n      ",
+      comment: "A BreadcrumbList is an ItemList consisting of a chain of linked Web pages, typically described using at least their URL and their name, and typically ending with the current page.\\n\\nThe [[position]] property is used to reconstruct the order of the items in a BreadcrumbList. The convention is that a breadcrumb list has an [[itemListOrder]] of [[ItemListOrderAscending]] (lower values listed first), and that the first items in this list correspond to the \"top\" or beginning of the breadcrumb trail, e.g. with a site or section homepage. The specific values of 'position' are not assigned meaning for a BreadcrumbList, but they should be integers, e.g. beginning with '1' for the first item in the list.\n      ",
       label: "BreadcrumbList",
       subClassOf: "http://schema.org/ItemList",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -659,13 +666,13 @@ module RDF::Vocab
       subClassOf: "http://schema.org/FoodEstablishment",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Campground,
-      comment: "A camping site, campsite, or [[Campground]] is a place used for overnight stay in the outdoors, typically containing individual [[CampingPitch]] locations. \\n\\n\nIn British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites (Source: Wikipedia see [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite)).\\n\\n\n\nSee also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).\n",
+      comment: "A camping site, campsite, or [[Campground]] is a place used for overnight stay in the outdoors, typically containing individual [[CampingPitch]] locations. \\n\\n\nIn British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites (source: Wikipedia, see [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite)).\\n\\n\n\nSee also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).\n",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "Campground",
       subClassOf: ["http://schema.org/CivicStructure", "http://schema.org/LodgingBusiness"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CampingPitch,
-      comment: "A [[CampingPitch]] is an individual place for overnight stay in the outdoors, typically being part of a larger camping site, or [[Campground]].\\n\\n\nIn British English a campsite, or campground, is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites.\n(Source: Wikipedia see [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite)).\\n\\n\nSee also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).\n",
+      comment: "A [[CampingPitch]] is an individual place for overnight stay in the outdoors, typically being part of a larger camping site, or [[Campground]].\\n\\n\nIn British English a campsite, or campground, is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites.\n(Source: Wikipedia, see [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite).)\\n\\n\nSee also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).\n",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "CampingPitch",
       subClassOf: "http://schema.org/Accommodation",
@@ -734,12 +741,12 @@ module RDF::Vocab
       subClassOf: "http://schema.org/FindAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CheckInAction,
-      comment: "The act of an agent communicating (service provider, social media, etc) their arrival by registering/confirming for a previously reserved service (e.g. flight check in) or at a place (e.g. hotel), possibly resulting in a result (boarding pass, etc).\\n\\nRelated actions:\\n\\n* [[CheckOutAction]]: The antonym of CheckInAction.\\n* [[ArriveAction]]: Unlike ArriveAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service.\\n* [[ConfirmAction]]: Unlike ConfirmAction, CheckInAction implies that the agent is informing/confirming the *start* of a previously reserved service rather than its validity/existence.",
+      comment: "The act of an agent communicating (service provider, social media, etc) their arrival by registering/confirming for a previously reserved service (e.g. flight check-in) or at a place (e.g. hotel), possibly resulting in a result (boarding pass, etc).\\n\\nRelated actions:\\n\\n* [[CheckOutAction]]: The antonym of CheckInAction.\\n* [[ArriveAction]]: Unlike ArriveAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service.\\n* [[ConfirmAction]]: Unlike ConfirmAction, CheckInAction implies that the agent is informing/confirming the *start* of a previously reserved service rather than its validity/existence.",
       label: "CheckInAction",
       subClassOf: "http://schema.org/CommunicateAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CheckOutAction,
-      comment: "The act of an agent communicating (service provider, social media, etc) their departure of a previously reserved service (e.g. flight check in) or place (e.g. hotel).\\n\\nRelated actions:\\n\\n* [[CheckInAction]]: The antonym of CheckOutAction.\\n* [[DepartAction]]: Unlike DepartAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.\\n* [[CancelAction]]: Unlike CancelAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.",
+      comment: "The act of an agent communicating (service provider, social media, etc) their departure of a previously reserved service (e.g. flight check-in) or place (e.g. hotel).\\n\\nRelated actions:\\n\\n* [[CheckInAction]]: The antonym of CheckOutAction.\\n* [[DepartAction]]: Unlike DepartAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.\\n* [[CancelAction]]: Unlike CancelAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.",
       label: "CheckOutAction",
       subClassOf: "http://schema.org/CommunicateAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -827,7 +834,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Collection,
-      comment: "A collection of items e.g. creative works or products.",
+      comment: "A collection of items, e.g. creative works or products.",
       "http://schema.org/isPartOf": "http://bib.schema.org",
       label: "Collection",
       subClassOf: "http://schema.org/CreativeWork",
@@ -892,7 +899,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/InteractAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CompleteDataFeed,
-      comment: "A [[CompleteDataFeed]] is a [[DataFeed]] whose standard representation includes content for every item currently in the feed.\n\nThis is the equivalent of Atom's element as defined in Feed Paging and Archiving [RFC 5005](https://tools.ietf.org/html/rfc5005), For example (and as defined for Atom), when using data from a feed that represents a collection of items that varies over time (e.g. \"Top Twenty Records\") there is no need to have newer entries mixed in alongside older, obsolete entries. By marking this feed as a CompleteDataFeed, old entries can be safely discarded when the feed is refreshed, since we can assume the feed has provided descriptions for all current items.",
+      comment: "A [[CompleteDataFeed]] is a [[DataFeed]] whose standard representation includes content for every item currently in the feed.\n\nThis is the equivalent of Atom's element as defined in Feed Paging and Archiving [RFC 5005](https://tools.ietf.org/html/rfc5005), for example (and as defined for Atom), when using data from a feed that represents a collection of items that varies over time (e.g. \"Top Twenty Records\") there is no need to have newer entries mixed in alongside older, obsolete entries. By marking this feed as a CompleteDataFeed, old entries can be safely discarded when the feed is refreshed, since we can assume the feed has provided descriptions for all current items.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1397",
       label: "CompleteDataFeed",
@@ -990,7 +997,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/AdministrativeArea",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Course,
-      comment: "A description of an educational course which may be offered as distinct instances at which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners.",
+      comment: "A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners.",
       label: "Course",
       subClassOf: ["http://schema.org/CreativeWork", "http://schema.org/LearningResource"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1011,7 +1018,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/VisualArtwork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CovidTestingFacility,
-      comment: "A CovidTestingFacility is a [[MedicalClinic]] where testing for the COVID-19 Coronavirus\n      disease is available. If the facility is being made available from an established [[Pharmacy]], [[Hotel]], or other\n      non-medical organization, multiple types can be listed. This makes it easier to re-use existing schema.org information\n      about that place e.g. contact info, address, opening hours. Note that in an emergency, such information may not always be reliable.\n      ",
+      comment: "A CovidTestingFacility is a [[MedicalClinic]] where testing for the COVID-19 Coronavirus\n      disease is available. If the facility is being made available from an established [[Pharmacy]], [[Hotel]], or other\n      non-medical organization, multiple types can be listed. This makes it easier to re-use existing schema.org information\n      about that place, e.g. contact info, address, opening hours. Note that in an emergency, such information may not always be reliable.\n      ",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2490",
       label: "CovidTestingFacility",
@@ -1029,12 +1036,12 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CreativeWorkSeason,
-      comment: "A media season e.g. tv, radio, video game etc.",
+      comment: "A media season, e.g. TV, radio, video game etc.",
       label: "CreativeWorkSeason",
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CreativeWorkSeries,
-      comment: "A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike [[ItemList]] which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as tv, radio and games).\\n\\nSpecific subtypes are available for describing [[TVSeries]], [[RadioSeries]], [[MovieSeries]], [[BookSeries]], [[Periodical]] and [[VideoGameSeries]]. In each case, the [[hasPart]] / [[isPartOf]] properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.\\n\\nIt is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.\n\t  ",
+      comment: "A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike [[ItemList]] which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as TV, radio and games).\\n\\nSpecific subtypes are available for describing [[TVSeries]], [[RadioSeries]], [[MovieSeries]], [[BookSeries]], [[Periodical]] and [[VideoGameSeries]]. In each case, the [[hasPart]] / [[isPartOf]] properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.\\n\\nIt is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.\n\t  ",
       label: "CreativeWorkSeries",
       subClassOf: ["http://schema.org/CreativeWork", "http://schema.org/Series"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1093,7 +1100,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DataDownload,
-      comment: "A dataset in downloadable form.",
+      comment: "All or part of a [[Dataset]] in downloadable form. ",
       equivalentClass: "http://www.w3.org/ns/dcat#Distribution",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_DatasetClass",
       label: "DataDownload",
@@ -1130,7 +1137,7 @@ module RDF::Vocab
       label: "DateTime",
       type: ["http://schema.org/DataType", "http://www.w3.org/2000/01/rdf-schema#Class"]
     term :DatedMoneySpecification,
-      comment: "A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. __Note:__ This type has been superseded by [[MonetaryAmount]] use of that type is recommended",
+      comment: "A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. __Note:__ This type has been superseded by [[MonetaryAmount]], use of that type is recommended.",
       "http://schema.org/supersededBy": "http://schema.org/MonetaryAmount",
       label: "DatedMoneySpecification",
       subClassOf: "http://schema.org/StructuredValue",
@@ -1171,7 +1178,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DefinedTermSet,
-      comment: "A set of defined terms for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.",
+      comment: "A set of defined terms, for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/894",
       label: "DefinedTermSet",
@@ -1200,7 +1207,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DeliveryTimeSettings,
-      comment: "A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the [[shippingSettingsLink]] property of a [[OfferShippingDetails]]. Several occurrences can be published, distinguished (and identified/referenced) by their different values for [[transitTimeLabel]].",
+      comment: "A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the [[shippingSettingsLink]] property of an [[OfferShippingDetails]]. Several occurrences can be published, distinguished (and identified/referenced) by their different values for [[transitTimeLabel]].",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506",
       label: "DeliveryTimeSettings",
@@ -1218,7 +1225,7 @@ module RDF::Vocab
       subClassOf: ["http://schema.org/LocalBusiness", "http://schema.org/MedicalBusiness", "http://schema.org/MedicalOrganization"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DepartAction,
-      comment: "The act of  departing from a place. An agent departs from an fromLocation for a destination, optionally with participants.",
+      comment: "The act of  departing from a place. An agent departs from a fromLocation for a destination, optionally with participants.",
       label: "DepartAction",
       subClassOf: "http://schema.org/MoveAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1255,7 +1262,7 @@ module RDF::Vocab
       comment: "A product taken by mouth that contains a dietary ingredient intended to supplement the diet. Dietary ingredients may include vitamins, minerals, herbs or other botanicals, amino acids, and substances such as enzymes, organ tissues, glandulars and metabolites.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "DietarySupplement",
-      subClassOf: "http://schema.org/Substance",
+      subClassOf: ["http://schema.org/Product", "http://schema.org/Substance"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DigitalDocument,
       comment: "An electronic file or document.",
@@ -1270,6 +1277,13 @@ module RDF::Vocab
     term :DigitalDocumentPermissionType,
       comment: "A type of permission which can be granted for accessing a digital document.",
       label: "DigitalDocumentPermissionType",
+      subClassOf: "http://schema.org/Enumeration",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :DigitalPlatformEnumeration,
+      comment: "Enumerates some common technology platforms, for use with properties such as [[actionPlatform]]. It is not supposed to be comprehensive - when a suitable code is not enumerated here, textual or URL values can be used instead. These codes are at a fairly high level and do not deal with versioning and other nuance. Additional codes can be suggested [in github](https://github.com/schemaorg/schemaorg/issues/3057). ",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3057",
+      label: "DigitalPlatformEnumeration",
       subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DisagreeAction,
@@ -1343,11 +1357,11 @@ module RDF::Vocab
       subClassOf: "http://schema.org/QualitativeValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Drug,
-      comment: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge make a clear difference between them.",
+      comment: "A chemical or biologic substance, used as a medical therapy, that has a physiological effect on an organism. Here the term drug is used interchangeably with the term medicine although clinical knowledge makes a clear difference between them.",
       equivalentClass: "http://purl.bioontology.org/ontology/SNOMEDCT/410942007",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Drug",
-      subClassOf: "http://schema.org/Substance",
+      subClassOf: ["http://schema.org/Product", "http://schema.org/Substance"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DrugClass,
       comment: "A class of medical drugs, e.g., statins. Classes can represent general pharmacological class, common mechanisms of action, common physiological effects, etc.",
@@ -1497,7 +1511,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/LocalBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :EndorseAction,
-      comment: "An agent approves/certifies/likes/supports/sanction an object.",
+      comment: "An agent approves/certifies/likes/supports/sanctions an object.",
       label: "EndorseAction",
       subClassOf: "http://schema.org/ReactAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1725,7 +1739,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Service",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :FundingAgency,
-      comment: "A FundingAgency is an organization that implements one or more [[FundingScheme]]s and manages\n    the granting process (via [[Grant]]s, typically [[MonetaryGrant]]s).\n    A funding agency is not always required for grant funding, e.g. philanthropic giving, corporate sponsorship etc.\n    \nExamples of funding agencies include ERC, REA, NIH, Bill and Melinda Gates Foundation...\n    ",
+      comment: "A FundingAgency is an organization that implements one or more [[FundingScheme]]s and manages\n    the granting process (via [[Grant]]s, typically [[MonetaryGrant]]s).\n    A funding agency is not always required for grant funding, e.g. philanthropic giving, corporate sponsorship etc.\n    \nExamples of funding agencies include ERC, REA, NIH, Bill and Melinda Gates Foundation, ...\n    ",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"],
       label: "FundingAgency",
@@ -1752,6 +1766,13 @@ module RDF::Vocab
       comment: "The Game type represents things which are games. These are typically rule-governed recreational activities, e.g. role-playing games in which players assume the role of characters in a fictional setting.",
       label: "Game",
       subClassOf: "http://schema.org/CreativeWork",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :GameAvailabilityEnumeration,
+      comment: "For a [[VideoGame]], such as used with a [[PlayGameAction]], an enumeration of the kind of game availability offered. ",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3058",
+      label: "GameAvailabilityEnumeration",
+      subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :GamePlayMode,
       comment: "Indicates whether this game is multi-player, co-op or single-player.",
@@ -1878,14 +1899,14 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Store",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Guide,
-      comment: "[[Guide]] is a page or article that recommend specific products or services, or aspects of a thing for a user to consider. A [[Guide]] may represent a Buying Guide and detail aspects of products or services for a user to consider. A [[Guide]] may represent a Product Guide and recommend specific products or services. A [[Guide]] may represent a Ranked List and recommend specific products or services with ranking.",
+      comment: "[[Guide]] is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A [[Guide]] may represent a Buying Guide and detail aspects of products or services for a user to consider. A [[Guide]] may represent a Product Guide and recommend specific products or services. A [[Guide]] may represent a Ranked List and recommend specific products or services with ranking.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2405",
       label: "Guide",
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :HVACBusiness,
-      comment: "A business that provide Heating, Ventilation and Air Conditioning services.",
+      comment: "A business that provides Heating, Ventilation and Air Conditioning services.",
       label: "HVACBusiness",
       subClassOf: "http://schema.org/HomeAndConstructionBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1994,7 +2015,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/LodgingBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Hotel,
-      comment: "A hotel is an establishment that provides lodging paid on a short-term basis (Source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
+      comment: "A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "Hotel",
       subClassOf: "http://schema.org/LodgingBusiness",
@@ -2006,7 +2027,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Room",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :House,
-      comment: "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/House\">http://en.wikipedia.org/wiki/House</a>).",
+      comment: "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/House\">http://en.wikipedia.org/wiki/House</a>).",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "House",
       subClassOf: "http://schema.org/Accommodation",
@@ -2027,7 +2048,7 @@ module RDF::Vocab
       subClassOf: ["http://schema.org/CreativeWork", "http://schema.org/ListItem"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :HowToItem,
-      comment: "An item used as either a tool or supply when performing the instructions for how to to achieve a result.",
+      comment: "An item used as either a tool or supply when performing the instructions for how to achieve a result.",
       label: "HowToItem",
       subClassOf: "http://schema.org/ListItem",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2340,7 +2361,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/ReactAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :LinkRole,
-      comment: "A Role that represents a Web link e.g. as expressed via the 'url' property. Its linkRelationship property can indicate URL-based and plain textual link types e.g. those in IANA link registry or others such as 'amphtml'. This structure provides a placeholder where details from HTML's link element can be represented outside of HTML, e.g. in JSON-LD feeds.",
+      comment: "A Role that represents a Web link, e.g. as expressed via the 'url' property. Its linkRelationship property can indicate URL-based and plain textual link types, e.g. those in IANA link registry or others such as 'amphtml'. This structure provides a placeholder where details from HTML's link element can be represented outside of HTML, e.g. in JSON-LD feeds.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1045",
       label: "LinkRole",
@@ -2463,7 +2484,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MediaGallery,
-      comment: "Web page type: Media gallery page. A mixed-media page that can contains media such as images, videos, and other multimedia.",
+      comment: "Web page type: Media gallery page. A mixed-media page that can contain media such as images, videos, and other multimedia.",
       label: "MediaGallery",
       subClassOf: "http://schema.org/CollectionPage",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2475,12 +2496,12 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MediaObject,
-      comment: "A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's).",
+      comment: "A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset, i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 [[AudioObject]]s).",
       label: "MediaObject",
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MediaReview,
-      comment: "A [[MediaReview]] is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.\n    For more general reviews of media in the broader sense, use [[UserReview]], [[CriticReview]] or other [[Review]] types. This definition is\n    a work in progress. While the [[MediaManipulationRatingEnumeration]] list reflects significant community review amongst fact-checkers and others working\n    to combat misinformation, the specific structures for representing media objects, their versions and publication context, is still evolving. Similarly, best practices for the relationship between [[MediaReview]] and [[ClaimReview]] markup has not yet been finalized.",
+      comment: "A [[MediaReview]] is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.\n    For more general reviews of media in the broader sense, use [[UserReview]], [[CriticReview]] or other [[Review]] types. This definition is\n    a work in progress. While the [[MediaManipulationRatingEnumeration]] list reflects significant community review amongst fact-checkers and others working\n    to combat misinformation, the specific structures for representing media objects, their versions and publication context, are still evolving. Similarly, best practices for the relationship between [[MediaReview]] and [[ClaimReview]] markup have not yet been finalized.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450",
       label: "MediaReview",
@@ -2512,7 +2533,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MedicalEnumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MedicalBusiness,
-      comment: "A particular physical or virtual business of an organization for medical purposes. Examples of MedicalBusiness include differents business run by health professionals.",
+      comment: "A particular physical or virtual business of an organization for medical purposes. Examples of MedicalBusiness include different businesses run by health professionals.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "MedicalBusiness",
       subClassOf: "http://schema.org/LocalBusiness",
@@ -2548,7 +2569,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MedicalIntangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MedicalContraindication,
-      comment: "A condition or factor that serves as a reason to withhold a certain medical therapy. Contraindications can be absolute (there are no reasonable circumstances for undertaking a course of action) or relative (the patient is at higher risk of complications, but that these risks may be outweighed by other considerations or mitigated by other measures).",
+      comment: "A condition or factor that serves as a reason to withhold a certain medical therapy. Contraindications can be absolute (there are no reasonable circumstances for undertaking a course of action) or relative (the patient is at higher risk of complications, but these risks may be outweighed by other considerations or mitigated by other measures).",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "MedicalContraindication",
       subClassOf: "http://schema.org/MedicalEntity",
@@ -2735,7 +2756,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/TherapeuticProcedure",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MedicalTrial,
-      comment: "A medical trial is a type of medical study that uses scientific process used to compare the safety and efficacy of medical therapies or medical procedures. In general, medical trials are controlled and subjects are allocated at random to the different treatment and/or control groups.",
+      comment: "A medical trial is a type of medical study that uses a scientific process to compare the safety and efficacy of medical therapies or medical procedures. In general, medical trials are controlled and subjects are allocated at random to the different treatment and/or control groups.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "MedicalTrial",
       subClassOf: "http://schema.org/MedicalStudy",
@@ -2760,7 +2781,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MedicalEnumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MeetingRoom,
-      comment: "A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Conference_hall\">http://en.wikipedia.org/wiki/Conference_hall</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
+      comment: "A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Conference_hall\">http://en.wikipedia.org/wiki/Conference_hall</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "MeetingRoom",
       subClassOf: "http://schema.org/Room",
@@ -2860,7 +2881,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/TransferAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MortgageLoan,
-      comment: "A loan in which property or real estate is used as collateral. (A loan securitized against some real estate).",
+      comment: "A loan in which property or real estate is used as collateral. (A loan securitized against some real estate.)",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
       label: "MortgageLoan",
@@ -2962,7 +2983,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MusicPlaylist",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MusicAlbumProductionType,
-      comment: "Classification of the album by it's type of content: soundtrack, live album, studio album, etc.",
+      comment: "Classification of the album by its type of content: soundtrack, live album, studio album, etc.",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "MusicAlbumProductionType",
       subClassOf: "http://schema.org/Enumeration",
@@ -3006,7 +3027,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MusicPlaylist",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MusicReleaseFormatType,
-      comment: "Format of this release (the type of recording media used, ie. compact disc, digital media, LP, etc.).",
+      comment: "Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "MusicReleaseFormatType",
       subClassOf: "http://schema.org/Enumeration",
@@ -3092,7 +3113,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/DigitalDocument",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Number,
-      comment: "Data type: Number.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      comment: "Data type: Number.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
       label: "Number",
       type: ["http://schema.org/DataType", "http://www.w3.org/2000/01/rdf-schema#Class"]
     term :NutritionInformation,
@@ -3162,7 +3183,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :OfferShippingDetails,
-      comment: "OfferShippingDetails represents information about shipping destinations.\n\nMultiple of these entities can be used to represent different shipping rates for different destinations:\n\nOne entity for Alaska/Hawaii. A different one for continental US.A different one for all France.\n\nMultiple of these entities can be used to represent different shipping costs and delivery times.\n\nTwo entities that are identical but differ in rate and time:\n\ne.g. Cheaper and slower: $5 in 5-7days\nor Fast and expensive: $15 in 1-2 days.",
+      comment: "OfferShippingDetails represents information about shipping destinations.\n\nMultiple of these entities can be used to represent different shipping rates for different destinations:\n\nOne entity for Alaska/Hawaii. A different one for continental US. A different one for all France.\n\nMultiple of these entities can be used to represent different shipping costs and delivery times.\n\nTwo entities that are identical but differ in rate and time:\n\nE.g. Cheaper and slower: $5 in 5-7 days\nor Fast and expensive: $15 in 1-2 days.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506",
       label: "OfferShippingDetails",
@@ -3174,9 +3195,23 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Store",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :OnDemandEvent,
-      comment: "A publication event e.g. catch-up TV or radio podcast, during which a program is available on-demand.",
+      comment: "A publication event, e.g. catch-up TV or radio podcast, during which a program is available on-demand.",
       label: "OnDemandEvent",
       subClassOf: "http://schema.org/PublicationEvent",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :OnlineBusiness,
+      comment: "A particular online business, either standalone or the online part of a broader organization. Examples include an eCommerce site, an online travel booking site, an online learning site, an online logistics and shipping provider, an online (virtual) doctor, etc.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3028",
+      label: "OnlineBusiness",
+      subClassOf: "http://schema.org/Organization",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :OnlineStore,
+      comment: "An eCommerce site.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3028",
+      label: "OnlineStore",
+      subClassOf: "http://schema.org/OnlineBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :OpeningHoursSpecification,
       comment: "A structured value providing information about the opening hours of a place or a certain service inside a place.\\n\\n\nThe place is __open__ if the [[opens]] property is specified, and __closed__ otherwise.\\n\\nIf the value for the [[closes]] property is less than the value for the [[opens]] property then the hour range is assumed to span over the next day.\n      ",
@@ -3357,7 +3392,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Organization",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Periodical,
-      comment: "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended, such as a magazine, scholarly journal, or newspaper to continue indefinitely.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
+      comment: "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
       equivalentClass: "http://purl.org/ontology/bibo/Periodical",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "Periodical",
@@ -3447,9 +3482,16 @@ module RDF::Vocab
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PlayAction,
-      comment: "The act of playing/exercising/training/performing for enjoyment, leisure, recreation, Competition or exercise.\\n\\nRelated actions:\\n\\n* [[ListenAction]]: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\\n* [[WatchAction]]: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.",
+      comment: "The act of playing/exercising/training/performing for enjoyment, leisure, recreation, competition or exercise.\\n\\nRelated actions:\\n\\n* [[ListenAction]]: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\\n* [[WatchAction]]: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.",
       label: "PlayAction",
       subClassOf: "http://schema.org/Action",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :PlayGameAction,
+      comment: "The act of playing a video game.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3058",
+      label: "PlayGameAction",
+      subClassOf: "http://schema.org/ConsumeAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Playground,
       comment: "A playground.",
@@ -3503,7 +3545,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/ContactPoint",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PostalCodeRangeSpecification,
-      comment: "Indicates a range of postalcodes, usually defined as the set of valid codes between [[postalCodeBegin]] and [[postalCodeEnd]], inclusively.",
+      comment: "Indicates a range of postal codes, usually defined as the set of valid codes between [[postalCodeBegin]] and [[postalCodeEnd]], inclusively.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506",
       label: "PostalCodeRangeSpecification",
@@ -3673,7 +3715,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/CivicStructure",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PublicationEvent,
-      comment: "A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type e.g. a broadcast event, an on-demand event, a book/journal publication via a variety of delivery media.",
+      comment: "A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type, e.g. a broadcast event, an on-demand event, a book/journal publication via a variety of delivery media.",
       label: "PublicationEvent",
       subClassOf: "http://schema.org/Event",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3714,7 +3756,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Quantity,
-      comment: "Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are entities like '3 Kg' or '4 milligrams'.",
+      comment: "Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are entities like '3 kg' or '4 milligrams'.",
       label: "Quantity",
       subClassOf: "http://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3819,7 +3861,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/WebPage",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ReceiveAction,
-      comment: "The act of physically/electronically taking delivery of an object that has been transferred from an origin to a destination. Reciprocal of SendAction.\\n\\nRelated actions:\\n\\n* [[SendAction]]: The reciprocal of ReceiveAction.\\n* [[TakeAction]]: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transfered (e.g. I can receive a package, but it does not mean the package is now mine).",
+      comment: "The act of physically/electronically taking delivery of an object that has been transferred from an origin to a destination. Reciprocal of SendAction.\\n\\nRelated actions:\\n\\n* [[SendAction]]: The reciprocal of ReceiveAction.\\n* [[TakeAction]]: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transferred (e.g. I can receive a package, but it does not mean the package is now mine).",
       label: "ReceiveAction",
       subClassOf: "http://schema.org/TransferAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3854,7 +3896,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :RegisterAction,
-      comment: "The act of registering to be a user of a service, product or web page.\\n\\nRelated actions:\\n\\n* [[JoinAction]]: Unlike JoinAction, RegisterAction implies you are registering to be a user of a service, *not* a group/team of people.\\n* [FollowAction]]: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object.\\n* [[SubscribeAction]]: Unlike SubscribeAction, RegisterAction doesn't imply that the agent is expecting updates from the object.",
+      comment: "The act of registering to be a user of a service, product or web page.\\n\\nRelated actions:\\n\\n* [[JoinAction]]: Unlike JoinAction, RegisterAction implies you are registering to be a user of a service, *not* a group/team of people.\\n* [[FollowAction]]: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object.\\n* [[SubscribeAction]]: Unlike SubscribeAction, RegisterAction doesn't imply that the agent is expecting updates from the object.",
       label: "RegisterAction",
       subClassOf: "http://schema.org/InteractAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3886,7 +3928,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/UpdateAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ReplyAction,
-      comment: "The act of responding to a question/message asked/sent by the object. Related to [[AskAction]]\\n\\nRelated actions:\\n\\n* [[AskAction]]: Appears generally as an origin of a ReplyAction.",
+      comment: "The act of responding to a question/message asked/sent by the object. Related to [[AskAction]].\\n\\nRelated actions:\\n\\n* [[AskAction]]: Appears generally as an origin of a ReplyAction.",
       label: "ReplyAction",
       subClassOf: "http://schema.org/CommunicateAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3958,7 +4000,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Place",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Resort,
-      comment: "A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishment operated by a single company (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Resort\">http://en.wikipedia.org/wiki/Resort</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n    ",
+      comment: "A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a single company (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Resort\">http://en.wikipedia.org/wiki/Resort</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n    ",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "Resort",
       subClassOf: "http://schema.org/LodgingBusiness",
@@ -4037,7 +4079,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/HomeAndConstructionBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Room,
-      comment: "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls. (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Room\">http://en.wikipedia.org/wiki/Room</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
+      comment: "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Room\">http://en.wikipedia.org/wiki/Room</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "Room",
       subClassOf: "http://schema.org/Accommodation",
@@ -4065,7 +4107,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Article",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Schedule,
-      comment: "A schedule defines a repeating time period used to describe a regularly occurring [[Event]]. At a minimum a schedule will specify [[repeatFrequency]] which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely.\n      This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also\n      have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.",
+      comment: "A schedule defines a repeating time period used to describe a regularly occurring [[Event]]. At a minimum a schedule will specify [[repeatFrequency]] which describes the interval between occurrences of the event. Additional information can be provided to specify the schedule more precisely.\n      This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also\n      have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1457",
       label: "Schedule",
@@ -4113,13 +4155,20 @@ module RDF::Vocab
       label: "SearchAction",
       subClassOf: "http://schema.org/Action",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :SearchRescueOrganization,
+      comment: "A Search and Rescue organization of some kind.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3052",
+      label: "SearchRescueOrganization",
+      subClassOf: "http://schema.org/Organization",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :SearchResultsPage,
       comment: "Web page type: Search results page.",
       label: "SearchResultsPage",
       subClassOf: "http://schema.org/WebPage",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Season,
-      comment: "A media season e.g. tv, radio, video game etc.",
+      comment: "A media season, e.g. TV, radio, video game etc.",
       "http://schema.org/supersededBy": "http://schema.org/CreativeWorkSeason",
       label: "Season",
       subClassOf: "http://schema.org/CreativeWork",
@@ -4147,7 +4196,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/TradeAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :SendAction,
-      comment: "The act of physically/electronically dispatching an object for transfer from an origin to a destination.Related actions:\\n\\n* [[ReceiveAction]]: The reciprocal of SendAction.\\n* [[GiveAction]]: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).",
+      comment: "The act of physically/electronically dispatching an object for transfer from an origin to a destination. Related actions:\\n\\n* [[ReceiveAction]]: The reciprocal of SendAction.\\n* [[GiveAction]]: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).",
       label: "SendAction",
       subClassOf: "http://schema.org/TransferAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4285,7 +4334,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :SpecialAnnouncement,
-      comment: "A SpecialAnnouncement combines a simple date-stamped textual information update\n      with contextualized Web links and other structured data.  It represents an information update made by a\n      locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,\n      local government.\n\nFor work in progress guidelines on Coronavirus-related markup see [this doc](https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#).\n\nThe motivating scenario for SpecialAnnouncement is the [Coronavirus pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic), and the initial vocabulary is oriented to this urgent situation. Schema.org\nexpect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our\nusual [Github entry](https://github.com/schemaorg/schemaorg/issues/2490), feedback comments can also be provided in [this document](https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#).\n\n\nWhile this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like [CAP](https://en.wikipedia.org/wiki/Common_Alerting_Protocol), although there may be overlaps. The intent is to cover\nthe kinds of everyday practical information being posted to existing websites during an emergency situation.\n\nSeveral kinds of information can be provided:\n\nWe encourage the provision of \"name\", \"text\", \"datePosted\", \"expires\" (if appropriate), \"category\" and\n\"url\" as a simple baseline. It is important to provide a value for \"category\" where possible, most ideally as a well known\nURL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be \"https://en.wikipedia.org/w/index.php?title=2019-20\\_coronavirus\\_pandemic\" or \"https://www.wikidata.org/wiki/Q81068910\".\n\nFor many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a [[WebContent]] type, and provide the url as a property of that, alongside at least a simple \"[[text]]\" summary of the page. It is\nunlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.\n\nWe expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, [[openingHours]], [[Event]], [[FAQPage]] etc. By linking to those pages from a [[SpecialAnnouncement]] you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the [[category]] property of the [[SpecialAnnouncement]].\n\nMany [[SpecialAnnouncement]]s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific [[LocalBusiness]]es and [[CivicStructure]]s. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].\n\nThe [[about]] property can be used to indicate entities that are the focus of the announcement. We now recommend using [[about]] only\nfor representing non-location entities (e.g. a [[Course]] or a [[RadioStation]]). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.\n\nThe basic content of [[SpecialAnnouncement]] is similar to that of an [RSS](https://en.wikipedia.org/wiki/RSS) or [Atom](https://en.wikipedia.org/wiki/Atom_(Web_standard)) feed. For publishers without such feeds, basic feed-like information can be shared by posting\n[[SpecialAnnouncement]] updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed\nwith the [[webFeed]] property. This can be a simple URL, or an inline [[DataFeed]] object, with [[encodingFormat]] providing\nmedia type information e.g. \"application/rss+xml\" or \"application/atom+xml\".\n",
+      comment: "A SpecialAnnouncement combines a simple date-stamped textual information update\n      with contextualized Web links and other structured data.  It represents an information update made by a\n      locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,\n      local government.\n\nFor work in progress guidelines on Coronavirus-related markup see [this doc](https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#).\n\nThe motivating scenario for SpecialAnnouncement is the [Coronavirus pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic), and the initial vocabulary is oriented to this urgent situation. Schema.org\nexpect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our\nusual [Github entry](https://github.com/schemaorg/schemaorg/issues/2490), feedback comments can also be provided in [this document](https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#).\n\n\nWhile this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like [CAP](https://en.wikipedia.org/wiki/Common_Alerting_Protocol), although there may be overlaps. The intent is to cover\nthe kinds of everyday practical information being posted to existing websites during an emergency situation.\n\nSeveral kinds of information can be provided:\n\nWe encourage the provision of \"name\", \"text\", \"datePosted\", \"expires\" (if appropriate), \"category\" and\n\"url\" as a simple baseline. It is important to provide a value for \"category\" where possible, most ideally as a well known\nURL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be \"https://en.wikipedia.org/w/index.php?title=2019-20\\_coronavirus\\_pandemic\" or \"https://www.wikidata.org/wiki/Q81068910\".\n\nFor many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a [[WebContent]] type, and provide the url as a property of that, alongside at least a simple \"[[text]]\" summary of the page. It is\nunlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.\n\nWe expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, [[openingHours]], [[Event]], [[FAQPage]] etc. By linking to those pages from a [[SpecialAnnouncement]] you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the [[category]] property of the [[SpecialAnnouncement]].\n\nMany [[SpecialAnnouncement]]s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific [[LocalBusiness]]es and [[CivicStructure]]s. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].\n\nThe [[about]] property can be used to indicate entities that are the focus of the announcement. We now recommend using [[about]] only\nfor representing non-location entities (e.g. a [[Course]] or a [[RadioStation]]). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of [[about]] for locations too.\n\nThe basic content of [[SpecialAnnouncement]] is similar to that of an [RSS](https://en.wikipedia.org/wiki/RSS) or [Atom](https://en.wikipedia.org/wiki/Atom_(Web_standard)) feed. For publishers without such feeds, basic feed-like information can be shared by posting\n[[SpecialAnnouncement]] updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed\nwith the [[webFeed]] property. This can be a simple URL, or an inline [[DataFeed]] object, with [[encodingFormat]] providing\nmedia type information, e.g. \"application/rss+xml\" or \"application/atom+xml\".\n",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2490",
       label: "SpecialAnnouncement",
@@ -4342,14 +4391,14 @@ module RDF::Vocab
       subClassOf: "http://schema.org/AdministrativeArea",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Statement,
-      comment: "A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about, can be indicated using mainEntity. For more formal claims (e.g. in Fact Checking), consider using [[Claim]] instead. Use the [[text]] property to capture the text of the statement.",
+      comment: "A statement about something, for example a fun or interesting fact. If known, the main entity this statement is about can be indicated using mainEntity. For more formal claims (e.g. in Fact Checking), consider using [[Claim]] instead. Use the [[text]] property to capture the text of the statement.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2912",
       label: "Statement",
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :StatisticalPopulation,
-      comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California, would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constrainingProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ",
+      comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constrainingProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
       label: "StatisticalPopulation",
@@ -4395,7 +4444,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/CivicStructure",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Suite,
-      comment: "A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (Source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Suite_(hotel)\">http://en.wikipedia.org/wiki/Suite_(hotel)</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
+      comment: "A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Suite_(hotel)\">http://en.wikipedia.org/wiki/Suite_(hotel)</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
       "http://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "Suite",
       subClassOf: "http://schema.org/Accommodation",
@@ -4449,7 +4498,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/WebPageElement",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TakeAction,
-      comment: "The act of gaining ownership of an object from an origin. Reciprocal of GiveAction.\\n\\nRelated actions:\\n\\n* [[GiveAction]]: The reciprocal of TakeAction.\\n* [[ReceiveAction]]: Unlike ReceiveAction, TakeAction implies that ownership has been transfered.",
+      comment: "The act of gaining ownership of an object from an origin. Reciprocal of GiveAction.\\n\\nRelated actions:\\n\\n* [[GiveAction]]: The reciprocal of TakeAction.\\n* [[ReceiveAction]]: Unlike ReceiveAction, TakeAction implies that ownership has been transferred.",
       label: "TakeAction",
       subClassOf: "http://schema.org/TransferAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4574,7 +4623,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Place",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TouristDestination,
-      comment: "A tourist destination. In principle any [[Place]] can be a [[TouristDestination]] from a [[City]], Region or [[Country]] to an [[AmusementPark]] or [[Hotel]]. This Type can be used on its own to describe a general [[TouristDestination]], or be used as an [[additionalType]] to add tourist relevant properties to any other [[Place]].  A [[TouristDestination]] is defined as a [[Place]] that contains, or is colocated with, one or more [[TouristAttraction]]s, often linked by a similar theme or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.\n  (See examples below).",
+      comment: "A tourist destination. In principle any [[Place]] can be a [[TouristDestination]] from a [[City]], Region or [[Country]] to an [[AmusementPark]] or [[Hotel]]. This Type can be used on its own to describe a general [[TouristDestination]], or be used as an [[additionalType]] to add tourist relevant properties to any other [[Place]].  A [[TouristDestination]] is defined as a [[Place]] that contains, or is colocated with, one or more [[TouristAttraction]]s, often linked by a similar theme or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.\n  (See examples below.)",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
       label: "TouristDestination",
@@ -4586,7 +4635,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/LocalBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TouristTrip,
-      comment: "A tourist trip. A created itinerary of visits to one or more places of interest ([[TouristAttraction]]/[[TouristDestination]]) often linked by a similar theme, geographic area, or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines tourism trip as the Trip taken by visitors.\n  (See examples below).",
+      comment: "A tourist trip. A created itinerary of visits to one or more places of interest ([[TouristAttraction]]/[[TouristDestination]]) often linked by a similar theme, geographic area, or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines tourism trip as the Trip taken by visitors.\n  (See examples below.)",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
       label: "TouristTrip",
@@ -4628,7 +4677,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Action",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TravelAction,
-      comment: "The act of traveling from an fromLocation to a destination by a specified mode of transport, optionally with participants.",
+      comment: "The act of traveling from a fromLocation to a destination by a specified mode of transport, optionally with participants.",
       label: "TravelAction",
       subClassOf: "http://schema.org/MoveAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4675,7 +4724,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/NonprofitType",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :UnRegisterAction,
-      comment: "The act of un-registering from a service.\\n\\nRelated actions:\\n\\n* [[RegisterAction]]: antonym of UnRegisterAction.\\n* [[LeaveAction]]: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you werer previously registered, rather than leaving a team/group of people.",
+      comment: "The act of un-registering from a service.\\n\\nRelated actions:\\n\\n* [[RegisterAction]]: antonym of UnRegisterAction.\\n* [[LeaveAction]]: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you were previously registered, rather than leaving a team/group of people.",
       label: "UnRegisterAction",
       subClassOf: "http://schema.org/InteractAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4854,7 +4903,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MedicalSign",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Volcano,
-      comment: "A volcano, like Fuji san.",
+      comment: "A volcano, like Fujisan.",
       label: "Volcano",
       subClassOf: "http://schema.org/Landform",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4895,7 +4944,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :WarrantyScope,
-      comment: "A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#Labor-BringIn\\n* http://purl.org/goodrelations/v1#PartsAndLabor-BringIn\\n* http://purl.org/goodrelations/v1#PartsAndLabor-PickUp\n      ",
+      comment: "A range of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#Labor-BringIn\\n* http://purl.org/goodrelations/v1#PartsAndLabor-BringIn\\n* http://purl.org/goodrelations/v1#PartsAndLabor-PickUp\n      ",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
       label: "WarrantyScope",
       subClassOf: "http://schema.org/Enumeration",
@@ -4949,7 +4998,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/SoftwareApplication",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :WebContent,
-      comment: "WebContent is a type representing all [[WebPage]], [[WebSite]] and [[WebPageElement]] content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts is not always important or obvious. The  [[WebContent]] type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types [[WebPage]], [[WebSite]] and [[WebPageElement]] will eventually be declared as subtypes of [[WebContent]]).",
+      comment: "WebContent is a type representing all [[WebPage]], [[WebSite]] and [[WebPageElement]] content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts are not always important or obvious. The  [[WebContent]] type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types [[WebPage]], [[WebSite]] and [[WebPageElement]] will eventually be declared as subtypes of [[WebContent]].)",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2358",
       label: "WebContent",
@@ -5081,39 +5130,39 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accessMode,
-      comment: "The human sensory perceptual system or cognitive faculty through which a person may process or perceive information. Expected values include: auditory, tactile, textual, visual, colorDependent, chartOnVisual, chemOnVisual, diagramOnVisual, mathOnVisual, musicOnVisual, textOnVisual.\n      ",
+      comment: "The human sensory perceptual system or cognitive faculty through which a person may process or perceive information. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessMode-vocabulary).",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1100",
       label: "accessMode",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accessModeSufficient,
-      comment: "A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. Expected values include:  auditory, tactile, textual, visual.\n      ",
+      comment: "A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessModeSufficient-vocabulary).",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1100",
       label: "accessModeSufficient",
       rangeIncludes: "http://schema.org/ItemList",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accessibilityAPI,
-      comment: "Indicates that the resource is compatible with the referenced accessibility API ([WebSchemas wiki lists possible values](http://www.w3.org/wiki/WebSchemas/Accessibility)).",
+      comment: "Indicates that the resource is compatible with the referenced accessibility API. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityAPI-vocabulary).",
       domainIncludes: "http://schema.org/CreativeWork",
       label: "accessibilityAPI",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accessibilityControl,
-      comment: "Identifies input methods that are sufficient to fully control the described resource ([WebSchemas wiki lists possible values](http://www.w3.org/wiki/WebSchemas/Accessibility)).",
+      comment: "Identifies input methods that are sufficient to fully control the described resource. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityControl-vocabulary).",
       domainIncludes: "http://schema.org/CreativeWork",
       label: "accessibilityControl",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accessibilityFeature,
-      comment: "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility ([WebSchemas wiki lists possible values](http://www.w3.org/wiki/WebSchemas/Accessibility)).",
+      comment: "Content features of the resource, such as accessible media, alternatives and supported enhancements for accessibility. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityFeature-vocabulary).",
       domainIncludes: "http://schema.org/CreativeWork",
       label: "accessibilityFeature",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accessibilityHazard,
-      comment: "A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3 ([WebSchemas wiki lists possible values](http://www.w3.org/wiki/WebSchemas/Accessibility)).",
+      comment: "A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3. Values should be drawn from the [approved vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibilityHazard-vocabulary).",
       domainIncludes: "http://schema.org/CreativeWork",
       label: "accessibilityHazard",
       rangeIncludes: "http://schema.org/Text",
@@ -5126,7 +5175,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accommodationCategory,
-      comment: "Category of an [[Accommodation]], following real estate conventions e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
+      comment: "Category of an [[Accommodation]], following real estate conventions, e.g. RESO (see [PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Field), and [PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field) fields  for suggested values).",
       domainIncludes: "http://schema.org/Accommodation",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2373",
@@ -5196,7 +5245,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :actionAccessibilityRequirement,
-      comment: "A set of requirements that a must be fulfilled in order to perform an Action. If more than one value is specied, fulfilling one set of requirements will allow the Action to be performed.",
+      comment: "A set of requirements that must be fulfilled in order to perform an Action. If more than one value is specified, fulfilling one set of requirements will allow the Action to be performed.",
       domainIncludes: "http://schema.org/ConsumeAction",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1741",
       label: "actionAccessibilityRequirement",
@@ -5219,7 +5268,7 @@ module RDF::Vocab
       comment: "The high level platform(s) where the Action can be performed for the given URL. To specify a specific application or operating system instance, use actionApplication.",
       domainIncludes: "http://schema.org/EntryPoint",
       label: "actionPlatform",
-      rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
+      rangeIncludes: ["http://schema.org/DigitalPlatformEnumeration", "http://schema.org/Text", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :actionStatus,
       comment: "Indicates the current disposition of the Action.",
@@ -5258,13 +5307,13 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/QuantitativeValue", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :actor,
-      comment: "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
+      comment: "An actor, e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
       domainIncludes: ["http://schema.org/Clip", "http://schema.org/CreativeWorkSeason", "http://schema.org/Episode", "http://schema.org/Event", "http://schema.org/Movie", "http://schema.org/MovieSeries", "http://schema.org/PodcastSeries", "http://schema.org/RadioSeries", "http://schema.org/TVSeries", "http://schema.org/VideoGame", "http://schema.org/VideoGameSeries", "http://schema.org/VideoObject"],
       label: "actor",
       rangeIncludes: "http://schema.org/Person",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :actors,
-      comment: "An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
+      comment: "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
       domainIncludes: ["http://schema.org/Clip", "http://schema.org/Episode", "http://schema.org/Movie", "http://schema.org/MovieSeries", "http://schema.org/RadioSeries", "http://schema.org/TVSeries", "http://schema.org/VideoGame", "http://schema.org/VideoGameSeries", "http://schema.org/VideoObject"],
       "http://schema.org/supersededBy": "http://schema.org/actor",
       label: "actors",
@@ -5282,6 +5331,7 @@ module RDF::Vocab
       domainIncludes: "http://schema.org/Person",
       label: "additionalName",
       rangeIncludes: "http://schema.org/Text",
+      subPropertyOf: "http://schema.org/alternateName",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :additionalNumberOfGuests,
       comment: "If responding yes, the number of guests who will attend in addition to the invitee.",
@@ -5290,7 +5340,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Number",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :additionalProperty,
-      comment: "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+      comment: "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
       domainIncludes: ["http://schema.org/MerchantReturnPolicy", "http://schema.org/Place", "http://schema.org/Product", "http://schema.org/QualitativeValue", "http://schema.org/QuantitativeValue"],
       label: "additionalProperty",
       rangeIncludes: "http://schema.org/PropertyValue",
@@ -5329,7 +5379,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :addressRegion,
-      comment: "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level [Administrative division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country) ",
+      comment: "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level [Administrative division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country).",
       domainIncludes: ["http://schema.org/DefinedRegion", "http://schema.org/PostalAddress"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506",
       label: "addressRegion",
@@ -5350,7 +5400,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/QuantitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :adverseOutcome,
-      comment: "A possible complication and/or side effect of this therapy. If it is known that an adverse outcome is serious (resulting in death, disability, or permanent damage; requiring hospitalization; or is otherwise life-threatening or requires immediate medical attention), tag it as a seriouseAdverseOutcome instead.",
+      comment: "A possible complication and/or side effect of this therapy. If it is known that an adverse outcome is serious (resulting in death, disability, or permanent damage; requiring hospitalization; or otherwise life-threatening or requiring immediate medical attention), tag it as a seriousAdverseOutcome instead.",
       domainIncludes: ["http://schema.org/MedicalDevice", "http://schema.org/TherapeuticProcedure"],
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "adverseOutcome",
@@ -5377,7 +5427,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/MediaObject", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :agent,
-      comment: "The direct performer or driver of the action (animate or inanimate). e.g. *John* wrote a book.",
+      comment: "The direct performer or driver of the action (animate or inanimate). E.g. *John* wrote a book.",
       domainIncludes: "http://schema.org/Action",
       label: "agent",
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
@@ -5401,7 +5451,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MusicAlbum",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :albumProductionType,
-      comment: "Classification of the album by it's type of content: soundtrack, live album, studio album, etc.",
+      comment: "Classification of the album by its type of content: soundtrack, live album, studio album, etc.",
       domainIncludes: "http://schema.org/MusicAlbum",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "albumProductionType",
@@ -5541,13 +5591,21 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Muscle",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :appearance,
-      comment: "Indicates an occurence of a [[Claim]] in some [[CreativeWork]].",
+      comment: "Indicates an occurrence of a [[Claim]] in some [[CreativeWork]].",
       domainIncludes: "http://schema.org/Claim",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1828",
       label: "appearance",
       rangeIncludes: "http://schema.org/CreativeWork",
       subPropertyOf: "http://schema.org/workExample",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :applicableCountry,
+      comment: "A country where a particular merchant return policy applies to, for example the two-letter ISO 3166-1 alpha-2 country code.",
+      domainIncludes: "http://schema.org/MerchantReturnPolicy",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3001",
+      label: "applicableCountry",
+      rangeIncludes: ["http://schema.org/Country", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :applicableLocation,
       comment: "The location in which the status applies.",
@@ -5714,7 +5772,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Integer", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :artMedium,
-      comment: "The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.)",
+      comment: "The material used. (E.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.)",
       domainIncludes: "http://schema.org/VisualArtwork",
       label: "artMedium",
       rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
@@ -5758,6 +5816,15 @@ module RDF::Vocab
       label: "artworkSurface",
       rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :asin,
+      comment: "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+      domainIncludes: ["http://schema.org/Demand", "http://schema.org/Offer", "http://schema.org/Product"],
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
+      label: "asin",
+      rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
+      subPropertyOf: "http://schema.org/identifier",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :aspect,
       comment: "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
       domainIncludes: "http://schema.org/MedicalWebPage",
@@ -5767,14 +5834,14 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :assembly,
-      comment: "Library file name e.g., mscorlib.dll, system.web.dll.",
+      comment: "Library file name, e.g., mscorlib.dll, system.web.dll.",
       domainIncludes: "http://schema.org/APIReference",
       "http://schema.org/supersededBy": "http://schema.org/executableLibraryName",
       label: "assembly",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :assemblyVersion,
-      comment: "Associated product/technology version. e.g., .NET Framework 4.5.",
+      comment: "Associated product/technology version. E.g., .NET Framework 4.5.",
       domainIncludes: "http://schema.org/APIReference",
       label: "assemblyVersion",
       rangeIncludes: "http://schema.org/Text",
@@ -5953,7 +6020,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/AdministrativeArea",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :availableLanguage,
-      comment: "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]",
+      comment: "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].",
       domainIncludes: ["http://schema.org/ContactPoint", "http://schema.org/LodgingBusiness", "http://schema.org/ServiceChannel", "http://schema.org/TouristAttraction"],
       label: "availableLanguage",
       rangeIncludes: ["http://schema.org/Language", "http://schema.org/Text"],
@@ -6266,7 +6333,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :branchOf,
-      comment: "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical)[[branch]].",
+      comment: "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical) [[branch]].",
       domainIncludes: "http://schema.org/LocalBusiness",
       "http://schema.org/supersededBy": "http://schema.org/parentOrganization",
       label: "branchOf",
@@ -6310,7 +6377,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :broadcastFrequency,
-      comment: "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\".",
+      comment: "The frequency used for over-the-air broadcasts. Numeric values or simple ranges, e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\".",
       domainIncludes: ["http://schema.org/BroadcastChannel", "http://schema.org/BroadcastService"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1004",
       label: "broadcastFrequency",
@@ -6352,7 +6419,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :broadcastTimezone,
-      comment: "The timezone in [ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601) for which the service bases its broadcasts",
+      comment: "The timezone in [ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601) for which the service bases its broadcasts.",
       domainIncludes: "http://schema.org/BroadcastService",
       label: "broadcastTimezone",
       rangeIncludes: "http://schema.org/Text",
@@ -6528,7 +6595,7 @@ module RDF::Vocab
       domainIncludes: ["http://schema.org/ActionAccessSpecification", "http://schema.org/Invoice", "http://schema.org/Offer", "http://schema.org/PhysicalActivity", "http://schema.org/Product", "http://schema.org/Recommendation", "http://schema.org/Service", "http://schema.org/SpecialAnnouncement"],
       "http://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1741", "https://github.com/schemaorg/schemaorg/issues/2490"],
       label: "category",
-      rangeIncludes: ["http://schema.org/PhysicalActivityCategory", "http://schema.org/Text", "http://schema.org/Thing", "http://schema.org/URL"],
+      rangeIncludes: ["http://schema.org/CategoryCode", "http://schema.org/PhysicalActivityCategory", "http://schema.org/Text", "http://schema.org/Thing", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :causeOf,
       comment: "The condition, complication, symptom, sign, etc. caused.",
@@ -6573,6 +6640,14 @@ module RDF::Vocab
       domainIncludes: ["http://schema.org/LodgingBusiness", "http://schema.org/LodgingReservation"],
       label: "checkinTime",
       rangeIncludes: ["http://schema.org/DateTime", "http://schema.org/Time"],
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :checkoutPageURLTemplate,
+      comment: "A URL template (RFC 6570) for a checkout page for an offer. This approach allows merchants to specify a URL for online checkout of the offered product, by interpolating parameters such as the logged in user ID, product ID, quantity, discount code etc. Parameter naming and standardization are not specified here.",
+      domainIncludes: "http://schema.org/Offer",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3135",
+      label: "checkoutPageURLTemplate",
+      rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :checkoutTime,
       comment: "The latest someone may check out of a lodging establishment.",
@@ -6699,7 +6774,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MedicalCode",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :codeRepository,
-      comment: "Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex).",
+      comment: "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex).",
       domainIncludes: "http://schema.org/SoftwareSourceCode",
       label: "codeRepository",
       rangeIncludes: "http://schema.org/URL",
@@ -6919,7 +6994,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Place",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :contentRating,
-      comment: "Official rating of a piece of content&#x2014;for example,'MPAA PG-13'.",
+      comment: "Official rating of a piece of content&#x2014;for example, 'MPAA PG-13'.",
       domainIncludes: "http://schema.org/CreativeWork",
       label: "contentRating",
       rangeIncludes: ["http://schema.org/Rating", "http://schema.org/Text"],
@@ -6933,7 +7008,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/DateTime",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :contentSize,
-      comment: "File size in (mega/kilo) bytes.",
+      comment: "File size in (mega/kilo)bytes.",
       domainIncludes: "http://schema.org/MediaObject",
       label: "contentSize",
       rangeIncludes: "http://schema.org/Text",
@@ -7021,7 +7096,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/DrugCostCategory",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :costCurrency,
-      comment: "The currency (in 3-letter of the drug cost. See: http://en.wikipedia.org/wiki/ISO_4217. ",
+      comment: "The currency (in 3-letter) of the drug cost. See: http://en.wikipedia.org/wiki/ISO_4217. ",
       domainIncludes: "http://schema.org/DrugCost",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "costCurrency",
@@ -7090,7 +7165,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :courseMode,
-      comment: "The medium or means of delivery of the course instance or the mode of study, either as a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or as a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous ).",
+      comment: "The medium or means of delivery of the course instance or the mode of study, either as a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or as a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous).",
       domainIncludes: "http://schema.org/CourseInstance",
       label: "courseMode",
       rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
@@ -7166,13 +7241,13 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/CssSelectorType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :currenciesAccepted,
-      comment: "The currency accepted.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
+      comment: "The currency accepted.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
       domainIncludes: "http://schema.org/LocalBusiness",
       label: "currenciesAccepted",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :currency,
-      comment: "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
+      comment: "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
       domainIncludes: ["http://schema.org/DatedMoneySpecification", "http://schema.org/ExchangeRateSpecification", "http://schema.org/LoanOrCredit", "http://schema.org/MonetaryAmount", "http://schema.org/MonetaryAmountDistribution"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "currency",
@@ -7329,7 +7404,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Number",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :cvdNumTotBeds,
-      comment: "numtotbeds - ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds, including all staffed,ICU, licensed, and overflow (surge) beds used for inpatients or outpatients.",
+      comment: "numtotbeds - ALL HOSPITAL BEDS: Total number of all inpatient and outpatient beds, including all staffed, ICU, licensed, and overflow (surge) beds used for inpatients or outpatients.",
       domainIncludes: "http://schema.org/CDCPMDRecord",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2521",
@@ -7353,7 +7428,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Number",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :dataFeedElement,
-      comment: "An item within in a data feed. Data feeds may have many elements.",
+      comment: "An item within a data feed. Data feeds may have many elements.",
       domainIncludes: "http://schema.org/DataFeed",
       label: "dataFeedElement",
       rangeIncludes: ["http://schema.org/DataFeedItem", "http://schema.org/Text", "http://schema.org/Thing"],
@@ -7435,7 +7510,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Date",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :dateline,
-      comment: "A [dateline](https://en.wikipedia.org/wiki/Dateline) is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided.\n\nStructured representations of dateline-related information can also be expressed more explicitly using [[locationCreated]] (which represents where a work was created e.g. where a news report was written).  For location depicted or described in the content, use [[contentLocation]].\n\nDateline summaries are oriented more towards human readers than towards automated processing, and can vary substantially. Some examples: \"BEIRUT, Lebanon, June 2.\", \"Paris, France\", \"December 19, 2017 11:43AM Reporting from Washington\", \"Beijing/Moscow\", \"QUEZON CITY, Philippines\".\n      ",
+      comment: "A [dateline](https://en.wikipedia.org/wiki/Dateline) is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided.\n\nStructured representations of dateline-related information can also be expressed more explicitly using [[locationCreated]] (which represents where a work was created, e.g. where a news report was written).  For location depicted or described in the content, use [[contentLocation]].\n\nDateline summaries are oriented more towards human readers than towards automated processing, and can vary substantially. Some examples: \"BEIRUT, Lebanon, June 2.\", \"Paris, France\", \"December 19, 2017 11:43AM Reporting from Washington\", \"Beijing/Moscow\", \"QUEZON CITY, Philippines\".\n      ",
       domainIncludes: "http://schema.org/NewsArticle",
       label: "dateline",
       rangeIncludes: "http://schema.org/Text",
@@ -7563,7 +7638,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :depth,
       comment: "The depth of the item.",
-      domainIncludes: ["http://schema.org/Product", "http://schema.org/VisualArtwork"],
+      domainIncludes: ["http://schema.org/OfferShippingDetails", "http://schema.org/Product", "http://schema.org/VisualArtwork"],
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "depth",
       rangeIncludes: ["http://schema.org/Distance", "http://schema.org/QuantitativeValue"],
@@ -7627,13 +7702,13 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Boolean",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :director,
-      comment: "A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
+      comment: "A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
       domainIncludes: ["http://schema.org/Clip", "http://schema.org/CreativeWorkSeason", "http://schema.org/Episode", "http://schema.org/Event", "http://schema.org/Movie", "http://schema.org/MovieSeries", "http://schema.org/RadioSeries", "http://schema.org/TVSeries", "http://schema.org/VideoGame", "http://schema.org/VideoGameSeries", "http://schema.org/VideoObject"],
       label: "director",
       rangeIncludes: "http://schema.org/Person",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :directors,
-      comment: "A director of e.g. tv, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
+      comment: "A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
       domainIncludes: ["http://schema.org/Clip", "http://schema.org/Episode", "http://schema.org/Movie", "http://schema.org/MovieSeries", "http://schema.org/RadioSeries", "http://schema.org/TVSeries", "http://schema.org/VideoGame", "http://schema.org/VideoGameSeries", "http://schema.org/VideoObject"],
       "http://schema.org/supersededBy": "http://schema.org/director",
       label: "directors",
@@ -7659,7 +7734,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :discountCurrency,
-      comment: "The currency of the discount.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
+      comment: "The currency of the discount.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
       domainIncludes: "http://schema.org/Order",
       label: "discountCurrency",
       rangeIncludes: "http://schema.org/Text",
@@ -7712,7 +7787,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MedicalSignOrSymptom",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :distribution,
-      comment: "A downloadable form of this dataset, at a specific location, in a specific format.",
+      comment: "A downloadable form of this dataset, at a specific location, in a specific format. This property can be repeated if different variations are available. There is no expectation that different downloadable distributions must contain exactly equivalent information (see also [DCAT](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution) on this point). Different distributions might include or exclude different subsets of the entire dataset, for example.",
       domainIncludes: "http://schema.org/Dataset",
       label: "distribution",
       rangeIncludes: "http://schema.org/DataDownload",
@@ -7910,7 +7985,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MonetaryAmount",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :editEIDR,
-      comment: "An [EIDR](https://eidr.org/) (Entertainment Identifier Registry) [[identifier]] representing a specific edit / edition for a work of film or television.\n\nFor example, the motion picture known as \"Ghostbusters\" whose [[titleEIDR]] is \"10.5240/7EC7-228A-510A-053E-CBB8-J\", has several edits e.g. \"10.5240/1F2A-E1C5-680A-14C6-E76B-I\" and \"10.5240/8A35-3BEE-6497-5D12-9E4F-3\".\n\nSince schema.org types like [[Movie]] and [[TVEpisode]] can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.\n",
+      comment: "An [EIDR](https://eidr.org/) (Entertainment Identifier Registry) [[identifier]] representing a specific edit / edition for a work of film or television.\n\nFor example, the motion picture known as \"Ghostbusters\" whose [[titleEIDR]] is \"10.5240/7EC7-228A-510A-053E-CBB8-J\" has several edits, e.g. \"10.5240/1F2A-E1C5-680A-14C6-E76B-I\" and \"10.5240/8A35-3BEE-6497-5D12-9E4F-3\".\n\nSince schema.org types like [[Movie]] and [[TVEpisode]] can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.\n",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2469",
@@ -7968,7 +8043,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/DefinedTerm", "http://schema.org/Text", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :educationalProgramMode,
-      comment: "Similar to courseMode, The medium or means of delivery of the program as a whole. The value may either be a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous ).",
+      comment: "Similar to courseMode, the medium or means of delivery of the program as a whole. The value may either be a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous ).",
       domainIncludes: "http://schema.org/EducationalOccupationalProgram",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2419",
@@ -7988,7 +8063,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/DefinedTerm", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :elevation,
-      comment: "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT_OF_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
+      comment: "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT\\_OF\\_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
       domainIncludes: ["http://schema.org/GeoCoordinates", "http://schema.org/GeoShape"],
       label: "elevation",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/Text"],
@@ -8125,7 +8200,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MediaObject",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :encodingFormat,
-      comment: "Media type typically expressed using a MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml) and [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).\n\nIn cases where a [[CreativeWork]] has several media type representations, [[encoding]] can be used to indicate each [[MediaObject]] alongside particular [[encodingFormat]] information.\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.",
+      comment: "Media type typically expressed using a MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml) and [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.\n\nIn cases where a [[CreativeWork]] has several media type representations, [[encoding]] can be used to indicate each [[MediaObject]] alongside particular [[encodingFormat]] information.\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.",
       domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/MediaObject"],
       label: "encodingFormat",
       rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
@@ -8159,7 +8234,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/HyperTocEntry", "http://schema.org/Number"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :endTime,
-      comment: "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+      comment: "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
       domainIncludes: ["http://schema.org/Action", "http://schema.org/FoodEstablishmentReservation", "http://schema.org/InteractionCounter", "http://schema.org/MediaObject", "http://schema.org/Schedule"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2493",
       label: "endTime",
@@ -8204,7 +8279,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/QuantitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :enginePower,
-      comment: "The power of the vehicle's engine.\n    Typical unit code(s): KWT for kilowatt, BHP for brake horsepower, N12 for metric horsepower (PS, with 1 PS = 735,49875 W)\\n\\n* Note 1: There are many different ways of measuring an engine's power. For an overview, see  [http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes](http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes).\\n* Note 2: You can link to information about how the given value has been determined using the [[valueReference]] property.\\n* Note 3: You can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      comment: "The power of the vehicle's engine.\n    Typical unit code(s): KWT for kilowatt, BHP for brake horsepower, N12 for metric horsepower (PS, with 1 PS = 735,49875 W)\\n\\n* Note 1: There are many different ways of measuring an engine's power. For an overview, see  [http://en.wikipedia.org/wiki/Horsepower#Engine\\_power\\_test\\_codes](http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes).\\n* Note 2: You can link to information about how the given value has been determined using the [[valueReference]] property.\\n* Note 3: You can use [[minValue]] and [[maxValue]] to indicate ranges.",
       domainIncludes: "http://schema.org/EngineSpecification",
       "http://schema.org/isPartOf": "http://auto.schema.org",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
@@ -8234,7 +8309,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :episode,
-      comment: "An episode of a tv, radio or game media within a series or season.",
+      comment: "An episode of a TV, radio or game media within a series or season.",
       domainIncludes: ["http://schema.org/CreativeWorkSeason", "http://schema.org/RadioSeries", "http://schema.org/TVSeries", "http://schema.org/VideoGameSeries"],
       label: "episode",
       rangeIncludes: "http://schema.org/Episode",
@@ -8375,7 +8450,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/MonetaryAmount", "http://schema.org/Number"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :executableLibraryName,
-      comment: "Library file name e.g., mscorlib.dll, system.web.dll.",
+      comment: "Library file name, e.g., mscorlib.dll, system.web.dll.",
       domainIncludes: "http://schema.org/APIReference",
       label: "executableLibraryName",
       rangeIncludes: "http://schema.org/Text",
@@ -8468,7 +8543,7 @@ module RDF::Vocab
       comment: "Date the content expires and is no longer useful or available. For example a [[VideoObject]] or [[NewsArticle]] whose availability or relevance is time-limited, or a [[ClaimReview]] fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date.",
       domainIncludes: "http://schema.org/CreativeWork",
       label: "expires",
-      rangeIncludes: "http://schema.org/Date",
+      rangeIncludes: ["http://schema.org/Date", "http://schema.org/DateTime"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :expressedIn,
       comment: "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
@@ -8516,7 +8591,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Mass",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fileFormat,
-      comment: "Media type, typically MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml)) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.",
+      comment: "Media type, typically MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml)) of the content, e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/supersededBy": "http://schema.org/encodingFormat",
       label: "fileFormat",
@@ -8537,7 +8612,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/DefinedTerm", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :firstAppearance,
-      comment: "Indicates the first known occurence of a [[Claim]] in some [[CreativeWork]].",
+      comment: "Indicates the first known occurrence of a [[Claim]] in some [[CreativeWork]].",
       domainIncludes: "http://schema.org/Claim",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1828",
@@ -8662,7 +8737,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Boolean",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :freeShippingThreshold,
-      comment: "A monetary value above which (or equal to) the shipping rate becomes free. Intended to be used via an [[OfferShippingDetails]] with [[shippingSettingsLink]] matching this [[ShippingRateSettings]].",
+      comment: "A monetary value above (or at) which the shipping rate becomes free. Intended to be used via an [[OfferShippingDetails]] with [[shippingSettingsLink]] matching this [[ShippingRateSettings]].",
       domainIncludes: "http://schema.org/ShippingRateSettings",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506",
@@ -8720,19 +8795,29 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/MedicalEntity", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fundedItem,
-      comment: "Indicates an item funded or sponsored through a [[Grant]].",
+      comment: "Indicates something directly or indirectly funded or sponsored through a [[Grant]]. See also [[ownershipFundingInfo]].",
       domainIncludes: "http://schema.org/Grant",
+      "http://schema.org/inverseOf": "http://schema.org/funding",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1950", "https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
       label: "fundedItem",
-      rangeIncludes: "http://schema.org/Thing",
+      rangeIncludes: ["http://schema.org/BioChemEntity", "http://schema.org/CreativeWork", "http://schema.org/Event", "http://schema.org/MedicalEntity", "http://schema.org/Organization", "http://schema.org/Person", "http://schema.org/Product"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :funder,
       comment: "A person or organization that supports (sponsors) something through some kind of financial contribution.",
-      domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/Event", "http://schema.org/MonetaryGrant", "http://schema.org/Organization", "http://schema.org/Person"],
+      domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/Event", "http://schema.org/Grant", "http://schema.org/MonetaryGrant", "http://schema.org/Organization", "http://schema.org/Person"],
       label: "funder",
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
       subPropertyOf: "http://schema.org/sponsor",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :funding,
+      comment: "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
+      domainIncludes: ["http://schema.org/BioChemEntity", "http://schema.org/CreativeWork", "http://schema.org/Event", "http://schema.org/MedicalEntity", "http://schema.org/Organization", "http://schema.org/Person", "http://schema.org/Product"],
+      "http://schema.org/inverseOf": "http://schema.org/fundedItem",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      label: "funding",
+      rangeIncludes: "http://schema.org/Grant",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :game,
       comment: "Video game which is played on this server.",
@@ -8740,6 +8825,20 @@ module RDF::Vocab
       "http://schema.org/inverseOf": "http://schema.org/gameServer",
       label: "game",
       rangeIncludes: "http://schema.org/VideoGame",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :gameAvailabilityType,
+      comment: "Indicates the availability type of the game content associated with this action, such as whether it is a full version or a demo.",
+      domainIncludes: "http://schema.org/PlayGameAction",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3058",
+      label: "gameAvailabilityType",
+      rangeIncludes: ["http://schema.org/GameAvailabilityEnumeration", "http://schema.org/Text"],
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :gameEdition,
+      comment: "The edition of a video game.",
+      domainIncludes: "http://schema.org/VideoGame",
+      label: "gameEdition",
+      rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gameItem,
       comment: "An item is an object within the game world that can be collected by a player or, occasionally, a non-player character.",
@@ -8817,13 +8916,13 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :geoDisjoint,
-      comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.\" (a symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM))",
+      comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: \"they have no point in common. They form a set of disconnected geometries.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
       domainIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
       label: "geoDisjoint",
       rangeIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :geoEquals,
-      comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship)",
+      comment: "Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). \"Two geometries are topologically equal if their interiors intersect and no part of the interior or boundary of one geometry intersects the exterior of the other\" (a symmetric relationship).",
       domainIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
       label: "geoEquals",
       rangeIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
@@ -8835,7 +8934,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :geoMidpoint,
-      comment: "Indicates the GeoCoordinates at the centre of a GeoShape e.g. GeoCircle.",
+      comment: "Indicates the GeoCoordinates at the centre of a GeoShape, e.g. GeoCircle.",
       domainIncludes: "http://schema.org/GeoCircle",
       label: "geoMidpoint",
       rangeIncludes: "http://schema.org/GeoCoordinates",
@@ -8853,7 +8952,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Distance", "http://schema.org/Number", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :geoTouches,
-      comment: "Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior points.\" (a symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM) )",
+      comment: "Represents spatial relations in which two geometries (or the places they represent) touch: \"they have at least one boundary point in common, but no interior points.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
       domainIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
       label: "geoTouches",
       rangeIncludes: ["http://schema.org/GeospatialGeometry", "http://schema.org/Place"],
@@ -8929,12 +9028,12 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/QualitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gtin,
-      comment: "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties. The GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs as URLs. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged.\n   ",
+      comment: "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs as URLs (URIs, IRIs, etc.). Details including regular expression examples can be found in, Section 6 of the GS1 URI Syntax specification; see also [schema.org tracking issue](https://github.com/schemaorg/schemaorg/issues/3156#issuecomment-1209522809) for schema.org-specific discussion. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
       domainIncludes: ["http://schema.org/Demand", "http://schema.org/Offer", "http://schema.org/Product"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
       label: "gtin",
-      rangeIncludes: "http://schema.org/Text",
+      rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
       subPropertyOf: "http://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gtin12,
@@ -8997,6 +9096,14 @@ module RDF::Vocab
       label: "handlingTime",
       rangeIncludes: "http://schema.org/QuantitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :hasAdultConsideration,
+      comment: "Used to tag an item to be intended or suitable for consumption or use by adults only.",
+      domainIncludes: ["http://schema.org/Offer", "http://schema.org/Product"],
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "hasAdultConsideration",
+      rangeIncludes: "http://schema.org/AdultOrientedEnumeration",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasBioChemEntityPart,
       comment: "Indicates a BioChemEntity that (in some sense) has this BioChemEntity as a part. ",
       domainIncludes: "http://schema.org/BioChemEntity",
@@ -9007,7 +9114,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/BioChemEntity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasBioPolymerSequence,
-      comment: "A symbolic representation of a BioChemEnity. For example, a nucleotide sequence of a Gene or an amino acid sequence of a Protein.",
+      comment: "A symbolic representation of a BioChemEntity. For example, a nucleotide sequence of a Gene or an amino acid sequence of a Protein.",
       domainIncludes: ["http://schema.org/Gene", "http://schema.org/Protein"],
       "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Gene",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -9221,7 +9328,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :healthPlanCoinsuranceRate,
-      comment: "Whether The rate of coinsurance expressed as a number between 0.0 and 1.0.",
+      comment: "The rate of coinsurance expressed as a number between 0.0 and 1.0.",
       domainIncludes: "http://schema.org/HealthPlanCostSharingSpecification",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
@@ -9229,7 +9336,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Number",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :healthPlanCopay,
-      comment: "Whether The copay amount.",
+      comment: "The copay amount.",
       domainIncludes: "http://schema.org/HealthPlanCostSharingSpecification",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
@@ -9245,7 +9352,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :healthPlanCostSharing,
-      comment: "Whether The costs to the patient for services under this network or formulary.",
+      comment: "The costs to the patient for services under this network or formulary.",
       domainIncludes: ["http://schema.org/HealthPlanFormulary", "http://schema.org/HealthPlanNetwork"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
@@ -9285,7 +9392,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/URL",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :healthPlanNetworkId,
-      comment: "Name or unique ID of network. (Networks are often reused across different insurance plans).",
+      comment: "Name or unique ID of network. (Networks are often reused across different insurance plans.)",
       domainIncludes: ["http://schema.org/HealthPlanNetwork", "http://schema.org/MedicalOrganization"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
@@ -9318,21 +9425,21 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :height,
       comment: "The height of the item.",
-      domainIncludes: ["http://schema.org/MediaObject", "http://schema.org/Person", "http://schema.org/Product", "http://schema.org/VisualArtwork"],
+      domainIncludes: ["http://schema.org/MediaObject", "http://schema.org/OfferShippingDetails", "http://schema.org/Person", "http://schema.org/Product", "http://schema.org/VisualArtwork"],
       label: "height",
       rangeIncludes: ["http://schema.org/Distance", "http://schema.org/QuantitativeValue"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :highPrice,
-      comment: "The highest price of all offers available.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      comment: "The highest price of all offers available.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
       domainIncludes: "http://schema.org/AggregateOffer",
       label: "highPrice",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hiringOrganization,
-      comment: "Organization offering the job position.",
+      comment: "Organization or Person offering the job position.",
       domainIncludes: "http://schema.org/JobPosting",
       label: "hiringOrganization",
-      rangeIncludes: "http://schema.org/Organization",
+      rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :holdingArchive,
       comment: {en: "[[ArchiveOrganization]] that holds, keeps or maintains the [[ArchiveComponent]]."},
@@ -9364,7 +9471,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :honorificSuffix,
-      comment: "An honorific suffix following a Person's name such as M.D. /PhD/MSCSW.",
+      comment: "An honorific suffix following a Person's name such as M.D./PhD/MSCSW.",
       domainIncludes: "http://schema.org/Person",
       label: "honorificSuffix",
       rangeIncludes: "http://schema.org/Text",
@@ -9523,7 +9630,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :inStoreReturnsOffered,
-      comment: "Are in-store returns offered? (for more advanced return methods use the [[returnMethod]] property)",
+      comment: "Are in-store returns offered? (For more advanced return methods use the [[returnMethod]] property.)",
       domainIncludes: "http://schema.org/MerchantReturnPolicy",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
@@ -9687,7 +9794,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Person",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :instrument,
-      comment: "The object that helped the agent perform the action. e.g. John wrote a book with *a pen*.",
+      comment: "The object that helped the agent perform the action. E.g. John wrote a book with *a pen*.",
       domainIncludes: "http://schema.org/Action",
       label: "instrument",
       rangeIncludes: "http://schema.org/Thing",
@@ -9825,12 +9932,12 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isFamilyFriendly,
       comment: "Indicates whether this content is family friendly.",
-      domainIncludes: "http://schema.org/CreativeWork",
+      domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/Offer", "http://schema.org/Product"],
       label: "isFamilyFriendly",
       rangeIncludes: "http://schema.org/Boolean",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isGift,
-      comment: "Was the offer accepted as a gift for someone other than the buyer.",
+      comment: "Indicates whether the offer was accepted as a gift for someone other than the buyer.",
       domainIncludes: "http://schema.org/Order",
       label: "isGift",
       rangeIncludes: "http://schema.org/Boolean",
@@ -9941,6 +10048,14 @@ module RDF::Vocab
       label: "isicV4",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :iso6523Code,
+      comment: "An organization identifier as defined in ISO 6523(-1). Note that many existing organization identifiers such as [leiCode](http://schema.org/leiCode), [duns](http://schema.org/duns) and [vatID](http://schema.org/vatID) can be expressed as an ISO 6523 identifier by setting the ICD part of the ISO 6523 identifier accordingly. ",
+      domainIncludes: "http://schema.org/Organization",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2915",
+      label: "iso6523Code",
+      rangeIncludes: "http://schema.org/Text",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isrcCode,
       comment: "The International Standard Recording Code for the recording.",
       domainIncludes: "http://schema.org/MusicRecording",
@@ -9973,7 +10088,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Organization",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :issuedThrough,
-      comment: "The service through with the permit was granted.",
+      comment: "The service through which the permit was granted.",
       domainIncludes: "http://schema.org/Permit",
       label: "issuedThrough",
       rangeIncludes: "http://schema.org/Service",
@@ -9986,7 +10101,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :item,
-      comment: "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')’.",
+      comment: "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists').",
       domainIncludes: ["http://schema.org/DataFeedItem", "http://schema.org/ListItem"],
       label: "item",
       rangeIncludes: "http://schema.org/Thing",
@@ -10098,7 +10213,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Place",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :jobLocationType,
-      comment: "A description of the job location (e.g TELECOMMUTE for telecommute jobs).",
+      comment: "A description of the job location (e.g. TELECOMMUTE for telecommute jobs).",
       domainIncludes: "http://schema.org/JobPosting",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1591",
@@ -10130,8 +10245,8 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/AdministrativeArea", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :keywords,
-      comment: "Keywords or tags used to describe this content. Multiple entries in a keywords list are typically delimited by commas.",
-      domainIncludes: "http://schema.org/CreativeWork",
+      comment: "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+      domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/Event", "http://schema.org/Organization", "http://schema.org/Place", "http://schema.org/Product"],
       label: "keywords",
       rangeIncludes: ["http://schema.org/DefinedTerm", "http://schema.org/Text", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10277,7 +10392,7 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/dateCreated",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationDateVersion,
-      comment: "The point-in-time at which the provided description of the legislation is valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")",
+      comment: "The point-in-time at which the provided description of the legislation is valid (e.g.: when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")",
       domainIncludes: "http://schema.org/Legislation",
       equivalentProperty: "http://data.europa.eu/eli/ontology#version_date",
       exactMatch: "http://data.europa.eu/eli/ontology#version_date",
@@ -10328,7 +10443,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/LegalValueLevel",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationPassedBy,
-      comment: "The person or organization that originally passed or made the law : typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author.",
+      comment: "The person or organization that originally passed or made the law: typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author.",
       domainIncludes: "http://schema.org/Legislation",
       equivalentProperty: "http://data.europa.eu/eli/ontology#passed_by",
       exactMatch: "http://data.europa.eu/eli/ontology#passed_by",
@@ -10526,7 +10641,7 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/participant",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :lowPrice,
-      comment: "The lowest price of all offers available.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      comment: "The lowest price of all offers available.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
       domainIncludes: "http://schema.org/AggregateOffer",
       label: "lowPrice",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/Text"],
@@ -10584,7 +10699,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :manufacturer,
       comment: "The manufacturer of the product.",
-      domainIncludes: ["http://schema.org/DietarySupplement", "http://schema.org/Drug", "http://schema.org/Product"],
+      domainIncludes: "http://schema.org/Product",
       label: "manufacturer",
       rangeIncludes: "http://schema.org/Organization",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10705,7 +10820,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :measuredProperty,
-      comment: "The measuredProperty of an [[Observation]], either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org extensions such as [GS1's](https://www.gs1.org/voc/?show=properties).",
+      comment: "The measuredProperty of an [[Observation]], either a schema.org property, a property from other RDF-compatible systems, e.g. W3C RDF Data Cube, or schema.org extensions such as [GS1's](https://www.gs1.org/voc/?show=properties).",
       domainIncludes: "http://schema.org/Observation",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
@@ -10815,7 +10930,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :membershipPointsEarned,
-      comment: "The number of membership points earned by the member. If necessary, the unitText can be used to express the units the points are issued in. (e.g. stars, miles, etc.)",
+      comment: "The number of membership points earned by the member. If necessary, the unitText can be used to express the units the points are issued in. (E.g. stars, miles, etc.)",
       domainIncludes: "http://schema.org/ProgramMembership",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2085",
@@ -10913,6 +11028,14 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/CreativeWork", "http://schema.org/URL"],
       subPropertyOf: "http://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :mobileUrl,
+      comment: "The [[mobileUrl]] property is provided for specific situations in which data consumers need to determine whether one of several provided URLs is a dedicated 'mobile site'.\n\nTo discourage over-use, and reflecting intial usecases, the property is expected only on [[Product]] and [[Offer]], rather than [[Thing]]. The general trend in web technology is towards [responsive design](https://en.wikipedia.org/wiki/Responsive_web_design) in which content can be flexibly adapted to a wide range of browsing environments. Pages and sites referenced with the long-established [[url]] property should ideally also be usable on a wide variety of devices, including mobile phones. In most cases, it would be pointless and counter productive to attempt to update all [[url]] markup to use [[mobileUrl]] for more mobile-oriented pages. The property is intended for the case when items (primarily [[Product]] and [[Offer]]) have extra URLs hosted on an additional \"mobile site\" alongside the main one. It should not be taken as an endorsement of this publication style.\n    ",
+      domainIncludes: ["http://schema.org/Offer", "http://schema.org/Product"],
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3134",
+      label: "mobileUrl",
+      rangeIncludes: "http://schema.org/Text",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :model,
       comment: "The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.",
       domainIncludes: "http://schema.org/Product",
@@ -10950,7 +11073,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/QuantitativeValue", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :monoisotopicMolecularWeight,
-      comment: "The monoisotopic mass is the sum of the masses of the atoms in a molecule using the unbound, ground-state, rest mass of the principal (most abundant) isotope for each element instead of the isotopic average mass. Please include the units the form '&lt;Number&gt; &lt;unit&gt;', for example '770.230488 g/mol' or as '&lt;QuantitativeValue&gt;.",
+      comment: "The monoisotopic mass is the sum of the masses of the atoms in a molecule using the unbound, ground-state, rest mass of the principal (most abundant) isotope for each element instead of the isotopic average mass. Please include the units in the form '&lt;Number&gt; &lt;unit&gt;', for example '770.230488 g/mol' or as '&lt;QuantitativeValue&gt;.",
       domainIncludes: "http://schema.org/MolecularEntity",
       "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -11021,7 +11144,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Person",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :musicReleaseFormat,
-      comment: "Format of this release (the type of recording media used, ie. compact disc, digital media, LP, etc.).",
+      comment: "Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).",
       domainIncludes: "http://schema.org/MusicRelease",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "musicReleaseFormat",
@@ -11070,8 +11193,8 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :negativeNotes,
-      comment: "Indicates, in the context of a [[Review]] (e.g. framed as 'pro' vs 'con' considerations), negative considerations - either as unstructured text, or a list.",
-      domainIncludes: "http://schema.org/Review",
+      comment: "Provides negative considerations regarding something, most typically in pro/con lists for reviews (alongside [[positiveNotes]]). For symmetry \n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described. Since product descriptions \ntend to emphasise positive claims, it may be relatively unusual to find [[negativeNotes]] used in this way. Nevertheless for the sake of symmetry, [[negativeNotes]] can be used on [[Product]].\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most negative is at the beginning of the list).",
+      domainIncludes: ["http://schema.org/Product", "http://schema.org/Review"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2832",
       label: "negativeNotes",
@@ -11135,7 +11258,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :nonprofitStatus,
-      comment: "nonprofit Status indicates the legal status of a non-profit organization in its primary place of business.",
+      comment: "nonprofitStatus indicates the legal status of a non-profit organization in its primary place of business.",
       domainIncludes: "http://schema.org/Organization",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2543",
@@ -11215,7 +11338,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/QuantitativeValue"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfBathroomsTotal,
-      comment: "The total integer number of bathrooms in a some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
+      comment: "The total integer number of bathrooms in some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
       domainIncludes: ["http://schema.org/Accommodation", "http://schema.org/FloorPlan"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2373",
@@ -11253,7 +11376,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/QuantitativeValue"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfEmployees,
-      comment: "The number of employees in an organization e.g. business.",
+      comment: "The number of employees in an organization, e.g. business.",
       domainIncludes: ["http://schema.org/BusinessAudience", "http://schema.org/Organization"],
       label: "numberOfEmployees",
       rangeIncludes: "http://schema.org/QuantitativeValue",
@@ -11346,7 +11469,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/NutritionInformation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :object,
-      comment: "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read *a book*.",
+      comment: "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). E.g. John read *a book*.",
       domainIncludes: "http://schema.org/Action",
       label: "object",
       rangeIncludes: "http://schema.org/Thing",
@@ -11447,7 +11570,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Time",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :operatingSystem,
-      comment: "Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",
+      comment: "Operating systems supported (Windows 7, OS X 10.6, Android 1.6).",
       domainIncludes: "http://schema.org/SoftwareApplication",
       label: "operatingSystem",
       rangeIncludes: "http://schema.org/Text",
@@ -11712,7 +11835,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Trip",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :participant,
-      comment: "Other co-agents that participated in the action indirectly. e.g. John wrote a book with *Steve*.",
+      comment: "Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
       domainIncludes: "http://schema.org/Action",
       label: "participant",
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
@@ -11937,7 +12060,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Place",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :pickupTime,
-      comment: "When a taxi will pickup a passenger or a rental car can be picked up.",
+      comment: "When a taxi will pick up a passenger or a rental car can be picked up.",
       domainIncludes: ["http://schema.org/RentalCarReservation", "http://schema.org/TaxiReservation"],
       label: "pickupTime",
       rangeIncludes: "http://schema.org/DateTime",
@@ -11981,8 +12104,8 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Integer", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :positiveNotes,
-      comment: "Indicates, in the context of a [[Review]] (e.g. framed as 'pro' vs 'con' considerations), positive considerations - either as unstructured text, or a list.",
-      domainIncludes: "http://schema.org/Review",
+      comment: "Provides positive considerations regarding something, for example product highlights or (alongside [[negativeNotes]]) pro/con lists for reviews.\n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described.\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most positive is at the beginning of the list).",
+      domainIncludes: ["http://schema.org/Product", "http://schema.org/Review"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2832",
       label: "positiveNotes",
@@ -12117,14 +12240,14 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/URL",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :prescriptionStatus,
-      comment: "Indicates the status of drug prescription eg. local catalogs classifications or whether the drug is available by prescription or over-the-counter, etc.",
+      comment: "Indicates the status of drug prescription, e.g. local catalogs classifications or whether the drug is available by prescription or over-the-counter, etc.",
       domainIncludes: "http://schema.org/Drug",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "prescriptionStatus",
       rangeIncludes: ["http://schema.org/DrugPrescriptionStatus", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :previousItem,
-      comment: "A link to the ListItem that preceeds the current one.",
+      comment: "A link to the ListItem that precedes the current one.",
       domainIncludes: "http://schema.org/ListItem",
       label: "previousItem",
       rangeIncludes: "http://schema.org/ListItem",
@@ -12136,7 +12259,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Date",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :price,
-      comment: "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.\\n\\nUsage guidelines:\\n\\n* Use the [[priceCurrency]] property (with standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\") instead of including [ambiguous symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign) such as '$' in the value.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.\\n* Note that both [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute) and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\n      ",
+      comment: "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.\\n\\nUsage guidelines:\\n\\n* Use the [[priceCurrency]] property (with standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\") instead of including [ambiguous symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign) such as '$' in the value.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.\\n* Note that both [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute) and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\n      ",
       domainIncludes: ["http://schema.org/Offer", "http://schema.org/PriceSpecification", "http://schema.org/TradeAction"],
       label: "price",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/Text"],
@@ -12157,7 +12280,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/PriceComponentTypeEnumeration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :priceCurrency,
-      comment: "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
+      comment: "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
       domainIncludes: ["http://schema.org/Offer", "http://schema.org/PriceSpecification", "http://schema.org/Reservation", "http://schema.org/Ticket", "http://schema.org/TradeAction"],
       label: "priceCurrency",
       rangeIncludes: "http://schema.org/Text",
@@ -12252,7 +12375,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :producer,
-      comment: "The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",
+      comment: "The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
       domainIncludes: "http://schema.org/CreativeWork",
       label: "producer",
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
@@ -12286,7 +12409,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Product", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :productionCompany,
-      comment: "The production company or studio responsible for the item e.g. series, video game, episode etc.",
+      comment: "The production company or studio responsible for the item, e.g. series, video game, episode etc.",
       domainIncludes: ["http://schema.org/CreativeWorkSeason", "http://schema.org/Episode", "http://schema.org/MediaObject", "http://schema.org/Movie", "http://schema.org/MovieSeries", "http://schema.org/RadioSeries", "http://schema.org/TVSeries", "http://schema.org/VideoGameSeries"],
       label: "productionCompany",
       rangeIncludes: "http://schema.org/Organization",
@@ -12325,7 +12448,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/AlignmentObject", "http://schema.org/Course", "http://schema.org/EducationalOccupationalCredential", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :programType,
-      comment: "The type of educational or occupational program. For example, classroom, internship, alternance, etc..",
+      comment: "The type of educational or occupational program. For example, classroom, internship, alternance, etc.",
       domainIncludes: "http://schema.org/EducationalOccupationalProgram",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2460",
@@ -12345,7 +12468,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :propertyID,
-      comment: "A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. propertyID can be\n(1) a prefixed string, mainly meant to be used with standards for product properties; (2) a site-specific, non-prefixed string (e.g. the primary key of the property or the vendor-specific id of the property), or (3)\na URL indicating the type of the property, either pointing to an external vocabulary, or a Web resource that describes the property (e.g. a glossary entry).\nStandards bodies should promote a standard prefix for the identifiers of properties from their standards.",
+      comment: "A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. propertyID can be\n(1) a prefixed string, mainly meant to be used with standards for product properties; (2) a site-specific, non-prefixed string (e.g. the primary key of the property or the vendor-specific ID of the property), or (3)\na URL indicating the type of the property, either pointing to an external vocabulary, or a Web resource that describes the property (e.g. a glossary entry).\nStandards bodies should promote a standard prefix for the identifiers of properties from their standards.",
       domainIncludes: "http://schema.org/PropertyValue",
       label: "propertyID",
       rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
@@ -12365,8 +12488,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :provider,
       comment: "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
-      domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/EducationalOccupationalProgram", "http://schema.org/Invoice", "http://schema.org/ParcelDelivery", "http://schema.org/Reservation", "http://schema.org/Service", "http://schema.org/Trip"],
-      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2289",
+      domainIncludes: ["http://schema.org/Action", "http://schema.org/CreativeWork", "http://schema.org/EducationalOccupationalProgram", "http://schema.org/Invoice", "http://schema.org/ParcelDelivery", "http://schema.org/Reservation", "http://schema.org/Service", "http://schema.org/Trip"],
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/2289", "https://github.com/schemaorg/schemaorg/issues/2927"],
       label: "provider",
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -12443,13 +12567,13 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Organization",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :publishingPrinciples,
-      comment: "The publishingPrinciples property indicates (typically via [[URL]]) a document describing the editorial principles of an [[Organization]] (or individual e.g. a [[Person]] writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of the party primarily responsible for the creation of the [[CreativeWork]].\n\nWhile such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.\n",
+      comment: "The publishingPrinciples property indicates (typically via [[URL]]) a document describing the editorial principles of an [[Organization]] (or individual, e.g. a [[Person]] writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of the party primarily responsible for the creation of the [[CreativeWork]].\n\nWhile such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.\n",
       domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/Organization", "http://schema.org/Person"],
       label: "publishingPrinciples",
       rangeIncludes: ["http://schema.org/CreativeWork", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :purchaseDate,
-      comment: "The date the item e.g. vehicle was purchased by the current owner.",
+      comment: "The date the item, e.g. vehicle, was purchased by the current owner.",
       domainIncludes: ["http://schema.org/Product", "http://schema.org/Vehicle"],
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "purchaseDate",
@@ -12513,7 +12637,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :ratingValue,
-      comment: "The rating for the content.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      comment: "The rating for the content.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
       domainIncludes: "http://schema.org/Rating",
       label: "ratingValue",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/Text"],
@@ -12798,7 +12922,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Boolean",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :repeatCount,
-      comment: "Defines the number of times a recurring [[Event]] will take place",
+      comment: "Defines the number of times a recurring [[Event]] will take place.",
       domainIncludes: "http://schema.org/Schedule",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1457",
@@ -12885,7 +13009,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/QuantitativeValue", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :requirements,
-      comment: "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).",
+      comment: "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (examples: DirectX, Java or .NET runtime).",
       domainIncludes: "http://schema.org/SoftwareApplication",
       "http://schema.org/supersededBy": "http://schema.org/softwareRequirements",
       label: "requirements",
@@ -12899,7 +13023,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Boolean", "http://schema.org/MediaSubscription"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :reservationFor,
-      comment: "The thing -- flight, event, restaurant,etc. being reserved.",
+      comment: "The thing -- flight, event, restaurant, etc. being reserved.",
       domainIncludes: "http://schema.org/Reservation",
       label: "reservationFor",
       rangeIncludes: "http://schema.org/Thing",
@@ -12945,7 +13069,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/MonetaryAmount", "http://schema.org/Number"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :result,
-      comment: "The result produced in the action. e.g. John wrote *a book*.",
+      comment: "The result produced in the action. E.g. John wrote *a book*.",
       domainIncludes: "http://schema.org/Action",
       label: "result",
       rangeIncludes: "http://schema.org/Thing",
@@ -12965,7 +13089,7 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/result",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :returnFees,
-      comment: "The type of return fees for purchased products (for any return reason)",
+      comment: "The type of return fees for purchased products (for any return reason).",
       domainIncludes: "http://schema.org/MerchantReturnPolicy",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
@@ -12997,7 +13121,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MerchantReturnEnumeration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :returnPolicyCountry,
-      comment: "The country where the product has to be sent to for returns, for example \"Ireland\" using the [[name]] property of [[Country]]. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1). Note that this can be different from the country where the product was originally shipped from or sent too.",
+      comment: "The country where the product has to be sent to for returns, for example \"Ireland\" using the [[name]] property of [[Country]]. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1). Note that this can be different from the country where the product was originally shipped from or sent to.",
       domainIncludes: "http://schema.org/MerchantReturnPolicy",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2880",
@@ -13106,14 +13230,14 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Vessel",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :runtime,
-      comment: "Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).",
+      comment: "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
       domainIncludes: "http://schema.org/SoftwareSourceCode",
       "http://schema.org/supersededBy": "http://schema.org/runtimePlatform",
       label: "runtime",
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :runtimePlatform,
-      comment: "Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).",
+      comment: "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
       domainIncludes: "http://schema.org/SoftwareSourceCode",
       label: "runtimePlatform",
       rangeIncludes: "http://schema.org/Text",
@@ -13134,7 +13258,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :salaryCurrency,
-      comment: "The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) ) used for the main salary information in this job posting or for this employee.",
+      comment: "The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)) used for the main salary information in this job posting or for this employee.",
       domainIncludes: ["http://schema.org/EmployeeRole", "http://schema.org/JobPosting"],
       label: "salaryCurrency",
       rangeIncludes: "http://schema.org/Text",
@@ -13458,7 +13582,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :shippingDestination,
-      comment: "indicates (possibly multiple) shipping destinations. These can be defined in several ways e.g. postalCode ranges.",
+      comment: "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
       domainIncludes: ["http://schema.org/DeliveryTimeSettings", "http://schema.org/OfferShippingDetails", "http://schema.org/ShippingRateSettings"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506",
@@ -13480,6 +13604,14 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2506",
       label: "shippingLabel",
       rangeIncludes: "http://schema.org/Text",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :shippingOrigin,
+      comment: "Indicates the origin of a shipment, i.e. where it should be coming from.",
+      domainIncludes: "http://schema.org/OfferShippingDetails",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3122",
+      label: "shippingOrigin",
+      rangeIncludes: "http://schema.org/DefinedRegion",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :shippingRate,
       comment: "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are most appropriate.",
@@ -13624,7 +13756,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :softwareRequirements,
-      comment: "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).",
+      comment: "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (examples: DirectX, Java or .NET runtime).",
       domainIncludes: "http://schema.org/SoftwareApplication",
       label: "softwareRequirements",
       rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
@@ -13664,7 +13796,7 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/contentLocation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :speakable,
-      comment: "Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be usefully spoken in particular circumstances; the 'speakable' property serves to indicate the parts most likely to be generally useful for speech.\n\nThe *speakable* property can be repeated an arbitrary number of times, with three kinds of possible 'content-locator' values:\n\n1.) *id-value* URL references - uses *id-value* of an element in the page being annotated. The simplest use of *speakable* has (potentially relative) URL values, referencing identified sections of the document concerned.\n\n2.) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the [[cssSelector]] property.\n\n3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the [[xpath]] property.\n\n\nFor more sophisticated markup of speakable sections beyond simple ID references, either CSS selectors or XPath expressions to pick out document section(s) as speakable. For this\nwe define a supporting type, [[SpeakableSpecification]]  which is defined to be a possible value of the *speakable* property.\n         ",
+      comment: "Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be usefully spoken in particular circumstances; the 'speakable' property serves to indicate the parts most likely to be generally useful for speech.\n\nThe *speakable* property can be repeated an arbitrary number of times, with three kinds of possible 'content-locator' values:\n\n1.) *id-value* URL references - uses *id-value* of an element in the page being annotated. The simplest use of *speakable* has (potentially relative) URL values, referencing identified sections of the document concerned.\n\n2.) CSS Selectors - addresses content in the annotated page, e.g. via class attribute. Use the [[cssSelector]] property.\n\n3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the [[xpath]] property.\n\n\nFor more sophisticated markup of speakable sections beyond simple ID references, either CSS selectors or XPath expressions to pick out document section(s) as speakable. For this\nwe define a supporting type, [[SpeakableSpecification]]  which is defined to be a possible value of the *speakable* property.\n         ",
       domainIncludes: ["http://schema.org/Article", "http://schema.org/WebPage"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1389",
       label: "speakable",
@@ -13697,7 +13829,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :speed,
-      comment: "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]] should be the maximum speed achievable under regular conditions.\\n\\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot\\n\\n*Note 1: Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the minimal value is zero.\\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the [[valueReference]] property.",
+      comment: "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]]) should be the maximum speed achievable under regular conditions.\\n\\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot\\n\\n*Note 1: Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the minimal value is zero.\\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the [[valueReference]] property.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/isPartOf": "http://auto.schema.org",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
@@ -13713,7 +13845,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sponsor,
-      comment: "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+      comment: "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
       domainIncludes: ["http://schema.org/CreativeWork", "http://schema.org/Event", "http://schema.org/Grant", "http://schema.org/MedicalStudy", "http://schema.org/Organization", "http://schema.org/Person"],
       label: "sponsor",
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
@@ -13790,7 +13922,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/HyperTocEntry", "http://schema.org/Number"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :startTime,
-      comment: "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+      comment: "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. E.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
       domainIncludes: ["http://schema.org/Action", "http://schema.org/FoodEstablishmentReservation", "http://schema.org/InteractionCounter", "http://schema.org/MediaObject", "http://schema.org/Schedule"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2493",
       label: "startTime",
@@ -14065,10 +14197,10 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/material",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :target,
-      comment: "Indicates a target EntryPoint for an Action.",
+      comment: "Indicates a target EntryPoint, or url, for an Action.",
       domainIncludes: "http://schema.org/Action",
       label: "target",
-      rangeIncludes: "http://schema.org/EntryPoint",
+      rangeIncludes: ["http://schema.org/EntryPoint", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :targetCollection,
       comment: "A sub property of object. The collection target of the action.",
@@ -14123,7 +14255,7 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :taxonRank,
-      comment: "The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary – (typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs).",
+      comment: "The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary – typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs.",
       domainIncludes: "http://schema.org/Taxon",
       "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Taxon",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -14131,7 +14263,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/PropertyValue", "http://schema.org/Text", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :taxonomicRange,
-      comment: "The taxonomic grouping of the organism that expresses, encodes, or in someway related to the BioChemEntity.",
+      comment: "The taxonomic grouping of the organism that expresses, encodes, or in some way related to the BioChemEntity.",
       domainIncludes: "http://schema.org/BioChemEntity",
       "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -14159,7 +14291,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/DateTime", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :temporalCoverage,
-      comment: "The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In\n      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate their temporalCoverage in broader terms - textually or via well-known URL.\n      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".\n\nOpen-ended date ranges can be written with \"..\" in place of the end date. For example, \"2015-11/..\" indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.",
+      comment: "The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In\n      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL.\n      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".\n\nOpen-ended date ranges can be written with \"..\" in place of the end date. For example, \"2015-11/..\" indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.",
       domainIncludes: "http://schema.org/CreativeWork",
       equivalentProperty: "http://purl.org/dc/terms/temporal",
       label: "temporalCoverage",
@@ -14224,7 +14356,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/URL",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :tickerSymbol,
-      comment: "The exchange traded instrument associated with a Corporation object. The tickerSymbol is expressed as an exchange and an instrument name separated by a space character. For the exchange component of the tickerSymbol attribute, we recommend using the controlled vocabulary of Market Identifier Codes (MIC) specified in ISO15022.",
+      comment: "The exchange traded instrument associated with a Corporation object. The tickerSymbol is expressed as an exchange and an instrument name separated by a space character. For the exchange component of the tickerSymbol attribute, we recommend using the controlled vocabulary of Market Identifier Codes (MIC) specified in ISO 15022.",
       domainIncludes: "http://schema.org/Corporation",
       label: "tickerSymbol",
       rangeIncludes: "http://schema.org/Text",
@@ -14323,7 +14455,7 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/hasPart",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :tongueWeight,
-      comment: "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR)\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      comment: "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/isPartOf": "http://auto.schema.org",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
@@ -14360,7 +14492,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/MonetaryAmount", "http://schema.org/PriceSpecification"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :totalPrice,
-      comment: "The total price for the reservation or ticket, including applicable taxes, shipping, etc.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      comment: "The total price for the reservation or ticket, including applicable taxes, shipping, etc.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
       domainIncludes: ["http://schema.org/Reservation", "http://schema.org/Ticket"],
       label: "totalPrice",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/PriceSpecification", "http://schema.org/Text"],
@@ -14380,7 +14512,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/URL",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :touristType,
-      comment: "Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc. ",
+      comment: "Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc. ",
       domainIncludes: ["http://schema.org/TouristAttraction", "http://schema.org/TouristDestination", "http://schema.org/TouristTrip"],
       "http://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism"],
       label: "touristType",
@@ -14413,7 +14545,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MusicRecording",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :trailer,
-      comment: "The trailer of a movie or tv/radio series, season, episode, etc.",
+      comment: "The trailer of a movie or TV/radio series, season, episode, etc.",
       domainIncludes: ["http://schema.org/CreativeWorkSeason", "http://schema.org/Episode", "http://schema.org/Movie", "http://schema.org/MovieSeries", "http://schema.org/RadioSeries", "http://schema.org/TVSeries", "http://schema.org/VideoGame", "http://schema.org/VideoGameSeries"],
       label: "trailer",
       rangeIncludes: "http://schema.org/VideoObject",
@@ -14475,7 +14607,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :translationOfWork,
-      comment: "The work that this work has been translated from. e.g. 物种起源 is a translationOf “On the Origin of Species”",
+      comment: "The work that this work has been translated from. E.g. 物种起源 is a translationOf “On the Origin of Species”.",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/inverseOf": "http://schema.org/workTranslation",
       "http://schema.org/isPartOf": "http://bib.schema.org",
@@ -14611,7 +14743,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :usageInfo,
-      comment: "The schema.org [[usageInfo]] property indicates further information about a [[CreativeWork]]. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.\n\nThis property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.",
+      comment: "The schema.org [[usageInfo]] property indicates further information about a [[CreativeWork]]. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information, e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.\n\nThis property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2454",
@@ -14639,7 +14771,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MedicalDevice",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :usesHealthPlanIdStandard,
-      comment: "The standard for interpreting thePlan ID. The preferred is \"HIOS\". See the Centers for Medicare & Medicaid Services for more details.",
+      comment: "The standard for interpreting the Plan ID. The preferred is \"HIOS\". See the Centers for Medicare & Medicaid Services for more details.",
       domainIncludes: "http://schema.org/HealthInsurancePlan",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
@@ -14689,7 +14821,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Date",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :value,
-      comment: "The value of the quantitative value or property value node.\\n\\n* For [[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for values is 'Number'.\\n* For [[PropertyValue]], it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      comment: "The value of the quantitative value or property value node.\\n\\n* For [[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for values is 'Number'.\\n* For [[PropertyValue]], it can be 'Text', 'Number', 'Boolean', or 'StructuredValue'.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
       domainIncludes: ["http://schema.org/MonetaryAmount", "http://schema.org/PropertyValue", "http://schema.org/QuantitativeValue"],
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "value",
@@ -14934,7 +15066,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :weight,
       comment: "The weight of the product or person.",
-      domainIncludes: ["http://schema.org/Person", "http://schema.org/Product"],
+      domainIncludes: ["http://schema.org/OfferShippingDetails", "http://schema.org/Person", "http://schema.org/Product"],
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "weight",
       rangeIncludes: "http://schema.org/QuantitativeValue",
@@ -14957,7 +15089,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :width,
       comment: "The width of the item.",
-      domainIncludes: ["http://schema.org/MediaObject", "http://schema.org/Product", "http://schema.org/VisualArtwork"],
+      domainIncludes: ["http://schema.org/MediaObject", "http://schema.org/OfferShippingDetails", "http://schema.org/Product", "http://schema.org/VisualArtwork"],
       label: "width",
       rangeIncludes: ["http://schema.org/Distance", "http://schema.org/QuantitativeValue"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -14975,7 +15107,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Integer",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :workExample,
-      comment: "Example/instance/realization/derivation of the concept of this creative work. eg. The paperback edition, first edition, or eBook.",
+      comment: "Example/instance/realization/derivation of the concept of this creative work. E.g. the paperback edition, first edition, or e-book.",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/inverseOf": "http://schema.org/exampleOfWork",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
@@ -15016,7 +15148,7 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/workFeatured",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :workTranslation,
-      comment: "A work that is a translation of the content of this work. e.g. 西遊記 has an English workTranslation “Journey to the West”,a German workTranslation “Monkeys Pilgerfahrt” and a Vietnamese  translation Tây du ký bình khảo.",
+      comment: "A work that is a translation of the content of this work. E.g. 西遊記 has an English workTranslation “Journey to the West”, a German workTranslation “Monkeys Pilgerfahrt” and a Vietnamese  translation Tây du ký bình khảo.",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/inverseOf": "http://schema.org/translationOfWork",
       "http://schema.org/isPartOf": "http://bib.schema.org",
@@ -15089,7 +15221,7 @@ module RDF::Vocab
       label: "ActivationFee",
       type: "http://schema.org/PriceComponentTypeEnumeration"
     term :ActiveActionStatus,
-      comment: "An in-progress action (e.g, while watching the movie, or driving to a location).",
+      comment: "An in-progress action (e.g., while watching the movie, or driving to a location).",
       label: "ActiveActionStatus",
       type: "http://schema.org/ActionStatusType"
     term :ActiveNotRecruiting,
@@ -15107,6 +15239,12 @@ module RDF::Vocab
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "AlbumRelease",
       type: "http://schema.org/MusicAlbumReleaseType"
+    term :AlcoholConsideration,
+      comment: "Item contains alcohol or promotes alcohol consumption.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "AlcoholConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :AllWheelDriveConfiguration,
       comment: "All-wheel Drive is a transmission layout where the engine drives all four wheels.",
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
@@ -15123,6 +15261,12 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "AnaerobicActivity",
       type: "http://schema.org/PhysicalActivityCategory"
+    term :AndroidPlatform,
+      comment: "Represents the broad notion of Android-based operating systems.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3057",
+      label: "AndroidPlatform",
+      type: "http://schema.org/DigitalPlatformEnumeration"
     term :Anesthesia,
       comment: "A specific branch of medical science that pertains to study of anesthetics and their application.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
@@ -15138,7 +15282,7 @@ module RDF::Vocab
       label: "AudiobookFormat",
       type: "http://schema.org/BookFormatType"
     term :AuthoritativeLegalValue,
-      comment: "Indicates that the publisher gives some special status to the publication of the document. (\"The Queens Printer\" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications). Something \"Authoritative\" is considered to be also [[OfficialLegalValue]]\".",
+      comment: "Indicates that the publisher gives some special status to the publication of the document. (\"The Queens Printer\" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications.) Something \"Authoritative\" is considered to be also [[OfficialLegalValue]].",
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-authoritative",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
@@ -15275,7 +15419,7 @@ module RDF::Vocab
       label: "Cardiovascular",
       type: "http://schema.org/MedicalSpecialty"
     term :CardiovascularExam,
-      comment: "Cardiovascular system assessment withclinical examination.",
+      comment: "Cardiovascular system assessment with clinical examination.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "CardiovascularExam",
       type: "http://schema.org/PhysicalExam"
@@ -15375,6 +15519,12 @@ module RDF::Vocab
       comment: "Indicates that the item is damaged.",
       label: "DamagedCondition",
       type: "http://schema.org/OfferItemCondition"
+    term :DangerousGoodConsideration,
+      comment: "The item is dangerous and requires careful handling and/or special training of the user. See also the [UN Model Classification](https://unece.org/DAM/trans/danger/publi/unrec/rev17/English/02EREv17_Part2.pdf) defining the 9 classes of dangerous goods such as explosives, gases, flammables, and more.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "DangerousGoodConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :DecontextualizedContent,
       comment: "Content coded 'missing context' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'missing context': Presenting unaltered video in an inaccurate manner that misrepresents the footage. For example, using incorrect dates or locations, altering the transcript or sharing brief clips from a longer video to mislead viewers. (A video rated 'original' can also be missing context.)\n\nFor an [[ImageObject]] to be 'missing context': Presenting unaltered images in an inaccurate manner to misrepresent the image and mislead the viewer. For example, a common tactic is using an unaltered image but saying it came from a different time or place. (An image rated 'original' can also be missing context.)\n\nFor an [[ImageObject]] with embedded text to be 'missing context': An unaltered image presented in an inaccurate manner to misrepresent the image and mislead the viewer. For example, a common tactic is using an unaltered image but saying it came from a different time or place. (An 'original' image with inaccurate text would generally fall in this category.)\n\nFor an [[AudioObject]] to be 'missing context': Unaltered audio presented in an inaccurate manner that misrepresents it. For example, using incorrect dates or locations, or sharing brief clips from a longer recording to mislead viewers. (Audio rated “original” can also be missing context.)\n",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -15382,7 +15532,7 @@ module RDF::Vocab
       label: "DecontextualizedContent",
       type: "http://schema.org/MediaManipulationRatingEnumeration"
     term :DefinitiveLegalValue,
-      comment: "Indicates a document for which the text is conclusively what the law says and is legally binding. (e.g. The digitally signed version of an Official Journal.)\n  Something \"Definitive\" is considered to be also [[AuthoritativeLegalValue]].",
+      comment: "Indicates a document for which the text is conclusively what the law says and is legally binding. (E.g. the digitally signed version of an Official Journal.)\n  Something \"Definitive\" is considered to be also [[AuthoritativeLegalValue]].",
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-definitive",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
@@ -15393,6 +15543,12 @@ module RDF::Vocab
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "DemoAlbum",
       type: "http://schema.org/MusicAlbumProductionType"
+    term :DemoGameAvailability,
+      comment: "Indicates demo game availability, i.e. a somehow limited demonstration of the full game.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3058",
+      label: "DemoGameAvailability",
+      type: "http://schema.org/GameAvailabilityEnumeration"
     term :Dentistry,
       comment: "A branch of medicine that is involved in the dental care.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
@@ -15410,6 +15566,12 @@ module RDF::Vocab
       label: "Dermatology",
       subClassOf: "http://schema.org/MedicalBusiness",
       type: "http://schema.org/MedicalSpecialty"
+    term :DesktopWebPlatform,
+      comment: "Represents the broad notion of 'desktop' browsers as a Web Platform.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3057",
+      label: "DesktopWebPlatform",
+      type: "http://schema.org/DigitalPlatformEnumeration"
     term :DiabeticDiet,
       comment: "A diet appropriate for people with diabetes.",
       label: "DiabeticDiet",
@@ -15420,7 +15582,7 @@ module RDF::Vocab
       label: "Diagnostic",
       type: "http://schema.org/MedicalDevicePurpose"
     term :DietNutrition,
-      comment: "Dietetic and nutrition as a medical specialty.",
+      comment: "Dietetics and nutrition as a medical specialty.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "DietNutrition",
       subClassOf: "http://schema.org/MedicalBusiness",
@@ -15589,7 +15751,7 @@ module RDF::Vocab
       label: "EventPostponed",
       type: "http://schema.org/EventStatusType"
     term :EventRescheduled,
-      comment: "The event has been rescheduled. The event's previousStartDate should be set to the old date and the startDate should be set to the event's new date. (If the event has been rescheduled multiple times, the previousStartDate property may be repeated).",
+      comment: "The event has been rescheduled. The event's previousStartDate should be set to the old date and the startDate should be set to the event's new date. (If the event has been rescheduled multiple times, the previousStartDate property may be repeated.)",
       label: "EventRescheduled",
       type: "http://schema.org/EventStatusType"
     term :EventScheduled,
@@ -15618,7 +15780,7 @@ module RDF::Vocab
       label: "ExchangeRefund",
       type: "http://schema.org/RefundTypeEnumeration"
     term :Eye,
-      comment: "Eye or ophtalmological function assessment with clinical examination.",
+      comment: "Eye or ophthalmological function assessment with clinical examination.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Eye",
       type: "http://schema.org/PhysicalExam"
@@ -15690,8 +15852,14 @@ module RDF::Vocab
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "FrontWheelDriveConfiguration",
       type: "http://schema.org/DriveWheelConfigurationValue"
+    term :FullGameAvailability,
+      comment: "Indicates full game availability.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3058",
+      label: "FullGameAvailability",
+      type: "http://schema.org/GameAvailabilityEnumeration"
     term :FullRefund,
-      comment: "Specifies that a refund can be done in the full amount the customer paid for the product",
+      comment: "Specifies that a refund can be done in the full amount the customer paid for the product.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
       label: "FullRefund",
@@ -15701,6 +15869,12 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Gastroenterologic",
       type: "http://schema.org/MedicalSpecialty"
+    term :GenericWebPlatform,
+      comment: "Represents the generic notion of the Web Platform. More specific codes include [[MobileWebPlatform]] and [[DesktopWebPlatform]], as an incomplete list. ",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3057",
+      label: "GenericWebPlatform",
+      type: "http://schema.org/DigitalPlatformEnumeration"
     term :Genetic,
       comment: "A specific branch of medical science that pertains to hereditary transmission and the variation of inherited characteristics and disorders.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
@@ -15761,6 +15935,12 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2534",
       label: "HealthCare",
       type: "http://schema.org/GovernmentBenefitsType"
+    term :HealthcareConsideration,
+      comment: "Item is a pharmaceutical (e.g., a prescription or OTC drug) or a restricted medical device.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "HealthcareConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :HearingImpairedSupported,
       comment: "Uses devices to support users with hearing impairments.",
       label: "HearingImpairedSupported",
@@ -15791,6 +15971,12 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2374",
       label: "HowOrWhereHealthAspect",
       type: "http://schema.org/HealthAspectEnumeration"
+    term :IOSPlatform,
+      comment: "Represents the broad notion of iOS-based operating systems.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3057",
+      label: "IOSPlatform",
+      type: "http://schema.org/DigitalPlatformEnumeration"
     term :InForce,
       comment: "Indicates that a legislation is in force.",
       exactMatch: "http://data.europa.eu/eli/ontology#InForce-inForce",
@@ -15807,7 +15993,7 @@ module RDF::Vocab
       label: "InStoreOnly",
       type: "http://schema.org/ItemAvailability"
     term :Infectious,
-      comment: "Something in medical science that pertains to infectious diseases i.e caused by bacterial, viral, fungal or parasitic infections.",
+      comment: "Something in medical science that pertains to infectious diseases, i.e. caused by bacterial, viral, fungal or parasitic infections.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Infectious",
       type: "http://schema.org/MedicalSpecialty"
@@ -16006,6 +16192,12 @@ module RDF::Vocab
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "MixtapeAlbum",
       type: "http://schema.org/MusicAlbumProductionType"
+    term :MobileWebPlatform,
+      comment: "Represents the broad notion of 'mobile' browsers as a Web Platform.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3057",
+      label: "MobileWebPlatform",
+      type: "http://schema.org/DigitalPlatformEnumeration"
     term :Monday,
       comment: "The day of the week between Sunday and Tuesday.",
       "http://schema.org/sameAs": "http://www.wikidata.org/entity/Q105",
@@ -16030,6 +16222,12 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "MusculoskeletalExam",
       type: "http://schema.org/PhysicalExam"
+    term :NarcoticConsideration,
+      comment: "Item is a narcotic as defined by the [1961 UN convention](https://www.incb.org/incb/en/narcotic-drugs/Yellowlist/yellow-list.html), for example marijuana or heroin.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "NarcoticConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :Neck,
       comment: "Neck assessment with clinical examination.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
@@ -16187,7 +16385,7 @@ module RDF::Vocab
       label: "Nonprofit501c28",
       type: "http://schema.org/USNonprofitType"
     term :Nonprofit501c3,
-      comment: "Nonprofit501c3: Non-profit type referring to Religious, Educational, Charitable, Scientific, Literary, Testing for Public Safety, to Foster National or International Amateur Sports Competition, or Prevention of Cruelty to Children or Animals Organizations.",
+      comment: "Nonprofit501c3: Non-profit type referring to Religious, Educational, Charitable, Scientific, Literary, Testing for Public Safety, Fostering National or International Amateur Sports Competition, or Prevention of Cruelty to Children or Animals Organizations.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2543",
       label: "Nonprofit501c3",
@@ -16265,7 +16463,7 @@ module RDF::Vocab
       label: "Nonprofit501q",
       type: "http://schema.org/USNonprofitType"
     term :Nonprofit527,
-      comment: "Nonprofit527: Non-profit type referring to Political organizations.",
+      comment: "Nonprofit527: Non-profit type referring to political organizations.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2543",
       label: "Nonprofit527",
@@ -16327,7 +16525,7 @@ module RDF::Vocab
       label: "OccupationalActivity",
       type: "http://schema.org/PhysicalActivityCategory"
     term :OfficialLegalValue,
-      comment: "All the documents published by an official publisher should have at least the legal value level \"OfficialLegalValue\". This indicates that the document was published by an organisation with the public task of making it available (e.g. a consolidated version of a EU directive published by the EU Office of Publications).",
+      comment: "All the documents published by an official publisher should have at least the legal value level \"OfficialLegalValue\". This indicates that the document was published by an organisation with the public task of making it available (e.g. a consolidated version of an EU directive published by the EU Office of Publications).",
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-official",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
@@ -16542,7 +16740,7 @@ module RDF::Vocab
       label: "PharmacySpecialty",
       type: "http://schema.org/MedicalSpecialty"
     term :Physiotherapy,
-      comment: "The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery..",
+      comment: "The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Physiotherapy",
       subClassOf: "http://schema.org/MedicalBusiness",
@@ -16651,6 +16849,12 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Recruiting",
       type: "http://schema.org/MedicalStudyStatus"
+    term :ReducedRelevanceForChildrenConsideration,
+      comment: "A general code for cases where relevance to children is reduced, e.g. adult education, mortgages, retirement-related products, etc.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "ReducedRelevanceForChildrenConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :RefurbishedCondition,
       comment: "Indicates that the item is refurbished.",
       label: "RefurbishedCondition",
@@ -16710,7 +16914,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MedicalTherapy",
       type: "http://schema.org/MedicalSpecialty"
     term :RestockingFees,
-      comment: "Specifies that the customer must pay a restocking fee when returning a product",
+      comment: "Specifies that the customer must pay a restocking fee when returning a product.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
       label: "RestockingFees",
@@ -16737,7 +16941,7 @@ module RDF::Vocab
       label: "ReturnAtKiosk",
       type: "http://schema.org/ReturnMethodEnumeration"
     term :ReturnByMail,
-      comment: "Specifies that product returns must to be done by mail.",
+      comment: "Specifies that product returns must be done by mail.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2880",
       label: "ReturnByMail",
@@ -16773,7 +16977,7 @@ module RDF::Vocab
       label: "ReturnLabelInBox",
       type: "http://schema.org/ReturnLabelSourceEnumeration"
     term :ReturnShippingFees,
-      comment: "Specifies that the customer must pay the return shipping costs when returning a product",
+      comment: "Specifies that the customer must pay the return shipping costs when returning a product.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
       label: "ReturnShippingFees",
@@ -16857,6 +17061,12 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2374",
       label: "SelfCareHealthAspect",
       type: "http://schema.org/HealthAspectEnumeration"
+    term :SexualContentConsideration,
+      comment: "The item contains sexually oriented content such as nudity, suggestive or explicit material, or related online services, or is intended to enhance sexual activity. Examples: Erotic videos or magazine, sexual enhancement devices, sex toys.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "SexualContentConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :SideEffectsHealthAspect,
       comment: "Side effects that can be observed from the usage of the topic.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -16931,7 +17141,7 @@ module RDF::Vocab
       label: "StagesHealthAspect",
       type: "http://schema.org/HealthAspectEnumeration"
     term :StoreCreditRefund,
-      comment: "Specifies that the customer receives a store credit as refund when returning a product",
+      comment: "Specifies that the customer receives a store credit as refund when returning a product.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
       label: "StoreCreditRefund",
@@ -16999,6 +17209,12 @@ module RDF::Vocab
       "http://schema.org/sameAs": "http://www.wikidata.org/entity/Q129",
       label: "Thursday",
       type: "http://schema.org/DayOfWeek"
+    term :TobaccoNicotineConsideration,
+      comment: "Item contains tobacco and/or nicotine, for example cigars, cigarettes, chewing tobacco, e-cigarettes, or hookahs.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "TobaccoNicotineConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :TollFree,
       comment: "The associated telephone number is toll free.",
       label: "TollFree",
@@ -17014,7 +17230,7 @@ module RDF::Vocab
       label: "TraditionalChinese",
       type: "http://schema.org/MedicineSystem"
     term :TransformedContent,
-      comment: "Content coded 'transformed content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'transformed content':  or all of the video has been manipulated to transform the footage itself. This category includes using tools like the Adobe Suite to change the speed of the video, add or remove visual elements or dub audio. Deepfakes are also a subset of transformation.\n\nFor an [[ImageObject]] to be transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[ImageObject]] with embedded text to be 'transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[AudioObject]] to be 'transformed content': Part or all of the audio has been manipulated to alter the words or sounds, or the audio has been synthetically generated, such as to create a sound-alike voice.\n",
+      comment: "Content coded 'transformed content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'transformed content':  or all of the video has been manipulated to transform the footage itself. This category includes using tools like the Adobe Suite to change the speed of the video, add or remove visual elements or dub audio. Deepfakes are also a subset of transformation.\n\nFor an [[ImageObject]] to be 'transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[ImageObject]] with embedded text to be 'transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[AudioObject]] to be 'transformed content': Part or all of the audio has been manipulated to alter the words or sounds, or the audio has been synthetically generated, such as to create a sound-alike voice.\n",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450",
       label: "TransformedContent",
@@ -17060,6 +17276,12 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Ultrasound",
       type: "http://schema.org/MedicalImagingTechnique"
+    term :UnclassifiedAdultConsideration,
+      comment: "The item is suitable only for adults, without indicating why. Due to widespread use of \"adult\" as a euphemism for \"sexual\", many such items are likely suited also for the SexualContentConsideration code.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "UnclassifiedAdultConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :UnemploymentSupport,
       comment: "UnemploymentSupport: this is a benefit for unemployment support.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -17111,6 +17333,18 @@ module RDF::Vocab
       "http://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "VinylFormat",
       type: "http://schema.org/MusicReleaseFormatType"
+    term :ViolenceConsideration,
+      comment: "Item shows or promotes violence.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "ViolenceConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
+    term :WeaponConsideration,
+      comment: "The item is intended to induce bodily harm, for example guns, mace, combat knives, brass knuckles, nail or other bombs, and spears.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
+      label: "WeaponConsideration",
+      type: "http://schema.org/AdultOrientedEnumeration"
     term :WearableMeasurementBack,
       comment: "Measurement of the back section, for example of a jacket",
       "http://schema.org/isPartOf": "http://pending.schema.org",
