@@ -254,6 +254,17 @@
 
     ]
   },
+  "AdultOrientedEnumeration": {
+    "super_class": "Enumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "AdvertiserContentArticle": {
     "super_class": "Article",
     "path": [
@@ -2720,6 +2731,7 @@
       "EatAction",
       "InstallAction",
       "ListenAction",
+      "PlayGameAction",
       "ReadAction",
       "UseAction",
       "ViewAction",
@@ -3718,11 +3730,10 @@
     ]
   },
   "DietarySupplement": {
-    "super_class": "Substance",
+    "super_class": "Product",
     "path": [
       "Thing",
-      "MedicalEntity",
-      "Substance"
+      "Product"
     ],
     "sub_classes": [
 
@@ -3768,6 +3779,17 @@
     }
   },
   "DigitalDocumentPermissionType": {
+    "super_class": "Enumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
+  },
+  "DigitalPlatformEnumeration": {
     "super_class": "Enumeration",
     "path": [
       "Thing",
@@ -3978,11 +4000,10 @@
     ]
   },
   "Drug": {
-    "super_class": "Substance",
+    "super_class": "Product",
     "path": [
       "Thing",
-      "MedicalEntity",
-      "Substance"
+      "Product"
     ],
     "sub_classes": [
 
@@ -4498,6 +4519,7 @@
   "Enumeration": {
     "super_class": "Intangible",
     "sub_classes": [
+      "AdultOrientedEnumeration",
       "BoardingPolicyType",
       "BookFormatType",
       "BusinessEntityType",
@@ -4507,8 +4529,10 @@
       "DayOfWeek",
       "DeliveryMethod",
       "DigitalDocumentPermissionType",
+      "DigitalPlatformEnumeration",
       "EnergyEfficiencyEnumeration",
       "EventAttendanceModeEnumeration",
+      "GameAvailabilityEnumeration",
       "GamePlayMode",
       "GenderType",
       "GovernmentBenefitsType",
@@ -5196,6 +5220,17 @@
         "jsonld": "schema.org/eg-0452-jsonld.html"
       }
     }
+  },
+  "GameAvailabilityEnumeration": {
+    "super_class": "Enumeration",
+    "path": [
+      "Thing",
+      "Intangible",
+      "Enumeration"
+    ],
+    "sub_classes": [
+
+    ]
   },
   "GamePlayMode": {
     "super_class": "Enumeration",
@@ -9464,6 +9499,43 @@
       }
     }
   },
+  "OnlineBusiness": {
+    "super_class": "Organization",
+    "sub_classes": [
+      "OnlineStore"
+    ],
+    "path": [
+      "Thing",
+      "Organization"
+    ],
+    "examples": {
+      "eg-0473": {
+        "pre": "schema.org/eg-0473-pre.html",
+        "microdata": "schema.org/eg-0473-microdata.html",
+        "rdfa": "schema.org/eg-0473-rdfa.html",
+        "jsonld": "schema.org/eg-0473-jsonld.html"
+      }
+    }
+  },
+  "OnlineStore": {
+    "super_class": "OnlineBusiness",
+    "path": [
+      "Thing",
+      "Organization",
+      "OnlineBusiness"
+    ],
+    "sub_classes": [
+
+    ],
+    "examples": {
+      "eg-0473": {
+        "pre": "schema.org/eg-0473-pre.html",
+        "microdata": "schema.org/eg-0473-microdata.html",
+        "rdfa": "schema.org/eg-0473-rdfa.html",
+        "jsonld": "schema.org/eg-0473-jsonld.html"
+      }
+    }
+  },
   "OpeningHoursSpecification": {
     "super_class": "StructuredValue",
     "path": [
@@ -9597,9 +9669,11 @@
       "MedicalOrganization",
       "NGO",
       "NewsMediaOrganization",
+      "OnlineBusiness",
       "PerformingGroup",
       "Project",
       "ResearchOrganization",
+      "SearchRescueOrganization",
       "SportsOrganization",
       "WorkersUnion"
     ],
@@ -10473,6 +10547,17 @@
       }
     }
   },
+  "PlayGameAction": {
+    "super_class": "ConsumeAction",
+    "path": [
+      "Thing",
+      "Action",
+      "ConsumeAction"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "Playground": {
     "super_class": "CivicStructure",
     "path": [
@@ -10833,6 +10918,8 @@
   "Product": {
     "super_class": "Thing",
     "sub_classes": [
+      "DietarySupplement",
+      "Drug",
       "IndividualProduct",
       "ProductGroup",
       "ProductModel",
@@ -12503,6 +12590,16 @@
       }
     }
   },
+  "SearchRescueOrganization": {
+    "super_class": "Organization",
+    "path": [
+      "Thing",
+      "Organization"
+    ],
+    "sub_classes": [
+
+    ]
+  },
   "SearchResultsPage": {
     "super_class": "WebPage",
     "path": [
@@ -13328,13 +13425,12 @@
   },
   "Substance": {
     "super_class": "MedicalEntity",
-    "sub_classes": [
-      "DietarySupplement",
-      "Drug"
-    ],
     "path": [
       "Thing",
       "MedicalEntity"
+    ],
+    "sub_classes": [
+
     ]
   },
   "SubwayStation": {
@@ -15691,6 +15787,9 @@
   "appearance": {
     "super_class": null
   },
+  "applicableCountry": {
+    "super_class": null
+  },
   "applicableLocation": {
     "super_class": null
   },
@@ -15822,6 +15921,9 @@
     }
   },
   "artworkSurface": {
+    "super_class": null
+  },
+  "asin": {
     "super_class": null
   },
   "aspect": {
@@ -16295,6 +16397,17 @@
         "microdata": "schema.org/eg-0368-microdata.html",
         "rdfa": "schema.org/eg-0368-rdfa.html",
         "jsonld": "schema.org/eg-0368-jsonld.html"
+      }
+    }
+  },
+  "checkoutPageURLTemplate": {
+    "super_class": null,
+    "examples": {
+      "eg-0475": {
+        "pre": "schema.org/eg-0475-pre.html",
+        "microdata": "schema.org/eg-0475-microdata.html",
+        "rdfa": "schema.org/eg-0475-rdfa.html",
+        "jsonld": "schema.org/eg-0475-jsonld.html"
       }
     }
   },
@@ -17716,7 +17829,16 @@
   "funder": {
     "super_class": null
   },
+  "funding": {
+    "super_class": null
+  },
   "game": {
+    "super_class": null
+  },
+  "gameAvailabilityType": {
+    "super_class": null
+  },
+  "gameEdition": {
     "super_class": null
   },
   "gameItem": {
@@ -17877,6 +17999,9 @@
     "super_class": null
   },
   "handlingTime": {
+    "super_class": null
+  },
+  "hasAdultConsideration": {
     "super_class": null
   },
   "hasBioChemEntityPart": {
@@ -18510,6 +18635,9 @@
   "isicV4": {
     "super_class": null
   },
+  "iso6523Code": {
+    "super_class": null
+  },
   "isrcCode": {
     "super_class": null
   },
@@ -19072,6 +19200,9 @@
     "super_class": null
   },
   "missionCoveragePrioritiesPolicy": {
+    "super_class": null
+  },
+  "mobileUrl": {
     "super_class": null
   },
   "model": {
@@ -20516,6 +20647,9 @@
   "shippingLabel": {
     "super_class": null
   },
+  "shippingOrigin": {
+    "super_class": null
+  },
   "shippingRate": {
     "super_class": null,
     "examples": {
@@ -21558,6 +21692,9 @@
       }
     }
   },
+  "AlcoholConsideration": {
+    "super_class": null
+  },
   "AllWheelDriveConfiguration": {
     "super_class": null
   },
@@ -21565,6 +21702,9 @@
     "super_class": null
   },
   "AnaerobicActivity": {
+    "super_class": null
+  },
+  "AndroidPlatform": {
     "super_class": null
   },
   "Anesthesia": {
@@ -21717,6 +21857,9 @@
   "DamagedCondition": {
     "super_class": null
   },
+  "DangerousGoodConsideration": {
+    "super_class": null
+  },
   "DecontextualizedContent": {
     "super_class": null
   },
@@ -21724,6 +21867,9 @@
     "super_class": null
   },
   "DemoAlbum": {
+    "super_class": null
+  },
+  "DemoGameAvailability": {
     "super_class": null
   },
   "Dentistry": {
@@ -21743,6 +21889,9 @@
     "sub_classes": [
 
     ]
+  },
+  "DesktopWebPlatform": {
+    "super_class": null
   },
   "DiabeticDiet": {
     "super_class": null
@@ -21940,10 +22089,16 @@
   "FrontWheelDriveConfiguration": {
     "super_class": null
   },
+  "FullGameAvailability": {
+    "super_class": null
+  },
   "FullRefund": {
     "super_class": null
   },
   "Gastroenterologic": {
+    "super_class": null
+  },
+  "GenericWebPlatform": {
     "super_class": null
   },
   "Genetic": {
@@ -22000,6 +22155,9 @@
   "HealthCare": {
     "super_class": null
   },
+  "HealthcareConsideration": {
+    "super_class": null
+  },
   "HearingImpairedSupported": {
     "super_class": null,
     "examples": {
@@ -22024,6 +22182,9 @@
     "super_class": null
   },
   "HowOrWhereHealthAspect": {
+    "super_class": null
+  },
+  "IOSPlatform": {
     "super_class": null
   },
   "InForce": {
@@ -22183,6 +22344,9 @@
   "MixtapeAlbum": {
     "super_class": null
   },
+  "MobileWebPlatform": {
+    "super_class": null
+  },
   "Monday": {
     "super_class": null
   },
@@ -22196,6 +22360,9 @@
     "super_class": null
   },
   "MusculoskeletalExam": {
+    "super_class": null
+  },
+  "NarcoticConsideration": {
     "super_class": null
   },
   "Neck": {
@@ -22662,6 +22829,9 @@
   "Recruiting": {
     "super_class": null
   },
+  "ReducedRelevanceForChildrenConsideration": {
+    "super_class": null
+  },
   "RefurbishedCondition": {
     "super_class": null
   },
@@ -22789,6 +22959,9 @@
   "SelfCareHealthAspect": {
     "super_class": null
   },
+  "SexualContentConsideration": {
+    "super_class": null
+  },
   "SideEffectsHealthAspect": {
     "super_class": null
   },
@@ -22886,6 +23059,9 @@
   "Thursday": {
     "super_class": null
   },
+  "TobaccoNicotineConsideration": {
+    "super_class": null
+  },
   "TollFree": {
     "super_class": null,
     "examples": {
@@ -22930,6 +23106,9 @@
   "Ultrasound": {
     "super_class": null
   },
+  "UnclassifiedAdultConsideration": {
+    "super_class": null
+  },
   "UnemploymentSupport": {
     "super_class": null
   },
@@ -22966,6 +23145,12 @@
     }
   },
   "VinylFormat": {
+    "super_class": null
+  },
+  "ViolenceConsideration": {
+    "super_class": null
+  },
+  "WeaponConsideration": {
     "super_class": null
   },
   "WearableMeasurementBack": {
