@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/15.0/schemaorgcontext.jsonld
+# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/15.0/schemaorgcontext.jsonld") do
+  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld") do
     new(vocab: "http://schema.org/", processingMode: "json-ld-1.1", term_definitions: {
       "3DModel" => TermDefinition.new("3DModel", id: "http://schema.org/3DModel"),
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
@@ -225,6 +225,7 @@ class JSON::LD::Context
       "ComputerStore" => TermDefinition.new("ComputerStore", id: "http://schema.org/ComputerStore"),
       "ConfirmAction" => TermDefinition.new("ConfirmAction", id: "http://schema.org/ConfirmAction"),
       "Consortium" => TermDefinition.new("Consortium", id: "http://schema.org/Consortium"),
+      "ConstraintNode" => TermDefinition.new("ConstraintNode", id: "http://schema.org/ConstraintNode"),
       "ConsumeAction" => TermDefinition.new("ConsumeAction", id: "http://schema.org/ConsumeAction"),
       "ContactPage" => TermDefinition.new("ContactPage", id: "http://schema.org/ContactPage"),
       "ContactPoint" => TermDefinition.new("ContactPoint", id: "http://schema.org/ContactPoint"),
@@ -397,6 +398,7 @@ class JSON::LD::Context
       "EvidenceLevelA" => TermDefinition.new("EvidenceLevelA", id: "http://schema.org/EvidenceLevelA"),
       "EvidenceLevelB" => TermDefinition.new("EvidenceLevelB", id: "http://schema.org/EvidenceLevelB"),
       "EvidenceLevelC" => TermDefinition.new("EvidenceLevelC", id: "http://schema.org/EvidenceLevelC"),
+      "ExampleMeasurementMethodEnum" => TermDefinition.new("ExampleMeasurementMethodEnum", id: "http://schema.org/ExampleMeasurementMethodEnum"),
       "ExchangeRateSpecification" => TermDefinition.new("ExchangeRateSpecification", id: "http://schema.org/ExchangeRateSpecification"),
       "ExchangeRefund" => TermDefinition.new("ExchangeRefund", id: "http://schema.org/ExchangeRefund"),
       "ExerciseAction" => TermDefinition.new("ExerciseAction", id: "http://schema.org/ExerciseAction"),
@@ -626,6 +628,7 @@ class JSON::LD::Context
       "MathSolver" => TermDefinition.new("MathSolver", id: "http://schema.org/MathSolver"),
       "MaximumDoseSchedule" => TermDefinition.new("MaximumDoseSchedule", id: "http://schema.org/MaximumDoseSchedule"),
       "MayTreatHealthAspect" => TermDefinition.new("MayTreatHealthAspect", id: "http://schema.org/MayTreatHealthAspect"),
+      "MeasurementMethodEnum" => TermDefinition.new("MeasurementMethodEnum", id: "http://schema.org/MeasurementMethodEnum"),
       "MeasurementTypeEnumeration" => TermDefinition.new("MeasurementTypeEnumeration", id: "http://schema.org/MeasurementTypeEnumeration"),
       "MediaGallery" => TermDefinition.new("MediaGallery", id: "http://schema.org/MediaGallery"),
       "MediaManipulationRatingEnumeration" => TermDefinition.new("MediaManipulationRatingEnumeration", id: "http://schema.org/MediaManipulationRatingEnumeration"),
@@ -925,6 +928,7 @@ class JSON::LD::Context
       "PodcastSeries" => TermDefinition.new("PodcastSeries", id: "http://schema.org/PodcastSeries"),
       "Podiatric" => TermDefinition.new("Podiatric", id: "http://schema.org/Podiatric"),
       "PoliceStation" => TermDefinition.new("PoliceStation", id: "http://schema.org/PoliceStation"),
+      "PoliticalParty" => TermDefinition.new("PoliticalParty", id: "http://schema.org/PoliticalParty"),
       "Pond" => TermDefinition.new("Pond", id: "http://schema.org/Pond"),
       "PostOffice" => TermDefinition.new("PostOffice", id: "http://schema.org/PostOffice"),
       "PostalAddress" => TermDefinition.new("PostalAddress", id: "http://schema.org/PostalAddress"),
@@ -1157,6 +1161,7 @@ class JSON::LD::Context
       "State" => TermDefinition.new("State", id: "http://schema.org/State"),
       "Statement" => TermDefinition.new("Statement", id: "http://schema.org/Statement"),
       "StatisticalPopulation" => TermDefinition.new("StatisticalPopulation", id: "http://schema.org/StatisticalPopulation"),
+      "StatisticalVariable" => TermDefinition.new("StatisticalVariable", id: "http://schema.org/StatisticalVariable"),
       "StatusEnumeration" => TermDefinition.new("StatusEnumeration", id: "http://schema.org/StatusEnumeration"),
       "SteeringPositionValue" => TermDefinition.new("SteeringPositionValue", id: "http://schema.org/SteeringPositionValue"),
       "Store" => TermDefinition.new("Store", id: "http://schema.org/Store"),
@@ -1176,6 +1181,7 @@ class JSON::LD::Context
       "SurgicalProcedure" => TermDefinition.new("SurgicalProcedure", id: "http://schema.org/SurgicalProcedure"),
       "SuspendAction" => TermDefinition.new("SuspendAction", id: "http://schema.org/SuspendAction"),
       "Suspended" => TermDefinition.new("Suspended", id: "http://schema.org/Suspended"),
+      "Syllabus" => TermDefinition.new("Syllabus", id: "http://schema.org/Syllabus"),
       "SymptomsHealthAspect" => TermDefinition.new("SymptomsHealthAspect", id: "http://schema.org/SymptomsHealthAspect"),
       "Synagogue" => TermDefinition.new("Synagogue", id: "http://schema.org/Synagogue"),
       "TVClip" => TermDefinition.new("TVClip", id: "http://schema.org/TVClip"),
@@ -1198,6 +1204,7 @@ class JSON::LD::Context
       "Terminated" => TermDefinition.new("Terminated", id: "http://schema.org/Terminated"),
       "Text" => TermDefinition.new("Text", id: "http://schema.org/Text"),
       "TextDigitalDocument" => TermDefinition.new("TextDigitalDocument", id: "http://schema.org/TextDigitalDocument"),
+      "TextObject" => TermDefinition.new("TextObject", id: "http://schema.org/TextObject"),
       "TheaterEvent" => TermDefinition.new("TheaterEvent", id: "http://schema.org/TheaterEvent"),
       "TheaterGroup" => TermDefinition.new("TheaterGroup", id: "http://schema.org/TheaterGroup"),
       "Therapeutic" => TermDefinition.new("Therapeutic", id: "http://schema.org/Therapeutic"),
@@ -1265,6 +1272,7 @@ class JSON::LD::Context
       "UserPlusOnes" => TermDefinition.new("UserPlusOnes", id: "http://schema.org/UserPlusOnes"),
       "UserReview" => TermDefinition.new("UserReview", id: "http://schema.org/UserReview"),
       "UserTweets" => TermDefinition.new("UserTweets", id: "http://schema.org/UserTweets"),
+      "VacationRental" => TermDefinition.new("VacationRental", id: "http://schema.org/VacationRental"),
       "VeganDiet" => TermDefinition.new("VeganDiet", id: "http://schema.org/VeganDiet"),
       "VegetarianDiet" => TermDefinition.new("VegetarianDiet", id: "http://schema.org/VegetarianDiet"),
       "Vehicle" => TermDefinition.new("Vehicle", id: "http://schema.org/Vehicle"),
@@ -1406,7 +1414,7 @@ class JSON::LD::Context
       "additionalName" => TermDefinition.new("additionalName", id: "http://schema.org/additionalName"),
       "additionalNumberOfGuests" => TermDefinition.new("additionalNumberOfGuests", id: "http://schema.org/additionalNumberOfGuests"),
       "additionalProperty" => TermDefinition.new("additionalProperty", id: "http://schema.org/additionalProperty"),
-      "additionalType" => TermDefinition.new("additionalType", id: "http://schema.org/additionalType", type_mapping: "@id"),
+      "additionalType" => TermDefinition.new("additionalType", id: "http://schema.org/additionalType"),
       "additionalVariable" => TermDefinition.new("additionalVariable", id: "http://schema.org/additionalVariable"),
       "address" => TermDefinition.new("address", id: "http://schema.org/address"),
       "addressCountry" => TermDefinition.new("addressCountry", id: "http://schema.org/addressCountry"),
@@ -1636,7 +1644,7 @@ class JSON::LD::Context
       "conditionsOfAccess" => TermDefinition.new("conditionsOfAccess", id: "http://schema.org/conditionsOfAccess"),
       "confirmationNumber" => TermDefinition.new("confirmationNumber", id: "http://schema.org/confirmationNumber"),
       "connectedTo" => TermDefinition.new("connectedTo", id: "http://schema.org/connectedTo"),
-      "constrainingProperty" => TermDefinition.new("constrainingProperty", id: "http://schema.org/constrainingProperty"),
+      "constraintProperty" => TermDefinition.new("constraintProperty", id: "http://schema.org/constraintProperty", type_mapping: "@id"),
       "contactOption" => TermDefinition.new("contactOption", id: "http://schema.org/contactOption"),
       "contactPoint" => TermDefinition.new("contactPoint", id: "http://schema.org/contactPoint"),
       "contactPoints" => TermDefinition.new("contactPoints", id: "http://schema.org/contactPoints"),
@@ -1674,6 +1682,7 @@ class JSON::LD::Context
       "courseCode" => TermDefinition.new("courseCode", id: "http://schema.org/courseCode"),
       "courseMode" => TermDefinition.new("courseMode", id: "http://schema.org/courseMode"),
       "coursePrerequisites" => TermDefinition.new("coursePrerequisites", id: "http://schema.org/coursePrerequisites"),
+      "courseSchedule" => TermDefinition.new("courseSchedule", id: "http://schema.org/courseSchedule"),
       "courseWorkload" => TermDefinition.new("courseWorkload", id: "http://schema.org/courseWorkload"),
       "coverageEndTime" => TermDefinition.new("coverageEndTime", id: "http://schema.org/coverageEndTime"),
       "coverageStartTime" => TermDefinition.new("coverageStartTime", id: "http://schema.org/coverageStartTime"),
@@ -2196,7 +2205,9 @@ class JSON::LD::Context
       "maximumVirtualAttendeeCapacity" => TermDefinition.new("maximumVirtualAttendeeCapacity", id: "http://schema.org/maximumVirtualAttendeeCapacity"),
       "mealService" => TermDefinition.new("mealService", id: "http://schema.org/mealService"),
       "measuredProperty" => TermDefinition.new("measuredProperty", id: "http://schema.org/measuredProperty"),
-      "measuredValue" => TermDefinition.new("measuredValue", id: "http://schema.org/measuredValue"),
+      "measurementDenominator" => TermDefinition.new("measurementDenominator", id: "http://schema.org/measurementDenominator"),
+      "measurementMethod" => TermDefinition.new("measurementMethod", id: "http://schema.org/measurementMethod"),
+      "measurementQualifier" => TermDefinition.new("measurementQualifier", id: "http://schema.org/measurementQualifier"),
       "measurementTechnique" => TermDefinition.new("measurementTechnique", id: "http://schema.org/measurementTechnique"),
       "mechanismOfAction" => TermDefinition.new("mechanismOfAction", id: "http://schema.org/mechanismOfAction"),
       "mediaAuthenticityCategory" => TermDefinition.new("mediaAuthenticityCategory", id: "http://schema.org/mediaAuthenticityCategory"),
@@ -2287,8 +2298,9 @@ class JSON::LD::Context
       "numberedPosition" => TermDefinition.new("numberedPosition", id: "http://schema.org/numberedPosition"),
       "nutrition" => TermDefinition.new("nutrition", id: "http://schema.org/nutrition"),
       "object" => TermDefinition.new("object", id: "http://schema.org/object"),
+      "observationAbout" => TermDefinition.new("observationAbout", id: "http://schema.org/observationAbout"),
       "observationDate" => TermDefinition.new("observationDate", id: "http://schema.org/observationDate"),
-      "observedNode" => TermDefinition.new("observedNode", id: "http://schema.org/observedNode"),
+      "observationPeriod" => TermDefinition.new("observationPeriod", id: "http://schema.org/observationPeriod"),
       "occupancy" => TermDefinition.new("occupancy", id: "http://schema.org/occupancy"),
       "occupationLocation" => TermDefinition.new("occupationLocation", id: "http://schema.org/occupationLocation"),
       "occupationalCategory" => TermDefinition.new("occupationalCategory", id: "http://schema.org/occupationalCategory"),
@@ -2565,7 +2577,7 @@ class JSON::LD::Context
       "saturatedFatContent" => TermDefinition.new("saturatedFatContent", id: "http://schema.org/saturatedFatContent"),
       "scheduleTimezone" => TermDefinition.new("scheduleTimezone", id: "http://schema.org/scheduleTimezone"),
       "scheduledPaymentDate" => TermDefinition.new("scheduledPaymentDate", id: "http://schema.org/scheduledPaymentDate", type_mapping: "http://schema.org/Date"),
-      "scheduledTime" => TermDefinition.new("scheduledTime", id: "http://schema.org/scheduledTime"),
+      "scheduledTime" => TermDefinition.new("scheduledTime", id: "http://schema.org/scheduledTime", type_mapping: "http://schema.org/Date"),
       "schema" => TermDefinition.new("schema", id: "http://schema.org/", simple: true, prefix: true),
       "schemaVersion" => TermDefinition.new("schemaVersion", id: "http://schema.org/schemaVersion"),
       "schoolClosuresInfo" => TermDefinition.new("schoolClosuresInfo", id: "http://schema.org/schoolClosuresInfo", type_mapping: "@id"),
@@ -2660,6 +2672,7 @@ class JSON::LD::Context
       "startDate" => TermDefinition.new("startDate", id: "http://schema.org/startDate", type_mapping: "http://schema.org/Date"),
       "startOffset" => TermDefinition.new("startOffset", id: "http://schema.org/startOffset"),
       "startTime" => TermDefinition.new("startTime", id: "http://schema.org/startTime"),
+      "statType" => TermDefinition.new("statType", id: "http://schema.org/statType"),
       "status" => TermDefinition.new("status", id: "http://schema.org/status"),
       "steeringPosition" => TermDefinition.new("steeringPosition", id: "http://schema.org/steeringPosition"),
       "step" => TermDefinition.new("step", id: "http://schema.org/step"),
@@ -2700,6 +2713,7 @@ class JSON::LD::Context
       "supplyTo" => TermDefinition.new("supplyTo", id: "http://schema.org/supplyTo"),
       "supportingData" => TermDefinition.new("supportingData", id: "http://schema.org/supportingData"),
       "surface" => TermDefinition.new("surface", id: "http://schema.org/surface"),
+      "syllabusSections" => TermDefinition.new("syllabusSections", id: "http://schema.org/syllabusSections"),
       "target" => TermDefinition.new("target", id: "http://schema.org/target", type_mapping: "@id"),
       "targetCollection" => TermDefinition.new("targetCollection", id: "http://schema.org/targetCollection"),
       "targetDescription" => TermDefinition.new("targetDescription", id: "http://schema.org/targetDescription"),
@@ -2741,6 +2755,7 @@ class JSON::LD::Context
       "tongueWeight" => TermDefinition.new("tongueWeight", id: "http://schema.org/tongueWeight"),
       "tool" => TermDefinition.new("tool", id: "http://schema.org/tool"),
       "torque" => TermDefinition.new("torque", id: "http://schema.org/torque"),
+      "totalHistoricalEnrollment" => TermDefinition.new("totalHistoricalEnrollment", id: "http://schema.org/totalHistoricalEnrollment"),
       "totalJobOpenings" => TermDefinition.new("totalJobOpenings", id: "http://schema.org/totalJobOpenings"),
       "totalPaymentDue" => TermDefinition.new("totalPaymentDue", id: "http://schema.org/totalPaymentDue"),
       "totalPrice" => TermDefinition.new("totalPrice", id: "http://schema.org/totalPrice"),
@@ -2766,6 +2781,7 @@ class JSON::LD::Context
       "travelBans" => TermDefinition.new("travelBans", id: "http://schema.org/travelBans", type_mapping: "@id"),
       "trialDesign" => TermDefinition.new("trialDesign", id: "http://schema.org/trialDesign"),
       "tributary" => TermDefinition.new("tributary", id: "http://schema.org/tributary"),
+      "tripOrigin" => TermDefinition.new("tripOrigin", id: "http://schema.org/tripOrigin"),
       "type" => TermDefinition.new("type", id: "@type", simple: true),
       "typeOfBed" => TermDefinition.new("typeOfBed", id: "http://schema.org/typeOfBed"),
       "typeOfGood" => TermDefinition.new("typeOfGood", id: "http://schema.org/typeOfGood"),
@@ -2832,7 +2848,6 @@ class JSON::LD::Context
       "webFeed" => TermDefinition.new("webFeed", id: "http://schema.org/webFeed", type_mapping: "@id"),
       "weight" => TermDefinition.new("weight", id: "http://schema.org/weight"),
       "weightTotal" => TermDefinition.new("weightTotal", id: "http://schema.org/weightTotal"),
-      "wgs" => TermDefinition.new("wgs", id: "https://www.w3.org/2003/01/geo/wgs84_pos#", simple: true, prefix: true),
       "wheelbase" => TermDefinition.new("wheelbase", id: "http://schema.org/wheelbase"),
       "width" => TermDefinition.new("width", id: "http://schema.org/width"),
       "winner" => TermDefinition.new("winner", id: "http://schema.org/winner"),
@@ -2856,8 +2871,8 @@ class JSON::LD::Context
       "yield" => TermDefinition.new("yield", id: "http://schema.org/yield")
     })
   end
-  alias_preloaded("https://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/15.0/schemaorgcontext.jsonld")
-  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/15.0/schemaorgcontext.jsonld")
-  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/15.0/schemaorgcontext.jsonld")
-  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/15.0/schemaorgcontext.jsonld")
+  alias_preloaded("https://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
+  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
 end

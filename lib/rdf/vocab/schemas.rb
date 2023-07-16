@@ -37,8 +37,8 @@ module RDF::Vocab
       subClassOf: "https://schema.org/AllocateAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Accommodation,
-      comment: "An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requirement.\nFor more specific types of accommodations not defined in schema.org, one can use additionalType with external vocabularies.\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      comment: "An accommodation is a place that can accommodate human beings, e.g. a hotel room, a camping pitch, or a meeting room. Many accommodations are for overnight stays, but this is not a mandatory requirement.\nFor more specific types of accommodations not defined in schema.org, one can use [[additionalType]] with external vocabularies.\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "Accommodation",
       subClassOf: "https://schema.org/Place",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -54,7 +54,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Action,
       comment: "An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role.\\n\\nSee also [blog post](http://blog.schema.org/2014/04/announcing-schemaorg-actions.html) and [Actions overview document](https://schema.org/docs/actions.html).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_ActionCollabClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ActionCollabClass",
       label: "Action",
       subClassOf: "https://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -98,8 +98,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AdvertiserContentArticle,
       comment: "An [[Article]] that an external entity has paid to place or to produce to its specifications. Includes [advertorials](https://en.wikipedia.org/wiki/Advertorial), sponsored content, native advertising and other paid content.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "AdvertiserContentArticle",
       subClassOf: "https://schema.org/Article",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -130,7 +131,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AlignmentObject,
       comment: "An intangible item that describes an alignment between a learning resource and a node in an educational framework.\n\nShould not be used where the nature of the alignment can be described using a simple property, for example to express that a resource [[teaches]] or [[assesses]] a competency.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_LRMIClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/LRMIClass",
       label: "AlignmentObject",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -153,8 +154,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AnalysisNewsArticle,
       comment: "An AnalysisNewsArticle is a [[NewsArticle]] that, while based on factual reporting, incorporates the expertise of the author/producer, offering interpretations and conclusions.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "AnalysisNewsArticle",
       subClassOf: "https://schema.org/NewsArticle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -177,13 +179,13 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Answer,
       comment: "An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_QAStackExchange",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/QAStackExchange",
       label: "Answer",
       subClassOf: "https://schema.org/Comment",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Apartment,
       comment: "An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Apartment\">http://en.wikipedia.org/wiki/Apartment</a>).",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "Apartment",
       subClassOf: "https://schema.org/Accommodation",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -246,7 +248,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Article,
       comment: "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       label: "Article",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -257,8 +259,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AskPublicNewsArticle,
       comment: "A [[NewsArticle]] expressing an open call by a [[NewsMediaOrganization]] asking the public for input, insights, clarifications, anecdotes, documentation, etc., on an issue, for reporting purposes.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "AskPublicNewsArticle",
       subClassOf: "https://schema.org/NewsArticle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -291,7 +294,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :AudioObject,
       comment: "An audio file.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       label: "AudioObject",
       subClassOf: "https://schema.org/MediaObject",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -355,8 +358,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BackgroundNewsArticle,
       comment: "A [[NewsArticle]] providing historical context, definition and detail on a specific topic (aka \"explainer\" or \"backgrounder\"). For example, an in-depth article or frequently-asked-questions ([FAQ](https://en.wikipedia.org/wiki/FAQ)) document on topics such as Climate Change or the European Union. Other kinds of background material from a non-news setting are often described using [[Book]] or [[Article]], in particular [[ScholarlyArticle]]. See also [[NewsArticle]] for related vocabulary from a learning/education perspective.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "BackgroundNewsArticle",
       subClassOf: "https://schema.org/NewsArticle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -372,7 +376,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BankAccount,
       comment: "A product or service offered by a bank whereby one may deposit, withdraw or transfer money and in some cases be paid interest.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "BankAccount",
       subClassOf: "https://schema.org/FinancialProduct",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -408,13 +412,14 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BedDetails,
       comment: "An entity holding detailed information about the available bed types, e.g. the quantity of twin beds for a hotel room. For the single case of just one bed of a certain type, you can use bed directly with a text. See also [[BedType]] (under development).",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "BedDetails",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BedType,
       comment: "A type of bed. This is used for indicating the bed or beds available in an accommodation.",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1262", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology"],
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1262",
       label: "BedType",
       subClassOf: "https://schema.org/QualitativeValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -430,8 +435,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BioChemEntity,
       comment: "Any biological, chemical, or biochemical thing. For example: a protein; a gene; a chemical; a synthetic chemical.",
-      "http://purl.org/dc/terms/source": "http://bioschemas.org",
       "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "http://bioschemas.org",
       label: "BioChemEntity",
       subClassOf: "https://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -542,7 +547,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Brand,
       comment: "A brand is a name used by an organization or business person for labeling a product, product group, or similar.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "Brand",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -584,8 +589,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BrokerageAccount,
       comment: "An account that allows an investor to deposit funds and place investment orders with a licensed broker or brokerage firm.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "BrokerageAccount",
       subClassOf: "https://schema.org/InvestmentOrDeposit",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -596,8 +602,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BusOrCoach,
       comment: "A bus (also omnibus or autobus) is a road vehicle designed to carry passengers. Coaches are luxury busses, usually in service for long distance travel.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/isPartOf": "https://auto.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "BusOrCoach",
       subClassOf: "https://schema.org/Vehicle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -628,7 +634,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BusinessEntityType,
       comment: "A business entity type is a conceptual entity representing the legal form, the size, the main line of business, the position in the value chain, or any combination thereof, of an organization or business person.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#Business\\n* http://purl.org/goodrelations/v1#Enduser\\n* http://purl.org/goodrelations/v1#PublicInstitution\\n* http://purl.org/goodrelations/v1#Reseller\n\t  ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "BusinessEntityType",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -639,7 +645,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BusinessFunction,
       comment: "The business function specifies the type of activity or access (i.e., the bundle of rights) offered by the organization or business person through the offer. Typical are sell, rental or lease, maintenance or repair, manufacture / produce, recycle / dispose, engineering / construction, or installation. Proprietary specifications of access rights are also instances of this class.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#ConstructionInstallation\\n* http://purl.org/goodrelations/v1#Dispose\\n* http://purl.org/goodrelations/v1#LeaseOut\\n* http://purl.org/goodrelations/v1#Maintain\\n* http://purl.org/goodrelations/v1#ProvideService\\n* http://purl.org/goodrelations/v1#Repair\\n* http://purl.org/goodrelations/v1#Sell\\n* http://purl.org/goodrelations/v1#Buy\n        ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "BusinessFunction",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -667,13 +673,13 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Campground,
       comment: "A camping site, campsite, or [[Campground]] is a place used for overnight stay in the outdoors, typically containing individual [[CampingPitch]] locations. \\n\\n\nIn British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites (source: Wikipedia, see [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite)).\\n\\n\n\nSee also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "Campground",
       subClassOf: ["https://schema.org/CivicStructure", "https://schema.org/LodgingBusiness"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CampingPitch,
       comment: "A [[CampingPitch]] is an individual place for overnight stay in the outdoors, typically being part of a larger camping site, or [[Campground]].\\n\\n\nIn British English a campsite, or campground, is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites.\n(Source: Wikipedia, see [https://en.wikipedia.org/wiki/Campsite](https://en.wikipedia.org/wiki/Campsite).)\\n\\n\nSee also the dedicated [document on the use of schema.org for marking up hotels and other forms of accommodations](/docs/hotels.html).\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "CampingPitch",
       subClassOf: "https://schema.org/Accommodation",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -689,14 +695,14 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Car,
       comment: "A car is a wheeled, self-powered motor vehicle used for transportation.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "Car",
       subClassOf: "https://schema.org/Vehicle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CarUsageType,
       comment: "A value indicating a special usage of a car, e.g. commercial rental, driving school, or as a taxi.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/isPartOf": "https://auto.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "CarUsageType",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -757,8 +763,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ChemicalSubstance,
       comment: "A chemical substance is 'a portion of matter of constant composition, composed of molecular entities of the same type or of different types' (source: [ChEBI:59999](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999)).",
-      "http://purl.org/dc/terms/source": ["http://bioschemas.org", "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": ["http://bioschemas.org", "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999"],
       label: "ChemicalSubstance",
       subClassOf: "https://schema.org/BioChemEntity",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -907,7 +913,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CompoundPriceSpecification,
       comment: "A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption. Use the name property of the attached unit price specification for indicating the dimension of a price component (e.g. \"electricity\" or \"final cleaning\").",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "CompoundPriceSpecification",
       subClassOf: "https://schema.org/PriceSpecification",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -932,6 +938,13 @@ module RDF::Vocab
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1559",
       label: "Consortium",
       subClassOf: "https://schema.org/Organization",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :ConstraintNode,
+      comment: "The ConstraintNode type is provided to support usecases in which a node in a structured data graph is described with properties which appear to describe a single entity, but are being used in a situation where they serve a more abstract purpose. A [[ConstraintNode]] can be described using [[constraintProperty]] and [[numConstraints]]. These constraint properties can serve a \n    variety of purposes, and their values may sometimes be understood to indicate sets of possible values rather than single, exact and specific values.",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "ConstraintNode",
+      subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ConsumeAction,
       comment: "The act of ingesting information/resources/food.",
@@ -980,7 +993,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Corporation,
       comment: "Organization: A business corporation.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       label: "Corporation",
       subClassOf: "https://schema.org/Organization",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1031,7 +1044,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CreativeWork,
       comment: "The most generic kind of creative work, including books, movies, photographs, software programs, etc.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       label: "CreativeWork",
       subClassOf: "https://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1047,7 +1060,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CreditCard,
       comment: "A card payment method of a particular brand or name.  Used to mark up a particular payment method and/or the financial product/service that supplies the card account.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#AmericanExpress\\n* http://purl.org/goodrelations/v1#DinersClub\\n* http://purl.org/goodrelations/v1#Discover\\n* http://purl.org/goodrelations/v1#JCB\\n* http://purl.org/goodrelations/v1#MasterCard\\n* http://purl.org/goodrelations/v1#VISA\n       ",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass"],
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/FIBO", "https://schema.org/docs/collab/GoodRelationsClass"],
       label: "CreditCard",
       subClassOf: ["https://schema.org/LoanOrCredit", "https://schema.org/PaymentCard"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1072,7 +1085,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :CurrencyConversionService,
       comment: "A service to convert funds from one currency to another currency.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "CurrencyConversionService",
       subClassOf: "https://schema.org/FinancialProduct",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1095,14 +1108,14 @@ module RDF::Vocab
     term :DataCatalog,
       comment: "A collection of datasets.",
       equivalentClass: "http://www.w3.org/ns/dcat#Catalog",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_DatasetClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/DatasetClass",
       label: "DataCatalog",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DataDownload,
       comment: "All or part of a [[Dataset]] in downloadable form. ",
       equivalentClass: "http://www.w3.org/ns/dcat#Distribution",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_DatasetClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/DatasetClass",
       label: "DataDownload",
       subClassOf: "https://schema.org/MediaObject",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1124,7 +1137,7 @@ module RDF::Vocab
     term :Dataset,
       comment: "A body of structured information describing some topic(s) of interest.",
       equivalentClass: ["http://purl.org/dc/dcmitype/Dataset", "http://rdfs.org/ns/void#Dataset", "http://www.w3.org/ns/dcat#Dataset"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_DatasetClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/DatasetClass",
       label: "Dataset",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1144,7 +1157,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DayOfWeek,
       comment: "The day of the week, e.g. used to specify to which day the opening hours of an OpeningHoursSpecification refer.\n\nOriginally, URLs from [GoodRelations](http://purl.org/goodrelations/v1) were used (for [[Monday]], [[Tuesday]], [[Wednesday]], [[Thursday]], [[Friday]], [[Saturday]], [[Sunday]] plus a special entry for [[PublicHolidays]]); these have now been integrated directly into schema.org.\n      ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "DayOfWeek",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1191,7 +1204,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DeliveryChargeSpecification,
       comment: "The price for the delivery of an offer using a particular delivery method.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "DeliveryChargeSpecification",
       subClassOf: "https://schema.org/PriceSpecification",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1202,7 +1215,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DeliveryMethod,
       comment: "A delivery method is a standardized procedure for transferring the product or service to the destination of fulfillment chosen by the customer. Delivery methods are characterized by the means of transportation used, and by the organization or group that is the contracting party for the sending organization or person.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#DeliveryModeDirectDownload\\n* http://purl.org/goodrelations/v1#DeliveryModeFreight\\n* http://purl.org/goodrelations/v1#DeliveryModeMail\\n* http://purl.org/goodrelations/v1#DeliveryModeOwnFleet\\n* http://purl.org/goodrelations/v1#DeliveryModePickUp\\n* http://purl.org/goodrelations/v1#DHL\\n* http://purl.org/goodrelations/v1#FederalExpress\\n* http://purl.org/goodrelations/v1#UPS\n        ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "DeliveryMethod",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1215,7 +1228,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Demand,
       comment: "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand using this type, the very same properties used for Offer apply.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "Demand",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1236,7 +1249,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DepositAccount,
       comment: "A type of Bank Account with a main purpose of depositing funds to gain interest or other benefits.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "DepositAccount",
       subClassOf: ["https://schema.org/BankAccount", "https://schema.org/InvestmentOrDeposit"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1352,7 +1365,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :DriveWheelConfigurationValue,
       comment: "A value indicating which roadwheels will receive torque.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "DriveWheelConfigurationValue",
       subClassOf: "https://schema.org/QualitativeValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1434,7 +1447,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :EducationalAudience,
       comment: "An EducationalAudience.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_LRMIClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/LRMIClass",
       label: "EducationalAudience",
       subClassOf: "https://schema.org/Audience",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1549,7 +1562,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :EngineSpecification,
       comment: "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "EngineSpecification",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1560,7 +1573,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :EntryPoint,
       comment: "An entry point, within some Web-based protocol.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_ActionCollabClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ActionCollabClass",
       label: "EntryPoint",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1611,8 +1624,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ExchangeRateSpecification,
       comment: "A structured value representing exchange rate.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "ExchangeRateSpecification",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1666,7 +1680,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :FinancialProduct,
       comment: "A product provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage firms, consumer finance companies, and investment companies which comprise the financial services industry.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "FinancialProduct",
       subClassOf: "https://schema.org/Service",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1734,21 +1748,21 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :FoodService,
       comment: "A food service, like breakfast, lunch, or dinner.",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "FoodService",
       subClassOf: "https://schema.org/Service",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :FundingAgency,
       comment: "A FundingAgency is an organization that implements one or more [[FundingScheme]]s and manages\n    the granting process (via [[Grant]]s, typically [[MonetaryGrant]]s).\n    A funding agency is not always required for grant funding, e.g. philanthropic giving, corporate sponsorship etc.\n    \nExamples of funding agencies include ERC, REA, NIH, Bill and Melinda Gates Foundation, ...\n    ",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"],
+      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://schema.org/docs/collab/FundInfoCollab"],
       label: "FundingAgency",
       subClassOf: "https://schema.org/Project",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :FundingScheme,
       comment: "A FundingScheme combines organizational, project and policy aspects of grant-based funding\n    that sets guidelines, principles and mechanisms to support other kinds of projects and activities.\n    Funding is typically organized via [[Grant]] funding. Examples of funding schemes: Swiss Priority Programmes (SPPs); EU Framework 7 (FP7); Horizon 2020; the NIH-R01 Grant Program; Wellcome institutional strategic support fund. For large scale public sector funding, the management and administration of grant awards is often handled by other, dedicated, organizations - [[FundingAgency]]s such as ERC, REA, ...",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"],
+      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://schema.org/docs/collab/FundInfoCollab"],
       label: "FundingScheme",
       subClassOf: "https://schema.org/Organization",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1811,8 +1825,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Gene,
       comment: "A discrete unit of inheritance which affects one or more biological traits (Source: [https://en.wikipedia.org/wiki/Gene](https://en.wikipedia.org/wiki/Gene)). Examples include FOXP2 (Forkhead box protein P2), SCARNA21 (small Cajal body-specific RNA 21), A- (agouti genotype).",
-      "http://purl.org/dc/terms/source": "http://bioschemas.org",
       "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "http://bioschemas.org",
       label: "Gene",
       subClassOf: "https://schema.org/BioChemEntity",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1833,7 +1847,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :GeoShape,
       comment: "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       label: "GeoShape",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -1889,7 +1903,7 @@ module RDF::Vocab
     term :Grant,
       comment: "A grant, typically financial or otherwise quantifiable, of resources. Typically a [[funder]] sponsors some [[MonetaryAmount]] to an [[Organization]] or [[Person]],\n    sometimes not necessarily via a dedicated or long-lived [[Project]], resulting in one or more outputs, or [[fundedItem]]s. For financial sponsorship, indicate the [[funder]] of a [[MonetaryGrant]]. For non-financial support, indicate [[sponsor]] of [[Grant]]s of resources (e.g. office space).\n\nGrants support  activities directed towards some agreed collective goals, often but not always organized as [[Project]]s. Long-lived projects are sometimes sponsored by a variety of grants over time, but it is also common for a project to be associated with a single grant.\n\nThe amount of a [[Grant]] is represented using [[amount]] as a [[MonetaryAmount]].\n    ",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"],
+      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://schema.org/docs/collab/FundInfoCollab"],
       label: "Grant",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2016,19 +2030,19 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Hotel,
       comment: "A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "Hotel",
       subClassOf: "https://schema.org/LodgingBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :HotelRoom,
       comment: "A hotel room is a single room in a hotel.\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "HotelRoom",
       subClassOf: "https://schema.org/Room",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :House,
       comment: "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/House\">http://en.wikipedia.org/wiki/House</a>).",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "House",
       subClassOf: "https://schema.org/Accommodation",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2127,7 +2141,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :IndividualProduct,
       comment: "A single, identifiable product instance (e.g. a laptop with a particular serial number).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "IndividualProduct",
       subClassOf: "https://schema.org/Product",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2190,14 +2204,15 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :InvestmentFund,
       comment: "A company or fund that gathers capital from a number of investors to create a pool of money that is then re-invested into stocks, bonds and other assets.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "InvestmentFund",
       subClassOf: "https://schema.org/InvestmentOrDeposit",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :InvestmentOrDeposit,
       comment: "A type of financial product that typically requires the client to transfer funds to a financial service in return for potential beneficial financial return.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "InvestmentOrDeposit",
       subClassOf: "https://schema.org/FinancialProduct",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2287,8 +2302,9 @@ module RDF::Vocab
     term :LegalForceStatus,
       comment: "A list of possible statuses for the legal force of a legislation.",
       exactMatch: "http://data.europa.eu/eli/ontology#InForce",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "LegalForceStatus",
       subClassOf: "https://schema.org/StatusEnumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2300,24 +2316,27 @@ module RDF::Vocab
     term :LegalValueLevel,
       comment: "A list of possible levels for the legal validity of a legislation.",
       "http://www.w3.org/2004/02/skos/core#closeMatch": "http://data.europa.eu/eli/ontology#LegalValue",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "LegalValueLevel",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Legislation,
       comment: "A legal document such as an act, decree, bill, etc. (enforceable or not) or a component of a legal act (like an article).",
-      "http://www.w3.org/2004/02/skos/core#closeMatch": ["http://data.europa.eu/eli/ontology#LegalExpression", "http://data.europa.eu/eli/ontology#LegalResource"],
+      "http://www.w3.org/2004/02/skos/core#closeMatch": ["http://data.europa.eu/eli/ontology#LegalExpression", "http://data.europa.eu/eli/ontology#LegalRecontributor"],
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "Legislation",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :LegislationObject,
       comment: "A specific object or file containing a Legislation. Note that the same Legislation can be published in multiple files. For example, a digitally signed PDF, a plain PDF and an HTML version.",
       "http://www.w3.org/2004/02/skos/core#closeMatch": "http://data.europa.eu/eli/ontology#Format",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "LegislationObject",
       subClassOf: ["https://schema.org/Legislation", "https://schema.org/MediaObject"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2394,7 +2413,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :LoanOrCredit,
       comment: "A financial product for the loaning of an amount of money, or line of credit, under agreed terms and charges.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "LoanOrCredit",
       subClassOf: "https://schema.org/FinancialProduct",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2406,7 +2425,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :LocationFeatureSpecification,
       comment: "Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality.",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "LocationFeatureSpecification",
       subClassOf: "https://schema.org/PropertyValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2476,6 +2495,13 @@ module RDF::Vocab
       label: "MaximumDoseSchedule",
       subClassOf: "https://schema.org/DoseSchedule",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :MeasurementMethodEnum,
+      comment: "Enumeration(s) for use with [[measurementMethod]].",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "MeasurementMethodEnum",
+      subClassOf: "https://schema.org/Enumeration",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MeasurementTypeEnumeration,
       comment: "Enumeration of common measurement types (or dimensions), for example \"chest\" for a person, \"inseam\" for pants, \"gauge\" for screws, or \"wheel\" for bicycles.",
       "https://schema.org/isPartOf": "https://pending.schema.org",
@@ -2496,7 +2522,7 @@ module RDF::Vocab
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MediaObject,
-      comment: "A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset, i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 [[AudioObject]]s).",
+      comment: "A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 AudioObject's).",
       label: "MediaObject",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2763,8 +2789,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MedicalTrialDesign,
       comment: "Design models for medical trials. Enumerated type.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/WikiDoc",
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_WikiDoc",
       label: "MedicalTrialDesign",
       subClassOf: "https://schema.org/MedicalEnumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2782,7 +2808,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MeetingRoom,
       comment: "A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Conference_hall\">http://en.wikipedia.org/wiki/Conference_hall</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "MeetingRoom",
       subClassOf: "https://schema.org/Room",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2849,14 +2875,14 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MolecularEntity,
       comment: "Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.",
-      "http://purl.org/dc/terms/source": "http://bioschemas.org",
       "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "http://bioschemas.org",
       label: "MolecularEntity",
       subClassOf: "https://schema.org/BioChemEntity",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MonetaryAmount,
       comment: "A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between £1,000 and £1,000,000 GBP, or the value of a salary, etc. It is recommended to use [[PriceSpecification]] Types to describe the price of an Offer, Invoice, etc.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "MonetaryAmount",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2869,21 +2895,23 @@ module RDF::Vocab
     term :MonetaryGrant,
       comment: "A monetary grant.",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"],
+      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://schema.org/docs/collab/FundInfoCollab"],
       label: "MonetaryGrant",
       subClassOf: "https://schema.org/Grant",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MoneyTransfer,
       comment: "The act of transferring money from one place to another place. This may occur electronically or physically.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "MoneyTransfer",
       subClassOf: "https://schema.org/TransferAction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MortgageLoan,
       comment: "A loan in which property or real estate is used as collateral. (A loan securitized against some real estate.)",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "MortgageLoan",
       subClassOf: "https://schema.org/LoanOrCredit",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2899,8 +2927,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Motorcycle,
       comment: "A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/isPartOf": "https://auto.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "Motorcycle",
       subClassOf: "https://schema.org/Vehicle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2916,8 +2944,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MotorizedBicycle,
       comment: "A motorized bicycle is a bicycle with an attached motor used to power the vehicle, or to assist with pedaling.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/isPartOf": "https://auto.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "MotorizedBicycle",
       subClassOf: "https://schema.org/Vehicle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -2984,19 +3012,19 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MusicAlbumProductionType,
       comment: "Classification of the album by its type of content: soundtrack, live album, studio album, etc.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "MusicAlbumProductionType",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MusicAlbumReleaseType,
       comment: "The kind of release which this album is: single, EP or album.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "MusicAlbumReleaseType",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MusicComposition,
       comment: "A musical composition.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "MusicComposition",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3022,13 +3050,13 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MusicRelease,
       comment: "A MusicRelease is a specific release of a music album.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "MusicRelease",
       subClassOf: "https://schema.org/MusicPlaylist",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MusicReleaseFormatType,
       comment: "Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "MusicReleaseFormatType",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3072,14 +3100,15 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :NewsArticle,
       comment: "A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news.\n\nA more detailed overview of [schema.org News markup](/docs/news.html) is also available.\n",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP-draws"],
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/TP", "https://schema.org/docs/collab/rNews"],
       label: "NewsArticle",
       subClassOf: "https://schema.org/Article",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :NewsMediaOrganization,
       comment: "A News/Media organization such as a newspaper or TV station.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "NewsMediaOrganization",
       subClassOf: "https://schema.org/Organization",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3122,11 +3151,11 @@ module RDF::Vocab
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Observation,
-      comment: "Instances of the class [[Observation]] are used to specify observations about an entity (which may or may not be an instance of a [[StatisticalPopulation]]), at a particular time. The principal properties of an [[Observation]] are [[observedNode]], [[measuredProperty]], [[measuredValue]] (or [[median]], etc.) and [[observationDate]] ([[measuredProperty]] properties can, but need not always, be W3C RDF Data Cube \"measure properties\", as in the [lifeExpectancy example](https://www.w3.org/TR/vocab-data-cube/#dsd-example)).\nSee also [[StatisticalPopulation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ",
+      comment: "Instances of the class [[Observation]] are used to specify observations about an entity at a particular time. The principal properties of an [[Observation]] are [[observationAbout]], [[measuredProperty]], [[statType]], [[value] and [[observationDate]]  and [[measuredProperty]]. Some but not all Observations represent a [[QuantitativeValue]]. Quantitative observations can be about a [[StatisticalVariable]], which is an abstract specification about which we can make observations that are grounded at a particular location and time. \n    \nObservations can also encode a subset of simple RDF-like statements (its observationAbout, a StatisticalVariable, defining the measuredPoperty; its observationAbout property indicating the entity the statement is about, and [[value]] )\n\nIn the context of a quantitative knowledge graph, typical properties could include [[measuredProperty]], [[observationAbout]], [[observationDate]], [[value]], [[unitCode]], [[unitText]], [[measurementMethod]].\n    ",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
       label: "Observation",
-      subClassOf: "https://schema.org/Intangible",
+      subClassOf: ["https://schema.org/Intangible", "https://schema.org/QuantitativeValue"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Occupation,
       comment: "A profession, may involve prolonged training and/or a formal qualification.",
@@ -3154,7 +3183,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Offer,
       comment: "An offer to transfer some rights to an item or to provide a service — for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.\\n\\nNote: As the [[businessFunction]] property, which identifies the form of offer (e.g. sell, lease, repair, dispose), defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a defined businessFunction value can be assumed to be an offer to sell.\\n\\nFor [GTIN](http://www.gs1.org/barcodes/technical/idkeys/gtin)-related fields, see [Check Digit calculator](http://www.gs1.org/barcodes/support/check_digit_calculator) and [validation guide](http://www.gs1us.org/resources/standards/gtin-validation-guide) from [GS1](http://www.gs1.org/).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       label: "Offer",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3215,14 +3244,15 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :OpeningHoursSpecification,
       comment: "A structured value providing information about the opening hours of a place or a certain service inside a place.\\n\\n\nThe place is __open__ if the [[opens]] property is specified, and __closed__ otherwise.\\n\\nIf the value for the [[closes]] property is less than the value for the [[opens]] property then the hour range is assumed to span over the next day.\n      ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "OpeningHoursSpecification",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :OpinionNewsArticle,
       comment: "An [[OpinionNewsArticle]] is a [[NewsArticle]] that primarily expresses opinions rather than journalistic reporting of news and events. For example, a [[NewsArticle]] consisting of a column or [[Blog]]/[[BlogPosting]] entry in the Opinions section of a news publication. ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "OpinionNewsArticle",
       subClassOf: "https://schema.org/NewsArticle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3274,7 +3304,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :OwnershipInfo,
       comment: "A structured value providing information about when a certain organization or person owned a certain product.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "OwnershipInfo",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3339,25 +3369,25 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PaymentCard,
       comment: "A payment method using a credit, debit, store or other card to associate the payment with an account.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "PaymentCard",
       subClassOf: ["https://schema.org/FinancialProduct", "https://schema.org/PaymentMethod"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PaymentChargeSpecification,
       comment: "The costs of settling the payment using a particular payment method.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "PaymentChargeSpecification",
       subClassOf: "https://schema.org/PriceSpecification",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PaymentMethod,
       comment: "A payment method is a standardized procedure for transferring the monetary amount for a purchase. Payment methods are characterized by the legal and technical structures used, and by the organization or group carrying out the transaction.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#ByBankTransferInAdvance\\n* http://purl.org/goodrelations/v1#ByInvoice\\n* http://purl.org/goodrelations/v1#Cash\\n* http://purl.org/goodrelations/v1#CheckInAdvance\\n* http://purl.org/goodrelations/v1#COD\\n* http://purl.org/goodrelations/v1#DirectDebit\\n* http://purl.org/goodrelations/v1#GoogleCheckout\\n* http://purl.org/goodrelations/v1#PayPal\\n* http://purl.org/goodrelations/v1#PaySwarm\n        ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "PaymentMethod",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PaymentService,
       comment: "A Service to transfer funds from a person or organization to a beneficiary person or organization.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       label: "PaymentService",
       subClassOf: "https://schema.org/FinancialProduct",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3394,7 +3424,7 @@ module RDF::Vocab
     term :Periodical,
       comment: "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a magazine, scholarly journal, or newspaper.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
       equivalentClass: "http://purl.org/ontology/bibo/Periodical",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       label: "Periodical",
       subClassOf: "https://schema.org/CreativeWorkSeries",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3406,7 +3436,7 @@ module RDF::Vocab
     term :Person,
       comment: "A person (alive, dead, undead, or fictional).",
       equivalentClass: "http://xmlns.com/foaf/0.1/Person",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       label: "Person",
       subClassOf: "https://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3529,6 +3559,12 @@ module RDF::Vocab
       label: "PoliceStation",
       subClassOf: ["https://schema.org/CivicStructure", "https://schema.org/EmergencyService"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :PoliticalParty,
+      comment: "Organization: Political Party.",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3282",
+      label: "PoliticalParty",
+      subClassOf: "https://schema.org/Organization",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Pond,
       comment: "A pond.",
       label: "Pond",
@@ -3594,7 +3630,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PriceSpecification,
       comment: "A structured value representing a price or price range. Typically, only the subclasses of this type are used for markup. It is recommended to use [[MonetaryAmount]] to describe independent amounts of money such as a salary, credit card limits, etc.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "PriceSpecification",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3612,7 +3648,7 @@ module RDF::Vocab
       type: "https://schema.org/InfectiousAgentClass"
     term :Product,
       comment: "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       label: "Product",
       subClassOf: "https://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3626,13 +3662,13 @@ module RDF::Vocab
     term :ProductGroup,
       comment: "A ProductGroup represents a group of [[Product]]s that vary only in certain well-described ways, such as by [[size]], [[color]], [[material]] etc.\n\nWhile a ProductGroup itself is not directly offered for sale, the various varying products that it represents can be. The ProductGroup serves as a prototype or template, standing in for all of the products who have an [[isVariantOf]] relationship to it. As such, properties (including additional types) can be applied to the ProductGroup to represent characteristics shared by each of the (possibly very many) variants. Properties that reference a ProductGroup are not included in this mechanism; neither are the following specific properties [[variesBy]], [[hasVariant]], [[url]]. ",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2597",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1797",
       label: "ProductGroup",
       subClassOf: "https://schema.org/Product",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ProductModel,
       comment: "A datasheet or vendor specification of a product (in the sense of a prototypical description).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "ProductModel",
       subClassOf: "https://schema.org/Product",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3654,7 +3690,7 @@ module RDF::Vocab
     term :Project,
       comment: "An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim.\nUse properties from [[Organization]], [[subOrganization]]/[[parentOrganization]] to indicate project sub-structures. \n   ",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"],
+      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://schema.org/docs/collab/FundInfoCollab"],
       label: "Project",
       subClassOf: "https://schema.org/Organization",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3674,20 +3710,20 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PropertyValue,
       comment: "A property-value pair, e.g. representing a feature of a product or place. Use the 'name' property for the name of the property. If there is an additional human-readable version of the value, put that into the 'description' property.\\n\\n Always use specific schema.org properties when a) they exist and b) you can populate them. Using PropertyValue as a substitute will typically not trigger the same effect as using the original, specific property.\n    ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "PropertyValue",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PropertyValueSpecification,
       comment: "A Property value specification.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_ActionCollabClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ActionCollabClass",
       label: "PropertyValueSpecification",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Protein,
-      comment: "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single molecule that one can point to are all of type schema:Protein. A protein can thus be a subclass of another protein, e.g. schema:Protein as a UniProt record can have multiple isoforms inside it which would also be schema:Protein. They can be imagined, synthetic, hypothetical or naturally occurring.",
-      "http://purl.org/dc/terms/source": "http://bioschemas.org",
+      comment: "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single molecule that one can point to are all of type :Protein. A protein can thus be a subclass of another protein, e.g. :Protein as a UniProt record can have multiple isoforms inside it which would also be :Protein. They can be imagined, synthetic, hypothetical or naturally occurring.",
       "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "http://bioschemas.org",
       label: "Protein",
       subClassOf: "https://schema.org/BioChemEntity",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3722,13 +3758,13 @@ module RDF::Vocab
     term :PublicationIssue,
       comment: "A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
       equivalentClass: "http://purl.org/ontology/bibo/Issue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       label: "PublicationIssue",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :PublicationVolume,
       comment: "A part of a successively published publication such as a periodical or multi-volume work, often numbered. It may represent a time span, such as a year.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       label: "PublicationVolume",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3739,13 +3775,13 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :QualitativeValue,
       comment: "A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "QualitativeValue",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :QuantitativeValue,
       comment: " A point value or interval for product characteristics and other purposes.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "QuantitativeValue",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3762,7 +3798,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Question,
       comment: "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_QAStackExchange",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/QAStackExchange",
       label: "Question",
       subClassOf: "https://schema.org/Comment",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3917,8 +3953,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :RepaymentSpecification,
       comment: "A structured value representing repayment.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "RepaymentSpecification",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3939,8 +3976,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ReportageNewsArticle,
       comment: "The [[ReportageNewsArticle]] type is a subtype of [[NewsArticle]] representing\n news articles which are the result of journalistic news reporting conventions.\n\nIn practice many news publishers produce a wide variety of article types, many of which might be considered a [[NewsArticle]] but not a [[ReportageNewsArticle]]. For example, opinion pieces, reviews, analysis, sponsored or satirical articles, or articles that combine several of these elements.\n\nThe [[ReportageNewsArticle]] type is based on a stricter ideal for \"news\" as a work of journalism, with articles based on factual information either observed or verified by the author, or reported and verified from knowledgeable sources.  This often includes perspectives from multiple viewpoints on a particular issue (distinguishing news reports from public relations or propaganda).  News reports in the [[ReportageNewsArticle]] sense de-emphasize the opinion of the author, with commentary and value judgements typically expressed elsewhere.\n\nA [[ReportageNewsArticle]] which goes deeper into analysis can also be marked with an additional type of [[AnalysisNewsArticle]].\n",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "ReportageNewsArticle",
       subClassOf: "https://schema.org/NewsArticle",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -3960,7 +3998,7 @@ module RDF::Vocab
     term :ResearchProject,
       comment: "A Research project.",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FundInfoCollab"],
+      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://schema.org/docs/collab/FundInfoCollab"],
       label: "ResearchProject",
       subClassOf: "https://schema.org/Project",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4001,7 +4039,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Resort,
       comment: "A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishments operated by a single company (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Resort\">http://en.wikipedia.org/wiki/Resort</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n    ",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "Resort",
       subClassOf: "https://schema.org/LodgingBusiness",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4058,8 +4096,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :ReviewNewsArticle,
       comment: "A [[NewsArticle]] and [[CriticReview]] providing a professional critic's assessment of a service, product, performance, or artistic or literary work.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "ReviewNewsArticle",
       subClassOf: ["https://schema.org/CriticReview", "https://schema.org/NewsArticle"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4080,7 +4119,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Room,
       comment: "A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Room\">http://en.wikipedia.org/wiki/Room</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "Room",
       subClassOf: "https://schema.org/Accommodation",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4101,8 +4140,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :SatiricalArticle,
       comment: "An [[Article]] whose content is primarily [[satirical]](https://en.wikipedia.org/wiki/Satire) in nature, i.e. unlikely to be literally true. A satirical article is sometimes but not necessarily also a [[NewsArticle]]. [[ScholarlyArticle]]s are also sometimes satirized.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "SatiricalArticle",
       subClassOf: "https://schema.org/Article",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4323,7 +4363,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :SomeProducts,
       comment: "A placeholder for multiple similar products of the same kind.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "SomeProducts",
       subClassOf: "https://schema.org/Product",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4398,11 +4438,18 @@ module RDF::Vocab
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :StatisticalPopulation,
-      comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constrainingProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ",
+      comment: "A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a [[StatisticalPopulation]] representing all [[Person]]s with a [[homeLocation]] of East Podunk California would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a [[StatisticalPopulation]] item that stands for that set of people.\nThe properties [[numConstraints]] and [[constraintProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of \"population\" used here is the general sense of a statistical\npopulation, and does not imply that the population consists of people. For example, a [[populationType]] of [[Event]] or [[NewsArticle]] could be used. See also [[Observation]], where a [[populationType]] such as [[Person]] or [[Event]] can be indicated directly. In most cases it may be better to use [[StatisticalVariable]] instead of [[StatisticalPopulation]].",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
       label: "StatisticalPopulation",
       subClassOf: "https://schema.org/Intangible",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :StatisticalVariable,
+      comment: "[[StatisticalVariable]] represents any type of statistical metric that can be measured at a place and time. The usage pattern for [[StatisticalVariable]] is typically expressed using [[Observation]] with an explicit [[populationType]], which is a type, typically drawn from Schema.org. Each [[StatisticalVariable]] is marked as a [[ConstraintNode]], meaning that some properties (those listed using [[constraintProperty]]) serve in this setting solely to define the statistical variable rather than literally describe a specific person, place or thing. For example, a [[StatisticalVariable]] Median_Height_Person_Female representing the median height of women, could be written as follows: the population type is [[Person]]; the measuredProperty [[height]]; the [[statType]] [[median]]; the [[gender]] [[Female]]. It is important to note that there are many kinds of scientific quantitative observation which are not fully, perfectly or unambiguously described following this pattern, or with solely Schema.org terminology. The approach taken here is designed to allow partial, incremental or minimal description of [[StatisticalVariable]]s, and the use of detailed sets of entity and property IDs from external repositories. The [[measurementMethod]], [[unitCode]] and [[unitText]] properties can also be used to clarify the specific nature and notation of an observed measurement. ",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "StatisticalVariable",
+      subClassOf: "https://schema.org/ConstraintNode",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :StatusEnumeration,
       comment: "Lists or enumerations dealing with status types.",
@@ -4412,7 +4459,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :SteeringPositionValue,
       comment: "A value indicating a steering position.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "SteeringPositionValue",
       subClassOf: "https://schema.org/QualitativeValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4445,7 +4492,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Suite,
       comment: "A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/Suite_(hotel)\">http://en.wikipedia.org/wiki/Suite_(hotel)</a>).\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "Suite",
       subClassOf: "https://schema.org/Accommodation",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4466,6 +4513,13 @@ module RDF::Vocab
       comment: "The act of momentarily pausing a device or application (e.g. pause music playback or pause a timer).",
       label: "SuspendAction",
       subClassOf: "https://schema.org/ControlAction",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :Syllabus,
+      comment: "A syllabus that describes the material covered in a course, often with several such sections per [[Course]] so that a distinct [[timeRequired]] can be provided for that section of the [[Course]].",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3281",
+      label: "Syllabus",
+      subClassOf: "https://schema.org/LearningResource",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Synagogue,
       comment: "A synagogue.",
@@ -4530,8 +4584,8 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Taxon,
       comment: "A set of organisms asserted to represent a natural cohesive biological unit.",
-      "http://purl.org/dc/terms/source": "http://bioschemas.org",
       "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "http://bioschemas.org",
       label: "Taxon",
       subClassOf: "https://schema.org/Thing",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4563,6 +4617,12 @@ module RDF::Vocab
       comment: "A file composed primarily of text.",
       label: "TextDigitalDocument",
       subClassOf: "https://schema.org/DigitalDocument",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :TextObject,
+      comment: "A text file. The text can be unformatted or contain markup, html, etc.",
+      equivalentClass: "http://purl.org/dc/dcmitype/Text",
+      label: "TextObject",
+      subClassOf: "https://schema.org/MediaObject",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TheaterEvent,
       comment: "Event type: Theater performance.",
@@ -4618,14 +4678,15 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TouristAttraction,
       comment: "A tourist attraction.  In principle any Thing can be a [[TouristAttraction]], from a [[Mountain]] and [[LandmarksOrHistoricalBuildings]] to a [[LocalBusiness]].  This Type can be used on its own to describe a general [[TouristAttraction]], or be used as an [[additionalType]] to add tourist attraction properties to any other type.  (See examples below)",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism"],
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/IIT-CNR.it", "https://schema.org/docs/collab/Tourism"],
       label: "TouristAttraction",
       subClassOf: "https://schema.org/Place",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TouristDestination,
       comment: "A tourist destination. In principle any [[Place]] can be a [[TouristDestination]] from a [[City]], Region or [[Country]] to an [[AmusementPark]] or [[Hotel]]. This Type can be used on its own to describe a general [[TouristDestination]], or be used as an [[additionalType]] to add tourist relevant properties to any other [[Place]].  A [[TouristDestination]] is defined as a [[Place]] that contains, or is colocated with, one or more [[TouristAttraction]]s, often linked by a similar theme or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.\n  (See examples below.)",
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/IIT-CNR.it", "https://schema.org/docs/collab/Tourism"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1810",
       label: "TouristDestination",
       subClassOf: "https://schema.org/Place",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4636,8 +4697,9 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TouristTrip,
       comment: "A tourist trip. A created itinerary of visits to one or more places of interest ([[TouristAttraction]]/[[TouristDestination]]) often linked by a similar theme, geographic area, or interest to a particular [[touristType]]. The [UNWTO](http://www2.unwto.org/) defines tourism trip as the Trip taken by visitors.\n  (See examples below.)",
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/IIT-CNR.it", "https://schema.org/docs/collab/Tourism"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1810",
       label: "TouristTrip",
       subClassOf: "https://schema.org/Trip",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4694,13 +4756,13 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Trip,
       comment: "A trip or journey. An itinerary of visits to one or more places.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Tourism",
       label: "Trip",
       subClassOf: "https://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :TypeAndQuantityNode,
       comment: "A structured value indicating the quantity, unit of measurement, and business function of goods included in a bundle offer.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "TypeAndQuantityNode",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4730,7 +4792,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :UnitPriceSpecification,
       comment: "The price asked for a given offer by the respective organization or person.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "UnitPriceSpecification",
       subClassOf: "https://schema.org/PriceSpecification",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4758,7 +4820,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :UserComments,
       comment: "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use [[Action]]-based vocabulary, alongside types such as [[Comment]].",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       "https://schema.org/supersededBy": "https://schema.org/InteractionCounter",
       label: "UserComments",
       subClassOf: "https://schema.org/UserInteraction",
@@ -4812,6 +4874,11 @@ module RDF::Vocab
       label: "UserTweets",
       subClassOf: "https://schema.org/UserInteraction",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :VacationRental,
+      comment: "A kind of lodging business that focuses on renting single properties for limited time.",
+      label: "VacationRental",
+      subClassOf: "https://schema.org/LodgingBusiness",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Vehicle,
       comment: "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space.",
       label: "Vehicle",
@@ -4857,7 +4924,7 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :VideoObject,
       comment: "A video file.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/rNews",
       label: "VideoObject",
       subClassOf: "https://schema.org/MediaObject",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4892,7 +4959,6 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :VisualArtwork,
       comment: "A work of art that is primarily visual in character.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_VisualArtworkClass",
       label: "VisualArtwork",
       subClassOf: "https://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -4939,13 +5005,13 @@ module RDF::Vocab
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :WarrantyPromise,
       comment: "A structured value representing the duration and scope of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "WarrantyPromise",
       subClassOf: "https://schema.org/StructuredValue",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :WarrantyScope,
       comment: "A range of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#Labor-BringIn\\n* http://purl.org/goodrelations/v1#PartsAndLabor-BringIn\\n* http://purl.org/goodrelations/v1#PartsAndLabor-PickUp\n      ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "WarrantyScope",
       subClassOf: "https://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
@@ -5091,10 +5157,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accelerationTime,
       comment: "The time needed to accelerate the vehicle from a given start velocity to a given target velocity.\\n\\nTypical unit code(s): SEC for seconds\\n\\n* Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use \"SEC\" for seconds and indicate the velocities in the [[name]] of the [[QuantitativeValue]], or use [[valueReference]] with a [[QuantitativeValue]] of 0..60 mph or 0..100 km/h to specify the reference speeds.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "accelerationTime",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :acceptedAnswer,
@@ -5112,9 +5178,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :acceptedPaymentMethod,
       comment: "The payment method(s) accepted by seller for this offer.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": ["https://schema.org/LoanOrCredit", "https://schema.org/PaymentMethod"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "acceptedPaymentMethod",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :acceptsReservations,
@@ -5200,18 +5266,20 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accountMinimumInflow,
       comment: "A minimum amount that has to be paid in every month.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/BankAccount",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/MonetaryAmount",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "accountMinimumInflow",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accountOverdraftLimit,
       comment: "An overdraft is an extension of credit from a lending institution when an account reaches zero. An overdraft allows the individual to continue withdrawing money even if the account has no funds in it. Basically the bank allows people to borrow a set amount of money.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/BankAccount",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/MonetaryAmount",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "accountOverdraftLimit",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accountablePerson,
@@ -5231,17 +5299,17 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :acquiredFrom,
       comment: "The organization or person from which the product was acquired.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/OwnershipInfo",
       "https://schema.org/rangeIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "acquiredFrom",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :acrissCode,
       comment: "The ACRISS Car Classification Code is a code used by many car rental companies, for classifying vehicles. ACRISS stands for Association of Car Rental Industry Systems and Standards.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": ["https://schema.org/BusOrCoach", "https://schema.org/Car"],
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "acrissCode",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :actionAccessibilityRequirement,
@@ -5278,10 +5346,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :actionableFeedbackPolicy,
       comment: "For a [[NewsMediaOrganization]] or other news-related [[Organization]], a statement about public engagement activities (for news media, the newsroom’s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/NewsMediaOrganization", "https://schema.org/Organization"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "actionableFeedbackPolicy",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -5321,9 +5390,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :addOn,
       comment: "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/Offer",
       "https://schema.org/rangeIncludes": "https://schema.org/Offer",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "addOn",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :additionalName,
@@ -5346,9 +5415,9 @@ module RDF::Vocab
       label: "additionalProperty",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :additionalType,
-      comment: "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
+      comment: "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the \n    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href=\"https://schema.org/docs/styleguide.html\">style guide</a>",
       "https://schema.org/domainIncludes": "https://schema.org/Thing",
-      "https://schema.org/rangeIncludes": "https://schema.org/URL",
+      "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
       label: "additionalType",
       subPropertyOf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -5394,9 +5463,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :advanceBookingRequirement,
       comment: "The amount of time that is required between accepting the offer and the actual usage of the resource or service.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "advanceBookingRequirement",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :adverseOutcome,
@@ -5452,9 +5521,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :albumProductionType,
       comment: "Classification of the album by its type of content: soundtrack, live album, studio album, etc.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicAlbum",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicAlbumProductionType",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "albumProductionType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :albumRelease,
@@ -5466,9 +5535,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :albumReleaseType,
       comment: "The kind of release which this album is: single, EP or album.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicAlbum",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicAlbumReleaseType",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "albumReleaseType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :albums,
@@ -5512,10 +5581,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :alternativeOf,
       comment: "Another gene which is a variation of this one.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Gene",
       "https://schema.org/domainIncludes": "https://schema.org/Gene",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Gene",
+      "https://schema.org/source": "http://www.bioschemas.org/Gene",
       label: "alternativeOf",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :alumni,
@@ -5534,9 +5603,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :amenityFeature,
       comment: "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": ["https://schema.org/Accommodation", "https://schema.org/FloorPlan", "https://schema.org/LodgingBusiness", "https://schema.org/Place"],
       "https://schema.org/rangeIncludes": "https://schema.org/LocationFeatureSpecification",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "amenityFeature",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :amount,
@@ -5548,9 +5617,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :amountOfThisGood,
       comment: "The quantity of the goods included in the offer.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/TypeAndQuantityNode",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "amountOfThisGood",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :announcementLocation,
@@ -5564,9 +5633,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :annualPercentageRate,
       comment: "The annual rate that is charged for borrowing (or made by investing), expressed as a single percentage number that represents the actual yearly cost of funds over the term of a loan. This includes any fees or additional costs associated with the transaction.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/FinancialProduct",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
       label: "annualPercentageRate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :answerCount,
@@ -5673,16 +5742,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :appliesToDeliveryMethod,
       comment: "The delivery method(s) to which the delivery charge or payment charge specification applies.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/DeliveryChargeSpecification", "https://schema.org/PaymentChargeSpecification"],
       "https://schema.org/rangeIncludes": "https://schema.org/DeliveryMethod",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "appliesToDeliveryMethod",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :appliesToPaymentMethod,
       comment: "The payment method(s) to which the payment charge specification applies.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/PaymentChargeSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/PaymentMethod",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "appliesToPaymentMethod",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :archiveHeld,
@@ -5878,10 +5947,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :associatedDisease,
       comment: "Disease associated to this BioChemEntity. Such disease can be a MedicalCondition or a URL. If you want to add an evidence supporting the association, please use PropertyValue.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/BioChemEntity",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/MedicalCondition", "https://schema.org/PropertyValue", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org/BioChemEntity",
       label: "associatedDisease",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :associatedMedia,
@@ -5973,23 +6042,25 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :availabilityEnds,
       comment: "The end of the availability of the product or service included in the offer.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/ActionAccessSpecification", "https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Date", "https://schema.org/DateTime", "https://schema.org/Time"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", "https://github.com/schemaorg/schemaorg/issues/1741"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1741",
       label: "availabilityEnds",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :availabilityStarts,
       comment: "The beginning of the availability of the product or service included in the offer.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/ActionAccessSpecification", "https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Date", "https://schema.org/DateTime", "https://schema.org/Time"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", "https://github.com/schemaorg/schemaorg/issues/1741"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1741",
       label: "availabilityStarts",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :availableAtOrFrom,
       comment: "The place(s) from which the offer can be obtained (e.g. store locations).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/Place",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "availableAtOrFrom",
       subPropertyOf: "https://schema.org/areaServed",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -6001,9 +6072,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :availableDeliveryMethod,
       comment: "The delivery method(s) available for this offer.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/DeliveryMethod",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "availableDeliveryMethod",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :availableFrom,
@@ -6021,7 +6092,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :availableLanguage,
       comment: "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].",
-      "https://schema.org/domainIncludes": ["https://schema.org/ContactPoint", "https://schema.org/LodgingBusiness", "https://schema.org/ServiceChannel", "https://schema.org/TouristAttraction"],
+      "https://schema.org/domainIncludes": ["https://schema.org/ContactPoint", "https://schema.org/Course", "https://schema.org/LodgingBusiness", "https://schema.org/ServiceChannel", "https://schema.org/TouristAttraction"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Language", "https://schema.org/Text"],
       label: "availableLanguage",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -6080,18 +6151,20 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :backstory,
       comment: "For an [[Article]], typically a [[NewsArticle]], the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could include information about reporting process, methods, interviews, data sources, etc.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": "https://schema.org/Article",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/Text"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1688", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1688",
       label: "backstory",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :bankAccountType,
       comment: "The type of a bank account.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/BankAccount",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "bankAccountType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :baseSalary,
@@ -6109,9 +6182,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :bed,
       comment: "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text.\n      If you want to indicate the quantity of a certain kind of bed, use an instance of BedDetails. For more detailed information, use the amenityFeature property.",
-      "https://schema.org/domainIncludes": ["https://schema.org/HotelRoom", "https://schema.org/Suite"],
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
+      "https://schema.org/domainIncludes": ["https://schema.org/Accommodation", "https://schema.org/HotelRoom", "https://schema.org/Suite"],
       "https://schema.org/rangeIncludes": ["https://schema.org/BedDetails", "https://schema.org/BedType", "https://schema.org/Text"],
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "bed",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :beforeMedia,
@@ -6122,10 +6195,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :beneficiaryBank,
       comment: "A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/MoneyTransfer",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/BankOrCreditUnion", "https://schema.org/Text"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "beneficiaryBank",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :benefits,
@@ -6165,9 +6239,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :billingIncrement,
       comment: "This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the unitCode property.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/UnitPriceSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "billingIncrement",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :billingPeriod,
@@ -6186,26 +6260,26 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :bioChemInteraction,
       comment: "A BioChemEntity that is known to interact with this item.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/BioChemEntity",
+      "https://schema.org/source": "http://www.bioschemas.org",
       label: "bioChemInteraction",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :bioChemSimilarity,
       comment: "A similar BioChemEntity, e.g., obtained by fingerprint similarity algorithms.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/BioChemEntity",
+      "https://schema.org/source": "http://www.bioschemas.org",
       label: "bioChemSimilarity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :biologicalRole,
       comment: "A role played by the BioChemEntity within a biological context.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/DefinedTerm",
+      "https://schema.org/source": "http://www.bioschemas.org",
       label: "biologicalRole",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :biomechnicalClass,
@@ -6274,10 +6348,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :bodyType,
       comment: "Indicates the design and body style of the vehicle (e.g. station wagon, hatchback, etc.).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/QualitativeValue", "https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "bodyType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :bookEdition,
@@ -6464,9 +6538,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :businessFunction,
       comment: "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/TypeAndQuantityNode"],
       "https://schema.org/rangeIncludes": "https://schema.org/BusinessFunction",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "businessFunction",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :buyer,
@@ -6550,9 +6624,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :cargoVolume,
       comment: "The available volume for cargo or luggage. For automobiles, this is usually the trunk volume.\\n\\nTypical unit code(s): LTR for liters, FTQ for cubic foot/feet\\n\\nNote: You can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "cargoVolume",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :carrier,
@@ -6570,10 +6644,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :cashBack,
       comment: "A cardholder benefit that pays the cardholder a small percentage of their net expenditures.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/PaymentCard",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Boolean", "https://schema.org/Number"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "cashBack",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :catalog,
@@ -6585,9 +6660,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :catalogNumber,
       comment: "The catalog number for the release.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicRelease",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "catalogNumber",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :category,
@@ -6657,18 +6732,18 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :chemicalComposition,
       comment: "The chemical composition describes the identity and relative ratio of the chemical elements that make up the substance.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/ChemicalSubstance",
       "https://schema.org/domainIncludes": "https://schema.org/ChemicalSubstance",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "http://www.bioschemas.org/ChemicalSubstance",
       label: "chemicalComposition",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :chemicalRole,
       comment: "A role played by the BioChemEntity within a chemical context.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/ChemicalSubstance",
       "https://schema.org/domainIncludes": ["https://schema.org/ChemicalSubstance", "https://schema.org/MolecularEntity"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/DefinedTerm",
+      "https://schema.org/source": "http://www.bioschemas.org/ChemicalSubstance",
       label: "chemicalRole",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :childMaxAge,
@@ -6685,11 +6760,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :childTaxon,
       comment: "Closest child taxa of the taxon in question.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Taxon",
       "https://schema.org/domainIncludes": "https://schema.org/Taxon",
       "https://schema.org/inverseOf": "https://schema.org/parentTaxon",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Taxon", "https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org/Taxon",
       label: "childTaxon",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :children,
@@ -6755,9 +6830,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :closes,
       comment: "The closing hour of the place or service on the given day(s) of the week.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/OpeningHoursSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/Time",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "closes",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :coach,
@@ -6832,9 +6907,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :color,
       comment: "The color of the product.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/Product",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "color",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :colorist,
@@ -6884,9 +6959,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :composer,
       comment: "The person or organization who wrote a composition, or who is the composer of a work performed at some event.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": ["https://schema.org/Event", "https://schema.org/MusicComposition"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "composer",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :comprisedOf,
@@ -6918,13 +6993,13 @@ module RDF::Vocab
       "https://schema.org/rangeIncludes": "https://schema.org/AnatomicalStructure",
       label: "connectedTo",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    property :constrainingProperty,
-      comment: "Indicates a property used as a constraint to define a [[StatisticalPopulation]] with respect to the set of entities\n  corresponding to an indicated type (via [[populationType]]).",
-      "https://schema.org/domainIncludes": "https://schema.org/StatisticalPopulation",
+    property :constraintProperty,
+      comment: "Indicates a property used as a constraint. For example, in the definition of a [[StatisticalVariable]]. The value is a property, either from within Schema.org or from other compatible (e.g. RDF) systems such as DataCommons.org or Wikidata.org. ",
+      "https://schema.org/domainIncludes": "https://schema.org/ConstraintNode",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/rangeIncludes": "https://schema.org/Integer",
+      "https://schema.org/rangeIncludes": ["https://schema.org/Property", "https://schema.org/URL"],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
-      label: "constrainingProperty",
+      label: "constraintProperty",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :contactOption,
       comment: "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).",
@@ -6953,10 +7028,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :contactlessPayment,
       comment: "A secure method for consumers to purchase products or services via debit, credit or smartcards by using RFID or NFC technology.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/PaymentCard",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Boolean",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "contactlessPayment",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :containedIn,
@@ -7073,18 +7149,20 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :correction,
       comment: "Indicates a correction to a [[CreativeWork]], either via a [[CorrectionComment]], textually or in another document.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": "https://schema.org/CreativeWork",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CorrectionComment", "https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1950", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1950",
       label: "correction",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :correctionsPolicy,
       comment: "For an [[Organization]] (e.g. [[NewsMediaOrganization]]), a statement describing (in news media, the newsroom’s) disclosure and correction policy for errors.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/NewsMediaOrganization", "https://schema.org/Organization"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "correctionsPolicy",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -7176,6 +7254,14 @@ module RDF::Vocab
       "https://schema.org/rangeIncludes": ["https://schema.org/AlignmentObject", "https://schema.org/Course", "https://schema.org/Text"],
       label: "coursePrerequisites",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :courseSchedule,
+      comment: "Represents the length and pace of a course, expressed as a [[Schedule]].",
+      "https://schema.org/domainIncludes": "https://schema.org/CourseInstance",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/rangeIncludes": "https://schema.org/Schedule",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3281",
+      label: "courseSchedule",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :courseWorkload,
       comment: "The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. For example, \"2 hours of lectures, 1 hour of lab work and 3 hours of independent study per week\".",
       "https://schema.org/domainIncludes": "https://schema.org/CourseInstance",
@@ -7228,9 +7314,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :creditedTo,
       comment: "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicRelease",
       "https://schema.org/rangeIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "creditedTo",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :cssSelector,
@@ -7255,10 +7341,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :currentExchangeRate,
       comment: "The current price of a currency.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/ExchangeRateSpecification",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/UnitPriceSpecification",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "currentExchangeRate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :customer,
@@ -7504,9 +7591,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :dateVehicleFirstRegistered,
       comment: "The date of the first registration of the vehicle with the respective public authorities.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "dateVehicleFirstRegistered",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :dateline,
@@ -7517,9 +7604,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :dayOfWeek,
       comment: "The day of the week for which these opening hours are valid.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/EducationalOccupationalProgram", "https://schema.org/OpeningHoursSpecification"],
       "https://schema.org/rangeIncludes": "https://schema.org/DayOfWeek",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "dayOfWeek",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :deathDate,
@@ -7548,9 +7635,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :deliveryLeadTime,
       comment: "The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "deliveryLeadTime",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :deliveryMethod,
@@ -7638,16 +7725,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :depth,
       comment: "The depth of the item.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/OfferShippingDetails", "https://schema.org/Product", "https://schema.org/VisualArtwork"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Distance", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "depth",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :description,
       comment: "A description of the item.",
       equivalentProperty: "http://purl.org/dc/terms/description",
       "https://schema.org/domainIncludes": "https://schema.org/Thing",
-      "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/TextObject"],
       label: "description",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :device,
@@ -7794,18 +7881,20 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :diversityPolicy,
       comment: "Statement on diversity policy by an [[Organization]] e.g. a [[NewsMediaOrganization]]. For a [[NewsMediaOrganization]], a statement describing the newsroom’s diversity policy on both staffing and sources, typically providing staffing data.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/NewsMediaOrganization", "https://schema.org/Organization"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "diversityPolicy",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :diversityStaffingReport,
       comment: "For an [[Organization]] (often but not necessarily a [[NewsMediaOrganization]]), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/NewsMediaOrganization", "https://schema.org/Organization"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Article", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "diversityStaffingReport",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -7834,10 +7923,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :domiciledMortgage,
       comment: "Whether borrower is a resident of the jurisdiction where the property is located.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/MortgageLoan",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Boolean",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "domiciledMortgage",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :doorTime,
@@ -7876,10 +7966,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :downPayment,
       comment: "a type of payment made in cash during the onset of the purchase of an expensive good/service. The payment typically represents only a percentage of the full purchase price.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/RepaymentSpecification",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/MonetaryAmount", "https://schema.org/Number"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "downPayment",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :downloadUrl,
@@ -7903,9 +7994,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :driveWheelConfiguration,
       comment: "The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/DriveWheelConfigurationValue", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "driveWheelConfiguration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :dropoffLocation,
@@ -7943,9 +8034,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :duns,
       comment: "The Dun & Bradstreet DUNS number for identifying an organization or business person.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "duns",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -7965,9 +8056,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :durationOfWarranty,
       comment: "The duration of the warranty promise. Common unitCode values are ANN for year, MON for months, or DAY for days.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/WarrantyPromise",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "durationOfWarranty",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :duringMedia,
@@ -7978,10 +8069,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :earlyPrepaymentPenalty,
       comment: "The amount to be paid as a penalty in the event of early payment of the loan.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/RepaymentSpecification",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/MonetaryAmount",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "earlyPrepaymentPenalty",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :editEIDR,
@@ -8078,38 +8170,39 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :eligibleCustomerType,
       comment: "The type(s) of customers for which the given offer is valid.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/BusinessEntityType",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "eligibleCustomerType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :eligibleDuration,
       comment: "The duration for which the given offer is valid.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "eligibleDuration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :eligibleQuantity,
       comment: "The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/PriceSpecification"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "eligibleQuantity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :eligibleRegion,
       comment: "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/ActionAccessSpecification", "https://schema.org/DeliveryChargeSpecification", "https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": ["https://schema.org/GeoShape", "https://schema.org/Place", "https://schema.org/Text"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", "https://github.com/schemaorg/schemaorg/issues/1741"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1741",
       label: "eligibleRegion",
       subPropertyOf: "https://schema.org/areaServed",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :eligibleTransactionVolume,
       comment: "The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/PriceSpecification"],
       "https://schema.org/rangeIncludes": "https://schema.org/PriceSpecification",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "eligibleTransactionVolume",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :email,
@@ -8135,10 +8228,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :emissionsCO2,
       comment: "The CO2 emissions in g/km. When used in combination with a QuantitativeValue, put \"g/km\" into the unitText property of that value, since there is no UN/CEFACT Common Code for \"g/km\".",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "emissionsCO2",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :employee,
@@ -8178,11 +8271,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :encodesBioChemEntity,
       comment: "Another BioChemEntity encoded by this one. ",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Gene",
       "https://schema.org/domainIncludes": "https://schema.org/Gene",
       "https://schema.org/inverseOf": "https://schema.org/isEncodedByBioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/BioChemEntity",
+      "https://schema.org/source": "http://www.bioschemas.org/Gene",
       label: "encodesBioChemEntity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :encodesCreativeWork,
@@ -8272,26 +8365,26 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :engineDisplacement,
       comment: "The volume swept by all of the pistons inside the cylinders of an internal combustion engine in a single movement. \\n\\nTypical unit code(s): CMQ for cubic centimeter, LTR for liters, INQ for cubic inches\\n* Note 1: You can link to information about how the given value has been determined using the [[valueReference]] property.\\n* Note 2: You can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/EngineSpecification",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "engineDisplacement",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :enginePower,
       comment: "The power of the vehicle's engine.\n    Typical unit code(s): KWT for kilowatt, BHP for brake horsepower, N12 for metric horsepower (PS, with 1 PS = 735,49875 W)\\n\\n* Note 1: There are many different ways of measuring an engine's power. For an overview, see  [http://en.wikipedia.org/wiki/Horsepower#Engine\\_power\\_test\\_codes](http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes).\\n* Note 2: You can link to information about how the given value has been determined using the [[valueReference]] property.\\n* Note 3: You can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/EngineSpecification",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "enginePower",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :engineType,
       comment: "The type of engine or engines powering the vehicle.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/EngineSpecification",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/QualitativeValue", "https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "engineType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :entertainmentBusiness,
@@ -8331,9 +8424,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :equal,
       comment: "This ordering relation for qualitative values indicates that the subject is equal to the object.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/QualitativeValue",
       "https://schema.org/rangeIncludes": "https://schema.org/QualitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "equal",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :error,
@@ -8427,10 +8520,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :exampleOfWork,
       comment: "A creative work that this work is an example/instance/realization/derivation of.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": "https://schema.org/CreativeWork",
       "https://schema.org/inverseOf": "https://schema.org/workExample",
       "https://schema.org/rangeIncludes": "https://schema.org/CreativeWork",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "exampleOfWork",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :exceptDate,
@@ -8443,10 +8536,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :exchangeRateSpread,
       comment: "The difference between the price at which a broker or other intermediary buys and sells foreign currency.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/ExchangeRateSpecification",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/MonetaryAmount", "https://schema.org/Number"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "exchangeRateSpread",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :executableLibraryName,
@@ -8547,10 +8641,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :expressedIn,
       comment: "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Gene",
       "https://schema.org/domainIncludes": "https://schema.org/Gene",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/AnatomicalStructure", "https://schema.org/AnatomicalSystem", "https://schema.org/BioChemEntity", "https://schema.org/DefinedTerm"],
+      "https://schema.org/source": "http://www.bioschemas.org/Gene",
       label: "expressedIn",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :familyName,
@@ -8579,9 +8673,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :feesAndCommissionsSpecification,
       comment: "Description of fees, commissions, and other terms applied either to a class of financial product, or by a financial service organization.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": ["https://schema.org/FinancialProduct", "https://schema.org/FinancialService"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
       label: "feesAndCommissionsSpecification",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fiberContent,
@@ -8605,7 +8699,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :financialAidEligible,
       comment: "A financial aid type or program which students may use to pay for tuition or fees associated with the program.",
-      "https://schema.org/domainIncludes": "https://schema.org/EducationalOccupationalProgram",
+      "https://schema.org/domainIncludes": ["https://schema.org/Course", "https://schema.org/EducationalOccupationalProgram"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/Text"],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2418",
@@ -8622,9 +8716,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :firstPerformance,
       comment: "The date and place the work was first performed.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/Event",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "firstPerformance",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :flightDistance,
@@ -8650,17 +8744,18 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :floorLimit,
       comment: "A floor limit is the amount of money above which credit card transactions must be authorized.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/PaymentCard",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/MonetaryAmount",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "floorLimit",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :floorSize,
       comment: "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": ["https://schema.org/Accommodation", "https://schema.org/FloorPlan"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "floorSize",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :followee,
@@ -8760,31 +8855,31 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fuelCapacity,
       comment: "The capacity of the fuel tank or in the case of electric cars, the battery. If there are multiple components for storage, this should indicate the total of all storage of the same type.\\n\\nTypical unit code(s): LTR for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for ampere-hours (for electrical vehicles).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "fuelCapacity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fuelConsumption,
       comment: "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).\\n\\n* Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use [[unitText]] to indicate the unit of measurement, e.g. L/100 km.\\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\\n* Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use [[valueReference]] to link the value for the fuel consumption to another value.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "fuelConsumption",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fuelEfficiency,
       comment: "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).\\n\\n* Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use [[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.\\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\\n* Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use [[valueReference]] to link the value for the fuel economy to another value.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "fuelEfficiency",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fuelType,
       comment: "The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": ["https://schema.org/EngineSpecification", "https://schema.org/Vehicle"],
       "https://schema.org/rangeIncludes": ["https://schema.org/QualitativeValue", "https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "fuelType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :functionalClass,
@@ -8796,11 +8891,12 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :fundedItem,
       comment: "Indicates something directly or indirectly funded or sponsored through a [[Grant]]. See also [[ownershipFundingInfo]].",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": "https://schema.org/Grant",
       "https://schema.org/inverseOf": "https://schema.org/funding",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/BioChemEntity", "https://schema.org/CreativeWork", "https://schema.org/Event", "https://schema.org/MedicalEntity", "https://schema.org/Organization", "https://schema.org/Person", "https://schema.org/Product"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1950", "https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1950", "https://github.com/schemaorg/schemaorg/issues/383"],
       label: "fundedItem",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :funder,
@@ -8812,11 +8908,12 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :funding,
       comment: "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/BioChemEntity", "https://schema.org/CreativeWork", "https://schema.org/Event", "https://schema.org/MedicalEntity", "https://schema.org/Organization", "https://schema.org/Person", "https://schema.org/Product"],
       "https://schema.org/inverseOf": "https://schema.org/fundedItem",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Grant",
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/383", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/383",
       label: "funding",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :game,
@@ -8985,9 +9082,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :globalLocationNumber,
       comment: "The [Global Location Number](http://www.gs1.org/gln) (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person", "https://schema.org/Place"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "globalLocationNumber",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -9001,10 +9098,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gracePeriod,
       comment: "The period of time after any due date that the borrower has to fulfil its obligations before a default (failure to pay) is deemed to have occurred.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/LoanOrCredit",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Duration",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "gracePeriod",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :grantee,
@@ -9015,16 +9113,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :greater,
       comment: "This ordering relation for qualitative values indicates that the subject is greater than the object.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/QualitativeValue",
       "https://schema.org/rangeIncludes": "https://schema.org/QualitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "greater",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :greaterOrEqual,
       comment: "This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/QualitativeValue",
       "https://schema.org/rangeIncludes": "https://schema.org/QualitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "greaterOrEqual",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gtin,
@@ -9045,25 +9143,25 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gtin13,
       comment: "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/Product"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "gtin13",
       subPropertyOf: ["https://schema.org/gtin", "https://schema.org/identifier"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gtin14,
       comment: "The GTIN-14 code of the product, or the product to which the offer refers. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/Product"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "gtin14",
       subPropertyOf: ["https://schema.org/gtin", "https://schema.org/identifier"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gtin8,
       comment: "The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/Product"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "gtin8",
       subPropertyOf: ["https://schema.org/gtin", "https://schema.org/identifier"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -9106,19 +9204,19 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasBioChemEntityPart,
       comment: "Indicates a BioChemEntity that (in some sense) has this BioChemEntity as a part. ",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/inverseOf": "https://schema.org/isPartOfBioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/BioChemEntity",
+      "https://schema.org/source": "http://www.bioschemas.org",
       label: "hasBioChemEntityPart",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasBioPolymerSequence,
       comment: "A symbolic representation of a BioChemEntity. For example, a nucleotide sequence of a Gene or an amino acid sequence of a Protein.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Gene",
       "https://schema.org/domainIncludes": ["https://schema.org/Gene", "https://schema.org/Protein"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "http://www.bioschemas.org/Gene",
       label: "hasBioPolymerSequence",
       subPropertyOf: "https://schema.org/hasRepresentation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -9255,10 +9353,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasMolecularFunction,
       comment: "Molecular function performed by this BioChemEntity; please use PropertyValue if you want to include any evidence.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/BioChemEntity",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/PropertyValue", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org/BioChemEntity",
       label: "hasMolecularFunction",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasOccupation,
@@ -9276,25 +9374,25 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasPOS,
       comment: "Points-of-Sales operated by the organization or person.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/rangeIncludes": "https://schema.org/Place",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "hasPOS",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasPart,
       comment: "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": "https://schema.org/CreativeWork",
       "https://schema.org/inverseOf": "https://schema.org/isPartOf",
       "https://schema.org/rangeIncludes": "https://schema.org/CreativeWork",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "hasPart",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasRepresentation,
       comment: "A common representation such as a protein sequence or chemical structure for this entity. For images use schema.org/image.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/PropertyValue", "https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org",
       label: "hasRepresentation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasVariant,
@@ -9574,19 +9672,19 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :inChI,
       comment: "Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "https://schema.org/domainIncludes": "https://schema.org/MolecularEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "http://www.bioschemas.org/MolecularEntity",
       label: "inChI",
       subPropertyOf: "https://schema.org/hasRepresentation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :inChIKey,
       comment: "InChIKey is a hashed version of the full InChI (using the SHA-256 algorithm).",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "https://schema.org/domainIncludes": "https://schema.org/MolecularEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "http://www.bioschemas.org/MolecularEntity",
       label: "inChIKey",
       subPropertyOf: "https://schema.org/hasRepresentation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -9659,9 +9757,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :includedComposition,
       comment: "Smaller compositions included in this work (e.g. a movement in a symphony).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicComposition",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "includedComposition",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :includedDataCatalog,
@@ -9695,10 +9793,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :includesAttraction,
       comment: "Attraction located at destination.",
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/IIT-CNR.it", "https://schema.org/docs/collab/Tourism"],
       "https://schema.org/domainIncludes": "https://schema.org/TouristDestination",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/TouristAttraction",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1810",
       label: "includesAttraction",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :includesHealthPlanFormulary,
@@ -9719,9 +9818,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :includesObject,
       comment: "This links to a node or nodes indicating the exact quantity of the products included in  an [[Offer]] or [[ProductCollection]].",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/ProductCollection"],
       "https://schema.org/rangeIncludes": "https://schema.org/TypeAndQuantityNode",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "includesObject",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :increasesRiskOf,
@@ -9845,9 +9944,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :interestRate,
       comment: "The interest rate, charged or paid, applicable to the financial product. Note: This is different from the calculated annualPercentageRate.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/FinancialProduct",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
       label: "interestRate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :interpretedAsClaim,
@@ -9861,9 +9960,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :inventoryLevel,
       comment: "The current approximate inventory level for the item or items.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/SomeProducts"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "inventoryLevel",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :inverseOf,
@@ -9889,9 +9988,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isAccessoryOrSparePartFor,
       comment: "A pointer to another product (or multiple products) for which this product is an accessory or spare part.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/Product",
       "https://schema.org/rangeIncludes": "https://schema.org/Product",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "isAccessoryOrSparePartFor",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isAvailableGenerically,
@@ -9902,7 +10001,7 @@ module RDF::Vocab
       label: "isAvailableGenerically",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isBasedOn,
-      comment: "A resource from which this work is derived or from which it is a modification or adaption.",
+      comment: "A resource from which this work is derived or from which it is a modification or adaptation.",
       "https://schema.org/domainIncludes": "https://schema.org/CreativeWork",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/Product", "https://schema.org/URL"],
       label: "isBasedOn",
@@ -9916,18 +10015,18 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isConsumableFor,
       comment: "A pointer to another product (or multiple products) for which this product is a consumable.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/Product",
       "https://schema.org/rangeIncludes": "https://schema.org/Product",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "isConsumableFor",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isEncodedByBioChemEntity,
       comment: "Another BioChemEntity encoding by this one.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Gene",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/inverseOf": "https://schema.org/encodesBioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Gene",
+      "https://schema.org/source": "http://www.bioschemas.org/Gene",
       label: "isEncodedByBioChemEntity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isFamilyFriendly,
@@ -9944,10 +10043,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isInvolvedInBiologicalProcess,
       comment: "Biological process this BioChemEntity is involved in; please use PropertyValue if you want to include any evidence.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/BioChemEntity",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/PropertyValue", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org/BioChemEntity",
       label: "isInvolvedInBiologicalProcess",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isLiveBroadcast,
@@ -9958,10 +10057,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isLocatedInSubcellularLocation,
       comment: "Subcellular location where this BioChemEntity is located; please use PropertyValue if you want to include any evidence.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/BioChemEntity",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/PropertyValue", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org/BioChemEntity",
       label: "isLocatedInSubcellularLocation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isPartOf,
@@ -9973,11 +10072,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isPartOfBioChemEntity,
       comment: "Indicates a BioChemEntity that is (in some sense) a part of this BioChemEntity. ",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/inverseOf": "https://schema.org/hasBioChemEntityPart",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/BioChemEntity",
+      "https://schema.org/source": "http://www.bioschemas.org",
       label: "isPartOfBioChemEntity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isPlanForApartment,
@@ -9997,9 +10096,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isRelatedTo,
       comment: "A pointer to another, somehow related product (or multiple products).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Product", "https://schema.org/Service"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Product", "https://schema.org/Service"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "isRelatedTo",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isResizable,
@@ -10012,9 +10111,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isSimilarTo,
       comment: "A pointer to another, functionally similar product (or multiple products).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Product", "https://schema.org/Service"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Product", "https://schema.org/Service"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "isSimilarTo",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isUnlabelledFallback,
@@ -10027,10 +10126,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isVariantOf,
       comment: "Indicates the kind of product that this is a variant of. In the case of [[ProductModel]], this is a pointer (from a ProductModel) to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive. In the case of a [[ProductGroup]], the group description also serves as a template, representing a set of Products that vary on explicitly defined, specific dimensions only (so it defines both a set of variants, as well as which values distinguish amongst those variants). When used with [[ProductGroup]], this property can apply to any [[Product]] included in the group.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Product", "https://schema.org/ProductModel"],
       "https://schema.org/inverseOf": "https://schema.org/hasVariant",
       "https://schema.org/rangeIncludes": ["https://schema.org/ProductGroup", "https://schema.org/ProductModel"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "isVariantOf",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isbn,
@@ -10043,9 +10142,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isicV4,
       comment: "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person", "https://schema.org/Place"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "isicV4",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :iso6523Code,
@@ -10058,26 +10157,26 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :isrcCode,
       comment: "The International Standard Recording Code for the recording.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicRecording",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "isrcCode",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :issn,
       comment: "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
       equivalentProperty: "http://purl.org/ontology/bibo/issn",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": ["https://schema.org/Blog", "https://schema.org/CreativeWorkSeries", "https://schema.org/Dataset", "https://schema.org/WebSite"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "issn",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :issueNumber,
       comment: "Identifies the issue of publication; for example, \"iii\" or \"2\".",
       equivalentProperty: "http://purl.org/ontology/bibo/issue",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": "https://schema.org/PublicationIssue",
       "https://schema.org/rangeIncludes": ["https://schema.org/Integer", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "issueNumber",
       subPropertyOf: "https://schema.org/position",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10095,9 +10194,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :iswcCode,
       comment: "The International Standard Musical Work Code for the composition.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "iswcCode",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :item,
@@ -10178,18 +10277,19 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :itinerary,
       comment: "Destination(s) ( [[Place]] ) that make up a trip. For a trip where destination order is important use [[ItemList]] to specify that order (see examples).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Tourism",
       "https://schema.org/domainIncludes": "https://schema.org/Trip",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/ItemList", "https://schema.org/Place"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1810",
       label: "itinerary",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :iupacName,
       comment: "Systematic method of naming chemical compounds as recommended by the International Union of Pure and Applied Chemistry (IUPAC).",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "https://schema.org/domainIncludes": "https://schema.org/MolecularEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "http://www.bioschemas.org/MolecularEntity",
       label: "iupacName",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :jobBenefits,
@@ -10252,9 +10352,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :knownVehicleDamages,
       comment: "A textual description of known damages, both repaired and unrepaired.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "knownVehicleDamages",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :knows,
@@ -10265,18 +10365,20 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :knowsAbout,
       comment: "Of a [[Person]], and less typically of an [[Organization]], to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or [[JobPosting]] descriptions.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/Thing", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1688", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1688",
       label: "knowsAbout",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :knowsLanguage,
       comment: "Of a [[Person]], and less typically of an [[Organization]], to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Language", "https://schema.org/Text"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1688", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1688",
       label: "knowsLanguage",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :labelDetails,
@@ -10338,9 +10440,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legalName,
       comment: "The official name of the organization, e.g. the registered company name.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/Organization",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "legalName",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legalStatus,
@@ -10354,40 +10456,44 @@ module RDF::Vocab
       comment: "Indicates that this legislation (or part of a legislation) somehow transfers another legislation in a different legislative context. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the <a href=\"/legislationTransposes\">legislationTransposes</a> property. For example an informative consolidated law of a European Union's member state \"applies\" the consolidated version of the European Directive implemented in it.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#implements",
       exactMatch: "http://data.europa.eu/eli/ontology#implements",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Legislation",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationApplies",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationChanges,
       comment: "Another legislation that this legislation changes. This encompasses the notions of amendment, replacement, correction, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change. The property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the <a href=\"/legislationConsolidates\">legislationConsolidates</a> property.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#changes",
       exactMatch: "http://data.europa.eu/eli/ontology#changes",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Legislation",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationChanges",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationConsolidates,
       comment: "Indicates another legislation taken into account in this consolidated legislation (which is usually the product of an editorial process that revises the legislation). This property should be used multiple times to refer to both the original version or the previous consolidated version, and to the legislations making the change.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#consolidates",
       exactMatch: "http://data.europa.eu/eli/ontology#consolidates",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Legislation",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationConsolidates",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationDate,
       comment: "The date of adoption or signature of the legislation. This is the date at which the text is officially aknowledged to be a legislation, even though it might not even be published or in force.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#date_document",
       exactMatch: "http://data.europa.eu/eli/ontology#date_document",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationDate",
       subPropertyOf: "https://schema.org/dateCreated",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10395,19 +10501,21 @@ module RDF::Vocab
       comment: "The point-in-time at which the provided description of the legislation is valid (e.g.: when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")",
       equivalentProperty: "http://data.europa.eu/eli/ontology#version_date",
       exactMatch: "http://data.europa.eu/eli/ontology#version_date",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationDateVersion",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationIdentifier,
       comment: "An identifier for the legislation. This can be either a string-based identifier, like the CELEX at EU level or the NOR in France, or a web-based, URL/URI identifier, like an ELI (European Legislation Identifier) or an URN-Lex.",
       "http://www.w3.org/2004/02/skos/core#closeMatch": "http://data.europa.eu/eli/ontology#id_local",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationIdentifier",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10415,10 +10523,11 @@ module RDF::Vocab
       comment: "The jurisdiction from which the legislation originates.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#jurisdiction",
       exactMatch: "http://data.europa.eu/eli/ontology#jurisdiction",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/AdministrativeArea", "https://schema.org/Text"],
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationJurisdiction",
       subPropertyOf: ["https://schema.org/jurisdiction", "https://schema.org/spatialCoverage"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10426,30 +10535,33 @@ module RDF::Vocab
       comment: "Whether the legislation is currently in force, not in force, or partially in force.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#in_force",
       exactMatch: "http://data.europa.eu/eli/ontology#in_force",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/LegalForceStatus",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationLegalForce",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationLegalValue,
       comment: "The legal value of this legislation file. The same legislation can be written in multiple files with different legal values. Typically a digitally signed PDF have a \"stronger\" legal value than the HTML file of the same act.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#legal_value",
       exactMatch: "http://data.europa.eu/eli/ontology#legal_value",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/LegislationObject",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/LegalValueLevel",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationLegalValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationPassedBy,
       comment: "The person or organization that originally passed or made the law: typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#passed_by",
       exactMatch: "http://data.europa.eu/eli/ontology#passed_by",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationPassedBy",
       subPropertyOf: "https://schema.org/creator",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10457,20 +10569,22 @@ module RDF::Vocab
       comment: "An individual or organization that has some kind of responsibility for the legislation. Typically the ministry who is/was in charge of elaborating the legislation, or the adressee for potential questions about the legislation once it is published.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#responsibility_of",
       exactMatch: "http://data.europa.eu/eli/ontology#responsibility_of",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationResponsible",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :legislationTransposes,
       comment: "Indicates that this legislation (or part of legislation) fulfills the objectives set by another legislation, by passing appropriate implementation measures. Typically, some legislations of European Union's member states or regions transpose European Directives. This indicates a legally binding link between the 2 legislations.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#transposes",
       exactMatch: "http://data.europa.eu/eli/ontology#transposes",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Legislation",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationTransposes",
       subPropertyOf: "https://schema.org/legislationApplies",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10478,18 +10592,19 @@ module RDF::Vocab
       comment: "The type of the legislation. Examples of values are \"law\", \"act\", \"directive\", \"decree\", \"regulation\", \"statutory instrument\", \"loi organique\", \"règlement grand-ducal\", etc., depending on the country.",
       equivalentProperty: "http://data.europa.eu/eli/ontology#type_document",
       exactMatch: "http://data.europa.eu/eli/ontology#type_document",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/domainIncludes": "https://schema.org/Legislation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CategoryCode", "https://schema.org/Text"],
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "legislationType",
       subPropertyOf: "https://schema.org/genre",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :leiCode,
       comment: "An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.",
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/FIBO", "https://schema.org/docs/collab/GLEIF"],
       "https://schema.org/domainIncludes": "https://schema.org/Organization",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#GLEIF"],
       label: "leiCode",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10502,16 +10617,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :lesser,
       comment: "This ordering relation for qualitative values indicates that the subject is lesser than the object.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/QualitativeValue",
       "https://schema.org/rangeIncludes": "https://schema.org/QualitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "lesser",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :lesserOrEqual,
       comment: "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/QualitativeValue",
       "https://schema.org/rangeIncludes": "https://schema.org/QualitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "lesserOrEqual",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :letterer,
@@ -10549,50 +10664,55 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :loanMortgageMandateAmount,
       comment: "Amount of mortgage mandate that can be converted into a proper mortgage at a later stage.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/MortgageLoan",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/MonetaryAmount",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "loanMortgageMandateAmount",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :loanPaymentAmount,
       comment: "The amount of money to pay in a single payment.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/RepaymentSpecification",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/MonetaryAmount",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "loanPaymentAmount",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :loanPaymentFrequency,
       comment: "Frequency of payments due, i.e. number of months between payments. This is defined as a frequency, i.e. the reciprocal of a period of time.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/RepaymentSpecification",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "loanPaymentFrequency",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :loanRepaymentForm,
       comment: "A form of paying back money previously borrowed from a lender. Repayment usually takes the form of periodic payments that normally include part principal plus interest in each payment.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/LoanOrCredit",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/RepaymentSpecification",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "loanRepaymentForm",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :loanTerm,
       comment: "The duration of the loan or credit agreement.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/LoanOrCredit",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
       label: "loanTerm",
       subPropertyOf: "https://schema.org/duration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :loanType,
       comment: "The type of a loan or credit.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/LoanOrCredit",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "loanType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :location,
@@ -10621,9 +10741,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :logo,
       comment: "An associated logo.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Brand", "https://schema.org/Organization", "https://schema.org/Place", "https://schema.org/Product", "https://schema.org/Service"],
       "https://schema.org/rangeIncludes": ["https://schema.org/ImageObject", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "logo",
       subPropertyOf: "https://schema.org/image",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10648,16 +10768,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :lyricist,
       comment: "The person who wrote the words.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/Person",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "lyricist",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :lyrics,
       comment: "The words in the song.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/CreativeWork",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "lyrics",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :mainContentOfPage,
@@ -10691,10 +10811,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :makesOffer,
       comment: "A pointer to products or services offered by the organization or person.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/inverseOf": "https://schema.org/offeredBy",
       "https://schema.org/rangeIncludes": "https://schema.org/Offer",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "makesOffer",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :manufacturer,
@@ -10724,7 +10844,7 @@ module RDF::Vocab
       label: "maps",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :marginOfError,
-      comment: "A marginOfError for an [[Observation]].",
+      comment: "A [[marginOfError]] for an [[Observation]].",
       "https://schema.org/domainIncludes": "https://schema.org/Observation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
@@ -10733,10 +10853,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :masthead,
       comment: "For a [[NewsMediaOrganization]], a link to the masthead page or a page listing top editorial management.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": "https://schema.org/NewsMediaOrganization",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "masthead",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10764,16 +10885,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :maxPrice,
       comment: "The highest price if the price is a range.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/PriceSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "maxPrice",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :maxValue,
       comment: "The upper value of some characteristic or property.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/MonetaryAmount", "https://schema.org/PropertyValue", "https://schema.org/PropertyValueSpecification", "https://schema.org/QuantitativeValue"],
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "maxValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :maximumAttendeeCapacity,
@@ -10806,7 +10927,7 @@ module RDF::Vocab
       label: "maximumPhysicalAttendeeCapacity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :maximumVirtualAttendeeCapacity,
-      comment: "The maximum physical attendee capacity of an [[Event]] whose [[eventAttendanceMode]] is [[OnlineEventAttendanceMode]] (or the online aspects, in the case of a [[MixedEventAttendanceMode]]). ",
+      comment: "The maximum virtual attendee capacity of an [[Event]] whose [[eventAttendanceMode]] is [[OnlineEventAttendanceMode]] (or the online aspects, in the case of a [[MixedEventAttendanceMode]]). ",
       "https://schema.org/domainIncludes": "https://schema.org/Event",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Integer",
@@ -10820,26 +10941,43 @@ module RDF::Vocab
       label: "mealService",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :measuredProperty,
-      comment: "The measuredProperty of an [[Observation]], either a schema.org property, a property from other RDF-compatible systems, e.g. W3C RDF Data Cube, or schema.org extensions such as [GS1's](https://www.gs1.org/voc/?show=properties).",
-      "https://schema.org/domainIncludes": "https://schema.org/Observation",
+      comment: "The measuredProperty of an [[Observation]], typically via its [[StatisticalVariable]]. There are various kinds of applicable [[Property]]: a schema.org property, a property from other RDF-compatible systems, e.g. W3C RDF Data Cube, Data Commons, Wikidata, or schema.org extensions such as [GS1's](https://www.gs1.org/voc/?show=properties).",
+      "https://schema.org/domainIncludes": ["https://schema.org/Observation", "https://schema.org/StatisticalVariable"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Property",
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
       label: "measuredProperty",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    property :measuredValue,
-      comment: "The measuredValue of an [[Observation]].",
-      "https://schema.org/domainIncludes": "https://schema.org/Observation",
+    property :measurementDenominator,
+      comment: "Identifies the denominator variable when an observation represents a ratio or percentage.",
+      "https://schema.org/domainIncludes": ["https://schema.org/Observation", "https://schema.org/StatisticalVariable"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/rangeIncludes": "https://schema.org/DataType",
-      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
-      label: "measuredValue",
+      "https://schema.org/rangeIncludes": "https://schema.org/StatisticalVariable",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "measurementDenominator",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :measurementMethod,
+      comment: "A subproperty of [[measurementTechnique]] that can be used for specifying specific methods, in particular via [[MeasurementMethodEnum]].",
+      "https://schema.org/domainIncludes": ["https://schema.org/DataCatalog", "https://schema.org/DataDownload", "https://schema.org/Dataset", "https://schema.org/Observation", "https://schema.org/PropertyValue", "https://schema.org/StatisticalVariable"],
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/MeasurementMethodEnum", "https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1425",
+      label: "measurementMethod",
+      subPropertyOf: "https://schema.org/measurementTechnique",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :measurementQualifier,
+      comment: "Provides additional qualification to an observation. For example, a GDP observation measures the Nominal value.",
+      "https://schema.org/domainIncludes": ["https://schema.org/Observation", "https://schema.org/StatisticalVariable"],
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/rangeIncludes": "https://schema.org/Enumeration",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "measurementQualifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :measurementTechnique,
-      comment: "A technique or technology used in a [[Dataset]] (or [[DataDownload]], [[DataCatalog]]),\ncorresponding to the method used for measuring the corresponding variable(s) (described using [[variableMeasured]]). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.\n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".\n\nIf the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".\n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]].\n      ",
-      "https://schema.org/domainIncludes": ["https://schema.org/DataCatalog", "https://schema.org/DataDownload", "https://schema.org/Dataset", "https://schema.org/PropertyValue"],
+      comment: "A technique, method or technology used in an [[Observation]], [[StatisticalVariable]] or [[Dataset]] (or [[DataDownload]], [[DataCatalog]]), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using [[variableMeasured]]; for [[Observation]], a [[StatisticalVariable]]). Often but not necessarily each [[variableMeasured]] will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and \"knowledge graphs\". In that case the subproperty of [[variableMeasured]] called [[measuredProperty]] is applicable.\n    \nThe [[measurementTechnique]] property helps when extra clarification is needed about how a [[measuredProperty]] was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery. \n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\". If the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\". \n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]]. The value can also be from an enumeration, organized as a [[MeasurementMetholdEnumeration]].",
+      "https://schema.org/domainIncludes": ["https://schema.org/DataCatalog", "https://schema.org/DataDownload", "https://schema.org/Dataset", "https://schema.org/Observation", "https://schema.org/PropertyValue", "https://schema.org/StatisticalVariable"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/MeasurementMethodEnum", "https://schema.org/Text", "https://schema.org/URL"],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1425",
       label: "measurementTechnique",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10896,10 +11034,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :meetsEmissionStandard,
       comment: "Indicates that the vehicle meets the respective emission standard.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/QualitativeValue", "https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "meetsEmissionStandard",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :member,
@@ -10994,23 +11132,23 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :mileageFromOdometer,
       comment: "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "mileageFromOdometer",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :minPrice,
       comment: "The lowest price if the price is a range.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/PriceSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "minPrice",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :minValue,
       comment: "The lower value of some characteristic or property.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/MonetaryAmount", "https://schema.org/PropertyValue", "https://schema.org/PropertyValueSpecification", "https://schema.org/QuantitativeValue"],
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "minValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :minimumPaymentDue,
@@ -11021,10 +11159,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :missionCoveragePrioritiesPolicy,
       comment: "For a [[NewsMediaOrganization]], a statement on coverage priorities, including any public agenda or stance on issues.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": "https://schema.org/NewsMediaOrganization",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "missionCoveragePrioritiesPolicy",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -11044,10 +11183,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :modelDate,
       comment: "The release date of a vehicle model (often used to differentiate versions of the same make and model).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "modelDate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :modifiedTime,
@@ -11058,34 +11197,35 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :molecularFormula,
       comment: "The empirical formula is the simplest whole number ratio of all the atoms in a molecule.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "https://schema.org/domainIncludes": "https://schema.org/MolecularEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "http://www.bioschemas.org/MolecularEntity",
       label: "molecularFormula",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :molecularWeight,
       comment: "This is the molecular weight of the entity being described, not of the parent. Units should be included in the form '&lt;Number&gt; &lt;unit&gt;', for example '12 amu' or as '&lt;QuantitativeValue&gt;.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "https://schema.org/domainIncludes": "https://schema.org/MolecularEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/QuantitativeValue", "https://schema.org/Text"],
+      "https://schema.org/source": "http://www.bioschemas.org/MolecularEntity",
       label: "molecularWeight",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :monoisotopicMolecularWeight,
       comment: "The monoisotopic mass is the sum of the masses of the atoms in a molecule using the unbound, ground-state, rest mass of the principal (most abundant) isotope for each element instead of the isotopic average mass. Please include the units in the form '&lt;Number&gt; &lt;unit&gt;', for example '770.230488 g/mol' or as '&lt;QuantitativeValue&gt;.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "https://schema.org/domainIncludes": "https://schema.org/MolecularEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/QuantitativeValue", "https://schema.org/Text"],
+      "https://schema.org/source": "http://www.bioschemas.org/MolecularEntity",
       label: "monoisotopicMolecularWeight",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :monthlyMinimumRepaymentAmount,
       comment: "The minimum payment is the lowest amount of money that one is required to pay on a credit card statement each month.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/PaymentCard",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/MonetaryAmount", "https://schema.org/Number"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "monthlyMinimumRepaymentAmount",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :monthsOfExperience,
@@ -11098,9 +11238,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :mpn,
       comment: "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/Product"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "mpn",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :multipleValues,
@@ -11118,9 +11258,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :musicArrangement,
       comment: "An arrangement derived from the composition.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicComposition",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "musicArrangement",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :musicBy,
@@ -11131,9 +11271,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :musicCompositionForm,
       comment: "The type of composition (e.g. overture, sonata, symphony, etc.).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "musicCompositionForm",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :musicGroupMember,
@@ -11145,23 +11285,23 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :musicReleaseFormat,
       comment: "Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicRelease",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicReleaseFormatType",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "musicReleaseFormat",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :musicalKey,
       comment: "The key, mode, or scale this composition uses.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "musicalKey",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :naics,
       comment: "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "naics",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :name,
@@ -11236,18 +11376,19 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :noBylinesPolicy,
       comment: "For a [[NewsMediaOrganization]] or other news-related [[Organization]], a statement explaining when authors of articles are not named in bylines.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": "https://schema.org/NewsMediaOrganization",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1688", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1688",
       label: "noBylinesPolicy",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :nonEqual,
       comment: "This ordering relation for qualitative values indicates that the subject is not equal to the object.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/QualitativeValue",
       "https://schema.org/rangeIncludes": "https://schema.org/QualitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "nonEqual",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :nonProprietaryName,
@@ -11294,8 +11435,8 @@ module RDF::Vocab
       label: "numChildren",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numConstraints,
-      comment: "Indicates the number of constraints (not counting [[populationType]]) defined for a particular [[StatisticalPopulation]]. This helps applications understand if they have access to a sufficiently complete description of a [[StatisticalPopulation]].",
-      "https://schema.org/domainIncludes": "https://schema.org/StatisticalPopulation",
+      comment: "Indicates the number of constraints property values defined for a particular [[ConstraintNode]] such as [[StatisticalVariable]]. This helps applications understand if they have access to a sufficiently complete description of a [[StatisticalVariable]] or other construct that is defined using properties on template-style nodes.",
+      "https://schema.org/domainIncludes": "https://schema.org/ConstraintNode",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Integer",
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
@@ -11317,9 +11458,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfAirbags,
       comment: "The number or type of airbags in the vehicle.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "numberOfAirbags",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfAvailableAccommodationUnits,
@@ -11332,9 +11473,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfAxles,
       comment: "The number of axles.\\n\\nTypical unit code(s): C62",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "numberOfAxles",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfBathroomsTotal,
@@ -11355,9 +11496,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfBeds,
       comment: "The quantity of the given bed type available in the HotelRoom, Suite, House, or Apartment.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": "https://schema.org/BedDetails",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "numberOfBeds",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfCredits,
@@ -11370,9 +11511,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfDoors,
       comment: "The number of doors.\\n\\nTypical unit code(s): C62",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "numberOfDoors",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfEmployees,
@@ -11389,9 +11530,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfForwardGears,
       comment: "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "numberOfForwardGears",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfFullBathrooms,
@@ -11410,10 +11551,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfLoanPayments,
       comment: "The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/RepaymentSpecification",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Number",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "numberOfLoanPayments",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfPages,
@@ -11438,16 +11580,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfPreviousOwners,
       comment: "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "numberOfPreviousOwners",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfRooms,
       comment: "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": ["https://schema.org/Accommodation", "https://schema.org/Apartment", "https://schema.org/FloorPlan", "https://schema.org/House", "https://schema.org/LodgingBusiness", "https://schema.org/SingleFamilyResidence", "https://schema.org/Suite"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "numberOfRooms",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfSeasons,
@@ -11474,6 +11616,14 @@ module RDF::Vocab
       "https://schema.org/rangeIncludes": "https://schema.org/Thing",
       label: "object",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :observationAbout,
+      comment: "The [[observationAbout]] property identifies an entity, often a [[Place]], associated with an [[Observation]].",
+      "https://schema.org/domainIncludes": "https://schema.org/Observation",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/rangeIncludes": ["https://schema.org/Place", "https://schema.org/Thing"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
+      label: "observationAbout",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :observationDate,
       comment: "The observationDate of an [[Observation]].",
       "https://schema.org/domainIncludes": "https://schema.org/Observation",
@@ -11482,19 +11632,19 @@ module RDF::Vocab
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
       label: "observationDate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
-    property :observedNode,
-      comment: "The observedNode of an [[Observation]], often a [[StatisticalPopulation]].",
+    property :observationPeriod,
+      comment: "The length of time an Observation took place over. The format follows `P[0-9]*[Y|M|D|h|m|s]`. For example, P1Y is Period 1 Year, P3M is Period 3 Months, P3h is Period 3 hours.",
       "https://schema.org/domainIncludes": "https://schema.org/Observation",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/rangeIncludes": "https://schema.org/StatisticalPopulation",
-      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
-      label: "observedNode",
+      "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "observationPeriod",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :occupancy,
       comment: "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person",
-      "https://schema.org/domainIncludes": ["https://schema.org/Apartment", "https://schema.org/HotelRoom", "https://schema.org/SingleFamilyResidence", "https://schema.org/Suite"],
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
+      "https://schema.org/domainIncludes": ["https://schema.org/Accommodation", "https://schema.org/Apartment", "https://schema.org/HotelRoom", "https://schema.org/SingleFamilyResidence", "https://schema.org/Suite"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "occupancy",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :occupationLocation,
@@ -11557,16 +11707,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :openingHoursSpecification,
       comment: "The opening hours of a certain place.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/Place",
       "https://schema.org/rangeIncludes": "https://schema.org/OpeningHoursSpecification",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "openingHoursSpecification",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :opens,
       comment: "The opening hour of the place or service on the given day(s) of the week.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/OpeningHoursSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/Time",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "opens",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :operatingSystem,
@@ -11684,56 +11834,57 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :ownedFrom,
       comment: "The date and time of obtaining the product.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/OwnershipInfo",
       "https://schema.org/rangeIncludes": "https://schema.org/DateTime",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "ownedFrom",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :ownedThrough,
       comment: "The date and time of giving up ownership on the product.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/OwnershipInfo",
       "https://schema.org/rangeIncludes": "https://schema.org/DateTime",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "ownedThrough",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :ownershipFundingInfo,
       comment: "For an [[Organization]] (often but not necessarily a [[NewsMediaOrganization]]), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the [[funder]] is also available and can be used to make basic funder information machine-readable.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/NewsMediaOrganization", "https://schema.org/Organization"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/AboutPage", "https://schema.org/CreativeWork", "https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "ownershipFundingInfo",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :owns,
       comment: "Products owned by the organization or person.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/rangeIncludes": ["https://schema.org/OwnershipInfo", "https://schema.org/Product"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "owns",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :pageEnd,
       comment: "The page on which the work ends; for example \"138\" or \"xvi\".",
       equivalentProperty: "http://purl.org/ontology/bibo/pageEnd",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": ["https://schema.org/Article", "https://schema.org/Chapter", "https://schema.org/PublicationIssue", "https://schema.org/PublicationVolume"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Integer", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "pageEnd",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :pageStart,
       comment: "The page on which the work starts; for example \"135\" or \"xiii\".",
       equivalentProperty: "http://purl.org/ontology/bibo/pageStart",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": ["https://schema.org/Article", "https://schema.org/Chapter", "https://schema.org/PublicationIssue", "https://schema.org/PublicationVolume"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Integer", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "pageStart",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :pagination,
       comment: "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
       equivalentProperty: "http://purl.org/ontology/bibo/pages",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": ["https://schema.org/Article", "https://schema.org/Chapter", "https://schema.org/PublicationIssue", "https://schema.org/PublicationVolume"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "pagination",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :parent,
@@ -11763,11 +11914,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :parentTaxon,
       comment: "Closest parent taxon of the taxon in question.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Taxon",
       "https://schema.org/domainIncludes": "https://schema.org/Taxon",
       "https://schema.org/inverseOf": "https://schema.org/childTaxon",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Taxon", "https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org/Taxon",
       label: "parentTaxon",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :parents,
@@ -11827,11 +11978,12 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :partOfTrip,
       comment: "Identifies that this [[Trip]] is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Tourism",
       "https://schema.org/domainIncludes": "https://schema.org/Trip",
       "https://schema.org/inverseOf": "https://schema.org/subTrip",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Trip",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1810",
       label: "partOfTrip",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :participant,
@@ -11875,10 +12027,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :payload,
       comment: "The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of [[weight]] and [[payload]]\\n* Note 2: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 3: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 4: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "payload",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :paymentAccepted,
@@ -12004,16 +12156,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :permittedUsage,
       comment: "Indications regarding the permitted usage of the accommodation.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": "https://schema.org/Accommodation",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "permittedUsage",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :petsAllowed,
       comment: "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": ["https://schema.org/Accommodation", "https://schema.org/ApartmentComplex", "https://schema.org/FloorPlan", "https://schema.org/LodgingBusiness"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Boolean", "https://schema.org/Text"],
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "petsAllowed",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :phoneticText,
@@ -12090,8 +12242,8 @@ module RDF::Vocab
       label: "polygon",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :populationType,
-      comment: "Indicates the populationType common to all members of a [[StatisticalPopulation]].",
-      "https://schema.org/domainIncludes": "https://schema.org/StatisticalPopulation",
+      comment: "Indicates the populationType common to all members of a [[StatisticalPopulation]] or all cases within the scope of a [[StatisticalVariable]].",
+      "https://schema.org/domainIncludes": ["https://schema.org/StatisticalPopulation", "https://schema.org/StatisticalVariable"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Class",
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2291",
@@ -12185,10 +12337,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :potentialUse,
       comment: "Intended use of the BioChemEntity by humans.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/ChemicalSubstance",
       "https://schema.org/domainIncludes": ["https://schema.org/ChemicalSubstance", "https://schema.org/MolecularEntity"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/DefinedTerm",
+      "https://schema.org/source": "http://www.bioschemas.org/ChemicalSubstance",
       label: "potentialUse",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :preOp,
@@ -12200,9 +12352,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :predecessorOf,
       comment: "A pointer from a previous, often discontinued variant of the product to its newer variant.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/ProductModel",
       "https://schema.org/rangeIncludes": "https://schema.org/ProductModel",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "predecessorOf",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :pregnancyCategory,
@@ -12266,9 +12418,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :priceComponent,
       comment: "This property links to all [[UnitPriceSpecification]] nodes that apply in parallel for the [[CompoundPriceSpecification]] node.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/CompoundPriceSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/UnitPriceSpecification",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "priceComponent",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :priceComponentType,
@@ -12293,16 +12445,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :priceSpecification,
       comment: "One or more detailed price specifications, indicating the unit price and delivery or payment charges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/TradeAction"],
       "https://schema.org/rangeIncludes": "https://schema.org/PriceSpecification",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "priceSpecification",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :priceType,
       comment: "Defines the type of a price specified for an offered product, for example a list price, a (temporary) sale price or a manufacturer suggested retail price. If multiple prices are specified for an offer the [[priceType]] property can be used to identify the type of each such specified price. The value of priceType can be specified as a value from enumeration PriceTypeEnumeration or as a free form text string for price types that are not already predefined in PriceTypeEnumeration.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/CompoundPriceSpecification", "https://schema.org/UnitPriceSpecification"],
       "https://schema.org/rangeIncludes": ["https://schema.org/PriceTypeEnumeration", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "priceType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :priceValidUntil,
@@ -12416,9 +12568,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :productionDate,
       comment: "The date of production of the item, e.g. vehicle.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": ["https://schema.org/Product", "https://schema.org/Vehicle"],
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "productionDate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :proficiencyLevel,
@@ -12574,9 +12726,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :purchaseDate,
       comment: "The date the item, e.g. vehicle, was purchased by the current owner.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": ["https://schema.org/Product", "https://schema.org/Vehicle"],
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "purchaseDate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :qualifications,
@@ -12742,17 +12894,17 @@ module RDF::Vocab
     property :recordLabel,
       comment: "The label that issued the release.",
       equivalentProperty: "http://purl.org/ontology/mo/label",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicRelease",
       "https://schema.org/rangeIncludes": "https://schema.org/Organization",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "recordLabel",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :recordedAs,
       comment: "An audio recording of the work.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicComposition",
       "https://schema.org/inverseOf": "https://schema.org/recordingOf",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicRecording",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "recordedAs",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :recordedAt,
@@ -12771,25 +12923,26 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :recordingOf,
       comment: "The composition this track is a recording of.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicRecording",
       "https://schema.org/inverseOf": "https://schema.org/recordedAs",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicComposition",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "recordingOf",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :recourseLoan,
       comment: "The only way you get the money back in the event of default is the security. Recourse is where you still have the opportunity to go back to the borrower for the rest of the money.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/LoanOrCredit",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Boolean",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "recourseLoan",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :referenceQuantity,
       comment: "The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/UnitPriceSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsProperties", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"],
       label: "referenceQuantity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :referencesOrder,
@@ -12868,9 +13021,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :releaseDate,
       comment: "The release date of a product or product model. This can be used to distinguish the exact variant of a product.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/Product",
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "releaseDate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :releaseNotes,
@@ -12881,10 +13034,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :releaseOf,
       comment: "The album this is a release of.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": "https://schema.org/MusicRelease",
       "https://schema.org/inverseOf": "https://schema.org/albumRelease",
       "https://schema.org/rangeIncludes": "https://schema.org/MusicAlbum",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "releaseOf",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :releasedEvent,
@@ -12915,10 +13068,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :renegotiableLoan,
       comment: "Whether the terms for payment of interest can be renegotiated during the life of the loan.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/LoanOrCredit",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Boolean",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", "https://github.com/schemaorg/schemaorg/issues/1253"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1253",
       label: "renegotiableLoan",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :repeatCount,
@@ -12979,9 +13133,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :requiredCollateral,
       comment: "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/FIBO",
       "https://schema.org/domainIncludes": "https://schema.org/LoanOrCredit",
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/Thing"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO",
       label: "requiredCollateral",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :requiredGender,
@@ -13210,10 +13364,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :roofLoad,
       comment: "The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]]\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": ["https://schema.org/BusOrCoach", "https://schema.org/Car"],
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "roofLoad",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :rsvpResponse,
@@ -13307,7 +13461,7 @@ module RDF::Vocab
     property :scheduledTime,
       comment: "The time the object is scheduled to.",
       "https://schema.org/domainIncludes": "https://schema.org/PlanAction",
-      "https://schema.org/rangeIncludes": "https://schema.org/DateTime",
+      "https://schema.org/rangeIncludes": ["https://schema.org/Date", "https://schema.org/DateTime"],
       label: "scheduledTime",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :schemaVersion,
@@ -13402,10 +13556,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :seatingCapacity,
       comment: "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "seatingCapacity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :seatingType,
@@ -13437,9 +13591,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :seeks,
       comment: "A pointer to products or services sought by the organization or person (demand).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/rangeIncludes": "https://schema.org/Demand",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "seeks",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :seller,
@@ -13473,9 +13627,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :serialNumber,
       comment: "The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/IndividualProduct", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "serialNumber",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -13709,9 +13863,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sku,
       comment: "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer", "https://schema.org/Product"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "sku",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -13723,18 +13877,18 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :smiles,
       comment: "A specification in form of a line notation for describing the structure of chemical species using short ASCII strings.  Double bond stereochemistry \\ indicators may need to be escaped in the string in formats where the backslash is an escape character.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/MolecularEntity",
       "https://schema.org/domainIncludes": "https://schema.org/MolecularEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
+      "https://schema.org/source": "http://www.bioschemas.org/MolecularEntity",
       label: "smiles",
       subPropertyOf: "https://schema.org/hasRepresentation",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :smokingAllowed,
       comment: "Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": "https://schema.org/Place",
       "https://schema.org/rangeIncludes": "https://schema.org/Boolean",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "smokingAllowed",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sodiumContent,
@@ -13830,10 +13984,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :speed,
       comment: "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]]) should be the maximum speed achievable under regular conditions.\\n\\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot\\n\\n*Note 1: Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the minimal value is zero.\\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the [[valueReference]] property.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "speed",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :spokenByCharacter,
@@ -13901,9 +14055,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :starRating,
       comment: "An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies. Use the author property to indicate the rating organization, e.g. as an Organization with name such as (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": ["https://schema.org/FoodEstablishment", "https://schema.org/LodgingBusiness"],
       "https://schema.org/rangeIncludes": "https://schema.org/Rating",
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "starRating",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :startDate,
@@ -13928,6 +14082,14 @@ module RDF::Vocab
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2493",
       label: "startTime",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :statType,
+      comment: "Indicates the kind of statistic represented by a [[StatisticalVariable]], e.g. mean, count etc. The value of statType is a property, either from within Schema.org (e.g. [[count]], [[median]], [[marginOfError]], [[maxValue]], [[minValue]]) or from other compatible (e.g. RDF) systems such as DataCommons.org or Wikidata.org. ",
+      "https://schema.org/domainIncludes": "https://schema.org/StatisticalVariable",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/rangeIncludes": ["https://schema.org/Property", "https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "statType",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :status,
       comment: "The status of the study (enumerated).",
       "https://schema.org/domainIncludes": ["https://schema.org/MedicalCondition", "https://schema.org/MedicalProcedure", "https://schema.org/MedicalStudy"],
@@ -13937,9 +14099,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :steeringPosition,
       comment: "The position of the steering wheel or similar device (mostly for cars).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/SteeringPositionValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "steeringPosition",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :step,
@@ -14072,11 +14234,12 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :subTrip,
       comment: "Identifies a [[Trip]] that is a subTrip of this Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Tourism",
       "https://schema.org/domainIncludes": "https://schema.org/Trip",
       "https://schema.org/inverseOf": "https://schema.org/partOfTrip",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/Trip",
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", "https://github.com/schemaorg/schemaorg/issues/1810"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1810",
       label: "subTrip",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :subjectOf,
@@ -14097,9 +14260,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :successorOf,
       comment: "A pointer from a newer variant of a product  to its previous, often discontinued predecessor.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/ProductModel",
       "https://schema.org/rangeIncludes": "https://schema.org/ProductModel",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "successorOf",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sugarContent,
@@ -14196,6 +14359,14 @@ module RDF::Vocab
       label: "surface",
       subPropertyOf: "https://schema.org/material",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :syllabusSections,
+      comment: "Indicates (typically several) Syllabus entities that lay out what each section of the overall course will cover.",
+      "https://schema.org/domainIncludes": "https://schema.org/Course",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/rangeIncludes": "https://schema.org/Syllabus",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3281",
+      label: "syllabusSections",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :target,
       comment: "Indicates a target EntryPoint, or url, for an Action.",
       "https://schema.org/domainIncludes": "https://schema.org/Action",
@@ -14248,26 +14419,26 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :taxID,
       comment: "The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "taxID",
       subPropertyOf: "https://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :taxonRank,
       comment: "The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary – typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org/Taxon",
       "https://schema.org/domainIncludes": "https://schema.org/Taxon",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/PropertyValue", "https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org/Taxon",
       label: "taxonRank",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :taxonomicRange,
       comment: "The taxonomic grouping of the organism that expresses, encodes, or in some way related to the BioChemEntity.",
-      "http://purl.org/dc/terms/source": "http://www.bioschemas.org",
       "https://schema.org/domainIncludes": "https://schema.org/BioChemEntity",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/Taxon", "https://schema.org/Text", "https://schema.org/URL"],
+      "https://schema.org/source": "http://www.bioschemas.org",
       label: "taxonomicRange",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :teaches,
@@ -14345,7 +14516,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :thumbnail,
       comment: "Thumbnail image for an image or video.",
-      "https://schema.org/domainIncludes": ["https://schema.org/ImageObject", "https://schema.org/VideoObject"],
+      "https://schema.org/domainIncludes": "https://schema.org/CreativeWork",
       "https://schema.org/rangeIncludes": "https://schema.org/ImageObject",
       label: "thumbnail",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -14388,7 +14559,7 @@ module RDF::Vocab
       label: "timeOfDay",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :timeRequired,
-      comment: "Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience, e.g. 'PT30M', 'PT1H25M'.",
+      comment: "Approximate or typical time it usually takes to work with or through the content of this work for the typical or target audience.",
       "https://schema.org/domainIncludes": "https://schema.org/CreativeWork",
       "https://schema.org/rangeIncludes": "https://schema.org/Duration",
       label: "timeRequired",
@@ -14415,8 +14586,8 @@ module RDF::Vocab
       label: "title",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :titleEIDR,
-      comment: "An [EIDR](https://eidr.org/) (Entertainment Identifier Registry) [[identifier]] representing at the most general/abstract level, a work of film or television.\n\nFor example, the motion picture known as \"Ghostbusters\" has a titleEIDR of  \"10.5240/7EC7-228A-510A-053E-CBB8-J\". This title (or work) may have several variants, which EIDR calls \"edits\". See [[editEIDR]].\n\nSince schema.org types like [[Movie]] and [[TVEpisode]] can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.\n",
-      "https://schema.org/domainIncludes": ["https://schema.org/Movie", "https://schema.org/TVEpisode"],
+      comment: "An [EIDR](https://eidr.org/) (Entertainment Identifier Registry) [[identifier]] representing at the most general/abstract level, a work of film or television.\n\nFor example, the motion picture known as \"Ghostbusters\" has a titleEIDR of  \"10.5240/7EC7-228A-510A-053E-CBB8-J\". This title (or work) may have several variants, which EIDR calls \"edits\". See [[editEIDR]].\n\nSince schema.org types like [[Movie]], [[TVEpisode]], [[TVSeason]], and [[TVSeries]] can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.\n",
+      "https://schema.org/domainIncludes": ["https://schema.org/Movie", "https://schema.org/TVEpisode", "https://schema.org/TVSeason", "https://schema.org/TVSeries"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2469",
@@ -14456,10 +14627,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :tongueWeight,
       comment: "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "tongueWeight",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :tool,
@@ -14471,11 +14642,19 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :torque,
       comment: "The torque (turning force) of the vehicle's engine.\\n\\nTypical unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48 for pound-force per inch\\n\\n* Note 1: You can link to information about how the given value has been determined (e.g. reference RPM) using the [[valueReference]] property.\\n* Note 2: You can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/EngineSpecification",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "torque",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :totalHistoricalEnrollment,
+      comment: "The total number of students that have enrolled in the history of the course.",
+      "https://schema.org/domainIncludes": "https://schema.org/Course",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/rangeIncludes": "https://schema.org/Integer",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3281",
+      label: "totalHistoricalEnrollment",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :totalJobOpenings,
       comment: "The number of positions open for this job posting. Use a positive integer. Do not use if the number of positions is unclear or not known.",
@@ -14513,16 +14692,16 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :touristType,
       comment: "Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc. ",
+      "https://schema.org/contributor": ["https://schema.org/docs/collab/IIT-CNR.it", "https://schema.org/docs/collab/Tourism"],
       "https://schema.org/domainIncludes": ["https://schema.org/TouristAttraction", "https://schema.org/TouristDestination", "https://schema.org/TouristTrip"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Audience", "https://schema.org/Text"],
-      "https://schema.org/source": ["http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism"],
       label: "touristType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :track,
       comment: "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       "https://schema.org/domainIncludes": ["https://schema.org/MusicGroup", "https://schema.org/MusicPlaylist"],
       "https://schema.org/rangeIncludes": ["https://schema.org/ItemList", "https://schema.org/MusicRecording"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
       label: "track",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :trackingNumber,
@@ -14552,10 +14731,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :trailerWeight,
       comment: "The permitted weight of a trailer attached to the vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "trailerWeight",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :trainName,
@@ -14649,18 +14828,24 @@ module RDF::Vocab
       "https://schema.org/rangeIncludes": "https://schema.org/AnatomicalStructure",
       label: "tributary",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :tripOrigin,
+      comment: "The location of origin of the trip, prior to any destination(s).",
+      "https://schema.org/domainIncludes": "https://schema.org/Trip",
+      "https://schema.org/rangeIncludes": "https://schema.org/Place",
+      label: "tripOrigin",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :typeOfBed,
       comment: "The type of bed to which the BedDetail refers, i.e. the type of bed available in the quantity indicated by quantity.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/STI_Accommodation_Ontology",
       "https://schema.org/domainIncludes": "https://schema.org/BedDetails",
       "https://schema.org/rangeIncludes": ["https://schema.org/BedType", "https://schema.org/Text"],
-      "https://schema.org/source": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology",
       label: "typeOfBed",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :typeOfGood,
       comment: "The product that this structured value is referring to.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/OwnershipInfo", "https://schema.org/TypeAndQuantityNode"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Product", "https://schema.org/Service"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "typeOfGood",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :typicalAgeRange,
@@ -14692,9 +14877,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :unitCode,
       comment: "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/PropertyValue", "https://schema.org/QuantitativeValue", "https://schema.org/TypeAndQuantityNode", "https://schema.org/UnitPriceSpecification"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "unitCode",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :unitText,
@@ -14705,10 +14890,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :unnamedSourcesPolicy,
       comment: "For an [[Organization]] (typically a [[NewsMediaOrganization]]), a statement about policy on use of unnamed sources and the decision process required.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": ["https://schema.org/NewsMediaOrganization", "https://schema.org/Organization"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "unnamedSourcesPolicy",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -14795,9 +14981,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :validFrom,
       comment: "The date when the item becomes valid.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/LocationFeatureSpecification", "https://schema.org/MonetaryAmount", "https://schema.org/Offer", "https://schema.org/OpeningHoursSpecification", "https://schema.org/Permit", "https://schema.org/PriceSpecification"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Date", "https://schema.org/DateTime"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "validFrom",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :validIn,
@@ -14809,9 +14995,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :validThrough,
       comment: "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/JobPosting", "https://schema.org/LocationFeatureSpecification", "https://schema.org/MonetaryAmount", "https://schema.org/Offer", "https://schema.org/OpeningHoursSpecification", "https://schema.org/PriceSpecification"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Date", "https://schema.org/DateTime"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "validThrough",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :validUntil,
@@ -14821,17 +15007,17 @@ module RDF::Vocab
       label: "validUntil",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :value,
-      comment: "The value of the quantitative value or property value node.\\n\\n* For [[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for values is 'Number'.\\n* For [[PropertyValue]], it can be 'Text', 'Number', 'Boolean', or 'StructuredValue'.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      comment: "The value of a [[QuantitativeValue]] (including [[Observation]]) or property value node.\\n\\n* For [[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for values is 'Number'.\\n* For [[PropertyValue]], it can be 'Text', 'Number', 'Boolean', or 'StructuredValue'.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/MonetaryAmount", "https://schema.org/PropertyValue", "https://schema.org/QuantitativeValue"],
       "https://schema.org/rangeIncludes": ["https://schema.org/Boolean", "https://schema.org/Number", "https://schema.org/StructuredValue", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "value",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :valueAddedTaxIncluded,
       comment: "Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/PriceSpecification",
       "https://schema.org/rangeIncludes": "https://schema.org/Boolean",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "valueAddedTaxIncluded",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :valueMaxLength,
@@ -14860,9 +15046,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :valueReference,
       comment: "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/PropertyValue", "https://schema.org/QualitativeValue", "https://schema.org/QuantitativeValue"],
       "https://schema.org/rangeIncludes": ["https://schema.org/DefinedTerm", "https://schema.org/Enumeration", "https://schema.org/MeasurementTypeEnumeration", "https://schema.org/PropertyValue", "https://schema.org/QualitativeValue", "https://schema.org/QuantitativeValue", "https://schema.org/StructuredValue", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "valueReference",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :valueRequired,
@@ -14872,10 +15058,10 @@ module RDF::Vocab
       label: "valueRequired",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :variableMeasured,
-      comment: "The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.",
-      "https://schema.org/domainIncludes": "https://schema.org/Dataset",
+      comment: "The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue, or more explicitly as a [[StatisticalVariable]].",
+      "https://schema.org/domainIncludes": ["https://schema.org/Dataset", "https://schema.org/Observation"],
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/rangeIncludes": ["https://schema.org/PropertyValue", "https://schema.org/Text"],
+      "https://schema.org/rangeIncludes": ["https://schema.org/Property", "https://schema.org/PropertyValue", "https://schema.org/StatisticalVariable", "https://schema.org/Text"],
       "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1083",
       label: "variableMeasured",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -14896,74 +15082,74 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vatID,
       comment: "The Value-added Tax ID of the organization or person.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Organization", "https://schema.org/Person"],
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "vatID",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleConfiguration,
       comment: "A short text indicating the configuration of the vehicle, e.g. '5dr hatchback ST 2.5 MT 225 hp' or 'limited edition'.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleConfiguration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleEngine,
       comment: "Information about the engine or engines of the vehicle.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/EngineSpecification",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleEngine",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleIdentificationNumber,
       comment: "The Vehicle Identification Number (VIN) is a unique serial number used by the automotive industry to identify individual motor vehicles.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleIdentificationNumber",
       subPropertyOf: "https://schema.org/serialNumber",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleInteriorColor,
       comment: "The color or color combination of the interior of the vehicle.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleInteriorColor",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleInteriorType,
       comment: "The type or material of the interior of the vehicle (e.g. synthetic fabric, leather, wood, etc.). While most interior types are characterized by the material used, an interior type can also be based on vehicle usage or target audience.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/Text",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleInteriorType",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleModelDate,
       comment: "The release date of a vehicle model (often used to differentiate versions of the same make and model).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": "https://schema.org/Date",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleModelDate",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleSeatingCapacity,
       comment: "The number of passengers that can be seated in the vehicle, both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/Number", "https://schema.org/QuantitativeValue"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleSeatingCapacity",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleSpecialUsage,
       comment: "Indicates whether the vehicle has been used for special purposes, like commercial rental, driving school, or as a taxi. The legislation in many countries requires this information to be revealed when offering a car for sale.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CarUsageType", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleSpecialUsage",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vehicleTransmission,
       comment: "The type of component used for transmitting the power from a rotating power source to the wheels or other relevant component(s) (\"gearbox\" for cars).",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/rangeIncludes": ["https://schema.org/QualitativeValue", "https://schema.org/Text", "https://schema.org/URL"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "vehicleTransmission",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :vendor,
@@ -14976,10 +15162,11 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :verificationFactCheckingPolicy,
       comment: "Disclosure about verification and fact-checking processes for a [[NewsMediaOrganization]] or other fact-checking [[Organization]].",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/TP",
       "https://schema.org/domainIncludes": "https://schema.org/NewsMediaOrganization",
       "https://schema.org/isPartOf": "https://pending.schema.org",
       "https://schema.org/rangeIncludes": ["https://schema.org/CreativeWork", "https://schema.org/URL"],
-      "https://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1525", "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#TP"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1525",
       label: "verificationFactCheckingPolicy",
       subPropertyOf: "https://schema.org/publishingPrinciples",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -15016,9 +15203,9 @@ module RDF::Vocab
     property :volumeNumber,
       comment: "Identifies the volume of publication or multi-part work; for example, \"iii\" or \"2\".",
       equivalentProperty: "http://purl.org/ontology/bibo/volume",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": "https://schema.org/PublicationVolume",
       "https://schema.org/rangeIncludes": ["https://schema.org/Integer", "https://schema.org/Text"],
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "volumeNumber",
       subPropertyOf: "https://schema.org/position",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -15031,9 +15218,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :warranty,
       comment: "The warranty promise(s) included in the offer.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/Demand", "https://schema.org/Offer"],
       "https://schema.org/rangeIncludes": "https://schema.org/WarrantyPromise",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "warranty",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :warrantyPromise,
@@ -15045,9 +15232,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :warrantyScope,
       comment: "The scope of the warranty promise.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": "https://schema.org/WarrantyPromise",
       "https://schema.org/rangeIncludes": "https://schema.org/WarrantyScope",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "warrantyScope",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :webCheckinTime,
@@ -15066,25 +15253,25 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :weight,
       comment: "The weight of the product or person.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsTerms",
       "https://schema.org/domainIncludes": ["https://schema.org/OfferShippingDetails", "https://schema.org/Person", "https://schema.org/Product"],
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms",
       label: "weight",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :weightTotal,
       comment: "The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "weightTotal",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :wheelbase,
       comment: "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/domainIncludes": "https://schema.org/Vehicle",
       "https://schema.org/isPartOf": "https://auto.schema.org",
       "https://schema.org/rangeIncludes": "https://schema.org/QuantitativeValue",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "wheelbase",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :width,
@@ -15108,10 +15295,10 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :workExample,
       comment: "Example/instance/realization/derivation of the concept of this creative work. E.g. the paperback edition, first edition, or e-book.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/bibex",
       "https://schema.org/domainIncludes": "https://schema.org/CreativeWork",
       "https://schema.org/inverseOf": "https://schema.org/exampleOfWork",
       "https://schema.org/rangeIncludes": "https://schema.org/CreativeWork",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex",
       label: "workExample",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :workFeatured,
@@ -15236,7 +15423,7 @@ module RDF::Vocab
       type: "https://schema.org/PhysicalActivityCategory"
     term :AlbumRelease,
       comment: "AlbumRelease.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "AlbumRelease",
       type: "https://schema.org/MusicAlbumReleaseType"
     term :AlcoholConsideration,
@@ -15247,7 +15434,7 @@ module RDF::Vocab
       type: "https://schema.org/AdultOrientedEnumeration"
     term :AllWheelDriveConfiguration,
       comment: "All-wheel Drive is a transmission layout where the engine drives all four wheels.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "AllWheelDriveConfiguration",
       type: "https://schema.org/DriveWheelConfigurationValue"
     term :AllergiesHealthAspect,
@@ -15284,8 +15471,9 @@ module RDF::Vocab
     term :AuthoritativeLegalValue,
       comment: "Indicates that the publisher gives some special status to the publication of the document. (\"The Queens Printer\" version of a UK Act of Parliament, or the PDF version of a Directive published by the EU Office of Publications.) Something \"Authoritative\" is considered to be also [[OfficialLegalValue]].",
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-authoritative",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "AuthoritativeLegalValue",
       type: "https://schema.org/LegalValueLevel"
     term :Ayurvedic,
@@ -15394,7 +15582,7 @@ module RDF::Vocab
       type: "https://schema.org/BodyMeasurementTypeEnumeration"
     term :BroadcastRelease,
       comment: "BroadcastRelease.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "BroadcastRelease",
       type: "https://schema.org/MusicAlbumReleaseType"
     term :BusinessSupport,
@@ -15405,7 +15593,7 @@ module RDF::Vocab
       type: "https://schema.org/GovernmentBenefitsType"
     term :CDFormat,
       comment: "CDFormat.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "CDFormat",
       type: "https://schema.org/MusicReleaseFormatType"
     term :CT,
@@ -15430,7 +15618,7 @@ module RDF::Vocab
       type: "https://schema.org/MedicalObservationalStudyDesign"
     term :CassetteFormat,
       comment: "CassetteFormat.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "CassetteFormat",
       type: "https://schema.org/MusicReleaseFormatType"
     term :CausesHealthAspect,
@@ -15482,7 +15670,7 @@ module RDF::Vocab
       type: "https://schema.org/MedicalSpecialty"
     term :CompilationAlbum,
       comment: "CompilationAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "CompilationAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :Completed,
@@ -15507,12 +15695,12 @@ module RDF::Vocab
       type: "https://schema.org/MedicalObservationalStudyDesign"
     term :DJMixAlbum,
       comment: "DJMixAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "DJMixAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :DVDFormat,
       comment: "DVDFormat.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "DVDFormat",
       type: "https://schema.org/MusicReleaseFormatType"
     term :DamagedCondition,
@@ -15534,13 +15722,14 @@ module RDF::Vocab
     term :DefinitiveLegalValue,
       comment: "Indicates a document for which the text is conclusively what the law says and is legally binding. (E.g. the digitally signed version of an Official Journal.)\n  Something \"Definitive\" is considered to be also [[AuthoritativeLegalValue]].",
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-definitive",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "DefinitiveLegalValue",
       type: "https://schema.org/LegalValueLevel"
     term :DemoAlbum,
       comment: "DemoAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "DemoAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :DemoGameAvailability,
@@ -15589,12 +15778,12 @@ module RDF::Vocab
       type: "https://schema.org/MedicalSpecialty"
     term :DigitalAudioTapeFormat,
       comment: "DigitalAudioTapeFormat.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "DigitalAudioTapeFormat",
       type: "https://schema.org/MusicReleaseFormatType"
     term :DigitalFormat,
       comment: "DigitalFormat.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "DigitalFormat",
       type: "https://schema.org/MusicReleaseFormatType"
     term :DisabilitySupport,
@@ -15626,8 +15815,8 @@ module RDF::Vocab
       type: "https://schema.org/PriceComponentTypeEnumeration"
     term :DrivingSchoolVehicleUsage,
       comment: "Indicates the usage of the vehicle for driving school.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/isPartOf": "https://auto.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "DrivingSchoolVehicleUsage",
       type: "https://schema.org/CarUsageType"
     term :EBook,
@@ -15636,7 +15825,7 @@ module RDF::Vocab
       type: "https://schema.org/BookFormatType"
     term :EPRelease,
       comment: "EPRelease.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "EPRelease",
       type: "https://schema.org/MusicAlbumReleaseType"
     term :EUEnergyEfficiencyCategoryA,
@@ -15773,6 +15962,12 @@ module RDF::Vocab
       "https://schema.org/isPartOf": "https://health-lifesci.schema.org",
       label: "EvidenceLevelC",
       type: "https://schema.org/MedicalEvidenceLevel"
+    term :ExampleMeasurementMethodEnum,
+      comment: "An example [[MeasurementMethodEnum]] (to remove when real enums are added).",
+      "https://schema.org/isPartOf": "https://pending.schema.org",
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2564",
+      label: "ExampleMeasurementMethodEnum",
+      type: "https://schema.org/MeasurementMethodEnum"
     term :ExchangeRefund,
       comment: "Specifies that a refund can be done as an exchange for the same product.",
       "https://schema.org/isPartOf": "https://pending.schema.org",
@@ -15833,7 +16028,7 @@ module RDF::Vocab
       type: "https://schema.org/PhysicalActivityCategory"
     term :FourWheelDriveConfiguration,
       comment: "Four-wheel drive is a transmission layout where the engine primarily drives two wheels with a part-time four-wheel drive capability.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "FourWheelDriveConfiguration",
       type: "https://schema.org/DriveWheelConfigurationValue"
     term :FreeReturn,
@@ -15849,7 +16044,7 @@ module RDF::Vocab
       type: "https://schema.org/DayOfWeek"
     term :FrontWheelDriveConfiguration,
       comment: "Front-wheel drive is a transmission layout where the engine drives the front wheels.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "FrontWheelDriveConfiguration",
       type: "https://schema.org/DriveWheelConfigurationValue"
     term :FullGameAvailability,
@@ -15980,8 +16175,9 @@ module RDF::Vocab
     term :InForce,
       comment: "Indicates that a legislation is in force.",
       exactMatch: "http://data.europa.eu/eli/ontology#InForce-inForce",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "InForce",
       type: "https://schema.org/LegalForceStatus"
     term :InStock,
@@ -16043,12 +16239,12 @@ module RDF::Vocab
       type: "https://schema.org/MedicalSpecialty"
     term :LaserDiscFormat,
       comment: "LaserDiscFormat.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "LaserDiscFormat",
       type: "https://schema.org/MusicReleaseFormatType"
     term :LeftHandDriving,
       comment: "The steering position is on the left side of the vehicle (viewed from the main direction of driving).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "LeftHandDriving",
       type: "https://schema.org/SteeringPositionValue"
     term :LeisureTimeActivity,
@@ -16074,7 +16270,7 @@ module RDF::Vocab
       type: "https://schema.org/PriceTypeEnumeration"
     term :LiveAlbum,
       comment: "LiveAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "LiveAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :LivingWithHealthAspect,
@@ -16189,7 +16385,7 @@ module RDF::Vocab
       type: "https://schema.org/EventAttendanceModeEnumeration"
     term :MixtapeAlbum,
       comment: "MixtapeAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "MixtapeAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :MobileWebPlatform,
@@ -16488,8 +16684,9 @@ module RDF::Vocab
     term :NotInForce,
       comment: "Indicates that a legislation is currently not in force.",
       exactMatch: "http://data.europa.eu/eli/ontology#InForce-notInForce",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "NotInForce",
       type: "https://schema.org/LegalForceStatus"
     term :NotYetRecruiting,
@@ -16527,8 +16724,9 @@ module RDF::Vocab
     term :OfficialLegalValue,
       comment: "All the documents published by an official publisher should have at least the legal value level \"OfficialLegalValue\". This indicates that the document was published by an organisation with the public task of making it available (e.g. a consolidated version of an EU directive published by the EU Office of Publications).",
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-official",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "OfficialLegalValue",
       type: "https://schema.org/LegalValueLevel"
     term :OfflineEventAttendanceMode,
@@ -16672,7 +16870,7 @@ module RDF::Vocab
       type: "https://schema.org/BookFormatType"
     term :ParcelService,
       comment: "A private parcel service as the delivery mode available for a certain offer.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#DHL\\n* http://purl.org/goodrelations/v1#FederalExpress\\n* http://purl.org/goodrelations/v1#UPS\n      ",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "ParcelService",
       type: "https://schema.org/DeliveryMethod"
     term :ParentalSupport,
@@ -16688,8 +16886,9 @@ module RDF::Vocab
     term :PartiallyInForce,
       comment: "Indicates that parts of the legislation are in force, and parts are not.",
       exactMatch: "http://data.europa.eu/eli/ontology#InForce-partiallyInForce",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "PartiallyInForce",
       type: "https://schema.org/LegalForceStatus"
     term :Pathology,
@@ -16817,7 +17016,7 @@ module RDF::Vocab
       type: "https://schema.org/MedicalSpecialty"
     term :PublicHolidays,
       comment: "This stands for any day that is a public holiday; it is a placeholder for all official public holidays in some particular location. While not technically a \"day of the week\", it can be used with [[OpeningHoursSpecification]]. In the context of an opening hours specification it can be used to indicate opening hours on public holidays, overriding general opening hours for the day of the week on which a public holiday occurs.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/GoodRelationsClass",
       label: "PublicHolidays",
       type: "https://schema.org/DayOfWeek"
     term :Pulmonary,
@@ -16841,7 +17040,7 @@ module RDF::Vocab
       type: "https://schema.org/DigitalDocumentPermissionType"
     term :RearWheelDriveConfiguration,
       comment: "Real-wheel drive is a transmission layout where the engine drives the rear wheels.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "RearWheelDriveConfiguration",
       type: "https://schema.org/DriveWheelConfigurationValue"
     term :Recruiting,
@@ -16877,7 +17076,7 @@ module RDF::Vocab
       type: "https://schema.org/HealthAspectEnumeration"
     term :RemixAlbum,
       comment: "RemixAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "RemixAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :Renal,
@@ -16887,8 +17086,8 @@ module RDF::Vocab
       type: "https://schema.org/MedicalSpecialty"
     term :RentalVehicleUsage,
       comment: "Indicates the usage of the vehicle as a rental car.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/isPartOf": "https://auto.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "RentalVehicleUsage",
       type: "https://schema.org/CarUsageType"
     term :ReservationCancelled,
@@ -16989,7 +17188,7 @@ module RDF::Vocab
       type: "https://schema.org/MedicalSpecialty"
     term :RightHandDriving,
       comment: "The steering position is on the right side of the vehicle (viewed from the main direction of driving).",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "RightHandDriving",
       type: "https://schema.org/SteeringPositionValue"
     term :RisksOrComplicationsHealthAspect,
@@ -17089,7 +17288,7 @@ module RDF::Vocab
       type: "https://schema.org/GamePlayMode"
     term :SingleRelease,
       comment: "SingleRelease.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "SingleRelease",
       type: "https://schema.org/MusicAlbumReleaseType"
     term :SizeSystemImperial,
@@ -17115,7 +17314,7 @@ module RDF::Vocab
       type: "https://schema.org/ItemAvailability"
     term :SoundtrackAlbum,
       comment: "SoundtrackAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "SoundtrackAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :SpeechPathology,
@@ -17125,7 +17324,7 @@ module RDF::Vocab
       type: "https://schema.org/MedicalSpecialty"
     term :SpokenWordAlbum,
       comment: "SpokenWordAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "SpokenWordAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :StagedContent,
@@ -17153,7 +17352,7 @@ module RDF::Vocab
       type: "https://schema.org/PhysicalActivityCategory"
     term :StudioAlbum,
       comment: "StudioAlbum.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "StudioAlbum",
       type: "https://schema.org/MusicAlbumProductionType"
     term :Subscription,
@@ -17185,8 +17384,8 @@ module RDF::Vocab
       type: "https://schema.org/HealthAspectEnumeration"
     term :TaxiVehicleUsage,
       comment: "Indicates the usage of the car as a taxi.",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "https://schema.org/isPartOf": "https://auto.schema.org",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group",
       label: "TaxiVehicleUsage",
       type: "https://schema.org/CarUsageType"
     term :Terminated,
@@ -17297,8 +17496,9 @@ module RDF::Vocab
     term :UnofficialLegalValue,
       comment: "Indicates that a document has no particular or special standing (e.g. a republication of a law by a private publisher).",
       exactMatch: "http://data.europa.eu/eli/ontology#LegalValue-unofficial",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/ELI",
       "https://schema.org/isPartOf": "https://pending.schema.org",
-      "https://schema.org/source": ["http://publications.europa.eu/mdr/eli/index.html", "https://github.com/schemaorg/schemaorg/issues/1156"],
+      "https://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1156",
       label: "UnofficialLegalValue",
       type: "https://schema.org/LegalValueLevel"
     term :Urologic,
@@ -17330,7 +17530,7 @@ module RDF::Vocab
       type: "https://schema.org/MapCategoryType"
     term :VinylFormat,
       comment: "VinylFormat.",
-      "https://schema.org/source": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ",
+      "https://schema.org/contributor": "https://schema.org/docs/collab/MBZ",
       label: "VinylFormat",
       type: "https://schema.org/MusicReleaseFormatType"
     term :ViolenceConsideration,
