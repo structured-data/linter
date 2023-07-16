@@ -9,18 +9,18 @@ GIT
 
 GIT
   remote: https://github.com/dougbarth/jsonlint
-  revision: f817a0b401748d500a833b08f7ab160c4c13b9c1
+  revision: 7bbfa062b9d06b4a1ad491c9dad60db0e088f10b
   specs:
-    jsonlint (0.3.0)
+    jsonlint (0.4.0)
       oj (~> 3)
       optimist (~> 3)
 
 GIT
   remote: https://github.com/dryruby/ebnf
-  revision: 74c4c16fbe975fff23c1075c0e06796706573560
+  revision: cb84726cc68ca1e3225d8f90ea9e1c397b811a84
   branch: develop
   specs:
-    ebnf (2.3.2)
+    ebnf (2.3.4)
       htmlentities (~> 4.3)
       rdf (~> 3.2)
       scanf (~> 1.0)
@@ -29,20 +29,20 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld
-  revision: 32d4deb5743ea5126f3e52d15d8d3e0d3d754d1d
+  revision: d7c54afa47406b5a9d1c11e1acde713fd2da9f84
   branch: develop
   specs:
-    json-ld (3.2.3)
+    json-ld (3.2.5)
       htmlentities (~> 4.3)
-      json-canonicalization (~> 0.3)
+      json-canonicalization (~> 0.3, >= 0.3.2)
       link_header (~> 0.0, >= 0.0.8)
       multi_json (~> 1.15)
-      rack (~> 2.2)
-      rdf (~> 3.2, >= 3.2.9)
+      rack (>= 2.2, < 4)
+      rdf (~> 3.2, >= 3.2.10)
 
 GIT
   remote: https://github.com/ruby-rdf/json-ld-preloaded
-  revision: 35d9e1174e51c90964a638e54446320a358d9563
+  revision: 4280d42074a059d000476dad55cd764d8e6759f2
   branch: develop
   specs:
     json-ld-preloaded (3.2.2)
@@ -51,24 +51,25 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rack-rdf
-  revision: 4be949c25d30fc92a695f9d3b314ae29331a477a
+  revision: 07730ab3639251c3a9af0564e330dd926f714ce3
   branch: develop
   specs:
     rack-rdf (3.2.0)
-      rack (~> 2.2)
+      rack (>= 2.2, < 4)
       rdf (~> 3.2)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf
-  revision: d83714d37a61283d6c81deba7ee7dd1b71ddca24
+  revision: 0dd3ed0c5967220ffd95cb3b2a7aa2b834b20a88
   branch: develop
   specs:
-    rdf (3.2.9)
+    rdf (3.2.11)
+      bcp47_spec (~> 0.2)
       link_header (~> 0.0, >= 0.0.8)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-microdata
-  revision: 4c610e65ebc516f8de524d6ad0b510e63afcb6dc
+  revision: 5ea34be7eb776a5ab085916eed4ea6ab11ab2ef9
   branch: develop
   specs:
     rdf-microdata (3.2.1)
@@ -80,7 +81,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-ordered-repo
-  revision: 1e81607430a8e18bd5298dab58e6e8b51428d789
+  revision: 5df28a9976d2b349e6ee473d92c8c941d38d6846
   branch: develop
   specs:
     rdf-ordered-repo (3.2.1)
@@ -88,11 +89,11 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
-  revision: fb9e6666c35131717ceeabe1fd347e02730788e8
+  revision: 4827f083ed188480332818222a90e93fb445d5ac
   branch: develop
   specs:
-    rdf-rdfa (3.2.0)
-      haml (~> 5.2)
+    rdf-rdfa (3.2.2)
+      haml (>= 5.2, < 7)
       htmlentities (~> 4.3)
       rdf (~> 3.2)
       rdf-aggregate-repo (~> 3.2)
@@ -101,18 +102,18 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-rdfxml
-  revision: e9d92e51e1f7ad704291767d4aecbba16711ad10
+  revision: 8c579c668af4c8ea9fb8232d1fb7eb429ace5f84
   branch: develop
   specs:
-    rdf-rdfxml (3.2.0)
+    rdf-rdfxml (3.2.1)
+      builder (~> 3.2)
       htmlentities (~> 4.3)
       rdf (~> 3.2)
-      rdf-rdfa (~> 3.2)
       rdf-xsd (~> 3.2)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-reasoner
-  revision: 31c78d18a7e1376f50e39a4047bcb01afd051ff5
+  revision: 5069fb85d999856de05f51d7253e98cb9c4022a6
   branch: develop
   specs:
     rdf-reasoner (0.8.0)
@@ -121,7 +122,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-spec
-  revision: edd4993384c1bb180f53fd16fa88f8498e4b9917
+  revision: d63ab2e4639d2f2f4d218f660ab85810da58ca92
   branch: develop
   specs:
     rdf-spec (3.2.0)
@@ -135,7 +136,7 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-turtle
-  revision: ad06410d2c80567ef6f04616e1e1dfc53345129c
+  revision: ce802788195845d207c4c86209de7f48147bb3be
   branch: develop
   specs:
     rdf-turtle (3.2.1)
@@ -144,15 +145,15 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: 767e2981f3484d2f837ee822404b868aa310e594
+  revision: 60f64a4dc1a4403af402b311b1317e4b0458a23f
   branch: develop
   specs:
-    rdf-vocab (3.2.3)
+    rdf-vocab (3.2.6)
       rdf (~> 3.2, >= 3.2.4)
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-xsd
-  revision: d409223c8b7576136af625064031bc2dfe3cbcd5
+  revision: e71d9c3063fd4aad2b9174396e86b84df2266e27
   branch: develop
   specs:
     rdf-xsd (3.2.1)
@@ -161,64 +162,61 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/sinatra-rdf
-  revision: 3ce7bb1c8ef1fcdefc569a8544b9ca8ebd42bb2b
+  revision: 34623b5a92f87d73f88db5c4a42d4837d27fe592
   branch: develop
   specs:
     sinatra-rdf (3.2.0)
       rack-rdf (~> 3.2)
-      sinatra (~> 2.1)
+      sinatra (>= 2.2, < 4)
 
 PATH
   remote: .
   specs:
-    linter (3.17.0)
+    linter (3.22.0)
       activesupport (>= 5, < 8)
-      equivalent-xml
+      equivalent-xml (~> 0.6)
       erubis (~> 2.7)
       haml (~> 5.2)
       json-ld (~> 3.1)
-      json-ld-preloaded (~> 3.1)
-      nokogiri (~> 1.13, >= 1.13.8)
-      puma (~> 5.5)
+      json-ld-preloaded (~> 3.2)
+      nokogiri (~> 1.14)
+      rack (~> 2.2)
       rack-cache (~> 1.13)
-      rdf (~> 3.1, >= 3.1.15)
-      rdf-microdata (~> 3.1)
-      rdf-rdfa (~> 3.1)
-      rdf-rdfxml (~> 3.1)
-      rdf-reasoner (~> 0.7)
-      rdf-turtle (~> 3.1)
-      rdf-vocab (~> 3.1)
-      rdf-xsd (~> 3.1)
+      rdf (~> 3.2)
+      rdf-microdata (~> 3.2)
+      rdf-rdfa (~> 3.2)
+      rdf-rdfxml (~> 3.2)
+      rdf-reasoner (~> 0.8)
+      rdf-turtle (~> 3.2)
+      rdf-vocab (~> 3.2)
+      rdf-xsd (~> 3.2)
       sass (~> 3.7)
-      sinatra (~> 2.2)
-      sinatra-asset-pipeline (~> 2.2)
-      sinatra-rdf (~> 3.1)
+      sinatra (~> 3.0)
+      sinatra-rdf (~> 3.2)
+      sprockets (~> 4.2)
       sprockets-helpers (~> 1.4)
       uglifier (~> 4.2)
 
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (7.0.4.3)
+    activesupport (7.0.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-    addressable (2.8.1)
+    addressable (2.8.4)
       public_suffix (>= 2.0.2, < 6.0)
-    amazing_print (1.4.0)
-    better_errors (2.9.1)
-      coderay (>= 1.0.0)
+    amazing_print (1.5.0)
+    bcp47_spec (0.2.1)
+    better_errors (2.10.1)
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
+      rouge (>= 1.0.0)
     binding_of_caller (1.0.0)
       debug_inspector (>= 0.0.1)
+    builder (3.2.4)
     byebug (11.1.3)
-    coderay (1.1.3)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     concurrent-ruby (1.2.2)
     crack (0.4.5)
       rexml
@@ -241,40 +239,40 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
-    i18n (1.12.0)
+    i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    json-canonicalization (0.3.1)
+    json-canonicalization (0.3.2)
     link_header (0.0.8)
     matrix (0.4.2)
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2023.0218.1)
-    minitest (5.18.0)
+    minitest (5.18.1)
     multi_json (1.15.0)
-    mustermann (2.0.2)
+    mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     netrc (0.11.0)
-    nio4r (2.5.8)
-    nokogiri (1.14.3-arm64-darwin)
+    nio4r (2.5.9)
+    nokogiri (1.15.3-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.14.3-x86_64-darwin)
+    nokogiri (1.15.3-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.14.3-x86_64-linux)
+    nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
-    oj (3.14.2)
+    oj (3.15.0)
     optimist (3.0.1)
-    public_suffix (5.0.1)
-    puma (5.6.5)
+    public_suffix (5.0.3)
+    puma (6.3.0)
       nio4r (~> 2.0)
-    racc (1.6.2)
-    rack (2.2.6.4)
+    racc (1.7.1)
+    rack (2.2.7)
     rack-cache (1.13.0)
       rack (>= 0.4)
-    rack-protection (2.2.4)
+    rack-protection (3.0.6)
       rack
-    rack-test (1.1.0)
-      rack (>= 1.0, < 3)
-    rake (12.3.3)
+    rack-test (2.1.0)
+      rack (>= 1.3)
+    rake (13.0.6)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -288,22 +286,23 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.5)
+    rouge (4.1.2)
     rspec (3.12.0)
       rspec-core (~> 3.12.0)
       rspec-expectations (~> 3.12.0)
       rspec-mocks (~> 3.12.0)
-    rspec-core (3.12.1)
+    rspec-core (3.12.2)
       rspec-support (~> 3.12.0)
-    rspec-expectations (3.12.2)
+    rspec-expectations (3.12.3)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
     rspec-its (1.3.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.12.4)
+    rspec-mocks (3.12.6)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
-    rspec-support (3.12.0)
+    rspec-support (3.12.1)
     ruby2_keywords (0.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -313,29 +312,22 @@ GEM
     scanf (1.0.0)
     shotgun (0.9.2)
       rack (>= 1.0)
-    sinatra (2.2.4)
-      mustermann (~> 2.0)
-      rack (~> 2.2)
-      rack-protection (= 2.2.4)
+    sinatra (3.0.6)
+      mustermann (~> 3.0)
+      rack (~> 2.2, >= 2.2.4)
+      rack-protection (= 3.0.6)
       tilt (~> 2.0)
-    sinatra-asset-pipeline (2.2.1)
-      coffee-script (~> 2.4)
-      rake (~> 12.3)
-      sass (~> 3.5)
-      sinatra (~> 2.0)
-      sprockets (~> 3.7)
-      sprockets-helpers (~> 1.2)
-    sprockets (3.7.2)
+    sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
-      rack (> 1, < 3)
+      rack (>= 2.2.4, < 4)
     sprockets-helpers (1.4.0)
       sprockets (>= 2.2)
-    sxp (1.2.3)
+    sxp (1.2.4)
       matrix (~> 0.4)
       rdf (~> 3.2)
     syntax (1.2.2)
-    temple (0.10.0)
-    tilt (2.1.0)
+    temple (0.10.2)
+    tilt (2.2.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     uglifier (4.2.0)
@@ -348,13 +340,9 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    webrick (1.7.0)
-    yard (0.9.28)
-      webrick (~> 1.7.0)
+    yard (0.9.34)
 
 PLATFORMS
-  arm64-darwin-20
-  arm64-darwin-21
   arm64-darwin-22
   x86_64-darwin-20
   x86_64-linux
@@ -369,8 +357,9 @@ DEPENDENCIES
   json-ld-preloaded!
   jsonlint!
   linter!
+  puma (~> 6.1)
   rack-rdf!
-  rack-test (~> 1.1)
+  rack-test (~> 2.1)
   rake
   rdf!
   rdf-microdata!
@@ -383,15 +372,15 @@ DEPENDENCIES
   rdf-vocab!
   rdf-xsd!
   rest-client-components!
-  rspec (~> 3.10)
+  rspec (~> 3.12)
   rspec-its (~> 1.3)
   shotgun (>= 0.9.2)
   sinatra-rdf!
   syntax
-  yard (~> 0.9, >= 0.9.26)
+  yard (~> 0.9, >= 0.9.34)
 
 RUBY VERSION
-   ruby 3.1.3p185
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.7
+   2.4.17

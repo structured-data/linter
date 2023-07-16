@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gemspec
-ruby "3.1.3"
+ruby "3.2.2"
 
 # Include non-released gems first
 gem "sinatra-rdf",        git: "https://github.com/ruby-rdf/sinatra-rdf", branch: "develop"

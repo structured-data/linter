@@ -20,35 +20,43 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version       = '>= 3.0'
   gem.requirements                = []
-  gem.add_runtime_dependency      'activesupport',      '>= 5', '< 8'
-  gem.add_runtime_dependency      'equivalent-xml'
-  gem.add_runtime_dependency      'erubis',             '~> 2.7'
-  gem.add_runtime_dependency      'haml',               '~> 5.2'
+
+  # RDF dependencies
+  gem.add_runtime_dependency      'sinatra-rdf',        '~> 3.2'
+  gem.add_runtime_dependency      'equivalent-xml',     '~> 0.6'
   gem.add_runtime_dependency      'json-ld',            '~> 3.1'
-  gem.add_runtime_dependency      'json-ld-preloaded',  '~> 3.1'
-  gem.add_runtime_dependency      'nokogiri',           '~> 1.13', '>= 1.13.8'
-  gem.add_runtime_dependency      'puma',               '~> 5.5'
-  gem.add_runtime_dependency      'rack-cache',         '~> 1.13'
-  gem.add_runtime_dependency      'rdf',                '~> 3.1', '>= 3.1.15'
-  gem.add_runtime_dependency      'rdf-microdata',      '~> 3.1'
-  gem.add_runtime_dependency      'rdf-rdfa',           '~> 3.1'
-  gem.add_runtime_dependency      'rdf-rdfxml',         '~> 3.1'
-  gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.7'
-  gem.add_runtime_dependency      'rdf-turtle',         '~> 3.1'
-  gem.add_runtime_dependency      'rdf-vocab',          '~> 3.1'
-  gem.add_runtime_dependency      'rdf-xsd',            '~> 3.1'
+  gem.add_runtime_dependency      'rdf',                '~> 3.2'
+  gem.add_runtime_dependency      'rdf-microdata',      '~> 3.2'
+  gem.add_runtime_dependency      'rdf-rdfa',           '~> 3.2'
+  gem.add_runtime_dependency      'rdf-rdfxml',         '~> 3.2'
+  gem.add_runtime_dependency      'rdf-reasoner',       '~> 0.8'
+  gem.add_runtime_dependency      'rdf-turtle',         '~> 3.2'
+  gem.add_runtime_dependency      'rdf-vocab',          '~> 3.2'
+  gem.add_runtime_dependency      'rdf-xsd',            '~> 3.2'
+
+  # Sinatra dependencies
+  gem.add_runtime_dependency      'sinatra',            '~> 3.0'
   gem.add_runtime_dependency      'sass',               '~> 3.7'
-  gem.add_runtime_dependency      'sinatra',            '~> 2.2'
-  gem.add_runtime_dependency      'sinatra-rdf',        '~> 3.1'
-  gem.add_runtime_dependency      'sinatra-asset-pipeline', '~> 2.2'
+  gem.add_runtime_dependency      'sprockets',          '~> 4.2'
   gem.add_runtime_dependency      'sprockets-helpers',  '~> 1.4'
   gem.add_runtime_dependency      'uglifier',           '~> 4.2'
 
+  gem.add_runtime_dependency      'erubis',             '~> 2.7'
+  gem.add_runtime_dependency      'haml',               '~> 5.2'
+  gem.add_runtime_dependency      'json-ld-preloaded',  '~> 3.2'
+  gem.add_runtime_dependency      "rack",               '~> 2.2'
+  gem.add_runtime_dependency      'rack-cache',         '~> 1.13'
+  gem.add_runtime_dependency      'nokogiri',           '~> 1.14'
+
+  gem.add_runtime_dependency      'activesupport',      '>= 5', '< 8'
+
+  # development dependencies
+  gem.add_development_dependency  'puma',               '~> 6.1'
   gem.add_development_dependency  'foreman'
-  gem.add_development_dependency  'yard' ,              '~> 0.9', ">= 0.9.26"
+  gem.add_development_dependency  'yard' ,              '~> 0.9', ">= 0.9.34"
   gem.add_development_dependency  'shotgun',            '~> 0.9'
-  gem.add_development_dependency  'rspec',              '~> 3.10'
+  gem.add_development_dependency  'rspec',              '~> 3.12'
   gem.add_development_dependency  'rspec-its',          '~> 1.3'
-  gem.add_development_dependency  'rack-test',          '~> 1.1'
+  gem.add_development_dependency  'rack-test',          '~> 2.1'
   gem.post_install_message        = nil
 end
