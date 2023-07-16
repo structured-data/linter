@@ -1,13 +1,19 @@
 require 'sinatra'
 require 'sinatra/rdf'
-require 'sinatra/asset_pipeline'
-require 'sprockets-helpers'
+require 'sprockets'
+require 'sinatra/sprockets-helpers'
 require 'uglifier'
 require 'sass'
 require 'erubis'
 
 module RDF::Linter
   class Application < Sinatra::Base
+
+    # Assets
+    register Sinatra::Sprockets::Helpers
+    set :sprockets, Sprockets::Environment.new(root)
+    set :assets_prefix, '/assets'
+    set :digest_assets, true
 
     configure do
       set :root, APP_DIR
@@ -24,30 +30,16 @@ module RDF::Linter
       #  metastore:   "file:" + ::File.join(APP_DIR, "cache/meta"),
       #  entitystore: "file:" + ::File.join(APP_DIR, "cache/body")
 
-      # Asset pipeline
-      set :digest_assets, false
-
-      # Include these files when precompiling assets
-      set :assets_precompile, %w(*.js *.css *.ttf *.gif)
-
-      # The path to your assets
-      set :assets_paths, %w(assets/js assets/css assets/images)
-
-      # CSS minification
-      set :assets_css_compressor, :sass
-
-      # JavaScript minification
-      set :assets_js_compressor, :uglifier
-
-      register Sinatra::AssetPipeline
+      # Assets
+      # Setup Sprockets
+      sprockets.append_path File.join(root, 'assets', 'css')
+      sprockets.append_path File.join(root, 'assets', 'js')
+      sprockets.js_compressor  = :uglify
+      sprockets.css_compressor = :scss
 
       # Configure Sprockets::Helpers (if necessary)
       Sprockets::Helpers.configure do |config|
         config.environment = sprockets
-        config.prefix      = assets_prefix
-        config.digest      = digest_assets
-        config.public_path = public_folder
-
         # Force to debug mode in development mode
         # Debug mode automatically sets
         # expand = true, digest = false, manifest = false
@@ -86,6 +78,12 @@ module RDF::Linter
       msg = "Status: #{response.status} (#{request.request_method} #{request.path_info}), Content-Type: #{response.content_type}"
       msg += ", Location: #{response.location}" if response.location
       request.logger.info msg
+    end
+
+    # get assets
+    get "/assets/*" do
+      env["PATH_INFO"].sub!("/assets", "")
+      settings.sprockets.call(env)
     end
 
     # Get "/" either returns the main linter page or linted markup
