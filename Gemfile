@@ -28,9 +28,6 @@ group :development, :test do
   gem 'rake'
 end
 
-# Becuase rest-client-commonents doesn't seem like it's going to be updated:
-gem 'rest-client-components', git: "https://github.com/amatriain/rest-client-components", branch: "rest-client-2-compatibility"
-
 gem 'jsonlint',           git: "https://github.com/dougbarth/jsonlint"
 
 group :debug do
