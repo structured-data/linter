@@ -71,14 +71,6 @@ GIT
       rdf-xsd (~> 3.2)
 
 GIT
-  remote: https://github.com/ruby-rdf/rdf-ordered-repo
-  revision: 5df28a9976d2b349e6ee473d92c8c941d38d6846
-  branch: develop
-  specs:
-    rdf-ordered-repo (3.2.1)
-      rdf (~> 3.2, >= 3.2.1)
-
-GIT
   remote: https://github.com/ruby-rdf/rdf-rdfa
   revision: 4827f083ed188480332818222a90e93fb445d5ac
   branch: develop
@@ -163,7 +155,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.22.0)
+    linter (3.22.1)
       activesupport (>= 5, < 8)
       equivalent-xml (~> 0.6)
       erubis (~> 2.7)
@@ -359,7 +351,6 @@ DEPENDENCIES
   rake
   rdf!
   rdf-microdata!
-  rdf-ordered-repo!
   rdf-rdfa!
   rdf-rdfxml!
   rdf-reasoner!
