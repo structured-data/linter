@@ -163,6 +163,7 @@ PATH
       json-ld (~> 3.1)
       json-ld-preloaded (~> 3.2)
       nokogiri (~> 1.14)
+      puma (~> 6.1)
       rack (~> 2.2)
       rack-cache (~> 1.13)
       rdf (~> 3.2)
@@ -345,7 +346,6 @@ DEPENDENCIES
   json-ld-preloaded!
   jsonlint!
   linter!
-  puma (~> 6.1)
   rack-rdf!
   rack-test (~> 2.1)
   rake
