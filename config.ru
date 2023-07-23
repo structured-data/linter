@@ -3,6 +3,7 @@ require 'rubygems' || Gem.clear_paths
 require 'bundler'
 Bundler.setup(:default)
 
+require 'restclient/components'
 require 'rack/cache'
 require 'sinatra'
 require 'sinatra/base'

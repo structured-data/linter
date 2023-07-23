@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: "sketch-rockwell";
-  src: url("<%= image_path 'SketchRockwell-Bold.ttf' %>");
+  src: url("/assets/css/SketchRockwell-Bold.ttf");
 }
 
 @font-face {
   font-family: "calluna";
-  src: url("<%= image_path 'Calluna-Regular.ttf' %>");
+  src: url("/assets/css/Calluna-Regular.ttf");
 }
 
 

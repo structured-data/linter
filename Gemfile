@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gemspec
-ruby "3.1.3"
+ruby "3.2.2"
 
 # Include non-released gems first
 gem "sinatra-rdf",        git: "https://github.com/ruby-rdf/sinatra-rdf", branch: "develop"
@@ -11,7 +11,6 @@ gem "rdf-spec",           git: "https://github.com/ruby-rdf/rdf-spec", branch: "
 
 gem 'ebnf',               git: "https://github.com/dryruby/ebnf",  branch: "develop"
 gem 'rdf-microdata',      git: "https://github.com/ruby-rdf/rdf-microdata", branch: "develop"
-gem 'rdf-ordered-repo',   git: "https://github.com/ruby-rdf/rdf-ordered-repo", branch: "develop"
 gem 'rdf-rdfa',           git: "https://github.com/ruby-rdf/rdf-rdfa", branch: "develop"
 gem 'rdf-rdfxml',         git: "https://github.com/ruby-rdf/rdf-rdfxml", branch: "develop"
 gem 'rdf-reasoner',       git: "https://github.com/ruby-rdf/rdf-reasoner", branch: "develop"
@@ -27,9 +26,6 @@ gem 'binding_of_caller'
 group :development, :test do
   gem 'rake'
 end
-
-# Becuase rest-client-commonents doesn't seem like it's going to be updated:
-gem 'rest-client-components', git: "https://github.com/amatriain/rest-client-components", branch: "rest-client-2-compatibility"
 
 gem 'jsonlint',           git: "https://github.com/dougbarth/jsonlint"
 

@@ -2020,7 +2020,7 @@ PRE-MARKUP:
  <p>Volume 376, July 2010-December 2010</p>
  <p>Published by Elsevier
  <ul>
-   <li>ISSN: 0140-6736</li>
+   <li>ISSN 0140-6736</li>
  </ul>
  <h3>Issues:</h3>
  <ul>
@@ -2037,7 +2037,7 @@ MICRODATA:
   <p>Volume 376, July 2010-December 2010</p>
   <p>Published by <span itemprop="publisher">Elsevier</span>
   <ul>
-    <li>ISSN: <span itemprop="issn">0140-6736</span></li>
+    <li>ISSN <span itemprop="issn">0140-6736</span></li>
   </ul>
   <h3>Issues:</h3>
   <div itemprop="hasPart" itemscope itemtype="https://schema.org/PublicationVolume" itemid="#vol376">
@@ -2065,7 +2065,7 @@ RDFA:
   <p>Volume 376, July 2010-December 2010</p>
   <p>Published by <span property="publisher">Elsevier</span>
   <ul>
-    <li>ISSN: <span property="issn">0140-6736</span></li>
+    <li>ISSN <span property="issn">0140-6736</span></li>
   </ul>
   <h3>Issues:</h3>
   <div property="hasPart" typeof="PublicationVolume" resource="#vol376">
@@ -2147,8 +2147,8 @@ PRE-MARKUP:
   </div>
   <strong>Publisher:</strong> Taylor &amp;amp; Francis Group<br />
   <strong>Source:</strong> Routledge, Taylor &amp;amp; Francis Group<br />
-  <strong>ISSN:</strong> 0163-9374 ;<br />
-  <strong>E-ISSN:</strong> 1544-4554;<br />
+  <strong>ISSN</strong> 0163-9374 ;<br />
+  <strong>E-ISSN</strong> 1544-4554;<br />
   <strong>DOI:</strong>
   <a href="https://doi.org/10.1080/01639374.2012.682254">10.1080/01639374.2012.682254</a>
 </div>
@@ -2191,8 +2191,8 @@ MICRODATA:
     <strong>Publisher:</strong>
     <span itemprop="publisher">Taylor &amp;amp; Francis Group</span><br />
     <strong>Source:</strong> Routledge, Taylor &amp;amp; Francis Group<br />
-    <strong>ISSN:</strong> <span itemprop="issn">0163-9374</span> ;<br />
-    <strong>E-ISSN:</strong> <span itemprop="issn">1544-4554</span> ;<br />
+    <strong>ISSN</strong> <span itemprop="issn">0163-9374</span> ;<br />
+    <strong>E-ISSN</strong> <span itemprop="issn">1544-4554</span> ;<br />
   </span>
   <strong>DOI:</strong>
   <a itemprop="sameAs" href="https://doi.org/10.1080/01639374.2012.682254">10.1080/01639374.2012.682254</a>
@@ -2234,8 +2234,8 @@ RDFA:
     <strong>Publisher:</strong>
     <span property="publisher">Taylor &amp;amp; Francis Group</span><br />
     <strong>Source:</strong> Routledge, Taylor &amp;amp; Francis Group<br />
-    <strong>ISSN:</strong> <span property="issn">0163-9374</span> ;<br />
-    <strong>E-ISSN:</strong> <span property="issn">1544-4554</span> ;<br />
+    <strong>ISSN</strong> <span property="issn">0163-9374</span> ;<br />
+    <strong>E-ISSN</strong> <span property="issn">1544-4554</span> ;<br />
   </span>
   <strong>DOI:</strong>
   <a property="sameAs" href="https://doi.org/10.1080/01639374.2012.682254">10.1080/01639374.2012.682254</a>
@@ -5040,7 +5040,8 @@ MICRODATA:
   </div>
 
   <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
-    Priced from: <span itemprop="lowPrice">$35</span>
+  <meta itemprop="priceCurrency" content="USD" />
+    Priced from: <span itemprop="lowPrice" content="35">$35</span>
     <span itemprop="offerCount">1938</span> tickets left
   </div>
 </div>
@@ -5068,7 +5069,8 @@ RDFA:
   </div>
 
   <div property="offers" typeof="AggregateOffer">
-    Priced from: <span property="lowPrice">$35</span>
+    <meta property="priceCurrency" content="USD" />
+    Priced from: <span property="lowPrice" content="35">$35</span>
     <span property="offerCount">1938</span> tickets left
   </div>
 </div>
@@ -5091,7 +5093,8 @@ JSON:
   },
   "offers": {
     "@type": "AggregateOffer",
-    "lowPrice": "$35",
+    "priceCurrency": "USD",
+    "lowPrice": "35",
     "offerCount": "1938"
   },
   "startDate": "2016-04-21T20:00",
@@ -5320,8 +5323,9 @@ MICRODATA:
   </div>
 
   <div itemprop="offers" itemscope itemtype="https://schema.org/AggregateOffer">
-    <span itemprop="lowPrice">$1250</span>
-    to <span itemprop="highPrice">$1495</span>
+    <meta itemprop="priceCurrency" content="USD" />
+    <span itemprop="lowPrice" content="1250">$1250</span>
+    to <span itemprop="highPrice" content="1495">$1495</span>
     from <span itemprop="offerCount">8</span> sellers
 
     Sellers:
@@ -5347,8 +5351,9 @@ RDFA:
         <span property="ratingCount">24</span> user ratings
     </div>
     <div property="offers" typeof="AggregateOffer">
-        <span property="lowPrice">$1250</span> to
-        <span property="highPrice">$1495</span> from
+        <meta property="priceCurrency" content="USD" />
+        <span property="lowPrice" content="1250">$1250</span> to
+        <span property="highPrice" content="1495">$1495</span> from
         <span property="offerCount">8</span> sellers Sellers:
         <div property="offers" typeof="Offer">
             <a property="url" href="save-a-lot-monitors.com/dell-30.html">Save A Lot Monitors - $1250</a>
@@ -5376,8 +5381,9 @@ JSON:
   "name": "Dell UltraSharp 30\" LCD Monitor",
   "offers": {
     "@type": "AggregateOffer",
-    "highPrice": "$1495",
-    "lowPrice": "$1250",
+    "priceCurrency": "USD",
+    "highPrice": "1495",
+    "lowPrice": "1250",
     "offerCount": "8",
     "offers": [
       {
@@ -10428,18 +10434,19 @@ JSON:
 {
   "@context": "https://schema.org",
   "@type": "AllocateAction",
-  "agent": {
+  "participant": {
     "@type": "Person",
     "name": "John"
   },
-  "object": {
-    "@type": "Duration",
-    "name": "5 hours"
+  "agent": {
+    "@type": "Person",
+    "name": "John's trainer"
   },
-  "purpose": {
+  "object": {
     "@type": "ExercisePlan",
     "name": "John's weight loss plan"
-  }
+  },
+  "startTime": "2020-01-01T09:00:00"
 }
 </script>
 
@@ -10459,7 +10466,7 @@ This example is JSON only.
 
 JSON:
 
-<!--  John accepted a plan to exercise to help with his obesity-->.
+<!--  John accepted a plan to exercise-->.
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -10468,13 +10475,13 @@ JSON:
     "@type": "Person",
     "name": "John"
   },
+  "participant": {
+    "@type": "Person",
+    "name": "John's trainer"
+  },
   "object": {
     "@type": "ExercisePlan",
     "name": "John's weight loss plan"
-  },
-  "purpose": {
-    "@type": "MedicalCondition",
-    "name": "Obesity"
   }
 }
 </script>
@@ -10511,10 +10518,6 @@ JSON:
   "participant": {
     "@type": "Person",
     "name": "Steve"
-  },
-  "purpose": {
-    "@type": "MedicalCondition",
-    "name": "Obesity"
   }
 }
 </script>
@@ -10548,13 +10551,9 @@ JSON:
     "@type": "Diet",
     "name": "Steve's weight loss plan"
   },
-  "recipient": {
+  "participant": {
     "@type": "Person",
     "name": "Steve"
-  },
-  "purpose": {
-    "@type": "MedicalCondition",
-    "name": "Obesity"
   }
 }
 </script>
@@ -10575,7 +10574,7 @@ This example is JSON only.
 
 JSON:
 
-<!--  John rejected a plan to exercise that helps him with his obesity.-->
+<!--  John rejected a plan to exercise.-->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -10587,10 +10586,6 @@ JSON:
   "object": {
     "@type": "ExercisePlan",
     "name": "John's weight loss plan"
-  },
-  "purpose": {
-    "@type": "MedicalCondition",
-    "name": "Obesity"
   }
 }
 </script>
@@ -10801,7 +10796,7 @@ JSON:
     "@type": "Reservation",
     "name": "Table at Bar Tartine"
   },
-  "scheduledTime": "May"
+  "scheduledTime": "2020-05-29T19:30:00"
 }
 </script>
 
@@ -10834,7 +10829,7 @@ JSON:
     "@type": "Event",
     "name": "SXSW"
   },
-  "scheduledTime": "May"
+  "scheduledTime": "2023-03-06"
 }
 </script>
 
@@ -11206,9 +11201,9 @@ JSON:
   },
   "price": "1500",
   "priceCurrency": "USD",
-  "purpose": {
-    "@type": "Flight",
-    "name": "AA123"
+  "recipient": {
+    "@type": "Organization",
+    "name": "An Airline"
   }
 }
 </script>
@@ -12782,7 +12777,8 @@ JSON:
   "offers" : {
     "@type" : "Offer",
     "availability" : "https://schema.org/LimitedAvailability",
-    "price" : "$13.00",
+    "priceCurrency": "USD",
+    "price" : "13.00",
     "url" : "http://www.ticketfly.com/purchase/309433" },
   "typicalAgeRange" : "18+"
 }
@@ -15011,14 +15007,16 @@ JSON:
     "offers" : [ {
         "@type" : "Offer",
         "name" : "General Admission",
-        "price" : "$63.25",
+        "priceCurrency": "USD",
+        "price" : "63.25",
         "availability" : "SoldOut",
         "url" : "http://www.ticketmaster.com/event/17004C29"
     },{
         "@type" : "Offer",
         "name" : "VIP Experience",
         "url" : "http://www.example.com/Abcde12345",
-        "price" : "$299.00",
+        "priceCurrency": "USD",
+        "price" : "299.00",
         "validFrom" : "2014-02-05T10:00",
         "validThrough" : "2014-03-19T23:59"
     } ],
@@ -15147,7 +15145,7 @@ JSON:
 }
 </script>
 
-TYPES: #eg-0205 Role, PerformanceRole
+TYPES: #eg-0205 Role, PerformanceRole, actor
 
 PRE-MARKUP:
 
@@ -15350,7 +15348,8 @@ MICRODATA:
     <div itemprop="itemListElement" itemscope itemtype="https://schema.org/Product">
         <img alt="Photo of product" itemprop="image" src="http://img01.multivarki.ru.ru/c9/f1/a5fe6642-18d0-47ad-b038-6fca20f1c923.jpeg"> <a itemprop="url" href="http://multivarki.ru/brand_502/"><span itemprop="name">BRAND 502</span></a>
         <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <span itemprop="price">4399 р.</span>
+            <meta property="priceCurrency" content="RUB">
+            <span itemprop="price" content="4399.00">4399 р.</span>
         </div>...
     </div>
     <div itemprop="itemListElement" itemtype="https://schema.org/Product">
@@ -15365,9 +15364,9 @@ RDFA:
     <div property="itemListElement" typeof="Product">
         <img property="image" alt="Photo of product" src="http://img01.multivarki.ru.ru/c9/f1/a5fe6642-18d0-47ad-b038-6fca20f1c923.jpeg"> <a property="url" href="http://multivarki.ru/brand_502/"><span property="name">BRAND 502</span></a>
         <div property="offers" typeof="Offer">
-            <meta property="schema:priceCurrency" content="RUB">руб
-            <meta property="schema:price" content="4399.00">4 399,00
-            <link property="schema:itemCondition" href="https://schema.org/NewCondition">
+            <meta property="priceCurrency" content="RUB">руб
+            <meta property="price" content="4399.00">4 399,00
+            <link property="itemCondition" href="https://schema.org/NewCondition">
         </div>...
     </div>
     <div property="itemListElement" typeof="Product">
@@ -15391,7 +15390,8 @@ JSON:
             "name": "Brand 502",
             "offers": {
                 "@type": "Offer",
-                "price": "4399 p."
+                "priceCurrency": "RUB",
+                "price": "4399.00"
             }
         },
         {
@@ -17994,6 +17994,323 @@ JSON:
     }
 </script>
 
+TYPES: #eg-0478 Dataset
+
+PRE-MARKUP:
+
+A example of a scientific research dataset, located in a data repository (JSON_LD only).
+
+MICRODATA:
+
+TODO
+
+RDFA:
+
+TODO
+
+JSON:
+
+See https://github.com/ESIPFed/science-on-schema.org/blob/master/guides/Dataset.md for a complete guide.
+
+<script type="application/ld+json">
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": "Dataset",
+  "name": "Removal of organic carbon by natural bacterioplankton communities as a function of pCO2 from laboratory experiments between 2012 and 2016",
+  "description": "This dataset includes results of laboratory experiments which measured dissolved organic carbon (DOC) usage by natural bacteria in seawater at different pCO2 levels. Included in this dataset are; bacterial abundance, total organic carbon (TOC), what DOC was added to the experiment, target pCO2 level. ",
+  "url": "https://www.sample-data-repository.org/dataset/472032",
+  "sameAs": "https://search.dataone.org/#view/https://www.sample-data-repository.org/dataset/472032",
+  "version": "2013-11-21",
+  "isAccessibleForFree": true,
+  "keywords": [
+    "ocean acidification",
+    "Dissolved Organic Carbon",
+    "bacterioplankton respiration",
+    "pCO2",
+    "carbon dioxide",
+    "oceans"
+  ],
+  "license": [
+    "http://spdx.org/licenses/CC0-1.0",
+    "https://creativecommons.org/publicdomain/zero/1.0"
+  ],
+  "identifier": {
+    "@id": "https://doi.org/10.5066/F7VX0DMQ",
+    "@type": "PropertyValue",
+    "propertyID": "https://registry.identifiers.org/registry/doi",
+    "value": "doi:10.5066/F7VX0DMQ",
+    "url": "https://doi.org/10.5066/F7VX0DMQ"
+  },
+  "citation": "J.Smith 'How I created an awesome dataset’, Journal of Data Science, 1966",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "latitude",
+      "propertyID": "http://www.geoscienceontology.org/geo-lower/quantity#latitude",
+      "url": "https://www.sample-data-repository.org/dataset-parameter/665787",
+      "description": "Latitude where water samples were collected; north is positive.",
+      "unitText": "decimal degrees",
+      "minValue": "45.0",
+      "maxValue": "15.0"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@id": "https://www.sample-data-repository.org/collection/biological-data",
+    "@type": "DataCatalog"
+  },
+  "subjectOf": {
+    "@type": "DataDownload",
+    "name": "eml-metadata.xml",
+    "description": "EML metadata describing the dataset",
+    "encodingFormat": [
+      "application/xml",
+      "https://eml.ecoinformatics.org/eml-2.2.0"
+    ],
+    "dateModified": "2019-06-12T14:44:15Z"
+  },
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://www.sample-data-repository.org/dataset/472032.tsv",
+    "encodingFormat": "text/tab-separated-values"
+  },
+  "temporalCoverage": "2012-09-20/2016-01-22",
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoShape",
+      "line": "39.3280 120.1633 40.445 123.7878"
+    }
+  },
+  "creator": [
+    {
+      "@id": "https://www.sample-data-repository.org/person-role/472036",
+      "@type": "Role",
+      "roleName": "Principal Investigator",
+      "creator": {
+        "@id": "https://www.sample-data-repository.org/person/51317",
+        "@type": "Person",
+        "name": "Dr Uta Passow",
+        "givenName": "Uta",
+        "familyName": "Passow",
+        "url": "https://www.sample-data-repository.org/person/51317"
+      }
+    },
+    {
+      "@id": "https://www.sample-data-repository.org/person-role/472038",
+      "@type": "Role",
+      "roleName": "Co-Principal Investigator",
+      "url": "https://www.sample-data-repository.org/person-role/472038",
+      "creator": {
+        "@id": "https://www.sample-data-repository.org/person/50663",
+        "@type": "Person",
+        "identifier": {
+          "@id": "https://orcid.org/0000-0003-3432-2297",
+          "@type": "PropertyValue",
+          "propertyID": "https://registry.identifiers.org/registry/orcid",
+          "url": "https://orcid.org/0000-0003-3432-2297",
+          "value": "orcid:0000-0003-3432-2297"
+        },
+        "name": "Dr Mark Brzezinski",
+        "url": "https://www.sample-data-repository.org/person/50663"
+      }
+    }
+  ],
+  "provider": {
+    "@id": "https://www.sample-data-repository.org",
+    "@type": "Organization",
+    "legalName": "Sample Data Repository Office",
+    "name": "SDRO",
+    "sameAs": "http://www.re3data.org/repository/r3dxxxxxxxxx",
+    "url": "https://www.sample-data-repository.org"
+  },
+  "publisher": {
+    "@id": "https://www.sample-data-repository.org"
+  },
+  "isBasedOn": {
+    "@id": "https://doi.org/10.xxxx/Dataset-1"
+  }
+}
+</script>
+
+TYPES: #eg-0479 Service, ResearchProject
+
+PRE-MARKUP:
+
+An example of an online repository that hosts scientific research data (JSON-LD only).
+
+MICRODATA:
+
+TODO
+
+RDFA:
+
+TODO
+
+JSON:
+
+See https://github.com/ESIPFed/science-on-schema.org/blob/master/guides/DataRepository.md for a complete guide.
+
+<script type="application/ld+json">
+{
+  "@context": {
+    "@vocab": "https://schema.org/"
+  },
+  "@type": [
+    "Service",
+    "ResearchProject"
+  ],
+  "legalName": "Sample Data Repository Office",
+  "name": "SDRO",
+  "url": "https://www.sample-data-repository.org",
+  "description": "The Sample Data Repository Service provides access to data from an imaginary domain accessible from this website.",
+  "sameAs": [
+    "http://www.re3data.org/repository/r3d1000000xx",
+    "https://twitter.com/SDRO",
+    "https://www.linkedin.com/company/123456789/"
+  ],
+  "category": [
+    "Biological Oceanography",
+    "Chemical Oceanography"
+  ],
+  "provider": [
+    {
+      "@type": "ResearchProject",
+      "name": "SDRO Technical Office",
+      "description": "We provide all the infrastructure for the SDRO"
+    },
+    {
+      "@type": "ResearchProject",
+      "name": "SDRO Science Support Office",
+      "description": "We provide all the science support functionality for the SDRO"
+    }
+  ],
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.sample-data-repository.org/images/logo.jpg"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "name": "Support",
+    "email": "info@bco-dmo.org",
+    "url": "https://www.sample-data-repository.org/about-us",
+    "contactType": "customer support"
+  },
+  "foundingDate": "2006-09-01",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Main St.",
+    "addressLocality": "Anytown",
+    "addressRegion": "ST",
+    "postalCode": "12345",
+    "addressCountry": "USA"
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "@id": "http://www.someinstitute.edu",
+    "legalName": "Some Institute",
+    "name": "SI",
+    "url": "http://www.someinstitute.edu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "234 Main St.",
+      "addressLocality": "Anytown",
+      "addressRegion": "ST",
+      "postalCode": "12345",
+      "addressCountry": "USA"
+    }
+  },
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Re3data DOI: 10.17616/R37P4C",
+    "propertyID": "https://registry.identifiers.org/registry/doi",
+    "value": "doi:10.17616/R37P4C",
+    "url": "https://doi.org/10.17616/R37P4C"
+  },
+  "funder": {
+    "@type": "Organization",
+    "@id": "https://doi.org/10.13039/100000141",
+    "legalName": "Division of Ocean Sciences",
+    "alternateName": "OCE",
+    "url": "https://www.nsf.gov/div/index.jsp?div=OCE",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "https://registry.identifiers.org/registry/doi",
+      "value": "doi:10.13039/100000141",
+      "url": "https://doi.org/10.13039/100000141"
+    },
+    "parentOrganization": {
+      "@type": "Organization",
+      "@id": "http://doi.org/10.13039/100000085",
+      "legalName": "Directorate for Geosciences",
+      "alternateName": "NSF-GEO",
+      "url": "http://www.nsf.gov",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "https://registry.identifiers.org/registry/doi",
+        "value": "doi:10.13039/100000085",
+        "url": "https://doi.org/10.13039/100000085"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "@id": "http://dx.doi.org/10.13039/100000001",
+        "legalName": "National Science Foundation",
+        "alternateName": "NSF",
+        "url": "http://www.nsf.gov",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "https://registry.identifiers.org/registry/doi",
+          "value": "doi:10.13039/100000001",
+          "url": "https://doi.org/10.13039/100000001"
+        }
+      }
+    }
+  },
+  "availableChannel": [
+    {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://www.sample-data-repository.org/search",
+      "providesService": {
+        "@type": "Service",
+        "name": "SDRO Website Search",
+        "description": "Search for webpages, datasets, authors, funding awards, instrumentation and measurements",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.sample-data-repository.org/search?keywords={query_string}"
+        }
+      }
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Sample Data Repository Resource Catalog",
+    "itemListElement": [
+      {
+        "@type": "DataCatalog",
+        "@id": "https://www.sample-data-repository.org/collection/biological-data",
+        "name": "Biological Data",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "public",
+          "name": "General Public"
+        }
+      },
+      {
+        "@type": "DataCatalog",
+        "@id": "https://www.sample-data-repository.org/collection/geological-data",
+        "name": "Geological Data",
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "public",
+          "name": "General Public"
+        }
+      }
+    ]
+  }
+}
+</script>
+
 TYPES: #eg-0327 Apartment, Accommodation, occupancy, floorSize
 
 PRE-MARKUP:
@@ -18022,7 +18339,7 @@ JSON:
             "minValue": 1,
             "maxValue": 4
         },
-        "floorLevel": 5,
+        "floorLevel": "5",
         "floorSize": {
             "@type": "QuantitativeValue",
             "value": 81,
@@ -19618,7 +19935,6 @@ MICRODATA:
     <div itemscope itemtype="https://schema.org/FinancialProduct">
       <h3 itemprop="name">Term Life Insurance</h3>
       <p itemprop="description">For most people, the primary reason to purchase life insurance is to help provide for dependents in the case of your death and the resulting loss of income. To determine a coverage amount, estimate what your family members would need after you’re gone to meet immediate, ongoing, and future financial obligations including funeral, rent or mortgage, other every day bills, college, and retirement.</p>
-      <div itemprop="amount" itemscope itemtype="https://schema.org/MonetaryAmount">Coverage amounts <span itemprop="currency" content="USD">$</span><span itemprop="minValue" content="100000">100,000</span> - $<span itemprop="maxValue" content="1000000">1,000,000</span></div>
       <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">Available through <a itemprop="offeredBy" href="http://www.icinsure.com/acce/">Life Insurance Central</a></div>
     </div>
 </body>
@@ -19630,7 +19946,6 @@ RDFA:
     <div typeof="FinancialProduct">
       <h3 property="name">Term Life Insurance</h3>
       <p property="description">For most people, the primary reason to purchase life insurance is to help provide for dependents in the case of your death and the resulting loss of income. To determine a coverage amount, estimate what your family members would need after you’re gone to meet immediate, ongoing, and future financial obligations including funeral, rent or mortgage, other every day bills, college, and retirement.</p>
-      <div property="amount" typeof="MonetaryAmount">Coverage amounts <span property="currency" content="USD">$</span><span property="minValue" content="100000">100,000</span> - $<span property="maxValue" content="1000000">1,000,000</span></div>
       <div property="offers" typeof="Offer">Available through <a property="offeredBy" href="http://www.icinsure.com/acce/">Life Insurance Central</a></div>
     </div>
 </body>
@@ -19643,12 +19958,6 @@ JSON:
   "@type": "FinancialProduct",
   "name": "Term Life Insurance",
   "description": "For most people, the primary reason to purchase life insurance is to help provide for dependents in the case of your death and the resulting loss of income. To determine a coverage amount, estimate what your family members would need after you’re gone to meet immediate, ongoing, and future financial obligations including funeral, rent or mortgage, other every day bills, college, and retirement.",
-  "amount": {
-    "@type": "MonetaryAmount",
-    "currency": "USD",
-    "minValue": "100000",
-    "maxValue": "1000000"
-  },
   "offers": {
     "@type": "Offer",
     "offeredBy": "http://www.icinsure.com/acce/"
@@ -21772,7 +22081,49 @@ A Blogpost / Blog example (JSON-LD only).
 
 MICRODATA:
 
-TODO
+<article itemscope itemtype="https://schema.org/BlogPosting" itemid="https://www.dataliberate.com/2019/05/14/library-metadata-evolution-final-mile/">
+  <meta itemprop="wordCount" content="481">
+  <header>
+    <h1 itemprop="name">Library Metadata Evolution: The Final Mile</h1>
+    <div>
+      <p>Posted by <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">
+            <a itemprop="url" href="https://www.dataliberate.com/author/richard-wallis/">Richard Wallis</a>
+          </span>
+        </span> in <span itemprop="locationCreated">Winton on the Green</span> on <time itemprop="datePublished" datetime="2019-05-14T17:30:57+01:00">May 14, 2019</time>, and updated on <time itemprop="dateModified" datetime="2023-03-01T17:18:17+01:00">March 1, 2023</time>.</p>
+    </div>
+  </header>
+  <section itemprop="abstract">
+    <h2>Abstract</h2>
+    <p>When Schema.org arrived on the scene I thought we might have arrived at the point where library metadata could finally blossom; adding value outside of library systems to help library curated resources become first class citizens, and hence results, in the global web we all inhabit. But as yet it has not happened.</p>
+  </section>
+  <hr>
+  <section itemprop="articleBody">
+    <h2>Introduction</h2>
+    <p>I have been rattling around the library systems industry/sector for nigh on thirty years, with metadata always being somewhere near the core of my thoughts. From that time as a programmer wrestling with the new to me ‘so-called’ standard <abbr title="Machine-Readable Cataloging">MARC</abbr>; reacting to meet the challenges of the burgeoning web; through the elephantine gestation of <abbr title="Resource Description & Access">RDA</abbr>; several experiments with linked library data; and the false starts of <abbr title="Bibliographic Framework">BIBFRAME</abbr>, it has consistently never scaled to the real world beyond the library walls and firewall.</p>
+  </section>
+  <section>
+    <h2>Comments ( <span itemprop="commentCount">1</span>) </h2>
+    <div itemscope itemtype="https://schema.org/Comment">
+      <p itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span itemprop="name">
+          <a itemprop="url" href="https://schoenstatt.link/en/">Jeff</a>
+        </span>
+      </p>
+      <p itemprop="text">I've been looking for a decent metadata scheme for use in a home-brew library system for the past 4 years now.</p>
+      <p>Comment posted on <time itemprop="datePublished" datetime="2019-06-23T17:31:15+01:00"></time>
+      </p>
+    </div>
+  </section>
+  <footer>
+    <p>Tagged with: <span itemprop="keywords">Bibframe2Schema.org, Libraries, Library of Congress</span>
+    </p>
+    <p itemprop="copyrightNotice">© 2019 <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <span itemprop="name">Dataliberate</span>
+      </span>
+    </p>
+  </footer>
+</article>
 
 RDFA:
 
@@ -22007,6 +22358,58 @@ JSON:
     ]
 }
 </script>
+
+TYPES: #eg-0481 Drug
+
+PRE-MARKUP:
+
+<h1>Denyal Forte 10×5mg</h1>
+
+Denyal Forte is a brand of Copium manufactured by Rockwell United in the United States.
+It is recommended for people suffering of cognitive dissonancy.
+
+It is available in the US as a non-prescription drug in the form of
+of a package of 10 5mg tablets.
+
+Common side-effects include hallucinations.
+
+MICRODATA:
+
+
+RDFA:
+
+
+JSON:
+
+{
+  "@context": "https://schema.org",
+  "@type": "Drug",
+  "name": "Denyal Forte",
+  "nonProprietaryName": "Copium",
+  "activeIngredient": "Fabula excipiens",
+  "drugUnit": "5mg",
+  "isAvailableGenerically": true,
+  "isProprietary": true,
+  "dosageForm": "tablet",
+  "prescriptionStatus": "https://schema.org/OTC",
+  "warning": "Known side effects include hallucinations",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "NDC",
+    "description": "US National Drug Code",
+    "value": "1111100011"
+  },
+  "gtin": "00311111000118",
+  "brand": {
+    "@type": "Organization",
+    "name": "Rockwell United"
+  },
+  "recognizingAuthority": {
+    "@type": "Organization",
+    "name": "FDA",
+    "url": "https://www.fda.gov/"
+  }
+}
 
 TYPES: #eg-0377 BreadcrumbList, ItemList, ListItem, itemListElement, item
 
@@ -23909,23 +24312,11 @@ JSON:
     "affiliation": "Medical University",
     "name": "Dr. John Smith"
   },
-  "code": {
-    "@id": "http://www.ncbi.nlm.nih.gov/mesh/C18.452.394.750.149",
-    "@type": "MedicalCode",
-    "code": "C18.452.394.750.149",
-    "codingSystem": "MeSH"
-  },
   "datePublished": "2012-03-24",
   "description": "We review clinical evidence related to the use of metformin for treatment of type-2 diabetes mellitus and provide new clinical guideline recommendations.",
-  "evidenceLevel": "https://schema.org/EvidenceLevelA",
   "name": "New guidelines for metformin and diabetes mellitus",
-  "publicationType": "Meta-Analysis",
-  "recommendationStrength": "strong recommendation",
-  "guidelineSubject": [
-    "metformin",
-    "type 2 diabetes"
-  ]
-}
+  "publicationType": "Meta-Analysis"
+  }
 </script>
 
 TYPES: #eg-0224 MedicalGuideline, MedicalGuidelineRecommendation, MedicalGuidelineContraindication
@@ -26345,6 +26736,54 @@ JSON:
   "typicalCreditsPerTerm": 4
 }
 </script>
+
+TYPES: #eg-0480 Observation, StatisticalVariable
+
+PRE-MARKUP:
+
+As an example, the statement "According to the US Census ACS 5 Year Estimates,
+the median age of women in San Antonio, Texas in 2014 was 34.4 years." can be
+represented in JSON-LD.
+
+MICRODATA:
+
+<!-- JSON-LD example only -->
+
+RDFA:
+
+<!-- JSON-LD example only -->
+
+JSON:
+
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org/",
+  "@type": "StatisticalVariable",
+  "@id": "Median_Height_Person_Female",
+  "name": "Median height of women",
+  "populationType": {"@id": "Person"},
+  "measuredProperty": {"@id": "height"},
+  "statType": {"@id": "median"},
+  "gender": {"@id": "Female"},
+  "numConstraints": 1,
+  "constrainingProperty": {"@id": "gender"}
+ },
+  {
+  "@context": "https://schema.org/",
+  "@id": "Observation_Median_Age_Person_Female_SanAntonio_TX_2014",
+  "@type": "Observation",
+  "name": "Median height of women in San Antonio, Texas in 2014",
+  "description": "An Observation of the StatisticalVariable Median_Height_Person_Female in location: San Antonio, Texas, for time period: 2014",
+  "variableMeasured": { "@id": "Median_Height_Person_Female" },
+  "observationAbout": { "@id": "https://www.wikidata.org/entity/Q975" },
+  "observationDate": 2014,
+  "value": 160,
+  "unitCode": "CMT"
+  }
+]
+</script>
+
 
 TYPES: #eg-0266 CorrectionComment, correction
 
@@ -30674,20 +31113,25 @@ PRE-MARKUP:
 
 MICRODATA:
 
-<div itemscope itemtype="https://schema.org/MortgageLoan" itemref="amount intRate apr">
+<div itemscope itemtype="https://schema.org/MortgageLoan">
   <h1 itemprop="name">Agency 30 Year Fixed</h1>
   <div itemprop="loanTerm" itemscope itemtype="https://schema.org/QuantitativeValue">
-    <meta itemprop="value" content="30">
-    <meta itemprop="unitCode" content="ANN">
+    <meta itemprop="value" content="30"/>
+    <meta itemprop="unitCode" content="ANN"/>
   </div>
   <p itemprop="description">Experience easier budgeting with predictable monthly payments. Relax knowing you’ll never have to worry about rising interest rates for the life of your loan.</p>
   <div itemprop="loanRepaymentForm" itemscope itemtype="https://schema.org/RepaymentSpecification" itemref="estPay payNum">
-    <meta itemprop="downPayment" content="20">
-    <meta itemprop="loanPaymentFrequency" content="Monthly">
+    <meta itemprop="downPayment" content="20"/>
+    <meta itemprop="loanPaymentFrequency" content="1"/>
+      <span>Estimated payment</span>
+    <div id="estPay" itemprop="loanPaymentAmount" itemscope itemtype="https://schema.org/MonetaryAmount">
+    <span itemprop="currency" content="USD">$</span><span itemprop="value">912.11</span></div>
+    <span>Months</span>
+    <div id="payNum" itemprop="numberOfLoanPayments">360</div>
   </div>
-</div>
+
 <table>
-  <caption id="amount" itemprop="amount" itemscope itemtype="https://schema.org/MonetaryAmount">Rates are based on a loan amount of <span itemprop="currency" content="USD">$</span><span itemprop="amount" content="200000">200,000</span> and 20% down payment.</caption>
+	<caption id="amount" itemprop="amount" itemscope itemtype="https://schema.org/MonetaryAmount">Rates are based on a loan amount of <span itemprop="currency" content="USD">$</span><span itemprop="value" content="200000">200,000</span> and 20% down payment.</caption>
   <tr>
     <td>Interest rate</td>
     <td><span id="intRate" itemprop="interestRate">3.625</span>%</td>
@@ -30696,15 +31140,9 @@ MICRODATA:
     <td>APR</td>
     <td><span id="apr" itemprop="annualPercentageRate">3.8047</span>%</td>
   </tr>
-  <tr>
-    <td>Estimated payment</td>
-    <td id="estPay" itemprop="loanPaymentAmount" itemscope itemtype="https://schema.org/MonetaryAmount"><span itemprop="currency" content="USD">$</span><span itemprop="amount">912.11</span></td>
-  </tr>
-  <tr>
-    <td>Months</td>
-    <td id="payNum" itemprop="numberOfLoanPayments">360</td>
-  </tr>
 </table>
+
+</div>
 
 RDFA:
 
@@ -30717,10 +31155,16 @@ RDFA:
   <p property="description">Experience easier budgeting with predictable monthly payments. Relax knowing you’ll never have to worry about rising interest rates for the life of your loan.</p>
   <div property="loanRepaymentForm" typeof="RepaymentSpecification" itemref="estPay payNum">
     <meta property="downPayment" content="20"/>
-    <meta property="loanPaymentFrequency" content="Monthly"/>
+    <meta property="loanPaymentFrequency" content="1"/>
+      <span>Estimated payment</span>
+    <div id="estPay" property="loanPaymentAmount" typeof="MonetaryAmount">
+    <span property="currency" content="USD">$</span><span property="value">912.11</span></div>
+    <span>Months</span>
+    <div id="payNum" property="numberOfLoanPayments">360</div>
   </div>
+
 <table>
-	<caption id="amount" property="amount" typeof="MonetaryAmount">Rates are based on a loan amount of <span property="currency" content="USD">$</span><span property="amount" content="200000">200,000</span> and 20% down payment.</caption>
+	<caption id="amount" property="amount" typeof="MonetaryAmount">Rates are based on a loan amount of <span property="currency" content="USD">$</span><span property="value" content="200000">200,000</span> and 20% down payment.</caption>
   <tr>
     <td>Interest rate</td>
     <td><span id="intRate" property="interestRate">3.625</span>%</td>
@@ -30729,15 +31173,8 @@ RDFA:
     <td>APR</td>
     <td><span id="apr" property="annualPercentageRate">3.8047</span>%</td>
   </tr>
-  <tr>
-    <td>Estimated payment</td>
-    <td id="estPay" property="loanPaymentAmount" typeof="MonetaryAmount"><span property="currency" content="USD">$</span><span property="amount">912.11</span></td>
-  </tr>
-  <tr>
-    <td>Months</td>
-    <td id="payNum" property="numberOfLoanPayments">360</td>
-  </tr>
 </table>
+
 </div>
 
 JSON:
@@ -30750,7 +31187,7 @@ JSON:
   "description": "Experience easier budgeting with predictable monthly payments. Relax knowing you’ll never have to worry about rising interest rates for the life of your loan.",
   "amount": {
     "@type": "MonetaryAmount",
-    "amount": "200000",
+    "value": "200000",
     "currency": "USD"
   },
   "loanTerm": {
@@ -30764,12 +31201,12 @@ JSON:
     "@type": "RepaymentSpecification",
     "loanPaymentAmount": {
       "@type": "MonetaryAmount",
-      "amount": "909.3",
+      "value": "909.3",
       "currency": "USD"
     },
     "downPayment": "20",
     "numberOfLoanPayments": "360",
-    "loanPaymentFrequency": "Monthly"
+    "loanPaymentFrequency": "1"
   }
 }
 </script>
@@ -31617,7 +32054,7 @@ PRE-MARKUP:
 	<span class="label">In Collection</span>
 	<span class="val"><a href="https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8">THM/407/8 - Audio Recordings</a></span><br/>
 	<span class="label">Dates of Creation</span>
-	<span class="val">1971-1972</span><br/>
+	<span class="val">1971</span><br/>
 	<span class="label">Direct Link</span>
 	<span class="val"><a href="https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8/3">https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8/3</a></span><br/>
 	<span class="label">Subject</span>
@@ -31647,7 +32084,7 @@ MICRODATA:
 	<span class="label">In Collection</span>
 	<span class="val"><a itemprop="isPartOf" href="https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8">THM/407/8 - Audio Recordings</a></span><br/>
 	<span class="label">Dates of Creation</span>
-	<span class="val" itemprop="dateCreated">1971-1972</span><br/>
+	<span class="val" itemprop="dateCreated">1971</span><br/>
 	<span class="label">Direct Link</span>
 	<span class="val"><a itemprop="url" href="https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8/3">https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8/3</a></span><br/>
 	<span class="label">Subject</span>
@@ -31676,7 +32113,7 @@ RDFA:
 	<span class="label">In Collection</span>
 	<span class="val"><a property="isPartOf" href="https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8">THM/407/8 - Audio Recordings</a></span><br/>
 	<span class="label">Dates of Creation</span>
-	<span class="val" property="dateCreated">1971-1972</span><br/>
+	<span class="val" property="dateCreated">1971</span><br/>
 	<span class="label">Direct Link</span>
 	<span class="val"><a property="url" href="https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8/3">https://archiveshub.jisc.ac.uk/data/gb71-thm/407/thm/407/8/3</a></span><br/>
 	<span class="label">Subject</span>
@@ -31705,7 +32142,7 @@ JSON:
   "about": "Comedy",
   "description": "Sound recording of the first radio broadcast of Lines from My Grandfather's Forehead by Ronnie Barker and others. Duration: max 90 mins.",
   "inLanguage": "EN",
-  "dateCreated": "1971-1972",
+  "dateCreated": "1971",
   "duration": "PT90M",
   "playerType": "Audio Cassette",
   "itemLocation": "https://archiveshub.jisc.ac.uk/search/locations/eae30daa-1bf9-33d9-bf1c-7aeb220d2e76",

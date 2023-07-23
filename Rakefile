@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'sinatra/asset_pipeline/task'
 require 'rdf/linter'
 
 namespace :doc do
@@ -11,11 +10,16 @@ namespace :doc do
   end
 end
 
-Sinatra::AssetPipeline::Task.define! RDF::Linter::Application
+namespace :cache do
+  desc 'Clear document cache'
+  task :clear do
+    FileUtils.rm_rf File.expand_path("../cache", __FILE__)
+  end
+end
 
 # https://raw.githubusercontent.com/schemaorg/schemaorg/sdo-callisto/data/releases/3.3/all-layers.nq
 schema_base = ENV.fetch("schema_base", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data")
-schema_version = ENV.fetch("schema_version", "15.0")
+schema_version = ENV.fetch("schema_version", "22.0")
 
 namespace :schema do
   desc "Create custom pre-compiled vocabularies"
