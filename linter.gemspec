@@ -35,6 +35,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'rdf-xsd',            '~> 3.2'
 
   # Sinatra dependencies
+  gem.add_runtime_dependency      'puma',               '~> 6.1'
   gem.add_runtime_dependency      'sinatra',            '~> 3.0'
   gem.add_runtime_dependency      'sass',               '~> 3.7'
   gem.add_runtime_dependency      'sprockets',          '~> 4.2'
@@ -53,7 +54,6 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'activesupport',      '>= 5', '< 8'
 
   # development dependencies
-  gem.add_development_dependency  'puma',               '~> 6.1'
   gem.add_development_dependency  'foreman'
   gem.add_development_dependency  'yard' ,              '~> 0.9', ">= 0.9.34"
   gem.add_development_dependency  'shotgun',            '~> 0.9'
