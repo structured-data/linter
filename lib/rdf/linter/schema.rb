@@ -112,6 +112,7 @@ module RDF::Linter
       return if example =~ /This example is JSON only/m
       raise "TYPES does not start with example frag: #{types}" unless types.to_s.start_with?('#')
       name, types = types.split(/\s+/, 2)
+      return unless types
       name = name[1..-1]  # Remove initial '#'
       types = types.split(/,\s*/)
       name ||= "#{types.join('-')}-#{ex_num}"
