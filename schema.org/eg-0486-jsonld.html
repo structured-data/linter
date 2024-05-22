@@ -1,0 +1,56 @@
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "@id": "https://www.example.com/12345678901231",
+    "sku": "1234-5678",
+    "image": "https://www.example.com/waterheater.jpg",
+    "name": "Water heater",
+    "description": "Large capacity water heater",
+    "gtin14": "12345678901231",
+    "mpn": "WH1234",
+    "brand": {
+      "@type": "Brand",
+      "name": "ExampleWaterHeaterBrand"
+    },
+    "hasCertification": {
+      "@type": "Certification",
+      "@id": "https://www.co2trust.com/12345678901231"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.example.com/hotwaterheater",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "price": 1799,
+      "priceCurrency": "EUR"
+    }
+  },
+  {
+    "@context": [
+      "https://schema.org",
+	  "https://www.w3.org/ns/credentials/v2"
+    ],
+    "id": "http://certification.example/credentials/3732",
+    "type": [
+      "VerifiableCredential",
+      "CertificationCredential"
+    ],
+    "issuer": "https://certification.example/issuers/14",
+    "validFrom": "2023-01-01T19:23:24Z",
+    "credentialSubject": {
+      "type": "Product",
+      "id": "https://www.example.com/12345678901231"
+    },
+    "proof": {
+      "type": "DataIntegrityProof",
+      "cryptosuite": "ecdsa-rdfc-2019",
+      "created": "2023-12-11T14:58:20Z",
+      "verificationMethod": "https://certification.example/issuers/14#key-1",
+      "proofPurpose": "assertionMethod",
+      "proofValue": "z5dqTceMhzmpFSfwEphYDnWJJiAtcGaitiZ2FgpRWEcLJmfQBRMUpaTihmhpdHbiMJN9Ranx1PXLaGSePQjV74nLC"
+    }
+  }
+]
+</script>

@@ -1,0 +1,43 @@
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://schema.org",
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "@type": "VerifiableCredential",
+  "validFrom": "2022-01-01T16:00:00Z",
+  "id": "http://certification.example/credentials/99876",
+  "issuer": "https://certification.example/issuers/1562",
+  "credentialSubject": {
+    "type": "Product",
+    "schema:name": "WolfCrypt",
+    "hasCertification": {
+      "type": "Certification",
+      "schema:name": "FIPS 140-2",
+      "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3389",
+      "certificationStatus": "CertificationActive",
+      "issuedBy": {
+        "type": "Organization",
+        "schema:name": "NIST",
+        "url": "https://www.nist.gov"
+      },
+      "certificationIdentification": "3389",
+      "certificationRating": {
+        "@type": "Rating",
+        "ratingValue": 1,
+        "bestRating": 4,
+        "worstRating": 1
+      },
+      "expires": "2024-03-03"
+    }
+  },
+  "proof": {
+    "type": "DataIntegrityProof",
+    "cryptosuite": "ecdsa-rdfc-2019",
+    "created": "2023-12-11T13:00:00Z",
+    "verificationMethod": "https://certification.example/issuers/1562#key-1",
+    "proofPurpose": "assertionMethod",
+    "proofValue": "998qTceMhzmpFSfwEphYDnWJJiAtcGaitiZ2FgpRWEcLJmfQBRMUpaTihmhpdHbiMJN9Ranx1PXLaGSePQjV74nLC"
+  }
+}
+</script>
