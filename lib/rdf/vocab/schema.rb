@@ -601,7 +601,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/PlaceOfWorship",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :BusOrCoach,
-      comment: "A bus (also omnibus or autobus) is a road vehicle designed to carry passengers. Coaches are luxury busses, usually in service for long distance travel.",
+      comment: "A bus (also omnibus or autobus) is a road vehicle designed to carry passengers. Coaches are luxury buses, usually in service for long distance travel.",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "http://schema.org/isPartOf": "http://auto.schema.org",
       label: "BusOrCoach",
@@ -734,6 +734,20 @@ module RDF::Vocab
       comment: "A graveyard.",
       label: "Cemetery",
       subClassOf: "http://schema.org/CivicStructure",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :Certification,
+      comment: "A Certification is an official and authoritative statement about a subject, for example a product, service, person, or organization. A certification is typically issued by an indendent certification body, for example a professional organization or government. It formally attests certain characteristics about the subject, for example Organizations can be ISO certified, Food products can be certified Organic or Vegan, a Person can be a certified professional, a Place can be certified for food processing. There are certifications for many domains: regulatory, organizational, recycling, food, efficiency, educational, ecological, etc. A certification is a form of credential, as are accreditations and licenses. Mapped from the [gs1:CertificationDetails](https://www.gs1.org/voc/CertificationDetails) class in the GS1 Web Vocabulary.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "Certification",
+      subClassOf: "http://schema.org/CreativeWork",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :CertificationStatusEnumeration,
+      comment: "Enumerates the different statuses of a Certification (Active and Inactive).",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "CertificationStatusEnumeration",
+      subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Chapter,
       comment: "One of the sections into which a book is divided. A chapter usually has a section number or a name.",
@@ -1959,7 +1973,7 @@ module RDF::Vocab
       subClassOf: ["http://schema.org/HealthAndBeautyBusiness", "http://schema.org/SportsActivityLocation"],
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :HealthInsurancePlan,
-      comment: "A US-style health insurance plan, including PPOs, EPOs, and HMOs. ",
+      comment: "A US-style health insurance plan, including PPOs, EPOs, and HMOs.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
       label: "HealthInsurancePlan",
@@ -1973,14 +1987,14 @@ module RDF::Vocab
       subClassOf: "http://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :HealthPlanFormulary,
-      comment: "For a given health insurance plan, the specification for costs and coverage of prescription drugs. ",
+      comment: "For a given health insurance plan, the specification for costs and coverage of prescription drugs.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
       label: "HealthPlanFormulary",
       subClassOf: "http://schema.org/Intangible",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :HealthPlanNetwork,
-      comment: "A US-style health insurance plan network. ",
+      comment: "A US-style health insurance plan network.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1062",
       label: "HealthPlanNetwork",
@@ -2105,6 +2119,13 @@ module RDF::Vocab
       label: "HyperTocEntry",
       subClassOf: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :IPTCDigitalSourceEnumeration,
+      comment: "<a href=\"https://www.iptc.org/\">IPTC</a> \"Digital Source\" codes for use with the [[digitalSourceType]] property, providing information about the source for a digital media object. \nIn general these codes are not declared here to be mutually exclusive, although some combinations would be contradictory if applied simultaneously, or might be considered mutually incompatible by upstream maintainers of the definitions. See the IPTC <a href=\"https://www.iptc.org/std/photometadata/documentation/userguide/\">documentation</a> \n for <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">detailed definitions</a> of all terms.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "IPTCDigitalSourceEnumeration",
+      subClassOf: "http://schema.org/MediaEnumeration",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :IceCreamShop,
       comment: "An ice cream shop.",
       label: "IceCreamShop",
@@ -2138,6 +2159,11 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "ImagingTest",
       subClassOf: "http://schema.org/MedicalTest",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :IndividualPhysician,
+      comment: "An individual medical practitioner. For their official address use [[address]], for affiliations to hospitals use [[hospitalAffiliation]]. \nThe [[practicesAt]] property can be used to indicate [[MedicalOrganization]] hospitals, clinics, pharmacies etc. where this physician practices.",
+      label: "IndividualPhysician",
+      subClassOf: "http://schema.org/Physician",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :IndividualProduct,
       comment: "A single, identifiable product instance (e.g. a laptop with a particular serial number).",
@@ -2507,6 +2533,13 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "MeasurementTypeEnumeration",
+      subClassOf: "http://schema.org/Enumeration",
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :MediaEnumeration,
+      comment: "MediaEnumeration enumerations are lists of codes, labels etc. useful for describing media objects. They may be reflections of externally developed lists, or created at schema.org, or a combination.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "MediaEnumeration",
       subClassOf: "http://schema.org/Enumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :MediaGallery,
@@ -3485,9 +3518,14 @@ module RDF::Vocab
       subClassOf: "http://schema.org/MedicalTherapy",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Physician,
-      comment: "A doctor's office.",
+      comment: "An individual physician or a physician's office considered as a [[MedicalOrganization]].",
       label: "Physician",
       subClassOf: ["http://schema.org/MedicalBusiness", "http://schema.org/MedicalOrganization"],
+      type: "http://www.w3.org/2000/01/rdf-schema#Class"
+    term :PhysiciansOffice,
+      comment: "A doctor's office or clinic.",
+      label: "PhysiciansOffice",
+      subClassOf: "http://schema.org/Physician",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :Place,
       comment: "Entities that have a somewhat fixed, physical extension.",
@@ -5045,7 +5083,7 @@ module RDF::Vocab
       subClassOf: "http://schema.org/SizeGroupEnumeration",
       type: "http://www.w3.org/2000/01/rdf-schema#Class"
     term :WearableSizeSystemEnumeration,
-      comment: "Enumerates common size systems specific for wearable products",
+      comment: "Enumerates common size systems specific for wearable products.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableSizeSystemEnumeration",
@@ -5134,7 +5172,7 @@ module RDF::Vocab
     # Property definitions
     property :about,
       comment: "The subject matter of the content.",
-      domainIncludes: ["http://schema.org/CommunicateAction", "http://schema.org/CreativeWork", "http://schema.org/Event"],
+      domainIncludes: ["http://schema.org/Certification", "http://schema.org/CommunicateAction", "http://schema.org/CreativeWork", "http://schema.org/Event"],
       "http://schema.org/inverseOf": "http://schema.org/subjectOf",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1670",
       label: "about",
@@ -5177,8 +5215,8 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Offer",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :acceptedPaymentMethod,
-      comment: "The payment method(s) accepted by seller for this offer.",
-      domainIncludes: ["http://schema.org/Demand", "http://schema.org/Offer"],
+      comment: "The payment method(s) that are accepted in general by an organization, or for some specific demand or offer.",
+      domainIncludes: ["http://schema.org/Demand", "http://schema.org/Offer", "http://schema.org/Organization"],
       "http://schema.org/contributor": "http://schema.org/docs/collab/GoodRelationsTerms",
       label: "acceptedPaymentMethod",
       rangeIncludes: ["http://schema.org/LoanOrCredit", "http://schema.org/PaymentMethod"],
@@ -5234,7 +5272,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :accessibilitySummary,
-      comment: "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as \"short descriptions are present but long descriptions will be needed for non-visual users\" or \"short descriptions are present and no long descriptions are needed.\"",
+      comment: "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as \"short descriptions are present but long descriptions will be needed for non-visual users\" or \"short descriptions are present and no long descriptions are needed\".",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1100",
       label: "accessibilitySummary",
@@ -5410,12 +5448,12 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :additionalProperty,
       comment: "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
-      domainIncludes: ["http://schema.org/MerchantReturnPolicy", "http://schema.org/Place", "http://schema.org/Product", "http://schema.org/QualitativeValue", "http://schema.org/QuantitativeValue"],
+      domainIncludes: ["http://schema.org/MerchantReturnPolicy", "http://schema.org/Offer", "http://schema.org/Place", "http://schema.org/Product", "http://schema.org/QualitativeValue", "http://schema.org/QuantitativeValue"],
       label: "additionalProperty",
       rangeIncludes: "http://schema.org/PropertyValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :additionalType,
-      comment: "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the \n    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href=\"http://schema.org/docs/styleguide.html\">style guide</a>",
+      comment: "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the\n    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href=\"http://schema.org/docs/styleguide.html\">style guide</a>.",
       domainIncludes: "http://schema.org/Thing",
       label: "additionalType",
       rangeIncludes: ["http://schema.org/Text", "http://schema.org/URL"],
@@ -5500,6 +5538,14 @@ module RDF::Vocab
       domainIncludes: "http://schema.org/Action",
       label: "agent",
       rangeIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :agentInteractionStatistic,
+      comment: "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+      domainIncludes: ["http://schema.org/Organization", "http://schema.org/Person"],
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2858",
+      label: "agentInteractionStatistic",
+      rangeIncludes: "http://schema.org/InteractionCounter",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :aggregateRating,
       comment: "The overall rating, based on a collection of reviews or ratings, of the item.",
@@ -6021,6 +6067,13 @@ module RDF::Vocab
       label: "audio",
       rangeIncludes: ["http://schema.org/AudioObject", "http://schema.org/Clip", "http://schema.org/MusicRecording"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :auditDate,
+      comment: "Date when a certification was last audited. See also  [gs1:certificationAuditDate](https://www.gs1.org/voc/certificationAuditDate).",
+      domainIncludes: "http://schema.org/Certification",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "auditDate",
+      rangeIncludes: ["http://schema.org/Date", "http://schema.org/DateTime"],
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :authenticator,
       comment: "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media.",
       domainIncludes: "http://schema.org/MediaSubscription",
@@ -6218,7 +6271,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/URL",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :bestRating,
-      comment: "The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.",
+      comment: "The highest value allowed in this rating system.",
       domainIncludes: "http://schema.org/Rating",
       label: "bestRating",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/Text"],
@@ -6451,7 +6504,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :broadcastFrequency,
-      comment: "The frequency used for over-the-air broadcasts. Numeric values or simple ranges, e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\".",
+      comment: "The frequency used for over-the-air broadcasts. Numeric values or simple ranges, e.g. 87-99. In addition a shortcut idiom is supported for frequencies of AM and FM radio channels, e.g. \"87 FM\".",
       domainIncludes: ["http://schema.org/BroadcastChannel", "http://schema.org/BroadcastService"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1004",
       label: "broadcastFrequency",
@@ -6686,6 +6739,29 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/ContactPoint", "http://schema.org/Organization", "http://schema.org/Person"],
       subPropertyOf: "http://schema.org/recipient",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :certificationIdentification,
+      comment: "Identifier of a certification instance (as registered with an independent certification body). Typically this identifier can be used to consult and verify the certification instance. See also [gs1:certificationIdentification](https://www.gs1.org/voc/certificationIdentification).",
+      domainIncludes: "http://schema.org/Certification",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "certificationIdentification",
+      rangeIncludes: ["http://schema.org/DefinedTerm", "http://schema.org/Text"],
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :certificationRating,
+      comment: "Rating of a certification instance (as defined by an independent certification body). Typically this rating can be used to rate the level to which the requirements of the certification instance are fulfilled. See also [gs1:certificationValue](https://www.gs1.org/voc/certificationValue).",
+      domainIncludes: "http://schema.org/Certification",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "certificationRating",
+      rangeIncludes: "http://schema.org/Rating",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :certificationStatus,
+      comment: "Indicates the current status of a certification: active or inactive. See also  [gs1:certificationStatus](https://www.gs1.org/voc/certificationStatus).",
+      domainIncludes: "http://schema.org/Certification",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "certificationStatus",
+      rangeIncludes: "http://schema.org/CertificationStatusEnumeration",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :character,
       comment: "Fictional person connected with a creative work.",
       domainIncludes: "http://schema.org/CreativeWork",
@@ -6792,7 +6868,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/CreativeWork", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :claimInterpreter,
-      comment: "For a [[Claim]] interpreted from [[MediaObject]] content\n    sed to indicate a claim contained, implied or refined from the content of a [[MediaObject]].",
+      comment: "For a [[Claim]] interpreted from [[MediaObject]] content, the [[interpretedAsClaim]] property can be used to indicate a claim contained, implied or refined from the content of a [[MediaObject]].",
       domainIncludes: "http://schema.org/Claim",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450",
@@ -6911,6 +6987,15 @@ module RDF::Vocab
       "http://schema.org/contributor": "http://schema.org/docs/collab/GoodRelationsTerms",
       label: "color",
       rangeIncludes: "http://schema.org/Text",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :colorSwatch,
+      comment: "A color swatch image, visualizing the color of a [[Product]]. Should match the textual description specified in the [[color]] property. This can be a URL or a fully described ImageObject.",
+      domainIncludes: "http://schema.org/Product",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3423",
+      label: "colorSwatch",
+      rangeIncludes: ["http://schema.org/ImageObject", "http://schema.org/URL"],
+      subPropertyOf: "http://schema.org/image",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :colorist,
       comment: "The individual who adds color to inked drawings.",
@@ -7566,8 +7651,8 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Date", "http://schema.org/DateTime"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :datePublished,
-      comment: "Date of first broadcast/publication.",
-      domainIncludes: "http://schema.org/CreativeWork",
+      comment: "Date of first publication or broadcast. For example the date a [[CreativeWork]] was broadcast or a [[Certification]] was issued.",
+      domainIncludes: ["http://schema.org/Certification", "http://schema.org/CreativeWork"],
       label: "datePublished",
       rangeIncludes: ["http://schema.org/Date", "http://schema.org/DateTime"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -7779,6 +7864,14 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "differentialDiagnosis",
       rangeIncludes: "http://schema.org/DDxElement",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :digitalSourceType,
+      comment: "Indicates an IPTCDigitalSourceEnumeration code indicating the nature of the digital source(s) for some [[CreativeWork]].",
+      domainIncludes: "http://schema.org/CreativeWork",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "digitalSourceType",
+      rangeIncludes: "http://schema.org/IPTCDigitalSourceEnumeration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :directApply,
       comment: "Indicates whether an [[url]] that is associated with a [[JobPosting]] enables direct application for the job, via the posting website. A job posting is considered to have directApply of [[True]] if an application process for the specified job can be directly initiated via the url(s) given (noting that e.g. multiple internet domains might nevertheless be involved at an implementation level). A value of [[False]] is appropriate if there is no clear path to applying directly online for the specified job, navigating directly from the JobPosting url(s) supplied.",
@@ -8634,8 +8727,8 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :expires,
-      comment: "Date the content expires and is no longer useful or available. For example a [[VideoObject]] or [[NewsArticle]] whose availability or relevance is time-limited, or a [[ClaimReview]] fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date.",
-      domainIncludes: "http://schema.org/CreativeWork",
+      comment: "Date the content expires and is no longer useful or available. For example a [[VideoObject]] or [[NewsArticle]] whose availability or relevance is time-limited, a [[ClaimReview]] fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date, or a [[Certification]] the validity has expired.",
+      domainIncludes: ["http://schema.org/Certification", "http://schema.org/CreativeWork"],
       label: "expires",
       rangeIncludes: ["http://schema.org/Date", "http://schema.org/DateTime"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -8752,7 +8845,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/MonetaryAmount",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :floorSize,
-      comment: "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard ",
+      comment: "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard.",
       domainIncludes: ["http://schema.org/Accommodation", "http://schema.org/FloorPlan"],
       "http://schema.org/contributor": "http://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "floorSize",
@@ -9126,7 +9219,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/QualitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :gtin,
-      comment: "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs as URLs (URIs, IRIs, etc.). Details including regular expression examples can be found in, Section 6 of the GS1 URI Syntax specification; see also [schema.org tracking issue](https://github.com/schemaorg/schemaorg/issues/3156#issuecomment-1209522809) for schema.org-specific discussion. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
+      comment: "A Global Trade Item Number ([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade items, including products and services, using numeric identification codes.\n\nA correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a \"GS1 Digital Link\" URL based on such a string. The numeric component should also have a [valid GS1 check digit](https://www.gs1.org/services/check-digit-calculator) and meet the other rules for valid GTINs. See also [GS1's GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and [Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.\n\nThe GS1 [digital link specifications](https://www.gs1.org/standards/Digital-Link/) expresses GTINs as URLs (URIs, IRIs, etc.).\nDigital Links should be populated into the [[hasGS1DigitalLink]] attribute.\n\nNote also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.",
       domainIncludes: ["http://schema.org/Demand", "http://schema.org/Offer", "http://schema.org/Product"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2288",
@@ -9237,6 +9330,13 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/CategoryCode",
       subPropertyOf: "http://schema.org/hasDefinedTerm",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :hasCertification,
+      comment: "Certification information about a product, organization, service, place, or person.",
+      domainIncludes: ["http://schema.org/Organization", "http://schema.org/Person", "http://schema.org/Place", "http://schema.org/Product", "http://schema.org/Service"],
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "hasCertification",
+      rangeIncludes: "http://schema.org/Certification",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasCourse,
       comment: "A course or class that is one of the learning opportunities that constitute an educational / occupational program. No information is implied about whether the course is mandatory or optional; no guarantee is implied about whether the course will be available to everyone on the program.",
       domainIncludes: "http://schema.org/EducationalOccupationalProgram",
@@ -9303,6 +9403,15 @@ module RDF::Vocab
       label: "hasEnergyEfficiencyCategory",
       rangeIncludes: "http://schema.org/EnergyEfficiencyEnumeration",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :hasGS1DigitalLink,
+      comment: "The <a href=\"https://www.gs1.org/standards/gs1-digital-link\">GS1 digital link</a> associated with the object. This URL should conform to the particular requirements of digital links. The link should only contain the Application Identifiers (AIs) that are relevant for the entity being annotated, for instance a [[Product]] or an [[Organization]], and for the correct granularity. In particular, for products:<ul><li>A Digital Link that contains a serial number (AI <code>21</code>) should only be present on instances of [[IndividualProduct]]</li><li>A Digital Link that contains a lot number (AI <code>10</code>) should be annotated as [[SomeProduct]] if only products from that lot are sold, or [[IndividualProduct]] if there is only a specific product.</li><li>A Digital Link that contains a global model number (AI <code>8013</code>)  should be attached to a [[Product]] or a [[ProductModel]].</li></ul> Other item types should be adapted similarly.",
+      domainIncludes: ["http://schema.org/Offer", "http://schema.org/Organization", "http://schema.org/Place", "http://schema.org/Product"],
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3475",
+      label: "hasGS1DigitalLink",
+      rangeIncludes: "http://schema.org/URL",
+      subPropertyOf: "http://schema.org/identifier",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasHealthAspect,
       comment: "Indicates the aspect or aspects specifically addressed in some [[HealthTopicContent]]. For example, that the content is an overview, or that it talks about treatment, self-care, treatments or their side-effects.",
       domainIncludes: "http://schema.org/HealthTopicContent",
@@ -9318,8 +9427,8 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Map", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :hasMeasurement,
-      comment: "A product measurement, for example the inseam of pants, the wheel size of a bicycle, or the gauge of a screw. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.",
-      domainIncludes: ["http://schema.org/Offer", "http://schema.org/Product", "http://schema.org/SizeSpecification"],
+      comment: "A measurement of an item, For example, the inseam of pants, the wheel size of a bicycle, the gauge of a screw, or the carbon footprint measured for certification by an authority. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.",
+      domainIncludes: ["http://schema.org/Certification", "http://schema.org/Offer", "http://schema.org/Product", "http://schema.org/SizeSpecification"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "hasMeasurement",
@@ -10148,7 +10257,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :iso6523Code,
-      comment: "An organization identifier as defined in ISO 6523(-1). Note that many existing organization identifiers such as [leiCode](http://schema.org/leiCode), [duns](http://schema.org/duns) and [vatID](http://schema.org/vatID) can be expressed as an ISO 6523 identifier by setting the ICD part of the ISO 6523 identifier accordingly. ",
+      comment: "An organization identifier as defined in [ISO 6523(-1)](https://en.wikipedia.org/wiki/ISO/IEC_6523). The identifier should be in the `XXXX:YYYYYY:ZZZ` or `XXXX:YYYYYY`format. Where `XXXX` is a 4 digit _ICD_ (International Code Designator), `YYYYYY` is an _OID_ (Organization Identifier) with all formatting characters (dots, dashes, spaces) removed with a maximal length of 35 characters, and `ZZZ` is an optional OPI (Organization Part Identifier) with a maximum length of 35 characters. The various components (ICD, OID, OPI) are joined with a colon character (ASCII `0x3a`). Note that many existing organization identifiers defined as attributes like [leiCode](http://schema.org/leiCode) (`0199`), [duns](http://schema.org/duns) (`0060`) or [GLN](http://schema.org/globalLocationNumber) (`0088`) can be expressed using ISO-6523. If possible, ISO-6523 codes should be preferred to populating [vatID](http://schema.org/vatID) or [taxID](http://schema.org/taxID), as ISO identifiers are less ambiguous.",
       domainIncludes: "http://schema.org/Organization",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2915",
@@ -10181,8 +10290,8 @@ module RDF::Vocab
       subPropertyOf: "http://schema.org/position",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :issuedBy,
-      comment: "The organization issuing the ticket or permit.",
-      domainIncludes: ["http://schema.org/Permit", "http://schema.org/Ticket"],
+      comment: "The organization issuing the item, for example a [[Permit]], [[Ticket]], or [[Certification]].",
+      domainIncludes: ["http://schema.org/Certification", "http://schema.org/Permit", "http://schema.org/Ticket"],
       label: "issuedBy",
       rangeIncludes: "http://schema.org/Organization",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -10741,7 +10850,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :logo,
       comment: "An associated logo.",
-      domainIncludes: ["http://schema.org/Brand", "http://schema.org/Organization", "http://schema.org/Place", "http://schema.org/Product", "http://schema.org/Service"],
+      domainIncludes: ["http://schema.org/Brand", "http://schema.org/Certification", "http://schema.org/Organization", "http://schema.org/Place", "http://schema.org/Product", "http://schema.org/Service"],
       "http://schema.org/contributor": "http://schema.org/docs/collab/GoodRelationsTerms",
       label: "logo",
       rangeIncludes: ["http://schema.org/ImageObject", "http://schema.org/URL"],
@@ -11131,7 +11240,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :mileageFromOdometer,
-      comment: "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles",
+      comment: "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "mileageFromOdometer",
@@ -11472,7 +11581,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/QuantitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfAxles,
-      comment: "The number of axles.\\n\\nTypical unit code(s): C62",
+      comment: "The number of axles.\\n\\nTypical unit code(s): C62.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "numberOfAxles",
@@ -11510,7 +11619,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/Integer", "http://schema.org/StructuredValue"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfDoors,
-      comment: "The number of doors.\\n\\nTypical unit code(s): C62",
+      comment: "The number of doors.\\n\\nTypical unit code(s): C62.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "numberOfDoors",
@@ -11529,7 +11638,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Integer",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfForwardGears,
-      comment: "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62",
+      comment: "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "numberOfForwardGears",
@@ -11579,7 +11688,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/QuantitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :numberOfPreviousOwners,
-      comment: "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62",
+      comment: "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       label: "numberOfPreviousOwners",
@@ -11641,7 +11750,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :occupancy,
-      comment: "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person",
+      comment: "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
       domainIncludes: ["http://schema.org/Accommodation", "http://schema.org/Apartment", "http://schema.org/HotelRoom", "http://schema.org/SingleFamilyResidence", "http://schema.org/Suite"],
       "http://schema.org/contributor": "http://schema.org/docs/collab/STI_Accommodation_Ontology",
       label: "occupancy",
@@ -11656,9 +11765,9 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :occupationalCategory,
       comment: "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
-      domainIncludes: ["http://schema.org/EducationalOccupationalProgram", "http://schema.org/JobPosting", "http://schema.org/Occupation", "http://schema.org/WorkBasedProgram"],
+      domainIncludes: ["http://schema.org/EducationalOccupationalProgram", "http://schema.org/JobPosting", "http://schema.org/Occupation", "http://schema.org/Physician", "http://schema.org/WorkBasedProgram"],
       "http://schema.org/isPartOf": "http://pending.schema.org",
-      "http://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1698", "https://github.com/schemaorg/schemaorg/issues/2192", "https://github.com/schemaorg/schemaorg/issues/2289", "https://github.com/schemaorg/schemaorg/issues/2460"],
+      "http://schema.org/source": ["https://github.com/schemaorg/schemaorg/issues/1698", "https://github.com/schemaorg/schemaorg/issues/2192", "https://github.com/schemaorg/schemaorg/issues/2289", "https://github.com/schemaorg/schemaorg/issues/2460", "https://github.com/schemaorg/schemaorg/issues/3420"],
       label: "occupationalCategory",
       rangeIncludes: ["http://schema.org/CategoryCode", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -11894,10 +12003,10 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Person",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :parentItem,
-      comment: "The parent of a question, answer or item in general.",
-      domainIncludes: "http://schema.org/Comment",
+      comment: "The parent of a question, answer or item in general. Typically used for Q/A discussion threads e.g. a chain of comments with the first comment being an [[Article]] or other [[CreativeWork]]. See also [[comment]] which points from something to a comment about it.",
+      domainIncludes: ["http://schema.org/Answer", "http://schema.org/Comment", "http://schema.org/Question"],
       label: "parentItem",
-      rangeIncludes: "http://schema.org/Comment",
+      rangeIncludes: ["http://schema.org/Comment", "http://schema.org/CreativeWork"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :parentOrganization,
       comment: "The larger organization that this organization is a [[subOrganization]] of, if any.",
@@ -12343,6 +12452,14 @@ module RDF::Vocab
       label: "potentialUse",
       rangeIncludes: "http://schema.org/DefinedTerm",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :practicesAt,
+      comment: "A [[MedicalOrganization]] where the [[IndividualPhysician]] practices.",
+      domainIncludes: "http://schema.org/IndividualPhysician",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3420",
+      label: "practicesAt",
+      rangeIncludes: "http://schema.org/MedicalOrganization",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :preOp,
       comment: "A description of the workup, testing, and other preparations required before implanting this device.",
       domainIncludes: "http://schema.org/MedicalDevice",
@@ -12666,7 +12783,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Service",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :publicAccess,
-      comment: "A flag to signal that the [[Place]] is open to public visitors.  If this property is omitted there is no assumed default boolean value",
+      comment: "A flag to signal that the [[Place]] is open to public visitors.  If this property is omitted there is no assumed default boolean value.",
       domainIncludes: "http://schema.org/Place",
       label: "publicAccess",
       rangeIncludes: "http://schema.org/Boolean",
@@ -13491,7 +13608,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/ImageObject", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sdDatePublished,
-      comment: "Indicates the date on which the current structured data was generated / published. Typically used alongside [[sdPublisher]]",
+      comment: "Indicates the date on which the current structured data was generated / published. Typically used alongside [[sdPublisher]].",
       domainIncludes: "http://schema.org/CreativeWork",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1886",
@@ -13555,7 +13672,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :seatingCapacity,
-      comment: "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons ",
+      comment: "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "http://schema.org/isPartOf": "http://auto.schema.org",
@@ -13721,7 +13838,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Text",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sha256,
-      comment: "The [SHA-2](https://en.wikipedia.org/wiki/SHA-2) SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'",
+      comment: "The [SHA-2](https://en.wikipedia.org/wiki/SHA-2) SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
       domainIncludes: "http://schema.org/MediaObject",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2450",
@@ -13731,7 +13848,7 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sharedContent,
       comment: "A CreativeWork such as an image, video, or audio clip shared as part of this posting.",
-      domainIncludes: "http://schema.org/SocialMediaPosting",
+      domainIncludes: ["http://schema.org/Comment", "http://schema.org/SocialMediaPosting"],
       label: "sharedContent",
       rangeIncludes: "http://schema.org/CreativeWork",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
@@ -13839,7 +13956,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/DefinedTerm", "http://schema.org/QuantitativeValue", "http://schema.org/SizeSpecification", "http://schema.org/Text"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :sizeGroup,
-      comment: "The size group (also known as \"size type\") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example \"men's big and tall\", \"petite maternity\" or \"regular\"",
+      comment: "The size group (also known as \"size type\") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example \"men's big and tall\", \"petite maternity\" or \"regular\".",
       domainIncludes: "http://schema.org/SizeSpecification",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
@@ -14469,7 +14586,7 @@ module RDF::Vocab
       rangeIncludes: ["http://schema.org/DateTime", "http://schema.org/Text", "http://schema.org/URL"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :termCode,
-      comment: "A code that identifies this [[DefinedTerm]] within a [[DefinedTermSet]]",
+      comment: "A code that identifies this [[DefinedTerm]] within a [[DefinedTermSet]].",
       domainIncludes: "http://schema.org/DefinedTerm",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/894",
@@ -14905,10 +15022,10 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Mass",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :uploadDate,
-      comment: "Date when this media object was uploaded to this site.",
+      comment: "Date (including time if available) when this media object was uploaded to this site.",
       domainIncludes: "http://schema.org/MediaObject",
       label: "uploadDate",
-      rangeIncludes: "http://schema.org/Date",
+      rangeIncludes: ["http://schema.org/Date", "http://schema.org/DateTime"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :upvoteCount,
       comment: "The number of upvotes this question, answer or comment has received from the community.",
@@ -14927,6 +15044,15 @@ module RDF::Vocab
       domainIncludes: "http://schema.org/EntryPoint",
       label: "urlTemplate",
       rangeIncludes: "http://schema.org/Text",
+      type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    property :usNPI,
+      comment: "A <a href=\"https://en.wikipedia.org/wiki/National_Provider_Identifier\">National Provider Identifier</a> (NPI) \n    is a unique 10-digit identification number issued to health care providers in the United States by the Centers for Medicare and Medicaid Services.",
+      domainIncludes: "http://schema.org/Physician",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3420",
+      label: "usNPI",
+      rangeIncludes: "http://schema.org/Text",
+      subPropertyOf: "http://schema.org/identifier",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :usageInfo,
       comment: "The schema.org [[usageInfo]] property indicates further information about a [[CreativeWork]]. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information, e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.\n\nThis property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.",
@@ -14981,14 +15107,14 @@ module RDF::Vocab
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :validFrom,
       comment: "The date when the item becomes valid.",
-      domainIncludes: ["http://schema.org/Demand", "http://schema.org/LocationFeatureSpecification", "http://schema.org/MonetaryAmount", "http://schema.org/Offer", "http://schema.org/OpeningHoursSpecification", "http://schema.org/Permit", "http://schema.org/PriceSpecification"],
+      domainIncludes: ["http://schema.org/Certification", "http://schema.org/Demand", "http://schema.org/LocationFeatureSpecification", "http://schema.org/MonetaryAmount", "http://schema.org/Offer", "http://schema.org/OpeningHoursSpecification", "http://schema.org/Permit", "http://schema.org/PriceSpecification"],
       "http://schema.org/contributor": "http://schema.org/docs/collab/GoodRelationsTerms",
       label: "validFrom",
       rangeIncludes: ["http://schema.org/Date", "http://schema.org/DateTime"],
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :validIn,
-      comment: "The geographic area where a permit or similar thing is valid.",
-      domainIncludes: ["http://schema.org/EducationalOccupationalCredential", "http://schema.org/Permit"],
+      comment: "The geographic area where the item is valid. Applies for example to a [[Permit]], a [[Certification]], or an [[EducationalOccupationalCredential]]. ",
+      domainIncludes: ["http://schema.org/Certification", "http://schema.org/EducationalOccupationalCredential", "http://schema.org/Permit"],
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/1779",
       label: "validIn",
       rangeIncludes: "http://schema.org/AdministrativeArea",
@@ -15267,7 +15393,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/QuantitativeValue",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :wheelbase,
-      comment: "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet",
+      comment: "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
       domainIncludes: "http://schema.org/Vehicle",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
       "http://schema.org/isPartOf": "http://auto.schema.org",
@@ -15356,7 +15482,7 @@ module RDF::Vocab
       rangeIncludes: "http://schema.org/Organization",
       type: "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
     property :worstRating,
-      comment: "The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.",
+      comment: "The lowest value allowed in this rating system.",
       domainIncludes: "http://schema.org/Rating",
       label: "worstRating",
       rangeIncludes: ["http://schema.org/Number", "http://schema.org/Text"],
@@ -15432,6 +15558,20 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
       label: "AlcoholConsideration",
       type: "http://schema.org/AdultOrientedEnumeration"
+    term :AlgorithmicMediaDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia\">algorithmic media</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "AlgorithmicMediaDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
+    term :AlgorithmicallyEnhancedDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicallyEnhanced\">algorithmically enhanced</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/algorithmicallyEnhanced",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "AlgorithmicallyEnhancedDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :AllWheelDriveConfiguration,
       comment: "All-wheel Drive is a transmission layout where the engine drives all four wheels.",
       "http://schema.org/contributor": "http://schema.org/docs/collab/Automotive_Ontology_Working_Group",
@@ -15627,6 +15767,18 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2374",
       label: "CausesHealthAspect",
       type: "http://schema.org/HealthAspectEnumeration"
+    term :CertificationActive,
+      comment: "Specifies that a certification is active.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "CertificationActive",
+      type: "http://schema.org/CertificationStatusEnumeration"
+    term :CertificationInactive,
+      comment: "Specifies that a certification is inactive (no longer in effect).",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3230",
+      label: "CertificationInactive",
+      type: "http://schema.org/CertificationStatusEnumeration"
     term :CharitableIncorporatedOrganization,
       comment: "CharitableIncorporatedOrganization: Non-profit type referring to a Charitable Incorporated Organization (UK).",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -15682,6 +15834,27 @@ module RDF::Vocab
       comment: "An action that has already taken place.",
       label: "CompletedActionStatus",
       type: "http://schema.org/ActionStatusType"
+    term :CompositeCaptureDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/compositeCapture\">composite capture</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/compositeCapture",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "CompositeCaptureDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
+    term :CompositeSyntheticDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/compositeSynthetic\">composite synthetic</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/compositeSynthetic",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "CompositeSyntheticDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
+    term :CompositeWithTrainedAlgorithmicMediaDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia\">composite with trained algorithmic media</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/compositeWithTrainedAlgorithmicMedia",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "CompositeWithTrainedAlgorithmicMediaDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :ContagiousnessHealthAspect,
       comment: "Content about contagion mechanisms and contagiousness information over the topic.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -15713,6 +15886,13 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
       label: "DangerousGoodConsideration",
       type: "http://schema.org/AdultOrientedEnumeration"
+    term :DataDrivenMediaDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/dataDrivenMedia\">data driven media</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/dataDrivenMedia",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "DataDrivenMediaDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :DecontextualizedContent,
       comment: "Content coded 'missing context' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'missing context': Presenting unaltered video in an inaccurate manner that misrepresents the footage. For example, using incorrect dates or locations, altering the transcript or sharing brief clips from a longer video to mislead viewers. (A video rated 'original' can also be missing context.)\n\nFor an [[ImageObject]] to be 'missing context': Presenting unaltered images in an inaccurate manner to misrepresent the image and mislead the viewer. For example, a common tactic is using an unaltered image but saying it came from a different time or place. (An image rated 'original' can also be missing context.)\n\nFor an [[ImageObject]] with embedded text to be 'missing context': An unaltered image presented in an inaccurate manner to misrepresent the image and mislead the viewer. For example, a common tactic is using an unaltered image but saying it came from a different time or place. (An 'original' image with inaccurate text would generally fall in this category.)\n\nFor an [[AudioObject]] to be 'missing context': Unaltered audio presented in an inaccurate manner that misrepresents it. For example, using incorrect dates or locations, or sharing brief clips from a longer recording to mislead viewers. (Audio rated “original” can also be missing context.)\n",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -15776,11 +15956,25 @@ module RDF::Vocab
       label: "DietNutrition",
       subClassOf: "http://schema.org/MedicalBusiness",
       type: "http://schema.org/MedicalSpecialty"
+    term :DigitalArtDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/digitalArt\">digital art</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/digitalArt",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "DigitalArtDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :DigitalAudioTapeFormat,
       comment: "DigitalAudioTapeFormat.",
       "http://schema.org/contributor": "http://schema.org/docs/collab/MBZ",
       label: "DigitalAudioTapeFormat",
       type: "http://schema.org/MusicReleaseFormatType"
+    term :DigitalCaptureDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture\">digital capture</a></a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "DigitalCaptureDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :DigitalFormat,
       comment: "DigitalFormat.",
       "http://schema.org/contributor": "http://schema.org/docs/collab/MBZ",
@@ -16228,6 +16422,12 @@ module RDF::Vocab
       comment: "An ItemList ordered with no explicit order.",
       label: "ItemListUnordered",
       type: "http://schema.org/ItemListOrderType"
+    term :KeepProduct,
+      comment: "Specifies that the consumer can keep the product, even when receiving a refund or store credit.",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2880",
+      label: "KeepProduct",
+      type: "http://schema.org/ReturnMethodEnumeration"
     term :KosherDiet,
       comment: "A diet conforming to Jewish dietary practices.",
       label: "KosherDiet",
@@ -16371,6 +16571,13 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2712",
       label: "MinimumAdvertisedPrice",
       type: "http://schema.org/PriceTypeEnumeration"
+    term :MinorHumanEditsDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/minorHumanEdits\">minor human edits</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/minorHumanEdits",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "MinorHumanEditsDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :MisconceptionsHealthAspect,
       comment: "Content about common misconceptions and myths that are related to a topic.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -16429,6 +16636,13 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "Neck",
       type: "http://schema.org/PhysicalExam"
+    term :NegativeFilmDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm\">negative film</a></a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "NegativeFilmDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :Neuro,
       comment: "Neurological system clinical examination.",
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
@@ -16961,6 +17175,13 @@ module RDF::Vocab
       label: "Podiatric",
       subClassOf: "http://schema.org/MedicalBusiness",
       type: "http://schema.org/MedicalSpecialty"
+    term :PositiveFilmDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/positiveFilm\">positive film</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/positiveFilm",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "PositiveFilmDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :PotentialActionStatus,
       comment: "A description of an action that is supported.",
       label: "PotentialActionStatus",
@@ -16996,6 +17217,13 @@ module RDF::Vocab
       label: "PrimaryCare",
       subClassOf: "http://schema.org/MedicalBusiness",
       type: "http://schema.org/MedicalSpecialty"
+    term :PrintDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/print\">print</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/print",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "PrintDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :PrognosisHealthAspect,
       comment: "Typical progression and happenings of life course of the topic.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -17428,6 +17656,13 @@ module RDF::Vocab
       "http://schema.org/isPartOf": "http://health-lifesci.schema.org",
       label: "TraditionalChinese",
       type: "http://schema.org/MedicineSystem"
+    term :TrainedAlgorithmicMediaDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia\">trained algorithmic media</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/trainedAlgorithmicMedia",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "TrainedAlgorithmicMediaDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :TransformedContent,
       comment: "Content coded 'transformed content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'transformed content':  or all of the video has been manipulated to transform the footage itself. This category includes using tools like the Adobe Suite to change the speed of the video, add or remove visual elements or dub audio. Deepfakes are also a subset of transformation.\n\nFor an [[ImageObject]] to be 'transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[ImageObject]] with embedded text to be 'transformed content': Adding or deleting visual elements to give the image a different meaning with the intention to mislead.\n\nFor an [[AudioObject]] to be 'transformed content': Part or all of the audio has been manipulated to alter the words or sounds, or the audio has been synthetically generated, such as to create a sound-alike voice.\n",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -17539,6 +17774,13 @@ module RDF::Vocab
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2989",
       label: "ViolenceConsideration",
       type: "http://schema.org/AdultOrientedEnumeration"
+    term :VirtualRecordingDigitalSource,
+      comment: "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/virtualRecording\">virtual recording</a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      exactMatch: "http://cv.iptc.org/newscodes/digitalsourcetype/virtualRecording",
+      "http://schema.org/isPartOf": "http://pending.schema.org",
+      "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/3392",
+      label: "VirtualRecordingDigitalSource",
+      type: "http://schema.org/IPTCDigitalSourceEnumeration"
     term :WeaponConsideration,
       comment: "The item is intended to induce bodily harm, for example guns, mace, combat knives, brass knuckles, nail or other bombs, and spears.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
@@ -17546,73 +17788,73 @@ module RDF::Vocab
       label: "WeaponConsideration",
       type: "http://schema.org/AdultOrientedEnumeration"
     term :WearableMeasurementBack,
-      comment: "Measurement of the back section, for example of a jacket",
+      comment: "Measurement of the back section, for example of a jacket.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementBack",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementChestOrBust,
-      comment: "Measurement of the chest/bust section, for example of a suit",
+      comment: "Measurement of the chest/bust section, for example of a suit.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementChestOrBust",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementCollar,
-      comment: "Measurement of the collar, for example of a shirt",
+      comment: "Measurement of the collar, for example of a shirt.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementCollar",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementCup,
-      comment: "Measurement of the cup, for example of a bra",
+      comment: "Measurement of the cup, for example of a bra.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementCup",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementHeight,
-      comment: "Measurement of the height, for example the heel height of a shoe",
+      comment: "Measurement of the height, for example the heel height of a shoe.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementHeight",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementHips,
-      comment: "Measurement of the hip section, for example of a skirt",
+      comment: "Measurement of the hip section, for example of a skirt.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementHips",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementInseam,
-      comment: "Measurement of the inseam, for example of pants",
+      comment: "Measurement of the inseam, for example of pants.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementInseam",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementLength,
-      comment: "Represents the length, for example of a dress",
+      comment: "Represents the length, for example of a dress.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementLength",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementOutsideLeg,
-      comment: "Measurement of the outside leg, for example of pants",
+      comment: "Measurement of the outside leg, for example of pants.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementOutsideLeg",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementSleeve,
-      comment: "Measurement of the sleeve length, for example of a shirt",
+      comment: "Measurement of the sleeve length, for example of a shirt.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementSleeve",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementWaist,
-      comment: "Measurement of the waist section, for example of pants",
+      comment: "Measurement of the waist section, for example of pants.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementWaist",
       type: "http://schema.org/WearableMeasurementTypeEnumeration"
     term :WearableMeasurementWidth,
-      comment: "Measurement of the width, for example of shoes",
+      comment: "Measurement of the width, for example of shoes.",
       "http://schema.org/isPartOf": "http://pending.schema.org",
       "http://schema.org/source": "https://github.com/schemaorg/schemaorg/issues/2811",
       label: "WearableMeasurementWidth",

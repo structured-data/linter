@@ -132,10 +132,10 @@ GIT
 
 GIT
   remote: https://github.com/ruby-rdf/rdf-vocab
-  revision: f4df3f1ccca3d06f7f26e50962637a826b8ac6aa
+  revision: 305a7a038a7879052151a386ede9f0fdd89d66b2
   branch: develop
   specs:
-    rdf-vocab (3.3.0)
+    rdf-vocab (3.3.1)
       rdf (~> 3.3)
 
 GIT
@@ -160,7 +160,7 @@ GIT
 PATH
   remote: .
   specs:
-    linter (3.22.2)
+    linter (3.27.1)
       activesupport (>= 5, < 8)
       equivalent-xml (~> 0.6)
       erubis (~> 2.7)
@@ -191,7 +191,7 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (7.1.3.2)
+    activesupport (7.1.3.3)
       base64
       bigdecimal
       concurrent-ruby (~> 1.0, >= 1.0.2)
@@ -210,7 +210,7 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
       rouge (>= 1.0.0)
-    bigdecimal (3.1.7)
+    bigdecimal (3.1.8)
     binding_of_caller (1.0.1)
       debug_inspector (>= 1.2.0)
     builder (3.2.4)
@@ -230,7 +230,7 @@ GEM
     erubis (2.7.0)
     execjs (2.9.1)
     ffi (1.16.3)
-    foreman (0.87.2)
+    foreman (0.88.1)
     haml (6.3.0)
       temple (>= 0.8.2)
       thor
@@ -240,26 +240,26 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
-    i18n (1.14.4)
+    i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     json-canonicalization (1.0.0)
     link_header (0.0.8)
     matrix (0.4.2)
     mime-types (3.5.2)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2024.0305)
-    minitest (5.22.3)
+    mime-types-data (3.2024.0507)
+    minitest (5.23.1)
     multi_json (1.15.0)
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     mutex_m (0.2.0)
     netrc (0.11.0)
-    nio4r (2.7.1)
-    nokogiri (1.16.3-arm64-darwin)
+    nio4r (2.7.3)
+    nokogiri (1.16.5-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.3-x86_64-darwin)
+    nokogiri (1.16.5-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.3-x86_64-linux)
+    nokogiri (1.16.5-x86_64-linux)
       racc (~> 1.4)
     oj (3.16.3)
       bigdecimal (>= 3.0)
@@ -267,7 +267,7 @@ GEM
     public_suffix (5.0.5)
     puma (6.4.2)
       nio4r (~> 2.0)
-    racc (1.7.3)
+    racc (1.8.0)
     rack (2.2.9)
     rack-cache (1.17.0)
       rack (>= 0.4)
@@ -278,7 +278,7 @@ GEM
       rack (>= 1.3)
     rake (13.2.1)
     rb-fsevent (0.11.2)
-    rb-inotify (0.10.1)
+    rb-inotify (0.11.1)
       ffi (~> 1.0)
     rdf-aggregate-repo (3.3.0)
       rdf (~> 3.3)
@@ -292,7 +292,8 @@ GEM
     rest-client-components (1.5.0)
       rack (>= 1.0.1)
       rest-client (>= 1.6.0)
-    rexml (3.2.6)
+    rexml (3.2.8)
+      strscan (>= 3.0.9)
     rouge (4.2.1)
     rspec (3.13.0)
       rspec-core (~> 3.13.0)
@@ -306,7 +307,7 @@ GEM
     rspec-its (1.3.0)
       rspec-core (>= 3.0.0)
       rspec-expectations (>= 3.0.0)
-    rspec-mocks (3.13.0)
+    rspec-mocks (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.1)
@@ -329,6 +330,7 @@ GEM
       rack (>= 2.2.4, < 4)
     sprockets-helpers (1.4.0)
       sprockets (>= 2.2)
+    strscan (3.1.0)
     sxp (2.0.0)
       matrix (~> 0.4)
       rdf (~> 3.3)

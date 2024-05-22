@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 # frozen_string_literal: true
-# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld
+# This file generated automatically from https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/27.0/schemaorgcontext.jsonld
 require 'json/ld'
 class JSON::LD::Context
-  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld") do
+  add_preloaded("https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/27.0/schemaorgcontext.jsonld") do
     new(vocab: "http://schema.org/", processingMode: "json-ld-1.1", term_definitions: {
       "3DModel" => TermDefinition.new("3DModel", id: "http://schema.org/3DModel"),
       "AMRadioChannel" => TermDefinition.new("AMRadioChannel", id: "http://schema.org/AMRadioChannel"),
@@ -34,6 +34,8 @@ class JSON::LD::Context
       "Airport" => TermDefinition.new("Airport", id: "http://schema.org/Airport"),
       "AlbumRelease" => TermDefinition.new("AlbumRelease", id: "http://schema.org/AlbumRelease"),
       "AlcoholConsideration" => TermDefinition.new("AlcoholConsideration", id: "http://schema.org/AlcoholConsideration"),
+      "AlgorithmicMediaDigitalSource" => TermDefinition.new("AlgorithmicMediaDigitalSource", id: "http://schema.org/AlgorithmicMediaDigitalSource"),
+      "AlgorithmicallyEnhancedDigitalSource" => TermDefinition.new("AlgorithmicallyEnhancedDigitalSource", id: "http://schema.org/AlgorithmicallyEnhancedDigitalSource"),
       "AlignmentObject" => TermDefinition.new("AlignmentObject", id: "http://schema.org/AlignmentObject"),
       "AllWheelDriveConfiguration" => TermDefinition.new("AllWheelDriveConfiguration", id: "http://schema.org/AllWheelDriveConfiguration"),
       "AllergiesHealthAspect" => TermDefinition.new("AllergiesHealthAspect", id: "http://schema.org/AllergiesHealthAspect"),
@@ -177,6 +179,10 @@ class JSON::LD::Context
       "CatholicChurch" => TermDefinition.new("CatholicChurch", id: "http://schema.org/CatholicChurch"),
       "CausesHealthAspect" => TermDefinition.new("CausesHealthAspect", id: "http://schema.org/CausesHealthAspect"),
       "Cemetery" => TermDefinition.new("Cemetery", id: "http://schema.org/Cemetery"),
+      "Certification" => TermDefinition.new("Certification", id: "http://schema.org/Certification"),
+      "CertificationActive" => TermDefinition.new("CertificationActive", id: "http://schema.org/CertificationActive"),
+      "CertificationInactive" => TermDefinition.new("CertificationInactive", id: "http://schema.org/CertificationInactive"),
+      "CertificationStatusEnumeration" => TermDefinition.new("CertificationStatusEnumeration", id: "http://schema.org/CertificationStatusEnumeration"),
       "Chapter" => TermDefinition.new("Chapter", id: "http://schema.org/Chapter"),
       "CharitableIncorporatedOrganization" => TermDefinition.new("CharitableIncorporatedOrganization", id: "http://schema.org/CharitableIncorporatedOrganization"),
       "CheckAction" => TermDefinition.new("CheckAction", id: "http://schema.org/CheckAction"),
@@ -220,6 +226,9 @@ class JSON::LD::Context
       "CompleteDataFeed" => TermDefinition.new("CompleteDataFeed", id: "http://schema.org/CompleteDataFeed"),
       "Completed" => TermDefinition.new("Completed", id: "http://schema.org/Completed"),
       "CompletedActionStatus" => TermDefinition.new("CompletedActionStatus", id: "http://schema.org/CompletedActionStatus"),
+      "CompositeCaptureDigitalSource" => TermDefinition.new("CompositeCaptureDigitalSource", id: "http://schema.org/CompositeCaptureDigitalSource"),
+      "CompositeSyntheticDigitalSource" => TermDefinition.new("CompositeSyntheticDigitalSource", id: "http://schema.org/CompositeSyntheticDigitalSource"),
+      "CompositeWithTrainedAlgorithmicMediaDigitalSource" => TermDefinition.new("CompositeWithTrainedAlgorithmicMediaDigitalSource", id: "http://schema.org/CompositeWithTrainedAlgorithmicMediaDigitalSource"),
       "CompoundPriceSpecification" => TermDefinition.new("CompoundPriceSpecification", id: "http://schema.org/CompoundPriceSpecification"),
       "ComputerLanguage" => TermDefinition.new("ComputerLanguage", id: "http://schema.org/ComputerLanguage"),
       "ComputerStore" => TermDefinition.new("ComputerStore", id: "http://schema.org/ComputerStore"),
@@ -263,6 +272,7 @@ class JSON::LD::Context
       "DangerousGoodConsideration" => TermDefinition.new("DangerousGoodConsideration", id: "http://schema.org/DangerousGoodConsideration"),
       "DataCatalog" => TermDefinition.new("DataCatalog", id: "http://schema.org/DataCatalog"),
       "DataDownload" => TermDefinition.new("DataDownload", id: "http://schema.org/DataDownload"),
+      "DataDrivenMediaDigitalSource" => TermDefinition.new("DataDrivenMediaDigitalSource", id: "http://schema.org/DataDrivenMediaDigitalSource"),
       "DataFeed" => TermDefinition.new("DataFeed", id: "http://schema.org/DataFeed"),
       "DataFeedItem" => TermDefinition.new("DataFeedItem", id: "http://schema.org/DataFeedItem"),
       "DataType" => TermDefinition.new("DataType", id: "http://schema.org/DataType"),
@@ -302,7 +312,9 @@ class JSON::LD::Context
       "Diet" => TermDefinition.new("Diet", id: "http://schema.org/Diet"),
       "DietNutrition" => TermDefinition.new("DietNutrition", id: "http://schema.org/DietNutrition"),
       "DietarySupplement" => TermDefinition.new("DietarySupplement", id: "http://schema.org/DietarySupplement"),
+      "DigitalArtDigitalSource" => TermDefinition.new("DigitalArtDigitalSource", id: "http://schema.org/DigitalArtDigitalSource"),
       "DigitalAudioTapeFormat" => TermDefinition.new("DigitalAudioTapeFormat", id: "http://schema.org/DigitalAudioTapeFormat"),
+      "DigitalCaptureDigitalSource" => TermDefinition.new("DigitalCaptureDigitalSource", id: "http://schema.org/DigitalCaptureDigitalSource"),
       "DigitalDocument" => TermDefinition.new("DigitalDocument", id: "http://schema.org/DigitalDocument"),
       "DigitalDocumentPermission" => TermDefinition.new("DigitalDocumentPermission", id: "http://schema.org/DigitalDocumentPermission"),
       "DigitalDocumentPermissionType" => TermDefinition.new("DigitalDocumentPermissionType", id: "http://schema.org/DigitalDocumentPermissionType"),
@@ -527,6 +539,7 @@ class JSON::LD::Context
       "HyperToc" => TermDefinition.new("HyperToc", id: "http://schema.org/HyperToc"),
       "HyperTocEntry" => TermDefinition.new("HyperTocEntry", id: "http://schema.org/HyperTocEntry"),
       "IOSPlatform" => TermDefinition.new("IOSPlatform", id: "http://schema.org/IOSPlatform"),
+      "IPTCDigitalSourceEnumeration" => TermDefinition.new("IPTCDigitalSourceEnumeration", id: "http://schema.org/IPTCDigitalSourceEnumeration"),
       "IceCreamShop" => TermDefinition.new("IceCreamShop", id: "http://schema.org/IceCreamShop"),
       "IgnoreAction" => TermDefinition.new("IgnoreAction", id: "http://schema.org/IgnoreAction"),
       "ImageGallery" => TermDefinition.new("ImageGallery", id: "http://schema.org/ImageGallery"),
@@ -536,6 +549,7 @@ class JSON::LD::Context
       "InForce" => TermDefinition.new("InForce", id: "http://schema.org/InForce"),
       "InStock" => TermDefinition.new("InStock", id: "http://schema.org/InStock"),
       "InStoreOnly" => TermDefinition.new("InStoreOnly", id: "http://schema.org/InStoreOnly"),
+      "IndividualPhysician" => TermDefinition.new("IndividualPhysician", id: "http://schema.org/IndividualPhysician"),
       "IndividualProduct" => TermDefinition.new("IndividualProduct", id: "http://schema.org/IndividualProduct"),
       "Infectious" => TermDefinition.new("Infectious", id: "http://schema.org/Infectious"),
       "InfectiousAgentClass" => TermDefinition.new("InfectiousAgentClass", id: "http://schema.org/InfectiousAgentClass"),
@@ -568,6 +582,7 @@ class JSON::LD::Context
       "JobPosting" => TermDefinition.new("JobPosting", id: "http://schema.org/JobPosting"),
       "JoinAction" => TermDefinition.new("JoinAction", id: "http://schema.org/JoinAction"),
       "Joint" => TermDefinition.new("Joint", id: "http://schema.org/Joint"),
+      "KeepProduct" => TermDefinition.new("KeepProduct", id: "http://schema.org/KeepProduct"),
       "KosherDiet" => TermDefinition.new("KosherDiet", id: "http://schema.org/KosherDiet"),
       "LaboratoryScience" => TermDefinition.new("LaboratoryScience", id: "http://schema.org/LaboratoryScience"),
       "LakeBodyOfWater" => TermDefinition.new("LakeBodyOfWater", id: "http://schema.org/LakeBodyOfWater"),
@@ -630,6 +645,7 @@ class JSON::LD::Context
       "MayTreatHealthAspect" => TermDefinition.new("MayTreatHealthAspect", id: "http://schema.org/MayTreatHealthAspect"),
       "MeasurementMethodEnum" => TermDefinition.new("MeasurementMethodEnum", id: "http://schema.org/MeasurementMethodEnum"),
       "MeasurementTypeEnumeration" => TermDefinition.new("MeasurementTypeEnumeration", id: "http://schema.org/MeasurementTypeEnumeration"),
+      "MediaEnumeration" => TermDefinition.new("MediaEnumeration", id: "http://schema.org/MediaEnumeration"),
       "MediaGallery" => TermDefinition.new("MediaGallery", id: "http://schema.org/MediaGallery"),
       "MediaManipulationRatingEnumeration" => TermDefinition.new("MediaManipulationRatingEnumeration", id: "http://schema.org/MediaManipulationRatingEnumeration"),
       "MediaObject" => TermDefinition.new("MediaObject", id: "http://schema.org/MediaObject"),
@@ -696,6 +712,7 @@ class JSON::LD::Context
       "MiddleSchool" => TermDefinition.new("MiddleSchool", id: "http://schema.org/MiddleSchool"),
       "Midwifery" => TermDefinition.new("Midwifery", id: "http://schema.org/Midwifery"),
       "MinimumAdvertisedPrice" => TermDefinition.new("MinimumAdvertisedPrice", id: "http://schema.org/MinimumAdvertisedPrice"),
+      "MinorHumanEditsDigitalSource" => TermDefinition.new("MinorHumanEditsDigitalSource", id: "http://schema.org/MinorHumanEditsDigitalSource"),
       "MisconceptionsHealthAspect" => TermDefinition.new("MisconceptionsHealthAspect", id: "http://schema.org/MisconceptionsHealthAspect"),
       "MixedEventAttendanceMode" => TermDefinition.new("MixedEventAttendanceMode", id: "http://schema.org/MixedEventAttendanceMode"),
       "MixtapeAlbum" => TermDefinition.new("MixtapeAlbum", id: "http://schema.org/MixtapeAlbum"),
@@ -748,6 +765,7 @@ class JSON::LD::Context
       "NailSalon" => TermDefinition.new("NailSalon", id: "http://schema.org/NailSalon"),
       "NarcoticConsideration" => TermDefinition.new("NarcoticConsideration", id: "http://schema.org/NarcoticConsideration"),
       "Neck" => TermDefinition.new("Neck", id: "http://schema.org/Neck"),
+      "NegativeFilmDigitalSource" => TermDefinition.new("NegativeFilmDigitalSource", id: "http://schema.org/NegativeFilmDigitalSource"),
       "Nerve" => TermDefinition.new("Nerve", id: "http://schema.org/Nerve"),
       "Neuro" => TermDefinition.new("Neuro", id: "http://schema.org/Neuro"),
       "Neurologic" => TermDefinition.new("Neurologic", id: "http://schema.org/Neurologic"),
@@ -912,6 +930,7 @@ class JSON::LD::Context
       "PhysicalExam" => TermDefinition.new("PhysicalExam", id: "http://schema.org/PhysicalExam"),
       "PhysicalTherapy" => TermDefinition.new("PhysicalTherapy", id: "http://schema.org/PhysicalTherapy"),
       "Physician" => TermDefinition.new("Physician", id: "http://schema.org/Physician"),
+      "PhysiciansOffice" => TermDefinition.new("PhysiciansOffice", id: "http://schema.org/PhysiciansOffice"),
       "Physiotherapy" => TermDefinition.new("Physiotherapy", id: "http://schema.org/Physiotherapy"),
       "Place" => TermDefinition.new("Place", id: "http://schema.org/Place"),
       "PlaceOfWorship" => TermDefinition.new("PlaceOfWorship", id: "http://schema.org/PlaceOfWorship"),
@@ -930,6 +949,7 @@ class JSON::LD::Context
       "PoliceStation" => TermDefinition.new("PoliceStation", id: "http://schema.org/PoliceStation"),
       "PoliticalParty" => TermDefinition.new("PoliticalParty", id: "http://schema.org/PoliticalParty"),
       "Pond" => TermDefinition.new("Pond", id: "http://schema.org/Pond"),
+      "PositiveFilmDigitalSource" => TermDefinition.new("PositiveFilmDigitalSource", id: "http://schema.org/PositiveFilmDigitalSource"),
       "PostOffice" => TermDefinition.new("PostOffice", id: "http://schema.org/PostOffice"),
       "PostalAddress" => TermDefinition.new("PostalAddress", id: "http://schema.org/PostalAddress"),
       "PostalCodeRangeSpecification" => TermDefinition.new("PostalCodeRangeSpecification", id: "http://schema.org/PostalCodeRangeSpecification"),
@@ -949,6 +969,7 @@ class JSON::LD::Context
       "PriceSpecification" => TermDefinition.new("PriceSpecification", id: "http://schema.org/PriceSpecification"),
       "PriceTypeEnumeration" => TermDefinition.new("PriceTypeEnumeration", id: "http://schema.org/PriceTypeEnumeration"),
       "PrimaryCare" => TermDefinition.new("PrimaryCare", id: "http://schema.org/PrimaryCare"),
+      "PrintDigitalSource" => TermDefinition.new("PrintDigitalSource", id: "http://schema.org/PrintDigitalSource"),
       "Prion" => TermDefinition.new("Prion", id: "http://schema.org/Prion"),
       "Product" => TermDefinition.new("Product", id: "http://schema.org/Product"),
       "ProductCollection" => TermDefinition.new("ProductCollection", id: "http://schema.org/ProductCollection"),
@@ -1232,6 +1253,7 @@ class JSON::LD::Context
       "TrainReservation" => TermDefinition.new("TrainReservation", id: "http://schema.org/TrainReservation"),
       "TrainStation" => TermDefinition.new("TrainStation", id: "http://schema.org/TrainStation"),
       "TrainTrip" => TermDefinition.new("TrainTrip", id: "http://schema.org/TrainTrip"),
+      "TrainedAlgorithmicMediaDigitalSource" => TermDefinition.new("TrainedAlgorithmicMediaDigitalSource", id: "http://schema.org/TrainedAlgorithmicMediaDigitalSource"),
       "TransferAction" => TermDefinition.new("TransferAction", id: "http://schema.org/TransferAction"),
       "TransformedContent" => TermDefinition.new("TransformedContent", id: "http://schema.org/TransformedContent"),
       "TransitMap" => TermDefinition.new("TransitMap", id: "http://schema.org/TransitMap"),
@@ -1290,6 +1312,7 @@ class JSON::LD::Context
       "VinylFormat" => TermDefinition.new("VinylFormat", id: "http://schema.org/VinylFormat"),
       "ViolenceConsideration" => TermDefinition.new("ViolenceConsideration", id: "http://schema.org/ViolenceConsideration"),
       "VirtualLocation" => TermDefinition.new("VirtualLocation", id: "http://schema.org/VirtualLocation"),
+      "VirtualRecordingDigitalSource" => TermDefinition.new("VirtualRecordingDigitalSource", id: "http://schema.org/VirtualRecordingDigitalSource"),
       "Virus" => TermDefinition.new("Virus", id: "http://schema.org/Virus"),
       "VisualArtsEvent" => TermDefinition.new("VisualArtsEvent", id: "http://schema.org/VisualArtsEvent"),
       "VisualArtwork" => TermDefinition.new("VisualArtwork", id: "http://schema.org/VisualArtwork"),
@@ -1427,6 +1450,7 @@ class JSON::LD::Context
       "affiliation" => TermDefinition.new("affiliation", id: "http://schema.org/affiliation"),
       "afterMedia" => TermDefinition.new("afterMedia", id: "http://schema.org/afterMedia", type_mapping: "@id"),
       "agent" => TermDefinition.new("agent", id: "http://schema.org/agent"),
+      "agentInteractionStatistic" => TermDefinition.new("agentInteractionStatistic", id: "http://schema.org/agentInteractionStatistic"),
       "aggregateRating" => TermDefinition.new("aggregateRating", id: "http://schema.org/aggregateRating"),
       "aircraft" => TermDefinition.new("aircraft", id: "http://schema.org/aircraft"),
       "album" => TermDefinition.new("album", id: "http://schema.org/album"),
@@ -1502,6 +1526,7 @@ class JSON::LD::Context
       "audience" => TermDefinition.new("audience", id: "http://schema.org/audience"),
       "audienceType" => TermDefinition.new("audienceType", id: "http://schema.org/audienceType"),
       "audio" => TermDefinition.new("audio", id: "http://schema.org/audio"),
+      "auditDate" => TermDefinition.new("auditDate", id: "http://schema.org/auditDate", type_mapping: "http://schema.org/Date"),
       "authenticator" => TermDefinition.new("authenticator", id: "http://schema.org/authenticator"),
       "author" => TermDefinition.new("author", id: "http://schema.org/author"),
       "availability" => TermDefinition.new("availability", id: "http://schema.org/availability"),
@@ -1599,6 +1624,9 @@ class JSON::LD::Context
       "category" => TermDefinition.new("category", id: "http://schema.org/category"),
       "causeOf" => TermDefinition.new("causeOf", id: "http://schema.org/causeOf"),
       "ccRecipient" => TermDefinition.new("ccRecipient", id: "http://schema.org/ccRecipient"),
+      "certificationIdentification" => TermDefinition.new("certificationIdentification", id: "http://schema.org/certificationIdentification"),
+      "certificationRating" => TermDefinition.new("certificationRating", id: "http://schema.org/certificationRating"),
+      "certificationStatus" => TermDefinition.new("certificationStatus", id: "http://schema.org/certificationStatus"),
       "character" => TermDefinition.new("character", id: "http://schema.org/character"),
       "characterAttribute" => TermDefinition.new("characterAttribute", id: "http://schema.org/characterAttribute"),
       "characterName" => TermDefinition.new("characterName", id: "http://schema.org/characterName"),
@@ -1632,6 +1660,7 @@ class JSON::LD::Context
       "collection" => TermDefinition.new("collection", id: "http://schema.org/collection"),
       "collectionSize" => TermDefinition.new("collectionSize", id: "http://schema.org/collectionSize"),
       "color" => TermDefinition.new("color", id: "http://schema.org/color"),
+      "colorSwatch" => TermDefinition.new("colorSwatch", id: "http://schema.org/colorSwatch", type_mapping: "@id"),
       "colorist" => TermDefinition.new("colorist", id: "http://schema.org/colorist"),
       "comment" => TermDefinition.new("comment", id: "http://schema.org/comment"),
       "commentCount" => TermDefinition.new("commentCount", id: "http://schema.org/commentCount"),
@@ -1765,6 +1794,7 @@ class JSON::LD::Context
       "diet" => TermDefinition.new("diet", id: "http://schema.org/diet"),
       "dietFeatures" => TermDefinition.new("dietFeatures", id: "http://schema.org/dietFeatures"),
       "differentialDiagnosis" => TermDefinition.new("differentialDiagnosis", id: "http://schema.org/differentialDiagnosis"),
+      "digitalSourceType" => TermDefinition.new("digitalSourceType", id: "http://schema.org/digitalSourceType"),
       "directApply" => TermDefinition.new("directApply", id: "http://schema.org/directApply"),
       "director" => TermDefinition.new("director", id: "http://schema.org/director"),
       "directors" => TermDefinition.new("directors", id: "http://schema.org/directors"),
@@ -1973,6 +2003,7 @@ class JSON::LD::Context
       "hasBioPolymerSequence" => TermDefinition.new("hasBioPolymerSequence", id: "http://schema.org/hasBioPolymerSequence"),
       "hasBroadcastChannel" => TermDefinition.new("hasBroadcastChannel", id: "http://schema.org/hasBroadcastChannel"),
       "hasCategoryCode" => TermDefinition.new("hasCategoryCode", id: "http://schema.org/hasCategoryCode"),
+      "hasCertification" => TermDefinition.new("hasCertification", id: "http://schema.org/hasCertification"),
       "hasCourse" => TermDefinition.new("hasCourse", id: "http://schema.org/hasCourse"),
       "hasCourseInstance" => TermDefinition.new("hasCourseInstance", id: "http://schema.org/hasCourseInstance"),
       "hasCredential" => TermDefinition.new("hasCredential", id: "http://schema.org/hasCredential"),
@@ -1982,6 +2013,7 @@ class JSON::LD::Context
       "hasDriveThroughService" => TermDefinition.new("hasDriveThroughService", id: "http://schema.org/hasDriveThroughService"),
       "hasEnergyConsumptionDetails" => TermDefinition.new("hasEnergyConsumptionDetails", id: "http://schema.org/hasEnergyConsumptionDetails"),
       "hasEnergyEfficiencyCategory" => TermDefinition.new("hasEnergyEfficiencyCategory", id: "http://schema.org/hasEnergyEfficiencyCategory"),
+      "hasGS1DigitalLink" => TermDefinition.new("hasGS1DigitalLink", id: "http://schema.org/hasGS1DigitalLink", type_mapping: "@id"),
       "hasHealthAspect" => TermDefinition.new("hasHealthAspect", id: "http://schema.org/hasHealthAspect"),
       "hasMap" => TermDefinition.new("hasMap", id: "http://schema.org/hasMap", type_mapping: "@id"),
       "hasMeasurement" => TermDefinition.new("hasMeasurement", id: "http://schema.org/hasMeasurement"),
@@ -2406,6 +2438,7 @@ class JSON::LD::Context
       "postalCodeRange" => TermDefinition.new("postalCodeRange", id: "http://schema.org/postalCodeRange"),
       "potentialAction" => TermDefinition.new("potentialAction", id: "http://schema.org/potentialAction"),
       "potentialUse" => TermDefinition.new("potentialUse", id: "http://schema.org/potentialUse"),
+      "practicesAt" => TermDefinition.new("practicesAt", id: "http://schema.org/practicesAt"),
       "preOp" => TermDefinition.new("preOp", id: "http://schema.org/preOp"),
       "predecessorOf" => TermDefinition.new("predecessorOf", id: "http://schema.org/predecessorOf"),
       "pregnancyCategory" => TermDefinition.new("pregnancyCategory", id: "http://schema.org/pregnancyCategory"),
@@ -2797,6 +2830,7 @@ class JSON::LD::Context
       "upvoteCount" => TermDefinition.new("upvoteCount", id: "http://schema.org/upvoteCount"),
       "url" => TermDefinition.new("url", id: "http://schema.org/url", type_mapping: "@id"),
       "urlTemplate" => TermDefinition.new("urlTemplate", id: "http://schema.org/urlTemplate"),
+      "usNPI" => TermDefinition.new("usNPI", id: "http://schema.org/usNPI"),
       "usageInfo" => TermDefinition.new("usageInfo", id: "http://schema.org/usageInfo", type_mapping: "@id"),
       "usedToDiagnose" => TermDefinition.new("usedToDiagnose", id: "http://schema.org/usedToDiagnose"),
       "userInteractionCount" => TermDefinition.new("userInteractionCount", id: "http://schema.org/userInteractionCount"),
@@ -2871,8 +2905,8 @@ class JSON::LD::Context
       "yield" => TermDefinition.new("yield", id: "http://schema.org/yield")
     })
   end
-  alias_preloaded("https://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
-  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
-  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
-  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/22.0/schemaorgcontext.jsonld")
+  alias_preloaded("https://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/27.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org/", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/27.0/schemaorgcontext.jsonld")
+  alias_preloaded("https://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/27.0/schemaorgcontext.jsonld")
+  alias_preloaded("http://schema.org", "https://raw.githubusercontent.com/schemaorg/schemaorg/main/data/releases/27.0/schemaorgcontext.jsonld")
 end
