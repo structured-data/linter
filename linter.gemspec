@@ -35,7 +35,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'rdf-xsd',            '~> 3.3'
 
   # Sinatra dependencies
-  gem.add_runtime_dependency      'puma',               '~> 6.3'
+  gem.add_runtime_dependency      'puma',               '~> 6.6'
   gem.add_runtime_dependency      'sinatra',            '~> 3.1'
   gem.add_runtime_dependency      'sass',               '~> 3.7'
   gem.add_runtime_dependency      'sprockets',          '~> 4.2'
