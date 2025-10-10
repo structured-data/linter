@@ -45,7 +45,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency      'erubis',             '~> 2.7'
   gem.add_runtime_dependency      'haml',               '~> 6.1'
   gem.add_runtime_dependency      'json-ld-preloaded',  '~> 3.3'
-  gem.add_runtime_dependency      "rack",               '~> 2.2'
+  gem.add_runtime_dependency      "rack",               '>= 2.2', '< 4.0'
   gem.add_runtime_dependency      'rest-client',        '~> 2.1'
   gem.add_runtime_dependency      'rest-client-components', '~> 1.5'
   gem.add_runtime_dependency      'rack-cache',         '~> 1.13'
